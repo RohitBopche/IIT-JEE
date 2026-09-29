@@ -41,7 +41,7 @@
   t: S
   q: |-
     Let f be any continuous function on [0, 2] and twice differentiable on (0, 2). If f(0) = 0, f(1) = 1 and f(2) = 2, then
-  o: ["$f''(x) = 0$ for all $x \in (0, 2)$", "$f''(x) = 0$ for some $x \in (0, 2)$", "$f'(x) = 0$ for some $x \in [0, 2]$", "$f''(x) > 0$ for all $x \in (0, 2)$"]
+  o: ['$f''''(x) = 0$ for all $x \in (0, 2)$', '$f''''(x) = 0$ for some $x \in (0, 2)$', '$f''(x) = 0$ for some $x \in [0, 2]$', '$f''''(x) > 0$ for all $x \in (0, 2)$']
   a: B
   ch: Application of Derivatives
   tp: Rolle's theorem
