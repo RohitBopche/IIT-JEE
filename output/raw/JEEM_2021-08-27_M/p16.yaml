@@ -1,0 +1,132 @@
+- n: 1
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If 0 < x < 1, then $\frac{3}{2}x^2 + \frac{5}{3}x^3 + \frac{7}{4}x^4 + \ldots$, is equal to :
+  o: ['$x\left(\frac{1 + x}{1 - x}\right) + \log_e(1 - x)$', '$x\left(\frac{1 - x}{1 + x}\right) + \log_e(1 - x)$', '$\frac{1 - x}{1 + x} + \log_e(1 - x)$', '$\frac{1 + x}{1 - x} + \log_e(1 - x)$']
+  a: A
+  ch: Sequences and Series
+  tp: Series with logarithmic sum
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If for x, $y \in \mathbb{R}$, x > 0, $y = \log_{10}x + \log_{10}x^{1/3} + \log_{10}x^{1/9} + \ldots$ upto $\infty$ terms and $\frac{2 + 4 + 6 + \ldots + 2y}{3 + 6 + 9 + \ldots + 3y} = \frac{4}{\log_{10}x}$, then the ordered pair (x, y) is equal to :
+  o: ['$(10^6, 6)$', '$(10^4, 6)$', '$(10^2, 3)$', '$(10^6, 9)$']
+  a: D
+  ch: Sequences and Series
+  tp: Infinite GP with logarithms
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let A be a fixed point (0, 6) and B be a moving point (2t, 0). Let M be the mid-point of AB and the perpendicular bisector of AB meets the y-axis at C. The locus of the mid-point P of MC is :
+  o: ['$3x^2 - 2y - 6 = 0$', '$3x^2 + 2y - 6 = 0$', '$2x^2 + 3y - 9 = 0$', '$2x^2 - 3y + 9 = 0$']
+  a: C
+  ch: Straight Lines
+  tp: Locus
+  df: M
+- n: 4
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If $(\sin^{-1}x)^2 - (\cos^{-1}x)^2 = a$; 0 < x < 1, $a \neq 0$, then the value of $2x^2 - 1$ is :
+  o: ['$\cos\left(\frac{4a}{\pi}\right)$', '$\sin\left(\frac{2a}{\pi}\right)$', '$\cos\left(\frac{2a}{\pi}\right)$', '$\sin\left(\frac{4a}{\pi}\right)$']
+  a: B
+  ch: Inverse Trigonometric Functions
+  tp: Inverse trig identities
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If the matrix $A = \begin{pmatrix} 0 & 2 \\ K & -1 \end{pmatrix}$ satisfies $A(A^3 + 3I) = 2I$, then the value of K is :
+  o: ['$\frac{1}{2}$', '$-\frac{1}{2}$', '–1', '1']
+  a: A
+  ch: Matrices and Determinants
+  tp: Cayley-Hamilton theorem
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The distance of the point (1, –2, 3) from the plane x – y + z = 5 measured parallel to a line, whose direction ratios are 2, 3, –6 is :
+  o: ['3', '5', '2', '1']
+  a: D
+  ch: Three Dimensional Geometry
+  tp: Distance along a line
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If $S = \left\{z \in \mathbb{C} : \frac{z - i}{z + 2i} \in \mathbb{R}\right\}$, then :
+  o: ['S contains exactly two elements', 'S contains only one element', 'S is a circle in the complex plane', 'S is a straight line in the complex plane']
+  a: D
+  ch: Complex Numbers
+  tp: Locus in complex plane
+  df: E
+- n: 8
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let y = y(x) be the solution of the differential equation $\frac{dy}{dx} = 2(y + 2\sin x - 5)x - 2\cos x$ such that y(0) = 7. Then $y(\pi)$ is equal to :
+  o: ['$2e^{\pi^2} + 5$', '$e^{\pi^2} + 5$', '$3e^{\pi^2} + 5$', '$7e^{\pi^2} + 5$']
+  a: A
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Equation of a plane at a distance $\sqrt{\frac{2}{21}}$ from the origin, which contains the line of intersection of the planes x – y – z – 1 = 0 and 2x + y – 3z + 4 = 0, is :
+  o: ['$3x - y - 5z + 2 = 0$', '$3x - 4z + 3 = 0$', '$-x + 2y + 2z - 3 = 0$', '$4x - y - 5z + 2 = 0$']
+  a: D
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    If $U_n = \left(1 + \frac{1}{n^2}\right)\left(1 + \frac{2^2}{n^2}\right)^2\ldots\left(1 + \frac{n^2}{n^2}\right)^n$, then $\lim_{n\to\infty}(U_n)^{\frac{-4}{n^2}}$ is equal to :
+  o: ['$\frac{e^2}{16}$', '$\frac{4}{e}$', '$\frac{16}{e^2}$', '$\frac{4}{e^2}$']
+  a: A
+  ch: Definite Integration
+  tp: Limit as a sum
+  df: H
+- n: 11
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    The statement $(p \wedge (p \rightarrow q) \wedge (q \rightarrow r)) \rightarrow r$ is :
+  o: ['a tautology', 'equivalent to $p \rightarrow \sim r$', 'a fallacy', 'equivalent to $q \rightarrow \sim r$']
+  a: A
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E

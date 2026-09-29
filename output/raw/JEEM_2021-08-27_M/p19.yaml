@@ -1,0 +1,119 @@
+- n: 12
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let us consider a curve, y = f(x) passing through the point (–2, 2) and the slope of the tangent to the curve at any point (x, f(x)) is given by $f(x) + xf'(x) = x^2$. Then :
+  o: ['$x^2 + 2xf(x) - 12 = 0$', '$x^3 + xf(x) + 12 = 0$', '$x^3 - 3xf(x) - 4 = 0$', '$x^2 + 2xf(x) + 4 = 0$']
+  a: C
+  ch: Differential Equations
+  tp: Exact differential equation
+  df: E
+- n: 13
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    $\sum_{k=0}^{20}\left({}^{20}C_k\right)^2$ is equal to :
+  o: ['${}^{40}C_{21}$', '${}^{40}C_{19}$', '${}^{40}C_{20}$', '${}^{41}C_{20}$']
+  a: C
+  ch: Binomial Theorem
+  tp: Sum of squares of binomial coefficients
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    A tangent and a normal are drawn at the point P(2, – 4) on the parabola $y^2 = 8x$, which meet the directrix of the parabola at the points A and B respectively. If Q(a, b) is a point such that AQBP is a square, then 2a + b is equal to :
+  o: ['–16', '–18', '–12', '–20']
+  a: A
+  ch: Conic Sections
+  tp: Tangent and normal to parabola
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let $\frac{\sin A}{\sin B} = \frac{\sin(A - C)}{\sin(C - B)}$, where A, B, C are angles of a triangle ABC. If the lengths of the sides opposite these angles are a, b, c respectively, then :
+  o: ['$b^2 - a^2 = a^2 + c^2$', '$b^2$, $c^2$, $a^2$ are in A.P.', '$c^2$, $a^2$, $b^2$ are in A.P.', '$a^2$, $b^2$, $c^2$ are in A.P.']
+  a: B
+  ch: Trigonometric Functions and Equations
+  tp: Sine rule
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    If $\alpha$, $\beta$ are the distinct roots of $x^2 + bx + c = 0$, then $\lim_{x\to\beta}\frac{e^{2(x^2 + bx + c)} - 1 - 2(x^2 + bx + c)}{(x - \beta)^2}$ is equal to:
+  o: ['$b^2 + 4c$', '$2(b^2 + 4c)$', '$2(b^2 - 4c)$', '$b^2 - 4c$']
+  a: C
+  ch: Limits, Continuity and Differentiability
+  tp: Limits using expansion
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    When a certain biased die is rolled, a particular face occurs with probability $\frac{1}{6} - x$ and its opposite face occurs with probability $\frac{1}{6} + x$. All other faces occur with probability $\frac{1}{6}$. Note that opposite faces sum to 7 in any die. If $0 < x < \frac{1}{6}$, and the probability of obtaining total sum = 7, when such a die is rolled twice, is $\frac{13}{96}$, then the value of x is:
+  o: ['$\frac{1}{16}$', '$\frac{1}{8}$', '$\frac{1}{9}$', '$\frac{1}{12}$']
+  a: B
+  ch: Probability
+  tp: Probability with biased die
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    If $x^2 + 9y^2 - 4x + 3 = 0$, x, $y \in \mathbb{R}$, then x and y respectively lie in the intervals:
+  o: ['$\left[-\frac{1}{3}, \frac{1}{3}\right]$ and $\left[-\frac{1}{3}, \frac{1}{3}\right]$', '$\left[-\frac{1}{3}, \frac{1}{3}\right]$ and [1, 3]', '[1, 3] and [1, 3]', '[1, 3] and $\left[-\frac{1}{3}, \frac{1}{3}\right]$']
+  a: D
+  ch: Conic Sections
+  tp: Ellipse bounds
+  df: E
+- n: 19
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    $\int_6^{16}\frac{\log_e x^2}{\log_e x^2 + \log_e(x^2 - 44x + 484)}dx$ is equal to:
+  o: ['6', '8', '5', '10']
+  a: C
+  ch: Definite Integration
+  tp: King property
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    A wire of length 20 m is to be cut into two pieces. One of the pieces is to be made into a square and the other into a regular hexagon. Then the length of the side (in meters) of the hexagon, so that the combined area of the square and the hexagon is minimum, is:
+  o: ['$\frac{5}{2 + \sqrt{3}}$', '$\frac{10}{2 + 3\sqrt{3}}$', '$\frac{5}{3 + \sqrt{3}}$', '$\frac{10}{3 + 2\sqrt{3}}$']
+  a: D
+  ch: Application of Derivatives
+  tp: Optimisation
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    Let $\vec{a} = \hat{i} + 5\hat{j} + \alpha\hat{k}$, $\vec{b} = \hat{i} + 3\hat{j} + \beta\hat{k}$ and $\vec{c} = -\hat{i} + 2\hat{j} - 3\hat{k}$ be three vectors such that, $|\vec{b}\times\vec{c}| = 5\sqrt{3}$ and $\vec{a}$ is perpendicular to $\vec{b}$. Then the greatest amongst the values of $|\vec{a}|^2$ is _______.
+  a: '90'
+  ch: Vector Algebra
+  tp: Cross product magnitude
+  df: M

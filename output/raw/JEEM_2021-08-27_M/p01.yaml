@@ -1,0 +1,158 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A uniformly charged disc of radius R having surface charge density $\sigma$ is placed in the xy plane with its center at the origin. Find the electric field intensity along the z-axis at a distance Z from origin :-
+  o: ['$E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{Z}{(Z^2 + R^2)^{1/2}}\right)$', '$E = \frac{\sigma}{2\varepsilon_0}\left(1 + \frac{Z}{(Z^2 + R^2)^{1/2}}\right)$', '$E = \frac{2\varepsilon_0}{\sigma}\left(\frac{1}{(Z^2 + R^2)^{1/2}} + Z\right)$', '$E = \frac{\sigma}{2\varepsilon_0}\left(\frac{1}{(Z^2 + R^2)} + \frac{1}{Z^2}\right)$']
+  a: A
+  ch: Electrostatics
+  tp: Field on axis of charged disc
+  df: M
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    There are $10^{10}$ radioactive nuclei in a given radioactive element, Its half-life time is 1 minute. How many nuclei will remain after 30 seconds ? ($\sqrt{2} = 1.414$)
+  o: ['$2\times10^{10}$', '$7\times10^{9}$', '$10^{5}$', '$4\times10^{10}$']
+  a: B
+  ch: Nuclei
+  tp: Radioactive decay, half-life
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    Which of the following is not a dimensionless quantity ?
+  o: ['Relative magnetic permeability ($\mu_r$)', 'Power factor', 'Permeability of free space ($\mu_0$)', 'Quality factor']
+  a: C
+  ch: Units and Measurements
+  tp: Dimensionless quantities
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    If E and H represents the intensity of electric field and magnetising field respectively, then the unit of E/H will be :
+  o: ['ohm', 'mho', 'joule', 'newton']
+  a: A
+  ch: Electromagnetic Waves
+  tp: Units of E/H
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The resultant of these forces $\vec{OP}$, $\vec{OQ}$, $\vec{OR}$, $\vec{OS}$ and $\vec{OT}$ is approximately ...... N. [Take $\sqrt{3} = 1.7$, $\sqrt{2} = 1.4$ Given $\hat{i}$ and $\hat{j}$ unit vectors along x, y axis]
+  o: ['$9.25\hat{i} + 5\hat{j}$', '$3\hat{i} + 15\hat{j}$', '$2.5\hat{i} - 14.5\hat{j}$', '$-1.5\hat{i} - 15.5\hat{j}$']
+  a: A
+  ch: Kinematics
+  tp: Resultant of concurrent forces
+  df: M
+  fig: [[2, 360, 130, 528, 410]]
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A balloon carries a total load of 185 kg at normal pressure and temperature of 27°C. What load will the balloon carry on rising to a height at which the barometric pressure is 45 cm of Hg and the temperature is –7°C. Assuming the volume constant ?
+  o: ['181.46 kg', '214.15 kg.', '219.07 kg', '123.54 kg']
+  a: D
+  ch: Kinetic Theory of Gases
+  tp: Gas density and buoyancy
+  df: M
+- n: 7
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An object is placed beyond the centre of curvature C of the given concave mirror. If the distance of the object is $d_1$ from C and the distance of the image formed is $d_2$ from C, the radius of curvature of this mirror is :
+  o: ['$\frac{2d_1d_2}{d_1 - d_2}$', '$\frac{2d_1d_2}{d_1 + d_2}$', '$\frac{d_1d_2}{d_1 + d_2}$', '$\frac{d_1d_2}{d_1 - d_2}$']
+  a: A
+  ch: Ray Optics and Optical Instruments
+  tp: Mirror formula, Newton's form
+  df: M
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A huge circular arc of length 4.4 ly subtends an angle '4s' at the centre of the circle. How long it would take for a body to complete 4 revolution if its speed is 8 AU per second ? Given : 1 ly $= 9.46\times10^{15}$ m, 1 AU $= 1.5\times10^{11}$ m
+  o: ['$4.1\times10^{8}$ s', '$4.5\times10^{10}$ s', '$3.5\times10^{6}$ s', '$7.2\times10^{8}$ s']
+  a: B
+  ch: Units and Measurements
+  tp: Astronomical units, angular measure
+  df: M
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Calculate the amount of charge on capacitor of $4\ \mu$F. The internal resistance of battery is $1\Omega$ :
+  o: ['$8\ \mu$C', 'zero', '$16\ \mu$C', '$4\ \mu$C']
+  a: A
+  ch: Capacitance
+  tp: Capacitor in DC circuit
+  df: M
+  fig: [[3, 432, 165, 548, 368]]
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Moment of inertia of a square plate of side l about the axis passing through one of the corner and perpendicular to the plane of square plate is given by :
+  o: ['$\frac{Ml^2}{6}$', '$Ml^2$', '$\frac{Ml^2}{12}$', '$\frac{2}{3}Ml^2$']
+  a: D
+  ch: Rotational Motion
+  tp: Moment of inertia of square plate
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    For a transistor in CE mode to be used as an amplifier, it must be operated in :
+  o: ['Both cut-off and Saturation', 'Saturation region only', 'Cut-off region only', 'The active region only']
+  a: D
+  ch: Semiconductor Electronics
+  tp: Transistor as amplifier
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    An ideal gas is expanding such that $PT^3$ = constant. The coefficient of volume expansion of the gas is :
+  o: ['$\frac{1}{T}$', '$\frac{2}{T}$', '$\frac{4}{T}$', '$\frac{3}{T}$']
+  a: C
+  ch: Thermodynamics
+  tp: Coefficient of volume expansion
+  df: M
+- n: 13
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In a photoelectric experiment, increasing the intensity of incident light :
+  o: ['increases the number of photons incident and also increases the K.E. of the ejected electrons', 'increases the frequency of photons incident and increases the K.E. of the ejected electrons.', 'increases the frequency of photons incident and the K.E. of the ejected electrons remains unchanged', 'increases the number of photons incident and the K.E. of the ejected electrons remains unchanged']
+  a: D
+  ch: Dual Nature of Radiation and Matter
+  tp: Effect of intensity
+  df: E

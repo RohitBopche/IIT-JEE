@@ -1,0 +1,103 @@
+- n: 2
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    The number of distinct real roots of the equation $3x^4 + 4x^3 - 12x^2 + 4 = 0$ is _________.
+  a: '4'
+  ch: Application of Derivatives
+  tp: Number of roots via graph
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    Let the equation $x^2 + y^2 + px + (1 - p)y + 5 = 0$ represent circles of varying radius $r \in (0, 5]$. Then the number of elements in the set $S = \{q : q = p^2$ and q is an integer$\}$ is _________.
+  a: '61'
+  ch: Circles
+  tp: Radius of circle, parameter range
+  df: H
+- n: 4
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If $A = \{x \in \mathbb{R} : |x - 2| > 1\}$, $B = \{x \in \mathbb{R} : \sqrt{x^2 - 3} > 1\}$, $C = \{x \in \mathbb{R} : |x - 4| \ge 2\}$ and Z is the set of all integers, then the number of subsets of the set $(A \cap B \cap C)^c \cap \mathbb{Z}$ is ___________.
+  a: '256'
+  ch: Sets, Relations and Functions
+  tp: Set operations, number of subsets
+  df: M
+- n: 5
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If $\int\frac{dx}{(x^2 + x + 1)^2} = a\tan^{-1}\left(\frac{2x + 1}{\sqrt{3}}\right) + b\left(\frac{2x + 1}{x^2 + x + 1}\right) + C$, x > 0 where C is the constant of integration, then the value of $9(\sqrt{3}a + b)$ is equal to ________.
+  a: '15'
+  ch: Indefinite Integration
+  tp: Trigonometric substitution
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If the system of linear equations
+    $2x + y - z = 3$
+    $x - y - z = \alpha$
+    $3x + 3y + \beta z = 3$
+    has infinitely many solution, then $\alpha + \beta - \alpha\beta$ is equal to _________.
+  a: '5'
+  ch: Matrices and Determinants
+  tp: Infinitely many solutions
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    Let n be an odd natural number such that the variance of 1, 2, 3, 4, ..., n is 14. Then n is equal to _________.
+  a: '13'
+  ch: Statistics
+  tp: Variance of natural numbers
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    If the minimum area of the triangle formed by a tangent to the ellipse $\frac{x^2}{b^2} + \frac{y^2}{4a^2} = 1$ and the co-ordinate axis is kab, then k is equal to _______.
+  a: '2'
+  ch: Conic Sections
+  tp: Tangent to ellipse, minimum area
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    A number is called a palindrome if it reads the same backward as well as forward. For example 285582 is a six digit palindrome. The number of six digit palindromes, which are divisible by 55, is _________.
+  a: '100'
+  ch: Permutations and Combinations
+  tp: Counting palindromes
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    If $y^{1/4} + y^{-1/4} = 2x$, and $(x^2 - 1)\frac{d^2y}{dx^2} + \alpha x\frac{dy}{dx} + \beta y = 0$, then $|\alpha - \beta|$ is equal to _________.
+  a: '17'
+  ch: Limits, Continuity and Differentiability
+  tp: Second order derivative, implicit
+  df: H
