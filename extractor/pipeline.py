@@ -148,7 +148,7 @@ class Extractor:
             png = crop_box(doc, b["page_index"], b["box_2d"], FIG_DPI)
             if png:
                 fig_dir.mkdir(parents=True, exist_ok=True)
-                f = fig_dir / f"{code}_Q{q['q_no']:02d}_{k}.png"
+                f = fig_dir / f"{code}_{validate.sec(q)}{q['q_no']:02d}_{k}.png"
                 f.write_bytes(png)
                 q["diagram_files"].append(str(f.relative_to(self.out)))
         # cross-check with PDF text layer
