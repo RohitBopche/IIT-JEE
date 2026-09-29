@@ -39,11 +39,13 @@
     1
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Rydberg formula $\\frac{1}{\\lambda} = R\\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$.\nSolution:\n1. Third Lyman line: 4 → 1, so $\\frac{1}{\\lambda_1} = R\\left(1 - \\frac{1}{16}\\right) = \\frac{15R}{16}$.\n2. First Paschen line: 4 → 3, so $\\frac{1}{\\lambda_2} = R\\left(\\frac{1}{9} - \\frac{1}{16}\\right) = \\frac{7R}{144}$.\n3. $\\frac{\\lambda_1}{\\lambda_2} = \\frac{7/144}{15/16} = \\frac{7}{135}$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -82,6 +84,7 @@
      ]
     }
    ],
+   "explanation": "Concept: In steady state the same heat current flows through both layers in series: $H = \\frac{\\Delta\\theta}{R}$.\nSolution:\n1. $\\frac{\\theta_2 - \\theta}{R_2} = \\frac{\\theta - \\theta_1}{R_1}$.\n2. $\\theta(R_1 + R_2) = \\theta_2R_1 + \\theta_1R_2$, so $\\theta = \\frac{\\theta_1R_2 + \\theta_2R_1}{R_1 + R_2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A02",
@@ -89,6 +92,7 @@
     "figures/JEEM_2021-02-26_M/PHY_A02_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -117,11 +121,13 @@
     2
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Fringe width $\\beta = \\frac{\\lambda D}{d}$.\nSolution:\n1. $\\beta = \\frac{500\\times10^{-9}\\times1}{2\\times10^{-3}} = 2.5\\times10^{-4}$ m = 0.25 mm.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -150,11 +156,13 @@
     3
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Resolving power of a microscope is inversely proportional to the wavelength used.\nSolution:\n1. Electrons accelerated through high voltages have de Broglie wavelengths of a few picometres, far below visible light (400–700 nm).\n2. So an electron microscope resolves much finer detail. A is true, R is true, and R explains A.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -183,11 +191,13 @@
     3
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Moment of inertia of a solid sphere about a diameter is $\\frac{2}{5}ma^2$; use the parallel-axis theorem for the spheres off the axis.\nSolution:\n1. The two spheres whose centres lie on the chosen side: $2\\times\\frac{2}{5}ma^2$.\n2. The two spheres on the opposite side (distance b): $2\\left(\\frac{2}{5}ma^2 + mb^2\\right)$.\n3. Total $= \\frac{8}{5}ma^2 + 2mb^2$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -216,11 +226,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Bulk modulus $K = \\frac{P}{\\Delta V/V}$; for a fixed mass, $\\frac{\\Delta\\rho}{\\rho} = \\frac{\\Delta V}{V}$ (in magnitude).\nSolution:\n1. $\\frac{\\Delta\\rho}{\\rho} = \\frac{P}{K}$, so $\\Delta\\rho = \\frac{\\rho P}{K}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -249,11 +261,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Photon wavelength from the band gap: $\\lambda = \\frac{hc}{E_g}$.\nSolution:\n1. $E_g = 1.9\\times1.6\\times10^{-19} = 3.04\\times10^{-19}$ J.\n2. $\\lambda = \\frac{6.63\\times10^{-34}\\times3\\times10^8}{3.04\\times10^{-19}} \\approx 654$ nm, which is in the red region (about 620–750 nm).\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -292,6 +306,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Symmetry: points at the same potential can be joined or separated freely; a resistor between equipotential points carries no current.\nGiven: A is the central node (joined to D and E by R each); B is joined directly to C.\nSolution:\n1. The network is symmetric about the line through A and C, so D and E are at the same potential and the resistor DE carries no current.\n2. Two identical paths remain: A→D→C (2R) and A→E→C (2R).\n3. In parallel: $\\frac{2R}{2} = R$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A08",
@@ -299,6 +314,7 @@
     "figures/JEEM_2021-02-26_M/PHY_A08_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -337,6 +353,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Field of a ring on its axis: $E = \\frac{GMx}{(R^2 + x^2)^{3/2}}$; a uniform sphere acts as a point mass at its centre.\nSolution:\n1. Force between the ring and the sphere = (mass of sphere) × (ring's field at the sphere's centre), with $x = \\sqrt{8}R$.\n2. $F = \\frac{GmM\\sqrt{8}R}{(R^2 + 8R^2)^{3/2}} = \\frac{GmM\\sqrt{8}R}{27R^3} = \\frac{\\sqrt{8}}{27}\\cdot\\frac{GmM}{R^2}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A09",
@@ -344,6 +361,7 @@
     "figures/JEEM_2021-02-26_M/PHY_A09_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -372,11 +390,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Inside the earth, gravity is proportional to distance from the centre: $g_r = \\frac{gr}{R}$.\nSolution:\n1. At distance x from the middle of the chord, the component of gravity along the tunnel is $\\frac{gr}{R}\\cdot\\frac{x}{r} = \\frac{g}{R}x$.\n2. This is SHM with $\\omega^2 = \\frac{g}{R}$, so $T = 2\\pi\\sqrt{\\frac{R}{g}}$ for any chord.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -415,6 +435,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Field of a finite line charge on its perpendicular bisector: $E = \\frac{2k\\lambda}{a}\\sin\\theta$, where θ is the half-angle subtended at P.\nSolution:\n1. $\\sin\\theta = \\frac{L/2}{\\sqrt{a^2 + L^2/4}} = \\frac{L/2}{\\sqrt{3L^2/4 + L^2/4}} = \\frac{1}{2}$.\n2. $E = \\frac{2kQ}{La}\\cdot\\frac{1}{2} = \\frac{kQ}{L\\cdot\\frac{\\sqrt{3}}{2}L} = \\frac{2kQ}{\\sqrt{3}L^2} = \\frac{Q}{2\\sqrt{3}\\pi\\varepsilon_0L^2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A11",
@@ -422,6 +443,7 @@
     "figures/JEEM_2021-02-26_M/PHY_A11_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -450,11 +472,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: One-dimensional elastic collision with the target at rest: $v_2 = \\frac{2m_1u}{m_1 + m_2}$.\nSolution:\n1. $v_Q = \\frac{2Mu}{M + m} \\rightarrow 2u$ when m << M, so A is correct.\n2. This formula comes from conserving both momentum and kinetic energy, so R is correct and explains A.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -483,11 +507,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: An erect image from a spherical mirror is always virtual; an erect, diminished image comes only from a convex mirror.\nSolution:\n1. m = +25/100 = +¼: erect and smaller.\n2. A concave mirror gives erect images only when enlarged (object inside F), so the mirror is convex.\n3. The image is virtual and behind the mirror (on the opposite side from the object).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -516,11 +542,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The central force provides the centripetal force.\nSolution:\n1. $\\frac{mv^2}{R} = \\frac{k}{R^3} \\Rightarrow v \\propto \\frac{1}{R}$.\n2. $T = \\frac{2\\pi R}{v} \\propto R\\cdot R = R^2$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -549,11 +577,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Surface energy released = T × decrease in surface area; volume is conserved ($nr^3 = R^3$).\nSolution:\n1. Energy released $= T\\cdot4\\pi(nr^2 - R^2) = 4\\pi TR^3\\left(\\frac{1}{r} - \\frac{1}{R}\\right)$ (using $n = \\frac{R^3}{r^3}$).\n2. Per unit volume: divide by $\\frac{4}{3}\\pi R^3$ to get $3T\\left(\\frac{1}{r} - \\frac{1}{R}\\right)$.\n3. As heat: $\\frac{3T}{J}\\left(\\frac{1}{r} - \\frac{1}{R}\\right)$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -582,11 +612,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Kepler's second law: the radius vector sweeps equal areas in equal times (constant areal velocity, from conservation of angular momentum).\nSolution:\n1. A is false: the speed changes along the orbit. B is false: the speed is greatest at perihelion.\n2. C and D are false: areal velocity is constant, not proportional to speed.\n3. Only E is correct.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A16",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -615,11 +647,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Two perpendicular sinusoids combine into one sinusoid: $i_1\\sin\\omega t + i_2\\cos\\omega t = \\sqrt{i_1^2 + i_2^2}\\sin(\\omega t + \\phi)$.\nSolution:\n1. Peak value $= \\sqrt{i_1^2 + i_2^2}$.\n2. rms $= \\frac{1}{\\sqrt{2}}(i_1^2 + i_2^2)^{1/2}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -648,11 +682,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $C_p = C_1 + C_2$ and $C_s = \\frac{C_1C_2}{C_1 + C_2}$.\nSolution:\n1. $C_1 + C_2 = \\frac{15}{4}\\cdot\\frac{C_1C_2}{C_1 + C_2} \\Rightarrow 4(C_1 + C_2)^2 = 15C_1C_2$.\n2. With $x = \\frac{C_2}{C_1}$: $4x^2 - 7x + 4 = 0$, whose discriminant is 49 – 64 < 0.\n3. There is no real ratio, and none of the options satisfies the condition, so the question is a bonus.\nAnswer: Bonus",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_PHY_A18",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: 4x^2 - 7x + 4 = 0 has no real root, so no option is valid (ALLEN: Bonus); NTA key not printed"
    ],
@@ -683,11 +719,13 @@
     12
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Springs in series: $\\frac{1}{k} = \\frac{1}{k_1} + \\frac{1}{k_2}$; $T \\propto \\frac{1}{\\sqrt{k}}$.\nSolution:\n1. Two springs of constant $K_1$ in series: $k = \\frac{K_1}{2}$, a factor of ½.\n2. $T \\propto \\frac{1}{\\sqrt{k}}$, so T increases by a factor $\\sqrt{2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -716,11 +754,13 @@
     12
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The exponent must be dimensionless.\nSolution:\n1. $\\frac{\\beta x^2}{kT}$ is dimensionless, so $[\\beta] = \\frac{[ML^2T^{-2}]}{[L^2]} = [MT^{-2}]$.\n2. $W = \\alpha^2\\beta$, so $[\\alpha^2] = \\frac{[ML^2T^{-2}]}{[MT^{-2}]} = [L^2]$ and $[\\alpha] = [M^0LT^0]$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_A20",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -744,11 +784,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Wave speed $v = \\frac{\\omega}{k}$ and $v = \\sqrt{\\frac{T}{\\mu}}$.\nSolution:\n1. From y = –0.21 sin(x + 30t): k = 1 m⁻¹, ω = 30 rad/s, so v = 30 m/s.\n2. μ = 0.135 g/cm = 0.0135 kg/m.\n3. $T = \\mu v^2 = 0.0135\\times900 = 12.15$ N $= 1215\\times10^{-2}$ N.\nAnswer: 1215",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -772,11 +814,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Intensity $I = \\frac{P}{4\\pi r^2}$ and $I = \\frac{1}{2}c\\varepsilon_0E_0^2$.\nSolution:\n1. Radiated power = 1.25% of 1000 W = 12.5 W. $I = \\frac{12.5}{4\\pi(2)^2} = 0.249$ W/m².\n2. $E_0 = \\sqrt{\\frac{2I}{c\\varepsilon_0}} = \\sqrt{\\frac{0.497}{3\\times10^8\\times8.85\\times10^{-12}}} = \\sqrt{187.4} \\approx 13.7$ V/m.\n3. $= 137\\times10^{-1}$ V/m.\nAnswer: 137",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -810,6 +854,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Only a forward-biased diode conducts; it then adds its forward resistance to the branch.\nGiven: the battery's positive terminal drives current through the $D_1$ branch in its forward direction; $D_2$ is reversed.\nSolution:\n1. $D_2$ blocks (infinite resistance); the current flows through $D_1$ (50 Ω) + 130 Ω + 120 Ω.\n2. $I = \\frac{6}{50 + 130 + 120} = \\frac{6}{300} = 0.02$ A = 20 mA.\nAnswer: 20",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B03",
@@ -817,6 +862,7 @@
     "figures/JEEM_2021-02-26_M/PHY_B03_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -850,6 +896,7 @@
      ]
     }
    ],
+   "explanation": "Concept: The push has a downward component that increases the normal reaction; at the critical point the horizontal component equals the limiting friction.\nSolution:\n1. Force F at 60° below the horizontal: horizontal part $\\frac{F}{2}$, vertical (downward) part $\\frac{\\sqrt{3}F}{2}$.\n2. $N = mg + \\frac{\\sqrt{3}F}{2} = 10\\sqrt{3} + \\frac{\\sqrt{3}F}{2}$.\n3. Critical: $\\frac{F}{2} = \\mu N = \\frac{1}{3\\sqrt{3}}\\left(10\\sqrt{3} + \\frac{\\sqrt{3}F}{2}\\right) = \\frac{10}{3} + \\frac{F}{6}$.\n4. $\\frac{F}{3} = \\frac{10}{3}$, so F = 10 N = 3x and x = 3.33.\nAnswer: 3.33",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B04",
@@ -857,6 +904,7 @@
     "figures/JEEM_2021-02-26_M/PHY_B04_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -880,11 +928,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Quality factor of a series LCR circuit: $Q = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$.\nSolution:\n1. L → 2L multiplies Q by $\\sqrt{2}$; R → R/2 multiplies Q by 2.\n2. New Q = 100 × 2√2 ≈ 282.84.\nAnswer: 282.84",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -908,11 +958,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Work done by a source = charge × potential difference.\nSolution:\n1. W = qV = 20 × 15 = 300 J.\nAnswer: 300",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -936,11 +988,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: When the partition is removed in an insulated container, the total internal energy of the ideal gas is conserved; U ∝ PV for a given gas.\nSolution:\n1. $P(V_1 + V_2) = P_1V_1 + P_2V_2 \\Rightarrow P = \\frac{2\\times4.5 + 3\\times5.5}{10} = \\frac{25.5}{10} = 2.55$ atm.\n2. $= 25.5\\times10^{-1}$ atm, and the official answer takes x = 25.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_PHY_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: exact value 25.5 (printed answer 25)"
    ],
@@ -966,11 +1020,13 @@
     17
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Newton's second law along x, starting from rest.\nSolution:\n1. $a_x = \\frac{20}{2} = 10$ m/s².\n2. $x = \\frac{1}{2}a_xt^2 = \\frac{1}{2}\\times10\\times100 = 500$ m.\nAnswer: 500",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -994,11 +1050,13 @@
     17
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Modulation index $\\mu = \\frac{A_{max} - A_{min}}{A_{max} + A_{min}}$.\nSolution:\n1. $\\mu = \\frac{16 - 8}{16 + 8} = \\frac{1}{3} \\approx 0.33 = 33\\times10^{-2}$.\nAnswer: 33",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1022,11 +1080,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Apparent weight in a lift accelerating downward: $W' = m(g - a)$.\nSolution:\n1. $W' = 60(10 - 1.8) = 60\\times8.2 = 492$ N.\nAnswer: 492",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_PHY_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1055,11 +1115,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Hydrolysis of gem-dihalides: a terminal gem-dihalide gives an aldehyde, a non-terminal one gives a ketone.\nSolution:\n1. B reacts with hydroxylamine (forms an oxime), so it is a carbonyl compound; no Tollens' test means it is a ketone, not an aldehyde.\n2. The $C_4H_8O$ ketone is butan-2-one, which comes from $CH_3CCl_2CH_2CH_3$ (2,2-dichlorobutane): the gem-diol formed on hydrolysis loses water.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1088,11 +1150,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ores and the elements they contain.\nSolution:\n1. Kernite ($Na_2B_4O_7\\cdot4H_2O$): boron, (a)–(ii).\n2. Cassiterite ($SnO_2$): tin, (b)–(i).\n3. Calamine ($ZnCO_3$): zinc, (c)–(iv).\n4. Cryolite ($Na_3AlF_6$): fluorine (and Al), (d)–(iii).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1131,6 +1195,7 @@
      ]
     }
    ],
+   "explanation": "Concept: $Br_2$ with UV light brominates by a free-radical mechanism at the benzylic position (the most stable radical); it does not substitute the ring.\nSolution:\n1. The benzylic C–H of the ethyl group gives a resonance-stabilised benzylic radical.\n2. Product: 3-(1-bromoethyl)benzonitrile, $NC-C_6H_4-CH(Br)CH_3$ (meta).\n3. Ring bromination (options A–C) would need $Br_2$/$FeBr_3$ and no light.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A03",
@@ -1138,6 +1203,7 @@
     "figures/JEEM_2021-02-26_M/CHE_A03_1.png"
    ],
    "text_recall": 0.8571428571428571,
+   "explanation_check": "ok",
    "issues": [
     "model note: options are structures, described in words"
    ],
@@ -1168,11 +1234,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Angular nodes = l; radial nodes = n – l – 1.\nSolution:\n1. Two angular nodes: l = 2 (a d orbital).\n2. Two radial nodes: n – 2 – 1 = 2, so n = 5.\n3. The orbital is 5d. (Check: 4d has 1 radial node; 4f has 0 radial and 3 angular; 3p has 1 and 1.)\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1201,11 +1269,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Intramolecular versus intermolecular hydrogen bonding.\nSolution:\n1. o-Nitrophenol forms an intramolecular H-bond (OH···O–N), so its molecules do not associate; it is volatile in steam. Statement I is true.\n2. For the same reason it has a lower melting point than p-nitrophenol, which is held together by intermolecular H-bonds. Statement II is false.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1234,11 +1304,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Hinsberg test: a secondary amine gives a sulphonamide with no acidic N–H, which is insoluble in alkali.\nSolution:\n1. The amine must be secondary (options A, B, C).\n2. Ammonolysis of ethyl chloride introduces an ethyl group on nitrogen: $CH_3CH_2CH_2NH_2 + C_2H_5Cl \\rightarrow CH_3CH_2CH_2NHCH_2CH_3$.\n3. So the amine is N-ethylpropylamine. (Option C's aryl amine and option B's N-methyl group cannot come from ethyl chloride.)\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1267,11 +1339,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Dehydrohalogenation to an alkyne, then cyclic trimerisation of alkynes.\nSolution:\n1. $NaNH_2$ eliminates HBr from $CH_3CH=CHBr$ to give propyne, $CH_3C\\equiv CH$.\n2. A red-hot iron tube at 873 K trimerises three propyne molecules into a benzene ring.\n3. The product is 1,3,5-trimethylbenzene (mesitylene).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1300,11 +1374,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Properties and uses of heavy water ($D_2O$).\nSolution:\n1. A: $D_2O$ is used in exchange reactions to trace reaction mechanisms. True.\n2. B: $D_2O$ is concentrated by exhaustive (prolonged) electrolysis of water, since $H_2$ is liberated faster. True.\n3. C: bp of $D_2O$ is 101.4 °C > 100 °C. True.\n4. D: $D_2O$ is more viscous than $H_2O$, so D is false.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1333,11 +1409,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Quantitative estimation methods in organic chemistry.\nSolution:\n1. The Carius method estimates halogens and sulphur (and phosphorus), not nitrogen, so (D) is false.\n2. Nitrogen is estimated by the Dumas or Kjeldahl method.\n3. (A), (B) and (C) are correct (P is precipitated as $MgNH_4PO_4$ and weighed as $Mg_2P_2O_7$).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1366,11 +1444,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Choosing a distillation method.\nSolution:\n1. Chloroform (bp 334 K) and aniline (bp 457 K) differ greatly in boiling point, so simple distillation separates them. Statement I is true.\n2. In steam distillation the mixture boils when $p_{aniline} + p_{water} = p_{atm}$, i.e. below 373 K, well below aniline's own boiling point. Statement II is true.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1399,11 +1479,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Vitamins and their functions.\nSolution:\n1. Vitamin K is the vitamin concerned with blood clotting: it is needed to make prothrombin, and its deficiency increases (delays) blood-clotting time.\n2. Vitamins B, C and E relate to nerve and blood-cell function, scurvy and antioxidant/fertility roles respectively.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1432,11 +1514,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ozone in the atmosphere.\nSolution:\n1. The ozone layer that absorbs harmful UV radiation is in the stratosphere; the official key takes (B), the protective role of ozone against UV.\nNote: ozone near the ground (troposphere) is actually a pollutant and a component of photochemical smog, so option (A) is also defensible; the printed/official answer is (B).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_CHE_A12",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [
     "model note: printed key (2); tropospheric ozone is a constituent of photochemical smog, so (1) is arguably correct"
    ],
@@ -1467,11 +1551,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Test for sulphite: dilute acid liberates $SO_2$, which reduces acidified dichromate.\nSolution:\n1. $SO_3^{2-} + H_2SO_4 \\rightarrow SO_2\\uparrow$ + ..., so X = $SO_2$.\n2. $K_2Cr_2O_7 + 3SO_2 + H_2SO_4 \\rightarrow K_2SO_4 + Cr_2(SO_4)_3 + H_2O$, and green $Cr^{3+}$ forms, so Y = $Cr_2(SO_4)_3$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1500,11 +1586,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Solvay (ammonia–soda) process.\nSolution:\n1. $2NH_3 + H_2O + CO_2 \\rightarrow (NH_4)_2CO_3$, so A = $H_2O$.\n2. $(NH_4)_2CO_3 + H_2O + CO_2 \\rightarrow 2NH_4HCO_3$, so B = $CO_2$.\n3. $NH_4HCO_3 + NaCl \\rightarrow NH_4Cl + NaHCO_3$ (sparingly soluble, precipitates), so C = $NaHCO_3$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A14",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1533,11 +1621,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Nature of the hydrogen bond.\nSolution:\n1. Assertion: hydrogen bonding is treated as a strong dipole–dipole type of non-covalent interaction. Taken as true.\n2. Reason: F is the most electronegative element, but the H-bonds in HF are not symmetrical; H lies closer to one F (F–H···F, with unequal distances). False.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1566,11 +1656,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ionisation enthalpies across period 2, including the anomalies.\nSolution:\n1. $1s^22s^2$ (Be) = 899; $1s^22s^22p^1$ (B) = 801 (lower than Be, because the 2p electron is easier to remove).\n2. $1s^22s^22p^3$ (N) = 1402 (half-filled, extra stable); $1s^22s^22p^4$ (O) = 1314 (lower than N).\n3. (a)–(ii), (b)–(iii), (c)–(iv), (d)–(i).\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A16",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1599,11 +1691,13 @@
     25
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Lanthanoids that show the +4 oxidation state form $MO_2$.\nSolution:\n1. Ce, Pr, Nd, Tb and Dy show +4 (e.g. $CeO_2$, $PrO_2$).\n2. Yb shows +2 ($4f^{14}$) and +3, never +4, so it does not form $YbO_2$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1642,6 +1736,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Halogenation of phenol in a non-polar solvent, and the Reimer–Tiemann reaction.\nSolution:\n1. $Br_2$ in $CS_2$ at low temperature (less ionisation) gives monobromination, mainly para: A = p-bromophenol.\n2. $CHCl_3$/NaOH then $H_3O^+$ (Reimer–Tiemann, via dichlorocarbene) puts –CHO ortho to OH: B = salicylaldehyde.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A18",
@@ -1649,6 +1744,7 @@
     "figures/JEEM_2021-02-26_M/CHE_A18_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1687,6 +1783,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Neoprene is polychloroprene.\nSolution:\n1. The monomer is chloroprene, $CH_2=C(Cl)-CH=CH_2$; 1,4-addition gives the repeating unit $-[CH_2-C(Cl)=CH-CH_2]_n-$.\n2. (A) is polyacrylonitrile, (C) is melamine resin and (D) is Buna-N.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A19",
@@ -1694,6 +1791,7 @@
     "figures/JEEM_2021-02-26_M/CHE_A19_1.png"
    ],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1722,11 +1820,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Oxides of lead.\nSolution:\n1. $PbO_2$ (Pb +4) is a strong oxidising agent (inert pair effect makes Pb(IV) unstable), and it is amphoteric.\n2. It forms the positive plate (cathode material) of the lead storage battery.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_A20",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1743,20 +1843,24 @@
    "chapter": "Solutions",
    "topic": "Relative lowering of vapour pressure",
    "difficulty": "Medium",
-   "notes": "",
+   "notes": "official answer assumes Na2SO3 (i = 3); with excess SO2 the product would really be NaHSO3",
    "page_index": 25,
    "page_indices": [
     25,
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Relative lowering of vapour pressure, $\\frac{\\Delta P}{P^\\circ} = i\\frac{n_{solute}}{n_{solvent}}$ (dilute solution).\nSolution:\n1. The official solution takes $SO_2 + 2NaOH \\rightarrow Na_2SO_3 + H_2O$ with NaOH (0.01 mol) limiting, giving 0.005 mol $Na_2SO_3$.\n2. $Na_2SO_3 \\rightarrow 2Na^+ + SO_3^{2-}$, so i = 3. Water = 36/18 = 2 mol.\n3. $\\Delta P = 24\\times\\frac{3\\times0.005}{2} = 0.18$ mm Hg $= 18\\times10^{-2}$ mm Hg.\nNote: $SO_2$ (about 0.009 mol) is actually in excess, which would turn the solute into $NaHSO_3$; the official answer uses $Na_2SO_3$.\nAnswer: 18",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B01",
    "diagram_files": [],
    "text_recall": 1.0,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: official answer assumes Na2SO3 (i = 3); with excess SO2 the product would really be NaHSO3"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Chemistry",
@@ -1778,11 +1882,13 @@
     27
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Faraday's laws: charge (in faradays) = moles × electrons transferred.\nSolution:\n1. 5 electrons per $MnO_4^-$, so 5 mol × 5 = 25 F.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1806,11 +1912,13 @@
     27
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ideal gas volume of the adsorbed $O_2$.\nSolution:\n1. Moles of $O_2 = \\frac{3.12}{32} = 0.0975$.\n2. $V = \\frac{nRT}{P} = 0.0975\\times0.0821\\times300 = 2.40$ L.\n3. Per gram of Pt: $\\frac{2.40}{1.2} = 2.0$ L.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1822,25 +1930,29 @@
    "options": [],
    "question_type": "Numerical",
    "question_style": "Standard",
-   "answer": "7",
+   "answer": "8",
    "has_diagram": false,
    "chapter": "Some Basic Concepts of Chemistry",
    "topic": "Significant figures",
    "difficulty": "Easy",
-   "notes": "",
+   "notes": "printed key 7; 50000.020 has 8 significant figures (zeros between non-zero digits and trailing zeros after the decimal point count)",
    "page_index": 27,
    "page_indices": [
     27,
     28
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Rules for significant figures: all non-zero digits count; zeros between non-zero digits count; trailing zeros after a decimal point count; the power of ten does not affect the count.\nSolution:\n1. 50000.020: the digits 5, 0, 0, 0, 0 (zeros between 5 and 2), then 0, 2 after the decimal, and the final trailing 0.\n2. Total = 8 significant figures.\nNote: the printed key gives 7, but by the standard rules 50000.020 has 8 significant figures.\nAnswer: 8",
    "answer_source": "printed with question",
-   "model_confidence": "high",
+   "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_CHE_B04",
    "diagram_files": [],
    "text_recall": null,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: printed key 7; 50000.020 has 8 significant figures (zeros between non-zero digits and trailing zeros after the decimal p"
+   ],
+   "confidence": 0.8
   },
   {
    "subject": "Chemistry",
@@ -1862,11 +1974,13 @@
     28
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Structure of dimanganese decacarbonyl.\nSolution:\n1. $[Mn_2(CO)_{10}]$ consists of two $Mn(CO)_5$ units joined by an Mn–Mn bond.\n2. All 10 CO ligands are terminal, so there are 0 bridging CO.\nAnswer: 0",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B05",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1890,11 +2004,13 @@
     28
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A reaction is spontaneous when $\\Delta G = \\Delta H - T\\Delta S < 0$.\nSolution:\n1. $80000 - T(2T) < 0 \\Rightarrow T^2 > 40000$.\n2. T > 200 K, so the minimum temperature is 200 K.\nAnswer: 200",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1918,11 +2034,13 @@
     28
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $E_a(\\text{reverse}) = E_a(\\text{forward}) - \\Delta E$.\nSolution:\n1. $E_a(\\text{rev}) = 30 - (-20) = 50$ kJ.\nAnswer: 50",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1946,11 +2064,13 @@
     29
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Compressibility factor $Z = \\frac{PV_m}{RT}$.\nSolution:\n1. From $P(V_m - b) = RT$: $PV_m = RT + Pb$, so $Z = 1 + \\frac{Pb}{RT}$.\n2. $\\left(\\frac{\\partial Z}{\\partial P}\\right)_T = \\frac{b}{RT}$, so x = 1.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1967,20 +2087,24 @@
    "chapter": "Chemical Equilibrium",
    "topic": "Kp from degree of dissociation",
    "difficulty": "Hard",
-   "notes": "",
+   "notes": "exact working gives Kp = 0.727 (x = 73); official answer 74",
    "page_index": 28,
    "page_indices": [
     28,
     29
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Use the total moles at equilibrium (from PV = nRT) to find the extent of dissociation, then $K_p$.\nSolution:\n1. $n_{total} = \\frac{1.9\\times25}{0.08206\\times300} = 1.93 = 1 + 2\\alpha$, so α ≈ 0.465.\n2. $K_p = \\frac{p_Ap_B^2}{p_{AB_2}} = \\frac{\\alpha(2\\alpha)^2}{1 - \\alpha}\\left(\\frac{P}{n_{total}}\\right)^2 = \\frac{4\\alpha^3}{1 - \\alpha}\\left(\\frac{RT}{V}\\right)^2$.\n3. $= \\frac{4(0.465)^3}{0.535}\\times(0.985)^2 \\approx 0.73$, i.e. about $73\\times10^{-2}$.\nNote: the official answer, from its rounded working, is 74.\nAnswer: 74",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B09",
    "diagram_files": [],
    "text_recall": 1.0,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: exact working gives Kp = 0.727 (x = 73); official answer 74"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Chemistry",
@@ -2002,11 +2126,13 @@
     29
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Dichromate–chromate equilibrium depends on pH.\nSolution:\n1. $Cr_2O_7^{2-} + 2OH^- \\rightarrow 2CrO_4^{2-} + H_2O$ (orange to yellow).\n2. In $CrO_4^{2-}$: x – 8 = –2, so x = +6 (no change in oxidation state).\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_CHE_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2035,11 +2161,13 @@
     30
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Count digit multisets, then arrangements (multinomial).\nSolution:\n1. Let the number use $a$ ones, $b$ twos, $c$ threes: $a + b + c = 7$ and $a + 2b + 3c = 10$, so $b + 2c = 3$.\n2. $(b, c) = (3, 0)$, $a = 4$: arrangements $\\frac{7!}{4!\\,3!} = 35$.\n3. $(b, c) = (1, 1)$, $a = 5$: arrangements $\\frac{7!}{5!\\,1!\\,1!} = 42$.\n4. Total $= 35 + 42 = 77$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2068,11 +2196,13 @@
     30
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: General term of a binomial expansion, then maximise over $x$.\nSolution:\n1. $T_{r+1} = \\binom{10}{r}(tx^{1/5})^{10-r}\\left(\\frac{(1-x)^{1/10}}{t}\\right)^r$; independent of $t$ when $10 - r = r$, i.e. $r = 5$.\n2. Term $= \\binom{10}{5}x(1-x)^{1/2} = 252\\,x\\sqrt{1-x}$.\n3. $f(x) = x\\sqrt{1-x}$: $f'(x) = \\sqrt{1-x} - \\frac{x}{2\\sqrt{1-x}} = 0 \\Rightarrow x = \\frac{2}{3}$ (a maximum).\n4. $f\\left(\\frac{2}{3}\\right) = \\frac{2}{3}\\cdot\\frac{1}{\\sqrt3} = \\frac{2}{3\\sqrt3}$.\n5. Maximum term $= \\frac{10!}{(5!)^2}\\cdot\\frac{2}{3\\sqrt3} = \\frac{2\\cdot10!}{3\\sqrt3(5!)^2}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2101,11 +2231,13 @@
     31
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $x - [x]$ is periodic with period 1.\nSolution:\n1. On $[n-1, n)$, $[x] = n - 1$, so $\\int_{n-1}^{n}e^{x-(n-1)}dx = \\int_0^1 e^t\\,dt = e - 1$.\n2. Each of the 100 integrals equals $e - 1$, so the sum is $100(e - 1)$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2134,11 +2266,13 @@
     31
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Exponential growth $\\frac{dN}{dt} = \\lambda N \\Rightarrow N = N_0e^{\\lambda t}$.\nSolution:\n1. $N = 1000e^{\\lambda t}$; after 2 h, $1200 = 1000e^{2\\lambda}$, so $\\lambda = \\frac{1}{2}\\ln\\frac{6}{5}$.\n2. $N = 2000$: $e^{\\lambda T} = 2 \\Rightarrow T = \\frac{\\ln 2}{\\lambda} = \\frac{2\\ln 2}{\\ln(6/5)}$.\n3. Comparing with $\\frac{k}{\\ln(6/5)}$: $k = 2\\ln 2$, so $\\left(\\frac{k}{\\ln 2}\\right)^2 = 4$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2167,11 +2301,13 @@
     32
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\vec a\\times(\\vec a\\times\\vec c) = (\\vec a\\cdot\\vec c)\\vec a - |\\vec a|^2\\vec c$.\nSolution:\n1. Since $\\vec a\\cdot\\vec b = 0$: $\\vec a\\times(\\vec a\\times\\vec b) = -|\\vec a|^2\\vec b$.\n2. Apply the same step again to $-|\\vec a|^2\\vec b$ (still perpendicular to $\\vec a$): $\\vec a\\times(\\vec a\\times(-|\\vec a|^2\\vec b)) = -|\\vec a|^2(-|\\vec a|^2\\vec b) = |\\vec a|^4\\vec b$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2200,11 +2336,13 @@
     33
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Terms of a GP $ar^{n-1}$; use symmetric products.\nSolution:\n1. $T_3T_5 = (ar^3)^2 = 25 \\Rightarrow ar^3 = 5$ (terms positive, series increasing).\n2. $T_2 + T_6 = ar + ar^5 = \\frac{5}{r^2} + 5r^2 = \\frac{25}{2} \\Rightarrow r^2 + \\frac{1}{r^2} = \\frac{5}{2}$, so $r^2 = 2$ (increasing, $r > 1$).\n3. $T_4 + T_6 + T_8 = ar^3(1 + r^2 + r^4) = 5(1 + 2 + 4) = 35$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2233,11 +2371,13 @@
     34
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Planes are parallel when their normal vectors are proportional.\nSolution:\n1. Normals: $P_1$: $(3, 15, 21) = 3(1, 5, 7)$; $P_2$: $(1, -3, -1)$; $P_3$: $(2, 10, 14) = 2(1, 5, 7)$.\n2. $P_1$ and $P_3$ have proportional normals: $P_1$ is $x + 5y + 7z = 3$ and $P_3$ is $x + 5y + 7z = \\frac{5}{2}$, distinct parallel planes.\n3. $(1, -3, -1)$ is not proportional to $(1, 5, 7)$, so $P_2$ is parallel to neither.\nWhy others are wrong: (B), (C) and (D) all need $P_2$ parallel to another plane, which fails.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2266,11 +2406,13 @@
     34
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Arithmetico-geometric series; use $\\sum_{n\\ge1}\\frac{n}{3^n} = \\frac{1/3}{(1-1/3)^2} = \\frac{3}{4}$.\nSolution:\n1. After the first term, the numerators are $5n - 3$: $S = 1 + \\sum_{n\\ge1}\\frac{5n-3}{3^n}$.\n2. $\\sum\\frac{5n}{3^n} = 5\\cdot\\frac{3}{4} = \\frac{15}{4}$; $\\sum\\frac{3}{3^n} = 3\\cdot\\frac{1}{2} = \\frac{3}{2}$.\n3. $S = 1 + \\frac{15}{4} - \\frac{3}{2} = \\frac{13}{4}$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A08",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2299,11 +2441,13 @@
     35
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Row operations do not change a determinant.\nSolution:\n1. $R_1 \\to R_1 - R_2$: $(-2(a+2), -1, 0)$; $R_2 \\to R_2 - R_3$: $(-2(a+3), -1, 0)$.\n2. Expand along column 3 (only the $R_3$ entry 1 remains): $\\Delta = (-2(a+2))(-1) - (-1)(-2(a+3)) = 2(a+2) - 2(a+3) = -2$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A09",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2332,11 +2476,13 @@
     36
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\sin^{-1}x + \\cos^{-1}x = \\frac{\\pi}{2}$ and $\\cos2\\theta = \\frac{1-\\tan^2\\theta}{1+\\tan^2\\theta}$.\nSolution:\n1. Let the common ratio be $k$: $\\sin^{-1}x = ak$, $\\cos^{-1}x = bk$, so $(a+b)k = \\frac{\\pi}{2}$, $k = \\frac{\\pi}{2(a+b)}$.\n2. $\\tan^{-1}y = ck = \\frac{\\pi c}{2(a+b)}$, so $\\frac{\\pi c}{a+b} = 2\\tan^{-1}y$.\n3. $\\cos(2\\tan^{-1}y) = \\frac{1-y^2}{1+y^2}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A10",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2365,11 +2511,13 @@
     36
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For symmetric $A = \\begin{pmatrix}a & b\\\\ b & d\\end{pmatrix}$, $\\operatorname{tr}(A^2) = a^2 + 2b^2 + d^2$.\nSolution:\n1. $a^2 + 2b^2 + d^2 = 1$ with integers forces $b = 0$ and $a^2 + d^2 = 1$.\n2. $(a, d) = (\\pm1, 0)$ or $(0, \\pm1)$: 4 matrices.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2398,11 +2546,13 @@
     37
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Find the vertices, then compare side lengths.\nSolution:\n1. $x - y = 0$ and $x + 2y = 3$ meet at $(1, 1)$; $x - y = 0$ and $2x + y = 6$ at $(2, 2)$; $x + 2y = 3$ and $2x + y = 6$ at $(3, 0)$.\n2. Sides: $(1,1)$–$(2,2)$: $\\sqrt2$; $(2,2)$–$(3,0)$: $\\sqrt5$; $(1,1)$–$(3,0)$: $\\sqrt5$.\n3. Two equal sides, and $2 + 5 \\ne 5$, so the triangle is isosceles but not right-angled.\nWhy others are wrong: not all sides equal (A); no Pythagorean relation (D).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A12",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2431,11 +2581,13 @@
     38
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The slope $s = y'$ has a local maximum where $s' = 0$ and $s'' < 0$.\nSolution:\n1. $s = 2x^3 - 15x^2 + 36x - 19$, $s' = 6x^2 - 30x + 36 = 6(x-2)(x-3)$.\n2. $s'' = 12x - 30$: at $x = 2$, $s'' = -6 < 0$, a local maximum of the slope (the intended meaning, since $s$ is unbounded as $x \\to \\infty$).\n3. $y(2) = 8 - 40 + 72 - 38 = 2$, so the point is $(2, 2)$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2464,11 +2616,13 @@
     39
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A Lipschitz bound of order 2 forces the derivative to vanish.\nSolution:\n1. $\\left|\\frac{f(x) - f(y)}{x - y}\\right| \\le |x - y|$; letting $y \\to x$ gives $f'(x) = 0$ for all $x$.\n2. So $f$ is constant: $f(x) = f(0) = 1 > 0$ for all $x$.\nWhy others are wrong: $f \\equiv 1$ is never negative (A) or zero (C), and takes only one value (B).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2497,11 +2651,13 @@
     39
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: King property on a symmetric interval: replace $x$ by $-x$.\nSolution:\n1. $I = \\int_{-\\pi/2}^{\\pi/2}\\frac{\\cos^2x}{1+3^x}dx$; with $x \\to -x$, $I = \\int_{-\\pi/2}^{\\pi/2}\\frac{3^x\\cos^2x}{1+3^x}dx$.\n2. Adding: $2I = \\int_{-\\pi/2}^{\\pi/2}\\cos^2x\\,dx = \\frac{\\pi}{2}$, so $I = \\frac{\\pi}{4}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A15",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2518,25 +2674,29 @@
    ],
    "question_type": "MCQ-Single",
    "question_style": "Standard",
-   "answer": "C",
+   "answer": "D",
    "has_diagram": false,
    "chapter": "Limits, Continuity and Differentiability",
    "topic": "Trigonometric limits",
    "difficulty": "Easy",
-   "notes": "",
+   "notes": "printed key C (solution wrongly doubles numerator); limit = 2 sin h/(3h) = 2/3",
    "page_index": 39,
    "page_indices": [
     39,
     40
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin\\left(\\theta - \\frac{\\pi}{6}\\right)$ and $\\lim\\frac{\\sin h}{h} = 1$.\nSolution:\n1. Numerator: $\\sqrt3\\sin\\left(\\frac{\\pi}{6}+h\\right) - \\cos\\left(\\frac{\\pi}{6}+h\\right) = 2\\sin h$.\n2. Denominator: $\\sqrt3h(\\sqrt3\\cos h - \\sin h) \\to \\sqrt3h\\cdot\\sqrt3 = 3h$ as $h \\to 0$.\n3. Limit $= \\lim\\frac{2\\sin h}{3h} = \\frac{2}{3}$.\nNote: The printed key gives (C) $\\frac{4}{3}$, but its solution wrongly doubles the numerator. The correct value is $\\frac{2}{3}$.\nAnswer: (D)",
    "answer_source": "printed with question",
-   "model_confidence": "high",
+   "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_MAT_A16",
    "diagram_files": [],
    "text_recall": null,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: printed key C (solution wrongly doubles numerator); limit = 2 sin h/(3h) = 2/3"
+   ],
+   "confidence": 0.8
   },
   {
    "subject": "Mathematics",
@@ -2563,11 +2723,13 @@
     41
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\binom{n}{r} = \\binom{n}{s} \\Rightarrow r + s = n$ (for $r \\ne s$).\nSolution:\n1. $\\binom{n}{7}\\frac{1}{2^n} = \\binom{n}{9}\\frac{1}{2^n} \\Rightarrow n = 16$.\n2. $P(2\\text{ heads}) = \\binom{16}{2}\\frac{1}{2^{16}} = \\frac{120}{2^{16}} = \\frac{15}{2^{13}}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2596,11 +2758,13 @@
     41
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Four points are coplanar when the scalar triple product of three edge vectors from one of them is 0.\nSolution:\n1. From $(1, 5, 35)$: $(6, 0, -30)$, $(0, \\lambda-5, -28)$, $(2\\lambda-1, -4, -33)$.\n2. $\\begin{vmatrix}6 & 0 & -30\\\\ 0 & \\lambda-5 & -28\\\\ 2\\lambda-1 & -4 & -33\\end{vmatrix} = 6[-33(\\lambda-5) - 112] - 30[0 - (\\lambda-5)(2\\lambda-1)]$.\n3. This simplifies to $60\\lambda^2 - 528\\lambda + 468 = 0$.\n4. Sum of roots $= \\frac{528}{60} = \\frac{44}{5}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A18",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2629,11 +2793,13 @@
     42
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The equivalence class of a point is the set of points related to it: here, the points at the same distance from the origin.\nSolution:\n1. The distance of $(1, -1)$ from the origin is $\\sqrt2$.\n2. Class $= \\{(x, y) : x^2 + y^2 = 2\\}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2672,6 +2838,7 @@
      ]
     }
    ],
+   "explanation": "Concept: In a circle with diameter $OB$ and chord $PQ \\perp OB$ at $A$: $PA^2 = OA\\cdot AB$ (intersecting chords).\nSolution:\n1. $OA = 1$, $AB = 13 - 1 = 12$, so $PA^2 = 12$, $PA = 2\\sqrt3$, $PQ = 4\\sqrt3$.\n2. Area of $\\triangle PQB = \\frac{1}{2}\\cdot PQ\\cdot AB = \\frac{1}{2}\\cdot4\\sqrt3\\cdot12 = 24\\sqrt3$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_A20",
@@ -2679,6 +2846,7 @@
     "figures/JEEM_2021-02-26_M/MAT_A20_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2702,11 +2870,13 @@
     44
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Sketch $y = ||x-1| - 2|$ by transforming $y = |x|$.\nSolution:\n1. $|x-1| - 2$ is a V with vertex $(1, -2)$ and zeros at $x = -1$ and $x = 3$.\n2. Taking the modulus reflects the part below the axis: the graph is a W touching the x-axis at $(-1, 0)$ and $(3, 0)$ with a peak at $(1, 2)$.\n3. The only closed region formed with the x-axis is the triangle $(-1, 0)$, $(1, 2)$, $(3, 0)$, of area $\\frac{1}{2}\\cdot4\\cdot2 = 4$.\nNote: As printed, the curve alone bounds no region, so the question is flawed. ALLEN marks it Bonus; the NTA key gives 8, which is recorded here.\nAnswer: 8",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-26_M_MAT_B01",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [
     "model note: NTA answer 8; ALLEN marks Bonus (the region is not closed as stated)"
    ],
@@ -2732,11 +2902,13 @@
     44
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $a\\sin x + b\\cos x$ takes every value in $[-\\sqrt{a^2+b^2}, \\sqrt{a^2+b^2}]$.\nSolution:\n1. $3\\sin x + 4\\cos x \\in [-5, 5]$, so $-5 \\le k + 1 \\le 5$, i.e. $-6 \\le k \\le 4$.\n2. Integers from $-6$ to $4$: 11.\nAnswer: 11",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2760,11 +2932,13 @@
     44
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\binom{n}{r} = \\binom{n}{n-r}$ and $\\sum r\\binom{n}{r} = n2^{n-1}$.\nSolution:\n1. The sum is $\\sum_{r=0}^{30}(30 - r)\\binom{30}{r}$ (the $r = 30$ term is 0).\n2. Put $j = 30 - r$: $\\sum_{j}j\\binom{30}{j} = 30\\cdot2^{29} = 15\\cdot2^{30}$.\n3. $n = 15$ (odd), $m = 30$, so $n + m = 45$.\nAnswer: 45",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B03",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2788,11 +2962,13 @@
     45
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Substitute $u = e^{\\sin y}$ to get a linear equation.\nSolution:\n1. $\\frac{du}{dx} = e^{\\sin y}\\cos y\\frac{dy}{dx}$, so $u' + u\\cos x = \\cos x$, i.e. $(u - 1)' = -\\cos x\\,(u - 1)$.\n2. $u - 1 = Ce^{-\\sin x}$; $y(0) = 0$ gives $u(0) = 1$, so $C = 0$.\n3. $u \\equiv 1 \\Rightarrow \\sin y = 0 \\Rightarrow y \\equiv 0$.\n4. The expression is $1 + 0 + 0 + 0 = 1$.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2816,11 +2992,13 @@
     46
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Change of base, $\\log_4 t = \\frac{1}{2}\\log_2 t$, and check the domain.\nSolution:\n1. Domain: $x > 3$.\n2. $\\frac{1}{2}\\log_2(x-1) = \\log_2(x-3) \\Rightarrow x - 1 = (x-3)^2 \\Rightarrow x^2 - 7x + 10 = 0$, so $x = 2$ or $5$.\n3. Only $x = 5$ satisfies $x > 3$, so there is 1 solution.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B05",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2844,11 +3022,13 @@
     46
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Solve as a quadratic in $\\cos x$.\nSolution:\n1. $\\sqrt3c^2 - (\\sqrt3 - 1)c - 1 = 0$ factorises as $(c - 1)(\\sqrt3c + 1) = 0$.\n2. $\\cos x = 1 \\Rightarrow x = 0$ (in the interval).\n3. $\\cos x = -\\frac{1}{\\sqrt3} < 0$ has no solution in $\\left[0, \\frac{\\pi}{2}\\right]$.\n4. Number of solutions: 1.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2872,11 +3052,13 @@
     47
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The line joining the two points gives the plane's normal.\nSolution:\n1. Normal $= (-1+2, -16+21, 23-29) = (1, 5, -6)$.\n2. Plane through $(4, -2, 2)$: $(x-4) + 5(y+2) - 6(z-2) = 0$.\n3. For $(\\lambda, 2, 1)$: $\\lambda - 4 + 20 + 6 = 0 \\Rightarrow \\lambda = -22$.\n4. $\\frac{\\lambda}{11} = -2$: $4 + 8 - 4 = 8$.\nAnswer: 8",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2900,11 +3082,13 @@
     47
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Eliminate the one parameter; degree is the power of the highest derivative once the equation is free of radicals.\nSolution:\n1. $y^2 = ax + \\frac{a^{3/2}}{2}$; differentiating gives $2yy' = a$.\n2. Substitute: $y^2 = 2xyy' + \\frac{(2yy')^{3/2}}{2}$, i.e. $2(y^2 - 2xyy') = (2yy')^{3/2}$.\n3. Squaring: $4(y^2 - 2xyy')^2 = 8(yy')^3$, so the order is 1 and the degree is 3.\n4. Difference $= 3 - 1 = 2$.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B08",
    "diagram_files": [],
    "text_recall": 0.9090909090909091,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2928,11 +3112,13 @@
     48
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Factorise and use cube roots of unity.\nSolution:\n1. $x^3 - 2x^2 + 2x - 1 = (x - 1)(x^2 - x + 1)$; the roots are $1, -\\omega, -\\omega^2$.\n2. 162 is even and a multiple of 3: $(-\\omega)^{162} = \\omega^{162} = 1$, and likewise $(-\\omega^2)^{162} = 1$.\n3. Sum $= 1 + 1 + 1 = 3$.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B09",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2956,11 +3142,13 @@
     48
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $|\\sin2x|$ has period $\\frac{\\pi}{2}$.\nSolution:\n1. $\\int_0^{\\pi}|\\sin2x|dx = 2\\int_0^{\\pi/2}\\sin2x\\,dx = 2\\left[-\\frac{\\cos2x}{2}\\right]_0^{\\pi/2} = 2\\cdot1 = 2$.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B10",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   }
