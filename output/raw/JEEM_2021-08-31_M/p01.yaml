@@ -1,0 +1,112 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A helicopter is flying horizontally with a speed 'v' at an altitude 'h' has to drop a food packet for a man on the ground. What is the distance of helicopter from the man when the food packet is dropped?
+  o: ['$\sqrt{\frac{2ghv^2 + 1}{h^2}}$', '$\sqrt{2ghv^2 + h^2}$', '$\sqrt{\frac{2v^2h}{g} + h^2}$', '$\sqrt{\frac{2gh}{v^2} + h^2}$']
+  a: C
+  ch: Kinematics
+  tp: Horizontal projectile
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    In the following logic circuit the sequence of the inputs A, B are (0, 0), (0,1), (1, 0) and (1, 1). The output Y for this sequence will be :
+  o: ['1, 0, 1, 0', '0, 1, 0, 1', '1, 1, 1, 0', '0, 0, 1, 1']
+  a: C
+  ch: Semiconductor Electronics
+  tp: Logic gates
+  df: E
+  fig: [[1, 795, 145, 860, 395]]
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    Two particles A and B having charges $20\ \mu$C and $-5\ \mu$C respectively are held fixed with a separation of 5 cm. At what position a third charged particle should be placed so that it does not experience a net electric force?
+  o: ['At 5 cm from $20\ \mu$C on the left side of system', 'At 5 cm from $-5\ \mu$C on the right side', 'At 1.25 cm from $-5\ \mu$C between two charges', 'At midpoint between two charges']
+  a: B
+  ch: Electrostatics
+  tp: Null point for charges
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A reversible engine has an efficiency of $\frac{1}{4}$. If the temperature of the sink is reduced by 58°C, its efficiency becomes double. Calculate the temperature of the sink :
+  o: ['174°C', '280°C', '180.4°C', '382°C']
+  a: A
+  ch: Thermodynamics
+  tp: Carnot engine efficiency
+  df: M
+  nt: 'Official NTA answer (1); ALLEN answer BONUS (sink temperature comes out 174 K, not °C)'
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An object is placed at the focus of concave lens having focal length f. What is the magnification and distance of the image from the optical centre of the lens?
+  o: ['1, $\infty$', 'Very high, $\infty$', '$\frac{1}{2}$, $\frac{f}{2}$', '$\frac{1}{4}$, $\frac{f}{4}$']
+  a: C
+  ch: Ray Optics and Optical Instruments
+  tp: Concave lens image
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Graph
+  q: |-
+    A sample of a radioactive nucleus A disintegrates to another radioactive nucleus B, which in turn disintegrates to some other stable nucleus C. Plot of a graph showing the variation of number of atoms of nucleus B vesus time is : (Assume that at t = 0, there are no B atoms in the sample)
+  o: ['[figure] decreasing exponential from maximum', '[figure] rises from zero to a maximum then decreases', '[figure] rises linearly then constant', '[figure] rises linearly to a peak then decays']
+  a: B
+  ch: Nuclei
+  tp: Successive radioactive decay
+  df: E
+  fig: [[2, 535, 555, 735, 910]]
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A coil having N turns is wound tightly in the form of a spiral with inner and outer radii 'a' and 'b' respectively. Find the magnetic field at centre, when a current I passes through coil :
+  o: ['$\frac{\mu_0IN}{2(b - a)}\log_e\left(\frac{b}{a}\right)$', '$\frac{\mu_0I}{8}\left[\frac{a + b}{a - b}\right]$', '$\frac{\mu_0I}{4(a - b)}\left[\frac{1}{a} - \frac{1}{b}\right]$', '$\frac{\mu_0I}{8}\left(\frac{a - b}{a + b}\right)$']
+  a: A
+  ch: Moving Charges and Magnetism
+  tp: Field of spiral coil
+  df: M
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A body of mass M moving at speed $V_0$ collides elastically with a mass 'm' at rest. After the collision, the two masses move at angles $\theta_1$ and $\theta_2$ with respect to the initial direction of motion of the body of mass M. The largest possible value of the ratio M/m, for which the angles $\theta_1$ and $\theta_2$ will be equal, is :
+  o: ['4', '1', '3', '2']
+  a: C
+  ch: Work, Energy and Power
+  tp: Oblique elastic collision
+  df: H
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The masses and radii of the earth and moon are ($M_1$, $R_1$) and ($M_2$, $R_2$) respectively. Their centres are at a distance 'r' apart. Find the minimum escape velocity for a particle of mass 'm' to be projected from the middle of these two masses:
+  o: ['$V = \frac{1}{2}\sqrt{\frac{4G(M_1 + M_2)}{r}}$', '$V = \sqrt{\frac{4G(M_1 + M_2)}{r}}$', '$V = \frac{1}{2}\sqrt{\frac{2G(M_1 + M_2)}{r}}$', '$V = \frac{\sqrt{2G}(M_1 + M_2)}{r}$']
+  a: B
+  ch: Gravitation
+  tp: Escape velocity
+  df: E

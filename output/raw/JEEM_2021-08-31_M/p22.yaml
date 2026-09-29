@@ -1,0 +1,158 @@
+- n: 17
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    $\lim_{x\to0}\frac{\sin^2(\pi\cos^4x)}{x^4}$ is equal to :
+  o: ['$\pi^2$', '$2\pi^2$', '$4\pi^2$', '$4\pi$']
+  a: C
+  ch: Limits, Continuity and Differentiability
+  tp: Trigonometric limits
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    A vertical pole fixed to the horizontal ground is divided in the ratio 3 : 7 by a mark on it with lower part shorter than the upper part. If the two parts subtend equal angles at a point on the ground 18 m away from the base of the pole, then the height of the pole (in meters) is :
+  o: ['$12\sqrt{15}$', '$12\sqrt{10}$', '$8\sqrt{10}$', '$6\sqrt{10}$']
+  a: B
+  ch: Heights and Distances
+  tp: Angles subtended by parts of pole
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    If $a_r = \cos\frac{2r\pi}{9} + i\sin\frac{2r\pi}{9}$, r = 1, 2, 3,..., $i = \sqrt{-1}$, then the determinant $\begin{vmatrix} a_1 & a_2 & a_3 \\ a_4 & a_5 & a_6 \\ a_7 & a_8 & a_9 \end{vmatrix}$ is equal to :
+  o: ['$a_2a_6 - a_4a_8$', '$a_9$', '$a_1a_9 - a_3a_7$', '$a_5$']
+  a: C
+  ch: Matrices and Determinants
+  tp: Determinant with roots of unity
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    The line $12x\cos\theta + 5y\sin\theta = 60$ is tangent to which of the following curves?
+  o: ['$x^2 + y^2 = 169$', '$144x^2 + 25y^2 = 3600$', '$25x^2 + 12y^2 = 3600$', '$x^2 + y^2 = 60$']
+  a: B
+  ch: Conic Sections
+  tp: Tangent to ellipse in parametric form
+  df: E
+- n: 1
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    Let [t] denote the greatest integer $\le$ t. Then the value of $8\cdot\int_{-1/2}^{1}([2x] + |x|)\,dx$ is _________.
+  a: '5'
+  ch: Definite Integration
+  tp: Greatest integer and modulus integral
+  df: E
+- n: 2
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    A point z moves in the complex plane such that $\arg\left(\frac{z - 2}{z + 2}\right) = \frac{\pi}{4}$, then the minimum value of $|z - 9\sqrt{2} - 2i|^2$ is equal to _________.
+  a: '98'
+  ch: Complex Numbers
+  tp: Locus using argument, minimum distance
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    The square of the distance of the point of intersection of the line $\frac{x - 1}{2} = \frac{y - 2}{3} = \frac{z + 1}{6}$ and the plane $2x - y + z = 6$ from the point (–1, –1, 2) is _________.
+  a: '61'
+  ch: Three Dimensional Geometry
+  tp: Intersection of line and plane
+  df: E
+- n: 4
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    If 'R' is the least value of 'a' such that the function $f(x) = x^2 + ax + 1$ is increasing on [1, 2] and 'S' is the greatest value of 'a' such that the function $f(x) = x^2 + ax + 1$ is decreasing on [1, 2], then the value of |R – S| is _________.
+  a: '2'
+  ch: Application of Derivatives
+  tp: Monotonicity
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    The mean of 10 numbers $7\times8$, $10\times10$, $13\times12$, $16\times14$, .... is _________.
+  a: '398'
+  ch: Statistics
+  tp: Mean of series
+  df: E
+- n: 6
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    If the variable line $3x + 4y = \alpha$ lies between the two circles $(x - 1)^2 + (y - 1)^2 = 1$ and $(x - 9)^2 + (y - 1)^2 = 4$, without intercepting a chord on either circle, then the sum of all the integral values of $\alpha$ is _________.
+  a: '165'
+  ch: Circles
+  tp: Line between two circles
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    The number of six letter words (with or without meaning), formed using all the letters of the word 'VOWELS', so that all the consonants never come together, is _________.
+  a: '576'
+  ch: Permutations and Combinations
+  tp: Arrangements with restriction
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    If $x\phi(x) = \int_5^x(3t^2 - 2\phi'(t))\,dt$, x > –2, and $\phi(0) = 4$, then $\phi(2)$ is _________.
+  a: '4'
+  ch: Definite Integration
+  tp: Integral equation
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    If $\left(\frac{3^6}{4^4}\right)k$ is the term, independent of x, in the binomial expansion of $\left(\frac{x}{4} - \frac{12}{x^2}\right)^{12}$, then k is equal to _________.
+  a: '55'
+  ch: Binomial Theorem
+  tp: Term independent of x
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    An electric instrument consists of two units. Each unit must function independently for the instrument to operate. The probability that the first unit functions is 0.9 and that of the second unit is 0.8. The instrument is switched on and it fails to operate. If the probability that only the first unit failed and second unit is functioning is p, then 98 p is equal to _________.
+  a: '28'
+  ch: Probability
+  tp: Conditional probability
+  df: M

@@ -1,0 +1,131 @@
+- n: 10
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A small square loop of side 'a' and one turn is placed inside a larger square loop of side b and one turn (b >> a). The two loops are coplanar with their centres coinciding. If a current I is passed in the square loop of side 'b', then the coefficient of mutual inductance between the two loops is :
+  o: ['$\frac{\mu_0}{4\pi}8\sqrt{2}\frac{a^2}{b}$', '$\frac{\mu_0}{4\pi}\frac{8\sqrt{2}}{a}$', '$\frac{\mu_0}{4\pi}8\sqrt{2}\frac{b^2}{a}$', '$\frac{\mu_0}{4\pi}\frac{8\sqrt{2}}{b}$']
+  a: A
+  ch: Electromagnetic Induction
+  tp: Mutual inductance
+  df: M
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  st: Graph
+  q: |-
+    Choose the correct waveform that can represent the voltage across R of the following circuit, assuming the diode is ideal one:
+    [figure: $V_i = 10\sin\omega t$ source, diode D, resistor R and 3V battery in series]
+  o: ['[figure] sine wave with portion between +3 and –3 levels marked', '[figure] sine wave with levels +3 and –3 (variant)', '[figure] output only above +3 V (clipped waveform)', '[figure] sine wave clipped between –3 and +3 levels']
+  a: C
+  ch: Semiconductor Electronics
+  tp: Diode clipper circuit
+  df: M
+  c: m
+  nt: 'Official NTA answer (3); ALLEN answer (1). Graph options described approximately'
+  fig: [[4, 595, 110, 690, 400], [4, 695, 145, 900, 390], [4, 75, 575, 265, 830]]
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A uniform heavy rod of weight 10 kg ms$^{-2}$, cross-sectional area 100 cm² and length 20 cm is hanging from a fixed support. Young modulus of the material of the rod is $2\times10^{11}\ \text{Nm}^{-2}$. Neglecting the lateral contraction, find the elongation of rod due to its own weight.
+  o: ['$2\times10^{-9}$ m', '$5\times10^{-8}$ m', '$4\times10^{-8}$ m', '$5\times10^{-10}$ m']
+  a: D
+  ch: Mechanical Properties of Solids
+  tp: Elongation due to own weight
+  df: E
+- n: 13
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Two plane mirrors $M_1$ and $M_2$ are at right angle to each other shown. A point source 'P' is placed at 'a' and '2a' meter away from $M_1$ and $M_2$ respectively. The shortest distance between the images thus formed is : (Take $\sqrt{5} = 2.3$)
+  o: ['3a', '4.6 a', '2.3 a', '$2\sqrt{10}$ a']
+  a: B
+  ch: Ray Optics and Optical Instruments
+  tp: Images in perpendicular mirrors
+  df: M
+  fig: [[5, 170, 210, 272, 330]]
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  st: Match
+  q: |-
+    Match List-I with List-II.
+    List-I: (a) Torque; (b) Impulse; (c) Tension; (d) Surface Tension
+    List-II: (i) $MLT^{-1}$; (ii) $MT^{-2}$; (iii) $ML^2T^{-2}$; (iv) $MLT^{-2}$
+    Choose the most appropriate answer from the option given below :
+  o: ['(a)–(iii), (b)–(i), (c)–(iv), (d)–(ii)', '(a)–(ii), (b)–(i), (c)–(iv), (d)–(iii)', '(a)–(i), (b)–(iii), (c)–(iv), (d)–(ii)', '(a)–(iii), (b)–(iv), (c)–(i), (d)–(ii)']
+  a: A
+  ch: Units and Measurements
+  tp: Dimensional formulae
+  df: E
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    For an ideal gas the instantaneous change in pressure 'p' with volume 'v' is given by the equation $\frac{dp}{dv} = -ap$. If $p = p_0$ at v = 0 is the given boundary condition, then the maximum temperature one mole of gas can attain is : (Here R is the gas constant)
+  o: ['$\frac{p_0}{aeR}$', '$\frac{ap_0}{eR}$', 'infinity', '0°C']
+  a: A
+  ch: Kinetic Theory of Gases
+  tp: Maximum temperature in process
+  df: M
+- n: 16
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    Which of the following equations is dimensionally incorrect ?
+    Where t = time, h = height, s = surface tension, $\theta$ = angle, $\rho$ = density, a, r = radius, g = acceleration due to gravity, v = volume , p = pressure, W = work done, $\Gamma$ = torque, $\epsilon$ = permittivity, E = electric field, J = current density, L = length.
+  o: ['$v = \frac{\pi pa^4}{8\eta L}$', '$h = \frac{2s\cos\theta}{\rho rg}$', '$J = \epsilon\frac{\partial E}{\partial t}$', '$W = \Gamma\theta$']
+  a: A
+  ch: Units and Measurements
+  tp: Dimensional consistency
+  df: M
+- n: 17
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    Angular momentum of a single particle moving with constant speed along circular path :
+  o: ['changes in magnitude but remains same in the direction', 'remains same in magnitude and direction', 'remains same in magnitude but changes in the direction', 'is zero']
+  a: B
+  ch: Rotational Motion
+  tp: Angular momentum in circular motion
+  df: E
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    In an ac circuit, an inductor, a capacitor and a resistor are connected in series with $X_L = R = X_C$. Impedance of this circuit is :
+  o: ['$2R^2$', 'Zero', 'R', '$R\sqrt{2}$']
+  a: C
+  ch: Alternating Current
+  tp: Impedance at resonance
+  df: E
+- n: 19
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A moving proton and electron have the same de-Broglie wavelength. If K and P denote the K.E. and momentum respectively. Then choose the correct option :
+  o: ['$K_p < K_e$ and $P_p = P_e$', '$K_p = K_e$ and $P_p = P_e$', '$K_p < K_e$ and $P_p < P_e$', '$K_p > K_e$ and $P_p = P_e$']
+  a: A
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie wavelength
+  df: E
