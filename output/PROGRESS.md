@@ -3,7 +3,7 @@
 | Paper | Status | Questions | Needs review | Paper issues |
 |---|---|---|---|---|
 | JEE Mains Question Paper 24 February 2021 Evening Shift – PDF with Solution.pdf | todo | 0 | 0 |  |
-| JEE Mains Question Paper 24 February 2021 Morning Shift – PDF with Solution.pdf | todo | 0 | 0 |  |
+| JEE Mains Question Paper 24 February 2021 Morning Shift – PDF with Solution.pdf | done | 90 | 0 |  |
 | JEE Mains Question Paper 25 February 2021 Evening Shift – PDF with Solution.pdf | todo | 0 | 0 |  |
 | JEE Mains Question Paper 25 February 2021 Morning Shift – PDF with Solution.pdf | todo | 0 | 0 |  |
 | JEE Mains Question Paper 26 February 2021 Evening Shift – PDF with Solution.pdf | todo | 0 | 0 |  |

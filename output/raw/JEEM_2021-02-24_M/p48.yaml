@@ -1,0 +1,77 @@
+- n: 4
+  s: M
+  sec: B
+  p: 48
+  t: N
+  q: |-
+    If one of the diameters of the circle $x^2 + y^2 - 2x - 6y + 6 = 0$ is a chord of another circle 'C' whose center is at (2,1), then its radius is ______
+  a: '3'
+  ch: Circles
+  tp: Diameter as chord of another circle
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 49
+  t: N
+  q: |-
+    $\lim_{n\to\infty}\tan\left\{\sum_{r=1}^{n}\tan^{-1}\left(\frac{1}{1 + r + r^2}\right)\right\}$ is equal to ______
+  a: '1'
+  ch: Inverse Trigonometric Functions
+  tp: Telescoping inverse tangent series
+  df: E
+- n: 6
+  s: M
+  sec: B
+  p: 49
+  t: N
+  q: |-
+    If $\int_{-a}^{a}(|x| + |x - 2|)\,dx = 22$, (a > 2) and [x] denotes the greatest integer $\le$ x, then $\int_{a}^{-a}(x + [x])\,dx$ is equal to _____
+  a: '3'
+  ch: Definite Integration
+  tp: Modulus and greatest integer integrals
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 49
+  t: N
+  q: |-
+    Let three vectors $\vec{a}$, $\vec{b}$ and $\vec{c}$ be such that $\vec{c}$ is coplanar with $\vec{a}$ and $\vec{b}$, $\vec{a}\cdot\vec{c} = 7$ and $\vec{b}$ is perpendicular to $\vec{c}$, where $\vec{a} = -\hat{i} + \hat{j} + \hat{k}$ and $\vec{b} = 2\hat{i} + \hat{k}$, then the value of $2|\vec{a} + \vec{b} + \vec{c}|^2$ is _______
+  a: '75'
+  ch: Vector Algebra
+  tp: Coplanar vectors, triple product
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 50
+  t: N
+  q: |-
+    Let $A = \{n \in \mathbb{N} : n \text{ is a 3-digit number}\}$, $B = \{9k + 2 : k \in \mathbb{N}\}$ and $C = \{9k + \ell : k \in \mathbb{N}\}$ for some $\ell$ $(0 < \ell < 9)$. If the sum of all the elements of the set $A \cap (B \cup C)$ is $274\times400$, then $\ell$ is equal to __
+  a: '5'
+  ch: Sequences and Series
+  tp: Sum of AP within sets
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 51
+  t: N
+  q: |-
+    If the least and the largest real values of $\alpha$, for which the equation $z + \alpha|z - 1| + 2i = 0$ ($z \in \mathbb{C}$ and $i = \sqrt{-1}$) has a solution, are p and q respectively; then $4(p^2 + q^2)$ is equal to ___
+  a: '10'
+  ch: Complex Numbers
+  tp: Complex equation with modulus
+  df: H
+- n: 10
+  s: M
+  sec: B
+  p: 51
+  t: N
+  q: |-
+    Let M be any 3×3 matrix with entries from the set {0, 1, 2}. The maximum number of such matrices, for which the sum of diagonal elements of $M^TM$ is seven, is __
+  a: '540'
+  ch: Matrices and Determinants
+  tp: Counting matrices, trace of MᵀM
+  df: M

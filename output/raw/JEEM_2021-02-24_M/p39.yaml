@@ -1,0 +1,96 @@
+- n: 9
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    The distance of the point (1, 1, 9) from the point of intersection of the line $\frac{x-3}{1} = \frac{y-4}{2} = \frac{z-5}{2}$ and the plane $x + y + z = 17$ is:
+  o: ['$\sqrt{38}$', '$19\sqrt{2}$', '$2\sqrt{19}$', '38']
+  a: A
+  ch: Three Dimensional Geometry
+  tp: Intersection of line and plane
+  df: E
+- n: 10
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    $\lim_{x\to0}\frac{\int_0^{x^2}(\sin\sqrt{t})\,dt}{x^3}$ is equal to :
+  o: ['$\frac{2}{3}$', '0', '$\frac{1}{15}$', '$\frac{3}{2}$']
+  a: A
+  ch: Definite Integration
+  tp: Limit with Leibniz rule
+  df: M
+- n: 11
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    Two vertical poles are 150 m apart and the height of one is three times that of the other. If from the middle point of the line joining their feet, an observer finds the angles of elevation of their tops to be complementary, then the height of the shorter pole (in meters) is:
+  o: ['25', '$20\sqrt{3}$', '30', '$25\sqrt{3}$']
+  a: D
+  ch: Heights and Distances
+  tp: Complementary angles of elevation
+  df: E
+- n: 12
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    If the tangent to the curve $y = x^3$ at the point $P(t, t^3)$ meets the curve again at Q, then the ordinate of the point which divides PQ internally in the ratio 1 : 2 is :
+  o: ['$-2t^3$', '$-t^3$', '0', '$2t^3$']
+  a: A
+  ch: Application of Derivatives
+  tp: Tangent meeting curve again
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    The area (in sq. units) of the part of the circle $x^2 + y^2 = 36$, which is outside the parabola $y^2 = 9x$, is :
+  o: ['$24\pi + 3\sqrt{3}$', '$12\pi + 3\sqrt{3}$', '$12\pi - 3\sqrt{3}$', '$24\pi - 3\sqrt{3}$']
+  a: D
+  ch: Area Under Curves
+  tp: Area between circle and parabola
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 42
+  t: S
+  q: |-
+    If $\int\frac{\cos x - \sin x}{\sqrt{8 - \sin 2x}}dx = a\sin^{-1}\left(\frac{\sin x + \cos x}{b}\right) + c$, where c is a constant of integration, then the ordered pair (a, b) is equal to :
+  o: ['(1, –3)', '(1, 3)', '(–1, 3)', '(3, 1)']
+  a: B
+  ch: Indefinite Integration
+  tp: Substitution
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 43
+  t: S
+  q: |-
+    The population $P = P(t)$ at time 't' of a certain species follows the differential equation $\frac{dP}{dt} = 0.5P - 450$. If $P(0) = 850$, then the time at which population becomes zero is :
+  o: ['$\frac{1}{2}\log_e 18$', '$2\log_e 18$', '$\log_e 9$', '$\log_e 18$']
+  a: B
+  ch: Differential Equations
+  tp: Variable separable
+  df: E
+- n: 16
+  s: M
+  sec: A
+  p: 43
+  t: S
+  q: |-
+    The value of $-{}^{15}C_1 + 2\cdot{}^{15}C_2 - 3\cdot{}^{15}C_3 + \ldots - 15\cdot{}^{15}C_{15} + {}^{14}C_1 + {}^{14}C_3 + {}^{14}C_5 + \ldots + {}^{14}C_{11}$ is:
+  o: ['$2^{14}$', '$2^{13} - 13$', '$2^{16} - 1$', '$2^{13} - 14$']
+  a: D
+  ch: Binomial Theorem
+  tp: Sums of binomial coefficients
+  df: M

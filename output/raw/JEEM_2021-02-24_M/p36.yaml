@@ -1,0 +1,96 @@
+- n: 1
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    The locus of the mid-point of the line segment joining the focus of the parabola $y^2 = 4ax$ to a moving point of the parabola, is another parabola whose directrix is:
+  o: ['$x = a$', '$x = 0$', '$x = -\frac{a}{2}$', '$x = \frac{a}{2}$']
+  a: B
+  ch: Conic Sections
+  tp: Locus of midpoint, parabola
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    A scientific committee is to formed from 6 Indians and 8 foreigners, which includes at least 2 Indians and double the number of foreigners as Indians. Then the number of ways, the committee can be formed is:
+  o: ['560', '1050', '1625', '575']
+  a: C
+  ch: Permutations and Combinations
+  tp: Selection with conditions
+  df: E
+- n: 3
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    The equation of the plane passing through the point (1, 2, –3) and perpendicular to the planes $3x + y - 2z = 5$ and $2x - 5y - z = 7$, is:
+  o: ['$3x - 10y - 2z + 11 = 0$', '$6x - 5y - 2z - 2 = 0$', '$11x + y + 17z + 38 = 0$', '$6x - 5y + 2z + 10 = 0$']
+  a: C
+  ch: Three Dimensional Geometry
+  tp: Plane perpendicular to two planes
+  df: E
+- n: 4
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    A man is walking on a straight line. The arithmetic mean of the reciprocals of the intercepts of this line on the coordinate axes is $\frac{1}{4}$. Three stones A, B and C are placed at the points (1, 1), (2, 2) and (4, 4) respectively. Then which of these stones is/are on the path of the man?
+  o: ['B only', 'A only', 'All the three', 'C only']
+  a: A
+  ch: Straight Lines
+  tp: Intercept form, fixed point
+  df: E
+- n: 5
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    The statement among the following that is a tautology is:
+  o: ['$A \wedge (A \vee B)$', '$B \rightarrow [A \wedge (A \rightarrow B)]$', '$A \vee (A \wedge B)$', '$[A \wedge (A \rightarrow B)] \rightarrow B$']
+  a: D
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E
+- n: 6
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be defined as $f(x) = 2x - 1$ and $g : \mathbb{R} - \{1\} \rightarrow \mathbb{R}$ be defined as $g(x) = \frac{x - \frac{1}{2}}{x - 1}$. Then the composition function $f(g(x))$ is :
+  o: ['both one-one and onto', 'onto but not one-one', 'neither one-one nor onto', 'one-one but not onto']
+  a: D
+  ch: Sets, Relations and Functions
+  tp: Composite function, injectivity
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    If $f : \mathbb{R} \rightarrow \mathbb{R}$ is a function defined by $f(x) = [x - 1]\cos\left(\frac{2x-1}{2}\right)\pi$, where [.] denotes the greatest integer function, then f is :
+  o: ['discontinuous only at x = 1', 'discontinuous at all integral values of x except at x = 1', 'continuous only at x = 1', 'continuous for every real x']
+  a: D
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity with greatest integer function
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    The function $f(x) = \frac{4x^3 - 3x^2}{6} - 2\sin x + (2x - 1)\cos x$ :
+  o: ['increases in $\left[\frac{1}{2}, \infty\right)$', 'decreases $\left(-\infty, \frac{1}{2}\right]$', 'increases in $\left(-\infty, \frac{1}{2}\right]$', 'decreases $\left[\frac{1}{2}, \infty\right)$']
+  a: A
+  ch: Application of Derivatives
+  tp: Monotonicity
+  df: M

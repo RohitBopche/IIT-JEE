@@ -1,0 +1,85 @@
+- n: 17
+  s: M
+  sec: A
+  p: 44
+  t: S
+  q: |-
+    An ordinary dice is rolled for a certain number of times. If the probability of getting an odd number 2 times is equal to the probability of getting an even number 3 times, then the probability of getting an odd number for odd number of times is :
+  o: ['$\frac{3}{16}$', '$\frac{1}{2}$', '$\frac{5}{16}$', '$\frac{1}{32}$']
+  a: B
+  ch: Probability
+  tp: Binomial distribution
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 44
+  t: S
+  q: |-
+    Let p and q be two positive number such that $p + q = 2$ and $p^4 + q^4 = 272$. Then p and q are roots of the equation :
+  o: ['$x^2 - 2x + 2 = 0$', '$x^2 - 2x + 8 = 0$', '$x^2 - 2x + 136 = 0$', '$x^2 - 2x + 16 = 0$']
+  a: D
+  ch: Quadratic Equations
+  tp: Symmetric functions of roots
+  df: E
+- n: 19
+  s: M
+  sec: A
+  p: 45
+  t: S
+  q: |-
+    If $e^{(\cos^2x + \cos^4x + \cos^6x + \ldots\infty)\log_e 2}$ satisfies the equation $t^2 - 9t + 8 = 0$, then the value of $\frac{2\sin x}{\sin x + \sqrt{3}\cos x}\left(0 < x < \frac{\pi}{2}\right)$ is :
+  o: ['$\frac{3}{2}$', '$2\sqrt{3}$', '$\frac{1}{2}$', '$\sqrt{3}$']
+  a: C
+  ch: Trigonometric Functions and Equations
+  tp: Infinite GP in trigonometry
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 45
+  t: S
+  q: |-
+    The system of linear equations
+    $3x - 2y - kz = 10$
+    $2x - 4y - 2z = 6$
+    $x + 2y - z = 5m$
+    is inconsistent if :
+  o: ['$k = 3, m = \frac{4}{5}$', '$k \neq 3, m \in \mathbb{R}$', '$k \neq 3, m \neq \frac{4}{5}$', '$k = 3, m \neq \frac{4}{5}$']
+  a: D
+  ch: Matrices and Determinants
+  tp: Consistency of linear system
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 46
+  t: N
+  q: |-
+    Let $P = \begin{bmatrix} 3 & -1 & -2 \\ 2 & 0 & \alpha \\ 3 & -5 & 0 \end{bmatrix}$, where $\alpha \in \mathbb{R}$. Suppose $Q = [q_{ij}]$ is a matrix satisfying $PQ = kI_3$ for some non-zero $k \in \mathbb{R}$. If $q_{23} = -\frac{k}{8}$ and $|Q| = \frac{k^2}{2}$, then $\alpha^2 + k^2$ is equal to ______
+  a: '17'
+  ch: Matrices and Determinants
+  tp: Inverse and adjoint
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 47
+  t: N
+  q: |-
+    Let $B_i$ (i=1, 2, 3) be three independent events in a sample space. The probability that only $B_1$ occur is $\alpha$, only $B_2$ occurs is $\beta$ and only $B_3$ occurs is $\gamma$. Let p be the probability that none of the events $B_i$ occurs and these 4 probabilities satisfy the equations $(\alpha - 2\beta)p = \alpha\beta$ and $(\beta - 3\gamma)p = 2\beta\gamma$ (All the probabilities are assumed to lie in the interval (0, 1)). Then $\frac{P(B_1)}{P(B_3)}$ is equal to ____
+  a: '6'
+  ch: Probability
+  tp: Independent events
+  df: H
+- n: 3
+  s: M
+  sec: B
+  p: 47
+  t: N
+  q: |-
+    The minimum value of $\alpha$ for which the equation $\frac{4}{\sin x} + \frac{1}{1 - \sin x} = \alpha$ has at least one solution in $\left(0, \frac{\pi}{2}\right)$ is _____
+  a: '9'
+  ch: Application of Derivatives
+  tp: Minimum value of function
+  df: M
