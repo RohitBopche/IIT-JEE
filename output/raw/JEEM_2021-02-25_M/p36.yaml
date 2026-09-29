@@ -1,0 +1,96 @@
+- n: 12
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    All possible values of $\theta \in [0, 2\pi]$ for which $\sin2\theta + \tan2\theta > 0$ lie in:
+  o: ['$\left(0,\frac{\pi}{2}\right)\cup\left(\pi,\frac{3\pi}{2}\right)$', '$\left(0,\frac{\pi}{4}\right)\cup\left(\frac{\pi}{2},\frac{3\pi}{4}\right)\cup\left(\pi,\frac{5\pi}{4}\right)\cup\left(\frac{3\pi}{2},\frac{7\pi}{4}\right)$', '$\left(0,\frac{\pi}{2}\right)\cup\left(\frac{\pi}{2},\frac{3\pi}{4}\right)\cup\left(\pi,\frac{7\pi}{6}\right)$', '$\left(0,\frac{\pi}{4}\right)\cup\left(\frac{\pi}{2},\frac{3\pi}{4}\right)\cup\left(\frac{3\pi}{2},\frac{11\pi}{6}\right)$']
+  a: B
+  ch: Trigonometric Functions and Equations
+  tp: Trigonometric inequality
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    The image of the point (3,5) in the line $x - y + 1 = 0$, lies on :
+  o: ['$(x - 2)^2 + (y - 4)^2 = 4$', '$(x - 4)^2 + (y + 2)^2 = 16$', '$(x - 4)^2 + (y - 4)^2 = 8$', '$(x - 2)^2 + (y - 2)^2 = 12$']
+  a: A
+  ch: Straight Lines
+  tp: Image of a point in a line
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    If Rolle's theorem holds for the function $f(x) = x^3 - ax^2 + bx - 4$, $x \in [1, 2]$ with $f'\left(\frac{4}{3}\right) = 0$, then ordered pair (a, b) is equal to :
+  o: ['(–5, 8)', '(5, 8)', '(5, –8)', '(–5, –8)']
+  a: B
+  ch: Application of Derivatives
+  tp: Rolle's theorem
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    If the curves, $\frac{x^2}{a} + \frac{y^2}{b} = 1$ and $\frac{x^2}{c} + \frac{y^2}{d} = 1$ intersect each other at an angle of 90°, then which of the following relations is true ?
+  o: ['$a + b = c + d$', '$a - b = c - d$', '$ab = \frac{c+d}{a+b}$', '$a - c = b + d$']
+  a: B
+  ch: Application of Derivatives
+  tp: Orthogonal curves
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    $\lim_{n\to\infty}\left(1 + \frac{1 + \frac{1}{2} + ....... + \frac{1}{n}}{n^2}\right)^n$ is equal to :
+  o: ['$\frac{1}{2}$', '$\frac{1}{e}$', '1', '0']
+  a: C
+  ch: Limits, Continuity and Differentiability
+  tp: 1^∞ form limit
+  df: H
+- n: 17
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    The total number of positive integral solutions (x, y, z) such that xyz = 24 is
+  o: ['36', '45', '24', '30']
+  a: D
+  ch: Permutations and Combinations
+  tp: Distribution of prime factors
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    If a curve passes through the origin and the slope of the tangent to it at any point (x, y) is $\frac{x^2 - 4x + y + 8}{x - 2}$, then this curve also passes through the point :
+  o: ['(4, 5)', '(5, 4)', '(4, 4)', '(5, 5)']
+  a: D
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    The value of $\int_{-1}^{1}x^2e^{[x^3]}dx$, where [t] denotes the greatest integer $\le$ t, is :
+  o: ['$\frac{e+1}{3}$', '$\frac{e-1}{3e}$', '$\frac{e+1}{3e}$', '$\frac{1}{3e}$']
+  a: C
+  ch: Definite Integration
+  tp: Greatest integer function in integrals
+  df: M

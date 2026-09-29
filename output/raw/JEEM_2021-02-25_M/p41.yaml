@@ -1,0 +1,126 @@
+- n: 20
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    When a missile is fired from a ship, the probability that it is intercepted is $\frac{1}{3}$ and the probability that the missile hits the target, given that it is not intercepted, is $\frac{3}{4}$. If three missiles are fired independently from the ship, then the probability that all three hit the target, is:
+  o: ['$\frac{1}{8}$', '$\frac{1}{27}$', '$\frac{3}{4}$', '$\frac{3}{8}$']
+  a: A
+  ch: Probability
+  tp: Conditional probability, independent events
+  df: E
+- n: 1
+  s: M
+  sec: B
+  p: 41
+  t: N
+  q: |-
+    Let $A_1, A_2, A_3, ......$ be squares such that for each $n \ge 1$, the length of the side of $A_n$ equals the length of diagonal of $A_{n+1}$. If the length of $A_1$ is 12 cm, then the smallest value of n for which area of $A_n$ is less than one, is ____________.
+  a: 9
+  ch: Sequences and Series
+  tp: Geometric progression
+  df: E
+- n: 2
+  s: M
+  sec: B
+  p: 42
+  t: N
+  q: |-
+    The graphs of sine and cosine functions, intersect each other at a number of points and between two consecutive points of intersection, the two graphs enclose the same area A. Then $A^4$ is equal to _________
+  a: 64
+  ch: Area Under Curves
+  tp: Area between sin x and cos x
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 42
+  t: N
+  q: |-
+    The locus of the point of intersection of the lines $(\sqrt{3})kx + ky - 4\sqrt{3} = 0$ and $\sqrt{3}x - y - 4(\sqrt{3})k = 0$ is a conic, whose eccentricity is _________.
+  a: 2
+  ch: Conic Sections
+  tp: Locus – hyperbola eccentricity
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 43
+  t: N
+  q: |-
+    If $A = \begin{bmatrix} 0 & -\tan\left(\frac{\theta}{2}\right) \\ \tan\left(\frac{\theta}{2}\right) & 0 \end{bmatrix}$ and $(I_2 + A)(I_2 - A)^{-1} = \begin{bmatrix} a & -b \\ b & a \end{bmatrix}$, then $13(a^2 + b^2)$ is equal to ______.
+  a: 13
+  ch: Matrices and Determinants
+  tp: Matrix inverse and product
+  df: M
+- n: 5
+  s: M
+  sec: B
+  p: 44
+  t: N
+  q: |-
+    Let f(x) be a polynomial of degree 6 in x, in which the coefficient of $x^6$ is unity and it has extrema at x = –1 and x = 1. If $\lim_{x\to0}\frac{f(x)}{x^3} = 1$, then 5.f(2) is equal to _________
+  a: 144
+  ch: Application of Derivatives
+  tp: Extrema of polynomial
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 44
+  t: N
+  q: |-
+    The number of points, at which the function $f(x) = |2x + 1| - 3|x + 2| + |x^2 + x - 2|$, $x \in R$ is not differentiable, is ________.
+  a: 2
+  ch: Limits, Continuity and Differentiability
+  tp: Differentiability of modulus functions
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 45
+  t: N
+  q: |-
+    If the system of equations
+    $kx + y + 2z = 1$
+    $3x - y - 2z = 2$
+    $-2x - 2y - 4z = 3$
+    has infinitely many solutions, then k is equal to __________.
+  a: 21
+  ch: Matrices and Determinants
+  tp: System of linear equations
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 45
+  t: N
+  q: |-
+    Let $\vec{a} = \hat{i} + 2\hat{j} - \hat{k}$, $\vec{b} = \hat{i} - \hat{j}$ and $\vec{c} = \hat{i} - \hat{j} - \hat{k}$ be three given vectors. If $\vec{r}$ is a vector such that $\vec{r}\times\vec{a} = \vec{c}\times\vec{a}$ and $\vec{r}\cdot\vec{b} = 0$, then $\vec{r}\cdot\vec{a}$ is equal to _______
+  a: 12
+  ch: Vector Algebra
+  tp: Vector equations
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 46
+  t: N
+  q: |-
+    Let $A = \begin{bmatrix} x & y & z \\ y & z & x \\ z & x & y \end{bmatrix}$, where x, y and z are real numbers such that $x + y + z > 0$ and $xyz = 2$. If $A^2 = I_3$, then the value of $x^3 + y^3 + z^3$ is _______.
+  a: 7
+  ch: Matrices and Determinants
+  tp: Determinant of circulant matrix
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 46
+  t: N
+  q: |-
+    The total number of numbers, lying between 100 and 1000 that can be formed with the digits 1, 2, 3, 4, 5, if the repetition of digits is not allowed and numbers are divisible by either 3 or 5 is ________.
+  a: 32
+  ch: Permutations and Combinations
+  tp: Counting with divisibility
+  df: M

@@ -1,0 +1,139 @@
+- n: 19
+  s: C
+  sec: A
+  p: 25
+  t: S
+  q: |-
+    Compound(s) which will liberate carbon dioxide with sodium bicarbonate solution is/are:
+    A = 2,4,6-triaminophenol; B = benzoic acid; C = 2,4,6-trinitrophenol (picric acid)
+  o: ['B and C only', 'B only', 'A and B only', 'C only']
+  a: A
+  ch: Alcohols, Phenols and Ethers
+  tp: Acidity vs NaHCO3
+  df: E
+  fig: [[25, 120, 110, 245, 700]]
+- n: 20
+  s: C
+  sec: A
+  p: 25
+  t: S
+  q: |-
+    The solubility of AgCN in a buffer solution of pH = 3 is x. The value of x is:
+    [Assume: No cyano complex is formed; $K_{sp}(AgCN) = 2.2\times10^{-16}$ and $K_a(HCN) = 6.2\times10^{-10}$]
+  o: ['$0.625\times10^{-6}$', '$1.6\times10^{-6}$', '$2.2\times10^{-16}$', '$1.9\times10^{-5}$']
+  a: D
+  ch: Ionic Equilibrium
+  tp: Solubility with hydrolysis in buffer
+  df: H
+- n: 1
+  s: C
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    The reaction of cyanamide, $NH_2CN_{(s)}$ with oxygen was run in a bomb calorimeter and $\Delta U$ was found to be –742.24 kJ mol$^{-1}$. The magnitude of $\Delta H_{298}$ for the reaction
+    $NH_2CN_{(s)} + \frac{3}{2}O_{2(g)} \rightarrow N_{2(g)} + O_{2(g)} + H_2O_{(l)}$ is ______ kJ. (Rounded off to the nearest integer)
+    [Assume ideal gases and R = 8.314 J mol$^{-1}$ K$^{-1}$]
+  a: 741
+  ch: Chemical Thermodynamics
+  tp: ΔH from ΔU (Δng RT)
+  df: E
+- n: 2
+  s: C
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    In basic medium $CrO_4^{2-}$ oxidizes $S_2O_3^{2-}$ to form $SO_4^{2-}$ and itself changes into $Cr(OH)_4^-$. The volume of 0.154 M $CrO_4^{2-}$ required to react with 40 mL of 0.25 M $S_2O_3^{2-}$ is ______ mL. (Rounded-off to the nearest integer)
+  a: 173
+  ch: Some Basic Concepts of Chemistry
+  tp: Redox stoichiometry
+  df: M
+- n: 3
+  s: C
+  sec: B
+  p: 26
+  t: N
+  st: Graph
+  q: |-
+    For the reaction, aA + bB → cC + dD, the plot of log k vs $\frac{1}{T}$ is given below:
+    [figure: straight line of log k vs 1/T, slope = –10000 K]
+    The temperature at which the rate constant of the reaction is $10^{-4}$ s$^{-1}$ is ________ K. (Rounded off to the nearest integer)
+    [Given: The rate constant of the reaction is $10^{-5}$ s$^{-1}$ at 500 K]
+  a: 526
+  ch: Chemical Kinetics
+  tp: Arrhenius equation
+  df: M
+  fig: [[26, 440, 360, 560, 550]]
+- n: 4
+  s: C
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    0.4g mixture of NaOH, $Na_2CO_3$ and some inert impurities was first titrated with $\frac{N}{10}$ HCl using phenolphthalein as an indicator, 17.5 mL of HCl was required at the end point. After this methyl orange was added and titrated. 1.5 mL of same HCl was required for the next end point. The weight percentage of $Na_2CO_3$ in the mixture is ______. (Rounded-off to the nearest integer)
+  a: 4
+  ch: Some Basic Concepts of Chemistry
+  tp: Double indicator titration
+  df: M
+  c: m
+  nt: 'printed answer 3 (solution divides by 0.5 g); 0.15 mmol x 106 / 0.4 g = 3.98% -> 4'
+- n: 5
+  s: C
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    The ionization enthalpy of $Na^+$ formation from $Na_{(g)}$ is 495.8 kJ mol$^{-1}$, while the electron gain enthalpy of Br is –325.0 kJ mol$^{-1}$. Given the lattice enthalpy of NaBr is –728.4 kJ mol$^{-1}$. The energy for the formation of NaBr ionic solid is (–)_____ $\times 10^{-1}$ kJ mol$^{-1}$.
+  a: 5576
+  ch: Chemical Thermodynamics
+  tp: Born–Haber cycle
+  df: M
+- n: 6
+  s: C
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    Consider the following chemical reaction.
+    $HC\equiv CH \xrightarrow[(2)\ CO + HCl/AlCl_3]{(1)\ Red\ hot\ Fe\ tube,\ 873\ K}$ Product
+    The number of $sp^2$ hybridized carbon atom(s) present in the product is _______.
+  a: 7
+  ch: Hydrocarbons
+  tp: Cyclic polymerisation / Gattermann–Koch
+  df: E
+- n: 7
+  s: C
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    A car tyre is filled with nitrogen gas at 35 psi at 27°C. It will burst if pressure exceeds 40 psi. The temperature in °C at which the car tyre will burst is ______. (Rounded-off to the nearest integer)
+  a: 70
+  ch: States of Matter
+  tp: Gay-Lussac's law
+  df: E
+- n: 8
+  s: C
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    Among the following, the number of halide(s) which is/are inert to hydrolysis is ______.
+    (A) $BF_3$ (B) $SiCl_4$ (C) $PCl_5$ (D) $SF_6$
+  a: 1
+  ch: p-Block Elements
+  tp: Hydrolysis of halides
+  df: E
+- n: 9
+  s: C
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    1 molal aqueous solution of an electrolyte $A_2B_3$ is 60% ionised. The boiling point of the solution at 1 atm is _____ K. (Rounded-off to the nearest integer)
+    [Given $K_b$ for ($H_2O$) = 0.52 K kg mol$^{-1}$]
+  a: 375
+  ch: Solutions
+  tp: Elevation of boiling point (van't Hoff factor)
+  df: E

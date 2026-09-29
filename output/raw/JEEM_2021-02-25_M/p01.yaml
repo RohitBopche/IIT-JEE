@@ -1,0 +1,81 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A 5V battery is connected across the points X and Y. Assume $D_1$ and $D_2$ to be normal silicon diodes. Find the current supplied by the battery if the +ve terminal of the battery is connected to point X.
+  o: ['~0.86 A', '~0.5 A', '~ 0.43 A', '~ 1.5 A']
+  a: C
+  ch: Semiconductor Electronics
+  tp: Diode circuit
+  df: E
+  fig: [[1, 195, 415, 285, 635]]
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A solid sphere of radius R gravitationally attracts a particle placed at 3R from its centre with a force $F_1$. Now a spherical cavity of radius $\left(\frac{R}{2}\right)$ is made in the sphere (as shown in figure) and the force becomes $F_2$. The value of $F_1 : F_2$ is :
+  o: ['41 : 50', '36 : 25', '50 : 41', '25 : 36']
+  a: C
+  ch: Gravitation
+  tp: Gravitational force with cavity
+  df: M
+  nt: 'Printed key shows 1, but its solution derives F1:F2 = 50:41 is inverted (g1/g2 = 41/50 is wrong algebra; correct ratio 50:41 = option 3). NTA answer (3)'
+  c: m
+  fig: [[1, 465, 325, 590, 640]]
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A student is performing the experiment of resonance column. The diameter of the column tube is 6 cm. The frequency of the tuning fork is 504 Hz. Speed of the sound at the given temperature is 336 m/s. The zero of the metre scale coincides with the top end of the resonance column tube. The reading of the water level in the column when the first resonance occurs is :
+  o: ['13 cm', '14.8 cm', '16.6 cm', '18.4 cm']
+  a: B
+  ch: Waves
+  tp: Resonance column, end correction
+  df: M
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A diatomic gas, having $C_p = \frac{7}{2}R$ and $C_v = \frac{5}{2}R$, is heated at constant pressure. The ratio dU : dQ : dW
+  o: ['3 : 7 : 2', '5 : 7 : 2', '5 : 7 : 3', '3 : 5 : 2']
+  a: B
+  ch: Thermodynamics
+  tp: Isobaric process energy ratio
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Stmt
+  q: |-
+    Given below are two statements :
+    Statement I : A speech signal of 2 kHz is used to modulate a carrier signal of 1 MHz. The bandwidth requirement for the signal is 4 kHz.
+    Statement II : The side band frequencies are 1002 kHz and 998 kHz.
+    In the light of the above statements, choose the correct answer from the options given below :
+  o: ['Both statement I and statement II are false', 'Statement I is false but statement II is true', 'Statement I is true but statement II is false', 'Both statement I and statement II are true']
+  a: D
+  ch: Communication Systems
+  tp: Sidebands, bandwidth
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The current (i) at time t=0 and t = $\infty$ respectively for the given circuit is :
+  o: ['$\frac{18E}{55}, \frac{5E}{18}$', '$\frac{5E}{18}, \frac{18E}{55}$', '$\frac{5E}{18}, \frac{10E}{33}$', '$\frac{10E}{33}, \frac{5E}{18}$']
+  a: C
+  ch: Electromagnetic Induction
+  tp: LR circuit transient
+  df: M
+  fig: [[3, 265, 360, 470, 675]]

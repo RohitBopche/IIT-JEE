@@ -1,0 +1,64 @@
+- n: 10
+  s: C
+  sec: B
+  p: 29
+  t: N
+  q: |-
+    Using the provided information in the following paper chromatogram:
+    [figure: paper chromatogram; solvent front 5 cm above base line; spot A at 2 cm and spot B at 4 cm above base line]
+    Fig: Paper chromatography for compounds A and B
+    the calculated $R_f$ value of A ______ $\times 10^{-1}$.
+  a: 4
+  ch: Purification and Characterisation of Organic Compounds
+  tp: Paper chromatography Rf
+  df: E
+  fig: [[29, 250, 250, 395, 570]]
+- n: 1
+  s: M
+  sec: A
+  p: 30
+  t: S
+  q: |-
+    The coefficients a, b and c of the quadratic equation, $ax^2 + bx + c = 0$ are obtained by throwing a dice three times. The probability that this equation has equal roots is :
+  o: ['$\frac{1}{54}$', '$\frac{1}{72}$', '$\frac{1}{36}$', '$\frac{5}{216}$']
+  a: D
+  ch: Probability
+  tp: Classical probability with discriminant
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 30
+  t: S
+  q: |-
+    Let $\alpha$ be the angle between the lines whose direction cosines satisfy the equations $l + m - n = 0$ and $l^2 + m^2 - n^2 = 0$. Then the value of $\sin^4\alpha + \cos^4\alpha$ is :
+  o: ['$\frac{3}{4}$', '$\frac{1}{2}$', '$\frac{5}{8}$', '$\frac{3}{8}$']
+  a: C
+  ch: Three Dimensional Geometry
+  tp: Angle between lines from direction cosines
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 31
+  t: S
+  q: |-
+    The value of the integral $\int \frac{\sin\theta\cdot\sin2\theta(\sin^6\theta + \sin^4\theta + \sin^2\theta)\sqrt{2\sin^4\theta + 3\sin^2\theta + 6}}{1 - \cos2\theta}d\theta$ is
+    (where c is a constant of integration)
+  o: ['$\frac{1}{18}\left[9 - 2\sin^6\theta - 3\sin^4\theta - 6\sin^2\theta\right]^{\frac{3}{2}} + c$', '$\frac{1}{18}\left[11 - 18\sin^2\theta + 9\sin^4\theta - 2\sin^6\theta\right]^{\frac{3}{2}} + c$', '$\frac{1}{18}\left[11 - 18\cos^2\theta + 9\cos^4\theta - 2\cos^6\theta\right]^{\frac{3}{2}} + c$', '$\frac{1}{18}\left[9 - 2\cos^6\theta - 3\cos^4\theta - 6\cos^2\theta\right]^{\frac{3}{2}} + c$']
+  a: C
+  ch: Indefinite Integration
+  tp: Substitution
+  df: H
+- n: 4
+  s: M
+  sec: A
+  p: 32
+  t: S
+  q: |-
+    A man is observing, from the top of a tower, a boat speeding towards the tower from a certain point A, with uniform speed. At that point, angle of depression of the boat with the man's eye is 30° (Ignore man's height). After sailing for 20 seconds towards the base of the tower (which is at the level of water), the boat has reached a point B, where the angle of depression is 45°. Then the time taken (in seconds) by the boat from B to reach the base of the tower is :
+  o: ['$10(\sqrt{3} - 1)$', '$10\sqrt{3}$', '10', '$10(\sqrt{3} + 1)$']
+  a: D
+  ch: Heights and Distances
+  tp: Angles of depression
+  df: M
