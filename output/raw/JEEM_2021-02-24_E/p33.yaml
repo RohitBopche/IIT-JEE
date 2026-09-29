@@ -1,0 +1,67 @@
+- n: 11
+  s: M
+  sec: A
+  p: 33
+  t: S
+  q: |-
+    The negation of the statement $\sim p \wedge (p \vee q)$ is :
+  o: ['$\sim p \wedge q$', '$p \wedge \sim q$', '$\sim p \vee q$', '$p \vee \sim q$']
+  a: D
+  ch: Mathematical Reasoning
+  tp: Negation
+  df: E
+- n: 12
+  s: M
+  sec: A
+  p: 33
+  t: S
+  st: MultiStmt
+  q: |-
+    For the system of linear equations: $x - 2y = 1$, $x - y + kz = -2$, $ky + 4z = 6$, $k \in \mathbb{R}$ consider the following statements:
+    (A) The system has unique solution if $k \neq 2$, $k \neq -2$.
+    (B) The system has unique solution if k = –2.
+    (C) The system has unique solution if k = 2.
+    (D) The system has no-solution if k = 2.
+    (E) The system has infinite number of solutions if $k \neq -2$.
+    Which of the following statements are correct?
+  o: ['(B) and (E) only', '(C) and (D) only', '(A) and (D) only', '(A) and (E) only']
+  a: C
+  ch: Matrices and Determinants
+  tp: Consistency of linear system
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 34
+  t: S
+  q: |-
+    For which of the following curves, the line $x + \sqrt{3}y = 2\sqrt{3}$ is the tangent at the point $\left(\frac{3\sqrt{3}}{2}, \frac{1}{2}\right)$?
+  o: ['$x^2 + 9y^2 = 9$', '$2x^2 - 18y^2 = 9$', '$y^2 = \frac{1}{6\sqrt{3}}x$', '$x^2 + y^2 = 7$']
+  a: A
+  ch: Conic Sections
+  tp: Tangent to ellipse
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 35
+  t: S
+  q: |-
+    The angle of elevation of a jet plane from a point A on the ground is 60°. After a flight of 20 seconds at the speed of 432 km/ hour, the angle of elevation changes to 30°. If the jet plane is flying at a constant height, then its height is:
+  o: ['$1200\sqrt{3}$m', '$1800\sqrt{3}$m', '$3600\sqrt{3}$m', '$2400\sqrt{3}$m']
+  a: A
+  ch: Heights and Distances
+  tp: Angle of elevation
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    For the statements p and q, consider the following compound statements: (a) $(\sim q \wedge (p \rightarrow q)) \rightarrow \sim p$ (b) $((p \vee q) \wedge \sim p) \rightarrow q$. Then which of the following statements is correct?
+  o: ['(a) is a tautology but not (b)', '(a) and (b) both are not tautologies.', '(a) and (b) both are tautologies.', '(b) is a tautology but not (a).']
+  a: C
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E

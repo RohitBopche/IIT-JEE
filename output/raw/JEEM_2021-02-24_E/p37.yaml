@@ -1,0 +1,82 @@
+- n: 16
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    Let A and B be 3×3 real matrices such that A is symmetric matrix and B is skew-symmetric matrix. Then the system of linear equations $(A^2B^2 - B^2A^2)X = O$, where X is a 3×1 column matrix of unknown variables and O is a 3×1 null matrix, has :
+  o: ['a unique solution', 'exactly two solutions', 'infinitely many solutions', 'no solution']
+  a: C
+  ch: Matrices and Determinants
+  tp: Skew-symmetric matrix system
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    If $n \ge 2$ is a positive integer, then the sum of the series ${}^{n+1}C_2 + 2\left({}^2C_2 + {}^3C_2 + {}^4C_2 + \ldots + {}^nC_2\right)$ is :
+  o: ['$\frac{n(n + 1)^2(n + 2)}{12}$', '$\frac{n(n - 1)(2n + 1)}{6}$', '$\frac{n(n + 1)(2n + 1)}{6}$', '$\frac{n(2n + 1)(3n + 1)}{6}$']
+  a: C
+  ch: Binomial Theorem
+  tp: Sums of binomial coefficients
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    If a curve y = f(x) passes through the point (1,2) and satisfies $x\frac{dy}{dx} + y = bx^4$, then for what value of b, $\int_1^2f(x)\,dx = \frac{62}{5}$ ?
+  o: ['5', '$\frac{62}{5}$', '$\frac{31}{5}$', '10']
+  a: D
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    The area of the region : $R = \{(x, y) : 5x^2 \le y \le 2x^2 + 9\}$ is:
+  o: ['$9\sqrt{3}$ square units', '$12\sqrt{3}$ square units', '$11\sqrt{3}$ square units', '$6\sqrt{3}$ square units']
+  a: B
+  ch: Area Under Curves
+  tp: Area between parabolas
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    Let f(x) be a differentiable function defined on [0,2] such that $f'(x) = f'(2 - x)$ for all $x \in (0, 2)$, f(0) = 1 and $f(2) = e^2$. Then the value of $\int_0^2f(x)\,dx$ is:
+  o: ['$1 + e^2$', '$1 - e^2$', '$2(1 - e^2)$', '$2(1 + e^2)$']
+  a: A
+  ch: Definite Integration
+  tp: Properties of definite integrals
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 39
+  t: N
+  q: |-
+    The number of the real roots of the equation $(x + 1)^2 + |x - 5| = \frac{27}{4}$ is_______.
+  a: '2'
+  ch: Quadratic Equations
+  tp: Equations with modulus
+  df: E
+- n: 2
+  s: M
+  sec: B
+  p: 40
+  t: N
+  q: |-
+    The students $S_1, S_2, \ldots, S_{10}$ are to be divided into 3 groups A, B and C such that each group has at least one student and the group C has at most 3 students. Then the total number of possibilities of forming such groups is_______.
+  a: '31650'
+  ch: Permutations and Combinations
+  tp: Distribution into groups
+  df: M

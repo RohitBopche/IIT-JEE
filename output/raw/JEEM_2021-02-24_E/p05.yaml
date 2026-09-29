@@ -1,0 +1,114 @@
+- n: 12
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    If one mole of an ideal gas at ($P_1$, $V_1$) is allowed to expand reversibly and isothermally (A to B) its pressure is reduced to one-half of the original pressure (see figure). This is followed by a constant volume cooling till its pressure is reduced to one-fourth of the initial value (B→C). Then it is restored to its initial state by a reversible adiabatic compression (C to A). The net workdone by the gas is equal to :
+  o: ['0', '$-\frac{RT}{2(\gamma - 1)}$', '$RT\left[\ln2 - \frac{1}{2(\gamma - 1)}\right]$', 'RT ln2']
+  a: C
+  ch: Thermodynamics
+  tp: Work in cyclic process
+  df: M
+  fig: [[5, 200, 380, 330, 640]]
+- n: 13
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The period of oscillation of a simple pendulum is $T = 2\pi\sqrt{\frac{L}{g}}$. Measured value of 'L' is 1.0 m from meter scale having a minimum division of 1 mm and time of one complete oscillation is 1.95 s measured from stopwatch of 0.01 s resolution. The percentage error in the determination of 'g' will be :
+  o: ['1.33 %', '1.30 %', '1.13 %', '1.03 %']
+  a: C
+  ch: Units and Measurements
+  tp: Error in g
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    In the given figure, a body of mass M is held between two massless springs, on a smooth inclined plane. The free ends of the springs are attached to firm supports. If each spring has spring constant k, the frequency of oscillation of given body is :
+  o: ['$\frac{1}{2\pi}\sqrt{\frac{2k}{Mg\sin\alpha}}$', '$\frac{1}{2\pi}\sqrt{\frac{k}{Mg\sin\alpha}}$', '$\frac{1}{2\pi}\sqrt{\frac{2k}{M}}$', '$\frac{1}{2\pi}\sqrt{\frac{k}{2M}}$']
+  a: C
+  ch: Oscillations
+  tp: Springs in parallel on incline
+  df: E
+  c: m
+  nt: 'Printed answer key shows (1); solution derives f = (1/2π)√(2k/m), which is option (3). Option 3 used'
+  fig: [[6, 180, 350, 305, 640]]
+- n: 15
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    Figure shows a circuit that contains four identical resistors with resistance R = 2.0 $\Omega$. Two identical inductors with inductance L = 2.0 mH and an ideal battery with emf E = 9.V. The current 'i' just after the switch 's' is closed will be :
+  o: ['9A', '3.0 A', '2.25 A', '3.37 A']
+  a: C
+  ch: Electromagnetic Induction
+  tp: Inductor at t = 0
+  df: M
+  fig: [[6, 635, 345, 725, 650]]
+- n: 16
+  s: P
+  sec: A
+  p: 7
+  t: S
+  q: |-
+    The de Broglie wavelength of a proton and $\alpha$-particle are equal. The ratio of their velocities is :
+  o: ['4:2', '4:1', '1:4', '4:3']
+  a: B
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie wavelength
+  df: E
+- n: 17
+  s: P
+  sec: A
+  p: 7
+  t: S
+  q: |-
+    Two electrons each are fixed at a distance '2d'. A third charge proton placed at the midpoint is displaced slightly by a distance x (x<<d) perpendicular to the line joining the two fixed charges. Proton will execute simple harmonic motion having angular frequency: (m = mass of charged particle)
+  o: ['$\left(\frac{q^2}{2\pi\varepsilon_0md^3}\right)^{1/2}$', '$\left(\frac{\pi\varepsilon_0md^3}{2q^2}\right)^{1/2}$', '$\left(\frac{2\pi\varepsilon_0md^3}{q^2}\right)^{1/2}$', '$\left(\frac{2q^2}{\pi\varepsilon_0md^3}\right)^{1/2}$']
+  a: A
+  ch: Electrostatics
+  tp: SHM under Coulomb force
+  df: M
+- n: 18
+  s: P
+  sec: A
+  p: 8
+  t: S
+  q: |-
+    A soft ferromagnetic material is placed in an external magnetic field. The magnetic domains :
+  o: ['decrease in size and changes orientation.', 'may increase or decrease in size and change its orientation.', 'increase in size but no change in orientation.', 'have no relation with external magnetic field.']
+  a: B
+  ch: Magnetism and Matter
+  tp: Magnetic domains
+  df: E
+- n: 19
+  s: P
+  sec: A
+  p: 8
+  t: S
+  q: |-
+    Which of the following equations represents a travelling wave?
+  o: ['$y = Ae^{-x^2}(vt + \theta)$', '$y = A\sin(15x - 2t)$', '$y = Ae^x\cos(\omega t - \theta)$', '$y = A\sin x\cos\omega t$']
+  a: B
+  ch: Waves
+  tp: Travelling wave equation
+  df: E
+- n: 20
+  s: P
+  sec: A
+  p: 8
+  t: S
+  q: |-
+    A particle is projected with velocity $v_0$ along x-axis. A damping force is acting on the particle which is proportional to the square of the distance from the origin i.e. $ma = -\alpha x^2$. The distance at which the particle stops :
+  o: ['$\left(\frac{2v_0}{3\alpha}\right)^{1/3}$', '$\left(\frac{3v_0^2}{2\alpha}\right)^{1/2}$', '$\left(\frac{3v_0^2}{2\alpha}\right)^{1/3}$', '$\left(\frac{2v_0^2}{3\alpha}\right)^{1/2}$']
+  a: Bonus
+  ch: Laws of Motion
+  tp: Variable force motion
+  df: M
+  nt: 'Answer key: Bonus'

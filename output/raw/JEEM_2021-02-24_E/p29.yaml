@@ -1,0 +1,84 @@
+- n: 4
+  s: M
+  sec: A
+  p: 29
+  t: S
+  q: |-
+    The probability that two randomly selected subsets of the set {1,2,3,4,5} have exactly two elements in their intersection, is:
+  o: ['$\frac{65}{2^7}$', '$\frac{135}{2^9}$', '$\frac{65}{2^8}$', '$\frac{35}{2^7}$']
+  a: B
+  ch: Probability
+  tp: Subsets and intersection
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 29
+  t: S
+  q: |-
+    The vector equation of the plane passing through the intersection of the planes $\vec{r}\cdot(\hat{i} + \hat{j} + \hat{k}) = 1$ and $\vec{r}\cdot(\hat{i} - 2\hat{j}) = -2$, and the point (1,0,2) is :
+  o: ['$\vec{r}\cdot(\hat{i} - 7\hat{j} + 3\hat{k}) = \frac{7}{3}$', '$\vec{r}\cdot(\hat{i} + 7\hat{j} + 3\hat{k}) = 7$', '$\vec{r}\cdot(3\hat{i} + 7\hat{j} + 3\hat{k}) = 7$', '$\vec{r}\cdot(\hat{i} + 7\hat{j} + 3\hat{k}) = \frac{7}{3}$']
+  a: B
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: E
+- n: 6
+  s: M
+  sec: A
+  p: 30
+  t: S
+  q: |-
+    If P is a point on the parabola $y = x^2 + 4$ which is closest to the straight line y = 4x – 1, then the co-ordinates of P are :
+  o: ['(–2, 8)', '(1, 5)', '(3, 13)', '(2, 8)']
+  a: D
+  ch: Conic Sections
+  tp: Shortest distance from parabola to line
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 31
+  t: S
+  q: |-
+    Let a, b, c be in arithmetic progression. Let the centroid of the triangle with vertices (a, c), (2, b) and (a, b) be $\left(\frac{10}{3}, \frac{7}{3}\right)$. If $\alpha$, $\beta$ are the roots of the equation $ax^2 + bx + 1 = 0$, then the value of $\alpha^2 + \beta^2 - \alpha\beta$ is:
+  o: ['$\frac{71}{256}$', '$-\frac{69}{256}$', '$\frac{69}{256}$', '$-\frac{71}{256}$']
+  a: D
+  ch: Quadratic Equations
+  tp: Symmetric functions of roots
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 31
+  t: S
+  q: |-
+    The value of the integral, $\int_1^3[x^2 - 2x - 2]dx$, where [x] denotes the greatest integer less than or equal to x, is:
+  o: ['–4', '–5', '$-\sqrt{2} - \sqrt{3} - 1$', '$-\sqrt{2} - \sqrt{3} + 1$']
+  a: C
+  ch: Definite Integration
+  tp: Greatest integer function in integral
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 32
+  t: S
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be defined as $f(x) = \begin{cases} -55x, & \text{if } x < -5 \\ 2x^3 - 3x^2 - 120x, & \text{if } -5 \le x \le 4 \\ 2x^3 - 3x^2 - 36x - 336, & \text{if } x > 4 \end{cases}$. Let $A = \{x \in \mathbb{R} : f$ is increasing$\}$. Then A is equal to :
+  o: ['$(-5, -4) \cup (4, \infty)$', '$(-5, \infty)$', '$(-\infty, -5) \cup (4, \infty)$', '$(-\infty, -5) \cup (-4, \infty)$']
+  a: A
+  ch: Application of Derivatives
+  tp: Monotonicity of piecewise function
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 32
+  t: S
+  q: |-
+    If the curve $y = ax^2 + bx + c$, $x \in \mathbb{R}$, passes through the point (1,2) and the tangent line to this curve at origin is y = x, then the possible values of a, b, c are :
+  o: ['a =1, b=1, c=0', 'a = –1, b=1, c =1', 'a =1, b=0, c =1', '$a = \frac{1}{2}, b = \frac{1}{2}, c = 1$']
+  a: A
+  ch: Application of Derivatives
+  tp: Tangent to curve
+  df: E

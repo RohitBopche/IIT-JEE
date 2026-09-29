@@ -1,0 +1,33 @@
+- n: 8
+  s: M
+  sec: B
+  p: 45
+  t: N
+  q: |-
+    For integers n and r, let $\binom{n}{r} = \begin{cases} {}^nC_r, & \text{if } n \ge r \ge 0 \\ 0, & \text{otherwise} \end{cases}$. The maximum value of k for which the sum $\sum_{i=0}^{k}\binom{10}{i}\binom{15}{k - i} + \sum_{i=0}^{k+1}\binom{12}{i}\binom{13}{k + 1 - i}$ exists, is equal to________.
+  a: '12'
+  ch: Binomial Theorem
+  tp: Vandermonde identity
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 45
+  t: N
+  q: |-
+    The sum of first four terms of a geometric progression (G.P.) is $\frac{65}{12}$ and the sum of their respective reciprocals is $\frac{65}{18}$. If the product of first three terms of the G.P. is 1, and the third term is $\alpha$, then $2\alpha$ is__________.
+  a: '3'
+  ch: Sequences and Series
+  tp: Geometric progression
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 46
+  t: N
+  q: |-
+    If the area of the triangle formed by the positive x-axis, the normal and the tangent to the circle $(x - 2)^2 + (y - 3)^2 = 25$ at the point (5,7) is A, then 24A is equal to______.
+  a: '1225'
+  ch: Circles
+  tp: Tangent and normal to circle
+  df: M
