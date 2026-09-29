@@ -65,6 +65,12 @@ class Extractor:
             log(f"    pages {start + 1}-{main[-1] + 1}/{n}: {len(resp.get('questions', []))} q, "
                 f"{len(resp.get('solution_answers', []))} sol-answers")
 
+        return self.finish(paper, doc, raw_qs, sol_answers, self.g.model, log)
+
+    def finish(self, paper, doc, raw_qs, sol_answers, source, log=print):
+        """Shared post-processing for any extraction source (Gemini or manual reading)."""
+        n = len(doc)
+        text_pdf = has_text_layer(doc)
         questions = self._merge(raw_qs)
         self._apply_solution_answers(paper, questions, sol_answers)
         for q in questions:
@@ -73,14 +79,14 @@ class Extractor:
         for q in questions:
             q["confidence"] = validate.score(q)
 
-        if self.verify:
+        if self.verify and self.g:
             self._verify(paper, doc, questions, text_pdf, log)
 
         questions.sort(key=lambda q: (list(validate.SUBJ_CODE).index(q["subject"]), q["q_no"]))
         result = {
             "paper": {"file": str(paper.path), "sha256": paper.sha, "exam": paper.exam, "date": paper.date,
                       "year": paper.year, "shift": paper.shift, "slug": paper.slug, "pages": n,
-                      "text_layer": text_pdf, "model": self.g.model, "prompt_version": prompts.PROMPT_VERSION},
+                      "text_layer": text_pdf, "model": source, "prompt_version": prompts.PROMPT_VERSION},
             "issues": paper_issues,
             "questions": questions,
         }

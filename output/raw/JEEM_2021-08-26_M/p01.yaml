@@ -1,0 +1,142 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    The fractional change in the magnetic field intensity at a distance 'r' from centre on the axis of current carrying coil of radius 'a' to the magnetic field intensity at the centre of the same coil is : (Take $r < a$)
+  o: ['$\frac{3}{2}\frac{a^2}{r^2}$', '$\frac{2}{3}\frac{a^2}{r^2}$', '$\frac{2}{3}\frac{r^2}{a^2}$', '$\frac{3}{2}\frac{r^2}{a^2}$']
+  a: D
+  ch: Moving Charges and Magnetism
+  tp: Magnetic field on axis of circular coil
+  df: M
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    The magnitude of vectors $\vec{OA}$, $\vec{OB}$ and $\vec{OC}$ in the given figure are equal. The direction of $\vec{OA}+\vec{OB}-\vec{OC}$ with x-axis will be :-
+  o: ['$\tan^{-1}\frac{(1-\sqrt{3}-\sqrt{2})}{(1+\sqrt{3}+\sqrt{2})}$', '$\tan^{-1}\frac{(\sqrt{3}-1+\sqrt{2})}{(1+\sqrt{3}-\sqrt{2})}$', '$\tan^{-1}\frac{(\sqrt{3}-1+\sqrt{2})}{(1-\sqrt{3}+\sqrt{2})}$', '$\tan^{-1}\frac{(1+\sqrt{3}-\sqrt{2})}{(1-\sqrt{3}-\sqrt{2})}$']
+  a: A
+  ch: Kinematics
+  tp: Vector addition
+  df: M
+  fig: [[1, 168, 625, 295, 815]]
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Car B overtakes another car A at a relative speed of $40\ \text{ms}^{-1}$. How fast will the image of car B appear to move in the mirror of focal length 10 cm fitted in car A, when the car B is 1.9 m away from the car A?
+  o: ['$4\ \text{ms}^{-1}$', '$0.2\ \text{ms}^{-1}$', '$40\ \text{ms}^{-1}$', '$0.1\ \text{ms}^{-1}$']
+  a: D
+  ch: Ray Optics and Optical Instruments
+  tp: Velocity of image in mirror
+  df: M
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: MultiStmt
+  q: |-
+    Inside a uniform spherical shell :
+    (a) the gravitational field is zero
+    (b) the gravitational potential is zero
+    (c) the gravitational field is same everywhere
+    (d) the gravitation potential is same everywhere
+    (e) all of the above
+    Choose the most appropriate answer from the options given below :
+  o: ['(a), (c) and (d) only', '(e) only', '(a), (b) and (c) only', '(b), (c) and (d) only']
+  a: A
+  ch: Gravitation
+  tp: Field and potential inside shell
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two narrow bores of diameter 5.0 mm and 8.0 mm are joined together to form a U-shaped tube open at both ends. If this U-tube contains water, what is the difference in the level of two limbs of the tube. [Take surface tension of water $T = 7.3\times10^{-2}\ \text{Nm}^{-1}$, angle of contact = 0, $g = 10\ \text{ms}^{-2}$ and density of water $= 1.0\times10^{3}\ \text{kg m}^{-3}$]
+  o: ['3.62 mm', '2.19 mm', '5.34 mm', '4.97 mm']
+  a: B
+  ch: Mechanical Properties of Fluids
+  tp: Capillary rise, surface tension
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An electric appliance supplies 6000 J/min heat to the system. If the system delivers a power of 90W. How long it would take to increase the internal energy by $2.5\times10^{3}$ J ?
+  o: ['$2.5\times10^{2}$ s', '$4.1\times10^{1}$ s', '$2.4\times10^{3}$ s', '$2.5\times10^{1}$ s']
+  a: A
+  ch: Thermodynamics
+  tp: First law of thermodynamics
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    An inductor coil stores 64 J of magnetic field energy and dissipates energy at the rate of 640 W when a current of 8A is passed through it. If this coil is joined across an ideal battery, find the time constant of the circuit in seconds :
+  o: ['0.4', '0.8', '0.125', '0.2']
+  a: D
+  ch: Electromagnetic Induction
+  tp: LR circuit time constant
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A series LCR circuit driven by 300 V at a frequency of 50 Hz contains a resistance $R = 3\ \text{k}\Omega$, an inductor of inductive reactance $X_L = 250\pi\ \Omega$ and an unknown capacitor. The value of capacitance to maximize the average power should be : (Take $\pi^2 = 10$)
+  o: ['$4\ \mu\text{F}$', '$25\ \mu\text{F}$', '$400\ \mu\text{F}$', '$40\ \mu\text{F}$']
+  a: A
+  ch: Alternating Current
+  tp: Resonance in LCR circuit
+  df: E
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  st: Graph
+  q: |-
+    Identify the logic operation carried out by the given circuit :-
+  o: ['OR', 'AND', 'NOR', 'NAND']
+  a: C
+  ch: Semiconductor Electronics
+  tp: Logic gates
+  df: E
+  fig: [[3, 810, 110, 890, 415]]
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A particular hydrogen like ion emits radiation of frequency $2.92\times10^{15}$ Hz when it makes transition from n = 3 to n = 1. The frequency in Hz of radiation emitted in transition from n = 2 to n = 1 will be :
+  o: ['$0.44\times10^{15}$', '$6.57\times10^{15}$', '$4.38\times10^{15}$', '$2.46\times10^{15}$']
+  a: D
+  ch: Atoms
+  tp: Hydrogen-like spectra
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In a photoelectric experiment ultraviolet light of wavelength 280 nm is used with lithium cathode having work function $\phi = 2.5$ eV. If the wavelength of incident light is switched to 400 nm, find out the change in the stopping potential. ($h = 6.63\times10^{-34}$ Js, $c = 3\times10^{8}\ \text{ms}^{-1}$)
+  o: ['1.3 V', '1.1 V', '1.9 V', '0.6 V']
+  a: A
+  ch: Dual Nature of Radiation and Matter
+  tp: Stopping potential
+  df: E
