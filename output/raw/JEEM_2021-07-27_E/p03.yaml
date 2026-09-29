@@ -1,0 +1,146 @@
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Two Carnot engines A and operate in series such that engine A absorbs heat at $T_1$ and rejects heat to a sink at temperature T. Engine B absorbs half of the heat rejected by Engine A and rejects heat to the sink at $T_3$. When work done in both the cases is equal, the value of T is :
+  o: ['$\frac{3}{2}T_1 + \frac{1}{3}T_3$', '$\frac{2}{3}T_1 + \frac{3}{2}T_3$', '$\frac{2}{3}T_1 + \frac{1}{3}T_3$', '$\frac{1}{3}T_1 + \frac{2}{3}T_3$']
+  ch: Thermodynamics
+  tp: Carnot engines in series
+  df: M
+- n: 10
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    An electron and proton are separated by a large distance. The electron starts approaching the proton with energy 3eV. The proton captures the electron and forms a hydrogen atom in second excited state. The resulting photon is incident on a photosensitive metal of threshold wavelength 4000 Å. What is the maximum kinetic energy of the emitted photoelectron ?
+  o: ['1.41 eV', '7.61 eV', '3.3 eV', 'No photoelectron would be emitted']
+  ch: Atoms
+  tp: Energy levels and photoelectric effect
+  df: M
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    An object of mass 0.5 kg executing simple harmonic motion. Its amplitude is 5 cm and time period (T) is 0.2 s. What will be the potential energy of the object at an instant $t = \frac{T}{4}$ s starting from mean position. Assume that the initial phase of the oscillation is zero.
+  o: ['$6.2\times10^{-3}$ J', '0.62 J', '$6.2\times10^3$ J', '$1.2\times10^3$ J']
+  ch: Oscillations
+  tp: Energy in SHM
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    What will be the magnitude of electric field at point O as shown in figure ? Each side of the figure is $l$ and perpendicular to each other ?
+    [figure: charges A(–q), B(+q), C(2q), D(+q), E(2q), F(q), G(2q), H(–q) arranged on a pinwheel of perpendicular segments of length l around O]
+  o: ['$\frac{1}{4\pi\varepsilon_0}\frac{q}{(2l)^2}(2\sqrt{2} - 1)$', '$\frac{q}{4\pi\varepsilon_0(2l)^2}$', '$\frac{1}{4\pi\varepsilon_0}\frac{q}{l^2}$', '$\frac{1}{4\pi\varepsilon_0}\frac{2q}{2l^2}(\sqrt{2})$']
+  ch: Electrostatics
+  tp: Superposition of fields
+  df: M
+  fig: [[4, 415, 555, 610, 880]]
+- n: 13
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A 100$\Omega$ resistance, a 0.1$\mu$F capacitor and an inductor are connected in series across a 250V supply at variable frequency. Calculate the value if inductance of inductor at which resonance will occur. Given that the resonant frequency is 60 Hz.
+  o: ['$7.03\times10^{-5}$ H', '70.3 H', '70.3 mH', '0.70 H']
+  ch: Alternating Current
+  tp: Resonance
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    An automobile of mass 'm' accelerates starting from origin and initially at rest, while the engine supplies constant power P. The position is given as a function of time by :
+  o: ['$\left(\frac{8P}{9m}\right)^{\frac{1}{2}}t^{\frac{3}{2}}$', '$\left(\frac{9P}{8m}\right)^{\frac{1}{2}}t^{\frac{3}{2}}$', '$\left(\frac{9m}{8P}\right)^{\frac{1}{2}}t^{\frac{3}{2}}$', '$\left(\frac{8P}{9m}\right)^{\frac{1}{2}}t^{\frac{2}{3}}$']
+  ch: Work, Energy and Power
+  tp: Constant power motion
+  df: M
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Find the truth table for the function Y of A and B represented in the following figure.
+    [figure: A AND B, OR-ed with NOT B, giving Y]
+  o: ['A B Y: 0 0 0; 0 1 1; 1 0 1; 1 1 1', 'A B Y: 0 0 1; 0 1 0; 1 0 1; 1 1 1', 'A B Y: 0 0 0; 0 1 1; 1 0 0; 1 1 0', 'A B Y: 0 0 0; 0 1 0; 1 0 0; 1 1 1']
+  ch: Semiconductor Electronics
+  tp: Logic gates truth table
+  df: E
+  fig: [[5, 90, 555, 165, 870]]
+- n: 16
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A simple pendulum of mass 'm', length 'l' and charge '+q' suspended in the electric field produced by two conducting parallel plates as shown. The value of deflection of pendulum in equilibrium position will be :
+    [figure: plates at +V2 and –V1 separated by d, dielectric slab (K) of thickness t against the +V2 plate, pendulum in air gap]
+  o: ['$\tan^{-1}\left[\frac{q}{mg}\times\frac{C_2(V_2 - V_1)}{(C_1 + C_2)(d - t)}\right]$', '$\tan^{-1}\left[\frac{q}{mg}\times\frac{C_1(V_1 + V_2)}{(C_1 + C_2)(d - 1)}\right]$', '$\tan^{-1}\left[\frac{q}{mg}\times\frac{C_1(V_2 - V_1)}{(C_1 + C_2)(d - t)}\right]$', '$\tan^{-1}\left[\frac{q}{mg}\times\frac{C_2(V_1 + V_2)}{(C_1 + C_2)(d - t)}\right]$']
+  ch: Capacitance
+  tp: Field in partially filled capacitor
+  df: H
+  fig: [[5, 590, 585, 745, 910]]
+- n: 17
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Graph
+  q: |-
+    Given below is the plot of a potential energy function U(x) for a system, in which a particle is in one dimensional motion, while a conservation force F(x) acts on it. Suppose that $E_{mech}$ = 8J, the incorrect statement for this system is :
+    [figure: U(x) vs x: 8 J up to x1, drops to 0 at x2, rises to 4 J at x3, dips, then 6 J beyond x4; E_mech = 8 J]
+    [where K.E. = kinetic energy]
+  o: ['at $x = x_3$, K.E. = 4J.', 'at $x > x_4$, K.E. is constant throughout the region .', 'at $x < x_1$, K.E. is smallest and the particle is moving at the slowest speed.', 'at $x = x_2$, K.E. is greatest and the particle is moving at the fastest speed.']
+  ch: Work, Energy and Power
+  tp: Potential energy curves
+  df: M
+  fig: [[6, 90, 610, 270, 910]]
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Graph
+  q: |-
+    The expected graphical representation of the variation of angle of deviation '$\delta$' with angle of incidence 'i' in a prism is :
+    [figure: four δ vs i graphs – (A) decreasing line, (B) U-shaped curve with minimum, (C) increasing line, (D) inverted U]
+  o: ['decreasing straight line', 'U-shaped curve with a minimum', 'increasing straight line through origin', 'inverted U curve with a maximum']
+  ch: Ray Optics and Optical Instruments
+  tp: Deviation vs incidence
+  df: E
+  fig: [[6, 325, 140, 635, 820]]
+- n: 19
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A physical 'y' is represented by the formula $y = m^2r^{-4}g^xl^{-\frac{3}{2}}$ if the percentage errors found in y, m, r, $l$ and g are 18, 1, 0.5, 4 and p respectively, then find the value of x and p.
+  o: ['5 and ± 2', '$\frac{16}{3}$ and $\pm\frac{3}{2}$', '8 and ± 2', '4 and ± 3']
+  ch: Units and Measurements
+  tp: Propagation of errors
+  df: M
+- n: 20
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A particle of mass M originally at rest is subjected to a force whose direction is constant but magnitude varies with time according to the relation $F = F_0\left[1 - \left(\frac{t - T}{T}\right)^2\right]$
+    Where $F_0$ and T are constants. The force acts only for the time interval 2T. The velocity v of the particle after time 2T is :
+  o: ['$F_0T/3M$', '$2F_0T/M$', '$4F_0T/3M$', '$F_0T/2M$']
+  ch: Laws of Motion
+  tp: Impulse of variable force
+  df: M

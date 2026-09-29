@@ -1,0 +1,104 @@
+- n: 1
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The planet Mars has two moons, if one of them has a period 7 hours, 30 minutes and an orbital radius of $9.0\times10^3$ km. Find the mass of Mars.
+    $\left\{\text{Given } \frac{4\pi^2}{G} = 6\times10^{11}\ N^{-2}kg^2\right\}$
+  o: ['$3.25\times10^{21}$ kg', '$6.00\times10^{23}$ kg', '$5.96\times10^{19}$ kg', '$7.02\times10^{25}$ kg']
+  ch: Gravitation
+  tp: Kepler's third law
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A raindrop with radius R = 0.2 mm falls from a cloud at a height h = 2000 m above the ground. Assume that the drop is spherical through its fall and the force of buoyance may be neglected, then the terminal speed attained by the raindrop is :
+    [Density of water $f_w$ = 1000 kg m$^{-3}$ and Density of air $f_a$ = 1.2 kg m$^{-3}$, g = 10 m/s$^2$, Coefficient of viscosity of air = $1.8\times10^{-5}$ Nsm$^{-2}$ ]
+  o: ['4.94 ms$^{-1}$', '14.4 ms$^{-1}$', '43.56 ms$^{-1}$', '250.6 ms$^{-1}$']
+  ch: Mechanical Properties of Fluids
+  tp: Terminal velocity
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Graph
+  q: |-
+    Figure A and B show long straight wires of circular cross – section (a and b with a < b), carrying current I which is uniformly distributed across the cross – section. The magnitude of magnetic field B varies with radius r and can be represented as :
+    [figure: wires of radii a and b; four B vs r graphs (A)–(D)]
+  o: ['B rises linearly inside, falls as 1/r outside; peak for a higher and at smaller r than for b', 'peak for a higher, both peaks at the same r', 'peak for b higher and at larger r', 'peak for a higher and at larger r than b']
+  ch: Moving Charges and Magnetism
+  tp: Ampere's law for thick wire
+  df: M
+  fig: [[2, 550, 140, 900, 880]]
+  nt: options are graphs, described in words
+- n: 4
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The resistance of a conductor at 15°C is 16$\Omega$ and at 100°C is 20$\Omega$. What will be the temperature coefficient of resistance of the conductor ?
+  o: ['0.003°C$^{-1}$', '0.042°C$^{-1}$', '0.033°C$^{-1}$', '0.010°C$^{-1}$']
+  ch: Current Electricity
+  tp: Temperature coefficient of resistance
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Two identical particles of mass 1 kg each go round a circle of radius R, under the action of their mutual gravitational attraction. The angular speed of each particle is :
+  o: ['$\frac{1}{2}\sqrt{\frac{G}{R^3}}$', '$\sqrt{\frac{G}{2R^3}}$', '$\frac{1}{2R}\sqrt{\frac{1}{G}}$', '$\sqrt{\frac{2G}{R^3}}$']
+  ch: Gravitation
+  tp: Binary system
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Consider the following statements :
+    (A) Atoms of each element emit characteristics spectrum.
+    (B) According to Bohr's Postulate, an electron in a hydrogen atom, revolves in a certain stationary orbit.
+    (C) The density of nuclear matter depends on the size of the nucleus.
+    (D) A free neutron is stable but a free proton decay is possible.
+    (E) Radioactivity is an indication of the instability of nuclei.
+    Choose the correct answer from the options given below :
+  o: ['B and D only', 'A, C and E only', 'A, B, C, D and E', 'A, B and E only']
+  ch: Nuclei
+  tp: Atomic and nuclear facts
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  st: Match
+  q: |-
+    Match List I with List II.
+    List I: (a) Capacitance, C; (b) Permittivity of free space, $\varepsilon_0$; (c) Permeability of free space, $\mu_0$; (d) Electric field, E
+    List II: (i) $M^1L^1T^{-3}A^{-1}$; (ii) $M^{-1}L^{-3}T^4A^2$; (iii) $M^{-1}L^{-2}T^4A^2$; (iv) $M^1L^1T^{-2}A^{-2}$
+    Choose the correct answer from the options given below :
+  o: ['(a)→(iii), (b)→(ii), (c)→(iv), (d)→(i)', '(a)→(iii), (b)→(iv), (c)→(ii), (d)→(i)', '(a)→(iv), (b)→(ii), (c)→(iii), (d)→(i)', '(a)→(iv), (b)→(iii), (c)→(ii), (d)→(i)']
+  ch: Units and Measurements
+  tp: Dimensions of electrical quantities
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    One mole of an ideal gas is taken through an adiabatic process where the temperature rises from 27°C to 37°C. If the ideal gas is composed of polyatomic molecule that has 4 vibrational modes, which of the following of the following is true ? [R = 8.314 J mol$^{-1}$ K$^{-1}$]
+  o: ['Work done by the gas is close to 582 J', 'Work done on the gas in close to 582 J', 'Work done on the gas is close to 332 J', 'Work done by the gas is close to 332 J']
+  ch: Thermodynamics
+  tp: Adiabatic work, degrees of freedom
+  df: M

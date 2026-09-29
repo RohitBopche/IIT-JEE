@@ -7,24 +7,28 @@ old Question Papers
 (one row per question: subject, chapter, topic, question, options A–D, answer, type, diagram yes/no, year, …).
 
 ### How it works
-1. Finds every `*.pdf` in the repo. Date, shift and year come from the file name
-   (`... 26 August 2021 Morning Shift ...`), so keep that naming for new papers.
-2. Renders pages as images and sends 3 pages at a time (plus the next page, so questions that run over a page break stay whole) to **Google Gemini** (`gemini-3.5-flash`).
-   This works for text PDFs and scanned PDFs alike. Maths and chemistry notation is written as LaTeX (`$...$`).
-3. Gemini returns structured JSON: question, options, official answer, type/style, chapter (from the fixed list in
-   `extractor/syllabus.yaml`), topic, diagram boxes.
-4. For papers that print solutions separately (for example the July 2021 papers), answers are read from the solution pages and matched to options.
-5. Diagrams are cropped to `output/figures/<paper>/<SUBJ>_Qnn_k.png` and linked from the Excel file.
-6. **Validation:** 4 options per MCQ, numeric answers for numerical questions, valid option labels, no gaps in question
-   numbering, agreement with the PDF's own text layer, and chapter within the subject. Each question gets a
-   **Confidence** score (0–1). Questions below 0.8 are read a second time and compared.
-   Anything still below 0.8 goes to the **Needs_Review** sheet.
+All 26 papers in `IIT JEE 2021/` (2,340 questions) were read page by page from rendered page images
+(`python -m extractor.manual render <paper>`), and the readings were saved as YAML in `output/raw/<paper>/`.
+`python -m extractor.manual ingest` then validates them and builds the Excel file.
+- Maths and chemistry notation is written as LaTeX (`$...$`). Drawn structures and graphs are described in `[figure: ...]` lines and cropped as images.
+- Answers: the official NTA answer printed with each question, or, for the scanned July papers, the "KEYS" answer-key pages (`answers.yaml`).
+  Where a printed key is demonstrably wrong, the correct answer is stored and the row carries a note in `Issues`.
+- Chapter comes from the fixed list in `extractor/syllabus.yaml`. Each question also gets a topic and an estimated difficulty.
+- Diagrams are cropped to `output/figures/<paper>/<SUBJ>_<sec><nn>_k.png` and linked from the Excel file.
+- **Validation:** checks for 4 options per MCQ, numeric answers for numerical questions, valid option labels, gaps in
+  question numbering (25 or 30 questions per subject), agreement with the PDF's own text layer, and a chapter within the subject.
+  Each question gets a **Confidence** score (0–1). Anything below 0.8 goes to the **Needs_Review** sheet.
+
+Progress per paper: `output/PROGRESS.md` (`python -m extractor.manual status`).
 
 ### Excel sheets
 - `Questions`: all questions
 - `Needs_Review`: low-confidence rows, with the reason in the `Issues` column
 - `Papers_Summary`: per paper: question counts per subject, diagrams, missing answers, average confidence
 - `Chapter_Counts`: number of questions per chapter
+
+### Automatic path (Gemini, optional)
+The original automated pipeline is still available. It needs a Gemini API key, and the free tier is too small to process a full paper.
 
 ### Run it
 ```bash

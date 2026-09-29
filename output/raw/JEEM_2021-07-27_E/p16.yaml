@@ -1,0 +1,281 @@
+- n: 6
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The area of the region bounded by y – x = 2 and $x^2 = y$ is equal to :
+  o: ['$\frac{2}{3}$', '$\frac{9}{2}$', '$\frac{16}{3}$', '$\frac{4}{3}$']
+  ch: Area Under Curves
+  tp: Area between line and parabola
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let f : R → R be defined as $f(x + y) + f(x - y) = 2f(x)f(y)$, $f\left(\frac{1}{2}\right) = -1$. Then, the value of $\sum_{k=1}^{20}\frac{1}{\sin(k)\sin(k + f(k))}$ is equal to :
+  o: ['$cosec^2(21)\cos(20)\cos(2)$', '$\sec^2(1)\sec(21)\cos(20)$', '$\sec^2(21)\sin(20)\sin(2)$', '$cosec^2(1)cosec(21)\sin(20)$']
+  ch: Trigonometric Functions and Equations
+  tp: Functional equation and telescoping sum
+  df: H
+- n: 8
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let the mean and variance of the frequency distribution
+    x: $x_1$ = 2, $x_2$ = 6, $x_3$ = 8, $x_4$ = 9
+    f: 4, 4, $\alpha$, $\beta$
+    be 6 and 6.8 respectively. If $x_3$ is changed from 8 to 7, then the mean for the new data will be :
+  o: ['4', '5', '$\frac{17}{3}$', '$\frac{16}{3}$']
+  ch: Statistics
+  tp: Mean and variance of frequency distribution
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The point P(a,b) undergoes the following three transformations successively :
+    (a) reflection about the line y = x
+    (b) translation through 2 units along the positive direction of x-axis.
+    (c) rotation through angle $\frac{\pi}{4}$ about the origin in the anti-clockwise direction.
+    If the co-ordinates of the final position of the point P are $\left(-\frac{1}{\sqrt{2}}, \frac{7}{\sqrt{2}}\right)$, then the value of 2a + b is equal to :
+  o: ['5', '7', '13', '9']
+  ch: Straight Lines
+  tp: Transformations of points
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Consider a circle C which touches the y-axis at (0, 6) and cuts off an intercept $6\sqrt{5}$ on the x-axis. Then the radius of the circle C is equal to :
+  o: ['9', '$\sqrt{82}$', '8', '$\sqrt{53}$']
+  ch: Circles
+  tp: Intercepts
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let A and B be two 3 x 3 real matrices such that $(A^2 - B^2)$ is invertible matrix. If $A^5 = B^5$ and $A^3B^2 = A^2B^3$, then the value of the determinant of the matrix $A^3 + B^3$ is equal to :
+  o: ['2', '1', '0', '4']
+  ch: Matrices and Determinants
+  tp: Matrix algebra
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let $\alpha = \max_{x\in R}\{8^{2\sin3x}\cdot4^{4\cos3x}\}$ and $\beta = \min_{x\in R}\{8^{2\sin3x}\cdot4^{4\cos3x}\}$. If $8x^2 + bx + c = 0$ is a quadratic equation whose roots are $\alpha^{1/5}$ and $\beta^{1/5}$, then the value of c – b is equal to :
+  o: ['42', '43', '47', '50']
+  ch: Quadratic Equations
+  tp: Forming quadratic from roots
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let c be the set of all complex numbers. Let $S_1 = \{z \in C : |z - 2| \le 1\}$ and $S_2 = \{z \in C : z(1 + i) + \bar{z}(1 - i) \ge 4\}$.
+    Then, the maximum value of $\left|z - \frac{5}{2}\right|^2$ for $z \in S_1 \cap S_2$ is equal to :
+  o: ['$\frac{5 + 2\sqrt{2}}{4}$', '$\frac{5 + 2\sqrt{2}}{2}$', '$\frac{3 + 2\sqrt{2}}{4}$', '$\frac{3 + 2\sqrt{2}}{2}$']
+  ch: Complex Numbers
+  tp: Regions in the Argand plane
+  df: H
+- n: 14
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    A possible value of 'x', for which the ninth term in the expansion of $\left\{3^{\log_3\sqrt{25^{x-1}+7}} + 3^{\left(-\frac{1}{8}\right)\log_3(5^{x-1}+1)}\right\}^{10}$ in the increasing powers of $3^{\left(-\frac{1}{8}\right)\log_3(5^{x-1}+1)}$ is equal to 180, is :
+  o: ['1', '2', '0', '–1']
+  ch: Binomial Theorem
+  tp: General term with logarithms
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The value of $\lim_{x\to0}\left(\frac{x}{\sqrt[8]{1 - \sin x} - \sqrt[8]{1 + \sin x}}\right)$ is equal to :
+  o: ['4', '0', '–4', '–1']
+  ch: Limits, Continuity and Differentiability
+  tp: Limits via expansion
+  df: E
+- n: 16
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    For real numbers $\alpha$ and $\beta \ne 0$, if the point of intersection of the straight lines $\frac{x - \alpha}{1} = \frac{y - 1}{2} = \frac{z - 1}{3}$ and $\frac{x - 4}{\beta} = \frac{y - 6}{3} = \frac{z - 7}{3}$, lies on the plane x + 2y – z = 8, then $\alpha - \beta$ is equal to :
+  o: ['3', '9', '7', '5']
+  ch: Three Dimensional Geometry
+  tp: Intersection of lines
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Two sides of a parallelogram are along the lines 4x + 5y = 0 and 7x + 2y = 0. If the equation of one of the diagonals of the parallelogram is 11x + 7y = 9, then other diagonal passes through the point :
+  o: ['(2,1)', '(2,2)', '(1,3)', '(1,2)']
+  ch: Straight Lines
+  tp: Parallelogram diagonals
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Which of the following is the negation of the statement "for all M > 0, there exists x ∈ S such that x ≥ M"?
+  o: ['there exists M > 0, there exists x ∈ S such that x < M', 'there exists M > 0, such that x ≥ M for all x ∈ S', 'there exists M > 0, there exists x ∈ S such that x ≥ M', 'there exists M > 0, such that x < M for all x ∈ S']
+  ch: Mathematical Reasoning
+  tp: Negation of quantified statements
+  df: E
+  a: D
+  as: keypage
+  c: m
+  nt: 'printed key A; negation of (∀M ∃x: x ≥ M) is (∃M ∀x: x < M) = option (D)'
+- n: 19
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    A student appeared in an examination consisting of 8 true – false type questions. The student guesses the answers with equal probability. The smallest value of n, so that the probability of guessing at least 'n' correct answers is less than $\frac{1}{2}$, is :
+  o: ['5', '6', '3', '4']
+  ch: Probability
+  tp: Binomial distribution
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let f : (a,b) → R be twice differentiable such that $f(x) = \int_a^xg(t)dt$ for a differentiable function g(x). If f(x) = 0 has exactly five distinct roots in (a, b), then g(x)g'(x) = 0 has at least :
+  o: ['seven roots in (a, b)', 'twelve roots in (a, b)', 'five roots in (a, b)', 'three roots in (a, b)']
+  ch: Application of Derivatives
+  tp: Rolle's theorem
+  df: H
+- n: 1
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    The number of real roots of the equation $e^{4x} - e^{3x} - 4e^{2x} - e^x + 1 = 0$ is equal to.............
+  ch: Quadratic Equations
+  tp: Reciprocal equations
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    If the real part of the complex number $z = \frac{3 + 2i\cos\theta}{1 - 3i\cos\theta}$, $\theta \in \left(0, \frac{\pi}{2}\right)$ is zero, then the value of $\sin^23\theta + \cos^2\theta$ is equal to........
+  ch: Complex Numbers
+  tp: Purely imaginary condition
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let n be a non-negative integer. Then the number of divisors of the form "4n + 1" of the number $(10)^{10}\cdot(11)^{10}\cdot(13)^{13}$ is equal to.........
+  ch: Permutations and Combinations
+  tp: Divisors of special form
+  df: H
+- n: 4
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    The distance of the point P(3,4,4) from the point of intersection of the line joining the points Q(3,–4,–5) and R(2, –3, 1) and the plane 2x + y + z = 7, is equal to............
+  ch: Three Dimensional Geometry
+  tp: Line–plane intersection
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let $A = \{n \in N \mid n^2 \le n + 10,000\}$, $B = \{3k + 1 \mid k \in N\}$ and $C = \{2k \mid k \in N\}$, then the sum of all the elements of the set $A \cap (B - C)$ is equal to......
+  ch: Sets, Relations and Functions
+  tp: Set operations and AP sums
+  df: M
+  a: 832
+  as: keypage
+  c: m
+  nt: 'printed key 16 is the count of terms; sum 7+13+...+97 = 832 (NTA answer 832)'
+- n: 6
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    If $\int_0^{\pi}(\sin^3x)e^{-\sin^2x}dx = \alpha - \frac{\beta}{e}\int_0^1\sqrt{t}e^tdt$, then $\alpha + \beta$ is equal to........
+  ch: Definite Integration
+  tp: Substitution
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    If $A = \begin{bmatrix} 1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix}$ and $M = A + A^2 + A^3 + .... + A^{20}$, then the sum of all the elements of the matrix M is equal to..........
+  ch: Matrices and Determinants
+  tp: Powers of a matrix
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let E be an ellipse whose axes are parallel to the co-ordinates axes, having its center at (3,–4), one focus at (4,–4) and one vertex at (5,–4). If mx – y = 4, m > 0 is a tangent to the ellipse E, then the value of $5m^2$ is equal to............
+  ch: Conic Sections
+  tp: Tangent to ellipse
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let y = y(x) be the solution of the differential equation $dy = e^{\alpha x + y}dx$; $\alpha \in N$. If $y(\log_e2) = \log_e2$ and $y(0) = \log_e\left(\frac{1}{2}\right)$, then the value of $\alpha$ is equal to...........
+  ch: Differential Equations
+  tp: Variable separable
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let $\vec{a} = \hat{i} - \alpha\hat{j} + \beta\hat{k}$, $\vec{b} = 3\hat{i} + \beta\hat{j} - \alpha\hat{k}$ and $\vec{c} = -\alpha\hat{j} - 2\hat{j} + \hat{k}$, where $\alpha$ and $\beta$ are integers. If $\vec{a}\cdot\vec{b} = -1$ and $\vec{b}\cdot\vec{c} = 10$, then $(\vec{a}\times\vec{b})\cdot\vec{c}$ is equal to.......
+  ch: Vector Algebra
+  tp: Scalar triple product
+  df: M
