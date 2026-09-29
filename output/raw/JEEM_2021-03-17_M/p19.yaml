@@ -1,0 +1,160 @@
+- n: 17
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Choose the incorrect statement about the two circles whose equations are given below : $x^2 + y^2 - 10x - 10y + 41 = 0$ and $x^2 + y^2 - 16x - 10y + 80 = 0$
+  o: ['Distance between two centres is the average of radii of both the circles.', "Both circles' centres lie inside region of one another.", 'Both circles pass through the centre of each other.', 'Circles have two intersection points.']
+  a: B
+  ch: Circles
+  tp: Relative position of circles
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Which of the following statements is incorrect for the function $g(\alpha)$ for $\alpha \in \mathbb{R}$ such that $g(\alpha) = \int_{\pi/6}^{\pi/3}\frac{\sin^\alpha x}{\cos^\alpha x + \sin^\alpha x}dx$
+  o: ['$g(\alpha)$ is a strictly increasing function', '$g(\alpha)$ has an inflection point at $\alpha = -\frac{1}{2}$', '$g(\alpha)$ is a strictly decreasing function', '$g(\alpha)$ is an even function']
+  a: D
+  ch: Definite Integration
+  tp: King property
+  df: M
+  nt: 'Official NTA answer (4); ALLEN answer (1 or 2 or 3)/Bonus (g is constant)'
+- n: 19
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Which of the following is true for y(x) that satisfies the differential equation $\frac{dy}{dx} = xy - 1 + x - y$; y(0) = 0 :
+  o: ['$y(1) = e^{-\frac{1}{2}} - 1$', '$y(1) = e^{\frac{1}{2}} - e^{-\frac{1}{2}}$', 'y(1) = 1', '$y(1) = e^{\frac{1}{2}} - 1$']
+  a: A
+  ch: Differential Equations
+  tp: Variable separable
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    The value of $\lim_{x\to0^+}\frac{\cos^{-1}(x - [x]^2)\cdot\sin^{-1}(x - [x]^2)}{x - x^3}$, where [x] denotes the greatest integer $\le x$ is :
+  o: ['$\pi$', '0', '$\frac{\pi}{4}$', '$\frac{\pi}{2}$']
+  a: D
+  ch: Limits, Continuity and Differentiability
+  tp: Limits with greatest integer
+  df: E
+- n: 1
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    The maximum value of z in the following equation $z = 6xy + y^2$, where $3x + 4y \le 100$ and $4x + 3y \le 75$ for $x \ge 0$ and $y \ge 0$ is _______ .
+  a: '904'
+  ch: Application of Derivatives
+  tp: Maximisation under constraints
+  df: H
+  nt: 'ALLEN answer 904 or 904.01 or 904.02'
+- n: 2
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    If the function $f(x) = \frac{\cos(\sin x) - \cos x}{x^4}$ is continuous at each point in its domain and $f(0) = \frac{1}{k}$, then k is _________ .
+  a: '6'
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity, trigonometric limit
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    If $f(x) = \sin\left(\cos^{-1}\left(\frac{1 - 2^{2x}}{1 + 2^{2x}}\right)\right)$ and its first derivative with respect to x is $-\frac{b}{a}\log_e2$ when x = 1, where a and b are integers, then the minimum value of $|a^2 - b^2|$ is _______ .
+  a: '481'
+  ch: Limits, Continuity and Differentiability
+  tp: Derivative of inverse trig composite
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    Let there be three independent events $E_1$, $E_2$ and $E_3$. The probability that only $E_1$ occurs is $\alpha$, only $E_2$ occurs is $\beta$ and only $E_3$ occurs is $\gamma$. Let 'p' denote the probability of none of events occurs that satisfies the equations $(\alpha - 2\beta)p = \alpha\beta$ and $(\beta - 3\gamma)p = 2\beta\gamma$. All the given probabilities are assumed to lie in the interval (0, 1). Then, $\frac{\text{Probability of occurrence of }E_1}{\text{Probability of occurrence of }E_3}$ is equal to _____.
+  a: '6'
+  ch: Probability
+  tp: Independent events
+  df: H
+- n: 5
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    If $\vec{a} = \alpha\hat{i} + \beta\hat{j} + 3\hat{k}$, $\vec{b} = -\beta\hat{i} - \alpha\hat{j} - \hat{k}$ and $\vec{c} = \hat{i} - 2\hat{j} - \hat{k}$ such that $\vec{a}\cdot\vec{b} = 1$ and $\vec{b}\cdot\vec{c} = -3$, then $\frac{1}{3}((\vec{a}\times\vec{b})\cdot\vec{c})$ is equal to _______.
+  a: '2'
+  ch: Vector Algebra
+  tp: Scalar triple product
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If $A = \begin{bmatrix} 2 & 3 \\ 0 & -1 \end{bmatrix}$, then the value of $\det(A^4) + \det(A^{10} - (\text{Adj}(2A))^{10})$ is equal to _________ .
+  a: '16'
+  ch: Matrices and Determinants
+  tp: Determinant of adjoint powers
+  df: H
+- n: 7
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If [·] represents the greatest integer function, then the value of $\left|\int_0^{\sqrt{\pi/2}}\left[[x^2] - \cos x\right]dx\right|$ is ________ .
+  a: '1'
+  ch: Definite Integration
+  tp: Greatest integer function in integral
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    The minimum distance between any two points $P_1$ and $P_2$ while considering point $P_1$ on one circle and point $P_2$ on the other circle for the given circles' equations $x^2 + y^2 - 10x - 10y + 41 = 0$ and $x^2 + y^2 - 24x - 10y + 160 = 0$ is ______ .
+  a: '1'
+  ch: Circles
+  tp: Minimum distance between circles
+  df: E
+- n: 9
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If the equation of the plane passing through the line of intersection of the planes 2x – 7y + 4z – 3 = 0, 3x – 5y + 4z + 11 = 0 and the point (–2, 1, 3) is ax + by + cz – 7 = 0, then the value of 2a + b + c – 7 is _____ .
+  a: '4'
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If $(2021)^{3762}$ is divided by 17, then the remainder is _______ .
+  a: '4'
+  ch: Binomial Theorem
+  tp: Remainder problems
+  df: M

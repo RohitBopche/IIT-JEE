@@ -1,0 +1,159 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A triangular plate is shown. A force $\vec{F} = 4\hat{i} - 3\hat{j}$ is applied at point P. The torque at point P with respect to point 'O' and 'Q' are :
+  o: ['$-15 - 20\sqrt{3}$, $15 - 20\sqrt{3}$', '$15 + 20\sqrt{3}$, $15 - 20\sqrt{3}$', '$15 - 20\sqrt{3}$, $15 + 20\sqrt{3}$', '$-15 + 20\sqrt{3}$, $15 + 20\sqrt{3}$']
+  a: A
+  ch: Rotational Motion
+  tp: Torque about different points
+  df: M
+  fig: [[1, 270, 200, 390, 405]]
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    When two soap bubbles of radii a and b (b > a) coalesce, the radius of curvature of common surface is :
+  o: ['$\frac{ab}{b - a}$', '$\frac{a + b}{ab}$', '$\frac{b - a}{ab}$', '$\frac{ab}{a + b}$']
+  a: A
+  ch: Mechanical Properties of Fluids
+  tp: Excess pressure in bubbles
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A polyatomic ideal gas has 24 vibrational modes. What is the value of $\gamma$ ?
+  o: ['1.03', '1.30', '1.37', '10.3']
+  a: A
+  ch: Kinetic Theory of Gases
+  tp: Degrees of freedom
+  df: M
+- n: 4
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    If an electron is moving in the $n^{\text{th}}$ orbit of the hydrogen atom, then its velocity ($v_n$) for the $n^{\text{th}}$ orbit is given as :
+  o: ['$v_n \propto n$', '$v_n \propto \frac{1}{n}$', '$v_n \propto n^2$', '$v_n \propto \frac{1}{n^2}$']
+  a: B
+  ch: Atoms
+  tp: Bohr model velocity
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An electron of mass m and a photon have same energy E. The ratio of wavelength of electron to that of photon is : (c being the velocity of light)
+  o: ['$\frac{1}{c}\left(\frac{2m}{E}\right)^{1/2}$', '$\frac{1}{c}\left(\frac{E}{2m}\right)^{1/2}$', '$\left(\frac{E}{2m}\right)^{1/2}$', '$c(2mE)^{1/2}$']
+  a: B
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie vs photon wavelength
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two identical metal wires of thermal conductivities $K_1$ and $K_2$ respectively are connected in series. The effective thermal conductivity of the combination is :
+  o: ['$\frac{2K_1K_2}{K_1 + K_2}$', '$\frac{K_1 + K_2}{2K_1K_2}$', '$\frac{K_1 + K_2}{K_1K_2}$', '$\frac{K_1K_2}{K_1 + K_2}$']
+  a: A
+  ch: Thermal Properties of Matter
+  tp: Series conduction
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The vernier scale used for measurement has a positive zero error of 0.2 mm. If while taking a measurement it was noted that '0' on the vernier scale lies between 8.5 cm and 8.6 cm, vernier coincidence is 6, then the correct value of measurement is_____ cm. (least count = 0.01 cm)
+  o: ['8.36 cm', '8.54 cm', '8.58 cm', '8.56 cm']
+  a: B
+  ch: Units and Measurements
+  tp: Vernier zero error
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An AC current is given by $I = I_1\sin\omega t + I_2\cos\omega t$. A hot wire ammeter will give a reading :
+  o: ['$\sqrt{\frac{I_1^2 - I_2^2}{2}}$', '$\sqrt{\frac{I_1^2 + I_2^2}{2}}$', '$\frac{I_1 + I_2}{\sqrt{2}}$', '$\frac{I_1 + I_2}{2\sqrt{2}}$']
+  a: B
+  ch: Alternating Current
+  tp: RMS value
+  df: E
+- n: 9
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A modern grand-prix racing car of mass m is travelling on a flat track in a circular arc of radius R with a speed v. If the coefficient of static friction between the tyres and the track is $\mu_s$, then the magnitude of negative lift $F_L$ acting downwards on the car is : (Assume forces on the four tyres are identical and g = acceleration due to gravity)
+  o: ['$m\left(\frac{v^2}{\mu_sR} + g\right)$', '$m\left(\frac{v^2}{\mu_sR} - g\right)$', '$m\left(g - \frac{v^2}{\mu_sR}\right)$', '$-m\left(g + \frac{v^2}{\mu_sR}\right)$']
+  a: B
+  ch: Laws of Motion
+  tp: Circular motion with downforce
+  df: M
+  fig: [[2, 725, 690, 820, 770]]
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A car accelerates from rest at a constant rate $\alpha$ for some time after which it decelerates at a constant rate $\beta$ to come to rest. If the total time elapsed is t seconds, the total distance travelled is :
+  o: ['$\frac{4\alpha\beta}{(\alpha + \beta)}t^2$', '$\frac{2\alpha\beta}{(\alpha + \beta)}t^2$', '$\frac{\alpha\beta}{2(\alpha + \beta)}t^2$', '$\frac{\alpha\beta}{4(\alpha + \beta)}t^2$']
+  a: C
+  ch: Kinematics
+  tp: Accelerated motion, v-t graph
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A solenoid of 1000 turns per metre has a core with relative permeability 500. Insulated windings of the solenoid carry an electric current of 5A. The magnetic flux density produced by the solenoid is : (permeability of free space = $4\pi\times10^{-7}$ H/m)
+  o: ['$\pi$T', '$2\times10^{-3}\pi$T', '$\frac{\pi}{5}$T', '$10^{-4}\pi$T']
+  a: A
+  ch: Magnetism and Matter
+  tp: Solenoid with core
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A mass M hangs on a massless rod of length l which rotates at a constant angular frequency. The mass M moves with steady speed in a circular path of constant radius. Assume that the system is in steady circular motion with constant angular velocity $\omega$. The angular momentum of M about point A is $L_A$ which lies in the positive z direction and the angular momentum of M about B is $L_B$. The correct statement for this system is :
+  o: ['$L_A$ and $L_B$ are both constant in magnitude and direction', '$L_B$ is constant in direction with varying magnitude', '$L_B$ is constant, both in magnitude and direction', '$L_A$ is constant, both in magnitude and direction']
+  a: D
+  ch: Rotational Motion
+  tp: Angular momentum of conical pendulum
+  df: M
+  fig: [[3, 330, 640, 470, 790]]
+- n: 13
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    For what value of displacement the kinetic energy and potential energy of a simple harmonic oscillation become equal ?
+  o: ['x = 0', 'x = ± A', '$x = \pm\frac{A}{\sqrt{2}}$', '$x = \frac{A}{2}$']
+  a: C
+  ch: Oscillations
+  tp: Energy in SHM
+  df: E

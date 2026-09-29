@@ -1,0 +1,145 @@
+- n: 5
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If $\cot^{-1}(\alpha) = \cot^{-1}2 + \cot^{-1}8 + \cot^{-1}18 + \cot^{-1}32 + \ldots$ upto 100 terms, then $\alpha$ is :
+  o: ['1.01', '1.00', '1.02', '1.03']
+  a: A
+  ch: Inverse Trigonometric Functions
+  tp: Telescoping inverse cot series
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The equation of the plane which contains the y-axis and passes through the point (1, 2, 3) is :
+  o: ['x + 3z = 10', 'x + 3z = 0', '3x + z = 6', '3x – z = 0']
+  a: D
+  ch: Three Dimensional Geometry
+  tp: Equation of plane
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If $A = \begin{pmatrix} 0 & \sin\alpha \\ \sin\alpha & 0 \end{pmatrix}$ and $\det\left(A^2 - \frac{1}{2}I\right) = 0$, then a possible value of $\alpha$ is
+  o: ['$\frac{\pi}{2}$', '$\frac{\pi}{3}$', '$\frac{\pi}{4}$', '$\frac{\pi}{6}$']
+  a: C
+  ch: Matrices and Determinants
+  tp: Determinant of matrix expression
+  df: E
+- n: 8
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If the Boolean expression $(p \Rightarrow q) \Leftrightarrow (q * (\sim p))$ is a tautology, then the Boolean expression $p * (\sim q)$ is equivalent to :
+  o: ['$q \Rightarrow p$', '$\sim q \Rightarrow p$', '$p \Rightarrow \sim q$', '$p \Rightarrow q$']
+  a: A
+  ch: Mathematical Reasoning
+  tp: Logical equivalence
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Two dices are rolled. If both dices have six faces numbered 1,2,3,5,7 and 11, then the probability that the sum of the numbers on the top faces is less than or equal to 8 is :
+  o: ['$\frac{4}{9}$', '$\frac{17}{36}$', '$\frac{5}{12}$', '$\frac{1}{2}$']
+  a: B
+  ch: Probability
+  tp: Dice sum probability
+  df: E
+- n: 10
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If the fourth term in the expansion of $(x + x^{\log_2x})^7$ is 4480, then the value of x where $x \in \mathbb{N}$ is equal to :
+  o: ['2', '4', '3', '1']
+  a: A
+  ch: Binomial Theorem
+  tp: General term
+  df: M
+- n: 11
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    In a school, there are three types of games to be played. Some of the students play two types of games, but none play all the three games. Which Venn diagrams can justify the above statement?
+  o: ['P and Q', 'P and R', 'None of these', 'Q and R']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: Venn diagrams
+  df: E
+  fig: [[17, 650, 130, 730, 440]]
+- n: 12
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The sum of possible values of x for $\tan^{-1}(x + 1) + \cot^{-1}\left(\frac{1}{x - 1}\right) = \tan^{-1}\left(\frac{8}{31}\right)$ is :
+  o: ['$-\frac{32}{4}$', '$-\frac{31}{4}$', '$-\frac{30}{4}$', '$-\frac{33}{4}$']
+  a: A
+  ch: Inverse Trigonometric Functions
+  tp: Inverse trig equations
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The area of the triangle with vertices A(z), B(iz) and C (z + iz) is :
+  o: ['1', '$\frac{1}{2}|z|^2$', '$\frac{1}{2}$', '$\frac{1}{2}|z + iz|^2$']
+  a: B
+  ch: Complex Numbers
+  tp: Rotation, area
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    The line 2x – y + 1 = 0 is a tangent to the circle at the point (2, 5) and the centre of the circle lies on x – 2y = 4. Then, the radius of the circle is:
+  o: ['$3\sqrt{5}$', '$5\sqrt{3}$', '$5\sqrt{4}$', '$4\sqrt{5}$']
+  a: A
+  ch: Circles
+  tp: Tangent and centre
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Team 'A' consists of 7 boys and n girls and Team 'B' has 4 boys and 6 girls. If a total of 52 single matches can be arranged between these two teams when a boy plays against a boy and a girl plays against a girl, then n is equal to :
+  o: ['5', '2', '4', '6']
+  a: C
+  ch: Permutations and Combinations
+  tp: Counting matches
+  df: E
+- n: 16
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    The value of $4 + \cfrac{1}{5 + \cfrac{1}{4 + \cfrac{1}{5 + \cfrac{1}{4 + \ldots\infty}}}}$ is :
+  o: ['$2 + \frac{2}{5}\sqrt{30}$', '$2 + \frac{4}{\sqrt{5}}\sqrt{30}$', '$4 + \frac{4}{\sqrt{5}}\sqrt{30}$', '$5 + \frac{2}{5}\sqrt{30}$']
+  a: A
+  ch: Quadratic Equations
+  tp: Continued fraction
+  df: M
