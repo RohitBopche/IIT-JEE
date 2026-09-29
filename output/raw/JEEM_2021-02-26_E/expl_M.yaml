@@ -1,0 +1,209 @@
+M A 1: |-
+  Concept: The direction of the line of intersection is $\vec n_1\times\vec n_2$; the foot of the perpendicular satisfies $(\vec P - \vec Q)\cdot\vec d = 0$.
+  Solution:
+  1. $\vec d = (1, 2, 1)\times(0, 1, 2) = (3, -2, 1)$.
+  2. Put $z = 0$: $y = 4$, $x = -2$. So L: $(-2 + 3s,\ 4 - 2s,\ s)$.
+  3. $[(-5 + 3s) \cdot 3 + (2 - 2s)(-2) + (s - 1)\cdot1] = 0 \Rightarrow 14s - 20 = 0 \Rightarrow s = \frac{10}{7}$.
+  4. $P = \left(\frac{16}{7}, \frac{8}{7}, \frac{10}{7}\right)$, so $21(\alpha + \beta + \gamma) = 21\cdot\frac{34}{7} = 102$.
+  Answer: (D)
+M A 2: |-
+  Concept: Write the numerator in powers of $(2n + 1)$ and use the series for $\sinh 1$ and $\cosh 1$.
+  Solution:
+  1. $4(n^2 + 6n + 10) = (2n+1)^2 + 10(2n+1) + 29$.
+  2. $\frac{(2n+1)^2}{(2n+1)!} = \frac{2n+1}{(2n)!} = \frac{1}{(2n-1)!} + \frac{1}{(2n)!}$, so the term is $\frac{1}{4}\left[\frac{1}{(2n-1)!} + \frac{11}{(2n)!} + \frac{29}{(2n+1)!}\right]$.
+  3. Summing over $n \ge 1$: $\sum\frac{1}{(2n-1)!} = \sinh1$, $\sum\frac{1}{(2n)!} = \cosh1 - 1$, $\sum\frac{1}{(2n+1)!} = \sinh1 - 1$.
+  4. $S = \frac{1}{4}[30\sinh1 + 11\cosh1 - 40] = \frac{1}{4}\left[\frac{41}{2}e - \frac{19}{2}e^{-1} - 40\right] = \frac{41}{8}e - \frac{19}{8}e^{-1} - 10$.
+  Answer: (C)
+M A 3: |-
+  Concept: Add and subtract $af(a)$ to create the derivative quotient.
+  Solution:
+  1. $xf(a) - af(x) = f(a)(x - a) - a[f(x) - f(a)]$.
+  2. Limit $= f(a) - af'(a) = 4 - 2a$.
+  Answer: (C)
+M A 4: |-
+  Concept: $PA^2 + PB^2 = 2PM^2 + \frac{AB^2}{2}$, where M is the midpoint of AB (Apollonius).
+  Solution:
+  1. $M = \left(1, -\frac{1}{2}\right)$; maximise $PM$ for P on the circle with centre $(1, 1)$.
+  2. The farthest point lies on the line through M and the centre, i.e. $x = 1$: $P = (1, 2)$.
+  3. A, B and P all have $x = 1$, so they lie on a straight line.
+  Answer: (B)
+M A 5: |-
+  Concept: Parametrise the circle point as $(\cos\theta, \sin\theta)$.
+  Solution:
+  1. Midpoint: $h = \frac{3 + \cos\theta}{2}$, $k = \frac{2 + \sin\theta}{2}$.
+  2. $\left(h - \frac{3}{2}\right)^2 + (k - 1)^2 = \frac{1}{4}$, a circle of radius $\frac{1}{2}$.
+  Answer: (B)
+M A 6: |-
+  Concept: Bernoulli equation $y' - \frac{y}{x} = y^2$; substitute $v = \frac{1}{y}$.
+  Solution:
+  1. $v' + \frac{v}{x} = -1 \Rightarrow (xv)' = -x \Rightarrow xv = -\frac{x^2}{2} + \frac{C}{2}$, i.e. $y = \frac{2x}{C - x^2}$.
+  2. At $x = -2$ on $x + 2y = 4$: $y = 3$. So $3 = \frac{-4}{C - 4} \Rightarrow C = \frac{8}{3}$.
+  3. At $x = 3$: $y = \frac{6}{8/3 - 9} = -\frac{18}{19}$.
+  Answer: (B)
+M A 7: |-
+  Concept: The curves $\sin x$ and $\cos x$ meet at $x = \frac{\pi}{4}$.
+  Solution:
+  1. $A_1 = \int_0^{\pi/4}(\cos x - \sin x)dx = \sqrt2 - 1$.
+  2. $A_2 = \int_0^{\pi/4}\sin x\,dx + \int_{\pi/4}^{\pi/2}\cos x\,dx = 2\left(1 - \frac{1}{\sqrt2}\right) = 2 - \sqrt2 = \sqrt2(\sqrt2 - 1)$.
+  3. $A_1 : A_2 = 1 : \sqrt2$ and $A_1 + A_2 = 1$.
+  Answer: (D)
+M A 8: |-
+  Concept: $\ln(1 + a) = a - \frac{a^2}{2} + \frac{a^3}{3} - \dots$ for $|a| < 1$.
+  Solution:
+  1. $\frac{a + b}{1 - ab} = 1 \Rightarrow a + b + ab = 1 \Rightarrow (1 + a)(1 + b) = 2$.
+  2. The series $= \ln(1 + a) + \ln(1 + b) = \ln 2$.
+  Answer: (A)
+M A 9: |-
+  Concept: A tautology is true for every truth assignment; look for a falsifying assignment.
+  Solution:
+  1. $F_2 = (A\vee B)\vee(\sim B\vee\sim A)$ contains $A\vee\sim A$, so it is a tautology.
+  2. For $F_1$ to be false: $\sim A$ false ($A = T$), $A\wedge\sim B$ false ($B = T$), and $\sim C\wedge(A\vee B)$ false ($C = T$).
+  3. $A = B = C = T$ makes $F_1$ false, so $F_1$ is not a tautology.
+  Answer: (A)
+M A 10: |-
+  Concept: When $\Delta = 0$, the system is consistent (with infinitely many solutions) only if the same linear relation holds for the constants.
+  Solution:
+  1. $\Delta = 1(42 - 22) - 2(14 + 11) - 3(-4 - 6) = 0$.
+  2. The rows satisfy $2R_2 + R_3 = (5, 10, -15) = 5R_1$.
+  3. The system is consistent iff $2b + c = 5a$, and then it has infinitely many solutions (otherwise none).
+  Why others are wrong: $\Delta = 0$ rules out a unique solution (A, D), and solutions do exist when $5a = 2b + c$ (C).
+  Answer: (B)
+M A 11: |-
+  Concept: A number is even iff its last digit is even; count arrangements of repeated digits.
+  Solution:
+  1. Total: $\frac{7!}{2!\,3!\,2!} = 210$.
+  2. Last digit 4: arrange 3, 3, 4, 4, 5, 5 in $\frac{6!}{2!\,2!\,2!} = 90$ ways.
+  3. $P = \frac{90}{210} = \frac{3}{7}$.
+  Answer: (C)
+M A 12: |-
+  Concept: Collinear vectors have proportional components.
+  Solution:
+  1. $\frac{x}{1} = \frac{-1}{y} = \frac{1}{z} \Rightarrow y = -\frac{1}{x}$, $z = \frac{1}{x}$.
+  2. $x\hat i + y\hat j + z\hat k = \left(x, -\frac{1}{x}, \frac{1}{x}\right)$; with $x = 1$ this is $(1, -1, 1)$.
+  3. Unit vector: $\frac{1}{\sqrt3}(\hat i - \hat j + \hat k)$.
+  Answer: (C)
+M A 13: |-
+  Concept: Substitute $t \to \frac{1}{t}$ in $f\left(\frac{1}{x}\right)$.
+  Solution:
+  1. $f\left(\frac{1}{x}\right) = \int_1^{1/x}\frac{\ln t}{1+t}dt$; with $t = \frac{1}{u}$ this becomes $\int_1^x\frac{\ln u}{u(1+u)}du$.
+  2. $f(x) + f\left(\frac{1}{x}\right) = \int_1^x\ln u\left[\frac{1}{1+u} + \frac{1}{u(1+u)}\right]du = \int_1^x\frac{\ln u}{u}du = \frac{(\ln x)^2}{2}$.
+  3. At $x = e$: $\frac{1}{2}$.
+  Answer: (A)
+M A 14: |-
+  Concept: Continuity at $x = -1$ and $x = 1$.
+  Solution:
+  1. At $x = 1$: $\sin\pi = 0$, so $|a + 1 + b| = 0 \Rightarrow a + b = -1$.
+  2. At $x = -1$: $2\sin\frac{\pi}{2} = 2$, so $|a - 1 + b| = 2$, consistent with $a + b = -1$.
+  3. $a + b = -1$.
+  Answer: (B)
+M A 15: |-
+  Concept: $g\circ f = f$ forces $g$ to fix every value in the range of $f$.
+  Solution:
+  1. Range of $f$ $= \{2, 4, 6, 8, 10\}$, so $g(k) = k$ for these.
+  2. $g(1), g(3), g(5), g(7), g(9)$ are unrestricted: $10$ choices each.
+  3. Number of $g$ $= 10^5$.
+  Answer: (A)
+M A 16: |-
+  Concept: Odd divisors of $2^x3^y5^z$ are the divisors of $3^y5^z$.
+  Solution:
+  1. $\frac{y + z}{yz} = \frac{5}{6}$ with $y + z = 5$ gives $yz = 6$, so $y = 3$, $z = 2$.
+  2. Number of odd divisors $= (3 + 1)(2 + 1) = 12$.
+  Answer: (C)
+M A 17: |-
+  Concept: $\sin^{-1}(g(x))$ needs $|g(x)| \le 1$.
+  Solution:
+  1. $g(x) = \frac{(x-2)(x+1)}{(x-2)(2x+3)} = \frac{x+1}{2x+3}$ (and $g(2) = \frac{3}{7}$ by the given definition).
+  2. $|x + 1| \le |2x + 3| \Rightarrow (2x+3)^2 - (x+1)^2 \ge 0 \Rightarrow (3x + 4)(x + 2) \ge 0$.
+  3. $x \le -2$ or $x \ge -\frac{4}{3}$ (the point $x = -\frac{3}{2}$ lies outside this set).
+  Answer: (A)
+M A 18: |-
+  Concept: Image of a point in a plane: $\frac{x - x_1}{a} = \dots = \frac{-2(ax_1 + by_1 + cz_1 + d)}{a^2 + b^2 + c^2}$.
+  Solution:
+  1. $4 - 15 + 10 - 8 = -9$ and $a^2 + b^2 + c^2 = 45$, so the multiplier is $\frac{18}{45} = \frac{2}{5}$.
+  2. Image $= \left(1 + \frac{8}{5},\ 3 - 2,\ 5 + \frac{4}{5}\right) = \left(\frac{13}{5}, 1, \frac{29}{5}\right)$.
+  3. $5(\alpha + \beta + \gamma) = 13 + 5 + 29 = 47$.
+  Answer: (A)
+M A 19: |-
+  Concept: Differentiate the integral equation to get a separable DE.
+  Solution:
+  1. $f'(x) = e^xf(x) + e^x = e^x(f + 1)$, with $f(0) = 1$.
+  2. $\ln(f + 1) = e^x + C$; at $x = 0$: $\ln2 = 1 + C$.
+  3. $f(x) = 2e^{e^x - 1} - 1$.
+  Answer: (A)
+M A 20: |-
+  Concept: Among triangles inscribed in a circle, the equilateral one has maximum area.
+  Solution:
+  1. Area $= 2r^2\sin A\sin B\sin C$ is maximised when $A = B = C = 60°$.
+  2. Side $= 2r\sin60° = \sqrt3r$; height $= \frac{3r}{2}$.
+  Why others are wrong: (B) gives the wrong height ($\frac{3r}{2}$, not $\frac{2r}{3}$), and (A) and (C) are not maximal.
+  Answer: (D)
+M B 1: |-
+  Concept: $\gcd(n, 18) = 3$ means $3 \mid n$, $n$ odd, and $9 \nmid n$.
+  Solution:
+  1. 4-digit multiples of 3: $3333 - 333 = 3000$, of which 1500 are odd.
+  2. 4-digit multiples of 9: $1111 - 111 = 1000$, of which 500 are odd.
+  3. Count $= 1500 - 500 = 1000$.
+  Answer: 1000
+M B 2: |-
+  Concept: $\alpha$ and $\beta$ satisfy $t^2 = t + 1$, so $P_{n+1} = P_n + P_{n-1}$.
+  Solution:
+  1. $29 = P_n + 11 \Rightarrow P_n = 18$.
+  2. $P_n^2 = 324$.
+  Answer: 324
+M B 3: |-
+  Concept: $\sum(X_i - \beta)^2 = \sum(X_i - \bar X)^2 + N(\bar X - \beta)^2$.
+  Solution:
+  1. $\sum(X_i - \alpha) = 36 \Rightarrow \bar X = \alpha + 2$.
+  2. $90 = 18\cdot1 + 18(\bar X - \beta)^2 \Rightarrow (\bar X - \beta)^2 = 4$, so $\bar X - \beta = \pm2$.
+  3. $\alpha - \beta = \bar X - \beta - 2 = 0$ or $-4$; since $\alpha \ne \beta$, $|\alpha - \beta| = 4$.
+  Answer: 4
+M B 4: |-
+  Concept: Beta function $I_{m,n} = \int_0^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt$ (via $x = \frac{t}{1+t}$).
+  Solution:
+  1. Split $\int_0^\infty = \int_0^1 + \int_1^\infty$ and put $t = \frac{1}{u}$ in the second part: $\int_1^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt = \int_0^1\frac{u^{n-1}}{(1+u)^{m+n}}du$.
+  2. So $\int_0^1\frac{x^{m-1} + x^{n-1}}{(1+x)^{m+n}}dx = I_{m,n}$, i.e. $\alpha = 1$.
+  Answer: 1
+M B 5: |-
+  Concept: Tangency conditions $c^2 = a^2m^2 + b^2$ (ellipse) and $c^2 = r^2(1 + m^2)$ (circle).
+  Solution:
+  1. Ellipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$: $c^2 = 9m^2 + 4$.
+  2. Circle $x^2 + y^2 = \frac{31}{4}$: $c^2 = \frac{31}{4}(1 + m^2)$.
+  3. $36m^2 + 16 = 31 + 31m^2 \Rightarrow m^2 = 3$.
+  Answer: 3
+M B 6: |-
+  Concept: Compute small powers to find a pattern.
+  Solution:
+  1. $A^2 = \operatorname{diag}(1, 4, 1)$, so $A^{20} = \operatorname{diag}(1, 2^{20}, 1)$ and $A^{19} = A^{18}A = \begin{bmatrix}1&0&0\\0&2^{19}&0\\3&0&-1\end{bmatrix}$.
+  2. Entry (1,1): $1 + \alpha + \beta = 1 \Rightarrow \beta = -\alpha$ (entries (3,1) and (3,3) agree).
+  3. Entry (2,2): $2^{20} + 2^{19}\alpha + 2\beta = 4 \Rightarrow \alpha(2^{19} - 2) = -2(2^{19} - 2) \Rightarrow \alpha = -2$, $\beta = 2$.
+  4. $\beta - \alpha = 4$.
+  Answer: 4
+M B 7: |-
+  Concept: AM ≥ GM; GP with $a = -16$, $r = -\frac{1}{2}$.
+  Solution:
+  1. The roots of $4x^2 - 9x + 5 = 0$ are $1$ and $\frac{5}{4}$, so AM $= \frac{5}{4}$ and GM $= 1$.
+  2. $T_pT_q = 1$: $256\left(-\frac{1}{2}\right)^{p+q-2} = 1 \Rightarrow \left(-\frac{1}{2}\right)^{p+q-2} = \frac{1}{2^8}$.
+  3. $p + q - 2 = 8 \Rightarrow p + q = 10$.
+  Answer: 10
+M B 8: |-
+  Concept: If every normal passes through a fixed point, the curve is a circle centred at that point.
+  Solution:
+  1. Equal distances: $(3 - a)^2 + (3 + b)^2 = (4 - a)^2 + (2\sqrt2 + b)^2 \Rightarrow 2a + (6 - 4\sqrt2)b = 6$.
+  2. With $a = 3 + 2\sqrt2b$: $6 + 6b = 6 \Rightarrow b = 0$, $a = 3$.
+  3. $a^2 + b^2 + ab = 9$.
+  Answer: 9
+M B 9: |-
+  Concept: Interpret both conditions geometrically.
+  Solution:
+  1. $|z + 5| \le 4$ is the disc with centre $(-5, 0)$ and radius 4. The second condition is $2(x - y) \ge -10$, i.e. $y \le x + 5$, the half-plane below the line through the centre with slope 1.
+  2. $(-1, 0)$ is on the circle at angle 0. For the circle point at angle $\varphi$, $|z + 1|^2 = 32(1 - \cos\varphi)$.
+  3. The allowed arc is $\varphi \in \left[-\frac{3\pi}{4}, \frac{\pi}{4}\right]$; the maximum is at $\varphi = -\frac{3\pi}{4}$: $32\left(1 + \frac{1}{\sqrt2}\right) = 32 + 16\sqrt2$.
+  4. $\alpha + \beta = 48$.
+  Answer: 48
+M B 10: |-
+  Concept: Monotonicity and the intermediate value theorem.
+  Solution:
+  1. $p'(x) = 10(x^4 + 2x^3 + 3x^2 + 2x + 1) = 10(x^2 + x + 1)^2 > 0$, so there is exactly one real root.
+  2. $p(-1) = 3 > 0$ and $p(-2) = -34 < 0$, so the root lies in $(-2, -1)$.
+  3. $a = -2$, $|a| = 2$.
+  Answer: 2

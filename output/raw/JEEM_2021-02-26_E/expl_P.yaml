@@ -1,0 +1,197 @@
+P A 1: |-
+  Concept: Beat frequency $= |f_A - f_B|$; filing a fork raises its frequency.
+  Solution:
+  1. 5 beats/s with 340 Hz means $f_A = 345$ Hz or $335$ Hz.
+  2. Filing raises $f_A$. If $f_A = 345$, the beats would increase; if $f_A = 335$, rising to 338 Hz gives 2 beats/s.
+  3. So $f_A = 335$ Hz.
+  Answer: (B)
+P A 2: |-
+  Concept: Compare with the standard trajectory $y = x\tan\theta - \frac{g x^2}{2u^2\cos^2\theta}$.
+  Solution:
+  1. $\tan\theta = \alpha \Rightarrow \theta = \tan^{-1}\alpha$.
+  2. Maximum height where $\frac{dy}{dx} = 0$: $x = \frac{\alpha}{2\beta}$.
+  3. $H = \alpha\cdot\frac{\alpha}{2\beta} - \beta\frac{\alpha^2}{4\beta^2} = \frac{\alpha^2}{4\beta}$.
+  Answer: (A)
+P A 3: |-
+  Concept: Energy conservation with the rolling constraint $v = \omega r$.
+  Solution:
+  1. $mgh = \frac{1}{2}I\omega^2 + \frac{1}{2}m(\omega r)^2$.
+  2. $\omega^2 = \frac{2mgh}{I + mr^2}$.
+  Answer: (D)
+P A 4: |-
+  Concept: Series LCR: $I_0 = \frac{V_0}{Z}$, $Z = \sqrt{R^2 + (X_L - X_C)^2}$, $f_0 = \frac{1}{2\pi\sqrt{LC}}$.
+  Solution:
+  1. $\omega = 100$ rad/s: $X_L = 100\times0.1 = 10\,\Omega$, $X_C = \frac{1}{100\times100\times10^{-6}} = 100\,\Omega$.
+  2. $Z = \sqrt{120^2 + 90^2} = 150\,\Omega$, so $I_0 = \frac{30}{150} = 0.2$ A.
+  3. $f_0 = \frac{1}{2\pi\sqrt{0.1\times10^{-4}}} = \frac{1}{2\pi\times3.16\times10^{-3}} \approx 50$ Hz.
+  Answer: (D)
+P A 5: |-
+  Concept: Law of reflection in vector form: the normal component reverses, the tangential component is unchanged.
+  Solution:
+  1. Split $\vec a = (\vec a\cdot\vec c)\vec c + \vec a_\parallel$.
+  2. Reflected: $\vec b = \vec a_\parallel - (\vec a\cdot\vec c)\vec c = \vec a - 2(\vec a\cdot\vec c)\vec c$.
+  Why others are wrong: (A), (B) and (C) are not unit vectors in general and do not preserve the tangential component.
+  Answer: (D)
+P A 6: |-
+  Concept: $A = A_0e^{-\lambda t}$; mean life $\tau = \frac{1}{\lambda}$.
+  Solution:
+  1. $\frac{A}{5} = Ae^{-\lambda(t_2 - t_1)} \Rightarrow \lambda = \frac{\ln5}{t_2 - t_1}$.
+  2. $\tau = \frac{t_2 - t_1}{\ln5}$.
+  Answer: (A)
+P A 7: |-
+  Concept: In SHM, $v = \omega\sqrt{A^2 - x^2}$.
+  Solution:
+  1. $v^2 = \omega^2(A^2 - x^2) \Rightarrow \frac{x^2}{A^2} + \frac{v^2}{\omega^2A^2} = 1$.
+  2. This is an ellipse (a circle only if $\omega = 1$ in chosen units).
+  Answer: (C)
+P A 8: |-
+  Concept: The peak speed is reached at the end of acceleration and lost during retardation.
+  Solution:
+  1. $v_{max} = a_1t_1 = a_2t_2$.
+  2. $\frac{t_1}{t_2} = \frac{a_2}{a_1}$.
+  Answer: (B)
+P A 9: |-
+  Concept: A NAND with its inputs tied is a NOT gate; by De Morgan, $\overline{\bar A + B} = A\bar B$.
+  Solution:
+  1. $Y = \overline{\bar A + B} = A\cdot\bar B$: Y is high only when A = 1 and B = 0.
+  2. A is high for 0–2 s and 3–5 s; B is high for 1–2 s and 3–4 s.
+  3. A = 1 and B = 0 during 0–1 s and 4–5 s; Y is low otherwise.
+  Answer: (A)
+P A 10: |-
+  Concept: Newton's second law along the incline, with the normal reaction modified by the electric force.
+  Solution:
+  1. Incline length $= \frac{1}{\sin30°} = 2$ m; $qE = 5\times10^{-3}\times200 = 1$ N (horizontal, directed as in the figure against the sliding direction).
+  2. Components of $qE$: $1\cos30° = 0.866$ N up the incline, $1\sin30° = 0.5$ N into the incline.
+  3. $N = mg\cos30° + 0.5 = 8.49 + 0.5 = 8.99$ N; friction $= 0.2\times8.99 = 1.80$ N.
+  4. $a = 9.8\times0.5 - 0.866 - 1.80 = 2.24$ m/s².
+  5. $t = \sqrt{\frac{2s}{a}} = \sqrt{\frac{4}{2.24}} \approx 1.34$ s $\approx 1.3$ s.
+  Answer: (C)
+P A 11: |-
+  Concept: $C = \frac{Q}{V}$, so $\frac{C}{V} = \frac{Q}{V^2}$.
+  Solution:
+  1. $[V] = [ML^2T^{-3}I^{-1}]$, $[Q] = [IT]$.
+  2. $[\lambda] = \frac{[IT]}{[M^2L^4T^{-6}I^{-2}]} = [M^{-2}L^{-4}I^3T^7]$.
+  Answer: (A)
+P A 12: |-
+  Concept: A simple microscope lets the object be brought close to the eye, inside the near point, while the virtual image forms at a comfortable distance.
+  Solution:
+  1. The image and the object subtend the same angle at the lens (and hence the eye close to it), so A is true.
+  2. Magnification comes from being able to bring the object much closer than 25 cm, so it subtends a larger angle than it would at 25 cm. R is true and explains A.
+  Why others are wrong: both statements are correct and linked, which rules out (A), (C) and (D).
+  Answer: (B)
+P A 13: |-
+  Concept: Momentum conservation: the atom recoils with the photon's momentum $p = \frac{E}{c}$.
+  Solution:
+  1. $E = 13.6\left(1 - \frac{1}{25}\right) = 13.056$ eV $= 2.09\times10^{-18}$ J.
+  2. $v = \frac{E}{mc} = \frac{2.09\times10^{-18}}{1.67\times10^{-27}\times3\times10^8} \approx 4.17$ m/s.
+  Answer: (A)
+P A 14: |-
+  Concept: Newton's laws with the spring force acting equally and oppositely on both masses.
+  Solution:
+  1. A accelerates only because of the spring, so the spring force on A is $Ma$.
+  2. The spring exerts an equal and opposite force $Ma$ on B, opposing $F$.
+  3. $a_B = \frac{F - Ma}{M}$.
+  Answer: (B)
+P A 15: |-
+  Concept: At constant volume $R = \frac{\rho l^2}{V} \propto l^2$.
+  Solution:
+  1. $\frac{R'}{R} = (1.25)^2 = 1.5625$.
+  2. Change $= 56.25\% \approx 56\%$.
+  Answer: (D)
+P A 16: |-
+  Concept: A seconds pendulum has a period of 2 s.
+  Solution:
+  1. Statement I (period 1 s) is false.
+  2. Moving from one extreme to the other takes $\frac{T}{2} = 1$ s, so Statement II is true.
+  Answer: (C)
+P A 17: |-
+  Concept: A horizontal wing cuts the vertical component of the earth's field: $\varepsilon = B_Vlv$.
+  Solution:
+  1. $B_V = B\sin60° = 2.5\times10^{-4}\times0.866 = 2.165\times10^{-4}$ T; $v = 180$ km/h $= 50$ m/s.
+  2. $\varepsilon = 2.165\times10^{-4}\times10\times50 = 0.10825$ V $= 108.25$ mV.
+  Answer: (D)
+P A 18: |-
+  Concept: Hooke's law: extension is proportional to tension, $T = k(l - L)$.
+  Solution:
+  1. $T_1 = k(l_1 - L)$ and $T_2 = k(l_2 - L)$, so $T_1(l_2 - L) = T_2(l_1 - L)$.
+  2. $L(T_2 - T_1) = T_2l_1 - T_1l_2 \Rightarrow L = \frac{T_2l_1 - T_1l_2}{T_2 - T_1}$.
+  Answer: (D)
+P A 19: |-
+  Concept: $U = \frac{f}{2}nRT = \frac{f}{2}PV$ for an ideal gas.
+  Solution:
+  1. Comparing $U = 3PV + 4$ with $U = \frac{f}{2}PV$ + constant gives $\frac{f}{2} = 3$, so $f = 6$.
+  2. Six degrees of freedom (3 translational + 3 rotational) means a non-linear polyatomic gas.
+  Why others are wrong: monoatomic has $f = 3$ and diatomic $f = 5$.
+  Answer: (A)
+P A 20: |-
+  Concept: Gauss's law: flux $= \frac{q_{enc}}{\varepsilon_0}$; the field inside a conductor is zero.
+  Solution:
+  1. Statement I: the dipole's net charge is 0, so the flux is zero, but the dipole field is non-zero at every finite point. True.
+  2. Statement II: inside a metallic sphere the charge sits on the surface, so a sphere of radius $r < R$ encloses no charge and the flux through it is also zero. False.
+  Answer: (A)
+P B 1: |-
+  Concept: AM bandwidth $= 2f_m$.
+  Solution:
+  1. Each station needs $2\times5 = 10$ kHz.
+  2. Number of stations $= \frac{90}{10} = 9$.
+  Answer: 9
+P B 2: |-
+  Concept: First law $Q = \Delta U + W$, with molar heat capacity $C = \frac{Q}{n\Delta T}$.
+  Solution:
+  1. $W = \frac{Q}{5} \Rightarrow \Delta U = \frac{4Q}{5}$.
+  2. Rigid diatomic: $\Delta U = \frac{5}{2}R\Delta T$, so $Q = \frac{5}{4}\cdot\frac{5}{2}R\Delta T$.
+  3. $C = \frac{25R}{8}$, so $x = 25$.
+  Answer: 25
+P B 3: |-
+  Concept: $v = \omega\sqrt{a^2 - x^2}$, $v_{max} = \omega a$.
+  Solution:
+  1. $\omega\sqrt{a^2 - x^2} = \frac{\omega a}{2} \Rightarrow a^2 - x^2 = \frac{a^2}{4}$.
+  2. $x = \frac{\sqrt3a}{2}$, so $x = 3$.
+  Answer: 3
+P B 4: |-
+  Concept: Photoelectric equation $K_{max} = h\nu - \phi$, with $v_{max} \propto \sqrt{K_{max}}$.
+  Solution:
+  1. $K_1 = 2\phi - \phi = \phi$ and $K_2 = 10\phi - \phi = 9\phi$.
+  2. $\frac{v_1}{v_2} = \sqrt{\frac{1}{9}} = \frac{1}{3}$, so $x = 1$.
+  Answer: 1
+P B 5: |-
+  Concept: Rays reaching the eye appear to come from the image $S'$ and must pass through the mirror.
+  Solution:
+  1. $S'$ is 60 cm behind the mirror; the man's path is 120 cm in front, i.e. 180 cm from $S'$.
+  2. Lines from $S'$ through the mirror edges ($\pm25$ cm at 60 cm) reach $\pm25\times\frac{180}{60} = \pm75$ cm on the path.
+  3. Distance between the extreme points $= 150$ cm.
+  Answer: 150
+P B 6: |-
+  Concept: The zener keeps the load at $V_Z$; current splits between the zener and the load.
+  Solution:
+  1. Series current $= \frac{90 - 30}{4\text{ k}\Omega} = 15$ mA.
+  2. Load current $= \frac{30}{5\text{ k}\Omega} = 6$ mA.
+  3. Zener current $= 15 - 6 = 9$ mA.
+  Answer: 9
+P B 7: |-
+  Concept: $g_h = \frac{gR^2}{(R+h)^2}$ above the surface; $g_d = g\frac{r}{R}$ inside.
+  Solution:
+  1. C is at $h = 3200$ km $= \frac{R}{2}$: $g_C = \frac{g}{(3/2)^2} = \frac{4g}{9}$.
+  2. At A, $g\frac{OA}{R} = \frac{4g}{9} \Rightarrow OA = \frac{4R}{9}$ and $AB = \frac{5R}{9}$.
+  3. $OA : AB = 4 : 5$, so $x = 4$.
+  Answer: 4
+P B 8: |-
+  Concept: Volume conservation gives $R = n^{1/3}r$; the self-energy of a charged sphere is $U = \frac{Q^2}{8\pi\varepsilon_0R}$.
+  Solution:
+  1. $R = 3r$ and $Q = 27q$.
+  2. $\frac{U_{big}}{U_{small}} = \frac{(27)^2}{3} = 243$.
+  Answer: 243
+P B 9: |-
+  Concept: $W = \int PdV$ with $P = \frac{nRT}{V}$ (take $n = 1$).
+  Solution:
+  1. $V = KT^{2/3} \Rightarrow \frac{dV}{V} = \frac{2}{3}\frac{dT}{T}$.
+  2. $W = \int\frac{RT}{V}dV = \frac{2}{3}R\,\Delta T = \frac{2}{3}R\times90 = 60R$.
+  3. $x = 60$.
+  Answer: 60
+P B 10: |-
+  Concept: Read "$\frac{5}{8}$ oscillation" as the fraction of the path $4A$ travelled per oscillation, i.e. a distance $2.5A$; use $x = A\sin\omega t$.
+  Solution:
+  1. From the mean position, $\frac{T}{2}$ covers $2A$ and returns the bob to the mean position.
+  2. The remaining $0.5A$ from the mean: $\frac{A}{2} = A\sin\frac{2\pi t}{T} \Rightarrow t = \frac{T}{12}$.
+  3. Total $= \frac{T}{2} + \frac{T}{12} = \frac{7T}{12}$, so $\alpha = 7$.
+  Answer: 7
