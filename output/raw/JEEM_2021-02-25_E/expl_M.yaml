@@ -1,0 +1,212 @@
+M A 1: |-
+  Concept: Length of the projection of a vector on a plane $= \sqrt{|\vec{v}|^2 - (\vec{v}\cdot\hat{n})^2}$.
+  Solution:
+  1. $\vec{AB} = (1, 1, -2)$, $\vec{AC} = (1, 2, -1)$, so $\vec{n} = \vec{AB}\times\vec{AC} = (3, -1, 1)$ and $|\vec{n}| = \sqrt{11}$.
+  2. $\vec{OP}\cdot\hat{n} = \frac{6 + 1 + 1}{\sqrt{11}} = \frac{8}{\sqrt{11}}$, and $|\vec{OP}|^2 = 6$.
+  3. Projection length $= \sqrt{6 - \frac{64}{11}} = \sqrt{\frac{2}{11}}$.
+  Answer: (C)
+M A 2: |-
+  Concept: The contrapositive of p → q is ~q → ~p.
+  Solution:
+  1. p: you will work; q: you will earn money.
+  2. ~q → ~p: "If you will not earn money, you will not work."
+  Answer: (A)
+M A 3: |-
+  Concept: Non-real roots of a real quadratic come in conjugate pairs.
+  Solution:
+  1. The roots are 1 – 2i and 1 + 2i.
+  2. Sum = 2 = –α, so α = –2; product = 1 + 4 = 5 = β.
+  3. α – β = –2 – 5 = –7.
+  Answer: (D)
+M A 4: |-
+  Concept: Reduction formula: $I_n + I_{n+2} = \int\cot^nx\,\csc^2x\,dx$.
+  Solution:
+  1. $I_n + I_{n+2} = \left[-\frac{\cot^{n+1}x}{n + 1}\right]_{\pi/4}^{\pi/2} = \frac{1}{n + 1}$.
+  2. $\frac{1}{I_2 + I_4} = 3$, $\frac{1}{I_3 + I_5} = 4$, $\frac{1}{I_4 + I_6} = 5$: an A.P.
+  Answer: (B)
+M A 5: |-
+  Concept: $AA^T = I$ (orthogonal matrix): compare the entries.
+  Solution:
+  1. $AA^T = \begin{bmatrix} 1 + \alpha^2 & \alpha - \alpha\beta \\ \alpha - \alpha\beta & \alpha^2 + \beta^2 \end{bmatrix} = I$.
+  2. $1 + \alpha^2 = 1 \Rightarrow \alpha = 0$; then $\beta^2 = 1$.
+  3. $\alpha^4 + \beta^4 = 0 + 1 = 1$.
+  Answer: (A)
+M A 6: |-
+  Concept: Number of one-one functions from an m-set to an n-set $= {}^nP_m$.
+  Solution:
+  1. $x = {}^5P_3 = 60$.
+  2. |A × B| = 15, so $y = {}^{15}P_3 = 15\times14\times13 = 2730$.
+  3. $\frac{y}{x} = 45.5 = \frac{91}{2}$, so 2y = 91x.
+  Answer: (B)
+M A 7: |-
+  Concept: Homogenise the curve with the line to get the pair of lines OP and OQ.
+  Solution:
+  1. $x^2 + 2y^2 = 2(x + y)^2 \Rightarrow x^2 + 4xy = 0$, i.e. OP: x = 0 and OQ: x + 4y = 0.
+  2. The intersection points are P = (0, 1) and $Q = \left(\frac{4}{3}, -\frac{1}{3}\right)$.
+  3. $\cos\angle POQ = \frac{\vec{OP}\cdot\vec{OQ}}{|OP||OQ|} = \frac{-1/3}{1\cdot\sqrt{17}/3} = -\frac{1}{\sqrt{17}} < 0$, so the angle is obtuse.
+  4. Its supplement has tan = 4, so $\angle POQ = \pi - \tan^{-1}4 = \frac{\pi}{2} + \tan^{-1}\frac{1}{4}$.
+  Answer: (A)
+M A 8: |-
+  Concept: Simplify with $e^{k\ln u} = u^k$.
+  Solution:
+  1. Numerator $= (2x)^3 + 5(2x)^2 = 8x^3 + 20x^2$; denominator $= x^4 + 5x^3 - 7x^2$.
+  2. Integrand $= \frac{4x^2(2x + 5)}{x^2(x^2 + 5x - 7)} = \frac{4(2x + 5)}{x^2 + 5x - 7}$.
+  3. Integral $= 4\log_e|x^2 + 5x - 7| + c$.
+  Answer: (C)
+M A 9: |-
+  Concept: Eccentricity relations for an ellipse and a hyperbola.
+  Solution:
+  1. Ellipse: $e = \sqrt{1 - \frac{16}{25}} = \frac{3}{5}$, foci (±3, 0).
+  2. The hyperbola passes through (±3, 0) with transverse axis along x, so a = 3. Its eccentricity is $\frac{5}{3}$.
+  3. $b^2 = a^2(e^2 - 1) = 9\left(\frac{25}{9} - 1\right) = 16$, so $\frac{x^2}{9} - \frac{y^2}{16} = 1$.
+  Answer: (B)
+M A 10: |-
+  Concept: Limit of a sum as a definite integral.
+  Solution:
+  1. The sum is $\sum_{r=0}^{n-1}\frac{n}{(n + r)^2} = \frac{1}{n}\sum_{r=0}^{n-1}\frac{1}{(1 + r/n)^2}$ (the first term 1/n is the r = 0 term).
+  2. Limit $= \int_0^1\frac{dx}{(1 + x)^2} = 1 - \frac{1}{2} = \frac{1}{2}$.
+  Answer: (C)
+M A 11: |-
+  Concept: Bayes' theorem.
+  Solution:
+  1. Weighted chances: smokers & non-veg $\frac{160}{400}\times0.35$, smokers & veg $\frac{100}{400}\times0.20$, non-smokers & veg $\frac{140}{400}\times0.10$. Proportional to 56 : 20 : 14.
+  2. Required probability $= \frac{56}{56 + 20 + 14} = \frac{56}{90} = \frac{28}{45}$.
+  Answer: (D)
+M A 12: |-
+  Concept: A linear system has a unique solution when the coefficient determinant is non-zero.
+  Solution:
+  1. $\Delta = \begin{vmatrix} 3 & 3 & 2 \\ 3 & 2 & 2 \\ 1 & -1 & 4 \end{vmatrix} = 3(10) - 3(10) + 2(-5) = -10 \ne 0$, so the solution is unique.
+  2. Solving: subtracting the first two equations gives y = 0; then 3x + 2z = 9 and x + 4z = 8 give x = 2, z = 1.5.
+  3. Check (C): $2 + 0 + 1.5^3 = 5.375 \ne 12$, so (C) is false.
+  Answer: (B)
+M A 13: |-
+  Concept: AM–GM inequality.
+  Solution:
+  1. Let $t = a^{a^x} > 0$. Then $f = t + \frac{a}{t} \ge 2\sqrt{a}$.
+  2. Equality when $t = \sqrt{a}$, which is attainable. Minimum = $2\sqrt{a}$.
+  Answer: (D)
+M A 14: |-
+  Concept: Pair terms using f(x) + f(2 – x) = 1.
+  Solution:
+  1. $f(2 - x) = \frac{5^{2-x}}{5^{2-x} + 5} = \frac{5}{5 + 5^x}$, so $f(x) + f(2 - x) = 1$.
+  2. Pair $\frac{k}{20}$ with $\frac{40 - k}{20}$ for k = 1 to 19: 19 pairs, sum 19; the middle term $f(1) = \frac{1}{2}$.
+  3. Total $= 19 + \frac{1}{2} = \frac{39}{2}$.
+  Answer: (C)
+M A 15: |-
+  Concept: Since α, β satisfy $x^2 = 6x + 2$, $a_{n+2} = 6a_{n+1} + 2a_n$.
+  Solution:
+  1. $a_{10} = 6a_9 + 2a_8 \Rightarrow a_{10} - 2a_8 = 6a_9$.
+  2. $\frac{6a_9}{3a_9} = 2$.
+  Answer: (C)
+M A 16: |-
+  Concept: Properties of determinants.
+  Solution:
+  1. $|2A| = 2^3|A| = 32$.
+  2. $R_2 \rightarrow 2R_2 + 5R_3$ multiplies the determinant by 2 (adding a multiple of another row changes nothing).
+  3. det(B) = 64.
+  Answer: (A)
+M A 17: |-
+  Concept: The shortest distance from a line to a curve is along the common normal, at the point where the tangent is parallel to the line.
+  Solution:
+  1. $y = \frac{x^2}{2}$, slope x = 1 (the slope of x – y = 1), so the point is $\left(1, \frac{1}{2}\right)$.
+  2. Distance to x – y – 1 = 0: $\frac{|1 - \frac{1}{2} - 1|}{\sqrt{2}} = \frac{1}{2\sqrt{2}}$.
+  Answer: (C)
+M A 18: |-
+  Concept: Counting with exactly one digit 7.
+  Solution:
+  1. |A|: 7 in the thousands place: $9^3 = 729$; 7 in one of the other 3 places: $3\times8\times9^2 = 1944$. Total = 2673.
+  2. Remainder 2 mod 5 means the last digit is 2 or 7.
+     Last digit 7: the other digits have no 7: $8\times9\times9 = 648$.
+     Last digit 2: exactly one 7 among the first three digits: 7 first gives 81; 7 in 2nd or 3rd gives $2\times8\times9 = 144$. Total 225.
+  3. Favourable = 873, so $P = \frac{873}{2673} = \frac{97}{297}$.
+  Answer: (C)
+M A 19: |-
+  Concept: Convert to sine/cosine of known angles.
+  Solution:
+  1. Let $\theta = \cot^{-1}5$: $\sin2\theta = \frac{2\cdot5}{26} = \frac{5}{13}$, $\cos2\theta = \frac{24}{26} = \frac{12}{13}$.
+  2. Let $\phi = \cos^{-1}\frac{4}{5}$: $\sin\phi = \frac{3}{5}$.
+  3. $\sin(2\theta + \phi) = \frac{5}{13}\cdot\frac{4}{5} + \frac{12}{13}\cdot\frac{3}{5} = \frac{56}{65}$.
+  4. cosec $= \frac{65}{56}$.
+  Answer: (B)
+M A 20: |-
+  Concept: $\cos x + \cos y - \cos(x + y) \le \frac{3}{2}$, with equality only when $x = y = \frac{\pi}{3}$.
+  Solution:
+  1. Write $2\cos\frac{x + y}{2}\cos\frac{x - y}{2} - 2\cos^2\frac{x + y}{2} + 1 = \frac{3}{2}$. As a quadratic in $c = \cos\frac{x + y}{2}$, its discriminant is ≥ 0 only if $\cos^2\frac{x - y}{2} \ge 1$.
+  2. So x = y and $\cos\frac{x + y}{2} = \frac{1}{2}$, giving $x = y = \frac{\pi}{3}$.
+  3. $\sin x + \cos y = \frac{\sqrt{3}}{2} + \frac{1}{2} = \frac{1 + \sqrt{3}}{2}$.
+  Answer: (A)
+M B 1: |-
+  Concept: For the limit to be finite, the 1/x term must vanish; use series expansion.
+  Solution:
+  1. $e^{4x} - 1 = 4x + 8x^2 + \ldots$. Numerator $= (a - 4)x - 8x^2 - \ldots$; denominator $= 4ax^2 + \ldots$.
+  2. Finite limit requires a = 4. Then limit $= \frac{-8x^2}{16x^2} = -\frac{1}{2} = b$.
+  3. a – 2b = 4 + 1 = 5.
+  Answer: 5
+M B 2: |-
+  Concept: Tangent to $y^2 = 4x$: $y = mx + \frac{1}{m}$; it touches the circle when the distance from the centre equals the radius.
+  Solution:
+  1. $\frac{|3m + 1/m|}{\sqrt{1 + m^2}} = 3 \Rightarrow (3m^2 + 1)^2 = 9m^2(1 + m^2) \Rightarrow m^2 = \frac{1}{3}$. Take $m = \frac{1}{\sqrt{3}}$ for first-quadrant contacts.
+  2. Contact with the parabola: $\left(\frac{1}{m^2}, \frac{2}{m}\right) = (3, 2\sqrt{3})$.
+  3. Contact with the circle: foot of the perpendicular from (3, 0) to $x - \sqrt{3}y + 3 = 0$, which is $\left(\frac{3}{2}, \frac{3\sqrt{3}}{2}\right)$.
+  4. $2(a + c) = 2\left(3 + \frac{3}{2}\right) = 9$.
+  Answer: 9
+M B 3: |-
+  Concept: Split the integral where the expression inside the modulus changes sign.
+  Solution:
+  1. $3x^2 - 3x - 6 = 3(x - 2)(x + 1)$: positive on (–2, –1) and negative on (–1, 2).
+  2. Let $F(x) = x^3 - \frac{3}{2}x^2 - 6x$. F(–2) = –2, F(–1) = 3.5, F(2) = –10.
+  3. $\int_{-2}^{-1} = F(-1) - F(-2) = 5.5$ and $\int_{-1}^{2}|\ldots| = -(F(2) - F(-1)) = 13.5$.
+  4. Total = 5.5 + 13.5 = 19.
+  Answer: 19
+M B 4: |-
+  Concept: Work modulo 8; every odd square is ≡ 1 (mod 8).
+  Solution:
+  1. x = 4k + 3, so 2020 + x = 4(505 + k) + 3, an odd number.
+  2. $(2020 + x)^{2022} = \left[(2020 + x)^2\right]^{1011}$, and the square of any odd number is ≡ 1 (mod 8).
+  3. So the remainder is $1^{1011} = 1$.
+  Answer: 1
+M B 5: |-
+  Concept: A line through the origin perpendicular to two lines has direction along the cross product of their directions.
+  Solution:
+  1. $\vec{d} = (1, 2, 2)\times(2, 2, 1) = (-2, 3, -2)$.
+  2. Intersection with $\ell_1$: (3 + t, –1 + 2t, 4 + 2t) = k(–2, 3, –2) gives t = –1, so the point is Q = (2, –3, 2).
+  3. A point on $\ell_2$: (3 + 2s, 3 + 2s, 2 + s), at distance $\sqrt{17}$ from Q: $(1 + 2s)^2 + (6 + 2s)^2 + s^2 = 17 \Rightarrow 9s^2 + 28s + 20 = 0$, so s = –2 or $-\frac{10}{9}$.
+  4. First octant: $s = -\frac{10}{9}$ gives $\left(\frac{7}{9}, \frac{7}{9}, \frac{8}{9}\right)$.
+  5. $18(a + b + c) = 18\times\frac{22}{9} = 44$.
+  Answer: 44
+M B 6: |-
+  Concept: Non-differentiability at corners of min{} and at jumps of [·].
+  Solution:
+  1. On [–2, 2]: |x| and 2 – x² meet at x = ±1. For |x| < 1, f = |x| (corner at x = 0); for 1 < |x| ≤ 2, f = 2 – x².
+  2. Corners at x = –1, 0, 1.
+  3. At x = ±2: f(±2) = 2 – 4 = –2, while for 2 < |x| < 3, f = [|x|] = 2, so f is discontinuous there, hence not differentiable.
+  4. Total in (–3, 3): 5 points.
+  Answer: 5
+M B 7: |-
+  Concept: Curves cut orthogonally when the product of their slopes at the intersection is –1.
+  Solution:
+  1. $x = y^4$: $\frac{dy}{dx} = \frac{1}{4y^3}$. $xy = k$: $\frac{dy}{dx} = -\frac{y}{x}$.
+  2. $\frac{1}{4y^3}\cdot\left(-\frac{y}{x}\right) = -1 \Rightarrow 4xy^2 = 1 \Rightarrow 4y^6 = 1$ (using $x = y^4$).
+  3. $k = xy = y^5$, so $(4k)^6 = 4^6y^{30} = 4^6\left(\frac{1}{4}\right)^5 = 4$.
+  Answer: 4
+M B 8: |-
+  Concept: Last digits of powers of 3 and 7 repeat with period 4.
+  Solution:
+  1. Last digits: $3^n$: 3, 9, 7, 1; $7^n$: 7, 9, 3, 1 (for n ≡ 1, 2, 3, 0 mod 4).
+  2. The sums end in 0 when n ≡ 1 or 3 (mod 4), i.e. n is odd.
+  3. Two-digit odd numbers: 11, 13, ..., 99, which is 45 numbers.
+  Answer: 45
+M B 9: |-
+  Concept: Area of a parallelogram $= |\vec{a}\times\vec{b}|$.
+  Solution:
+  1. $\vec{a}\times\vec{b} = (4\alpha, 8, -4\alpha)$, so $|\vec{a}\times\vec{b}|^2 = 32\alpha^2 + 64 = 192 \Rightarrow \alpha^2 = 4$.
+  2. $\vec{a}\cdot\vec{b} = 3 - \alpha^2 + 3 = 2$.
+  Answer: 2
+M B 10: |-
+  Concept: Rearrange the equation into an exact derivative.
+  Solution:
+  1. $x\,dy - y\,dx = -2xy^2\,dx \Rightarrow \frac{x\,dy - y\,dx}{y^2} = -2x\,dx \Rightarrow -d\left(\frac{x}{y}\right) = -d(x^2)$.
+  2. $\frac{x}{y} = x^2 + C$.
+  3. The lines meet at (2, 1): 2 = 4 + C, so C = –2.
+  4. At x = 1: $\frac{1}{y} = 1 - 2 = -1$, so y(1) = –1 and |y(1)| = 1.
+  Answer: 1
