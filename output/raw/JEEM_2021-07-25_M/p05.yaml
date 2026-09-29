@@ -1,0 +1,190 @@
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    For a gas $C_P - C_V = R$ in a state P and $C_P - C_V = 1.10R$ in a state Q, $T_P$ and $T_Q$ are the temperatures in two different states P and Q respectively. Then
+  o: ['$T_P < T_Q$', '$T_P = 0.9T_Q$', '$T_P > T_Q$', '$T_P = T_Q$']
+  ch: Kinetic Theory of Gases
+  tp: Real vs ideal gas behaviour
+  df: M
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    In Amplitude Modulation, the message signal $V_m(t) = 10\sin(2\pi\times10^5t)$ volts and carrier signal $V_c(t) = 20\sin(2\pi\times10^7t)$ volts. The modulated signal now contains the message signal with lower side band and upper side band frequency, therefore the bandwidth of modulated signal is $\alpha$ kHz. The value of $\alpha$ is :
+  o: ['200 kHz', '100 kHz', '0', '50 kHz']
+  ch: Communication Systems
+  tp: AM bandwidth
+  df: E
+- n: 16
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Two wires of same length and radius are joined end to end and loaded. The Young's modulii of the materials of the two wires are $Y_1$ and $Y_2$. The combination behaves as a single wire then its Young's modulus is :
+  o: ['$Y = \frac{Y_1Y_2}{2(Y_1 + Y_2)}$', '$Y = \frac{2Y_1Y_2}{3(Y_1 + Y_2)}$', '$Y = \frac{Y_1Y_2}{Y_1 + Y_2}$', '$Y = \frac{2Y_1Y_2}{Y_1 + Y_2}$']
+  ch: Mechanical Properties of Solids
+  tp: Wires in series
+  df: M
+- n: 17
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A parallel plate capacitor with plate area 'A' and distance of separation 'd' is filled with a dielectric. What is the capacity of the capacitor when permittivity of the dielectric varies as:
+    $\varepsilon(x) = \varepsilon_0 + kx$, for $\left(0 < x \le \frac{d}{2}\right)$
+    $\varepsilon(x) = \varepsilon_0 + k(d - x)$, for $\left(\frac{d}{2} \le x \le d\right)$
+  o: ['0', '$\frac{kA}{2}\ln\left(\frac{2\varepsilon_0}{2\varepsilon_0 - kd}\right)$', '$\frac{kA}{2\ln\left(\frac{2\varepsilon_0 + kd}{2\varepsilon_0}\right)}$', '$\left(\varepsilon_0 + \frac{kd}{2}\right)^{2/kA}$']
+  ch: Capacitance
+  tp: Capacitor with variable dielectric
+  df: H
+- n: 18
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The half-life of $^{198}Au$ is 3 days. If atomic weight of $^{198}Au$ is 198 g/mol then the activity of 2 mg of $^{198}Au$ is [ in disintegration / second ] :
+  o: ['$6.06\times10^{18}$', '$2.67\times10^{12}$', '$16.18\times10^{12}$', '$32.36\times10^{12}$']
+  ch: Nuclei
+  tp: Activity
+  df: M
+- n: 19
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A particle of mass 4M at rest disintegrates into two particles of mass M and 3M respectively having non zero velocities. The ratio of de-Broglie wavelength of particle of mass M to that of mass 3M will be :
+  o: ['3 : 1', '1 : 1', '1 : 3', '$1 : \sqrt{3}$']
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie wavelength and momentum
+  df: E
+- n: 20
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Identify the logic operation carried out.
+    [figure: A and B each pass through a NAND with tied inputs (NOT), outputs feed a NOR gate giving Y]
+  o: ['OR', 'NOR', 'AND', 'NAND']
+  ch: Semiconductor Electronics
+  tp: Logic gates
+  df: E
+  fig: [[5, 815, 485, 900, 790]]
+- n: 1
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A particle of mass 'm' is moving in time 't' on a trajectory given by $\vec{r} = 10\alpha t^2\hat{i} + 5\beta(t - 5)\hat{j}$
+    Where $\alpha$ and $\beta$ are dimensional constants.
+    The angular momentum of the particle become the same as it was for t = 0 at time t = _________seconds.
+  ch: Rotational Motion
+  tp: Angular momentum of a particle
+  df: M
+- n: 2
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    In the reported figure, two bodies A and B of masses 200g and 800g are attached with the system of springs. Springs are kept in a stretched position with some extension when the system is released. The horizontal surface is assumed to be frictionless. The angular frequency will be ______rad /s when k = 20 N / m.
+    [figure: A — spring k — spring 4k — B on smooth floor]
+  ch: Oscillations
+  tp: Two-body spring oscillation
+  df: M
+  fig: [[6, 320, 580, 385, 850]]
+- n: 3
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A particle of mass 1 mg and charge q is lying at the mid-point of two stationary particles kept at a distance '2 m' when each is carrying same change 'q'. If the free charged particle is displaced from its equilibrium position through distance 'x' (x << 1m). The particle executes SHM. Its angular frequency of oscillation will be _______ $\times10^5$ rad/s if $q^2 = 10C^2$.
+  ch: Electrostatics
+  tp: SHM under Coulomb forces
+  df: M
+- n: 4
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    An inductor of 10 mH is connected to a 20 V battery through a resistor of 10 k$\Omega$ and a switch . After a long time, when maximum current is set up in the circuit, the current is switched off. The current in the circuit after 1 $\mu$s is $\frac{x}{100}$ mA. Then x is equal to ________.
+    (Take $e^{-1}$ = 0.37 )
+  ch: Electromagnetic Induction
+  tp: LR circuit decay
+  df: E
+- n: 5
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A pendulum bob has a speed of 3 m / s at its lowest position. The pendulum is 50 cm long. The speed of bob, when the length makes an angle of 60° to the vertical will be (g = 10 m/s$^2$) _________m/s.
+  ch: Work, Energy and Power
+  tp: Energy conservation in pendulum
+  df: E
+- n: 6
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A body of mass 2 kg moving with a speed of 4 m /s. makes an elastic collision with another body at rest and continues to move in the original direction but with one fourth of its initial speed. The speed of the two body centre of mass is $\frac{x}{10}$ m / s. Then the value of x is __________.
+  ch: Centre of Mass and System of Particles
+  tp: Elastic collision, CM velocity
+  df: M
+- n: 7
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    An electric bulb rated as 200 W at 100 V is used in a circuit having 200 V supply. The resistance 'R' that must be put in series with the bulb so that the bulb delivers the same power is_________$\Omega$.
+  ch: Current Electricity
+  tp: Series resistance
+  df: E
+- n: 8
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    Student A and Student B used two screw gauges of equal pitch and 100 equal circular divisions to measure the radius of a given wire. The actual value of the radius of the wire is 0.322 cm. The absolute value of the difference between the final circular scale readings observed by the students A and B is ___________.
+    [Figure shows position of reference 'O' when jaws of screw gauge are closed ] Given pitch = 0.1 cm.
+    [figure: gauge A zero at 5th division (positive error); gauge B reference at 92 (negative error)]
+  ch: Experimental Skills
+  tp: Screw gauge zero error
+  df: M
+  fig: [[7, 90, 690, 220, 905]]
+- n: 9
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    The value of aluminium susceptibility is $2.2\times10^{-5}$. The percentage increase in the magnetic field if space within a current carrying toroid is filled with Aluminium is $\frac{x}{10^4}$. Then the value of x is _______.
+  ch: Magnetism and Matter
+  tp: Susceptibility
+  df: E
+- n: 10
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A circular conducting coil of radius 1 m being heated by the change of magnetic field $\vec{B}$ passing perpendicular to the plane in which the coil is laid. The resistance of the coil is 2 $\mu\Omega$. The magnetic field is slowly switched off such that its magnitude changes in time as $B = \frac{4}{\pi}\times10^{-3}T\left(1 - \frac{t}{100}\right)$
+    The energy dissipated by the coil before the magnetic field is switched off completely is E = _________mJ
+  ch: Electromagnetic Induction
+  tp: Induced emf and Joule heating
+  df: M

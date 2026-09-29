@@ -1,0 +1,230 @@
+- n: 1
+  s: M
+  sec: A
+  p: 13
+  t: S
+  q: |-
+    The area (in sq. units) of the region, given by the set $\{(x, y) \in R\times R \mid x \ge 0, 2x^2 \le y \le 4 - 2x\}$ is :
+  o: ['$\frac{17}{3}$', '$\frac{8}{3}$', '$\frac{7}{3}$', '$\frac{13}{3}$']
+  ch: Area Under Curves
+  tp: Area between parabola and line
+  df: E
+- n: 2
+  s: M
+  sec: A
+  p: 13
+  t: S
+  q: |-
+    Let 9 distinct balls be distributed among 4 boxes, $B_1, B_2, B_3$ and $B_4$. If the probability that $B_3$ contains exactly 3 balls is $k\left(\frac{3}{4}\right)^9$ then k lies in the set :
+  o: ['$\{x \in R : |x - 2| \le 1\}$', '$\{x \in R : |x - 5| \le 1\}$', '$\{x \in R : |x - 3| < 1\}$', '$\{x \in R : |x - 1| < 1\}$']
+  ch: Probability
+  tp: Binomial probability
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 13
+  t: S
+  q: |-
+    The number of real roots of the equation $e^{6x} - e^{4x} - 2e^{3x} - 12e^{2x} + e^x + 1 = 0$ is :
+  o: ['1', '4', '2', '6']
+  ch: Quadratic Equations
+  tp: Reducible equations
+  df: H
+- n: 4
+  s: M
+  sec: A
+  p: 13
+  t: S
+  q: |-
+    The values of a and b, for which the system of equations
+    $2x + 3y + 6z = 8$
+    $x + 2y + az = 5$
+    $3x + 5y + 9z = b$
+    Has no solution, are :
+  o: ['a ≠ 3, b = 3', 'a ≠ 3, b ≠ 13', 'a = 3, b ≠ 13', 'a = 3, b = 13']
+  ch: Matrices and Determinants
+  tp: Inconsistent systems
+  df: E
+- n: 5
+  s: M
+  sec: A
+  p: 13
+  t: S
+  q: |-
+    Let f : R → R be defined as $f(x) = \begin{cases} \frac{\lambda|x^2 - 5x + 6|}{\mu(5x - x^2 - 6)}, & x < 2 \\ e^{\frac{\tan(x-2)}{x - [x]}}, & x > 2 \\ \mu, & x = 2 \end{cases}$
+    where [x] is the greatest integer less than or equal to x. If f is continuous at x = 2, then $\lambda + \mu$ is equal to :
+  o: ['e(–e + 1)', 'e(e – 2)', '2e – 1', '1']
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity of piecewise functions
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let the foot of perpendicular from a point P(1, 2, –1) to the straight line $L : \frac{x}{1} = \frac{y}{0} = \frac{z}{-1}$ be N. Let a line be drawn from P parallel to the plane $x + y + 2z = 0$ which meets L and point Q. If $\alpha$ is the acute angle between the lines PN and PQ, then $\cos\alpha$ is equal to......
+  o: ['$\frac{1}{\sqrt{5}}$', '$\frac{\sqrt{3}}{2}$', '$\frac{1}{\sqrt{3}}$', '$\frac{1}{2\sqrt{3}}$']
+  ch: Three Dimensional Geometry
+  tp: Lines and planes
+  df: M
+- n: 7
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The Boolean expression $(p \Rightarrow q) \wedge (q \Rightarrow \sim p)$ is equivalent to:
+  o: ['q', 'p', '~ p', '~ q']
+  ch: Mathematical Reasoning
+  tp: Logical equivalence
+  df: E
+- n: 8
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let an ellipse $E : \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$, $a^2 > b^2$, passes through $\left(\sqrt{\frac{3}{2}}, 1\right)$ and has eccentricity $\frac{1}{\sqrt{3}}$. If a circle, centered at focus F($\alpha$, 0), $\alpha$ > 0, of E and radius $\frac{2}{\sqrt{3}}$, intersects E at two points P and Q, then $PQ^2$ is equal to :
+  o: ['$\frac{16}{3}$', '3', '$\frac{4}{3}$', '$\frac{8}{3}$']
+  ch: Conic Sections
+  tp: Ellipse and circle intersection
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    A spherical gas balloon of radius 16 meter subtends an angle 60° at the eye of the observer A while the angle of elevation of its center from the eye of A is 75°. Then the height (in meter) of the top most point of the balloon from the level of the observer's eye is :
+  o: ['$8(2 + 2\sqrt{3} + \sqrt{2})$', '$8(\sqrt{6} + \sqrt{2} + 2)$', '$8(\sqrt{6} - \sqrt{2} + 2)$', '$8(\sqrt{2} + 2 + \sqrt{3})$']
+  ch: Heights and Distances
+  tp: Angle of elevation
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let a parabola P be such that its vertex and focus lie on the positive x-axis at a distance 2 and 4 units from the origin, respectively. If tangents are drawn from O(0, 0) to the parabola P which meet P at S and R, then the area (in sq. units) of ΔSOR is equal to :
+  o: ['32', '$8\sqrt{2}$', '16', '$16\sqrt{2}$']
+  ch: Conic Sections
+  tp: Tangents to parabola
+  df: M
+- n: 11
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The locus of the centroid of the triangle formed by any point P on this hyperbola $16x^2 - 9y^2 + 32x + 36y - 164 = 0$, and its foci is :
+  o: ['$16x^2 - 9y^2 + 32x + 36y - 144 = 0$', '$16x^2 - 9y^2 + 32x + 36y - 36 = 0$', '$9x^2 - 16y^2 + 36x + 32y - 144 = 0$', '$9x^2 - 16y^2 + 36x + 32y - 36 = 0$']
+  ch: Conic Sections
+  tp: Locus related to hyperbola
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Let $S_n$ be the sum of the first n terms of an arithmetic progression. If $S_{3n} = 3S_{2n}$, then the value of $\frac{S_{4n}}{S_{2n}}$ is ;
+  o: ['2', '6', '8', '4']
+  ch: Sequences and Series
+  tp: Sum of AP
+  df: E
+- n: 13
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Let f : [0, ∞) → [0, ∞) be defined as $f(x) = \int_0^x[y]dy$ where [x] is the greatest integer less than or equal to x. Which of the following is true?
+  o: ['f is differentiable at every point in [0, ∞)', 'f is continuous everywhere except at the integer points in [0, ∞).', 'f is continuous at every point in [0, ∞) and differentiable except at the integer points.', 'f is both continuous and differentiable except at the integer points in [0, ∞).']
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity of integral function
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Let the vectors $(2 + a + b)\hat{i} + (a + 2b + c)\hat{j} - (b + c)\hat{k}$, $(1 + b)\hat{i} + 2b\hat{j} - b\hat{k}$ and $(2 + b)\hat{i} + 2b\hat{j} + (1 - b)\hat{k}$, a,b,c ∈ R be co-planar. Then which of the following is true?
+  o: ['2a = b + c', '2b = a + c', 'a = b + 2c', '3c = a + b']
+  ch: Vector Algebra
+  tp: Coplanar vectors
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Let g : N → N be defined as
+    g(3n + 1) = 3n + 2,
+    g(3n + 2) = 3n + 3,
+    g(3n + 3) = 3n + 1, for all n ≥ 0
+    Then which of the following statements is true?
+  o: ['There exists a function f : N → N such that gof = f', 'gogog = g', 'There exists a one-one function f : N → N such that fog = f', 'There exists on onto function f : N → N such that fog = f']
+  ch: Sets, Relations and Functions
+  tp: Composition of functions
+  df: H
+- n: 16
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Let $f(x) = 3\sin^4x + 10\sin^3x + 6\sin^2x - 3$, $x \in \left[-\frac{\pi}{6}, \frac{\pi}{2}\right]$. Then, f is :
+  o: ['decreasing in $\left(0, \frac{\pi}{2}\right)$', 'increasing in $\left(-\frac{\pi}{6}, \frac{\pi}{2}\right)$', 'decreasing in $\left(-\frac{\pi}{6}, 0\right)$', 'increasing in $\left(-\frac{\pi}{6}, 0\right)$']
+  ch: Application of Derivatives
+  tp: Monotonicity
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    The value of the definite integral $\int_{\pi/24}^{5\pi/24}\frac{dx}{1 + \sqrt[3]{\tan2x}}$ is :
+  o: ['$\frac{\pi}{6}$', '$\frac{\pi}{12}$', '$\frac{\pi}{3}$', '$\frac{\pi}{18}$']
+  ch: Definite Integration
+  tp: King property
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The sum of all values of x in [0, 2$\pi$], for which $\sin x + \sin2x + \sin3x + \sin4x = 0$, is equal to :
+  o: ['$11\pi$', '$9\pi$', '$8\pi$', '$12\pi$']
+  ch: Trigonometric Functions and Equations
+  tp: Sum-to-product
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If b is very small as compared to the value of a, so that the cube and other higher powers of $\frac{b}{a}$ can be neglected in the identity $\frac{1}{a - b} + \frac{1}{a - 2b} + \frac{1}{a - 3b} + .... + \frac{1}{a - nb} = \alpha n + \beta n^2 + \gamma n^3$, then the value of $\gamma$ is :
+  o: ['$\frac{a + b}{3a^2}$', '$\frac{a^2 + b}{3a^3}$', '$\frac{b^2}{3a^3}$', '$\frac{a + b^2}{3a^3}$']
+  ch: Binomial Theorem
+  tp: Binomial approximation
+  df: M
+  nt: '"then the value of γ is" is implied; the printed question ends at the identity'
+- n: 20
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let y = y(x) be the solution of the differential equation $\frac{dy}{dx} = 1 + xe^{y-x}$, $-\sqrt{2} < x < \sqrt{2}$, y(0) = 0 then, the minimum value of y(x), $x \in (-\sqrt{2}, \sqrt{2})$ is equal to :
+  o: ['$(1 + \sqrt{3}) - \log_e(\sqrt{3} - 1)$', '$(2 + \sqrt{3}) + \log_e2$', '$(1 - \sqrt{3}) - \log_e(\sqrt{3} - 1)$', '$(2 - \sqrt{3}) - \log_e2$']
+  ch: Differential Equations
+  tp: Substitution and extremum
+  df: H
