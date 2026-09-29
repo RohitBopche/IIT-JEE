@@ -1,0 +1,185 @@
+P A 1: |-
+  Concept: Coefficient of restitution $e = \sqrt{h'/h}$; average speed = total distance ÷ total time (geometric series).
+  Solution:
+  1. $e = \sqrt{0.81} = 0.9$.
+  2. Distance $= h\frac{1 + e^2}{1 - e^2} = 5\times\frac{1.81}{0.19} = 47.6$ m.
+  3. Time $= \sqrt{\frac{2h}{g}}\cdot\frac{1 + e}{1 - e} = 1\times\frac{1.9}{0.1} = 19$ s.
+  4. Average speed $= \frac{47.6}{19} \approx 2.5$ m/s.
+  Answer: (D)
+P A 2: |-
+  Concept: $\gamma = 1 + \frac{2}{f}$; each vibrational mode adds 2 degrees of freedom.
+  Solution:
+  1. Non-linear polyatomic: $f = 3 + 3 + 2\times2 = 10$.
+  2. $\beta = 1 + \frac{2}{10} = 1.2$.
+  Answer: (B)
+P A 3: |-
+  Concept: Damped amplitude $A = A_0e^{-bt/2m}$.
+  Solution:
+  1. $\frac{bt}{2m} = \ln2 \Rightarrow b = \frac{2\times1\times0.693}{120} = 1.16\times10^{-2}$ kg s⁻¹.
+  2. None of the options gives this value (option C has $10^{2}$ instead of $10^{-2}$), so NTA dropped the question.
+  Answer: Bonus
+P A 4: |-
+  Concept: $Y = (A + B)\cdot\overline{AB}$ is the XOR function.
+  Solution:
+  1. The upper branch is AND followed by NOT: $\overline{AB}$. The lower branch is OR: $A + B$.
+  2. The final AND gives $(A + B)\overline{AB} = A\bar B + \bar AB$, which is XOR.
+  Answer: (D)
+P A 5: |-
+  Concept: Bulk modulus $B = \frac{\Delta P}{\Delta V/V}$, with $\Delta P = \rho gh$.
+  Solution:
+  1. $\Delta P = 1000\times9.8\times2000 = 1.96\times10^7$ Pa.
+  2. $B = \frac{1.96\times10^7}{0.0136} = 1.44\times10^9$ N m⁻².
+  Answer: (D)
+P A 6: |-
+  Concept: Kepler's third law $T \propto r^{3/2}$ (r measured from the planet's centre).
+  Solution:
+  1. $r_1 = 12R$ ($T = 24$ h) and $r_2 = 3R$.
+  2. $T_2 = 24\left(\frac{3}{12}\right)^{3/2} = 24\times\frac{1}{8} = 3$ h.
+  Answer: (C)
+P A 7: |-
+  Concept: $y = A\sin(kx - \omega t)$, with $k = \frac{2\pi f}{v}$ and $\omega = 2\pi f$.
+  Solution:
+  1. Total to-and-fro distance 6 cm, so $A = 3$ cm $= 0.03$ m.
+  2. $k = \frac{2\pi\times245}{300} = 5.1$ m⁻¹; $\omega = 2\pi\times245 \approx 1.5\times10^3$ s⁻¹.
+  Answer: (D)
+P A 8: |-
+  Concept: Isothermal: T is constant. Adiabatic: $TV^{\gamma-1}$ = const and $P \propto T^{\gamma/(\gamma-1)}$.
+  Solution:
+  1. (c) V–T: the isothermal process is a vertical line (T fixed), and in the adiabatic process V falls as T rises. Correct.
+  2. (d) P–T: the isothermal process is a vertical line, and in the adiabatic process P rises with T. Correct.
+  3. (a) shows an adiabatic process as a vertical line on P–V (wrong); (b) shows an isothermal process as a horizontal line on P–T (wrong).
+  Answer: (B)
+P A 9: |-
+  Concept: Displacement $= \int_0^1v\,dt$.
+  Solution:
+  1. $x = \left[v_0t + \frac{gt^2}{2} + \frac{Ft^3}{3}\right]_0^1 = v_0 + \frac{g}{2} + \frac{F}{3}$.
+  Answer: (B)
+P A 10: |-
+  Concept: AM bandwidth $= 2f_m$.
+  Solution:
+  1. $f_m = \frac{1.57\times10^8}{2\pi} = 25$ MHz.
+  2. Bandwidth $= 50$ MHz.
+  Answer: (D)
+P A 11: |-
+  Concept: Terminal voltage of the first cell: $V = 2E - ir_1 = 0$.
+  Solution:
+  1. $i = \frac{3E}{R + r_1 + r_2}$.
+  2. $2E = \frac{3Er_1}{R + r_1 + r_2} \Rightarrow 2R + 2r_1 + 2r_2 = 3r_1 \Rightarrow R = \frac{r_1}{2} - r_2$.
+  Answer: (B)
+P A 12: |-
+  Concept: Superpose two semi-infinite straight wires and a semicircular arc.
+  Solution:
+  1. Each straight wire ends level with P: $B = \frac{\mu_0I}{4\pi r}$ each.
+  2. Semicircle: $B = \frac{\mu_0I}{4r}$.
+  3. All three are in the same direction: $B = \frac{\mu_0I}{4\pi r}(2 + \pi)$.
+  Answer: (B)
+P A 13: |-
+  Concept: Nodal analysis for an unbalanced Wheatstone bridge.
+  Solution:
+  1. Take $V_A = 10$ V, $V_C = 0$, with unknowns $V_B = x$ and $V_D = y$ (arms 100 Ω, 10 Ω, 60 Ω, 5 Ω; galvanometer 15 Ω).
+  2. At B: $\frac{x - 10}{100} + \frac{x - y}{15} + \frac{x}{10} = 0$. At D: $\frac{y - 10}{60} + \frac{y - x}{15} + \frac{y}{5} = 0$.
+  3. Solving: $x = 0.865$ V, $y = 0.792$ V.
+  4. $I_G = \frac{0.073}{15} = 4.87$ mA.
+  Answer: (C)
+P A 14: |-
+  Concept: $v_{max} = A\omega = A\sqrt{\frac{K}{m}}$.
+  Solution:
+  1. $A_1\sqrt{K_1} = A_2\sqrt{K_2} \Rightarrow \frac{A_1}{A_2} = \sqrt{\frac{K_2}{K_1}}$.
+  Answer: (D)
+P A 15: |-
+  Concept: Phase relations in AC circuits.
+  Solution:
+  1. (a) Resistive: zero (ii).
+  2. (b) Inductive: current lags by $\frac{\pi}{2}$ (iii).
+  3. (c) Capacitive: current leads by $\frac{\pi}{2}$ (i).
+  4. (d) LCR: $\tan^{-1}\frac{X_C - X_L}{R}$ (iv).
+  Answer: (D)
+P A 16: |-
+  Concept: An elastic collision between equal masses exchanges velocities; maximum compression occurs at the common velocity.
+  Solution:
+  1. C stops and A moves with v; then A and B (joined by the spring) share momentum: common velocity $\frac{v}{2}$.
+  2. $\frac{1}{2}mv^2 = \frac{1}{2}(2m)\frac{v^2}{4} + \frac{1}{2}Kx^2 \Rightarrow x = v\sqrt{\frac{m}{2K}}$ (option A, with M = m).
+  Answer: (A)
+P A 17: |-
+  Concept: Hydrogen spectral series.
+  Solution:
+  1. The Balmer series (transitions to n = 2) lies in the visible region.
+  2. Lyman is UV; Paschen and Brackett are IR.
+  Answer: (D)
+P A 18: |-
+  Concept: $\frac{1}{2}mv^2 = hf - \phi$.
+  Solution:
+  1. Subtracting for the two frequencies: $\frac{1}{2}m(v_1^2 - v_2^2) = h(f_1 - f_2)$.
+  2. $v_1^2 - v_2^2 = \frac{2h}{m}(f_1 - f_2)$.
+  Answer: (A)
+P A 19: |-
+  Concept: $X_L = 2\pi fL$ and $I = \frac{V}{X_L}$.
+  Solution:
+  1. Halving f halves $X_L$, so the current doubles.
+  Answer: (B)
+P A 20: |-
+  Concept: A rolling sphere on an incline has $a = \frac{g\sin\theta}{1 + 2/5}$, uniform in both directions.
+  Solution:
+  1. $a = \frac{5}{7}\times10\times\frac{1}{2} = \frac{25}{7}$ m/s².
+  2. Up and back: $t = \frac{2v_0}{a} = \frac{2\times7}{25} = 0.56$ s ≈ 0.57 s.
+  Answer: (C)
+P B 1: |-
+  Concept: Intensity $\frac{P}{4\pi r^2} = \frac{1}{2}c\varepsilon_0E^2$, so $E^2 \propto P$.
+  Solution:
+  1. $\frac{E'^2}{E^2} = \frac{60}{100} = \frac{3}{5}$, so $x = 3$.
+  Answer: 3
+P B 2: |-
+  Concept: The minimum pulling force acts at the angle of friction: $F_{min} = \frac{\mu mg}{\sqrt{1 + \mu^2}}$.
+  Solution:
+  1. $F = \frac{\frac{1}{\sqrt3}\times10}{\frac{2}{\sqrt3}} = 5$ N.
+  Answer: 5
+P B 3: |-
+  Concept: Treat boy + wood as one system: the rope pulls the system up with T, reducing the normal force.
+  Solution:
+  1. $N + T = (4 + 5)\times10 = 90$ N.
+  2. The horizontal pull T must not exceed friction: $T = \mu N = 0.5(90 - T)$.
+  3. $1.5T = 45 \Rightarrow T = 30$ N.
+  Answer: 30
+P B 4: |-
+  Concept: Volume of oleic acid = film area × thickness.
+  Solution:
+  1. Solution volume $= 100\times\frac{4}{3}\pi r^3 = 100\times\frac{4\pi}{3}\times\frac{3}{40\pi}\times10^{-9} = 10^{-8}$ cm³.
+  2. Oleic acid $= 0.01\times10^{-8} = 10^{-10}$ cm³.
+  3. $t = \frac{10^{-10}}{4}$ cm $= 25\times10^{-12}$ cm $= 25\times10^{-14}$ m.
+  Answer: 25
+P B 5: |-
+  Concept: Central force $F = -\frac{dU}{dr}$ plus Bohr's condition $mvr = \frac{nh}{2\pi}$.
+  Solution:
+  1. $4U_0r^3 = \frac{mv^2}{r} \Rightarrow v \propto r^2$.
+  2. $mvr \propto r^3 \propto n \Rightarrow r \propto n^{1/3}$, so $\alpha = 3$.
+  Answer: 3
+P B 6: |-
+  Concept: A surface parallel to the Y–Z plane has its normal along x: $\phi = E_xA$.
+  Solution:
+  1. $\phi = \frac{2}{5}\times4000\times0.4 = 640$ N m² C⁻¹.
+  Answer: 640
+P B 7: |-
+  Concept: Centre of mass of a quarter disc of radius a: $\left(\frac{4a}{3\pi}, \frac{4a}{3\pi}\right)$.
+  Solution:
+  1. Comparing with $\frac{x}{3}\frac{a}{\pi}$ gives $x = 4$.
+  Answer: 4
+P B 8: |-
+  Concept: Refraction at a spherical surface: $\frac{\mu}{v} - \frac{1}{u} = \frac{\mu - 1}{R}$.
+  Solution:
+  1. $\mu = \frac{\lambda_a}{\lambda_m} = \frac{3}{2}$; $v = +10$ m and $u = -15$ m.
+  2. $\frac{1.5}{10} + \frac{1}{15} = \frac{13}{60} = \frac{0.5}{R} \Rightarrow R = \frac{30}{13}$ m.
+  3. $x = 30$.
+  Answer: 30
+P B 9: |-
+  Concept: Charge is conserved when the capacitors share charge.
+  Solution:
+  1. $Q = 2\times10 = 20\ \mu$C; common $V = \frac{20}{2 + 8} = 2$ V.
+  2. $Q_2 = 8\times2 = 16\ \mu$C.
+  Answer: 16
+P B 10: |-
+  Concept: $J_c = \frac{E}{\rho}$ and $J_d = \varepsilon\frac{dE}{dt}$, so $\frac{J_c}{J_d} = \frac{\tan\omega t}{\rho\varepsilon\omega}$.
+  Solution:
+  1. At $t = \frac{1}{800}$ s: $\omega t = 2\pi\times\frac{900}{800} = \frac{9\pi}{4}$, so $\tan\omega t = 1$.
+  2. $\rho\varepsilon\omega = 0.25\times\frac{80}{4\pi\times9\times10^9}\times2\pi\times900 = 10^{-6}$.
+  3. Ratio $= 10^6$, so $x = 6$.
+  Answer: 6
