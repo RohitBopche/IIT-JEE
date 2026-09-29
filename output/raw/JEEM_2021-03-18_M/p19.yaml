@@ -1,0 +1,173 @@
+- n: 16
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If the functions are defined as $f(x) = \sqrt{x}$ and $g(x) = \sqrt{1 - x}$, then what is the common domain of the following functions : f + g, f – g, f/g, g/f, g – f where $(f \pm g)(x) = f(x) \pm g(x)$, $(f/g)(x) = \frac{f(x)}{g(x)}$
+  o: ['$0 \le x \le 1$', '$0 \le x < 1$', '$0 < x < 1$', '$0 < x \le 1$']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: Domain of combined functions
+  df: E
+- n: 17
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If $f(x) = \begin{cases} \frac{1}{|x|}; & |x| \ge 1 \\ ax^2 + b; & |x| < 1 \end{cases}$ is differentiable at every point of the domain, then the values of a and b are respectively :
+  o: ['$\frac{1}{2}, \frac{1}{2}$', '$\frac{1}{2}, -\frac{3}{2}$', '$\frac{5}{2}, -\frac{3}{2}$', '$-\frac{1}{2}, \frac{3}{2}$']
+  a: D
+  ch: Limits, Continuity and Differentiability
+  tp: Differentiability of piecewise function
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let $A + 2B = \begin{bmatrix} 1 & 2 & 0 \\ 6 & -3 & 3 \\ -5 & 3 & 1 \end{bmatrix}$ and $2A - B = \begin{bmatrix} 2 & -1 & 5 \\ 2 & -1 & 6 \\ 0 & 1 & 2 \end{bmatrix}$. If Tr(A) denotes the sum of all diagonal elements of the matrix A, then Tr(A) – Tr(B) has value equal to
+  o: ['1', '2', '0', '3']
+  a: B
+  ch: Matrices and Determinants
+  tp: Trace of matrix
+  df: E
+- n: 19
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The sum of all the 4-digit distinct numbers that can be formed with the digits 1, 2, 2 and 3 is:
+  o: ['26664', '122664', '122234', '22264']
+  a: A
+  ch: Permutations and Combinations
+  tp: Sum of numbers formed
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The value of $3 + \cfrac{1}{4 + \cfrac{1}{3 + \cfrac{1}{4 + \cfrac{1}{3 + \ldots\infty}}}}$ is equal to
+  o: ['$1.5 + \sqrt{3}$', '$2 + \sqrt{3}$', '$3 + 2\sqrt{3}$', '$4 + \sqrt{3}$']
+  a: A
+  ch: Quadratic Equations
+  tp: Continued fraction
+  df: E
+- n: 1
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    The number of times the digit 3 will be written when listing the integers from 1 to 1000 is
+  a: '300'
+  ch: Permutations and Combinations
+  tp: Counting digits
+  df: E
+- n: 2
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    Let the plane ax + by + cz + d = 0 bisect the line joining the points (4,–3,1) and (2, 3, –5) at the right angles. If a, b, c, d are integers, then the minimum value of $(a^2 + b^2 + c^2 + d^2)$ is
+  a: '28'
+  ch: Three Dimensional Geometry
+  tp: Perpendicular bisector plane
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    Let f(x) and g(x) be two functions satisfying $f(x^2) + g(4 - x) = 4x^3$ and $g(4 - x) + g(x) = 0$, then the value of $\int_{-4}^{4}f(x)^2\,dx$ is
+  a: '512'
+  ch: Definite Integration
+  tp: Properties of definite integrals
+  df: M
+  nt: 'integrand as printed f(x)²; solution evaluates f(x²)'
+- n: 4
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    The missing value in the following figure is
+    [figure: circle divided into outer ring values 2, 3, 5, 4, 7, 8, 12, 1 and inner values 1, ?, $3^6$, $4^{24}$]
+  a: '4'
+  ch: Sequences and Series
+  tp: Pattern (puzzle)
+  df: M
+  fig: [[21, 760, 125, 880, 290]]
+- n: 5
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    Let $z_1$, $z_2$ be the roots of the equation $z^2 + az + 12 = 0$ and $z_1$, $z_2$ form an equilateral triangle with origin. Then, the value of |a| is
+  a: '6'
+  ch: Complex Numbers
+  tp: Equilateral triangle condition
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    The equation of the planes parallel to the plane x – 2y + 2z – 3 = 0 which are at unit distance from the point (1, 2, 3) is ax + by + cz + d =0. If (b – d) = K(c – a), then the positive value of K is
+  a: '4'
+  ch: Three Dimensional Geometry
+  tp: Parallel planes at given distance
+  df: E
+- n: 7
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    The mean age of 25 teachers in a school is 40 years. A teacher retires at the age of 60 years and a new teacher is appointed in his place. If the mean age of the teachers in this school now is 39 years, then the age (in years) of the newly appointed teacher is_.
+  a: '35'
+  ch: Statistics
+  tp: Mean
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    If $f(x) = \int\frac{5x^8 + 7x^6}{(x^2 + 1 + 2x^7)^2}dx$, $(x \ge 0)$, f(0) = 0 and $f(1) = \frac{1}{K}$, then the value of K is
+  a: '4'
+  ch: Indefinite Integration
+  tp: Substitution
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    A square ABCD has all its vertices on the curve $x^2y^2 = 1$. The midpoints of its sides also lie on the same curve. Then, the square of area of ABCD is
+  a: '80'
+  ch: Conic Sections
+  tp: Rectangular hyperbola
+  df: H
+- n: 10
+  s: M
+  sec: B
+  p: 22
+  t: N
+  q: |-
+    The number of solutions of the equation $|\cot x| = \cot x + \frac{1}{\sin x}$ in the interval $[0, 2\pi]$ is
+  a: '1'
+  ch: Trigonometric Functions and Equations
+  tp: Trigonometric equations
+  df: M
