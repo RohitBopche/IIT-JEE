@@ -1,0 +1,197 @@
+M A 1: |-
+  Concept: $a^{\log b} = b^{\log a}$; take logs to invert.
+  Solution:
+  1. $y = 5^{\log x} = x^{\log5}$.
+  2. $\log y = \log5\cdot\log x \Rightarrow x = y^{\frac{1}{\log5}}$.
+  Note: ALLEN accepts (A), (B) or (C); the official key is (C).
+  Answer: (C)
+M A 2: |-
+  Concept: $\vec r\times(\vec a - \vec b) = \vec0 \Rightarrow \vec r\parallel\vec a - \vec b$.
+  Solution:
+  1. $\vec r = \lambda(-5, -4, 10)$.
+  2. $\lambda(-5 - 8 + 10) = -3 \Rightarrow \lambda = 1$.
+  3. $\vec r\cdot(2, -3, 1) = -10 + 12 + 10 = 12$.
+  Answer: (A)
+M A 3: |-
+  Concept: The circumcentre is the intersection of perpendicular bisectors.
+  Solution:
+  1. Perpendicular bisector of PQ: midpoint (1, 1), PQ has slope −1, so the bisector is $y = x$.
+  2. With $2x - y + 2 = 0$: $x = -2$, so the circumcentre is $(-2, -2)$.
+  Answer: (B)
+M A 4: |-
+  Concept: $\Delta = 0$ with inconsistent equations means no solution.
+  Solution:
+  1. $\Delta = k^3 - 3k + 2 = (k - 1)^2(k + 2)$.
+  2. $k = 1$: all three equations are $x + y + z = 1$, so there are infinitely many solutions.
+  3. $k = -2$: adding the equations gives $0 = 1 - 2 + 4 = 3$, which is inconsistent.
+  Answer: (D)
+M A 5: |-
+  Concept: $\cot^{-1}(2k^2) = \tan^{-1}\frac{(2k+1) - (2k-1)}{1 + (2k+1)(2k-1)} = \tan^{-1}(2k+1) - \tan^{-1}(2k-1)$.
+  Solution:
+  1. The sum telescopes to $\tan^{-1}201 - \tan^{-1}1 = \tan^{-1}\frac{200}{202}$.
+  2. $\cot^{-1}\alpha = \tan^{-1}\frac{200}{202} \Rightarrow \alpha = \frac{202}{200} = 1.01$.
+  Answer: (A)
+M A 6: |-
+  Concept: A plane containing the y-axis has the form $ax + cz = 0$.
+  Solution:
+  1. Through (1, 2, 3): $a + 3c = 0$, so take $a = 3$, $c = -1$.
+  2. Plane: $3x - z = 0$.
+  Answer: (D)
+M A 7: |-
+  Concept: $A^2 = \sin^2\alpha\,I$.
+  Solution:
+  1. $\det\left(\left(\sin^2\alpha - \frac{1}{2}\right)I\right) = \left(\sin^2\alpha - \frac{1}{2}\right)^2 = 0$.
+  2. $\sin^2\alpha = \frac{1}{2} \Rightarrow \alpha = \frac{\pi}{4}$.
+  Answer: (C)
+M A 8: |-
+  Concept: $p \Rightarrow q \equiv \sim p\vee q$.
+  Solution:
+  1. For the biconditional to be a tautology, $q * (\sim p) \equiv \sim p\vee q$, so $*$ is $\vee$.
+  2. $p * (\sim q) = p\vee\sim q \equiv q \Rightarrow p$.
+  Answer: (A)
+M A 9: |-
+  Concept: Count favourable outcomes out of 36.
+  Solution:
+  1. Pairs with sum ≤ 8: first die 1 → 1, 2, 3, 5, 7 (5 ways); 2 → 1, 2, 3, 5 (4); 3 → 1, 2, 3, 5 (4); 5 → 1, 2, 3 (3); 7 → 1 (1); 11 → none.
+  2. Total 17, so $P = \frac{17}{36}$.
+  Answer: (B)
+M A 10: |-
+  Concept: $T_4 = \binom{7}{3}x^4(x^{\log_2x})^3$.
+  Solution:
+  1. $35x^{4 + 3\log_2x} = 4480 \Rightarrow x^{4 + 3\log_2x} = 128$.
+  2. $x = 2$: $2^{4+3} = 128$ ✓.
+  Answer: (A)
+M A 11: |-
+  Concept: The Venn diagram needs three sets with pairwise overlaps but an empty triple intersection.
+  Solution:
+  1. Some students play two games, so some pairwise intersections are non-empty.
+  2. No one plays all three, so the region common to all three sets must be empty.
+  3. None of the given diagrams P, Q, R shows exactly this, so the answer is "None of these".
+  Answer: (C)
+M A 12: |-
+  Concept: $\cot^{-1}\frac{1}{t} = \tan^{-1}t$ for $t > 0$ and $\pi + \tan^{-1}t$ for $t < 0$; check each root.
+  Solution:
+  1. Take tangent: $\frac{(x+1) + (x-1)}{1 - (x^2 - 1)} = \frac{8}{31} \Rightarrow 4x^2 + 31x - 8 = 0 \Rightarrow x = \frac{1}{4}$ or $-8$.
+  2. $x = \frac{1}{4}$: the LHS exceeds $\frac{\pi}{2}$, so it is rejected.
+  3. $x = -8$: $\tan^{-1}(-7) + \pi - \tan^{-1}9 = 0.2526 = \tan^{-1}\frac{8}{31}$ ✓.
+  4. The sum of valid values is $-8 = -\frac{32}{4}$.
+  Answer: (A)
+M A 13: |-
+  Concept: Multiplying by $i$ rotates by 90°.
+  Solution:
+  1. $\vec{CA} = -iz$ and $\vec{CB} = -z$ are perpendicular with equal length $|z|$.
+  2. Area $= \frac{1}{2}|z|^2$.
+  Answer: (B)
+M A 14: |-
+  Concept: The centre lies on the normal at the point of contact.
+  Solution:
+  1. Normal at (2, 5): $(2 + 2t, 5 - t)$.
+  2. On $x - 2y = 4$: $4t - 8 = 4 \Rightarrow t = 3$, so the centre is (8, 2).
+  3. $r = \sqrt{36 + 9} = 3\sqrt5$.
+  Answer: (A)
+M A 15: |-
+  Concept: Multiplication principle.
+  Solution:
+  1. Boy vs boy: $7\times4 = 28$. Girl vs girl: $6n$.
+  2. $28 + 6n = 52 \Rightarrow n = 4$.
+  Answer: (C)
+M A 16: |-
+  Concept: A periodic continued fraction satisfies a quadratic.
+  Solution:
+  1. $t = 4 + \frac{1}{5 + \frac{1}{t}} = 4 + \frac{t}{5t + 1}$.
+  2. $5t^2 - 20t - 4 = 0 \Rightarrow t = 2 + \frac{\sqrt{480}}{10} = 2 + \frac{2}{5}\sqrt{30}$.
+  Answer: (A)
+M A 17: |-
+  Concept: Compare the distance between centres with the radii.
+  Solution:
+  1. $C_1$: centre (5, 5), $r = 3$. $C_2$: centre (8, 5), $r = 3$. Distance $= 3$.
+  2. (A) True: $3 = \frac{3 + 3}{2}$. (C) True: each centre lies on the other circle. (D) True: $3 < 6$.
+  3. (B) is incorrect: the centres lie on, not inside, the other circle.
+  Answer: (B)
+M A 18: |-
+  Concept: King property: $x \to \frac{\pi}{2} - x$ maps $[\frac{\pi}{6}, \frac{\pi}{3}]$ to itself.
+  Solution:
+  1. $g(\alpha) = \int\frac{\cos^\alpha x}{\sin^\alpha x + \cos^\alpha x}dx$, so $2g = \frac{\pi}{6}$ and $g \equiv \frac{\pi}{12}$ (constant).
+  2. A constant is neither strictly increasing nor decreasing and has no inflection point, so (A), (B) and (C) are incorrect. It is even, so (D) is correct.
+  Note: The official key gives (D). The question is flawed, since three statements are incorrect; ALLEN gives (A)/(B)/(C) or Bonus.
+  Answer: (D)
+M A 19: |-
+  Concept: Factorise the right side: $xy - 1 + x - y = (x - 1)(y + 1)$.
+  Solution:
+  1. $\frac{dy}{y + 1} = (x - 1)dx \Rightarrow \ln(y + 1) = \frac{x^2}{2} - x$ (using $y(0) = 0$).
+  2. $y(1) = e^{-1/2} - 1$.
+  Answer: (A)
+M A 20: |-
+  Concept: For $0 < x < 1$, $[x] = 0$.
+  Solution:
+  1. The expression is $\frac{\cos^{-1}x\cdot\sin^{-1}x}{x(1 - x^2)}$.
+  2. As $x \to 0^+$: $\cos^{-1}x \to \frac{\pi}{2}$ and $\frac{\sin^{-1}x}{x} \to 1$, so the limit is $\frac{\pi}{2}$.
+  Answer: (D)
+M B 1: |-
+  Concept: z increases in both x and y, so its maximum is on the boundary of the feasible region.
+  Solution:
+  1. The region is bounded by $4x + 3y \le 75$ (the binding constraint) and the axes; at (0, 25), $z = 625$.
+  2. On $4x + 3y = 75$: $z(x) = 6x\cdot\frac{75 - 4x}{3} + \left(\frac{75 - 4x}{3}\right)^2$; $z' = 0$ at $x = \frac{375}{56}$.
+  3. $z_{max} = \frac{50625}{56} \approx 904$ (this point also satisfies $3x + 4y \le 100$).
+  Answer: 904
+M B 2: |-
+  Concept: $\cos A - \cos B = 2\sin\frac{A + B}{2}\sin\frac{B - A}{2}$ and $x - \sin x \approx \frac{x^3}{6}$.
+  Solution:
+  1. $\cos(\sin x) - \cos x = 2\sin\frac{x + \sin x}{2}\sin\frac{x - \sin x}{2} \approx 2\cdot x\cdot\frac{x^3}{12} = \frac{x^4}{6}$.
+  2. $f(0) = \frac{1}{6}$, so $k = 6$.
+  Answer: 6
+M B 3: |-
+  Concept: With $t = 2^x = \tan\theta$: $\cos^{-1}\frac{1 - t^2}{1 + t^2} = 2\theta$, so $f = \sin2\theta = \frac{2t}{1 + t^2}$.
+  Solution:
+  1. $f = \frac{2^{x+1}}{1 + 4^x}$; $f'(x) = \ln2\cdot\frac{2^{x+1}(1 + 4^x) - 2^{x+1}\cdot2\cdot4^x}{(1 + 4^x)^2}$.
+  2. At $x = 1$: $f'(1) = \ln2\cdot\frac{4\cdot5 - 4\cdot8}{25} = -\frac{12}{25}\ln2$.
+  3. $a = 25$, $b = 12$: $|a^2 - b^2| = 625 - 144 = 481$.
+  Answer: 481
+M B 4: |-
+  Concept: For independent events, divide by $p = (1-x)(1-y)(1-z)$: $\frac{\alpha}{p} = \frac{x}{1-x} = X$, and similarly $Y$ and $Z$.
+  Solution:
+  1. $X - 2Y = XY \Rightarrow X = \frac{2Y}{1 - Y}$; $Y - 3Z = 2YZ \Rightarrow Y = \frac{3Z}{1 - 2Z}$.
+  2. $X = \frac{6Z}{1 - 5Z}$, so $x = \frac{X}{1 + X} = \frac{6Z}{1 + Z}$ and $z = \frac{Z}{1 + Z}$.
+  3. $\frac{P(E_1)}{P(E_3)} = 6$.
+  Answer: 6
+M B 5: |-
+  Concept: Solve for α and β, then compute the scalar triple product.
+  Solution:
+  1. $\vec a\cdot\vec b = -2\alpha\beta - 3 = 1 \Rightarrow \alpha\beta = -2$; $\vec b\cdot\vec c = -\beta + 2\alpha + 1 = -3 \Rightarrow \beta = 2\alpha + 4$.
+  2. $2\alpha^2 + 4\alpha + 2 = 0 \Rightarrow \alpha = -1$, $\beta = 2$.
+  3. $[\vec a\,\vec b\,\vec c] = \begin{vmatrix}-1&2&3\\-2&1&-1\\1&-2&-1\end{vmatrix} = 6$, so $\frac{1}{3}\times6 = 2$.
+  Answer: 2
+M B 6: |-
+  Concept: For a 2×2 matrix, $\operatorname{adj}A = (\operatorname{tr}A)I - A$; work with eigenvalues.
+  Solution:
+  1. $\det A = -2$, so $\det A^4 = 16$.
+  2. A has eigenvalues 2 and −1; $\operatorname{adj}(2A) = 2\operatorname{adj}A$ has eigenvalues $2\cdot\frac{-2}{2} = -2$ and $2\cdot\frac{-2}{-1} = 4$ on the same eigenvectors.
+  3. On the λ = 2 eigenvector: $2^{10} - (-2)^{10} = 0$, so $\det(A^{10} - (\operatorname{adj}2A)^{10}) = 0$.
+  4. Total $= 16$.
+  Answer: 16
+M B 7: |-
+  Concept: Split at $x = 1$ where $[x^2]$ changes.
+  Solution:
+  1. $0 \le x < 1$: $[x^2] = 0$ and $[-\cos x] = -1$.
+  2. $1 \le x \le \sqrt{\pi/2}$ (≈ 1.25): $[x^2] = 1$ and $1 - \cos x \in (0, 1)$, so the floor is 0.
+  3. Integral $= -1$, absolute value 1.
+  Answer: 1
+M B 8: |-
+  Concept: For separated circles, the minimum distance is $d - r_1 - r_2$.
+  Solution:
+  1. Centres (5, 5) and (12, 5), each of radius 3; $d = 7$.
+  2. Minimum distance $= 7 - 6 = 1$.
+  Answer: 1
+M B 9: |-
+  Concept: A plane through the intersection of two planes: $P_1 + \lambda P_2 = 0$.
+  Solution:
+  1. At $(-2, 1, 3)$: $P_1 = -2$ and $P_2 = 12$, so $\lambda = \frac{1}{6}$.
+  2. $6P_1 + P_2$: $15x - 47y + 28z - 7 = 0$, so $a = 15$, $b = -47$, $c = 28$.
+  3. $2a + b + c - 7 = 30 - 47 + 28 - 7 = 4$.
+  Answer: 4
+M B 10: |-
+  Concept: Modular arithmetic: $2^8 = 256 \equiv 1 \pmod{17}$.
+  Solution:
+  1. $2021 \equiv -2 \pmod{17}$, so $2021^{3762} \equiv 2^{3762}$.
+  2. $3762 = 8\cdot470 + 2$, so $2^{3762} \equiv 2^2 = 4$.
+  Answer: 4
