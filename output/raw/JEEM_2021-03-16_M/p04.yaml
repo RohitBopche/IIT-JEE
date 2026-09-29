@@ -1,0 +1,127 @@
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    Four equal masses, m each are placed at the corners of a square of length (l) as shown in the figure. The moment of inertia of the system about an axis passing through A and parallel to DB would be :
+  o: ['$ml^2$', '$2ml^2$', '$3ml^2$', '$\sqrt{3}ml^2$']
+  a: C
+  ch: Rotational Motion
+  tp: Moment of inertia of point masses
+  df: E
+  fig: [[4, 200, 180, 350, 380]]
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A conducting wire of length 'l', area of cross-section A and electric resistivity $\rho$ is connected between the terminals of a battery. A potential difference V is developed between its ends, causing an electric current. If the length of the wire of the same material is doubled and the area of cross-section is halved, the resultant current would be :
+  o: ['$\frac{1}{4}\frac{VA}{\rho l}$', '$\frac{3}{4}\frac{VA}{\rho l}$', '$\frac{1}{4}\frac{\rho l}{VA}$', '$4\frac{VA}{\rho l}$']
+  a: A
+  ch: Current Electricity
+  tp: Resistance and dimensions
+  df: E
+- n: 13
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    Time period of a simple pendulum is T inside a lift when the lift is stationary. If the lift moves upwards with an acceleration g/2, the time period of pendulum will be :
+  o: ['$\sqrt{3}T$', '$\frac{T}{\sqrt{3}}$', '$\sqrt{\frac{3}{2}}T$', '$\sqrt{\frac{2}{3}}T$']
+  a: D
+  ch: Oscillations
+  tp: Pendulum in accelerating lift
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  st: Graph
+  q: |-
+    The velocity-displacement graph describing the motion of a bicycle is shown in the figure. The acceleration-displacement graph of the bicycle's motion is best described by :
+  o: ['[figure] a rises linearly from 2 to 18 up to x = 200 m, then zero', '[figure] a rises as curve (concave up) from 2 to 18 up to 200 m, then zero', '[figure] a rises as curve from 2 to 18 up to 200 m, then constant 18 to 400 m', '[figure] a rises linearly 2 to 18 up to 200 m, then constant 18 to 400 m']
+  a: A
+  ch: Kinematics
+  tp: v-x to a-x graph
+  df: M
+  nt: 'Official NTA answer (1); ALLEN (1 or Bonus)'
+  fig: [[5, 420, 150, 530, 380], [5, 600, 120, 860, 380], [5, 95, 560, 320, 790]]
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A 25 m long antenna is mounted on an antenna tower. The height of the antenna tower is 75 m. The wavelength (in meter) of the signal transmitted by this antenna would be :
+  o: ['300', '400', '200', '100']
+  a: D
+  ch: Communication Systems
+  tp: Antenna length and wavelength
+  df: E
+- n: 16
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    For an electromagnetic wave travelling in free space, the relation between average energy densities due to electric ($U_e$) and magnetic ($U_m$) fields is :
+  o: ['$U_e = U_m$', '$U_e > U_m$', '$U_e < U_m$', '$U_e \neq U_m$']
+  a: A
+  ch: Electromagnetic Waves
+  tp: Energy density of EM wave
+  df: E
+- n: 17
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Graph
+  q: |-
+    An RC circuit as shown in the figure is driven by a AC source generating a square wave. The output wave pattern monitored by CRO would look close to :
+  o: ['[figure] repeated concave-down rising curves with sharp drops', '[figure] repeated concave-up rising curves with sharp drops', '[figure] alternating charging (concave-down rise) and discharging (concave-up fall) curves', '[figure] sawtooth wave']
+  a: C
+  ch: Alternating Current
+  tp: RC circuit with square wave
+  df: M
+  fig: [[6, 310, 110, 625, 440]]
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    The stopping potential in the context of photoelectric effect depends on the following property of incident electromagnetic radiation :
+  o: ['Phase', 'Intensity', 'Amplitude', 'Frequency']
+  a: D
+  ch: Dual Nature of Radiation and Matter
+  tp: Stopping potential
+  df: E
+- n: 19
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A block of 200 g mass moves with a uniform speed in a horizontal circular groove, with vertical side walls of radius 20 cm. If the block takes 40 s to complete one round, the normal force by the side walls of the groove is :
+  o: ['0.0314 N', '$9.859\times10^{-2}$ N', '$6.28\times10^{-3}$ N', '$9.859\times10^{-4}$ N']
+  a: D
+  ch: Laws of Motion
+  tp: Centripetal force
+  df: E
+- n: 20
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A conducting bar of length L is free to slide on two parallel conducting rails as shown in the figure. Two resistors $R_1$ and $R_2$ are connected across the ends of the rails. There is a uniform magnetic field $\vec{B}$ pointing into the page. An external agent pulls the bar to the left at a constant speed v. The correct statement about the directions of induced currents $I_1$ and $I_2$ flowing through $R_1$ and $R_2$ respectively is :
+  o: ['Both $I_1$ and $I_2$ are in anticlockwise direction', 'Both $I_1$ and $I_2$ are in clockwise direction', '$I_1$ is in clockwise direction and $I_2$ is in anticlockwise direction', '$I_1$ is in anticlockwise direction and $I_2$ is in clockwise direction']
+  a: C
+  ch: Electromagnetic Induction
+  tp: Lenz's law, moving rod
+  df: M
+  fig: [[6, 480, 555, 590, 900]]

@@ -1,0 +1,128 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    One main scale division of a vernier callipers is 'a' cm and $n^{\text{th}}$ division of the vernier scale coincide with $(n - 1)^{\text{th}}$ division of the main scale. The least count of the callipers in mm is :
+  o: ['$\frac{10na}{(n - 1)}$', '$\frac{10a}{(n - 1)}$', '$\left(\frac{n - 1}{10n}\right)a$', '$\frac{10a}{n}$']
+  a: D
+  ch: Units and Measurements
+  tp: Vernier callipers least count
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    For changing the capacitance of a given parallel plate capacitor, a dielectric material of dielectric constant K is used, which has the same area as the plates of the capacitor. The thickness of the dielectric slab is $\frac{3}{4}d$, where 'd' is the separation between the plates of parallel plate capacitor. The new capacitance (C') in terms of original capacitance ($C_0$) is given by the following relation :
+  o: ["$C' = \\frac{3 + K}{4K}C_0$", "$C' = \\frac{4 + K}{3}C_0$", "$C' = \\frac{4K}{K + 3}C_0$", "$C' = \\frac{4}{3 + K}C_0$"]
+  a: C
+  ch: Capacitance
+  tp: Partially filled dielectric
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A block of mass m slides along a floor while a force of magnitude F is applied to it at an angle $\theta$ as shown in figure. The coefficient of kinetic friction is $\mu_K$. Then, the block's acceleration 'a' is given by : (g is acceleration due to gravity)
+  o: ['$-\frac{F}{m}\cos\theta - \mu_K\left(g - \frac{F}{m}\sin\theta\right)$', '$\frac{F}{m}\cos\theta - \mu_K\left(g - \frac{F}{m}\sin\theta\right)$', '$\frac{F}{m}\cos\theta - \mu_K\left(g + \frac{F}{m}\sin\theta\right)$', '$\frac{F}{m}\cos\theta + \mu_K\left(g - \frac{F}{m}\sin\theta\right)$']
+  a: B
+  ch: Laws of Motion
+  tp: Friction with inclined force
+  df: E
+  fig: [[1, 675, 650, 730, 770]]
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The pressure acting on a submarine is $3\times10^5$ Pa at a certain depth. If the depth is doubled, the percentage increase in the pressure acting on the submarine would be : (Assume that atmospheric pressure is $1\times10^5$ Pa density of water is $10^3$ kg m$^{-3}$, g = 10 ms$^{-2}$)
+  o: ['$\frac{200}{3}\%$', '$\frac{200}{5}\%$', '$\frac{5}{200}\%$', '$\frac{3}{200}\%$']
+  a: A
+  ch: Mechanical Properties of Fluids
+  tp: Hydrostatic pressure
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: MultiStmt
+  q: |-
+    The angle of deviation through a prism is minimum when
+    (A) Incident ray and emergent ray are symmetric to the prism
+    (B) The refracted ray inside the prism becomes parallel to its base
+    (C) Angle of incidence is equal to that of the angle of emergence
+    (D) When angle of emergence is double the angle of incidence
+    Choose the correct answer from the options given below :
+  o: ['Statements (A), (B) and (C) are true', 'Only statement (D) is true', 'Only statements (A) and (B) are true', 'Statements (B) and (C) are true']
+  a: A
+  ch: Ray Optics and Optical Instruments
+  tp: Minimum deviation in prism
+  df: E
+  fig: [[2, 140, 610, 225, 820]]
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A plane electromagnetic wave of frequency 500 MHz is travelling in vacuum along y-direction. At a particular point in space and time, $\vec{B} = 8.0\times10^{-8}\hat{z}$ T. The value of electric field at this point is : (speed of light = $3\times10^8$ ms$^{-1}$) $\hat{x}, \hat{y}, \hat{z}$ are unit vectors along x, y and z direction.
+  o: ['$-24\hat{x}$ V/m', '$2.6\hat{x}$ V/m', '$24\hat{x}$ V/m', '$-2.6\hat{y}$ V/m']
+  a: A
+  ch: Electromagnetic Waves
+  tp: E and B relation
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The maximum and minimum distances of a comet from the Sun are $1.6\times10^{12}$ m and $8.0\times10^{10}$ m respectively. If the speed of the comet at the nearest point is $6\times10^4$ ms$^{-1}$, the speed at the farthest point is :
+  o: ['$1.5\times10^3$ m/s', '$6.0\times10^3$ m/s', '$3.0\times10^3$ m/s', '$4.5\times10^3$ m/s']
+  a: C
+  ch: Gravitation
+  tp: Kepler's second law
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A bar magnet of length 14 cm is placed in the magnetic meridian with its north pole pointing towards the geographic north pole. A neutral point is obtained at a distance of 18 cm from the center of the magnet. If $B_H$ = 0.4 G, the magnetic moment of the magnet is (1 G = $10^{-4}$T)
+  o: ['$2.880\times10^3$ J T$^{-1}$', '$2.880\times10^2$ J T$^{-1}$', '2.880 J T$^{-1}$', '28.80 J T$^{-1}$']
+  a: C
+  ch: Magnetism and Matter
+  tp: Neutral point of bar magnet
+  df: M
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The volume V of an enclosure contains a mixture of three gases, 16 g of oxygen, 28 g of nitrogen and 44 g of carbon dioxide at absolute temperature T. Consider R as universal gas constant. The pressure of the mixture of gases is :
+  o: ['$\frac{88RT}{V}$', '$\frac{3RT}{V}$', '$\frac{5}{2}\frac{RT}{V}$', '$\frac{4RT}{V}$']
+  a: C
+  ch: Kinetic Theory of Gases
+  tp: Dalton's law
+  df: E
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In thermodynamics, heat and work are :
+  o: ['Path functions', 'Intensive thermodynamic state variables', 'Extensive thermodynamic state variables', 'Point functions']
+  a: A
+  ch: Thermodynamics
+  tp: Path and state functions
+  df: E

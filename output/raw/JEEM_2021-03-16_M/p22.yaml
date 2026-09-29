@@ -1,0 +1,132 @@
+- n: 10
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Which of the following Boolean expression is a tautology ?
+  o: ['$(p \wedge q) \vee (p \vee q)$', '$(p \wedge q) \vee (p \rightarrow q)$', '$(p \wedge q) \wedge (p \rightarrow q)$', '$(p \wedge q) \rightarrow (p \rightarrow q)$']
+  a: D
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let a complex number z, $|z| \neq 1$, satisfy $\log_{\frac{1}{\sqrt{2}}}\left(\frac{|z| + 11}{(|z| - 1)^2}\right) \le 2$. Then, the largest value of |z| is equal to _____ .
+  o: ['8', '7', '6', '5']
+  a: B
+  ch: Complex Numbers
+  tp: Modulus inequality with logarithm
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    If n is the number of irrational terms in the expansion of $(3^{1/4} + 5^{1/8})^{60}$, then (n – 1) is divisible by :
+  o: ['26', '30', '8', '7']
+  a: A
+  ch: Binomial Theorem
+  tp: Rational and irrational terms
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let P be a plane $lx + my + nz = 0$ containing the line, $\frac{1 - x}{1} = \frac{y + 4}{2} = \frac{z + 2}{3}$. If plane P divides the line segment AB joining points A(–3, –6, 1) and B(2, 4, –3) in ratio k : 1 then the value of k is equal to :
+  o: ['1.5', '3', '2', '4']
+  a: C
+  ch: Three Dimensional Geometry
+  tp: Plane containing line, section ratio
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    The range of $a \in \mathbb{R}$ for which the function $f(x) = (4a - 3)(x + \log_e5) + 2(a - 7)\cot\left(\frac{x}{2}\right)\sin^2\left(\frac{x}{2}\right)$, $x \neq 2n\pi$, $n \in \mathbb{N}$, has critical points, is :
+  o: ['(–3, 1)', '$\left[-\frac{4}{3}, 2\right]$', '$[1, \infty)$', '$(-\infty, -1]$']
+  a: B
+  ch: Application of Derivatives
+  tp: Critical points
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    A pack of cards has one card missing. Two cards are drawn randomly and are found to be spades. The probability that the missing card is not a spade, is :
+  o: ['$\frac{3}{4}$', '$\frac{52}{867}$', '$\frac{39}{50}$', '$\frac{22}{425}$']
+  a: C
+  ch: Probability
+  tp: Bayes' theorem
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    Let [x] denote greatest integer less than or equal to x. If for $n \in \mathbb{N}$, $(1 - x + x^3)^n = \sum_{j=0}^{3n}a_jx^j$, then $\sum_{j=0}^{\left[\frac{3n}{2}\right]}a_{2j} + 4\sum_{j=0}^{\left[\frac{3n-1}{2}\right]}a_{2j+1}$ is equal to :
+  o: ['2', '$2^{n-1}$', '1', 'n']
+  a: C
+  ch: Binomial Theorem
+  tp: Sum of coefficients
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    If y = y(x) is the solution of the differential equation, $\frac{dy}{dx} + 2y\tan x = \sin x$, $y\left(\frac{\pi}{3}\right) = 0$, then the maximum value of the function y(x) over $\mathbb{R}$ is equal to :
+  o: ['8', '$\frac{1}{2}$', '$-\frac{15}{4}$', '$\frac{1}{8}$']
+  a: D
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    The locus of the midpoints of the chord of the circle, $x^2 + y^2 = 25$ which is tangent to the hyperbola, $\frac{x^2}{9} - \frac{y^2}{16} = 1$ is :
+  o: ['$(x^2 + y^2)^2 - 16x^2 + 9y^2 = 0$', '$(x^2 + y^2)^2 - 9x^2 + 144y^2 = 0$', '$(x^2 + y^2)^2 - 9x^2 - 16y^2 = 0$', '$(x^2 + y^2)^2 - 9x^2 + 16y^2 = 0$']
+  a: D
+  ch: Conic Sections
+  tp: Locus of chord midpoint
+  df: H
+- n: 19
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    The number of roots of the equation, $(81)^{\sin^2x} + (81)^{\cos^2x} = 30$ in the interval $[0, \pi]$ is equal to :
+  o: ['3', '4', '8', '2']
+  a: B
+  ch: Trigonometric Functions and Equations
+  tp: Exponential trigonometric equation
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    Let $S_k = \sum_{r=1}^{k}\tan^{-1}\left(\frac{6^r}{2^{2r+1} + 3^{2r+1}}\right)$. Then $\lim_{k\to\infty}S_k$ is equal to :
+  o: ['$\tan^{-1}\left(\frac{3}{2}\right)$', '$\frac{\pi}{2}$', '$\cot^{-1}\left(\frac{3}{2}\right)$', '$\tan^{-1}(3)$']
+  a: C
+  ch: Inverse Trigonometric Functions
+  tp: Telescoping inverse tangent series
+  df: M

@@ -1,0 +1,110 @@
+- n: 1
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    Consider an arithmetic series and a geometric series having four initial terms from the set {11, 8, 21, 16, 26, 32, 4}. If the last terms of these series are the maximum possible four digit numbers, then the number of common terms in these two series is equal to ______ .
+  a: '3'
+  ch: Sequences and Series
+  tp: Common terms of AP and GP
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    Let $f : (0, 2) \rightarrow \mathbb{R}$ be defined as $f(x) = \log_2\left(1 + \tan\left(\frac{\pi x}{4}\right)\right)$. Then, $\lim_{n\to\infty}\frac{2}{n}\left(f\left(\frac{1}{n}\right) + f\left(\frac{2}{n}\right) + \ldots + f(1)\right)$ is equal to _______ .
+  a: '1'
+  ch: Definite Integration
+  tp: Limit as a sum, King property
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Let ABCD be a square of side of unit length. Let a circle $C_1$ centered at A with unit radius is drawn. Another circle $C_2$ which touches $C_1$ and the lines AD and AB are tangent to it, is also drawn. Let a tangent line from the point C to the circle $C_2$ meet the side AB at E. If the length of EB is $\alpha + \sqrt{3}\beta$, where $\alpha$, $\beta$ are integers, then $\alpha + \beta$ is equal to_______.
+  a: '1'
+  ch: Circles
+  tp: Tangent to circle, geometry
+  df: H
+- n: 4
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    If $\lim_{x\to0}\frac{ae^x - b\cos x + ce^{-x}}{x\sin x} = 2$, then a + b + c is equal to _______.
+  a: '4'
+  ch: Limits, Continuity and Differentiability
+  tp: Limits using series expansion
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    The total number of 3 × 3 matrices A having enteries from the set (0, 1, 2, 3) such that the sum of all the diagonal entries of $AA^T$ is 9, is equal to _____.
+  a: '766'
+  ch: Matrices and Determinants
+  tp: Counting matrices
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    Let $P = \begin{bmatrix} -30 & 20 & 56 \\ 90 & 140 & 112 \\ 120 & 60 & 14 \end{bmatrix}$ and $A = \begin{bmatrix} 2 & 7 & \omega^2 \\ -1 & -\omega & 1 \\ 0 & -\omega & -\omega + 1 \end{bmatrix}$ where $\omega = \frac{-1 + i\sqrt{3}}{2}$, and $I_3$ be the identity matrix of order 3. If the determinant of the matrix $(P^{-1}AP - I_3)^2$ is $\alpha\omega^2$, then the value of $\alpha$ is equal to ______ .
+  a: '36'
+  ch: Matrices and Determinants
+  tp: Determinant of similar matrices
+  df: H
+- n: 7
+  s: M
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    If the normal to the curve $y(x) = \int_0^x(2t^2 - 15t + 10)\,dt$ at a point (a,b) is parallel to the line x + 3y = –5, a > 1, then the value of |a + 6b| is equal to ________ .
+  a: '406'
+  ch: Application of Derivatives
+  tp: Normal to curve
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    Let the curve y = y(x) be the solution of the differential equation, $\frac{dy}{dx} = 2(x + 1)$. If the numerical value of area bounded by the curve y = y(x) and x-axis is $\frac{4\sqrt{8}}{3}$, then the value of y(1) is equal to _______ .
+  a: '2'
+  ch: Area Under Curves
+  tp: Area bounded by parabola
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function such that $f(x) + f(x + 1) = 2$, for all $x \in \mathbb{R}$. If $I_1 = \int_0^8f(x)\,dx$ and $I_2 = \int_{-1}^3f(x)\,dx$, then the value of $I_1 + 2I_2$ is equal to ________ .
+  a: '16'
+  ch: Definite Integration
+  tp: Periodic function integral
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 28
+  t: N
+  q: |-
+    Let z and w be two complex numbers such that $w = z\bar{z} - 2z + 2$, $\left|\frac{z + i}{z - 3i}\right| = 1$ and Re(w) has minimum value. Then, the minimum value of $n \in \mathbb{N}$ for which $w^n$ is real, is equal to _____.
+  a: '4'
+  ch: Complex Numbers
+  tp: Locus and powers of complex numbers
+  df: M
