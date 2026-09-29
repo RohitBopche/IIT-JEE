@@ -1,0 +1,211 @@
+M A 1: |-
+  Concept: Row operations to simplify, then use the range of $a\cos\theta + b\sin\theta$.
+  Solution:
+  1. $R_1 \to R_1 - R_3$: $(0, 1, \cos2x - \sin2x)$. $R_2 \to R_2 - R_3$: $(1, 0, \cos2x - \sin2x)$.
+  2. Expanding: $f(x) = \cos2x - 2\sin2x$.
+  3. Maximum $= \sqrt{1^2 + 2^2} = \sqrt5$.
+  Answer: (C)
+M A 2: |-
+  Concept: $0 + 1 + \dots + 6 = 21$, so a 6-digit choice is divisible by 3 iff the omitted digit is 0, 3 or 6.
+  Solution:
+  1. Total: omit 0 → $6! = 720$; omit a non-zero digit (6 ways) → $6! - 5! = 600$ each. Total $= 720 + 3600 = 4320$.
+  2. Favourable: omit 0 → 720; omit 3 → 600; omit 6 → 600. Total 1920.
+  3. $P = \frac{1920}{4320} = \frac{4}{9}$.
+  Answer: (B)
+M A 3: |-
+  Concept: Near $x = 0$, $\{x\} \to 0$ from the right and $\{x\} \to 1$ from the left.
+  Solution:
+  1. RHL ($\{x\} = x \to 0^+$): $\cos^{-1}(1 - x^2) \approx \sqrt2x$ and $\sin^{-1}(1 - x) \to \frac{\pi}{2}$, so RHL $= \frac{\sqrt2x\cdot\pi/2}{x} = \frac{\pi}{\sqrt2}$.
+  2. LHL ($\{x\} = 1 - t$, $t \to 0^+$): numerator $\approx \frac{\pi}{2}\cdot t$ and denominator $= \{x\}(1 - \{x\})(1 + \{x\}) \approx 2t$, so LHL $= \frac{\pi}{4}$.
+  3. LHL ≠ RHL, so no value of $\alpha$ makes f continuous.
+  Answer: (C)
+M A 4: |-
+  Concept: If $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$.
+  Solution:
+  1. Plane: $x + y + z = 42$. Let $a = x - 11$, $b = y - 19$, $c = z - 12$; then $a + b + c = 0$.
+  2. Expression $= 3 + \frac{a^3 + b^3 + c^3}{a^2b^2c^2} - \frac{42}{14abc} = 3 + \frac{3}{abc} - \frac{3}{abc} = 3$.
+  Answer: (B)
+M A 5: |-
+  Concept: Split the integral at the integers.
+  Solution:
+  1. On $[k, k+1)$: $\int_k^{k+1}ke^ke^{1-x}dx = ke^{k+1}(e^{-k} - e^{-k-1}) = k(e - 1)$.
+  2. $I = (e - 1)\sum_{k=0}^{9}k = 45(e - 1)$.
+  Answer: (C)
+M A 6: |-
+  Concept: Reflecting in $y = x$ swaps x and y.
+  Solution:
+  1. C: $x^2 = 4y$.
+  2. Tangent at $(2, 1)$: $2x = 2(y + 1) \Rightarrow x - y = 1$.
+  Answer: (A)
+M A 7: |-
+  Concept: Linear DE with integrating factor $\sec x$.
+  Solution:
+  1. $(y\sec x)' = \tan x \Rightarrow y\sec x = -\ln\cos x + C$; $y(0) = 0 \Rightarrow C = 0$.
+  2. $y = -\cos x\ln\cos x$.
+  3. $y\left(\frac{\pi}{4}\right) = -\frac{1}{\sqrt2}\ln\frac{1}{\sqrt2} = \frac{1}{2\sqrt2}\ln2$.
+  Answer: (B)
+M A 8: |-
+  Concept: $(a, b) \simeq (4, 3) \Leftrightarrow 3a = 4b$.
+  Solution:
+  1. $a = 4t$, $b = 3t$ with both in $[2, 30]$: $t = 1, \dots, 7$.
+  2. There are 7 pairs, from $(4, 3)$ to $(28, 21)$.
+  Answer: (D)
+M A 9: |-
+  Concept: Intercepts: $2\sqrt{g^2 - c}$ on the x-axis and $2\sqrt{f^2 - c}$ on the y-axis.
+  Solution:
+  1. $\frac{a^2}{4} - c = 2$ and $a^2 - c = 5$, so $a^2 = 4$, $a = -2$, $c = -1$.
+  2. Circle: centre $(1, 2)$, $r = \sqrt6$.
+  3. Tangent with slope 2: $2x - y + k = 0$; $\frac{|k|}{\sqrt5} = \sqrt6 \Rightarrow |k| = \sqrt{30}$.
+  4. Distance from the origin $= \frac{\sqrt{30}}{\sqrt5} = \sqrt6$.
+  Answer: (C)
+M A 10: |-
+  Concept: $|5\sqrt7 + 9i| = \sqrt{175 + 81} = 16$, and $\log_{\sqrt2}16 = 8$.
+  Solution:
+  1. $2^{\frac{(r+3)(r-1)}{r+1}} \ge 8 = 2^3$ with $r = |z|$.
+  2. $(r + 3)(r - 1) \ge 3(r + 1) \Rightarrow r^2 - r - 6 \ge 0 \Rightarrow r \ge 3$.
+  3. The least $|z|$ is 3.
+  Answer: (A)
+M A 11: |-
+  Concept: Choose one point from each of the chosen sides.
+  Solution:
+  1. $\alpha = 5\cdot7\cdot6 + 5\cdot7\cdot9 + 5\cdot6\cdot9 + 7\cdot6\cdot9 = 210 + 315 + 270 + 378 = 1173$.
+  2. $\beta = 5\cdot7\cdot6\cdot9 = 1890$.
+  3. $\beta - \alpha = 717$.
+  Answer: (D)
+M A 12: |-
+  Concept: Substitute $y^2 = 3x^2$ into both curves.
+  Solution:
+  1. Circle: $4x^2 = 4b \Rightarrow x^2 = b$ and $y^2 = 3b$.
+  2. Ellipse: $\frac{b}{16} + \frac{3}{b} = 1 \Rightarrow b^2 - 16b + 48 = 0 \Rightarrow b = 12$ or $4$.
+  3. Since $b > 4$, $b = 12$.
+  Answer: (A)
+M A 13: |-
+  Concept: Take sine of both sides, then check principal values.
+  Solution:
+  1. $\frac{3x}{5}\sqrt{1 - \frac{16x^2}{25}} + \frac{4x}{5}\sqrt{1 - \frac{9x^2}{25}} = x$.
+  2. Either $x = 0$, or $3\sqrt{25 - 16x^2} + 4\sqrt{25 - 9x^2} = 25$, which gives $x = \pm1$ ($9 + 16 = 25$).
+  3. Check: $\sin^{-1}\frac{3}{5} + \sin^{-1}\frac{4}{5} = \frac{\pi}{2} = \sin^{-1}1$ (and similarly for −1).
+  4. Three values: $0, \pm1$.
+  Answer: (C)
+M A 14: |-
+  Concept: For P on CA and Q on CB, $\frac{[PQC]}{[ABC]} = \frac{CP}{CA}\cdot\frac{CQ}{CB}$.
+  Solution:
+  1. $[ABC] = \frac{13}{2}$, so $[PQC] = \frac{13}{6}$ is required.
+  2. With $m = 1$: AC is $y = -\frac{x-2}{3}$, giving $P = \left(\frac{1}{2}, \frac{1}{2}\right)$; BC is $y = 4(x - 2)$, giving $Q = \left(\frac{8}{3}, \frac{8}{3}\right)$.
+  3. $[PQC] = \frac{1}{2}\left|2\left(\frac{1}{2} - \frac{8}{3}\right)\right| = \frac{13}{6}$, as required, so $m = 1$.
+  Answer: (B)
+M A 15: |-
+  Concept: Sign of $f'(x)$.
+  Solution:
+  1. $f'(x) = \frac{6}{x^2 - 1} + \frac{2}{(x - 1)^2} = \frac{4(2x - 1)}{(x - 1)^2(x + 1)}$.
+  2. $f' \ge 0 \Leftrightarrow \frac{2x - 1}{x + 1} \ge 0 \Leftrightarrow x < -1$ or $x \ge \frac{1}{2}$ (excluding $x = 1$).
+  Answer: (A)
+M A 16: |-
+  Concept: Take logs: $g(x + 1) = \ln x + g(x)$.
+  Solution:
+  1. Differentiating twice: $g''(x + 1) - g''(x) = -\frac{1}{x^2}$.
+  2. $g''(5) - g''(1) = -\left(1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16}\right) = -\frac{205}{144}$.
+  3. The absolute value is $\frac{205}{144}$.
+  Answer: (A)
+M A 17: |-
+  Concept: Remainder theorem and direct integration.
+  Solution:
+  1. $\int_0^1P = \frac{1}{3} + \frac{b}{2} + c = 1$ and $P(2) = 4 + 2b + c = 5$.
+  2. $c = 1 - 2b \Rightarrow \frac{1}{3} + \frac{b}{2} + 1 - 2b = 1 \Rightarrow b = \frac{2}{9}$, $c = \frac{5}{9}$.
+  3. $9(b + c) = 7$.
+  Answer: (C)
+M A 18: |-
+  Concept: Use the foot of the perpendicular to fix $L_1$, then $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec d_1\times\vec d_2)|}{|\vec d_1\times\vec d_2|}$.
+  Solution:
+  1. $(4, 3, 8) - (3, 5, 7) = (1, -2, 1) \perp (l, 3, 4) \Rightarrow l = 2$.
+  2. $(3, 5, 7)$ lies on $L_1$ with parameter 1, so $a = 1$ and $b = 3$. $L_1$: $(1, 2, 3) + t(2, 3, 4)$.
+  3. $\vec d_1\times\vec d_2 = (2, 3, 4)\times(3, 4, 5) = (-1, 2, -1)$; $(2, 4, 5) - (1, 2, 3) = (1, 2, 2)$.
+  4. $SD = \frac{|-1 + 4 - 2|}{\sqrt6} = \frac{1}{\sqrt6}$.
+  Answer: (B)
+M A 19: |-
+  Concept: Both are homogeneous DEs; their solutions are circles.
+  Solution:
+  1. C₁: $x^2 + y^2 = Cx$ (check: $2x + 2yy' = \frac{x^2 + y^2}{x}$ gives the DE). Through (1, 1): $x^2 + y^2 = 2x$, centre (1, 0), radius 1.
+  2. C₂: $x^2 + y^2 = Cy$; through (1, 1): $x^2 + y^2 = 2y$, centre (0, 1), radius 1.
+  3. Two unit circles with centres $\sqrt2$ apart overlap in two circular segments of angle 90°: area $= 2\left(\frac{\pi}{4} - \frac{1}{2}\right) = \frac{\pi}{2} - 1$.
+  Answer: (B)
+M A 20: |-
+  Concept: $\vec r\times\vec a = \vec b\times\vec r \Rightarrow \vec r\times(\vec a + \vec b) = \vec0$, so $\vec r\parallel\vec a + \vec b$.
+  Solution:
+  1. $\vec r = \lambda(3, -1, 2)$.
+  2. $\lambda(3\alpha - 2 + 2) = 3 \Rightarrow \alpha\lambda = 1$; $\lambda(6 - 5 - 2\alpha) = -1 \Rightarrow \lambda - 2 = -1$.
+  3. $\lambda = 1$, $\alpha = 1$, $|\vec r|^2 = 14$, so $\alpha + |\vec r|^2 = 15$.
+  Answer: (B)
+M B 1: |-
+  Concept: Move from the point along the given direction until the plane is reached.
+  Solution:
+  1. Direction $(3, -m, 1)$; point $(1 + 3t, -2 - mt, 3 + t)$.
+  2. In the plane: $1 + 3t - 4 - 2mt - 9 - 3t + 10 = 0 \Rightarrow t = -\frac{1}{m}$.
+  3. Distance $= |t|\sqrt{10 + m^2} = \sqrt{\frac{7}{2}} \Rightarrow \frac{10 + m^2}{m^2} = \frac{7}{2} \Rightarrow m^2 = 4$.
+  4. $|m| = 2$.
+  Answer: 2
+M B 2: |-
+  Concept: Combine the sums of squares: $\sum x^2 = n(\sigma^2 + \bar x^2)$.
+  Solution:
+  1. $\sum x^2 = 10(2 + 4) + n(1 + 9) = 60 + 10n$; $\sum x = 20 + 3n$.
+  2. Try $n = 5$: $\frac{110}{15} - \left(\frac{35}{15}\right)^2 = \frac{22}{3} - \frac{49}{9} = \frac{17}{9}$. ✓
+  3. $n = 5$.
+  Answer: 5
+M B 3: |-
+  Concept: $a_1^2 + a_2^2 = B^T(X^TX)B$.
+  Solution:
+  1. $X^TX = \frac{1}{3}\begin{bmatrix}2 & k - 1\\ k - 1 & 1 + k^2\end{bmatrix}$.
+  2. The condition gives $2(k - 1)b_1b_2 + (k^2 - 1)b_2^2 = 0 \Rightarrow (k - 1)[2b_1b_2 + (k + 1)b_2^2] = 0$.
+  3. The given restriction rules out the second factor, so $k = 1$.
+  Answer: 1
+M B 4: |-
+  Concept: $\frac{d}{dx}\tan^{-1}\left(x + \frac{1}{x}\right) = \frac{x^2 - 1}{x^4 + 3x^2 + 1}$.
+  Solution:
+  1. Split the integrand: $\frac{x^2 - 1}{(x^4 + 3x^2 + 1)t} + \frac{1}{x^4 + 3x^2 + 1}$, with $t = \tan^{-1}\frac{x^2 + 1}{x}$. The first part integrates to $\ln t$, so $\alpha = 1$.
+  2. $\frac{1}{x^4 + 3x^2 + 1} = \frac{1}{2}\left[\frac{x^2 + 1}{x^4 + 3x^2 + 1} - \frac{x^2 - 1}{x^4 + 3x^2 + 1}\right]$.
+  3. $\int\frac{1 + 1/x^2}{(x - 1/x)^2 + 5}dx = \frac{1}{\sqrt5}\tan^{-1}\frac{x^2 - 1}{\sqrt5x}$, so $\beta = \frac{1}{2\sqrt5}$, $\gamma = \frac{1}{\sqrt5}$, and $\delta = -\frac{1}{2}$.
+  4. $10\left(1 + \frac{1}{10} - \frac{1}{2}\right) = 6$.
+  Answer: 6
+M B 5: |-
+  Concept: Check continuity of gof at $x = 0$ and where $f$ changes sign.
+  Solution:
+  1. At $x = 0$: $g(f(0)) = g(1) = b$. As $x \to 0^-$, $f \to a$, so $gof \to (a - 1)^2 + b$ if $a > 0$ (or $\to 1$ if $a = 0$).
+  2. If $a > 0$: $a = 1$; continuity at $x = -1$ (where $x + a$ changes sign) needs $1 = 1 + b$, so $b = 0$.
+  3. If $a = 0$: $1 = b$.
+  4. Either way, $a + b = 1$.
+  Answer: 1
+M B 6: |-
+  Concept: GP: $a^2 = \frac{b}{16}$; AP: $\frac{2}{b} = \frac{1}{a} + 6$.
+  Solution:
+  1. $b = 16a^2 \Rightarrow \frac{1}{8a^2} = \frac{1}{a} + 6 \Rightarrow 48a^2 + 8a - 1 = 0 \Rightarrow a = \frac{1}{12}$.
+  2. $b = \frac{1}{9}$, so $72(a + b) = 6 + 8 = 14$.
+  Answer: 14
+M B 7: |-
+  Concept: Area $= \frac{1}{2}bc\sin A$; in a right triangle $R = \frac{\text{hyp}}{2}$ and $r = \frac{a + b - c}{2}$.
+  Solution:
+  1. $30 = \frac{1}{2}\cdot12\cdot5\sin A \Rightarrow A = 90°$, so $BC = 13$.
+  2. $R = 6.5$ and $r = \frac{5 + 12 - 13}{2} = 2$.
+  3. $2R + r = 15$.
+  Answer: 15
+M B 8: |-
+  Concept: $\sum_k(-1)^k\binom{n}{k}t^k = (1 - t)^n$.
+  Solution:
+  1. $A = \left(\frac{1}{2}\right)^n + \left(\frac{1}{4}\right)^n + \dots + \left(\frac{1}{32}\right)^n = \frac{2^{-n}(1 - 2^{-5n})}{1 - 2^{-n}}$.
+  2. For $n = 6$: $A = \frac{1 - 2^{-30}}{63}$, so $63A = 1 - 2^{-30}$.
+  3. $n = 6$.
+  Answer: 6
+M B 9: |-
+  Concept: $\vec c \parallel \vec a\times\vec b$.
+  Solution:
+  1. $\vec a\times\vec b = (3, -2, 1)$, so $\vec c = \lambda(3, -2, 1)$.
+  2. $\lambda(3 - 2 + 3) = 8 \Rightarrow \lambda = 2$.
+  3. $\vec c\cdot(\vec a\times\vec b) = 2\times14 = 28$.
+  Answer: 28
+M B 10: |-
+  Concept: $\log_{a^{1/k}}x = k\log_ax$; the k's 2, 3, 6, 11, 18, … are $2 + (r - 1)^2$.
+  Solution:
+  1. $\sum_{r=1}^{n}k_r = 2n + \frac{(n-1)n(2n-1)}{6}$: 4372 for $n = 24$ and 530 for $n = 12$.
+  2. $4372\log_ax = 1093 \Rightarrow \log_ax = \frac{1}{4}$.
+  3. $530\log_a2x = 265 \Rightarrow \log_a2 + \frac{1}{4} = \frac{1}{2} \Rightarrow \log_a2 = \frac{1}{4}$.
+  4. $a = 16$.
+  Answer: 16
