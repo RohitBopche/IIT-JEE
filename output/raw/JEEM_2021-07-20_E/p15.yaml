@@ -1,0 +1,228 @@
+- n: 1
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Consider the line L given by the equation $\frac{x-3}{2} = \frac{y-1}{1} = \frac{z-2}{1}$. Let Q be the mirror image of the point (2,3,–1) with respect to L. Let a plane P be such that it passes through Q, and the line L is perpendicular to P. Then which of the following points is one the plane P ?
+  o: ['(1, 2,2)', '(–1, 1, 2)', '(1,1,1)', '(1,1,2)']
+  ch: Three Dimensional Geometry
+  tp: Image in a line, plane through point
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    If the real part of the complex number $(1 - \cos\theta + 2i\sin\theta)^{-1}$ is $\frac{1}{5}$ for $\theta \in (0, \pi)$, then the value of the integral $\int_0^{\theta}\sin x\,dx$ is equal to :
+  o: ['–1', '0', '2', '1']
+  ch: Complex Numbers
+  tp: Real part of complex number
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    The value of $k \in R$, for which the following system of linear equations
+    $3x - y + 4z = 3$,
+    $x + 2y - 3z = -2$,
+    $6x + 5y + kz = -3$,
+    has infinitely many solutions, is :
+  o: ['3', '–3', '–5', '5']
+  ch: Matrices and Determinants
+  tp: System of linear equations
+  df: E
+- n: 4
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    For the natural numbers m, n, if $(1 - y)^m(1 + y)^n = 1 + a_1y + a_2y^2 + .... + a_{m+n}y^{m+n}$ and $a_1 = a_2 = 10$, then the value of (m + n) is equal to :
+  o: ['64', '88', '80', '100']
+  ch: Binomial Theorem
+  tp: Coefficients in product expansion
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    The value of $\tan\left(2\tan^{-1}\left(\frac{3}{5}\right) + \sin^{-1}\left(\frac{5}{13}\right)\right)$ is equal to :
+  o: ['$\frac{151}{63}$', '$\frac{-291}{76}$', '$\frac{220}{21}$', '$\frac{-181}{69}$']
+  ch: Inverse Trigonometric Functions
+  tp: Compound inverse trig
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If f : R → R is given by f(x) = x + 1, then the value of $\lim_{n\to\infty}\frac{1}{n}\left[f(0) + f\left(\frac{5}{n}\right) + f\left(\frac{10}{n}\right) + .... + f\left(\frac{5(n-1)}{n}\right)\right]$, is :
+  o: ['$\frac{3}{2}$', '$\frac{1}{2}$', '$\frac{7}{2}$', '$\frac{5}{2}$']
+  ch: Definite Integration
+  tp: Limit as a sum
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let P be a variable point on the parabola $y = 4x^2 + 1$. Then, the locus of the mid-point of the point P and the foot of the perpendicular drawn from the point P to the line y = x is :
+  o: ['$2(x - 3y)^2 + (3x - y) + 2 = 0$', '$(3x - y)^2 + (x - 3y) + 2 = 0$', '$2(3x - y)^2 + (x - 3y) + 2 = 0$', '$(3x - y)^2 + 2(x - 3y) + 2 = 0$']
+  ch: Conic Sections
+  tp: Locus
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The sum of all the local minimum values of the twice differentiable function f : R → R defined by $f(x) = x^3 - 3x^2 - \frac{3f''(2)}{2}x + f''(1)$ is :
+  o: ['–22', '5', '0', '–27']
+  ch: Application of Derivatives
+  tp: Local minima
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let $r_1$ and $r_2$ be the radii of the largest and smallest circles, respectively, which pass through the point (–4, 1) and having their centres on the circumference of the circle $x^2 + y^2 + 2x + 4y - 4 = 0$. If $\frac{r_1}{r_2} = a + b\sqrt{2}$, then a + b is equal to :
+  o: ['5', '11', '7', '3']
+  ch: Circles
+  tp: Distance from point to circle
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    If the mean and variance of six observations 7, 10, 11, 15, a, b are 10 and $\frac{20}{3}$, respectively, then the value of |a – b| is equal to
+  o: ['9', '7', '11', '1']
+  ch: Statistics
+  tp: Mean and variance
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let y = y(x) satisfies the equation $\frac{dy}{dx} - |A| = 0$, for all x > 0, where $A = \begin{bmatrix} y & \sin x & 1 \\ 0 & -1 & 1 \\ 2 & 0 & \frac{1}{x} \end{bmatrix}$. If $y(\pi) = \pi + 2$, then the value of $y\left(\frac{\pi}{2}\right)$ is :
+  o: ['$\frac{\pi}{2} + \frac{4}{\pi}$', '$\frac{3\pi}{2} - \frac{1}{\pi}$', '$\frac{\pi}{2} - \frac{4}{\pi}$', '$\frac{\pi}{2} - \frac{1}{\pi}$']
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let $f : R - \left\{\frac{\alpha}{6}\right\} \rightarrow R$ be defined by $f(x) = \frac{5x + 3}{6x - \alpha}$. Then the value of $\alpha$ for which $(fof)(x) = x$, for all $x \in R - \left\{\frac{\alpha}{6}\right\}$, is :
+  o: ['6', '8', 'No such $\alpha$ exists', '5']
+  ch: Sets, Relations and Functions
+  tp: Self-inverse function
+  df: E
+- n: 13
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The lines $x = ay - 1 = z - 2$ and $x = 3y - 2 = bz - 2$, $(ab \ne 0)$ are coplanar, if :
+  o: ['a = 2, b = 2', 'b = 1, $a \in R - \{0\}$', 'a = 2, b = 3', 'a = 1, $b \in R - \{0\}$']
+  ch: Three Dimensional Geometry
+  tp: Coplanar lines
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    In a triangle ABC, if $|\vec{BC}| = 3$, $|\vec{CA}| = 5$ and $|\vec{BA}| = 7$, then the projection of the vector $\vec{BA}$ on $\vec{BC}$ is equal to :
+  o: ['$\frac{19}{2}$', '$\frac{13}{2}$', '$\frac{15}{2}$', '$\frac{11}{2}$']
+  ch: Vector Algebra
+  tp: Projection of a vector
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let $g(t) = \int_{-\pi/2}^{\pi/2}\cos\left(\frac{\pi}{4}t + f(x)\right)dx$, where $f(x) = \log_e\left(x + \sqrt{x^2 + 1}\right)$, x ∈ R. Then which one of the following is correct?
+  o: ['g(1) = g(0)', '$g(1) = \sqrt{2}g(0)$', 'g(1) + g(0) = 0', '$\sqrt{2}g(1) = g(0)$']
+  ch: Definite Integration
+  tp: Odd function property
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Consider the following three statements :
+    (A) if 3 + 3 = 7 then 4 + 3 = 8.
+    (B) If 5 + 3 = 8 then earth is flat.
+    (C) If both (A) and (B) are true then 5 + 6 = 17.
+    Then, which of the following statements is correct?
+  o: ['(A) and (C) are true while (B) is false', '(A) and (B) are false while (C) is true', '(A) is true while (B) and (C) are false', '(A) is false, but (B) and (C) are true']
+  ch: Mathematical Reasoning
+  tp: Truth of implications
+  df: E
+- n: 17
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If sum of the first 21 terms of the series $\log_{9^{1/2}}x + \log_{9^{1/3}}x + \log_{9^{1/4}}x + ....$, where x > 0 is 504, then x is equal to :
+  o: ['7', '9', '243', '81']
+  ch: Sequences and Series
+  tp: Logarithmic series
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If [x] denotes the greatest integer less than or equal to x, then the value of the integral $\int_{-\pi/2}^{\pi/2}[[x] - \sin x]dx$ is equal to :
+  o: ['$-\pi$', '0', '1', '$\pi$']
+  ch: Definite Integration
+  tp: Greatest integer function integral
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let in a right angled triangle, the smallest angle be $\theta$. If a triangle formed by taking the reciprocal of its sides is also a right angled triangle, then $\sin\theta$ is equal to :
+  o: ['$\frac{\sqrt{2} - 1}{2}$', '$\frac{\sqrt{5} + 1}{4}$', '$\frac{\sqrt{5} - 1}{2}$', '$\frac{\sqrt{5} - 1}{4}$']
+  ch: Trigonometric Functions and Equations
+  tp: Properties of triangles
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let A, B and C be three events such that the probability that exactly one of A and B occurs is (1 – k), the probability that exactly one of B and C occurs is (1 – 2k), the probability that exactly one of C and A occurs is (1 – k) and the probability of all A, B and C occur simultaneously is $k^2$, where 0 < k < 1. Then the probability that at least one of A, B and C occur is :
+  o: ['greater than $\frac{1}{2}$', 'greater than $\frac{1}{4}$ but less than $\frac{1}{2}$', 'exactly equal to $\frac{1}{2}$', 'greater than $\frac{1}{8}$ but less than $\frac{1}{4}$']
+  ch: Probability
+  tp: Probability of union
+  df: H

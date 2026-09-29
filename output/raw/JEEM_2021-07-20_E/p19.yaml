@@ -1,0 +1,101 @@
+- n: 1
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let $\{a_n\}_{n=1}^{\infty}$ be a sequence such that $a_1 = 1$, $a_2 = 1$ and $a_{n+2} = 2a_{n+1} + a_n$ for all n ≥ 1. Then the value of $47\sum_{n=1}^{\infty}\frac{a_n}{2^{3n}}$ is equal to........
+  ch: Sequences and Series
+  tp: Recurrence and infinite sum
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    If $\lim_{x\to0}\frac{axe^x - \beta\log_e(1 + x) + \gamma x^2e^{-x}}{x\sin^2x} = 10$, $\alpha, \beta, \gamma \in R$, then the value of $\alpha + \beta + \gamma$ is.......
+  ch: Limits, Continuity and Differentiability
+  tp: Limits via series expansion
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Consider a triangle having vertices A(–2, 3), B(1, 9) and C(3, 8). If a line L passing through the circum-center of triangle ABC, bisects line BC, and intersects y-axis at point $\left(0, \frac{\alpha}{2}\right)$, then the value of real number $\alpha$ is............
+  ch: Straight Lines
+  tp: Circumcentre and perpendicular bisector
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    If the point on the curve $y^2 = 6x$, nearest to the point $\left(3, \frac{3}{2}\right)$ is $(\alpha, \beta)$, then $2(\alpha + \beta)$ is equal to.........
+  ch: Conic Sections
+  tp: Shortest distance via normal
+  df: M
+- n: 5
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let $A = \{a_{ij}\}$ be a 3 x 3 matrix, where $a_{ij} = \begin{cases} (-1)^{j-i} & \text{if } i < j, \\ 2 & \text{if } i = j, \\ (-1)^{i+j} & \text{if } i > j, \end{cases}$ then $\det(3\,Adj(2A^{-1}))$ is equal to.......
+  ch: Matrices and Determinants
+  tp: Determinant of adjoint
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    For p > 0, a vector $\vec{v_2} = 2\hat{i} + (p + 1)\hat{j}$ is obtained by rotating the vector $\vec{v_1} = \sqrt{3}p\hat{i} + \hat{j}$ by an angle $\theta$ about origin in counter clockwise direction. If $\tan\theta = \frac{(\alpha\sqrt{3} - 2)}{(4\sqrt{3} + 3)}$, then the value of $\alpha$ is equal to.........
+  ch: Vector Algebra
+  tp: Rotation of vectors
+  df: H
+- n: 7
+  s: M
+  sec: B
+  p: 19
+  t: N
+  q: |-
+    Let a curve y = y(x) be given by the solution of the differential equation $\cos\left(\frac{1}{2}\cos^{-1}(e^{-x})\right)dx = \sqrt{e^{2x} - 1}\,dy$
+    If it intersects y-axis at y = –1, and the intersection point of the curve with x-axis is $(\alpha, 0)$, then $e^{\alpha}$ is equal to........
+  ch: Differential Equations
+  tp: Variable separable
+  df: H
+- n: 8
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    The number of solutions of the equation $\log_{(x+1)}(2x^2 + 7x + 5) + \log_{(2x+5)}(x + 1)^2 - 4 = 0$, x > 0, is.........
+  ch: Quadratic Equations
+  tp: Logarithmic equations
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    For $k \in N$, let $\frac{1}{\alpha(\alpha + 1)(\alpha + 2).....(\alpha + 20)} = \sum_{k=0}^{20}\frac{A_k}{a + k}$, where $\alpha > 0$. Then the value of $100\left(\frac{A_{14} + A_{15}}{A_{13}}\right)^2$ is equal to...........
+  ch: Binomial Theorem
+  tp: Partial fractions coefficients
+  df: H
+- n: 10
+  s: M
+  sec: B
+  p: 20
+  t: N
+  q: |-
+    Let a function g : [0, 4] → R be defined as $g(x) = \begin{cases} \max_{0 \le t \le x}\{t^3 - 6t^2 + 9t - 3\}, & 0 \le x \le 3 \\ 4 - x, & 3 < x \le 4 \end{cases}$, then the number of points in the interval (0, 4) where g(x) is NOT differentiable, is.......
+  ch: Limits, Continuity and Differentiability
+  tp: Differentiability of max function
+  df: M
