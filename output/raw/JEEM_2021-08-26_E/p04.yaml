@@ -1,0 +1,120 @@
+- n: 10
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A parallel - plate capacitor with plate area A has separation d between the plates. Two dielectric slabs of dielectric constant $K_1$ and $K_2$ of same area A/2 and thickness d/2 are inserted in the space between the plates. The capacitance of the capacitor will be given by :
+  o: ['$\frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{K_1K_2}{K_1 + K_2}\right)$', '$\frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{K_1K_2}{2(K_1 + K_2)}\right)$', '$\frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{K_1 + K_2}{K_1K_2}\right)$', '$\frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{2(K_1 + K_2)}{K_1K_2}\right)$']
+  a: A
+  ch: Capacitance
+  tp: Capacitor with dielectric slabs
+  df: M
+  fig: [[4, 258, 175, 365, 340]]
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A bomb is dropped by fighter plane flying horizontally. To an observer sitting in the plane, the trajectory of the bomb is a :
+  o: ['hyperbola', 'parabola in the direction of motion of plane', 'straight line vertically down the plane', 'parabola in a direction opposite to the motion of plane']
+  a: C
+  ch: Kinematics
+  tp: Relative motion, projectile
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  st: Graph
+  q: |-
+    At time t = 0, a material is composed of two radioactive atoms A and B, where $N_A(0) = 2N_B(0)$. The decay constant of both kind of radioactive atoms is $\lambda$. However, A disintegrates to B and B disintegrates to C. Which of the following figures represents the evolution of $N_B(t)/N_B(0)$ with respect to time t ?
+    [$N_A(0)$ = No. of A atoms at t = 0; $N_B(0)$ = No. of B atoms at t = 0]
+  o: ['[figure] decreasing curve from 1, marked $t = \frac{1}{2\lambda}$', '[figure] rises from 1 to a maximum at $t = \frac{1}{\lambda}$ then falls', '[figure] rises from 1 to a maximum at $t = \frac{1}{2\lambda}$ then falls', '[figure] decreasing curve from 1, marked $t = \frac{1}{2\lambda}$ (steeper)']
+  a: C
+  ch: Nuclei
+  tp: Successive radioactive decay
+  df: H
+  fig: [[4, 650, 555, 920, 820], [5, 78, 100, 330, 365]]
+- n: 13
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A transmitting antenna at top of a tower has a height of 50 m and the height of receiving antenna is 80 m. What is range of communication for Line of Sight (LoS) mode ? [use radius of earth = 6400 km]
+  o: ['45.5 km', '80.2 km', '144.1 km', '57.28 km']
+  a: D
+  ch: Communication Systems
+  tp: Line of sight range
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A refrigerator consumes an average 35 W power to operate between temperature –10°C to 25°C. If there is no loss of energy then how much average heat per second does it transfer ?
+  o: ['263 J/s', '298 J/s', '350 J/s', '35 J/s']
+  a: A
+  ch: Thermodynamics
+  tp: Refrigerator COP
+  df: E
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    An electric bulb of 500 watt at 100 volt is used in a circuit having a 200 V supply. Calculate the resistance R to be connected in series with the bulb so that the power delivered by the bulb is 500 W.
+  o: ['$20\ \Omega$', '$30\ \Omega$', '$5\ \Omega$', '$10\ \Omega$']
+  a: A
+  ch: Current Electricity
+  tp: Series resistance with bulb
+  df: E
+- n: 16
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    Four NOR gates are connected as shown in figure. The truth table for the given figure is :
+  o: ['A B Y: 0 0 1; 0 1 0; 1 0 1; 1 1 0', 'A B Y: 0 0 0; 0 1 1; 1 0 1; 1 1 0', 'A B Y: 0 0 0; 0 1 1; 1 0 0; 1 1 1', 'A B Y: 0 0 1; 0 1 0; 1 0 0; 1 1 1']
+  a: D
+  ch: Semiconductor Electronics
+  tp: NOR gate combinations
+  df: M
+  fig: [[6, 140, 100, 232, 442]]
+- n: 17
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Match
+  q: |-
+    Match List–I with List–II.
+    List-I: (a) Magnetic Induction; (b) Magnetic Flux; (c) Magnetic Permeability; (d) Magnetization
+    List-II: (i) $ML^2T^{-2}A^{-1}$; (ii) $M^0L^{-1}A$; (iii) $MT^{-2}A^{-1}$; (iv) $MLT^{-2}A^{-2}$
+    Choose the most appropriate answer from the options given below :
+  o: ['(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)', '(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)', '(a)-(iii), (b)-(ii), (c)-(iv), (d)-(i)', '(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)']
+  a: D
+  ch: Units and Measurements
+  tp: Dimensions of magnetic quantities
+  df: M
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    In the given circuit the AC source has $\omega = 100\ \text{rad s}^{-1}$. Considering the inductor and capacitor to be ideal, what will be the current I flowing through the circuit?
+    [figure: branch 1: $100\ \mu$F capacitor with $100\ \Omega$; branch 2: 0.50 H inductor with $50\ \Omega$; both in parallel across 200 V AC]
+  o: ['5.9 A', '4.24 A', '0.94 A', '6 A']
+  a: B
+  ch: Alternating Current
+  tp: Parallel AC circuit, phasors
+  df: H
+  nt: 'Official NTA answer (2); ALLEN answer BONUS'
+  fig: [[6, 640, 600, 775, 852]]

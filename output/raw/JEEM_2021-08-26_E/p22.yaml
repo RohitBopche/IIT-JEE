@@ -1,0 +1,171 @@
+- n: 16
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let P be the plane passing through the point (1,2,3) and the line of intersection of the planes $\vec{r}\cdot(\hat{i} + \hat{j} + 4\hat{k}) = 16$ and $\vec{r}\cdot(-\hat{i} + \hat{j} + \hat{k}) = 6$. Then which of the following points does NOT lie on P ?
+  o: ['(3, 3, 2)', '(6, –6, 2)', '(4, 2, 2)', '(–8, 8, 6)']
+  a: C
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    A 10 inches long pencil AB with mid point C and a small eraser P are placed on the horizontal top of a table such that $PC = \sqrt{5}$ inches and $\angle PCB = \tan^{-1}(2)$. The acute angle through which the pencil must be rotated about C so that the perpendicular distance between eraser and pencil becomes exactly 1 inch is :
+  o: ['$\tan^{-1}\left(\frac{3}{4}\right)$', '$\tan^{-1}(1)$', '$\tan^{-1}\left(\frac{4}{3}\right)$', '$\tan^{-1}\left(\frac{1}{2}\right)$']
+  a: A
+  ch: Trigonometric Functions and Equations
+  tp: Angles and distances
+  df: M
+  fig: [[22, 572, 148, 645, 390]]
+- n: 18
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    The value of $\int_{-\pi/2}^{\pi/2}\left(\frac{1 + \sin^2x}{1 + \pi^{\sin x}}\right)dx$ is
+  o: ['$\frac{\pi}{2}$', '$\frac{5\pi}{4}$', '$\frac{3\pi}{4}$', '$\frac{3\pi}{2}$']
+  a: C
+  ch: Definite Integration
+  tp: King property
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    A circle C touches the line x = 2y at the point (2,1) and intersects the circle $C_1 : x^2 + y^2 + 2y - 5 = 0$ at two points P and Q such that PQ is a diameter of $C_1$. Then the diameter of C is :
+  o: ['$7\sqrt{5}$', '15', '$\sqrt{285}$', '$4\sqrt{15}$']
+  a: A
+  ch: Circles
+  tp: Family of circles
+  df: H
+- n: 20
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    $\lim_{x\to2}\left(\sum_{n=1}^{9}\frac{x}{n(n + 1)x^2 + 2(2n + 1)x + 4}\right)$ is equal to :
+  o: ['$\frac{9}{44}$', '$\frac{5}{24}$', '$\frac{1}{5}$', '$\frac{7}{36}$']
+  a: A
+  ch: Sequences and Series
+  tp: Telescoping sum
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    The sum of all 3-digit numbers less than or equal to 500, that are formed without using the digit "1" and they all are multiple of 11, is _______.
+  a: '7744'
+  ch: Sequences and Series
+  tp: Sum of AP with conditions
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    Let a and b respectively be the points of local maximum and local minimum of the function $f(x) = 2x^3 - 3x^2 - 12x$. If A is the total area of the region bounded by y = f(x), the x-axis and the lines x = a and x = b, then 4A is equal to _________.
+  a: '114'
+  ch: Area Under Curves
+  tp: Area under cubic
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    If the projection of the vector $\hat{i} + 2\hat{j} + \hat{k}$ on the sum of the two vectors $2\hat{i} + 4\hat{j} - 5\hat{k}$ and $-\lambda\hat{i} + 2\hat{j} + 3\hat{k}$ is 1, then $\lambda$ is equal to ______.
+  a: '5'
+  ch: Vector Algebra
+  tp: Projection of vector
+  df: E
+- n: 4
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    Let $a_1, a_2, \ldots, a_{10}$ be an AP with common difference –3 and $b_1, b_2, \ldots, b_{10}$ be a GP with common ratio 2. Let $c_k = a_k + b_k$, k = 1,2,..., 10. If $c_2 = 12$ and $c_3 = 13$, then $\sum_{k=1}^{10}c_k$ is equal to _____.
+  a: '2021'
+  ch: Sequences and Series
+  tp: AP and GP sums
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let Q be the foot of the perpendicular from the point P(7,–2,13) on the plane containing the lines $\frac{x + 1}{6} = \frac{y - 1}{7} = \frac{z - 3}{8}$ and $\frac{x - 1}{3} = \frac{y - 2}{5} = \frac{z - 3}{7}$. Then $(PQ)^2$, is equal to _______.
+  a: '96'
+  ch: Three Dimensional Geometry
+  tp: Plane containing two lines, distance
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let $\binom{n}{k}$ denotes ${}^nC_k$ and $\left[\begin{matrix} n \\ k \end{matrix}\right] = \begin{cases} \binom{n}{k}, & \text{if } 0 \le k \le n \\ 0, & \text{otherwise} \end{cases}$. If $A_k = \sum_{i=0}^{9}\binom{9}{i}\left[\begin{matrix} 12 \\ 12 - k + i \end{matrix}\right] + \sum_{i=0}^{8}\binom{8}{i}\left[\begin{matrix} 13 \\ 13 - k + i \end{matrix}\right]$ and $A_4 - A_3 = 190p$, then p is equal to :
+  a: '49'
+  ch: Binomial Theorem
+  tp: Vandermonde identity
+  df: H
+- n: 7
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let $\lambda \neq 0$ be in R. If $\alpha$ and $\beta$ are the roots of the equation $x^2 - x + 2\lambda = 0$, and $\alpha$ and $\gamma$ are the roots of equation $3x^2 - 10x + 27\lambda = 0$, then $\frac{\beta\gamma}{\lambda}$ is equal to _________.
+  a: '18'
+  ch: Quadratic Equations
+  tp: Common root
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let the mean and variance of four numbers 3, 7, x and y (x > y) be 5 and 10 respectively. Then the mean of four numbers 3 + 2x, 7 + 2y, x + y and x – y is _______.
+  a: '12'
+  ch: Statistics
+  tp: Mean and variance
+  df: E
+- n: 9
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let A be a 3 × 3 real matrix. If $\det(2\text{Adj}(2\,\text{Adj}(\text{Adj}(2A)))) = 2^{41}$, then the value of $\det(A^2)$ equal _____.
+  a: '4'
+  ch: Matrices and Determinants
+  tp: Properties of adjoint
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    The least positive integer n such that $\frac{(2i)^n}{(1 - i)^{n-2}}$, $i = \sqrt{-1}$ is a positive integer, is ______.
+  a: '6'
+  ch: Complex Numbers
+  tp: Powers of i
+  df: M
