@@ -1,0 +1,181 @@
+- n: 1
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A transistor is connected in common emitter circuit configuration, then collector supply voltage is 10 V and the voltage drop across a resistor of 1000$\Omega$ in the collector is 0.6 V. If the current gain factor ($\beta$) is 24, then the base current is ________ $\mu$A. (Round off to the Nearest Integer)
+  ch: Semiconductor Electronics
+  tp: Transistor current gain
+  df: E
+- n: 2
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A prism of refractive index $n_1$ and another prism of refractive index $n_2$ are stuck together (as shown in the figure). $n_1$ and $n_2$ depend on $\lambda$, the wavelength of light, according to the relation
+    $n_1 = 1.2 + \frac{10.8\times10^{-14}}{\lambda^2}$ and $n_2 = 1.45 + \frac{1.8\times10^{-14}}{\lambda^2}$
+    The wavelength for which rays incident at any angle on the interface BC pass through without bending at that interface will be _______nm.
+    [figure: two prisms ABC (n1) and BCD (n2) sharing face BC]
+  ch: Ray Optics and Optical Instruments
+  tp: Dispersion and refractive index matching
+  df: M
+  fig: [[7, 285, 640, 440, 910]]
+- n: 3
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    Consider an electrical circuit containing a two way switch 'S'. Initially S is open and then $T_1$ is connected to $T_2$. As the current in R = 6$\Omega$ attains a maximum value of steady state level, $T_1$ is disconnected from $T_2$ and immediately connected to $T_3$. Potential drop across r = 3$\Omega$ resistor immediately after $T_1$ is connected to $T_3$ is _________V. (Round off to the Nearest Integer)
+    [figure: 6 V battery, R = 6 Ω, inductor, switch terminals T1, T2, T3 and r = 3 Ω]
+  ch: Electromagnetic Induction
+  tp: LR circuit switching
+  df: M
+  fig: [[7, 470, 650, 578, 910]]
+- n: 4
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A stone of mass 20g is projected from a rubber catapult of length 0.1m and area of cross section $10^{-6}$ m$^2$ stretched by an amount 0.04 m. The velocity of the projected stone is _______ m /s. (Young's modulus of rubber = $0.5\times10^9$ N/m$^2$ )
+  ch: Mechanical Properties of Solids
+  tp: Elastic potential energy
+  df: E
+- n: 5
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A particle of mass $9.1\times10^{-31}$ kg travels in a medium with a speed of $10^6$ m/s and a photon of a radiation of linear momentum $10^{-27}$ kg m/s travels in vacuum. The wavelength of photon is ________times the wavelength of the particle.
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie wavelength
+  df: E
+- n: 6
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    The amplitude of upper and lower side bands of A.M. wave where a carrier signal with frequency 11.21 MHz, peak voltage 15 V is amplitude modulate by a 7.7 kHz sine wave of 5 V amplitude are $\frac{a}{10}$ V and $\frac{b}{10}$ V respectively. Then the value of $\frac{a}{b}$ is ___________.
+  ch: Communication Systems
+  tp: Side band amplitudes
+  df: E
+- n: 7
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    In a uniform magnetic field, the magnetic needle has a magnetic moment $9.85\times10^{-2}$ A/m$^2$ and moment of inertia $5\times10^{-6}$ kg m$^2$. If it performs 10 complete oscillations in 5 seconds then the magnitude of the magnetic field is ___________mT. [ Take $\pi^2$ as 9.85 ]
+  ch: Magnetism and Matter
+  tp: Oscillation of magnetic needle
+  df: E
+- n: 8
+  s: P
+  sec: B
+  p: 8
+  t: N
+  q: |-
+    Suppose two planets (spherical in shape) of radii R and 2R, but mass M and 9 M respectively have a centre to centre separation 8 R as shown in the figure. A satellite of mass 'm' is projected from the surface of the planet of mass 'M' directly towards the centre of the second planet. The minimum speed 'v' required for the satellite to reach the surface of the second plant is $\sqrt{\frac{a}{7}\frac{GM}{R}}$ then the value of 'a' is ________.
+    [Given : The two planets are fixed in their position ]
+    [figure: planet M radius R and planet (labelled 2M) radius 2R, centres 8R apart]
+  ch: Gravitation
+  tp: Neutral point and energy conservation
+  df: H
+  fig: [[8, 105, 670, 225, 910]]
+  nt: 'text says 9M, figure labels 2M; key 4 matches 9M'
+- n: 9
+  s: P
+  sec: B
+  p: 8
+  t: N
+  q: |-
+    In Bohr's atomic model, the electron is assumed to revolve in a circular orbit of radius 0.5 Å. If the speed of electron is $2.2\times10^6$ m/s, then the current associated with the electron will be __________ $\times10^{-2}$ mA. [ Take $\pi$ as $\frac{22}{7}$ ]
+  ch: Atoms
+  tp: Current due to orbiting electron
+  df: E
+- n: 10
+  s: P
+  sec: B
+  p: 8
+  t: N
+  q: |-
+    A radioactive sample has an average life of 30ms and is decaying. A capacitor of capacitance 200 $\mu$F is first charged and later connected with resistor 'R'. If the ratio of charge on capacitor to the activity of radioactive sample is fixed with respect to time then the value of 'R' should be ____________$\Omega$.
+  ch: Nuclei
+  tp: Mean life and RC time constant
+  df: M
+- n: 1
+  s: C
+  sec: A
+  p: 9
+  t: S
+  st: Stmt
+  q: |-
+    Given below are two statements:
+    Statement I: Rutherford's gold foil experiment cannot explain the line spectrum of hydrogen atom.
+    Statement II: Bohr's model of hydrogen atom contradicts Heisenberg's uncertainty principle.
+    In the light of the above statements, choose the most appropriate answer from the options given below:
+  o: ['Statement I is true but Statement II is false.', 'Both Statement I and Statement II are false.', 'Both Statement I and Statement II are true.', 'Statement I is false but Statement II is true.']
+  ch: Atomic Structure
+  tp: Atomic models
+  df: E
+- n: 2
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    For a reaction of order n, the unit of the rate constant is:
+  o: ['$mol^{1-n}L^{n-1}s^{-1}$', '$mol^{1-n}L^{1-n}s^{-1}$', '$mol^{1-n}L^{2n}s^{-1}$', '$mol^{1-n}L^{1-n}s$']
+  ch: Chemical Kinetics
+  tp: Units of rate constant
+  df: E
+- n: 3
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    Which one among the following chemical tests is used to distinguish monosaccharide from disaccharide?
+  o: ["Tollen's test", "Seliwanoff's test", 'Iodine test', 'Barfoed test']
+  ch: Biomolecules
+  tp: Tests for carbohydrates
+  df: E
+- n: 4
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    Staggered and eclipsed conformers of ethane are:
+  o: ['Mirror images', 'Polymers', 'Enantiomers', 'Rotamers']
+  ch: Isomerism
+  tp: Conformations
+  df: E
+- n: 5
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    The number of geometrical isomers found in the metal complexes $[PtCl_2(NH_3)_2]$, $[Ni(CO)_4]$, $[Ru(H_2O)_3Cl_3]$ and $[CoCl_2(NH_3)_4]^+$ respectively are
+  o: ['2,1,2,2', '2,0,2,2', '1,1,1,1', '2,1,2,1']
+  ch: Coordination Compounds
+  tp: Geometrical isomerism
+  df: M
+- n: 6
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    Which one of the following compounds will give orange precipitate when treated with 2,4-Dinitrophenyl hydrazine?
+  o: ['ethyl salicylate', 'ethyl benzoate', 'salicylic acid', 'acetophenone ($C_6H_5COCH_3$)']
+  ch: Aldehydes, Ketones and Carboxylic Acids
+  tp: 2,4-DNP test
+  df: E
+  fig: [[9, 785, 140, 900, 750]]

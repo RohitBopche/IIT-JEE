@@ -1,0 +1,3013 @@
+{
+ "paper": {
+  "file": "/home/user/IIT-JEE/IIT JEE 2021/JEE Mains Question Paper 27 July 2021 Morning Shift – PDF with Solution.pdf",
+  "sha256": "67274d9cce1cd7fe880fcdf376c44a29095a22d217d8a01a127db572a5bedf50",
+  "exam": "JEE Main",
+  "date": "2021-07-27",
+  "year": 2021,
+  "shift": "Morning",
+  "slug": "JEEM_2021-07-27_M",
+  "pages": 44,
+  "text_layer": false,
+  "model": "claude (manual page reading)",
+  "prompt_version": "v1"
+ },
+ "issues": [],
+ "questions": [
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 1,
+   "question_text": "Two identical tennis balls each having mass 'm' and charge 'q' are suspended from a fixed point by threads of length 'l'. What is the equilibrium separation when each thread makes a small angle '$\\theta$' with the vertical ?",
+   "options": [
+    "$x = \\left(\\frac{q^2l}{2\\pi\\varepsilon_0mg}\\right)^{\\frac{1}{2}}$",
+    "$x = \\left(\\frac{q^2l}{2\\pi\\varepsilon_0mg}\\right)^{\\frac{1}{3}}$",
+    "$x = \\left(\\frac{q^2l^2}{2\\pi\\varepsilon_0m^2g^2}\\right)^{\\frac{1}{3}}$",
+    "$x = \\left(\\frac{q^2l^2}{2\\pi\\varepsilon_0m^2g}\\right)^{\\frac{1}{3}}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Electrostatics",
+   "topic": "Equilibrium of charged pendulums",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 1,
+   "page_indices": [
+    1,
+    2
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 2,
+   "question_text": "List – I: (a) MI of the rod (length L, Mass M, about an axis ⊥ to the rod Passing through the midpoint); (b) MI of the rod (length L, Mass 2M, about an axis ⊥ to the rod Passing through one of its end); (c) MI of the rod (length 2L, Mass M, about an axis ⊥ to the rod Passing through its midpoint); (d) MI of the rod (length 2L, Mass 2M, about an axis ⊥ to the rod Passing through one of its end)\nList – II: (i) $8ML^2/3$; (ii) $ML^2/12$; (iii) $ML^2/12$; (iv) $2ML^2/3$\nChoose the correct answer from the options given below :",
+   "options": [
+    "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+    "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+    "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)",
+    "(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Match the Following",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Rotational Motion",
+   "topic": "Moment of inertia of rods",
+   "difficulty": "Medium",
+   "notes": "List-II (iii) printed as ML^2/12 (likely ML^2/3); options B and C are printed identically",
+   "page_index": 1,
+   "page_indices": [
+    1,
+    2
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "medium",
+   "q_id": "JEEM_2021-07-27_M_PHY_A02",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [
+    "duplicate options",
+    "model note: List-II (iii) printed as ML^2/12 (likely ML^2/3); options B and C are printed identically"
+   ],
+   "confidence": 0.5
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 3,
+   "question_text": "The figure shows two solid discs with radius R and r respectively. If mass per unit area is same for both, what is the ratio of MI of bigger disc around axis AB (which is ⊥ to the plane of the disc and passing through its centre) to MI of smaller disc around one of its diameters lying on its plane? Given 'M' is the mass of the larger disc. (MI stands for moment of inertia)\n[figure: large disc radius R with concentric small disc radius r; axis AB perpendicular, CD a diameter]",
+   "options": [
+    "$R^2 : r^2$",
+    "$2r^4 : R^4$",
+    "$2R^4 : r^4$",
+    "$2R^2 : r^2$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": true,
+   "chapter": "Rotational Motion",
+   "topic": "Moment of inertia of discs",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 1,
+   "page_indices": [
+    1,
+    2
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 1,
+     "box_2d": [
+      685,
+      620,
+      900,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A03",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A03_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 4,
+   "question_text": "In the given figure, a battery of emf E is connected across a conductor PQ of length 'l' and different area of cross- sections by having radii $r_1$ and $r_2$ ($r_2 < r_1$).\nChoose the correct option as one moves from P to Q :\n[figure: tapered conductor PQ (radius r1 at P, r2 at Q) connected to battery E and key K]",
+   "options": [
+    "All of these",
+    "Electron current decreases.",
+    "Drift velocity of electron increases.",
+    "Electric field decreases."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": true,
+   "chapter": "Current Electricity",
+   "topic": "Drift velocity in non-uniform conductor",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 2,
+   "page_indices": [
+    2,
+    3
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 2,
+     "box_2d": [
+      90,
+      730,
+      205,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A04",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A04_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 5,
+   "question_text": "A capacitor of capacitance C = 1$\\mu$F is suddenly connected to a battery of 100 volt through a resistance R = 100$\\Omega$. The time taken for the capacitor to be charged to get 50V is : [Take ln2 = 0.69 ]",
+   "options": [
+    "$3.33\\times10^{-4}$ s",
+    "$1.44\\times10^{-4}$ s",
+    "$0.30\\times10^{-4}$ s",
+    "$0.69\\times10^{-4}$ s"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Capacitance",
+   "topic": "RC charging",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 2,
+   "page_indices": [
+    2,
+    3
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 6,
+   "question_text": "Three objects A, B and c are kept in a straight line on a frictionless horizontal surface. The masses of A, B and C are m, 2 and 2 m respectively. A moves towards B with a speed of 9m/s and makes an elastic collision with it. Thereafter B makes a completely inelastic collision with C. all motions occur along same straight line. The final speed of C is :\n[figure: blocks A (m), B (2m), C (2m) in a line]",
+   "options": [
+    "4 m /s",
+    "6 m /s",
+    "9 m /s",
+    "3 m /s"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": true,
+   "chapter": "Centre of Mass and System of Particles",
+   "topic": "Elastic and inelastic collisions",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 2,
+   "page_indices": [
+    2,
+    3
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 2,
+     "box_2d": [
+      425,
+      600,
+      475,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A06",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A06_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 7,
+   "question_text": "In the reported figure, a capacitor is formed by placing a compound dielectric between the plates of parallel plate capacitor. The expression for the capacity of the said capacitor will be : (Given area of plate = A)\n[figure: three dielectric slabs in series: K (thickness d), 3K (2d), 5K (3d)]",
+   "options": [
+    "$\\frac{15}{34}\\frac{K\\varepsilon_0A}{d}$",
+    "$\\frac{15}{6}\\frac{K\\varepsilon_0A}{d}$",
+    "$\\frac{25}{6}\\frac{K\\varepsilon_0A}{d}$",
+    "$\\frac{9}{6}\\frac{K\\varepsilon_0A}{d}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": true,
+   "chapter": "Capacitance",
+   "topic": "Dielectrics in series",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 2,
+   "page_indices": [
+    2,
+    3
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 2,
+     "box_2d": [
+      600,
+      610,
+      760,
+      800
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A07",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A07_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 8,
+   "question_text": "A light cylindrical vessel is kept on a horizontal surface. Area of base is A. A hole of cross-sectional area 'a' is made just at its bottom side. The minimum coefficient of friction necessary to prevent sliding the vessel due to the impact force of the emerging liquid is (a << A):\n[figure: cylindrical vessel of base area A with a small hole of area a at the bottom side]",
+   "options": [
+    "None of these",
+    "$\\frac{2a}{A}$",
+    "$\\frac{A}{2a}$",
+    "$\\frac{a}{A}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": true,
+   "chapter": "Mechanical Properties of Fluids",
+   "topic": "Torricelli's law and thrust",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 3,
+   "page_indices": [
+    3,
+    4
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 3,
+     "box_2d": [
+      95,
+      725,
+      240,
+      900
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A08",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A08_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 9,
+   "question_text": "The relative permittivity of distilled water is 81. The velocity of light in it will be : (Given $\\mu_r$ = 1)",
+   "options": [
+    "$4.33\\times10^7$ m/s",
+    "$2.33\\times10^7$ m/s",
+    "$5.33\\times10^7$ m/s",
+    "$3.33\\times10^7$ m/s"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Electromagnetic Waves",
+   "topic": "Speed of EM waves in medium",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 3,
+   "page_indices": [
+    3,
+    4
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 10,
+   "question_text": "Assertion A : If A, B, D are four points on a semi-circular arc with centre at 'O' such that $|\\vec{AB}| = |\\vec{BC}| = |\\vec{CD}|$, then $\\vec{AB} + \\vec{AC} + \\vec{AD} = 4\\vec{AO} + \\vec{OB} + \\vec{OC}$\nReason R : Polygon law of vector addition yields $\\vec{AB} + \\vec{BC} + \\vec{CD} = \\vec{AD} = 2\\vec{AO}$\nIn the light of the above statements, choose the most appropriate answer from the options given below :\n[figure: semicircle with diameter AD, centre O, points B and C on the arc]",
+   "options": [
+    "A is not correct but R is correct.",
+    "A is correct but R is not correct.",
+    "Both A and R are correct and R is the correct explanation of A.",
+    "Both A and R are correct but R is not the correct explanation of A."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Assertion-Reason",
+   "answer": "D",
+   "has_diagram": true,
+   "chapter": "Kinematics",
+   "topic": "Vector addition",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 3,
+   "page_indices": [
+    3,
+    4
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 3,
+     "box_2d": [
+      355,
+      600,
+      450,
+      850
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A10",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A10_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 11,
+   "question_text": "The number of molecules in one litre of an ideal gas at 300K and 2 atmospheric pressure with mean kinetic energy $2\\times10^{-9}$ J per molecule is :",
+   "options": [
+    "$0.75\\times10^{11}$",
+    "$3\\times10^{11}$",
+    "$6\\times10^{11}$",
+    "$1.5\\times10^{11}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Kinetic Theory of Gases",
+   "topic": "Pressure from kinetic energy",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 3,
+   "page_indices": [
+    3,
+    4
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A11",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 12,
+   "question_text": "In the reported figure, there is a cyclic process ABCDA on a sample of 1mol of a diatomic gas. The temperature of the gas during the process A → B and C → D are $T_1$ and $T_2$ ($T_1 > T_2$) respectively.\nChoose the correct option out of the following for work done if processes BC and DA are adiabatic.\n[figure: P–V diagram with A (V0, 5P0), B (3.5V0), C (5.5V0, P0), D (1.5V0)]",
+   "options": [
+    "$W_{AB} = W_{DC}$",
+    "$W_{AD} = W_{BC}$",
+    "$W_{AB} < W_{CD}$",
+    "$W_{BC} + W_{DA} > 0$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Graph/Diagram Based",
+   "answer": "B",
+   "has_diagram": true,
+   "chapter": "Thermodynamics",
+   "topic": "Carnot cycle work",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 3,
+   "page_indices": [
+    3,
+    4
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 3,
+     "box_2d": [
+      690,
+      620,
+      855,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A12",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_A12_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 13,
+   "question_text": "If 'f' denotes the ratio of the number of nuclei decayed ($N_d$) to the number of nuclei at t = 0 ($N_0$) then for a collection of radioactive nuclei, the rate of change of 'f' with respect to time is given as : [ $\\lambda$ is the radioactive decay constant ]",
+   "options": [
+    "$\\lambda e - \\lambda t$",
+    "$\\lambda(1 - e^{-\\lambda t})$",
+    "$-\\lambda(1 - e^{-\\lambda t})$",
+    "$-\\lambda e^{-\\lambda t}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Nuclei",
+   "topic": "Radioactive decay law",
+   "difficulty": "Medium",
+   "notes": "option (A) printed as \"λe – λt\" (likely λe^{-λt}); key A",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "medium",
+   "q_id": "JEEM_2021-07-27_M_PHY_A13",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [
+    "model note: option (A) printed as \"λe – λt\" (likely λe^{-λt}); key A"
+   ],
+   "confidence": 0.8
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 14,
+   "question_text": "Assertion A : If in five complete rotations of the circular scale, the distance travelled on main scale of the screw gauge is 5 mm and there are 50 total divisions on circular scale, then least count is 0.001 cm.\nReason R : Least Count = $\\frac{Pitch}{\\text{Total divisions on circular scle}}$\nIn the light of the above statement, choose the most appropriate answer from the options given below :",
+   "options": [
+    "A is correct but R is not correct.",
+    "A is not correct but R is correct.",
+    "Both A and R are correct and R is NOT the correct explanation of A .",
+    "Both A and R are correct and R is the correct explanation of A ."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Assertion-Reason",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Experimental Skills",
+   "topic": "Least count of screw gauge",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A14",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 15,
+   "question_text": "Two capacitors of capacities 2C and C are joined in parallel and charge up to potential V. The battery is removed and the capacitor of capacity C is filled completely with a medium of dielectric constant K. The potential difference across the capacitors will now be :",
+   "options": [
+    "$\\frac{3V}{K}$",
+    "$\\frac{V}{K}$",
+    "$\\frac{V}{K + 2}$",
+    "$\\frac{3V}{K + 2}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Capacitance",
+   "topic": "Charge sharing with dielectric",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A15",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 16,
+   "question_text": "In Young's double slit experiment, if the source of light changes from orange to blue then:",
+   "options": [
+    "the distance between consecutive fringes will decrease.",
+    "the distance between consecutive fringes will increase.",
+    "the central bright fringe will become a dark fringe.",
+    "the intensity of the minima will increase."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Wave Optics",
+   "topic": "YDSE fringe width",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A16",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 17,
+   "question_text": "A ball is thrown up with a certain velocity so that it reaches a height 'h'. Find the ratio of the two different times of the ball reaching $\\frac{h}{3}$ in both the directions.",
+   "options": [
+    "$\\frac{\\sqrt{2} - 1}{\\sqrt{2} + 1}$",
+    "$\\frac{\\sqrt{3} - \\sqrt{2}}{\\sqrt{3} + \\sqrt{2}}$",
+    "$\\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$",
+    "$\\frac{1}{3}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Kinematics",
+   "topic": "Vertical motion",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A17",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 18,
+   "question_text": "A particle starts executing simple harmonic motion (SHM) of amplitude 'a' and total energy E. At any instant, its kinetic energy is $\\frac{3E}{4}$ then its displacement 'y' is given by :",
+   "options": [
+    "$y = \\frac{a}{2}$",
+    "$y = \\frac{a}{\\sqrt{2}}$",
+    "$y = \\frac{a\\sqrt{3}}{2}$",
+    "y = a"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Oscillations",
+   "topic": "Energy in SHM",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 4,
+   "page_indices": [
+    4,
+    5
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A18",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 19,
+   "question_text": "A 0.07 H inductor and a 12$\\Omega$ resistor are connected in series to a 220 V, 5 Hz ac source. The approximate current in the circuit and the phase angle between current and source voltage are respectively. [ Take $\\pi$ as $\\frac{22}{7}$ ]",
+   "options": [
+    "88 A and $\\tan^{-1}\\left(\\frac{11}{6}\\right)$",
+    "8.8 A and $\\tan^{-1}\\left(\\frac{11}{6}\\right)$",
+    "0.88 A and $\\tan^{-1}\\left(\\frac{11}{6}\\right)$",
+    "8.8 A and $\\tan^{-1}\\left(\\frac{6}{11}\\right)$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Alternating Current",
+   "topic": "LR circuit impedance",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 5,
+   "page_indices": [
+    5,
+    6
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A19",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "A",
+   "q_no": 20,
+   "question_text": "A body takes 4 min. to cool from 61°C to 59°C. If the temperature of the surroundings is 30°C, the time taken by the body to cool from 51°C to 49°C is :",
+   "options": [
+    "6 min.",
+    "3 min.",
+    "4 min.",
+    "8 min."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Thermal Properties of Matter",
+   "topic": "Newton's law of cooling",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 5,
+   "page_indices": [
+    5,
+    6
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_A20",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 1,
+   "question_text": "A transistor is connected in common emitter circuit configuration, then collector supply voltage is 10 V and the voltage drop across a resistor of 1000$\\Omega$ in the collector is 0.6 V. If the current gain factor ($\\beta$) is 24, then the base current is ________ $\\mu$A. (Round off to the Nearest Integer)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "25",
+   "has_diagram": false,
+   "chapter": "Semiconductor Electronics",
+   "topic": "Transistor current gain",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 2,
+   "question_text": "A prism of refractive index $n_1$ and another prism of refractive index $n_2$ are stuck together (as shown in the figure). $n_1$ and $n_2$ depend on $\\lambda$, the wavelength of light, according to the relation\n$n_1 = 1.2 + \\frac{10.8\\times10^{-14}}{\\lambda^2}$ and $n_2 = 1.45 + \\frac{1.8\\times10^{-14}}{\\lambda^2}$\nThe wavelength for which rays incident at any angle on the interface BC pass through without bending at that interface will be _______nm.\n[figure: two prisms ABC (n1) and BCD (n2) sharing face BC]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "600",
+   "has_diagram": true,
+   "chapter": "Ray Optics and Optical Instruments",
+   "topic": "Dispersion and refractive index matching",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 6,
+     "box_2d": [
+      285,
+      640,
+      440,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B02",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_B02_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 3,
+   "question_text": "Consider an electrical circuit containing a two way switch 'S'. Initially S is open and then $T_1$ is connected to $T_2$. As the current in R = 6$\\Omega$ attains a maximum value of steady state level, $T_1$ is disconnected from $T_2$ and immediately connected to $T_3$. Potential drop across r = 3$\\Omega$ resistor immediately after $T_1$ is connected to $T_3$ is _________V. (Round off to the Nearest Integer)\n[figure: 6 V battery, R = 6 Ω, inductor, switch terminals T1, T2, T3 and r = 3 Ω]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "3",
+   "has_diagram": true,
+   "chapter": "Electromagnetic Induction",
+   "topic": "LR circuit switching",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 6,
+     "box_2d": [
+      470,
+      650,
+      578,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B03",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_B03_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 4,
+   "question_text": "A stone of mass 20g is projected from a rubber catapult of length 0.1m and area of cross section $10^{-6}$ m$^2$ stretched by an amount 0.04 m. The velocity of the projected stone is _______ m /s. (Young's modulus of rubber = $0.5\\times10^9$ N/m$^2$ )",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "20",
+   "has_diagram": false,
+   "chapter": "Mechanical Properties of Solids",
+   "topic": "Elastic potential energy",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B04",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 5,
+   "question_text": "A particle of mass $9.1\\times10^{-31}$ kg travels in a medium with a speed of $10^6$ m/s and a photon of a radiation of linear momentum $10^{-27}$ kg m/s travels in vacuum. The wavelength of photon is ________times the wavelength of the particle.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "910",
+   "has_diagram": false,
+   "chapter": "Dual Nature of Radiation and Matter",
+   "topic": "de Broglie wavelength",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 6,
+   "question_text": "The amplitude of upper and lower side bands of A.M. wave where a carrier signal with frequency 11.21 MHz, peak voltage 15 V is amplitude modulate by a 7.7 kHz sine wave of 5 V amplitude are $\\frac{a}{10}$ V and $\\frac{b}{10}$ V respectively. Then the value of $\\frac{a}{b}$ is ___________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "1",
+   "has_diagram": false,
+   "chapter": "Communication Systems",
+   "topic": "Side band amplitudes",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B06",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 7,
+   "question_text": "In a uniform magnetic field, the magnetic needle has a magnetic moment $9.85\\times10^{-2}$ A/m$^2$ and moment of inertia $5\\times10^{-6}$ kg m$^2$. If it performs 10 complete oscillations in 5 seconds then the magnitude of the magnetic field is ___________mT. [ Take $\\pi^2$ as 9.85 ]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "8",
+   "has_diagram": false,
+   "chapter": "Magnetism and Matter",
+   "topic": "Oscillation of magnetic needle",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 6,
+   "page_indices": [
+    6,
+    7
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B07",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 8,
+   "question_text": "Suppose two planets (spherical in shape) of radii R and 2R, but mass M and 9 M respectively have a centre to centre separation 8 R as shown in the figure. A satellite of mass 'm' is projected from the surface of the planet of mass 'M' directly towards the centre of the second planet. The minimum speed 'v' required for the satellite to reach the surface of the second plant is $\\sqrt{\\frac{a}{7}\\frac{GM}{R}}$ then the value of 'a' is ________.\n[Given : The two planets are fixed in their position ]\n[figure: planet M radius R and planet (labelled 2M) radius 2R, centres 8R apart]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "4",
+   "has_diagram": true,
+   "chapter": "Gravitation",
+   "topic": "Neutral point and energy conservation",
+   "difficulty": "Hard",
+   "notes": "text says 9M, figure labels 2M; key 4 matches 9M",
+   "page_index": 7,
+   "page_indices": [
+    7,
+    8
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 7,
+     "box_2d": [
+      105,
+      670,
+      225,
+      910
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B08",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/PHY_B08_1.png"
+   ],
+   "text_recall": null,
+   "issues": [
+    "model note: text says 9M, figure labels 2M; key 4 matches 9M"
+   ],
+   "confidence": 0.9
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 9,
+   "question_text": "In Bohr's atomic model, the electron is assumed to revolve in a circular orbit of radius 0.5 Å. If the speed of electron is $2.2\\times10^6$ m/s, then the current associated with the electron will be __________ $\\times10^{-2}$ mA. [ Take $\\pi$ as $\\frac{22}{7}$ ]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "112",
+   "has_diagram": false,
+   "chapter": "Atoms",
+   "topic": "Current due to orbiting electron",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 7,
+   "page_indices": [
+    7,
+    8
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Physics",
+   "section": "B",
+   "q_no": 10,
+   "question_text": "A radioactive sample has an average life of 30ms and is decaying. A capacitor of capacitance 200 $\\mu$F is first charged and later connected with resistor 'R'. If the ratio of charge on capacitor to the activity of radioactive sample is fixed with respect to time then the value of 'R' should be ____________$\\Omega$.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "150",
+   "has_diagram": false,
+   "chapter": "Nuclei",
+   "topic": "Mean life and RC time constant",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 7,
+   "page_indices": [
+    7,
+    8
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_PHY_B10",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 1,
+   "question_text": "Given below are two statements:\nStatement I: Rutherford's gold foil experiment cannot explain the line spectrum of hydrogen atom.\nStatement II: Bohr's model of hydrogen atom contradicts Heisenberg's uncertainty principle.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+   "options": [
+    "Statement I is true but Statement II is false.",
+    "Both Statement I and Statement II are false.",
+    "Both Statement I and Statement II are true.",
+    "Statement I is false but Statement II is true."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Statement I/II",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Atomic Structure",
+   "topic": "Atomic models",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 2,
+   "question_text": "For a reaction of order n, the unit of the rate constant is:",
+   "options": [
+    "$mol^{1-n}L^{n-1}s^{-1}$",
+    "$mol^{1-n}L^{1-n}s^{-1}$",
+    "$mol^{1-n}L^{2n}s^{-1}$",
+    "$mol^{1-n}L^{1-n}s$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Chemical Kinetics",
+   "topic": "Units of rate constant",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A02",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 3,
+   "question_text": "Which one among the following chemical tests is used to distinguish monosaccharide from disaccharide?",
+   "options": [
+    "Tollen's test",
+    "Seliwanoff's test",
+    "Iodine test",
+    "Barfoed test"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Biomolecules",
+   "topic": "Tests for carbohydrates",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A03",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 4,
+   "question_text": "Staggered and eclipsed conformers of ethane are:",
+   "options": [
+    "Mirror images",
+    "Polymers",
+    "Enantiomers",
+    "Rotamers"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Isomerism",
+   "topic": "Conformations",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A04",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 5,
+   "question_text": "The number of geometrical isomers found in the metal complexes $[PtCl_2(NH_3)_2]$, $[Ni(CO)_4]$, $[Ru(H_2O)_3Cl_3]$ and $[CoCl_2(NH_3)_4]^+$ respectively are",
+   "options": [
+    "2,1,2,2",
+    "2,0,2,2",
+    "1,1,1,1",
+    "2,1,2,1"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Coordination Compounds",
+   "topic": "Geometrical isomerism",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 6,
+   "question_text": "Which one of the following compounds will give orange precipitate when treated with 2,4-Dinitrophenyl hydrazine?",
+   "options": [
+    "ethyl salicylate",
+    "ethyl benzoate",
+    "salicylic acid",
+    "acetophenone ($C_6H_5COCH_3$)"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": true,
+   "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+   "topic": "2,4-DNP test",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 8,
+   "page_indices": [
+    8,
+    9
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 8,
+     "box_2d": [
+      785,
+      140,
+      900,
+      750
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A06",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/CHE_A06_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 7,
+   "question_text": "[figure: cyclohexylmethanol $\\xrightarrow{H_3PO_4,\\ 120^\\circ C}$ A (major product) $\\xrightarrow{(BH_3)_2;\\ H_2O_2/OH^-,\\ H_2O}$ P (major product)]\nConsider the above reaction and identify the product P:",
+   "options": [
+    "2-(hydroxymethyl)cyclohexanol",
+    "2-methylcyclohexanol",
+    "cyclohexylmethanol",
+    "1-methylcyclohexanol"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": true,
+   "chapter": "Alcohols, Phenols and Ethers",
+   "topic": "Dehydration with rearrangement and hydroboration",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 9,
+     "box_2d": [
+      95,
+      140,
+      225,
+      740
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A07",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/CHE_A07_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 8,
+   "question_text": "Match List- I with List-II:\nList – I (Drug): (a) Furacin; (b) Arsphenamine; (c) Dimetone; (d) Valium\nList – II (Class of Drug): (i) Antibiotic; (ii) Tranquilizers; (iii) Antiseptic; (iv) Synthetic antihistamines\nChoose the most appropriate match:",
+   "options": [
+    "(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)",
+    "(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)",
+    "(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)",
+    "(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Match the Following",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Chemistry in Everyday Life",
+   "topic": "Classes of drugs",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A08",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 9,
+   "question_text": "The parameters of the unit cell of substance are a = 2.5, b= 3.0, c=4.0, $\\alpha$ = 90°, $\\beta$ =120°, $\\gamma$ = 90°. The crystal system of the substance is:",
+   "options": [
+    "Monoclinic",
+    "Triclinic",
+    "Orthorhombic",
+    "Hexagonal"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Solid State",
+   "topic": "Crystal systems",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 10,
+   "question_text": "The oxidation states of 'P' in $H_4P_2O_7$, $H_4P_2O_5$ and $H_4P_2O_6$, respectively are:",
+   "options": [
+    "5,3 and 4",
+    "5,4 and 3",
+    "6,4 and 5",
+    "7,5 and 6"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "p-Block Elements",
+   "topic": "Oxoacids of phosphorus",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A10",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 11,
+   "question_text": "The type of hybridisation and magnetic property of the complex $[MnCl_6]^{3-}$, respectively, are:",
+   "options": [
+    "$sp^3d^2$ and paramagnetic",
+    "$d^2sp^3$ and paramagnetic",
+    "$d^2sp^3$ and diamagnetic",
+    "$sp^3d^2$ and diamagnetic"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Coordination Compounds",
+   "topic": "VBT hybridisation",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A11",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 12,
+   "question_text": "Presence of which reagent will affect the reversibility of the following reaction, and change it to a irreversible reaction:\n$CH_4 + I_2 \\underset{Reversible}{\\overset{hv}{\\rightleftharpoons}} CH_3I + HI$",
+   "options": [
+    "HOCl",
+    "Liquid $NH_3$",
+    "dilute $HNO_2$",
+    "Concentrated $HIO_3$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Haloalkanes and Haloarenes",
+   "topic": "Iodination of alkanes",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 9,
+   "page_indices": [
+    9,
+    10
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A12",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 13,
+   "question_text": "[figure: structure of thymine (5-methylpyrimidine-2,4-dione), compound 'A']\nThe compound 'A' is a complementary base of _____________ in DNA strands.",
+   "options": [
+    "Adenine",
+    "Cytosine",
+    "Guanine",
+    "Uracil"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": true,
+   "chapter": "Biomolecules",
+   "topic": "Base pairing",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 10,
+   "page_indices": [
+    10,
+    11
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 10,
+     "box_2d": [
+      100,
+      140,
+      250,
+      400
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A13",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/CHE_A13_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 14,
+   "question_text": "Match List- I with List-II:\nList – I: (a) NaOH; (b) $Be(OH)_2$; (c) $Ca(OH)_2$; (d) $B(OH)_3$; (e) $Al(OH)_3$\nList – II: (i) Acidic; (ii) Basic; (iii) Amphoteric\nChoose the most appropriate answer from the options given below:",
+   "options": [
+    "(a)-(ii), (b)-(i), (c)-(ii), (d)-(iii), (e)-(iii)",
+    "(a)-(ii), (b)-(iii), (c)-(ii), (d)-(i), (e)-(iii)",
+    "(a)-(ii), (b)-(ii), (c)-(iii), (d)-(ii), (e)-(iii)",
+    "(a)-(ii), (b)-(ii), (c)-(iii), (d)-(i), (e)-(iii)"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Match the Following",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "s-Block Elements",
+   "topic": "Nature of hydroxides",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 10,
+   "page_indices": [
+    10,
+    11
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A14",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 15,
+   "question_text": "[figure: carbocations A = benzyl $C_6H_5CH_2^+$, B = vinyl $CH_2=CH^+$, C = ethyl $CH_3CH_2^+$, D = ethynyl $HC\\equiv C^+$]\nThe correct order of stability of given carbocations is:",
+   "options": [
+    "A > C > B > D",
+    "D > B > C > A",
+    "C > A > D > B",
+    "D > B > A > C"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": true,
+   "chapter": "General Organic Chemistry",
+   "topic": "Carbocation stability",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 10,
+   "page_indices": [
+    10,
+    11
+   ],
+   "diagram_boxes": [
+    {
+     "page_index": 10,
+     "box_2d": [
+      480,
+      140,
+      600,
+      600
+     ]
+    }
+   ],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A15",
+   "diagram_files": [
+    "figures/JEEM_2021-07-27_M/CHE_A15_1.png"
+   ],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 16,
+   "question_text": "Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R.\nAssertion R: Lithium halides are some what covalent is nature.\nReason R: Lithium possess high polarisation capability.\nIn the light of the above statements, choose the most appropriate answer from the options given below:",
+   "options": [
+    "A is true but R is false",
+    "Both A and R are true but R is NOT the correct explanation of A",
+    "A is false but R is true",
+    "Both A and R are true and R is the correct explanation of A"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Assertion-Reason",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "s-Block Elements",
+   "topic": "Covalent character (Fajans' rule)",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 10,
+   "page_indices": [
+    10,
+    11
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A16",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 17,
+   "question_text": "Which one of the following statements is NOT correct?",
+   "options": [
+    "Eutrophication indicates that water body is polluted",
+    "Eutrophication leads to increase in the oxygen level in water",
+    "Eutrophication leads to anaerobic conditions",
+    "The dissolved oxygen concentration below 6 ppm inhibits fish growth"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Environmental Chemistry",
+   "topic": "Eutrophication",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 10,
+   "page_indices": [
+    10,
+    11
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A17",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 18,
+   "question_text": "The product obtained from the electrolytic oxidation of acidified sulphate solutions, is:",
+   "options": [
+    "$HO_3SOSO_3H$",
+    "$HSO_4^-$",
+    "$HO_2SOSO_2H$",
+    "$HO_3SOOSO_3H$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "p-Block Elements",
+   "topic": "Peroxodisulphuric acid",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 11,
+   "page_indices": [
+    11,
+    12
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A18",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 19,
+   "question_text": "The statement that is INCORRECT about Ellingham diagram is:",
+   "options": [
+    "Provides idea about the reaction rate.",
+    "provides idea about changes in the phases during the reaction",
+    "provides idea about free energy change.",
+    "provides idea about reduction of metal oxide."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Metallurgy",
+   "topic": "Ellingham diagram",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 11,
+   "page_indices": [
+    11,
+    12
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A19",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "A",
+   "q_no": 20,
+   "question_text": "Given below are two statements:\nStatement I: Aniline is less basic than acetamide.\nStatement II: In aniline, the lone pair of electrons on nitrogen atom is delocalised over benzene ring due to resonance and hence less available to a proton.\nChoose the most appropriate option:",
+   "options": [
+    "Statement I is true but statement II is false.",
+    "Statement I is false but Statement II is true",
+    "Both Statement I and Statement II are true.",
+    "Both Statement I and Statement II are false."
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Statement I/II",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Amines and Diazonium Salts",
+   "topic": "Basicity of amines and amides",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 11,
+   "page_indices": [
+    11,
+    12
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_A20",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 1,
+   "question_text": "The conductivity of a weak acid HA of concentration 0.001 mol L$^{-1}$ is $2.0\\times10^{-5}$ S cm$^{-1}$. If $\\Lambda^o_m(HA)$ = 190 S cm$^2$ mol$^{-1}$, the ionization constant ($K_a$) of HA is equal to _______ $\\times10^{-6}$ (Round off to the nearest integer)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "12",
+   "has_diagram": false,
+   "chapter": "Electrochemistry",
+   "topic": "Degree of dissociation from conductivity",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 2,
+   "question_text": "The number of geometrical isomers possible in triamminetrinitrocobalt(III) is X and in trioxalatochromate(III) is Y. Then the value of X + Y is____________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "2",
+   "has_diagram": false,
+   "chapter": "Coordination Compounds",
+   "topic": "Geometrical isomerism",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B02",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 3,
+   "question_text": "In gaseous triethyl amine the \"–C–N–C–\" bond angle is __________ degree.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "108",
+   "has_diagram": false,
+   "chapter": "Amines and Diazonium Salts",
+   "topic": "Structure of amines",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B03",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 4,
+   "question_text": "An organic compound is subjected to chlorination to get compound A using 5.0 g of chlorine. When 0.5 g of compound A is reacted with $AgNO_3$ [Carius Method], the percentage of chlorine in compound A is _________ when it forms 0.3849 g of AgCl (Round off to the Nearest integer)\n(Atomic masses of Ag and Cl are 107.87 and 35.5 respectively)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "19",
+   "has_diagram": false,
+   "chapter": "Purification and Characterisation of Organic Compounds",
+   "topic": "Carius method",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B04",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 5,
+   "question_text": "1.46 g of a biopolymer dissolved in a 100 mL water at 300 K exerted an osmotic pressure of $2.42\\times10^{-3}$ bar.\nThe molar mass of the biopolymer is ________________ $\\times10^4$ g mol$^{-1}$. (Round off to the Nearest integer)\n[ Use : R = 0.083 L bar mol$^{-1}$ K$^{-1}$ ]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "15",
+   "has_diagram": false,
+   "chapter": "Solutions",
+   "topic": "Osmotic pressure",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 6,
+   "question_text": "$CO_2$ gas adsorbs on charcoal following Freundlich adsorption isotherm. For a given amount of charcoal, the mass of $CO_2$ adsorbed becomes 64 times when the pressure of $CO_2$ is doubled. The value of n in the Freundlich isotherm equation is ______ $\\times10^{-2}$. (Round off to the Nearest integer)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "17",
+   "has_diagram": false,
+   "chapter": "Surface Chemistry",
+   "topic": "Freundlich isotherm",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B06",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 7,
+   "question_text": "$PCl_5 \\rightleftharpoons PCl_3 + Cl_2$, $K_C$ = 1.844\n3.0 moles of $PCl_5$ is introduced in a 1L closed reaction vessel at 380K. The number of moles of $PCl_5$ at equilibrium is________ $\\times10^{-3}$. (Round off to the Nearest integer)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "1396",
+   "has_diagram": false,
+   "chapter": "Chemical Equilibrium",
+   "topic": "Equilibrium concentrations",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B07",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 8,
+   "question_text": "The difference between bond orders of CO and $NO^+$ is $\\frac{x}{2}$ where x_________ (Round off to the Nearest integer)",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "0",
+   "has_diagram": false,
+   "chapter": "Chemical Bonding and Molecular Structure",
+   "topic": "Bond order",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B08",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 9,
+   "question_text": "The density of NaOH solution is 1.2 gm cm$^{-3}$. The molality of this solution is ________m. (Round off to the Nearest integer)\n[ Use : Atomic masses : Na 23.0u O: 16.0 u H:1.0 u Density of $H_2O$: 1.0g cm$^{-3}$ ]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "5",
+   "has_diagram": false,
+   "chapter": "Some Basic Concepts of Chemistry",
+   "topic": "Molality from density",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Chemistry",
+   "section": "B",
+   "q_no": 10,
+   "question_text": "For water at 100°C and 1 bar\n$\\Delta_{vap}H - \\Delta_{vap}U$ = ______ $\\times10^2$ J mol$^{-1}$ (Round off to the Nearest integer)\n[ Use: R = 8.31 J mol$^{-1}$ K$^{-1}$]\n[ Assume volume of $H_2O$(l) is much smaller than volume of $H_2O$(g). Assume $H_2O$(g) can be treated as an ideal gas]",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "31",
+   "has_diagram": false,
+   "chapter": "Chemical Thermodynamics",
+   "topic": "ΔH – ΔU",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 12,
+   "page_indices": [
+    12,
+    13
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_CHE_B10",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 1,
+   "question_text": "Let C be the set of all complex numbers. Let\n$S_1 = \\{z \\in C \\mid |z - 3 - 2i|^2 = 8\\}$,\n$S_2 = \\{z \\in C \\mid Re(z) \\ge 5\\}$ and\n$S_3 = \\{z \\in C \\mid |z - \\bar{z}| \\ge 8\\}$.\nThen the number of element in $S_1 \\cap S_2 \\cap S_3$ is equal to:",
+   "options": [
+    "0",
+    "2",
+    "1",
+    "infinite"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Complex Numbers",
+   "topic": "Loci in the complex plane",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 13,
+   "page_indices": [
+    13,
+    14
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 2,
+   "question_text": "If $\\sin\\theta + \\cos\\theta = \\frac{1}{2}$, then $16(\\sin(2\\theta) + \\cos(4\\theta) + \\sin(6\\theta))$ is equal to :",
+   "options": [
+    "27",
+    "–23",
+    "–27",
+    "23"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Trigonometric Functions and Equations",
+   "topic": "Trigonometric identities",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 13,
+   "page_indices": [
+    13,
+    14
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A02",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 3,
+   "question_text": "Let $\\vec{a} = \\hat{i} + \\hat{j} + 2\\hat{k}$ and $\\vec{b} = -\\hat{i} + 2\\hat{j} + 3\\hat{k}$. Then the vector product $(\\vec{a} + \\vec{b})\\times\\left((\\vec{a}\\times((\\vec{a} - \\vec{b})\\times\\vec{b}))\\times\\vec{b}\\right)$ is equal to :",
+   "options": [
+    "$5(34\\hat{i} - 5\\hat{j} + 3\\hat{k})$",
+    "$5(30\\hat{i} - 5\\hat{j} + 7\\hat{k})$",
+    "$7(30\\hat{i} - 5\\hat{j} + 7\\hat{k})$",
+    "$7(34\\hat{i} - 5\\hat{j} + 3\\hat{k})$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Vector Algebra",
+   "topic": "Vector triple product",
+   "difficulty": "Hard",
+   "notes": "",
+   "page_index": 13,
+   "page_indices": [
+    13,
+    14
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A03",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 4,
+   "question_text": "Let the plane passing through the point (–1, 0, –2) and perpendicular to each of the planes $2x + y - z = 2$ and $x - y - z = 3$ be $ax + by + cz + 8 = 0$. Then the value of a + b + c is equal to :",
+   "options": [
+    "4",
+    "8",
+    "5",
+    "3"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Three Dimensional Geometry",
+   "topic": "Plane perpendicular to two planes",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 13,
+   "page_indices": [
+    13,
+    14
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A04",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 5,
+   "question_text": "Let $f : \\left(-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right) \\rightarrow R$ be defined as $f(x) = \\begin{cases} (1 + |\\sin x|)^{\\frac{3a}{|\\sin x|}}, & -\\frac{\\pi}{4} < x < 0 \\\\ b, & x = 0 \\\\ e^{\\cot4x/\\cot2x}, & 0 < x < \\frac{\\pi}{4} \\end{cases}$\nIf f is continuous at x = 0, then the value of $6a + b^2$ is equal to :",
+   "options": [
+    "1 – e",
+    "e",
+    "1 + e",
+    "e – 1"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Limits, Continuity and Differentiability",
+   "topic": "Continuity, 1^∞ limits",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 13,
+   "page_indices": [
+    13,
+    14
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 6,
+   "question_text": "The compound statement $(P \\vee Q) \\wedge (\\sim P) \\Rightarrow Q$ is equivalent to :",
+   "options": [
+    "$P \\vee Q$",
+    "$P \\wedge \\sim Q$",
+    "$\\sim(P \\Rightarrow Q) \\Leftrightarrow P \\wedge \\sim Q$",
+    "$\\sim(P \\Rightarrow Q)$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Mathematical Reasoning",
+   "topic": "Tautology",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A06",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 7,
+   "question_text": "Let $A = \\{(x, y) \\in R\\times R \\mid 2x^2 + 2y^2 - 2x - 2y = 1\\}$, $B = \\{(x, y) \\in R\\times R \\mid 4x^2 + 4y^2 - 16y + 7 = 0\\}$ and $C = \\{(x, y) \\in R\\times R \\mid x^2 + y^2 - 4x - 2y + 5 \\le r^2\\}$.\nThen the minimum value of |r| such that $A \\cup B \\subseteq C$ is equal to :",
+   "options": [
+    "$1 + \\sqrt{5}$",
+    "$\\frac{3 + 2\\sqrt{5}}{2}$",
+    "$\\frac{3 + \\sqrt{10}}{2}$",
+    "$\\frac{2 + \\sqrt{10}}{2}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Circles",
+   "topic": "Circles containing circles",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A07",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 8,
+   "question_text": "Let $A = \\begin{bmatrix} 1 & 2 \\\\ -1 & 4 \\end{bmatrix}$. If $A^{-1} = \\alpha I + \\beta A$, $\\alpha, \\beta \\in R$. I is a 2 x 2 identify matrix, then $4(\\alpha - \\beta)$ is equal to :",
+   "options": [
+    "2",
+    "5",
+    "4",
+    "$\\frac{8}{3}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Matrices and Determinants",
+   "topic": "Cayley–Hamilton",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A08",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 9,
+   "question_text": "Let y = y(x) be solution of the differential equation $\\log_e\\left(\\frac{dy}{dx}\\right) = 3x + 4y$, with y(0) = 0. If $y\\left(-\\frac{2}{3}\\log_e2\\right) = \\alpha\\log_e2$, then the value of $\\alpha$ is equal to :",
+   "options": [
+    "$\\frac{1}{4}$",
+    "$-\\frac{1}{4}$",
+    "2",
+    "$-\\frac{1}{2}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Differential Equations",
+   "topic": "Variable separable",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 10,
+   "question_text": "A ray of light through (2, 1) is reflected at a point P on the y-axis and then passes through the point (5, 3). If this reflected ray is the directrix of any ellipse with eccentricity $\\frac{1}{3}$ and the distance of the nearer focus from this directrix is $\\frac{8}{\\sqrt{53}}$, then the equation of the other directrix can be :",
+   "options": [
+    "2x – 7y – 39 = 0 or 2x – 7y – 7 = 0",
+    "11x + 7y + 8 = 0 or 11x + 7y – 15 = 0",
+    "2x – 7y + 29 = 0 or 2x – 7y – 7 = 0",
+    "11x – 7y – 8 = 0 or 11x + 7y + 15 = 0"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Conic Sections",
+   "topic": "Directrix of ellipse",
+   "difficulty": "Hard",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A10",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 11,
+   "question_text": "The value of $\\lim_{n\\to\\infty}\\frac{1}{n}\\sum_{j=1}^{n}\\frac{(2j - 1) + 8n}{(2j - 1) + 4n}$ is equal to :",
+   "options": [
+    "$2 - \\log_e\\left(\\frac{2}{3}\\right)$",
+    "$1 + 2\\log_e\\left(\\frac{3}{2}\\right)$",
+    "$5 + \\log_e\\left(\\frac{3}{2}\\right)$",
+    "$3 + 2\\log_e\\left(\\frac{2}{3}\\right)$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Definite Integration",
+   "topic": "Limit as a sum",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 14,
+   "page_indices": [
+    14,
+    15
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A11",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 12,
+   "question_text": "If the area of the bounded region $R = \\left\\{(x, y) : \\max\\{0, \\log_ex\\} \\le y \\le 2^x, \\frac{1}{2} \\le x \\le 2\\right\\}$ is, $\\alpha(\\log_e2)^{-1} + \\beta(\\log_e2) + \\gamma$, then the value of $(\\alpha + \\beta - 2\\gamma)^2$ is equal to :",
+   "options": [
+    "4",
+    "8",
+    "2",
+    "1"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Area Under Curves",
+   "topic": "Area between curves",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A12",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 13,
+   "question_text": "If the coefficients of $x^7$ in $\\left(x^2 + \\frac{1}{bx}\\right)^{11}$ and $x^{-7}$ in $\\left(x - \\frac{1}{bx^2}\\right)^{11}$, b ≠ 0 are equal, then the value of b is equal to :",
+   "options": [
+    "–1",
+    "1",
+    "2",
+    "–2"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Binomial Theorem",
+   "topic": "General term",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A13",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 14,
+   "question_text": "Two tangents are drawn from the point P(–1, 1) to the circle $x^2 + y^2 - 2x - 6y + 6 = 0$. If these tangents touch the circle at points A and B, and if D is a point on the circle such that length of the segments AB and AD are equal, then the area of the triangle ABD is equal to :",
+   "options": [
+    "$3(\\sqrt{2} - 1)$",
+    "$(3\\sqrt{2} + 2)$",
+    "4",
+    "2"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "C",
+   "has_diagram": false,
+   "chapter": "Circles",
+   "topic": "Tangents and chords",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A14",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 15,
+   "question_text": "The probability that a randomly selected 2-digit number belongs to the set $\\{n \\in N : (2^n - 2)$ is a multiple of 3$\\}$ is equal to :",
+   "options": [
+    "$\\frac{2}{3}$",
+    "$\\frac{1}{2}$",
+    "$\\frac{1}{6}$",
+    "$\\frac{1}{3}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Probability",
+   "topic": "Divisibility and probability",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A15",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 16,
+   "question_text": "Let P and Q be two distinct points on a circle which has center at C(2, 3) and which passes through origin O. If OC is perpendicular to both the line segments CP and CQ, then the set {P, Q} is equal to :",
+   "options": [
+    "{(–1, 5), (5, 1)}",
+    "$\\{(2 + 2\\sqrt{2}, 3 + \\sqrt{5}), (2 - 2\\sqrt{2}, 3 - \\sqrt{5})\\}$",
+    "$\\{(2 + 2\\sqrt{2}, 3 - \\sqrt{5}), (2 - 2\\sqrt{2}, 3 + \\sqrt{5})\\}$",
+    "{(4, 0), (0, 6)}"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Circles",
+   "topic": "Points on circle",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A16",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 17,
+   "question_text": "The value of the definite integral $\\int_{-\\pi/4}^{\\pi/4}\\frac{dx}{(1 + e^{x\\cos x})(\\sin^4x + \\cos^4x)}$ is equal to :",
+   "options": [
+    "$-\\frac{\\pi}{4}$",
+    "$\\frac{\\pi}{2\\sqrt{2}}$",
+    "$-\\frac{\\pi}{2}$",
+    "$\\frac{\\pi}{\\sqrt{2}}$"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "B",
+   "has_diagram": false,
+   "chapter": "Definite Integration",
+   "topic": "Property f(x) + f(–x)",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A17",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 18,
+   "question_text": "Let f : R → R be a function such that f(2) = 4 and f'(2) = 1. Then the value of $\\lim_{x\\to2}\\frac{x^2f(2) - 4f(x)}{x - 2}$ is equal to :",
+   "options": [
+    "12",
+    "4",
+    "16",
+    "8"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Limits, Continuity and Differentiability",
+   "topic": "Limits using derivative",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 15,
+   "page_indices": [
+    15,
+    16
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A18",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 19,
+   "question_text": "Let $\\alpha$, $\\beta$ be two roots of the equation $x^2 + (20)^{\\frac{1}{4}}x + (5)^{\\frac{1}{2}} = 0$ Then $\\alpha^8 + \\beta^8$ is equal to :",
+   "options": [
+    "50",
+    "100",
+    "10",
+    "160"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "A",
+   "has_diagram": false,
+   "chapter": "Quadratic Equations",
+   "topic": "Power sums of roots",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 16,
+   "page_indices": [
+    16,
+    17
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A19",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "A",
+   "q_no": 20,
+   "question_text": "If the mean and variance of the following data : 6, 10, 7, 13, a, 12, b, 12 are 9 and $\\frac{37}{4}$ respectively, then $(a - b)^2$ is equal to :",
+   "options": [
+    "32",
+    "24",
+    "12",
+    "16"
+   ],
+   "question_type": "MCQ-Single",
+   "question_style": "Standard",
+   "answer": "D",
+   "has_diagram": false,
+   "chapter": "Statistics",
+   "topic": "Mean and variance",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 16,
+   "page_indices": [
+    16,
+    17
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_A20",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 1,
+   "question_text": "If y = y(x), $y \\in \\left[0, \\frac{\\pi}{2}\\right]$ is the solution of the differential equation $\\sec y\\frac{dy}{dx} - \\sin(x + y) - \\sin(x - y) = 0$, with y(0) = 0, then $5y'\\left(\\frac{\\pi}{2}\\right)$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "2",
+   "has_diagram": false,
+   "chapter": "Differential Equations",
+   "topic": "Variable separable",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B01",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 2,
+   "question_text": "For real numbers $\\alpha$ and $\\beta$, consider the following system of linear equations: $x + y - z = 2$, $x + 2y + \\alpha z = 1$, $2x - y + z = \\beta$. If the system has infinite solutions, then $\\alpha + \\beta$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "5",
+   "has_diagram": false,
+   "chapter": "Matrices and Determinants",
+   "topic": "System of linear equations",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B02",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 3,
+   "question_text": "Let a plane P pass through the point (3, 7, –7) and contain the line, $\\frac{x - 2}{-3} = \\frac{y - 3}{2} = \\frac{z + 2}{1}$. If distance of the plane P from the origin is d, then $d^2$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "3",
+   "has_diagram": false,
+   "chapter": "Three Dimensional Geometry",
+   "topic": "Plane containing a line",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B03",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 4,
+   "question_text": "Let F : [3, 5] → R be a twice differentiable function on (3, 5) such that $F(x) = e^{-x}\\int_3^x(3t^2 + 2t + 4F'(t))dt$.\nIf $F'(4) = \\frac{\\alpha e^{\\beta} - 224}{(e^{\\beta} - 4)^2}$, then $\\alpha + \\beta$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "16",
+   "has_diagram": false,
+   "chapter": "Differential Equations",
+   "topic": "Integral equation to differential equation",
+   "difficulty": "Hard",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B04",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 5,
+   "question_text": "Let $f(x) = \\begin{vmatrix} \\sin^2x & -2 + \\cos^2x & \\cos2x \\\\ 2 + \\sin^2x & \\cos^2x & \\cos2x \\\\ \\sin^2x & \\cos^2x & 1 + \\cos2x \\end{vmatrix}$, $x \\in [0, \\pi]$.\nThen the maximum value of f(x) is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "6",
+   "has_diagram": false,
+   "chapter": "Matrices and Determinants",
+   "topic": "Trigonometric determinant",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B05",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 6,
+   "question_text": "Let $\\vec{a} = \\hat{i} + \\hat{j} + \\hat{k}$, $\\vec{b}$ and $\\vec{c} = \\hat{j} - \\hat{k}$ be three vectors such that $\\vec{a}\\times\\vec{b} = \\vec{c}$ and $\\vec{a}\\cdot\\vec{b} = 1$. If the length of projection vector of the vector $\\vec{b}$ on the vector $\\vec{a}\\times\\vec{c}$ is $l$, then the value of $3l^2$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "2",
+   "has_diagram": false,
+   "chapter": "Vector Algebra",
+   "topic": "Projection",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B06",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 7,
+   "question_text": "Let f : [0, 3] → R be defined by f(x) = min{x – [x], 1 + [x] – x}\nWhere [x] is the greatest integer less than or equal to x.\nLet P denote the set containing all x ∈ [0, 3] where f is discontinuous, and Q denote the set containing all x ∈ (0, 3) where f is not differentiable. Then the sum of number of elements in P and Q is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "5",
+   "has_diagram": false,
+   "chapter": "Limits, Continuity and Differentiability",
+   "topic": "Continuity and differentiability",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B07",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 8,
+   "question_text": "Let S = {1,2,3,4,5,6,7}. Then the number of possible function f : S → S such that f(m . n) = f(m) . f(n) for every m, n ∈ S and m . n ∈ S is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "490",
+   "has_diagram": false,
+   "chapter": "Sets, Relations and Functions",
+   "topic": "Counting functions",
+   "difficulty": "Hard",
+   "notes": "",
+   "page_index": 17,
+   "page_indices": [
+    17,
+    18
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B08",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 9,
+   "question_text": "Let the domain of the function $f(x) = \\log_4(\\log_5(\\log_3(18x - x^2 - 77)))$ be (a, b). Then the value of the integral $\\int_a^b\\frac{\\sin^3x}{(\\sin^3x + \\sin^3(a + b - x))}dx$ is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "1",
+   "has_diagram": false,
+   "chapter": "Definite Integration",
+   "topic": "King property and domain",
+   "difficulty": "Medium",
+   "notes": "",
+   "page_index": 18,
+   "page_indices": [
+    18,
+    19
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B09",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  },
+  {
+   "subject": "Mathematics",
+   "section": "B",
+   "q_no": 10,
+   "question_text": "If $\\log_32$, $\\log_3(2^x - 5)$, $\\log_3\\left(2^x - \\frac{7}{2}\\right)$ are in an arithmetic progression, then the value of x is equal to________.",
+   "options": [],
+   "question_type": "Numerical",
+   "question_style": "Standard",
+   "answer": "3",
+   "has_diagram": false,
+   "chapter": "Sequences and Series",
+   "topic": "AP with logarithms",
+   "difficulty": "Easy",
+   "notes": "",
+   "page_index": 18,
+   "page_indices": [
+    18,
+    19
+   ],
+   "diagram_boxes": [],
+   "answer_source": "answer key page",
+   "model_confidence": "high",
+   "q_id": "JEEM_2021-07-27_M_MAT_B10",
+   "diagram_files": [],
+   "text_recall": null,
+   "issues": [],
+   "confidence": 1.0
+  }
+ ]
+}

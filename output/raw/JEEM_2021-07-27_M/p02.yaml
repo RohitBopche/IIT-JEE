@@ -1,0 +1,91 @@
+- n: 1
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two identical tennis balls each having mass 'm' and charge 'q' are suspended from a fixed point by threads of length 'l'. What is the equilibrium separation when each thread makes a small angle '$\theta$' with the vertical ?
+  o: ['$x = \left(\frac{q^2l}{2\pi\varepsilon_0mg}\right)^{\frac{1}{2}}$', '$x = \left(\frac{q^2l}{2\pi\varepsilon_0mg}\right)^{\frac{1}{3}}$', '$x = \left(\frac{q^2l^2}{2\pi\varepsilon_0m^2g^2}\right)^{\frac{1}{3}}$', '$x = \left(\frac{q^2l^2}{2\pi\varepsilon_0m^2g}\right)^{\frac{1}{3}}$']
+  ch: Electrostatics
+  tp: Equilibrium of charged pendulums
+  df: M
+- n: 2
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Match
+  q: |-
+    List – I: (a) MI of the rod (length L, Mass M, about an axis ⊥ to the rod Passing through the midpoint); (b) MI of the rod (length L, Mass 2M, about an axis ⊥ to the rod Passing through one of its end); (c) MI of the rod (length 2L, Mass M, about an axis ⊥ to the rod Passing through its midpoint); (d) MI of the rod (length 2L, Mass 2M, about an axis ⊥ to the rod Passing through one of its end)
+    List – II: (i) $8ML^2/3$; (ii) $ML^2/12$; (iii) $ML^2/12$; (iv) $2ML^2/3$
+    Choose the correct answer from the options given below :
+  o: ['(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)', '(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)', '(a)-(iii), (b)-(iv), (c)-(ii), (d)-(i)', '(a)-(ii), (b)-(iii), (c)-(i), (d)-(iv)']
+  ch: Rotational Motion
+  tp: Moment of inertia of rods
+  df: M
+  c: m
+  nt: 'List-II (iii) printed as ML^2/12 (likely ML^2/3); options B and C are printed identically'
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The figure shows two solid discs with radius R and r respectively. If mass per unit area is same for both, what is the ratio of MI of bigger disc around axis AB (which is ⊥ to the plane of the disc and passing through its centre) to MI of smaller disc around one of its diameters lying on its plane? Given 'M' is the mass of the larger disc. (MI stands for moment of inertia)
+    [figure: large disc radius R with concentric small disc radius r; axis AB perpendicular, CD a diameter]
+  o: ['$R^2 : r^2$', '$2r^4 : R^4$', '$2R^4 : r^4$', '$2R^2 : r^2$']
+  ch: Rotational Motion
+  tp: Moment of inertia of discs
+  df: M
+  fig: [[2, 685, 620, 900, 910]]
+- n: 4
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In the given figure, a battery of emf E is connected across a conductor PQ of length 'l' and different area of cross- sections by having radii $r_1$ and $r_2$ ($r_2 < r_1$).
+    Choose the correct option as one moves from P to Q :
+    [figure: tapered conductor PQ (radius r1 at P, r2 at Q) connected to battery E and key K]
+  o: ['All of these', 'Electron current decreases.', 'Drift velocity of electron increases.', 'Electric field decreases.']
+  ch: Current Electricity
+  tp: Drift velocity in non-uniform conductor
+  df: E
+  fig: [[3, 90, 730, 205, 910]]
+- n: 5
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A capacitor of capacitance C = 1$\mu$F is suddenly connected to a battery of 100 volt through a resistance R = 100$\Omega$. The time taken for the capacitor to be charged to get 50V is : [Take ln2 = 0.69 ]
+  o: ['$3.33\times10^{-4}$ s', '$1.44\times10^{-4}$ s', '$0.30\times10^{-4}$ s', '$0.69\times10^{-4}$ s']
+  ch: Capacitance
+  tp: RC charging
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Three objects A, B and c are kept in a straight line on a frictionless horizontal surface. The masses of A, B and C are m, 2 and 2 m respectively. A moves towards B with a speed of 9m/s and makes an elastic collision with it. Thereafter B makes a completely inelastic collision with C. all motions occur along same straight line. The final speed of C is :
+    [figure: blocks A (m), B (2m), C (2m) in a line]
+  o: ['4 m /s', '6 m /s', '9 m /s', '3 m /s']
+  ch: Centre of Mass and System of Particles
+  tp: Elastic and inelastic collisions
+  df: M
+  fig: [[3, 425, 600, 475, 910]]
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In the reported figure, a capacitor is formed by placing a compound dielectric between the plates of parallel plate capacitor. The expression for the capacity of the said capacitor will be : (Given area of plate = A)
+    [figure: three dielectric slabs in series: K (thickness d), 3K (2d), 5K (3d)]
+  o: ['$\frac{15}{34}\frac{K\varepsilon_0A}{d}$', '$\frac{15}{6}\frac{K\varepsilon_0A}{d}$', '$\frac{25}{6}\frac{K\varepsilon_0A}{d}$', '$\frac{9}{6}\frac{K\varepsilon_0A}{d}$']
+  ch: Capacitance
+  tp: Dielectrics in series
+  df: M
+  fig: [[3, 600, 610, 760, 800]]
