@@ -1,0 +1,200 @@
+P A 1: |-
+  Concept: A silicon diode conducts only in forward bias and then drops about 0.7 V.
+  Given: +ve terminal at X (left node), –ve at Y (right node). $D_1$ (with 10 Ω) points from X towards Y; $D_2$ (with 5 Ω) points the other way.
+  Solution:
+  1. $D_1$ is forward biased and conducts; $D_2$ is reverse biased and carries no current.
+  2. $I = \frac{5 - 0.7}{10} = 0.43$ A.
+  Answer: (C)
+P A 2: |-
+  Concept: Superposition: sphere with cavity = full sphere – the mass that would fill the cavity.
+  Given: the cavity of radius R/2 is centred at R/2 from O, on the line towards the particle at 3R.
+  Solution:
+  1. Full sphere: $F_1 = \frac{GMm}{9R^2}$.
+  2. Cavity mass $= \frac{M}{8}$; its centre is $3R - \frac{R}{2} = \frac{5R}{2}$ from the particle: $F_c = \frac{G(M/8)m}{25R^2/4} = \frac{GMm}{50R^2}$.
+  3. $F_2 = F_1 - F_c = \frac{GMm}{R^2}\left(\frac{1}{9} - \frac{1}{50}\right) = \frac{41}{450}\frac{GMm}{R^2}$.
+  4. $F_1 : F_2 = \frac{1}{9} : \frac{41}{450} = 50 : 41$.
+  Note: the printed key shows (1) = 41 : 50, but its own working gives 50 : 41 (option 3), which is also the NTA answer.
+  Answer: (C)
+P A 3: |-
+  Concept: Resonance tube (closed at one end): first resonance at $l_1 + e = \frac{\lambda}{4}$, with end correction e = 0.3d.
+  Solution:
+  1. $\lambda = \frac{336}{504} = 0.667$ m, so $\frac{\lambda}{4} = 16.67$ cm.
+  2. End correction e = 0.3 × 6 = 1.8 cm.
+  3. Water level reading $l_1 = 16.67 - 1.8 \approx 14.8$ cm.
+  Answer: (B)
+P A 4: |-
+  Concept: At constant pressure: $dQ = nC_pdT$, $dU = nC_vdT$, $dW = nR\,dT$.
+  Solution:
+  1. dU : dQ : dW $= \frac{5}{2}R : \frac{7}{2}R : R = 5 : 7 : 2$.
+  Answer: (B)
+P A 5: |-
+  Concept: Amplitude modulation: side bands at $f_c \pm f_m$ and bandwidth $2f_m$.
+  Solution:
+  1. Bandwidth = 2 × 2 kHz = 4 kHz, so Statement I is true.
+  2. Side bands: 1000 ± 2 kHz = 1002 kHz and 998 kHz, so Statement II is true.
+  Answer: (D)
+P A 6: |-
+  Concept: At t = 0 an inductor acts as an open circuit; at t = ∞ (steady state) as a short circuit.
+  Solution:
+  1. t = 0 (L open): from the battery, the left path is 5 Ω + 1 Ω = 6 Ω and the right path is 5 Ω + 4 Ω = 9 Ω, in parallel: $R = \frac{6\times9}{15} = 3.6$ Ω, so $i = \frac{E}{3.6} = \frac{5E}{18}$.
+  2. t = ∞ (L short): the left and right outer nodes are joined, so the top resistors 5 ∥ 5 = 2.5 Ω are in series with the bottom 1 ∥ 4 = 0.8 Ω: R = 3.3 Ω, so $i = \frac{E}{3.3} = \frac{10E}{33}$.
+  Answer: (C)
+P A 7: |-
+  Concept: Orbital period $T = 2\pi\sqrt{\frac{r^3}{GM}}$, independent of the satellite's mass.
+  Solution:
+  1. $r_A$ = 7000 km, $r_B$ = 8000 km, $GM = 6.67\times10^{-11}\times6\times10^{24} = 4.0\times10^{14}$ SI.
+  2. $T_A = 2\pi\sqrt{\frac{(7\times10^6)^3}{4\times10^{14}}} \approx 5.82\times10^3$ s; $T_B = 2\pi\sqrt{\frac{(8\times10^6)^3}{4\times10^{14}}} \approx 7.11\times10^3$ s.
+  3. $T_B - T_A \approx 1.3\times10^3$ s, closest to option (C), $1.33\times10^3$ s.
+  Answer: (C)
+P A 8: |-
+  Concept: Uniform acceleration: $v^2 = u^2 + 2as$.
+  Solution:
+  1. For the whole train length L: $v^2 = u^2 + 2aL$.
+  2. For the middle point: $v_m^2 = u^2 + 2a\frac{L}{2} = u^2 + \frac{v^2 - u^2}{2} = \frac{u^2 + v^2}{2}$.
+  3. $v_m = \sqrt{\frac{v^2 + u^2}{2}}$.
+  Answer: (C)
+P A 9: |-
+  Concept: Magnetic force F = qvB, with $v = \frac{p}{m}$.
+  Solution:
+  1. Proton, deuteron, α: q = 1 : 1 : 2 and m = 1 : 2 : 4.
+  2. Same p, so $v \propto \frac{1}{m}$: 1 : ½ : ¼ = 4 : 2 : 1.
+  3. $F \propto \frac{q}{m}$: 1 : ½ : ½ = 2 : 1 : 1.
+  Answer: (A)
+P A 10: |-
+  Concept: Thermal stress arises only when thermal expansion is prevented.
+  Solution:
+  1. A rod lying freely can expand without restraint, so no thermal stress is developed. A is true.
+  2. On heating the length does increase, so R is true, but mere expansion does not explain the absence of stress (the reason is that the expansion is unrestricted).
+  Answer: (C)
+P A 11: |-
+  Concept: For a regular polygon with centre O, the sum of the position vectors of all vertices from O is zero.
+  Solution:
+  1. $\vec{AX} = \vec{OX} - \vec{OA}$ for each vertex X; including $\vec{AA} = \vec{0}$ changes nothing.
+  2. Sum over all 8 vertices $= \sum\vec{OX} - 8\vec{OA} = 0 + 8\vec{AO}$.
+  3. $= 8(2\hat{i} + 3\hat{j} - 4\hat{k}) = 16\hat{i} + 24\hat{j} - 32\hat{k}$.
+  Answer: (A)
+P A 12: |-
+  Concept: After n half-lives, $N = \frac{N_0}{2^n}$.
+  Solution:
+  1. Time = 3 half-lives of Y = 6 half-lives of X.
+  2. $\frac{N_1}{2^6} = \frac{N_2}{2^3} \Rightarrow \frac{N_1}{N_2} = \frac{64}{8} = 8$.
+  Answer: (A)
+P A 13: |-
+  Concept: Dimensional formulas.
+  Solution:
+  1. $h = \frac{E}{\nu}$: $[ML^2T^{-1}]$, (a)–(ii).
+  2. Kinetic energy: $[ML^2T^{-2}]$, (b)–(iii).
+  3. Potential $V = \frac{W}{q} = \frac{[ML^2T^{-2}]}{[IT]} = [ML^2I^{-1}T^{-3}]$, (c)–(iv).
+  4. Momentum: $[MLT^{-1}]$, (d)–(i).
+  Answer: (A)
+P A 14: |-
+  Concept: Screw gauge: least count = pitch / divisions; subtract the zero error.
+  Solution:
+  1. Least count = 1 mm / 100 = 0.01 mm.
+  2. Zero error: with the jaws closed the circular zero is 8 divisions below the reference line, a positive error of +0.08 mm.
+  3. Reading = 1 mm + 72 × 0.01 = 1.72 mm; corrected diameter = 1.72 – 0.08 = 1.64 mm.
+  4. Radius = 0.82 mm.
+  Answer: (C)
+P A 15: |-
+  Concept: $T = 2\pi\sqrt{\frac{L}{g}} \Rightarrow g = \frac{4\pi^2L}{T^2}$.
+  Solution:
+  1. $g = \frac{4\pi^2\times2}{2^2} = 2\pi^2$ m/s².
+  Answer: (A)
+P A 16: |-
+  Concept: For a charge accelerated through V: $\lambda = \frac{h}{\sqrt{2mqV}}$.
+  Solution:
+  1. $\frac{\lambda_p}{\lambda_\alpha} = \sqrt{\frac{m_\alpha q_\alpha}{m_pq_p}} = \sqrt{4\times2} = 2\sqrt{2} \approx 2.8$.
+  Answer: (B)
+P A 17: |-
+  Concept: Escape velocity $v_e = \sqrt{\frac{2GM}{R}}$.
+  Solution:
+  1. Equal escape velocities need equal $\frac{M}{R}$, which is possible for unequal masses, so A is correct.
+  2. R claims $M_1R_1 = M_2R_2$, which is wrong; the condition is $\frac{M_1}{R_1} = \frac{M_2}{R_2}$.
+  Answer: (B)
+P A 18: |-
+  Concept: In a series AC circuit the same rms current flows through each element: $V_R = IR$, $V_L = IX_L$, $V_C = IX_C$.
+  Solution:
+  1. With the key open, the R' branch carries no current. From the resistor: $I = \frac{15}{60} = \frac{1}{4}$ A.
+  2. $X_L = \frac{20}{1/4} = 80$ Ω, so $L = \frac{80}{100} = 0.8$ H.
+  3. $X_C = \frac{10}{1/4} = 40$ Ω, so $C = \frac{1}{100\times40} = 250$ μF.
+  Answer: (A)
+P A 19: |-
+  Concept: $I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$ and $I_{min} = (\sqrt{I_1} - \sqrt{I_2})^2$.
+  Solution:
+  1. $\frac{I_{max} - I_{min}}{I_{max} + I_{min}} = \frac{4\sqrt{I_1I_2}}{2(I_1 + I_2)} = \frac{2\sqrt{I_1I_2}}{I_1 + I_2}$.
+  2. With $I_1 = 2xI_2$: $= \frac{2\sqrt{2x}}{2x + 1}$.
+  Answer: (C)
+P A 20: |-
+  Concept: Field on the axis of a coil: $B = \frac{\mu_0NIR^2}{2(R^2 + x^2)^{3/2}}$.
+  Solution:
+  1. $\frac{B_1}{B_2} = \left(\frac{R^2 + 0.04}{R^2 + 0.0025}\right)^{3/2} = 8$, so $\frac{R^2 + 0.04}{R^2 + 0.0025} = 4$.
+  2. $R^2 + 0.04 = 4R^2 + 0.01 \Rightarrow 3R^2 = 0.03 \Rightarrow R = 0.1$ m.
+  Answer: (C)
+P B 1: |-
+  Concept: Two object positions giving images of the same size: one image is real (inverted) and one virtual (erect), so m₁ = –m₂. For a lens, $m = \frac{f}{f + u}$.
+  Solution:
+  1. u = –20: $m_1 = \frac{f}{f - 20}$; u = –10: $m_2 = \frac{f}{f - 10}$.
+  2. $\frac{f}{f - 20} = -\frac{f}{f - 10} \Rightarrow f - 10 = -(f - 20) \Rightarrow 2f = 30$.
+  3. f = 15 cm.
+  Answer: 15
+P B 2: |-
+  Concept: Flux through a flat surface $\phi = \vec{E}\cdot\vec{A}$.
+  Solution:
+  1. Surface parallel to the y-z plane has area vector along $\hat{i}$: $\phi_a = \frac{3}{5}E_0\times0.2 = 0.12E_0$.
+  2. Surface parallel to the x-z plane has area vector along $\hat{j}$: $\phi_b = \frac{4}{5}E_0\times0.3 = 0.24E_0$.
+  3. a : b = 0.12 : 0.24 = 0.5 : 1, so a = 0.5 (with b = 1).
+  Answer: 0.5
+P B 3: |-
+  Concept: Charge is conserved and volume is conserved; the potential of a sphere is $V = \frac{kQ}{R}$.
+  Solution:
+  1. Volume: $\frac{4}{3}\pi R^3 = 512\times\frac{4}{3}\pi r^3 \Rightarrow R = 8r$.
+  2. Charge: Q = 512q.
+  3. $V = \frac{k(512q)}{8r} = 64\frac{kq}{r} = 64\times2 = 128$ V.
+  Answer: 128
+P B 4: |-
+  Concept: Equilibrium where the force $F = -\frac{dU}{dr} = 0$.
+  Solution:
+  1. $\frac{dU}{dr} = -\frac{10\alpha}{r^{11}} + \frac{5\beta}{r^6} = 0 \Rightarrow r^5 = \frac{2\alpha}{\beta}$.
+  2. $r = \left(\frac{2\alpha}{\beta}\right)^{1/5}$, so $\frac{a}{b} = \frac{1}{5}$ and a = 1.
+  Answer: 1
+P B 5: |-
+  Concept: Vertical circle: $T_{bottom} - T_{top} = 6mg$, and $T_{top} = \frac{mv_{top}^2}{l} - mg$.
+  Solution:
+  1. $T_{bottom} = 5T_{top}$, and $T_{bottom} - T_{top} = 6mg$, so $4T_{top} = 6mg$ and $T_{top} = 1.5mg$.
+  2. $\frac{mv^2}{l} - mg = 1.5mg \Rightarrow v^2 = 2.5gl = 2.5\times10\times1 = 25$.
+  3. v = 5 m/s.
+  Answer: 5
+P B 6: |-
+  Concept: Polytropic process $PV^x$ = constant: $W = \frac{nR(T_1 - T_2)}{x - 1}$.
+  Solution:
+  1. $P = kV^3 \Rightarrow PV^{-3}$ = constant, so x = –3.
+  2. $W = \frac{nR(373 - 573)}{-3 - 1} = \frac{-200nR}{-4} = 50nR$.
+  Answer: 50
+P B 7: |-
+  Concept: Potentiometer: emf is proportional to the balancing length, $\frac{E_1}{E_2} = \frac{l_1}{l_2}$.
+  Solution:
+  1. The 10 m wire is folded into 1 m segments; measure lengths along the wire from A.
+  2. $J_1$: 3 full metres + (100 – 20) cm = 380 cm.
+  3. $J_2$: 7 full metres + 60 cm = 760 cm.
+  4. $\frac{E_1}{E_2} = \frac{380}{760} = \frac{1}{2}$, so a = 1.
+  Answer: 1
+P B 8: |-
+  Concept: When the container stops suddenly, the bulk kinetic energy of the gas becomes internal energy: $\frac{1}{2}Mv^2 = nC_v\Delta T$.
+  Solution:
+  1. Per mole of a monoatomic gas: $\frac{1}{2}Mv^2 = \frac{3}{2}R\Delta T \Rightarrow \Delta T = \frac{Mv^2}{3R}$.
+  2. Taking M = 4 (as the official solution does): $\Delta T = \frac{4\times900}{3R} = \frac{1200}{R} = \frac{3600}{3R}$, so x = 3600.
+  Note: with M = 4 g/mol in SI units ($4\times10^{-3}$ kg), x would be 3.6; the official answer is 3600.
+  Answer: 3600
+P B 9: |-
+  Concept: For a pure inductor $V = L\frac{di}{dt}$ and stored energy $U = \frac{1}{2}Li^2$.
+  Solution:
+  1. $2\frac{di}{dt} = 3t \Rightarrow i = \frac{3t^2}{4}$. At t = 4 s: i = 12 A.
+  2. $U = \frac{1}{2}\times2\times12^2 = 144$ J.
+  Answer: 144
+P B 10: |-
+  Concept: LC resonance: $f = \frac{1}{2\pi\sqrt{LC}}$, with $f = \frac{c}{\lambda}$.
+  Solution:
+  1. $f = \frac{3\times10^8}{960} = 3.125\times10^5$ Hz.
+  2. $L = \frac{1}{4\pi^2f^2C}$. The official solution uses $C = 2.56\ \mu F$ and $\pi^2 \approx 10$: $L = \frac{960^2}{40\times9\times10^{16}\times2.56\times10^{-6}} = 10^{-7}$ H $= 10\times10^{-8}$ H.
+  Note: with C = 256 μF as printed, L ≈ $1.0\times10^{-9}$ H (0.1 × 10⁻⁸); the official answer 10 treats the capacitance as 2.56 μF.
+  Answer: 10

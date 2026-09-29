@@ -1,0 +1,220 @@
+M A 1: |-
+  Concept: Equal roots require discriminant $b^2 = 4ac$; count favourable outcomes out of $6^3 = 216$.
+  Solution:
+  1. b = 2: ac = 1 → (1, 1): 1 way.
+  2. b = 4: ac = 4 → (1, 4), (4, 1), (2, 2): 3 ways.
+  3. b = 6: ac = 9 → (3, 3): 1 way.
+  4. Odd b is impossible ($b^2$ must be even), and b = 2, 4, 6 give 5 ways in total.
+  5. Probability = $\frac{5}{216}$.
+  Answer: (D)
+M A 2: |-
+  Concept: Solve the two direction-cosine equations simultaneously.
+  Solution:
+  1. n = l + m, so $l^2 + m^2 = (l + m)^2 \Rightarrow lm = 0$.
+  2. l = 0: m = n, giving direction $\frac{1}{\sqrt{2}}(0, 1, 1)$. m = 0: l = n, giving $\frac{1}{\sqrt{2}}(1, 0, 1)$.
+  3. $\cos\alpha = \frac{1}{2}$, so α = 60°.
+  4. $\sin^4\alpha + \cos^4\alpha = \frac{9}{16} + \frac{1}{16} = \frac{5}{8}$.
+  Answer: (C)
+M A 3: |-
+  Concept: Simplify the trigonometric factors, then substitute $t = 2\sin^6\theta + 3\sin^4\theta + 6\sin^2\theta$.
+  Solution:
+  1. $\frac{\sin\theta\cdot\sin2\theta}{1 - \cos2\theta} = \frac{\sin\theta\cdot2\sin\theta\cos\theta}{2\sin^2\theta} = \cos\theta$. With s = sin θ, the integrand is $\cos\theta\,(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6}$.
+  2. Move one factor s inside the root: $(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6} = (s^5 + s^3 + s)\sqrt{2s^6 + 3s^4 + 6s^2}$.
+  3. Let $t = 2s^6 + 3s^4 + 6s^2$; then $dt = 12(s^5 + s^3 + s)\cos\theta\,d\theta$.
+  4. Integral $= \frac{1}{12}\int\sqrt{t}\,dt = \frac{1}{18}t^{3/2} + c$.
+  5. With $s^2 = 1 - \cos^2\theta$: $t = 11 - 18\cos^2\theta + 9\cos^4\theta - 2\cos^6\theta$.
+  Answer: (C)
+M A 4: |-
+  Concept: Heights and distances with a tower of height h.
+  Solution:
+  1. At A (30°): distance from the base $= h\sqrt{3}$; at B (45°): distance = h.
+  2. The boat covers $h(\sqrt{3} - 1)$ in 20 s, so its speed is $\frac{h(\sqrt{3} - 1)}{20}$.
+  3. Time from B to the base $= \frac{h}{\text{speed}} = \frac{20}{\sqrt{3} - 1} = 10(\sqrt{3} + 1)$ s.
+  Answer: (D)
+M A 5: |-
+  Concept: Infinite geometric series.
+  Solution:
+  1. $x = \frac{1}{1 - \cos^2\theta}$, $y = \frac{1}{1 - \sin^2\phi}$, $z = \frac{1}{1 - \cos^2\theta\sin^2\phi}$.
+  2. $\cos^2\theta = 1 - \frac{1}{x}$ and $\sin^2\phi = 1 - \frac{1}{y}$.
+  3. $\frac{1}{z} = 1 - \left(1 - \frac{1}{x}\right)\left(1 - \frac{1}{y}\right) = \frac{1}{x} + \frac{1}{y} - \frac{1}{xy}$.
+  4. Multiply by xyz: $xy = z(x + y - 1) \Rightarrow xy + z = (x + y)z$.
+  Answer: (D)
+M A 6: |-
+  Concept: Perpendicular lines have direction ratios with zero dot product.
+  Solution:
+  1. The given direction is (2, 3, –2). Test the options: (–3, 4, 3): –6 + 12 – 6 = 0 ✓.
+  2. (3, 4, 3) gives 12, (3, –4, 3) gives –12, (3, 4, –3) gives 24, so none of those are perpendicular.
+  3. All options pass through (0, 1, 2), so the answer is $\frac{x}{-3} = \frac{y - 1}{4} = \frac{z - 2}{3}$.
+  Answer: (A)
+M A 7: |-
+  Concept: Two statements are equivalent if they have the same truth table.
+  Solution:
+  1. $A \rightarrow (B \rightarrow A)$ is a tautology: if A is true, then B → A is true.
+  2. $A \rightarrow (A \vee B)$ is also a tautology (A true makes A ∨ B true), so they are equivalent.
+  3. The others fail for A true, B false.
+  Answer: (B)
+M A 8: |-
+  Concept: A quadratic with positive leading coefficient is positive for all real x iff its discriminant is negative.
+  Solution:
+  1. $D = 4(3k - 1)^2 - 4(8k^2 - 7) < 0 \Rightarrow k^2 - 6k + 8 < 0$.
+  2. (k – 2)(k – 4) < 0, so 2 < k < 4 and the integer is k = 3.
+  Answer: (A)
+M A 9: |-
+  Concept: Tangent to $y^2 = 4ax$ with slope m: $y = mx + \frac{a}{m}$.
+  Solution:
+  1. Here 4a = 6, so $a = \frac{3}{2}$. Perpendicular to 2x + y = 1 (slope –2), so $m = \frac{1}{2}$.
+  2. Tangent: $y = \frac{x}{2} + 3$.
+  3. Check: (0, 3) ✓, (–6, 0) ✓, (4, 5) ✓, but (5, 4) gives 5.5 ≠ 4 ✗.
+  Answer: (D)
+M A 10: |-
+  Concept: Iterate the functional equation, then test each statement.
+  Solution:
+  1. f(n) = n·f(1), which is strictly increasing, so f is one-one: (A) is true.
+  2. If f∘g is one-one then g must be one-one: (B) is true.
+  3. If f is onto, 1 must be in the range, so f(1) = 1 and f(n) = n: (D) is true.
+  4. g onto does not make f∘g one-one; for example g(1) = g(2) = 1 with g onto on the rest. So (C) is NOT true.
+  Answer: (C)
+M A 11: |-
+  Concept: Normals to a circle meet at its centre; the radius equals the distance from the centre to a tangent.
+  Solution:
+  1. With z = x + iy: $(2 - i)z - (2 + i)\bar{z} = 0$ becomes x = 2y; the second line becomes x + 2y = 2.
+  2. Centre: (1, ½).
+  3. Tangent $iz + \bar{z} + 1 + i = 0$ gives $(x - y + 1)(1 + i) = 0$, i.e. x – y + 1 = 0.
+  4. $r = \frac{|1 - \frac{1}{2} + 1|}{\sqrt{2}} = \frac{3}{2\sqrt{2}}$.
+  Answer: (C)
+M A 12: |-
+  Concept: Factorise: $\sin2\theta + \tan2\theta = \tan2\theta(\cos2\theta + 1) = 2\cos^2\theta\tan2\theta$.
+  Solution:
+  1. $2\cos^2\theta \ge 0$, so we need tan 2θ > 0 (with cos θ ≠ 0).
+  2. $2\theta \in (0, \frac{\pi}{2}) \cup (\pi, \frac{3\pi}{2}) \cup (2\pi, \frac{5\pi}{2}) \cup (3\pi, \frac{7\pi}{2})$.
+  3. $\theta \in (0, \frac{\pi}{4}) \cup (\frac{\pi}{2}, \frac{3\pi}{4}) \cup (\pi, \frac{5\pi}{4}) \cup (\frac{3\pi}{2}, \frac{7\pi}{4})$.
+  Answer: (B)
+M A 13: |-
+  Concept: Image of $(x_1, y_1)$ in ax + by + c = 0: $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{-2(ax_1 + by_1 + c)}{a^2 + b^2}$.
+  Solution:
+  1. $\frac{x - 3}{1} = \frac{y - 5}{-1} = \frac{-2(3 - 5 + 1)}{2} = 1$, so the image is (4, 4).
+  2. Check (A): $(4 - 2)^2 + (4 - 4)^2 = 4$ ✓.
+  Answer: (A)
+M A 14: |-
+  Concept: Rolle's theorem requires f(1) = f(2) and f'(c) = 0.
+  Solution:
+  1. f(1) = f(2): $-3 - a + b = 4 - 4a + 2b \Rightarrow 3a - b = 7$.
+  2. $f'(\frac{4}{3}) = 0$: $\frac{16}{3} - \frac{8a}{3} + b = 0 \Rightarrow 8a - 3b = 16$.
+  3. Solving: a = 5, b = 8.
+  Answer: (B)
+M A 15: |-
+  Concept: Two central conics cut orthogonally when their product of slopes at the intersection is –1, which reduces to a confocal-type condition.
+  Solution:
+  1. Subtracting the equations at an intersection: $x^2\left(\frac{1}{a} - \frac{1}{c}\right) + y^2\left(\frac{1}{b} - \frac{1}{d}\right) = 0$.
+  2. Slopes: $m_1 = -\frac{bx}{ay}$ and $m_2 = -\frac{dx}{cy}$; $m_1m_2 = -1 \Rightarrow \frac{bd\,x^2}{ac\,y^2} = -1$.
+  3. From step 1, $\frac{x^2}{y^2} = -\frac{(d - b)ac}{(c - a)bd}$. Substituting: $\frac{d - b}{c - a} = 1 \Rightarrow a - b = c - d$.
+  Answer: (B)
+M A 16: |-
+  Concept: $1^\infty$ form: $\lim(1 + f)^g = e^{\lim fg}$.
+  Solution:
+  1. $H_n = 1 + \frac{1}{2} + \ldots + \frac{1}{n} \approx \ln n$.
+  2. $\lim n\cdot\frac{H_n}{n^2} = \lim\frac{H_n}{n} = 0$.
+  3. Limit $= e^0 = 1$.
+  Answer: (C)
+M A 17: |-
+  Concept: Distribute the prime powers among the three factors (stars and bars).
+  Solution:
+  1. $24 = 2^3\cdot3$.
+  2. Ways to split $2^3$ among x, y, z: $^{3+2}C_2 = 10$. Ways to place the 3: 3.
+  3. Total = 10 × 3 = 30.
+  Answer: (D)
+M A 18: |-
+  Concept: Linear differential equation.
+  Solution:
+  1. $\frac{dy}{dx} - \frac{y}{x - 2} = \frac{x^2 - 4x + 8}{x - 2}$; integrating factor $\frac{1}{x - 2}$.
+  2. $\frac{y}{x - 2} = \int\frac{(x - 2)^2 + 4}{(x - 2)^2}dx = x - \frac{4}{x - 2} + C$, so $y = x(x - 2) - 4 + C(x - 2)$.
+  3. y(0) = 0: –4 – 2C = 0, so C = –2, giving $y = x^2 - 4x$.
+  4. Check (5, 5): 25 – 20 = 5 ✓.
+  Answer: (D)
+M A 19: |-
+  Concept: Break the integral where $[x^3]$ changes value.
+  Solution:
+  1. On [–1, 0): $[x^3] = -1$; on [0, 1): $[x^3] = 0$.
+  2. $\int_{-1}^{0}x^2e^{-1}dx + \int_0^1x^2dx = \frac{1}{3e} + \frac{1}{3} = \frac{e + 1}{3e}$.
+  Answer: (C)
+M A 20: |-
+  Concept: Multiplication rule for independent events.
+  Solution:
+  1. P(one missile hits) = P(not intercepted) × P(hit | not intercepted) $= \frac{2}{3}\times\frac{3}{4} = \frac{1}{2}$.
+  2. All three hit: $\left(\frac{1}{2}\right)^3 = \frac{1}{8}$.
+  Answer: (A)
+M B 1: |-
+  Concept: The side of $A_{n+1}$ is $\frac{1}{\sqrt{2}}$ of the side of $A_n$, so areas halve each step.
+  Solution:
+  1. Area of $A_n = \frac{144}{2^{n-1}}$.
+  2. $\frac{144}{2^{n-1}} < 1 \Rightarrow 2^{n-1} > 144 \Rightarrow n - 1 \ge 8$.
+  3. Smallest n = 9.
+  Answer: 9
+M B 2: |-
+  Concept: Area between sin x and cos x between consecutive intersections.
+  Solution:
+  1. They intersect at $x = \frac{\pi}{4}$ and $\frac{5\pi}{4}$, with sin x above in between.
+  2. $A = \int_{\pi/4}^{5\pi/4}(\sin x - \cos x)dx = [-\cos x - \sin x]_{\pi/4}^{5\pi/4} = \sqrt{2} + \sqrt{2} = 2\sqrt{2}$.
+  3. $A^4 = 64$.
+  Answer: 64
+M B 3: |-
+  Concept: Eliminate the parameter k.
+  Solution:
+  1. $\sqrt{3}x + y = \frac{4\sqrt{3}}{k}$ and $\sqrt{3}x - y = 4\sqrt{3}k$.
+  2. Multiplying: $3x^2 - y^2 = 48 \Rightarrow \frac{x^2}{16} - \frac{y^2}{48} = 1$.
+  3. $e = \sqrt{1 + \frac{48}{16}} = 2$.
+  Answer: 2
+M B 4: |-
+  Concept: Direct matrix multiplication with $t = \tan\frac{\theta}{2}$.
+  Solution:
+  1. $(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix} 1 & -t \\ t & 1 \end{bmatrix}$.
+  2. $(I + A)(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix} 1 - t^2 & -2t \\ 2t & 1 - t^2 \end{bmatrix} = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$.
+  3. $a^2 + b^2 = 1$, so $13(a^2 + b^2) = 13$.
+  Answer: 13
+M B 5: |-
+  Concept: $\lim_{x\to0}\frac{f(x)}{x^3} = 1$ forces $f(x) = x^6 + ax^5 + bx^4 + x^3$.
+  Solution:
+  1. $f'(x) = 6x^5 + 5ax^4 + 4bx^3 + 3x^2$.
+  2. f'(1) = 0: 6 + 5a + 4b + 3 = 0; f'(–1) = 0: –6 + 5a – 4b + 3 = 0.
+  3. Adding: 10a + 6 = 0, so $a = -\frac{3}{5}$; then $b = -\frac{3}{2}$.
+  4. $f(2) = 64 - \frac{96}{5} - 24 + 8 = \frac{144}{5}$, so 5f(2) = 144.
+  Answer: 144
+M B 6: |-
+  Concept: |g(x)| can be non-differentiable only where g(x) = 0; check whether the kinks cancel.
+  Solution:
+  1. Critical points: $x = -\frac{1}{2}$, x = –2, and x = 1 (since $x^2 + x - 2 = (x + 2)(x - 1)$).
+  2. At x = –2: $-3|x + 2| + |x + 2||x - 1| \approx (-3 + 3)|x + 2| = 0$, so the kinks cancel and f is differentiable.
+  3. At $x = -\frac{1}{2}$ and x = 1 there is a single uncancelled kink.
+  4. Number of points = 2.
+  Answer: 2
+M B 7: |-
+  Concept: For infinitely many solutions, Δ = 0 and the equations must be consistent.
+  Solution:
+  1. y and z always appear as y + 2z, so the coefficient determinant is 0 for every k. Put u = y + 2z.
+  2. The system becomes kx + u = 1, 3x – u = 2 and –2x – 2u = 3 (i.e. $x + u = -\frac{3}{2}$).
+  3. From the last two: 4x = ½, so $x = \frac{1}{8}$ and $u = -\frac{13}{8}$.
+  4. The first equation must agree: $\frac{k}{8} - \frac{13}{8} = 1 \Rightarrow k = 21$. Then u (and so y, z) has a one-parameter family of values, giving infinitely many solutions.
+  Answer: 21
+M B 8: |-
+  Concept: $\vec{r}\times\vec{a} = \vec{c}\times\vec{a} \Rightarrow (\vec{r} - \vec{c}) \parallel \vec{a}$.
+  Solution:
+  1. $\vec{r} = \vec{c} + \lambda\vec{a}$.
+  2. $\vec{r}\cdot\vec{b} = 0$: $\vec{c}\cdot\vec{b} + \lambda\vec{a}\cdot\vec{b} = 2 - \lambda = 0$, so λ = 2.
+  3. $\vec{r}\cdot\vec{a} = \vec{c}\cdot\vec{a} + 2|\vec{a}|^2 = 0 + 12 = 12$.
+  Answer: 12
+M B 9: |-
+  Concept: Compare the entries of $A^2$ with $I_3$.
+  Solution:
+  1. Diagonal of $A^2$: $x^2 + y^2 + z^2 = 1$; off-diagonal: xy + yz + zx = 0.
+  2. $(x + y + z)^2 = 1$, and x + y + z > 0, so x + y + z = 1.
+  3. $x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) = 1\times1 = 1$.
+  4. $x^3 + y^3 + z^3 = 1 + 3\times2 = 7$.
+  Answer: 7
+M B 10: |-
+  Concept: Count 3-digit numbers with distinct digits from {1, 2, 3, 4, 5}, using inclusion–exclusion.
+  Solution:
+  1. Divisible by 5: last digit 5, then 4 × 3 = 12 numbers.
+  2. Divisible by 3: digit sum a multiple of 3. The sets {1,2,3}, {1,3,5}, {2,3,4}, {3,4,5} each give 3! = 6 numbers, so 24 numbers.
+  3. Divisible by 15: sets containing 5, i.e. {1,3,5} and {3,4,5}, with 5 last: 2 × 2 = 4 numbers.
+  4. Total = 12 + 24 – 4 = 32.
+  Answer: 32
