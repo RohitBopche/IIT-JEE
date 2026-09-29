@@ -1,0 +1,127 @@
+- n: 15
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let $a_1, a_2, a_3, \ldots$ be an A.P. If $\frac{a_1 + a_2 + \ldots + a_{10}}{a_1 + a_2 + \ldots + a_p} = \frac{100}{p^2}$, $p \neq 10$, then $\frac{a_{11}}{a_{10}}$ is equal to :
+  o: ['$\frac{19}{21}$', '$\frac{100}{121}$', '$\frac{21}{19}$', '$\frac{121}{100}$']
+  a: C
+  ch: Sequences and Series
+  tp: Sum of AP
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let A be the set of all points $(\alpha, \beta)$ such that the area of triangle formed by the points (5, 6), (3, 2) and $(\alpha, \beta)$ is 12 square units. Then the least possible length of a line segment joining the origin to a point in A, is :
+  o: ['$\frac{4}{\sqrt{5}}$', '$\frac{16}{\sqrt{5}}$', '$\frac{8}{\sqrt{5}}$', '$\frac{12}{\sqrt{5}}$']
+  a: C
+  ch: Straight Lines
+  tp: Area of triangle, distance from origin
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    The number of solutions of the equation $32^{\tan^2x} + 32^{\sec^2x} = 81$, $0 \le x \le \frac{\pi}{4}$ is :
+  o: ['3', '1', '0', '2']
+  a: B
+  ch: Trigonometric Functions and Equations
+  tp: Exponential trigonometric equation
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let f be any continuous function on [0, 2] and twice differentiable on (0, 2). If f(0) = 0, f(1) = 1 and f(2) = 2, then
+  o: ["$f''(x) = 0$ for all $x \in (0, 2)$", "$f''(x) = 0$ for some $x \in (0, 2)$", "$f'(x) = 0$ for some $x \in [0, 2]$", "$f''(x) > 0$ for all $x \in (0, 2)$"]
+  a: B
+  ch: Application of Derivatives
+  tp: Rolle's theorem
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    If [x] is the greatest integer $\le$ x, then $\pi^2\int_0^2\left(\sin\frac{\pi x}{2}\right)(x - [x])^{[x]}dx$ is equal to :
+  o: ['$2(\pi - 1)$', '$4(\pi - 1)$', '$4(\pi + 1)$', '$2(\pi + 1)$']
+  a: B
+  ch: Definite Integration
+  tp: Greatest integer function in integral
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    The mean and variance of 7 observations are 8 and 16 respectively. If two observations are 6 and 8, then the variance of the remaining 5 observations is :
+  o: ['$\frac{92}{5}$', '$\frac{134}{5}$', '$\frac{536}{25}$', '$\frac{112}{5}$']
+  a: C
+  ch: Statistics
+  tp: Mean and variance
+  df: E
+- n: 1
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    If the coefficient of $a^7b^8$ in the expansion of $(a + 2b + 4ab)^{10}$ is $K\cdot2^{16}$, then K is equal to ______.
+  a: '315'
+  ch: Binomial Theorem
+  tp: Multinomial coefficient
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    Suppose the line $\frac{x - 2}{\alpha} = \frac{y - 2}{-5} = \frac{z + 2}{2}$ lies on the plane $x + 3y - 2z + \beta = 0$. Then $(\alpha + \beta)$ is equal to ____.
+  a: '7'
+  ch: Three Dimensional Geometry
+  tp: Line lying in plane
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 23
+  t: N
+  q: |-
+    The number of 4-digit numbers which are neither multiple of 7 nor multiple of 3 is ____.
+  a: '5143'
+  ch: Permutations and Combinations
+  tp: Inclusion-exclusion counting
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    If $\int\frac{\sin x}{\sin^3x + \cos^3x}dx = \alpha\log_e|1 + \tan x| + \beta\log_e|1 - \tan x + \tan^2x| + \gamma\tan^{-1}\left(\frac{2\tan x - 1}{\sqrt{3}}\right) + C$, when C is constant of integration, then the value of $18(\alpha + \beta + \gamma^2)$ is _______.
+  a: '3'
+  ch: Indefinite Integration
+  tp: Partial fractions
+  df: H
+- n: 5
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    A tangent line L is drawn at the point (2, –4) on the parabola $y^2 = 8x$. If the line L is also tangent to the circle $x^2 + y^2 = a$, then 'a' is equal to_______.
+  a: '2'
+  ch: Conic Sections
+  tp: Common tangent
+  df: E

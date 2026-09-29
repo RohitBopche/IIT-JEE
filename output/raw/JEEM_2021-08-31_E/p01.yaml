@@ -1,0 +1,112 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    Four identical hollow cylindrical columns of mild steel support a big structure of mass $50\times10^{3}$ kg, The inner and outer radii of each column are 50 cm and 100 cm respectively. Assuming uniform local distribution, calculate the compression strain of each column. [Use $Y = 2.0\times10^{11}$ Pa, g = 9.8 m/s²]
+  o: ['$3.60\times10^{-8}$', '$2.60\times10^{-7}$', '$1.87\times10^{-3}$', '$7.07\times10^{-4}$']
+  a: B
+  ch: Mechanical Properties of Solids
+  tp: Compressive strain
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A current of 1.5 A is flowing through a triangle, of side 9 cm each. The magnetic field at the centroid of the triangle is : (Assume that the current is flowing in the clockwise direction.)
+  o: ['$3\times10^{-7}$ T, outside the plane of triangle', '$2\sqrt{3}\times10^{-7}$ T, outside the plane of triangle', '$2\sqrt{3}\times10^{-5}$ T, inside the plane of triangle', '$3\times10^{-5}$ T, inside the plane of triangle']
+  a: D
+  ch: Moving Charges and Magnetism
+  tp: Field of current carrying triangle
+  df: M
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A system consists of two identical spheres each of mass 1.5 kg and radius 50 cm at the end of light rod. The distance between the centres of the two spheres is 5 m. What will be the moment of inertia of the system about an axis perpendicular to the rod passing through its midpoint ?
+  o: ['18.75 kgm²', '$1.905\times10^{5}$ kgm²', '19.05 kgm²', '$1.875\times10^{5}$ kgm²']
+  a: C
+  ch: Rotational Motion
+  tp: Moment of inertia, parallel axis
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Stmt
+  q: |-
+    Statement I : Two forces $(\vec{P} + \vec{Q})$ and $(\vec{P} - \vec{Q})$ where $\vec{P} \perp \vec{Q}$, when act at an angle $\theta_1$ to each other, the magnitude of their resultant is $\sqrt{3(P^2 + Q^2)}$, when they act at an angle $\theta_2$, the magnitude of their resultant becomes $\sqrt{2(P^2 + Q^2)}$. This is possible only when $\theta_1 < \theta_2$.
+    Statement II : In the situation given above. $\theta_1 = 60°$ and $\theta_2 = 90°$
+    In the light of the above statements, choose the most appropriate answer from the options given below :-
+  o: ['Statement-I is false but Statement-II is true', 'Both Statement-I and Statement-II are true', 'Statement-I is true but Statement-II is false', 'Both Statement-I and Statement-II are false.']
+  a: B
+  ch: Kinematics
+  tp: Resultant of vectors
+  df: M
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A free electron of 2.6 eV energy collides with a $\mathrm{H^+}$ ion. This results in the formation of a hydrogen atom in the first excited state and a photon is released. Find the frequency of the emitted photon. ($h = 6.6\times10^{-34}$ Js)
+  o: ['$1.45\times10^{16}$ MHz', '$0.19\times10^{15}$ MHz', '$1.45\times10^{9}$ MHz', '$9.0\times10^{27}$ MHz']
+  a: C
+  ch: Atoms
+  tp: Energy levels of hydrogen
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two thin metallic spherical shells of radii $r_1$ and $r_2$ ($r_1 < r_2$) are placed with their centres coinciding. A material of thermal conductivity K is filled in the space between the shells. The inner shell is maintained at temperature $\theta_1$ and the outer shell at temperature $\theta_2$ ($\theta_1 < \theta_2$). The rate at which heat flows radially through the material is :-
+  o: ['$\frac{4\pi Kr_1r_2(\theta_2 - \theta_1)}{r_2 - r_1}$', '$\frac{\pi r_1r_2(\theta_2 - \theta_1)}{r_2 - r_1}$', '$\frac{K(\theta_2 - \theta_1)}{r_2 - r_1}$', '$\frac{K(\theta_2 - \theta_1)(r_2 - r_1)}{4\pi r_1r_2}$']
+  a: A
+  ch: Thermal Properties of Matter
+  tp: Radial heat conduction
+  df: M
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    If $V_A$ and $V_B$ are the input voltages (either 5V or 0V) and $V_o$ is the output voltage then the two gates represented in the following circuit (A) and (B) are:-
+  o: ['AND and OR Gate', 'OR and NOT Gate', 'NAND and NOR Gate', 'AND and NOT Gate']
+  a: B
+  ch: Semiconductor Electronics
+  tp: Diode and transistor logic gates
+  df: M
+  fig: [[3, 140, 55, 295, 500]]
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Consider two separate ideal gases of electrons and protons having same number of particles. The temperature of both the gases are same. The ratio of the uncertainty in determining the position of an electron to that of a proton is proportional to :-
+  o: ['$\left(\frac{m_p}{m_e}\right)^{3/2}$', '$\sqrt{\frac{m_e}{m_p}}$', '$\sqrt{\frac{m_p}{m_e}}$', '$\frac{m_p}{m_e}$']
+  a: C
+  ch: Dual Nature of Radiation and Matter
+  tp: Uncertainty principle
+  df: M
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A bob of mass 'm' suspended by a thread of length l undergoes simple harmonic oscillations with time period T. If the bob is immersed in a liquid that has density $\frac{1}{4}$ times that of the bob and the length of the thread is increased by 1/3rd of the original length, then the time period of the simple harmonic oscillations will be :-
+  o: ['T', '$\frac{3}{2}T$', '$\frac{3}{4}T$', '$\frac{4}{3}T$']
+  a: D
+  ch: Oscillations
+  tp: Pendulum in liquid
+  df: M
