@@ -1,0 +1,54 @@
+- n: 8
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Five equal resistances are connected in a network as shown in figure. The net resistance between the points A and B is :
+    [figure: triangle DEC with R on DE, DC, EC and from D and E to central node A; B near C]
+  o: ['$\frac{3R}{2}$', '$\frac{R}{2}$', 'R', '2R']
+  a: C
+  ch: Current Electricity
+  tp: Balanced Wheatstone bridge
+  df: M
+  fig: [[5, 158, 365, 325, 628]]
+- n: 9
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    Find the gravitational force of attraction between the ring and sphere as shown in the diagram, where the plane of the ring is perpendicular to the line joining the centres. If $\sqrt{8}R$ is the distance between the centres of a ring (of mass 'm') and a sphere (mass 'M') where both have equal radius 'R'.
+    [figure: ring of radius R (mass m) and sphere of radius R (mass M), centres X and Y separated by √8 R]
+  o: ['$\frac{\sqrt{8}}{9}\cdot\frac{GmM}{R}$', '$\frac{\sqrt{8}}{27}\cdot\frac{GmM}{R^2}$', '$\frac{2\sqrt{2}}{3}\cdot\frac{GMm}{R^2}$', '$\frac{1}{3\sqrt{8}}\cdot\frac{GMm}{R^2}$']
+  a: B
+  ch: Gravitation
+  tp: Field on axis of ring
+  df: M
+  fig: [[6, 232, 350, 345, 640]]
+- n: 10
+  s: P
+  sec: A
+  p: 7
+  t: S
+  q: |-
+    Assume that a tunnel is dug along a chord of the earth, at a perpendicular distance (R/2) from the earth's centre, where 'R' is the radius of the Earth. The wall of the tunnel is frictionless. If a particle is released in this tunnel, it will execute a simple harmonic motion with a time period :
+  o: ['$2\pi\sqrt{\frac{R}{g}}$', '$\frac{1}{2\pi}\sqrt{\frac{g}{R}}$', '$\frac{2\pi R}{g}$', '$\frac{g}{2\pi R}$']
+  a: A
+  ch: Gravitation
+  tp: SHM in tunnel through earth
+  df: M
+- n: 11
+  s: P
+  sec: A
+  p: 8
+  t: S
+  q: |-
+    Find the electric field at point P (as shown in figure) on the perpendicular bisector of a uniformly charged thin wire of length L carrying a charge Q. The distance of the point P from the centre of the rod is $a = \frac{\sqrt{3}}{2}L$.
+    [figure: vertical rod of length L with charge Q; point P at distance a on perpendicular bisector through O]
+  o: ['$\frac{Q}{2\sqrt{3}\pi\varepsilon_0L^2}$', '$\frac{\sqrt{3}Q}{4\pi\varepsilon_0L^2}$', '$\frac{Q}{3\pi\varepsilon_0L^2}$', '$\frac{Q}{4\pi\varepsilon_0L^2}$']
+  a: A
+  ch: Electrostatics
+  tp: Field of finite line charge
+  df: M
+  fig: [[8, 222, 380, 346, 600]]

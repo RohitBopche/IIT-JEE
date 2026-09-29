@@ -1,0 +1,85 @@
+- n: 17
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    A fair coin is tossed a fixed number of times. If the probability of getting 7 heads is equal to probability of getting 9 heads, then the probability of getting 2 heads is :
+  o: ['$\frac{15}{2^{12}}$', '$\frac{15}{2^{13}}$', '$\frac{15}{2^{14}}$', '$\frac{15}{2^8}$']
+  a: B
+  ch: Probability
+  tp: Binomial distribution
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    If (1,5,35), (7,5,5), (1, $\lambda$, 7) and (2$\lambda$, 1, 2) are coplanar, then the sum of all possible values of $\lambda$ is:
+  o: ['$-\frac{44}{5}$', '$\frac{39}{5}$', '$-\frac{39}{5}$', '$\frac{44}{5}$']
+  a: D
+  ch: Three Dimensional Geometry
+  tp: Coplanarity of points
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 42
+  t: S
+  q: |-
+    Let R = {(P,Q) | P and Q are at the same distance from the origin} be a relation, then the equivalence class of (1,–1) is the set:
+  o: ['S = {(x,y) | $x^2 + y^2 = 1$}', 'S = {(x,y) | $x^2 + y^2 = 4$}', 'S = {(x,y) | $x^2 + y^2 = \sqrt{2}$}', 'S = {(x,y) | $x^2 + y^2 = 2$}']
+  a: D
+  ch: Sets, Relations and Functions
+  tp: Equivalence class
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 43
+  t: S
+  q: |-
+    In the circle given below, let OA = 1 unit, OB = 13 unit and PQ $\perp$ OB. Then, the area of the triangle PQB (in square units) is:
+    [figure: circle with diameter OB on x-axis, chord PQ perpendicular to OB at A, triangle PQB]
+  o: ['$26\sqrt{3}$', '$24\sqrt{2}$', '$24\sqrt{3}$', '$26\sqrt{2}$']
+  a: C
+  ch: Circles
+  tp: Chord and triangle area
+  df: M
+  fig: [[43, 172, 110, 260, 345]]
+- n: 1
+  s: M
+  sec: B
+  p: 44
+  t: N
+  q: |-
+    The area bounded by the lines $y = ||x - 1| - 2|$ is.......
+  a: 8
+  ch: Area Under Curves
+  tp: Area bounded by modulus graphs
+  df: M
+  c: m
+  nt: 'NTA answer 8; ALLEN marks Bonus (the region is not closed as stated)'
+- n: 2
+  s: M
+  sec: B
+  p: 44
+  t: N
+  q: |-
+    The number of integral values of 'k' for which the equation $3\sin x + 4\cos x = k + 1$ has a solution, $k \in R$ is ______.
+  a: 11
+  ch: Trigonometric Functions and Equations
+  tp: Range of a sin x + b cos x
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 44
+  t: N
+  q: |-
+    Let $m, n \in N$ and gcd (2, n) = 1. If $30\binom{30}{0} + 29\binom{30}{1} + .... + 2\binom{30}{28} + 1\binom{30}{29} = n\cdot2^m$, then n + m is equal to_____.
+  a: 45
+  ch: Binomial Theorem
+  tp: Sums of binomial coefficients
+  df: M

@@ -1,0 +1,61 @@
+- n: 12
+  s: M
+  sec: A
+  p: 37
+  t: S
+  q: |-
+    The intersection of three lines $x - y = 0$, $x + 2y = 3$ and $2x + y = 6$ is a:
+  o: ['Equilateral triangle', 'None of the above', 'Isosceles triangle', 'Right angled triangle']
+  a: C
+  ch: Straight Lines
+  tp: Triangle formed by lines
+  df: E
+- n: 13
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    The maximum slope of the curve $y = \frac{1}{2}x^4 - 5x^3 + 18x^2 - 19x$ occurs at the point:
+  o: ['(2, 9)', '(2,2)', '$\left(3, \frac{21}{2}\right)$', '(0, 0)']
+  a: B
+  ch: Application of Derivatives
+  tp: Maxima of slope
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    Let f be any function defined on R and let it satisfy the condition : $|f(x) - f(y)| \le |(x - y)^2|, \forall (x, y) \in R$
+    If f(0) = 1, then:
+  o: ['$f(x) < 0, \forall x \in R$', 'f(x) can take any value in R', '$f(x) = 0, \forall x \in R$', '$f(x) > 0, \forall x \in R$']
+  a: D
+  ch: Limits, Continuity and Differentiability
+  tp: Derivative from functional inequality
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    The value of $\int_{-\pi/2}^{\pi/2}\frac{\cos^2 x}{1 + 3^x}dx$ is:
+  o: ['$2\pi$', '$4\pi$', '$\frac{\pi}{2}$', '$\frac{\pi}{4}$']
+  a: D
+  ch: Definite Integration
+  tp: King property
+  df: E
+- n: 16
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    The value of $\lim_{h\to0}\left\{\frac{\sqrt{3}\sin\left(\frac{\pi}{6} + h\right) - \cos\left(\frac{\pi}{6} + h\right)}{\sqrt{3}h\left(\sqrt{3}\cos h - \sin h\right)}\right\}$ is:
+  o: ['$\frac{3}{4}$', '$\frac{2}{\sqrt{3}}$', '$\frac{4}{3}$', '$\frac{2}{3}$']
+  a: C
+  ch: Limits, Continuity and Differentiability
+  tp: Trigonometric limits
+  df: E
