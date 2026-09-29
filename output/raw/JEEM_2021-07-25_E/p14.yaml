@@ -1,0 +1,257 @@
+- n: 7
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let the equation of the pair of lines, y = px and y = qx, can be written as (y – px)(y – qx) = 0. Then the equation of the pair of the angle bisectors of the lines $x^2 - 4xy - 5y^2 = 0$ is :
+  o: ['$x^2 - 3xy + y^2 = 0$', '$x^2 + 3xy - y^2 = 0$', '$x^2 - 3xy - y^2 = 0$', '$x^2 + 4xy - y^2 = 0$']
+  ch: Straight Lines
+  tp: Angle bisectors of pair of lines
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The number of real solutions of the equation, $x^2 - |x| - 12 = 0$ is :
+  o: ['1', '4', '3', '2']
+  ch: Quadratic Equations
+  tp: Equations with modulus
+  df: E
+- n: 9
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The lowest integer which is greater than $\left(1 + \frac{1}{10^{100}}\right)^{10^{100}}$ is.........
+  o: ['3', '2', '4', '1']
+  ch: Binomial Theorem
+  tp: Bounds on (1 + 1/n)^n
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    If $|\vec{a}| = 2$, $|\vec{b}| = 5$ and $|\vec{a}\times\vec{b}| = 8$, then $|\vec{a}\cdot\vec{b}|$ is equal to :
+  o: ['5', '4', '6', '3']
+  ch: Vector Algebra
+  tp: Dot and cross product identity
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The value of $\cot\frac{\pi}{24}$ is :
+  o: ['$\sqrt{2} + \sqrt{3} + 2 + \sqrt{6}$', '$3\sqrt{2} - \sqrt{3} - \sqrt{6}$', '$\sqrt{2} - \sqrt{3} - 2 + \sqrt{6}$', '$\sqrt{2} + \sqrt{3} + 2 - \sqrt{6}$']
+  ch: Trigonometric Functions and Equations
+  tp: Half-angle values
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let X be a random variable such that the probability function of a distribution is given by $P(X = 0) = \frac{1}{2}$, $P(X = j) = \frac{1}{3^j}(j = 1,2,3,....,\infty)$. Then the mean of the distribution and P(X is positive and even) respectively are :
+  o: ['$\frac{3}{4}$ and $\frac{1}{9}$', '$\frac{3}{4}$ and $\frac{1}{16}$', '$\frac{3}{4}$ and $\frac{1}{8}$', '$\frac{3}{8}$ and $\frac{1}{8}$']
+  ch: Probability
+  tp: Mean of discrete distribution
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Consider functions f : A → B and g : B → C (A,B,C ⊆ R) such that $(gof)^{-1}$ exists, then :
+  o: ['f and g both are onto', 'f is onto and g is one-one', 'f is one-one and g is onto', 'f and g both are one-one']
+  ch: Sets, Relations and Functions
+  tp: Invertibility of composition
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    The first of the two samples in a group has 100 items with mean 15 and standard deviation 3. If the whole group has 250 items with mean 15.6 and standard deviation $\sqrt{13.44}$, then the standard deviation of the second sample is :
+  o: ['4', '6', '5', '8']
+  ch: Statistics
+  tp: Combined standard deviation
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 14
+  t: S
+  q: |-
+    Let y = y(x) be the solution of the differential equation $x\,dy = (y + x^3\cos x)dx$ with $y(\pi) = 0$, then $y\left(\frac{\pi}{2}\right)$ is equal to :
+  o: ['$\frac{\pi^2}{4} - \frac{\pi}{2}$', '$\frac{\pi^2}{4} + \frac{\pi}{2}$', '$\frac{\pi^2}{2} - \frac{\pi}{4}$', '$\frac{\pi^2}{2} + \frac{\pi}{4}$']
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    The value of the integral $\int_{-1}^{1}\log\left(x + \sqrt{x^2 + 1}\right)dx$ is :
+  o: ['-1', '1', '2', '0']
+  ch: Definite Integration
+  tp: Odd function
+  df: E
+- n: 17
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    If the greatest value of the term independent of 'x' in the expansion of $\left(x\sin\alpha + a\frac{\cos\alpha}{x}\right)^{10}$ is $\frac{10!}{(5!)^2}$, then the value of 'a' is equal to :
+  o: ['-1', '2', '-2', '1']
+  ch: Binomial Theorem
+  tp: Term independent of x
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    If $f(x) = \begin{cases} \int_0^x(5 + |1 - t|)dt, & x > 2 \\ 5x + 1, & x \le 2 \end{cases}$, then
+  o: ['f(x) is not continuous at x = 2', 'f(x) is not differentiable at x = 1', 'f(x) is continuous but not differentiable at x = 2', 'f(x) is everywhere differentiable']
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity and differentiability
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    If $^nP_r = {}^nP_{r+1}$ and $^nC_r = {}^nC_{r-1}$, then the value of r is equal to :
+  o: ['4', '1', '3', '2']
+  ch: Permutations and Combinations
+  tp: nPr and nCr relations
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 15
+  t: S
+  q: |-
+    Consider the statement "The match will be played only if the weather is good and ground is not wet". Select the correct negation from the following :
+  o: ['The match will not be played or weather is good and ground is not wet.', 'The match will be played or weather is not good and ground is wet.', 'If the match will not be played, then either weather is not good or ground is wet.', 'The match will be played and weather is not good or ground is wet.']
+  ch: Mathematical Reasoning
+  tp: Negation of conditional
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    Consider the function $f(x) = \begin{cases} \frac{P(x)}{\sin(x - 2)}, & x \ne 2 \\ 7, & x = 2 \end{cases}$
+    where P(x) is a polynomial such that P''(x) is always a constant and P(3) = 9. If f(x) is continuous at x = 2, then P(5) is equal to.......
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity and polynomial determination
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If a + b + c = 1, ab + bc + ca = 2 and abc = 3, then the value of $a^4 + b^4 + c^4$ is equal to.....
+  ch: Quadratic Equations
+  tp: Symmetric functions of roots
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If the co-efficients of $x^7$ and $x^8$ in the expansion of $\left(2 + \frac{x}{3}\right)^n$ are equal, then the value of n is equal to .........
+  ch: Binomial Theorem
+  tp: Equal coefficients
+  df: E
+- n: 4
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If the lines $\frac{x - k}{1} = \frac{y - 2}{2} = \frac{z - 3}{3}$ and $\frac{x + 1}{3} = \frac{y + 2}{2} = \frac{z + 3}{1}$ are co-planar, then the value of k is......
+  ch: Three Dimensional Geometry
+  tp: Coplanar lines
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If a rectangle is inscribed in an equilateral triangle of side length $2\sqrt{2}$ as shown in the figure, then the square of the largest area of such a rectangle is ..........
+    [figure: rectangle with base on the base of an equilateral triangle, top corners on the sides]
+  ch: Application of Derivatives
+  tp: Maximising area
+  df: M
+  fig: [[16, 530, 400, 665, 600]]
+- n: 6
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If $(\vec{a} + 3\vec{b})$ is perpendicular to $(7\vec{a} - 5\vec{b})$ and $(\vec{a} - 4\vec{b})$ is perpendicular to $(7\vec{a} - 2\vec{b})$, then the angle between $\vec{a}$ and $\vec{b}$ (in degrees) is.......
+  ch: Vector Algebra
+  tp: Angle between vectors
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    Let n ∈ N and [x] denote the greatest integer less than or equal to x. If the sum of (n+1) terms $^nC_0$, $3\cdot{}^nC_1$, $5\cdot{}^nC_2$, $7\cdot{}^nC_3$,..... is equal to $2^{100}\cdot101$, then $2\left[\frac{n - 1}{2}\right]$ is equal to
+  ch: Binomial Theorem
+  tp: Sums of binomial coefficients
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    A fair coin is tossed n-times such that the probability of getting at least one head is at least 0.9. Then the minimum value of n is..........
+  ch: Probability
+  tp: At least one success
+  df: E
+- n: 9
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    Let a curve y = f(x) pass through the point $(2, (\log_e2)^2)$ and have slope $\frac{2y}{x\log_ex}$ for all positive real value of x. Then the value of f(e) is equal to..........
+  ch: Differential Equations
+  tp: Variable separable
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    The equation of a circle is $Re(z^2) + 2(Im(z))^2 + 2Re(z) = 0$, where z = x + iy. A line which passes through the center of the given circle and the vertex of the parabola, $x^2 - 6x - y + 13 = 0$, has y-intercept equal to.........
+  ch: Circles
+  tp: Circle in complex form
+  df: M
