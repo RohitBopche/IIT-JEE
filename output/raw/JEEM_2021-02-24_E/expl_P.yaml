@@ -1,0 +1,205 @@
+P A 1: |-
+  Concept: Zener breakdown happens when a very strong electric field across a thin depletion layer pulls electrons directly out of covalent bonds.
+  Solution:
+  1. A very high field needs a very narrow depletion region, and a narrow depletion region needs heavy doping on both sides.
+  2. Lightly doped junctions have wide depletion layers and break down by avalanche multiplication instead.
+  Answer: (B)
+P A 2: |-
+  Concept: Photon frequency $\nu \propto \left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ for a transition $n_2 \rightarrow n_1$.
+  Solution:
+  1. 2→1: $1 - \frac{1}{4} = 0.75$.
+  2. 3→2: $\frac{1}{4} - \frac{1}{9} = 0.139$; 4→3: $\frac{1}{9} - \frac{1}{16} = 0.049$; 5→4: $\frac{1}{16} - \frac{1}{25} = 0.023$.
+  3. The largest energy gap, and so the highest frequency, is for n = 2 → n = 1.
+  Answer: (A)
+P A 3: |-
+  Concept: Duane–Hunt law: the cut-off wavelength of X-rays is $\lambda_{min} = \frac{hc}{eV}$.
+  Solution:
+  1. hc = 1240 eV·nm and eV = $1.24\times10^6$ eV.
+  2. $\lambda_{min} = \frac{1240}{1.24\times10^6}$ nm = $10^{-3}$ nm.
+  Answer: (B)
+P A 4: |-
+  Concept: Kinetic theory: pressure is the average force per unit area from molecular collisions with the walls.
+  Solution:
+  1. Each molecule hitting a wall elastically reverses its normal velocity, a momentum change of $2mv_x$.
+  2. The rate of this momentum change over all molecules is the force on the wall, hence the pressure.
+  3. Molecules do not stick to the walls, are not attracted by them (ideal gas), and do not lose energy on the way.
+  Answer: (A)
+P A 5: |-
+  Concept: The centre of mass of a body with a hole = (whole body) – (removed part), with mass ∝ area.
+  Given: disc of radius a centred at x = a (touching O); hole of radius a/2 centred at x = 3a/2 (figure).
+  Solution:
+  1. Masses ∝ areas: whole disc $\pi a^2$ at x = a; hole $\frac{\pi a^2}{4}$ at $x = \frac{3a}{2}$.
+  2. $x_{cm} = \frac{\pi a^2(a) - \frac{\pi a^2}{4}\left(\frac{3a}{2}\right)}{\pi a^2 - \frac{\pi a^2}{4}} = \frac{a - \frac{3a}{8}}{\frac{3}{4}} = \frac{5a}{8}\cdot\frac{4}{3} = \frac{5a}{6}$.
+  Answer: (D)
+P A 6: |-
+  Concept: Transistor action needs a very thin, lightly doped base shared between two junctions.
+  Solution:
+  1. Statement I: two separate diodes connected back to back have a thick "base" (two separate crystals and wires), so carriers cannot cross it and there is no transistor action. It is false.
+  2. Statement II: $\beta = \frac{I_C}{I_B}$ is the current amplification factor in CE mode. It is true.
+  Answer: (A)
+P A 7: |-
+  Concept: In SHM, $v = \omega\sqrt{A^2 - x^2}$.
+  Solution:
+  1. Squaring: $v^2 = \omega^2(A^2 - x^2) \Rightarrow \frac{x^2}{A^2} + \frac{v^2}{\omega^2A^2} = 1$.
+  2. This is an ellipse with semi-axes A and ωA (a circle only in the special case ω = 1).
+  Answer: (A)
+P A 8: |-
+  Concept: Sources of the parts of the electromagnetic spectrum.
+  Solution:
+  1. Microwaves: magnetron / klystron valves, (a)–(ii).
+  2. Infrared: vibrations of atoms and molecules (hot bodies), (b)–(iv).
+  3. Gamma rays: radioactive decay of nuclei, (c)–(i).
+  4. X-rays: transitions of inner-shell electrons (and deceleration of electrons), (d)–(iii).
+  Answer: (A)
+P A 9: |-
+  Concept: De Morgan's theorem: $\overline{X + Y} = \bar{X}\cdot\bar{Y}$.
+  Solution:
+  1. The circuit gives $C = \overline{A + \bar{B}}$.
+  2. By De Morgan: $C = \bar{A}\cdot\bar{\bar{B}} = \bar{A}\cdot B$.
+  3. This is an AND gate with inputs $\bar{A}$ and B, option (B).
+  Answer: (B)
+P A 10: |-
+  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Solution:
+  1. Violet light has a shorter wavelength than red, so β decreases and consecutive fringes come closer.
+  2. Brightness of maxima, intensity of minima and the central bright fringe do not change because of wavelength alone.
+  Answer: (B)
+P A 11: |-
+  Concept: Because of the earth's rotation, apparent weight at the equator is $W = mg - m\omega^2R$; at the pole it is mg.
+  Solution:
+  1. m = 49/9.8 = 5 kg.
+  2. $\omega = \frac{2\pi}{86400} = 7.27\times10^{-5}$ rad/s, so $\omega^2R = (7.27\times10^{-5})^2\times6.4\times10^6 \approx 0.0338$ m/s².
+  3. $W = 49 - 5\times0.0338 \approx 49 - 0.17 = 48.83$ N.
+  Answer: (D)
+P A 12: |-
+  Concept: Net work = sum of the work in each process; W = 0 for an isochoric process; adiabatic work by the gas $= \frac{P_iV_i - P_fV_f}{\gamma - 1}$.
+  Solution:
+  1. A→B isothermal, P halves so V doubles: $W_{AB} = RT\ln2$.
+  2. B→C isochoric: $W_{BC} = 0$.
+  3. At C: $P = \frac{P_1}{4}$, $V = 2V_1$, so $P_CV_C = \frac{P_1V_1}{2} = \frac{RT}{2}$.
+  4. C→A adiabatic compression: $W_{CA} = \frac{P_CV_C - P_AV_A}{\gamma - 1} = \frac{\frac{RT}{2} - RT}{\gamma - 1} = -\frac{RT}{2(\gamma - 1)}$.
+  5. Net $W = RT\left[\ln2 - \frac{1}{2(\gamma - 1)}\right]$.
+  Answer: (C)
+P A 13: |-
+  Concept: $g = \frac{4\pi^2L}{T^2}$, so $\frac{\Delta g}{g} = \frac{\Delta L}{L} + 2\frac{\Delta T}{T}$.
+  Solution:
+  1. $\frac{\Delta L}{L} = \frac{0.001}{1.0} = 0.001$.
+  2. $2\frac{\Delta T}{T} = 2\times\frac{0.01}{1.95} = 0.01026$.
+  3. Total = 0.01126, i.e. about 1.13%.
+  Answer: (C)
+P A 14: |-
+  Concept: A constant force (the gravity component along the incline) only shifts the equilibrium position; it does not change the period.
+  Solution:
+  1. When the block is displaced by x, one spring is stretched and the other compressed, each exerting kx back towards equilibrium: the springs act in parallel, $k_{eq} = 2k$.
+  2. $Mg\sin\alpha$ is constant, so it cancels out of the equation of motion about the new equilibrium.
+  3. $f = \frac{1}{2\pi}\sqrt{\frac{2k}{M}}$.
+  Note: the printed key shows (1), but its own solution derives this expression, which is option (C).
+  Answer: (C)
+P A 15: |-
+  Concept: Just after a switch is closed, an inductor opposes any sudden change in current, so it behaves like an open circuit.
+  Solution:
+  1. At t = 0 the two branches containing inductors carry no current (L–R and R–L branches are open).
+  2. The circuit is then the battery, the series resistor R and the single parallel resistor R: total 2R = 4 Ω.
+  3. $i = \frac{9}{4} = 2.25$ A.
+  Answer: (C)
+P A 16: |-
+  Concept: de Broglie wavelength $\lambda = \frac{h}{mv}$.
+  Solution:
+  1. Equal λ means equal momentum: $m_pv_p = m_\alpha v_\alpha$.
+  2. $\frac{v_p}{v_\alpha} = \frac{m_\alpha}{m_p} = 4$, so the ratio is 4 : 1.
+  Answer: (B)
+P A 17: |-
+  Concept: For small displacements the net attraction is proportional to the displacement, giving SHM with $\omega^2 = \frac{k_{eff}}{m}$.
+  Solution:
+  1. Each electron (charge –q, at distance d along the axis) attracts the proton with $F = \frac{1}{4\pi\varepsilon_0}\frac{q^2}{d^2 + x^2}$.
+  2. The components along the axis cancel; the perpendicular components add, pulling the proton back: $F_{net} = 2F\frac{x}{\sqrt{d^2 + x^2}} \approx \frac{2q^2x}{4\pi\varepsilon_0d^3}$ for x << d.
+  3. $\omega^2 = \frac{2q^2}{4\pi\varepsilon_0md^3} = \frac{q^2}{2\pi\varepsilon_0md^3}$.
+  4. $\omega = \left(\frac{q^2}{2\pi\varepsilon_0md^3}\right)^{1/2}$.
+  Answer: (A)
+P A 18: |-
+  Concept: Ferromagnetic domains respond to an external field by domain-wall motion and rotation.
+  Solution:
+  1. Domains aligned with the field grow at the expense of the others, and unfavourably aligned domains shrink.
+  2. Domains also rotate their magnetisation towards the field direction.
+  3. So domains may increase or decrease in size and change orientation.
+  Answer: (B)
+P A 19: |-
+  Concept: A travelling wave has the form f(x ± vt), i.e. a function of (kx ± ωt) together.
+  Solution:
+  1. $y = A\sin(15x - 2t)$ is a function of (15x – 2t), a wave moving in +x with speed $\frac{2}{15}$ units.
+  2. $A\sin x\cos\omega t$ is a standing wave, and the other two do not have the form f(x ± vt).
+  Answer: (B)
+P A 20: |-
+  Concept: Use $a = v\frac{dv}{dx}$ and integrate.
+  Solution:
+  1. $mv\frac{dv}{dx} = -\alpha x^2 \Rightarrow \int_{v_0}^{0}mv\,dv = -\alpha\int_0^{x}x^2\,dx$.
+  2. $\frac{mv_0^2}{2} = \frac{\alpha x^3}{3} \Rightarrow x = \left(\frac{3mv_0^2}{2\alpha}\right)^{1/3}$.
+  3. The mass m is missing from every option (option (C) matches only if m = 1), so the question was declared a bonus.
+  Answer: Bonus
+P B 1: |-
+  Concept: Elongation $\Delta L = \frac{FL}{AY}$, with $A = \frac{\pi d^2}{4}$.
+  Solution:
+  1. $\Delta L \propto \frac{L}{d^2}$ for the same F and material.
+  2. Doubling L and d: factor $\frac{2}{4} = \frac{1}{2}$.
+  3. New elongation = 0.04 × ½ = 0.02 m = 2 cm.
+  Answer: 2
+P B 2: |-
+  Concept: Ohm's law in microscopic form, $J = \sigma E$, so $I = \sigma EA$.
+  Solution:
+  1. $A = \pi(0.5\times10^{-3})^2 = 0.25\pi\times10^{-6}$ m².
+  2. $I = 5\times10^7\times10\times10^{-3}\times0.25\pi\times10^{-6} = 0.125\pi$ A = 125π mA.
+  3. $125 = x^3$, so x = 5.
+  Answer: 5
+P B 3: |-
+  Concept: Doppler effect with both source and observer moving towards each other: $f' = f\frac{v + v_o}{v - v_s}$.
+  Solution:
+  1. Speed of each car: 7.2 km/h = 2 m/s.
+  2. Frequency of the other car's horn heard by each driver: $f' = 676\times\frac{340 + 2}{340 - 2} = 676\times\frac{342}{338} = 684$ Hz.
+  3. Beats with the driver's own horn: 684 – 676 = 8 Hz.
+  Answer: 8
+P B 4: |-
+  Concept: Parallel-axis theorem applied to each of the six rods.
+  Solution:
+  1. Each side: mass 1 kg, length l = 0.4 m.
+  2. Distance from the centre to the midpoint of a side: $\frac{\sqrt{3}}{2}l = 0.2\sqrt{3}$ m, so $d^2 = 0.12$ m².
+  3. For one side: $I = \frac{ml^2}{12} + md^2 = \frac{0.16}{12} + 0.12 = 0.1333$ kg m².
+  4. Total for six sides: $6\times0.1333 = 0.8$ kg m² = $8\times10^{-1}$ kg m².
+  Answer: 8
+P B 5: |-
+  Concept: Gauss's law with symmetry: a charge at the centre of a cube sends $\frac{1}{6}$ of its flux through each face.
+  Solution:
+  1. The charge is 6 cm above the centre of a 12 cm square, so the square is one face of a 12 cm cube centred on the charge.
+  2. $\phi = \frac{q}{6\varepsilon_0} = \frac{12\times10^{-6}}{6\times8.85\times10^{-12}} \approx 2.26\times10^5$ N m²/C.
+  3. $= 226\times10^3$ N m²/C.
+  Answer: 226
+P B 6: |-
+  Concept: $K = \frac{p^2}{2m}$, so for equal momentum $K \propto \frac{1}{m}$.
+  Solution:
+  1. $\frac{K_A}{K_B} = \frac{m_B}{m_A} = \frac{2}{1}$.
+  2. So A = 2.
+  Answer: 2
+P B 7: |-
+  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$ depends only on temperature for a given gas, not on pressure.
+  Solution:
+  1. $\frac{v_2}{v_1} = \sqrt{\frac{400}{300}} = \frac{2}{\sqrt{3}}$.
+  2. $v_2 = 200\times\frac{2}{\sqrt{3}} = \frac{400}{\sqrt{3}}$ m/s, so x = 400.
+  Answer: 400
+P B 8: |-
+  Concept: At resonance the impedance equals R, so $P = \frac{V_{rms}^2}{R}$.
+  Solution:
+  1. $R = \frac{V^2}{P} = \frac{120^2}{16} = \frac{14400}{16} = 900$ Ω.
+  2. The resonant frequency is not needed.
+  Answer: 900
+P B 9: |-
+  Concept: Frequency stays the same in a new medium; the speed becomes $v = \frac{c}{\sqrt{\varepsilon_r}}$ (taking $\mu_r$ = 1).
+  Solution:
+  1. $v = \frac{3\times10^8}{\sqrt{2.25}} = 2\times10^8$ m/s.
+  2. $\lambda = \frac{v}{f} = \frac{2\times10^8}{3\times10^9} = 0.0667$ m = 6.67 cm = $667\times10^{-2}$ cm.
+  Answer: 667
+P B 10: |-
+  Concept: Total attenuation in dB adds along the length of the cable.
+  Solution:
+  1. Loss = 5 dB/km × 20 km = 100 dB.
+  2. $-100 = 10\log_{10}\frac{P_o}{P_i} \Rightarrow \frac{P_o}{P_i} = 10^{-10}$.
+  3. $P_o = 100\times10^{-10} = 10^{-8}$ W, so x = 8.
+  Answer: 8
