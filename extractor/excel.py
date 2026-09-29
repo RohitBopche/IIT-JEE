@@ -31,6 +31,8 @@ COLUMNS = [
     ("Extra_Options", 15, lambda p, q: " | ".join(q["options"][4:])),
     ("Correct_Answer", 10, lambda p, q: q["answer"]),
     ("Answer_Source", 18, lambda p, q: q.get("answer_source", "")),
+    ("Explanation", 90, lambda p, q: q.get("explanation", "")),
+    ("Explanation_Check", 12, lambda p, q: q.get("explanation_check", "") or ("missing" if not q.get("explanation") else "")),
     ("Has_Diagram", 8, lambda p, q: "Yes" if q["has_diagram"] else "No"),
     ("Diagram_File", 30, lambda p, q: "; ".join(q.get("diagram_files", []))),
     ("Has_Equation", 8, lambda p, q: "Yes" if "$" in q["question_text"] + "".join(q["options"]) else "No"),
@@ -89,7 +91,7 @@ def build(out_dir: Path, xlsx: Path):
 
     s = wb.create_sheet("Papers_Summary")
     head = ["Source_File", "Exam", "Date", "Shift", "Pages", "Text_Layer", "Total_Q"] + \
-           [f"{c}_Q" for c in SUBJ_CODE.values()] + ["With_Diagram", "Answer_Missing", "Needs_Review", "Avg_Confidence", "Paper_Issues", "Model"]
+           [f"{c}_Q" for c in SUBJ_CODE.values()] + ["With_Diagram", "Explained", "Answer_Missing", "Needs_Review", "Avg_Confidence", "Paper_Issues", "Model"]
     s.append(head)
     for cell in s[1]:
         cell.fill, cell.font = HEAD_FILL, HEAD_FONT
@@ -97,10 +99,10 @@ def build(out_dir: Path, xlsx: Path):
         p, qs = d["paper"], d["questions"]
         s.append([Path(p["file"]).name, p["exam"], p["date"], p["shift"], p["pages"], "Yes" if p["text_layer"] else "No (scanned)",
                   len(qs)] + [sum(q["subject"] == subj for q in qs) for subj in SUBJ_CODE] +
-                 [sum(q["has_diagram"] for q in qs), sum(not q["answer"] for q in qs),
+                 [sum(q["has_diagram"] for q in qs), sum(bool(q.get("explanation")) for q in qs), sum(not q["answer"] for q in qs),
                   sum(q["confidence"] < REVIEW_BELOW for q in qs),
                   round(sum(q["confidence"] for q in qs) / max(len(qs), 1), 3), "; ".join(d["issues"]), p["model"]])
-    for i, w in enumerate([60, 10, 11, 9, 7, 12, 8, 7, 7, 7, 12, 14, 12, 14, 60, 18], 1):
+    for i, w in enumerate([60, 10, 11, 9, 7, 12, 8, 7, 7, 7, 12, 10, 14, 12, 14, 60, 18], 1):
         s.column_dimensions[get_column_letter(i)].width = w
     s.freeze_panes = "B2"
 

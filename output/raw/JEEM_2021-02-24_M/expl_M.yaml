@@ -1,0 +1,228 @@
+M A 1: |-
+  Concept: Find the locus by taking the parametric point $(at^2, 2at)$ on $y^2 = 4ax$.
+  Solution:
+  1. Focus S = (a, 0), point P = $(at^2, 2at)$. Midpoint: $h = \frac{a + at^2}{2}$, $k = at$.
+  2. Eliminate t using $t = \frac{k}{a}$: $2h = a + \frac{k^2}{a} \Rightarrow k^2 = 2a\left(h - \frac{a}{2}\right)$.
+  3. Locus: $y^2 = 2a\left(x - \frac{a}{2}\right)$, a parabola with vertex $\left(\frac{a}{2}, 0\right)$ and $4A = 2a$, i.e. $A = \frac{a}{2}$.
+  4. Directrix: $x = \frac{a}{2} - \frac{a}{2} = 0$.
+  Answer: (B)
+M A 2: |-
+  Concept: Count case-wise selections using combinations.
+  Solution:
+  1. With i Indians we need 2i foreigners, i ≥ 2 and 2i ≤ 8, so i = 2, 3 or 4.
+  2. i = 2: $^6C_2\cdot{}^8C_4 = 15\times70 = 1050$.
+  3. i = 3: $^6C_3\cdot{}^8C_6 = 20\times28 = 560$.
+  4. i = 4: $^6C_4\cdot{}^8C_8 = 15\times1 = 15$.
+  5. Total = 1050 + 560 + 15 = 1625.
+  Answer: (C)
+M A 3: |-
+  Concept: A plane perpendicular to two planes has its normal along the cross product of their normals.
+  Solution:
+  1. $\vec{n} = (3, 1, -2)\times(2, -5, -1) = (-11, -1, -17)$, i.e. direction (11, 1, 17).
+  2. Through (1, 2, –3): $11(x - 1) + (y - 2) + 17(z + 3) = 0$.
+  3. $11x + y + 17z + 38 = 0$.
+  Answer: (C)
+M A 4: |-
+  Concept: Intercept form of a line, $\frac{x}{a} + \frac{y}{b} = 1$.
+  Solution:
+  1. Given $\frac{1}{2}\left(\frac{1}{a} + \frac{1}{b}\right) = \frac{1}{4}$, so $\frac{1}{a} + \frac{1}{b} = \frac{1}{2}$.
+  2. Multiply by 2: $\frac{2}{a} + \frac{2}{b} = 1$, so (2, 2) always lies on the line.
+  3. (1, 1) gives $\frac{1}{2} \ne 1$, and (4, 4) gives $2 \ne 1$, so they are not on the path.
+  4. Only stone B is on the path.
+  Answer: (A)
+M A 5: |-
+  Concept: A tautology is true for every truth assignment.
+  Solution:
+  1. $[A \wedge (A \rightarrow B)] \rightarrow B$ is modus ponens. If the antecedent is true, A is true and A → B is true, so B is true; hence the implication is never false.
+  2. The others fail: $A \wedge (A \vee B)$ and $A \vee (A \wedge B)$ both equal A (false when A is false); $B \rightarrow [A \wedge (A \rightarrow B)]$ fails when B is true and A is false.
+  Answer: (D)
+M A 6: |-
+  Concept: Compute the composite and test injectivity and surjectivity.
+  Solution:
+  1. $f(g(x)) = 2\cdot\frac{x - \frac{1}{2}}{x - 1} - 1 = \frac{2x - 1 - x + 1}{x - 1} = \frac{x}{x - 1}$, for x ≠ 1.
+  2. $\frac{x}{x - 1} = 1 + \frac{1}{x - 1}$ is strictly monotonic on each branch and never repeats a value, so it is one-one.
+  3. It never takes the value 1, but the codomain is ℝ, so it is not onto.
+  Answer: (D)
+M A 7: |-
+  Concept: Continuity of a product where one factor jumps and the other vanishes at the jump points.
+  Solution:
+  1. [x – 1] is discontinuous only at integers.
+  2. At any integer n: $\cos\left(\frac{(2n - 1)\pi}{2}\right) = 0$.
+  3. Near n, [x – 1] is bounded (n – 2 or n – 1) and the cosine factor tends to 0, so both one-sided limits are 0 = f(n).
+  4. So f is continuous at every real x.
+  Answer: (D)
+M A 8: |-
+  Concept: Monotonicity from the sign of f'(x).
+  Solution:
+  1. $f'(x) = 2x^2 - x - 2\cos x + 2\cos x - (2x - 1)\sin x = (2x - 1)(x - \sin x)$.
+  2. $x - \sin x$ has the sign of x (it is > 0 for x > 0 and < 0 for x < 0).
+  3. For x ≥ 1/2 both factors are ≥ 0, so f is increasing on $\left[\frac{1}{2}, \infty\right)$.
+  4. On $\left(0, \frac{1}{2}\right)$, f' < 0, so options (B) and (C) are wrong on part of their intervals; (D) is the opposite of the truth.
+  Answer: (A)
+M A 9: |-
+  Concept: Find the point of intersection of a line and a plane by substituting the parametric form.
+  Solution:
+  1. A general point on the line: (3 + t, 4 + 2t, 5 + 2t).
+  2. In the plane: 12 + 5t = 17, so t = 1, giving the point (4, 6, 7).
+  3. Distance from (1, 1, 9): $\sqrt{3^2 + 5^2 + (-2)^2} = \sqrt{38}$.
+  Answer: (A)
+M A 10: |-
+  Concept: The limit has the form 0/0, so use L'Hospital's rule with the Leibniz rule.
+  Solution:
+  1. Derivative of the numerator: $\sin\sqrt{x^2}\cdot2x = 2x\sin|x|$; derivative of the denominator: $3x^2$.
+  2. As $x \to 0^+$: $\frac{2x\sin x}{3x^2} \to \frac{2}{3}$.
+  3. Note: as $x \to 0^-$ the ratio tends to $-\frac{2}{3}$, so strictly the two-sided limit does not exist. The official key takes $\sqrt{x^2} = x$ (the right-hand limit), giving $\frac{2}{3}$.
+  Answer: (A)
+M A 11: |-
+  Concept: Complementary angles of elevation: tan α · tan(90° – α) = 1.
+  Solution:
+  1. Heights h and 3h; the observer is 75 m from each foot.
+  2. $\tan\alpha = \frac{h}{75}$ and $\tan(90^\circ - \alpha) = \frac{3h}{75}$.
+  3. Product = 1: $\frac{3h^2}{75^2} = 1 \Rightarrow h = \frac{75}{\sqrt{3}} = 25\sqrt{3}$ m.
+  Answer: (D)
+M A 12: |-
+  Concept: Find the tangent, its second intersection with the curve, then use the section formula.
+  Solution:
+  1. Tangent at $(t, t^3)$: $y - t^3 = 3t^2(x - t)$.
+  2. With $y = x^3$: $x^3 - t^3 = 3t^2(x - t) \Rightarrow (x - t)^2(x + 2t) = 0$, so Q = $(-2t, -8t^3)$.
+  3. The point dividing PQ internally in 1 : 2 has ordinate $\frac{2(t^3) + 1(-8t^3)}{3} = -2t^3$.
+  Answer: (A)
+M A 13: |-
+  Concept: Required area = area of the circle – area common to the circle and the parabola.
+  Solution:
+  1. Intersection: $x^2 + 9x = 36 \Rightarrow x = 3$, $y = \pm3\sqrt{3}$.
+  2. Common area $= 2\left[\int_0^3 3\sqrt{x}\,dx + \int_3^6\sqrt{36 - x^2}\,dx\right]$.
+  3. $\int_0^3 3\sqrt{x}\,dx = 2(3)^{3/2} = 6\sqrt{3}$; $\int_3^6\sqrt{36 - x^2}\,dx = 9\pi - \left(\frac{9\sqrt{3}}{2} + 3\pi\right) = 6\pi - \frac{9\sqrt{3}}{2}$.
+  4. Common area $= 2\left(6\pi + \frac{3\sqrt{3}}{2}\right) = 12\pi + 3\sqrt{3}$.
+  5. Outside the parabola: $36\pi - (12\pi + 3\sqrt{3}) = 24\pi - 3\sqrt{3}$.
+  Answer: (D)
+M A 14: |-
+  Concept: Substitute $u = \sin x + \cos x$, since $du = (\cos x - \sin x)dx$ and $u^2 = 1 + \sin2x$.
+  Solution:
+  1. $8 - \sin2x = 8 - (u^2 - 1) = 9 - u^2$.
+  2. $\int\frac{du}{\sqrt{9 - u^2}} = \sin^{-1}\frac{u}{3} + c = \sin^{-1}\left(\frac{\sin x + \cos x}{3}\right) + c$.
+  3. So a = 1, b = 3.
+  Answer: (B)
+M A 15: |-
+  Concept: Linear differential equation, solved by separating variables.
+  Solution:
+  1. $\frac{dP}{dt} = 0.5(P - 900) \Rightarrow P - 900 = (P_0 - 900)e^{t/2} = -50e^{t/2}$.
+  2. P = 0 when $50e^{t/2} = 900$, i.e. $e^{t/2} = 18$.
+  3. $t = 2\log_e18$.
+  Answer: (B)
+M A 16: |-
+  Concept: $\sum r\,{}^nC_r x^{r-1} = n(1 + x)^{n-1}$, and the odd-index binomial coefficients add to $2^{n-1}$.
+  Solution:
+  1. $\sum_{r=1}^{15}(-1)^r r\,{}^{15}C_r = -15(1 - 1)^{14} = 0$.
+  2. $^{14}C_1 + {}^{14}C_3 + \ldots + {}^{14}C_{13} = 2^{13}$; the given sum stops at $^{14}C_{11}$, so subtract $^{14}C_{13} = 14$.
+  3. Value $= 0 + 2^{13} - 14$.
+  Answer: (D)
+M A 17: |-
+  Concept: Binomial distribution with p = q = 1/2 for odd/even outcomes on a die.
+  Solution:
+  1. $^nC_2\left(\frac{1}{2}\right)^n = {}^nC_3\left(\frac{1}{2}\right)^n \Rightarrow {}^nC_2 = {}^nC_3 \Rightarrow n = 5$.
+  2. P(odd number of odd outcomes) $= \frac{{}^5C_1 + {}^5C_3 + {}^5C_5}{2^5} = \frac{16}{32} = \frac{1}{2}$.
+  Answer: (B)
+M A 18: |-
+  Concept: Express $p^4 + q^4$ in terms of s = pq and p + q.
+  Solution:
+  1. $p^2 + q^2 = 4 - 2s$ and $p^4 + q^4 = (p^2 + q^2)^2 - 2s^2 = 2s^2 - 16s + 16$.
+  2. $2s^2 - 16s + 16 = 272 \Rightarrow s^2 - 8s - 128 = 0 \Rightarrow s = 16$ or $s = -8$.
+  3. With s = pq = 16 (the positive value taken by the key), the equation is $x^2 - 2x + 16 = 0$.
+  Note: the data are inconsistent: no two positive reals can have sum 2 and $p^4 + q^4 = 272$ (s = 16 gives complex roots). The official key is (D).
+  Answer: (D)
+M A 19: |-
+  Concept: Sum of an infinite GP, then solve the exponential equation.
+  Solution:
+  1. $\cos^2x + \cos^4x + \ldots = \frac{\cos^2x}{1 - \cos^2x} = \cot^2x$, so the expression is $2^{\cot^2x}$.
+  2. The roots of $t^2 - 9t + 8 = 0$ are 1 and 8. For $0 < x < \frac{\pi}{2}$, $\cot^2x > 0$, so $2^{\cot^2x} = 8$ and $\cot^2x = 3$, i.e. $x = \frac{\pi}{6}$.
+  3. $\frac{2\sin x}{\sin x + \sqrt{3}\cos x} = \frac{2(1/2)}{1/2 + 3/2} = \frac{1}{2}$.
+  Answer: (C)
+M A 20: |-
+  Concept: A linear system is inconsistent when the determinant is 0 and the equations contradict each other.
+  Solution:
+  1. $\Delta = \begin{vmatrix} 3 & -2 & -k \\ 2 & -4 & -2 \\ 1 & 2 & -1 \end{vmatrix} = 24 - 8k$, which is 0 when k = 3.
+  2. With k = 3, the coefficients of equation 1 equal equation 2 + equation 3: (3, –2, –3) = (2, –4, –2) + (1, 2, –1).
+  3. The system is consistent only if 10 = 6 + 5m, i.e. $m = \frac{4}{5}$.
+  4. So it is inconsistent when k = 3 and $m \ne \frac{4}{5}$.
+  Answer: (D)
+M B 1: |-
+  Concept: $PQ = kI \Rightarrow Q = kP^{-1} = \frac{k}{|P|}\text{adj}P$ and $|Q| = \frac{k^3}{|P|}$.
+  Solution:
+  1. $|P| = 12\alpha + 20$.
+  2. $|Q| = \frac{k^3}{|P|} = \frac{k^2}{2} \Rightarrow |P| = 2k$.
+  3. $q_{23} = \frac{k\,C_{32}}{|P|}$ where the cofactor $C_{32} = -(3\alpha + 4)$: $\frac{-k(3\alpha + 4)}{2k} = -\frac{k}{8} \Rightarrow 3\alpha + 4 = \frac{k}{4}$.
+  4. From step 2: $12\alpha + 20 = 2k$. Solving: α = –1, k = 4.
+  5. $\alpha^2 + k^2 = 1 + 16 = 17$.
+  Answer: 17
+M B 2: |-
+  Concept: For independent events, use the odds $\frac{P(B_i)}{1 - P(B_i)}$.
+  Solution:
+  1. Let $x = P(B_1)$, $y = P(B_2)$, $z = P(B_3)$. Then $\frac{\alpha}{p} = \frac{x}{1 - x}$, $\frac{\beta}{p} = \frac{y}{1 - y}$, $\frac{\gamma}{p} = \frac{z}{1 - z}$.
+  2. Dividing $(\alpha - 2\beta)p = \alpha\beta$ by $\alpha\beta$: $\frac{p}{\beta} - \frac{2p}{\alpha} = 1 \Rightarrow \left(\frac{1}{y} - 1\right) - 2\left(\frac{1}{x} - 1\right) = 1 \Rightarrow \frac{1}{y} = \frac{2}{x}$.
+  3. Similarly $(\beta - 3\gamma)p = 2\beta\gamma$ gives $\left(\frac{1}{z} - 1\right) - 3\left(\frac{1}{y} - 1\right) = 2 \Rightarrow \frac{1}{z} = \frac{3}{y} = \frac{6}{x}$.
+  4. $\frac{P(B_1)}{P(B_3)} = \frac{x}{z} = 6$.
+  Answer: 6
+M B 3: |-
+  Concept: Minimise $f(s) = \frac{4}{s} + \frac{1}{1 - s}$ for s = sin x in (0, 1).
+  Solution:
+  1. By the Cauchy–Schwarz (Titu) inequality: $\frac{2^2}{s} + \frac{1^2}{1 - s} \ge \frac{(2 + 1)^2}{s + (1 - s)} = 9$.
+  2. Equality when $\frac{2}{s} = \frac{1}{1 - s}$, i.e. $s = \frac{2}{3}$, which is possible in (0, 1).
+  3. The equation has a solution for α ≥ 9, so the minimum α is 9.
+  Answer: 9
+M B 4: |-
+  Concept: The perpendicular from a circle's centre to a chord bisects the chord.
+  Solution:
+  1. Given circle: centre (1, 3), radius $\sqrt{1 + 9 - 6} = 2$. Its diameter is a chord of C with midpoint (1, 3).
+  2. Distance from C's centre (2, 1) to (1, 3): $\sqrt{1 + 4} = \sqrt{5}$.
+  3. $R^2 = 2^2 + (\sqrt{5})^2 = 9$, so R = 3.
+  Answer: 3
+M B 5: |-
+  Concept: Telescoping inverse tangents: $\tan^{-1}\frac{1}{1 + r(r + 1)} = \tan^{-1}(r + 1) - \tan^{-1}r$.
+  Solution:
+  1. $\sum_{r=1}^{n} = \tan^{-1}(n + 1) - \tan^{-1}1$.
+  2. As n → ∞: $\frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$.
+  3. $\tan\frac{\pi}{4} = 1$.
+  Answer: 1
+M B 6: |-
+  Concept: Use the given integral to find a, then integrate x + [x] piecewise.
+  Solution:
+  1. $\int_{-a}^{a}|x|\,dx = a^2$; $\int_{-a}^{a}|x - 2|\,dx = \frac{(a + 2)^2 + (a - 2)^2}{2} = a^2 + 4$ (for a > 2).
+  2. $2a^2 + 4 = 22 \Rightarrow a = 3$.
+  3. $\int_{-3}^{3}x\,dx = 0$ and $\int_{-3}^{3}[x]\,dx = -3 - 2 - 1 + 0 + 1 + 2 = -3$.
+  4. $\int_{3}^{-3}(x + [x])\,dx = -(-3) = 3$.
+  Answer: 3
+M B 7: |-
+  Concept: A vector coplanar with $\vec{a}$ and $\vec{b}$ can be written as $\vec{c} = \lambda\vec{a} + \mu\vec{b}$.
+  Solution:
+  1. $\vec{a}\cdot\vec{b} = -1$, $|\vec{a}|^2 = 3$, $|\vec{b}|^2 = 5$.
+  2. $\vec{b}\cdot\vec{c} = 0$: $-\lambda + 5\mu = 0 \Rightarrow \lambda = 5\mu$.
+  3. $\vec{a}\cdot\vec{c} = 7$: $3\lambda - \mu = 7 \Rightarrow 14\mu = 7$, so $\mu = \frac{1}{2}$, $\lambda = \frac{5}{2}$.
+  4. $\vec{c} = \left(-\frac{3}{2}, \frac{5}{2}, 3\right)$, and $\vec{a} + \vec{b} + \vec{c} = \left(-\frac{1}{2}, \frac{7}{2}, 5\right)$.
+  5. $|\vec{a} + \vec{b} + \vec{c}|^2 = \frac{1}{4} + \frac{49}{4} + 25 = \frac{75}{2}$, so twice it is 75.
+  Answer: 75
+M B 8: |-
+  Concept: Sum of an arithmetic progression.
+  Solution:
+  1. A ∩ B: 101, 110, ..., 992 → 100 terms, sum $= \frac{100(101 + 992)}{2} = 54650$.
+  2. Required sum $274\times400 = 109600$, so A ∩ C must add $109600 - 54650 = 54950$ (C is disjoint from B when ℓ ≠ 2).
+  3. For ℓ = 5: 104, 113, ..., 995 → 100 terms, sum $= \frac{100(104 + 995)}{2} = 54950$. ✓
+  4. So ℓ = 5.
+  Answer: 5
+M B 9: |-
+  Concept: Separate real and imaginary parts of the complex equation.
+  Solution:
+  1. With z = x + iy: the imaginary part gives y = –2; the real part gives $x + \alpha\sqrt{(x - 1)^2 + 4} = 0$.
+  2. Squaring: $\alpha^2[(x - 1)^2 + 4] = x^2 \Rightarrow (\alpha^2 - 1)x^2 - 2\alpha^2x + 5\alpha^2 = 0$.
+  3. Real x requires discriminant ≥ 0: $4\alpha^4 - 20\alpha^2(\alpha^2 - 1) \ge 0 \Rightarrow \alpha^2 \le \frac{5}{4}$.
+  4. Taking $p = -\frac{\sqrt{5}}{2}$ and $q = \frac{\sqrt{5}}{2}$: $4(p^2 + q^2) = 4\left(\frac{5}{4} + \frac{5}{4}\right) = 10$.
+  Note: squaring admits one extraneous value. Directly, $\alpha = \frac{-x}{\sqrt{(x - 1)^2 + 4}}$ ranges over $\left[-\frac{\sqrt{5}}{2}, 1\right)$, so strictly no largest value exists. The official answer uses the discriminant method above.
+  Answer: 10
+M B 10: |-
+  Concept: The trace of $M^TM$ equals the sum of the squares of all entries of M.
+  Solution:
+  1. Entries are 0, 1, 2 with squares 0, 1, 4; we need nine squares adding to 7.
+  2. Case 1: one entry 2 and three entries 1: $9\times{}^8C_3 = 9\times56 = 504$.
+  3. Case 2: seven entries 1 and two entries 0: $^9C_7 = 36$.
+  4. Total = 504 + 36 = 540.
+  Answer: 540

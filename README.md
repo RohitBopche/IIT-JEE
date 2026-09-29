@@ -21,6 +21,16 @@ All 26 papers in `IIT JEE 2021/` (2,340 questions) were read page by page from r
 
 Progress per paper: `output/PROGRESS.md` (`python -m extractor.manual status`).
 
+### Explanations
+Worked explanations are stored in `output/raw/<paper>/expl_P.yaml`, `expl_C.yaml` and `expl_M.yaml`, keyed like `P A 1`.
+Each explanation lists the concept, the given data, numbered steps and ends with an `Answer:` line.
+When building the Excel file, that `Answer:` line is compared with `Correct_Answer`:
+- `Explanation_Check` = `ok` when they match.
+- A mismatch goes to `Needs_Review`.
+- `missing` means the question has no explanation yet.
+
+Coverage per paper is shown by `python -m extractor.manual status` and in `output/PROGRESS.md`.
+
 ### Excel sheets
 - `Questions`: all questions
 - `Needs_Review`: low-confidence rows, with the reason in the `Issues` column

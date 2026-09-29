@@ -1,0 +1,212 @@
+P A 1: |-
+  Concept: The net gravitational pull of the other three particles supplies the centripetal force for circular motion.
+  Given: m = 1 kg, R = 1 m; the four particles sit at the corners of a square inscribed in the circle.
+  Solution:
+  1. Adjacent particles are at distance $\sqrt{2}R$. Each pulls with $F_1 = \frac{Gm^2}{2R^2}$; their components along the radius add: $2F_1\cos45^\circ = \frac{Gm^2}{\sqrt{2}R^2}$.
+  2. The opposite particle is at distance 2R: $F_2 = \frac{Gm^2}{4R^2}$, also towards the centre.
+  3. Net force $F = \frac{Gm^2}{R^2}\left(\frac{1}{\sqrt{2}} + \frac{1}{4}\right) = \frac{Gm^2}{R^2}\cdot\frac{2\sqrt{2} + 1}{4}$.
+  4. Set $\frac{mv^2}{R} = F$: $v^2 = \frac{Gm}{R}\cdot\frac{1 + 2\sqrt{2}}{4}$. With m = 1, R = 1: $v = \frac{\sqrt{(1 + 2\sqrt{2})G}}{2}$.
+  Answer: (A)
+P A 2: |-
+  Concept: Angular velocity of uniform circular motion is $\omega = \frac{2\pi}{T}$, so $\omega \propto \frac{1}{T}$.
+  Solution:
+  1. $\frac{\omega_1}{\omega_2} = \frac{T_2}{T_1} = \frac{8\ \text{hr}}{1\ \text{hr}} = 8$.
+  2. So $\omega_1 : \omega_2 = 8 : 1$. (Kepler's law is not needed because the periods are already given.)
+  Answer: (A)
+P A 3: |-
+  Concept: Net work in a cycle = sum of the work in each step; W = 0 for an isochoric step.
+  Solution:
+  1. A→B (isothermal, V doubles): $W_{AB} = nRT\ln\frac{V_2}{V_1} = nRT\ln2$.
+  2. At B: $P_2(2V_1) = nRT$, so $P_2V_1 = \frac{nRT}{2}$.
+  3. B→C (isobaric compression from $2V_1$ to $V_1$): $W_{BC} = P_2(V_1 - 2V_1) = -P_2V_1 = -\frac{nRT}{2}$.
+  4. C→A (isochoric): $W_{CA} = 0$.
+  5. Total $W = nRT\ln2 - \frac{nRT}{2} = nRT\left(\ln2 - \frac{1}{2}\right)$.
+  Answer: (D)
+P A 4: |-
+  Concept: Series: $\frac{1}{C_s} = \sum\frac{1}{C_i}$; parallel: $C_p = \sum C_i$.
+  Solution:
+  1. Two equal capacitors C in series: $C_s = \frac{C}{2}$.
+  2. In parallel: $C_p = 2C$.
+  3. $C_s : C_p = \frac{C}{2} : 2C = 1 : 4$.
+  Answer: (B)
+P A 5: |-
+  Concept: Two cells connected in opposition in a closed loop: net emf = difference of emfs; the terminal voltage of a cell being charged is $V = E + Ir$.
+  Given: $E_1$ = 6 V, $r_1$ = 2 Ω; $E_2$ = 4 V, $r_2$ = 8 Ω; the wire PY closes the loop with the cells opposing each other (figure).
+  Solution:
+  1. Current $I = \frac{E_1 - E_2}{r_1 + r_2} = \frac{6 - 4}{2 + 8} = 0.2$ A.
+  2. This current is driven by $E_1$ and flows through $E_2$ against its emf, so $E_2$ is being charged.
+  3. Potential difference across $E_2$ (points X and Y): $V_{XY} = E_2 + Ir_2 = 4 + 0.2\times8 = 5.6$ V.
+  4. Check with $E_1$: $V = E_1 - Ir_1 = 6 - 0.4 = 5.6$ V (same, because P and Y are joined).
+  Answer: (C)
+P A 6: |-
+  Concept: Relation between the elastic moduli: $Y = \frac{9K\eta}{3K + \eta}$.
+  Solution:
+  1. Rearrange: $Y(3K + \eta) = 9K\eta \Rightarrow 3KY + \eta Y = 9K\eta$.
+  2. Collect K: $K(9\eta - 3Y) = Y\eta \Rightarrow K = \frac{Y\eta}{9\eta - 3Y}$.
+  3. This matches option (A). Options (C) and (D) have wrong denominators ($3K - \eta$, $2\eta + 3K$), and (B) is not a rearrangement of the correct formula.
+  Answer: (A)
+P A 7: |-
+  Concept: In a binary system both bodies revolve about the common centre of mass with the same period; $T^2 = \frac{4\pi^2d^3}{G(m_1 + m_2)}$.
+  Solution:
+  1. For mass m: its orbit radius is $r_1 = \frac{2m}{3m}d = \frac{2d}{3}$.
+  2. Gravity gives the centripetal force: $\frac{G(m)(2m)}{d^2} = m\omega^2\cdot\frac{2d}{3} \Rightarrow \omega^2 = \frac{3Gm}{d^3}$.
+  3. $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{d^3}{3Gm}}$.
+  Answer: (A)
+P A 8: |-
+  Concept: Acceleration is the slope of the velocity–time graph.
+  Solution:
+  1. From A to M the graph is a straight line going down: constant negative slope, so a is a constant negative value.
+  2. From M to B the graph is a straight line going up with the same magnitude of slope: a is a constant positive value.
+  3. So the a–t graph is a negative constant that jumps to a positive constant at M: a single step, option (A).
+  4. The square wave (B) would need repeated reversals; the sinusoid and triangle need curved v–t graphs.
+  Answer: (A)
+P A 9: |-
+  Concept: Photon momentum $p = \frac{h}{\lambda}$ and energy $E = \frac{hc}{\lambda}$.
+  Solution:
+  1. Statement I: equal momenta give $\lambda = \frac{h}{p}$ equal, so it is true.
+  2. Statement II: if λ decreases, both p and E increase (inverse relation). It says they decrease, so it is false.
+  Answer: (D)
+P A 10: |-
+  Concept: Current is the rate of flow of charge, so $q = \int i\,dt$.
+  Solution:
+  1. $q = \int_0^{15}(20t + 8t^2)dt = \left[10t^2 + \frac{8t^3}{3}\right]_0^{15}$.
+  2. $= 10(225) + \frac{8(3375)}{3} = 2250 + 9000 = 11250$ C.
+  Answer: (D)
+P A 11: |-
+  Concept: Each thermodynamic process keeps one quantity fixed.
+  Solution:
+  1. Isothermal: temperature constant, (a)–(ii).
+  2. Isochoric: volume constant, (b)–(iii).
+  3. Adiabatic: no heat exchange, so the heat content stays constant, (c)–(iv).
+  4. Isobaric: pressure constant, (d)–(i).
+  Answer: (B)
+P A 12: |-
+  Concept: Lyman series ends on n = 1, Balmer on n = 2, Paschen on n = 3. The first member of a series comes from the nearest upper level; a jump from the continuum (n = ∞) is the series limit.
+  Solution:
+  1. A: continuum → n = 1, the series limit of the Lyman series.
+  2. B: n = 5 → n = 2. Balmer members: 3→2 (first), 4→2 (second), 5→2 (third), so B is the third member of the Balmer series.
+  3. C: n = 5 → n = 3. Paschen members: 4→3 (first), 5→3 (second), so C is the second member of the Paschen series.
+  Answer: (A)
+P A 13: |-
+  Concept: For a spherical mirror (paraxial rays) the focus lies midway between the pole and the centre of curvature: $f = \frac{r}{2}$.
+  Solution:
+  1. For a convex mirror both F and C lie behind the mirror, so f and r have the same sign in the Cartesian convention.
+  2. Hence $f = +\frac{1}{2}r$.
+  Answer: (C)
+P A 14: |-
+  Concept: Standard moments of inertia for mass M and radius R.
+  Solution:
+  1. $I_1$ (ring about a diameter) $= \frac{1}{2}MR^2$.
+  2. $I_2$ (disc about its central perpendicular axis) $= \frac{1}{2}MR^2$.
+  3. $I_3$ (solid cylinder about its axis) $= \frac{1}{2}MR^2$.
+  4. $I_4$ (solid sphere about a diameter) $= \frac{2}{5}MR^2$.
+  5. Since $\frac{1}{2} > \frac{2}{5}$: $I_1 = I_2 = I_3 > I_4$.
+  Answer: (D)
+P A 15: |-
+  Concept: The argument of an exponential must be dimensionless.
+  Solution:
+  1. $\frac{x^2}{\alpha kT}$ is dimensionless, and kT has dimensions of energy $[ML^2T^{-2}]$.
+  2. $[\alpha] = \frac{[L^2]}{[ML^2T^{-2}]} = [M^{-1}T^2]$.
+  3. $W = \alpha\beta^2$ (times a dimensionless factor), so $[\beta^2] = \frac{[ML^2T^{-2}]}{[M^{-1}T^2]} = [M^2L^2T^{-4}]$.
+  4. $[\beta] = [MLT^{-2}]$.
+  Answer: (C)
+P A 16: |-
+  Concept: Current gain of a transistor in CE mode: $\beta = \frac{\Delta I_C}{\Delta I_B}$, with $I_E = I_B + I_C$.
+  Solution:
+  1. $\Delta I_B = \Delta I_E - \Delta I_C = 4 - 3.5 = 0.5$ mA.
+  2. $\beta = \frac{3.5}{0.5} = 7$.
+  3. The value 0.875 is $\alpha = \frac{\Delta I_C}{\Delta I_E}$, not β.
+  Answer: (A)
+P A 17: |-
+  Concept: $I_{max} = (a_1 + a_2)^2$, $I_{min} = (a_1 - a_2)^2$ for amplitudes $a_1$, $a_2$.
+  Solution:
+  1. Amplitude is proportional to slit width, so $a_1 : a_2 = 3 : 1$.
+  2. $\frac{I_{max}}{I_{min}} = \frac{(3 + 1)^2}{(3 - 1)^2} = \frac{16}{4} = 4$.
+  Answer: (A)
+P A 18: |-
+  Concept: When a mass is placed gently at the mean position, horizontal momentum is conserved; the new amplitude comes from the new speed and new angular frequency.
+  Solution:
+  1. Before: speed at the mean position $v = A\omega$, where $\omega = \sqrt{\frac{k}{M}}$.
+  2. Momentum conservation: $Mv = (M + m)v'$, so $v' = \frac{MA\omega}{M + m}$.
+  3. New angular frequency $\omega' = \sqrt{\frac{k}{M + m}}$.
+  4. New amplitude $A' = \frac{v'}{\omega'} = \frac{MA}{M + m}\sqrt{\frac{k}{M}}\sqrt{\frac{M + m}{k}} = A\sqrt{\frac{M}{M + m}}$.
+  Answer: (A)
+P A 19: |-
+  Concept: Superposition. Eight equal charges +Q at the corners of a cube give zero field at the centre by symmetry.
+  Solution:
+  1. Write the charge at the origin as $-Q = +Q + (-2Q)$. The eight +Q charges give zero field; only the extra −2Q at the origin remains.
+  2. Distance from a corner to the centre: $r = \frac{\sqrt{3}a}{2}$, so $r^2 = \frac{3a^2}{4}$.
+  3. Magnitude: $E = \frac{1}{4\pi\varepsilon_0}\cdot\frac{2Q}{3a^2/4} = \frac{2Q}{3\pi\varepsilon_0a^2}$.
+  4. The field of a negative charge points towards it (towards the origin), along $-\frac{(\hat{x} + \hat{y} + \hat{z})}{\sqrt{3}}$.
+  5. $\vec{E} = \frac{-2Q}{3\sqrt{3}\pi\varepsilon_0a^2}(\hat{x} + \hat{y} + \hat{z})$.
+  Answer: (C)
+P A 20: |-
+  Concept: Volume expansion coefficient $\gamma = 3\alpha$, so $\Delta V = 3\alpha V\Delta T$.
+  Solution:
+  1. The box encloses volume $V = a^3$, and it expands like a solid cube of the same material.
+  2. $\Delta V = 3\alpha a^3\Delta T$.
+  Answer: (C)
+P B 1: |-
+  Concept: Quality factor of a series LR resonator: $Q = \frac{\omega L}{R} = \frac{2\pi fL}{R}$.
+  Solution:
+  1. $Q = \frac{2\times3.14\times10^7\times2\times10^{-4}}{6.28}$.
+  2. $= \frac{6.28\times2\times10^3}{6.28} = 2000$.
+  Answer: 2000
+P B 2: |-
+  Concept: Conservation of linear momentum in the direction perpendicular to the initial motion.
+  Solution:
+  1. Initially there is no momentum perpendicular to the original direction.
+  2. The balls move at 30° on opposite sides: $mv_1\sin30^\circ = mv_2\sin30^\circ$.
+  3. So $v_1 = v_2$ and the ratio is 1 : 1, x = 1.
+  Answer: 1
+P B 3: |-
+  Concept: Modulation index $\mu = \frac{A_m}{A_c}$; percent modulation = $\mu\times100$.
+  Solution:
+  1. Message amplitude $A_m$ = 20, carrier amplitude $A_c$ = 80.
+  2. $\mu = \frac{20}{80} = 0.25$, i.e. 25%.
+  Answer: 25
+P B 4: |-
+  Concept: The horizontal push gives the normal reaction; static friction $f \le \mu N$ must balance the weight.
+  Solution:
+  1. For the block not to slide: $\mu N \ge mg$.
+  2. Minimum force: $N = \frac{mg}{\mu} = \frac{0.5\times10}{0.2} = 25$ N.
+  Answer: 25
+P B 5: |-
+  Concept: A block rests on an incline without slipping if $\tan\theta \le \mu$.
+  Solution:
+  1. Slope of the curve: $\tan\theta = \frac{dy}{dx} = \frac{x}{2}$.
+  2. Limiting case: $\frac{x}{2} = 0.5 \Rightarrow x = 1$ m.
+  3. Height $y = \frac{x^2}{4} = \frac{1}{4}$ m = 25 cm.
+  Answer: 25
+P B 6: |-
+  Concept: Speed of an EM wave in a medium: $v = \frac{c}{\sqrt{\mu_r\varepsilon_r}}$ (frequency is not needed).
+  Solution:
+  1. $v = \frac{3\times10^8}{\sqrt{2\times2}} = 1.5\times10^8$ m/s.
+  2. $= 15\times10^7$ m/s.
+  Answer: 15
+P B 7: |-
+  Concept: Pascal's law: equal pressure on both pistons, $\frac{F_1}{A_1} = \frac{F_2}{A_2}$, and $A \propto d^2$.
+  Solution:
+  1. Load lifted $\propto \frac{A_{large}}{A_{small}} = \left(\frac{d_{large}}{d_{small}}\right)^2$.
+  2. New ratio $= \frac{(4d_L)^2}{(d_s/4)^2} = 16\times16 = 256$ times the old ratio.
+  3. New load = 100 × 256 = 25600 kg.
+  Answer: 25600
+P B 8: |-
+  Concept: Ideal transformer: $\frac{N_p}{N_s} = \frac{V_p}{V_s}$.
+  Solution:
+  1. $V_p$ = 220 V, $V_s$ = 12 V, $N_s$ = 24.
+  2. $N_p = 24\times\frac{220}{12} = 440$.
+  Answer: 440
+P B 9: |-
+  Concept: Malus' law, $I = I_0\cos^2\theta$ for light passing through the analyser.
+  Solution:
+  1. Taking the initial setting as the one of maximum transmission (polariser and analyser axes parallel), 100 lumen is the maximum intensity.
+  2. After rotating the analyser by 30°: $I = 100\cos^230^\circ = 100\times\frac{3}{4} = 75$ lumen.
+  Answer: 75
+P B 10: |-
+  Concept: A reverse-biased Zener diode in breakdown holds the voltage across it (and anything in parallel with it) at $V_Z$.
+  Solution:
+  1. Check breakdown: without the Zener, the voltage across 2 kΩ would be $10\times\frac{2}{3} \approx 6.67$ V > 5 V, so the Zener conducts.
+  2. The 2 kΩ resistor is in parallel with the Zener, so its voltage is 5 V.
+  3. $I = \frac{5}{2000} = 2.5\times10^{-3}$ A $= 25\times10^{-4}$ A.
+  Answer: 25

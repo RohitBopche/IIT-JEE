@@ -135,7 +135,15 @@ def ingest(slugs):
         ans_file = RAW / slug / "answers.yaml"
         sol_answers = yaml.safe_load(ans_file.read_text()) if ans_file.exists() else {}
         ans_src = sol_answers.pop("_source", "sol")
-        files = [f for f in files if f.name != "answers.yaml"]
+        files = [f for f in files if f.name != "answers.yaml" and not f.name.startswith("expl")]
+        # expl*.yaml: {"P A 1": "worked explanation ... Answer: (C)", ...}
+        expl = {}
+        for ef in sorted((RAW / slug).glob("expl*.yaml")):
+            try:
+                expl.update({str(k): str(v).strip() for k, v in (yaml.safe_load(ef.read_text()) or {}).items()})
+            except yaml.YAMLError as e:
+                print(f"[{slug}] YAML error in {ef.name}: {e}")
+                ok = False
         for f in files:
             try:
                 items = yaml.safe_load(f.read_text()) or []
@@ -148,7 +156,9 @@ def ingest(slugs):
                     key = f"{it['s']} {it.get('sec', '')} {it['n']}"
                     if not str(it.get("a", "") or "").strip() and key in sol_answers:
                         it["a"], it["as"] = sol_answers[key], ans_src
-                    raw_qs.append(to_raw(it, f.name))
+                    q = to_raw(it, f.name)
+                    q["explanation"] = expl.get(key, "")
+                    raw_qs.append(q)
                 except Exception as e:
                     print(f"[{slug}] bad item in {f.name}: {e}: {str(it)[:120]}")
                     ok = False
@@ -162,7 +172,8 @@ def ingest(slugs):
         res = ex.finish(paper, doc, raw_qs, [], SOURCE)
         qs = res["questions"]
         low = [q for q in qs if q["confidence"] < excel.REVIEW_BELOW]
-        print(f"[{slug}] {len(qs)} questions | review {len(low)} | paper issues: {res['issues'] or 'none'}")
+        n_ex = sum(bool(q.get("explanation")) for q in qs)
+        print(f"[{slug}] {len(qs)} questions | explained {n_ex} | review {len(low)} | paper issues: {res['issues'] or 'none'}")
         for q in low:
             print(f"    {q['q_id']} {q['confidence']}: {'; '.join(q['issues'])}")
     n, review = excel.build(OUT, OUT / "JEE_Questions.xlsx")
@@ -171,15 +182,16 @@ def ingest(slugs):
 
 
 def status():
-    lines = ["# Extraction progress", "", "| Paper | Status | Questions | Needs review | Paper issues |", "|---|---|---|---|---|"]
+    lines = ["# Extraction progress", "", "| Paper | Status | Questions | Explained | Needs review | Paper issues |", "|---|---|---|---|---|---|"]
     for slug, p in sorted(papers_by_slug().items()):
         j = OUT / "json" / f"{slug}.json"
         d = json.loads(j.read_text()) if j.exists() else None
         qs = d["questions"] if d else []
         review = sum(q["confidence"] < excel.REVIEW_BELOW for q in qs)
         state = "done" if d and not d["issues"] else ("partial" if d else "todo")
-        lines.append(f"| {p.path.name} | {state} | {len(qs)} | {review} | {'; '.join(d['issues']) if d else ''} |")
-        print(f"{slug:22s} {state:8s} {len(qs):3d}  {p.path.name}")
+        n_ex = sum(bool(q.get("explanation")) for q in qs)
+        lines.append(f"| {p.path.name} | {state} | {len(qs)} | {n_ex} | {review} | {'; '.join(d['issues']) if d else ''} |")
+        print(f"{slug:22s} {state:8s} {len(qs):3d}  expl {n_ex:3d}  {p.path.name}")
     (OUT / "PROGRESS.md").write_text("\n".join(lines) + "\n")
 
 
