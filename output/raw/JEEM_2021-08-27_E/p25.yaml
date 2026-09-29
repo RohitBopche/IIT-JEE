@@ -1,0 +1,78 @@
+- n: 4
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    Let $z_1$ and $z_2$ be two complex numbers such that $\arg(z_1 - z_2) = \frac{\pi}{4}$ and $z_1$, $z_2$ satisfy the equation $|z - 3| = \text{Re}(z)$. Then the imaginary part of $z_1 + z_2$ is equal to _________.
+  a: '6'
+  ch: Complex Numbers
+  tp: Locus, parabola in complex plane
+  df: M
+- n: 5
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    Let S = {1, 2, 3, 4, 5, 6, 9}. Then the number of elements in the set $T = \{A \subseteq S : A \neq \phi$ and the sum of all the elements of A is not a multiple of 3$\}$ is _________.
+  a: '80'
+  ch: Permutations and Combinations
+  tp: Counting subsets by residue
+  df: H
+- n: 6
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Let $A(\sec\theta, 2\tan\theta)$ and $B(\sec\phi, 2\tan\phi)$, where $\theta + \phi = \pi/2$, be two points on the hyperbola $2x^2 - y^2 = 2$. If $(\alpha, \beta)$ is the point of the intersection of the normals to the hyperbola at A and B, then $(2\beta)^2$ is equal to ___________.
+  a: '36'
+  ch: Conic Sections
+  tp: Normals to hyperbola
+  df: H
+  nt: 'Official NTA answer 36; ALLEN answer BONUS (points do not lie on hyperbola unless θ = 0)'
+- n: 7
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Two circles each of radius 5 units touch each other at the point (1, 2). If the equation of their common tangent is 4x + 3y = 10, and $C_1(\alpha, \beta)$ and $C_2(\gamma, \delta)$, $C_1 \neq C_2$ are their centres, then $|(\alpha + \beta)(\gamma + \delta)|$ is equal to ___________.
+  a: '40'
+  ch: Circles
+  tp: Touching circles, centres
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    $3\times7^{22} + 2\times10^{22} - 44$ when divided by 18 leaves the remainder __________.
+  a: '15'
+  ch: Binomial Theorem
+  tp: Remainder using binomial expansion
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    An online exam is attempted by 50 candidates out of which 20 are boys. The average marks obtained by boys is 12 with a variance 2. The variance of marks obtained by 30 girls is also 2. The average marks of all 50 candidates is 15. If $\mu$ is the average marks of girls and $\sigma^2$ is the variance of marks of 50 candidates, then $\mu + \sigma^2$ is equal to _________.
+  a: '25'
+  ch: Statistics
+  tp: Combined mean and variance
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    If $\int\frac{2e^x + 3e^{-x}}{4e^x + 7e^{-x}}dx = \frac{1}{14}(ux + v\log_e(4e^x + 7e^{-x})) + C$, where C is a constant of integration, then u + v is equal to __________.
+  a: '7'
+  ch: Indefinite Integration
+  tp: Integration by splitting numerator
+  df: M

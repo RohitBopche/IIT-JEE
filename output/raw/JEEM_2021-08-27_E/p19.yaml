@@ -1,0 +1,124 @@
+- n: 5
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    A differential equation representing the family of parabolas with axis parallel to y-axis and whose length of latus rectum is the distance of the point (2, –3) form the line 3x + 4y = 5, is given by :
+  o: ['$10\frac{d^2y}{dx^2} = 11$', '$11\frac{d^2x}{dy^2} = 10$', '$10\frac{d^2x}{dy^2} = 11$', '$11\frac{d^2y}{dx^2} = 10$']
+  a: D
+  ch: Differential Equations
+  tp: Formation of differential equation
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If two tangents drawn from a point P to the parabola $y^2 = 16(x - 3)$ are at right angles, then the locus of point P is :
+  o: ['x + 3 = 0', 'x + 1 = 0', 'x + 2 = 0', 'x + 4 = 0']
+  a: B
+  ch: Conic Sections
+  tp: Director circle of parabola
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    The equation of the plane passing through the line of intersection of the planes $\vec{r}\cdot(\hat{i} + \hat{j} + \hat{k}) = 1$ and $\vec{r}\cdot(2\hat{i} + 3\hat{j} - \hat{k}) + 4 = 0$ and parallel to the x-axis is:
+  o: ['$\vec{r}\cdot(\hat{j} - 3\hat{k}) + 6 = 0$', '$\vec{r}\cdot(\hat{i} + 3\hat{k}) + 6 = 0$', '$\vec{r}\cdot(\hat{i} - 3\hat{k}) + 6 = 0$', '$\vec{r}\cdot(\hat{j} - 3\hat{k}) - 6 = 0$']
+  a: A
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    If the solution curve of the differential equation $(2x - 10y^3)dy + ydx = 0$, passes through the points (0, 1) and $(2, \beta)$, then $\beta$ is a root of the equation:
+  o: ['$y^5 - 2y - 2 = 0$', '$2y^5 - 2y - 1 = 0$', '$2y^5 - y^2 - 2 = 0$', '$y^5 - y^2 - 1 = 0$']
+  a: D
+  ch: Differential Equations
+  tp: Linear DE in x
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let A(a, 0), B(b, 2b +1) and C(0, b), $b \neq 0$, $|b| \neq 1$, be points such that the area of triangle ABC is 1 sq. unit, then the sum of all possible values of a is :
+  o: ['$\frac{-2b}{b + 1}$', '$\frac{2b}{b + 1}$', '$\frac{2b^2}{b + 1}$', '$\frac{-2b^2}{b + 1}$']
+  a: D
+  ch: Straight Lines
+  tp: Area of triangle
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let $[\lambda]$ be the greatest integer less than or equal to $\lambda$. The set of all values of $\lambda$ for which the system of linear equations $x + y + z = 4$, $3x + 2y + 5z = 3$, $9x + 4y + (28 + [\lambda])z = [\lambda]$ has a solution is:
+  o: ['$\mathbb{R}$', '$(-\infty, -9) \cup (-9, \infty)$', '[–9, –8)', '$(-\infty, -9) \cup [-8, \infty)$']
+  a: A
+  ch: Matrices and Determinants
+  tp: Consistency of linear system
+  df: M
+- n: 11
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The set of all values of k > –1, for which the equation $(3x^2 + 4x + 3)^2 - (k + 1)(3x^2 + 4x + 3)(3x^2 + 4x + 2) + k(3x^2 + 4x + 2)^2 = 0$ has real roots, is :
+  o: ['$\left(1, \frac{5}{2}\right]$', '[2, 3)', '$\left[-\frac{1}{2}, 1\right)$', '$\left(\frac{1}{2}, \frac{3}{2}\right] - \{1\}$']
+  a: A
+  ch: Quadratic Equations
+  tp: Condition for real roots
+  df: H
+- n: 12
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    A box open from top is made from a rectangular sheet of dimension a × b by cutting squares each of side x from each of the four corners and folding up the flaps. If the volume of the box is maximum, then x is equal to :
+  o: ['$\frac{a + b - \sqrt{a^2 + b^2 - ab}}{12}$', '$\frac{a + b - \sqrt{a^2 + b^2 + ab}}{6}$', '$\frac{a + b - \sqrt{a^2 + b^2 - ab}}{6}$', '$\frac{a + b + \sqrt{a^2 + b^2 - ab}}{6}$']
+  a: C
+  ch: Application of Derivatives
+  tp: Maximum volume of open box
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    The Boolean expression $(p \wedge q) \Rightarrow ((r \wedge q) \wedge p)$ is equivalent to :
+  o: ['$(p \wedge q) \Rightarrow (r \wedge q)$', '$(q \wedge r) \Rightarrow (p \wedge q)$', '$(p \wedge q) \Rightarrow (r \vee q)$', '$(p \wedge r) \Rightarrow (p \wedge q)$']
+  a: A
+  ch: Mathematical Reasoning
+  tp: Logical equivalence
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Let $\mathbb{Z}$ be the set of all integers,
+    $A = \{(x, y) \in \mathbb{Z}\times\mathbb{Z} : (x - 2)^2 + y^2 \le 4\}$,
+    $B = \{(x, y) \in \mathbb{Z}\times\mathbb{Z} : x^2 + y^2 \le 4\}$ and
+    $C = \{(x, y) \in \mathbb{Z}\times\mathbb{Z} : (x - 2)^2 + (y - 2)^2 \le 4\}$
+    If the total number of relation from $A \cap B$ to $A \cap C$ is $2^p$, then the value of p is :
+  o: ['16', '25', '49', '9']
+  a: B
+  ch: Sets, Relations and Functions
+  tp: Number of relations
+  df: M

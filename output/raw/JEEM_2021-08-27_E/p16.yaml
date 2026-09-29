@@ -1,0 +1,112 @@
+- n: 6
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    The resistance of a conductivity cell with cell constant 1.14 cm$^{-1}$, containing 0.001 M KCl at 298 K is 1500 $\Omega$. The molar conductivity of 0.001 M KCl solution at 298 K in S cm² mol$^{-1}$ is_______. (Integer answer)
+  a: '760'
+  ch: Electrochemistry
+  tp: Molar conductivity
+  df: E
+- n: 7
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    The number of photons emitted by a monochromatic (single frequency) infrared range finder of power 1 mW and wavelength of 1000 nm, in 0.1 second is $x\times10^{13}$. The value of x is _____. (Nearest integer) ($h = 6.63\times10^{-34}$ Js, $c = 3.00\times10^{8}$ ms$^{-1}$)
+  a: '50'
+  ch: Atomic Structure
+  tp: Number of photons
+  df: E
+- n: 8
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    When 5.1 g of solid $\mathrm{NH_4HS}$ is introduced into a two litre evacuated flask at 27°C, 20% of the solid decomposes into gaseous ammonia and hydrogen sulphide. The $K_p$ for the reaction at 27°C is $x\times10^{-2}$. The value of x is _______. (Integer answer) [Given R = 0.082 L atm K$^{-1}$ mol$^{-1}$]
+  a: '6'
+  ch: Chemical Equilibrium
+  tp: Heterogeneous equilibrium Kp
+  df: M
+- n: 9
+  s: C
+  sec: B
+  p: 16
+  t: N
+  st: MultiStmt
+  q: |-
+    The number of species having non–pyramidal shape among the following is_______.
+    (A) $\mathrm{SO_3}$ (B) $\mathrm{NO_3^-}$ (C) $\mathrm{PCl_3}$ (D) $\mathrm{CO_3^{2-}}$
+  a: '3'
+  ch: Chemical Bonding and Molecular Structure
+  tp: Molecular shapes, VSEPR
+  df: E
+- n: 10
+  s: C
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Data given for the following reaction is as follows: $\mathrm{FeO_{(s)} + C_{(graphite)} \rightarrow Fe_{(s)} + CO_{(g)}}$
+    | Substance | $\Delta H^\circ$ (kJ mol$^{-1}$) | $\Delta S^\circ$ (J mol$^{-1}$K$^{-1}$) |
+    |---|---|---|
+    | $\mathrm{FeO_{(s)}}$ | –266.3 | 57.49 |
+    | $\mathrm{C_{(graphite)}}$ | 0 | 5.74 |
+    | $\mathrm{Fe_{(s)}}$ | 0 | 27.28 |
+    | $\mathrm{CO_{(g)}}$ | –110.5 | 197.6 |
+    The minimum temperature in K at which the reaction becomes spontaneous is _______. (Integer answer)
+  a: '964'
+  ch: Chemical Thermodynamics
+  tp: Spontaneity, Gibbs energy
+  df: E
+- n: 1
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    The angle between the straight lines, whose direction cosines are given by the equations $2l + 2m - n = 0$ and $mn + nl + lm = 0$, is :
+  o: ['$\frac{\pi}{2}$', '$\pi - \cos^{-1}\left(\frac{4}{9}\right)$', '$\cos^{-1}\left(\frac{8}{9}\right)$', '$\frac{\pi}{3}$']
+  a: A
+  ch: Three Dimensional Geometry
+  tp: Angle between lines from direction cosines
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let $A = \begin{bmatrix} [x + 1] & [x + 2] & [x + 3] \\ [x] & [x + 3] & [x + 3] \\ [x] & [x + 2] & [x + 4] \end{bmatrix}$, where [t] denotes the greatest integer less than or equal to t. If det(A) = 192, then the set of values of x is the interval:
+  o: ['[68, 69)', '[62, 63)', '[65, 66)', '[60, 61)']
+  a: B
+  ch: Matrices and Determinants
+  tp: Determinant with greatest integer
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let M and m respectively be the maximum and minimum values of the function $f(x) = \tan^{-1}(\sin x + \cos x)$ in $\left[0, \frac{\pi}{2}\right]$. Then the value of tan(M – m) is equal to:
+  o: ['$2 + \sqrt{3}$', '$2 - \sqrt{3}$', '$3 + 2\sqrt{2}$', '$3 - 2\sqrt{2}$']
+  a: D
+  ch: Inverse Trigonometric Functions
+  tp: Range of inverse tangent function
+  df: M
+- n: 4
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Each of the persons A and B independently tosses three fair coins. The probability that both of them get the same number of heads is :
+  o: ['$\frac{1}{8}$', '$\frac{5}{8}$', '$\frac{5}{16}$', '1']
+  a: C
+  ch: Probability
+  tp: Binomial probability
+  df: E

@@ -1,0 +1,101 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    Curved surfaces of a plano-convex lens of refractive index $\mu_1$ and a plano-concave lens of refractive index $\mu_2$ have equal radius of curvature as shown in figure. Find the ratio of radius of curvature to the focal length of the combined lenses.
+  o: ['$\frac{1}{\mu_2 - \mu_1}$', '$\mu_1 - \mu_2$', '$\frac{1}{\mu_1 - \mu_2}$', '$\mu_2 - \mu_1$']
+  a: B
+  ch: Ray Optics and Optical Instruments
+  tp: Combination of lenses
+  df: E
+  fig: [[1, 345, 225, 455, 310]]
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    The boxes of masses 2 kg and 8 kg are connected by a massless string passing over smooth pulleys. Calculate the time taken by box of mass 8 kg to strike the ground starting from rest. (use $g = 10\ \text{m/s}^2$)
+  o: ['0.34 s', '0.2 s', '0.25 s', '0.4 s']
+  a: D
+  ch: Laws of Motion
+  tp: Pulley constraint motion
+  df: M
+  fig: [[1, 265, 645, 405, 795]]
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    For a transistor $\alpha$ and $\beta$ are given as $\alpha = \frac{I_C}{I_E}$ and $\beta = \frac{I_C}{I_B}$. Then the correct relation between $\alpha$ and $\beta$ will be :
+  o: ['$\alpha = \frac{1 - \beta}{\beta}$', '$\beta = \frac{\alpha}{1 - \alpha}$', '$\alpha\beta = 1$', '$\alpha = \frac{\beta}{1 - \beta}$']
+  a: B
+  ch: Semiconductor Electronics
+  tp: Current gains of transistor
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Water drops are falling from a nozzle of a shower onto the floor, from a height of 9.8 m. The drops fall at a regular interval of time. When the first drop strikes the floor, at that instant, the third drop begins to fall. Locate the position of second drop from the floor when the first drop strikes the floor.
+  o: ['4.18 m', '2.94 m', '2.45 m', '7.35 m']
+  a: D
+  ch: Kinematics
+  tp: Free fall of drops
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two discs have moments of intertia $I_1$ and $I_2$ about their respective axes perpendicular to the plane and passing through the centre. They are rotating with angular speeds, $\omega_1$ and $\omega_2$ respectively and are brought into contact face to face with their axes of rotation coaxial. The loss in kinetic energy of the system in the process is given by :
+  o: ['$\frac{I_1I_2}{(I_1 + I_2)}(\omega_1 - \omega_2)^2$', '$\frac{(I_1 - I_2)^2\omega_1\omega_2}{2(I_1 + I_2)}$', '$\frac{I_1I_2}{2(I_1 + I_2)}(\omega_1 - \omega_2)^2$', '$\frac{(\omega_1 - \omega_2)^2}{2(I_1 + I_2)}$']
+  a: C
+  ch: Rotational Motion
+  tp: Angular momentum conservation, KE loss
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Three capacitors $C_1 = 2\ \mu$F, $C_2 = 6\ \mu$F and $C_3 = 12\ \mu$F are connected as shown in figure. Find the ratio of the charges on capacitors $C_1$, $C_2$ and $C_3$ respectively :
+  o: ['2 : 1 : 1', '2 : 3 : 3', '1 : 2 : 2', '3 : 4 : 4']
+  a: C
+  ch: Capacitance
+  tp: Charges in capacitor network
+  df: E
+  fig: [[3, 485, 165, 585, 370]]
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The colour coding on a carbon resistor is shown in the given figure. The resistance value of the given resistor is :
+    [figure: bands Violet, Green, Red, Gold]
+  o: ['$(5700 \pm 285)\ \Omega$', '$(7500 \pm 750)\ \Omega$', '$(5700 \pm 375)\ \Omega$', '$(7500 \pm 375)\ \Omega$']
+  a: D
+  ch: Current Electricity
+  tp: Colour code of resistors
+  df: E
+  fig: [[3, 325, 610, 430, 835]]
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    An antenna is mounted on a 400 m tall building. What will be the wavelength of signal of signal that can be radiated effectively by the transmission tower upto a range of 44 km?
+  o: ['37.8 m', '605 m', '75.6 m', '302 m']
+  a: B
+  ch: Communication Systems
+  tp: Antenna size and wavelength
+  df: M
