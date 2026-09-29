@@ -1,0 +1,50 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A tuning fork A of unknown frequency produces 5beats/s with a fork of known frequency 340 HZ. When fork A filed, the beat frequency decreases to 2beats/s. What is the frequency of fork A?
+  o: ['342 Hz', '335 Hz', '338 Hz', '345 Hz']
+  a: B
+  ch: Waves
+  tp: Beats
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The trajectory a projectile in a vertical plane is $y = \alpha x - \beta x^2$, where $\alpha$ and $\beta$ are constants and x & y are respectively the horizontal and vertical distance of the projectile from the point of projection. The angle of projection $\theta$ and the maximum height attained H are respectively given by:
+  o: ['$\tan^{-1}\alpha, \frac{\alpha^2}{4\beta}$', '$\tan^{-1}\beta, \frac{\alpha^2}{2\beta}$', '$\tan^{-1}\left(\frac{\beta}{\alpha}\right), \frac{\alpha^2}{\beta}$', '$\tan^{-1}\alpha, \frac{4\alpha^2}{\beta}$']
+  a: A
+  ch: Kinematics
+  tp: Projectile trajectory equation
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A cord is wound round the circumference of wheel of radius r. The axis of the wheel is horizontal and the moment of inertia about it is I. A weight mg is attached to the cord at the end. The weight falls from rest. After falling through a distance 'h', the square of angular velocity of wheel will be:
+  o: ['$\frac{2gh}{I + mr^2}$', '2gh', '$\frac{2mgh}{I + 2mr^2}$', '$\frac{2mgh}{I + mr^2}$']
+  a: D
+  ch: Rotational Motion
+  tp: Energy conservation in rotation
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    Find the peak current and resonant frequency of the following circuit (as shown in figure)
+    [figure: series circuit of 100 mH inductor, 100 μF capacitor and 120 Ω resistor with source V = 30 sin 100t]
+  o: ['0.2 A and 100 Hz', '2 A and 50 Hz', '2 A and 100 Hz', '0.2 A and 50 Hz']
+  a: D
+  ch: Alternating Current
+  tp: Series LCR impedance and resonance
+  df: M
+  fig: [[4, 142, 115, 235, 465]]

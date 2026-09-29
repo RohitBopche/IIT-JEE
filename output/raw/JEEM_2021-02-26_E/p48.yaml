@@ -1,0 +1,100 @@
+- n: 2
+  s: M
+  sec: B
+  p: 48
+  t: N
+  q: |-
+    Let $\alpha$ and $\beta$ be two real numbers such that $\alpha + \beta = 1$ and $\alpha\beta = -1$. Let $P_n = (\alpha)^n + (\beta)^n$, $P_{n-1} = 11$ and $P_{n+1} = 29$ for some integer $n \ge 1$. Then, the value of $P_n^2$ is ______________.
+  a: 324
+  ch: Quadratic Equations
+  tp: Recurrence for power sums
+  df: E
+- n: 3
+  s: M
+  sec: B
+  p: 49
+  t: N
+  q: |-
+    Let $X_1, X_2, ........, X_{18}$ be eighteen observation such that $\sum_{i=1}^{18}(X_i - \alpha) = 36$ and $\sum_{i=1}^{18}(X_i - \beta)^2 = 90$, where $\alpha$ and $\beta$ are distinct real numbers. If the standard deviation of these observations is 1, then the value of $|\alpha - \beta|$ is ______________.
+  a: 4
+  ch: Statistics
+  tp: Variance with shifted data
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 50
+  t: N
+  q: |-
+    In $I_{m,n} = \int_0^1 x^{m-1}(1 - x)^{n-1}dx$, for m, n ≥ 1 and $\int_0^1\frac{x^{m-1} + x^{n-1}}{(1 + x)^{m+n}}dx = \alpha I_{m,n}$, $\alpha \in R$, then $\alpha$ equals______________ .
+  a: 1
+  ch: Definite Integration
+  tp: Beta function substitution
+  df: H
+- n: 5
+  s: M
+  sec: B
+  p: 50
+  t: N
+  q: |-
+    Let L be a common tangent line to the curves $4x^2 + 9y^2 = 36$ and $(2x)^2 + (2y)^2 = 31$. Then the square of the slope of the line L is ______________.
+  a: 3
+  ch: Conic Sections
+  tp: Common tangent to ellipse and circle
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 51
+  t: N
+  q: |-
+    If the matrix $A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 2 & 0 \\ 3 & 0 & -1 \end{bmatrix}$ satisfies the equation $A^{20} + \alpha A^{19} + \beta A = \begin{bmatrix} 1 & 0 & 0 \\ 0 & 4 & 0 \\ 0 & 0 & 1 \end{bmatrix}$ for some real numbers $\alpha$ and $\beta$, then $\beta - \alpha$ is equal to______________.
+  a: 4
+  ch: Matrices and Determinants
+  tp: Powers of a matrix
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 52
+  t: N
+  q: |-
+    If the arithmetic mean and geometric mean of the $p^{th}$ and $q^{th}$ terms of the sequence –16, 8, –4, 2, ........... satisfy the equation $4x^2 - 9x + 5 = 0$, then p+q is equal to ______________.
+  a: 10
+  ch: Sequences and Series
+  tp: AM and GM of GP terms
+  df: M
+- n: 8
+  s: M
+  sec: B
+  p: 52
+  t: N
+  q: |-
+    Let the normals at all the points on a given curve pass through a fixed point (a, b). If the curve passes through (3, -3) and $(4, -2\sqrt{2})$, and given that $a - 2\sqrt{2}b = 3$, then $(a^2 + b^2 + ab)$ is equal to______________.
+  a: 9
+  ch: Differential Equations
+  tp: Curve from normal condition
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 53
+  t: N
+  q: |-
+    Let z be those complex number which satisfy $|z + 5| \le 4$ and $z(1 + i) + \bar{z}(1 - i) \ge -10$, $i = \sqrt{-1}$.
+    If the maximum value of $|z + 1|^2$ is $\alpha + \beta\sqrt{2}$, then the value of $(\alpha + \beta)$ is ______________.
+  a: 48
+  ch: Complex Numbers
+  tp: Regions in the Argand plane
+  df: H
+- n: 10
+  s: M
+  sec: B
+  p: 54
+  t: N
+  q: |-
+    Let a be an integer such that all the real roots of the polynomial $2x^5 + 5x^4 + 10x^3 + 10x^2 + 10x + 10$ lie in the interval (a, a + 1). Then, |a| is equal to______________.
+  a: 2
+  ch: Application of Derivatives
+  tp: Monotonicity and roots
+  df: M

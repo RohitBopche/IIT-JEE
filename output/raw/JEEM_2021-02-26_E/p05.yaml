@@ -1,0 +1,172 @@
+- n: 5
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The incident ray, reflected ray and the outward drawn normal are denoted by the unit vectors $\vec{a}$, $\vec{b}$ and $\vec{c}$ respectively. Then choose the correct relation for these vectors.
+  o: ['$\vec{b} = 2\vec{a} + \vec{c}$', '$\vec{b} = \vec{a} - \vec{c}$', '$\vec{b} = \vec{a} + 2\vec{c}$', '$\vec{b} = \vec{a} - 2(\vec{a}\cdot\vec{c})\vec{c}$']
+  a: D
+  ch: Ray Optics and Optical Instruments
+  tp: Vector form of reflection
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A radioactive sample is undergoing $\alpha$ decay. At any time $t_1$, its activity is A and another time $t_2$, the activity is $\frac{A}{5}$. What is the average life time for the sample?
+  o: ['$\frac{t_2 - t_1}{\ln 5}$', '$\frac{\ln(t_2 + t_1)}{2}$', '$\frac{t_1 - t_2}{\ln 5}$', '$\frac{\ln 5}{t_2 - t_1}$']
+  a: A
+  ch: Nuclei
+  tp: Radioactive decay, mean life
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A particle executes S.H.M., the graph of velocity as a function of displacement is:
+  o: ['a circle', 'a parabola', 'an ellipse', 'a helix']
+  a: C
+  ch: Oscillations
+  tp: Velocity–displacement relation in SHM
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    A scooter accelerates from rest for time $t_1$ at constant rate $a_1$ and then retards at constant rate $a_2$ for time $t_2$ and comes to rest. The correct value of $\frac{t_1}{t_2}$ will be:
+  o: ['$\frac{a_1 + a_2}{a_2}$', '$\frac{a_2}{a_1}$', '$\frac{a_1 + a_2}{a_1}$', '$\frac{a_1}{a_2}$']
+  a: B
+  ch: Kinematics
+  tp: Uniform acceleration and retardation
+  df: E
+- n: 9
+  s: P
+  sec: A
+  p: 7
+  t: S
+  q: |-
+    Draw the output Y in the given combination of gates.
+    [figure: A passes through NAND (inputs tied, i.e. NOT) giving A', which is ORed with B, followed by NOT giving Y; input waveforms A high 0–2 s and 3–5 s, B high 1–2 s and 3–4 s]
+  o: ['Y high for 0–1 s and 4–5 s, low otherwise', 'Y low (0) throughout 0–5 s', 'Y high for 1–4 s, low otherwise', 'Y high (1) throughout 0–5 s']
+  a: A
+  ch: Semiconductor Electronics
+  tp: Logic gate waveforms
+  df: M
+  fig: [[7, 380, 110, 838, 880]]
+  nt: options are waveforms, described in words
+- n: 10
+  s: P
+  sec: A
+  p: 8
+  t: S
+  q: |-
+    An inclined plane making an angle of 30° with horizontal is placed in a uniform horizontal electric field $200\frac{N}{C}$ as shown in the figure. A body of mass 1 kg and charge 5mC is allowed to slide down from rest at a height of 1m. If the coefficient of frication is 0.2, find the time taken by the body to reach the bottom.
+    [$g = 9.8m/s^2$, $\sin30° = \frac{1}{2}$; $\cos30° = \frac{\sqrt{3}}{2}$]
+    [figure: block on 30° incline, height 1 m, horizontal field E = 200 N/C]
+  o: ['2.3 s', '0.46 s', '1.3 s', '0.92 s']
+  a: C
+  ch: Laws of Motion
+  tp: Incline with friction and electric force
+  df: H
+  fig: [[8, 615, 175, 757, 465]]
+- n: 11
+  s: P
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    If 'C' and 'V' represent capacity and voltage respectively then what are the dimensions of $\lambda$ where C/V = $\lambda$?
+  o: ['$[M^{-2}L^{-4}I^3T^7]$', '$[M^{-2}L^{-3}I^2T^6]$', '$[M^{-1}L^{-3}I^{-2}T^{-7}]$', '$[M^{-3}L^{-4}I^3T^7]$']
+  a: A
+  ch: Units and Measurements
+  tp: Dimensions of electrical quantities
+  df: M
+- n: 12
+  s: P
+  sec: A
+  p: 10
+  t: S
+  st: AR
+  q: |-
+    Given below are two statements: One is labeled as Assertion A and the other is labeled as Reason R.
+    Assertion A : For a simple microscope, the angular size of the object equals the angular size of the image.
+    Reason R : Magnification is achieved as the small object can be kept much closer to the eye than 25 cm and hence it subtends a large angle.
+    In the light of the above statements, choose the most appropriate answer from the options given below:
+  o: ['Both A and R are true but R is NOT the correct explanation of A', 'Both A and R are true and R is the correct explanation of A', 'A is true but R is false', 'A is false but R is true']
+  a: B
+  ch: Ray Optics and Optical Instruments
+  tp: Simple microscope
+  df: M
+- n: 13
+  s: P
+  sec: A
+  p: 10
+  t: S
+  q: |-
+    The recoil speed of a hydrogen atom after it emits a photon in going from n = 5 state to n = 1 state will be:
+  o: ['4.17 m/s', '4.34 m/s', '219 m/s', '3.25 m/s']
+  a: A
+  ch: Atoms
+  tp: Recoil of atom on photon emission
+  df: M
+- n: 14
+  s: P
+  sec: A
+  p: 11
+  t: S
+  q: |-
+    Two masses A and B, each of mass M are fixed together by a massless springs. A force acts on the mass B as shown in figure. If the mass A starts moving away from mass B with acceleration 'a', than the acceleration of mass B will be:
+    [figure: B —spring— A, force F on B pointing away from A]
+  o: ['$\frac{F + Ma}{M}$', '$\frac{F - Ma}{M}$', '$\frac{Ma - F}{M}$', '$\frac{MF}{F + Ma}$']
+  a: B
+  ch: Laws of Motion
+  tp: Spring-connected bodies
+  df: M
+  fig: [[11, 278, 370, 318, 628]]
+- n: 15
+  s: P
+  sec: A
+  p: 11
+  t: S
+  q: |-
+    A wire of 1$\Omega$ has a length of 1 m. It is stretched till its length increases by 25%. The percentage change in a resistance to the nearest integer is:
+  o: ['25%', '12.5%', '76%', '56%']
+  a: D
+  ch: Current Electricity
+  tp: Resistance of stretched wire
+  df: E
+- n: 16
+  s: P
+  sec: A
+  p: 12
+  t: S
+  st: Stmt
+  q: |-
+    Given below are two statements :
+    Statement (1) :- A second's pendulum has a time period of 1 second.
+    Statement (2) :- It takes precisely one second to move between the two extreme positions.
+    In the light of the above statements, choose the correct answer from the options give below.
+  o: ['Both Statement I and Statement II are false', 'Statement I is true but Statement II is false', 'Statement I is false but Statement II is true', 'Both Statement I and Statement II is true']
+  a: C
+  ch: Oscillations
+  tp: Second's pendulum
+  df: E
+- n: 17
+  s: P
+  sec: A
+  p: 12
+  t: S
+  q: |-
+    An aeroplane, with its wings spread 10 m, is flying at a speed of 180 km/h in a horizontal direction. The total intensity of earth's field at that part is $2.5\times10^{-4}$ Wb/m$^2$ and the angle of dip is 60°. The emf induced between the tips of the plane wings will be ________.
+  o: ['88.37 mV', '62.50 mV', '54.125 mV', '108.25 mV']
+  a: D
+  ch: Electromagnetic Induction
+  tp: Motional emf
+  df: E
