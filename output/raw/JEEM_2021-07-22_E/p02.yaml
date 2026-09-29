@@ -1,0 +1,178 @@
+- n: 1
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A body is projected vertically upwards from the surface of earth with a velocity sufficient enough to carry it to infinity. The time taken by it to earth reach height h is_________s.
+  o: ['$\sqrt{\frac{2R_e}{g}}\left[\left(1 + \frac{h}{R_e}\right)^{\frac{3}{2}} - 1\right]$', '$\frac{1}{3}\sqrt{\frac{2R_e}{g}}\left[\left(1 + \frac{h}{R_e}\right)^{\frac{3}{2}} - 1\right]$', '$\frac{1}{3}\sqrt{\frac{R_e}{2g}}\left[\left(1 + \frac{h}{R_e}\right)^{\frac{3}{2}} - 1\right]$', '$\sqrt{\frac{R_e}{2g}}\left[\left(1 + \frac{h}{R_e}\right)^{\frac{3}{2}} - 1\right]$']
+  ch: Gravitation
+  tp: Motion with escape velocity
+  df: H
+- n: 2
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    An electron of mass $m_e$ and a proton of mass $m_p$ are accelerated through the same potential difference. The ratio of the de-Broglie wavelength associated with the electron to that with the proton is :
+  o: ['$\frac{m_p}{m_e}$', '1', '$\frac{m_e}{m_p}$', '$\sqrt{\frac{m_p}{m_e}}$']
+  ch: Dual Nature of Radiation and Matter
+  tp: de Broglie wavelength
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    What will be the projection of vector $\vec{A} = \hat{i} + \hat{j} + \hat{k}$ on vector $\vec{B} = \hat{i} + \hat{j}$ ?
+  o: ['$2(\hat{i} + \hat{j} + \hat{k})$', '$\sqrt{2}(\hat{i} + \hat{j})$', '$(\hat{i} + \hat{j})$', '$\sqrt{2}(\hat{i} + \hat{j} + \hat{k})$']
+  ch: Kinematics
+  tp: Vector projection
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A ray of light passes from a denser medium to a rarer medium at an angle of incidence i. The reflected and refracted rays make an angle of 90° with each other. The angle of reflection and refraction are respectively r and r'. The critical angle is given by :
+    [figure: ray incident at i from denser medium, reflected at r and refracted at r', reflected and refracted rays perpendicular]
+  o: ['$\sin^{-1}(\cot r)$', '$\tan^{-1}(\sin i)$', "$\\sin^{-1}(\\tan r')$", '$\sin^{-1}(\tan r)$']
+  ch: Ray Optics and Optical Instruments
+  tp: Critical angle and Brewster condition
+  df: M
+  fig: [[2, 638, 635, 762, 862]]
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A nucleus with number 184 initially at rest emits an $\alpha$ – particle. If the Q value of the reaction is 5.5 MeV, calculate the kinetic energy of the $\alpha$ – particle.
+  o: ['5.5 MeV', '5.38 MeV', '5.0 MeV', '0.12 MeV']
+  ch: Nuclei
+  tp: Alpha decay kinetic energy
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Intensity of sunlight is observed as 0.092 Wm$^{-2}$ at a point in free space. What will be the peak value of magnetic field at that point? ($\varepsilon_0 = 8.85\times10^{-12}$ C$^2$N$^{-1}$m$^{-2}$)
+  o: ['5.88 T', '$1.96\times10^{-8}$ T', '8.31 T', '$2.77\times10^{-8}$ T']
+  ch: Electromagnetic Waves
+  tp: Intensity and peak field
+  df: M
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  st: Graph
+  q: |-
+    In a circuit consisting of a capacitance and a generator with alternating emf $E_g = E_{g0}\sin\omega t$, $V_C$ and $I_C$ are the voltage and current. Correct phase diagram for such circuit is :
+    [figure: capacitor connected to AC generator; four phasor diagrams (A)–(D) of V_C and I_C]
+  o: ['$V_C$ and $I_C$ along the same direction at angle ωt', '$I_C$ leading $V_C$ by 90°', '$I_C$ opposite to $V_C$', '$I_C$ lagging $V_C$ by 90°']
+  ch: Alternating Current
+  tp: Phasor for capacitive circuit
+  df: E
+  fig: [[3, 183, 630, 290, 875], [3, 288, 170, 503, 850]]
+  nt: options are phasor diagrams, described in words
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Consider a situation in which reverse biased current of a particular P – N junction increase when it is exposed to a light of wavelength ≤ 621 nm. During this process, enhancement in carrier concentration takes place due to generation of hole – electron pairs. The value of band gap is nearly.
+  o: ['1 eV', '4 eV', '0.5 eV', '2 eV']
+  ch: Semiconductor Electronics
+  tp: Photodiode band gap
+  df: E
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A porter lifts a heavy suitcase of mass 80kg and at the destination lowers it down by a distance of 80 cm with a constant velocity. Calculate the work done by the porter in lowering the suitcase. (take g = 9.8 ms$^{-2}$)
+  o: ['–627.2 J', '–62720.0 J', '+627.2 J', '784.0 J']
+  ch: Work, Energy and Power
+  tp: Work done by a force
+  df: E
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  st: Match
+  q: |-
+    Match List – I with List – II :
+    List – I: (a) $\omega L > \frac{1}{\omega C}$; (b) $\omega L = \frac{1}{\omega C}$; (c) $\omega L < \frac{1}{\omega C}$; (d) Resonant frequency
+    List – II: (i) Current is in phase with emf; (ii) Current lags behind the applied emf; (iii) Maximum current occurs; (iv) Current leads the emf
+    Choose the correct answer from the options given below :
+  o: ['(a)-(iv); (b)-(iii); (c)-(ii); (d)-(i)', '(a)-(ii); (b)-(i); (c)-(iv); (d)-(iii)', '(a)-(iii); (b)-(i); (c)-(iv); (d)-(ii)', '(a)-(ii); (b)-(i); (c)-(iii); (d)-(iv)']
+  ch: Alternating Current
+  tp: LCR phase relations
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    $T_0$ is the time period of a simple pendulum at a place. If the length of the pendulum is reduced to $\frac{1}{16}$ times of its initial value, the modified time period is :
+  o: ['$T_0$', '$8\pi T_0$', '$4T_0$', '$\frac{1}{4}T_0$']
+  ch: Oscillations
+  tp: Simple pendulum
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  st: Stmt
+  q: |-
+    Statement I : The ferromagnetic property depends on temperature. At high temperature, ferromagnet becomes paramagnet.
+    Statement II : At high temperature, the domain wall area of a ferromagnetic substance increases.
+    In the light of the above statements, choose the most appropriate answer from the options given below :
+  o: ['Both Statement I and Statement II are false', 'Statement I is true but Statement II is false', 'Statement I is false but Statement II is true', 'Both Statement I and Statement II are true']
+  ch: Magnetism and Matter
+  tp: Curie temperature
+  df: E
+- n: 13
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    A bullet of '4 g' mass is fired from a gun of mass 4 kg. If the bullet moves with the muzzle speed of 50 ms$^{-1}$, the impulse imparted to the gun velocity of recoil of gun are :
+  o: ['0.4 kg ms$^{-1}$, 0.1 ms$^{-1}$', '0.2 kg ms$^{-1}$, 0.05 ms$^{-1}$', '0.4 kg ms$^{-1}$, 0.05 ms$^{-1}$', '0.2 kg ms$^{-1}$, 0.1 ms$^{-1}$']
+  ch: Laws of Motion
+  tp: Conservation of momentum, recoil
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    What should be the height of transmitting antenna and the population covered if the television telecast is to cover a radius of 150 km? The average population density around the tower is 200/km$^2$ and the value of $R_e = 6.5\times10^6$ m.
+  o: ['Height = 1800 m, Population Covered = $1413\times10^8$', 'Height = 1241 m, Population Covered = $7\times10^5$', 'Height = 1600 m, Population Covered = $2\times10^5$', 'Height = 1731 m, Population Covered = $1413\times10^5$']
+  ch: Communication Systems
+  tp: Range of TV antenna
+  df: M
+- n: 15
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    Choose the correct option :
+  o: ['True dip is not mathematically related to apparent dip.', 'True dip is always greater than the apparent dip.', 'True dip is always equal to apparent dip.', 'True dip is less than the apparent dip.']
+  ch: Magnetism and Matter
+  tp: True and apparent dip
+  df: E

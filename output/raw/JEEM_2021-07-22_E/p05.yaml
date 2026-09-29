@@ -1,0 +1,169 @@
+- n: 16
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The motion of a mass on a spring, with spring constant K is as shown in figure. The equation of motion is given by $x(t) = A\sin\omega t + B\cos\omega t$ with $\omega = \sqrt{\frac{K}{m}}$. Suppose that at time t = 0, the position of mass is x(0) and velocity v(0), then its displacement can also be represented as $x(t) = C\cos(\omega t - \phi)$, where C and $\phi$ are :
+    [figure: mass attached to spring fixed to a wall, displaced by x]
+  o: ['$C = \sqrt{\frac{v(0)^2}{\omega^2} + x(0)^2}, \phi = \tan^{-1}\left(\frac{x(0)\omega}{v(0)}\right)$', '$C = \sqrt{\frac{2v(0)^2}{\omega^2} + x(0)^2}, \phi = \tan^{-1}\left(\frac{x(0)\omega}{2v(0)}\right)$', '$C = \sqrt{\frac{v(0)^2}{\omega^2} + x(0)^2}, \phi = \tan^{-1}\left(\frac{v(0)}{x(0)\omega}\right)$', '$C = \sqrt{\frac{2v(0)^2}{\omega^2} + x(0)^2}, \phi = \tan^{-1}\left(\frac{v(0)}{x(0)\omega}\right)$']
+  ch: Oscillations
+  tp: Amplitude and phase from initial conditions
+  df: M
+  fig: [[5, 100, 695, 160, 925]]
+- n: 17
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    What will be the average value of energy for a monoatomic gas in thermal equilibrium at temperature T ?
+  o: ['$\frac{3}{2}k_BT$', '$\frac{1}{2}k_BT$', '$k_BT$', '$\frac{2}{3}k_BT$']
+  ch: Kinetic Theory of Gases
+  tp: Equipartition of energy
+  df: E
+- n: 18
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    Consider a situation in which a ring, a solid cylinder and a solid sphere roll down on the same inclined plane without slipping. Assume that they start rolling from rest and having identical diameter.
+    The correct statement for this situation is :
+  o: ['The ring has the greatest and the cylinder has the least velocity of the centre of mass at the bottom of the inclined plane.', 'The sphere has the greatest and the ring has the least velocity of the centre of mass at the bottom of the inclined plane.', 'The cylinder has the greatest and the sphere has the least velocity of the centre of mass at the bottom of the inclined plane.', 'All of them will have same velocity.']
+  ch: Rotational Motion
+  tp: Rolling on incline
+  df: E
+- n: 19
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A Copper(Cu) rod of length 25cm and cross – sectional area 3 mm$^2$ is joined with a similar aluminium(Al) rod as shown in figure. Find the resistance of the combination between the ends A and B.
+    (Take Resistivity of Copper = $1.7\times10^{-8}$ $\Omega$m, Resistivity of Aluminium = $2.6\times10^{-8}$ $\Omega$m )
+    [figure: Cu and Al rods connected in parallel between A and B]
+  o: ['0.858 m$\Omega$', '0.0858 m$\Omega$', '1.420 m$\Omega$', '2.170 m$\Omega$']
+  ch: Current Electricity
+  tp: Resistance in parallel
+  df: E
+  fig: [[5, 614, 618, 686, 925]]
+- n: 20
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    An electric dipole is placed on x – axis in proximity to a line charge of linear density $3.0\times10^{-6}$ C/m. Line charge is placed on z –axis and positive and negative charge of dipole is at a distance of 10 mm and 12 mm from the origin respectively. If total force of 4 N is exerted on the dipole, find out the amount of positive charge of the dipole.
+  o: ['0.485 mC', '8.8 $\mu$C', '815.1 nC', '4.44 $\mu$C']
+  ch: Electrostatics
+  tp: Force on dipole near line charge
+  df: M
+- n: 1
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    The position of the centre of mass of a uniform semi – circular wire of radius 'R' placed in x – y plane with its centre at the origin and the line joining its ends as x-axis is given by $\left(0, \frac{xR}{\pi}\right)$. Then, the value of |x| is __________.
+  ch: Centre of Mass and System of Particles
+  tp: Centre of mass of semicircular wire
+  df: E
+- n: 2
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    The total charge enclosed in an incremental volume of $2\times10^{-9}$ m$^3$ located at the origin is ________nC, if electric flux density of its field is found as $D = e^{-x}\sin y\,\hat{i} - e^{-x}\cos y\,\hat{j} + 2z\hat{k}$ C/m$^2$.
+  ch: Electrostatics
+  tp: Gauss's law (differential form)
+  df: M
+- n: 3
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A ray of light passing through a prism ($\mu = \sqrt{3}$) surface minimum deviation. It is found that the angle of incidence is double the angle of refraction within the prism. Then, the angle of prism is ________(in degrees).
+  ch: Ray Optics and Optical Instruments
+  tp: Minimum deviation in prism
+  df: M
+- n: 4
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    The centre of a wheel rolling on a plane surface moves with a speed $v_0$. A particle on the rim of the wheel at the same level as the centre will be moving at a speed $\sqrt{x}v_0$. Then the value of x is _________.
+  ch: Rotational Motion
+  tp: Velocity of point on rolling wheel
+  df: E
+- n: 5
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    Three students $S_1$, $S_2$ and $S_3$ perform an experiment for determining the acceleration due to gravity (g) using a simple pendulum. They use different lengths of pendulum and record time for different number of oscillations. The observations are as shown in the table.
+    Student 1: length 64.0 cm, n = 8, total time 128.0 s, period 16.0 s
+    Student 2: length 64.0 cm, n = 4, total time 64.0 s, period 16.0 s
+    Student 3: length 20.0 cm, n = 4, total time 36.0 s, period 9.0 s
+    (Least count of length = 0.1 cm, least count for time = 0.1 s)
+    If $E_1$, $E_2$ and $E_3$ are the percentage errors 'g' for students 1, 2 and 3 respectively, then the minimum percentage error is obtained by student no.__________.
+  ch: Experimental Skills
+  tp: Error analysis in simple pendulum
+  df: M
+- n: 6
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    In 5 minutes, a body cools from 75°C to 65°C at room temperature of 25°C. The temperature of body at the end of next 5 minutes is _________ °C.
+  ch: Thermal Properties of Matter
+  tp: Newton's law of cooling
+  df: E
+- n: 7
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    The area of cross – section of a railway track is 0.01 m$^2$. The temperature variation is 10°C, Coefficient of liner expansion of material of track is $10^{-5}$/°C. The energy stored per meter in the track is __________J/m.
+    (Young's modulus of material of track is $10^{11}$ Nm$^{-2}$)
+  ch: Mechanical Properties of Solids
+  tp: Thermal stress energy
+  df: M
+- n: 8
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    In an electric circuit, a cell of certain emf provides a potential difference of 1.25 V across a load resistance of 5$\Omega$. However, it provides a potential difference of 1 V across a load resistance of 2$\Omega$. The emf of the cell is given by $\frac{x}{10}$ V. Then the value of x is _________.
+  ch: Current Electricity
+  tp: EMF and internal resistance
+  df: E
+- n: 9
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    In a given circuit diagram, a 5 V zener diode along with a series resistance is connected across a 50 V power supply. The minimum value of the resistance required, if the maximum zener current is 90 mA be __________$\Omega$.
+    [figure: 50 V supply, series resistor R, zener in parallel with load R_L]
+  ch: Semiconductor Electronics
+  tp: Zener regulator
+  df: E
+  fig: [[7, 173, 527, 281, 828]]
+- n: 10
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    Three particles P,Q and R are moving along the vectors $\vec{A} = \hat{i} + \hat{j}$, $\vec{B} = \hat{j} + \hat{k}$ and $\vec{C} = -\hat{i} + \hat{j}$ respectively. They strike on point and start to move in different directions. Now particle P is moving normal to the plane which contains vector $\vec{A}$ and $\vec{B}$. Similarly particle Q is moving normal to the plane which contains vector $\vec{A}$ and $\vec{C}$. The angle between the direction of motion of P and Q $\cos^{-1}\left(\frac{1}{\sqrt{x}}\right)$. Then the value of x is _________.
+  ch: Kinematics
+  tp: Cross product directions
+  df: M

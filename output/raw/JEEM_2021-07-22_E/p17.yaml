@@ -1,0 +1,104 @@
+- n: 1
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let A = {0,1,2,3,4,5,6,7}. Then the number of bijective functions f : A → A such that f(1) + f(2) = 3 – f(3) is equal to...............
+  ch: Permutations and Combinations
+  tp: Counting bijections
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let f : R → R be a function defined as $f(x) = \begin{cases} 3\left(1 - \frac{|x|}{2}\right) & \text{if } |x| \le 2 \\ 0 & \text{if } |x| > 2 \end{cases}$
+    Let g : R → R be given by g(x) = f(x + 2) – f(x – 2). If n and m denote the number of points in R where g is the continuous and not differentiable, respectively, then n + m is equal to............
+  ch: Limits, Continuity and Differentiability
+  tp: Differentiability of piecewise functions
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let y = y(x) be the solution of the differential equation $\left((x + 2)e^{\left(\frac{y+1}{x+2}\right)} + (y + 1)\right)dx = (x + 2)dy$, y(1) = 1. If the domain y = y(x) is an open interval ($\alpha$, $\beta$), then $|\alpha + \beta|$ is equal to.........
+  ch: Differential Equations
+  tp: Homogeneous differential equation
+  df: H
+- n: 4
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    The number of elements in the set $\{n \in \{1,2,3,....100\} \mid (11)^n > (10)^n + (9)^n\}$ is.........
+  ch: Binomial Theorem
+  tp: Inequalities with powers
+  df: M
+- n: 5
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    The area (in sq. units) of the region bounded by the curves $x^2 + 2y - 1 = 0$, $y^2 + 4x - 4 = 0$ and $y^2 - 4x - 4 = 0$, in the upper half plane is.........
+  ch: Area Under Curves
+  tp: Area between parabolas
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let $A = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{pmatrix}$. Then the number of 3 x 3 matrices B with entries from the set {1,2,3,4,5} and satisfying AB = BA is...........
+  ch: Matrices and Determinants
+  tp: Commuting matrices
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    If the digits are not allowed to repeat in any number formed by using the digits 0,2,4,6,8, then the number of all numbers greater than 10,000 is equal to.......
+  ch: Permutations and Combinations
+  tp: Forming numbers
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    The sum of all the elements in the set {n ∈ {1,2,......,100} | H.C.F. of n and 2040 is 1} is equal to..........
+  ch: Sets, Relations and Functions
+  tp: Coprime counting (inclusion–exclusion)
+  df: H
+- n: 9
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    If the constant term, in binomial expansion of $\left(2x^r + \frac{1}{x^2}\right)^{10}$ is 180, then r is equal to.......
+  ch: Binomial Theorem
+  tp: Term independent of x
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 18
+  t: N
+  q: |-
+    Consider the following frequency distribution :
+    Class : 0 – 6, 6 – 12, 12 – 18, 18 – 24, 24 – 30
+    Frequency : a, b, 12, 9, 5
+    If mean = $\frac{309}{22}$ and median = 14, then the value $(a - b)^2$ is equal to.................
+  ch: Statistics
+  tp: Mean and median of grouped data
+  df: M
