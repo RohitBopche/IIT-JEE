@@ -1,0 +1,188 @@
+P A 1: |-
+  Concept: Least count = 1 MSD − 1 VSD.
+  Solution:
+  1. $n$ VSD $= (n - 1)$ MSD, so 1 VSD $= \frac{(n-1)a}{n}$ cm.
+  2. LC $= a - \frac{(n-1)a}{n} = \frac{a}{n}$ cm $= \frac{10a}{n}$ mm.
+  Answer: (D)
+P A 2: |-
+  Concept: A partially filled capacitor acts as a dielectric capacitor and an air capacitor in series.
+  Solution:
+  1. $C' = \frac{\varepsilon_0A}{\frac{3d/4}{K} + \frac{d}{4}} = \frac{\varepsilon_0A}{d}\cdot\frac{4K}{3 + K}$.
+  2. $C' = \frac{4K}{K + 3}C_0$.
+  Answer: (C)
+P A 3: |-
+  Concept: The upward component of the pull reduces the normal reaction and hence the friction.
+  Solution:
+  1. The force F acts at $\theta$ above the horizontal: $N = mg - F\sin\theta$.
+  2. $ma = F\cos\theta - \mu_K(mg - F\sin\theta)$.
+  3. $a = \frac{F}{m}\cos\theta - \mu_K\left(g - \frac{F}{m}\sin\theta\right)$.
+  Answer: (B)
+P A 4: |-
+  Concept: $P = P_0 + \rho gh$.
+  Solution:
+  1. $3\times10^5 = 10^5 + \rho gh \Rightarrow \rho gh = 2\times10^5$ Pa.
+  2. Doubling the depth: $P' = 10^5 + 4\times10^5 = 5\times10^5$ Pa.
+  3. Increase $= \frac{2\times10^5}{3\times10^5}\times100 = \frac{200}{3}\%$.
+  Answer: (A)
+P A 5: |-
+  Concept: Minimum deviation condition of a prism.
+  Solution:
+  1. At minimum deviation, $i = e$ and $r_1 = r_2 = \frac{A}{2}$, so (C) is true.
+  2. The ray passes symmetrically through the prism, so (A) is true.
+  3. For an isosceles prism, the refracted ray inside is parallel to the base, so (B) is true.
+  4. (D) contradicts $i = e$, so it is false.
+  Answer: (A)
+P A 6: |-
+  Concept: $E = cB$, and $\vec E\times\vec B$ points along the direction of propagation.
+  Solution:
+  1. $|E| = 3\times10^8\times8\times10^{-8} = 24$ V/m.
+  2. Propagation along $+\hat y$ with $\vec B$ along $\hat z$: since $(-\hat x)\times\hat z = \hat y$, $\vec E$ is along $-\hat x$.
+  3. $\vec E = -24\hat x$ V/m.
+  Answer: (A)
+P A 7: |-
+  Concept: Conservation of angular momentum: $v_1r_1 = v_2r_2$ at perihelion and aphelion.
+  Solution:
+  1. $v_{far} = \frac{6\times10^4\times8\times10^{10}}{1.6\times10^{12}} = 3\times10^3$ m/s.
+  Answer: (C)
+P A 8: |-
+  Concept: With the N pole pointing north, the neutral points lie on the equatorial line, where $\frac{\mu_0}{4\pi}\frac{M}{(r^2 + l^2)^{3/2}} = B_H$.
+  Solution:
+  1. $l = 7$ cm, $r = 18$ cm: $(r^2 + l^2)^{3/2} = (0.0373)^{3/2} = 7.20\times10^{-3}$ m³.
+  2. $M = \frac{B_H(r^2+l^2)^{3/2}}{10^{-7}} = \frac{0.4\times10^{-4}\times7.20\times10^{-3}}{10^{-7}} \approx 2.88$ J T⁻¹.
+  Answer: (C)
+P A 9: |-
+  Concept: Dalton's law: $P = \frac{n_{total}RT}{V}$.
+  Solution:
+  1. Moles: O₂ $\frac{16}{32} = 0.5$, N₂ $\frac{28}{28} = 1$, CO₂ $\frac{44}{44} = 1$; total 2.5.
+  2. $P = \frac{5}{2}\frac{RT}{V}$.
+  Answer: (C)
+P A 10: |-
+  Concept: State functions depend only on the state; heat and work depend on the process.
+  Solution:
+  1. $Q$ and $W$ depend on the path between states, so they are path functions (not state variables).
+  2. Their sum, $\Delta U$, is a state function.
+  Answer: (A)
+P A 11: |-
+  Concept: $I = \sum mr_\perp^2$.
+  Solution:
+  1. For the axis through A parallel to diagonal DB: A is at distance 0, B and D at $\frac{l}{\sqrt2}$, C at $\sqrt2l$ (the full diagonal).
+  2. $I = 0 + 2m\frac{l^2}{2} + m(2l^2) = 3ml^2$.
+  Answer: (C)
+P A 12: |-
+  Concept: $R = \frac{\rho l}{A}$ and $I = \frac{V}{R}$.
+  Solution:
+  1. $R' = \frac{\rho(2l)}{A/2} = 4R$.
+  2. $I' = \frac{V}{4R} = \frac{1}{4}\frac{VA}{\rho l}$.
+  Answer: (A)
+P A 13: |-
+  Concept: In an accelerating lift, $g_{eff} = g + a$ (upward acceleration).
+  Solution:
+  1. $g_{eff} = \frac{3g}{2}$.
+  2. $T' = T\sqrt{\frac{g}{3g/2}} = \sqrt{\frac{2}{3}}T$.
+  Answer: (D)
+P A 14: |-
+  Concept: $a = v\frac{dv}{dx}$.
+  Solution:
+  1. From the graph, $v$ rises linearly from 10 to 50 m/s over 0–200 m: $v = 10 + 0.2x$, $\frac{dv}{dx} = 0.2$.
+  2. $a = 0.2(10 + 0.2x) = 2 + 0.04x$, a straight line from 2 to 18 m/s² up to 200 m.
+  3. Beyond 200 m, $v$ is constant, so $a = 0$.
+  Answer: (A)
+P A 15: |-
+  Concept: A quarter-wave antenna has length $\frac{\lambda}{4}$.
+  Solution:
+  1. $\lambda = 4\times25 = 100$ m (the tower height does not matter).
+  Answer: (D)
+P A 16: |-
+  Concept: In an EM wave, $E = cB$, so $\frac{1}{2}\varepsilon_0E^2 = \frac{B^2}{2\mu_0}$.
+  Solution:
+  1. The average electric and magnetic energy densities are equal, each half of the total.
+  Answer: (A)
+P A 17: |-
+  Concept: The capacitor voltage in an RC circuit charges and discharges exponentially.
+  Solution:
+  1. On the high half of the square wave, C charges: the output rises along a concave-down exponential.
+  2. On the low half, C discharges: the output falls along a concave-up exponential.
+  3. The CRO shows alternating charging and discharging curves.
+  Answer: (C)
+P A 18: |-
+  Concept: $eV_0 = h\nu - \phi$.
+  Solution:
+  1. The stopping potential depends only on the frequency of the radiation (for a given metal).
+  2. Intensity (amplitude) changes only the photocurrent; phase has no effect.
+  Answer: (D)
+P A 19: |-
+  Concept: The wall supplies the centripetal force $N = m\omega^2R$.
+  Solution:
+  1. $\omega = \frac{2\pi}{40}$ rad/s.
+  2. $N = 0.2\times\frac{4\pi^2}{1600}\times0.2 = 9.87\times10^{-4}$ N.
+  Answer: (D)
+P A 20: |-
+  Concept: Lenz's law: the induced current opposes the change in flux through each loop.
+  Solution:
+  1. The bar moves left, so the loop containing $R_1$ shrinks: the inward flux decreases, and the induced current (to add inward field) is clockwise.
+  2. The loop containing $R_2$ grows: the inward flux increases, and the induced current is anticlockwise.
+  Answer: (C)
+P B 1: |-
+  Concept: Series–parallel reduction, including the internal resistance.
+  Solution:
+  1. Three 3 kΩ in parallel $= 1$ kΩ.
+  2. Total $= 5 + 1 + 1$ (internal) $= 7$ kΩ.
+  3. $I = \frac{21}{7} = 3$ mA, all of which flows through the 5 kΩ resistor.
+  Answer: 3
+P B 2: |-
+  Concept: $\beta = \frac{\lambda D}{d}$.
+  Solution:
+  1. $\lambda = \frac{\beta d}{D} = \frac{6\times10^{-3}\times10^{-3}}{10} = 6\times10^{-7}$ m $= 600$ nm.
+  Answer: 600
+P B 3: |-
+  Concept: $\tau = I\alpha$ and $\omega^2 = 2\alpha\theta$.
+  Solution:
+  1. $\alpha = \frac{FR}{MR^2/2} = \frac{2F}{MR} = \frac{40}{20\times0.2} = 10$ rad/s².
+  2. $\theta = \frac{50^2}{2\times10} = 125$ rad.
+  3. $n = \frac{125}{6.28} \approx 20$.
+  Answer: 20
+P B 4: |-
+  Concept: Balmer series: $\frac{1}{\lambda} = R\left(\frac{1}{4} - \frac{1}{n^2}\right)$.
+  Solution:
+  1. First line ($n = 3$): $\frac{1}{\lambda_1} = \frac{5R}{36}$; third line ($n = 5$): $\frac{1}{\lambda_3} = \frac{21R}{100}$.
+  2. $\frac{\lambda_1}{\lambda_3} = \frac{21}{100}\times\frac{36}{5} = 1.512 = 15.12\times10^{-1}$.
+  3. $x \approx 15$.
+  Answer: 15
+P B 5: |-
+  Concept: The zener holds 15 V across the load; current divides.
+  Solution:
+  1. $I_S = \frac{22 - 15}{35} = 0.2$ A; $I_L = \frac{15}{90} = \frac{1}{6}$ A.
+  2. $I_Z = \frac{1}{5} - \frac{1}{6} = \frac{1}{30}$ A.
+  3. $P = 15\times\frac{1}{30} = 0.5$ W $= 5\times10^{-1}$ W.
+  Answer: 5
+P B 6: |-
+  Concept: At resonance $Z = R$, so $P = \frac{V_{rms}^2}{R}$.
+  Solution:
+  1. $P = \frac{(250/\sqrt2)^2}{8} = \frac{31250}{8} = 3906$ W ≈ 4 kW.
+  Answer: 4
+P B 7: |-
+  Concept: Trace the logic levels gate by gate.
+  Solution:
+  1. With A = 0 and B = 1, the inverted signal fed to the upper NOR gate is 1, so the NOR output is 0.
+  2. The lower NAND gate has a 0 input, so its output is 1.
+  3. The final AND gate gets 0 and 1, so Y = 0.
+  Answer: 0
+P B 8: |-
+  Concept: For a quotient, the relative errors add.
+  Solution:
+  1. $\frac{\Delta R}{R} = \frac{2}{50} + \frac{0.2}{20} = 4\% + 1\% = 5\%$.
+  Answer: 5
+P B 9: |-
+  Concept: Component of a force along a direction $= F\cos(\text{angle between them})$.
+  Solution:
+  1. From the figure, AC makes 35° with the vertical (the angle at C is 145°).
+  2. Component of P along AC $= 100\cos35° = 100\times0.819 = 81.9$ N ≈ 82 N (as in the official solution).
+  Answer: 82
+P B 10: |-
+  Concept: Conservation of linear momentum in both directions.
+  Solution:
+  1. Initial momentum: $10\times10\sqrt3 = 100\sqrt3$ along x.
+  2. x: $10\times20\cos\theta = 100\sqrt3 \Rightarrow \cos\theta = \frac{\sqrt3}{2}$.
+  3. y: $10\times10 = 10\times20\sin\theta \Rightarrow \sin\theta = \frac{1}{2}$ (the piece moves below the x-axis).
+  4. $\theta = 30°$.
+  Answer: 30
