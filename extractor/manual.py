@@ -146,7 +146,7 @@ def ingest(slugs):
                     ok = False
         seen = {}
         for q in raw_qs:
-            k = (q["subject"], q["q_no"])
+            k = (q["subject"], q["section"], q["q_no"])
             if k in seen:
                 print(f"[{slug}] duplicate {k}")
             seen[k] = 1
@@ -163,10 +163,16 @@ def ingest(slugs):
 
 
 def status():
+    lines = ["# Extraction progress", "", "| Paper | Status | Questions | Needs review | Paper issues |", "|---|---|---|---|---|"]
     for slug, p in sorted(papers_by_slug().items()):
         j = OUT / "json" / f"{slug}.json"
-        n = len(json.loads(j.read_text())["questions"]) if j.exists() else 0
-        print(f"{slug:22s} {'DONE' if n else '    '} {n:3d}  {p.path.name}")
+        d = json.loads(j.read_text()) if j.exists() else None
+        qs = d["questions"] if d else []
+        review = sum(q["confidence"] < excel.REVIEW_BELOW for q in qs)
+        state = "done" if d and not d["issues"] else ("partial" if d else "todo")
+        lines.append(f"| {p.path.name} | {state} | {len(qs)} | {review} | {'; '.join(d['issues']) if d else ''} |")
+        print(f"{slug:22s} {state:8s} {len(qs):3d}  {p.path.name}")
+    (OUT / "PROGRESS.md").write_text("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":

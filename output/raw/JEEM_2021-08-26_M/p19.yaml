@@ -1,0 +1,133 @@
+- n: 7
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let $f(x) = \cos\left(2\tan^{-1}\sin\left(\cot^{-1}\sqrt{\frac{1-x}{x}}\right)\right)$, $0 < x < 1$. Then :
+  o: ["$(1-x)^2 f'(x) - 2(f(x))^2 = 0$", "$(1+x)^2 f'(x) + 2(f(x))^2 = 0$", "$(1-x)^2 f'(x) + 2(f(x))^2 = 0$", "$(1+x)^2 f'(x) - 2(f(x))^2 = 0$"]
+  a: C
+  ch: Inverse Trigonometric Functions
+  tp: Simplification and differentiation
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    The sum of the series $\frac{1}{x+1} + \frac{2}{x^2+1} + \frac{2^2}{x^4+1} + \ldots + \frac{2^{100}}{x^{2^{100}}+1}$ when $x = 2$ is :
+  o: ['$1 + \frac{2^{101}}{4^{101}-1}$', '$1 + \frac{2^{100}}{4^{101}-1}$', '$1 - \frac{2^{100}}{4^{100}-1}$', '$1 - \frac{2^{101}}{4^{101}-1}$']
+  a: D
+  ch: Sequences and Series
+  tp: Telescoping series
+  df: H
+  nt: 'Official NTA answer (4); ALLEN answer BONUS'
+- n: 9
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If ${}^{20}C_r$ is the co-efficient of $x^r$ in the expansion of $(1 + x)^{20}$, then the value of $\sum_{r=0}^{20} r^2\,{}^{20}C_r$ is equal to :
+  o: ['$420\times2^{19}$', '$380\times2^{19}$', '$380\times2^{18}$', '$420\times2^{18}$']
+  a: D
+  ch: Binomial Theorem
+  tp: Sums of binomial coefficients
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Out of all the patients in a hospital 89% are found to be suffering from heart ailment and 98% are suffering from lungs infection. If K% of them are suffering from both ailments, then K can not belong to the set :
+  o: ['{80, 83, 86, 89}', '{84, 86, 88, 90}', '{79, 81, 83, 85}', '{84, 87, 90, 93}']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: Venn diagram, cardinality bounds
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The equation $\arg\left(\frac{z-1}{z+1}\right) = \frac{\pi}{4}$ represents a circle with:
+  o: ['centre at (0, –1) and radius $\sqrt{2}$', 'centre at (0, 1) and radius $\sqrt{2}$', 'centre at (0,0) and radius $\sqrt{2}$', 'centre at (0,1) and radius 2']
+  a: B
+  ch: Complex Numbers
+  tp: Locus using argument
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let $\vec{a} = \hat{i} + \hat{j} + \hat{k}$ and $\vec{b} = \hat{j} - \hat{k}$. If $\vec{c}$ is a vector such that $\vec{a}\times\vec{c} = \vec{b}$ and $\vec{a}\cdot\vec{c} = 3$, then $\vec{a}\cdot(\vec{b}\times\vec{c})$ is equal to :
+  o: ['–2', '–6', '6', '2']
+  a: A
+  ch: Vector Algebra
+  tp: Vector triple product
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    If a line along a chord of the circle $4x^2 + 4y^2 + 120x + 675 = 0$, passes through the point $(-30, 0)$ and is tangent to the parabola $y^2 = 30x$, then the length of this chord is :
+  o: ['5', '7', '$5\sqrt{3}$', '$3\sqrt{5}$']
+  a: D
+  ch: Circles
+  tp: Chord length, tangent to parabola
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The value of $\int_{-1/\sqrt{2}}^{1/\sqrt{2}} \left(\left(\frac{x+1}{x-1}\right)^2 + \left(\frac{x-1}{x+1}\right)^2 - 2\right)^{1/2} dx$ is:
+  o: ['$\log_e 4$', '$\log_e 16$', '$2\log_e 16$', '$4\log_e(3 + 2\sqrt{2})$']
+  a: B
+  ch: Definite Integration
+  tp: Even function, modulus integral
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    A plane P contains the line $x + 2y + 3z + 1 = 0 = x - y - z - 6$, and is perpendicular to the plane $-2x + y + z + 8 = 0$. Then which of the following points lies on P ?
+  o: ['(–1, 1, 2)', '(0, 1, 1)', '(1, 0, 1)', '(2, –1, 1)']
+  a: B
+  ch: Three Dimensional Geometry
+  tp: Plane through line of intersection
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    If $A = \begin{pmatrix} \frac{1}{\sqrt{5}} & \frac{2}{\sqrt{5}} \\ \frac{-2}{\sqrt{5}} & \frac{1}{\sqrt{5}} \end{pmatrix}$, $B = \begin{pmatrix} 1 & 0 \\ i & 1 \end{pmatrix}$, $i = \sqrt{-1}$, and $Q = A^TBA$, then the inverse of the matrix $AQ^{2021}A^T$ is equal to :
+  o: ['$\begin{pmatrix} \frac{1}{\sqrt{5}} & -2021 \\ 2021 & \frac{1}{\sqrt{5}} \end{pmatrix}$', '$\begin{pmatrix} 1 & 0 \\ -2021i & 1 \end{pmatrix}$', '$\begin{pmatrix} 1 & 0 \\ 2021i & 1 \end{pmatrix}$', '$\begin{pmatrix} 1 & -2021i \\ 0 & 1 \end{pmatrix}$']
+  a: B
+  ch: Matrices and Determinants
+  tp: Orthogonal matrix, matrix powers
+  df: H
+- n: 17
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    If the sum of an infinite GP a, ar, $ar^2$, $ar^3$,... is 15 and the sum of the squares of its each term is 150, then the sum of $ar^2$, $ar^4$, $ar^6$, ... is :
+  o: ['$\frac{5}{2}$', '$\frac{1}{2}$', '$\frac{25}{2}$', '$\frac{9}{2}$']
+  a: B
+  ch: Sequences and Series
+  tp: Infinite GP
+  df: M

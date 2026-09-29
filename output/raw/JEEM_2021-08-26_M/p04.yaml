@@ -1,0 +1,127 @@
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    In the given figure, the emf of the cell is 2.2 V and if internal resistance is $0.6\Omega$. Calculate the power dissipated in the whole circuit :
+  o: ['1.32 W', '0.65 W', '2.2 W', '4.4 W']
+  a: C
+  ch: Current Electricity
+  tp: Equivalent resistance and power
+  df: M
+  fig: [[4, 138, 145, 308, 392]]
+- n: 13
+  s: P
+  sec: A
+  p: 4
+  t: S
+  st: Graph
+  q: |-
+    A solid metal sphere of radius R having charge q is enclosed inside the concentric spherical shell of inner radius a and outer radius b as shown in figure. The approximate variation electric field $\vec{E}$ as a function of distance r from centre O is given by
+  o: ['[figure] E = 0 for r < R, decreasing from r = R, zero between a and b, decreasing again for r > b', '[figure] E = 0 for r < R, then continuously decreasing for all r > R', '[figure] E = 0 up to r = b, then decreasing for r > b', '[figure] E rising for r < R, zero between R and b, decreasing for r > b']
+  a: A
+  ch: Electrostatics
+  tp: Field of sphere inside shell
+  df: M
+  fig: [[4, 215, 650, 318, 800], [4, 322, 550, 735, 830]]
+  nt: 'Official NTA answer (1); ALLEN answer (1 or 2)'
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The rms speeds of the molecules of Hydrogen, Oxygen and Carbondioxide at the same temperature are $V_H$, $V_O$ and $V_C$ respectively then :
+  o: ['$V_H > V_O > V_C$', '$V_C > V_O > V_H$', '$V_H = V_O > V_C$', '$V_H = V_O = V_C$']
+  a: A
+  ch: Kinetic Theory of Gases
+  tp: RMS speed
+  df: E
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    In a Screw Gauge, fifth division of the circular scale coincides with the reference line when the ratchet is closed. There are 50 divisions on the circular scale, and the main scale moves by 0.5 mm on a complete rotation. For a particular observation the reading on the main scale is 5 mm and the $20^{\text{th}}$ division of the circular scale coincides with reference line. Calculate the true reading.
+  o: ['5.00 mm', '5.25 mm', '5.15 mm', '5.20 mm']
+  a: C
+  ch: Units and Measurements
+  tp: Screw gauge zero error
+  df: E
+- n: 16
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    What equal length of an iron wire and a copper-nickel alloy wire, each of 2 mm diameter connected parallel to give an equivalent resistance of $3\Omega$?
+    (Given resistivities of iron and copper-nickel alloy wire are $12\ \mu\Omega$ cm and $51\ \mu\Omega$ cm respectively)
+  o: ['82 m', '97 m', '110 m', '90 m']
+  a: B
+  ch: Current Electricity
+  tp: Resistivity, parallel combination
+  df: M
+- n: 17
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The initial mass of a rocket is 1000 kg. Calculate at what rate the fuel should be burnt so that the rocket is given an acceleration of $20\ \text{ms}^{-2}$. The gases come out at a relative speed of $500\ \text{ms}^{-1}$ with respect to the rocket :[Use $g = 10\ \text{m/s}^2$]
+  o: ['$6.0\times10^{2}\ \text{kg s}^{-1}$', '$500\ \text{kg s}^{-1}$', '$10\ \text{kg s}^{-1}$', '$60\ \text{kg s}^{-1}$']
+  a: D
+  ch: Centre of Mass and System of Particles
+  tp: Rocket propulsion, variable mass
+  df: M
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    If E, L, M and G denote the quantities as energy, angular momentum, mass and constant of gravitation respectively, then the dimensions of P in the formula $P = EL^2M^{-5}G^{-2}$ are :-
+  o: ['$[M^0L^1T^0]$', '$[M^{-1}L^{-1}T^2]$', '$[M^1L^1T^{-2}]$', '$[M^0L^0T^0]$']
+  a: D
+  ch: Units and Measurements
+  tp: Dimensional analysis
+  df: E
+- n: 19
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    The material filled between the plates of a parallel plate capacitor has resistivity $200\ \Omega$m. The value of capacitance of the capacitor is 2 pF. If a potential difference of 40 V is applied across the plates of the capacitor, then the value of leakage current flowing out of the capacitor is : (given the value of relative permitivity of material is 50)
+  o: ['$9.0\ \mu$A', '9.0 mA', '0.9 mA', '$0.9\ \mu$A']
+  a: C
+  ch: Capacitance
+  tp: Leakage current in capacitor
+  df: M
+- n: 20
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Stmt
+  q: |-
+    Statement-I : By doping silicon semiconductor with pentavalent material, the electrons density increases.
+    Statement-II : The n-type semiconductor has net negative charge.
+    In the light of the above statements, choose the most appropriate answer from the options given below :
+  o: ['Statement-I is true but Statement-II is false.', 'Statement-I is false but Statement-II is true.', 'Both Statement-I and Statement-II are true.', 'Both Statement-I and Statement-II are false.']
+  a: A
+  ch: Semiconductor Electronics
+  tp: n-type semiconductor
+  df: E
+- n: 1
+  s: P
+  sec: B
+  p: 6
+  t: N
+  q: |-
+    A uniform chain of length 3 meter and mass 3 kg overhangs a smooth table with 2 meter laying on the table. If k is the kinetic energy of the chain in joule as it completely slips off the table, then the value of k is .......... . (Take $g = 10\ \text{m/s}^2$)
+  a: '40'
+  ch: Work, Energy and Power
+  tp: Chain sliding off table
+  df: M

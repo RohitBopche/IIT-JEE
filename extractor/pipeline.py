@@ -82,7 +82,7 @@ class Extractor:
         if self.verify and self.g:
             self._verify(paper, doc, questions, text_pdf, log)
 
-        questions.sort(key=lambda q: (list(validate.SUBJ_CODE).index(q["subject"]), q["q_no"]))
+        questions.sort(key=lambda q: (list(validate.SUBJ_CODE).index(q["subject"]), validate.sec(q), q["q_no"]))
         result = {
             "paper": {"file": str(paper.path), "sha256": paper.sha, "exam": paper.exam, "date": paper.date,
                       "year": paper.year, "shift": paper.shift, "slug": paper.slug, "pages": n,
@@ -99,7 +99,7 @@ class Extractor:
     def _merge(raw_qs):
         best = {}
         for q in raw_qs:
-            key = (q["subject"], q["q_no"])
+            key = (q["subject"], validate.sec(q), q["q_no"])
             rank = ({"high": 2, "medium": 1, "low": 0}[q["confidence"]], len(q["question_text"]))
             if key not in best or rank > best[key][0]:
                 best[key] = (rank, q)
@@ -138,7 +138,7 @@ class Extractor:
         q["model_confidence"] = q.pop("confidence", "medium")
         q["answer"] = validate.norm_answer(q["answer"], q["question_type"], len(q["options"]))
         code = validate.SUBJ_CODE[q["subject"]]
-        q["q_id"] = f"{paper.slug}_{code}_{q['q_no']:02d}"
+        q["q_id"] = f"{paper.slug}_{code}_{validate.sec(q)}{q['q_no']:02d}"
         # figures
         q["diagram_files"] = []
         fig_dir = self.out / "figures" / paper.slug
@@ -154,7 +154,7 @@ class Extractor:
         # cross-check with PDF text layer
         q["text_recall"] = None
         if text_pdf:
-            pt = "".join(page_text(doc, i) for i in q["page_indices"])
+            pt = "".join(page_text(doc, i) for i in q["page_indices"] if 0 <= i < len(doc))
             q["text_recall"] = validate.text_layer_recall(q["question_text"], pt)
         q["issues"] = validate.check_question(q)
 
@@ -166,7 +166,7 @@ class Extractor:
             p0 = q["page_index"]
             pages = [p for p in (p0, p0 + 1) if p < len(doc)]
             imgs = [render_page(doc, i, LLM_DPI) for i in pages]
-            rec = self._cached_call(paper, f"verify_{validate.SUBJ_CODE[q['subject']]}{q['q_no']:02d}",
+            rec = self._cached_call(paper, f"verify_{validate.SUBJ_CODE[q['subject']]}{validate.sec(q)}{q['q_no']:02d}",
                                     [prompts.verify_prompt(q["subject"], q["q_no"], len(imgs))] + imgs,
                                     prompts.chunk_schema(), prompts.SYSTEM)
             alts = rec["response"].get("questions") or []

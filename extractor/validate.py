@@ -8,6 +8,12 @@ LETTERS = "ABCD"
 SUBJ_CODE = {"Physics": "PHY", "Chemistry": "CHE", "Mathematics": "MAT"}
 
 
+def sec(q):
+    """Normalised section letter ('A', 'B', ... or '')."""
+    m = re.search(r"[A-Z]", (q.get("section") or "").upper().replace("SECTION", ""))
+    return m.group(0) if m else ""
+
+
 def norm_answer(ans, qtype, n_options):
     a = (ans or "").strip()
     if not a:
@@ -28,7 +34,8 @@ def norm_answer(ans, qtype, n_options):
 
 
 def words(text):
-    text = re.sub(r"\$[^$]*\$", " ", text or "")
+    text = re.sub(r"\[figure[^\n]*", " ", text or "")  # our own figure descriptions are not printed text
+    text = re.sub(r"\$[^$]*\$", " ", text)
     text = re.sub(r"\\[a-zA-Z]+", " ", text)
     return [w.lower() for w in re.findall(r"[A-Za-z]{4,}", text)]
 
@@ -114,21 +121,24 @@ def score(q):
 def check_numbering(questions):
     """Flag gaps/duplicates in printed numbering per subject. Returns paper-level issues."""
     issues = []
-    by_subj = {}
+    by_subj, by_sec = {}, {}
     for q in questions:
         by_subj.setdefault(q["subject"], []).append(q)
+        by_sec.setdefault((q["subject"], sec(q)), []).append(q)
     for subj in SYLLABUS:
-        qs = by_subj.get(subj, [])
-        if not qs:
+        if not by_subj.get(subj):
             issues.append(f"{subj}: no questions found")
             continue
+        n = len(by_subj[subj])
+        if n not in (25, 30):
+            issues.append(f"{subj}: {n} questions (expected 25 or 30)")
+    for (subj, s), qs in sorted(by_sec.items()):
         nums = sorted(q["q_no"] for q in qs)
+        label = f"{subj} {('section ' + s) if s else ''}".strip()
         missing = sorted(set(range(nums[0], nums[-1] + 1)) - set(nums))
         if missing:
-            issues.append(f"{subj}: missing question numbers {missing}")
+            issues.append(f"{label}: missing question numbers {missing}")
             for q in qs:
                 if q["q_no"] - 1 in missing or q["q_no"] + 1 in missing:
                     q["issues"].append("numbering gap next to this question")
-        if len(nums) not in (25, 30):
-            issues.append(f"{subj}: {len(nums)} questions (expected 25 or 30)")
     return issues
