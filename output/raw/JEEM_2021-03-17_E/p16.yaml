@@ -1,0 +1,96 @@
+- n: 3
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let y = y(x) be the solution of the differential equation $\cos x(3\sin x + \cos x + 3)dy = (1 + y\sin x(3\sin x + \cos x + 3))dx$, $0 \le x \le \frac{\pi}{2}$, y(0) = 0. Then, $y\left(\frac{\pi}{3}\right)$ is equal to:
+  o: ['$2\log_e\left(\frac{2\sqrt{3} + 9}{6}\right)$', '$2\log_e\left(\frac{2\sqrt{3} + 10}{11}\right)$', '$2\log_e\left(\frac{\sqrt{3} + 7}{2}\right)$', '$2\log_e\left(\frac{3\sqrt{3} - 8}{4}\right)$']
+  a: B
+  ch: Differential Equations
+  tp: Linear DE with trigonometric integral
+  df: H
+- n: 4
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The value of $\sum_{r=0}^{6}\left({}^6C_r\cdot{}^6C_{6-r}\right)$ is equal to :
+  o: ['1124', '1324', '1024', '924']
+  a: D
+  ch: Binomial Theorem
+  tp: Vandermonde identity
+  df: E
+- n: 5
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The value of $\lim_{n\to\infty}\frac{[r] + [2r] + \ldots + [nr]}{n^2}$, where r is non-zero real number and [r] denotes the greatest integer less than or equal to r, is equal to :
+  o: ['$\frac{r}{2}$', 'r', '2r', '0']
+  a: A
+  ch: Limits, Continuity and Differentiability
+  tp: Sandwich theorem
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    The number of solutions of the equation $\sin^{-1}\left[x^2 + \frac{1}{3}\right] + \cos^{-1}\left[x^2 - \frac{2}{3}\right] = x^2$, for $x \in [-1, 1]$, and [x] denotes the greatest integer less than or equal to x, is :
+  o: ['2', '0', '4', 'Infinite']
+  a: B
+  ch: Inverse Trigonometric Functions
+  tp: Inverse trig with greatest integer
+  df: M
+- n: 7
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let a computer program generate only the digits 0 and 1 to form a string of binary numbers with probability of occurrence of 0 at even places be $\frac{1}{2}$ and probability of occurrence of 0 at the odd place be $\frac{1}{3}$. Then the probability that '10' is followed by '01' is equal to :
+  o: ['$\frac{1}{18}$', '$\frac{1}{3}$', '$\frac{1}{6}$', '$\frac{1}{9}$']
+  a: D
+  ch: Probability
+  tp: Independent events
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    The number of solutions of the equation $x + 2\tan x = \frac{\pi}{2}$ in the interval $[0, 2\pi]$ is :
+  o: ['3', '4', '2', '5']
+  a: A
+  ch: Trigonometric Functions and Equations
+  tp: Graphical solution
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let $S_1$, $S_2$ and $S_3$ be three sets defined as $S_1 = \{z \in \mathbb{C} : |z - 1| \le \sqrt{2}\}$, $S_2 = \{z \in \mathbb{C} : \text{Re}((1 - i)z) \ge 1\}$, $S_3 = \{z \in \mathbb{C} : \text{Im}(z) \le 1\}$. Then the set $S_1 \cap S_2 \cap S_3$
+  o: ['is a singleton', 'has exactly two elements', 'has infinitely many elements', 'has exactly three elements']
+  a: C
+  ch: Complex Numbers
+  tp: Regions in Argand plane
+  df: M
+- n: 10
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    If the curve y = y(x) is the solution of the differential equation $2(x^2 + x^{5/4})dy - y(x + x^{1/4})dx = 2x^{9/4}dx$, x > 0 which passes through the point $\left(1, 1 - \frac{4}{3}\log_e2\right)$, then the value of y(16) is equal to :
+  o: ['$4\left(\frac{31}{3} + \frac{8}{3}\log_e3\right)$', '$\left(\frac{31}{3} + \frac{8}{3}\log_e3\right)$', '$4\left(\frac{31}{3} - \frac{8}{3}\log_e3\right)$', '$\left(\frac{31}{3} - \frac{8}{3}\log_e3\right)$']
+  a: C
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: H

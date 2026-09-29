@@ -1,0 +1,151 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A rubber ball is released from a height of 5 m above the floor. It bounces back repeatedly, always rising to $\frac{81}{100}$ of the height through which it falls. Find the average speed of the ball. (Take g = 10 ms$^{-2}$)
+  o: ['3.0 ms$^{-1}$', '3.50 ms$^{-1}$', '2.0 ms$^{-1}$', '2.50 ms$^{-1}$']
+  a: D
+  ch: Kinematics
+  tp: Bouncing ball, coefficient of restitution
+  df: H
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    If one mole of the polyatomic gas is having two vibrational modes and $\beta$ is the ratio of molar specific heats for polyatomic gas $\left(\beta = \frac{C_P}{C_V}\right)$ then the value of $\beta$ is :
+  o: ['1.02', '1.2', '1.25', '1.35']
+  a: B
+  ch: Kinetic Theory of Gases
+  tp: Degrees of freedom
+  df: M
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    A block of mass 1 kg attached to a spring is made to oscillate with an initial amplitude of 12 cm. After 2 minutes the amplitude decreases to 6 cm. Determine the value of the damping constant for this motion. (take ln 2 = 0.693)
+  o: ['$0.69\times10^2$ kg s$^{-1}$', '$3.3\times10^2$ kg s$^{-1}$', '$1.16\times10^2$ kg s$^{-1}$', '$5.7\times10^{-3}$ kg s$^{-1}$']
+  a: Bonus
+  ch: Oscillations
+  tp: Damped oscillations
+  df: M
+  nt: 'Official NTA answer NA (dropped); ALLEN BONUS (correct value 1.16×10⁻² kg/s)'
+- n: 4
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    Which one of the following will be the output of the given circuit ?
+  o: ['NOR Gate', 'NAND Gate', 'AND Gate', 'XOR Gate']
+  a: D
+  ch: Semiconductor Electronics
+  tp: Logic gates
+  df: M
+  fig: [[1, 550, 520, 610, 920]]
+- n: 5
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    An object is located at 2 km beneath the surface of the water. If the fractional compression $\frac{\Delta V}{V}$ is 1.36%, the ratio of hydraulic stress to the corresponding hydraulic strain will be __________. [Given : density of water is 1000 kg m$^{-3}$ and g = 9.8 ms$^{-2}$.]
+  o: ['$1.96\times10^7$ Nm$^{-2}$', '$1.44\times10^7$ Nm$^{-2}$', '$2.26\times10^9$ Nm$^{-2}$', '$1.44\times10^9$ Nm$^{-2}$']
+  a: D
+  ch: Mechanical Properties of Solids
+  tp: Bulk modulus
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A geostationary satellite is orbiting around an arbitary planet 'P' at a height of 11R above the surface of 'P', R being the radius of 'P'. The time period of another satellite in hours at a height of 2R from the surface of 'P' is_________. 'P' has the time period of 24 hours.
+  o: ['$6\sqrt{2}$', '$\frac{6}{\sqrt{2}}$', '3', '5']
+  a: C
+  ch: Gravitation
+  tp: Kepler's third law
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A sound wave of frequency 245 Hz travels with the speed of 300 ms$^{-1}$ along the positive x-axis. Each point of the wave moves to and fro through a total distance of 6 cm. What will be the mathematical expression of this travelling wave ?
+  o: ['$Y(x,t) = 0.03[\sin 5.1x - (0.2\times10^3)t]$', '$Y(x,t) = 0.06[\sin 5.1x - (1.5\times10^3)t]$', '$Y(x,t) = 0.06[\sin 0.8x - (0.5\times10^3)t]$', '$Y(x,t) = 0.03[\sin 5.1x - (1.5\times10^3)t]$']
+  a: D
+  ch: Waves
+  tp: Equation of travelling wave
+  df: E
+- n: 8
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Graph
+  q: |-
+    Which one is the correct option for the two different thermodynamic processes ?
+    [figure: (a) P–V: adiabatic vertical line, isothermal hyperbola; (b) P–T: isothermal horizontal, adiabatic curve; (c) V–T: isothermal vertical line, adiabatic decreasing curve; (d) P–T: isothermal vertical line, adiabatic increasing curve]
+  o: ['(c) and (a)', '(c) and (d)', '(a) only', '(b) and (c)']
+  a: B
+  ch: Thermodynamics
+  tp: Isothermal and adiabatic graphs
+  df: M
+  fig: [[2, 95, 555, 610, 780]]
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The velocity of a particle is $v = v_0 + gt + Ft^2$. Its position is x = 0 at t = 0 ; then its displacement after time (t = 1) is :
+  o: ['$v_0 + g + F$', '$v_0 + \frac{g}{2} + \frac{F}{3}$', '$v_0 + \frac{g}{2} + F$', '$v_0 + 2g + 3F$']
+  a: B
+  ch: Kinematics
+  tp: Displacement by integration
+  df: E
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A carrier signal $C(t) = 25\sin(2.512\times10^{10}t)$ is amplitude modulated by a message signal $m(t) = 5\sin(1.57\times10^8t)$ and transmitted through an antenna. What will be the bandwidth of the modulated signal ?
+  o: ['8 GHz', '2.01 GHz', '1987.5 MHz', '50 MHz']
+  a: D
+  ch: Communication Systems
+  tp: Bandwidth of AM signal
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Two cells of emf 2E and E with internal resistance $r_1$ and $r_2$ respectively are connected in series to an external resistor R (see figure). The value of R, at which the potential difference across the terminals of the first cell becomes zero is
+  o: ['$r_1 + r_2$', '$\frac{r_1}{2} - r_2$', '$\frac{r_1}{2} + r_2$', '$r_1 - r_2$']
+  a: B
+  ch: Current Electricity
+  tp: Terminal potential difference
+  df: M
+  fig: [[3, 200, 620, 290, 840]]
+- n: 12
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A hairpin like shape as shown in figure is made by bending a long current carrying wire. What is the magnitude of a magnetic field at point P which lies on the centre of the semicircle ?
+  o: ['$\frac{\mu_0I}{4\pi r}(2 - \pi)$', '$\frac{\mu_0I}{4\pi r}(2 + \pi)$', '$\frac{\mu_0I}{2\pi r}(2 + \pi)$', '$\frac{\mu_0I}{2\pi r}(2 - \pi)$']
+  a: B
+  ch: Moving Charges and Magnetism
+  tp: Field of hairpin wire
+  df: M
+  fig: [[3, 755, 650, 800, 780]]

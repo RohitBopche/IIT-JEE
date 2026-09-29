@@ -1,0 +1,131 @@
+- n: 11
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If the sides AB, BC and CA of a triangle ABC have 3, 5 and 6 interior points respectively, then the total number of triangles that can be constructed using these points as vertices, is equal to :
+  o: ['364', '240', '333', '360']
+  a: C
+  ch: Permutations and Combinations
+  tp: Counting triangles
+  df: E
+- n: 12
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If x, y, z are in arithmetic progression with common difference d, $x \neq 3d$, and the determinant of the matrix $\begin{bmatrix} 3 & 4\sqrt{2} & x \\ 4 & 5\sqrt{2} & y \\ 5 & k & z \end{bmatrix}$ is zero, then the value of $k^2$ is
+  o: ['72', '12', '36', '6']
+  a: A
+  ch: Matrices and Determinants
+  tp: Determinant with AP
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let O be the origin. Let $\vec{OP} = x\hat{i} + y\hat{j} - \hat{k}$ and $\vec{OQ} = -\hat{i} + 2\hat{j} + 3x\hat{k}$, x, $y \in \mathbb{R}$, x > 0, be such that $|\vec{PQ}| = \sqrt{20}$ and the vector $\vec{OP}$ is perpendicular to $\vec{OQ}$. If $\vec{OR} = 3\hat{i} + z\hat{j} - 7\hat{k}$, $z \in \mathbb{R}$, is coplanar with $\vec{OP}$ and $\vec{OQ}$, then the value of $x^2 + y^2 + z^2$ is equal to
+  o: ['7', '9', '2', '1']
+  a: B
+  ch: Vector Algebra
+  tp: Coplanarity, perpendicularity
+  df: M
+- n: 14
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Two tangents are drawn from a point P to the circle $x^2 + y^2 - 2x - 4y + 4 = 0$, such that the angle between these tangents is $\tan^{-1}\left(\frac{12}{5}\right)$, where $\tan^{-1}\left(\frac{12}{5}\right) \in (0, \pi)$. If the centre of the circle is denoted by C and these tangents touch the circle at points A and B, then the ratio of the areas of $\triangle PAB$ and $\triangle CAB$ is :
+  o: ['11 : 4', '9 : 4', '3 : 1', '2 : 1']
+  a: B
+  ch: Circles
+  tp: Tangents from external point
+  df: M
+- n: 15
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Consider the function $f : \mathbb{R} \rightarrow \mathbb{R}$ defined by $f(x) = \begin{cases} \left(2 - \sin\left(\frac{1}{x}\right)\right)|x|, & x \neq 0 \\ 0, & x = 0 \end{cases}$. Then f is :
+  o: ['monotonic on $(-\infty, 0) \cup (0, \infty)$', 'not monotonic on $(-\infty, 0)$ and $(0, \infty)$', 'monotonic on $(0, \infty)$ only', 'monotonic on $(-\infty, 0)$ only']
+  a: B
+  ch: Application of Derivatives
+  tp: Monotonicity
+  df: H
+- n: 16
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let L be a tangent line to the parabola $y^2 = 4x - 20$ at (6, 2). If L is also a tangent to the ellipse $\frac{x^2}{2} + \frac{y^2}{b} = 1$, then the value of b is equal to :
+  o: ['11', '14', '16', '20']
+  a: B
+  ch: Conic Sections
+  tp: Common tangent
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    The value of the limit $\lim_{\theta\to0}\frac{\tan(\pi\cos^2\theta)}{\sin(2\pi\sin^2\theta)}$ is equal to :
+  o: ['$-\frac{1}{2}$', '$-\frac{1}{4}$', '0', '$\frac{1}{4}$']
+  a: A
+  ch: Limits, Continuity and Differentiability
+  tp: Trigonometric limits
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Let the tangent to the circle $x^2 + y^2 = 25$ at the point R(3, 4) meet x-axis and y-axis at point P and Q, respectively. If r is the radius of the circle passing through the origin O and having centre at the incentre of the triangle OPQ, then $r^2$ is equal to
+  o: ['$\frac{529}{64}$', '$\frac{125}{72}$', '$\frac{625}{72}$', '$\frac{585}{66}$']
+  a: C
+  ch: Circles
+  tp: Incentre and circle
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    If the Boolean expression $(p \wedge q) \circledast (p \otimes q)$ is a tautology, then $\circledast$ and $\otimes$ are respectively given by
+  o: ['$\rightarrow$, $\rightarrow$', '$\wedge$, $\vee$', '$\vee$, $\rightarrow$', '$\wedge$, $\rightarrow$']
+  a: A
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    If the equation of plane passing through the mirror image of a point (2, 3, 1) with respect to line $\frac{x + 1}{2} = \frac{y - 3}{1} = \frac{z + 2}{-1}$ and containing the line $\frac{x - 2}{3} = \frac{1 - y}{2} = \frac{z + 1}{1}$ is $\alpha x + \beta y + \gamma z = 24$, then $\alpha + \beta + \gamma$ is equal to :
+  o: ['20', '19', '18', '21']
+  a: B
+  ch: Three Dimensional Geometry
+  tp: Image in line, plane containing line
+  df: H
+- n: 1
+  s: M
+  sec: B
+  p: 21
+  t: N
+  q: |-
+    If 1, $\log_{10}(4^x - 2)$ and $\log_{10}\left(4^x + \frac{18}{5}\right)$ are in arithmetic progression for a real number x, then the value of the determinant $\begin{vmatrix} 2\left(x - \frac{1}{2}\right) & x - 1 & x^2 \\ 1 & 0 & x \\ x & 1 & 0 \end{vmatrix}$ is equal to :
+  a: '2'
+  ch: Matrices and Determinants
+  tp: AP with logarithms, determinant
+  df: M
