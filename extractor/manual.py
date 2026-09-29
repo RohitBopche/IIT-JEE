@@ -51,7 +51,7 @@ STYLES = {"Standard": "Standard", "Match": "Match the Following", "AR": "Asserti
           "Comp": "Comprehension"}
 DIFF = {"E": "Easy", "M": "Medium", "H": "Hard"}
 CONF = {"h": "high", "m": "medium", "l": "low"}
-ANS_SRC = {"key": "printed with question", "sol": "solution"}
+ANS_SRC = {"key": "printed with question", "sol": "solution", "keypage": "answer key page"}
 
 
 def papers_by_slug():
@@ -131,6 +131,11 @@ def ingest(slugs):
         paper = byslug[slug]
         files = sorted((RAW / slug).glob("*.yaml"))
         raw_qs = []
+        # answers.yaml: {"P A 1": "D", ...} for papers whose answers are only in separate solution pages
+        ans_file = RAW / slug / "answers.yaml"
+        sol_answers = yaml.safe_load(ans_file.read_text()) if ans_file.exists() else {}
+        ans_src = sol_answers.pop("_source", "sol")
+        files = [f for f in files if f.name != "answers.yaml"]
         for f in files:
             try:
                 items = yaml.safe_load(f.read_text()) or []
@@ -140,6 +145,9 @@ def ingest(slugs):
                 continue
             for it in items:
                 try:
+                    key = f"{it['s']} {it.get('sec', '')} {it['n']}"
+                    if not str(it.get("a", "") or "").strip() and key in sol_answers:
+                        it["a"], it["as"] = sol_answers[key], ans_src
                     raw_qs.append(to_raw(it, f.name))
                 except Exception as e:
                     print(f"[{slug}] bad item in {f.name}: {e}: {str(it)[:120]}")

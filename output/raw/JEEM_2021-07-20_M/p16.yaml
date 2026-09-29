@@ -1,0 +1,134 @@
+- n: 18
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let $y = y(x)$ be the solution of the differential equation $e^x\sqrt{1 - y^2}\,dx + \left(\frac{y}{x}\right)dy = 0$, $y(1) = -1$. Then the value of $(y(3))^2$ is equal to :
+  o: ['$1 + 4e^6$', '$1 - 4e^3$', '$1 + 4e^3$', '$1 - 4e^6$']
+  ch: Differential Equations
+  tp: Variable separable
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let [x] denote the greatest integer $\le x$, where $x \in \mathbb{R}$. If the domain of the real valued function $f(x) = \sqrt{\frac{|[x]| - 2}{|[x]| - 3}}$ is $(-\infty, a) \cup [b, c) \cup [4, \infty)$, $a < b < c$, then the value of $a + b + c$ is:
+  o: ['–3', '8', '–2', '1']
+  ch: Sets, Relations and Functions
+  tp: Domain with greatest integer function
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let $y = y(x)$ be the solution of the differential equation $x\tan\left(\frac{y}{x}\right)dy = \left(y\tan\left(\frac{y}{x}\right) - x\right)dx$, $-1 \le x \le 1$, $y\left(\frac{1}{2}\right) = \frac{\pi}{6}$. Then the area of the region bounded by the curves $x = 0$, $x = \frac{1}{\sqrt{2}}$ and $y = y(x)$ in the upper half plane is :
+  o: ['$\frac{1}{6}(\pi - 1)$', '$\frac{1}{8}(\pi - 1)$', '$\frac{1}{4}(\pi - 2)$', '$\frac{1}{12}(\pi - 3)$']
+  ch: Area Under Curves
+  tp: Homogeneous DE and area
+  df: H
+- n: 1
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let $A = \begin{pmatrix} 1 & -1 & 0 \\ 0 & 1 & -1 \\ 0 & 0 & 1 \end{pmatrix}$ and $B = 7A^{20} - 20A^7 + 2I$, where I is an identity matrix of order 3 x 3. If $B = [b_{ij}]$, then $b_{13}$ is equal to.........
+  ch: Matrices and Determinants
+  tp: Powers of matrix
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let $y = mx + c$, $m > 0$ be the focal chord of $y^2 = -64x$, which is tangent to $(x + 10)^2 + y^2 = 4$. Then, the value of $4\sqrt{2}(m + c)$ is equal to .......
+  ch: Conic Sections
+  tp: Focal chord tangent to circle
+  df: M
+- n: 3
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let a, b, c, d be in arithmetic progression with common difference $\lambda$. If $\begin{vmatrix} x + a - c & x + b & x + a \\ x - 1 & x + c & x + b \\ x - b + d & x + d & x + c \end{vmatrix} = 2$, then the value of $\lambda^2$ is equal to.........
+  ch: Matrices and Determinants
+  tp: Determinant with AP entries
+  df: M
+- n: 4
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let $\vec{a}$, $\vec{b}$, $\vec{c}$ be three mutually perpendicular vectors of the same magnitude and equally inclined at an angle $\theta$, with the vector $\vec{a} + \vec{b} + \vec{c}$. Then $36\cos^2 2\theta$ is equal to.......
+  ch: Vector Algebra
+  tp: Angle with resultant
+  df: E
+- n: 5
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let T be the tangent to the ellipse $E : x^2 + 4y^2 = 5$ at the point P(1, 1). If the area of the region bounded by the tangent T, ellipse E, lines x = 1 and $x = \sqrt{5}$ is $\alpha\sqrt{5} + \beta + \gamma\cos^{-1}\left(\frac{1}{\sqrt{5}}\right)$, then $|\alpha + \beta + \gamma|$ is equal to.....
+  ch: Area Under Curves
+  tp: Area between ellipse and tangent
+  df: H
+  nt: 'answer key: 1.25; official NTA answer 1 (used)'
+- n: 6
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    There are 15 players in a cricket team, out of which 6 are bowlers, 7 are batsmen and 2 are wicketkeepers. The number of ways, a team of 11 players be selected from them so as to include at least 4 bowlers, 5 batsmen and 1 wicketkeeper, is ..........
+  ch: Permutations and Combinations
+  tp: Selection with constraints
+  df: M
+- n: 7
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    The number of rational terms in the binomial expansion of $\left(4^{\frac{1}{4}} + 5^{\frac{1}{6}}\right)^{120}$ is.....
+  ch: Binomial Theorem
+  tp: Rational terms
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    Let P be a plane passing through the points (1,0,1), (1,–2,1) and (0,1,–2). Let a vector $\vec{a} = \alpha\hat{i} + \beta\hat{j} + \gamma\hat{k}$ be such that $\vec{a}$ is parallel to the plane P, perpendicular to $(\hat{i} + 2\hat{j} + 3\hat{k})$ and $\vec{a}\cdot(\hat{i} + \hat{j} + 2\hat{k}) = 2$, then $(\alpha - \beta + \gamma)^2$ equals.......
+  ch: Three Dimensional Geometry
+  tp: Plane and vector conditions
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    If the value of $\lim_{x\to0}\left(2 - \cos x\sqrt{\cos 2x}\right)^{\left(\frac{x+2}{x^2}\right)}$ is equal to $e^a$, then a is equal to.......
+  ch: Limits, Continuity and Differentiability
+  tp: 1^infinity form limit
+  df: M
+- n: 10
+  s: M
+  sec: B
+  p: 17
+  t: N
+  q: |-
+    If the shortest distance between the lines $\vec{r}_1 = \alpha\hat{i} + 2\hat{j} + 2\hat{k} + \lambda(\hat{i} - 2\hat{j} + 2\hat{k})$, $\lambda \in \mathbb{R}$, $\alpha > 0$ and $\vec{r}_2 = -4\hat{i} - \hat{k} + \mu(3\hat{i} - 2\hat{j} - 2\hat{k})$, $\mu \in \mathbb{R}$ is 9, then $\alpha$ is equal to.......
+  ch: Three Dimensional Geometry
+  tp: Shortest distance between skew lines
+  df: M

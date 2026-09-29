@@ -1,0 +1,114 @@
+- n: 1
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The amount of heat needed to raise the temperature of 4 moles of a rigid diatomic gas from 0°C to 50°C when no work is done is ___________. (R is the universal gas constant)
+  o: ['175 R', '750 R', '250 R', '500 R']
+  ch: Thermodynamics
+  tp: Heat at constant volume
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A deuteron and an alpha particle having equal kinetic energy enter perpendicularly into a magnetic field. Let $r_d$ and $r_\alpha$ be their respective radii of circular path. The value of $\frac{r_d}{r_\alpha}$ is equal to :
+  o: ['$\sqrt{2}$', '2', '$\frac{1}{\sqrt{2}}$', '1']
+  ch: Moving Charges and Magnetism
+  tp: Radius of charged particle in magnetic field
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    If $\vec{A}$ and $\vec{B}$ are two vectors satisfying the relation $\vec{A}\cdot\vec{B} = |\vec{A}\times\vec{B}|$. Then the value of $|\vec{A} - \vec{B}|$ will be :
+  o: ['$\sqrt{A^2 + B^2 - \sqrt{2}AB}$', '$\sqrt{A^2 + B^2}$', '$\sqrt{A^2 + B^2 + 2AB}$', '$\sqrt{A^2 + B^2 + \sqrt{2}AB}$']
+  ch: Kinematics
+  tp: Vector algebra
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Consider a mixture of gas molecule of types A, B and C having masses $m_A < m_B < m_C$. The ratio of their root mean square speeds at normal temperature and pressure is :
+  o: ['$\frac{1}{\upsilon_A} > \frac{1}{\upsilon_B} > \frac{1}{\upsilon_C}$', '$\upsilon_A = \upsilon_B = \upsilon_C = 0$', '$\frac{1}{\upsilon_A} < \frac{1}{\upsilon_B} < \frac{1}{\upsilon_C}$', '$\upsilon_A = \upsilon_B \neq \upsilon_C$']
+  ch: Kinetic Theory of Gases
+  tp: RMS speed
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A nucleus of mass M emits $\gamma$-ray photon of frequency 'v'. The loss of internal energy by the nucleus is : [Take 'c' as the speed of electromagnetic wave ]
+  o: ['$h\nu\left[1 + \frac{h\nu}{2Mc^2}\right]$', '0', '$h\nu\left[1 - \frac{h\nu}{2Mc^2}\right]$', '$h\nu$']
+  ch: Nuclei
+  tp: Recoil of nucleus on gamma emission
+  df: M
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    A radioactive material decays by simultaneous emissions of two particles with half lives of 1400 years and 700 years respectively. What will be the time after which one third of the material remains? (Take ln 3 = 1.1)
+  o: ['340 years', '1110 years', '700 years', '740 years']
+  ch: Nuclei
+  tp: Parallel radioactive decay
+  df: M
+- n: 7
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The value of current in the $6\Omega$ resistance is :
+  o: ['6 A', '10 A', '4 A', '8 A']
+  ch: Current Electricity
+  tp: Kirchhoff's laws
+  df: E
+  fig: [[3, 185, 565, 305, 885]]
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The radiation corresponding to $3 \rightarrow 2$ transition of a hydrogen atom falls on a gold surface to generate photoelectrons. These electrons are passed through a magnetic field of $5\times10^{-4}$ T. Assume that the radius of the largest circular circular path followed by these electrons is 7mm, the work function of the metal is : (Mass of electron $= 9.1\times10^{-31}$ kg)
+  o: ['0.82 eV', '1.88 eV', '1.36 eV', '0.16 eV']
+  ch: Dual Nature of Radiation and Matter
+  tp: Photoelectric effect with magnetic field
+  df: M
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    For the circuit shown below, calculate the value of $I_z$ :
+  o: ['0.15 A', '0.1 A', '25 mA', '0.05 A']
+  ch: Semiconductor Electronics
+  tp: Zener diode current
+  df: E
+  fig: [[3, 440, 478, 550, 880]]
+- n: 10
+  s: P
+  sec: A
+  p: 3
+  t: S
+  st: Graph
+  q: |-
+    The arm PQ of a rectangular conductor is moving from x = 0 to x = 2b outwards and then inwards from x = 2b to x = 0 as shown in the figure. A uniform magnetic field perpendicular to the plane is acting from x = 0 to x = b. Identify the graph the variation of different quantities with distance.
+  o: ['A – Flux, B – EMF, C – Power dissipated', 'A – EMF, B – Power dissipated, C – Flux', 'A – Power dissipated, B – Flux, C – EMF', 'A – Flux, B – Power dissipated, C – EMF']
+  ch: Electromagnetic Induction
+  tp: Motional EMF, flux graphs
+  df: M
+  fig: [[3, 634, 175, 788, 765]]
