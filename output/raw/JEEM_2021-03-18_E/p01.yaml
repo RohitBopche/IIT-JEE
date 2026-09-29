@@ -1,0 +1,118 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  st: MultiStmt
+  q: |-
+    Which of the following statements are correct?
+    (A) Electric monopoles do not exist whereas magnetic monopoles exist.
+    (B) Magnetic field lines due to a solenoid at its ends and outside cannot be completely straight and confined.
+    (C) Magnetic field lines are completely confined within a toroid.
+    (D) Magnetic field lines inside a bar magnet are not parallel.
+    (E) $\chi$ = – 1 is the condition for a perfect diamagnetic material, where $\chi$ is its magnetic susceptibility.
+    Choose the correct answer from the options given below :
+  o: ['(C) and (E) only', '(B) and (D) only', '(A) and (B) only', '(B) and (C) only']
+  a: A
+  ch: Magnetism and Matter
+  tp: Magnetic field lines, diamagnetism
+  df: M
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    An object of mass $m_1$ collides with another object of mass $m_2$, which is at rest. After the collision the objects move with equal speeds in opposite direction. The ratio of the masses $m_2 : m_1$ is :
+  o: ['3 : 1', '2 : 1', '1 : 2', '1 : 1']
+  a: A
+  ch: Work, Energy and Power
+  tp: Elastic collision
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    For an adiabatic expansion of an ideal gas, the fractional change in its pressure is equal to (where $\gamma$ is the ratio of specific heats):
+  o: ['$-\gamma\frac{dV}{V}$', '$-\gamma\frac{V}{dV}$', '$-\frac{1}{\gamma}\frac{dV}{V}$', '$\frac{dV}{V}$']
+  a: A
+  ch: Thermodynamics
+  tp: Adiabatic process
+  df: E
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A proton and an $\alpha$-particle, having kinetic energies $K_p$ and $K_\alpha$, respectively, enter into a magnetic field at right angles. The ratio of the radii of trajectory of proton to that of $\alpha$-particle is 2 : 1. The ratio of $K_p : K_\alpha$ is :
+  o: ['1 : 8', '8 : 1', '1 : 4', '4 : 1']
+  a: D
+  ch: Moving Charges and Magnetism
+  tp: Radius of circular path
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    A plane electromagnetic wave propagating along y-direction can have the following pair of electric field ($\vec{E}$) and magnetic field ($\vec{B}$) components.
+  o: ['$E_y$, $B_y$ or $E_z$, $B_z$', '$E_y$, $B_x$ or $E_x$, $B_y$', '$E_x$, $B_z$ or $E_z$, $B_x$', '$E_x$, $B_y$ or $E_y$, $B_x$']
+  a: C
+  ch: Electromagnetic Waves
+  tp: Transverse nature of EM waves
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Consider a uniform wire of mass M and length L. It is bent into a semicircle. Its moment of inertia about a line perpendicular to the plane of the wire passing through the centre is :
+  o: ['$\frac{1}{4}\frac{ML^2}{\pi^2}$', '$\frac{2}{5}\frac{ML^2}{\pi^2}$', '$\frac{ML^2}{\pi^2}$', '$\frac{1}{2}\frac{ML^2}{\pi^2}$']
+  a: C
+  ch: Rotational Motion
+  tp: Moment of inertia of semicircular wire
+  df: E
+- n: 7
+  s: P
+  sec: A
+  p: 2
+  t: S
+  st: Graph
+  q: |-
+    The velocity-displacement graph of a particle is shown in the figure. The acceleration-displacement graph of the same particle is represented by :
+  o: ['[figure] constant negative acceleration', '[figure] a decreasing linearly from positive to zero at $x_0$', '[figure] a increasing linearly from negative to zero at $x_0$', '[figure] constant positive acceleration']
+  a: C
+  ch: Kinematics
+  tp: v-x to a-x graph
+  df: M
+  fig: [[2, 440, 620, 550, 820], [2, 620, 555, 830, 910]]
+- n: 8
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The correct relation between $\alpha$ (ratio of collector current to emitter current) and $\beta$ (ratio of collector current to base current) of a transistor is :
+  o: ['$\beta = \frac{\alpha}{1 + \alpha}$', '$\alpha = \frac{\beta}{1 - \alpha}$', '$\beta = \frac{1}{1 - \alpha}$', '$\alpha = \frac{\beta}{1 + \beta}$']
+  a: D
+  ch: Semiconductor Electronics
+  tp: Current gains
+  df: E
+- n: 9
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    Three rays of light, namely red (R), green (G) and blue (B) are incident on the face PQ of a right angled prism PQR as shown in figure. The refractive indices of the material of the prism for red, green and blue wavelength are 1.27, 1.42 and 1.49 respectively. The colour of the ray(s) emerging out of the face PR is :
+  o: ['green', 'red', 'blue and green', 'blue']
+  a: B
+  ch: Ray Optics and Optical Instruments
+  tp: Total internal reflection in prism
+  df: M
+  fig: [[3, 165, 560, 295, 850]]

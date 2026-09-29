@@ -1,0 +1,96 @@
+- n: 4
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let $f : \mathbb{R} - \{3\} \rightarrow \mathbb{R} - \{1\}$ be defined by $f(x) = \frac{x - 2}{x - 3}$. Let $g : \mathbb{R} \rightarrow \mathbb{R}$ be given as g(x) = 2x – 3. Then, the sum of all the values of x for which $f^{-1}(x) + g^{-1}(x) = \frac{13}{2}$ is equal to
+  o: ['7', '2', '5', '3']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: Inverse functions
+  df: E
+- n: 5
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Let the centroid of an equilateral triangle ABC be at the origin. Let one of the sides of the equilateral triangle be along the straight line x + y = 3. If R and r be the radius of circumcircle and incircle respectively of $\triangle ABC$, then (R + r) is equal to :
+  o: ['$\frac{9}{\sqrt{2}}$', '$7\sqrt{2}$', '$2\sqrt{2}$', '$3\sqrt{2}$']
+  a: A
+  ch: Straight Lines
+  tp: Equilateral triangle, circumradius and inradius
+  df: E
+- n: 6
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    Consider hyperbola H : $x^2 - 2y^2 = 4$. Let the tangent at a point $P(4, \sqrt{6})$ meet the x-axis at Q and latus rectum at $R(x_1, y_1)$, $x_1 > 0$. If F is a focus of H which is nearer to the point P, then the area of $\triangle QFR$ is equal to
+  o: ['$4\sqrt{6}$', '$\sqrt{6} - 1$', '$\frac{7}{\sqrt{6}} - 2$', '$4\sqrt{6} - 1$']
+  a: C
+  ch: Conic Sections
+  tp: Tangent to hyperbola, area
+  df: M
+- n: 7
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    If P and Q are two statements, then which of the following compound statement is a tautology ?
+  o: ['$((P \Rightarrow Q) \wedge \sim Q) \Rightarrow Q$', '$((P \Rightarrow Q) \wedge \sim Q) \Rightarrow \sim P$', '$((P \Rightarrow Q) \wedge \sim Q) \Rightarrow P$', '$((P \Rightarrow Q) \wedge \sim Q) \Rightarrow (P \wedge Q)$']
+  a: B
+  ch: Mathematical Reasoning
+  tp: Tautology
+  df: E
+- n: 8
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let $g(x) = \int_0^xf(t)\,dt$, where f is continuous function in [0, 3] such that $\frac{1}{3} \le f(t) \le 1$ for all $t \in [0, 1]$ and $0 \le f(t) \le \frac{1}{2}$ for all $t \in (1, 3]$. The largest possible interval in which g(3) lies is :
+  o: ['$\left[-1, -\frac{1}{2}\right]$', '$\left[-\frac{3}{2}, -1\right]$', '$\left[\frac{1}{3}, 2\right]$', '[1, 3]']
+  a: C
+  ch: Definite Integration
+  tp: Bounds of integrals
+  df: E
+- n: 9
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Let $S_1$ be the sum of first 2n terms of an arithmetic progression. Let $S_2$ be the sum of first 4n terms of the same arithmetic progression. If $(S_2 - S_1)$ is 1000, then the sum of the first 6n terms of the arithmetic progression is equal to:
+  o: ['1000', '7000', '5000', '3000']
+  a: D
+  ch: Sequences and Series
+  tp: Sum of AP
+  df: E
+- n: 10
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Let a complex number be $w = 1 - \sqrt{3}i$. Let another complex number z be such that |zw| = 1 and $\arg(z) - \arg(w) = \frac{\pi}{2}$. Then the area of the triangle with vertices origin, z and w is equal to :
+  o: ['4', '$\frac{1}{2}$', '$\frac{1}{4}$', '2']
+  a: B
+  ch: Complex Numbers
+  tp: Area of triangle in Argand plane
+  df: E
+- n: 11
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Let in a series of 2n observations, half of them are equal to a and remaining half are equal to –a. Also by adding a constant b in each of these observations, the mean and standard deviation of new set become 5 and 20, respectively. Then the value of $a^2 + b^2$ is equal to :
+  o: ['425', '650', '250', '925']
+  a: A
+  ch: Statistics
+  tp: Mean and standard deviation
+  df: E

@@ -1,0 +1,111 @@
+- n: 10
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    If the angular velocity of earth's spin is increased such that the bodies at the equator start floating, the duration of the day would be approximately : (Take : g = 10 ms$^{-2}$, the radius of earth, R = $6400\times10^3$ m, Take $\pi$ = 3.14)
+  o: ['60 minutes', 'does not change', '1200 minutes', '84 minutes']
+  a: D
+  ch: Gravitation
+  tp: Effect of earth's rotation
+  df: E
+- n: 11
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    The decay of a proton to neutron is :
+  o: ['not possible as proton mass is less than the neutron mass', 'possible only inside the nucleus', 'not possible but neutron to proton conversion is possible', 'always possible as it is associated only with $\beta^+$ decay']
+  a: B
+  ch: Nuclei
+  tp: Beta plus decay
+  df: E
+- n: 12
+  s: P
+  sec: A
+  p: 4
+  t: S
+  q: |-
+    In a series LCR circuit, the inductive reactance ($X_L$) is $10\ \Omega$ and the capacitive reactance ($X_C$) is $4\ \Omega$. The resistance (R) in the circuit is $6\ \Omega$. The power factor of the circuit is :
+  o: ['$\frac{1}{2}$', '$\frac{1}{2\sqrt{2}}$', '$\frac{1}{\sqrt{2}}$', '$\frac{\sqrt{3}}{2}$']
+  a: C
+  ch: Alternating Current
+  tp: Power factor
+  df: E
+- n: 13
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The angular momentum of a planet of mass M moving around the sun in an elliptical orbit is $\vec{L}$. The magnitude of the areal velocity of the planet is :
+  o: ['$\frac{4L}{M}$', '$\frac{L}{M}$', '$\frac{2L}{M}$', '$\frac{L}{2M}$']
+  a: D
+  ch: Gravitation
+  tp: Areal velocity
+  df: E
+- n: 14
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    The function of time representing a simple harmonic motion with a period of $\frac{\pi}{\omega}$ is :
+  o: ['$\sin(\omega t) + \cos(\omega t)$', '$\cos(\omega t) + \cos(2\omega t) + \cos(3\omega t)$', '$\sin^2(\omega t)$', '$3\cos\left(\frac{\pi}{4} - 2\omega t\right)$']
+  a: D
+  ch: Oscillations
+  tp: Period of SHM
+  df: M
+- n: 15
+  s: P
+  sec: A
+  p: 5
+  t: S
+  q: |-
+    A solid cylinder of mass m is wrapped with an inextensible light string and, is placed on a rough inclined plane as shown in the figure. The frictional force acting between the cylinder and the inclined plane is : [The coefficient of static friction, $\mu_s$, is 0.4]
+  o: ['$\frac{7}{2}$mg', '5 mg', '$\frac{mg}{5}$', '0']
+  a: C
+  ch: Rotational Motion
+  tp: Friction on cylinder on incline
+  df: H
+  fig: [[5, 555, 630, 760, 800]]
+- n: 16
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    The time taken for the magnetic energy to reach 25% of its maximum value, when a solenoid of resistance R, inductance L is connected to a battery, is :
+  o: ['$\frac{L}{R}\ln5$', 'infinite', '$\frac{L}{R}\ln2$', '$\frac{L}{R}\ln10$']
+  a: C
+  ch: Electromagnetic Induction
+  tp: LR circuit growth
+  df: M
+- n: 17
+  s: P
+  sec: A
+  p: 6
+  t: S
+  st: Graph
+  q: |-
+    A particle of mass m moves in a circular orbit under the central potential field, $U(r) = \frac{-C}{r}$, where C is a positive constant. The correct radius – velocity graph of the particle's motion is :
+  o: ['[figure] r decreasing with v (hyperbola-like)', '[figure] r increasing with v (concave up)', '[figure] r proportional to v', '[figure] r decreasing (concave down, quarter circle)']
+  a: A
+  ch: Gravitation
+  tp: Orbital velocity vs radius
+  df: E
+  fig: [[6, 225, 555, 440, 900]]
+- n: 18
+  s: P
+  sec: A
+  p: 6
+  t: S
+  q: |-
+    An ideal gas in a cylinder is separated by a piston in such a way that the entropy of one part is $S_1$ and that of the other part is $S_2$. Given that $S_1 > S_2$. If the piston is removed then the total entropy of the system will be :
+  o: ['$S_1\times S_2$', '$S_1 - S_2$', '$\frac{S_1}{S_2}$', '$S_1 + S_2$']
+  a: D
+  ch: Thermodynamics
+  tp: Entropy additivity
+  df: E

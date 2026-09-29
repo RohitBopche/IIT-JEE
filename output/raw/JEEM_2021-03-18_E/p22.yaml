@@ -1,0 +1,108 @@
+- n: 12
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let $S_1 : x^2 + y^2 = 9$ and $S_2 : (x - 2)^2 + y^2 = 1$. Then the locus of center of a variable circle S which touches $S_1$ internally and $S_2$ externally always passes through the points :
+  o: ['$(0, \pm\sqrt{3})$', '$\left(\frac{1}{2}, \pm\frac{\sqrt{5}}{2}\right)$', '$\left(2, \pm\frac{3}{2}\right)$', '$(1, \pm2)$']
+  a: C
+  ch: Conic Sections
+  tp: Locus as ellipse
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let $\vec{a}$ and $\vec{b}$ be two non-zero vectors perpendicular to each other and $|\vec{a}| = |\vec{b}|$. If $|\vec{a}\times\vec{b}| = |\vec{a}|$, then the angle between the vectors $(\vec{a} + \vec{b} + (\vec{a}\times\vec{b}))$ and $\vec{a}$ is equal to :
+  o: ['$\sin^{-1}\left(\frac{1}{\sqrt{3}}\right)$', '$\cos^{-1}\left(\frac{1}{\sqrt{3}}\right)$', '$\cos^{-1}\left(\frac{1}{\sqrt{2}}\right)$', '$\sin^{-1}\left(\frac{1}{\sqrt{6}}\right)$']
+  a: B
+  ch: Vector Algebra
+  tp: Angle between vectors
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let in a Binomial distribution, consisting of 5 independent trials, probabilities of exactly 1 and 2 successes be 0.4096 and 0.2048 respectively. Then the probability of getting exactly 3 successes is equal to :
+  o: ['$\frac{32}{625}$', '$\frac{80}{243}$', '$\frac{40}{243}$', '$\frac{128}{625}$']
+  a: A
+  ch: Probability
+  tp: Binomial distribution
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    Let a tangent be drawn to the ellipse $\frac{x^2}{27} + y^2 = 1$ at $(3\sqrt{3}\cos\theta, \sin\theta)$ where $\theta \in \left(0, \frac{\pi}{2}\right)$. Then the value of $\theta$ such that the sum of intercepts on axes made by this tangent is minimum is equal to :
+  o: ['$\frac{\pi}{8}$', '$\frac{\pi}{4}$', '$\frac{\pi}{6}$', '$\frac{\pi}{3}$']
+  a: C
+  ch: Conic Sections
+  tp: Tangent to ellipse, optimisation
+  df: M
+- n: 16
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    Define a relation R over a class of n × n real matrices A and B as "ARB iff there exists a non-singular matrix P such that $PAP^{-1} = B$". Then which of the following is true ?
+  o: ['R is symmetric, transitive but not reflexive,', 'R is reflexive, symmetric but not transitive', 'R is an equivalence relation', 'R is reflexive, transitive but not symmetric']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: Equivalence relation (similar matrices)
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    A pole stands vertically inside a triangular park ABC. Let the angle of elevation of the top of the pole from each corner of the park be $\frac{\pi}{3}$. If the radius of the circumcircle of $\triangle ABC$ is 2, then the height of the pole is equal to :
+  o: ['$\frac{2\sqrt{3}}{3}$', '$2\sqrt{3}$', '$\sqrt{3}$', '$\frac{1}{\sqrt{3}}$']
+  a: B
+  ch: Heights and Distances
+  tp: Angle of elevation
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    If $15\sin^4\alpha + 10\cos^4\alpha = 6$, for some $\alpha \in \mathbb{R}$, then the value of $27\sec^6\alpha + 8\,\text{cosec}^6\alpha$ is equal to :
+  o: ['350', '500', '400', '250']
+  a: D
+  ch: Trigonometric Functions and Equations
+  tp: Trigonometric identities
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    The area bounded by the curve $4y^2 = x^2(4 - x)(x - 2)$ is equal to :
+  o: ['$\frac{\pi}{8}$', '$\frac{3\pi}{8}$', '$\frac{3\pi}{2}$', '$\frac{\pi}{16}$']
+  a: C
+  ch: Area Under Curves
+  tp: Area of closed curve
+  df: H
+- n: 20
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be a function defined as $f(x) = \begin{cases} \frac{\sin(a + 1)x + \sin2x}{2x}, & \text{if } x < 0 \\ b, & \text{if } x = 0 \\ \frac{\sqrt{x + bx^3} - \sqrt{x}}{bx^{5/2}}, & \text{if } x > 0 \end{cases}$. If f is continuous at x = 0, then the value of a + b is equal to :
+  o: ['$-\frac{5}{2}$', '–2', '–3', '$-\frac{3}{2}$']
+  a: D
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity of piecewise function
+  df: M
