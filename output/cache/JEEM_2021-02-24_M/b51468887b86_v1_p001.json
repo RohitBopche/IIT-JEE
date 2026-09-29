@@ -1,0 +1,134 @@
+{
+ "model": "gemini-3.5-flash",
+ "finish": "STOP",
+ "usage": {
+  "promptTokenCount": 5654,
+  "candidatesTokenCount": 1219,
+  "totalTokenCount": 10089,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 1286
+   },
+   {
+    "modality": "IMAGE",
+    "tokenCount": 4368
+   }
+  ],
+  "thoughtsTokenCount": 3216,
+  "serviceTier": "standard"
+ },
+ "response": {
+  "questions": [
+   {
+    "subject": "Physics",
+    "section": "A",
+    "q_no": 1,
+    "image": 1,
+    "question_text": "Four identical particles of equal masses $1\\text{ kg}$ made to move along the circumference of a circle of radius $1\\text{ m}$ under the action of their own mutual gravitational attraction. The speed of each particle will be -",
+    "options": [
+     "$\\frac{\\sqrt{(1 + 2\\sqrt{2}) G}}{2}$",
+     "$\\sqrt{G(1 + 2\\sqrt{2})}$",
+     "$\\sqrt{\\frac{G}{2}(2\\sqrt{2} - 1)}$",
+     "$\\sqrt{\\frac{G}{2}(1 + 2\\sqrt{2})}$"
+    ],
+    "question_type": "MCQ-Single",
+    "question_style": "Standard",
+    "answer": "1",
+    "has_diagram": false,
+    "diagram_boxes": [],
+    "chapter": "Gravitation",
+    "topic": "Circular motion under mutual gravitation",
+    "difficulty": "Medium",
+    "confidence": "high",
+    "notes": ""
+   },
+   {
+    "subject": "Physics",
+    "section": "A",
+    "q_no": 2,
+    "image": 2,
+    "question_text": "Consider two satellites $S_1$ and $S_2$ with periods of revolution $1\\text{ hr.}$ and $8\\text{ hr.}$ respectively revolving around a planet in circular orbits.The ratio of angular velocity of satellite $S_1$ to the angular velocity of satellite $S_2$ is -",
+    "options": [
+     "$8 : 1$",
+     "$1 : 8$",
+     "$2 : 1$",
+     "$1 : 4$"
+    ],
+    "question_type": "MCQ-Single",
+    "question_style": "Standard",
+    "answer": "1",
+    "has_diagram": false,
+    "diagram_boxes": [],
+    "chapter": "Gravitation",
+    "topic": "Angular velocity of satellites",
+    "difficulty": "Easy",
+    "confidence": "high",
+    "notes": ""
+   },
+   {
+    "subject": "Physics",
+    "section": "A",
+    "q_no": 3,
+    "image": 2,
+    "question_text": "$n$ mole of a perfect gas undergoes a cyclic process ABCA (see figure) consisting of the following processes -\nA $\\rightarrow$ B : Isothermal expansion at temperature T so that the volume is doubled from $V_1$ to $V_2 = 2V_1$ and pressure changes from $P_1$ to $P_2$.\nB $\\rightarrow$ C : Isobaric compression at pressure $P_2$ to initial volume $V_1$.\nC $\\rightarrow$ A : Isochoric change leading to change of pressure from $P_2$ to $P_1$.\nTotal workdone in the complete cycle ABCA is -",
+    "options": [
+     "$0$",
+     "$nRT \\left( \\ln 2 + \\frac{1}{2} \\right)$",
+     "$nRT \\ln 2$",
+     "$nRT \\left( \\ln 2 - \\frac{1}{2} \\right)$"
+    ],
+    "question_type": "MCQ-Single",
+    "question_style": "Graph/Diagram Based",
+    "answer": "4",
+    "has_diagram": true,
+    "diagram_boxes": [
+     {
+      "image": 2,
+      "box_2d": [
+       685,
+       380,
+       830,
+       600
+      ]
+     }
+    ],
+    "chapter": "Thermodynamics",
+    "topic": "Work done in a cyclic process",
+    "difficulty": "Medium",
+    "confidence": "high",
+    "notes": ""
+   },
+   {
+    "subject": "Physics",
+    "section": "A",
+    "q_no": 4,
+    "image": 3,
+    "question_text": "Two equal capacitors are first connected in series and then in parallel. The ratio of the equivalent capacities capacities in the two cases will be -",
+    "options": [
+     "$2 : 1$",
+     "$1 : 4$",
+     "$4 : 1$",
+     "$1 : 2$"
+    ],
+    "question_type": "MCQ-Single",
+    "question_style": "Standard",
+    "answer": "2",
+    "has_diagram": false,
+    "diagram_boxes": [],
+    "chapter": "Capacitance",
+    "topic": "Combination of capacitors",
+    "difficulty": "Easy",
+    "confidence": "high",
+    "notes": ""
+   }
+  ],
+  "solution_answers": [],
+  "end_state": {
+   "subject": "Physics",
+   "section": "A",
+   "last_q_no": 4,
+   "in_solutions": false
+  }
+ }
+}
