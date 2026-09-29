@@ -1,0 +1,77 @@
+- n: 4
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    For real numbers $\alpha$, $\beta$, $\gamma$ and $\delta$, if $\int\frac{(x^2 - 1) + \tan^{-1}\left(\frac{x^2 + 1}{x}\right)}{(x^4 + 3x^2 + 1)\tan^{-1}\left(\frac{x^2 + 1}{x}\right)}dx = \alpha\log_e\left(\tan^{-1}\left(\frac{x^2 + 1}{x}\right)\right) + \beta\tan^{-1}\left(\frac{\gamma(x^2 - 1)}{x}\right) + \delta\tan^{-1}\left(\frac{x^2 + 1}{x}\right) + C$ where C is an arbitrary constant, then the value of $10(\alpha + \beta\gamma + \delta)$ is equal to __________.
+  a: '6'
+  ch: Indefinite Integration
+  tp: Substitution, standard forms
+  df: H
+- n: 5
+  s: M
+  sec: B
+  p: 25
+  t: N
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ and $g : \mathbb{R} \rightarrow \mathbb{R}$ be defined as $f(x) = \begin{cases} x + a, & x < 0 \\ |x - 1|, & x \ge 0 \end{cases}$ and $g(x) = \begin{cases} x + 1, & x < 0 \\ (x - 1)^2 + b, & x \ge 0 \end{cases}$ where a, b are non-negative real numbers. If (gof)(x) is continuous for all $x \in \mathbb{R}$, then a + b is equal to ___________.
+  a: '1'
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity of composite function
+  df: M
+- n: 6
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Let $\frac{1}{16}$, a and b be in G.P. and $\frac{1}{a}, \frac{1}{b}, 6$ be in A.P., where a, b > 0. Then 72(a + b) is equal to ________.
+  a: '14'
+  ch: Sequences and Series
+  tp: AP and GP
+  df: E
+- n: 7
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    In $\triangle ABC$, the lengths of sides AC and AB are 12 cm and 5 cm, respectively. If the area of $\triangle ABC$ is 30 cm² and R and r are respectively the radii of circumcircle and incircle of $\triangle ABC$, then the value of 2R + r (in cm) is equal to _______.
+  a: '15'
+  ch: Trigonometric Functions and Equations
+  tp: Circumradius and inradius
+  df: E
+- n: 8
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Let n be a positive integer. Let $A = \sum_{k=0}^{n}(-1)^k\,{}^nC_k\left[\left(\frac{1}{2}\right)^k + \left(\frac{3}{4}\right)^k + \left(\frac{7}{8}\right)^k + \left(\frac{15}{16}\right)^k + \left(\frac{31}{32}\right)^k\right]$. If $63A = 1 - \frac{1}{2^{30}}$, then n is equal to _______.
+  a: '6'
+  ch: Binomial Theorem
+  tp: Binomial sums
+  df: M
+- n: 9
+  s: M
+  sec: B
+  p: 26
+  t: N
+  q: |-
+    Let $\vec{c}$ be a vector perpendicular to the vectors $\vec{a} = \hat{i} + \hat{j} - \hat{k}$ and $\vec{b} = \hat{i} + 2\hat{j} + \hat{k}$. If $\vec{c}\cdot(\hat{i} + \hat{j} + 3\hat{k}) = 8$ then the value of $\vec{c}\cdot(\vec{a}\times\vec{b})$ is equal to _________.
+  a: '28'
+  ch: Vector Algebra
+  tp: Cross product
+  df: E
+- n: 10
+  s: M
+  sec: B
+  p: 27
+  t: N
+  q: |-
+    Let $S_n(x) = \log_{a^{1/2}}x + \log_{a^{1/3}}x + \log_{a^{1/6}}x + \log_{a^{1/11}}x + \log_{a^{1/18}}x + \log_{a^{1/27}}x + \ldots$ up to n-terms, where a > 1. If $S_{24}(x) = 1093$ and $S_{12}(2x) = 265$, then value of a is equal to _______.
+  a: '16'
+  ch: Sequences and Series
+  tp: Series with logarithms
+  df: M

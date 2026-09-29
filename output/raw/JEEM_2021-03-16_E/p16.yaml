@@ -1,0 +1,108 @@
+- n: 1
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    The maximum value of $f(x) = \begin{vmatrix} \sin^2x & 1 + \cos^2x & \cos2x \\ 1 + \sin^2x & \cos^2x & \cos2x \\ \sin^2x & \cos^2x & \sin2x \end{vmatrix}$, $x \in \mathbb{R}$ is:
+  o: ['$\sqrt{7}$', '$\frac{3}{4}$', '$\sqrt{5}$', '5']
+  a: C
+  ch: Matrices and Determinants
+  tp: Determinant with trigonometric entries
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let A denote the event that a 6-digit integer formed by 0, 1, 2, 3, 4, 5, 6 without repetitions, be divisible by 3. Then probability of event A is equal to :
+  o: ['$\frac{9}{56}$', '$\frac{4}{9}$', '$\frac{3}{7}$', '$\frac{11}{27}$']
+  a: B
+  ch: Probability
+  tp: Divisibility by 3, counting
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 16
+  t: S
+  q: |-
+    Let $\alpha \in \mathbb{R}$ be such that the function $f(x) = \begin{cases} \frac{\cos^{-1}(1 - \{x\}^2)\sin^{-1}(1 - \{x\})}{\{x\} - \{x\}^3}, & x \neq 0 \\ \alpha, & x = 0 \end{cases}$ is continuous at x = 0, where {x} = x – [x], [x] is the greatest integer less than or equal to x. Then :
+  o: ['$\alpha = \frac{\pi}{\sqrt{2}}$', '$\alpha = 0$', 'no such $\alpha$ exists', '$\alpha = \frac{\pi}{4}$']
+  a: C
+  ch: Limits, Continuity and Differentiability
+  tp: Continuity with fractional part
+  df: H
+- n: 4
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    If (x, y, z) be an arbitrary point lying on a plane P which passes through the point (42, 0, 0), (0, 42, 0) and (0, 0, 42), then the value of expression $3 + \frac{x - 11}{(y - 19)^2(z - 12)^2} + \frac{y - 19}{(x - 11)^2(z - 12)^2} + \frac{z - 12}{(x - 11)^2(y - 19)^2} - \frac{x + y + z}{14(x - 11)(y - 19)(z - 12)}$ is
+  o: ['0', '3', '39', '–45']
+  a: B
+  ch: Three Dimensional Geometry
+  tp: Plane equation, algebraic identity
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Consider the integral $I = \int_0^{10}\frac{[x]e^{[x]}}{e^{x-1}}dx$, where [x] denotes the greatest integer less than or equal to x. Then the value of I is equal to:
+  o: ['9(e – 1)', '45(e + 1)', '45(e – 1)', '9(e + 1)']
+  a: C
+  ch: Definite Integration
+  tp: Greatest integer function in integral
+  df: M
+- n: 6
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let C be the locus of the mirror image of a point on the parabola $y^2 = 4x$ with respect to the line y = x. Then the equation of tangent to C at P(2,1) is :
+  o: ['x – y = 1', '2x + y = 5', 'x + 3y = 5', 'x + 2y = 4']
+  a: A
+  ch: Conic Sections
+  tp: Reflection of parabola, tangent
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    If y = y(x) is the solution of the differential equation $\frac{dy}{dx} + (\tan x)y = \sin x$, $0 \le x \le \frac{\pi}{3}$, with y(0) = 0, then $y\left(\frac{\pi}{4}\right)$ equal to :
+  o: ['$\frac{1}{4}\log_e2$', '$\left(\frac{1}{2\sqrt{2}}\right)\log_e2$', '$\log_e2$', '$\frac{1}{2}\log_e2$']
+  a: B
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: E
+- n: 8
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let A = {2, 3, 4, 5, ...., 30} and '≃' be an equivalence relation on A × A, defined by (a, b) ≃ (c, d), if and only if ad = bc. Then the number of ordered pairs which satisfy this equivalence relation with ordered pair (4, 3) is equal to :
+  o: ['5', '6', '8', '7']
+  a: D
+  ch: Sets, Relations and Functions
+  tp: Equivalence classes
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Let the lengths of intercepts on x-axis and y-axis made by the circle $x^2 + y^2 + ax + 2ay + c = 0$, (a < 0) be $2\sqrt{2}$ and $2\sqrt{5}$, respectively. Then the shortest distance from origin to a tangent to this circle which is perpendicular to the line x + 2y = 0, is euqal to :
+  o: ['$\sqrt{11}$', '$\sqrt{7}$', '$\sqrt{6}$', '$\sqrt{10}$']
+  a: C
+  ch: Circles
+  tp: Intercepts, tangent distance
+  df: M

@@ -1,0 +1,129 @@
+- n: 6
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A body of mass 2kg moves under a force of $(2\hat{i} + 3\hat{j} + 5\hat{k})$N. It starts from rest and was at the origin initially. After 4s, its new coordinates are (8, b, 20). The value of b is __________. (Round off to the Nearest Integer)
+  a: '12'
+  ch: Kinematics
+  tp: Motion under constant force
+  df: E
+- n: 7
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A swimmer can swim with velocity of 12 km/h in still water. Water flowing in a river has velocity 6 km/h. The direction with respect to the direction of flow of river water he should swim in order to reach the point on the other bank just opposite to his starting point is _________°. (Round off to the Nearest Integer) (find the angle in degree)
+  a: '120'
+  ch: Kinematics
+  tp: River-boat problem
+  df: E
+- n: 8
+  s: P
+  sec: B
+  p: 7
+  t: N
+  q: |-
+    A closed organ pipe of length L and an open organ pipe contain gases of densities $\rho_1$ and $\rho_2$ respectively. The compressibility of gases are equal in both the pipes. Both the pipes are vibrating in their first overtone with same frequency. The length of the open pipe is $\frac{x}{3}L\sqrt{\frac{\rho_1}{\rho_2}}$ where x is ________. (Round off to the Nearest Integer)
+  a: '4'
+  ch: Waves
+  tp: Organ pipes, overtones
+  df: M
+- n: 9
+  s: P
+  sec: B
+  p: 8
+  t: N
+  q: |-
+    A solid disc of radius 'a' and mass 'm' rolls down without slipping on an inclined plane making an angle $\theta$ with the horizontal. The acceleration of the disc will be $\frac{2}{b}g\sin\theta$ where b is ______. (Round off to the Nearest Integer) (g = acceleration due to gravity) ($\theta$ = angle as shown in figure)
+  a: '3'
+  ch: Rotational Motion
+  tp: Rolling on incline
+  df: E
+  fig: [[8, 280, 195, 390, 375]]
+- n: 10
+  s: P
+  sec: B
+  p: 8
+  t: N
+  q: |-
+    For an ideal heat engine, the temperature of the source is 127°C. In order to have 60% efficiency the temperature of the sink should be _______°C. (Round off to the Nearest Integer)
+  a: '113'
+  ch: Thermodynamics
+  tp: Carnot efficiency
+  df: E
+  nt: 'Official NTA answer 113; ALLEN answer –113 (correct value is –113°C)'
+- n: 1
+  s: C
+  sec: A
+  p: 9
+  t: S
+  st: MultiStmt
+  q: |-
+    The green house gas/es is (are) :
+    (A) Carbon dioxide
+    (B) Oxygen
+    (C) Water vapour
+    (D) Methane
+    Choose the most appropriate answer from the options given below :
+  o: ['(A) and (C) only', '(A) only', '(A), (C) and (D) only', '(A) and (B) only']
+  a: C
+  ch: Environmental Chemistry
+  tp: Greenhouse gases
+  df: E
+- n: 2
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    3-methoxytoluene $\xrightarrow{\text{"A"}}$ 3-methoxybenzoic acid
+    In the above reaction, the reagent "A" is :
+  o: ['$\mathrm{NaBH_4,\ H_3O^+}$', '$\mathrm{LiAlH_4}$', 'Alkaline $\mathrm{KMnO_4,\ H^+}$', 'HCl, Zn-Hg']
+  a: C
+  ch: Aldehydes, Ketones and Carboxylic Acids
+  tp: Side chain oxidation
+  df: E
+- n: 3
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    Which of the following reduction reaction CANNOT be carried out with coke ?
+  o: ['$\mathrm{Al_2O_3 \rightarrow Al}$', '$\mathrm{ZnO \rightarrow Zn}$', '$\mathrm{Fe_2O_3 \rightarrow Fe}$', '$\mathrm{Cu_2O \rightarrow Cu}$']
+  a: A
+  ch: Metallurgy
+  tp: Carbon reduction
+  df: E
+- n: 4
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    Identify the elements X and Y using the ionisation energy values given below :
+    | | 1st IE (kJ/mol) | 2nd IE (kJ/mol) |
+    |---|---|---|
+    | X | 495 | 4563 |
+    | Y | 731 | 1450 |
+  o: ['X = Na ; Y = Mg', 'X = Mg ; Y = F', 'X = Mg ; Y = Na', 'X = F ; Y = Mg']
+  a: A
+  ch: Classification of Elements and Periodicity
+  tp: Ionisation enthalpy
+  df: E
+- n: 5
+  s: C
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    cyclohexene $\xrightarrow{\text{A}}$ 3,6-dichlorocyclohexene
+    Identify the reagent(s) 'A' and condition(s) for the reaction :
+  o: ['A = HCl; Anhydrous $\mathrm{AlCl_3}$', 'A = HCl, $\mathrm{ZnCl_2}$', 'A = $\mathrm{Cl_2}$; UV light', 'A = $\mathrm{Cl_2}$; dark, Anhydrous $\mathrm{AlCl_3}$']
+  a: C
+  ch: Hydrocarbons
+  tp: Allylic free radical halogenation
+  df: E
