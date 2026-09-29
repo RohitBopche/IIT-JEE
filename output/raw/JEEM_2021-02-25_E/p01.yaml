@@ -1,0 +1,80 @@
+- n: 1
+  s: P
+  sec: A
+  p: 1
+  t: S
+  st: Match
+  q: |-
+    Match List I with List II.
+    List I: (a) Rectifier; (b) Stabilizer; (c) Transformer; (d) Filter
+    List II: (i) Used either for stepping up or stepping down the a.c. Voltage; (ii) Used to convert a.c. voltage into d.c. voltage; (iii) Used to remove any ripple in the rectified output voltage; (iv) Used for constant output voltage even when the input voltage or load current change
+    Choose the correct answer form the options given below:
+  o: ['(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)', '(a)-(ii), (b)-(iv), (c)-(i), (d)-(iii)', '(a)-(ii), (b)-(i), (c)-(iii), (d)-(iv)', '(a)-(iii), (b)-(iv), (c)-(i), (d)-(ii)']
+  a: B
+  ch: Semiconductor Electronics
+  tp: Rectifier, regulator, filter
+  df: E
+- n: 2
+  s: P
+  sec: A
+  p: 1
+  t: S
+  q: |-
+    $Y = A\sin(\omega t + \phi_0)$ is the time – displacement equation of a SHM, At t = 0 the displacement of the particle is $Y = \frac{A}{2}$ and it is moving along negative x-direction. Then the initial phase angle $\phi_0$ will be.
+  o: ['$\frac{\pi}{6}$', '$\frac{\pi}{3}$', '$\frac{2\pi}{3}$', '$\frac{5\pi}{6}$']
+  a: D
+  ch: Oscillations
+  tp: Initial phase in SHM
+  df: E
+- n: 3
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    Two identical spring of spring constant '2K' are attached to a block of mass m and to fixed support (see figure). When the mass is displaced from equilibrium position on either side, it executes simple harmonic motion. Then time period of oscillations of this system is:
+    [figure: block m between two springs of constant 2k attached to opposite walls]
+  o: ['$\pi\sqrt{\frac{m}{k}}$', '$\pi\sqrt{\frac{m}{2k}}$', '$2\pi\sqrt{\frac{m}{k}}$', '$2\pi\sqrt{\frac{m}{2k}}$']
+  a: A
+  ch: Oscillations
+  tp: Spring combinations
+  df: E
+  fig: [[2, 200, 345, 305, 660]]
+- n: 4
+  s: P
+  sec: A
+  p: 2
+  t: S
+  q: |-
+    The wavelength of the photon emitted by a hydrogen atom when an electron makes a transition from n = 2 to n = 1 state is:
+  o: ['194.8 nm', '490.7 nm', '913.3 nm', '121.8 nm']
+  a: D
+  ch: Atoms
+  tp: Hydrogen spectrum
+  df: E
+- n: 5
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    In a ferromagnetic material, below the curie temperature, a domain is defined as:
+  o: ['a macroscopic region with consecutive magnetic diploes oriented in opposite direction.', 'a macroscopic region with zero magnetization.', 'a macroscopic region with saturation magnetization.', 'a macroscopic region with randomly oriented magnetic dipoles.']
+  a: C
+  ch: Magnetism and Matter
+  tp: Ferromagnetic domains
+  df: E
+- n: 6
+  s: P
+  sec: A
+  p: 3
+  t: S
+  q: |-
+    The point A moves with a uniform speed along the circumference of a circle of radius 0.36m and cover 30° in 0.1s. The perpendicular projection 'P' form 'A' on the diameter MN represents the simple harmonic motion of 'P'. The restoration force per unit mass when P touches M will be:
+    [figure: circle with centre O, diameter MN, radius 0.36 m, A on circle at 30° from ON, P foot of perpendicular]
+  o: ['100 N', '50 N', '9.87 N', '0.49 N']
+  a: C
+  ch: Oscillations
+  tp: SHM as projection of circular motion
+  df: M
+  fig: [[3, 360, 370, 508, 640]]

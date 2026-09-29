@@ -1,0 +1,101 @@
+- n: 14
+  s: P
+  sec: A
+  p: 9
+  t: S
+  q: |-
+    if a message signal of frequency '$f_m$' is amplitude modulated with a carrier signal of frequency '$f_c$' and radiated through an antenna, the wavelength of the corresponding signal in air is:
+  o: ['$\frac{c}{f_c + f_m}$', '$\frac{c}{f_c - f_m}$', '$\frac{c}{f_m}$', '$\frac{c}{f_c}$']
+  a: D
+  ch: Communication Systems
+  tp: Amplitude modulation
+  df: E
+- n: 15
+  s: P
+  sec: A
+  p: 9
+  t: S
+  st: Stmt
+  q: |-
+    Given below are two statements:
+    Statement I: In a diatomic molecule, the rotational energy at a given temperature obeys Maxwell's distribution.
+    Statement II: in a diatomic molecule, the rotational energy at a given temperature equals the translational kinetic energy for each molecule.
+    In the light of the above statements, choose the correct answer from the options given below:
+  o: ['Both statement I and statement II are false.', 'Both statement I and statement II are true.', 'Statement I is false but statement II is true', 'Statement I is true but statement II is false.']
+  a: D
+  ch: Kinetic Theory of Gases
+  tp: Equipartition of energy
+  df: M
+- n: 16
+  s: P
+  sec: A
+  p: 10
+  t: S
+  q: |-
+    An electron with kinetic energy $K_1$ enters between parallel plates of a capacitor at an angle '$\alpha$' with the plates. It leaves the plates at angle '$\beta$' with kinetic energy $K_2$. Then the ratio of kinetic energies $K_1 : K_2$ will be:
+  o: ['$\frac{\sin^2\beta}{\cos^2\alpha}$', '$\frac{\cos^2\beta}{\cos^2\alpha}$', '$\frac{\cos\beta}{\sin\alpha}$', '$\frac{\cos\beta}{\cos\alpha}$']
+  a: B
+  ch: Electrostatics
+  tp: Charged particle in uniform field
+  df: M
+- n: 17
+  s: P
+  sec: A
+  p: 10
+  t: S
+  q: |-
+    An LCR circuit contains resistance of 110$\Omega$ and a supply of 220 V at 300 rad/s angular frequency. If only capacitance is removed from the circuit, current lags behind the voltage by 45°. If on the other hand, only inductor is removed the current leads by 45° with the applied voltage. The rms current flowing in the circuit will be:
+  o: ['2.5A', '2A', '1A', '1.5 A']
+  a: B
+  ch: Alternating Current
+  tp: Resonance in LCR circuit
+  df: E
+- n: 18
+  s: P
+  sec: A
+  p: 11
+  t: S
+  q: |-
+    For extrinsic semiconductors: when doping level is increased;
+  o: ['Fermi–level of p and n-type semiconductors will not be affected.', 'Fermi–level of p-type semiconductors will go downward and Fermi–level of n-type semiconductor will go upward.', 'Fermi–level of both p–type and n–type semiconductors will go upward for T > $T_F$ K and downward for T < $T_F$ K, where $T_F$ is Fermi temperature.', 'Fermi–level of p-type semiconductor will go upward and Fermi–level of n–type semiconductors will go downward.']
+  a: B
+  ch: Semiconductor Electronics
+  tp: Fermi level in extrinsic semiconductors
+  df: M
+- n: 19
+  s: P
+  sec: A
+  p: 11
+  t: S
+  q: |-
+    The truth table for the following logic circuit is:
+    [figure: A and NOT B feed one AND gate, NOT A and B feed another AND gate, both outputs feed a NOR gate giving Y]
+  o: ['A B Y: 0 0 1; 0 1 0; 1 0 1; 1 1 0', 'A B Y: 0 0 0; 0 1 1; 1 0 0; 1 1 1', 'A B Y: 0 0 0; 0 1 1; 1 0 1; 1 1 0', 'A B Y: 0 0 1; 0 1 0; 1 0 0; 1 1 1']
+  a: D
+  ch: Semiconductor Electronics
+  tp: Logic gates truth table
+  df: M
+  fig: [[11, 555, 110, 775, 800]]
+- n: 20
+  s: P
+  sec: A
+  p: 12
+  t: S
+  q: |-
+    If e is the electronic charged, c is the speed of light in free space and h is planck's constant, the quantity $\frac{1}{4\pi\varepsilon_0}\frac{|e|^2}{hc}$ has dimensions of :
+  o: ['$[LC^{-1}]$', '$[M^0L^0T^0]$', '$[MLT^0]$', '$[MLT^{-1}]$']
+  a: B
+  ch: Units and Measurements
+  tp: Dimensional analysis
+  df: E
+- n: 1
+  s: P
+  sec: B
+  p: 12
+  t: N
+  q: |-
+    The percentage increase in the speed of transverse waves produced in a stretched string if the tension is increased by 4% will be___________%.
+  a: 2
+  ch: Waves
+  tp: Speed of wave on string
+  df: E

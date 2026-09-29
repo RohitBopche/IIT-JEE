@@ -1,0 +1,136 @@
+- n: 2
+  s: M
+  sec: A
+  p: 34
+  t: S
+  q: |-
+    The contrapositive of the statement "If you will work, you will earn money" is:
+  o: ['If you will not earn money, you will not work', 'You will earn money, if you will not work', 'If you will earn money, you will work', 'To earn money, you need to work']
+  a: A
+  ch: Mathematical Reasoning
+  tp: Contrapositive
+  df: E
+- n: 3
+  s: M
+  sec: A
+  p: 34
+  t: S
+  q: |-
+    If $\alpha, \beta \in R$ are such that $1 - 2i$ (here $i^2 = -1$) is a root of $z^2 + \alpha z + \beta = 0$, then $(\alpha - \beta)$ is equal to:
+  o: ['7', '–3', '3', '–7']
+  a: D
+  ch: Complex Numbers
+  tp: Complex roots of quadratic
+  df: E
+- n: 4
+  s: M
+  sec: A
+  p: 35
+  t: S
+  q: |-
+    If $I_n = \int_{\pi/4}^{\pi/2}\cot^n x\,dx$, then:
+  o: ['$\frac{1}{I_2 + I_4}, \frac{1}{I_3 + I_5}, \frac{1}{I_4 + I_6}$ are in G.P.', '$\frac{1}{I_2 + I_4}, \frac{1}{I_3 + I_5}, \frac{1}{I_4 + I_6}$ are in A.P.', '$I_2 + I_4, I_3 + I_5, I_4 + I_6$ are in A.P.', '$I_2 + I_4, (I_3 + I_5)^2, I_4 + I_6$ are in G.P.']
+  a: B
+  ch: Definite Integration
+  tp: Reduction formula
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 35
+  t: S
+  q: |-
+    If for the matrix, $A = \begin{bmatrix} 1 & -\alpha \\ \alpha & \beta \end{bmatrix}$, $AA^T = I_2$, then the value of $\alpha^4 + \beta^4$ is:
+  o: ['1', '3', '2', '4']
+  a: A
+  ch: Matrices and Determinants
+  tp: Orthogonal matrix
+  df: E
+- n: 6
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    Let x denote the total number of one-one functions from a set A with 3 elements to a set B with 5 elements and y denote the total number of one-one functions from the set A to the set A × B. Then:
+  o: ['$y = 273x$', '$2y = 91x$', '$y = 91x$', '$2y = 273x$']
+  a: B
+  ch: Sets, Relations and Functions
+  tp: Number of one-one functions
+  df: E
+- n: 7
+  s: M
+  sec: A
+  p: 36
+  t: S
+  q: |-
+    If the curve $x^2 + 2y^2 = 2$ intersects the line $x + y = 1$ at two points P and Q, then the angle subtended by the line segment PQ at the origin is:
+  o: ['$\frac{\pi}{2} + \tan^{-1}\left(\frac{1}{4}\right)$', '$\frac{\pi}{2} - \tan^{-1}\left(\frac{1}{4}\right)$', '$\frac{\pi}{2} + \tan^{-1}\left(\frac{1}{3}\right)$', '$\frac{\pi}{2} - \tan^{-1}\left(\frac{1}{3}\right)$']
+  a: A
+  ch: Conic Sections
+  tp: Homogenisation, angle at origin
+  df: M
+- n: 8
+  s: M
+  sec: A
+  p: 38
+  t: S
+  q: |-
+    The integral $\int\frac{e^{3\log_e 2x} + 5e^{2\log_e 2x}}{e^{4\log_e x} + 5e^{3\log_e x} - 7e^{2\log_e x}}dx$, x > 0, is equal to:
+    (where c is a constant of integration)
+  o: ['$\log_e|x^2 + 5x - 7| + c$', '$\frac{1}{4}\log_e|x^2 + 5x - 7| + c$', '$4\log_e|x^2 + 5x - 7| + c$', '$\log_e\sqrt{x^2 + 5x - 7} + c$']
+  a: C
+  ch: Indefinite Integration
+  tp: Substitution
+  df: E
+- n: 9
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    A hyperbola passes through the foci of the ellipse $\frac{x^2}{25} + \frac{y^2}{16} = 1$ and its transverse and conjugate axes coincide with major and minor axes of the ellipse, respectively. If the product of their eccentricities is one, then the equation of the hyperbola is:
+  o: ['$\frac{x^2}{9} - \frac{y^2}{4} = 1$', '$\frac{x^2}{9} - \frac{y^2}{16} = 1$', '$x^2 - y^2 = 9$', '$\frac{x^2}{9} - \frac{y^2}{25} = 1$']
+  a: B
+  ch: Conic Sections
+  tp: Ellipse and hyperbola eccentricity
+  df: E
+- n: 10
+  s: M
+  sec: A
+  p: 39
+  t: S
+  q: |-
+    $\lim_{x\to\infty}\left[\frac{1}{n} + \frac{n}{(n+1)^2} + \frac{n}{(n+2)^2} + ...... + \frac{n}{(2n-1)^2}\right]$ is equal to:
+  o: ['1', '$\frac{1}{3}$', '$\frac{1}{2}$', '$\frac{1}{4}$']
+  a: C
+  ch: Definite Integration
+  tp: Limit as a sum
+  df: M
+- n: 11
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    In a group of 400 people, 160 are smokers and non-vegetarian; 100 are smokers and vegetarian and the remaining 140 are non-smokers and vegetarian. Their chances of getting a particular chest disorder are 35%, 20% and 10% respectively. A person is chosen from the group at random and is found to be suffering from the chest disorder. The probability that the selected person is a smoker and non-vegetarian is:
+  o: ['$\frac{7}{45}$', '$\frac{8}{45}$', '$\frac{14}{45}$', '$\frac{28}{45}$']
+  a: D
+  ch: Probability
+  tp: Bayes' theorem
+  df: E
+- n: 12
+  s: M
+  sec: A
+  p: 40
+  t: S
+  q: |-
+    The following system of linear equations
+    $3x + 3y + 2z = 9$
+    $3x + 2y + 2z = 9$
+    $x - y + 4z = 8$
+  o: ['does not have any solution', 'has a unique solution', 'has a solution $(\alpha, \beta, \gamma)$ satisfying $\alpha + \beta^2 + \gamma^3 = 12$', 'has infinitely many solutions']
+  a: B
+  ch: Matrices and Determinants
+  tp: System of linear equations
+  df: E

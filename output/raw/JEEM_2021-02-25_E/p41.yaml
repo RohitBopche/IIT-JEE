@@ -1,0 +1,118 @@
+- n: 13
+  s: M
+  sec: A
+  p: 41
+  t: S
+  q: |-
+    The minimum value of $f(x) = a^{a^x} + a^{1-a^x}$, where $a, x \in R$ and $a > 0$, is equal to:
+  o: ['$a + \frac{1}{a}$', '$a + 1$', '$2a$', '$2\sqrt{a}$']
+  a: D
+  ch: Sequences and Series
+  tp: AM–GM inequality
+  df: E
+- n: 14
+  s: M
+  sec: A
+  p: 42
+  t: S
+  q: |-
+    A function f(x) is given by $f(x) = \frac{5^x}{5^x + 5}$, then the sum of the series $f\left(\frac{1}{20}\right) + f\left(\frac{2}{20}\right) + f\left(\frac{3}{20}\right) + ...... + f\left(\frac{39}{20}\right)$ is equal to:
+  o: ['$\frac{19}{2}$', '$\frac{49}{2}$', '$\frac{39}{2}$', '$\frac{29}{2}$']
+  a: C
+  ch: Sets, Relations and Functions
+  tp: f(x) + f(2 − x) = 1 pairing
+  df: E
+- n: 15
+  s: M
+  sec: A
+  p: 43
+  t: S
+  q: |-
+    Let $\alpha$ and $\beta$ be the roots of $x^2 - 6x - 2 = 0$. If $a_n = \alpha^n - \beta^n$ for $n \ge 1$, then the value of $\frac{a_{10} - 2a_8}{3a_9}$ is:
+  o: ['4', '1', '2', '3']
+  a: C
+  ch: Quadratic Equations
+  tp: Power sums of roots
+  df: E
+- n: 16
+  s: M
+  sec: A
+  p: 43
+  t: S
+  q: |-
+    Let A be a 3 × 3 matrix with det(A) = 4. Let $R_i$ denote the $i^{th}$ row of A. If a matrix B is obtained by performing the operation $R_2 \rightarrow 2R_2 + 5R_3$ on 2A, then det(B) is equal to:
+  o: ['64', '16', '80', '128']
+  a: A
+  ch: Matrices and Determinants
+  tp: Properties of determinants
+  df: E
+- n: 17
+  s: M
+  sec: A
+  p: 44
+  t: S
+  q: |-
+    The shortest distance between the line $x - y = 1$ and the curve $x^2 = 2y$ is:
+  o: ['$\frac{1}{2}$', '0', '$\frac{1}{2\sqrt{2}}$', '$\frac{1}{\sqrt{2}}$']
+  a: C
+  ch: Conic Sections
+  tp: Shortest distance line–parabola
+  df: E
+- n: 18
+  s: M
+  sec: A
+  p: 45
+  t: S
+  q: |-
+    Let A be a set of all 4-digit natural numbers whose exactly one digit is 7. Then the probability that a randomly chosen element of A leaves remainder 2 when divided by 5 is:
+  o: ['$\frac{1}{5}$', '$\frac{2}{9}$', '$\frac{97}{297}$', '$\frac{122}{297}$']
+  a: C
+  ch: Probability
+  tp: Counting-based probability
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 46
+  t: S
+  q: |-
+    $cosec\left[2\cot^{-1}(5) + \cos^{-1}\left(\frac{4}{5}\right)\right]$ is equal to:
+  o: ['$\frac{75}{56}$', '$\frac{65}{56}$', '$\frac{56}{33}$', '$\frac{65}{33}$']
+  a: B
+  ch: Inverse Trigonometric Functions
+  tp: Compound inverse trig expressions
+  df: E
+- n: 20
+  s: M
+  sec: A
+  p: 47
+  t: S
+  q: |-
+    If $0 < x, y < \pi$ and $\cos x + \cos y - \cos(x + y) = \frac{3}{2}$, then $\sin x + \cos y$ is equal to:
+  o: ['$\frac{1 + \sqrt{3}}{2}$', '$\frac{1 - \sqrt{3}}{2}$', '$\frac{\sqrt{3}}{2}$', '$\frac{1}{2}$']
+  a: A
+  ch: Trigonometric Functions and Equations
+  tp: Trigonometric equations
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 48
+  t: N
+  q: |-
+    If $\lim_{x\to0}\frac{ax - (e^{4x} - 1)}{ax(e^{4x} - 1)}$ exists and is equal to b, then the value of a – 2b is ______.
+  a: 5
+  ch: Limits, Continuity and Differentiability
+  tp: L'Hospital / series expansion
+  df: M
+- n: 2
+  s: M
+  sec: B
+  p: 48
+  t: N
+  q: |-
+    A line is a common tangent to the circle $(x - 3)^2 + y^2 = 9$ and the parabola $y^2 = 4x$. If the two points of contact (a, b) and (c, d) are distinct and lie in the first quadrant, then 2(a+c) is equal to ______.
+  a: 9
+  ch: Conic Sections
+  tp: Common tangent to circle and parabola
+  df: M
