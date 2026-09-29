@@ -1,0 +1,122 @@
+- n: 8
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    The spin-only magnetic moment value of $\mathrm{B_2^+}$ species is ________$\times10^{-2}$ BM. (Nearest integer) [Given : $\sqrt{3} = 1.73$]
+  a: '173'
+  ch: Chemical Bonding and Molecular Structure
+  tp: MO theory, magnetic moment
+  df: M
+- n: 9
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    If the conductivity of mercury at 0°C is $1.07\times10^{6}$ S m$^{-1}$ and the resistance of a cell containing mercury is $0.243\ \Omega$, then the cell constant of the cell is $x\times10^4$ m$^{-1}$. The value of x is _______.(Nearest integer)
+  a: '26'
+  ch: Electrochemistry
+  tp: Cell constant
+  df: E
+- n: 10
+  s: C
+  sec: B
+  p: 16
+  t: N
+  q: |-
+    A peptide synthesized by the reactions of one molecule each of Glycine, Leucine, Aspartic acid and Histidine will have ________ peptide linkages.
+  a: '3'
+  ch: Biomolecules
+  tp: Peptide bonds
+  df: E
+- n: 1
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let $f : \mathbb{R} \rightarrow \mathbb{R}$ be a continuous function. Then $\lim_{x\to\frac{\pi}{4}}\frac{\frac{\pi}{4}\int_2^{\sec^2x}f(x)\,dx}{x^2 - \frac{\pi^2}{16}}$ is equal to :
+  o: ['f (2)', '2f (2)', '$2f(\sqrt{2})$', '4 f (2)']
+  a: B
+  ch: Definite Integration
+  tp: Limit using Leibniz rule
+  df: M
+- n: 2
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    $\cos^{-1}(\cos(-5)) + \sin^{-1}(\sin(6)) - \tan^{-1}(\tan(12))$ is equal to : (The inverse trigonometric functions take the principal values)
+  o: ['$3\pi - 11$', '$4\pi - 9$', '$4\pi - 11$', '$3\pi + 1$']
+  a: C
+  ch: Inverse Trigonometric Functions
+  tp: Principal values
+  df: M
+- n: 3
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Consider the system of linear equations
+    $-x + y + 2z = 0$
+    $3x - ay + 5z = 1$
+    $2x - 2y - az = 7$
+    Let $S_1$ be the set of all $a \in \mathbb{R}$ for which the system is inconsistent and $S_2$ be the set of all $a \in \mathbb{R}$ for which the system has infinitely many solutions. If $n(S_1)$ and $n(S_2)$ denote the number of elements in $S_1$ and $S_2$ respectively, then
+  o: ['$n(S_1) = 2$, $n(S_2) = 2$', '$n(S_1) = 1$, $n(S_2) = 0$', '$n(S_1) = 2$, $n(S_2) = 0$', '$n(S_1) = 0$, $n(S_2) = 2$']
+  a: C
+  ch: Matrices and Determinants
+  tp: Consistency of linear system
+  df: M
+- n: 4
+  s: M
+  sec: A
+  p: 17
+  t: S
+  q: |-
+    Let the acute angle bisector of the two planes $x - 2y - 2z + 1 = 0$ and $2x - 3y - 6z + 1 = 0$ be the plane P. Then which of the following points lies on P?
+  o: ['$\left(3, 1, -\frac{1}{2}\right)$', '$\left(-2, 0, -\frac{1}{2}\right)$', '(0, 2, –4)', '(4, 0, – 2)']
+  a: B
+  ch: Three Dimensional Geometry
+  tp: Angle bisector of planes
+  df: M
+- n: 5
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Which of the following is equivalent to the Boolean expression $p \wedge \sim q$ ?
+  o: ['$\sim(q \rightarrow p)$', '$\sim p \rightarrow \sim q$', '$\sim(p \rightarrow \sim q)$', '$\sim(p \rightarrow q)$']
+  a: D
+  ch: Mathematical Reasoning
+  tp: Logical equivalence
+  df: E
+- n: 6
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    Two squares are chosen at random on a chessboard (see figure). The probability that they have a side in common is :
+  o: ['$\frac{2}{7}$', '$\frac{1}{18}$', '$\frac{1}{7}$', '$\frac{1}{9}$']
+  a: B
+  ch: Probability
+  tp: Classical probability, chessboard
+  df: M
+  fig: [[18, 685, 120, 830, 430]]
+- n: 7
+  s: M
+  sec: A
+  p: 18
+  t: S
+  q: |-
+    If y = y(x) is the solution curve of the differential equation $x^2dy + \left(y - \frac{1}{x}\right)dx = 0$; x > 0 and y(1) = 1, then $y\left(\frac{1}{2}\right)$ is equal to :
+  o: ['$\frac{3}{2} - \frac{1}{\sqrt{e}}$', '$3 + \frac{1}{\sqrt{e}}$', '3 + e', '3 – e']
+  a: D
+  ch: Differential Equations
+  tp: Linear differential equation
+  df: M

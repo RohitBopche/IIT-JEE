@@ -1,0 +1,99 @@
+- n: 14
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    The numbers of pairs (a, b) of real numbers, such that whenever $\alpha$ is a root of the equation $x^2 + ax + b = 0$, $\alpha^2 - 2$ is also a root of this equation, is :
+  o: ['6', '2', '4', '8']
+  a: A
+  ch: Quadratic Equations
+  tp: Roots with functional condition
+  df: H
+- n: 15
+  s: M
+  sec: A
+  p: 22
+  t: S
+  q: |-
+    Let $S_n = 1\cdot(n - 1) + 2\cdot(n - 2) + 3\cdot(n - 3) + \ldots + (n - 1)\cdot1$, $n \ge 4$. The sum $\sum_{n=4}^{\infty}\left(\frac{2S_n}{n!} - \frac{1}{(n - 2)!}\right)$ is equal to :
+  o: ['$\frac{e - 1}{3}$', '$\frac{e - 2}{6}$', '$\frac{e}{3}$', '$\frac{e}{6}$']
+  a: A
+  ch: Sequences and Series
+  tp: Series summation to e
+  df: H
+- n: 16
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    Let $P_1, P_2, \ldots, P_{15}$ be 15 points on a circle. The number of distinct triangles formed by points $P_i, P_j, P_k$ such that $i + j + k \neq 15$, is :
+  o: ['12', '419', '443', '455']
+  a: C
+  ch: Permutations and Combinations
+  tp: Counting triangles with condition
+  df: M
+- n: 17
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    The range of the function, $f(x) = \log_{\sqrt{5}}\left(3 + \cos\left(\frac{3\pi}{4} + x\right) + \cos\left(\frac{\pi}{4} + x\right) + \cos\left(\frac{\pi}{4} - x\right) - \cos\left(\frac{3\pi}{4} - x\right)\right)$ is :
+  o: ['$(0, \sqrt{5})$', '[–2, 2]', '$\left[\frac{1}{\sqrt{5}}, \sqrt{5}\right]$', '[0, 2]']
+  a: D
+  ch: Sets, Relations and Functions
+  tp: Range of function
+  df: M
+- n: 18
+  s: M
+  sec: A
+  p: 23
+  t: S
+  q: |-
+    Let $a_1, a_2, \ldots, a_{21}$ be an AP such that $\sum_{n=1}^{20}\frac{1}{a_na_{n+1}} = \frac{4}{9}$. If the sum of this AP is 189, then $a_6a_{16}$ is equal to :
+  o: ['57', '72', '48', '36']
+  a: B
+  ch: Sequences and Series
+  tp: AP, telescoping sum
+  df: M
+- n: 19
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    The function f(x), that satisfies the condition $f(x) = x + \int_0^{\pi/2}\sin x\cdot\cos y\,f(y)\,dy$, is :
+  o: ['$x + \frac{2}{3}(\pi - 2)\sin x$', '$x + (\pi + 2)\sin x$', '$x + \frac{\pi}{2}\sin x$', '$x + (\pi - 2)\sin x$']
+  a: D
+  ch: Definite Integration
+  tp: Integral equation
+  df: M
+- n: 20
+  s: M
+  sec: A
+  p: 24
+  t: S
+  q: |-
+    Let $\theta$ be the acute angle between the tangents to the ellipse $\frac{x^2}{9} + \frac{y^2}{1} = 1$ and the circle $x^2 + y^2 = 3$ at their point of intersection in the first quadrant. Then $\tan\theta$ is equal to :
+  o: ['$\frac{5}{2\sqrt{3}}$', '$\frac{2}{\sqrt{3}}$', '$\frac{4}{\sqrt{3}}$', '2']
+  a: B
+  ch: Conic Sections
+  tp: Angle between curves
+  df: M
+- n: 1
+  s: M
+  sec: B
+  p: 24
+  t: N
+  q: |-
+    Let X be a random variable with distribution.
+    | x | –2 | –1 | 3 | 4 | 6 |
+    |---|---|---|---|---|---|
+    | P(X = x) | $\frac{1}{5}$ | a | $\frac{1}{3}$ | $\frac{1}{5}$ | b |
+    If the mean of X is 2.3 and variance of X is $\sigma^2$, then $100\sigma^2$ is equal to :
+  a: '781'
+  ch: Probability
+  tp: Mean and variance of distribution
+  df: M

@@ -1,0 +1,76 @@
+- n: 8
+  s: M
+  sec: A
+  p: 19
+  t: S
+  q: |-
+    If n is the number of solutions of the equation $2\cos x\left(4\sin\left(\frac{\pi}{4} + x\right)\sin\left(\frac{\pi}{4} - x\right) - 1\right) = 1$, $x \in [0, \pi]$ and S is the sum of all these solutions, then the ordered pair (n, S) is :
+  o: ['$(3, 13\pi/9)$', '$(2, 2\pi/3)$', '$(2, 8\pi/9)$', '$(3, 5\pi/3)$']
+  a: A
+  ch: Trigonometric Functions and Equations
+  tp: Trigonometric equations
+  df: M
+- n: 9
+  s: M
+  sec: A
+  p: 19
+  t: S
+  st: Stmt
+  q: |-
+    The function $f(x) = x^3 - 6x^2 + ax + b$ is such that f(2) = f(4) = 0. Consider two statements.
+    (S1) there exists $x_1, x_2 \in (2, 4)$, $x_1 < x_2$, such that $f'(x_1) = -1$ and $f'(x_2) = 0$.
+    (S2) there exists $x_3, x_4 \in (2, 4)$, $x_3 < x_4$, such that f is decreasing in $(2, x_4)$, increasing in $(x_4, 4)$ and $2f'(x_3) = \sqrt{3}f(x_4)$.
+    Then
+  o: ['both (S1) and (S2) are true', '(S1) is false and (S2) is true', 'both (S1) and (S2) are false', '(S1) is true and (S2) is false']
+  a: A
+  ch: Application of Derivatives
+  tp: Mean value theorem, monotonicity
+  df: H
+- n: 10
+  s: M
+  sec: A
+  p: 20
+  t: S
+  q: |-
+    Let $J_{n,m} = \int_0^{\frac{1}{2}}\frac{x^n}{x^m - 1}dx$, $\forall n > m$ and $n, m \in \mathbb{N}$. Consider a matrix $A = [a_{ij}]_{3\times3}$ where $a_{ij} = \begin{cases} J_{6+i,3} - J_{i+3,3}, & i \le j \\ 0, & i > j \end{cases}$. Then $|\text{adj}A^{-1}|$ is :
+  o: ['$(15)^2\times2^{42}$', '$(15)^2\times2^{34}$', '$(105)^2\times2^{38}$', '$(105)^2\times2^{36}$']
+  a: C
+  ch: Matrices and Determinants
+  tp: Determinant of adjoint, integral entries
+  df: H
+- n: 11
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    The area, enclosed by the curves $y = \sin x + \cos x$ and $y = |\cos x - \sin x|$ and the lines x = 0, $x = \frac{\pi}{2}$, is :
+  o: ['$2\sqrt{2}(\sqrt{2} - 1)$', '$2(\sqrt{2} + 1)$', '$4(\sqrt{2} - 1)$', '$2\sqrt{2}(\sqrt{2} + 1)$']
+  a: A
+  ch: Area Under Curves
+  tp: Area between trigonometric curves
+  df: M
+- n: 12
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    The distance of line $3y - 2z - 1 = 0 = 3x - z + 4$ from the point (2, – 1, 6) is :
+  o: ['$\sqrt{26}$', '$2\sqrt{5}$', '$2\sqrt{6}$', '$4\sqrt{2}$']
+  a: C
+  ch: Three Dimensional Geometry
+  tp: Distance of point from line
+  df: M
+- n: 13
+  s: M
+  sec: A
+  p: 21
+  t: S
+  q: |-
+    Consider the parabola with vertex $\left(\frac{1}{2}, \frac{3}{4}\right)$ and the directrix $y = \frac{1}{2}$. Let P be the point where the parabola meets the line $x = -\frac{1}{2}$. If the normal to the parabola at P intersects the parabola again at the point Q, then $(PQ)^2$ is equal to :
+  o: ['$\frac{75}{8}$', '$\frac{125}{16}$', '$\frac{25}{2}$', '$\frac{15}{2}$']
+  a: B
+  ch: Conic Sections
+  tp: Normal to parabola
+  df: H

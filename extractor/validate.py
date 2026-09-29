@@ -73,6 +73,8 @@ def check_question(q):
             issues.append(f"numerical answer not numeric: {q['answer']}")
     if not q["answer"]:
         issues.append("answer missing")
+    if any(ord(c) < 32 and c not in "\n\t" for c in q["question_text"] + "".join(q["options"])):
+        issues.append("control character in text (bad escape)")
     if len(q["question_text"].strip()) < 15:
         issues.append("question text too short")
     if q["chapter"] not in SYLLABUS.get(q["subject"], []):
@@ -92,6 +94,7 @@ PENALTY = [
     (r"^MCQ has|^numerical question has", 0.45),
     (r"^empty option|^duplicate options", 0.3),
     (r"^question text too short", 0.4),
+    (r"^control character", 0.5),
     (r"^answer not an option|^numerical answer not numeric", 0.15),
     (r"^answer missing", 0.1),
     (r"^chapter", 0.05),
