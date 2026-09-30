@@ -153,6 +153,8 @@ P A 14: |-
   - (B) gives torque the dimensions of surface tension.
   - (C) swaps torque and impulse.
   - (D) swaps impulse and tension.
+  Common mistake: Treating torque as "force × distance = energy" and matching it to impulse, or taking surface tension as force per area (that is pressure, ML⁻¹T⁻²). Surface tension is force per unit length, so it has no length dimension.
+  Quick check: Impulse = Δp, so it must carry the dimensions of momentum, MLT⁻¹.
   Key takeaway: torque and work share dimensions but are different physical quantities.
   Answer: (A)
 P A 15: |-
@@ -165,6 +167,8 @@ P A 15: |-
   Why others are wrong:
   - (B) has a in the numerator (dimensionally inconsistent).
   - (C) and (D): T is bounded, with a finite maximum.
+  Physical picture: As v grows, pressure falls exponentially while the product pv first rises and then falls. The temperature, proportional to pv, therefore passes through a single maximum rather than growing without limit.
+  Check: At v = 1/a, p = p₀/e, so T = pv/R = (p₀/e)(1/a)/R, which agrees with the result.
   Key takeaway: the function $ve^{-av}$ always peaks at v = 1/a.
   Answer: (A)
 P A 16: |-
@@ -174,6 +178,8 @@ P A 16: |-
   2. (B) $h = \frac{2s\cos\theta}{\rho rg}$: $\frac{[MT^{-2}]}{[ML^{-3}][L][LT^{-2}]} = [L]$ ✓ (capillary rise).
   3. (C) $J = \varepsilon\frac{\partial E}{\partial t}$: displacement current density, A/m² ✓.
   4. (D) W = Γθ: torque × angle = work ✓.
+  Common mistake: Accepting (A) because it looks like the familiar Poiseuille formula. The formula gives the volume flowing per second, not a volume, so the time dimension is missing on the left.
+  Units check for (C): ε₀ ∂E/∂t has units (C²/N m²)(N/C)/s = C/(m² s) = A/m², the same as J.
   Key takeaway: a dimensionally correct equation may still be physically wrong, but a dimensionally wrong one is always wrong.
   Answer: (A)
 P A 17: |-
@@ -196,6 +202,8 @@ P A 18: |-
   - (A) 2R² has the wrong dimensions.
   - (B) zero would need R = 0.
   - (D) R√2 would need |X_L − X_C| = R.
+  Phasor view: V_L and V_C are equal and 180° apart, so they cancel completely. The source voltage then appears entirely across R, and the current I = V/R is the maximum possible.
+  Common mistake: Adding all three as √(R² + X_L² + X_C²) = R√3; the reactances subtract, they do not add in quadrature.
   Key takeaway: at resonance, the circuit behaves as a pure resistor and current is in phase with voltage.
   Answer: (C)
 P A 19: |-
@@ -207,6 +215,8 @@ P A 19: |-
   - (B) equal KE would need equal masses.
   - (C) momenta must be equal, not unequal.
   - (D) reverses the KE inequality.
+  Numerical feel: K = p²/2m, so K_e/K_p = m_p/m_e ≈ 1836. At the same wavelength, the electron carries about 1836 times the kinetic energy of the proton.
+  Common mistake: Assuming equal λ means equal speed or equal energy; only the momentum is fixed by λ = h/p.
   Key takeaway: at the same wavelength, lighter particles carry more kinetic energy.
   Answer: (A)
 P A 20: |-
@@ -216,6 +226,8 @@ P A 20: |-
   2. $G = \frac{I_sS}{I_g} = \frac{0.98\times5}{0.02} = 245\ \Omega$.
   Why others are wrong:
   - (A), (B), (D) do not satisfy the current-division ratio 49 : 1.
+  Why the voltage is shared: The galvanometer and shunt are in parallel, so they have the same potential difference, and current divides inversely with resistance. Only 2% through G means G is 49 times larger than S.
+  Common mistake: Using the total current instead of the shunt current, G = S × I/I_g = 5 × 50 = 250 Ω. The correct ratio is I_s/I_g = 0.98/0.02 = 49, which gives 245 Ω.
   Key takeaway: the resistance ratio G/S equals the inverse current ratio I_s/I_g = 49.
   Answer: (C)
 P B 1: |-
@@ -223,6 +235,8 @@ P B 1: |-
   Solution:
   1. Δp = K × $\frac{\Delta V}{V}$ = 9.8 × 10⁸ × 0.005 = 4.9 × 10⁶ Pa.
   2. $h = \frac{\Delta p}{\rho g} = \frac{4.9\times10^6}{10^3\times9.8} = 500$ m.
+  Common mistake: Using ΔV/V = 0.5 instead of 0.005; a percentage must be divided by 100.
+  Physical sense: 4.9 × 10⁶ Pa is about 48 atmospheres, and each 10 m of sea water adds about 1 atm, so a depth of about 500 m is reasonable.
   Key takeaway: a small fractional volume change (0.5%) needs a large pressure (≈ 48 atm) for a stiff material.
   Answer: 500
 P B 2: |-
@@ -231,6 +245,9 @@ P B 2: |-
   1. From the mean position: $x = A\sin\frac{2\pi t}{T} = \frac{A}{\sqrt2} \Rightarrow \frac{2\pi t}{T} = \frac{\pi}{4} \Rightarrow t = \frac{T}{8}$.
   2. (From the extreme, $A\cos\frac{2\pi t}{T} = \frac{A}{\sqrt2}$ also gives t = T/8.)
   3. x = 8.
+  Why A/√2: Total energy E = ½kA². Setting PE = ½kx² = E/2 gives x² = A²/2, so x = A/√2.
+  Common mistake: Taking x = A/2 for equal energies; at A/2, PE is only one quarter of E.
+  The given m and k values are not needed; the answer as a fraction of T is independent of them.
   Key takeaway: KE = PE occurs four times per period, at intervals of T/4.
   Answer: 8
 P B 3: |-
@@ -239,6 +256,8 @@ P B 3: |-
   1. h₁ = h₂ = 80 m.
   2. $\sqrt{2\times6.4\times10^6\times80} = \sqrt{1.024\times10^9} = 32000$ m = 32 km.
   3. d = 2 × 32 = 64 km.
+  Why the equal split: f(h) = √h is concave, so √h₁ + √h₂ with h₁ + h₂ fixed is largest when h₁ = h₂ (by AM–QM, or by setting the derivative to zero).
+  Common mistake: Putting all 160 m on one antenna gives √(2R × 160) ≈ 45 km, less than 64 km.
   Key takeaway: for a fixed total height, splitting it equally between the two antennas maximises the range.
   Answer: 64
 P B 4: |-
@@ -247,6 +266,8 @@ P B 4: |-
   1. Total resistance = 4 × 3 = 12 Ω.
   2. Each semicircle: 6 Ω.
   3. 6 ∥ 6 = 3 Ω.
+  Why the shape does not matter: R = ρL/A depends only on the material, length and cross-section, and bending changes none of them.
+  Common mistake: Taking the resistance between opposite corners of the square as a "side" value; here it is the circle's diameter that matters, and each half has half the wire (6 Ω).
   Key takeaway: for a uniform ring of resistance R, the resistance across a diameter is R/4.
   Answer: 3
 P B 5: |-
@@ -255,6 +276,8 @@ P B 5: |-
   1. $v = \sqrt{\frac{900}{9\times10^{-4}}} = \sqrt{10^6} = 1000$ m/s.
   2. $\frac{v}{2L} = 550 - 500 = 50$ Hz ⇒ $L = \frac{1000}{100} = 10$ m.
   3. (500 Hz is the 10th harmonic, 550 Hz the 11th.)
+  Common mistake: Assuming 500 Hz is the fundamental and computing L = v/(2 × 500) = 1 m. Two consecutive resonances differ by exactly the fundamental frequency, 50 Hz here.
+  Check: f₁₀ = 10 × 1000/(2 × 10) = 500 Hz and f₁₁ = 550 Hz ✓.
   Answer: 10
 P B 6: |-
   Concept: Reduce the network (from the figure) step by step using series and parallel combinations; then use current division.
@@ -273,6 +296,8 @@ P B 7: |-
   2. KE before: $\frac{1}{2}M(40)^2 = 800M$.
   3. KE after: $\frac{1}{2}\cdot\frac{M}{2}(60^2 + 20^2) = \frac{M}{4}(4000) = 1000M$.
   4. Fractional change: $\frac{1000M - 800M}{800M} = \frac{1}{4}$ ⇒ x = 1.
+  Common mistake: Assuming kinetic energy is conserved; that would give v = 20 m/s but no KE change, contradicting the calculation. Only momentum is conserved in an explosion.
+  Here the energy increased by 200M J (per unit of M), supplied by whatever internal mechanism split the block.
   Key takeaway: KE gained = energy released by the splitting mechanism.
   Answer: 1
 P B 8: |-
@@ -280,6 +305,8 @@ P B 8: |-
   Solution:
   1. u = ½ × 8.8 × 10⁻¹² × 50² = ½ × 8.8 × 10⁻¹² × 2500 = 1.1 × 10⁻⁸ J/m³.
   2. $V = \frac{U}{u} = \frac{5.5\times10^{-12}}{1.1\times10^{-8}} = 5\times10^{-4}$ m³ = 500 cm³.
+  Common mistake: Using u = ε₀E₀² (forgetting the time average ½) gives 250 cm³, or using only the electric part ¼ε₀E₀² gives 1000 cm³.
+  Remember: The electric and magnetic energy densities are equal in an EM wave; together they average to ½ε₀E₀².
   Key takeaway: 1 m³ = 10⁶ cm³ — convert the final answer carefully.
   Answer: 500
 P B 9: |-
@@ -288,6 +315,8 @@ P B 9: |-
   1. From the circuit: 6 V drives current through a 6 kΩ chain: I = 1 mA.
   2. The capacitor is connected across one 2 kΩ resistor: V = 1 mA × 2 kΩ = 2 V.
   3. Q = CV = 50 μF × 2 V = 100 μC (on the upper, higher-potential plate).
+  Method: First remove the capacitor branch (no DC current), solve the resistive circuit for the node potentials, then put the capacitor back and read the potential difference across its terminals.
+  Common mistake: Using the full 6 V battery emf across the capacitor; it sees only the drop across the element it is connected to.
   Key takeaway: treat capacitors as open circuits in DC steady state.
   Answer: 100
 P B 10: |-

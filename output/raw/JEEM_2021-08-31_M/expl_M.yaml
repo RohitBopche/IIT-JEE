@@ -150,6 +150,8 @@ M A 14: |-
   Why others are wrong:
   - (A) and (D) use S + R.
   - (B) 2(S − R) is half the latus rectum.
+  Setup: With the axis along the x-axis and the parabola opening towards +x, its equation is y² = 4(S − R)(x − R). The latus rectum is the focal chord perpendicular to the axis, of length 4a.
+  Common mistake: Using the distance of the focus from the origin (S) as a; a is measured from the vertex, not the origin.
   Key takeaway: the latus rectum depends only on the vertex–focus distance, not on the position of the parabola.
   Answer: (C)
 M A 15: |-
@@ -161,6 +163,8 @@ M A 15: |-
   4. $\frac{1}{a} + \frac{1}{b} + \frac{4}{k} = -4 + (-1) = -5$.
   Why others are wrong:
   - (B) and (D) have sign errors; (C) omits the 4/k term.
+  Standard limits used: ln(1 + u)/u → 1 as u → 0, (1 − cos 2x)/x² → 2, and (√(1 + x²) − 1)/x² → ½.
+  Common mistake: Writing the left limit as 1/a − 1/b; the minus sign inside ln(1 − x/b) makes the second term positive after subtraction.
   Answer: (A)
 M A 16: |-
   Concept: Factor the right side and separate variables.
@@ -171,6 +175,8 @@ M A 16: |-
   4. At x = 1: ln(2^y − 1) = 2 − 1 = 1 ⇒ 2^y = 1 + e ⇒ y = log₂(1 + e).
   Why others are wrong:
   - (A), (C), (D) come from errors in C or in the integration of 2^x.
+  Integration detail: With u = 2^y − 1, du = 2^y ln 2 dy, so ∫ 2^y/(2^y − 1) dy = ln(2^y − 1)/ln 2. Likewise ∫ 2^x dx = 2^x/ln 2, and the two ln 2 factors cancel.
+  Check: At x = 0, 2^y − 1 = e^{1 − 1} = 1, so y = 1 ✓.
   Answer: (B)
 M A 17: |-
   Concept: Use sin(π − θ) = sin θ to turn the argument into a small angle: sin(π cos⁴x) = sin(π(1 − cos⁴x)).
@@ -181,6 +187,8 @@ M A 17: |-
   Why others are wrong:
   - (A) π² and (B) 2π² use 1 − cos⁴x ≈ x² or forget to square.
   - (D) 4π is not squared.
+  Why the shift is needed: As x → 0, cos⁴x → 1, so π cos⁴x → π and sin(π cos⁴x) → 0, but not through small arguments. Rewriting sin(π − θ) = sin θ turns it into a small angle where sin θ ≈ θ applies.
+  Common mistake: Replacing sin(π cos⁴x) by π cos⁴x directly, which is invalid because the argument is not small.
   Answer: (C)
 M A 18: |-
   Concept: The lower part (0.3h) subtends angle α; the upper part (0.7h) also subtends α, so the whole pole subtends 2α at the point 18 m away.
@@ -190,6 +198,8 @@ M A 18: |-
   3. h² = 1440 ⇒ h = 12√10 m (≈ 37.9 m).
   Why others are wrong:
   - (A), (C), (D) give h² = 2160, 640, 360, which don't satisfy the angle condition.
+  Double-angle step: tan 2α = 2tan α/(1 − tan²α). With tan α = h/60, 2 tan α = h/30.
+  Check: h = 12√10 ≈ 37.95 m, so tan α ≈ 0.632 and tan 2α ≈ 2.108 = h/18 ✓.
   Answer: (B)
 M A 19: |-
   Concept: $a_r = \omega^r$ where $\omega = e^{2\pi i/9}$. Each row is a geometric progression, and rows are multiples of each other.
@@ -200,6 +210,8 @@ M A 19: |-
   Why others are wrong:
   - (A) a₂a₆ − a₄a₈ = ω⁸ − ω¹² ≠ 0.
   - (B) a₉ = ω⁹ = 1 ≠ 0; (D) a₅ ≠ 0.
+  Why rows are proportional: a_r = ω^r, so each row (ω^{3k+1}, ω^{3k+2}, ω^{3k+3}) equals ω^{3k} times the first row. Any matrix with proportional rows has zero determinant.
+  Common mistake: Picking (B) because a₉ = ω⁹ = 1 looks "nice"; the determinant is 0, not 1.
   Key takeaway: proportional rows always give a zero determinant.
   Answer: (C)
 M A 20: |-
@@ -210,6 +222,8 @@ M A 20: |-
   Why others are wrong:
   - (A) and (D) are circles; the line is not tangent to them for all θ.
   - (C) swaps the coefficients.
+  Check with a point: At θ = 0 the line is 12x = 60, that is, x = 5, which touches the ellipse at its vertex (5, 0) ✓. At θ = π/2 it is y = 12, touching at (0, 12) ✓.
+  Common mistake: Matching coefficients directly to x²/144 + y²/25 = 1 (swapping a and b), which gives option (C).
   Answer: (B)
 M B 1: |-
   Concept: Split the interval where [2x] changes value (at x = 0 and x = ½) and integrate |x| separately.
@@ -217,6 +231,8 @@ M B 1: |-
   1. [2x]: on [−½, 0), [2x] = −1 → contributes −½; on [0, ½), 0; on [½, 1), 1 → contributes ½. Total 0.
   2. $\int_{-1/2}^1|x|\,dx = \frac{1}{8} + \frac{1}{2} = \frac{5}{8}$.
   3. 8 × $\frac{5}{8}$ = 5.
+  Common mistake: Taking [2x] = 0 on the whole of [−½, 0); for x slightly negative, 2x ∈ [−1, 0), so [2x] = −1.
+  Check the |x| part: ∫_{−1/2}^{0}(−x)dx = 1/8 and ∫_0^1 x dx = 1/2, total 5/8.
   Answer: 5
 M B 2: |-
   Concept: $\arg\frac{z - 2}{z + 2} = \frac{\pi}{4}$ is an arc of a circle through −2 and 2 on which the chord subtends $\frac{\pi}{4}$ (so $\frac{\pi}{2}$ at the centre).
@@ -233,6 +249,8 @@ M B 3: |-
   2. Plane 2x − y + z = 6: 2 + 4t − 2 − 3t − 1 + 6t = 7t − 1 = 6 ⇒ t = 1.
   3. Intersection: (3, 5, 5).
   4. Distance² from (−1, −1, 2): 4² + 6² + 3² = 16 + 36 + 9 = 61.
+  Verification: (3, 5, 5) satisfies both the line ((3 − 1)/2 = (5 − 2)/3 = (5 + 1)/6 = 1) and the plane (6 − 5 + 5 = 6) ✓.
+  Common mistake: Computing the distance itself (√61) instead of its square, as the question asks.
   Answer: 61
 M B 4: |-
   Concept: f′(x) = 2x + a. Increasing on [1, 2] needs f′ ≥ 0 throughout; decreasing needs f′ ≤ 0 throughout.
@@ -240,6 +258,8 @@ M B 4: |-
   1. Increasing: min of 2x + a on [1, 2] is 2 + a ≥ 0 ⇒ a ≥ −2 ⇒ R = −2.
   2. Decreasing: max of 2x + a is 4 + a ≤ 0 ⇒ a ≤ −4 ⇒ S = −4.
   3. |R − S| = 2.
+  Why check the endpoints: f′(x) = 2x + a increases with x, so its minimum on [1, 2] is at x = 1 and its maximum at x = 2. The whole of f′ must stay on one side of zero.
+  Common mistake: Using only the vertex condition (−a/2 ≤ 1) without checking the full interval.
   Answer: 2
 M B 5: |-
   Concept: The rth factors form APs: 7, 10, 13, … = 3r + 4 and 8, 10, 12, … = 2r + 6. Expand the product and use standard sums.
@@ -247,6 +267,8 @@ M B 5: |-
   1. rth term = (3r + 4)(2r + 6) = 6r² + 26r + 24.
   2. Sum for r = 1 to 10: 6(385) + 26(55) + 24(10) = 2310 + 1430 + 240 = 3980.
   3. Mean = $\frac{3980}{10} = 398$.
+  Sums used: Σr² (1 to 10) = 10·11·21/6 = 385 and Σr = 55.
+  Common mistake: Multiplying the mean of the first factors (20.5) by the mean of the second (17), giving 348.5; the mean of a product is not the product of the means.
   Answer: 398
 M B 6: |-
   Concept: A line lies between two circles without cutting them if it separates their centres and is at least a radius away from each.
@@ -255,6 +277,8 @@ M B 6: |-
   2. Distance from (1, 1) ≥ 1: $\frac{|\alpha - 7|}{5} \ge 1$ ⇒ α ≥ 12.
   3. Distance from (9, 1) ≥ 2: $\frac{|31 - \alpha|}{5} \ge 2$ ⇒ α ≤ 21.
   4. Integers 12 to 21: sum = $\frac{10(12 + 21)}{2} = 165$.
+  Why α must lie between 7 and 31: The values 3x + 4y at the two centres are 7 and 31; the line 3x + 4y = α separates them only if α is strictly between these values.
+  Common mistake: Allowing α outside (7, 31), where the line is not between the circles.
   Answer: 165
 M B 7: |-
   Concept: "Consonants never all together" = total arrangements − arrangements with all consonants in one block.
@@ -263,6 +287,8 @@ M B 7: |-
   2. Total: 6! = 720.
   3. All four consonants together: treat them as one block → 3 units (block, O, E): 3! × 4! = 144.
   4. Required: 720 − 144 = 576.
+  Interpretation: "All the consonants never come together" means we exclude only the arrangements in which all four consonants form one block. Arrangements with two or three consonants adjacent are allowed.
+  Common mistake: Reading it as "no two consonants adjacent"; with only 2 vowels there are 3 gaps for 4 consonants, so that would give 0 arrangements.
   Answer: 576
 M B 8: |-
   Concept: Differentiate the integral equation (Leibniz rule) and recognise a product derivative.
@@ -270,6 +296,8 @@ M B 8: |-
   1. d/dx: φ + xφ′ = 3x² − 2φ′ ⇒ (x + 2)φ′ + φ = 3x² ⇒ $\frac{d}{dx}[(x + 2)\varphi] = 3x^2$.
   2. (x + 2)φ = x³ + C; φ(0) = 4 ⇒ 2(4) = C ⇒ C = 8.
   3. φ(2) = $\frac{8 + 8}{4} = 4$.
+  Why the product rule: (x + 2)φ′ + φ is exactly d/dx[(x + 2)φ], because the derivative of (x + 2) is 1.
+  Common mistake: Forgetting the −2φ′(t) term's contribution when differentiating; the Leibniz rule gives 3x² − 2φ′(x).
   Answer: 4
 M B 9: |-
   Concept: General term $T_{r+1} = \binom{12}{r}\left(\frac{x}{4}\right)^{12 - r}\left(-\frac{12}{x^2}\right)^r$; power of x = 12 − 3r.
@@ -277,6 +305,8 @@ M B 9: |-
   1. Independent of x: r = 4.
   2. $T_5 = \binom{12}{4}\frac{12^4}{4^8} = 495\cdot\frac{3^4\cdot4^4}{4^8} = 495\cdot\frac{3^4}{4^4}$.
   3. $k\cdot\frac{3^6}{4^4} = 495\cdot\frac{3^4}{4^4}$ ⇒ k = $\frac{495}{9} = 55$.
+  Sign check: T₅ has (−1)⁴ = +1, so the term is positive, consistent with k > 0.
+  Common mistake: Taking the power of x as 12 − 2r (forgetting that x² sits in the denominator), which gives r = 6 and a wrong coefficient.
   Answer: 55
 M B 10: |-
   Concept: Bayes' theorem: P(A | F) = $\frac{P(A \cap F)}{P(F)}$, where F = "instrument fails".
@@ -285,4 +315,6 @@ M B 10: |-
   2. Only the first unit fails (second works): 0.1 × 0.8 = 0.08 (this causes failure).
   3. p = $\frac{0.08}{0.28} = \frac{2}{7}$.
   4. 98p = 28.
+  Failure cases: (first fails, second works) 0.08; (first works, second fails) 0.9 × 0.2 = 0.18; (both fail) 0.1 × 0.2 = 0.02. Total 0.28 ✓.
+  Common mistake: Answering 0.08 (the unconditional probability) without dividing by P(failure).
   Answer: 28
