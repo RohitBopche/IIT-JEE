@@ -1,192 +1,309 @@
 M A 1: |-
-  Concept: The general term is $\frac{2n - 1}{n}x^n = 2x^n - \frac{x^n}{n}$ (n ≥ 2).
+  Concept: Split the general term into a geometric part and a logarithmic-series part. For n ≥ 2 the term is $\frac{2n - 1}{n}x^n = 2x^n - \frac{x^n}{n}$.
   Solution:
-  1. $\sum_{n\ge2}2x^n = \frac{2x^2}{1 - x}$.
-  2. $\sum_{n\ge2}\frac{x^n}{n} = -\log_e(1 - x) - x$.
-  3. Sum $= \frac{2x^2}{1 - x} + x + \log_e(1 - x) = x\frac{1 + x}{1 - x} + \log_e(1 - x)$.
+  1. $\sum_{n\ge2}2x^n = \frac{2x^2}{1 - x}$ (GP, |x| < 1).
+  2. $\sum_{n\ge2}\frac{x^n}{n} = -\ln(1 - x) - x$ (log series minus its first term).
+  3. Sum $= \frac{2x^2}{1 - x} + x + \ln(1 - x) = \frac{2x^2 + x - x^2}{1 - x} + \ln(1 - x) = \frac{x(1 + x)}{1 - x} + \ln(1 - x)$.
+  Why others are wrong:
+  - (B) has the fraction inverted.
+  - (C) and (D) lack the factor x (they would not vanish at x = 0, but the series does).
+  Key takeaway: check small x: (A) expands to $(x + 2x^2 + \dots) + \left(-x - \frac{x^2}{2} - \dots\right) = \frac{3}{2}x^2 + \dots$, matching the first term of the series ✓.
   Answer: (A)
 M A 2: |-
-  Concept: GP of logarithms, and the ratio of arithmetic sums.
+  Concept: $\log_{10}x^{1/3^k} = \frac{1}{3^k}\log_{10}x$, so y is a GP sum. The ratio of the two arithmetic sums simplifies because both are multiples of 1 + 2 + … + y.
   Solution:
-  1. $y = \log_{10}x\left(1 + \frac{1}{3} + \frac{1}{9} + \ldots\right) = \frac{3}{2}\log_{10}x$.
-  2. $\frac{2(1 + 2 + \ldots + y)}{3(1 + 2 + \ldots + y)} = \frac{2}{3} = \frac{4}{\log_{10}x}$, so $\log_{10}x = 6$.
-  3. x = 10⁶ and y = 9.
+  1. $y = \log_{10}x\left(1 + \frac{1}{3} + \frac{1}{9} + \dots\right) = \frac{3}{2}\log_{10}x$.
+  2. $\frac{2 + 4 + \dots + 2y}{3 + 6 + \dots + 3y} = \frac{2(1 + \dots + y)}{3(1 + \dots + y)} = \frac{2}{3}$.
+  3. $\frac{2}{3} = \frac{4}{\log_{10}x} \Rightarrow \log_{10}x = 6 \Rightarrow x = 10^6$.
+  4. $y = \frac{3}{2}\times6 = 9$.
+  5. (x, y) = (10⁶, 9).
+  Why others are wrong:
+  - (A) has y = 6 (forgot the GP factor $\frac{3}{2}$).
+  - (B) and (C) have wrong x.
+  Key takeaway: y must be a positive integer here for the sums to make sense — 9 ✓.
   Answer: (D)
 M A 3: |-
-  Concept: Parametrise and eliminate t.
+  Concept: Parametrise every point in terms of t, then eliminate t.
   Solution:
-  1. M = (t, 3); the slope of AB is −3/t, so the perpendicular bisector is $y - 3 = \frac{t}{3}(x - t)$.
-  2. It meets the y-axis at C = (0, 3 − t²/3).
-  3. P = (t/2, 3 − t²/6); with t = 2x, y = 3 − 2x²/3, so 2x² + 3y − 9 = 0.
+  1. A(0, 6), B(2t, 0): midpoint M = (t, 3).
+  2. Slope of AB = $\frac{0 - 6}{2t} = -\frac{3}{t}$, so the perpendicular bisector has slope $\frac{t}{3}$: $y - 3 = \frac{t}{3}(x - t)$.
+  3. At x = 0: C = $\left(0, 3 - \frac{t^2}{3}\right)$.
+  4. Midpoint P of MC: $\left(\frac{t}{2}, 3 - \frac{t^2}{6}\right)$.
+  5. With t = 2x: $y = 3 - \frac{4x^2}{6} = 3 - \frac{2x^2}{3} \Rightarrow 2x^2 + 3y - 9 = 0$.
+  Why others are wrong:
+  - (D) has the wrong sign on y.
+  - (A) and (B) have coefficients 3 and 2 swapped.
+  Key takeaway: substitute t from the simpler coordinate (x = t/2) to eliminate the parameter.
   Answer: (C)
 M A 4: |-
-  Concept: $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$.
+  Concept: $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$. Factor the difference of squares.
   Solution:
-  1. Difference of squares: $(\sin^{-1}x - \cos^{-1}x)\frac{\pi}{2} = a$, so $2\sin^{-1}x - \frac{\pi}{2} = \frac{2a}{\pi}$.
-  2. $2x^2 - 1 = -\cos(2\sin^{-1}x) = -\cos\left(\frac{\pi}{2} + \frac{2a}{\pi}\right) = \sin\frac{2a}{\pi}$.
+  1. $a = (\sin^{-1}x - \cos^{-1}x)(\sin^{-1}x + \cos^{-1}x) = \frac{\pi}{2}(\sin^{-1}x - \cos^{-1}x)$.
+  2. $\sin^{-1}x - \cos^{-1}x = \frac{2a}{\pi}$, and $\cos^{-1}x = \frac{\pi}{2} - \sin^{-1}x$ ⇒ $2\sin^{-1}x = \frac{\pi}{2} + \frac{2a}{\pi}$.
+  3. With θ = sin⁻¹x: $2x^2 - 1 = 2\sin^2\theta - 1 = -\cos2\theta = -\cos\left(\frac{\pi}{2} + \frac{2a}{\pi}\right) = \sin\frac{2a}{\pi}$.
+  Why others are wrong:
+  - (A) and (C) use cos instead of sin (missing the π/2 shift).
+  - (D) doubles the argument.
+  Key takeaway: $2x^2 - 1 = \cos(2\cos^{-1}x)$ — another route to the same result.
   Answer: (B)
 M A 5: |-
-  Concept: Use the Cayley–Hamilton theorem: $A^2 = -A + 2KI$ (trace −1, det −2K).
+  Concept: Cayley–Hamilton for a 2 × 2 matrix: $A^2 - (\text{tr}A)A + (\det A)I = 0$. Use it to reduce $A^4$ to a combination of A and I, then compare coefficients.
   Solution:
-  1. $A^2 + A - 2KI = 0$. Expanding $A^4 + 3A - 2I = 0$ with this relation and comparing coefficients gives K = ½.
-  2. Check: with K = ½, $A^2 = I - A$, so $A^4 = (I - A)^2 = I - 2A + A^2 = 2I - 3A$.
-  3. Then $A^4 + 3A = 2I$ ✓.
+  1. tr A = −1, det A = −2K ⇒ $A^2 = -A + 2KI$.
+  2. $A^4 = (2KI - A)^2 = 4K^2I - 4KA + A^2 = (4K^2 + 2K)I - (4K + 1)A$.
+  3. $A^4 + 3A = (4K^2 + 2K)I + (2 - 4K)A = 2I$.
+  4. Coefficient of A: 2 − 4K = 0 ⇒ K = ½; coefficient of I: 4(¼) + 1 = 2 ✓.
+  Why others are wrong:
+  - (B), (C), (D) leave a non-zero multiple of A or give the wrong multiple of I.
+  Key takeaway: comparing coefficients of I and A works because A is not a scalar matrix.
   Answer: (A)
 M A 6: |-
-  Concept: Move along the given direction until you reach the plane.
+  Concept: "Distance measured parallel to a line" means travelling from the point along that direction until reaching the plane.
   Solution:
-  1. The point on the line is (1 + 2r, −2 + 3r, 3 − 6r), and |direction| = 7.
-  2. Substituting into the plane: 6 − 7r = 5, so r = 1/7.
-  3. Distance = 7 × 1/7 = 1.
+  1. Unit direction: (2, 3, −6)/7 (since √(4 + 9 + 36) = 7).
+  2. General point: (1 + 2r, −2 + 3r, 3 − 6r), which is 7|r| away from (1, −2, 3).
+  3. On the plane x − y + z = 5: (1 + 2r) − (−2 + 3r) + (3 − 6r) = 6 − 7r = 5 ⇒ r = $\frac{1}{7}$.
+  4. Distance = 7 × $\frac{1}{7}$ = 1.
+  Why others are wrong:
+  - (A) 3, (B) 5, (C) 2 use the perpendicular distance ($\frac{1}{\sqrt3}$) or forget to scale by |direction| = 7.
+  Key takeaway: with direction ratios of magnitude 7, the parameter r times 7 gives the actual distance.
   Answer: (D)
 M A 7: |-
-  Concept: $\frac{z - z_1}{z - z_2}$ is real exactly when z is collinear with z₁ and z₂.
+  Concept: $\frac{z - z_1}{z - z_2}$ is real iff its argument is 0 or π, i.e. z, z₁ and z₂ are collinear.
   Solution:
-  1. z lies on the line through i and −2i, which is the imaginary axis (x = 0), with z = −2i excluded.
-  2. So S is a straight line.
+  1. z₁ = i (0, 1) and z₂ = −2i (0, −2) both lie on the imaginary axis.
+  2. So z must lie on the line through them: the imaginary axis x = 0 (excluding z = −2i where the expression is undefined).
+  3. Algebraic check: z = iy gives $\frac{i(y - 1)}{i(y + 2)} = \frac{y - 1}{y + 2}$, real ✓; for x ≠ 0, the imaginary part of the ratio is nonzero.
+  4. S is a straight line.
+  Why others are wrong:
+  - (A) and (B) finite sets — the condition holds for infinitely many z.
+  - (C) a circle arises when the argument is a fixed non-zero, non-π value.
+  Key takeaway: arg = 0 or π → line; arg = constant (other) → circular arc.
   Answer: (D)
 M A 8: |-
-  Concept: Substitute u = y + 2 sin x − 5.
+  Concept: The combination y + 2 sin x − 5 appears explicitly; substituting u = y + 2 sin x − 5 makes the equation separable.
   Solution:
-  1. u′ = y′ + 2cos x = 2xu, so $u = Ce^{x^2}$; u(0) = 7 − 5 = 2, so C = 2.
-  2. $y = 2e^{x^2} - 2\sin x + 5$, so $y(\pi) = 2e^{\pi^2} + 5$.
+  1. u′ = y′ + 2cos x = 2xu (the −2cos x cancels).
+  2. $\frac{du}{u} = 2x\,dx \Rightarrow u = Ce^{x^2}$.
+  3. y(0) = 7: u(0) = 7 + 0 − 5 = 2 ⇒ C = 2.
+  4. $y = 2e^{x^2} - 2\sin x + 5$.
+  5. $y(\pi) = 2e^{\pi^2} - 0 + 5 = 2e^{\pi^2} + 5$.
+  Why others are wrong:
+  - (B), (C), (D) have C = 1, 3 or 7 (e.g. using y(0) = 7 directly as C).
+  Key takeaway: look for a combination in the equation whose derivative cancels the extra terms.
   Answer: (A)
 M A 9: |-
-  Concept: Plane through the line of intersection: $P_1 + \lambda P_2 = 0$, then apply the distance condition.
+  Concept: Any plane containing the line of intersection is $P_1 + \lambda P_2 = 0$. Apply the distance-from-origin condition to find λ.
   Solution:
-  1. The normal is (1 + 2λ, λ − 1, −1 − 3λ) and the constant is 4λ − 1.
-  2. $\frac{(4\lambda - 1)^2}{14\lambda^2 + 8\lambda + 3} = \frac{2}{21}$ gives $308\lambda^2 - 184\lambda + 15 = 0$, so λ = ½ (or 15/154).
-  3. λ = ½ gives 4x − y − 5z + 2 = 0.
+  1. $(x - y - z - 1) + \lambda(2x + y - 3z + 4) = 0$: normal $(1 + 2\lambda, \lambda - 1, -1 - 3\lambda)$, constant $4\lambda - 1$.
+  2. Distance from origin: $\frac{|4\lambda - 1|}{\sqrt{14\lambda^2 + 8\lambda + 3}} = \sqrt{\frac{2}{21}}$.
+  3. Squaring: $21(4\lambda - 1)^2 = 2(14\lambda^2 + 8\lambda + 3) \Rightarrow 308\lambda^2 - 184\lambda + 15 = 0 \Rightarrow \lambda = \frac{1}{2}$ or $\frac{15}{154}$.
+  4. λ = ½: $2x - \frac{1}{2}y - \frac{5}{2}z + 1 = 0$ → ×2: $4x - y - 5z + 2 = 0$ ✓ (option D).
+  5. Check distance: $\frac{2}{\sqrt{16 + 1 + 25}} = \frac{2}{\sqrt{42}} = \sqrt{\frac{2}{21}}$ ✓.
+  Why others are wrong:
+  - (A), (B), (C) do not contain the line of intersection (test a point on the line, e.g. (−1, −2, 0)).
+  Key takeaway: always verify the chosen plane against the distance condition.
   Answer: (D)
 M A 10: |-
-  Concept: Limit of a sum as a definite integral.
+  Concept: Take logarithms to turn the product into a sum, then recognise a Riemann sum.
   Solution:
-  1. $-\frac{4}{n^2}\ln U_n = -4\cdot\frac{1}{n}\sum\frac{r}{n}\ln\left(1 + \frac{r^2}{n^2}\right) \to -4\int_0^1x\ln(1 + x^2)dx$.
-  2. $\int_0^1x\ln(1 + x^2)dx = \frac{1}{2}(2\ln2 - 1)$.
-  3. The limit is $e^{2 - 4\ln2} = \frac{e^2}{16}$.
+  1. $\ln U_n = \sum_{r=1}^nr\ln\left(1 + \frac{r^2}{n^2}\right)$.
+  2. $-\frac{4}{n^2}\ln U_n = -4\cdot\frac{1}{n}\sum\frac{r}{n}\ln\left(1 + \frac{r^2}{n^2}\right) \to -4\int_0^1x\ln(1 + x^2)\,dx$.
+  3. With t = 1 + x²: $\int_0^1x\ln(1 + x^2)dx = \frac{1}{2}\int_1^2\ln t\,dt = \frac{1}{2}(2\ln2 - 1)$.
+  4. Exponent: $-4\cdot\frac{1}{2}(2\ln2 - 1) = 2 - 4\ln2$.
+  5. Limit $= e^{2 - 4\ln2} = \frac{e^2}{16}$.
+  Why others are wrong:
+  - (C) $\frac{16}{e^2}$ has the wrong sign in the exponent.
+  - (B) and (D) use ln 2 with the wrong coefficient.
+  Key takeaway: for limits of products, use $\lim P = e^{\lim\ln P}$.
   Answer: (A)
 M A 11: |-
-  Concept: Modus ponens chained through a syllogism.
+  Concept: Chaining modus ponens: from p and p → q we get q; from q and q → r we get r.
   Solution:
-  1. p and p → q give q; q and q → r give r.
-  2. So the premise implies r, and the whole statement is always true: a tautology.
+  1. Whenever the premise $p \wedge (p \to q) \wedge (q \to r)$ is true, p, q and r are all true.
+  2. So the conclusion r is true whenever the premise is true; the implication is never false.
+  3. The statement is a tautology.
+  Why others are wrong:
+  - (C) a fallacy would be always false.
+  - (B) and (D) are not tautologies (e.g. p = r = T makes p → ∼r false).
+  Key takeaway: this is the hypothetical syllogism — a valid argument form, hence a tautology.
   Answer: (A)
 M A 12: |-
-  Concept: $f + xf' = \frac{d}{dx}(xf)$.
+  Concept: $f(x) + xf'(x) = \frac{d}{dx}[xf(x)]$ (product rule).
   Solution:
-  1. $xf = \frac{x^3}{3} + C$; the point (−2, 2) gives −4 = −8/3 + C, so C = −4/3.
-  2. So 3xf = x³ − 4, that is, x³ − 3xf(x) − 4 = 0.
+  1. $\frac{d}{dx}(xf) = x^2 \Rightarrow xf(x) = \frac{x^3}{3} + C$.
+  2. Through (−2, 2): (−2)(2) = $-\frac{8}{3} + C$ ⇒ C = $-\frac{4}{3}$.
+  3. $3xf(x) = x^3 - 4 \Rightarrow x^3 - 3xf(x) - 4 = 0$.
+  Why others are wrong:
+  - (A), (B), (D) come from integrating the wrong expression or mis-evaluating C.
+  Key takeaway: spotting a product-rule derivative turns a differential equation into direct integration.
   Answer: (C)
 M A 13: |-
-  Concept: Vandermonde's identity.
+  Concept: Vandermonde's identity: $\sum_k\binom{m}{k}\binom{n}{r - k} = \binom{m + n}{r}$. With m = n and r = n, and $\binom{n}{n - k} = \binom{n}{k}$: $\sum_k\binom{n}{k}^2 = \binom{2n}{n}$.
   Solution:
-  1. $\sum_{k=0}^{n}\binom{n}{k}^2 = \binom{2n}{n}$, so the sum is $\binom{40}{20}$.
+  1. n = 20: $\sum_{k=0}^{20}\binom{20}{k}^2 = \binom{40}{20}$.
+  2. Combinatorial view: choosing 20 people from 20 men and 20 women, splitting by k men chosen.
+  Why others are wrong:
+  - (A) and (B) $\binom{40}{21} = \binom{40}{19}$ correspond to $\sum\binom{20}{k}\binom{20}{k + 1}$.
+  - (D) $\binom{41}{20}$ has no basis here.
+  Key takeaway: coefficient of $x^{20}$ in $(1 + x)^{20}(1 + x)^{20}$ gives this sum directly.
   Answer: (C)
 M A 14: |-
-  Concept: Tangent $yy_1 = 4(x + x_1)$ and directrix x = −2.
+  Concept: For $y^2 = 4ax$ (a = 2), the tangent at (x₁, y₁) is $yy_1 = 2a(x + x_1)$ and the directrix is x = −a = −2. The tangent and normal at P are perpendicular, so A, P, B form a right angle at P; Q completes the square with PQ as a diagonal.
   Solution:
-  1. Tangent at P: y = −x − 2, which meets the directrix at A(−2, 0).
-  2. Normal at P: y = x − 6, which meets it at B(−2, −8).
-  3. In square AQBP, PQ is a diagonal, so Q = A + B − P = (−6, −4).
-  4. 2a + b = −12 − 4 = −16.
+  1. Tangent at P(2, −4): −4y = 4(x + 2) ⇒ y = −x − 2; at x = −2: A = (−2, 0).
+  2. Normal (slope 1): y + 4 = x − 2 ⇒ y = x − 6; at x = −2: B = (−2, −8).
+  3. PA = PB = 4√2 and ∠APB = 90°, so AQBP is a square.
+  4. Diagonals bisect each other: Q = A + B − P = (−6, −4).
+  5. 2a + b = −12 − 4 = −16.
+  Why others are wrong:
+  - (B), (C), (D) use a wrong fourth vertex (e.g. A + P − B).
+  Key takeaway: for a parallelogram with P opposite Q, Q = A + B − P.
   Answer: (A)
 M A 15: |-
-  Concept: $\sin(X + Y)\sin(X - Y) = \sin^2X - \sin^2Y$, with sin A = sin(B + C) and so on.
+  Concept: In a triangle, sin A = sin(B + C), sin B = sin(A + C). Use $\sin(X + Y)\sin(X - Y) = \sin^2X - \sin^2Y$ and the sine rule.
   Solution:
-  1. $\sin(C + B)\sin(C - B) = \sin(A + C)\sin(A - C)$, so $\sin^2C - \sin^2B = \sin^2A - \sin^2C$.
-  2. So 2c² = a² + b², and b², c², a² are in AP.
+  1. Cross-multiply: sin A sin(C − B) = sin B sin(A − C).
+  2. Write sin A = sin(C + B), sin B = sin(A + C): $\sin(C + B)\sin(C - B) = \sin(A + C)\sin(A - C)$.
+  3. $\sin^2C - \sin^2B = \sin^2A - \sin^2C$ ⇒ $2\sin^2C = \sin^2A + \sin^2B$.
+  4. By the sine rule: $2c^2 = a^2 + b^2$, i.e. b², c², a² are in AP (c² is the middle term).
+  Why others are wrong:
+  - (C) and (D) put a² or b² in the middle.
+  - (A) is a different relation.
+  Key takeaway: the product-to-difference identity $\sin(X + Y)\sin(X - Y)$ appears often in triangle identities.
   Answer: (B)
 M A 16: |-
-  Concept: $e^{2u} - 1 - 2u \approx 2u^2$ for small u.
+  Concept: For small u, $e^{2u} = 1 + 2u + 2u^2 + \dots$, so $e^{2u} - 1 - 2u \approx 2u^2$. Here u = x² + bx + c = (x − α)(x − β) → 0 as x → β.
   Solution:
-  1. u = (x − α)(x − β), so $\frac{2u^2}{(x - \beta)^2} \to 2(\beta - \alpha)^2$.
-  2. $(\alpha - \beta)^2 = b^2 - 4c$, so the limit is 2(b² − 4c).
+  1. Numerator ≈ 2(x − α)²(x − β)².
+  2. Limit $= \lim\frac{2(x - \alpha)^2(x - \beta)^2}{(x - \beta)^2} = 2(\beta - \alpha)^2$.
+  3. $(\alpha - \beta)^2 = (\alpha + \beta)^2 - 4\alpha\beta = b^2 - 4c$.
+  4. Limit = 2(b² − 4c).
+  Why others are wrong:
+  - (D) misses the factor 2 from $\frac{(2u)^2}{2}$.
+  - (A) and (B) have the wrong sign in the discriminant.
+  Key takeaway: $e^{v} - 1 - v \approx \frac{v^2}{2}$ with v = 2u gives 2u².
   Answer: (C)
 M A 17: |-
-  Concept: A sum of 7 needs opposite faces; the pairs are (1,6), (2,5), (3,4) in either order.
+  Concept: Opposite faces sum to 7, so a total of 7 in two rolls requires the two outcomes to be opposite faces: (1, 6), (6, 1), (2, 5), (5, 2), (3, 4), (4, 3).
   Solution:
-  1. P = 2[(1/6 − x)(1/6 + x) + 2/36] = 1/6 − 2x².
-  2. 1/6 − 2x² = 13/96 gives x² = 1/64, so x = 1/8.
+  1. Let the biased pair be faces with probabilities $\frac{1}{6} - x$ and $\frac{1}{6} + x$; the other four faces have $\frac{1}{6}$.
+  2. P(sum 7) $= 2\left[\left(\frac{1}{6} - x\right)\left(\frac{1}{6} + x\right) + \frac{1}{36} + \frac{1}{36}\right] = 2\left[\frac{3}{36} - x^2\right] = \frac{1}{6} - 2x^2$.
+  3. $\frac{1}{6} - 2x^2 = \frac{13}{96} \Rightarrow 2x^2 = \frac{16 - 13}{96} = \frac{1}{32} \Rightarrow x = \frac{1}{8}$.
+  Why others are wrong:
+  - (A), (C), (D) give P ≠ 13/96.
+  Key takeaway: biasing a pair of opposite faces always lowers P(sum = 7) below the fair value 1/6.
   Answer: (B)
 M A 18: |-
-  Concept: Complete the square to get an ellipse.
+  Concept: Complete the square to recognise an ellipse; the coordinate ranges follow from its semi-axes.
   Solution:
-  1. (x − 2)² + 9y² = 1, so |x − 2| ≤ 1 and |3y| ≤ 1.
-  2. x ∈ [1, 3] and y ∈ [−1/3, 1/3].
+  1. $x^2 - 4x + 4 + 9y^2 = 1 \Rightarrow (x - 2)^2 + 9y^2 = 1$.
+  2. Ellipse centred at (2, 0) with semi-axes 1 (x-direction) and ⅓ (y-direction).
+  3. |x − 2| ≤ 1 ⇒ x ∈ [1, 3]; |y| ≤ ⅓ ⇒ y ∈ [−⅓, ⅓].
+  Why others are wrong:
+  - (A), (B), (C) assign the intervals to the wrong variables.
+  Key takeaway: each squared term must be ≤ 1 when the sum of squares equals 1.
   Answer: (D)
 M A 19: |-
-  Concept: x² − 44x + 484 = (22 − x)²; use the property x → a + b − x with a + b = 22.
+  Concept: $x^2 - 44x + 484 = (x - 22)^2 = (22 - x)^2$. With limits 6 and 16 (sum 22), the substitution x → 22 − x swaps the two log terms (King's property).
   Solution:
-  1. $I = \int_6^{16}\frac{\ln x^2}{\ln x^2 + \ln(22 - x)^2}dx$; replacing x by 22 − x gives the complementary integrand.
-  2. Adding: 2I = ∫ 1 dx = 10, so I = 5.
+  1. $I = \int_6^{16}\frac{\ln x^2}{\ln x^2 + \ln(22 - x)^2}dx$.
+  2. Replace x by 22 − x: $I = \int_6^{16}\frac{\ln(22 - x)^2}{\ln(22 - x)^2 + \ln x^2}dx$.
+  3. Add: $2I = \int_6^{16}1\,dx = 10$ ⇒ I = 5.
+  Why others are wrong:
+  - (D) 10 forgets to halve; (A) 6 and (B) 8 have no basis.
+  Key takeaway: King's property turns $\frac{f}{f + g}$-type integrals into half the interval length.
   Answer: (C)
 M A 20: |-
-  Concept: Minimise the total area subject to a fixed perimeter.
+  Concept: Let the square have side a and the hexagon side s. Perimeter constraint: 4a + 6s = 20. Areas: a² and $\frac{3\sqrt3}{2}s^2$. Minimise the total.
   Solution:
-  1. 4a + 6s = 20, and Area = a² + (3√3/2)s² with a = 5 − 1.5s.
-  2. dA/ds = −3(5 − 1.5s) + 3√3 s = 0, so s(4.5 + 3√3) = 15.
-  3. $s = \frac{10}{3 + 2\sqrt3}$.
+  1. a = 5 − 1.5s.
+  2. $A(s) = (5 - 1.5s)^2 + \frac{3\sqrt3}{2}s^2$.
+  3. $A'(s) = -3(5 - 1.5s) + 3\sqrt3s = 0 \Rightarrow 4.5s + 3\sqrt3s = 15$.
+  4. $s = \frac{15}{4.5 + 3\sqrt3} = \frac{30}{9 + 6\sqrt3} = \frac{10}{3 + 2\sqrt3}$.
+  5. A″ > 0, so this is a minimum.
+  Why others are wrong:
+  - (A), (B), (C) come from using the wrong hexagon area formula (e.g. $\frac{\sqrt3}{4}s^2$ for the whole hexagon).
+  Key takeaway: a regular hexagon of side s has area $6\times\frac{\sqrt3}{4}s^2 = \frac{3\sqrt3}{2}s^2$.
   Answer: (D)
 M B 1: |-
-  Concept: Cross-product magnitude and perpendicularity.
+  Concept: Use the magnitude of the cross product to find β, then the perpendicularity condition to find α.
   Solution:
-  1. $\vec b\times\vec c = (-9 - 2\beta, 3 - \beta, 5)$, and |·|² = 75 gives β² + 6β + 8 = 0, so β = −2 or −4.
-  2. $\vec a\cdot\vec b = 16 + \alpha\beta = 0$ gives α = 8 or 4.
-  3. |a|² = 26 + α² = 90 or 42; the greatest is 90.
+  1. $\vec b\times\vec c = (3(-3) - 2\beta,\ -\beta + 3,\ 2 + 3) = (-9 - 2\beta, 3 - \beta, 5)$.
+  2. $|\vec b\times\vec c|^2 = 75$: $(9 + 2\beta)^2 + (3 - \beta)^2 + 25 = 75 \Rightarrow 5\beta^2 + 30\beta + 40 = 0 \Rightarrow \beta = -2$ or −4.
+  3. $\vec a\cdot\vec b = 1 + 15 + \alpha\beta = 0 \Rightarrow \alpha\beta = -16$: β = −2 → α = 8; β = −4 → α = 4.
+  4. $|\vec a|^2 = 1 + 25 + \alpha^2 = 90$ or 42.
+  5. Greatest value = 90.
   Answer: 90
 M B 2: |-
-  Concept: Study the critical values of f(x) = 3x⁴ + 4x³ − 12x² + 4.
+  Concept: Count real roots of a polynomial by studying its turning points and the signs of the function there.
   Solution:
-  1. f′ = 12x(x + 2)(x − 1), with f(−2) = −28, f(0) = 4, f(1) = −1.
-  2. The sign changes on (−∞, −2), (−2, 0), (0, 1) and (1, ∞) give 4 real roots.
+  1. f(x) = 3x⁴ + 4x³ − 12x² + 4; f′(x) = 12x³ + 12x² − 24x = 12x(x + 2)(x − 1).
+  2. Critical values: f(−2) = 48 − 32 − 48 + 4 = −28 (min); f(0) = 4 (max); f(1) = 3 + 4 − 12 + 4 = −1 (min).
+  3. f → +∞ at both ends. Sign pattern: + → −28 → 4 → −1 → +.
+  4. So f crosses zero once in each of (−∞, −2), (−2, 0), (0, 1), (1, ∞): 4 distinct real roots.
+  Key takeaway: a quartic with two negative minima and a positive maximum between them has 4 real roots.
   Answer: 4
 M B 3: |-
-  Concept: $r^2 = \frac{p^2 + (1 - p)^2}{4} - 5$.
+  Concept: For x² + y² + 2gx + 2fy + c = 0, r² = g² + f² − c. Impose 0 < r² ≤ 25 and find the resulting range of p², then count integers.
   Solution:
-  1. 0 < r² ≤ 25 gives 19 < 2p² − 2p ≤ 119.
-  2. So p ∈ [−7.23, −2.62) ∪ (3.62, 8.23], giving p² ∈ (6.88, 52.3] ∪ (13.1, 67.7].
-  3. Integers q from 7 to 67: 61 values.
+  1. g = $\frac{p}{2}$, f = $\frac{1 - p}{2}$, c = 5: $r^2 = \frac{p^2 + (1 - p)^2}{4} - 5 = \frac{2p^2 - 2p + 1}{4} - 5$.
+  2. r² > 0 ⇒ 2p² − 2p > 19 ⇒ p < −2.62 or p > 3.62.
+  3. r² ≤ 25 ⇒ 2p² − 2p ≤ 119 ⇒ −7.23 ≤ p ≤ 8.23.
+  4. p ∈ [−7.23, −2.62) gives p² ∈ (6.87, 52.3]; p ∈ (3.62, 8.23] gives p² ∈ (13.1, 67.7].
+  5. Union: p² ∈ (6.87, 67.7]; integers 7 to 67 → 61 values.
   Answer: 61
 M B 4: |-
-  Concept: Solve each set, intersect, and take the complement.
+  Concept: Solve each inequality, intersect, take the complement, and count integers. A set with k elements has 2ᵏ subsets.
   Solution:
-  1. A: x < 1 or x > 3. B: |x| > 2. C: x ≤ 2 or x ≥ 6.
-  2. A ∩ B ∩ C = (−∞, −2) ∪ [6, ∞).
-  3. The complement contains the integers −2, …, 5 (8 elements), so there are 2⁸ = 256 subsets.
+  1. A: |x − 2| > 1 ⇒ x < 1 or x > 3.
+  2. B: $\sqrt{x^2 - 3} > 1$ ⇒ x² > 4 ⇒ |x| > 2.
+  3. C: |x − 4| ≥ 2 ⇒ x ≤ 2 or x ≥ 6.
+  4. A ∩ B = (−∞, −2) ∪ (3, ∞); with C: (−∞, −2) ∪ [6, ∞).
+  5. Complement: [−2, 6); integers −2, −1, 0, 1, 2, 3, 4, 5 → 8 elements.
+  6. Number of subsets = 2⁸ = 256.
   Answer: 256
 M B 5: |-
-  Concept: Differentiate the answer form, or use the standard result for ∫dx/(t² + k²)².
+  Concept: Complete the square: x² + x + 1 = t² + k² with t = x + ½, k² = ¾. Standard result: $\int\frac{dt}{(t^2 + k^2)^2} = \frac{t}{2k^2(t^2 + k^2)} + \frac{1}{2k^3}\tan^{-1}\frac{t}{k}$.
   Solution:
-  1. $\int\frac{dx}{(x^2 + x + 1)^2} = \frac{2x + 1}{3(x^2 + x + 1)} + \frac{4}{3\sqrt3}\tan^{-1}\frac{2x + 1}{\sqrt3} + C$.
-  2. a = 4/(3√3) and b = 1/3, so √3a + b = 5/3 and 9(√3a + b) = 15.
+  1. First term: $\frac{x + \frac{1}{2}}{2\cdot\frac{3}{4}(x^2 + x + 1)} = \frac{2x + 1}{3(x^2 + x + 1)}$ ⇒ b = ⅓.
+  2. Second term: $\frac{1}{2k^3} = \frac{1}{2\cdot\frac{3\sqrt3}{8}} = \frac{4}{3\sqrt3}$, with $\frac{t}{k} = \frac{2x + 1}{\sqrt3}$ ⇒ a = $\frac{4}{3\sqrt3}$.
+  3. $\sqrt3a + b = \frac{4}{3} + \frac{1}{3} = \frac{5}{3}$; $9(\sqrt3a + b) = 15$.
   Answer: 15
 M B 6: |-
-  Concept: Infinitely many solutions need D = 0 and a consistent system.
+  Concept: Infinitely many solutions require det = 0 and the dependent equation to be consistent.
   Solution:
-  1. D = −3β − 3 = 0, so β = −1.
-  2. eq3 = 2·eq1 − eq2 (check the z coefficient: −2 + 1 = −1 ✓), so 3 = 6 − α and α = 3.
-  3. α + β − αβ = 3 − 1 + 3 = 5.
+  1. det $= \begin{vmatrix}2&1&-1\\1&-1&-1\\3&3&\beta\end{vmatrix} = 2(-\beta + 3) - (\beta + 3) - 6 = -3\beta - 3 = 0$ ⇒ β = −1.
+  2. With β = −1: 2·(eq1) − (eq2) = (3, 3, −1), which matches eq3's coefficients.
+  3. RHS: 2(3) − α = 3 ⇒ α = 3.
+  4. α + β − αβ = 3 − 1 + 3 = 5.
   Answer: 5
 M B 7: |-
-  Concept: The variance of 1, 2, …, n is $\frac{n^2 - 1}{12}$.
+  Concept: For the first n natural numbers, mean = $\frac{n + 1}{2}$ and variance = $\frac{n^2 - 1}{12}$.
   Solution:
-  1. n² − 1 = 168, so n = 13.
+  1. $\frac{n^2 - 1}{12} = 14 \Rightarrow n^2 = 169 \Rightarrow n = 13$ (odd ✓).
+  Derivation: $\frac{\sum k^2}{n} - \left(\frac{n + 1}{2}\right)^2 = \frac{(n + 1)(2n + 1)}{6} - \frac{(n + 1)^2}{4} = \frac{n^2 - 1}{12}$.
   Answer: 13
 M B 8: |-
-  Concept: For an ellipse with semi-axes p and q, the minimum area of the tangent–axes triangle is pq.
+  Concept: For an ellipse with semi-axes p (along x) and q (along y), the tangent at (p cos θ, q sin θ) is $\frac{x\cos\theta}{p} + \frac{y\sin\theta}{q} = 1$, meeting the axes at $\frac{p}{\cos\theta}$ and $\frac{q}{\sin\theta}$.
   Solution:
-  1. The tangent $\frac{x\cos\theta}{p} + \frac{y\sin\theta}{q} = 1$ gives Area $= \frac{pq}{\sin2\theta} \ge pq$.
-  2. Here p = b and q = 2a, so the minimum is 2ab and k = 2.
+  1. Triangle area $= \frac{1}{2}\cdot\frac{p}{\cos\theta}\cdot\frac{q}{\sin\theta} = \frac{pq}{\sin2\theta} \ge pq$.
+  2. Here p = b and q = 2a (from $\frac{y^2}{4a^2}$).
+  3. Minimum area = 2ab ⇒ k = 2.
+  Key takeaway: the minimum occurs at θ = 45° (sin 2θ = 1).
   Answer: 2
 M B 9: |-
-  Concept: Every even-length palindrome is divisible by 11 (the alternating digit sum is 0).
+  Concept: A six-digit palindrome abccba = 100001a + 10010b + 1100c. Each coefficient is divisible by 11, so every even-length palindrome is divisible by 11. Divisibility by 55 then needs divisibility by 5.
   Solution:
-  1. The number abccba must be divisible by 5, so its last digit a is 0 or 5; a ≠ 0, so a = 5.
-  2. b and c are free: 10 × 10 = 100.
+  1. Last digit = a must be 0 or 5; a is also the first digit, so a ≠ 0 ⇒ a = 5.
+  2. b and c are free: 10 × 10 = 100 choices.
+  3. Number of palindromes = 100.
   Answer: 100
 M B 10: |-
-  Concept: $y^{1/4} = x \pm \sqrt{x^2 - 1}$, so $y = (x \pm \sqrt{x^2 - 1})^{4}$ (or its reciprocal).
+  Concept: Solve for $y^{1/4}$: $t + \frac{1}{t} = 2x$ gives $t = x \pm \sqrt{x^2 - 1}$, so $y = (x \pm \sqrt{x^2 - 1})^4$. For $y = (x + \sqrt{x^2 - 1})^m$, a standard derivation gives $(x^2 - 1)y'' + xy' - m^2y = 0$.
   Solution:
-  1. For $y = (x + \sqrt{x^2 - 1})^m$: $y' = \frac{my}{\sqrt{x^2 - 1}}$, so $(x^2 - 1)y'' + xy' - m^2y = 0$.
-  2. With m = 4: α = 1 and β = −16, so |α − β| = 17.
+  1. $y' = \frac{my}{\sqrt{x^2 - 1}}$ ⇒ $\sqrt{x^2 - 1}\,y' = my$ ⇒ $(x^2 - 1)y'^2 = m^2y^2$.
+  2. Differentiate: $2xy'^2 + 2(x^2 - 1)y'y'' = 2m^2yy'$ ⇒ $(x^2 - 1)y'' + xy' - m^2y = 0$.
+  3. m = 4: α = 1, β = −16 (same for the other root, m = −4).
+  4. |α − β| = 17.
   Answer: 17

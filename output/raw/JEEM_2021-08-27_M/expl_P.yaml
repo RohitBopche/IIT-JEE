@@ -1,182 +1,304 @@
 P A 1: |-
-  Concept: Integrate rings of the disc: $E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{Z}{\sqrt{Z^2 + R^2}}\right)$.
+  Concept: Divide the disc into thin rings. A ring of radius r and width dr carries charge σ(2πr dr); on its axis at distance Z its field is $dE = \frac{Z\,dq}{4\pi\varepsilon_0(Z^2 + r^2)^{3/2}}$, directed along the axis (the radial parts cancel by symmetry).
   Solution:
-  1. A ring of radius r and width dr gives $dE = \frac{\sigma Z\,r\,dr}{2\varepsilon_0(Z^2 + r^2)^{3/2}}$.
-  2. Integrating r from 0 to R gives the result above.
-  3. Checks: as R → ∞ it gives σ/2ε₀ (infinite sheet), and at Z = 0 the field is σ/2ε₀.
+  1. $dE = \frac{\sigma Z\,r\,dr}{2\varepsilon_0(Z^2 + r^2)^{3/2}}$.
+  2. $E = \frac{\sigma Z}{2\varepsilon_0}\int_0^R\frac{r\,dr}{(Z^2 + r^2)^{3/2}} = \frac{\sigma Z}{2\varepsilon_0}\left[\frac{1}{Z} - \frac{1}{\sqrt{Z^2 + R^2}}\right]$.
+  3. $E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{Z}{\sqrt{Z^2 + R^2}}\right)$.
+  4. Checks: R → ∞ gives $\frac{\sigma}{2\varepsilon_0}$ (infinite sheet) ✓; Z → ∞ gives ≈ $\frac{\sigma\pi R^2}{4\pi\varepsilon_0Z^2}$ (point charge) ✓.
+  Why others are wrong:
+  - (B) has "+", which would exceed the infinite-sheet value.
+  - (C) is dimensionally wrong (σ in the denominator).
+  - (D) has the wrong functional form.
+  Key takeaway: near the centre of the disc, the field approaches that of an infinite sheet.
   Answer: (A)
 P A 2: |-
-  Concept: $N = N_0\left(\frac{1}{2}\right)^{t/T_{1/2}}$.
+  Concept: Radioactive decay: $N = N_0\left(\frac{1}{2}\right)^{t/T_{1/2}}$.
   Solution:
-  1. t = 30 s is half a half-life, so $N = \frac{10^{10}}{\sqrt2} = 7.07\times10^9 \approx 7\times10^9$.
+  1. t = 30 s = ½ half-life.
+  2. $N = 10^{10}\times\left(\frac{1}{2}\right)^{1/2} = \frac{10^{10}}{\sqrt2} = \frac{10^{10}}{1.414} = 7.07\times10^9 \approx 7\times10^9$.
+  Why others are wrong:
+  - (A) and (D) are larger than the initial number — impossible for decay.
+  - (C) $10^5$ is absurdly small (it would need many half-lives).
+  Key takeaway: decay is exponential, so after half a half-life, the fraction left is $\frac{1}{\sqrt2} \approx 0.707$, not 0.75.
   Answer: (B)
 P A 3: |-
-  Concept: Check each quantity for units.
+  Concept: A quantity is dimensionless if it is a ratio of like quantities (or a pure number).
   Solution:
-  1. μ_r = μ/μ₀, power factor cos φ, and quality factor ω₀L/R are all ratios, so they are dimensionless.
-  2. μ₀ has units of H/m, with dimensions $MLT^{-2}A^{-2}$, so it is not dimensionless.
+  1. (A) Relative permeability $\mu_r = \frac{\mu}{\mu_0}$ — ratio → dimensionless.
+  2. (B) Power factor = cos φ → dimensionless.
+  3. (D) Quality factor $Q = \frac{\omega_0L}{R}$ (ratio of reactance to resistance) → dimensionless.
+  4. (C) Permeability of free space μ₀ has SI unit H/m (T m/A) and dimensions [MLT⁻²A⁻²] → NOT dimensionless.
+  Key takeaway: absolute constants like μ₀, ε₀ and G carry dimensions; "relative" quantities are dimensionless.
   Answer: (C)
 P A 4: |-
-  Concept: E is in V/m and H is in A/m.
+  Concept: Electric field E is measured in V/m; magnetising field (magnetic intensity) H is measured in A/m.
   Solution:
-  1. $\frac{E}{H}$ has units $\frac{\text{V/m}}{\text{A/m}} = \frac{\text{V}}{\text{A}} = \Omega$ (the wave impedance, 377 Ω in vacuum).
+  1. $\frac{E}{H}$ has units $\frac{\text{V/m}}{\text{A/m}} = \frac{\text{V}}{\text{A}} = \Omega$ (ohm).
+  2. For an EM wave in vacuum, $\frac{E}{H} = \sqrt{\frac{\mu_0}{\varepsilon_0}} \approx 377\ \Omega$ — the impedance of free space.
+  Why others are wrong:
+  - (B) mho is the unit of conductance (the inverse).
+  - (C) joule and (D) newton are units of energy and force.
+  Key takeaway: E/B has units of speed (m/s), while E/H has units of resistance (Ω).
   Answer: (A)
 P A 5: |-
-  Concept: Add components. From the figure: OP = 20 N at 30° from +y; OQ = 10 N at 30° above +x; OR = 20 N at 45° below +x; OS = 15 N at 45° below −x; OT = 15 N at 30° above −x.
+  Concept: Resolve each force into x and y components using the angles in the figure, then add. (√3/2 ≈ 0.85, √2/2 ≈ 0.7.)
   Solution:
-  1. $F_x = 20(0.5) + 10(0.85) + 20(0.7) - 15(0.7) - 15(0.85) = 10 + 8.5 + 14 - 10.5 - 12.75 = 9.25$.
-  2. $F_y = 20(0.85) + 10(0.5) - 20(0.7) - 15(0.7) + 15(0.5) = 17 + 5 - 14 - 10.5 + 7.5 = 5$.
+  1. From the figure: OP = 20 N at 30° from +y; OQ = 10 N at 30° above +x; OR = 20 N at 45° below +x; OS = 15 N at 45° below −x; OT = 15 N at 30° above −x.
+  2. $F_x = 20(0.5) + 10(0.85) + 20(0.7) - 15(0.7) - 15(0.85) = 10 + 8.5 + 14 - 10.5 - 12.75 = 9.25$ N.
+  3. $F_y = 20(0.85) + 10(0.5) - 20(0.7) - 15(0.7) + 15(0.5) = 17 + 5 - 14 - 10.5 + 7.5 = 5$ N.
+  4. Resultant ≈ $9.25\hat i + 5\hat j$ N.
+  Why others are wrong:
+  - (B), (C), (D) come from sign errors (e.g. treating OR or OS as pointing upward).
+  Key takeaway: for angles measured from the y-axis, the x-component uses sin and the y-component uses cos.
   Answer: (A)
 P A 6: |-
-  Concept: At constant volume, the load (displaced air mass) is proportional to the air density ρ ∝ P/T.
+  Concept: A balloon of constant volume carries a load equal to the mass of air it displaces (minus its own gas, assumed included in the load). The mass of air displaced is proportional to air density, and for an ideal gas $\rho \propto \frac{P}{T}$.
   Solution:
-  1. $M_2 = 185\times\frac{45}{76}\times\frac{300}{266} = 123.54$ kg.
+  1. Initially: P₁ = 76 cm Hg, T₁ = 300 K, load 185 kg.
+  2. At altitude: P₂ = 45 cm Hg, T₂ = 266 K.
+  3. $M_2 = 185\times\frac{P_2}{P_1}\times\frac{T_1}{T_2} = 185\times\frac{45}{76}\times\frac{300}{266} = 123.54$ kg.
+  Why others are wrong:
+  - (A), (B), (C) invert one of the ratios (e.g. using $\frac{T_2}{T_1}$), giving loads that are too large.
+  Key takeaway: lower pressure reduces density, while lower temperature increases it; here the pressure effect dominates.
   Answer: (D)
 P A 7: |-
-  Concept: Newton's form of the mirror formula: $x_1x_2 = f^2$, with distances measured from the focus.
+  Concept: Newton's form of the mirror equation: if the object and image are at distances x₁ and x₂ from the focus, then $x_1x_2 = f^2$.
   Solution:
-  1. The object is at 2f + d₁ from the pole, so $x_1 = f + d_1$; the image is at 2f − d₂, so $x_2 = f - d_2$.
-  2. $(f + d_1)(f - d_2) = f^2$ gives $f(d_1 - d_2) = d_1d_2$.
-  3. $R = 2f = \frac{2d_1d_2}{d_1 - d_2}$.
+  1. Object beyond C by d₁: distance from pole = 2f + d₁, so from the focus x₁ = f + d₁.
+  2. Image between F and C, d₂ inside C: distance from pole = 2f − d₂, so x₂ = f − d₂.
+  3. $(f + d_1)(f - d_2) = f^2 \Rightarrow f(d_1 - d_2) = d_1d_2 \Rightarrow f = \frac{d_1d_2}{d_1 - d_2}$.
+  4. $R = 2f = \frac{2d_1d_2}{d_1 - d_2}$.
+  Why others are wrong:
+  - (B) and (C) have a "+" in the denominator.
+  - (D) gives f instead of R = 2f.
+  Key takeaway: Newton's form avoids sign-convention bookkeeping when distances are measured from the focus.
   Answer: (A)
 P A 8: |-
-  Concept: $R = \frac{l}{\theta}$, where θ = 4 arc-seconds in radians.
+  Concept: Arc length l = Rθ with θ in radians; 1 second of arc = $\frac{1}{3600}$ degree. Time = total distance / speed.
   Solution:
-  1. $\theta = \frac{4}{3600}\times\frac{\pi}{180} = 1.94\times10^{-5}$ rad, so $R = \frac{4.4\times9.46\times10^{15}}{1.94\times10^{-5}} = 2.15\times10^{21}$ m.
-  2. $t = \frac{4\times2\pi R}{v} = \frac{5.39\times10^{22}}{8\times1.5\times10^{11}} \approx 4.5\times10^{10}$ s.
+  1. θ = 4″ = $\frac{4}{3600}\times\frac{\pi}{180} = 1.94\times10^{-5}$ rad.
+  2. l = 4.4 ly = 4.4 × 9.46 × 10¹⁵ = 4.16 × 10¹⁶ m.
+  3. $R = \frac{l}{\theta} = \frac{4.16\times10^{16}}{1.94\times10^{-5}} = 2.15\times10^{21}$ m.
+  4. Distance for 4 revolutions: $8\pi R = 5.39\times10^{22}$ m.
+  5. Speed: 8 AU/s = 1.2 × 10¹² m/s.
+  6. $t = \frac{5.39\times10^{22}}{1.2\times10^{12}} \approx 4.5\times10^{10}$ s.
+  Why others are wrong:
+  - (A), (C), (D) are off by orders of magnitude from using degrees instead of arc-seconds or forgetting the factor 4 revolutions.
+  Key takeaway: 1 arc-second ≈ 4.85 × 10⁻⁶ rad.
   Answer: (B)
 P A 9: |-
-  Concept: In steady state no current flows through the capacitor branch.
+  Concept: In steady DC state, no current flows through capacitor branches; the capacitors simply take the voltage across the points they connect.
   Solution:
-  1. The current through the 4 Ω resistor is $\frac{5}{4 + 1} = 1$ A, so the terminal voltage is 4 V.
-  2. The capacitor branch is 4 μF in series with (2 μF ∥ 2 μF = 4 μF), which gives 2 μF across 4 V.
-  3. Q = 2 × 4 = 8 μC, and this is the charge on the 4 μF capacitor.
+  1. From the circuit: the battery (5 V, 1 Ω) drives current only through the 4 Ω resistor: $I = \frac{5}{4 + 1} = 1$ A.
+  2. Voltage across the resistor (and the capacitor branch in parallel with it): 4 V.
+  3. Capacitor branch: 4 μF in series with (2 μF ∥ 2 μF = 4 μF) → equivalent 2 μF.
+  4. Charge on the series combination (= charge on the 4 μF capacitor): Q = 2 μF × 4 V = 8 μC.
+  Why others are wrong:
+  - (B) zero would mean the capacitor is shorted or disconnected.
+  - (C) 16 μC puts the full 4 V across the 4 μF capacitor alone.
+  - (D) 4 μC halves the correct value.
+  Key takeaway: capacitors in series all carry the same charge.
   Answer: (A)
 P A 10: |-
-  Concept: Perpendicular-axis theorem, then the parallel-axis theorem.
+  Concept: For a square plate (mass M, side l): about an axis in its plane through the centre and parallel to a side, $I = \frac{Ml^2}{12}$. By the perpendicular-axis theorem, about the central axis perpendicular to the plate, $I_z = \frac{Ml^2}{6}$. Then use the parallel-axis theorem.
   Solution:
-  1. About the centre: $I_z = \frac{Ml^2}{6}$.
-  2. The corner is at distance $\frac{l}{\sqrt2}$ from the centre, so $I = \frac{Ml^2}{6} + \frac{Ml^2}{2} = \frac{2}{3}Ml^2$.
+  1. $I_{cm} = \frac{Ml^2}{6}$.
+  2. Distance from centre to a corner: $\frac{l}{\sqrt2}$, so $d^2 = \frac{l^2}{2}$.
+  3. $I_{corner} = \frac{Ml^2}{6} + \frac{Ml^2}{2} = \frac{2}{3}Ml^2$.
+  Why others are wrong:
+  - (A) $\frac{Ml^2}{6}$ is about the centre.
+  - (C) $\frac{Ml^2}{12}$ is about an in-plane central axis.
+  - (B) $Ml^2$ over-adds the parallel-axis term.
+  Key takeaway: parallel-axis shifts must be measured from the centre of mass.
   Answer: (D)
 P A 11: |-
-  Concept: Transistor operating regions.
+  Concept: A transistor has three regions: cut-off (both junctions reverse-biased, OFF), saturation (both forward-biased, fully ON), and active (emitter–base forward, collector–base reverse). Only in the active region is the collector current proportional to the base current ($I_C = \beta I_B$).
   Solution:
-  1. Amplification needs a linear input–output relation, which exists only in the active region (base–emitter junction forward-biased, base–collector junction reverse-biased).
-  2. Cut-off and saturation are the OFF/ON states used in switching.
+  1. Amplification requires a linear, controllable relation between input and output → active region only.
+  2. The Q-point is set in the middle of the active region to allow maximum undistorted swing.
+  Why others are wrong:
+  - (A), (B), (C) involve cut-off or saturation, where the output is clipped — these are used for switching (digital) circuits.
+  Key takeaway: amplifier → active region; switch → cut-off and saturation.
   Answer: (D)
 P A 12: |-
-  Concept: Combine with PV = nRT and use $\gamma = \frac{1}{V}\frac{dV}{dT}$.
+  Concept: Combine the process equation with the ideal gas law to find how V depends on T, then use the definition $\gamma_V = \frac{1}{V}\frac{dV}{dT}$.
   Solution:
-  1. $P = \frac{nRT}{V}$, so $\frac{T^4}{V}$ = constant and V ∝ T⁴.
-  2. $\gamma = \frac{1}{V}\frac{dV}{dT} = \frac{4}{T}$.
+  1. $P = \frac{nRT}{V}$; $PT^3 = \frac{nRT^4}{V}$ = constant ⇒ V ∝ T⁴.
+  2. $\ln V = 4\ln T + $ const ⇒ $\frac{1}{V}\frac{dV}{dT} = \frac{4}{T}$.
+  Why others are wrong:
+  - (A) $\frac{1}{T}$ is the isobaric (P constant) value.
+  - (B) and (D) correspond to V ∝ T² or T³.
+  Key takeaway: for V ∝ Tⁿ, the coefficient of volume expansion is $\frac{n}{T}$.
   Answer: (C)
 P A 13: |-
-  Concept: Intensity fixes the number of photons; frequency fixes the photon energy.
+  Concept: In the photon picture, intensity is proportional to the number of photons per second (for a given frequency), while each photon's energy is hν. Einstein's equation: $K_{max} = h\nu - \phi$.
   Solution:
-  1. Higher intensity means more photons, so more photoelectrons (a larger current).
-  2. The maximum KE is hν − φ, which is independent of intensity.
+  1. Increasing intensity (same frequency) → more photons → more photoelectrons → larger photocurrent.
+  2. $K_{max}$ depends only on ν and φ → unchanged.
+  Why others are wrong:
+  - (A) says KE increases with intensity — the classical expectation that the photoelectric effect disproved.
+  - (B) and (C) say intensity changes frequency, which it does not.
+  Key takeaway: frequency controls KE (and stopping potential); intensity controls the number of electrons (saturation current).
   Answer: (D)
 P A 14: |-
-  Concept: Faraday's law: emf = −dΦ/dt.
+  Concept: Faraday's law, $\varepsilon = -\frac{d\Phi}{dt}$. A long magnet passing through a loop changes the flux sharply only when its ends pass the loop.
   Solution:
-  1. As the N pole enters, the flux through the loop rises, giving a pulse of one sign.
-  2. While the loop is inside the long magnet, the flux is nearly constant, so the emf is about 0.
-  3. As the S end leaves, the flux falls, giving an opposite pulse, a time $l/\upsilon$ later.
-  4. With the official sign convention, the first pulse is negative and the second positive.
+  1. As the leading pole enters, the flux through the loop increases rapidly → an emf pulse of one sign.
+  2. While the middle of the long magnet is inside the loop, the flux is nearly constant → emf ≈ 0.
+  3. As the trailing end leaves (time $\frac{l}{\upsilon}$ later), the flux decreases → an emf pulse of the opposite sign.
+  4. With the sign convention of the official figure, the first pulse is negative and the second positive → graph (C).
+  Why others are wrong:
+  - (A) and (D) show two pulses of the same sign, violating Lenz's law (increase vs decrease of flux).
+  - (B) has the opposite sign ordering to the official convention.
+  Key takeaway: entering and leaving produce opposite emfs; their areas are equal (net flux change zero).
   Answer: (C)
 P A 15: |-
-  Concept: $r = \frac{\sqrt{2mK}}{qB}$; a smaller radius means more deflection.
+  Concept: In a magnetic field, $r = \frac{mv}{qB} = \frac{\sqrt{2mK}}{qB}$. For equal kinetic energy K, $r \propto \frac{\sqrt m}{q}$. A smaller radius means greater deflection.
   Solution:
-  1. For equal K, $r \propto \frac{\sqrt m}{q}$: $r_1 \propto \frac{2}{2} = 1$ and $r_2 \propto \frac{4}{3}$.
-  2. The lighter ion has the smaller radius, so it is deflected more.
+  1. Lighter ion: m = 4, q = 2e → $\frac{\sqrt4}{2} = 1$.
+  2. Heavier ion: m = 16, q = 3e → $\frac{\sqrt{16}}{3} = \frac{4}{3}$.
+  3. The lighter ion has the smaller radius → it is deflected more.
+  Why others are wrong:
+  - (A) reverses the result.
+  - (C) equal deflection would need equal $\frac{\sqrt m}{q}$.
+  - (D) both ions are charged and moving perpendicular to B, so both are deflected.
+  Key takeaway: always use the correct form of r for the given condition (same v, same p, same K, or same V).
   Answer: (B)
 P A 16: |-
-  Concept: Successive imaging through the lenses.
+  Concept: Treat the lenses one after another: the image formed by each lens becomes the object for the next.
   Solution:
-  1. Lens 1 (f = 10, u = −30): v = 15 cm, which lies 10 cm beyond the concave lens.
-  2. Concave lens (f = −10, virtual object at +10): $\frac{1}{v} = \frac{1}{10} - \frac{1}{10} = 0$, so the rays emerge parallel.
-  3. Lens 3 (f = 30) focuses the parallel rays 30 cm behind it.
-  4. Distance from O = 30 + 5 + 10 + 30 = 75 cm.
+  1. Lens 1 (f = +10 cm), object 30 cm away: $\frac{1}{v} = \frac{1}{10} - \frac{1}{30} = \frac{1}{15}$ → v = 15 cm.
+  2. The concave lens is 5 cm beyond lens 1, so the image of lens 1 lies 10 cm beyond it → virtual object at u = +10 cm.
+  3. Lens 2 (f = −10): $\frac{1}{v} = \frac{1}{-10} + \frac{1}{10} = 0$ → rays emerge parallel.
+  4. Lens 3 (f = +30) focuses parallel rays at its focus, 30 cm beyond it.
+  5. Distance from O: 30 + 5 + 10 + 30 = 75 cm.
+  Why others are wrong:
+  - (D) infinity is the image after lens 2 only.
+  - (B) and (C) stop at intermediate images.
+  Key takeaway: a converging beam aimed exactly at a diverging lens's focal point emerges parallel.
   Answer: (A)
 P A 17: |-
-  Concept: At terminal velocity, the viscous force equals the weight (buoyancy neglected).
+  Concept: An uncharged oil drop falling at terminal velocity has zero net force, so the viscous force equals its weight (buoyancy neglected).
   Solution:
-  1. $F = \frac{4}{3}\pi r^3\rho g = \frac{4}{3}\pi(2\times10^{-5})^3\times1.2\times10^3\times9.8 \approx 3.9\times10^{-10}$ N.
+  1. Volume: $\frac{4}{3}\pi r^3 = \frac{4}{3}\pi(2\times10^{-5})^3 = 3.35\times10^{-14}$ m³.
+  2. Mass: $3.35\times10^{-14}\times1.2\times10^3 = 4.02\times10^{-11}$ kg.
+  3. Weight = viscous force $= 4.02\times10^{-11}\times9.8 \approx 3.9\times10^{-10}$ N.
+  Why others are wrong:
+  - (A) is ten times too small; (C) and (D) use wrong radius powers.
+  Key takeaway: the viscosity value is not needed for the force — only for the terminal speed ($v = \frac{2r^2\rho g}{9\eta}$).
   Answer: (B)
 P A 18: |-
-  Concept: $v = \frac{\omega}{k}$.
+  Concept: For $E = E_0\sin(kx - \omega t)$, the wave speed is $v = \frac{\omega}{k}$.
   Solution:
-  1. $v = \frac{10\times10^{10}}{500} = 2\times10^8$ m/s $= \frac{2}{3}C$.
+  1. ω = 10 × 10¹⁰ = 10¹¹ rad/s; k = 500 m⁻¹.
+  2. $v = \frac{10^{11}}{500} = 2\times10^8$ m/s.
+  3. $\frac{v}{C} = \frac{2}{3}$ → v = $\frac{2}{3}C$ (refractive index 1.5).
+  Why others are wrong:
+  - (A) $\frac{3}{2}C$ exceeds the speed of light.
+  - (B) and (D) do not match ω/k.
+  Key takeaway: the refractive index of the medium is $\frac{C}{v} = 1.5$.
   Answer: (C)
 P A 19: |-
-  Concept: Series cells: emf 5E and resistance 5r; parallel cells: emf E and resistance r/5.
+  Concept: n identical cells (emf E, internal resistance r): in series, emf nE and resistance nr; in parallel, emf E and resistance r/n.
   Solution:
-  1. $\frac{25}{5 + R} = \frac{5}{R + 0.2}$, so 25R + 5 = 25 + 5R and R = 1 Ω.
+  1. Series: $I_s = \frac{5\times5}{5\times1 + R} = \frac{25}{5 + R}$.
+  2. Parallel: $I_p = \frac{5}{\frac{1}{5} + R} = \frac{25}{1 + 5R}$.
+  3. Equal: 5 + R = 1 + 5R ⇒ 4R = 4 ⇒ R = 1 Ω.
+  Why others are wrong:
+  - (B), (C), (D) make one arrangement deliver more current than the other.
+  Key takeaway: series and parallel give equal current exactly when R = r (external resistance equals each cell's internal resistance).
   Answer: (A)
 P A 20: |-
-  Concept: $U = \frac{1}{2}kx^2 \ge 0$, and it is zero wherever x = 0.
+  Concept: In SHM, $U = \frac{1}{2}kx^2$, which is never negative. It is zero at the mean position (x = 0) and maximum at the extremes.
   Solution:
-  1. x = 0 at O, A, B and C, so U = 0 there.
-  2. Between these points, U rises to a maximum at each extreme displacement.
-  3. U has period T/2 and is never negative. Options (A) and (B) go negative, and (C) is non-positive.
+  1. From the x–t graph, x = 0 at O, A, B, C.
+  2. So U = 0 at O, A, B, C, and U rises to its maximum in between (at each extreme).
+  3. U oscillates with period $\frac{T}{2}$, always ≥ 0 → graph (D).
+  Why others are wrong:
+  - (A) and (B) show U becoming negative or following x itself.
+  - (C) shows U ≤ 0, which contradicts $\frac{1}{2}kx^2 \ge 0$.
+  Key takeaway: energy quantities in SHM oscillate at twice the frequency of the displacement.
   Answer: (D)
 P B 1: |-
-  Concept: Mutual PE of the square: each side joins m and (M − m); the diagonals join like masses.
+  Concept: Total gravitational PE of four masses at the corners of a square of side d: sum over all six pairs, $U = -G\sum\frac{m_im_j}{r_{ij}}$. From the figure, each side joins an m and an (M − m); the diagonals join like masses.
   Solution:
   1. $U = -\frac{G}{d}\left[4m(M - m) + \frac{m^2 + (M - m)^2}{\sqrt2}\right]$.
-  2. With S = m(M − m), the bracket is $\left(4 - \sqrt2\right)S + \frac{M^2}{\sqrt2}$, which is extreme when S is maximum, at m = M/2.
-  3. The official answer takes this point: M/m = 2.
+  2. With S = m(M − m): $m^2 + (M - m)^2 = M^2 - 2S$, so the bracket $= (4 - \sqrt2)S + \frac{M^2}{\sqrt2}$.
+  3. The bracket (and |U|) is extreme when S is maximum, i.e. at m = $\frac{M}{2}$, giving $\frac{M}{m} = 2$.
+  4. The official answer takes this point: x = 2.
   Note: At m = M/2 the energy is most negative, which is its maximum magnitude (the minimum of U). The algebraic maximum would need m → 0. The official key (2) is kept.
+  Key takeaway: gravitational PE is negative, so "maximum PE" and "maximum magnitude" point in opposite directions.
   Answer: 2
 P B 2: |-
-  Concept: For a DC offset plus a sinusoid, $I_{rms}^2 = I_{dc}^2 + \left(\frac{I_0}{\sqrt2}\right)^2$.
+  Concept: For $i = I_{dc} + I_0\sin\omega t$, the cross term averages to zero over a period, so $I_{rms}^2 = I_{dc}^2 + \frac{I_0^2}{2}$.
   Solution:
-  1. $I_{rms}^2 = 100 + \frac{42}{2} = 121$, so $I_{rms} = 11$ A.
+  1. $I_{dc} = 10$ A, $I_0 = \sqrt{42}$ A.
+  2. $I_{rms}^2 = 100 + \frac{42}{2} = 121$.
+  3. $I_{rms} = 11$ A.
+  Key takeaway: rms values of independent components add in quadrature (not linearly).
   Answer: 11
 P B 3: |-
-  Concept: The same wire and voltage give the same current, and m = NIA.
+  Concept: The same wire (same resistance R) across the same voltage V₀ carries the same current I in both shapes. Magnetic moment m = NIA, where N = number of turns.
   Solution:
-  1. Triangle: N = 24a/3a = 8 and $A = \frac{\sqrt3}{4}a^2$, so NA = 2√3 a².
-  2. Square: N = 24a/4a = 6 and A = a², so NA = 6a².
-  3. The ratio is 2√3 : 6 = 1 : √3, so y = 3.
+  1. Triangle of side a: perimeter 3a → N = $\frac{24a}{3a} = 8$; area $\frac{\sqrt3}{4}a^2$ → NA = $2\sqrt3a^2$.
+  2. Square of side a: perimeter 4a → N = 6; area a² → NA = 6a².
+  3. Ratio: $\frac{2\sqrt3}{6} = \frac{1}{\sqrt3}$ → 1 : √3, so y = 3.
+  Key takeaway: for a fixed wire length, the shape changes both the number of turns and the area per turn.
   Answer: 3
 P B 4: |-
-  Concept: The antiparallel diodes are forward-biased, so they clamp the transistor's input to about 0 V.
+  Concept: From the circuit: the base of the transistor is connected through two antiparallel diodes that are forward-biased and clamp the base–emitter voltage near 0 V. With no base drive, the transistor is in cut-off.
   Solution:
-  1. With zero base drive, the transistor is in cut-off, so the collector current is 0.
-  2. With no drop across the collector resistor, V₀ = 5 V.
+  1. Transistor OFF → collector current ≈ 0.
+  2. No current through the collector resistor → no voltage drop across it.
+  3. Output V₀ = supply voltage = 5 V.
+  Key takeaway: in cut-off, a common-emitter stage outputs its full supply voltage (logic HIGH), acting like an open switch.
   Answer: 5
 P B 5: |-
-  Concept: Ohm's law with internal resistance.
+  Concept: Ohm's law including internal resistance: I = $\frac{E}{R_{ext} + r}$.
   Solution:
-  1. Series: $I_s = \frac{20}{10n + 10}$. Parallel: $I_p = \frac{20}{10/n + 10} = \frac{2n}{1 + n}$.
-  2. $\frac{I_p}{I_s} = n = 20$.
+  1. Series: $R_{ext} = 10n$ → $I_s = \frac{20}{10n + 10} = \frac{2}{n + 1}$.
+  2. Parallel: $R_{ext} = \frac{10}{n}$ → $I_p = \frac{20}{\frac{10}{n} + 10} = \frac{2n}{n + 1}$.
+  3. $\frac{I_p}{I_s} = n = 20$.
+  Key takeaway: when each resistor equals the internal resistance, the parallel/series current ratio is exactly n.
   Answer: 20
 P B 6: |-
-  Concept: Doppler effect with both source and observer approaching: $f' = f\frac{v + v_o}{v - v_s}$.
+  Concept: Doppler effect for source and observer approaching each other: $f' = f\frac{v + v_o}{v - v_s}$.
   Solution:
-  1. $v_s$ = 10 m/s (car X) and $v_o$ = 20 m/s (car Y).
-  2. $1320 = f\frac{360}{330}$, so f = 1210 Hz.
+  1. Source (car X): 36 km/h = 10 m/s. Observer (car Y): 72 km/h = 20 m/s.
+  2. $1320 = f\times\frac{340 + 20}{340 - 10} = f\times\frac{360}{330} = f\times\frac{12}{11}$.
+  3. $f = 1320\times\frac{11}{12} = 1210$ Hz.
+  Key takeaway: approaching motion raises the heard frequency, so the actual frequency is lower than 1320 Hz.
   Answer: 1210
 P B 7: |-
-  Concept: $a = v\frac{dv}{dx} = \frac{1}{2}\frac{d(v^2)}{dx}$.
+  Concept: When v is given as a function of x, acceleration $a = v\frac{dv}{dx} = \frac{1}{2}\frac{d(v^2)}{dx}$.
   Solution:
-  1. v² = 5000 + 24x, so $a = \frac{24}{2} = 12$ m/s².
+  1. $v^2 = 5000 + 24x$.
+  2. $a = \frac{1}{2}\times24 = 12$ m/s² (constant).
+  3. Comparing with $v^2 = u^2 + 2ax$: u² = 5000, 2a = 24 ✓.
+  Key takeaway: a linear v²–x relation always means uniform acceleration.
   Answer: 12
 P B 8: |-
-  Concept: Heat-current junction rule at C: AC and CB are 5 K/W each, CD is 10 K/W.
+  Concept: Heat flow in rods is like current in resistors: H = ΔT / R_th. At junction C (middle of AB), heat in = heat out.
   Solution:
-  1. $\frac{200 - T}{5} = \frac{T - 100}{5} + \frac{T - 125}{10}$ gives 400 − 2T = 2T − 200 + T − 125, so T = 145°C.
-  2. $P = \frac{145 - 125}{10} = 2$ W.
+  1. Each half of AB has thermal resistance 5 K/W; CD has 10 K/W.
+  2. Let C be at T: $\frac{200 - T}{5} = \frac{T - 100}{5} + \frac{T - 125}{10}$.
+  3. Multiply by 10: $400 - 2T = 2T - 200 + T - 125 \Rightarrow 5T = 725 \Rightarrow T = 145$ °C.
+  4. Heat current in CD: $P = \frac{145 - 125}{10} = 2$ W.
+  Key takeaway: thermal circuits obey the same junction rule as Kirchhoff's current law.
   Answer: 2
 P B 9: |-
-  Concept: W = Fd cos θ.
+  Concept: Work W = Fd cos θ. Equal work over equal displacement means equal force components along the displacement.
   Solution:
-  1. $F_A\cos45° = F_B\cos60°$, so $\frac{F_A}{F_B} = \frac{1/2}{1/\sqrt2} = \frac{1}{\sqrt2}$ and x = 2.
+  1. $F_A\cos45° = F_B\cos60°$.
+  2. $\frac{F_A}{F_B} = \frac{\cos60°}{\cos45°} = \frac{1/2}{1/\sqrt2} = \frac{1}{\sqrt2}$.
+  3. x = 2.
+  Key takeaway: the larger the angle to the displacement, the larger the force needed for the same work.
   Answer: 2
 P B 10: |-
-  Concept: $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$ with R = 6400 km.
+  Concept: Line-of-sight range: $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$ (sum of both radio horizons), R = 6400 km.
   Solution:
-  1. $\sqrt{2\times6.4\times10^6\times320} = 64$ km and $\sqrt{2\times6.4\times10^6\times2000} = 160$ km.
-  2. d = 224 km.
+  1. $\sqrt{2\times6.4\times10^6\times320} = \sqrt{4.096\times10^9} = 64$ km.
+  2. $\sqrt{2\times6.4\times10^6\times2000} = \sqrt{2.56\times10^{10}} = 160$ km.
+  3. d = 64 + 160 = 224 km.
+  Key takeaway: choose numbers so that 2Rh is a perfect square — a common trick in these questions.
   Answer: 224
