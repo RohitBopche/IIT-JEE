@@ -1,0 +1,181 @@
+P A 1: |-
+  Concept: Strain $= \frac{F}{AY}$ with the load shared equally by the four columns.
+  Solution:
+  1. Area of each hollow column $= \pi(1^2 - 0.5^2) = 0.75\pi$ m².
+  2. Strain $= \frac{50\times10^3\times9.8}{4\times0.75\pi\times2\times10^{11}} = 2.6\times10^{-7}$.
+  Answer: (B)
+P A 2: |-
+  Concept: Each side contributes $B = \frac{\mu_0i}{4\pi r}(\sin60° + \sin60°)$, where r is the distance from the centroid to a side.
+  Solution:
+  1. $r = \frac{l}{2\sqrt3} = \frac{0.09}{2\sqrt3}$ m.
+  2. $B = 3\times\frac{10^{-7}\times1.5}{r}\times\sqrt3 = 3\times10^{-5}$ T.
+  3. The current is clockwise, so by the right-hand rule the field points into the plane.
+  Answer: (D)
+P A 3: |-
+  Concept: Parallel-axis theorem for each sphere: $I = \frac{2}{5}Mr^2 + Md^2$, with d = 2.5 m.
+  Solution:
+  1. $I = 2\left(\frac{2}{5}\times1.5\times0.25 + 1.5\times6.25\right) = 2(0.15 + 9.375) = 19.05$ kg m².
+  Answer: (C)
+P A 4: |-
+  Concept: Since P ⊥ Q, $|\vec P + \vec Q| = |\vec P - \vec Q| = \sqrt{P^2 + Q^2} = s$, so the resultant is $R^2 = 2s^2(1 + \cos\theta)$.
+  Solution:
+  1. R² = 3s² gives cos θ₁ = ½, so θ₁ = 60°. R² = 2s² gives cos θ₂ = 0, so θ₂ = 90°.
+  2. So θ₁ < θ₂ (Statement I is true), and the values in Statement II are correct.
+  Answer: (B)
+P A 5: |-
+  Concept: Energy released = the electron's KE + the binding energy of the n = 2 level (3.4 eV).
+  Solution:
+  1. E = 2.6 + 3.4 = 6.0 eV.
+  2. $\nu = \frac{6\times1.6\times10^{-19}}{6.6\times10^{-34}} = 1.45\times10^{15}$ Hz = 1.45 × 10⁹ MHz.
+  Answer: (C)
+P A 6: |-
+  Concept: Radial conduction through a spherical shell: $H = \frac{4\pi Kr_1r_2(\theta_2 - \theta_1)}{r_2 - r_1}$.
+  Solution:
+  1. $H = -K4\pi r^2\frac{d\theta}{dr}$; integrating from r₁ to r₂ gives $H\left(\frac{1}{r_1} - \frac{1}{r_2}\right) = 4\pi K(\theta_2 - \theta_1)$.
+  Answer: (A)
+P A 7: |-
+  Concept: A diode OR gate and a transistor inverter.
+  Solution:
+  1. (A): if either input is 5 V, a diode conducts and V₀ = 5 V; with both at 0 V, V₀ = 0. This is OR.
+  2. (B): V_B high drives the transistor into saturation, so V₀ ≈ 0; V_B low turns it off, so V₀ = 5 V. This is NOT.
+  Answer: (B)
+P A 8: |-
+  Concept: $\Delta x \ge \frac{h}{4\pi\Delta p}$, with Δp ~ p = √(3mkT).
+  Solution:
+  1. At the same T, $\Delta x \propto \frac{1}{\sqrt m}$.
+  2. $\frac{\Delta x_e}{\Delta x_p} = \sqrt{\frac{m_p}{m_e}}$.
+  Answer: (C)
+P A 9: |-
+  Concept: Buoyancy reduces the effective g: $g_{eff} = g\left(1 - \frac{\sigma}{\rho}\right)$.
+  Solution:
+  1. $g_{eff} = \frac{3g}{4}$ and $l' = \frac{4l}{3}$.
+  2. $T' = 2\pi\sqrt{\frac{4l/3}{3g/4}} = \frac{4}{3}T$.
+  Answer: (D)
+P A 10: |-
+  Concept: Forces forming a closed triangle (taken in order) sum to zero.
+  Solution:
+  1. $\vec F_1 + \vec F_2 + \vec F_3 = 0$ means zero net force (translational equilibrium). Treated as concurrent forces, they are in equilibrium.
+  2. The official key takes both statements as true.
+  Answer: (D)
+P A 11: |-
+  Concept: F = ma, so M = F/(V/T).
+  Solution:
+  1. $[M] = \frac{F}{VT^{-1}} = [FTV^{-1}]$.
+  Answer: (B)
+P A 12: |-
+  Concept: The Lorentz force $q(\vec E + \vec v\times\vec B)$; both fields vary as cos(kz − ωt).
+  Solution:
+  1. At t = 0: cos(π) = cos(3π) = −1, so the field magnitudes are equal at both positions.
+  2. Both charges have the same velocity, so F ∝ q and the ratio is 4π : 2π = 2 : 1.
+  Answer: (C)
+P A 13: |-
+  Concept: Look for shorted elements first. In the figure, the left border wire joins the top-left node to the bottom rail.
+  Solution:
+  1. Both ends of the 5 Ω resistor are on the bottom rail, so no current flows through it. The first 2 Ω resistor then runs from the middle node to the bottom rail.
+  2. That 2 Ω ∥ the vertical 2 Ω = 1 Ω; adding the series 2 Ω gives 3 Ω.
+  3. 3 Ω ∥ (3 ∥ 3 = 1.5 Ω) = 1 Ω.
+  Answer: (D)
+P A 14: |-
+  Concept: $\phi = \oint\vec E\cdot d\vec A$.
+  Solution:
+  1. (a) Inward lines give negative flux: true. (b) By symmetry, all 6 faces get q/6ε₀: true. (c) With no enclosed charge, the net flux is 0: true.
+  2. (d) If E is parallel to the surface, E ⊥ dA, so the flux is zero. (d) is the incorrect statement.
+  Answer: (C)
+P A 15: |-
+  Concept: Total moles from PV = nRT, then solve two equations.
+  Solution:
+  1. $n = \frac{400\times10^3\times500\times10^{-6}}{8.3\times300} \approx 0.08$ mol.
+  2. $\frac{m_H}{2} + \frac{m_O}{32} = 0.08$ and $m_H + m_O = 0.76$, giving m_H = 0.12 g and m_O = 0.64 g.
+  3. m_O : m_H = 16 : 3.
+  Answer: (C)
+P A 16: |-
+  Concept: Momentum is conserved during the split.
+  Solution:
+  1. 3M × 40 = M × 60 + 2M v, so v = 30 m/s.
+  2. $K_i = 2400M$ and $K_f = 1800M + 900M = 2700M$.
+  3. $\frac{\Delta K}{K_i} = \frac{300}{2400} = \frac{1}{8}$.
+  Answer: (C)
+P A 17: |-
+  Concept: Lenz's law: the induced current opposes the change in flux.
+  Solution:
+  1. The induced current is anticlockwise (as seen), which produces an outward field.
+  2. The flux must be changing, so B cannot lie in the coil's plane (that gives zero flux).
+  3. An outward induced field opposes a decrease, so B is outward and decreasing.
+  Answer: (A)
+P A 18: |-
+  Concept: Energy in SHM.
+  Solution:
+  1. (c) Total energy = ½kA² at all times: true.
+  2. (d) Over a full period, ⟨KE⟩ = ⟨PE⟩ = ¼kA²: true.
+  3. (a) and (b) fail in general; KE = PE only at x = A/√2, and averages over arbitrary intervals differ.
+  Answer: (A)
+P A 19: |-
+  Concept: Filter circuits.
+  Solution:
+  1. A shunt capacitor bypasses the AC ripple, so Statement I is true.
+  2. A series inductor (choke) opposes changes in current, so Statement II is true.
+  Answer: (D)
+P A 20: |-
+  Concept: $g_{down} = g\left(1 - \frac{r}{R}\right)$ and $g_{up} = \frac{g}{(1 + r/R)^2}$.
+  Solution:
+  1. $\frac{g_{down}}{g_{up}} = \left(1 - \frac{r}{R}\right)\left(1 + \frac{r}{R}\right)^2 = 1 + \frac{r}{R} - \frac{r^2}{R^2} - \frac{r^3}{R^3}$.
+  Answer: (D)
+P B 1: |-
+  Concept: Each AM station needs a bandwidth of 2f_m.
+  Solution:
+  1. 2 × 6 kHz = 12 kHz per station.
+  2. N = 6 MHz / 12 kHz = 500.
+  Answer: 500
+P B 2: |-
+  Concept: With the battery connected, V stays constant and C becomes KC.
+  Solution:
+  1. $\Delta U = \frac{1}{2}(K - 1)CV^2 = \frac{1}{2}\times200\times10^{-6}\times200^2 = 4$ J.
+  Answer: 4
+P B 3: |-
+  Concept: The core's magnetic moment is M = χHV with χ = μ_r − 1, and H = nI is unchanged.
+  Solution:
+  1. $\frac{\Delta M}{M} = \frac{749 - 499}{499} = \frac{250}{499}$, so x = 250.
+  Answer: 250
+P B 4: |-
+  Concept: $v^2 = u^2 + 2ax$, so the slope of the v²–x graph is 2a.
+  Solution:
+  1. From the graph, the slope is 20/10 = 2, so 2a = 2 and a = 1 m/s².
+  Answer: 1
+P B 5: |-
+  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Solution:
+  1. The 4th bright fringes on the two sides are 8β apart: 8β = 2.4 cm, so β = 3 mm.
+  2. $\lambda = \frac{3\times10^{-3}\times0.3\times10^{-3}}{1.5} = 6\times10^{-7}$ m.
+  3. $f = \frac{c}{\lambda} = 5\times10^{14}$ Hz.
+  Answer: 5
+P B 6: |-
+  Concept: Least count = 1 MSD − 1 VSD; subtract a positive zero error.
+  Solution:
+  1. 1 VSD = 0.9 mm, so LC = 0.1 mm. The reading is 10 + 8 × 0.1 = 10.8 mm.
+  2. Corrected: 10.8 − 0.4 = 10.4 mm, so the radius is 5.2 mm = 52 × 10⁻² cm.
+  Answer: 52
+P B 7: |-
+  Concept: Adiabatic: $PV^\gamma$ = constant and $|W| = \frac{P_2V_2 - P_1V_1}{\gamma - 1}$.
+  Solution:
+  1. $P_2 = 200\times4^{1.5} = 1600$ kPa.
+  2. $|W| = \frac{1600\times300 - 200\times1200}{0.5}\times10^{-3} = \frac{480 - 240}{0.5} = 480$ J.
+  Answer: 480
+P B 8: |-
+  Concept: At very high f, an inductor behaves as an open circuit and a capacitor as a short circuit.
+  Solution:
+  1. The 20 H branch is open; all the capacitors act as wires.
+  2. The circuit reduces to 1 Ω in series with (2 Ω ∥ 2 Ω), so Z = 1 + 1 = 2 Ω.
+  Answer: 2
+P B 9: |-
+  Concept: At minimum deviation, $\delta = 2i - A$ and $\mu = \frac{\sin\frac{A + \delta}{2}}{\sin\frac{A}{2}}$.
+  Solution:
+  1. i = A = 60°, so δ = 60° and μ = sin 60°/sin 30° = √3.
+  2. AP = 10 × (√3/2) = 5√3 cm, and v = c/√3.
+  3. $t = \frac{5\sqrt3\times10^{-2}\times\sqrt3}{3\times10^8} = 5\times10^{-10}$ s.
+  Answer: 5
+P B 10: |-
+  Concept: Joule heating, E = I²Rt.
+  Solution:
+  1. 192 = 16R × 1, so R = 12 Ω.
+  2. E = 8² × 12 × 5 = 3840 J.
+  Answer: 3840
