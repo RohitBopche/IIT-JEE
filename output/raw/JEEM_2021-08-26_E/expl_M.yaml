@@ -157,6 +157,8 @@ M A 13: |-
   Why others are wrong:
   - (B) ¼ forgets the ½ from the $\frac{2\pi}{8}, \frac{6\pi}{8}$ pair.
   - (A) and (D) leave a stray √2.
+  Why pair the angles: sin(π − θ) = sin θ lets every angle beyond π/2 be replaced by one below it, and sin(π/2 − θ) = cos θ turns sin(3π/8) into cos(π/8). The product then collapses using 2 sin θ cos θ = sin 2θ.
+  Common mistake: Forgetting the leading factor 2 or the middle factors sin(π/4) sin(3π/4) = ½.
   Key takeaway: products of sines at equally spaced angles simplify by pairing θ with π − θ and π/2 − θ.
   Answer: (C)
 M A 14: |-
@@ -215,6 +217,8 @@ M A 18: |-
   Why others are wrong:
   - (D) $\frac{3\pi}{2}$ integrates over the full interval without halving.
   - (A) $\frac{\pi}{2}$ drops the sin²x term; (B) $\frac{5\pi}{4}$ mis-evaluates $\int\sin^2x$.
+  Why the "king" trick works: 1/(1 + a^t) + 1/(1 + a^{−t}) = 1 for any a > 0, so the awkward denominators disappear when f(x) and f(−x) are added.
+  Common mistake: Integrating (1 + sin²x) over the full interval [−π/2, π/2], which gives 3π/2 (twice the answer).
   Key takeaway: the pattern $\frac{1}{1 + a^{g(x)}}$ with g odd always pairs to 1.
   Answer: (C)
 M A 19: |-
@@ -248,6 +252,8 @@ M B 1: |-
      - 231, 319, 341, 418, 451 (sum 1760).
      Total to remove: 3146.
   3. Required sum = 10890 − 3146 = 7744.
+  Check the removed list: every multiple of 11 from 110 to 198 contains a 1 (hundreds digit 1). Above 200, the numbers with a digit 1 are 231, 319, 341, 418 and 451.
+  Common mistake: Missing numbers like 319 or 418, where the 1 is in the tens place.
   Key takeaway: when excluding by a digit condition, subtracting from the full arithmetic-series sum is fastest.
   Answer: 7744
 M B 2: |-
@@ -277,6 +283,8 @@ M B 4: |-
   3. $\sum a_k = \frac{10}{2}(2\times11 + 9\times(-3)) = 5(22 - 27) = -25$.
   4. $\sum b_k = 2(2^{10} - 1) = 2046$.
   5. Total = 2046 − 25 = 2021.
+  Check: c₂ = 8 + 4 = 12 ✓ and c₃ = 5 + 8 = 13 ✓ (a₂ = 8, a₃ = 5, b₂ = 4, b₃ = 8).
+  Common mistake: Using b₁(2¹⁰ − 1) with b₁ = 1, or dropping the negative AP sum.
   Answer: 2021
 M B 5: |-
   Concept: A plane containing two (intersecting/coplanar) lines has normal $\vec d_1\times\vec d_2$. Then PQ² = (distance from P to the plane)².
@@ -294,6 +302,8 @@ M B 6: |-
   3. $A_k = 2\binom{21}{k}$.
   4. $A_4 - A_3 = 2(5985 - 1330) = 9310 = 190\times49$.
   5. p = 49.
+  Final step: A₄ − A₃ = 2(C(21, 4) − C(21, 3)) = 2(5985 − 1330) = 9310 = 190 × 49, so p = 49.
+  Common mistake: Failing to rewrite the bracket symbol using C(n, r) = C(n, n − r), which hides the Vandermonde form.
   Key takeaway: the bracket notation simply handles out-of-range terms as zero, which Vandermonde's identity already assumes.
   Answer: 49
 M B 7: |-
@@ -313,6 +323,8 @@ M B 8: |-
   3. xy = $\frac{100 - 82}{2} = 9$ ⇒ x = 9, y = 1 (x > y).
   4. New numbers: 3 + 18 = 21, 7 + 2 = 9, 10, 8; sum 48.
   5. Mean = 12.
+  Check: 3, 7, 9, 1 have mean 5 and Σx² = 9 + 49 + 81 + 1 = 140, so variance = 35 − 25 = 10 ✓.
+  Common mistake: Taking x = 1, y = 9 (ignoring x > y), which gives a different set of new numbers.
   Answer: 12
 M B 9: |-
   Concept: For n × n matrices (n = 3): adj(kA) = kⁿ⁻¹ adj A = k² adj A; adj(adj A) = |A|ⁿ⁻² A = |A| A; |adj A| = |A|²; |kA| = k³|A|.
@@ -323,6 +335,8 @@ M B 9: |-
   4. Determinant: $2^3(32|A|)^6|\text{adj}A| = 2^3\cdot2^{30}|A|^6\cdot|A|^2 = 2^{33}|A|^8$.
   5. $2^{33}|A|^8 = 2^{41} \Rightarrow |A|^8 = 2^8 \Rightarrow |A|^2 = 4$.
   6. det(A²) = |A|² = 4.
+  Final step: |A|⁸ = 2⁸, so |A| = ±2 and det(A²) = |A|² = 4.
+  Common mistake: Using |kA| = k|A| instead of k³|A| for a 3 × 3 matrix, which loses many powers of 2.
   Answer: 4
 M B 10: |-
   Concept: Simplify using $(1 - i)^2 = -2i$ and $\frac{2i}{1 - i} = i(1 + i) = i - 1$.
@@ -332,4 +346,6 @@ M B 10: |-
   3. n = 2: −2i(−2i) = −4. n = 4: −2i(−4) = 8i. n = 6: −2i(8i) = 16 ✓ (positive integer).
   4. Odd n give non-real values (e.g. n = 1: 2 + 2i).
   5. Least n = 6.
+  Check for n = 6: (2i)⁶ = 64i⁶ = −64 and (1 − i)⁴ = (−2i)² = −4, so the ratio is (−64)/(−4) = 16 ✓.
+  Common mistake: Accepting n = 2, which gives −4, an integer but not positive.
   Answer: 6

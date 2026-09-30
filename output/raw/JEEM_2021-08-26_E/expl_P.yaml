@@ -19,6 +19,8 @@ P A 2: |-
   Why others are wrong:
   - (D) $\frac{16}{9}E$ is the new total energy, not the extra energy.
   - (A) $\frac{1}{9}E$ and (C) E come from using λ ∝ 1/E instead of 1/√E.
+  Physical sense: A shorter wavelength needs more momentum, and because E = p²/2m, the energy rises with the square of the momentum. Cutting λ by 25% raises p by a factor 4/3 and E by 16/9.
+  Common mistake: Answering with the new total energy (16E/9) instead of the extra energy asked for.
   Key takeaway: halving λ needs 4 times the energy — kinetic energy scales with the square of 1/λ.
   Answer: (B)
 P A 3: |-
@@ -41,6 +43,8 @@ P A 4: |-
   3. $= 24.9\times10^5$ Pa.
   Why others are wrong:
   - (A), (B), (D) are off by powers of ten (e.g. using V in litres).
+  Why the gas type does not matter: Ideal-gas pressure depends only on the number of moles, not on molecular mass; heavy CO₂ molecules move slower but hit harder, and the effects cancel.
+  Common mistake: Adding the masses (2 g + 88 g) instead of the moles.
   Key takeaway: in SI units, keep V in m³ with R = 8.3 J mol⁻¹ K⁻¹ to get pressure in pascals.
   Answer: (C)
 P A 5: |-
@@ -144,6 +148,8 @@ P A 13: |-
   Why others are wrong:
   - (A) 45.5 km and (B) 80.2 km use only one antenna or incorrect combinations.
   - (C) 144.1 km doubles the heights or uses the sum of heights inside one root.
+  Why add the horizons: Each antenna can see the Earth's surface out to its own horizon distance √(2Rh); the signal reaches the receiver if the two horizons meet.
+  Common mistake: Using √(2R(h_T + h_R)) = √(2 × 6.4 × 10⁶ × 130) ≈ 40.8 km, which is not how LoS range works.
   Key takeaway: the horizons add; do not combine the heights inside a single square root.
   Answer: (D)
 P A 14: |-
@@ -213,6 +219,8 @@ P A 19: |-
   Why others are wrong:
   - (A) 86.4 s forgets the factor ½.
   - (B) 4.32 s and (D) 8.64 s are off by a factor of 10.
+  Why the clock loses time: The clock counts oscillations; a longer period means fewer oscillations per real day, so the clock shows less time than has actually passed (it runs slow).
+  Common mistake: Using ΔT/T = ΔL/L (no square root), which gives 86.4 s.
   Key takeaway: a 0.1% increase in length makes the clock lose about 43 s every day.
   Answer: (C)
 P A 20: |-
@@ -232,6 +240,8 @@ P B 1: |-
   1. φ = 6.28 cm⁻¹ × 3.5 cm = 21.98 rad = 7π (since 6.28 ≈ 2π).
   2. cos 7π = −1: destructive interference.
   3. A = |A₁ − A₂| = 12 − 5 = 7 mm.
+  Why 7π: k = 6.28 cm⁻¹ ≈ 2π cm⁻¹, so kx₀ = 2π × 3.5 = 7π, an odd multiple of π.
+  Common mistake: Adding the amplitudes (17 mm), which is correct only for a phase difference that is an even multiple of π.
   Key takeaway: an odd multiple of π means the waves are exactly out of phase, so amplitudes subtract.
   Answer: 7
 P B 2: |-
@@ -240,6 +250,8 @@ P B 2: |-
   1. With P₁ and P₂ aligned (θ = 0), the screen gets $\frac{I}{2}$.
   2. Rotating P₂ by θ: $\frac{I}{2}\cos^2\theta = \frac{3I}{8} \Rightarrow \cos^2\theta = \frac{3}{4}$.
   3. θ = 30°.
+  Why the first polaroid halves the intensity: Unpolarised light has all directions of vibration equally; averaging cos²θ over all angles gives ½.
+  Check: I/2 × cos²30° = I/2 × ¾ = 3I/8 ✓.
   Key takeaway: the first polariser always halves unpolarised light, regardless of its orientation.
   Answer: 30
 P B 3: |-
@@ -249,6 +261,8 @@ P B 3: |-
   2. KE $= \frac{1}{2}\times1.67\times10^{-27}\times(5\times10^7)^2 = 2.09\times10^{-12}$ J.
   3. Energy per revolution: $2\times1.6\times10^{-19}\times12\times10^3 = 3.84\times10^{-15}$ J.
   4. Revolutions $= \frac{2.09\times10^{-12}}{3.84\times10^{-15}} \approx 543.6$ → 543 complete revolutions.
+  Why "complete" revolutions: 543.6 means the proton finishes 543 full revolutions and part of the 544th; the key asks for the whole number completed.
+  Non-relativistic check: c/6 is about 17% of light speed, so the classical KE formula is a reasonable approximation.
   Key takeaway: c/6 is still non-relativistic enough (≈17% of c) for the classical KE formula to be used.
   Answer: 543
 P B 4: |-
@@ -256,6 +270,8 @@ P B 4: |-
   Solution:
   1. $\frac{\Delta E}{E} = 2\frac{\Delta g}{g} + 2\frac{\Delta T}{T}$.
   2. $= 2(4\%) + 2(3\%) = 14\%$.
+  Why E ∝ g²T²: With L = gT²/(4π²), the energy ½mgLθ₀² becomes proportional to g × gT² = g²T².
+  Common mistake: Using E ∝ gT² (forgetting that the energy formula already contains g), which gives 10%.
   Key takeaway: percentage errors are multiplied by the powers and always added.
   Answer: 14
 P B 5: |-
@@ -264,6 +280,8 @@ P B 5: |-
   1. A = π(0.08)² = 0.0201 m².
   2. $\varepsilon_0 = 20\times3\times10^{-2}\times0.0201\times50 = 0.603$ V.
   3. ≈ 60 × 10⁻² V.
+  Unit check: NBAω has units T m² s⁻¹ = Wb/s = V ✓.
+  Common mistake: Using the diameter (16 cm) in the area, which gives four times the correct emf.
   Key takeaway: the maximum emf occurs when the plane of the coil is parallel to B (flux zero, but changing fastest).
   Answer: 60
 P B 6: |-
@@ -272,6 +290,8 @@ P B 6: |-
   1. $x_2 = 5\sqrt2(\sin2\pi t + \cos2\pi t) = 5\sqrt2\cdot\sqrt2\sin\left(2\pi t + \frac{\pi}{4}\right) = 10\sin\left(2\pi t + \frac{\pi}{4}\right)$.
   2. Amplitudes: $x_1$ = 5, $x_2$ = 10.
   3. Ratio = 2.
+  Phase check: Both motions have the same phase constant π/4, so they are in step; only their amplitudes differ.
+  Common mistake: Taking the amplitude of x₂ as 5√2 (the factor outside the bracket), which gives √2 instead of 2.
   Key takeaway: $a\sin\theta + b\cos\theta$ has amplitude $\sqrt{a^2 + b^2}$.
   Answer: 2
 P B 7: |-
@@ -280,6 +300,8 @@ P B 7: |-
   1. Area of an equilateral triangle of side 0.1 m: $\frac{\sqrt3}{4}(0.1)^2 = \frac{\sqrt3}{4}\times10^{-2}$ m².
   2. $\tau = 1\times0.2\times\frac{\sqrt3}{4}\times10^{-2}\times20\times10^{-3} = \sqrt3\times10^{-5}$ N m.
   3. So x = 3.
+  Why θ = 90°: The torque formula uses the angle between B and the area vector (the normal to the loop). When the plane of the coil is parallel to B, its normal is perpendicular to B, so sin θ = 1.
+  Common mistake: Taking θ as the angle between the plane and B (0°), which gives zero torque.
   Key takeaway: torque depends only on the loop's area, not its shape.
   Answer: 3
 P B 8: |-
@@ -306,5 +328,7 @@ P B 10: |-
   1. $a_{max} = 0.5\times10 = 5$ m/s².
   2. Both blocks move together with this acceleration: $F_{max} = (1 + 2)\times5 = 15$ N.
   3. For F > 15 N, the lower block slides out from under the upper block.
+  Why check the top block: If F exceeds 15 N, the lower block needs an acceleration greater than friction can give the upper one, so they separate.
+  Common mistake: Using μ(m₁ + m₂)g = 15 N as the friction force; with a smooth table, friction acts only between the blocks and is limited to μm₁g = 5 N.
   Key takeaway: if F were applied to the upper block instead, F_max would be μm₁g(1 + m₁/m₂) = 7.5 N.
   Answer: 15
