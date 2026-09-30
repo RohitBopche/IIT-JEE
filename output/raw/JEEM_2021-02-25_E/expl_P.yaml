@@ -1,190 +1,380 @@
 P A 1: |-
-  Concept: Blocks of a DC power supply.
+  Concept: A regulated DC power supply has four stages in sequence: transformer, rectifier, filter and stabiliser (regulator).
   Solution:
-  1. Rectifier: converts AC voltage to DC, (a)–(ii).
-  2. Stabilizer (regulator, e.g. Zener): keeps the output voltage constant when input or load changes, (b)–(iv).
-  3. Transformer: steps AC voltage up or down, (c)–(i).
-  4. Filter (capacitor/inductor): removes ripple from the rectified output, (d)–(iii).
+  1. (a) Rectifier: made of diodes (half-wave, full-wave or bridge). It converts AC voltage into pulsating (unidirectional) DC, so (a)–(ii).
+  2. (b) Stabiliser or regulator, for example a Zener diode or IC regulator. It keeps the output voltage constant even when the input voltage or the load current changes, so (b)–(iv).
+  3. (c) Transformer: steps the mains AC voltage up or down to the level needed, so (c)–(i).
+  4. (d) Filter: a capacitor across the load or an inductor in series smooths out the ripple in the rectified output, so (d)–(iii).
+  5. The matching (a)–(ii), (b)–(iv), (c)–(i), (d)–(iii) is option (B).
+  Why others are wrong:
+  - (A) swaps the stabiliser and transformer roles.
+  - (C) gives the transformer the filter's role.
+  - (D) calls the rectifier a filter.
+  Tip: think of the signal path. AC mains → transformer (level) → rectifier (one direction) → filter (smooth) → regulator (constant).
   Answer: (B)
 P A 2: |-
-  Concept: At t = 0: $y = A\sin\phi_0$ and velocity $v = A\omega\cos\phi_0$.
+  Concept: For y = A sin(ωt + φ₀), the initial conditions fix the phase:
+  - displacement at t = 0: y₀ = A sin φ₀;
+  - velocity at t = 0: v₀ = Aω cos φ₀.
+  Two phases give the same displacement, so the direction of motion picks the right one.
+  Given: y(0) = A/2, and the particle is moving in the negative direction (v₀ < 0).
   Solution:
-  1. $\frac{A}{2} = A\sin\phi_0 \Rightarrow \phi_0 = \frac{\pi}{6}$ or $\frac{5\pi}{6}$.
-  2. Moving in the negative direction means $\cos\phi_0 < 0$, so $\phi_0 = \frac{5\pi}{6}$.
+  1. sin φ₀ = ½, so φ₀ = π/6 or 5π/6 (in [0, 2π)).
+  2. v₀ < 0 needs cos φ₀ < 0.
+     - cos(π/6) = √3/2 > 0, so it is rejected.
+     - cos(5π/6) = −√3/2 < 0 ✓.
+  3. So φ₀ = 5π/6.
+  Why others are wrong:
+  - (A) π/6 gives the right position but motion in the positive direction.
+  - (B) π/3 and (C) 2π/3 give y₀ = (√3/2)A, not A/2.
+  Tip: on the phasor (reference) circle, "above the mean and moving down" puts the phasor in the second quadrant. So the phase is between π/2 and π.
   Answer: (D)
 P A 3: |-
-  Concept: A block between two springs fixed to opposite walls: on displacement, one spring stretches and the other compresses, both pushing it back, so the springs act in parallel.
+  Concept: When a block sits between two springs attached to opposite walls, a displacement x stretches one spring and compresses the other. Both springs push the block back towards equilibrium, so they add like springs in parallel: k_eq = k₁ + k₂.
+  Given: each spring has constant 2k, and the block has mass m.
   Solution:
-  1. $k_{eq} = 2k + 2k = 4k$.
-  2. $T = 2\pi\sqrt{\frac{m}{4k}} = \pi\sqrt{\frac{m}{k}}$.
+  1. Restoring force for a displacement x: F = −(2k)x − (2k)x = −4kx, so k_eq = 4k.
+  2. $T = 2\pi\sqrt{\frac{m}{k_{eq}}} = 2\pi\sqrt{\frac{m}{4k}} = \pi\sqrt{\frac{m}{k}}$.
+  Why others are wrong:
+  - (C) $2\pi\sqrt{m/k}$ uses k_eq = k, as if the two 2k springs were in series.
+  - (D) $2\pi\sqrt{m/2k}$ uses only one spring.
+  - (B) $\pi\sqrt{m/2k}$ corresponds to k_eq = 8k.
+  Tip: "springs on opposite sides of a block" is always the parallel combination, even though it looks like series. Series applies only when the springs are joined end to end, one after the other.
   Answer: (A)
 P A 4: |-
-  Concept: Rydberg formula $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
+  Concept: The wavelength of a hydrogen spectral line comes from the Rydberg formula, $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ with R = 1.097 × 10⁷ m⁻¹. Equivalently, E = 13.6(1/n₁² − 1/n₂²) eV and λ = hc/E.
+  Given: the transition n = 2 → n = 1 (the first Lyman line, Lyman-α).
   Solution:
-  1. $\frac{1}{\lambda} = 1.097\times10^7\left(1 - \frac{1}{4}\right) = 8.23\times10^6$ m⁻¹.
-  2. $\lambda \approx 1.22\times10^{-7}$ m ≈ 121.8 nm (first Lyman line; equivalently 1240/10.2 eV ≈ 121.6 nm).
+  1. $\frac{1}{\lambda} = 1.097\times10^7\left(1 - \frac{1}{4}\right) = 1.097\times10^7\times0.75 = 8.23\times10^6$ m⁻¹.
+  2. λ = 1.215 × 10⁻⁷ m ≈ 121.8 nm.
+  3. Energy check: E = 13.6 × 0.75 = 10.2 eV, and λ = 1240/10.2 ≈ 121.6 nm ✓.
+  4. This is in the ultraviolet region.
+  Why others are wrong:
+  - (C) 913.3 nm is close to the Lyman series limit (91.2 nm) with a slipped decimal point.
+  - (A) and (B) do not correspond to any simple hydrogen transition. The Balmer lines, for example, are at 656, 486, 434 nm and so on.
+  Tip: remember the three series limits: Lyman 91 nm, Balmer 365 nm, Paschen 820 nm.
   Answer: (D)
 P A 5: |-
-  Concept: Below the Curie temperature a ferromagnet splits into domains, each spontaneously magnetised.
+  Concept: Below the Curie temperature, exchange interaction lines up neighbouring atomic moments spontaneously. The material divides into domains, each spontaneously magnetised.
   Solution:
-  1. Within a domain, all dipoles are aligned, so the domain is magnetised to saturation.
-  2. Domains are macroscopic (about 0.1 mm), and their directions differ from one another, which is why an unmagnetised sample has zero net magnetisation.
+  1. Inside a single domain, essentially all the atomic magnetic dipoles point the same way.
+  2. So each domain is magnetised to its saturation value, M_s, at that temperature.
+  3. Domains are macroscopic, typically about 0.1 mm across and containing around 10¹⁷ atoms.
+  4. In an unmagnetised sample, the domain directions are random, so the net magnetisation is zero even though each domain is saturated.
+  5. So a domain is a macroscopic region with saturation magnetisation.
+  Why others are wrong:
+  - (A) describes antiferromagnetic ordering, where neighbouring dipoles are opposite.
+  - (B) Zero magnetisation applies to the whole unmagnetised sample, not to a single domain.
+  - (D) Random dipoles describe a paramagnet (or a ferromagnet above its Curie temperature).
+  Tip: magnetising a ferromagnet does not create new magnetisation inside the domains. It only reorganises the domains through wall motion and rotation.
   Answer: (C)
 P A 6: |-
-  Concept: The projection of uniform circular motion is SHM with the same ω; the restoring force per unit mass at an extreme is $\omega^2A$.
+  Concept: The foot of the perpendicular from a point moving uniformly on a circle, dropped onto a diameter, executes SHM. The SHM has the same angular frequency ω and amplitude equal to the radius. The restoring force per unit mass at displacement x is ω²x, and it is largest at the extremes, where x = A.
+  Given: r = A = 0.36 m; the point covers 30° in 0.1 s.
   Solution:
-  1. $\omega = \frac{\pi/6}{0.1} = \frac{5\pi}{3}$ rad/s.
-  2. At M (an extreme, x = A = 0.36 m): $\frac{F}{m} = \omega^2A = \frac{25\pi^2}{9}\times0.36 = \pi^2 \approx 9.87$ N/kg.
+  1. ω = (π/6 rad)/(0.1 s) = 5π/3 rad/s.
+  2. M is an end of the diameter, i.e. an extreme of the SHM, so x = A = 0.36 m there.
+  3. F/m = ω²A = (25π²/9) × 0.36 = π² ≈ 9.87 N/kg.
+  4. This equals the centripetal acceleration of A, since at the extremes the whole centripetal acceleration lies along the diameter.
+  Why others are wrong:
+  - (D) 0.49 uses ω in degrees.
+  - (A) and (B) come from arithmetic slips or from treating 30° as the full period.
+  Note: the options state the unit as N; strictly, force per unit mass is in N/kg (i.e. m/s²).
   Answer: (C)
 P A 7: |-
-  Concept: Einstein's equation $\frac{hc}{\lambda} = \phi + eV_0$, with hc = 1240 eV·nm.
+  Concept: Einstein's photoelectric equation: $\frac{hc}{\lambda} = \phi + eV_0$. The work function φ of a surface is fixed, so find φ from the first measurement and use it in the second. A handy constant is hc = 1240 eV nm.
+  Given: λ₁ = 491 nm gives V₀₁ = 0.710 V; the new λ₂ gives V₀₂ = 1.43 V.
   Solution:
-  1. $\phi = \frac{1240}{491} - 0.710 = 2.525 - 0.710 = 1.815$ eV.
-  2. New photon energy = 1.815 + 1.43 = 3.245 eV.
-  3. $\lambda = \frac{1240}{3.245} \approx 382$ nm.
+  1. Photon energy at 491 nm: 1240/491 = 2.525 eV.
+  2. Work function: φ = 2.525 − 0.710 = 1.815 eV.
+  3. New photon energy: E₂ = φ + eV₀₂ = 1.815 + 1.43 = 3.245 eV.
+  4. New wavelength: λ₂ = 1240/3.245 ≈ 382 nm.
+  5. The shorter wavelength gives more energetic photons and a larger stopping potential, which is consistent.
+  Why others are wrong:
+  - (A) 400 nm, (C) 309 nm and (D) 329 nm give energies of 3.10, 4.01 and 3.77 eV. These are not φ + 1.43 eV.
+  Tip: a quick check uses ΔE = eΔV₀. Here ΔV₀ = 0.72 V, so E₂ = 2.525 + 0.72 = 3.245 eV directly, without finding φ.
   Answer: (B)
 P A 8: |-
-  Concept: A charge at a corner of a cube is shared by 8 identical cubes, so $\frac{q}{8\varepsilon_0}$ passes through this cube, all of it through the 3 faces not touching the charge.
+  Concept: Gauss's law with symmetry. A charge at a corner of a cube is shared equally by 8 cubes meeting at that corner, so exactly q/(8ε₀) passes through one cube. For that cube:
+  - the 3 faces that touch the charge receive no flux (the field lies in those faces);
+  - the 3 far faces share the flux equally, q/(24ε₀) each.
+  Given (figure): the shaded region consists of two triangles, each half of one of the far faces, cut along a diagonal.
   Solution:
-  1. Each of the 3 far faces gets $\frac{q}{24\varepsilon_0}$.
-  2. The shaded region is two triangles, each half of one far face (split by a diagonal, symmetric about the charge): $2\times\frac{q}{48\varepsilon_0} = \frac{q}{24\varepsilon_0}$.
+  1. Flux through each far face: q/(24ε₀).
+  2. Each shaded triangle is half of a far face, cut by the diagonal that runs symmetrically with respect to the charge's position. By symmetry it receives half of that face's flux: q/(48ε₀).
+  3. Two such triangles: 2 × q/(48ε₀) = q/(24ε₀).
+  Why others are wrong:
+  - (A) q/(48ε₀) counts only one triangle.
+  - (B) q/(8ε₀) is the whole cube's flux.
+  - (D) q/(4ε₀) is not a sensible share.
+  Tip: for a corner charge, the useful fractions are 1/8 for the whole cube, 1/24 per far face, and 0 for the adjacent faces.
   Answer: (C)
 P A 9: |-
-  Concept: Rolling without slipping conserves mechanical energy: $KE = \frac{1}{2}mv^2\left(1 + \frac{k^2}{R^2}\right)$ with $\frac{k^2}{R^2} = \frac{2}{5}$ for a solid sphere.
+  Concept: For rolling without slipping, friction does no work, so mechanical energy is conserved. The total kinetic energy of a rolling body is $\frac{1}{2}mv^2\left(1 + \frac{k^2}{R^2}\right)$, where k²/R² = 2/5 for a solid sphere.
   Solution:
-  1. $\frac{1}{2}mv_0^2\cdot\frac{7}{5} = mgh \Rightarrow h = \frac{7v_0^2}{10g}$.
-  2. Distance along the incline $= \frac{h}{\sin\theta} = \frac{7v_0^2}{10g\sin\theta}$.
-  Note: this exact result is not among the options (it is the reciprocal of option (B)'s coefficient); the official NTA key is (B), and some institutes treat the question as a bonus.
+  1. Initial KE: $\frac{1}{2}mv_0^2\left(1 + \frac{2}{5}\right) = \frac{7}{10}mv_0^2$.
+  2. At the highest point it is momentarily at rest (no translation or rotation). All the KE has become PE: $\frac{7}{10}mv_0^2 = mgh$, so $h = \frac{7v_0^2}{10g}$.
+  3. Distance travelled along the incline: $s = \frac{h}{\sin\theta} = \frac{7v_0^2}{10g\sin\theta}$.
+  Note: the correct result, $\frac{7v_0^2}{10g\sin\theta}$, is not among the options. Option (B) has the reciprocal coefficient, 10/7. The official NTA key is (B), and some institutes treated the question as a bonus. We record the official answer but flag the discrepancy.
+  Tip: the rolling factor 7/5 for a sphere (versus 1 for sliding) means a rolling sphere climbs 7/5 times higher than a frictionless sliding block with the same speed.
   Answer: (B)
 P A 10: |-
-  Concept: Diffraction by a circular aperture: angular spread $\theta \approx \frac{1.22\lambda}{d}$.
+  Concept: Diffraction by a circular aperture spreads light into a central bright disc (the Airy disc) of angular radius θ ≈ 1.22λ/d. The width of the pattern is inversely proportional to the aperture diameter d.
+  Given: sunlight through a pinhole of diameter 0.1 μm, which is enlarged slightly.
   Solution:
-  1. A larger d gives a smaller θ, so the diffraction pattern shrinks in size.
-  2. A larger hole lets more light through into a smaller spot, so the intensity increases.
+  1. Size: increasing d decreases θ = 1.22λ/d, so the diffraction pattern (the central disc and the rings) shrinks.
+  2. Intensity:
+     - a larger hole transmits more light (power ∝ d²);
+     - that light is concentrated into a smaller spot (area ∝ θ² ∝ 1/d²);
+     - so the intensity at the centre rises strongly (roughly ∝ d⁴).
+  3. So the size decreases and the intensity increases.
+  Why others are wrong: (B), (C) and (D) all misstate either the size trend (the pattern cannot grow as d grows) or the intensity trend.
+  Tip: this is why larger telescope apertures give both brighter and sharper images. Resolution improves as 1/d, and light gathering grows as d².
   Answer: (A)
 P A 11: |-
-  Concept: $\lambda = \frac{h}{mv}$.
+  Concept: The de Broglie wavelength is λ = h/p = h/(mv). At the same speed, λ ∝ 1/m, so the lighter particle has the longer wavelength.
+  Given: m_p = 1836 m_e, and both particles move with the same speed.
   Solution:
-  1. Same speed: $\frac{\lambda_e}{\lambda_p} = \frac{m_p}{m_e} = 1836$.
+  1. $\frac{\lambda_e}{\lambda_p} = \frac{m_pv}{m_ev} = \frac{m_p}{m_e} = 1836$.
+  2. So the electron's wavelength is 1836 times the proton's.
+  Why others are wrong:
+  - (C) 1/1836 inverts the ratio.
+  - (A) 918 halves it.
+  - (D) 1 would apply only at equal momenta.
+  Comparison of different conditions:
+  - same momentum: λ ratio = 1;
+  - same kinetic energy: λ ∝ 1/√m, so the ratio is √1836 ≈ 42.8;
+  - same speed (this question): the ratio is 1836.
+  Tip: always check what is held constant (v, p or K) before comparing de Broglie wavelengths.
   Answer: (B)
 P A 12: |-
-  Concept: Combine the process equation with the ideal gas law PV = RT.
+  Concept: Combine the process equation with the ideal gas law, T = PV/(nR), to find how T varies with V along the path.
+  Given (figure): one mole follows PV^{1/2} = constant from state 1 to state 2, with V₂ = 2V₁.
   Solution:
-  1. $PV^{1/2} = K \Rightarrow P = KV^{-1/2}$.
-  2. $T = \frac{PV}{R} = \frac{KV^{1/2}}{R} \propto \sqrt{V}$.
-  3. $\frac{T_2}{T_1} = \sqrt{\frac{V_2}{V_1}} = \sqrt{2}$.
+  1. P = K V^{−1/2}.
+  2. T = PV/R = K V^{1/2}/R, so T ∝ √V.
+  3. $\frac{T_2}{T_1} = \sqrt{\frac{V_2}{V_1}} = \sqrt2$.
+  4. So the gas heats up as it expands along this path, even though its pressure falls (by a factor of 1/√2).
+  Why others are wrong:
+  - (A) 1/√2 is the pressure ratio P₂/P₁.
+  - (B) ½ and (C) 2 would correspond to other polytropic exponents: n = 2 gives T ∝ V⁻¹, and n = 0 (isobaric) gives T ∝ V.
+  Tip: for PVⁿ = constant, T ∝ V^{1−n}. Here n = ½, so T ∝ V^{½}.
   Answer: (D)
 P A 13: |-
-  Concept: Motion under gravity (take g = 10 m/s²).
+  Concept: Free fall from rest: s = ½gt². With an initial speed u: s = ut + ½gt². Both stones reach the ground at the same moment, so they share the same remaining time t. (Take g = 10 m/s².)
   Solution:
-  1. After falling 5 m, the first stone's speed is $\sqrt{2\times10\times5} = 10$ m/s.
-  2. Let t be the remaining time and H the height. First stone: $H - 5 = 10t + 5t^2$. Second stone (from rest, 25 m down): $H - 25 = 5t^2$.
-  3. Subtracting: 20 = 10t, so t = 2 s.
-  4. H = 25 + 5(4) = 45 m.
+  1. When stone 1 has fallen 5 m, its speed is $u = \sqrt{2g\times5} = 10$ m/s.
+  2. At that instant stone 2 starts from rest, 25 m below the top. Let H be the height of the building and t the remaining time.
+  3. Stone 1 still has to fall H − 5: H − 5 = 10t + 5t².
+  4. Stone 2 has to fall H − 25: H − 25 = 5t².
+  5. Subtract: 20 = 10t, so t = 2 s.
+  6. H = 25 + 5(2)² = 45 m.
+  7. Check: stone 1 falls the full 45 m in 3 s (½ × 10 × 9 = 45 ✓). It took 1 s for the first 5 m and 2 s for the rest.
+  Why others are wrong: (B), (C) and (D) do not satisfy both equations simultaneously.
+  Tip: in "two stones land together" problems, subtracting the two displacement equations eliminates the ½gt² terms.
   Answer: (A)
 P A 14: |-
-  Concept: In AM the transmitted signal is at the carrier frequency (the message only modulates its amplitude).
+  Concept: In amplitude modulation, the message signal only varies the amplitude of a high-frequency carrier. The wave actually radiated by the antenna oscillates at the carrier frequency f_c. The sidebands f_c ± f_m are very close to f_c, because f_m ≪ f_c.
   Solution:
-  1. The radiated wave's wavelength is set by the carrier: $\lambda = \frac{c}{f_c}$.
+  1. The electromagnetic wave travelling through air has frequency f_c.
+  2. Its wavelength is λ = c/f_c.
+  3. The small spread f_c ± f_m changes λ only negligibly. For example, f_c = 1 MHz and f_m = 5 kHz shift λ by only 0.5%.
+  Why others are wrong:
+  - (A) and (B) are the sideband wavelengths, not "the" signal wavelength.
+  - (C) c/f_m would be enormous (60 km for 5 kHz). That is exactly why audio signals are not transmitted directly; they need a carrier and a practical antenna size of about λ/4.
+  Tip: the whole point of modulation is to shift a low-frequency message up to a high carrier frequency, so that antennas can be of practical size.
   Answer: (D)
 P A 15: |-
-  Concept: Equipartition: each degree of freedom has an average energy $\frac{1}{2}kT$.
+  Concept: Kinetic theory and the equipartition of energy. Each quadratic degree of freedom carries an average energy of ½kT at thermal equilibrium, and molecular energies are distributed according to Maxwell–Boltzmann statistics.
   Solution:
-  1. Statement I: molecular energies (including rotational) follow the Maxwell–Boltzmann distribution. True.
-  2. Statement II: a diatomic molecule has 2 rotational degrees of freedom (average kT) but 3 translational (average $\frac{3}{2}kT$), so they are not equal. False.
+  1. Statement I: the rotational energies of molecules in a gas at temperature T are distributed according to the Maxwell–Boltzmann distribution, just like the translational energies. True.
+  2. Statement II:
+     - a diatomic molecule has 3 translational degrees of freedom, with average energy (3/2)kT;
+     - it has 2 rotational degrees of freedom, about the two axes perpendicular to the bond, with average energy kT;
+     - these are not equal, so Statement II is false.
+  3. So Statement I is true and Statement II is false.
+  Why others are wrong: (A) and (C) reject Statement I, and (B) and (C) accept Statement II.
+  Tip: for a diatomic gas at moderate temperatures, U = (5/2)RT per mole: 3/2 translational plus 1 rotational. Vibration adds more only at high temperatures.
   Answer: (D)
 P A 16: |-
-  Concept: The electric field between the plates is perpendicular to them, so the velocity component parallel to the plates stays constant.
+  Concept: The field between capacitor plates is perpendicular to the plates. So the electric force changes only the velocity component perpendicular to the plates. The component parallel to the plates is unchanged.
+  Given: the electron enters at angle α to the plates with kinetic energy K₁, and leaves at angle β with K₂.
   Solution:
-  1. $v_1\cos\alpha = v_2\cos\beta$.
-  2. $\frac{K_1}{K_2} = \frac{v_1^2}{v_2^2} = \frac{\cos^2\beta}{\cos^2\alpha}$.
+  1. Parallel component conserved: v₁ cos α = v₂ cos β.
+  2. So $\frac{v_1}{v_2} = \frac{\cos\beta}{\cos\alpha}$.
+  3. KE ∝ v², so $\frac{K_1}{K_2} = \frac{v_1^2}{v_2^2} = \frac{\cos^2\beta}{\cos^2\alpha}$.
+  Why others are wrong:
+  - (D) cos β/cos α is the speed ratio, not the energy ratio (it is not squared).
+  - (A) and (C) mix sine and cosine. The sine components are the ones the field changes.
+  Tip: this is the charged-particle analogue of projectile motion. The horizontal velocity stays constant under a purely vertical force.
   Answer: (B)
 P A 17: |-
-  Concept: Phase angle in RL / RC circuits: $\tan\phi = \frac{X}{R}$.
+  Concept: In a series AC circuit the phase angle satisfies tan φ = X/R.
+  - A lag of 45° in an RL circuit means X_L = R.
+  - A lead of 45° in an RC circuit means X_C = R.
+  When X_L = X_C, the full LCR circuit is at resonance and Z = R.
+  Given: R = 110 Ω and a supply of 220 V (rms).
   Solution:
-  1. Without C, lag 45°: $X_L = R$. Without L, lead 45°: $X_C = R$.
-  2. With all three, $X_L = X_C$, so the circuit is at resonance and Z = R = 110 Ω.
-  3. $I = \frac{220}{110} = 2$ A.
+  1. With C removed (RL circuit), the current lags by 45°: tan 45° = X_L/R = 1, so X_L = 110 Ω.
+  2. With L removed (RC circuit), the current leads by 45°: X_C = 110 Ω.
+  3. With all three present: X_L − X_C = 0, so Z = √(R² + 0) = R = 110 Ω.
+  4. I_rms = 220/110 = 2 A.
+  5. The power factor is 1, and the current is in phase with the voltage.
+  Why others are wrong:
+  - (C) 1 A uses Z = 220 Ω (for example R + X).
+  - (A) and (D) come from other wrong impedances, such as R√2 = 155.6 Ω, which gives 1.41 A.
+  Tip: identical phase magnitudes in the RL and RC tests always mean X_L = X_C, i.e. resonance.
   Answer: (B)
 P A 18: |-
-  Concept: Doping shifts the Fermi level towards the band that supplies the majority carriers.
+  Concept: The Fermi level E_F marks where the probability of occupation is ½. In an intrinsic semiconductor it lies near mid-gap. Doping shifts it towards the band that supplies the majority carriers.
   Solution:
-  1. n-type: more donors put more electrons in the conduction band, so $E_F$ moves up towards the conduction band.
-  2. p-type: more acceptors, so $E_F$ moves down towards the valence band.
+  1. n-type: increasing the donor concentration puts more electrons in the conduction band, so E_F moves up towards the conduction band. At very heavy doping it can even enter the band (degenerate semiconductor).
+  2. p-type: increasing the acceptor concentration creates more holes in the valence band, so E_F moves down towards the valence band.
+  3. So with more doping, E_F goes downward in p-type and upward in n-type.
+  Why others are wrong:
+  - (A) says doping has no effect, which is false.
+  - (D) reverses the directions.
+  - (C) invents a "Fermi temperature" dependence that does not apply here.
+  Tip: at higher temperatures, intrinsic carriers dominate and E_F moves back towards mid-gap, whatever the doping. That is a separate effect from the one asked about here.
   Answer: (B)
 P A 19: |-
-  Concept: $A\bar{B} + \bar{A}B$ is XOR; a NOR on these two terms gives the complement, XNOR.
+  Concept: Simplify the logic circuit with Boolean algebra:
+  - A·B̄ + Ā·B is the XOR function;
+  - a NOR gate outputs the complement of the OR of its inputs;
+  - so a NOR of the two AND terms gives the complement of XOR, i.e. XNOR.
+  Given (figure): one AND gate takes A and B̄, another takes Ā and B; both feed a NOR gate whose output is Y.
   Solution:
-  1. $Y = \overline{A\bar{B} + \bar{A}B} = A \odot B$ (XNOR).
-  2. Truth table: 00 → 1, 01 → 0, 10 → 0, 11 → 1, which is option (D).
+  1. AND outputs: A·B̄ and Ā·B.
+  2. $Y = \overline{A\bar B + \bar AB}$, the complement of A ⊕ B, i.e. A ⊙ B (XNOR).
+  3. Truth table:
+     - A = 0, B = 0: XOR = 0, so Y = 1;
+     - A = 0, B = 1: XOR = 1, so Y = 0;
+     - A = 1, B = 0: Y = 0;
+     - A = 1, B = 1: Y = 1.
+  4. The sequence 1, 0, 0, 1 matches option (D).
+  Why others are wrong:
+  - (C) is plain XOR (without the NOR's inversion).
+  - (A) and (B) are Y = B̄ and Y = B.
+  Tip: XNOR outputs 1 when the inputs are equal. It works as an "equality detector".
   Answer: (D)
 P A 20: |-
-  Concept: $\frac{e^2}{4\pi\varepsilon_0}$ has dimensions of energy × length, and so does hc.
+  Concept: Dimensional analysis. $\frac{e^2}{4\pi\varepsilon_0 r}$ is an electrostatic potential energy, so $\frac{e^2}{4\pi\varepsilon_0}$ has the dimensions of energy × length. So does hc, since E = hc/λ.
   Solution:
-  1. $\left[\frac{e^2}{4\pi\varepsilon_0r}\right]$ = energy, so $\left[\frac{e^2}{4\pi\varepsilon_0}\right] = [ML^3T^{-2}]$.
-  2. $[hc] = [ML^2T^{-1}][LT^{-1}] = [ML^3T^{-2}]$.
-  3. The ratio is dimensionless, $[M^0L^0T^0]$ (it is the fine-structure constant, about 1/137).
+  1. $\left[\frac{e^2}{4\pi\varepsilon_0}\right] = [\text{energy}][\text{length}] = [ML^2T^{-2}][L] = [ML^3T^{-2}]$.
+  2. [h] = [ML²T⁻¹] and [c] = [LT⁻¹], so [hc] = [ML³T⁻²].
+  3. The ratio $\frac{e^2}{4\pi\varepsilon_0hc}$ is therefore dimensionless: [M⁰L⁰T⁰].
+  4. Numerically, $\frac{e^2}{4\pi\varepsilon_0\hbar c}$ is the fine-structure constant, about 1/137. With h instead of ħ, the given quantity is α/2π ≈ 1/861.
+  Why others are wrong: (A), (C) and (D) all leave leftover dimensions, but the two energy × length products cancel exactly.
+  Tip: dimensionless combinations of fundamental constants, like α, are the same in every unit system. That is why they are physically meaningful.
   Answer: (B)
 P B 1: |-
-  Concept: Wave speed on a string $v = \sqrt{\frac{T}{\mu}}$, so $\frac{\Delta v}{v} = \frac{1}{2}\frac{\Delta T}{T}$.
+  Concept: The speed of a transverse wave on a stretched string is v = √(T/μ), where T is the tension and μ the mass per unit length. For small changes, the fractional change in v is half the fractional change in T.
+  Given: the tension increases by 4%.
   Solution:
-  1. $\frac{\Delta v}{v} = \frac{1}{2}\times4\% = 2\%$.
+  1. v ∝ T^{1/2}, so Δv/v = ½ ΔT/T.
+  2. Δv/v = ½ × 4% = 2%.
+  3. Exact check: √1.04 = 1.0198, i.e. an increase of 1.98% ≈ 2% ✓.
+  Common mistakes:
+  - taking v ∝ T, which gives 4%;
+  - taking v ∝ T², which gives 8%.
+  Tip: when a quantity depends on a power, xⁿ, a small percentage change in x produces n times that percentage change. This linear approximation is accurate for changes of a few per cent.
   Answer: 2
 P B 2: |-
-  Concept: Equilibrium of a charged pendulum: $\tan\theta = \frac{F_e}{mg}$.
+  Concept: Each charged sphere hangs in equilibrium under three forces: its weight mg (down), the string tension T, and the electrostatic repulsion F (horizontal). Balancing the components gives tan θ = F/(mg), where θ is the string's angle with the vertical.
+  Given: m = 10 mg = 10⁻⁵ kg; string length 0.5 m; separation 0.20 m (so each sphere is 0.1 m from the vertical).
   Solution:
-  1. Half separation 0.1 m, thread 0.5 m: $\sin\theta = 0.2$, $\tan\theta = \frac{0.2}{\sqrt{0.96}} \approx 0.204$.
-  2. $mg = 10^{-5}\times10 = 10^{-4}$ N, so $F_e = 2.04\times10^{-5}$ N.
-  3. $\frac{9\times10^9q^2}{(0.2)^2} = 2.04\times10^{-5} \Rightarrow q^2 \approx 9.07\times10^{-17}$, $q \approx 9.5\times10^{-9}$ C.
-  4. $\frac{a}{21}\times10^{-8} = 9.5\times10^{-9} \Rightarrow a \approx 20$.
+  1. sin θ = 0.1/0.5 = 0.2, so cos θ = √0.96 = 0.980 and tan θ = 0.204.
+  2. mg = 10⁻⁵ × 10 = 10⁻⁴ N, so F = 0.204 × 10⁻⁴ = 2.04 × 10⁻⁵ N.
+  3. Coulomb's law: 9 × 10⁹ q²/(0.2)² = 2.04 × 10⁻⁵, so q² = 2.04 × 10⁻⁵ × 0.04/(9 × 10⁹) = 9.07 × 10⁻¹⁷ and q = 9.52 × 10⁻⁹ C.
+  4. (a/21) × 10⁻⁸ = 0.952 × 10⁻⁸, so a = 20.
+  Common mistake: using the full separation (0.2 m) for sin θ instead of half of it.
+  Tip: for small angles, tan θ ≈ sin θ = 0.2 would give a ≈ 19.6 ≈ 20 as well.
   Answer: 20
 P B 3: |-
-  Concept: Intensity of a point source $I = \frac{P}{4\pi r^2}$, and $I = \frac{E_0^2}{2\mu_0c}$.
-  Solution:
-  1. The official solution uses the full 8 W: $I = \frac{8}{4\pi(100)} = \frac{0.02}{\pi}$ W/m².
-  2. $E_0^2 = 2\mu_0cI = \frac{0.04\mu_0c}{\pi} \Rightarrow E_0 = \frac{2}{10}\sqrt{\frac{\mu_0c}{\pi}}$, so x = 2.
-  Note: including the 10% efficiency (0.8 W radiated) would give $E_0 \approx 0.63\times\frac{1}{10}\sqrt{\frac{\mu_0c}{\pi}}$; the official answer 2 ignores the efficiency.
+  Concept: A point source radiates uniformly in all directions, so the intensity at distance r is I = P/(4πr²). For an EM wave, the intensity is related to the peak electric field by $I = \frac{E_0^2}{2\mu_0c}$.
+  Given: an 8 W bulb, r = 10 m, efficiency 10%.
+  Solution (as in the official key):
+  1. The official solution uses the full 8 W: I = 8/(4π × 100) = 0.02/π W/m².
+  2. $E_0^2 = 2\mu_0cI = \frac{0.04\mu_0c}{\pi}$, so $E_0 = 0.2\sqrt{\frac{\mu_0c}{\pi}} = \frac{2}{10}\sqrt{\frac{\mu_0c}{\pi}}$.
+  3. Comparing with $\frac{x}{10}\sqrt{\frac{\mu_0c}{\pi}}$: x = 2.
+  Note: the question says the efficiency is 10%, so only 0.8 W should be radiated as light. That gives $E_0 = \sqrt{0.1}\times0.2\sqrt{\mu_0c/\pi} \approx \frac{0.63}{10}\sqrt{\mu_0c/\pi}$, i.e. x ≈ 0.63. The official answer 2 ignores the efficiency, and we follow it.
+  Tip: E₀ ∝ √P/r. Doubling the distance halves the field amplitude.
   Answer: 2
 P B 4: |-
-  Concept: Identical conducting spheres share the total charge equally on contact.
+  Concept: When two identical conducting spheres touch, they reach the same potential. Because they are identical, the total charge is shared equally. Coulomb's law then gives the force between them.
+  Given: charges 2.1 nC and −0.1 nC; separation after contact 0.5 m; 1/(4πε₀) = 9 × 10⁹.
   Solution:
-  1. Total = 2.1 – 0.1 = 2.0 nC, so each sphere gets 1 nC.
-  2. $F = \frac{9\times10^9\times(10^{-9})^2}{0.5^2} = 36\times10^{-9}$ N.
+  1. Total charge: 2.1 + (−0.1) = 2.0 nC.
+  2. After contact, each sphere has 1.0 nC = 10⁻⁹ C.
+  3. $F = \frac{9\times10^9\times10^{-9}\times10^{-9}}{(0.5)^2} = \frac{9\times10^{-9}}{0.25} = 36\times10^{-9}$ N.
+  4. Both charges are positive, so the force is repulsive.
+  Common mistakes:
+  - using the original charges, which gives an attractive force of 7.56 × 10⁻⁹ N;
+  - adding the magnitudes (2.2 nC) instead of the signed charges.
+  Tip: charge sharing is equal only for identical spheres. For different radii, the charge divides in proportion to the radii, because the potentials become equal.
   Answer: 36
 P B 5: |-
-  Concept: Energy conservation in the earth's gravitational field.
+  Concept: Energy conservation in the Earth's field. Gravitational potential energy is −GMm/r, so launching to a height h requires $\frac{1}{2}mv_i^2 = GMm\left(\frac{1}{R} - \frac{1}{R + h}\right)$. The escape velocity satisfies $v_e^2 = \frac{2GM}{R}$.
+  Given: the target height is 10R, so r_max = 11R.
   Solution:
-  1. $\frac{1}{2}mv_i^2 - \frac{GMm}{R} = -\frac{GMm}{11R}$, so $v_i^2 = \frac{2GM}{R}\cdot\frac{10}{11}$.
-  2. Since $v_e^2 = \frac{2GM}{R}$: $v_i = \sqrt{\frac{10}{11}}v_e$, so x = 10.
+  1. $\frac{1}{2}v_i^2 = GM\left(\frac{1}{R} - \frac{1}{11R}\right) = \frac{GM}{R}\cdot\frac{10}{11}$.
+  2. $v_i^2 = \frac{2GM}{R}\cdot\frac{10}{11} = \frac{10}{11}v_e^2$.
+  3. $v_i = \sqrt{\frac{10}{11}}v_e$, so x = 10 (and y = 11).
+  4. v_i is only about 4.7% less than v_e. Reaching 10R takes almost as much energy as escaping altogether.
+  Common mistake: using mgh with constant g, which gives $v_i = \sqrt{20gR}$, far too large. Gravity weakens with height, so the constant-g formula is invalid over such distances.
   Answer: 10
 P B 6: |-
-  Concept: Current divides between parallel paths in inverse ratio of their resistances.
+  Concept: Between two corners of the triangle, the current has two parallel paths: the direct side, and the path through the third corner (two sides in series). Current divides in inverse proportion to the resistances of the paths.
+  Given (figure): each side is 2 Ω. 6 A enters at P and leaves at R; i₁ flows along P → Q → R and i₂ along P → R.
   Solution:
-  1. From P to R: direct path PR = 2 Ω; path P→Q→R = 4 Ω.
-  2. $i_1$ (via Q) $= 6\times\frac{2}{2 + 4} = 2$ A (and $i_2$ = 4 A).
+  1. Direct path PR: 2 Ω. Path P → Q → R: 2 + 2 = 4 Ω.
+  2. i₁ (via Q) = 6 × 2/(2 + 4) = 2 A.
+  3. i₂ (direct) = 6 × 4/(2 + 4) = 4 A.
+  4. Check: the voltage across PR is 4 × 2 = 8 V, and via Q it is 2 × 4 = 8 V ✓. Also 2 + 4 = 6 A ✓.
+  Common mistake: assigning the larger current to the longer path. More current always flows through the path of lower resistance.
+  Tip: the equivalent resistance between two corners of a triangle of equal resistors R is (2/3)R. Here that is 4/3 Ω, so V = 6 × 4/3 = 8 V ✓.
   Answer: 2
 P B 7: |-
-  Concept: Mass equivalent of photon energy: $mc^2 = \frac{hc}{\lambda} \Rightarrow m = \frac{h}{c\lambda}$.
+  Concept: Using E = mc² for a "fictitious particle" with the same energy as a photon: E = hc/λ = mc², so m = h/(cλ).
+  Given: λ = 10 Å = 10⁻⁹ m and c = 3 × 10⁸ m/s.
   Solution:
-  1. $m = \frac{h}{3\times10^8\times10^{-9}} = \frac{h}{0.3} = \frac{10}{3}h$.
-  2. x = 10.
+  1. $m = \frac{h}{c\lambda} = \frac{h}{3\times10^8\times10^{-9}} = \frac{h}{0.3}$.
+  2. $\frac{h}{0.3} = \frac{10}{3}h$, so x = 10.
+  3. Numerically: m = 6.63 × 10⁻³⁴/0.3 ≈ 2.2 × 10⁻³³ kg. (Photon energy ≈ 1.24 keV.)
+  Common mistake: using λ = 10⁻¹⁰ m, i.e. taking 1 Å instead of 10 Å, which gives x = 100.
+  Tip: this "mass" equals the photon's momentum divided by c: p = h/λ = mc. It describes an energy equivalent; the photon has no rest mass.
   Answer: 10
 P B 8: |-
-  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$.
+  Concept: A reversible (Carnot) engine working between T₁ (source) and T₂ (sink) has efficiency η = 1 − T₂/T₁, with temperatures in kelvin.
+  Given: η = 1/4 initially. Lowering the sink by 52 K doubles η to 1/2.
   Solution:
-  1. $\frac{1}{4} = 1 - \frac{T_2}{T_1} \Rightarrow T_2 = \frac{3}{4}T_1$.
-  2. $\frac{1}{2} = 1 - \frac{T_2 - 52}{T_1} \Rightarrow T_2 - 52 = \frac{T_1}{2}$.
-  3. $\frac{3T_1}{4} - 52 = \frac{T_1}{2} \Rightarrow T_1 = 208$ K.
+  1. 1/4 = 1 − T₂/T₁, so T₂ = (3/4)T₁.
+  2. 1/2 = 1 − (T₂ − 52)/T₁, so T₂ − 52 = T₁/2.
+  3. Substitute: (3/4)T₁ − 52 = T₁/2, so T₁/4 = 52 and T₁ = 208 K.
+  4. The sink was at T₂ = 156 K and is lowered to 104 K. Check: 1 − 104/208 = ½ ✓.
+  Common mistakes:
+  - changing the source temperature instead of the sink;
+  - using Celsius temperatures.
+  Tip: when the sink is lowered by ΔT at a fixed source, the efficiency rises by ΔT/T₁. Here 52/208 = ¼, from ¼ to ½ ✓.
   Answer: 208
 P B 9: |-
-  Concept: $p = \sqrt{2mK}$.
+  Concept: Momentum and kinetic energy are related by p = √(2mK). At equal kinetic energy, p ∝ √m.
+  Given: m₁ = 4 g and m₂ = 16 g, with equal kinetic energy.
   Solution:
-  1. Equal K: $\frac{p_1}{p_2} = \sqrt{\frac{4}{16}} = \frac{1}{2}$.
-  2. n : 2 = 1 : 2, so n = 1.
+  1. $\frac{p_1}{p_2} = \sqrt{\frac{m_1}{m_2}} = \sqrt{\frac{4}{16}} = \frac{1}{2}$.
+  2. The ratio p₁ : p₂ = 1 : 2 = n : 2, so n = 1.
+  3. The heavier particle has more momentum at the same kinetic energy, but it moves at half the speed.
+  Common mistakes:
+  - taking p ∝ m, which gives 1 : 4;
+  - taking p ∝ 1/√m, which gives 2 : 1.
+  Tip: the units (grams) do not matter in a ratio, as long as both masses are in the same units.
   Answer: 1
 P B 10: |-
-  Concept: The cross product is anti-commutative, $\vec{Q}\times\vec{P} = -\vec{P}\times\vec{Q}$.
+  Concept: The cross product is anti-commutative: $\vec Q\times\vec P = -\vec P\times\vec Q$. Its magnitude is |P||Q| sin θ.
   Solution:
-  1. $\vec{P}\times\vec{Q} = -\vec{P}\times\vec{Q} \Rightarrow \vec{P}\times\vec{Q} = \vec{0}$, so the vectors are parallel or antiparallel.
-  2. With 0° < θ < 360°, θ = 180°.
+  1. The given condition $\vec P\times\vec Q = \vec Q\times\vec P$ becomes $\vec P\times\vec Q = -\vec P\times\vec Q$, i.e. $2\vec P\times\vec Q = \vec 0$.
+  2. So $\vec P\times\vec Q = \vec 0$, which needs sin θ = 0 (for non-zero vectors).
+  3. θ = 0° or 180°. The range 0° < θ < 360° excludes 0°, so θ = 180° (antiparallel vectors).
+  Note: the angle between two vectors is normally taken in [0°, 180°]. The question's range simply rules out θ = 0.
+  Tip: a zero cross product means the vectors are parallel or antiparallel. A zero dot product means they are perpendicular.
   Answer: 180
