@@ -1,197 +1,390 @@
 M A 1: |-
-  Concept: $a^{\log b} = b^{\log a}$; take logs to invert.
+  Concept: To invert y = f(x), solve for x in terms of y. The identity $a^{\log b} = b^{\log a}$ (for any fixed base of log) helps rewrite exponential–log expressions.
   Solution:
-  1. $y = 5^{\log x} = x^{\log5}$.
-  2. $\log y = \log5\cdot\log x \Rightarrow x = y^{\frac{1}{\log5}}$.
-  Note: ALLEN accepts (A), (B) or (C); the official key is (C).
+  1. $y = 5^{\log x}$. Take log of both sides: $\log y = \log x\cdot\log5$.
+  2. So $\log x = \frac{\log y}{\log5}$.
+  3. Then $x = 10^{\log y/\log5}$ (with log in base 10), i.e. $x = \left(10^{\log y}\right)^{1/\log5} = y^{\frac{1}{\log5}}$.
+  4. So the inverse is $x = y^{\frac{1}{\log5}}$, option (C).
+  Check with a value (base-10 logs): take x = 10. Then $y = 5^1 = 5$. Using (C): $5^{1/\log5} = 10^{\log5/\log5} = 10$ ✓.
+  Alternative form: $y = 5^{\log x} = x^{\log5}$, and inverting a power gives $x = y^{1/\log5}$, the same answer.
+  Note: ALLEN accepts (A), (B) or (C), since with some interpretations of "log" (e.g. the base) the forms coincide. The official key is (C).
+  Why others are wrong (in the standard reading):
+  - (A) $5^{\log y}$ is the same function again, not its inverse.
+  - (B) $y^{\log5}$ equals $5^{\log y}$, the same as (A).
+  - (D) puts $\log y$ in the denominator of the exponent, which does not invert the function.
   Answer: (C)
 M A 2: |-
-  Concept: $\vec r\times(\vec a - \vec b) = \vec0 \Rightarrow \vec r\parallel\vec a - \vec b$.
+  Concept: $\vec r\times\vec a = \vec r\times\vec b$ gives $\vec r\times(\vec a - \vec b) = \vec0$. So $\vec r$ is parallel to $\vec a - \vec b$ (or zero).
   Solution:
-  1. $\vec r = \lambda(-5, -4, 10)$.
-  2. $\lambda(-5 - 8 + 10) = -3 \Rightarrow \lambda = 1$.
-  3. $\vec r\cdot(2, -3, 1) = -10 + 12 + 10 = 12$.
+  1. $\vec a - \vec b = (2 - 7, -3 - 1, 4 + 6) = (-5, -4, 10)$.
+  2. $\vec r = \lambda(-5, -4, 10)$.
+  3. Condition: $\vec r\cdot(1, 2, 1) = \lambda(-5 - 8 + 10) = -3\lambda = -3$, so λ = 1.
+  4. $\vec r = (-5, -4, 10)$.
+  5. $\vec r\cdot(2, -3, 1) = -10 + 12 + 10 = 12$.
+  Verification: $\vec r\times\vec a = (-5, -4, 10)\times(2, -3, 4) = (-16 + 30, 20 + 20, 15 + 8) = (14, 40, 23)$. And $\vec r\times\vec b = (-5, -4, 10)\times(7, 1, -6) = (24 - 10, 70 - 30, -5 + 28) = (14, 40, 23)$ ✓.
+  Note: $\vec r = \vec0$ also satisfies the cross-product condition, but it fails $\vec r\cdot(1, 2, 1) = -3$, so λ ≠ 0.
+  Why others are wrong: (B) 8, (C) 13 and (D) 10 come from sign slips (e.g. using $\vec a + \vec b$ instead of $\vec a - \vec b$).
   Answer: (A)
 M A 3: |-
-  Concept: The circumcentre is the intersection of perpendicular bisectors.
+  Concept: The circumcentre of a triangle is the common point of the perpendicular bisectors of its sides. Two bisectors are enough to locate it.
   Solution:
-  1. Perpendicular bisector of PQ: midpoint (1, 1), PQ has slope −1, so the bisector is $y = x$.
-  2. With $2x - y + 2 = 0$: $x = -2$, so the circumcentre is $(-2, -2)$.
+  1. Side PQ: P = (−2, 4) and Q = (4, −2). Midpoint: (1, 1). Slope of PQ: $\frac{-2 - 4}{4 + 2} = -1$.
+  2. The perpendicular bisector of PQ has slope 1 and passes through (1, 1): y = x.
+  3. The perpendicular bisector of PR is given: 2x − y + 2 = 0.
+  4. Intersect: with y = x, 2x − x + 2 = 0, so x = −2 and y = −2.
+  5. Circumcentre: (−2, −2).
+  Check: distance to P is $\sqrt{0 + 36} = 6$, and distance to Q is $\sqrt{36 + 0} = 6$ ✓. So the circumradius is 6.
+  Finding R (for completeness): R is the reflection of P in the line 2x − y + 2 = 0. For P = (−2, 4): $2(-2) - 4 + 2 = -6$. Reflection: $(-2, 4) - \frac{2(-6)}{5}(2, -1) = \left(-2 + \frac{24}{5}, 4 - \frac{12}{5}\right) = \left(\frac{14}{5}, \frac{8}{5}\right)$. Its distance from (−2, −2) is $\sqrt{\left(\frac{24}{5}\right)^2 + \left(\frac{18}{5}\right)^2} = \frac{30}{5} = 6$ ✓.
+  Why others are wrong: (A), (C) and (D) are not equidistant from P and Q.
   Answer: (B)
 M A 4: |-
-  Concept: $\Delta = 0$ with inconsistent equations means no solution.
+  Concept: A linear system has a unique solution if Δ ≠ 0. If Δ = 0, it has either infinitely many solutions (if the equations are consistent) or none (if they are inconsistent). Check each root of Δ = 0 separately.
   Solution:
-  1. $\Delta = k^3 - 3k + 2 = (k - 1)^2(k + 2)$.
-  2. $k = 1$: all three equations are $x + y + z = 1$, so there are infinitely many solutions.
-  3. $k = -2$: adding the equations gives $0 = 1 - 2 + 4 = 3$, which is inconsistent.
+  1. $\Delta = \begin{vmatrix}k & 1 & 1\\ 1 & k & 1\\ 1 & 1 & k\end{vmatrix} = k(k^2 - 1) - (k - 1) + (1 - k) = k^3 - 3k + 2$.
+  2. Factorise: $k^3 - 3k + 2 = (k - 1)^2(k + 2)$. So Δ = 0 at k = 1 and k = −2.
+  3. k = 1: all three equations become x + y + z = 1 (since k = k² = 1). They are identical, so there are infinitely many solutions.
+  4. k = −2: the equations are −2x + y + z = 1, x − 2y + z = −2 and x + y − 2z = 4. Adding them: 0 = 1 − 2 + 4 = 3. This is a contradiction, so there is no solution.
+  5. So the system has no solution when k = −2.
+  Why others are wrong:
+  - (A) k = 0: Δ = 2 ≠ 0, so there is a unique solution.
+  - (B) k = 1: infinitely many solutions, not none.
+  - (C) k = −1: Δ = −1 + 3 + 2 = 4 ≠ 0, so there is a unique solution.
   Answer: (D)
 M A 5: |-
-  Concept: $\cot^{-1}(2k^2) = \tan^{-1}\frac{(2k+1) - (2k-1)}{1 + (2k+1)(2k-1)} = \tan^{-1}(2k+1) - \tan^{-1}(2k-1)$.
+  Concept: A sum of inverse cotangents can telescope when each term is written as a difference of two inverse tangents, using $\tan^{-1}a - \tan^{-1}b = \tan^{-1}\frac{a - b}{1 + ab}$.
   Solution:
-  1. The sum telescopes to $\tan^{-1}201 - \tan^{-1}1 = \tan^{-1}\frac{200}{202}$.
-  2. $\cot^{-1}\alpha = \tan^{-1}\frac{200}{202} \Rightarrow \alpha = \frac{202}{200} = 1.01$.
+  1. The terms are $\cot^{-1}(2k^2)$ for k = 1, 2, 3, … (2, 8, 18, 32, …).
+  2. $\cot^{-1}(2k^2) = \tan^{-1}\frac{1}{2k^2} = \tan^{-1}\frac{2}{4k^2} = \tan^{-1}\frac{(2k + 1) - (2k - 1)}{1 + (2k + 1)(2k - 1)}$ (since $1 + (4k^2 - 1) = 4k^2$).
+  3. So each term equals $\tan^{-1}(2k + 1) - \tan^{-1}(2k - 1)$.
+  4. Summing k = 1 to 100: the sum telescopes to $\tan^{-1}201 - \tan^{-1}1$.
+  5. $\tan^{-1}201 - \tan^{-1}1 = \tan^{-1}\frac{201 - 1}{1 + 201} = \tan^{-1}\frac{200}{202}$.
+  6. $\cot^{-1}\alpha = \tan^{-1}\frac{200}{202}$, so $\alpha = \frac{202}{200} = 1.01$.
+  Check: for the infinite sum, the limit would be $\frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$, i.e. α → 1. With 100 terms, α is slightly more than 1 ✓.
+  Why others are wrong: (B) 1.00 is the infinite limit; (C) and (D) come from a wrong number of terms.
   Answer: (A)
 M A 6: |-
-  Concept: A plane containing the y-axis has the form $ax + cz = 0$.
+  Concept: A plane containing the y-axis contains the origin and the direction $\hat j$. Its normal is therefore perpendicular to $\hat j$, so the equation has no y-term and no constant: ax + cz = 0.
   Solution:
-  1. Through (1, 2, 3): $a + 3c = 0$, so take $a = 3$, $c = -1$.
-  2. Plane: $3x - z = 0$.
+  1. The plane has the form ax + cz = 0.
+  2. It passes through (1, 2, 3): a + 3c = 0, so a = −3c.
+  3. Take c = −1, giving a = 3: the plane is 3x − z = 0.
+  4. Check: (1, 2, 3): 3 − 3 = 0 ✓. Any point on the y-axis (0, t, 0): 0 − 0 = 0 ✓.
+  Alternative method: the plane contains the vectors $\hat j = (0, 1, 0)$ and $\vec{OP} = (1, 2, 3)$. Normal $= \hat j\times(1, 2, 3) = (1\cdot3 - 0\cdot2,\ 0\cdot1 - 0\cdot3,\ 0\cdot2 - 1\cdot1) = (3, 0, -1)$. Plane through the origin: 3x − z = 0 ✓.
+  Why others are wrong:
+  - (A) x + 3z = 10 does not pass through the origin, so it cannot contain the y-axis.
+  - (B) x + 3z = 0 contains the y-axis but gives 1 + 9 = 10 ≠ 0 at (1, 2, 3).
+  - (C) 3x + z = 6 does not pass through the origin.
   Answer: (D)
 M A 7: |-
-  Concept: $A^2 = \sin^2\alpha\,I$.
+  Concept: For $A = \begin{pmatrix}0 & s\\ s & 0\end{pmatrix}$, $A^2 = s^2I$. Then $A^2 - \frac{1}{2}I$ is a scalar multiple of the identity, and its determinant is easy to compute.
   Solution:
-  1. $\det\left(\left(\sin^2\alpha - \frac{1}{2}\right)I\right) = \left(\sin^2\alpha - \frac{1}{2}\right)^2 = 0$.
-  2. $\sin^2\alpha = \frac{1}{2} \Rightarrow \alpha = \frac{\pi}{4}$.
+  1. With s = sin α: $A^2 = \begin{pmatrix}0 & s\\ s & 0\end{pmatrix}\begin{pmatrix}0 & s\\ s & 0\end{pmatrix} = \begin{pmatrix}s^2 & 0\\ 0 & s^2\end{pmatrix} = \sin^2\alpha\,I$.
+  2. $A^2 - \frac{1}{2}I = \left(\sin^2\alpha - \frac{1}{2}\right)I$.
+  3. For a 2 × 2 matrix cI, the determinant is c². So $\det = \left(\sin^2\alpha - \frac{1}{2}\right)^2 = 0$.
+  4. $\sin^2\alpha = \frac{1}{2}$, so $\sin\alpha = \pm\frac{1}{\sqrt2}$, giving $\alpha = \frac{\pi}{4}, \frac{3\pi}{4}, \dots$
+  5. Among the options, $\alpha = \frac{\pi}{4}$ works.
+  Why others are wrong:
+  - (A) $\frac{\pi}{2}$: $\sin^2 = 1$, determinant $\frac{1}{4}$.
+  - (B) $\frac{\pi}{3}$: $\sin^2 = \frac{3}{4}$, determinant $\frac{1}{16}$.
+  - (D) $\frac{\pi}{6}$: $\sin^2 = \frac{1}{4}$, determinant $\frac{1}{16}$.
+  Also, $\sin^2\alpha - \frac{1}{2} = -\frac{1}{2}\cos2\alpha$, so the condition is cos 2α = 0, i.e. $2\alpha = \frac{\pi}{2} + n\pi$. The smallest positive value is $\frac{\pi}{4}$ ✓.
   Answer: (C)
 M A 8: |-
-  Concept: $p \Rightarrow q \equiv \sim p\vee q$.
+  Concept: A biconditional $X \Leftrightarrow Y$ is a tautology exactly when X and Y are logically equivalent. Use $p \Rightarrow q \equiv \sim p \vee q$ to identify the unknown connective *.
   Solution:
-  1. For the biconditional to be a tautology, $q * (\sim p) \equiv \sim p\vee q$, so $*$ is $\vee$.
-  2. $p * (\sim q) = p\vee\sim q \equiv q \Rightarrow p$.
+  1. The statement $(p \Rightarrow q) \Leftrightarrow (q * \sim p)$ is a tautology, so $q * \sim p \equiv p \Rightarrow q \equiv \sim p \vee q$.
+  2. Since $\sim p \vee q = q \vee \sim p$, the connective * is ∨ (OR). Check other candidates: if * were ∧, $q \wedge \sim p$ would be false at p = q = T, while $p \Rightarrow q$ is true. So * cannot be ∧.
+  3. Then $p * \sim q = p \vee \sim q$.
+  4. $p \vee \sim q \equiv \sim q \vee p \equiv q \Rightarrow p$.
+  5. So $p * (\sim q)$ is equivalent to $q \Rightarrow p$.
+  Truth-table check for $p \vee \sim q$ vs $q \Rightarrow p$:
+  - p = T, q = T: T and T.
+  - p = T, q = F: T and T.
+  - p = F, q = T: F and F.
+  - p = F, q = F: T and T.
+  They agree in every row ✓.
+  Why others are wrong:
+  - (B) $\sim q \Rightarrow p \equiv q \vee p$ (false at p = q = F, where our expression is true).
+  - (C) $p \Rightarrow \sim q$ is false at p = q = T.
+  - (D) $p \Rightarrow q$ is false at p = T, q = F.
   Answer: (A)
 M A 9: |-
-  Concept: Count favourable outcomes out of 36.
+  Concept: With two dice, all 6 × 6 = 36 ordered outcomes are equally likely. Count the favourable ordered pairs directly.
   Solution:
-  1. Pairs with sum ≤ 8: first die 1 → 1, 2, 3, 5, 7 (5 ways); 2 → 1, 2, 3, 5 (4); 3 → 1, 2, 3, 5 (4); 5 → 1, 2, 3 (3); 7 → 1 (1); 11 → none.
-  2. Total 17, so $P = \frac{17}{36}$.
+  1. Each die has faces {1, 2, 3, 5, 7, 11}.
+  2. For each value a on the first die, count the values b on the second die with a + b ≤ 8, i.e. b ≤ 8 − a:
+     - a = 1: b ≤ 7, so b ∈ {1, 2, 3, 5, 7}: 5 ways.
+     - a = 2: b ≤ 6, so b ∈ {1, 2, 3, 5}: 4 ways.
+     - a = 3: b ≤ 5, so b ∈ {1, 2, 3, 5}: 4 ways.
+     - a = 5: b ≤ 3, so b ∈ {1, 2, 3}: 3 ways.
+     - a = 7: b ≤ 1, so b ∈ {1}: 1 way.
+     - a = 11: b ≤ −3: 0 ways.
+  3. Favourable outcomes: 5 + 4 + 4 + 3 + 1 + 0 = 17.
+  4. $P = \frac{17}{36}$.
+  Symmetry check: the count table should be symmetric in a and b. The pairs with a ≠ b are (1,2), (1,3), (1,5), (1,7), (2,3), (2,5), (3,5), each counted twice (14), and the pairs with a = b are (1,1), (2,2), (3,3) (3). Total 17 ✓.
+  Why others are wrong:
+  - (A) $\frac{4}{9} = \frac{16}{36}$ and (C) $\frac{5}{12} = \frac{15}{36}$ miss some pairs.
+  - (D) $\frac{1}{2} = \frac{18}{36}$ counts one pair too many.
   Answer: (B)
 M A 10: |-
-  Concept: $T_4 = \binom{7}{3}x^4(x^{\log_2x})^3$.
+  Concept: The general term of $(a + b)^n$ is $T_{r+1} = \binom{n}{r}a^{n-r}b^r$. The fourth term has r = 3.
   Solution:
-  1. $35x^{4 + 3\log_2x} = 4480 \Rightarrow x^{4 + 3\log_2x} = 128$.
-  2. $x = 2$: $2^{4+3} = 128$ ✓.
+  1. $T_4 = \binom{7}{3}x^{7-3}\left(x^{\log_2x}\right)^3 = 35x^4x^{3\log_2x} = 35x^{4 + 3\log_2x}$.
+  2. $35x^{4 + 3\log_2x} = 4480$, so $x^{4 + 3\log_2x} = 128 = 2^7$.
+  3. Let $t = \log_2x$, so $x = 2^t$. Then $2^{t(4 + 3t)} = 2^7$, giving $3t^2 + 4t - 7 = 0$, i.e. $(3t + 7)(t - 1) = 0$.
+  4. t = 1 or $t = -\frac{7}{3}$.
+  5. t = 1 gives x = 2. $t = -\frac{7}{3}$ gives $x = 2^{-7/3}$, which is not a natural number.
+  6. With x ∈ ℕ: x = 2.
+  Check: $T_4 = 35\times2^4\times(2^1)^3 = 35\times16\times8 = 4480$ ✓.
+  Why others are wrong:
+  - (B) x = 4: $\log_24 = 2$, so $x^{4 + 6} = 4^{10}$, far too large.
+  - (C) x = 3: $3^{4 + 3\log_23}$ is not 128.
+  - (D) x = 1: $1^{\dots} = 1 \ne 128$.
   Answer: (A)
 M A 11: |-
-  Concept: The Venn diagram needs three sets with pairwise overlaps but an empty triple intersection.
+  Concept: A Venn diagram for three sets (the three games) must show which regions are occupied. Here the conditions are: some students play exactly two games (at least one pairwise-only region is non-empty), and no student plays all three (the triple intersection is empty).
   Solution:
-  1. Some students play two games, so some pairwise intersections are non-empty.
-  2. No one plays all three, so the region common to all three sets must be empty.
-  3. None of the given diagrams P, Q, R shows exactly this, so the answer is "None of these".
+  1. Condition 1: some students play two types of games. The diagram must have at least one region where exactly two sets overlap.
+  2. Condition 2: no one plays all three games. The central region common to all three sets must be absent (or shown as empty).
+  3. A diagram in which all three circles share a common region would suggest that some students play all three games.
+  4. A diagram in which the sets do not overlap at all would contradict the first condition.
+  5. From the figure, none of the diagrams P, Q and R shows pairwise overlaps without a triple overlap. According to the official key, none of them correctly represents the situation.
+  6. So the answer is "None of these".
+  Note: a correct diagram would show three sets, each pair overlapping, but arranged so that there is no common region to all three (for example, three sets arranged in a chain, or three circles overlapping in pairs around an empty centre).
   Answer: (C)
 M A 12: |-
-  Concept: $\cot^{-1}\frac{1}{t} = \tan^{-1}t$ for $t > 0$ and $\pi + \tan^{-1}t$ for $t < 0$; check each root.
+  Concept: When solving inverse trigonometric equations by taking tan of both sides, extra roots can appear. Each root must be checked with the principal values. Here $\cot^{-1}\frac{1}{t} = \tan^{-1}t$ if t > 0, but $\pi + \tan^{-1}t$ if t < 0 (because $\cot^{-1}$ has range (0, π)).
   Solution:
-  1. Take tangent: $\frac{(x+1) + (x-1)}{1 - (x^2 - 1)} = \frac{8}{31} \Rightarrow 4x^2 + 31x - 8 = 0 \Rightarrow x = \frac{1}{4}$ or $-8$.
-  2. $x = \frac{1}{4}$: the LHS exceeds $\frac{\pi}{2}$, so it is rejected.
-  3. $x = -8$: $\tan^{-1}(-7) + \pi - \tan^{-1}9 = 0.2526 = \tan^{-1}\frac{8}{31}$ ✓.
-  4. The sum of valid values is $-8 = -\frac{32}{4}$.
+  1. Take tangent of both sides (treating $\cot^{-1}\frac{1}{x - 1}$ as an angle whose tangent is x − 1):
+     $\frac{(x + 1) + (x - 1)}{1 - (x + 1)(x - 1)} = \frac{8}{31}$, i.e. $\frac{2x}{2 - x^2} = \frac{8}{31}$.
+  2. $62x = 16 - 8x^2$, so $8x^2 + 62x - 16 = 0$, i.e. $4x^2 + 31x - 8 = 0$.
+  3. $(4x - 1)(x + 8) = 0$, so $x = \frac{1}{4}$ or x = −8.
+  4. Check $x = \frac{1}{4}$: $\tan^{-1}1.25 \approx 0.896$. Here x − 1 = −0.75 < 0, so $\cot^{-1}\left(-\frac{4}{3}\right) = \pi - \tan^{-1}\frac{3}{4} \approx 2.498$. LHS ≈ 3.39, but RHS $= \tan^{-1}\frac{8}{31} \approx 0.253$. Rejected.
+  5. Check x = −8: $\tan^{-1}(-7) \approx -1.429$. Here x − 1 = −9, so $\cot^{-1}\left(-\frac{1}{9}\right) = \pi - \tan^{-1}9 \approx 1.682$. LHS ≈ 0.253 = RHS ✓.
+  6. The only valid value is x = −8, so the sum is $-8 = -\frac{32}{4}$.
   Answer: (A)
 M A 13: |-
-  Concept: Multiplying by $i$ rotates by 90°.
+  Concept: Multiplying a complex number by i rotates it by 90° about the origin without changing its length. Treat the vertices as vectors.
   Solution:
-  1. $\vec{CA} = -iz$ and $\vec{CB} = -z$ are perpendicular with equal length $|z|$.
-  2. Area $= \frac{1}{2}|z|^2$.
+  1. Vertices: A = z, B = iz and C = z + iz.
+  2. $\vec{CA} = A - C = z - (z + iz) = -iz$, with length |z|.
+  3. $\vec{CB} = B - C = iz - (z + iz) = -z$, with length |z|.
+  4. $\frac{\vec{CA}}{\vec{CB}} = \frac{-iz}{-z} = i$, so $\vec{CA}$ is $\vec{CB}$ rotated by 90°. The angle at C is a right angle.
+  5. The triangle is right-angled and isosceles at C, with legs of length |z|.
+  6. Area $= \frac{1}{2}|z|\cdot|z| = \frac{1}{2}|z|^2$.
+  Geometric picture: O, A, C and B form a square with side |z| (O = 0, A = z, C = z + iz, B = iz). Triangle ABC is half of this square, so its area is $\frac{1}{2}|z|^2$ ✓.
+  Why others are wrong:
+  - (A) 1 and (C) $\frac{1}{2}$ are fixed numbers, but the area must scale with |z|².
+  - (D) $\frac{1}{2}|z + iz|^2 = \frac{1}{2}\cdot2|z|^2 = |z|^2$, which is twice the correct area.
   Answer: (B)
 M A 14: |-
-  Concept: The centre lies on the normal at the point of contact.
+  Concept: The radius to the point of contact is perpendicular to the tangent. So the centre lies on the normal to the tangent at that point. Intersect this normal with the given line to find the centre.
   Solution:
-  1. Normal at (2, 5): $(2 + 2t, 5 - t)$.
-  2. On $x - 2y = 4$: $4t - 8 = 4 \Rightarrow t = 3$, so the centre is (8, 2).
-  3. $r = \sqrt{36 + 9} = 3\sqrt5$.
+  1. The tangent 2x − y + 1 = 0 has normal direction (2, −1). Check: (2, 5) lies on it: 4 − 5 + 1 = 0 ✓.
+  2. The normal at (2, 5): points (2 + 2t, 5 − t).
+  3. The centre lies on x − 2y = 4: (2 + 2t) − 2(5 − t) = 4, so 4t − 8 = 4 and t = 3.
+  4. Centre: (2 + 6, 5 − 3) = (8, 2).
+  5. Radius = distance from (8, 2) to (2, 5) = $\sqrt{36 + 9} = \sqrt{45} = 3\sqrt5$.
+  Check: the distance from the centre to the tangent line is $\frac{|2(8) - 2 + 1|}{\sqrt5} = \frac{15}{\sqrt5} = 3\sqrt5$ ✓ (equal to the radius, as it must be).
+  Why others are wrong:
+  - (B) $5\sqrt3 = \sqrt{75}$, (C) $5\sqrt4 = 10$ and (D) $4\sqrt5 = \sqrt{80}$ do not equal the distance from the centre to the point of contact.
   Answer: (A)
 M A 15: |-
-  Concept: Multiplication principle.
+  Concept: The multiplication principle: if one choice can be made in m ways and another in n ways, the pair can be chosen in m × n ways. Matches are boy vs boy or girl vs girl, with one player from each team.
   Solution:
-  1. Boy vs boy: $7\times4 = 28$. Girl vs girl: $6n$.
-  2. $28 + 6n = 52 \Rightarrow n = 4$.
+  1. Boy vs boy matches: 7 boys in team A × 4 boys in team B = 28.
+  2. Girl vs girl matches: n girls in team A × 6 girls in team B = 6n.
+  3. Total: 28 + 6n = 52, so 6n = 24 and n = 4.
+  Check: 28 + 24 = 52 ✓.
+  Note: a "single match" here means one player from team A against one player from team B of the same gender. Matches within the same team or between a boy and a girl are not counted.
+  Why others are wrong:
+  - (A) n = 5 gives 28 + 30 = 58.
+  - (B) n = 2 gives 28 + 12 = 40.
+  - (D) n = 6 gives 28 + 36 = 64.
   Answer: (C)
 M A 16: |-
-  Concept: A periodic continued fraction satisfies a quadratic.
+  Concept: A periodic infinite continued fraction repeats itself. Setting it equal to t and using the repetition gives a quadratic equation for t.
   Solution:
-  1. $t = 4 + \frac{1}{5 + \frac{1}{t}} = 4 + \frac{t}{5t + 1}$.
-  2. $5t^2 - 20t - 4 = 0 \Rightarrow t = 2 + \frac{\sqrt{480}}{10} = 2 + \frac{2}{5}\sqrt{30}$.
+  1. Let $t = 4 + \cfrac{1}{5 + \cfrac{1}{4 + \dots}}$. The part after the "5 +" is again t.
+  2. So $t = 4 + \frac{1}{5 + \frac{1}{t}} = 4 + \frac{t}{5t + 1}$.
+  3. Multiply by (5t + 1): $t(5t + 1) = 4(5t + 1) + t$, so $5t^2 + t = 20t + 4 + t$.
+  4. $5t^2 - 20t - 4 = 0$.
+  5. $t = \frac{20 \pm \sqrt{400 + 80}}{10} = \frac{20 \pm \sqrt{480}}{10} = 2 \pm \frac{4\sqrt{30}}{10} = 2 \pm \frac{2}{5}\sqrt{30}$.
+  6. t > 4, so take the positive root: $t = 2 + \frac{2}{5}\sqrt{30}$.
+  Numerical check: $\sqrt{30} \approx 5.477$, so $t \approx 2 + 2.191 = 4.191$. The first few convergents: $4 + \frac{1}{5} = 4.2$, then $4 + \frac{1}{5 + 1/4} = 4.190$ ✓.
+  Why others are wrong:
+  - (B) and (C) are about 11 and 13, far from 4.19.
+  - (D) is about 7.19.
   Answer: (A)
 M A 17: |-
-  Concept: Compare the distance between centres with the radii.
+  Concept: For two circles with centres C₁, C₂, radii r₁, r₂ and distance d between centres: they intersect at two points if |r₁ − r₂| < d < r₁ + r₂. A point is inside a circle if its distance from the centre is less than the radius, on the circle if equal.
   Solution:
-  1. $C_1$: centre (5, 5), $r = 3$. $C_2$: centre (8, 5), $r = 3$. Distance $= 3$.
-  2. (A) True: $3 = \frac{3 + 3}{2}$. (C) True: each centre lies on the other circle. (D) True: $3 < 6$.
-  3. (B) is incorrect: the centres lie on, not inside, the other circle.
+  1. Circle 1: $x^2 + y^2 - 10x - 10y + 41 = 0$. Centre (5, 5), radius $\sqrt{25 + 25 - 41} = 3$.
+  2. Circle 2: $x^2 + y^2 - 16x - 10y + 80 = 0$. Centre (8, 5), radius $\sqrt{64 + 25 - 80} = 3$.
+  3. Distance between centres: d = 3.
+  4. (A) The average of the radii is $\frac{3 + 3}{2} = 3 = d$. True.
+  5. (C) The distance from each centre to the other centre is 3, equal to the radius, so each circle passes through the other's centre. True.
+  6. (D) 0 < 3 < 6, so the circles intersect at two points. True.
+  7. (B) Each centre lies on the other circle, not inside it (d = r, not d < r). So "centres lie inside" is incorrect.
+  8. The incorrect statement is (B).
   Answer: (B)
 M A 18: |-
-  Concept: King property: $x \to \frac{\pi}{2} - x$ maps $[\frac{\pi}{6}, \frac{\pi}{3}]$ to itself.
+  Concept: The King property: $\int_a^bf(x)dx = \int_a^bf(a + b - x)dx$. Here $a + b = \frac{\pi}{2}$, and the substitution $x \to \frac{\pi}{2} - x$ swaps sin and cos.
   Solution:
-  1. $g(\alpha) = \int\frac{\cos^\alpha x}{\sin^\alpha x + \cos^\alpha x}dx$, so $2g = \frac{\pi}{6}$ and $g \equiv \frac{\pi}{12}$ (constant).
-  2. A constant is neither strictly increasing nor decreasing and has no inflection point, so (A), (B) and (C) are incorrect. It is even, so (D) is correct.
-  Note: The official key gives (D). The question is flawed, since three statements are incorrect; ALLEN gives (A)/(B)/(C) or Bonus.
+  1. $g(\alpha) = \int_{\pi/6}^{\pi/3}\frac{\sin^\alpha x}{\sin^\alpha x + \cos^\alpha x}dx$.
+  2. Replace x by $\frac{\pi}{2} - x$: $g(\alpha) = \int_{\pi/6}^{\pi/3}\frac{\cos^\alpha x}{\cos^\alpha x + \sin^\alpha x}dx$.
+  3. Adding: $2g(\alpha) = \int_{\pi/6}^{\pi/3}1\,dx = \frac{\pi}{6}$, so $g(\alpha) = \frac{\pi}{12}$ for every α.
+  4. g is a constant function.
+  5. Check the statements:
+     - (A) "strictly increasing": false for a constant.
+     - (B) "inflection point at $\alpha = -\frac{1}{2}$": false; a constant has no inflection points.
+     - (C) "strictly decreasing": false.
+     - (D) "even function": true, since g(−α) = g(α) = $\frac{\pi}{12}$.
+  6. So (A), (B) and (C) are all incorrect statements, and only (D) is correct. The question asks for the incorrect statement, so it has three valid answers.
+  Note: The official key gives (D). The question is flawed, since three statements are incorrect; ALLEN gives (A)/(B)/(C) or Bonus. The official answer is kept here.
   Answer: (D)
 M A 19: |-
-  Concept: Factorise the right side: $xy - 1 + x - y = (x - 1)(y + 1)$.
+  Concept: Look for a factorisation of the right-hand side that makes the differential equation separable.
   Solution:
-  1. $\frac{dy}{y + 1} = (x - 1)dx \Rightarrow \ln(y + 1) = \frac{x^2}{2} - x$ (using $y(0) = 0$).
-  2. $y(1) = e^{-1/2} - 1$.
+  1. $xy - 1 + x - y = xy + x - y - 1 = x(y + 1) - (y + 1) = (x - 1)(y + 1)$.
+  2. So $\frac{dy}{dx} = (x - 1)(y + 1)$. Separate: $\frac{dy}{y + 1} = (x - 1)dx$.
+  3. Integrate: $\ln|y + 1| = \frac{x^2}{2} - x + C$.
+  4. y(0) = 0: $\ln1 = 0 = C$.
+  5. $y + 1 = e^{\frac{x^2}{2} - x}$, so $y = e^{\frac{x^2}{2} - x} - 1$.
+  6. At x = 1: $y(1) = e^{\frac{1}{2} - 1} - 1 = e^{-1/2} - 1$.
+  Check: y(1) ≈ 0.607 − 1 = −0.393. Direct check of the slope at x = 0: y′(0) = (0 − 1)(0 + 1) = −1, so y starts decreasing from 0, consistent with a negative y(1) ✓.
+  Why others are wrong:
+  - (B) $e^{1/2} - e^{-1/2}$ and (D) $e^{1/2} - 1$ are positive, but y decreases from 0.
+  - (C) y(1) = 1 is also positive.
   Answer: (A)
 M A 20: |-
-  Concept: For $0 < x < 1$, $[x] = 0$.
+  Concept: As x → 0⁺, x lies in (0, 1), where [x] = 0. So the greatest-integer terms vanish, and the limit reduces to a standard form using $\frac{\sin^{-1}x}{x} \to 1$.
   Solution:
-  1. The expression is $\frac{\cos^{-1}x\cdot\sin^{-1}x}{x(1 - x^2)}$.
-  2. As $x \to 0^+$: $\cos^{-1}x \to \frac{\pi}{2}$ and $\frac{\sin^{-1}x}{x} \to 1$, so the limit is $\frac{\pi}{2}$.
+  1. For 0 < x < 1: [x] = 0, so $x - [x]^2 = x$.
+  2. The expression becomes $\frac{\cos^{-1}x\cdot\sin^{-1}x}{x - x^3} = \frac{\cos^{-1}x\cdot\sin^{-1}x}{x(1 - x^2)}$.
+  3. Split into factors: $\cos^{-1}x\cdot\frac{\sin^{-1}x}{x}\cdot\frac{1}{1 - x^2}$.
+  4. As x → 0⁺: $\cos^{-1}x \to \cos^{-1}0 = \frac{\pi}{2}$; $\frac{\sin^{-1}x}{x} \to 1$; $\frac{1}{1 - x^2} \to 1$.
+  5. Limit $= \frac{\pi}{2}\times1\times1 = \frac{\pi}{2}$.
+  Why $\frac{\sin^{-1}x}{x} \to 1$: let θ = sin⁻¹x, so x = sin θ and θ → 0. Then $\frac{\theta}{\sin\theta} \to 1$.
+  Why others are wrong:
+  - (A) π doubles the value of cos⁻¹0.
+  - (B) 0 would require the numerator to vanish faster than x.
+  - (C) $\frac{\pi}{4}$ halves the correct value.
   Answer: (D)
 M B 1: |-
-  Concept: z increases in both x and y, so its maximum is on the boundary of the feasible region.
+  Concept: To maximise a function over a region defined by inequalities, check where the constraints bind. Since z = 6xy + y² increases with both x and y (for x, y ≥ 0), the maximum lies on the outer boundary of the feasible region.
   Solution:
-  1. The region is bounded by $4x + 3y \le 75$ (the binding constraint) and the axes; at (0, 25), $z = 625$.
-  2. On $4x + 3y = 75$: $z(x) = 6x\cdot\frac{75 - 4x}{3} + \left(\frac{75 - 4x}{3}\right)^2$; $z' = 0$ at $x = \frac{375}{56}$.
-  3. $z_{max} = \frac{50625}{56} \approx 904$ (this point also satisfies $3x + 4y \le 100$).
+  1. The two constraint lines, 3x + 4y = 100 and 4x + 3y = 75, meet at (0, 25). For x > 0, the line 4x + 3y = 75 lies below 3x + 4y = 100, so the feasible region is x, y ≥ 0 with 4x + 3y ≤ 75 (the other constraint is automatically satisfied).
+  2. On the boundary 4x + 3y = 75: $y = \frac{75 - 4x}{3}$, with 0 ≤ x ≤ 18.75.
+  3. $z = y(6x + y)$. Substituting and simplifying: $z(x) = \frac{(75 - 4x)(14x + 75)}{9}$.
+  4. $z'(x) = 0$: $\frac{d}{dx}[(75 - 4x)(14x + 75)] = -4(14x + 75) + 14(75 - 4x) = -112x + 750 = 0$, so $x = \frac{375}{56} \approx 6.70$.
+  5. Then $y = \frac{75 - 4(6.70)}{3} \approx 16.07$, and $z = 16.07\times(40.18 + 16.07) \approx 16.07\times56.25 \approx 904.0$.
+  6. Exactly: $z_{max} = \frac{50625}{56} \approx 904.02$.
+  7. Compare with the corner (0, 25): z = 625, which is smaller.
+  8. Maximum ≈ 904.
+  Note: ALLEN accepts 904, 904.01 or 904.02, depending on rounding.
   Answer: 904
 M B 2: |-
-  Concept: $\cos A - \cos B = 2\sin\frac{A + B}{2}\sin\frac{B - A}{2}$ and $x - \sin x \approx \frac{x^3}{6}$.
+  Concept: For a limit of the form 0/0 with x⁴ in the denominator, use the sum-to-product identity $\cos A - \cos B = 2\sin\frac{A + B}{2}\sin\frac{B - A}{2}$ and the small-x expansion $\sin x = x - \frac{x^3}{6} + \dots$.
   Solution:
-  1. $\cos(\sin x) - \cos x = 2\sin\frac{x + \sin x}{2}\sin\frac{x - \sin x}{2} \approx 2\cdot x\cdot\frac{x^3}{12} = \frac{x^4}{6}$.
-  2. $f(0) = \frac{1}{6}$, so $k = 6$.
+  1. $\cos(\sin x) - \cos x = 2\sin\frac{x + \sin x}{2}\sin\frac{x - \sin x}{2}$.
+  2. As x → 0: $\frac{x + \sin x}{2} \approx x$, so $\sin\frac{x + \sin x}{2} \approx x$.
+  3. $x - \sin x \approx \frac{x^3}{6}$, so $\sin\frac{x - \sin x}{2} \approx \frac{x^3}{12}$.
+  4. $\cos(\sin x) - \cos x \approx 2\cdot x\cdot\frac{x^3}{12} = \frac{x^4}{6}$.
+  5. $\lim_{x\to0}f(x) = \frac{1}{6}$. For continuity, $f(0) = \frac{1}{6} = \frac{1}{k}$, so k = 6.
+  Series check: $\cos(\sin x) = 1 - \frac{\sin^2x}{2} + \frac{\sin^4x}{24} - \dots$ With $\sin^2x = x^2 - \frac{x^4}{3} + \dots$, $\cos(\sin x) = 1 - \frac{x^2}{2} + \frac{x^4}{6} + \frac{x^4}{24} + \dots = 1 - \frac{x^2}{2} + \frac{5x^4}{24}$. And $\cos x = 1 - \frac{x^2}{2} + \frac{x^4}{24}$. Difference: $\frac{4x^4}{24} = \frac{x^4}{6}$ ✓.
   Answer: 6
 M B 3: |-
-  Concept: With $t = 2^x = \tan\theta$: $\cos^{-1}\frac{1 - t^2}{1 + t^2} = 2\theta$, so $f = \sin2\theta = \frac{2t}{1 + t^2}$.
+  Concept: The substitution $t = \tan\theta$ turns $\frac{1 - t^2}{1 + t^2}$ into cos 2θ. Then $\cos^{-1}(\cos2\theta) = 2\theta$ (valid when 2θ ∈ [0, π]), and the expression simplifies before differentiating.
   Solution:
-  1. $f = \frac{2^{x+1}}{1 + 4^x}$; $f'(x) = \ln2\cdot\frac{2^{x+1}(1 + 4^x) - 2^{x+1}\cdot2\cdot4^x}{(1 + 4^x)^2}$.
-  2. At $x = 1$: $f'(1) = \ln2\cdot\frac{4\cdot5 - 4\cdot8}{25} = -\frac{12}{25}\ln2$.
-  3. $a = 25$, $b = 12$: $|a^2 - b^2| = 625 - 144 = 481$.
+  1. Let $t = 2^x > 0$ and $t = \tan\theta$ with $\theta \in \left(0, \frac{\pi}{2}\right)$. Then $\frac{1 - 2^{2x}}{1 + 2^{2x}} = \frac{1 - t^2}{1 + t^2} = \cos2\theta$.
+  2. $2\theta \in (0, \pi)$, so $\cos^{-1}(\cos2\theta) = 2\theta$.
+  3. $f(x) = \sin2\theta = \frac{2\tan\theta}{1 + \tan^2\theta} = \frac{2t}{1 + t^2} = \frac{2^{x+1}}{1 + 4^x}$.
+  4. Differentiate (quotient rule): $f'(x) = \ln2\cdot\frac{2^{x+1}(1 + 4^x) - 2^{x+1}\cdot2\cdot4^x}{(1 + 4^x)^2}$ (using $\frac{d}{dx}4^x = 2\ln2\cdot4^x$).
+  5. At x = 1: $2^{x+1} = 4$ and $4^x = 4$. Numerator: $4\times5 - 4\times8 = 20 - 32 = -12$. Denominator: 25.
+  6. $f'(1) = -\frac{12}{25}\ln2$, so b = 12 and a = 25 (in lowest terms).
+  7. $|a^2 - b^2| = |625 - 144| = 481$.
+  Note: the question asks for the minimum value; other integer pairs with the same ratio (e.g. a = 50, b = 24) give larger values, so the smallest comes from the reduced fraction.
   Answer: 481
 M B 4: |-
-  Concept: For independent events, divide by $p = (1-x)(1-y)(1-z)$: $\frac{\alpha}{p} = \frac{x}{1-x} = X$, and similarly $Y$ and $Z$.
+  Concept: For independent events with probabilities x, y, z:
+  - only E₁: α = x(1 − y)(1 − z); only E₂: β = (1 − x)y(1 − z); only E₃: γ = (1 − x)(1 − y)z;
+  - none: p = (1 − x)(1 − y)(1 − z).
+  Dividing gives neat ratios: $\frac{\alpha}{p} = \frac{x}{1 - x} = X$, $\frac{\beta}{p} = Y$, $\frac{\gamma}{p} = Z$ (the odds of each event).
   Solution:
-  1. $X - 2Y = XY \Rightarrow X = \frac{2Y}{1 - Y}$; $Y - 3Z = 2YZ \Rightarrow Y = \frac{3Z}{1 - 2Z}$.
-  2. $X = \frac{6Z}{1 - 5Z}$, so $x = \frac{X}{1 + X} = \frac{6Z}{1 + Z}$ and $z = \frac{Z}{1 + Z}$.
-  3. $\frac{P(E_1)}{P(E_3)} = 6$.
+  1. Divide $(\alpha - 2\beta)p = \alpha\beta$ by p²: X − 2Y = XY, so $X(1 - Y) = 2Y$ and $X = \frac{2Y}{1 - Y}$.
+  2. Divide $(\beta - 3\gamma)p = 2\beta\gamma$ by p²: Y − 3Z = 2YZ, so $Y(1 - 2Z) = 3Z$ and $Y = \frac{3Z}{1 - 2Z}$.
+  3. Substitute: $1 - Y = \frac{1 - 5Z}{1 - 2Z}$, so $X = \frac{2\cdot3Z}{1 - 5Z} = \frac{6Z}{1 - 5Z}$.
+  4. Convert odds back to probabilities: $x = \frac{X}{1 + X} = \frac{6Z}{1 - 5Z + 6Z} = \frac{6Z}{1 + Z}$, and $z = \frac{Z}{1 + Z}$.
+  5. $\frac{P(E_1)}{P(E_3)} = \frac{x}{z} = 6$.
   Answer: 6
 M B 5: |-
-  Concept: Solve for α and β, then compute the scalar triple product.
+  Concept: Use the dot-product conditions to find α and β. Then $(\vec a\times\vec b)\cdot\vec c$ is the scalar triple product, equal to the determinant of the three vectors' components.
   Solution:
-  1. $\vec a\cdot\vec b = -2\alpha\beta - 3 = 1 \Rightarrow \alpha\beta = -2$; $\vec b\cdot\vec c = -\beta + 2\alpha + 1 = -3 \Rightarrow \beta = 2\alpha + 4$.
-  2. $2\alpha^2 + 4\alpha + 2 = 0 \Rightarrow \alpha = -1$, $\beta = 2$.
-  3. $[\vec a\,\vec b\,\vec c] = \begin{vmatrix}-1&2&3\\-2&1&-1\\1&-2&-1\end{vmatrix} = 6$, so $\frac{1}{3}\times6 = 2$.
+  1. $\vec a\cdot\vec b = \alpha(-\beta) + \beta(-\alpha) + 3(-1) = -2\alpha\beta - 3 = 1$, so αβ = −2.
+  2. $\vec b\cdot\vec c = -\beta(1) + (-\alpha)(-2) + (-1)(-1) = -\beta + 2\alpha + 1 = -3$, so β = 2α + 4.
+  3. Substitute: α(2α + 4) = −2, so $2\alpha^2 + 4\alpha + 2 = 0$, i.e. $(\alpha + 1)^2 = 0$. So α = −1 and β = 2.
+  4. $\vec a = (-1, 2, 3)$, $\vec b = (-2, 1, -1)$, $\vec c = (1, -2, -1)$.
+  5. $[\vec a\,\vec b\,\vec c] = \begin{vmatrix}-1 & 2 & 3\\ -2 & 1 & -1\\ 1 & -2 & -1\end{vmatrix}$
+     $= -1(1\cdot(-1) - (-1)(-2)) - 2((-2)(-1) - (-1)(1)) + 3((-2)(-2) - 1\cdot1)$
+     $= -1(-1 - 2) - 2(2 + 1) + 3(4 - 1) = 3 - 6 + 9 = 6$.
+  6. $\frac{1}{3}\times6 = 2$.
+  Check: $\vec a\cdot\vec b = 2 + 2 - 3 = 1$ ✓ and $\vec b\cdot\vec c = -2 - 2 + 1 = -3$ ✓.
   Answer: 2
 M B 6: |-
-  Concept: For a 2×2 matrix, $\operatorname{adj}A = (\operatorname{tr}A)I - A$; work with eigenvalues.
+  Concept: det(A^n) = (det A)^n. For a 2 × 2 matrix, adj(kA) = k·adj(A), and adj A = (det A)A⁻¹. So A and adj A share eigenvectors, which lets us compare their powers.
   Solution:
-  1. $\det A = -2$, so $\det A^4 = 16$.
-  2. A has eigenvalues 2 and −1; $\operatorname{adj}(2A) = 2\operatorname{adj}A$ has eigenvalues $2\cdot\frac{-2}{2} = -2$ and $2\cdot\frac{-2}{-1} = 4$ on the same eigenvectors.
-  3. On the λ = 2 eigenvector: $2^{10} - (-2)^{10} = 0$, so $\det(A^{10} - (\operatorname{adj}2A)^{10}) = 0$.
-  4. Total $= 16$.
+  1. det A = 2(−1) − 3(0) = −2, so $\det(A^4) = (-2)^4 = 16$.
+  2. A is upper triangular with eigenvalues 2 and −1.
+  3. adj A = (det A)A⁻¹ has eigenvalues $\frac{-2}{2} = -1$ and $\frac{-2}{-1} = 2$ on the same eigenvectors (−1 on the eigenvector for 2, and 2 on the eigenvector for −1).
+  4. adj(2A) = 2 adj A, with eigenvalues −2 and 4 on those eigenvectors.
+  5. $A^{10} - (\text{adj}2A)^{10}$ has eigenvalues:
+     - on the eigenvector for 2: $2^{10} - (-2)^{10} = 1024 - 1024 = 0$;
+     - on the eigenvector for −1: $(-1)^{10} - 4^{10} = 1 - 4^{10}$.
+  6. One eigenvalue is 0, so $\det(A^{10} - (\text{adj}2A)^{10}) = 0$.
+  7. Total: 16 + 0 = 16.
+  Direct check: adj A = $\begin{bmatrix}-1 & -3\\ 0 & 2\end{bmatrix}$ and adj(2A) = $\begin{bmatrix}-2 & -6\\ 0 & 4\end{bmatrix}$. Both A¹⁰ and (adj 2A)¹⁰ are upper triangular with (1,1) entries $2^{10}$ and $(-2)^{10}$, equal. So the (1,1) entry of the difference is 0, and a triangular matrix with a zero on the diagonal has determinant 0 ✓.
   Answer: 16
 M B 7: |-
-  Concept: Split at $x = 1$ where $[x^2]$ changes.
+  Concept: The integrand involves greatest-integer functions, so split the range where the inner values cross integers. On each piece, the integrand is constant.
   Solution:
-  1. $0 \le x < 1$: $[x^2] = 0$ and $[-\cos x] = -1$.
-  2. $1 \le x \le \sqrt{\pi/2}$ (≈ 1.25): $[x^2] = 1$ and $1 - \cos x \in (0, 1)$, so the floor is 0.
-  3. Integral $= -1$, absolute value 1.
+  1. The upper limit is $\sqrt{\frac{\pi}{2}} \approx 1.2533$, and the integrand is $[[x^2] - \cos x]$.
+  2. For 0 ≤ x < 1: x² < 1, so [x²] = 0. Then the integrand is $[-\cos x]$. Here cos x ∈ (cos 1, 1] = (0.54, 1], so −cos x ∈ [−1, −0.54) and $[-\cos x] = -1$.
+  3. For 1 ≤ x ≤ 1.2533: x² ∈ [1, 1.571], so [x²] = 1. Then the integrand is $[1 - \cos x]$. Here cos x ∈ [cos 1.2533, cos 1] = [0.31, 0.54], so 1 − cos x ∈ [0.46, 0.69] and $[1 - \cos x] = 0$.
+  4. Integral $= \int_0^1(-1)dx + \int_1^{\sqrt{\pi/2}}0\,dx = -1$.
+  5. Absolute value: |−1| = 1.
+  Note: at x = 0, cos 0 = 1 gives [−1] = −1, consistent with the rest of the first interval. The upper limit keeps x² below 2, so [x²] never reaches 2.
   Answer: 1
 M B 8: |-
-  Concept: For separated circles, the minimum distance is $d - r_1 - r_2$.
+  Concept: For two circles that do not intersect and neither lies inside the other (d > r₁ + r₂), the shortest distance between a point on one and a point on the other is d − r₁ − r₂, measured along the line of centres.
   Solution:
-  1. Centres (5, 5) and (12, 5), each of radius 3; $d = 7$.
-  2. Minimum distance $= 7 - 6 = 1$.
+  1. Circle 1: $x^2 + y^2 - 10x - 10y + 41 = 0$. Centre (5, 5), radius $\sqrt{25 + 25 - 41} = 3$.
+  2. Circle 2: $x^2 + y^2 - 24x - 10y + 160 = 0$. Centre (12, 5), radius $\sqrt{144 + 25 - 160} = 3$.
+  3. Distance between centres: d = 12 − 5 = 7.
+  4. r₁ + r₂ = 6 < 7, so the circles are separate.
+  5. Minimum distance = 7 − 6 = 1.
+  6. The closest points are (8, 5) on circle 1 (its rightmost point) and (9, 5) on circle 2 (its leftmost point), both on the line of centres y = 5, and they are 1 unit apart ✓.
+  General cases: if the circles intersect or touch, the minimum distance is 0. If one lies inside the other, it is |r₁ − r₂| − d.
   Answer: 1
 M B 9: |-
-  Concept: A plane through the intersection of two planes: $P_1 + \lambda P_2 = 0$.
+  Concept: Every plane through the line of intersection of planes P₁ = 0 and P₂ = 0 can be written as P₁ + λP₂ = 0. The given point fixes λ.
   Solution:
-  1. At $(-2, 1, 3)$: $P_1 = -2$ and $P_2 = 12$, so $\lambda = \frac{1}{6}$.
-  2. $6P_1 + P_2$: $15x - 47y + 28z - 7 = 0$, so $a = 15$, $b = -47$, $c = 28$.
-  3. $2a + b + c - 7 = 30 - 47 + 28 - 7 = 4$.
+  1. P₁ = 2x − 7y + 4z − 3 and P₂ = 3x − 5y + 4z + 11.
+  2. At (−2, 1, 3): P₁ = −4 − 7 + 12 − 3 = −2 and P₂ = −6 − 5 + 12 + 11 = 12.
+  3. −2 + 12λ = 0, so $\lambda = \frac{1}{6}$.
+  4. Plane: $P_1 + \frac{1}{6}P_2 = 0$. Multiply by 6: 6P₁ + P₂ = 0.
+     6P₁ = 12x − 42y + 24z − 18; adding P₂ gives 15x − 47y + 28z − 7 = 0.
+  5. Comparing with ax + by + cz − 7 = 0: a = 15, b = −47, c = 28.
+  6. 2a + b + c − 7 = 30 − 47 + 28 − 7 = 4.
+  Check that (−2, 1, 3) lies on the plane: −30 − 47 + 84 − 7 = 0 ✓.
   Answer: 4
 M B 10: |-
-  Concept: Modular arithmetic: $2^8 = 256 \equiv 1 \pmod{17}$.
+  Concept: To find a large power modulo a prime, first reduce the base, then use a small power that is ≡ ±1 (here $2^4 = 16 \equiv -1$ and $2^8 \equiv 1 \pmod{17}$).
   Solution:
-  1. $2021 \equiv -2 \pmod{17}$, so $2021^{3762} \equiv 2^{3762}$.
-  2. $3762 = 8\cdot470 + 2$, so $2^{3762} \equiv 2^2 = 4$.
+  1. 2021 = 17 × 118 + 15, so 2021 ≡ 15 ≡ −2 (mod 17).
+  2. $2021^{3762} \equiv (-2)^{3762} = 2^{3762}$ (the exponent is even).
+  3. $2^4 = 16 \equiv -1$, so $2^8 \equiv 1 \pmod{17}$.
+  4. 3762 = 8 × 470 + 2, so $2^{3762} = (2^8)^{470}\cdot2^2 \equiv 1\cdot4 = 4$.
+  5. The remainder is 4.
+  Binomial-theorem view: $2021^{3762} \equiv 2^{3762} = 4\cdot(2^4)^{940} = 4\cdot16^{940} = 4(17 - 1)^{940}$. Expanding, every term except the last contains a factor 17, and the last term is $4(-1)^{940} = 4$. So the remainder is 4 ✓.
   Answer: 4

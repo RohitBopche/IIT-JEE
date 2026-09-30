@@ -1,176 +1,402 @@
 P A 1: |-
-  Concept: $\vec\tau = \vec r\times\vec F$, with $\tau_z = xF_y - yF_x$.
+  Concept: The torque of a force about a point is $\vec\tau = \vec r\times\vec F$, where $\vec r$ runs from that point to the point of application. In two dimensions, $\tau_z = xF_y - yF_x$ (positive means anticlockwise, along +z).
   Solution:
-  1. From the figure, $P = (5, 5\sqrt3)$ (side 10 cm at 60°); $Q = (10, 0)$.
-  2. About O: $\tau = 5(-3) - 5\sqrt3(4) = -15 - 20\sqrt3$.
-  3. About Q: $\vec r = (-5, 5\sqrt3)$, $\tau = (-5)(-3) - 5\sqrt3(4) = 15 - 20\sqrt3$.
+  1. From the figure: O is the origin, Q = (10, 0), and P is the apex of the triangle. Side OP is 10 cm long and makes 60° with the x-axis, so $P = (10\cos60°, 10\sin60°) = (5, 5\sqrt3)$.
+  2. $\vec F = (4, -3)$, so $F_x = 4$ and $F_y = -3$.
+  3. Torque about O: $\vec r = (5, 5\sqrt3)$.
+     $\tau_O = xF_y - yF_x = 5(-3) - 5\sqrt3(4) = -15 - 20\sqrt3$.
+  4. Torque about Q: $\vec r = P - Q = (5 - 10, 5\sqrt3 - 0) = (-5, 5\sqrt3)$.
+     $\tau_Q = (-5)(-3) - 5\sqrt3(4) = 15 - 20\sqrt3$.
+  5. Both values are negative (clockwise, along −z), since $20\sqrt3 \approx 34.6$ is larger than 15.
+  Physical check: the torques about different points differ by $(\vec r_O - \vec r_Q)\times\vec F$ = (the vector from O to Q) × F $= (10, 0)\times(4, -3) = 10(-3) - 0 = -30$. And $\tau_O - \tau_Q = -30$ ✓.
+  Why others are wrong: (B), (C) and (D) have the sign of one or both terms reversed, usually from using $yF_x - xF_y$ (the reversed cross product).
   Answer: (A)
 P A 2: |-
-  Concept: Excess pressure in a soap bubble is $\frac{4T}{r}$; the common film balances the pressure difference.
+  Concept: A soap bubble has two surfaces, so its excess pressure is $\Delta P = \frac{4T}{r}$. When two bubbles join, the common film separates them, and its curvature must balance the pressure difference between the two bubbles.
   Solution:
-  1. $\frac{4T}{r} = \frac{4T}{a} - \frac{4T}{b} \Rightarrow \frac{1}{r} = \frac{1}{a} - \frac{1}{b}$.
-  2. $r = \frac{ab}{b - a}$.
+  1. Pressure inside the smaller bubble (radius a): $P_a = P_0 + \frac{4T}{a}$.
+  2. Pressure inside the larger bubble (radius b): $P_b = P_0 + \frac{4T}{b}$.
+  3. Since a < b, the smaller bubble has the higher pressure, so the common film bulges into the larger bubble.
+  4. The common film (two surfaces) has radius r: $P_a - P_b = \frac{4T}{r}$.
+  5. $\frac{4T}{a} - \frac{4T}{b} = \frac{4T}{r}$, so $\frac{1}{r} = \frac{1}{a} - \frac{1}{b} = \frac{b - a}{ab}$.
+  6. $r = \frac{ab}{b - a}$.
+  Checks:
+  - If a = b, the film is flat (r → ∞), since the pressures are equal ✓.
+  - If b ≫ a, r → a: the small bubble barely notices the large one ✓.
+  Why others are wrong:
+  - (B) and (C) have the dimensions of 1/length, not a radius.
+  - (D) $\frac{ab}{a + b}$ would come from adding the curvatures instead of subtracting them.
   Answer: (A)
 P A 3: |-
-  Concept: $\gamma = 1 + \frac{2}{f}$; each vibrational mode contributes 2 degrees of freedom.
+  Concept: For an ideal gas with f degrees of freedom per molecule, $C_V = \frac{f}{2}R$, $C_P = C_V + R$, and $\gamma = \frac{C_P}{C_V} = 1 + \frac{2}{f}$. Each vibrational mode contributes 2 degrees of freedom (kinetic plus potential energy), each translational or rotational motion 1.
   Solution:
-  1. $f = 3 + 3 + 2\times24 = 54$.
-  2. $\gamma = 1 + \frac{2}{54} = \frac{28}{27} \approx 1.03$.
+  1. A non-linear polyatomic molecule has 3 translational and 3 rotational degrees of freedom.
+  2. Vibrational: 24 modes × 2 = 48.
+  3. Total: f = 3 + 3 + 48 = 54.
+  4. $\gamma = 1 + \frac{2}{54} = 1 + \frac{1}{27} = \frac{28}{27} \approx 1.037$.
+  5. The closest option is 1.03.
+  Physical meaning: with many vibrational modes active, most of the heat supplied goes into internal (vibrational) energy, so $C_V$ is large and γ approaches 1.
+  Comparison:
+  - Monatomic gas: f = 3, γ = 1.67.
+  - Diatomic gas (rigid): f = 5, γ = 1.4.
+  - Non-linear polyatomic (rigid): f = 6, γ = 1.33.
+  - With vibrations, γ falls further.
+  Why others are wrong:
+  - (B) 1.30 and (C) 1.37 ignore most of the vibrational modes.
+  - (D) 10.3 is impossible, since γ is always between 1 and $\frac{5}{3}$ for ideal gases.
   Answer: (A)
 P A 4: |-
-  Concept: Bohr model: $v_n = \frac{2\pi kZe^2}{nh}$.
+  Concept: In Bohr's model, the Coulomb attraction provides the centripetal force ($\frac{mv^2}{r} = \frac{kZe^2}{r^2}$), and angular momentum is quantised ($mvr = \frac{nh}{2\pi}$).
   Solution:
-  1. $v_n \propto \frac{Z}{n}$, so for hydrogen $v_n \propto \frac{1}{n}$.
+  1. From quantisation: $r = \frac{nh}{2\pi mv}$.
+  2. Substitute into the force equation: $mv^2 = \frac{kZe^2}{r} = \frac{kZe^2\cdot2\pi mv}{nh}$.
+  3. Cancel mv: $v = \frac{2\pi kZe^2}{nh}$.
+  4. So $v_n \propto \frac{Z}{n}$. For hydrogen (Z = 1), $v_n \propto \frac{1}{n}$.
+  5. Numerically, $v_n = \frac{2.19\times10^6}{n}$ m/s for hydrogen. In the ground state, $v_1 \approx \frac{c}{137}$ (the fine-structure constant times c).
+  Related Bohr results:
+  - Radius: $r_n \propto \frac{n^2}{Z}$ ($r_1 = 0.529$ Å).
+  - Energy: $E_n \propto -\frac{Z^2}{n^2}$ ($E_1 = -13.6$ eV).
+  - Time period: $T_n = \frac{2\pi r_n}{v_n} \propto \frac{n^3}{Z^2}$.
+  - Frequency of revolution $\propto \frac{Z^2}{n^3}$.
+  Why others are wrong:
+  - (A) $v \propto n$ has the wrong direction; outer orbits are slower.
+  - (C) $n^2$ is the dependence of the radius.
+  - (D) $\frac{1}{n^2}$ is the dependence of the energy.
   Answer: (B)
 P A 5: |-
-  Concept: Electron: $\lambda_e = \frac{h}{\sqrt{2mE}}$. Photon: $\lambda_p = \frac{hc}{E}$.
+  Concept: The de Broglie wavelength is $\lambda = \frac{h}{p}$ for any particle. The relation between p and E differs: for a non-relativistic electron, $E = \frac{p^2}{2m}$, so $p = \sqrt{2mE}$. For a photon, $E = pc$, so $p = \frac{E}{c}$.
   Solution:
-  1. $\frac{\lambda_e}{\lambda_p} = \frac{E}{c\sqrt{2mE}} = \frac{1}{c}\left(\frac{E}{2m}\right)^{1/2}$.
+  1. Electron: $\lambda_e = \frac{h}{\sqrt{2mE}}$.
+  2. Photon: $\lambda_p = \frac{h}{E/c} = \frac{hc}{E}$.
+  3. Ratio: $\frac{\lambda_e}{\lambda_p} = \frac{h}{\sqrt{2mE}}\cdot\frac{E}{hc} = \frac{E}{c\sqrt{2mE}} = \frac{1}{c}\sqrt{\frac{E^2}{2mE}} = \frac{1}{c}\left(\frac{E}{2m}\right)^{1/2}$.
+  Dimension check: $\frac{E}{m}$ has units of velocity squared, so $\sqrt{\frac{E}{2m}}$ is a velocity. Dividing by c gives a dimensionless ratio ✓.
+  Interpretation: $\sqrt{\frac{E}{2m}} = \frac{v}{2}$ for the electron (since $E = \frac{1}{2}mv^2$). So $\frac{\lambda_e}{\lambda_p} = \frac{v}{2c}$, which is much less than 1 for a non-relativistic electron. The electron's wavelength is much shorter than that of a photon with the same energy. This is why electron microscopes have much better resolution than light microscopes.
+  Why others are wrong:
+  - (A) is the reciprocal inside the square root.
+  - (C) is missing the factor $\frac{1}{c}$, so it is not dimensionless.
+  - (D) has the wrong dimensions.
   Answer: (B)
 P A 6: |-
-  Concept: Thermal resistances in series add, $R = \frac{l}{KA}$.
+  Concept: Heat flow through a conductor is analogous to electric current: the thermal resistance is $R = \frac{l}{KA}$. Conductors in series carry the same heat current, and their thermal resistances add.
   Solution:
-  1. $\frac{2l}{K_{eq}A} = \frac{l}{K_1A} + \frac{l}{K_2A}$.
-  2. $K_{eq} = \frac{2K_1K_2}{K_1 + K_2}$.
+  1. The two wires are identical in size (length l, area A) but have conductivities K₁ and K₂.
+  2. $R_1 = \frac{l}{K_1A}$ and $R_2 = \frac{l}{K_2A}$.
+  3. In series: $R_{eq} = R_1 + R_2 = \frac{l}{A}\left(\frac{1}{K_1} + \frac{1}{K_2}\right)$.
+  4. The combination has length 2l and area A, with effective conductivity $K_{eq}$: $R_{eq} = \frac{2l}{K_{eq}A}$.
+  5. Equate: $\frac{2}{K_{eq}} = \frac{1}{K_1} + \frac{1}{K_2} = \frac{K_1 + K_2}{K_1K_2}$.
+  6. $K_{eq} = \frac{2K_1K_2}{K_1 + K_2}$ (the harmonic mean).
+  Parallel combination for comparison: $K_{eq} = \frac{K_1 + K_2}{2}$ (the arithmetic mean, for equal areas).
+  Check: if K₁ = K₂ = K, then $K_{eq} = \frac{2K^2}{2K} = K$ ✓.
+  Why others are wrong:
+  - (B) and (C) have the dimensions of 1/K (the reciprocal).
+  - (D) $\frac{K_1K_2}{K_1 + K_2}$ forgets that the total length is doubled.
   Answer: (A)
 P A 7: |-
-  Concept: Corrected reading = MSR + VSC × LC − zero error.
+  Concept: A vernier reading is MSR + (VSC × LC), where MSR is the main-scale reading just before the vernier zero and VSC is the vernier division that coincides. A positive zero error means the instrument reads too high, so it must be subtracted: corrected value = reading − zero error.
   Solution:
-  1. Reading $= 8.5 + 6\times0.01 = 8.56$ cm.
-  2. Positive zero error $0.2$ mm $= 0.02$ cm, so the correct value is $8.56 - 0.02 = 8.54$ cm.
+  1. The vernier zero lies between 8.5 cm and 8.6 cm, so MSR = 8.5 cm.
+  2. Vernier coincidence VSC = 6, and LC = 0.01 cm, so the vernier contribution is 6 × 0.01 = 0.06 cm.
+  3. Observed reading: 8.5 + 0.06 = 8.56 cm.
+  4. Zero error: +0.2 mm = +0.02 cm.
+  5. Corrected value: 8.56 − 0.02 = 8.54 cm.
+  Understanding zero error: with the jaws closed, a positive zero error means the vernier zero is to the right of the main-scale zero. Every reading is then too large by that amount, so it is subtracted. A negative zero error (vernier zero to the left) is added (corrected value = reading − (negative error) = reading + |error|).
+  Why others are wrong:
+  - (A) 8.36 cm subtracts 0.2 cm instead of 0.2 mm.
+  - (C) 8.58 cm adds the zero error.
+  - (D) 8.56 cm is the uncorrected reading.
   Answer: (B)
 P A 8: |-
-  Concept: A hot-wire ammeter reads the rms value.
+  Concept: A hot-wire ammeter measures the heating effect of the current, which depends on I². So it reads the root-mean-square value, $I_{rms} = \sqrt{\langle I^2\rangle}$.
   Solution:
-  1. $I^2$ averages to $\frac{I_1^2}{2} + \frac{I_2^2}{2}$ (the cross term averages to zero).
-  2. $I_{rms} = \sqrt{\frac{I_1^2 + I_2^2}{2}}$.
+  1. $I^2 = I_1^2\sin^2\omega t + I_2^2\cos^2\omega t + 2I_1I_2\sin\omega t\cos\omega t$.
+  2. Averages over a full cycle: $\langle\sin^2\omega t\rangle = \frac{1}{2}$, $\langle\cos^2\omega t\rangle = \frac{1}{2}$, and $\langle\sin\omega t\cos\omega t\rangle = \frac{1}{2}\langle\sin2\omega t\rangle = 0$.
+  3. $\langle I^2\rangle = \frac{I_1^2}{2} + \frac{I_2^2}{2}$.
+  4. $I_{rms} = \sqrt{\frac{I_1^2 + I_2^2}{2}}$.
+  Alternative view: $I_1\sin\omega t + I_2\cos\omega t = I_0\sin(\omega t + \phi)$ with amplitude $I_0 = \sqrt{I_1^2 + I_2^2}$. The rms value of a sinusoid is $\frac{I_0}{\sqrt2}$, which gives the same result ✓.
+  Why the cross term vanishes: sin and cos are 90° out of phase (orthogonal functions), so their product averages to zero. This is why the rms values combine in quadrature.
+  Why others are wrong:
+  - (A) subtracts the squares.
+  - (C) and (D) add the amplitudes linearly, which is valid only if both components were in phase.
   Answer: (B)
 P A 9: |-
-  Concept: Downforce increases the normal reaction and hence the maximum friction.
+  Concept: On a flat track, static friction provides the centripetal force. The maximum friction is $\mu_sN$. Aerodynamic downforce (negative lift) presses the car onto the track, increasing N and therefore the maximum friction, so the car can corner faster.
   Solution:
-  1. $N = mg + F_L$, and friction provides the centripetal force: $\mu_s(mg + F_L) = \frac{mv^2}{R}$.
-  2. $F_L = m\left(\frac{v^2}{\mu_sR} - g\right)$.
+  1. Vertical forces: weight mg and downforce F_L act downward, and the normal reaction N acts upward. No vertical acceleration, so $N = mg + F_L$.
+  2. At the limiting speed, friction provides all the centripetal force: $\mu_sN = \frac{mv^2}{R}$.
+  3. $\mu_s(mg + F_L) = \frac{mv^2}{R}$, so $mg + F_L = \frac{mv^2}{\mu_sR}$.
+  4. $F_L = \frac{mv^2}{\mu_sR} - mg = m\left(\frac{v^2}{\mu_sR} - g\right)$.
+  Interpretation: without downforce, the maximum speed is $\sqrt{\mu_sgR}$. For $v^2 > \mu_sgR$, extra normal force is needed, which is exactly $F_L$ above. Racing cars use wings and ground-effect aerodynamics to generate downforces that can exceed the car's weight at high speed.
+  Why others are wrong:
+  - (A) adds g, which would be the total normal force per unit mass, not the downforce.
+  - (C) is the negative of the correct expression; it would be positive only if the car needed less than its weight in normal force.
+  - (D) is the negative of (A).
   Answer: (B)
 P A 10: |-
-  Concept: The peak speed links both phases: $v = \alpha t_1 = \beta t_2$.
+  Concept: For motion with piecewise-constant acceleration, a velocity–time graph gives the distance as the area under the curve. Here the graph is a triangle: v rises linearly to a peak, then falls linearly to zero.
   Solution:
-  1. $t_1 + t_2 = t \Rightarrow v = \frac{\alpha\beta t}{\alpha + \beta}$.
-  2. Distance = area of the v–t triangle $= \frac{1}{2}vt = \frac{\alpha\beta t^2}{2(\alpha + \beta)}$.
+  1. Let t₁ be the acceleration time and t₂ the deceleration time, with t₁ + t₂ = t.
+  2. The peak speed is the same at the end of one phase and the start of the other: $v_{max} = \alpha t_1 = \beta t_2$.
+  3. So $t_1 = \frac{v_{max}}{\alpha}$ and $t_2 = \frac{v_{max}}{\beta}$. Adding: $t = v_{max}\left(\frac{1}{\alpha} + \frac{1}{\beta}\right) = v_{max}\frac{\alpha + \beta}{\alpha\beta}$.
+  4. $v_{max} = \frac{\alpha\beta t}{\alpha + \beta}$.
+  5. Distance = area of the triangle = $\frac{1}{2}\times\text{base}\times\text{height} = \frac{1}{2}tv_{max} = \frac{\alpha\beta t^2}{2(\alpha + \beta)}$.
+  Check with α = β = a: distance $= \frac{a^2t^2}{4a} = \frac{at^2}{4}$. Directly, accelerating for $\frac{t}{2}$ covers $\frac{1}{2}a\left(\frac{t}{2}\right)^2 = \frac{at^2}{8}$, and decelerating covers the same, total $\frac{at^2}{4}$ ✓.
+  Why others are wrong:
+  - (A) and (B) are 8 and 4 times too large.
+  - (D) is half the correct value, from using $\frac{1}{4}$ instead of $\frac{1}{2}$ for the triangle area.
   Answer: (C)
 P A 11: |-
-  Concept: $B = \mu_0\mu_rnI$.
+  Concept: Inside a long solenoid with a magnetic core, the magnetic field is $B = \mu_0\mu_rnI$, where n is the number of turns per unit length and μ_r is the relative permeability of the core.
   Solution:
-  1. $B = 4\pi\times10^{-7}\times500\times1000\times5 = \pi$ T.
+  1. n = 1000 turns/m, I = 5 A, μ_r = 500 and $\mu_0 = 4\pi\times10^{-7}$ H/m.
+  2. Without the core: $B_0 = \mu_0nI = 4\pi\times10^{-7}\times1000\times5 = 2\pi\times10^{-3}$ T ≈ 6.3 mT.
+  3. With the core: $B = \mu_rB_0 = 500\times2\pi\times10^{-3} = \pi$ T.
+  4. So B = π T ≈ 3.14 T.
+  Also useful:
+  - The magnetising field (H-field) is $H = nI = 5000$ A/m. It does not depend on the core.
+  - The magnetisation is $M = (\mu_r - 1)H = 499\times5000 \approx 2.5\times10^6$ A/m.
+  - Then $B = \mu_0(H + M)$ ✓.
+  Ferromagnetic cores multiply the field enormously, which is why they are used in electromagnets and transformers. (Real iron saturates at about 2 T, so a real core with μ_r = 500 might not reach π T, but the question assumes a constant μ_r.)
+  Why others are wrong:
+  - (B) $2\times10^{-3}\pi$ T is the field without the core.
+  - (C) and (D) come from slips in the powers of ten.
   Answer: (A)
 P A 12: |-
-  Concept: Angular momentum about the centre of a circular orbit versus about a point off the plane.
+  Concept: Angular momentum $\vec L = \vec r\times\vec p$ depends on the reference point. For a particle in uniform circular motion, $\vec L$ about the centre of the circle is constant. About a point on the axis but outside the plane of the circle, $\vec L$ has constant magnitude but changes direction.
   Solution:
-  1. About A (the centre of the circle, in its plane), $\vec L_A = M\vec r\times\vec v$ is along +z with constant magnitude $Mr^2\omega$.
-  2. About B (the pivot, out of the plane), $\vec r$ has a vertical component, so $\vec L_B$ has constant magnitude but rotates (a conical sweep); its direction changes.
-  3. So only $L_A$ is constant in both magnitude and direction.
+  1. The setup is a conical pendulum: the rod is pivoted at B, and the mass moves in a horizontal circle whose centre is A.
+  2. About A (in the plane of the circle): $\vec r$ is horizontal (radius r) and $\vec v$ is tangential, so $\vec L_A = M\vec r\times\vec v$ is vertical (along +z) with magnitude $Mr^2\omega$. Both magnitude and direction are constant.
+  3. About B (the pivot, above the plane): $\vec r_B$ runs from B to the mass along the rod. It has a horizontal part (rotating with the mass) and a fixed vertical part.
+  4. $\vec L_B = M\vec r_B\times\vec v$ is perpendicular to both the rod and the velocity. Its magnitude $Ml\cdot v$ is constant, but its direction tilts with the rod. As the mass goes round, $\vec L_B$ sweeps out a cone about the vertical, changing direction continuously.
+  5. Consistency: $\frac{d\vec L_B}{dt}$ = the torque of gravity (and tension) about B, which is non-zero and horizontal. About A, the net torque (from the net force, which points towards A) is zero, so $\vec L_A$ is constant.
+  Why others are wrong:
+  - (A) and (C) claim $\vec L_B$ is constant, but its direction changes.
+  - (B) $\vec L_B$ has constant magnitude, not constant direction.
   Answer: (D)
 P A 13: |-
-  Concept: $KE = \frac{1}{2}m\omega^2(A^2 - x^2)$ and $PE = \frac{1}{2}m\omega^2x^2$.
+  Concept: In SHM, the total energy $E = \frac{1}{2}kA^2$ is constant. The potential energy is $U = \frac{1}{2}kx^2$ and the kinetic energy is $K = \frac{1}{2}k(A^2 - x^2)$.
   Solution:
-  1. $A^2 - x^2 = x^2 \Rightarrow x = \pm\frac{A}{\sqrt2}$.
+  1. Set K = U: $\frac{1}{2}k(A^2 - x^2) = \frac{1}{2}kx^2$.
+  2. $A^2 - x^2 = x^2$, so $x^2 = \frac{A^2}{2}$.
+  3. $x = \pm\frac{A}{\sqrt2} \approx \pm0.707A$.
+  4. At these points, each form of energy is half the total: $K = U = \frac{E}{2} = \frac{1}{4}kA^2$.
+  Timing: with $x = A\sin\omega t$, the condition $\sin\omega t = \frac{1}{\sqrt2}$ is met at $\omega t = \frac{\pi}{4}$, i.e. $t = \frac{T}{8}$. K and U are equal four times per cycle.
+  Other useful points:
+  - At x = 0 (mean position): K = E and U = 0.
+  - At x = ±A (extremes): K = 0 and U = E.
+  - At $x = \frac{A}{2}$: $U = \frac{E}{4}$ and $K = \frac{3E}{4}$.
+  Why others are wrong:
+  - (A) x = 0 gives all kinetic energy.
+  - (B) x = ±A gives all potential energy.
+  - (D) $x = \frac{A}{2}$ gives U = E/4, not E/2 (energy depends on x², not x).
   Answer: (C)
 P A 14: |-
-  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1} = \frac{W}{Q_1}$.
+  Concept: The efficiency of a Carnot engine is $\eta = 1 - \frac{T_2}{T_1}$ (temperatures in kelvin). By definition, $\eta = \frac{W}{Q_1}$, where Q₁ is the heat taken from the source per cycle.
   Solution:
-  1. $\eta = 1 - \frac{400}{800} = \frac{1}{2}$.
-  2. $Q_1 = \frac{W}{\eta} = 2400$ J.
+  1. Source $T_1 = 800$ K and sink $T_2 = 400$ K.
+  2. $\eta = 1 - \frac{400}{800} = \frac{1}{2} = 50\%$.
+  3. $Q_1 = \frac{W}{\eta} = \frac{1200}{0.5} = 2400$ J per cycle.
+  4. Heat rejected to the sink: $Q_2 = Q_1 - W = 2400 - 1200 = 1200$ J.
+  5. Check with the Carnot relation $\frac{Q_2}{Q_1} = \frac{T_2}{T_1}$: $\frac{1200}{2400} = \frac{400}{800}$ ✓.
+  Important: the question lists the temperatures as "400 K and 800 K". The source must be the hotter reservoir (800 K). Taking 400 K as the source would give a negative efficiency, which is not possible for an engine.
+  Why others are wrong:
+  - (A) 3200 J would need η = 37.5%.
+  - (B) 1800 J would need η = 67%.
+  - (C) 1600 J would need η = 75%.
+  None of these match the Carnot efficiency between 400 K and 800 K.
   Answer: (D)
 P A 15: |-
-  Concept: $\mu = \frac{c}{v}$; sagitta relation $R \approx \frac{r^2}{2t}$; plano-convex lens $f = \frac{R}{\mu - 1}$.
+  Concept: The refractive index is $\mu = \frac{c}{v}$. For a thin spherical cap of height t (sagitta) and base radius r, the radius of curvature is $R \approx \frac{r^2}{2t}$ (from $r^2 = t(2R - t)$ with t ≪ R). For a plano-convex lens, the lens maker's formula gives $\frac{1}{f} = \frac{\mu - 1}{R}$.
   Solution:
   1. $\mu = \frac{3\times10^8}{2\times10^8} = 1.5$.
-  2. $R = \frac{(3)^2}{2\times0.3} = 15$ cm.
-  3. $f = \frac{15}{0.5} = 30$ cm.
+  2. Diameter 6 cm, so the aperture radius is r = 3 cm. Central thickness t = 3 mm = 0.3 cm.
+  3. Radius of curvature: $R = \frac{r^2 + t^2}{2t} = \frac{9 + 0.09}{0.6} = 15.15$ cm ≈ 15 cm (the t² term is negligible).
+  4. Plano-convex lens: one surface is flat ($R_2 = \infty$), so $\frac{1}{f} = (\mu - 1)\frac{1}{R} = \frac{0.5}{15}$.
+  5. f = 30 cm.
+  Geometry of step 3: in the right triangle formed by the centre of curvature, the rim of the lens and the lens axis, $R^2 = r^2 + (R - t)^2$. So $2Rt = r^2 + t^2$, which gives the formula above.
+  Why others are wrong:
+  - (A) 0.30 cm and (C) 1.5 cm are powers-of-ten slips (e.g. mixing mm and cm).
+  - (B) 15 cm is the radius of curvature, not the focal length. They are equal only when μ = 2.
   Answer: (D)
 P A 16: |-
-  Concept: De Morgan: $\bar A + \bar B = \overline{A\cdot B}$.
+  Concept: De Morgan's theorems: $\overline{A\cdot B} = \bar A + \bar B$ and $\overline{A + B} = \bar A\cdot\bar B$. So an OR gate fed with inverted inputs acts as a NAND gate, and an AND gate fed with inverted inputs acts as a NOR gate.
   Solution:
-  1. The inputs are inverted and combined; the resulting output is $\overline{A\cdot B}$.
-  2. This is a NAND gate.
+  1. From the figure: both inputs A and B pass through NOT gates, giving $\bar A$ and $\bar B$.
+  2. These are combined by an OR gate: $Y = \bar A + \bar B$.
+  3. By De Morgan: $\bar A + \bar B = \overline{A\cdot B}$, which is the NAND function.
+  Truth table:
+  - A = 0, B = 0: $\bar A + \bar B = 1 + 1 = 1$.
+  - A = 0, B = 1: 1 + 0 = 1.
+  - A = 1, B = 0: 0 + 1 = 1.
+  - A = 1, B = 1: 0 + 0 = 0.
+  The output is 0 only when both inputs are 1, which is exactly NAND ✓.
+  Why others are wrong:
+  - (A) XOR gives 0 for A = B = 0, but this circuit gives 1.
+  - (C) AND is the complement of this output.
+  - (D) NOR would be $\bar A\cdot\bar B$ (inverted inputs into an AND gate), which gives 0 for A = 0, B = 1, unlike this circuit.
   Answer: (B)
 P A 17: |-
-  Concept: $KE = \frac{1}{2}mv^2$, so $v \propto \sqrt{KE}$.
+  Concept: Kinetic energy $K = \frac{1}{2}mv^2$, so for a fixed mass $v \propto \sqrt K$. If K falls to a fraction f, v falls to $\sqrt f$ of its value.
   Solution:
-  1. $KE_i = \frac{1}{2}(0.5)(400) = 100$ J; $KE_f = 5$ J.
-  2. $v = \sqrt{\frac{2\times5}{0.5}} = \sqrt{20} = 4.47$ m/s.
+  1. Initial kinetic energy: $K_i = \frac{1}{2}\times0.5\times20^2 = \frac{1}{2}\times0.5\times400 = 100$ J.
+  2. After deflection, K is 5% of that: $K_f = 5$ J.
+  3. $v_f = \sqrt{\frac{2K_f}{m}} = \sqrt{\frac{2\times5}{0.5}} = \sqrt{20} = 4.47$ m/s.
+  4. Ratio method: $v_f = v_i\sqrt{0.05} = 20\times0.2236 = 4.47$ m/s ✓.
+  Interpretation: losing 95% of the kinetic energy leaves only about 22% of the speed. The energy lost (95 J) goes into deformation, heat and sound in the collision with the obstacle. The floor is frictionless, so no energy is lost before or after the collision.
+  Why others are wrong:
+  - (A) 19.0 m/s reduces the speed by 5% (wrong: it is the kinetic energy that becomes 5% of its value).
+  - (C) 14.41 m/s does not follow from any consistent use of $v \propto \sqrt K$.
+  - (D) 1.00 m/s takes 5% of the speed.
   Answer: (B)
 P A 18: |-
-  Concept: For a hydrogen-like ion, $E_n = -13.6\frac{Z^2}{n^2}$ eV.
+  Concept: For a hydrogen-like (one-electron) system with nuclear charge Z, the Bohr energy levels are $E_n = -13.6\frac{Z^2}{n^2}$ eV. The hydrogen ground state is $E_1 = -13.6$ eV.
   Solution:
-  1. Treating carbon as a one-electron ion with $Z = 6$ (as the official solution does): $\frac{36}{n^2} = 1 \Rightarrow n = 6$.
-  2. (Strictly, this Bohr formula applies to C⁵⁺, not singly ionised C⁺.)
+  1. Following the official solution, treat the carbon ion as a hydrogen-like system with Z = 6.
+  2. Condition: $-13.6\frac{Z^2}{n^2} = -13.6$, so $n^2 = Z^2 = 36$ and n = 6.
+  3. So the n = 6 level of the carbon ion has the same energy as the ground state of hydrogen.
+  General rule: level n of a hydrogen-like ion with charge Z has the same energy as level $\frac{n}{Z}$ of hydrogen. So level n = Z matches the hydrogen ground state. (For example, level n = 2 of He⁺ has energy −13.6 eV.)
+  4. (Strictly, the Bohr formula applies only to one-electron ions, i.e. C⁵⁺. Singly ionised carbon, C⁺, has five electrons and cannot be treated this way. The official key uses Z = 6 as the intended interpretation.)
+  Why others are wrong:
+  - (A) n = 1 would have energy $-13.6\times36 = -490$ eV.
+  - (C) n = 4 and (D) n = 8 give energies $-13.6\times\frac{36}{16} = -30.6$ eV and $-13.6\times\frac{36}{64} = -7.65$ eV, which do not match.
   Answer: (B)
 P A 19: |-
-  Concept: The total internal energy $\sum n\frac{F}{2}kT$ is conserved on mixing.
+  Concept: For an ideal gas, the internal energy is $U = n\frac{F}{2}kT$ (n molecules, F degrees of freedom each, by equipartition). When two gases mix with no energy loss (insulated, no work), the total internal energy is conserved.
   Solution:
-  1. $n_1F_1T_1 + n_2F_2T_2 = (n_1F_1 + n_2F_2)T$.
-  2. $T = \frac{n_1F_1T_1 + n_2F_2T_2}{n_1F_1 + n_2F_2}$.
+  1. Before mixing: $U = n_1\frac{F_1}{2}kT_1 + n_2\frac{F_2}{2}kT_2$.
+  2. After mixing, both gases are at a common temperature T: $U = n_1\frac{F_1}{2}kT + n_2\frac{F_2}{2}kT$.
+  3. Equate and cancel $\frac{k}{2}$: $n_1F_1T_1 + n_2F_2T_2 = (n_1F_1 + n_2F_2)T$.
+  4. $T = \frac{n_1F_1T_1 + n_2F_2T_2}{n_1F_1 + n_2F_2}$.
+  Interpretation: T is a weighted average of T₁ and T₂, with weights $n_iF_i$ (proportional to the heat capacity of each gas, $C_V = \frac{nFk}{2}$). The gas with more molecules or more degrees of freedom pulls the final temperature closer to its own.
+  Checks:
+  - If $F_1 = F_2$, T reduces to $\frac{n_1T_1 + n_2T_2}{n_1 + n_2}$, which is option (A).
+  - If $T_1 = T_2$, then $T = T_1$ ✓.
+  Note: the masses m₁ and m₂ do not appear. The internal energy of an ideal gas depends only on the number of molecules, their degrees of freedom and T.
+  Why others are wrong:
+  - (A) ignores the different degrees of freedom.
+  - (C) and (D) have denominators that do not match the weights in the numerator, so they do not reduce to T₁ when T₁ = T₂.
   Answer: (B)
 P A 20: |-
-  Concept: $I = neAv_d$.
+  Concept: Current in a conductor is $I = neAv_d$, where n is the number density of free electrons, e is the electron charge, A is the cross-sectional area and $v_d$ is the drift velocity.
   Solution:
-  1. $n = \frac{10}{1.6\times10^{-19}\times5\times10^{-6}\times2\times10^{-3}} = 6.25\times10^{27} = 625\times10^{25}$ m⁻³.
+  1. I = 10 A, A = 5 mm² = 5 × 10⁻⁶ m², $v_d = 2\times10^{-3}$ m/s, e = 1.6 × 10⁻¹⁹ C.
+  2. $n = \frac{I}{eAv_d} = \frac{10}{1.6\times10^{-19}\times5\times10^{-6}\times2\times10^{-3}}$.
+  3. Denominator: $1.6\times5\times2 = 16$, and the powers of ten give $10^{-28}$. So the denominator is $1.6\times10^{-27}$.
+  4. $n = \frac{10}{1.6\times10^{-27}} = 6.25\times10^{27}$ m⁻³ = 625 × 10²⁵ m⁻³.
+  Sense check: typical metals have about 10²⁸–10²⁹ free electrons per m³ (copper: 8.5 × 10²⁸). The value here is somewhat lower but of the right order.
+  Also note how slow the drift velocity is: 2 mm/s. The current is set up almost instantly because the electric field travels through the wire at nearly the speed of light, not because the electrons themselves move fast.
+  Why others are wrong:
+  - (A) 2 × 10⁶ and (D) 1 × 10²³ are far too small for a metal.
+  - (C) 2 × 10²⁵ comes from mishandling the powers of ten (e.g. area in cm²).
   Answer: (B)
 P B 1: |-
-  Concept: LOS range $d = \sqrt{2Rh}$; service area $= \pi d^2$.
+  Concept: For space-wave (line-of-sight) propagation, an antenna of height h has a radio horizon $d = \sqrt{2Rh}$. With the receiver at ground level, the service area is a circle of radius d, area $A = \pi d^2 = 2\pi Rh$.
   Solution:
-  1. $d^2 = 2\times6.4\times10^6\times30 = 3.84\times10^8$ m².
-  2. Area $= 3.14\times3.84\times10^8 = 1.206\times10^9$ m² ≈ 1206 km².
+  1. R = 6400 km = 6.4 × 10⁶ m and h = 30 m.
+  2. $d^2 = 2Rh = 2\times6.4\times10^6\times30 = 3.84\times10^8$ m² (d ≈ 19.6 km).
+  3. Area $= \pi d^2 = 3.14\times3.84\times10^8 = 1.206\times10^9$ m².
+  4. Convert: 1 km² = 10⁶ m², so area = 1206 km².
+  Note: the area depends linearly on h (A = 2πRh). Doubling the tower height doubles the service area, while the range increases only by √2. This is why VHF and TV transmitters are placed on tall towers or hilltops.
+  Common slips:
+  - Forgetting to convert m² to km² (answer 1.2 × 10⁹).
+  - Using d instead of d² in the area.
+  The derivation of $d = \sqrt{2Rh}$: from the right triangle with hypotenuse R + h and legs R and d, $(R + h)^2 = R^2 + d^2$, so $d^2 = 2Rh + h^2 \approx 2Rh$ (since h ≪ R).
   Answer: 1206
 P B 2: |-
-  Concept: With uniform acceleration, revolutions = average speed × time.
+  Concept: For uniform angular acceleration, the angle turned equals the average angular speed multiplied by the time, just as $s = \frac{u + v}{2}t$ in linear motion.
   Solution:
-  1. Average $= \frac{900 + 2460}{2} = 1680$ rpm.
-  2. $N = 1680\times\frac{26}{60} = 728$ revolutions.
+  1. Initial speed $\omega_0 = 900$ rpm; final $\omega = 2460$ rpm; time t = 26 s.
+  2. Average angular speed: $\frac{900 + 2460}{2} = 1680$ rpm.
+  3. Time in minutes: $\frac{26}{60}$ min.
+  4. Revolutions: $N = 1680\times\frac{26}{60} = 28\times26 = 728$.
+  Check in SI units:
+  - $\omega_0 = 900\times\frac{2\pi}{60} = 30\pi$ rad/s; $\omega = 2460\times\frac{2\pi}{60} = 82\pi$ rad/s.
+  - $\alpha = \frac{82\pi - 30\pi}{26} = 2\pi$ rad/s².
+  - $\theta = \omega_0t + \frac{1}{2}\alpha t^2 = 30\pi(26) + \pi(676) = 780\pi + 676\pi = 1456\pi$ rad.
+  - $N = \frac{1456\pi}{2\pi} = 728$ ✓.
+  Note: the question speaks of the wheel's speed and the "truck engine" revolutions; these are taken to be the same (a direct drive), as in the official solution.
   Answer: 728
 P B 3: |-
-  Concept: $\frac{s}{p} = \frac{(R_1 + R_2)^2}{R_1R_2} \ge 4$ by AM ≥ GM.
+  Concept: For two resistors, $s = R_1 + R_2$ and $p = \frac{R_1R_2}{R_1 + R_2}$. So $n = \frac{s}{p} = \frac{(R_1 + R_2)^2}{R_1R_2}$. The AM–GM inequality gives the minimum.
   Solution:
-  1. $n = \frac{(R_1 + R_2)^2}{R_1R_2}$, minimum when $R_1 = R_2$: $n = 4$.
+  1. $n = \frac{(R_1 + R_2)^2}{R_1R_2}$.
+  2. AM ≥ GM: $\frac{R_1 + R_2}{2} \ge \sqrt{R_1R_2}$, so $(R_1 + R_2)^2 \ge 4R_1R_2$.
+  3. So n ≥ 4, with equality when R₁ = R₂.
+  4. Minimum n = 4.
+  Check with R₁ = R₂ = R: s = 2R and p = $\frac{R}{2}$, so $\frac{s}{p} = 4$ ✓.
+  Another form: $n = \frac{R_1}{R_2} + 2 + \frac{R_2}{R_1} = x + 2 + \frac{1}{x}$ with $x = \frac{R_1}{R_2} > 0$. Since $x + \frac{1}{x} \ge 2$, n ≥ 4 ✓.
+  Interpretation: the series resistance is always at least four times the parallel resistance of the same two resistors. The ratio grows without limit as the resistors become more unequal (e.g. R₁ = 1, R₂ = 100 gives n ≈ 102).
   Answer: 4
 P B 4: |-
-  Concept: Identify the capacitors formed by adjacent plates and their connections.
+  Concept: Stacked parallel plates form a capacitor between each pair of adjacent plates. Determine which plates are connected to each other and to the terminals, then reduce the network using series and parallel rules.
   Solution:
-  1. From the figure, B and D are joined and A and C are the terminals. The three gaps give capacitors A–B, B–C and C–D, each $C_0 = \frac{\varepsilon_0lb}{d}$.
-  2. B–C and C–D are in parallel ($2C_0$) between B/D and C, in series with A–B ($C_0$).
-  3. $C_{eq} = \frac{2C_0}{3} = \frac{2}{3}\cdot\frac{\varepsilon_0(2\times\frac{3}{2})}{d} = \frac{2\varepsilon_0}{d}$ (in the given units), so $x = 2$.
+  1. Each plate has area $lb = 2\times\frac{3}{2} = 3$ cm². Each adjacent pair (gap d) forms a capacitor $C_0 = \frac{\varepsilon_0lb}{d}$.
+  2. From the figure: the four plates are stacked in order A, B, C, D. Plates B and D are joined by a wire, and A and C are the terminals.
+  3. The three gaps give three capacitors: A–B, B–C and C–D, each $C_0$.
+  4. B and D are at the same potential, so B–C and C–D are both connected between the node B/D and terminal C. They are in parallel: $2C_0$.
+  5. This is in series with A–B ($C_0$), between A and the node B/D.
+  6. $C_{eq} = \frac{C_0\times2C_0}{C_0 + 2C_0} = \frac{2}{3}C_0$.
+  7. $C_{eq} = \frac{2}{3}\times\frac{3\varepsilon_0}{d} = \frac{2\varepsilon_0}{d}$ (with the area in cm², as the question intends).
+  8. So x = 2.
   Answer: 2
 P B 5: |-
-  Concept: $v_e = \sqrt{\frac{2GM}{R}} \propto \frac{1}{\sqrt R}$ for fixed mass.
+  Concept: The escape velocity from the surface of a body of mass M and radius R is $v_e = \sqrt{\frac{2GM}{R}}$. If the mass is kept the same and the body is compressed, $v_e \propto \frac{1}{\sqrt R}$.
   Solution:
-  1. $10 = \sqrt{\frac{R}{R'}} \Rightarrow R' = \frac{R}{100} = 64$ km.
+  1. $\frac{v_e'}{v_e} = \sqrt{\frac{R}{R'}} = 10$.
+  2. $\frac{R}{R'} = 100$, so $R' = \frac{6400}{100} = 64$ km.
+  Physical picture: squeezing the Earth to 1/100 of its radius increases its density by a factor of 10⁶ and makes surface gravity $\frac{GM}{R'^2}$ 10⁴ times stronger. The escape velocity rises from 11.2 km/s to 112 km/s.
+  Extension (black holes): if the Earth were compressed until $v_e = c$, it would become a black hole. The Schwarzschild radius is $R_s = \frac{2GM}{c^2} \approx 9$ mm for the Earth's mass.
+  Common error: assuming $v_e \propto \frac{1}{R}$ gives R′ = 640 km, which is wrong. The square root is essential.
   Answer: 64
 P B 6: |-
-  Concept: Two identical springs in series have $k_{eq} = \frac{k}{2}$; $T = 2\pi\sqrt{\frac{M}{k}}$.
+  Concept: For springs in series, the same force acts through each spring and the extensions add, so $\frac{1}{k_{eq}} = \frac{1}{k_1} + \frac{1}{k_2}$. The period of a mass on a spring is $T = 2\pi\sqrt{\frac{M}{k}}$.
   Solution:
-  1. $\frac{T_b}{T_a} = \sqrt{\frac{k}{k/2}} = \sqrt2$, so $x = 2$.
+  1. Figure 1: a single spring k, so $T_a = 2\pi\sqrt{\frac{M}{k}}$.
+  2. Figure 2: two identical springs in series: $\frac{1}{k_{eq}} = \frac{1}{k} + \frac{1}{k} = \frac{2}{k}$, so $k_{eq} = \frac{k}{2}$.
+  3. $T_b = 2\pi\sqrt{\frac{M}{k/2}} = 2\pi\sqrt{\frac{2M}{k}}$.
+  4. $\frac{T_b}{T_a} = \sqrt2$, so x = 2.
+  Physical reason: in series, a given force stretches each spring by the same amount, so the total extension is doubled. The combination is softer (half the stiffness), and the period is longer.
+  Comparison: two identical springs in parallel give $k_{eq} = 2k$ and $T = \frac{T_a}{\sqrt2}$. A spring cut into two halves gives two springs of stiffness 2k each (stiffness is inversely proportional to length).
   Answer: 2
 P B 7: |-
-  Concept: Rolling acceleration $a = \frac{g\sin\theta}{1 + K^2/R^2}$; the smallest $\frac{K^2}{R^2}$ arrives first.
+  Concept: A body rolling without slipping down an incline has acceleration $a = \frac{g\sin\theta}{1 + \frac{K^2}{R^2}}$, where K is the radius of gyration. The smaller $\frac{K^2}{R^2}$, the larger the acceleration, and the sooner the body reaches the bottom. Mass and radius do not matter.
   Solution:
-  1. $\frac{K^2}{R^2}$: ring 1, disc $\frac{1}{2}$, solid cylinder $\frac{1}{2}$, solid sphere $\frac{2}{5}$.
-  2. The solid sphere (4) reaches first.
+  1. Ring: $I = mR^2$, so $\frac{K^2}{R^2} = 1$ and $a = \frac{g\sin\theta}{2} = 0.5g\sin\theta$.
+  2. Disc: $I = \frac{1}{2}mR^2$, so $\frac{K^2}{R^2} = \frac{1}{2}$ and $a = \frac{2}{3}g\sin\theta \approx 0.667g\sin\theta$.
+  3. Solid cylinder: the same as the disc, $a = \frac{2}{3}g\sin\theta$.
+  4. Solid sphere: $I = \frac{2}{5}mR^2$, so $\frac{K^2}{R^2} = \frac{2}{5}$ and $a = \frac{5}{7}g\sin\theta \approx 0.714g\sin\theta$.
+  5. The solid sphere has the greatest acceleration, so it reaches the bottom first. Its number is 4.
+  6. Order of arrival: sphere (4), then disc (2) and cylinder (3) together, then ring (1).
+  Energy explanation: a body with a smaller fraction of its kinetic energy in rotation has more translational kinetic energy at each height, so it moves faster. For the sphere, rotation takes $\frac{2}{7}$ of the total kinetic energy. For the ring, it takes $\frac{1}{2}$.
   Answer: 4
 P B 8: |-
-  Concept: With the battery disconnected, Q is constant; $U = \frac{Q^2}{2C}$.
+  Concept: Once the battery is disconnected, the charge Q on the capacitor stays constant. The stored energy is $U = \frac{Q^2}{2C}$. Inserting a dielectric increases C, so the stored energy decreases. The electric field does work pulling the slab in, and this energy appears as the slab's kinetic energy.
   Solution:
-  1. $U_i = \frac{1}{2}\times14\times12^2 = 1008$ pJ.
-  2. With the slab, $C' = 7C$, so $U_f = \frac{1008}{7} = 144$ pJ.
-  3. The energy released as mechanical energy of the slab $= 1008 - 144 = 864$ pJ.
+  1. Initial charge: Q = CV = 14 pF × 12 V = 168 pC.
+  2. Initial energy: $U_i = \frac{1}{2}CV^2 = \frac{1}{2}\times14\times144 = 1008$ pJ.
+  3. With the slab fully inside: C′ = kC = 7 × 14 = 98 pF.
+  4. Final energy: $U_f = \frac{Q^2}{2C'} = \frac{U_i}{k} = \frac{1008}{7} = 144$ pJ.
+  5. Energy released: $U_i - U_f = 1008 - 144 = 864$ pJ.
+  6. Without friction, the slab is pulled in and overshoots, so it oscillates back and forth. Its mechanical energy (the kinetic energy at the fully inserted position) is 864 pJ.
+  Contrast: if the battery were still connected (constant V), the energy would increase to kU_i, and the battery would supply twice that increase. The slab would still be pulled in.
   Answer: 864
 P B 9: |-
-  Concept: The upper block can accelerate at most $\mu g$ through friction.
+  Concept: When a force is applied to the lower block, the upper block moves only because of static friction. So friction limits the upper block's acceleration to $a_{max} = \frac{\mu_smg}{m} = \mu_sg$. For the blocks to move together, the whole system's acceleration must not exceed this.
   Solution:
-  1. $a_{max} = \frac{3}{7}\times9.8 = 4.2$ m/s².
-  2. $F = (M + m)a_{max} = 5\times4.2 = 21$ N.
+  1. From the figure: the small block m = 0.5 kg rests on the large block M = 4.5 kg, and F is applied to M. The table is frictionless.
+  2. The maximum acceleration friction can give m: $a_{max} = \mu_sg = \frac{3}{7}\times9.8 = 4.2$ m/s².
+  3. Moving together, the whole system (5 kg) has acceleration $a = \frac{F}{M + m}$.
+  4. Condition: $\frac{F}{5} \le 4.2$, so $F \le 21$ N.
+  5. Maximum force: 21 N.
+  Check: at F = 21 N, a = 4.2 m/s². The friction on m is $0.5\times4.2 = 2.1$ N, and the limit is $\mu_smg = \frac{3}{7}\times0.5\times9.8 = 2.1$ N ✓ (exactly at the limit).
+  Contrast: if F were applied to the small upper block instead, the limit would be $F_{max} = \mu_smg\left(1 + \frac{m}{M}\right) = 2.1\times\frac{5}{4.5} = 2.33$ N. That is much smaller, because friction must then accelerate the heavy block.
   Answer: 21
 P B 10: |-
-  Concept: For complete absorption, $F = \frac{IA}{c}$.
+  Concept: Light carries momentum. For a beam of intensity I (energy flux, W/m²) that is completely absorbed at normal incidence, the radiation pressure is $P = \frac{I}{c}$, and the force on area A is $F = \frac{IA}{c}$. (For a perfect reflector, the force would be $\frac{2IA}{c}$.)
   Solution:
-  1. $I = \frac{Fc}{A} = \frac{2.5\times10^{-6}\times3\times10^8}{30\text{ cm}^2} = 25$ W/cm².
+  1. $I = \frac{Fc}{A}$.
+  2. F = 2.5 × 10⁻⁶ N and c = 3 × 10⁸ m/s, so Fc = 750 W.
+  3. A = 30 cm². So $I = \frac{750\text{ W}}{30\text{ cm}^2} = 25$ W/cm².
+  4. In SI units: 25 W/cm² = 2.5 × 10⁵ W/m².
+  Note: the 40-minute duration does not affect the intensity. It would be needed only for the total energy delivered: $E = IAt = 750\times2400 = 1.8\times10^6$ J, or the total momentum delivered: $Ft = 6\times10^{-3}$ kg m/s.
+  Sense check: sunlight at the Earth has intensity about 1.4 kW/m² (0.14 W/cm²), so this beam is about 180 times more intense than sunlight. Even so, the force on 30 cm² is only a few micronewtons, which shows how weak radiation pressure is.
   Answer: 25
