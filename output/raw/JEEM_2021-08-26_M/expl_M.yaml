@@ -1,0 +1,186 @@
+M A 1: |-
+  Concept: $\frac{\cos x}{1 + \sin x} = \tan\left(\frac{\pi}{4} - \frac{x}{2}\right)$, which is positive in the interval.
+  Solution:
+  1. $\tan\left(\frac{\pi}{4} - \frac{x}{2}\right) = |\tan2x|$ gives $\frac{\pi}{4} - \frac{x}{2} = \pm2x + k\pi$.
+  2. Valid solutions in the interval: $x = \frac{\pi}{10}, -\frac{\pi}{6}, -\frac{3\pi}{10}$.
+  3. Sum $= \frac{3\pi - 5\pi - 9\pi}{30} = -\frac{11\pi}{30}$.
+  Answer: (A)
+M A 2: |-
+  Concept: Correct the sum and the sum of squares.
+  Solution:
+  1. Sum $= 200 + 10 = 210$, so $\alpha = 10.5$.
+  2. $\sum x^2 = 20(6.25 + 100) + 35^2 - 25^2 = 2725$; variance $= 136.25 - 110.25 = 26$.
+  3. $(\alpha, \beta) = (10.5, 26)$.
+  Answer: (D)
+M A 3: |-
+  Concept: The tangent with slope m touches at $\left(-\frac{a^2m}{c}, \frac{b^2}{c}\right)$ where $c = \sqrt{a^2m^2 + b^2}$.
+  Solution:
+  1. Slope 2 (perpendicular to $x + 2y = 0$): $c = \sqrt{32 + 4} = 6$, so $P = \left(-\frac{8}{3}, \frac{2}{3}\right)$ (second quadrant).
+  2. $e^2 = \frac{1}{2}$, foci $(\pm2, 0)$; area $A = \frac{1}{2}\times4\times\frac{2}{3} = \frac{4}{3}$.
+  3. $(5 - e^2)A = \frac{9}{2}\times\frac{4}{3} = 6$.
+  Answer: (A)
+M A 4: |-
+  Concept: Linear DE with integrating factor tan x.
+  Solution:
+  1. $\frac{dy}{dx} + \frac{\sec^2x}{\tan x}y = -\tan x \Rightarrow (y\tan x)' = -\tan^2x = 1 - \sec^2x$.
+  2. $y\tan x = x - \tan x + C$; $\lim_{x\to0}xy = 1$ gives $C = 1$.
+  3. $y\left(\frac{\pi}{4}\right) = \frac{\pi}{4} - 1 + 1 = \frac{\pi}{4}$.
+  Answer: (D)
+M A 5: |-
+  Concept: $P(\text{exactly one}) = P(A)(1 - P(B)) + P(B)(1 - P(A))$.
+  Solution:
+  1. $p(1 - 2p) + 2p(1 - p) = 3p - 4p^2 = \frac{5}{9} \Rightarrow 36p^2 - 27p + 5 = 0$.
+  2. $p = \frac{1}{3}$ or $\frac{5}{12}$; the largest is $\frac{5}{12}$.
+  Answer: (D)
+M A 6: |-
+  Concept: A non-trivial solution needs $\Delta = 0$.
+  Solution:
+  1. $\Delta = 2 + 4\sin3\theta = 0 \Rightarrow \sin3\theta = -\frac{1}{2}$.
+  2. With $3\theta \in (0, \frac{3\pi}{2})$: $3\theta = \frac{7\pi}{6}$, so $\theta = \frac{7\pi}{18}$.
+  Answer: (B)
+M A 7: |-
+  Concept: Simplify the inverse trig chain.
+  Solution:
+  1. $\cot^{-1}\sqrt{\frac{1 - x}{x}}$ has sine $\sqrt x$, so $f = \cos(2\tan^{-1}\sqrt x) = \frac{1 - x}{1 + x}$.
+  2. $f' = -\frac{2}{(1 + x)^2}$, so $(1 - x)^2f' + 2f^2 = -\frac{2(1 - x)^2}{(1 + x)^2} + \frac{2(1 - x)^2}{(1 + x)^2} = 0$.
+  Answer: (C)
+M A 8: |-
+  Concept: Telescoping: $\frac{2^k}{x^{2^k} + 1} = \frac{2^k}{x^{2^k} - 1} - \frac{2^{k+1}}{x^{2^{k+1}} - 1}$.
+  Solution:
+  1. Sum $= \frac{1}{x - 1} - \frac{2^{101}}{x^{2^{101}} - 1}$; at x = 2 this is $1 - \frac{2^{101}}{2^{2^{101}} - 1}$.
+  2. The official key gives (D), which writes the denominator as $4^{101} - 1$.
+  Note: The exact denominator is $2^{2^{101}} - 1$, so no option matches exactly; ALLEN marks it Bonus.
+  Answer: (D)
+M A 9: |-
+  Concept: $\sum r^2\binom{n}{r} = n(n + 1)2^{n-2}$.
+  Solution:
+  1. $20\times21\times2^{18} = 420\times2^{18}$.
+  Answer: (D)
+M A 10: |-
+  Concept: $\max(0, P(A) + P(B) - 100) \le K \le \min(P(A), P(B))$.
+  Solution:
+  1. $87 \le K \le 89$.
+  2. The set {79, 81, 83, 85} contains no possible value.
+  Answer: (C)
+M A 11: |-
+  Concept: The locus is an arc through ±1 on which the chord subtends $\frac{\pi}{4}$.
+  Solution:
+  1. The chord of length 2 subtends $\frac{\pi}{2}$ at the centre, so $r = \sqrt2$ and the centre is at (0, 1) (positive argument, upper arc).
+  Answer: (B)
+M A 12: |-
+  Concept: Scalar triple product cyclicity.
+  Solution:
+  1. $\vec a\cdot(\vec b\times\vec c) = \vec b\cdot(\vec c\times\vec a) = -\vec b\cdot(\vec a\times\vec c) = -|\vec b|^2 = -2$.
+  Answer: (A)
+M A 13: |-
+  Concept: Tangent to $y^2 = 30x$: $y = mx + \frac{7.5}{m}$.
+  Solution:
+  1. Through (−30, 0): $m^2 = \frac{1}{4}$, line $x - 2y + 30 = 0$ (or its mirror).
+  2. Circle: centre (−15, 0), r = 7.5; distance to the line $= \frac{15}{\sqrt5} = 3\sqrt5$.
+  3. Chord $= 2\sqrt{56.25 - 45} = 3\sqrt5$.
+  Answer: (D)
+M A 14: |-
+  Concept: $a^2 + b^2 - 2 = (a - b)^2$ when $ab = 1$.
+  Solution:
+  1. The integrand is $\left|\frac{x+1}{x-1} - \frac{x-1}{x+1}\right| = \frac{4|x|}{1 - x^2}$.
+  2. $2\int_0^{1/\sqrt2}\frac{4x}{1 - x^2}dx = -4\ln\left(1 - \frac{1}{2}\right) = 4\ln2 = \ln16$.
+  Answer: (B)
+M A 15: |-
+  Concept: Plane through the line: $P_1 + \lambda P_2 = 0$.
+  Solution:
+  1. Normal $(1 + \lambda, 2 - \lambda, 3 - \lambda) \perp (-2, 1, 1) \Rightarrow 3 - 4\lambda = 0 \Rightarrow \lambda = \frac{3}{4}$.
+  2. Plane: $7x + 5y + 9z - 14 = 0$; (0, 1, 1): $5 + 9 - 14 = 0$ ✓.
+  Answer: (B)
+M A 16: |-
+  Concept: A is orthogonal: $AA^T = I$.
+  Solution:
+  1. $Q^{2021} = A^TB^{2021}A$, so $AQ^{2021}A^T = B^{2021} = \begin{pmatrix}1&0\\2021i&1\end{pmatrix}$.
+  2. Inverse $= \begin{pmatrix}1&0\\-2021i&1\end{pmatrix}$.
+  Answer: (B)
+M A 17: |-
+  Concept: Infinite GP sums.
+  Solution:
+  1. $\frac{a}{1 - r} = 15$ and $\frac{a^2}{1 - r^2} = 150 \Rightarrow \frac{a}{1 + r} = 10$, so $r = \frac{1}{5}$ and $a = 12$.
+  2. $\sum ar^{2k}$ (k ≥ 1) $= \frac{ar^2}{1 - r^2} = \frac{12/25}{24/25} = \frac{1}{2}$.
+  Answer: (B)
+M A 18: |-
+  Concept: Riemann sum with $x = \frac{r}{n}$ over [0, 2].
+  Solution:
+  1. The limit is $\int_0^2\frac{dx}{1 + 4x^2} = \frac{1}{2}\tan^{-1}4$.
+  Answer: (B)
+M A 19: |-
+  Concept: C lies on the bisector, and the midpoint of AC lies on the median from B.
+  Solution:
+  1. $C = \left(c, \frac{7c - 1}{4}\right)$; the midpoint on $2x + y = 3$ gives $c = 3$, so C = (3, 5).
+  2. CA has slope $\frac{2}{3}$ and the bisector has slope $\frac{7}{4}$: $\tan\frac{\theta}{2} = \frac{7/4 - 2/3}{1 + 7/6} = \frac{1}{2}$.
+  3. $\tan\theta = \frac{2\cdot\frac{1}{2}}{1 - \frac{1}{4}} = \frac{4}{3}$.
+  Answer: (C)
+M A 20: |-
+  Concept: $X \to Y$ is false only when X is true and Y is false.
+  Solution:
+  1. We need $\sim r$ true (r = F), then $q \to r$ true forces q = F, and $p\vee q$ true forces p = T.
+  2. Then $p\wedge q$ = F. Truth values (T, F, F).
+  Answer: (C)
+M B 1: |-
+  Concept: $z = e^{-i\pi/3}$, so $z^k + z^{-k} = 2\cos\frac{k\pi}{3}$ and $8\cos^3\theta = 2\cos3\theta + 6\cos\theta$.
+  Solution:
+  1. $\sum_{k=1}^{21}8\cos^3\frac{k\pi}{3} = 2\sum\cos k\pi + 6\sum\cos\frac{k\pi}{3} = 2(-1) + 6(-1) = -8$.
+  2. Total $= 21 - 8 = 13$.
+  Answer: 13
+M B 2: |-
+  Concept: Reduce to a quadratic and require a negative discriminant.
+  Solution:
+  1. $\frac{x - 3}{(x - 1)(x - 2)} = \frac{2}{k} \Rightarrow 2x^2 - (6 + k)x + 4 + 3k = 0$.
+  2. No real roots: $(6 + k)^2 - 8(4 + 3k) < 0 \Rightarrow k^2 - 12k + 4 < 0 \Rightarrow 6 - 4\sqrt2 < k < 6 + 4\sqrt2$.
+  3. Integers 1 to 11: sum $= 66$.
+  Answer: 66
+M B 3: |-
+  Concept: The projection line passes through the foot of a point and has the projected direction.
+  Solution:
+  1. Foot of (1, 3, 4) on the plane: (3, −1, 2). Projected direction: $(2, 1, 2) + \frac{1}{3}(1, -2, -1) \parallel (7, 1, 5)$.
+  2. From (0, 0, 6): $\vec v = (-3, 1, 4)$, $\vec v\times(7, 1, 5) = (1, 43, -10)$.
+  3. $d^2 = \frac{1950}{75} = 26$.
+  Answer: 26
+M B 4: |-
+  Concept: $k\cdot k! = (k + 1)! - k!$ (telescoping), and ${}^kP_k = k!$.
+  Solution:
+  1. Sum $= 16! - 1 = {}^{16}P_{16} - 1$, so q = r = 16, s = 1.
+  2. ${}^{17}C_{15} = 136$.
+  Answer: 136
+M B 5: |-
+  Concept: Minimise the total area.
+  Solution:
+  1. Square side $\frac{36 - k}{4}$: $A = \frac{(36 - k)^2}{16} + \frac{k^2}{4\pi}$.
+  2. $A' = 0 \Rightarrow k = \frac{36\pi}{\pi + 4}$, so $\left(\frac{4}{\pi} + 1\right)k = 36$.
+  Answer: 36
+M B 6: |-
+  Concept: Area between $y = \frac{3x^2}{4}$ and $y = \frac{6x + 24}{4}$.
+  Solution:
+  1. They meet at $x = -2, 4$.
+  2. $\int_{-2}^{4}\frac{6x + 24 - 3x^2}{4}dx = 27$.
+  Answer: 27
+M B 7: |-
+  Concept: Expand the sum of squared distances.
+  Solution:
+  1. $4x^2 + 4y^2 - 4x - 4y + 4 = 18 \Rightarrow x^2 + y^2 - x - y - 3.5 = 0$.
+  2. $r^2 = 0.25 + 0.25 + 3.5 = 4$, so d = 4 and $d^2 = 16$.
+  Answer: 16
+M B 8: |-
+  Concept: Implicit differentiation twice at x = 0 (where y = 1).
+  Solution:
+  1. $\frac{1 + y'}{x + y} = 4y + 4xy'$: at 0, $1 + y' = 4 \Rightarrow y' = 3$.
+  2. Differentiating again at 0: $y'' - (1 + y')^2 = 8y' \Rightarrow y'' - 16 = 24 \Rightarrow y'' = 40$.
+  Answer: 40
+M B 9: |-
+  Concept: Case on the units digit.
+  Solution:
+  1. Ending in 0: $5\times4 = 20$.
+  2. Ending in 4 or 6: first digit has 4 choices (not 0, not the last digit), middle 4: $2\times16 = 32$.
+  3. Total $= 52$.
+  Answer: 52
+M B 10: |-
+  Concept: $\tan u - \sin u \approx \frac{u^3}{2}$.
+  Solution:
+  1. RHL $= \frac{(2x)^3/2}{bx^3} = \frac{4}{b}$; LHL $= a\sin\left(-\frac{\pi}{2}\right) = -a$.
+  2. $-a = \frac{4}{b} \Rightarrow ab = -4$, so $10 - ab = 14$.
+  Answer: 14
