@@ -26,5 +26,5 @@
 | JEE Mains Question Paper 27 August 2021 Evening Shift – PDF with Solution.pdf | done | 90 | 90 | 0 |  |
 | JEE Mains Question Paper 27 August 2021 Morning Shift – PDF with Solution.pdf | done | 90 | 90 | 0 |  |
 | JEE Mains Question Paper 31 August 2021 Evening Shift – PDF with Solution.pdf | done | 90 | 0 | 0 |  |
-| JEE Mains Question Paper 31 August 2021 Morning Shift – PDF with Solution.pdf | done | 90 | 0 | 0 |  |
+| JEE Mains Question Paper 31 August 2021 Morning Shift – PDF with Solution.pdf | done | 90 | 90 | 0 |  |
 | JEE Mains Question Paper 01 September 2021 Evening Shift – PDF with Solution.pdf | done | 90 | 0 | 0 |  |

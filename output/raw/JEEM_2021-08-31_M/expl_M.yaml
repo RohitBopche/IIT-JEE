@@ -1,0 +1,189 @@
+M A 1: |-
+  Concept: An implication is false only when a true premise leads to a false conclusion.
+  Solution:
+  1. With * = ∧: whenever p ∧ ∼q is true, p is true, so p ∨ q is true. The statement is a tautology when □ = ∨.
+  2. Other choices fail. For example, with * = ∨ and p = F, q = F, the premise p ∨ ∼q is T but p ∨ q is F.
+  Answer: (C)
+M A 2: |-
+  Concept: Put t = eˣ > 0 and count the positive roots.
+  Solution:
+  1. g(t) = t⁴ + 2t³ − t − 6, with g(0) = −6, g(1) = −4 and g(2) = 24.
+  2. g′(t) = 4t³ + 6t² − 1 has only one positive zero, so g dips once and then rises.
+  3. There is exactly one positive root, so the equation has 1 real root.
+  Answer: (C)
+M A 3: |-
+  Concept: Telescoping: $\frac{2n + 1}{n^2(n + 1)^2} = \frac{1}{n^2} - \frac{1}{(n + 1)^2}$.
+  Solution:
+  1. $S_{10} = 1 - \frac{1}{121} = \frac{120}{121}$.
+  Answer: (B)
+M A 4: |-
+  Concept: $P_1 + \lambda P_2 = 0$ through the given point.
+  Solution:
+  1. At (1, 4, −3): −24 + 36λ = 0, so λ = 2/3.
+  2. 3P₁ + 2P₂: 11x + 4y + 8z − 3 = 0, or equivalently −11x − 4y − 8z + 3 = 0.
+  3. α + β + γ = −23.
+  Answer: (A)
+M A 5: |-
+  Concept: Differentiate the integral equation.
+  Solution:
+  1. $\sqrt{1 - f'^2} = f$, so $f' = \sqrt{1 - f^2}$ (with f ≥ 0 and f(0) = 0), which gives f = sin x.
+  2. $\frac{1}{x^2}\int_0^x\sin t\,dt = \frac{1 - \cos x}{x^2} \to \frac{1}{2}$.
+  Answer: (D)
+M A 6: |-
+  Concept: Square both magnitudes; |a| = 8 and a·b = 4|b|.
+  Solution:
+  1. 256 + 48|b| + 9|b|² = 576 + 24|b| + |b|².
+  2. So 8|b|² + 24|b| − 320 = 0, that is, |b|² + 3|b| − 40 = 0, giving |b| = 5.
+  Answer: (C)
+M A 7: |-
+  Concept: |g(x)| is non-differentiable at simple roots of g; the exponential factor is smooth.
+  Solution:
+  1. |9x² − 12x + 4| = (3x − 2)², so $e^{(3x - 2)^2}$ is smooth and positive.
+  2. |(x − 3)(x + 1)| has corners at x = 3 and x = −1, so there are 2 points.
+  Answer: (C)
+M A 8: |-
+  Concept: GP a, ar, ar²; then a, 2ar, ar² form an AP.
+  Solution:
+  1. 4ar = a + ar², so r² − 4r + 1 = 0 and r = 2 + √3 (increasing).
+  2. ar³ = 3r², so a = 3/r and $d = a(2r - 1) = 6 - \frac{3}{r} = 6 - 3(2 - \sqrt3) = 3\sqrt3$.
+  3. r² − d = 7 + 4√3 − 3√3 = 7 + √3.
+  Answer: (B)
+M A 9: |-
+  Concept: Test the properties directly.
+  Solution:
+  1. For 0 < |x − y| ≤ 1: (0, 1) and (1, 2) are in R, but (0, 2) is not (|0 − 2| = 2). So R is not transitive, and statement (B) is false.
+  2. The other statements are correct.
+  Answer: (B)
+M A 10: |-
+  Concept: Substitute $t = \frac{x - 1}{x + 2}$, so $dt = \frac{3\,dx}{(x + 2)^2}$.
+  Solution:
+  1. The integrand is $t^{-3/4}(x + 2)^{-2}$, so $I = \frac{1}{3}\int t^{-3/4}dt = \frac{4}{3}t^{1/4} + C$.
+  Answer: (C)
+M A 11: |-
+  Concept: Distance from the origin to ax + by = c is $\frac{|c|}{\sqrt{a^2 + b^2}}$.
+  Solution:
+  1. Line 1 × sin α cos α gives x cos α − y sin α = ½k cos 2α, so p = ½|k cos 2α|.
+  2. Line 2 gives q = |k sin 2α|.
+  3. 4p² + q² = k².
+  Answer: (A)
+M A 12: |-
+  Concept: $\sin18° = \frac{\sqrt5 - 1}{4}$.
+  Solution:
+  1. cosec 18° = √5 + 1.
+  2. (1 + √5)² − 2(1 + √5) − 4 = 6 + 2√5 − 2 − 2√5 − 4 = 0.
+  Answer: (D)
+M A 13: |-
+  Concept: No solution needs D = 0 and an inconsistent system.
+  Solution:
+  1. D = 1 − 3a = 0, so a = 1/3.
+  2. eq3 = ⅔ eq1 − ⅓ eq2 on the left side, and the right side would be 10/3 − 1 = 7/3.
+  3. No solution when b ≠ 7/3.
+  Answer: (D)
+M A 14: |-
+  Concept: Latus rectum = 4 × (vertex-to-focus distance).
+  Solution:
+  1. The vertex-to-focus distance is S − R, so the latus rectum is 4(S − R).
+  Answer: (C)
+M A 15: |-
+  Concept: Match the left limit, the right limit and k.
+  Solution:
+  1. x → 0⁻: $\frac{1}{x}\left[\ln\left(1 + \frac{x}{a}\right) - \ln\left(1 - \frac{x}{b}\right)\right] \to \frac{1}{a} + \frac{1}{b}$.
+  2. x → 0⁺: $\frac{\cos2x - 1}{\sqrt{x^2 + 1} - 1} \approx \frac{-2x^2}{x^2/2} = -4$.
+  3. k = −4 and 1/a + 1/b = −4, so the sum is −4 − 1 = −5.
+  Answer: (A)
+M A 16: |-
+  Concept: Separate the variables.
+  Solution:
+  1. $\frac{2^y\,dy}{2^y - 1} = 2^x\,dx$, so $\ln(2^y - 1) = 2^x + C$.
+  2. y(0) = 1 gives 0 = 1 + C, so C = −1.
+  3. At x = 1: $\ln(2^y - 1) = 1$, so $2^y = 1 + e$ and $y = \log_2(1 + e)$.
+  Answer: (B)
+M A 17: |-
+  Concept: sin(π cos⁴x) = sin(π(1 − cos⁴x)), and 1 − cos⁴x ≈ 2x².
+  Solution:
+  1. sin²(π cos⁴x) ≈ π²(2x²)² = 4π²x⁴.
+  2. The limit is 4π².
+  Answer: (C)
+M A 18: |-
+  Concept: The lower part subtends α and the whole pole subtends 2α.
+  Solution:
+  1. $\tan\alpha = \frac{0.3h}{18} = \frac{h}{60}$ and $\tan2\alpha = \frac{h}{18}$.
+  2. $\frac{2h/60}{1 - h^2/3600} = \frac{h}{18}$, so $1 - \frac{h^2}{3600} = 0.6$ and h² = 1440.
+  3. h = 12√10 m.
+  Answer: (B)
+M A 19: |-
+  Concept: $a_r = \omega^r$ with $\omega = e^{2\pi i/9}$, so row 2 = ω³ × row 1 and the determinant is 0.
+  Solution:
+  1. The determinant is 0.
+  2. Among the options, a₁a₉ − a₃a₇ = ω¹⁰ − ω¹⁰ = 0.
+  Answer: (C)
+M A 20: |-
+  Concept: $\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$ is tangent to $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+  Solution:
+  1. Dividing by 60: $\frac{x\cos\theta}{5} + \frac{y\sin\theta}{12} = 1$, so a = 5 and b = 12.
+  2. The curve is x²/25 + y²/144 = 1, that is, 144x² + 25y² = 3600.
+  Answer: (B)
+M B 1: |-
+  Concept: Split at the points where [2x] jumps.
+  Solution:
+  1. ∫[2x]dx: over [−½, 0) the value is −1, giving −½; over [0, ½) it is 0; over [½, 1) it is 1, giving ½. Total 0.
+  2. ∫|x|dx = 1/8 + 1/2 = 5/8.
+  3. 8 × 5/8 = 5.
+  Answer: 5
+M B 2: |-
+  Concept: arg((z − 2)/(z + 2)) = π/4 is an arc of the circle through ±2 whose chord subtends π/4.
+  Solution:
+  1. The radius is $\frac{4}{2\sin45°} = 2\sqrt2$, with centre (0, 2).
+  2. The point P(9√2, 2) is 9√2 from the centre; the nearest arc point is (2√2, 2).
+  3. The minimum |z − P| is 7√2, so its square is 98.
+  Answer: 98
+M B 3: |-
+  Concept: Parametrise the line and substitute into the plane.
+  Solution:
+  1. (1 + 2t, 2 + 3t, −1 + 6t) gives 7t − 1 = 6, so t = 1 and the point is (3, 5, 5).
+  2. Distance² from (−1, −1, 2) = 16 + 36 + 9 = 61.
+  Answer: 61
+M B 4: |-
+  Concept: Increasing means f′ = 2x + a ≥ 0 on [1, 2]; decreasing means ≤ 0.
+  Solution:
+  1. Increasing: a ≥ −2, so R = −2. Decreasing: a ≤ −4, so S = −4.
+  2. |R − S| = 2.
+  Answer: 2
+M B 5: |-
+  Concept: The r-th term is (3r + 4)(2r + 6) = 6r² + 26r + 24.
+  Solution:
+  1. Sum over r = 1 to 10: 6(385) + 26(55) + 240 = 3980.
+  2. Mean = 398.
+  Answer: 398
+M B 6: |-
+  Concept: The line separates the circles and is at least a radius from each centre.
+  Solution:
+  1. Distance from (1, 1): |7 − α|/5 ≥ 1. Distance from (9, 1): |31 − α|/5 ≥ 2. For the line to lie between them, 7 < α < 31.
+  2. So 12 ≤ α ≤ 21, and the integers sum to 165.
+  Answer: 165
+M B 7: |-
+  Concept: Total arrangements minus those with all consonants together.
+  Solution:
+  1. Total = 6! = 720. With V, W, L, S as one block: 3! × 4! = 144.
+  2. 720 − 144 = 576.
+  Answer: 576
+M B 8: |-
+  Concept: Differentiate: φ + xφ′ = 3x² − 2φ′.
+  Solution:
+  1. (x + 2)φ′ + φ = 3x², that is, ((x + 2)φ)′ = 3x², so (x + 2)φ = x³ + C.
+  2. φ(0) = 4 gives C = 8.
+  3. φ(2) = (8 + 8)/4 = 4.
+  Answer: 4
+M B 9: |-
+  Concept: General term $\binom{12}{r}\left(\frac{x}{4}\right)^{12-r}\left(-\frac{12}{x^2}\right)^r$, with power of x = 12 − 3r.
+  Solution:
+  1. r = 4: the term is $\binom{12}{4}\frac{12^4}{4^8} = 495\cdot\frac{3^4}{4^4}$.
+  2. $k\cdot\frac{3^6}{4^4} = 495\cdot\frac{3^4}{4^4}$, so k = 495/9 = 55.
+  Answer: 55
+M B 10: |-
+  Concept: Bayes' theorem, conditioning on failure.
+  Solution:
+  1. P(fails) = 1 − 0.9 × 0.8 = 0.28.
+  2. P(only the first unit fails) = 0.1 × 0.8 = 0.08, so p = 0.08/0.28 = 2/7.
+  3. 98p = 28.
+  Answer: 28
