@@ -1,173 +1,351 @@
 P A 1: |-
-  Concept: Gauss's law. E is along ŷ, so only the faces at y = 0 and y = 0.5 m carry flux.
+  Concept: By Gauss's law, $Q_{enc} = \varepsilon_0\Phi_{net}$. The field $\vec E = 150y^2\hat j$ points along y only, so flux passes only through the two faces perpendicular to the y-axis. The other four faces are parallel to E and carry no flux.
   Solution:
-  1. At y = 0, E = 0. At y = 0.5 m, E = 150 × 0.25 = 37.5 N/C, so Φ = 37.5 × 0.25 = 9.375 N m²/C.
-  2. Q = ε₀Φ = 8.85 × 10⁻¹² × 9.375 ≈ 8.3 × 10⁻¹¹ C.
+  1. The cube spans y = 0 to y = 0.5 m, and each face has area 0.25 m².
+  2. Face at y = 0: E = 0, so the flux is 0.
+  3. Face at y = 0.5 m: E = 150 × (0.5)² = 37.5 N/C, pointing outward along +ĵ. Flux = 37.5 × 0.25 = 9.375 N m²/C.
+  4. Net flux = 9.375 N m²/C.
+  5. Q = ε₀Φ = 8.85 × 10⁻¹² × 9.375 ≈ 8.3 × 10⁻¹¹ C.
+  Why others are wrong:
+  - (A) 3.8 × 10⁻¹¹ C swaps the digits.
+  - (C) and (D) are ten times smaller; they come from using a wrong face area or E value.
+  Key takeaway: For a non-uniform field along one axis, only the faces perpendicular to it matter: net flux = (E_far − E_near) × A.
   Answer: (B)
 P A 2: |-
-  Concept: The moving arm is a source of emf v₀Bl with internal resistance 1 Ω. The resistor network reduces to 4 Ω (two 8 Ω paths in parallel).
+  Concept: The arm of the loop inside the field moves through it and acts as a battery with motional emf ε = Bv₀l and internal resistance equal to the loop's resistance (1 Ω). The external resistor network is the load, and the current follows from Ohm's law for the full circuit.
   Solution:
-  1. $i = \frac{v_0Bl}{4 + 1}$, so $v_0 = \frac{5\times2\times10^{-3}}{5\times0.2} = 10^{-2}$ m/s = 1 cm/s.
+  1. From the figure, the 4 Ω resistors reduce to two paths of 8 Ω each (two 4 Ω in series), connected in parallel: 8 ∥ 8 = 4 Ω.
+  2. Total resistance = 4 + 1 = 5 Ω.
+  3. $i = \frac{Bv_0l}{R_{total}}$, so $2\times10^{-3} = \frac{5\times v_0\times0.2}{5}$, giving $v_0 = \frac{2\times10^{-3}\times5}{1} = 10^{-2}$ m/s.
+  4. 10⁻² m/s = 1 cm/s.
+  Why others are wrong:
+  - (A) 1 m/s is 100 times too fast; it forgets that i is in mA.
+  - (C) 10² m/s is far too large.
+  - (D) 10⁻² cm/s gives the number in the wrong unit (10⁻² m/s, not cm/s).
+  Key takeaway: A rod moving through a field is an emf source Bvl with internal resistance; then solve an ordinary DC circuit.
   Answer: (B)
 P A 3: |-
-  Concept: $\lambda = \frac{h}{\sqrt{2mE}}$ with $E = \frac{3}{2}k_BT$.
+  Concept: A thermal electron in 3-D has average kinetic energy $E = \frac32k_BT$. Its de Broglie wavelength is $\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mE}} = \frac{h}{\sqrt{3mk_BT}}$.
   Solution:
-  1. $\lambda = \frac{6.6\times10^{-34}}{\sqrt{3\times9\times10^{-31}\times1.38\times10^{-23}\times300}} = 6.26\times10^{-9}$ m.
+  1. $3mk_BT = 3\times9\times10^{-31}\times1.38\times10^{-23}\times300 = 1.118\times10^{-50}$.
+  2. $\sqrt{1.118\times10^{-50}} = 1.057\times10^{-25}$ kg m/s.
+  3. $\lambda = \frac{6.6\times10^{-34}}{1.057\times10^{-25}} \approx 6.2\times10^{-9}$ m ≈ 6.26 nm.
+  Why others are wrong:
+  - (B) 8.46 nm uses E = k_BT (a 1-D assumption), which is too small an energy.
+  - (C) 2.26 nm and (D) 3.25 nm come from arithmetic errors or from using a proton-like mass.
+  Key takeaway: Thermal de Broglie wavelength $\lambda = h/\sqrt{3mkT}$; for electrons at 300 K it is a few nanometres.
   Answer: (A)
 P A 4: |-
-  Concept: Work–energy theorem: $W_g + W_{air} = \Delta K$.
+  Concept: The work–energy theorem says the total work by all forces equals the change in kinetic energy: W_gravity + W_air = ΔK. Air resistance does negative work because it opposes the motion.
   Solution:
-  1. $mgh + W_{air} = \frac{1}{2}m(0.64gh) = 0.32mgh$.
-  2. $W_{air} = -0.68mgh$.
+  1. The body starts from rest, so K_i = 0.
+  2. K_f = ½m(0.8√(gh))² = ½m(0.64gh) = 0.32mgh.
+  3. Work by gravity: W_g = +mgh.
+  4. mgh + W_air = 0.32mgh, so W_air = −0.68mgh.
+  Why others are wrong:
+  - (B) mgh is the work done by gravity, not by air friction.
+  - (C) 1.64 mgh has the wrong sign and magnitude.
+  - (D) 0.64 mgh confuses v² (0.64gh) with the energy lost, and has the wrong sign.
+  Key takeaway: Friction or air drag always does negative work; the energy lost = mgh − final KE.
   Answer: (A)
 P A 5: |-
-  Concept: $R = \frac{u^2\sin2\theta}{g}$ is equal for complementary angles; $H = \frac{u^2\sin^2\theta}{2g}$ grows with θ.
+  Concept: For a projectile, $R = \frac{u^2\sin2\theta}{g}$ and $H = \frac{u^2\sin^2\theta}{2g}$. Since sin 2θ = sin(180° − 2θ), complementary angles (θ and 90° − θ) give the same range. The height depends on sin²θ, which increases with θ up to 90°.
   Solution:
-  1. 42° + 48° = 90°, so R₁ = R₂.
-  2. sin 48° > sin 42°, so H₁ < H₂.
+  1. 42° + 48° = 90°, so the angles are complementary.
+  2. sin 84° = sin 96°, so R₁ = R₂.
+  3. sin 42° < sin 48°, so H₁ < H₂.
+  4. Also, $\frac{H_1}{H_2} = \frac{\sin^242°}{\sin^248°} = \tan^242° < 1$.
+  Why others are wrong:
+  - (A) and (C) claim unequal ranges, but complementary angles give equal ranges.
+  - (D) claims equal heights, but the steeper projectile rises higher.
+  Key takeaway: Complementary angles give equal range; the steeper angle gives a greater height and a longer flight time.
   Answer: (B)
 P A 6: |-
-  Concept: Block on a free wedge: $a_{rel} = \frac{(M + m)g\sin\theta}{M + m\sin^2\theta}$.
+  Concept: On a free, frictionless wedge, the block's normal force pushes the wedge backward, so the wedge accelerates. Solving the equations in the wedge frame (with the pseudo force) gives the block's acceleration relative to the wedge: $a_{rel} = \frac{(M + m)g\sin\theta}{M + m\sin^2\theta}$.
   Solution:
-  1. $a_{rel} = \frac{24\times\frac{1}{2}g}{16 + 8\times\frac{1}{4}} = \frac{12g}{18} = \frac{2}{3}g$.
+  1. From the figure, θ = 30°, so sin θ = ½ and sin²θ = ¼.
+  2. M + m = 16 + 8 = 24 kg, and M + m sin²θ = 16 + 8 × ¼ = 18 kg.
+  3. $a_{rel} = \frac{24\times\frac12g}{18} = \frac{12g}{18} = \frac{2}{3}g$.
+  Why others are wrong:
+  - (A) 4g/3 and (B) 6g/5 exceed g sin θ by a large factor.
+  - (C) 3g/5 comes from errors in the denominator.
+  Key takeaway: For a moving wedge, a_rel > g sin θ, because the wedge recoils and reduces the normal force.
   Answer: (D)
 P A 7: |-
-  Concept: Heat to warm the ice to 0°C plus latent heat, supplied at P = I²R.
+  Concept: Melting ice that starts below 0°C needs two heats: sensible heat to warm the ice to 0°C (mcΔT) plus latent heat to melt it (mL). The resistor supplies heat at the rate P = I²R, and the minimum time assumes no losses.
   Solution:
-  1. m = 10⁻⁴ × 1 × 10³ = 0.1 kg; Q = 0.1(2000 × 10 + 3.33 × 10⁵) = 35300 J.
-  2. P = 0.25 × 4000 = 1000 W, so t = 35.3 s.
+  1. Volume = 1 m × 10⁻⁴ m² = 10⁻⁴ m³, so the mass = 10³ × 10⁻⁴ = 0.1 kg.
+  2. Warming: 0.1 × 2000 × 10 = 2000 J.
+  3. Melting: 0.1 × 3.33 × 10⁵ = 33,300 J.
+  4. Total Q = 35,300 J.
+  5. Power: P = (0.5)² × 4000 = 1000 W.
+  6. t = Q/P = 35.3 s.
+  Why others are wrong:
+  - (A) 0.353 s and (C) 3.53 s are powers-of-ten slips.
+  - (D) 70.6 s uses double the heat or half the power.
+  Key takeaway: Always include the heat needed to reach the phase-change temperature before the latent heat.
   Answer: (B)
 P A 8: |-
-  Concept: $\frac{\Delta Y}{Y} = \frac{\Delta M}{M} + 3\frac{\Delta L}{L} + \frac{\Delta b}{b} + 3\frac{\Delta d}{d} + \frac{\Delta\delta}{\delta}$.
+  Concept: For $Y = \frac{MgL^3}{4bd^3\delta}$, the maximum fractional error is the sum of each variable's fractional error times its power: $\frac{\Delta Y}{Y} = \frac{\Delta M}{M} + 3\frac{\Delta L}{L} + \frac{\Delta b}{b} + 3\frac{\Delta d}{d} + \frac{\Delta\delta}{\delta}$. The least count of each instrument is the absolute error.
   Solution:
-  1. The terms are 0.0005 + 0.003 + 0.0025 + 0.0075 + 0.002.
-  2. The total is 0.0155.
+  1. ΔM/M = 1 g / 2000 g = 0.0005.
+  2. 3ΔL/L = 3 × (1 mm / 1000 mm) = 0.003.
+  3. Δb/b = 0.1 mm / 40 mm = 0.0025.
+  4. 3Δd/d = 3 × (0.01 mm / 4 mm) = 0.0075.
+  5. Δδ/δ = 0.01 mm / 5 mm = 0.002.
+  6. Sum = 0.0005 + 0.003 + 0.0025 + 0.0075 + 0.002 = 0.0155.
+  Why others are wrong:
+  - (A) 0.0083 omits the factors of 3 on L and d.
+  - (C) and (D) are ten times off, from unit slips such as treating cm as mm.
+  Key takeaway: Powers multiply fractional errors; convert every quantity to the same unit before dividing.
   Answer: (B)
 P A 9: |-
-  Concept: For parallel resistors, differentiate $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}$: $\frac{\Delta R}{R^2} = \frac{\Delta R_1}{R_1^2} + \frac{\Delta R_2}{R_2^2}$.
+  Concept: For resistors in parallel, $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}$. Differentiating (with maximum errors adding) gives $\frac{\Delta R}{R^2} = \frac{\Delta R_1}{R_1^2} + \frac{\Delta R_2}{R_2^2}$.
   Solution:
-  1. R = 2 Ω.
-  2. $\Delta R = 4\left(\frac{0.8}{16} + \frac{0.4}{16}\right) = 0.3$ Ω, so R = (2 ± 0.3) Ω.
+  1. R = (4 × 4)/(4 + 4) = 2 Ω.
+  2. $\frac{\Delta R}{4} = \frac{0.8}{16} + \frac{0.4}{16} = \frac{1.2}{16} = 0.075$.
+  3. ΔR = 0.3 Ω.
+  4. Result: R = (2 ± 0.3) Ω.
+  Why others are wrong:
+  - (A) and (D) keep R = 4 Ω; that is the series-style value of a single resistor, not the parallel combination.
+  - (B) ±0.4 comes from adding the absolute errors and halving, which is not valid for reciprocals.
+  Key takeaway: Differentiate the actual formula for the combination; errors in reciprocals scale with 1/R².
   Answer: (C)
 P A 10: |-
-  Concept: $T_{1/2} = \frac{0.693}{\lambda}$ and $\tau = \frac{1}{\lambda}$.
+  Concept: For radioactive decay, $T_{1/2} = \frac{\ln2}{\lambda} = \frac{0.693}{\lambda}$ and the mean life is $\tau = \frac{1}{\lambda}$. The activity is A = λN, so a larger λ means faster decay.
   Solution:
-  1. $\frac{0.693}{\lambda_x} = \frac{1}{\lambda_y}$, so λ_x = 0.693λ_y < λ_y.
-  2. y has the larger decay constant, so it decays faster.
+  1. Given $T_{1/2}(x) = \tau(y)$: $\frac{0.693}{\lambda_x} = \frac{1}{\lambda_y}$.
+  2. So λ_x = 0.693λ_y, which means λ_y > λ_x.
+  3. With equal initial N, y has a larger initial activity (λ_yN₀ > λ_xN₀), and its population keeps falling faster: N = N₀e^{−λt}.
+  4. So y decays faster than x.
+  Why others are wrong:
+  - (A) reverses the comparison.
+  - (C) and (D) assume equal decay constants; the mean life is always longer than the half-life for the same nuclide (τ = 1.44 T½).
+  Key takeaway: τ = 1.44 T½; if one element's half-life equals another's mean life, the second has the larger λ.
   Answer: (B)
 P A 11: |-
-  Concept: Diamagnets have a small, negative, temperature-independent χ.
+  Concept: Diamagnetic materials acquire a weak magnetisation opposite to the applied field, so their susceptibility χ is small and negative. It comes from orbital motion (Lenz's law at the atomic level), not from aligned permanent dipoles, so it is essentially independent of temperature.
   Solution:
-  1. M = χH with χ < 0 gives a line of negative slope: (a).
-  2. χ is negative and constant with T: (c). Graph (d) (the Curie law) is for paramagnets.
+  1. M = χH with χ < 0 gives a straight line through the origin with negative slope: graph (a).
+  2. χ is negative and constant with temperature: graph (c).
+  3. The diamagnetic combination is (a) and (c).
+  Why others are wrong:
+  - (b) positive slope is paramagnetic behaviour (χ > 0).
+  - (d) a χ that falls as 1/T is Curie's law for paramagnets. So (B), (C) and (D) are wrong.
+  Key takeaway: Diamagnetic: χ < 0, T-independent. Paramagnetic: χ > 0, ∝ 1/T. Ferromagnetic: large χ above T_c.
   Answer: (A)
 P A 12: |-
-  Concept: Apparent depth = real depth / μ.
+  Concept: Seen from above, a liquid layer of real depth H looks shallower, with apparent depth H/μ. The student judges "half-filled" by comparing the apparent water depth with the empty (air) part of the tumbler.
   Solution:
-  1. He sees the water depth as 3H/4 and the empty part as 17.5 − H, and judges them equal (half full).
-  2. 3H/4 = 17.5 − H, so H = 10 cm.
+  1. Let the real water height be H. The apparent water depth is H/μ = 3H/4.
+  2. The empty part above the water is 17.5 − H (air, so no correction).
+  3. The student feels it is half full when 3H/4 = 17.5 − H.
+  4. 7H/4 = 17.5, so H = 10 cm.
+  Why others are wrong:
+  - (D) 8.75 cm is the true half (17.5/2) without the refraction correction.
+  - (C) 7.5 cm applies the correction the wrong way.
+  - (A) 11.7 cm comes from mixing up μ and 1/μ.
+  Key takeaway: Apparent depth = real depth/μ, so water looks shallower and you over-fill.
   Answer: (B)
 P A 13: |-
-  Concept: Forward-biased diodes add 30 Ω each; a reverse-biased diode blocks its branch.
+  Concept: An ideal-switch diode model with resistance: a forward-biased diode acts as a 30 Ω resistor, and a reverse-biased diode is an open circuit. Check each diode's orientation relative to the battery polarity first.
   Solution:
-  1. The two conducting branches are 160 Ω each, giving 80 Ω in parallel; the third branch is blocked.
-  2. Total resistance = 80 + 20 = 100 Ω, so I₁ = 200/100 = 2 A.
+  1. From the figure, two branches have forward-biased diodes: each is 130 Ω + 30 Ω = 160 Ω. The third branch has a reverse-biased diode, so it carries no current.
+  2. Two 160 Ω branches in parallel: 80 Ω.
+  3. In series with the 20 Ω resistor: R_total = 100 Ω.
+  4. I₁ = 200 V / 100 Ω = 2 A.
+  Why others are wrong:
+  - (A) 3.75 A and (D) 2.73 A include the reverse-biased branch.
+  - (B) 2.35 A ignores the diode forward resistance.
+  Key takeaway: Find each diode's bias first, remove the reverse-biased branches, and then solve the circuit.
   Answer: (C)
 P A 14: |-
-  Concept: In steady state, an ideal inductor acts as a plain wire.
+  Concept: In steady state (long after the key is closed), the current through an inductor is constant, so L di/dt = 0. An ideal inductor then behaves as a zero-resistance wire.
   Solution:
-  1. The three 3 Ω branches are in parallel: 1 Ω.
-  2. i = 30/(2 + 1) = 10 A.
+  1. Replace each inductor with a plain wire.
+  2. The three 3 Ω resistors now sit in parallel: 3/3 = 1 Ω.
+  3. In series with the 2 Ω resistor: total = 3 Ω.
+  4. i = 30 V / 3 Ω = 10 A.
+  Why others are wrong:
+  - (D) 0 A is the value just after closing if all paths contain inductors, not the steady state.
+  - (A) 6 A and (B) 25 A come from wrong combinations of the resistors.
+  Key takeaway: At t = 0, L is an open circuit; at t → ∞, L is a short. For C it is the reverse.
   Answer: (C)
 P A 15: |-
-  Concept: At constant velocity, the applied force balances mg sin θ along the surface.
+  Concept: At constant velocity, the net force is zero. On an incline with no friction, the applied force along the surface must balance the gravity component mg sin θ. Its direction relative to the motion depends on whether the object goes up or down.
   Solution:
-  1. Going up the first slope, the force is +2 N (along the motion).
-  2. Going down the second slope, it must hold the object back, so it is −2 N.
-  3. The graph is a +2 N step for the first half of D and −2 N for the second half.
+  1. The surface rises for the first half of D and falls for the second half, with the same slope angle.
+  2. Going up, gravity pulls backward, so the applied force must push forward: F = +mg sin θ = +2 N (constant).
+  3. Going down, gravity pulls forward, so the applied force must hold back: F = −2 N (constant).
+  4. The graph is a +2 N step over [0, D/2] and −2 N over [D/2, D].
+  Why others are wrong:
+  - (A) and (C) are triangular graphs, which imply a changing slope angle; the profile has straight sides.
+  - (D) reverses the signs: pushing back while going uphill would slow the object down.
+  Key takeaway: For constant velocity, F_applied = −(sum of the other forces) at each point; the sign changes where the slope reverses.
   Answer: (B)
 P A 16: |-
-  Concept: $U_{max} = \frac{1}{2}kA^2$, and set the periods equal.
+  Concept: The potential energy curve of SHM, U = ½kx², peaks at U_max = ½kA² at the turning points. Reading U_max and A from the graph gives k, and so the period $T = 2\pi\sqrt{m/k}$. Equate this with the pendulum period $2\pi\sqrt{L/g}$.
   Solution:
-  1. From the graph, 10 = ½k(2)², so k = 5 N/m and $T = 2\pi\sqrt{\frac{5}{5}} = 2\pi$.
-  2. $2\pi\sqrt{\frac{4}{g}} = 2\pi$, so g = 4 m/s².
+  1. From the graph, U_max = 10 J at A = 2 m, so 10 = ½k(4) and k = 5 N/m.
+  2. Spring period: $T = 2\pi\sqrt{\frac{5}{5}} = 2\pi$ s.
+  3. Pendulum: $2\pi\sqrt{\frac{4}{g}} = 2\pi$, so 4/g = 1 and g = 4 m/s².
+  Why others are wrong:
+  - (A) 10 m/s² and (D) 9.8 m/s² assume Earth-like gravity without using the data.
+  - (B) 5 m/s² confuses g with k.
+  Key takeaway: Extract k from the U–x curve, then match the periods: m/k = L/g.
   Answer: (C)
 P A 17: |-
-  Concept: Charging: $V = V_0(1 - e^{-t/RC})$.
+  Concept: When a capacitor charges through R from a battery V₀, its voltage rises as $V = V_0(1 - e^{-t/RC})$, with time constant τ = RC.
   Solution:
-  1. $e^{-t/RC} = \frac{9}{10}$, so $\frac{t}{RC} = \ln\frac{10}{9} = 0.105$.
-  2. $C = \frac{10^{-6}}{10\times0.105} = 0.95$ μF.
+  1. 2 = 20(1 − e^{−t/RC}), so e^{−t/RC} = 0.9 = 9/10.
+  2. t/RC = ln(10/9) = 0.105.
+  3. RC = t/0.105 = 10⁻⁶/0.105 s.
+  4. C = 10⁻⁶ / (10 × 0.105) = 0.952 × 10⁻⁶ F ≈ 0.95 μF.
+  Why others are wrong:
+  - (A) 9.52 μF is off by a factor of 10 (it drops R).
+  - (C) 0.105 is the value of ln(10/9) itself.
+  - (D) 1.85 μF comes from using ln 10 or other slips.
+  Key takeaway: Charging to 10% of V₀ takes t = RC ln(10/9) ≈ 0.105RC.
   Answer: (B)
 P A 18: |-
-  Concept: The net gravitational pull toward the centre supplies the centripetal force.
+  Concept: The four particles sit at the corners of a square inscribed in the circle. Each feels gravity from the other three, and the component toward the centre supplies the centripetal force Mv²/R. The tangential components cancel by symmetry.
   Solution:
-  1. Two neighbours at √2R each give $\frac{GM^2}{2R^2}$ at 45°, contributing $\sqrt2\frac{GM^2}{2R^2}$ toward the centre. The opposite particle at 2R gives $\frac{GM^2}{4R^2}$.
-  2. $\frac{MV^2}{R} = \frac{GM^2}{R^2}\left(\frac{1}{\sqrt2} + \frac{1}{4}\right)$, so $V = \frac{1}{2}\sqrt{\frac{GM}{R}(2\sqrt2 + 1)}$.
+  1. The adjacent particles are at distance √2R: each force is $\frac{GM^2}{2R^2}$, at 45° to the radius. Two of them contribute $2\times\frac{GM^2}{2R^2}\cos45° = \frac{GM^2}{\sqrt2R^2}$.
+  2. The opposite particle is at distance 2R: force $\frac{GM^2}{4R^2}$, directly toward the centre.
+  3. $\frac{Mv^2}{R} = \frac{GM^2}{R^2}\left(\frac{1}{\sqrt2} + \frac14\right) = \frac{GM^2}{4R^2}(2\sqrt2 + 1)$.
+  4. $v = \frac12\sqrt{\frac{GM}{R}(2\sqrt2 + 1)}$.
+  Why others are wrong:
+  - (A) puts (2√2 + 1) in the denominator, which is algebraically wrong.
+  - (C) has a minus sign; all three contributions point inward and add.
+  - (D) is the single-body orbital speed around a central mass M.
+  Key takeaway: For n bodies on a ring, sum only the radial components of the forces from all the others.
   Answer: (B)
 P A 19: |-
-  Concept: $v = \frac{\omega}{k}$ and $n = \frac{c}{v} = \sqrt{\varepsilon_r\mu_r}$.
+  Concept: For a wave cos(ωt − kx), the phase velocity is v = ω/k. In a medium, v = c/n with $n = \sqrt{\varepsilon_r\mu_r}$. For a non-magnetic medium (μ_r = 1), ε_r = n².
   Solution:
-  1. v = 2 × 10¹⁰/200 = 10⁸ m/s, so n = 3 and ε_r = 9.
+  1. ω = 2 × 10¹⁰ rad/s and k = 200 m⁻¹.
+  2. v = ω/k = 2 × 10¹⁰/200 = 10⁸ m/s.
+  3. n = c/v = 3 × 10⁸/10⁸ = 3.
+  4. ε_r = n² = 9.
+  Why others are wrong:
+  - (D) 3 is the refractive index, not the dielectric constant.
+  - (C) 1/3 inverts it.
+  - (B) 2 has no basis.
+  Key takeaway: The dielectric constant is n² (for μ_r = 1); do not stop at n.
   Answer: (A)
 P A 20: |-
-  Concept: Field of a semi-infinite wire ending at the foot of the perpendicular: $\frac{\mu_0I}{4\pi d}(\sin90° + \sin\theta)$.
+  Concept: A semi-infinite wire whose end is at the foot of the perpendicular from P gives $B = \frac{\mu_0I}{4\pi d}(\sin90° + \sin\phi)$, where d is the perpendicular distance and φ is the angle subtended toward the finite end. Two wires meeting at right angles at the origin, with P = (x, y), each contribute this way.
   Solution:
-  1. The y-wire at distance x gives $\frac{\mu_0I}{4\pi x}\left(1 + \frac{y}{r}\right)$; the x-wire at distance y gives $\frac{\mu_0I}{4\pi y}\left(1 + \frac{x}{r}\right)$, where r = √(x² + y²). Both are in the same direction.
-  2. The sum is $\frac{\mu_0I}{4\pi xy}\left[(x + y) + \frac{x^2 + y^2}{r}\right] = \frac{\mu_0I}{4\pi xy}\left[\sqrt{x^2 + y^2} + (x + y)\right]$.
+  1. The wire along the y-axis is at perpendicular distance x from P: $B_1 = \frac{\mu_0I}{4\pi x}\left(1 + \frac{y}{r}\right)$ with r = √(x² + y²).
+  2. The wire along the x-axis is at perpendicular distance y: $B_2 = \frac{\mu_0I}{4\pi y}\left(1 + \frac{x}{r}\right)$.
+  3. For the current directions shown, both fields point the same way (perpendicular to the plane).
+  4. $B = \frac{\mu_0I}{4\pi xy}\left[y + \frac{y^2}{r} + x + \frac{x^2}{r}\right] = \frac{\mu_0I}{4\pi xy}\left[(x + y) + \sqrt{x^2 + y^2}\right]$.
+  Why others are wrong:
+  - (B) subtracts the terms, as if the fields were opposed.
+  - (C) and (D) have xy in the numerator, which is dimensionally wrong (B must fall off as 1/distance).
+  Key takeaway: Use (sin α + sin β) for finite or semi-infinite wires and check the directions before adding.
   Answer: (A)
 P B 1: |-
-  Concept: At constant pressure, $\Delta U = nC_v\Delta T$ and $W = nR\Delta T$.
+  Concept: At constant pressure, heat supplied to an ideal gas goes into internal energy (ΔU = nC_vΔT) and into expansion work (W = PΔV = nRΔT). A diatomic gas that rotates but does not vibrate has 5 degrees of freedom, so C_v = 5R/2.
   Solution:
-  1. For a diatomic gas (rotating, not vibrating), $C_v = \frac{5}{2}R$, so ΔU/W = 2.5 = 25/10 and x = 25.
+  1. ΔU = n(5R/2)ΔT.
+  2. W = nRΔT.
+  3. ΔU/W = 5/2 = 2.5 = 25/10.
+  4. x = 25.
+  5. The given values n = 3, ΔT = 40 and R = 8.31 cancel in the ratio: ΔU ≈ 2493 J and W ≈ 997 J.
+  Common mistake: Including the vibrational modes (C_v = 7R/2), which gives 35.
+  Key takeaway: At constant pressure, ΔU : W = f/2 : 1, where f is the number of active degrees of freedom.
   Answer: 25
 P B 2: |-
-  Concept: Amplitudes are 3a and a, so $\frac{I_{min}}{I_{max}} = \left(\frac{3 - 1}{3 + 1}\right)^2$.
+  Concept: Here the amplitude is proportional to slit width, so the amplitudes are in the ratio 3 : 1. In interference, $I_{max} \propto (a_1 + a_2)^2$ and $I_{min} \propto (a_1 - a_2)^2$.
   Solution:
-  1. The ratio is 4/16 = 1/4 = 1 : 4, so x = 1.
+  1. a₁ = 3a and a₂ = a.
+  2. I_max ∝ (4a)² = 16a² and I_min ∝ (2a)² = 4a².
+  3. I_min : I_max = 4 : 16 = 1 : 4.
+  4. Comparing with x : 4 gives x = 1.
+  Common mistake: Taking the intensity (not the amplitude) proportional to width gives amplitudes √3 : 1 and a different ratio. Read the question: amplitude ∝ width.
+  Key takeaway: Always convert to amplitudes before using (a₁ ± a₂)²; the fringe contrast depends on the amplitude ratio.
   Answer: 1
 P B 3: |-
-  Concept: Kepler's law T² ∝ r³, then the relative angular velocity at closest approach (aligned).
+  Concept: By Kepler's third law (T² ∝ r³), the orbital radii follow from the periods. When the satellites are closest, they lie on the same radial line with parallel velocities, so the relative angular velocity is the relative speed divided by their separation.
   Solution:
-  1. r₂ = 2000 × 8^{2/3} = 8000 km. v₁ = 2π × 2000/1 = 4000π km/h and v₂ = 2π × 8000/8 = 2000π km/h.
-  2. $\omega_{rel} = \frac{|v_2 - v_1|}{r_2 - r_1} = \frac{2000\pi}{6000} = \frac{\pi}{3}$ rad/h, so x = 3.
+  1. r₂/r₁ = (T₂/T₁)^{2/3} = 8^{2/3} = 4, so r₂ = 8000 km.
+  2. v₁ = 2πr₁/T₁ = 2π(2000)/1 = 4000π km/h.
+  3. v₂ = 2πr₂/T₂ = 2π(8000)/8 = 2000π km/h.
+  4. Relative speed = 4000π − 2000π = 2000π km/h (perpendicular to the line joining them).
+  5. Separation = 8000 − 2000 = 6000 km.
+  6. ω_rel = 2000π/6000 = π/3 rad/h, so x = 3.
+  Common mistake: Subtracting the angular speeds (2π − π/4) directly; the observer is not at the centre.
+  Key takeaway: The angular velocity seen from a moving observer is v_rel⊥ / separation.
   Answer: 3
 P B 4: |-
-  Concept: The same distance from rest gives $a \propto \frac{1}{t^2}$.
+  Concept: Starting from rest and covering the same distance s = ½at², the time scales as t ∝ 1/√a. So if the time grows by a factor α, the acceleration falls by α².
   Solution:
-  1. Smooth: a = g/2. Rough: $a' = g(\sin30° - \mu\cos30°) = \frac{a}{\alpha^2}$.
-  2. $\frac{1}{2} - \frac{\sqrt3}{2}\mu = \frac{1}{2\alpha^2}$, so $\mu = \frac{1}{\sqrt3}\cdot\frac{\alpha^2 - 1}{\alpha^2}$ and x = 3.
+  1. Smooth incline: a = g sin 30° = g/2.
+  2. Rough incline: a′ = g(sin 30° − μ cos 30°) = g(½ − (√3/2)μ).
+  3. The time is αT, so a′ = a/α² = g/(2α²).
+  4. ½ − (√3/2)μ = 1/(2α²), so (√3/2)μ = ½(1 − 1/α²) = (α² − 1)/(2α²).
+  5. μ = (1/√3) · (α² − 1)/α², so x = 3.
+  Common mistake: Taking t ∝ 1/a instead of 1/√a.
+  Key takeaway: For the same distance from rest, a₁/a₂ = (t₂/t₁)².
   Answer: 3
 P B 5: |-
-  Concept: $\frac{3}{2}k_BT = eV$.
+  Concept: The average translational KE of a gas molecule is $\frac32k_BT$, whatever the gas (N₂ being diatomic does not matter for the translational part). An electron accelerated through V volts gains KE = eV.
   Solution:
-  1. $T = \frac{2\times1.6\times10^{-20}}{3\times1.38\times10^{-23}} = 773$ K ≈ 500°C.
+  1. eV = 1.6 × 10⁻¹⁹ × 0.1 = 1.6 × 10⁻²⁰ J.
+  2. $\frac32k_BT = 1.6\times10^{-20}$, so $T = \frac{2\times1.6\times10^{-20}}{3\times1.38\times10^{-23}} = \frac{3.2\times10^{-20}}{4.14\times10^{-23}} \approx 773$ K.
+  3. In Celsius: 773 − 273 = 500°C.
+  Common mistake: Using (5/2)kT (including rotation) gives about 464 K; the question asks for the translational KE only.
+  Key takeaway: Translational KE = (3/2)kT for any ideal gas; 1 eV corresponds to about 7730 K.
   Answer: 500
 P B 6: |-
-  Concept: $P = \frac{V^2}{R}$.
+  Concept: At a fixed voltage, the power is P = V²/R, so a smaller resistance draws more power. Cutting a uniform wire in half halves its resistance.
   Solution:
-  1. First case: 240²/36 = 1600 W.
-  2. Each half is 18 Ω and dissipates 3200 W, so the total is 6400 W.
-  3. The ratio is 1 : 4.
+  1. Case 1: P₁ = 240²/36 = 57600/36 = 1600 W.
+  2. Case 2: each half has R = 18 Ω, and each gets the full 240 V: P = 57600/18 = 3200 W.
+  3. Total for the two halves: 6400 W.
+  4. Ratio P₁ : P₂ = 1600 : 6400 = 1 : 4, so x = 4.
+  Common mistake: Assuming each half gets 120 V (series) gives a ratio of 1 : 1; here each half is connected separately across 240 V.
+  Key takeaway: At fixed V, P ∝ 1/R. Halving R doubles P, and two such halves give 4×.
   Answer: 4
 P B 7: |-
-  Concept: Thermal stress when expansion is prevented: F = YAαΔT.
+  Concept: If a heated rod is prevented from expanding, the walls compress it back by exactly the free thermal expansion. The resulting thermal strain is αΔT, so the stress is YαΔT and the force is F = YAαΔT. The length of the rod does not matter.
   Solution:
-  1. F = 2 × 10¹¹ × 10⁻³ × 10⁻⁵ × 400 = 8 × 10⁵ N.
+  1. A = 10 cm² = 10⁻³ m², and ΔT = 400°C.
+  2. Strain = αΔT = 10⁻⁵ × 400 = 4 × 10⁻³.
+  3. F = YA × strain = 2 × 10¹¹ × 10⁻³ × 4 × 10⁻³ = 8 × 10⁵ N.
+  4. x = 8.
+  Common mistake: Including the length (4 m) in the formula; it cancels between ΔL and L.
+  Key takeaway: Thermal stress = YαΔT, independent of length.
   Answer: 8
 P B 8: |-
-  Concept: Energy conservation for a rod pivoted at one end; the centre of mass drops by L (from +L/2 to −L/2).
+  Concept: For a rod pivoted at one end, falling from vertical-up to vertical-down, mechanical energy is conserved. The centre of mass falls from +L/2 to −L/2 (a drop of L), and I about the end is mL²/3.
   Solution:
-  1. $mgL = \frac{1}{2}\cdot\frac{mL^2}{3}\omega^2$, so $\omega^2 = \frac{6g}{L} = 100$ and ω = 10 rad/s.
-  2. v = ωL = 6 m/s.
+  1. Loss in PE: mgL = 2 × 10 × 0.6 = 12 J.
+  2. Gain in KE: ½Iω² = ½(mL²/3)ω² = ½ × (2 × 0.36/3) × ω² = 0.12ω².
+  3. 0.12ω² = 12, so ω² = 100 and ω = 10 rad/s.
+  4. Speed of the free end: v = ωL = 10 × 0.6 = 6 m/s.
+  Common mistake: Using a drop of L/2 (the rod falling only to horizontal) gives √(3gL) ≈ 4.24 m/s.
+  Key takeaway: Up-to-down rotation gives ω = √(6g/L) and v_tip = √(6gL).
   Answer: 6
 P B 9: |-
-  Concept: AM envelope: $A_{max} = A_c + A_m$ and $A_{min} = A_c - A_m$.
+  Concept: In amplitude modulation, the envelope of the modulated wave swings between A_c + A_m and A_c − A_m. Here the modulation index μ = A_m/A_c = 150/250 = 0.6.
   Solution:
-  1. The ratio is 100 : 400 = 50 : 200, so x = 200.
+  1. A_max = 250 + 150 = 400 V.
+  2. A_min = 250 − 150 = 100 V.
+  3. A_min : A_max = 100 : 400 = 1 : 4 = 50 : 200.
+  4. x = 200.
+  Common mistake: Inverting the ratio (max : min) gives 50 : 12.5.
+  Key takeaway: AM envelope A_c(1 ± μ); for μ = 0.6 the envelope runs from 0.4A_c to 1.6A_c.
   Answer: 200
 P B 10: |-
-  Concept: 10% of the KE is stored in the spring.
+  Concept: The kinetic energy of the moving system is dissipated during braking. Here 90% is lost to friction and the remaining 10% is stored as elastic potential energy in the compressed shock-absorber spring, ½kx².
   Solution:
-  1. KE = ½ × 4 × 10⁴ × 20² = 8 × 10⁶ J, so the spring stores 8 × 10⁵ J.
-  2. ½k(1)² = 8 × 10⁵, so k = 16 × 10⁵ N/m.
+  1. v = 72 km/h = 20 m/s.
+  2. KE = ½ × 40,000 × 20² = 8 × 10⁶ J.
+  3. Energy stored in the spring = 10% of the KE = 8 × 10⁵ J.
+  4. ½k(1.0)² = 8 × 10⁵, so k = 16 × 10⁵ N/m.
+  5. The shock absorber's length (1.5 m) is extra data; only the compression x = 1.0 m matters.
+  Common mistake: Using the full KE (k = 1.6 × 10⁷) or the 90% fraction instead of 10%.
+  Key takeaway: Energy bookkeeping: KE = friction loss + spring PE. Convert km/h to m/s (÷3.6).
   Answer: 16

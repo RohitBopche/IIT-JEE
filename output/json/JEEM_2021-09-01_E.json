@@ -49,7 +49,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Gauss's law. E is along ŷ, so only the faces at y = 0 and y = 0.5 m carry flux.\nSolution:\n1. At y = 0, E = 0. At y = 0.5 m, E = 150 × 0.25 = 37.5 N/C, so Φ = 37.5 × 0.25 = 9.375 N m²/C.\n2. Q = ε₀Φ = 8.85 × 10⁻¹² × 9.375 ≈ 8.3 × 10⁻¹¹ C.\nAnswer: (B)",
+   "explanation": "Concept: By Gauss's law, $Q_{enc} = \\varepsilon_0\\Phi_{net}$. The field $\\vec E = 150y^2\\hat j$ points along y only, so flux passes only through the two faces perpendicular to the y-axis. The other four faces are parallel to E and carry no flux.\nSolution:\n1. The cube spans y = 0 to y = 0.5 m, and each face has area 0.25 m².\n2. Face at y = 0: E = 0, so the flux is 0.\n3. Face at y = 0.5 m: E = 150 × (0.5)² = 37.5 N/C, pointing outward along +ĵ. Flux = 37.5 × 0.25 = 9.375 N m²/C.\n4. Net flux = 9.375 N m²/C.\n5. Q = ε₀Φ = 8.85 × 10⁻¹² × 9.375 ≈ 8.3 × 10⁻¹¹ C.\nWhy others are wrong:\n- (A) 3.8 × 10⁻¹¹ C swaps the digits.\n- (C) and (D) are ten times smaller; they come from using a wrong face area or E value.\nKey takeaway: For a non-uniform field along one axis, only the faces perpendicular to it matter: net flux = (E_far − E_near) × A.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A01",
@@ -96,7 +96,7 @@
      ]
     }
    ],
-   "explanation": "Concept: The moving arm is a source of emf v₀Bl with internal resistance 1 Ω. The resistor network reduces to 4 Ω (two 8 Ω paths in parallel).\nSolution:\n1. $i = \\frac{v_0Bl}{4 + 1}$, so $v_0 = \\frac{5\\times2\\times10^{-3}}{5\\times0.2} = 10^{-2}$ m/s = 1 cm/s.\nAnswer: (B)",
+   "explanation": "Concept: The arm of the loop inside the field moves through it and acts as a battery with motional emf ε = Bv₀l and internal resistance equal to the loop's resistance (1 Ω). The external resistor network is the load, and the current follows from Ohm's law for the full circuit.\nSolution:\n1. From the figure, the 4 Ω resistors reduce to two paths of 8 Ω each (two 4 Ω in series), connected in parallel: 8 ∥ 8 = 4 Ω.\n2. Total resistance = 4 + 1 = 5 Ω.\n3. $i = \\frac{Bv_0l}{R_{total}}$, so $2\\times10^{-3} = \\frac{5\\times v_0\\times0.2}{5}$, giving $v_0 = \\frac{2\\times10^{-3}\\times5}{1} = 10^{-2}$ m/s.\n4. 10⁻² m/s = 1 cm/s.\nWhy others are wrong:\n- (A) 1 m/s is 100 times too fast; it forgets that i is in mA.\n- (C) 10² m/s is far too large.\n- (D) 10⁻² cm/s gives the number in the wrong unit (10⁻² m/s, not cm/s).\nKey takeaway: A rod moving through a field is an emf source Bvl with internal resistance; then solve an ordinary DC circuit.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A02",
@@ -133,7 +133,7 @@
     1
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $\\lambda = \\frac{h}{\\sqrt{2mE}}$ with $E = \\frac{3}{2}k_BT$.\nSolution:\n1. $\\lambda = \\frac{6.6\\times10^{-34}}{\\sqrt{3\\times9\\times10^{-31}\\times1.38\\times10^{-23}\\times300}} = 6.26\\times10^{-9}$ m.\nAnswer: (A)",
+   "explanation": "Concept: A thermal electron in 3-D has average kinetic energy $E = \\frac32k_BT$. Its de Broglie wavelength is $\\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2mE}} = \\frac{h}{\\sqrt{3mk_BT}}$.\nSolution:\n1. $3mk_BT = 3\\times9\\times10^{-31}\\times1.38\\times10^{-23}\\times300 = 1.118\\times10^{-50}$.\n2. $\\sqrt{1.118\\times10^{-50}} = 1.057\\times10^{-25}$ kg m/s.\n3. $\\lambda = \\frac{6.6\\times10^{-34}}{1.057\\times10^{-25}} \\approx 6.2\\times10^{-9}$ m ≈ 6.26 nm.\nWhy others are wrong:\n- (B) 8.46 nm uses E = k_BT (a 1-D assumption), which is too small an energy.\n- (C) 2.26 nm and (D) 3.25 nm come from arithmetic errors or from using a proton-like mass.\nKey takeaway: Thermal de Broglie wavelength $\\lambda = h/\\sqrt{3mkT}$; for electrons at 300 K it is a few nanometres.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A03",
@@ -168,7 +168,7 @@
     2
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Work–energy theorem: $W_g + W_{air} = \\Delta K$.\nSolution:\n1. $mgh + W_{air} = \\frac{1}{2}m(0.64gh) = 0.32mgh$.\n2. $W_{air} = -0.68mgh$.\nAnswer: (A)",
+   "explanation": "Concept: The work–energy theorem says the total work by all forces equals the change in kinetic energy: W_gravity + W_air = ΔK. Air resistance does negative work because it opposes the motion.\nSolution:\n1. The body starts from rest, so K_i = 0.\n2. K_f = ½m(0.8√(gh))² = ½m(0.64gh) = 0.32mgh.\n3. Work by gravity: W_g = +mgh.\n4. mgh + W_air = 0.32mgh, so W_air = −0.68mgh.\nWhy others are wrong:\n- (B) mgh is the work done by gravity, not by air friction.\n- (C) 1.64 mgh has the wrong sign and magnitude.\n- (D) 0.64 mgh confuses v² (0.64gh) with the energy lost, and has the wrong sign.\nKey takeaway: Friction or air drag always does negative work; the energy lost = mgh − final KE.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A04",
@@ -203,7 +203,7 @@
     2
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $R = \\frac{u^2\\sin2\\theta}{g}$ is equal for complementary angles; $H = \\frac{u^2\\sin^2\\theta}{2g}$ grows with θ.\nSolution:\n1. 42° + 48° = 90°, so R₁ = R₂.\n2. sin 48° > sin 42°, so H₁ < H₂.\nAnswer: (B)",
+   "explanation": "Concept: For a projectile, $R = \\frac{u^2\\sin2\\theta}{g}$ and $H = \\frac{u^2\\sin^2\\theta}{2g}$. Since sin 2θ = sin(180° − 2θ), complementary angles (θ and 90° − θ) give the same range. The height depends on sin²θ, which increases with θ up to 90°.\nSolution:\n1. 42° + 48° = 90°, so the angles are complementary.\n2. sin 84° = sin 96°, so R₁ = R₂.\n3. sin 42° < sin 48°, so H₁ < H₂.\n4. Also, $\\frac{H_1}{H_2} = \\frac{\\sin^242°}{\\sin^248°} = \\tan^242° < 1$.\nWhy others are wrong:\n- (A) and (C) claim unequal ranges, but complementary angles give equal ranges.\n- (D) claims equal heights, but the steeper projectile rises higher.\nKey takeaway: Complementary angles give equal range; the steeper angle gives a greater height and a longer flight time.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A05",
@@ -248,7 +248,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Block on a free wedge: $a_{rel} = \\frac{(M + m)g\\sin\\theta}{M + m\\sin^2\\theta}$.\nSolution:\n1. $a_{rel} = \\frac{24\\times\\frac{1}{2}g}{16 + 8\\times\\frac{1}{4}} = \\frac{12g}{18} = \\frac{2}{3}g$.\nAnswer: (D)",
+   "explanation": "Concept: On a free, frictionless wedge, the block's normal force pushes the wedge backward, so the wedge accelerates. Solving the equations in the wedge frame (with the pseudo force) gives the block's acceleration relative to the wedge: $a_{rel} = \\frac{(M + m)g\\sin\\theta}{M + m\\sin^2\\theta}$.\nSolution:\n1. From the figure, θ = 30°, so sin θ = ½ and sin²θ = ¼.\n2. M + m = 16 + 8 = 24 kg, and M + m sin²θ = 16 + 8 × ¼ = 18 kg.\n3. $a_{rel} = \\frac{24\\times\\frac12g}{18} = \\frac{12g}{18} = \\frac{2}{3}g$.\nWhy others are wrong:\n- (A) 4g/3 and (B) 6g/5 exceed g sin θ by a large factor.\n- (C) 3g/5 comes from errors in the denominator.\nKey takeaway: For a moving wedge, a_rel > g sin θ, because the wedge recoils and reduces the normal force.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A06",
@@ -285,7 +285,7 @@
     3
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Heat to warm the ice to 0°C plus latent heat, supplied at P = I²R.\nSolution:\n1. m = 10⁻⁴ × 1 × 10³ = 0.1 kg; Q = 0.1(2000 × 10 + 3.33 × 10⁵) = 35300 J.\n2. P = 0.25 × 4000 = 1000 W, so t = 35.3 s.\nAnswer: (B)",
+   "explanation": "Concept: Melting ice that starts below 0°C needs two heats: sensible heat to warm the ice to 0°C (mcΔT) plus latent heat to melt it (mL). The resistor supplies heat at the rate P = I²R, and the minimum time assumes no losses.\nSolution:\n1. Volume = 1 m × 10⁻⁴ m² = 10⁻⁴ m³, so the mass = 10³ × 10⁻⁴ = 0.1 kg.\n2. Warming: 0.1 × 2000 × 10 = 2000 J.\n3. Melting: 0.1 × 3.33 × 10⁵ = 33,300 J.\n4. Total Q = 35,300 J.\n5. Power: P = (0.5)² × 4000 = 1000 W.\n6. t = Q/P = 35.3 s.\nWhy others are wrong:\n- (A) 0.353 s and (C) 3.53 s are powers-of-ten slips.\n- (D) 70.6 s uses double the heat or half the power.\nKey takeaway: Always include the heat needed to reach the phase-change temperature before the latent heat.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A07",
@@ -320,7 +320,7 @@
     3
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $\\frac{\\Delta Y}{Y} = \\frac{\\Delta M}{M} + 3\\frac{\\Delta L}{L} + \\frac{\\Delta b}{b} + 3\\frac{\\Delta d}{d} + \\frac{\\Delta\\delta}{\\delta}$.\nSolution:\n1. The terms are 0.0005 + 0.003 + 0.0025 + 0.0075 + 0.002.\n2. The total is 0.0155.\nAnswer: (B)",
+   "explanation": "Concept: For $Y = \\frac{MgL^3}{4bd^3\\delta}$, the maximum fractional error is the sum of each variable's fractional error times its power: $\\frac{\\Delta Y}{Y} = \\frac{\\Delta M}{M} + 3\\frac{\\Delta L}{L} + \\frac{\\Delta b}{b} + 3\\frac{\\Delta d}{d} + \\frac{\\Delta\\delta}{\\delta}$. The least count of each instrument is the absolute error.\nSolution:\n1. ΔM/M = 1 g / 2000 g = 0.0005.\n2. 3ΔL/L = 3 × (1 mm / 1000 mm) = 0.003.\n3. Δb/b = 0.1 mm / 40 mm = 0.0025.\n4. 3Δd/d = 3 × (0.01 mm / 4 mm) = 0.0075.\n5. Δδ/δ = 0.01 mm / 5 mm = 0.002.\n6. Sum = 0.0005 + 0.003 + 0.0025 + 0.0075 + 0.002 = 0.0155.\nWhy others are wrong:\n- (A) 0.0083 omits the factors of 3 on L and d.\n- (C) and (D) are ten times off, from unit slips such as treating cm as mm.\nKey takeaway: Powers multiply fractional errors; convert every quantity to the same unit before dividing.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A08",
@@ -355,7 +355,7 @@
     3
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For parallel resistors, differentiate $\\frac{1}{R} = \\frac{1}{R_1} + \\frac{1}{R_2}$: $\\frac{\\Delta R}{R^2} = \\frac{\\Delta R_1}{R_1^2} + \\frac{\\Delta R_2}{R_2^2}$.\nSolution:\n1. R = 2 Ω.\n2. $\\Delta R = 4\\left(\\frac{0.8}{16} + \\frac{0.4}{16}\\right) = 0.3$ Ω, so R = (2 ± 0.3) Ω.\nAnswer: (C)",
+   "explanation": "Concept: For resistors in parallel, $\\frac{1}{R} = \\frac{1}{R_1} + \\frac{1}{R_2}$. Differentiating (with maximum errors adding) gives $\\frac{\\Delta R}{R^2} = \\frac{\\Delta R_1}{R_1^2} + \\frac{\\Delta R_2}{R_2^2}$.\nSolution:\n1. R = (4 × 4)/(4 + 4) = 2 Ω.\n2. $\\frac{\\Delta R}{4} = \\frac{0.8}{16} + \\frac{0.4}{16} = \\frac{1.2}{16} = 0.075$.\n3. ΔR = 0.3 Ω.\n4. Result: R = (2 ± 0.3) Ω.\nWhy others are wrong:\n- (A) and (D) keep R = 4 Ω; that is the series-style value of a single resistor, not the parallel combination.\n- (B) ±0.4 comes from adding the absolute errors and halving, which is not valid for reciprocals.\nKey takeaway: Differentiate the actual formula for the combination; errors in reciprocals scale with 1/R².\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A09",
@@ -390,7 +390,7 @@
     3
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $T_{1/2} = \\frac{0.693}{\\lambda}$ and $\\tau = \\frac{1}{\\lambda}$.\nSolution:\n1. $\\frac{0.693}{\\lambda_x} = \\frac{1}{\\lambda_y}$, so λ_x = 0.693λ_y < λ_y.\n2. y has the larger decay constant, so it decays faster.\nAnswer: (B)",
+   "explanation": "Concept: For radioactive decay, $T_{1/2} = \\frac{\\ln2}{\\lambda} = \\frac{0.693}{\\lambda}$ and the mean life is $\\tau = \\frac{1}{\\lambda}$. The activity is A = λN, so a larger λ means faster decay.\nSolution:\n1. Given $T_{1/2}(x) = \\tau(y)$: $\\frac{0.693}{\\lambda_x} = \\frac{1}{\\lambda_y}$.\n2. So λ_x = 0.693λ_y, which means λ_y > λ_x.\n3. With equal initial N, y has a larger initial activity (λ_yN₀ > λ_xN₀), and its population keeps falling faster: N = N₀e^{−λt}.\n4. So y decays faster than x.\nWhy others are wrong:\n- (A) reverses the comparison.\n- (C) and (D) assume equal decay constants; the mean life is always longer than the half-life for the same nuclide (τ = 1.44 T½).\nKey takeaway: τ = 1.44 T½; if one element's half-life equals another's mean life, the second has the larger λ.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A10",
@@ -435,7 +435,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Diamagnets have a small, negative, temperature-independent χ.\nSolution:\n1. M = χH with χ < 0 gives a line of negative slope: (a).\n2. χ is negative and constant with T: (c). Graph (d) (the Curie law) is for paramagnets.\nAnswer: (A)",
+   "explanation": "Concept: Diamagnetic materials acquire a weak magnetisation opposite to the applied field, so their susceptibility χ is small and negative. It comes from orbital motion (Lenz's law at the atomic level), not from aligned permanent dipoles, so it is essentially independent of temperature.\nSolution:\n1. M = χH with χ < 0 gives a straight line through the origin with negative slope: graph (a).\n2. χ is negative and constant with temperature: graph (c).\n3. The diamagnetic combination is (a) and (c).\nWhy others are wrong:\n- (b) positive slope is paramagnetic behaviour (χ > 0).\n- (d) a χ that falls as 1/T is Curie's law for paramagnets. So (B), (C) and (D) are wrong.\nKey takeaway: Diamagnetic: χ < 0, T-independent. Paramagnetic: χ > 0, ∝ 1/T. Ferromagnetic: large χ above T_c.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A11",
@@ -472,7 +472,7 @@
     4
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Apparent depth = real depth / μ.\nSolution:\n1. He sees the water depth as 3H/4 and the empty part as 17.5 − H, and judges them equal (half full).\n2. 3H/4 = 17.5 − H, so H = 10 cm.\nAnswer: (B)",
+   "explanation": "Concept: Seen from above, a liquid layer of real depth H looks shallower, with apparent depth H/μ. The student judges \"half-filled\" by comparing the apparent water depth with the empty (air) part of the tumbler.\nSolution:\n1. Let the real water height be H. The apparent water depth is H/μ = 3H/4.\n2. The empty part above the water is 17.5 − H (air, so no correction).\n3. The student feels it is half full when 3H/4 = 17.5 − H.\n4. 7H/4 = 17.5, so H = 10 cm.\nWhy others are wrong:\n- (D) 8.75 cm is the true half (17.5/2) without the refraction correction.\n- (C) 7.5 cm applies the correction the wrong way.\n- (A) 11.7 cm comes from mixing up μ and 1/μ.\nKey takeaway: Apparent depth = real depth/μ, so water looks shallower and you over-fill.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A12",
@@ -517,7 +517,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Forward-biased diodes add 30 Ω each; a reverse-biased diode blocks its branch.\nSolution:\n1. The two conducting branches are 160 Ω each, giving 80 Ω in parallel; the third branch is blocked.\n2. Total resistance = 80 + 20 = 100 Ω, so I₁ = 200/100 = 2 A.\nAnswer: (C)",
+   "explanation": "Concept: An ideal-switch diode model with resistance: a forward-biased diode acts as a 30 Ω resistor, and a reverse-biased diode is an open circuit. Check each diode's orientation relative to the battery polarity first.\nSolution:\n1. From the figure, two branches have forward-biased diodes: each is 130 Ω + 30 Ω = 160 Ω. The third branch has a reverse-biased diode, so it carries no current.\n2. Two 160 Ω branches in parallel: 80 Ω.\n3. In series with the 20 Ω resistor: R_total = 100 Ω.\n4. I₁ = 200 V / 100 Ω = 2 A.\nWhy others are wrong:\n- (A) 3.75 A and (D) 2.73 A include the reverse-biased branch.\n- (B) 2.35 A ignores the diode forward resistance.\nKey takeaway: Find each diode's bias first, remove the reverse-biased branches, and then solve the circuit.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A13",
@@ -564,7 +564,7 @@
      ]
     }
    ],
-   "explanation": "Concept: In steady state, an ideal inductor acts as a plain wire.\nSolution:\n1. The three 3 Ω branches are in parallel: 1 Ω.\n2. i = 30/(2 + 1) = 10 A.\nAnswer: (C)",
+   "explanation": "Concept: In steady state (long after the key is closed), the current through an inductor is constant, so L di/dt = 0. An ideal inductor then behaves as a zero-resistance wire.\nSolution:\n1. Replace each inductor with a plain wire.\n2. The three 3 Ω resistors now sit in parallel: 3/3 = 1 Ω.\n3. In series with the 2 Ω resistor: total = 3 Ω.\n4. i = 30 V / 3 Ω = 10 A.\nWhy others are wrong:\n- (D) 0 A is the value just after closing if all paths contain inductors, not the steady state.\n- (A) 6 A and (B) 25 A come from wrong combinations of the resistors.\nKey takeaway: At t = 0, L is an open circuit; at t → ∞, L is a short. For C it is the reverse.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A14",
@@ -629,7 +629,7 @@
      ]
     }
    ],
-   "explanation": "Concept: At constant velocity, the applied force balances mg sin θ along the surface.\nSolution:\n1. Going up the first slope, the force is +2 N (along the motion).\n2. Going down the second slope, it must hold the object back, so it is −2 N.\n3. The graph is a +2 N step for the first half of D and −2 N for the second half.\nAnswer: (B)",
+   "explanation": "Concept: At constant velocity, the net force is zero. On an incline with no friction, the applied force along the surface must balance the gravity component mg sin θ. Its direction relative to the motion depends on whether the object goes up or down.\nSolution:\n1. The surface rises for the first half of D and falls for the second half, with the same slope angle.\n2. Going up, gravity pulls backward, so the applied force must push forward: F = +mg sin θ = +2 N (constant).\n3. Going down, gravity pulls forward, so the applied force must hold back: F = −2 N (constant).\n4. The graph is a +2 N step over [0, D/2] and −2 N over [D/2, D].\nWhy others are wrong:\n- (A) and (C) are triangular graphs, which imply a changing slope angle; the profile has straight sides.\n- (D) reverses the signs: pushing back while going uphill would slow the object down.\nKey takeaway: For constant velocity, F_applied = −(sum of the other forces) at each point; the sign changes where the slope reverses.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A15",
@@ -678,7 +678,7 @@
      ]
     }
    ],
-   "explanation": "Concept: $U_{max} = \\frac{1}{2}kA^2$, and set the periods equal.\nSolution:\n1. From the graph, 10 = ½k(2)², so k = 5 N/m and $T = 2\\pi\\sqrt{\\frac{5}{5}} = 2\\pi$.\n2. $2\\pi\\sqrt{\\frac{4}{g}} = 2\\pi$, so g = 4 m/s².\nAnswer: (C)",
+   "explanation": "Concept: The potential energy curve of SHM, U = ½kx², peaks at U_max = ½kA² at the turning points. Reading U_max and A from the graph gives k, and so the period $T = 2\\pi\\sqrt{m/k}$. Equate this with the pendulum period $2\\pi\\sqrt{L/g}$.\nSolution:\n1. From the graph, U_max = 10 J at A = 2 m, so 10 = ½k(4) and k = 5 N/m.\n2. Spring period: $T = 2\\pi\\sqrt{\\frac{5}{5}} = 2\\pi$ s.\n3. Pendulum: $2\\pi\\sqrt{\\frac{4}{g}} = 2\\pi$, so 4/g = 1 and g = 4 m/s².\nWhy others are wrong:\n- (A) 10 m/s² and (D) 9.8 m/s² assume Earth-like gravity without using the data.\n- (B) 5 m/s² confuses g with k.\nKey takeaway: Extract k from the U–x curve, then match the periods: m/k = L/g.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A16",
@@ -715,7 +715,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Charging: $V = V_0(1 - e^{-t/RC})$.\nSolution:\n1. $e^{-t/RC} = \\frac{9}{10}$, so $\\frac{t}{RC} = \\ln\\frac{10}{9} = 0.105$.\n2. $C = \\frac{10^{-6}}{10\\times0.105} = 0.95$ μF.\nAnswer: (B)",
+   "explanation": "Concept: When a capacitor charges through R from a battery V₀, its voltage rises as $V = V_0(1 - e^{-t/RC})$, with time constant τ = RC.\nSolution:\n1. 2 = 20(1 − e^{−t/RC}), so e^{−t/RC} = 0.9 = 9/10.\n2. t/RC = ln(10/9) = 0.105.\n3. RC = t/0.105 = 10⁻⁶/0.105 s.\n4. C = 10⁻⁶ / (10 × 0.105) = 0.952 × 10⁻⁶ F ≈ 0.95 μF.\nWhy others are wrong:\n- (A) 9.52 μF is off by a factor of 10 (it drops R).\n- (C) 0.105 is the value of ln(10/9) itself.\n- (D) 1.85 μF comes from using ln 10 or other slips.\nKey takeaway: Charging to 10% of V₀ takes t = RC ln(10/9) ≈ 0.105RC.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A17",
@@ -760,7 +760,7 @@
      ]
     }
    ],
-   "explanation": "Concept: The net gravitational pull toward the centre supplies the centripetal force.\nSolution:\n1. Two neighbours at √2R each give $\\frac{GM^2}{2R^2}$ at 45°, contributing $\\sqrt2\\frac{GM^2}{2R^2}$ toward the centre. The opposite particle at 2R gives $\\frac{GM^2}{4R^2}$.\n2. $\\frac{MV^2}{R} = \\frac{GM^2}{R^2}\\left(\\frac{1}{\\sqrt2} + \\frac{1}{4}\\right)$, so $V = \\frac{1}{2}\\sqrt{\\frac{GM}{R}(2\\sqrt2 + 1)}$.\nAnswer: (B)",
+   "explanation": "Concept: The four particles sit at the corners of a square inscribed in the circle. Each feels gravity from the other three, and the component toward the centre supplies the centripetal force Mv²/R. The tangential components cancel by symmetry.\nSolution:\n1. The adjacent particles are at distance √2R: each force is $\\frac{GM^2}{2R^2}$, at 45° to the radius. Two of them contribute $2\\times\\frac{GM^2}{2R^2}\\cos45° = \\frac{GM^2}{\\sqrt2R^2}$.\n2. The opposite particle is at distance 2R: force $\\frac{GM^2}{4R^2}$, directly toward the centre.\n3. $\\frac{Mv^2}{R} = \\frac{GM^2}{R^2}\\left(\\frac{1}{\\sqrt2} + \\frac14\\right) = \\frac{GM^2}{4R^2}(2\\sqrt2 + 1)$.\n4. $v = \\frac12\\sqrt{\\frac{GM}{R}(2\\sqrt2 + 1)}$.\nWhy others are wrong:\n- (A) puts (2√2 + 1) in the denominator, which is algebraically wrong.\n- (C) has a minus sign; all three contributions point inward and add.\n- (D) is the single-body orbital speed around a central mass M.\nKey takeaway: For n bodies on a ring, sum only the radial components of the forces from all the others.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A18",
@@ -797,7 +797,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $v = \\frac{\\omega}{k}$ and $n = \\frac{c}{v} = \\sqrt{\\varepsilon_r\\mu_r}$.\nSolution:\n1. v = 2 × 10¹⁰/200 = 10⁸ m/s, so n = 3 and ε_r = 9.\nAnswer: (A)",
+   "explanation": "Concept: For a wave cos(ωt − kx), the phase velocity is v = ω/k. In a medium, v = c/n with $n = \\sqrt{\\varepsilon_r\\mu_r}$. For a non-magnetic medium (μ_r = 1), ε_r = n².\nSolution:\n1. ω = 2 × 10¹⁰ rad/s and k = 200 m⁻¹.\n2. v = ω/k = 2 × 10¹⁰/200 = 10⁸ m/s.\n3. n = c/v = 3 × 10⁸/10⁸ = 3.\n4. ε_r = n² = 9.\nWhy others are wrong:\n- (D) 3 is the refractive index, not the dielectric constant.\n- (C) 1/3 inverts it.\n- (B) 2 has no basis.\nKey takeaway: The dielectric constant is n² (for μ_r = 1); do not stop at n.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A19",
@@ -842,7 +842,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Field of a semi-infinite wire ending at the foot of the perpendicular: $\\frac{\\mu_0I}{4\\pi d}(\\sin90° + \\sin\\theta)$.\nSolution:\n1. The y-wire at distance x gives $\\frac{\\mu_0I}{4\\pi x}\\left(1 + \\frac{y}{r}\\right)$; the x-wire at distance y gives $\\frac{\\mu_0I}{4\\pi y}\\left(1 + \\frac{x}{r}\\right)$, where r = √(x² + y²). Both are in the same direction.\n2. The sum is $\\frac{\\mu_0I}{4\\pi xy}\\left[(x + y) + \\frac{x^2 + y^2}{r}\\right] = \\frac{\\mu_0I}{4\\pi xy}\\left[\\sqrt{x^2 + y^2} + (x + y)\\right]$.\nAnswer: (A)",
+   "explanation": "Concept: A semi-infinite wire whose end is at the foot of the perpendicular from P gives $B = \\frac{\\mu_0I}{4\\pi d}(\\sin90° + \\sin\\phi)$, where d is the perpendicular distance and φ is the angle subtended toward the finite end. Two wires meeting at right angles at the origin, with P = (x, y), each contribute this way.\nSolution:\n1. The wire along the y-axis is at perpendicular distance x from P: $B_1 = \\frac{\\mu_0I}{4\\pi x}\\left(1 + \\frac{y}{r}\\right)$ with r = √(x² + y²).\n2. The wire along the x-axis is at perpendicular distance y: $B_2 = \\frac{\\mu_0I}{4\\pi y}\\left(1 + \\frac{x}{r}\\right)$.\n3. For the current directions shown, both fields point the same way (perpendicular to the plane).\n4. $B = \\frac{\\mu_0I}{4\\pi xy}\\left[y + \\frac{y^2}{r} + x + \\frac{x^2}{r}\\right] = \\frac{\\mu_0I}{4\\pi xy}\\left[(x + y) + \\sqrt{x^2 + y^2}\\right]$.\nWhy others are wrong:\n- (B) subtracts the terms, as if the fields were opposed.\n- (C) and (D) have xy in the numerator, which is dimensionally wrong (B must fall off as 1/distance).\nKey takeaway: Use (sin α + sin β) for finite or semi-infinite wires and check the directions before adding.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_A20",
@@ -874,7 +874,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: At constant pressure, $\\Delta U = nC_v\\Delta T$ and $W = nR\\Delta T$.\nSolution:\n1. For a diatomic gas (rotating, not vibrating), $C_v = \\frac{5}{2}R$, so ΔU/W = 2.5 = 25/10 and x = 25.\nAnswer: 25",
+   "explanation": "Concept: At constant pressure, heat supplied to an ideal gas goes into internal energy (ΔU = nC_vΔT) and into expansion work (W = PΔV = nRΔT). A diatomic gas that rotates but does not vibrate has 5 degrees of freedom, so C_v = 5R/2.\nSolution:\n1. ΔU = n(5R/2)ΔT.\n2. W = nRΔT.\n3. ΔU/W = 5/2 = 2.5 = 25/10.\n4. x = 25.\n5. The given values n = 3, ΔT = 40 and R = 8.31 cancel in the ratio: ΔU ≈ 2493 J and W ≈ 997 J.\nCommon mistake: Including the vibrational modes (C_v = 7R/2), which gives 35.\nKey takeaway: At constant pressure, ΔU : W = f/2 : 1, where f is the number of active degrees of freedom.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B01",
@@ -904,7 +904,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Amplitudes are 3a and a, so $\\frac{I_{min}}{I_{max}} = \\left(\\frac{3 - 1}{3 + 1}\\right)^2$.\nSolution:\n1. The ratio is 4/16 = 1/4 = 1 : 4, so x = 1.\nAnswer: 1",
+   "explanation": "Concept: Here the amplitude is proportional to slit width, so the amplitudes are in the ratio 3 : 1. In interference, $I_{max} \\propto (a_1 + a_2)^2$ and $I_{min} \\propto (a_1 - a_2)^2$.\nSolution:\n1. a₁ = 3a and a₂ = a.\n2. I_max ∝ (4a)² = 16a² and I_min ∝ (2a)² = 4a².\n3. I_min : I_max = 4 : 16 = 1 : 4.\n4. Comparing with x : 4 gives x = 1.\nCommon mistake: Taking the intensity (not the amplitude) proportional to width gives amplitudes √3 : 1 and a different ratio. Read the question: amplitude ∝ width.\nKey takeaway: Always convert to amplitudes before using (a₁ ± a₂)²; the fringe contrast depends on the amplitude ratio.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B02",
@@ -934,7 +934,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Kepler's law T² ∝ r³, then the relative angular velocity at closest approach (aligned).\nSolution:\n1. r₂ = 2000 × 8^{2/3} = 8000 km. v₁ = 2π × 2000/1 = 4000π km/h and v₂ = 2π × 8000/8 = 2000π km/h.\n2. $\\omega_{rel} = \\frac{|v_2 - v_1|}{r_2 - r_1} = \\frac{2000\\pi}{6000} = \\frac{\\pi}{3}$ rad/h, so x = 3.\nAnswer: 3",
+   "explanation": "Concept: By Kepler's third law (T² ∝ r³), the orbital radii follow from the periods. When the satellites are closest, they lie on the same radial line with parallel velocities, so the relative angular velocity is the relative speed divided by their separation.\nSolution:\n1. r₂/r₁ = (T₂/T₁)^{2/3} = 8^{2/3} = 4, so r₂ = 8000 km.\n2. v₁ = 2πr₁/T₁ = 2π(2000)/1 = 4000π km/h.\n3. v₂ = 2πr₂/T₂ = 2π(8000)/8 = 2000π km/h.\n4. Relative speed = 4000π − 2000π = 2000π km/h (perpendicular to the line joining them).\n5. Separation = 8000 − 2000 = 6000 km.\n6. ω_rel = 2000π/6000 = π/3 rad/h, so x = 3.\nCommon mistake: Subtracting the angular speeds (2π − π/4) directly; the observer is not at the centre.\nKey takeaway: The angular velocity seen from a moving observer is v_rel⊥ / separation.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B03",
@@ -964,7 +964,7 @@
     9
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The same distance from rest gives $a \\propto \\frac{1}{t^2}$.\nSolution:\n1. Smooth: a = g/2. Rough: $a' = g(\\sin30° - \\mu\\cos30°) = \\frac{a}{\\alpha^2}$.\n2. $\\frac{1}{2} - \\frac{\\sqrt3}{2}\\mu = \\frac{1}{2\\alpha^2}$, so $\\mu = \\frac{1}{\\sqrt3}\\cdot\\frac{\\alpha^2 - 1}{\\alpha^2}$ and x = 3.\nAnswer: 3",
+   "explanation": "Concept: Starting from rest and covering the same distance s = ½at², the time scales as t ∝ 1/√a. So if the time grows by a factor α, the acceleration falls by α².\nSolution:\n1. Smooth incline: a = g sin 30° = g/2.\n2. Rough incline: a′ = g(sin 30° − μ cos 30°) = g(½ − (√3/2)μ).\n3. The time is αT, so a′ = a/α² = g/(2α²).\n4. ½ − (√3/2)μ = 1/(2α²), so (√3/2)μ = ½(1 − 1/α²) = (α² − 1)/(2α²).\n5. μ = (1/√3) · (α² − 1)/α², so x = 3.\nCommon mistake: Taking t ∝ 1/a instead of 1/√a.\nKey takeaway: For the same distance from rest, a₁/a₂ = (t₂/t₁)².\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B04",
@@ -994,7 +994,7 @@
     9
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $\\frac{3}{2}k_BT = eV$.\nSolution:\n1. $T = \\frac{2\\times1.6\\times10^{-20}}{3\\times1.38\\times10^{-23}} = 773$ K ≈ 500°C.\nAnswer: 500",
+   "explanation": "Concept: The average translational KE of a gas molecule is $\\frac32k_BT$, whatever the gas (N₂ being diatomic does not matter for the translational part). An electron accelerated through V volts gains KE = eV.\nSolution:\n1. eV = 1.6 × 10⁻¹⁹ × 0.1 = 1.6 × 10⁻²⁰ J.\n2. $\\frac32k_BT = 1.6\\times10^{-20}$, so $T = \\frac{2\\times1.6\\times10^{-20}}{3\\times1.38\\times10^{-23}} = \\frac{3.2\\times10^{-20}}{4.14\\times10^{-23}} \\approx 773$ K.\n3. In Celsius: 773 − 273 = 500°C.\nCommon mistake: Using (5/2)kT (including rotation) gives about 464 K; the question asks for the translational KE only.\nKey takeaway: Translational KE = (3/2)kT for any ideal gas; 1 eV corresponds to about 7730 K.\nAnswer: 500",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B05",
@@ -1024,7 +1024,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $P = \\frac{V^2}{R}$.\nSolution:\n1. First case: 240²/36 = 1600 W.\n2. Each half is 18 Ω and dissipates 3200 W, so the total is 6400 W.\n3. The ratio is 1 : 4.\nAnswer: 4",
+   "explanation": "Concept: At a fixed voltage, the power is P = V²/R, so a smaller resistance draws more power. Cutting a uniform wire in half halves its resistance.\nSolution:\n1. Case 1: P₁ = 240²/36 = 57600/36 = 1600 W.\n2. Case 2: each half has R = 18 Ω, and each gets the full 240 V: P = 57600/18 = 3200 W.\n3. Total for the two halves: 6400 W.\n4. Ratio P₁ : P₂ = 1600 : 6400 = 1 : 4, so x = 4.\nCommon mistake: Assuming each half gets 120 V (series) gives a ratio of 1 : 1; here each half is connected separately across 240 V.\nKey takeaway: At fixed V, P ∝ 1/R. Halving R doubles P, and two such halves give 4×.\nAnswer: 4",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B06",
@@ -1054,7 +1054,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Thermal stress when expansion is prevented: F = YAαΔT.\nSolution:\n1. F = 2 × 10¹¹ × 10⁻³ × 10⁻⁵ × 400 = 8 × 10⁵ N.\nAnswer: 8",
+   "explanation": "Concept: If a heated rod is prevented from expanding, the walls compress it back by exactly the free thermal expansion. The resulting thermal strain is αΔT, so the stress is YαΔT and the force is F = YAαΔT. The length of the rod does not matter.\nSolution:\n1. A = 10 cm² = 10⁻³ m², and ΔT = 400°C.\n2. Strain = αΔT = 10⁻⁵ × 400 = 4 × 10⁻³.\n3. F = YA × strain = 2 × 10¹¹ × 10⁻³ × 4 × 10⁻³ = 8 × 10⁵ N.\n4. x = 8.\nCommon mistake: Including the length (4 m) in the formula; it cancels between ΔL and L.\nKey takeaway: Thermal stress = YαΔT, independent of length.\nAnswer: 8",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B07",
@@ -1084,7 +1084,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Energy conservation for a rod pivoted at one end; the centre of mass drops by L (from +L/2 to −L/2).\nSolution:\n1. $mgL = \\frac{1}{2}\\cdot\\frac{mL^2}{3}\\omega^2$, so $\\omega^2 = \\frac{6g}{L} = 100$ and ω = 10 rad/s.\n2. v = ωL = 6 m/s.\nAnswer: 6",
+   "explanation": "Concept: For a rod pivoted at one end, falling from vertical-up to vertical-down, mechanical energy is conserved. The centre of mass falls from +L/2 to −L/2 (a drop of L), and I about the end is mL²/3.\nSolution:\n1. Loss in PE: mgL = 2 × 10 × 0.6 = 12 J.\n2. Gain in KE: ½Iω² = ½(mL²/3)ω² = ½ × (2 × 0.36/3) × ω² = 0.12ω².\n3. 0.12ω² = 12, so ω² = 100 and ω = 10 rad/s.\n4. Speed of the free end: v = ωL = 10 × 0.6 = 6 m/s.\nCommon mistake: Using a drop of L/2 (the rod falling only to horizontal) gives √(3gL) ≈ 4.24 m/s.\nKey takeaway: Up-to-down rotation gives ω = √(6g/L) and v_tip = √(6gL).\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B08",
@@ -1114,7 +1114,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: AM envelope: $A_{max} = A_c + A_m$ and $A_{min} = A_c - A_m$.\nSolution:\n1. The ratio is 100 : 400 = 50 : 200, so x = 200.\nAnswer: 200",
+   "explanation": "Concept: In amplitude modulation, the envelope of the modulated wave swings between A_c + A_m and A_c − A_m. Here the modulation index μ = A_m/A_c = 150/250 = 0.6.\nSolution:\n1. A_max = 250 + 150 = 400 V.\n2. A_min = 250 − 150 = 100 V.\n3. A_min : A_max = 100 : 400 = 1 : 4 = 50 : 200.\n4. x = 200.\nCommon mistake: Inverting the ratio (max : min) gives 50 : 12.5.\nKey takeaway: AM envelope A_c(1 ± μ); for μ = 0.6 the envelope runs from 0.4A_c to 1.6A_c.\nAnswer: 200",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B09",
@@ -1144,7 +1144,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: 10% of the KE is stored in the spring.\nSolution:\n1. KE = ½ × 4 × 10⁴ × 20² = 8 × 10⁶ J, so the spring stores 8 × 10⁵ J.\n2. ½k(1)² = 8 × 10⁵, so k = 16 × 10⁵ N/m.\nAnswer: 16",
+   "explanation": "Concept: The kinetic energy of the moving system is dissipated during braking. Here 90% is lost to friction and the remaining 10% is stored as elastic potential energy in the compressed shock-absorber spring, ½kx².\nSolution:\n1. v = 72 km/h = 20 m/s.\n2. KE = ½ × 40,000 × 20² = 8 × 10⁶ J.\n3. Energy stored in the spring = 10% of the KE = 8 × 10⁵ J.\n4. ½k(1.0)² = 8 × 10⁵, so k = 16 × 10⁵ N/m.\n5. The shock absorber's length (1.5 m) is extra data; only the compression x = 1.0 m matters.\nCommon mistake: Using the full KE (k = 1.6 × 10⁷) or the 90% fraction instead of 10%.\nKey takeaway: Energy bookkeeping: KE = friction loss + spring PE. Convert km/h to m/s (÷3.6).\nAnswer: 16",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_PHY_B10",
@@ -1179,7 +1179,7 @@
     11
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Biochemical oxygen demand (BOD): the lower the value, the cleaner the water.\nSolution:\n1. Clean water has BOD < 5 ppm; polluted water has BOD ≥ 17 ppm.\n2. So 3 ppm is the cleanest.\nAnswer: (C)",
+   "explanation": "Concept: Biochemical oxygen demand (BOD) is the amount of oxygen that microorganisms need to break down the organic matter in a water sample (measured over 5 days at 20°C). More organic pollution means more microbial activity and a higher BOD, so a low BOD means clean water.\nSolution:\n1. NCERT benchmarks: clean water has BOD < 5 ppm; highly polluted water has BOD of 17 ppm or more.\n2. Of the options, only 3 ppm falls in the clean range.\n3. 11 and 15 ppm show moderate pollution, and 21 ppm shows heavy pollution.\nWhy others are wrong:\n- (A) 11 ppm and (B) 15 ppm exceed the clean-water limit of 5 ppm.\n- (D) 21 ppm is in the highly polluted range.\nKey takeaway: BOD < 5 ppm is clean and BOD ≥ 17 ppm is highly polluted; the lowest BOD is the cleanest.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A01",
@@ -1214,7 +1214,7 @@
     11
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Ores.\nSolution:\n1. Calamine is ZnCO₃ (zinc); malachite is CuCO₃·Cu(OH)₂ (copper).\nAnswer: (B)",
+   "explanation": "Concept: Common ores are named minerals, and many are carbonates, oxides or sulphides. Matching ore names to metals is standard NCERT memory work (Metallurgy chapter).\nSolution:\n1. Calamine: ZnCO₃, zinc carbonate, an ore of zinc.\n2. Malachite: CuCO₃·Cu(OH)₂, basic copper carbonate, the green ore of copper.\n3. So they are the ores of zinc and copper, respectively.\nWhy others are wrong:\n- (A) Nickel ores include pentlandite; aluminium's ore is bauxite.\n- (C) Iron ores are haematite, magnetite, siderite and limonite, none of which is malachite.\n- (D) Calamine is not aluminium, and malachite is not zinc.\nKey takeaway: Zinc: zinc blende, calamine, zincite. Copper: copper pyrites, malachite, cuprite, copper glance.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A02",
@@ -1249,7 +1249,7 @@
     11
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Common reducing systems.\nSolution:\n1. H₂ over Pt–C or Pd–C (catalytic hydrogenation) and Zn/H₂O (for example, reductive ozonolysis work-up) are used to reduce functional groups.\n2. Na with H₂ gas is not a reducing system; sodium is used as Na/liquid NH₃ or Na/alcohol.\nAnswer: (B)",
+   "explanation": "Concept: Laboratory reductions use H₂ gas only with a metal catalyst (catalytic hydrogenation), or they use dissolving-metal or metal/acid systems in which the metal supplies the electrons and the solvent supplies the protons.\nSolution:\n1. (A) Pt–C/H₂ and (C) Pd–C/H₂: catalytic hydrogenation reduces C=C, C≡C, C=O, NO₂ and so on. Valid.\n2. (D) Zn/H₂O: used, for example, in the reductive work-up of ozonides, and zinc with a proton source reduces groups such as nitro. Valid.\n3. (B) Na/H₂: sodium metal with hydrogen gas is not a reducing system for functional groups (Na reacts with H₂ only at high temperature to form NaH). Sodium reductions use Na/liq. NH₃ (Birch, alkynes to trans-alkenes) or Na/EtOH (Bouveault–Blanc).\n4. So Na/H₂ cannot be used.\nWhy others are wrong:\n- (A), (C) and (D) are standard reducing systems.\nKey takeaway: H₂ needs a metal catalyst (Pt, Pd, Ni); Na needs a proton source (NH₃ or alcohol).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A03",
@@ -1294,7 +1294,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Arrhenius equation $k = Ae^{-E_a/RT}$.\nSolution:\n1. k rises exponentially with T. At moderate temperatures the curve is concave up, as in graph (C).\n2. For an endothermic reaction Ea > ΔH > 0, so k is strongly temperature-dependent.\nAnswer: (C)",
+   "explanation": "Concept: By the Arrhenius equation, $k = Ae^{-E_a/RT}$. For an endothermic reaction, E_a is at least ΔH > 0, so the activation energy is appreciable and k rises steeply (exponentially) with temperature.\nSolution:\n1. As T increases, −E_a/RT becomes less negative, so k increases.\n2. Over the usual range where RT ≪ E_a, the curve bends upward (concave up), growing roughly exponentially.\n3. Graph (C), with k increasing exponentially and concave up, matches.\nWhy others are wrong:\n- (A) k never decreases with T for an elementary reaction with E_a > 0.\n- (B) a linear increase does not match the exponential law.\n- (D) a curve that saturates (concave down) appears only at very high T, where k approaches A; it is not the typical representation.\nKey takeaway: k–T is exponential (concave up in the usual range); ln k against 1/T is a straight line with slope −E_a/R.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A04",
@@ -1341,7 +1341,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Oxidation of aniline by acidified dichromate.\nSolution:\n1. Aniline is oxidised to p-benzoquinone (O=C₆H₄=O).\nAnswer: (A)",
+   "explanation": "Concept: Aniline has an electron-rich ring and an easily oxidised –NH₂ group. With a strong oxidant such as acidified K₂Cr₂O₇, the ring is oxidised: the para position and the N-bearing carbon become carbonyls, giving p-benzoquinone.\nSolution:\n1. Aniline with K₂Cr₂O₇/H₂SO₄ is oxidised at C1 and C4.\n2. The amino carbon loses NH₃ (as NH₄⁺), and both positions become C=O.\n3. A = p-benzoquinone (cyclohexa-2,5-diene-1,4-dione), O=C₆H₄=O.\n4. This is the standard textbook reaction (the reason aniline darkens on storage is air oxidation to coloured products).\nWhy others are wrong:\n- (B) potassium 4-aminophenoxide is not an oxidation product; it would need hydroxylation under basic conditions.\n- (C) nitrobenzene is made by peroxy-acid (e.g. CF₃CO₃H) oxidation, not dichromate.\n- (D) nitrocyclohexane needs ring reduction, which does not happen here.\nKey takeaway: Aniline + K₂Cr₂O₇/H⁺ gives p-benzoquinone; peroxy-acids give nitrobenzene.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A05",
@@ -1378,7 +1378,7 @@
     11
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: LiAlH₄ splits an ester into two alcohols; oxidation must give a C₄ acid.\nSolution:\n1. Ethyl butanoate (CH₃CH₂CH₂COOC₂H₅, C₆H₁₂O₂) gives butan-1-ol + ethanol, and butan-1-ol oxidises to butanoic acid (C₄).\n2. Propyl propanoate would give only C₃ alcohols, and hence C₃ acids.\nAnswer: (C)",
+   "explanation": "Concept: LiAlH₄ reduces an ester R–COO–R′ to two alcohols, R–CH₂OH (from the acyl part) and R′–OH (from the alkoxy part). Oxidation of a primary alcohol then gives a carboxylic acid with the same number of carbons.\nSolution:\n1. C₆H₁₂O₂ with a straight chain and one ester group has several isomers; we need one that gives a C₄ primary alcohol.\n2. Ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃, gives butan-1-ol + ethanol.\n3. Oxidising butan-1-ol gives butanoic acid, a C₄ acid. ✓\n4. The ethanol by-product gives acetic acid (C₂), but the question asks for the C₄ acid, which only (C) can give.\nWhy others are wrong:\n- (A) propyl propanoate gives propan-1-ol + propan-1-ol, which oxidise only to C₃ acids.\n- (B) and (D) are ethers or enol ethers, not esters, and are unstable or branch awkwardly; LiAlH₄ would not cleave them into the needed alcohol.\nKey takeaway: Ester + LiAlH₄ gives two alcohols; count the carbons on each side of the –COO– group.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A06",
@@ -1413,7 +1413,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Chemical methods for preparing sols.\nSolution:\n1. Hydrolysis: FeCl₃ + H₂O gives Fe(OH)₃ sol, (iv).\n2. Reduction: AuCl₃ + HCHO gives Au sol, (i).\n3. Oxidation: SO₂ + H₂S gives S sol (H₂S is oxidised), (iii).\n4. Double decomposition: As₂O₃ + H₂S gives As₂S₃, (ii).\nAnswer: (B)",
+   "explanation": "Concept: Sols can be made chemically by reactions that produce an insoluble substance in finely divided (colloidal) form. The method is named after the reaction type.\nSolution:\n1. (a) Hydrolysis: FeCl₃ + 3H₂O (boiling) → Fe(OH)₃ sol + 3HCl, (iv).\n2. (b) Reduction: AuCl₃ is reduced by HCHO (Au³⁺ → Au⁰), giving gold sol, (i).\n3. (c) Oxidation: SO₂ + 2H₂S → 3S + 2H₂O, where H₂S (S at −2) is oxidised to S⁰, giving sulphur sol, (iii).\n4. (d) Double decomposition: As₂O₃ + 3H₂S → As₂S₃ + 3H₂O, an exchange of partners, (ii).\n5. The matching is a–iv, b–i, c–iii, d–ii.\nWhy others are wrong:\n- (A) and (D) assign the gold (reduction) reaction to hydrolysis.\n- (C) swaps the reduction and double-decomposition reactions.\nKey takeaway: Fe(OH)₃ sol by hydrolysis, Au sol by reduction, S sol by oxidation and As₂S₃ sol by double decomposition (NCERT).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A07",
@@ -1448,7 +1448,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: μ = 3.87 BM means 3 unpaired electrons; CFSE fixes the d-count.\nSolution:\n1. High-spin d⁷ (t₂g⁵e_g²): CFSE = 5(−0.4) + 2(0.6) = −0.8Δ₀ with 3 unpaired electrons. This is Co²⁺ (aqua ligands are weak field).\n2. Cr³⁺ and Mn⁴⁺ (d³) have −1.2Δ₀; V³⁺ (d²) has 2 unpaired electrons.\nAnswer: (D)",
+   "explanation": "Concept: The spin-only moment $\\mu = \\sqrt{n(n + 2)}$ gives the number of unpaired electrons: 3.87 BM means n = 3. The CFSE in an octahedral field is −0.4Δ₀ per t₂g electron and +0.6Δ₀ per e_g electron (ignoring pairing energy). Aqua ligands are weak field, so the complex is high spin.\nSolution:\n1. n = 3 fits d³ or high-spin d⁷.\n2. d³ (t₂g³): CFSE = 3(−0.4) = −1.2Δ₀. This does not match.\n3. High-spin d⁷ (t₂g⁵e_g²): CFSE = 5(−0.4) + 2(0.6) = −2.0 + 1.2 = −0.8Δ₀, with 3 unpaired electrons. This matches.\n4. The d⁷ ion among the options is Co²⁺ ([Ar]3d⁷), as in [Co(H₂O)₆]²⁺.\nWhy others are wrong:\n- (A) V³⁺ is d², with n = 2 (μ = 2.83 BM) and CFSE −0.8Δ₀; the CFSE matches but the moment does not.\n- (B) Cr³⁺ and (C) Mn⁴⁺ are d³, with n = 3 but CFSE −1.2Δ₀.\nKey takeaway: Use both clues: μ narrows the choice to d³ or d⁷ HS, and the CFSE decides between them.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A08",
@@ -1483,7 +1483,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Dacron (Terylene, PET).\nSolution:\n1. It is formed by condensation of ethylene glycol with terephthalic acid (benzene-1,4-dicarboxylic acid).\nAnswer: (B)",
+   "explanation": "Concept: Dacron (also sold as Terylene; chemically polyethylene terephthalate, PET) is a condensation polyester. Its repeat unit comes from a diol and a para-substituted aromatic diacid, and the para geometry gives linear chains that pack well into strong fibres.\nSolution:\n1. The monomers are ethylene glycol (HO–CH₂CH₂–OH) and terephthalic acid (benzene-1,4-dicarboxylic acid, HOOC–C₆H₄–COOH).\n2. Condensation loses H₂O and forms –O–CH₂CH₂–O–CO–C₆H₄–CO– repeat units.\n3. Industrially, dimethyl terephthalate is often used, with methanol eliminated instead.\nWhy others are wrong:\n- (A) Phthalic acid (the 1,2-isomer) with ethylene glycol gives glyptal (an alkyd resin), not Dacron.\n- (C) and (D) glycerol is a triol and gives cross-linked resins (glyptal-type), not linear fibres.\nKey takeaway: Dacron/Terylene/PET = ethylene glycol + terephthalic acid; Glyptal = ethylene glycol or glycerol + phthalic acid.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A09",
@@ -1528,7 +1528,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Hückel's rule: a planar, cyclic, conjugated (4n + 2)π system.\nSolution:\n1. The cyclopentadienyl anion has 6π electrons, so it is aromatic.\n2. Cyclobutadiene (4π) is antiaromatic; the four-membered cation is not a 4n + 2 system.\nNote: Acenaphthene contains an aromatic naphthalene unit, so ALLEN accepted (1) as well. The official key is (4).\nAnswer: (D)",
+   "explanation": "Concept: A ring is aromatic by Hückel's rule if it is cyclic, planar, fully conjugated (every ring atom sp² or sp) and holds (4n + 2) π electrons.\nSolution:\n1. Cyclopentadienyl anion: the CH⁻ carbon becomes sp² and its lone pair joins the ring π system, giving 4 + 2 = 6π electrons (n = 1) in a planar, fully conjugated ring. Aromatic.\n2. Cyclobutadiene: 4π electrons (4n with n = 1), so it is antiaromatic.\n3. The 1-methylcyclobutenyl cation: the four-membered ring has only 2π electrons across three sp² carbons plus one sp³ carbon, so it is not fully conjugated around the ring.\n4. The official NTA key is (4).\nNote: Acenaphthene contains an intact naphthalene (10π) unit, so ALLEN also accepted (1). The stored answer follows the official key.\nWhy others are wrong:\n- (B) is antiaromatic (4π).\n- (C) is not a continuous cyclic π system.\nKey takeaway: Count the π electrons (including lone pairs in the ring's p orbitals) and check planarity and conjugation all the way around.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A10",
@@ -1567,7 +1567,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Colours of iron ions in aqueous solution.\nSolution:\n1. Fe²⁺ (aq) is pale green and Fe³⁺ (aq) is yellow.\nAnswer: (D)",
+   "explanation": "Concept: The colours of transition metal ions in water come from d–d transitions and depend on the d-electron count and the ligands (here water). Fe²⁺ (d⁶) and Fe³⁺ (d⁵) have characteristic aqueous colours.\nSolution:\n1. Fe²⁺ (aq), as in ferrous sulphate or Mohr's salt solution, is pale green.\n2. Fe³⁺ (aq), as in ferric chloride solution, is yellow (to yellow-brown, from partial hydrolysis).\n3. In the KMnO₄ titration, the pale-green Fe²⁺ is oxidised to yellow Fe³⁺, and MnO₄⁻ (purple) is reduced to nearly colourless Mn²⁺.\nWhy others are wrong:\n- (A) and (B) call Fe²⁺ yellow, which is its oxidised form's colour.\n- (C) calls Fe³⁺ orange; dichromate is orange, not ferric ion.\nKey takeaway: Fe²⁺ is green and Fe³⁺ is yellow; MnO₄⁻ is purple and Mn²⁺ nearly colourless, which is why KMnO₄ acts as its own indicator.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A11",
@@ -1602,7 +1602,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Br₂ adds anti across the double bond.\nSolution:\n1. Anti addition to trans-but-2-ene gives meso-2,3-dibromobutane.\n2. Attack from either face gives the same meso compound, so the two products are identical mesomers.\nAnswer: (B)",
+   "explanation": "Concept: Bromine adds to alkenes by anti addition through a cyclic bromonium ion. The stereochemistry of the product depends on the alkene geometry: trans alkene + anti addition gives the meso product, and cis alkene + anti addition gives the racemic pair.\nSolution:\n1. trans-But-2-ene reacts with Br₂ to form a bromonium ion, and Br⁻ opens it from the opposite face.\n2. The product 2,3-dibromobutane has two stereocentres with the same substituents, so a meso form is possible.\n3. Anti addition to the trans alkene gives (2R,3S), the meso compound.\n4. Br₂ can attack either face of the alkene, but both routes give the same meso compound: \"2 identical mesomers\".\nWhy others are wrong:\n- (C) and (D): enantiomers (a racemic mixture) come from cis-but-2-ene.\n- (A) mixes both outcomes, which is impossible from a single stereospecific reaction.\nKey takeaway: \"Trans + anti = meso; cis + anti = racemic\" for symmetric 2-butene brominations.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A12",
@@ -1637,7 +1637,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In base, H₂O₂ acts as a reductant towards I₂.\nSolution:\n1. H₂O₂ + I₂ + 2OH⁻ gives 2I⁻ + 2H₂O + O₂.\nAnswer: (C)",
+   "explanation": "Concept: H₂O₂ can act as an oxidising or a reducing agent. Against a stronger oxidant it acts as a reductant, being oxidised to O₂. In basic medium, I₂ oxidises H₂O₂, and I₂ is itself reduced to I⁻.\nSolution:\n1. Reaction: I₂ + H₂O₂ + 2OH⁻ → 2I⁻ + 2H₂O + O₂.\n2. Iodine goes from 0 to −1 (reduced), and oxygen in H₂O₂ goes from −1 to 0 (oxidised).\n3. So the iodine-containing product is I⁻.\n4. Compare the acidic medium, where H₂O₂ oxidises I⁻ to I₂; the medium reverses the roles.\nWhy others are wrong:\n- (A) IO₄⁻, (B) IO⁻ and (D) IO₃⁻ are oxidised iodine species, which would need H₂O₂ to act as the oxidant here.\nKey takeaway: H₂O₂ oxidises I⁻ to I₂ in acid but reduces I₂ to I⁻ in base (NCERT).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A13",
@@ -1672,7 +1672,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Markovnikov hydration, then the iodoform reaction.\nSolution:\n1. Propene + H₂O/H⁺ gives A = CH₃CH(OH)CH₃, which has a CH₃CH(OH)– group.\n2. KIO/KOH gives B = CHI₃ (iodoform) and C = CH₃COOK.\nAnswer: (D)",
+   "explanation": "Concept: Acid-catalysed hydration of propene follows Markovnikov's rule: the OH goes to the more substituted carbon, giving propan-2-ol. Any compound with a CH₃–CH(OH)– or CH₃CO– group gives the iodoform test with I₂/KOH (or KIO): it is first oxidised to a methyl ketone and then cleaved to CHI₃ and a carboxylate.\nSolution:\n1. C₃H₆ (propene) + H₂O/H⁺ gives A = CH₃CH(OH)CH₃ (propan-2-ol).\n2. KIO (hypoiodite) oxidises A to acetone, CH₃COCH₃.\n3. Triiodination gives CI₃COCH₃, and OH⁻ cleaves it to CHI₃ (a yellow precipitate) + CH₃COO⁻K⁺.\n4. B = CHI₃ and C = CH₃COOK.\nWhy others are wrong:\n- (A) and (B) CI₃COOK is not a final product; the CI₃ group is expelled as CHI₃.\n- (C) CH₃I and HCOOK would come from wrong bond cleavage.\nKey takeaway: Iodoform reaction: R–CO–CH₃ → CHI₃ + RCOO⁻ (the carboxylate has one carbon fewer).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A14",
@@ -1707,7 +1707,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Nucleophilic addition to C=O.\nSolution:\n1. HSO₃⁻ adds, and a proton transfer gives the stable bisulphite adduct ion: Statement I is true.\n2. HCN adds to give a cyanohydrin, not an amine: Statement II is false.\nAnswer: (B)",
+   "explanation": "Concept: Aldehydes and ketones undergo nucleophilic addition at the carbonyl carbon. The initial alkoxide intermediate is usually protonated, and the product type depends on the nucleophile.\nSolution:\n1. Statement I: HSO₃⁻ (from NaHSO₃) attacks the carbonyl carbon through sulphur. An internal proton transfer then converts the intermediate into the stable bisulphite addition product (a crystalline sodium salt of an α-hydroxy sulphonate). NCERT describes exactly this: \"proton transfer to form a stable ion\". True.\n2. Statement II: HCN adds (with base catalysis) to give a cyanohydrin, R₂C(OH)CN, not an amine. Amines would need a further reduction of C≡N. False.\nWhy others are wrong:\n- (A) and (C) accept Statement II, but the direct product is a cyanohydrin.\n- (D) rejects Statement I, which is correct per NCERT.\nKey takeaway: NaHSO₃ gives a bisulphite adduct (used for purification); HCN gives a cyanohydrin.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A15",
@@ -1742,7 +1742,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Arenediazonium salts are stabilised by resonance with the ring; alkyl diazonium salts decompose at once.\nSolution:\n1. p-Toluidine (a 1° aromatic amine) gives the arenediazonium salt, stabilised further by +I/hyperconjugation from CH₃.\n2. Aliphatic 1° amines give unstable diazonium ions; N-methylaniline (2°) gives an N-nitrosamine.\nAnswer: (B)",
+   "explanation": "Concept: Primary aromatic amines give arenediazonium salts (ArN₂⁺) at 0–5°C, stabilised by resonance of the –N≡N⁺ group with the benzene ring. Aliphatic diazonium ions have no such stabilisation and lose N₂ at once. Secondary amines give N-nitrosamines, not diazonium salts.\nSolution:\n1. (A) Propylamine and (C) isopropylamine are primary aliphatic amines, so their diazonium ions decompose immediately to carbocations (giving alcohols and alkenes) with N₂ gas.\n2. (D) N-methylaniline is secondary: with HNO₂ it forms N-nitroso-N-methylaniline, a yellow oil, and no diazonium salt.\n3. (B) p-Toluidine is a primary aromatic amine that forms p-methylbenzenediazonium chloride. The para CH₃ adds electron density (+I and hyperconjugation), further stabilising the positive diazonium group.\nWhy others are wrong:\n- (A) and (C) form aliphatic diazonium ions, which are unstable.\n- (D) forms a nitrosamine, not a diazonium salt.\nKey takeaway: Only ArNH₂ gives stable diazonium salts, and electron-donating para groups stabilise them further.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A16",
@@ -1777,7 +1777,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Prussian blue forms from Fe³⁺ + [Fe(CN)₆]⁴⁻.\nSolution:\n1. FeCl₃ + K₄[Fe(CN)₆] gives Fe₄[Fe(CN)₆]₃ (Prussian blue).\n2. Fe²⁺ gives a white or bluish-white precipitate instead.\nAnswer: (D)",
+   "explanation": "Concept: Prussian blue, ferric ferrocyanide Fe₄[Fe(CN)₆]₃, forms when Fe³⁺ meets ferrocyanide [Fe(CN)₆]⁴⁻. Its intense colour comes from intervalence charge transfer between Fe(II) and Fe(III) centres. It is the standard confirmatory test for Fe³⁺ in qualitative analysis.\nSolution:\n1. 4FeCl₃ + 3K₄[Fe(CN)₆] → Fe₄[Fe(CN)₆]₃ (Prussian blue) + 12KCl.\n2. So FeCl₃ gives the Prussian blue colour with potassium ferrocyanide.\n3. For comparison, Fe²⁺ with ferricyanide [Fe(CN)₆]³⁻ gives Turnbull's blue (now known to be the same compound).\nWhy others are wrong:\n- (B) FeCl₂ + ferrocyanide gives a white or pale-blue precipitate (K₂Fe[Fe(CN)₆]) that only turns blue on air oxidation.\n- (A) and (C) cobalt salts give green or other coloured cobalt ferrocyanides, not Prussian blue.\nKey takeaway: Fe³⁺ + [Fe(CN)₆]⁴⁻ gives Prussian blue; Fe²⁺ + [Fe(CN)₆]³⁻ gives Turnbull's blue.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A17",
@@ -1812,7 +1812,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Structures of the nitrogen oxides.\nSolution:\n1. N₂O (N≡N–O), N₂O₃ (O=N–NO₂) and N₂O₄ (O₂N–NO₂) all have N–N bonds.\n2. N₂O₅ is O₂N–O–NO₂, bridged through O, so it has no N–N bond.\nAnswer: (D)",
+   "explanation": "Concept: The nitrogen oxides differ in how their atoms are connected. Draw each Lewis structure and check for a direct N–N bond.\nSolution:\n1. N₂O (nitrous oxide): linear N≡N⁺–O⁻ (or N⁻=N⁺=O), so it has an N–N bond.\n2. N₂O₃ (dinitrogen trioxide): O=N–NO₂, so it has an N–N bond (and it readily splits into NO + NO₂).\n3. N₂O₄ (dinitrogen tetroxide): O₂N–NO₂, formed by dimerising NO₂ through an N–N bond.\n4. N₂O₅ (dinitrogen pentoxide): O₂N–O–NO₂. The two nitrogens are linked through a bridging oxygen, so there is no N–N bond.\nWhy others are wrong:\n- (A), (B) and (C) all contain a direct N–N linkage.\nKey takeaway: N₂O₅ (the anhydride of HNO₃) has an N–O–N bridge; the lower oxides have N–N bonds.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A18",
@@ -1847,7 +1847,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Count the unpaired electrons in the anions.\nSolution:\n1. KO₂ contains superoxide O₂⁻ (1 unpaired electron), so it is paramagnetic.\n2. Oxides (O²⁻) and peroxide (O₂²⁻) are diamagnetic.\n3. Count = 1.\nAnswer: (A)",
+   "explanation": "Concept: Paramagnetism needs unpaired electrons. Among the alkali and alkaline-earth oxygen compounds, the key is the anion: oxide O²⁻ (10 e⁻, closed shell), peroxide O₂²⁻ (π*⁴, all paired) and superoxide O₂⁻ (π*³, one unpaired electron).\nSolution:\n1. Li₂O, CaO, MgO and K₂O contain O²⁻ and are diamagnetic.\n2. Na₂O₂ contains peroxide O₂²⁻ (18 e⁻, π*2p fully paired), so it is diamagnetic.\n3. KO₂ contains superoxide O₂⁻ (17 e⁻, one unpaired electron in π*), so it is paramagnetic (and coloured, yellow-orange).\n4. The metal cations (Li⁺, Na⁺, K⁺, Mg²⁺, Ca²⁺) all have noble-gas configurations.\n5. Count of paramagnetic oxides = 1.\nWhy others are wrong:\n- (B) and (C) wrongly count the peroxide (or oxides) as paramagnetic.\n- (D) 0 misses the superoxide.\nKey takeaway: Superoxides (KO₂, RbO₂, CsO₂) are paramagnetic; oxides and peroxides are diamagnetic.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A19",
@@ -1882,7 +1882,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Remove electrons (4s first, then 3d).\nSolution:\n1. Fe ([Ar]3d⁶4s²) gives Fe³⁺ = [Ar]3d⁵.\n2. Mn³⁺ is 3d⁴ and Co³⁺ is 3d⁶; Ru is a 4d element.\nAnswer: (D)",
+   "explanation": "Concept: When a 3d-series atom forms a cation, it loses its 4s electrons first and then 3d electrons. Work backwards: the M³⁺ ion [Ar]3d⁵ has 23 electrons, so Z = 26.\nSolution:\n1. Fe (Z = 26): [Ar]3d⁶4s².\n2. Fe³⁺: remove 4s² and then one 3d electron, giving [Ar]3d⁵ (a half-filled, extra stable shell).\n3. So the element is iron.\nWhy others are wrong:\n- (B) Mn (Z = 25): Mn³⁺ is [Ar]3d⁴; it is Mn²⁺ that is 3d⁵.\n- (C) Co (Z = 27): Co³⁺ is [Ar]3d⁶.\n- (A) Ru (Z = 44) is a 4d element: Ru³⁺ is [Kr]4d⁵, not [Ar]3d⁵.\nKey takeaway: M³⁺ with 3dⁿ has Z = 18 + n + 3. For 3d⁵ that gives Z = 26, iron.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_A20",
@@ -1912,7 +1912,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: At constant V and T, P ∝ n ∝ the mass of gas.\nSolution:\n1. The initial gas mass is 29.0 − 14.8 = 14.2 kg; the final gas mass is 23.0 − 14.8 = 8.2 kg.\n2. P = 3.47 × 8.2/14.2 = 2.0 atm.\nAnswer: 2",
+   "explanation": "Concept: For an ideal gas at constant volume (a rigid cylinder) and constant temperature, P = nRT/V, so P ∝ n ∝ the mass of gas inside. The empty-cylinder mass must be subtracted to get the gas mass.\nSolution:\n1. Initial LPG mass = 29.0 − 14.8 = 14.2 kg.\n2. Final LPG mass = 23.0 − 14.8 = 8.2 kg.\n3. P₂ = P₁ × (m₂/m₁) = 3.47 × 8.2/14.2 = 3.47 × 0.5775 ≈ 2.00 atm.\n4. To the nearest integer: 2.\nCommon mistake: Using the total cylinder masses (29 → 23) gives about 2.75 atm; the steel shell is not gas.\nKey takeaway: At fixed V and T, pressure ∝ the mass of gas; subtract the container's tare.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B01",
@@ -1942,7 +1942,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Common-ion effect: $s = \\frac{K_{sp}}{[\\mathrm{OH^-}]^2}$.\nSolution:\n1. $s = \\frac{2\\times10^{-20}}{(0.1)^2} = 2\\times10^{-18}$ M.\nAnswer: 2",
+   "explanation": "Concept: Zn(OH)₂ ⇌ Zn²⁺ + 2OH⁻ with K_sp = [Zn²⁺][OH⁻]². In 0.1 M NaOH, the common ion OH⁻ comes almost entirely from NaOH, which suppresses the solubility sharply. If s is the molar solubility, [Zn²⁺] = s and [OH⁻] ≈ 0.1 M.\nSolution:\n1. K_sp = s × (0.1 + 2s)² ≈ s × (0.1)², since 2s is negligible.\n2. s = 2 × 10⁻²⁰ / 10⁻² = 2 × 10⁻¹⁸ M.\n3. x = 2.\nCommon mistake: Solving in pure water (4s³ = K_sp gives s ≈ 1.7 × 10⁻⁷ M) ignores the common ion.\nKey takeaway: In the presence of a common ion, s = K_sp/[common ion]^power. The drop in solubility can be huge.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B02",
@@ -1972,7 +1972,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: ΔG = ΔH − TΔS.\nSolution:\n1. ΔG = −57.8 − 298 × (−0.176) = −57.8 + 52.4 = −5.4 kJ/mol, so |ΔG| ≈ 5.\nAnswer: 5",
+   "explanation": "Concept: Gibbs free energy combines the enthalpy and entropy changes: ΔG = ΔH − TΔS. Use consistent units: ΔS in J K⁻¹ must be converted to kJ K⁻¹ to match ΔH in kJ.\nSolution:\n1. ΔS = −176.0 J K⁻¹ = −0.176 kJ K⁻¹.\n2. TΔS = 298 × (−0.176) = −52.45 kJ.\n3. ΔG = −57.8 − (−52.45) = −5.35 kJ/mol.\n4. |ΔG| ≈ 5 kJ/mol.\n5. A negative ΔG means the dimerisation is spontaneous at 298 K, although the entropy term opposes it; enthalpy wins at this temperature.\nCommon mistake: Not converting J to kJ gives ΔG ≈ +52,390 kJ/mol.\nKey takeaway: Match the units before subtracting; ΔH < 0 with ΔS < 0 is spontaneous below T = ΔH/ΔS ≈ 328 K here.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B03",
@@ -2002,7 +2002,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Charges of the complex ions.\nSolution:\n1. In [Ag(NH₃)₂]⁺, Ag is +1; in [Ag(CN)₂]⁻, Ag is +1.\n2. The sum is 2.\nAnswer: 2",
+   "explanation": "Concept: A coordination compound made of a complex cation and a complex anion must be neutral overall. Each complex ion's charge, together with the ligand charges, fixes the metal's oxidation state.\nSolution:\n1. The compound [Ag(NH₃)₂][Ag(CN)₂] splits into the cation [Ag(NH₃)₂]⁺ and the anion [Ag(CN)₂]⁻, which have equal and opposite charges.\n2. Cation: NH₃ is neutral, so Ag = +1.\n3. Anion: each CN⁻ is −1, so Ag + 2(−1) = −1 and Ag = +1.\n4. Sum = (+1) + (+1) = 2.\nCommon mistake: Averaging the charges to 0 by treating the compound as a single unit; ask for each Ag separately.\nKey takeaway: Split a salt of complex ions into cation and anion, then solve each for its metal's oxidation state.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B04",
@@ -2032,7 +2032,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: N = (m/M) × N_A.\nSolution:\n1. (8/23) × 6.02 × 10²³ = 2.09 × 10²³, so x ≈ 2.\nAnswer: 2",
+   "explanation": "Concept: The number of atoms = moles × Avogadro's number, with moles = mass / molar mass. Sodium is monatomic, so the number of atoms equals the number of formula units.\nSolution:\n1. Moles of Na = 8 / 23 = 0.3478 mol.\n2. Number of atoms = 0.3478 × 6.02 × 10²³ = 2.094 × 10²³.\n3. To the nearest integer: x = 2.\nCommon mistake: Dividing 23 by 8, or using the atomic number (11) as the molar mass.\nKey takeaway: N = (m/M)·N_A. One mole of any element holds 6.02 × 10²³ atoms.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B05",
@@ -2062,7 +2062,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Use the pentahydrate molar mass.\nSolution:\n1. M = 63.54 + 32 + 64 + 90 = 249.54 g/mol, so n = 80/249.54 = 0.3206 mol.\n2. c = 0.3206/5 = 0.0641 M = 64 × 10⁻³.\nAnswer: 64",
+   "explanation": "Concept: When a hydrated salt such as CuSO₄·5H₂O is weighed, the water of crystallisation is part of its mass. The molar mass must include the five H₂O units; the dissolved species is still CuSO₄ (one mole per mole of pentahydrate).\nSolution:\n1. M(CuSO₄·5H₂O) = 63.54 + 32 + 4(16) + 5(18) = 63.54 + 32 + 64 + 90 = 249.54 g/mol.\n2. n = 80 / 249.54 = 0.3206 mol.\n3. c = 0.3206 / 5 L = 0.06412 M = 64.1 × 10⁻³ M.\n4. x ≈ 64.\nCommon mistake: Using the anhydrous CuSO₄ mass (159.54 g/mol) gives 100 × 10⁻³ M.\nKey takeaway: Always use the full formula mass of the hydrate that was actually weighed.\nAnswer: 64",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B06",
@@ -2092,7 +2092,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Photons per second = P/(hc/λ).\nSolution:\n1. E = 6.63 × 10⁻³⁴ × 3 × 10⁸/795 × 10⁻⁹ = 2.50 × 10⁻¹⁹ J.\n2. N = 50/2.50 × 10⁻¹⁹ = 2.0 × 10²⁰.\nAnswer: 2",
+   "explanation": "Concept: A light source of power P emits photons each carrying energy E = hc/λ. The photon emission rate is N = P/E = Pλ/(hc).\nSolution:\n1. E = (6.63 × 10⁻³⁴ × 3.0 × 10⁸) / (795 × 10⁻⁹) = 1.989 × 10⁻²⁵ / 7.95 × 10⁻⁷ = 2.50 × 10⁻¹⁹ J.\n2. N = 50 / 2.50 × 10⁻¹⁹ = 2.0 × 10²⁰ photons per second.\n3. x = 2.\nCommon mistake: Forgetting to convert nm to m gives an answer wrong by a factor of 10⁹.\nKey takeaway: N = Pλ/hc; longer wavelengths mean more photons for the same power.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B07",
@@ -2122,7 +2122,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: MO configuration of B₂⁺ (9 electrons).\nSolution:\n1. σ1s² σ*1s² σ2s² σ*2s² π2p¹ gives 1 unpaired electron.\n2. μ = √(1 × 3) = 1.73 BM = 173 × 10⁻².\nAnswer: 173",
+   "explanation": "Concept: For B₂ and the lighter diatomics (up to N₂), s–p mixing puts π2p below σ2p in the MO energy order: σ1s, σ*1s, σ2s, σ*2s, (π2p_x = π2p_y), σ2p_z, …\nSolution:\n1. B₂ has 10 electrons, so B₂⁺ has 9.\n2. Filling: σ1s² σ*1s² σ2s² σ*2s² uses 8, and the 9th goes into the degenerate π2p set: π2p_x¹.\n3. Unpaired electrons n = 1.\n4. μ = √(n(n + 2)) = √3 = 1.73 BM = 173 × 10⁻² BM.\nCommon mistake: Using the O₂-type order (σ2p below π2p); the answer here is unchanged (n = 1), but the order matters for B₂ itself (paramagnetic, 2 unpaired).\nKey takeaway: B₂ has 2 unpaired electrons; B₂⁺ has 1 unpaired electron (μ = 1.73 BM).\nAnswer: 173",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B08",
@@ -2152,7 +2152,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Cell constant G* = κR.\nSolution:\n1. G* = 1.07 × 10⁶ × 0.243 = 2.6 × 10⁵ m⁻¹ = 26 × 10⁴.\nAnswer: 26",
+   "explanation": "Concept: The conductivity κ, the measured resistance R and the cell constant G* = l/A are related by κ = G*/R. So G* = κ × R: the cell constant is found by measuring a material of known conductivity.\nSolution:\n1. G* = κ × R = 1.07 × 10⁶ S m⁻¹ × 0.243 Ω.\n2. = 2.60 × 10⁵ m⁻¹.\n3. = 26 × 10⁴ m⁻¹, so x = 26.\nCommon mistake: Dividing κ by R (4.4 × 10⁶) inverts the relation.\nKey takeaway: κ = G*/R, and the units check: S m⁻¹ × Ω = m⁻¹.\nAnswer: 26",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B09",
@@ -2182,7 +2182,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: n amino acids in a linear peptide form n − 1 peptide bonds.\nSolution:\n1. A tetrapeptide has 3 peptide linkages.\nAnswer: 3",
+   "explanation": "Concept: A peptide (amide) bond forms between the –COOH of one amino acid and the –NH₂ of the next, releasing water. Joining n amino acids in a single linear chain needs n − 1 such bonds.\nSolution:\n1. The amino acids are glycine, leucine, aspartic acid and histidine: n = 4.\n2. The linear tetrapeptide has 4 − 1 = 3 peptide linkages.\n3. The side-chain –COOH of aspartic acid is not used in normal peptide synthesis, so it adds no extra linkage.\nCommon mistake: Counting 4 (one per amino acid); a chain of n links has n − 1 bonds.\nKey takeaway: Linear peptide of n residues: n − 1 peptide bonds and n − 1 water molecules lost.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_CHE_B10",
@@ -2217,7 +2217,7 @@
     17
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: 0/0 form, so use L'Hôpital's rule with the Leibniz rule for the integral.\nSolution:\n1. The numerator's derivative is $\\frac{\\pi}{4}f(\\sec^2x)\\cdot2\\sec^2x\\tan x$; the denominator's is 2x.\n2. At x = π/4: $\\frac{\\frac{\\pi}{4}\\cdot f(2)\\cdot2\\cdot2\\cdot1}{\\pi/2} = 2f(2)$.\nAnswer: (B)",
+   "explanation": "Concept: As x → π/4, sec²x → 2, so the integral from 2 to sec²x tends to 0, and the denominator x² − π²/16 also tends to 0. For this 0/0 form, use L'Hôpital's rule, differentiating the integral with the Leibniz rule: $\\frac{d}{dx}\\int_2^{g(x)}f(t)dt = f(g(x))g'(x)$.\nSolution:\n1. Derivative of the numerator: $\\frac{\\pi}{4}f(\\sec^2x)\\cdot2\\sec^2x\\tan x$.\n2. Derivative of the denominator: 2x.\n3. At x = π/4: sec²x = 2 and tan x = 1, so the numerator becomes $\\frac{\\pi}{4}\\cdot f(2)\\cdot2\\cdot2\\cdot1 = \\pi f(2)$.\n4. The denominator becomes 2 · π/4 = π/2.\n5. Limit = πf(2)/(π/2) = 2f(2).\nWhy others are wrong:\n- (A) f(2) drops the chain-rule factor from sec²x.\n- (C) evaluates f at √2 (sec x) instead of 2 (sec²x).\n- (D) 4f(2) forgets the derivative of the denominator.\nKey takeaway: Integral limits with variable bounds: L'Hôpital + Leibniz; watch the chain rule on the upper limit.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A01",
@@ -2252,7 +2252,7 @@
     17
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Bring each angle into the principal range.\nSolution:\n1. cos⁻¹(cos(−5)) = cos⁻¹(cos 5) = 2π − 5 (5 lies in (π, 2π)).\n2. sin⁻¹(sin 6) = 6 − 2π.\n3. tan⁻¹(tan 12) = 12 − 4π.\n4. Total: (2π − 5) + (6 − 2π) − (12 − 4π) = 4π − 11.\nAnswer: (C)",
+   "explanation": "Concept: The principal ranges are cos⁻¹: [0, π], sin⁻¹: [−π/2, π/2], tan⁻¹: (−π/2, π/2). To simplify f⁻¹(f(θ)), shift θ by multiples of 2π (or π for tan), or reflect it, into the principal range. Use π ≈ 3.1416.\nSolution:\n1. cos⁻¹(cos(−5)) = cos⁻¹(cos 5). Since 5 ∈ (π, 2π), cos 5 = cos(2π − 5), and 2π − 5 ≈ 1.28 ∈ [0, π]. Result: 2π − 5.\n2. sin⁻¹(sin 6): 6 − 2π ≈ −0.28 ∈ [−π/2, π/2], and sin 6 = sin(6 − 2π). Result: 6 − 2π.\n3. tan⁻¹(tan 12): 12 − 4π ≈ −0.566 ∈ (−π/2, π/2). Result: 12 − 4π.\n4. Total: (2π − 5) + (6 − 2π) − (12 − 4π) = 4π − 11.\nWhy others are wrong:\n- (A) 3π − 11 uses 12 − 3π (the wrong multiple of π) for tan.\n- (B) and (D) come from mishandling the cos term (for example, taking 5 − 2π, which is negative).\nKey takeaway: Shift each angle into its principal range; check numerically with π ≈ 3.14.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A02",
@@ -2287,7 +2287,7 @@
     17
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Examine D and the ranks.\nSolution:\n1. D = −(a − 3)(a − 4), so there is a unique solution unless a = 3 or 4.\n2. For a = 3 and a = 4, the rank of the coefficient matrix is 2 but the augmented rank is 3, so the system is inconsistent.\n3. n(S₁) = 2 and n(S₂) = 0.\nAnswer: (C)",
+   "explanation": "Concept: For a 3 × 3 system, D ≠ 0 gives a unique solution. When D = 0, compare ranks: if rank(A) < rank([A|B]), the system is inconsistent; if the ranks are equal but less than 3, there are infinitely many solutions.\nSolution:\n1. Coefficient matrix [[−1, 1, 2], [3, −a, 5], [2, −2, −a]].\n2. D = −1(a² + 10) − 1(−3a − 10) + 2(−6 + 2a) = −a² + 7a − 12 = −(a − 3)(a − 4).\n3. So D = 0 only for a = 3 or a = 4.\n4. For each of these, rank(A) = 2, since two rows are independent. Replacing a column by the constants (0, 1, 7) gives a non-zero determinant (for example D_x ≠ 0), so the augmented rank is 3 and the system is inconsistent.\n5. S₁ = {3, 4} and S₂ = ∅, so n(S₁) = 2 and n(S₂) = 0.\nWhy others are wrong:\n- (A) and (D) claim infinite solutions, which would need every D_i = 0 as well.\n- (B) finds only one bad value of a, but the quadratic has two roots.\nKey takeaway: D = 0 alone does not decide the case; check D_x, D_y, D_z (or the ranks) to separate inconsistent from infinite.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A03",
@@ -2322,7 +2322,7 @@
     17
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: With both constants positive, the acute bisector takes the sign opposite to that of n₁·n₂ (here n₁·n₂ > 0).\nSolution:\n1. $\\frac{x - 2y - 2z + 1}{3} = -\\frac{2x - 3y - 6z + 1}{7}$ gives 13x − 23y − 32z + 10 = 0.\n2. (−2, 0, −½): −26 + 16 + 10 = 0 ✓.\nAnswer: (B)",
+   "explanation": "Concept: The bisectors of two planes are $\\frac{a_1x + b_1y + c_1z + d_1}{|n_1|} = \\pm\\frac{a_2x + b_2y + c_2z + d_2}{|n_2|}$. With both constants d₁, d₂ positive, if n₁·n₂ > 0 the \"+\" sign gives the obtuse bisector, so the acute bisector takes the \"−\" sign.\nSolution:\n1. n₁ = (1, −2, −2) with |n₁| = 3, and n₂ = (2, −3, −6) with |n₂| = 7. The constants are both +1.\n2. n₁·n₂ = 2 + 6 + 12 = 20 > 0, so the acute bisector uses \"−\".\n3. 7(x − 2y − 2z + 1) = −3(2x − 3y − 6z + 1) gives 7x − 14y − 14z + 7 + 6x − 9y − 18z + 3 = 0.\n4. P: 13x − 23y − 32z + 10 = 0.\n5. Test (−2, 0, −½): −26 − 0 + 16 + 10 = 0 ✓.\nWhy others are wrong:\n- (A) (3, 1, −½): 39 − 23 + 16 + 10 = 42 ≠ 0.\n- (C) (0, 2, −4): −46 + 128 + 10 ≠ 0.\n- (D) (4, 0, −2): 52 + 64 + 10 ≠ 0.\nKey takeaway: Make the constants the same sign, then n₁·n₂ > 0 means the \"−\" sign gives the acute bisector.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A04",
@@ -2357,7 +2357,7 @@
     18
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: p → q ≡ ∼p ∨ q.\nSolution:\n1. ∼(p → q) ≡ p ∧ ∼q.\nAnswer: (D)",
+   "explanation": "Concept: An implication p → q is false only when p is true and q is false. So p → q ≡ ∼p ∨ q, and its negation is ∼(p → q) ≡ p ∧ ∼q.\nSolution:\n1. ∼(p → q) ≡ ∼(∼p ∨ q) ≡ p ∧ ∼q by De Morgan's law.\n2. This matches the given expression exactly.\nCheck the others:\n- ∼(q → p) ≡ q ∧ ∼p, which is different.\n- ∼p → ∼q is the inverse, ≡ p ∨ ∼q, which is true whenever p is true, not equivalent.\n- ∼(p → ∼q) ≡ p ∧ q, which is different.\nWhy others are wrong:\n- (A) reverses the roles of p and q.\n- (B) is the inverse, a disjunction, not a conjunction.\n- (C) negates the wrong inner statement and gives p ∧ q.\nKey takeaway: ∼(p → q) ≡ p ∧ ∼q: \"the premise holds but the conclusion fails\".\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A05",
@@ -2402,7 +2402,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Count the adjacent (side-sharing) pairs.\nSolution:\n1. Horizontal pairs: 8 × 7 = 56; vertical pairs: 56; total 112.\n2. Total pairs = C(64, 2) = 2016, so p = 112/2016 = 1/18.\nAnswer: (B)",
+   "explanation": "Concept: Two distinct squares chosen at random from 64 give C(64, 2) equally likely pairs. Count the favourable pairs that share a side, row by row and column by column.\nSolution:\n1. Horizontal neighbours: each row of 8 squares has 7 adjacent pairs, so 8 rows give 56.\n2. Vertical neighbours: similarly 8 columns × 7 = 56.\n3. Total adjacent pairs = 112.\n4. Total pairs = C(64, 2) = 64 × 63/2 = 2016.\n5. P = 112/2016 = 1/18.\nWhy others are wrong:\n- (C) 1/7 and (A) 2/7 use ordered or per-square reasoning incorrectly.\n- (D) 1/9 double-counts the adjacent pairs (224/2016).\nKey takeaway: An m × n grid has m(n − 1) + n(m − 1) side-sharing pairs.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A06",
@@ -2439,7 +2439,7 @@
     18
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Linear equation $y' + \\frac{y}{x^2} = \\frac{1}{x^3}$ with integrating factor $e^{-1/x}$.\nSolution:\n1. $ye^{-1/x} = \\int\\frac{e^{-1/x}}{x^3}dx = \\left(\\frac{1}{x} + 1\\right)e^{-1/x} + C$, so $y = \\frac{1}{x} + 1 + Ce^{1/x}$.\n2. y(1) = 1 gives C = −1/e.\n3. y(½) = 2 + 1 − e²/e = 3 − e.\nAnswer: (D)",
+   "explanation": "Concept: Rearrange into the linear form $\\frac{dy}{dx} + P(x)y = Q(x)$. The integrating factor $e^{\\int P\\,dx}$ turns the left side into an exact derivative.\nSolution:\n1. x²dy = −(y − 1/x)dx gives $\\frac{dy}{dx} + \\frac{y}{x^2} = \\frac{1}{x^3}$.\n2. IF = $e^{\\int x^{-2}dx} = e^{-1/x}$.\n3. $\\frac{d}{dx}(ye^{-1/x}) = \\frac{e^{-1/x}}{x^3}$. Put t = −1/x, so dt = dx/x² and 1/x = −t: $\\int -te^t dt = (1 - t)e^t = \\left(1 + \\frac1x\\right)e^{-1/x}$.\n4. $y = 1 + \\frac1x + Ce^{1/x}$.\n5. y(1) = 1: 2 + Ce = 1, so C = −1/e.\n6. y(½) = 1 + 2 − e²/e = 3 − e.\nWhy others are wrong:\n- (C) 3 + e has the wrong sign of C.\n- (A) and (B) contain 1/√e, from e^{x} or e^{−1/(2x)}-type slips in the integrating factor.\nKey takeaway: For a 1/x² coefficient, IF = e^{−1/x}; the substitution t = −1/x makes the integral easy.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A07",
@@ -2474,7 +2474,7 @@
     19
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $4\\sin\\left(\\frac{\\pi}{4} + x\\right)\\sin\\left(\\frac{\\pi}{4} - x\\right) = 2\\cos2x$.\nSolution:\n1. 2cos x(2cos 2x − 1) = 2(4cos³x − 3cos x) = 2cos 3x = 1, so cos 3x = ½.\n2. With 3x ∈ [0, 3π]: 3x = π/3, 5π/3, 7π/3, so x = π/9, 5π/9, 7π/9.\n3. n = 3 and S = 13π/9.\nAnswer: (A)",
+   "explanation": "Concept: The product-to-sum identity gives $2\\sin A\\sin B = \\cos(A - B) - \\cos(A + B)$, and the triple-angle identity is $\\cos3x = 4\\cos^3x - 3\\cos x$.\nSolution:\n1. $4\\sin\\left(\\frac{\\pi}{4} + x\\right)\\sin\\left(\\frac{\\pi}{4} - x\\right) = 2[\\cos2x - \\cos\\frac{\\pi}{2}] = 2\\cos2x$.\n2. The equation becomes 2cos x(2cos 2x − 1) = 1.\n3. 2cos 2x − 1 = 4cos²x − 3, so 2cos x(4cos²x − 3) = 2(4cos³x − 3cos x) = 2cos 3x.\n4. 2cos 3x = 1, so cos 3x = ½.\n5. For x ∈ [0, π], 3x ∈ [0, 3π]: 3x = π/3, 5π/3, 7π/3, giving x = π/9, 5π/9, 7π/9.\n6. n = 3 and S = 13π/9.\nWhy others are wrong:\n- (B) and (C) find only 2 solutions, missing 7π/3 in [0, 3π].\n- (D) includes a wrong third solution (for example 11π/9, which is outside [0, π]).\nKey takeaway: Spot hidden triple-angle forms; when the argument is 3x, stretch the interval by 3.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A08",
@@ -2509,7 +2509,7 @@
     19
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Find f, then use the intermediate value property of f′.\nSolution:\n1. f(2) = f(4) = 0 gives a = 8, b = 0, so f = x(x − 2)(x − 4) and f′ = 3x² − 12x + 8.\n2. f′ rises from −4 to 8 on (2, 4), so it takes −1 and then 0: (S1) is true.\n3. $x_4 = 2 + \\frac{2}{\\sqrt3}$ (the minimum of f), with $f(x_4) = -\\frac{16}{3\\sqrt3}$.\n4. $2f'(x_3) = -\\frac{16}{3}$ needs f′(x₃) = −8/3, which lies in (−4, 0), so such x₃ < x₄ exists: (S2) is true.\nAnswer: (A)",
+   "explanation": "Concept: f(2) = f(4) = 0 fixes a and b. Then study f′, a quadratic, on (2, 4) using continuity (the intermediate value theorem) and monotonicity.\nSolution:\n1. f(2) = 8 − 24 + 2a + b = 0 and f(4) = 64 − 96 + 4a + b = 0. Subtracting: 2a = 16, so a = 8 and b = 0. So f = x(x − 2)(x − 4).\n2. f′ = 3x² − 12x + 8, with f″ = 6x − 12 > 0 on (2, 4), so f′ increases from f′(2) = −4 to f′(4) = 8.\n3. (S1): f′ passes through −1 and then 0 in order, so x₁ < x₂ exist. True.\n4. (S2): f′ = 0 at x₄ = 2 + 2/√3 ∈ (2, 4), so f decreases on (2, x₄) and increases on (x₄, 4). With u = 2/√3, f(x₄) = u(u² − 4) = −16/(3√3), so √3f(x₄) = −16/3.\n5. We need f′(x₃) = −8/3. Since −8/3 ∈ (−4, 0) = f′((2, x₄)), such an x₃ < x₄ exists. True.\nWhy others are wrong:\n- (B), (C) and (D) reject a statement that follows from the continuity and monotonicity of f′.\nKey takeaway: An increasing continuous f′ takes every value between its endpoint values, in order.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A09",
@@ -2544,7 +2544,7 @@
     20
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $J_{n+3,3} - J_{n,3} = \\int_0^{1/2}\\frac{x^n(x^3 - 1)}{x^3 - 1}dx = \\frac{(1/2)^{n+1}}{n + 1}$.\nSolution:\n1. The diagonal entries (i = 1, 2, 3, with n = i + 3) are 1/160, 1/384, 1/896; A is upper triangular.\n2. |A| = 1/(160 × 384 × 896) = 1/(2¹⁹ × 105).\n3. |adj A⁻¹| = |A⁻¹|² = (105)² × 2³⁸.\nAnswer: (C)",
+   "explanation": "Concept: The key step is $J_{n+3,3} - J_{n,3} = \\int_0^{1/2}\\frac{x^{n+3} - x^n}{x^3 - 1}dx = \\int_0^{1/2}x^n dx = \\frac{(1/2)^{n+1}}{n + 1}$. For a triangular matrix, the determinant is the product of the diagonal entries, and for 3 × 3 matrices $|\\text{adj}B| = |B|^2$.\nSolution:\n1. $a_{ij} = J_{i+6,3} - J_{i+3,3}$ uses n = i + 3, so $a_{ij} = \\frac{(1/2)^{i+4}}{i + 4}$ for i ≤ j, and 0 below the diagonal: A is upper triangular.\n2. Diagonal: i = 1 gives $\\frac{1}{2^5\\cdot5} = \\frac{1}{160}$; i = 2 gives $\\frac{1}{2^6\\cdot6} = \\frac{1}{384}$; i = 3 gives $\\frac{1}{2^7\\cdot7} = \\frac{1}{896}$.\n3. |A| = 1/(160 × 384 × 896) = 1/(2⁵·5 · 2⁷·3 · 2⁷·7) = 1/(2¹⁹ × 105).\n4. |A⁻¹| = 2¹⁹ × 105, so |adj A⁻¹| = |A⁻¹|² = (105)² × 2³⁸.\nWhy others are wrong:\n- (A) and (B) use 15 instead of 105 (missing the factor 7).\n- (D) has the wrong power of 2 (2³⁶).\nKey takeaway: Telescoping integrals like J_{n+3} − J_n simplify when the denominator divides the numerator difference; |adj B| = |B|^{n−1}.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A10",
@@ -2579,7 +2579,7 @@
     21
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The upper curve is sin x + cos x throughout; split at π/4 for the absolute value.\nSolution:\n1. On [0, π/4]: difference = 2 sin x; on [π/4, π/2]: difference = 2 cos x.\n2. Area = 2(1 − 1/√2) + 2(1 − 1/√2) = 4 − 2√2 = 2√2(√2 − 1).\nAnswer: (A)",
+   "explanation": "Concept: The area between curves is ∫(upper − lower)dx. Here sin x + cos x ≥ |cos x − sin x| on [0, π/2], since both sin x and cos x are non-negative. The absolute value changes form at x = π/4, where cos x = sin x.\nSolution:\n1. On [0, π/4], cos x ≥ sin x, so the lower curve is cos x − sin x and the difference is 2 sin x.\n2. $\\int_0^{\\pi/4}2\\sin x\\,dx = 2(1 - \\cos\\frac{\\pi}{4}) = 2 - \\sqrt2$.\n3. On [π/4, π/2], the lower curve is sin x − cos x and the difference is 2 cos x.\n4. $\\int_{\\pi/4}^{\\pi/2}2\\cos x\\,dx = 2(1 - \\sin\\frac{\\pi}{4}) = 2 - \\sqrt2$.\n5. Total = 4 − 2√2 = 2√2(√2 − 1).\nWhy others are wrong:\n- (B) and (D) have (√2 + 1), which adds the areas under the curves instead of subtracting.\n- (C) 4(√2 − 1) = 4√2 − 4 ≈ 1.66, but the correct value is ≈ 1.17.\nKey takeaway: Split at the points where the expression inside the absolute value changes sign.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A11",
@@ -2614,7 +2614,7 @@
     21
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Parametrise the line, then use |AP × d|/|d|.\nSolution:\n1. With z = t: x = (t − 4)/3 and y = (2t + 1)/3, so the direction is (1, 2, 3); t = 4 gives the point (0, 3, 4).\n2. AP = (2, −4, 2), and AP × d = (−16, −4, 8), whose |·|² is 336.\n3. Distance = √(336/14) = √24 = 2√6.\nAnswer: (C)",
+   "explanation": "Concept: A line given as the intersection of two planes is best parametrised first, to get a point and a direction. The distance from an external point P is $\\frac{|\\vec{AP}\\times\\vec d|}{|\\vec d|}$.\nSolution:\n1. Let z = t. From 3x − z + 4 = 0: x = (t − 4)/3. From 3y − 2z − 1 = 0: y = (2t + 1)/3.\n2. Direction (per unit t): (1/3, 2/3, 1), proportional to (1, 2, 3).\n3. At t = 4: A = (0, 3, 4).\n4. $\\vec{AP}$ = (2, −1, 6) − (0, 3, 4) = (2, −4, 2).\n5. $\\vec{AP}\\times(1, 2, 3)$ = (−12 − 4, 2 − 6, 4 + 4) = (−16, −4, 8), with magnitude² 256 + 16 + 64 = 336.\n6. Distance = √(336/14) = √24 = 2√6.\nWhy others are wrong:\n- (A) √26, (B) 2√5 and (D) 4√2 come from a wrong direction vector or wrong base point.\nKey takeaway: Parametrise one variable, read off the direction, then use the cross-product distance formula.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A12",
@@ -2649,7 +2649,7 @@
     21
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Vertex (½, ¾) with directrix y = ½ gives a = ¼: $(x - \\frac{1}{2})^2 = y - \\frac{3}{4}$, that is, y = x² − x + 1.\nSolution:\n1. P = (−½, 7/4). The slope there is −2, so the normal has slope ½: y = ½x + 2.\n2. x² − x + 1 = ½x + 2 gives x = −½ or x = 2, so Q = (2, 3).\n3. PQ² = 2.5² + 1.25² = 125/16.\nAnswer: (B)",
+   "explanation": "Concept: The vertex lies halfway between the focus and the directrix. With the vertex at y = 3/4 and the directrix y = 1/2, a = 1/4 and the parabola opens upward: (x − h)² = 4a(y − k).\nSolution:\n1. $(x - \\frac12)^2 = y - \\frac34$, that is, y = x² − x + 1.\n2. P: at x = −½, y = ¼ + ½ + 1 = 7/4, so P = (−½, 7/4).\n3. Slope at P: y′ = 2x − 1 = −2, so the normal's slope is ½. Normal: y − 7/4 = ½(x + ½), that is, y = x/2 + 2.\n4. Intersect with the parabola: x² − x + 1 = x/2 + 2 gives 2x² − 3x − 2 = 0, so (2x + 1)(x − 2) = 0 and x = 2. Q = (2, 3).\n5. PQ² = (2.5)² + (1.25)² = 6.25 + 1.5625 = 125/16.\nWhy others are wrong:\n- (A), (C) and (D) come from a wrong parabola (for example using a = ½) or a slip in the normal's slope.\nKey takeaway: The distance from vertex to directrix is a; the normal slope is −1/y′.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A13",
@@ -2684,7 +2684,7 @@
     22
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The map t ↦ t² − 2 must send the root set into itself.\nSolution:\n1. Fixed points: t² − 2 = t gives t = 2 or −1. The roots {2,2}, {−1,−1} and {2,−1} give (a, b) = (−4, 4), (2, 1), (−1, −2).\n2. A 2-cycle (s + t = −1, st = −1) gives x² + x − 1: (1, −1).\n3. One root mapping to a fixed root: {−2, 2} gives (0, −4), and {1, −1} gives (0, −1).\n4. Non-real roots are impossible, so there are 6 pairs.\nAnswer: (A)",
+   "explanation": "Concept: The root set {α, β} of a real quadratic must be closed under the map T(t) = t² − 2. The roots can be real (distinct or equal) or complex. Complex roots fail: if α is non-real, α² − 2 would also have to be a root, and it cannot equal ᾱ consistently.\nSolution:\n1. Both roots fixed (t² − 2 = t gives t = 2 or −1): {2, 2} gives (a, b) = (−4, 4); {−1, −1} gives (2, 1); {2, −1} gives (−1, −2).\n2. A 2-cycle (α ↦ β ↦ α, α ≠ β): subtracting α² − 2 = β and β² − 2 = α gives α + β = −1, and then αβ = −1. Equation x² + x − 1 = 0, so (1, −1).\n3. One root maps onto the other, which is fixed: α = −2 ↦ 2 ↦ 2 gives {−2, 2}, so (0, −4). α = 1 ↦ −1 ↦ −1 gives {1, −1}, so (0, −1).\n4. Total = 3 + 1 + 2 = 6.\nWhy others are wrong:\n- (B) 2 and (C) 4 miss the chain cases or the repeated-root cases.\n- (D) 8 overcounts, for example by including complex cycles.\nKey takeaway: Enumerate fixed points, 2-cycles and pre-images of fixed points; this covers every closed root set.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A14",
@@ -2719,7 +2719,7 @@
     22
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $S_n = \\sum_{k=1}^{n-1}k(n - k) = \\frac{n(n^2 - 1)}{6}$.\nSolution:\n1. $\\frac{2S_n}{n!} = \\frac{(n - 1)n(n + 1)}{3\\cdot n!} = \\frac{n + 1}{3(n - 2)!}$.\n2. The term is $\\frac{n + 1 - 3}{3(n - 2)!} = \\frac{n - 2}{3(n - 2)!} = \\frac{1}{3(n - 3)!}$.\n3. $\\sum_{n\\ge4}\\frac{1}{3(n - 3)!} = \\frac{1}{3}\\left(\\frac{1}{1!} + \\frac{1}{2!} + \\ldots\\right) = \\frac{e - 1}{3}$.\nAnswer: (A)",
+   "explanation": "Concept: S_n is a convolution sum: $S_n = \\sum_{k=1}^{n-1}k(n - k)$. Evaluate it with the standard sums, then simplify the general term until it matches the series for e.\nSolution:\n1. $S_n = n\\sum k - \\sum k^2 = n\\cdot\\frac{(n - 1)n}{2} - \\frac{(n - 1)n(2n - 1)}{6} = \\frac{n(n - 1)(n + 1)}{6}$.\n2. $\\frac{2S_n}{n!} = \\frac{(n - 1)n(n + 1)}{3\\,n!} = \\frac{n + 1}{3(n - 2)!}$.\n3. Term: $\\frac{n + 1}{3(n - 2)!} - \\frac{3}{3(n - 2)!} = \\frac{n - 2}{3(n - 2)!} = \\frac{1}{3(n - 3)!}$.\n4. Sum over n ≥ 4: $\\frac13\\left(\\frac{1}{1!} + \\frac{1}{2!} + \\frac{1}{3!} + \\ldots\\right) = \\frac{e - 1}{3}$.\nWhy others are wrong:\n- (C) e/3 includes the 1/0! term, but n starts at 4, so the first term is 1/1!.\n- (B) and (D) have the wrong factor (6 instead of 3).\nKey takeaway: Reduce the general term to 1/(k!) and match it with e = Σ1/k!; watch the starting index.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A15",
@@ -2754,7 +2754,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Complement counting.\nSolution:\n1. Total = C(15, 3) = 455.\n2. Triples of distinct indices with i + j + k = 15: {1,2,12}, {1,3,11}, {1,4,10}, {1,5,9}, {1,6,8}, {2,3,10}, {2,4,9}, {2,5,8}, {2,6,7}, {3,4,8}, {3,5,7}, {4,5,6}. That is 12.\n3. 455 − 12 = 443.\nAnswer: (C)",
+   "explanation": "Concept: Any 3 of 15 points on a circle form a triangle (no three are collinear). Use complement counting: all triangles minus those whose indices sum to exactly 15.\nSolution:\n1. Total = C(15, 3) = 455.\n2. Unordered triples of distinct indices with i + j + k = 15 (smallest first):\n - 1: {1,2,12}, {1,3,11}, {1,4,10}, {1,5,9}, {1,6,8}: 5\n - 2: {2,3,10}, {2,4,9}, {2,5,8}, {2,6,7}: 4\n - 3: {3,4,8}, {3,5,7}: 2\n - 4: {4,5,6}: 1\n Total 12.\n3. Required = 455 − 12 = 443.\nWhy others are wrong:\n- (A) 12 is the excluded count itself.\n- (D) 455 excludes nothing.\n- (B) 419 subtracts ordered or with-repetition counts (36).\nKey takeaway: Count partitions of 15 into 3 distinct positive parts systematically, fixing the smallest part.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A16",
@@ -2789,7 +2789,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Sum-to-product.\nSolution:\n1. cos(π/4 + x) + cos(π/4 − x) = √2 cos x, and cos(3π/4 + x) − cos(3π/4 − x) = −√2 sin x.\n2. The argument is 3 + √2(cos x − sin x) = 3 + 2cos(x + π/4), which lies in [1, 5].\n3. $\\log_{\\sqrt5}$ of [1, 5] is [0, 2].\nAnswer: (D)",
+   "explanation": "Concept: Simplify the argument with the sum-to-product identities: cos(A + B) + cos(A − B) = 2cos A cos B and cos(A + B) − cos(A − B) = −2 sin A sin B. The range of the log then follows from the range of its argument.\nSolution:\n1. cos(π/4 + x) + cos(π/4 − x) = 2cos(π/4)cos x = √2 cos x.\n2. cos(3π/4 + x) − cos(3π/4 − x) = −2sin(3π/4)sin x = −√2 sin x.\n3. The argument is 3 + √2(cos x − sin x) = 3 + 2cos(x + π/4).\n4. cos ranges over [−1, 1], so the argument ranges over [1, 5], which is always positive, so the log is defined.\n5. $\\log_{\\sqrt5}1 = 0$ and $\\log_{\\sqrt5}5 = 2$, and the log is increasing, so the range is [0, 2].\nWhy others are wrong:\n- (A) (0, √5) and (C) [1/√5, √5] take the log values as powers of √5 incorrectly.\n- (B) [−2, 2] assumes the argument can go down to 1/5.\nKey takeaway: a cos x + b sin x has amplitude √(a² + b²); then map through the monotonic log.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A17",
@@ -2824,7 +2824,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $\\sum\\frac{1}{a_na_{n+1}} = \\frac{1}{d}\\left(\\frac{1}{a_1} - \\frac{1}{a_{21}}\\right) = \\frac{20}{a_1a_{21}}$.\nSolution:\n1. a₁a₂₁ = 45, and 21(a₁ + a₂₁)/2 = 189 gives a₁ + a₂₁ = 18. So {a₁, a₂₁} = {3, 15} and d = ±0.6.\n2. a₆ and a₁₆ are 6 and 12 (in some order), so the product is 72.\nAnswer: (B)",
+   "explanation": "Concept: The telescoping sum is $\\frac{1}{a_na_{n+1}} = \\frac{1}{d}\\left(\\frac{1}{a_n} - \\frac{1}{a_{n+1}}\\right)$. Over n = 1 to 20 it collapses to $\\frac{1}{d}\\left(\\frac{1}{a_1} - \\frac{1}{a_{21}}\\right) = \\frac{a_{21} - a_1}{d\\,a_1a_{21}} = \\frac{20}{a_1a_{21}}$.\nSolution:\n1. 20/(a₁a₂₁) = 4/9, so a₁a₂₁ = 45.\n2. Sum of 21 terms: 21(a₁ + a₂₁)/2 = 189, so a₁ + a₂₁ = 18.\n3. a₁ and a₂₁ are the roots of t² − 18t + 45 = 0, that is, 3 and 15. d = ±12/20 = ±0.6.\n4. With a₁ = 3 and d = 0.6: a₆ = 3 + 3 = 6 and a₁₆ = 3 + 9 = 12. (The reverse order gives 12 and 6.)\n5. a₆a₁₆ = 72.\nWhy others are wrong:\n- (A) 57, (C) 48 and (D) 36 come from a wrong d or an index slip (e.g. a₆ = a₁ + 6d).\nKey takeaway: Σ1/(aₙaₙ₊₁) = (number of terms)/(a_first·a_last) for an AP.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A18",
@@ -2859,7 +2859,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: f(x) = x + k sin x, where k = ∫₀^{π/2} cos y f(y) dy.\nSolution:\n1. $k = \\int_0^{\\pi/2}y\\cos y\\,dy + k\\int_0^{\\pi/2}\\sin y\\cos y\\,dy = \\left(\\frac{\\pi}{2} - 1\\right) + \\frac{k}{2}$.\n2. k = π − 2.\nAnswer: (D)",
+   "explanation": "Concept: In the integral equation, sin x factors out of the integral over y. So f(x) = x + k sin x, where k = ∫₀^{π/2} cos y · f(y) dy is a constant. Substitute this form back to find k.\nSolution:\n1. $k = \\int_0^{\\pi/2}\\cos y(y + k\\sin y)dy = \\int_0^{\\pi/2}y\\cos y\\,dy + k\\int_0^{\\pi/2}\\sin y\\cos y\\,dy$.\n2. $\\int_0^{\\pi/2}y\\cos y\\,dy = [y\\sin y + \\cos y]_0^{\\pi/2} = \\frac{\\pi}{2} - 1$.\n3. $\\int_0^{\\pi/2}\\sin y\\cos y\\,dy = \\frac12$.\n4. k = π/2 − 1 + k/2, so k/2 = π/2 − 1 and k = π − 2.\n5. f(x) = x + (π − 2)sin x.\nWhy others are wrong:\n- (A) has an extra factor of ⅔.\n- (B) has π + 2, a sign error in the parts integral.\n- (C) π/2 ignores the self-referential k/2 term.\nKey takeaway: Separable kernels (g(x)h(y)) reduce Fredholm-type equations to finding one constant.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A19",
@@ -2894,7 +2894,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Slopes of both tangents at the intersection point.\nSolution:\n1. x²(1 − 1/9) = 2 gives P = (3/2, √3/2).\n2. Ellipse slope: −x/(9y) = −1/(3√3). Circle slope: −x/y = −√3.\n3. $\\tan\\theta = \\frac{\\sqrt3 - \\frac{1}{3\\sqrt3}}{1 + \\frac{1}{3}} = \\frac{8}{3\\sqrt3}\\cdot\\frac{3}{4} = \\frac{2}{\\sqrt3}$.\nAnswer: (B)",
+   "explanation": "Concept: The angle between curves at an intersection point is the angle between their tangents: $\\tan\\theta = \\left|\\frac{m_1 - m_2}{1 + m_1m_2}\\right|$. The slopes come from implicit differentiation.\nSolution:\n1. Intersection: substituting y² = 3 − x² into x²/9 + y² = 1 gives x²/9 + 3 − x² = 1, so (8/9)x² = 2, x² = 9/4 and x = 3/2. Then y² = 3/4, so y = √3/2. P = (3/2, √3/2).\n2. Ellipse slope: m₁ = −x/(9y) = −(3/2)/(9√3/2) = −1/(3√3).\n3. Circle slope: m₂ = −x/y = −√3.\n4. m₁ − m₂ = √3 − 1/(3√3) = 8/(3√3), and 1 + m₁m₂ = 1 + 1/3 = 4/3.\n5. tan θ = (8/(3√3))/(4/3) = 2/√3.\nWhy others are wrong:\n- (A), (C) and (D) come from wrong slopes (for example using −x/y for the ellipse) or arithmetic slips.\nKey takeaway: For an ellipse, slope = −b²x/(a²y); for a circle, −x/y.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_A20",
@@ -2924,7 +2924,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The probabilities sum to 1, and the mean is given.\nSolution:\n1. a + b = 4/15 and −a + 6b = 0.9 give b = 1/6 and a = 1/10.\n2. E[X²] = 0.8 + 0.1 + 3 + 3.2 + 6 = 13.1, so σ² = 13.1 − 2.3² = 7.81.\n3. 100σ² = 781.\nAnswer: 781",
+   "explanation": "Concept: For a discrete random variable, ΣP = 1, E[X] = ΣxP, and Var(X) = E[X²] − (E[X])². Two conditions fix the two unknown probabilities.\nSolution:\n1. ΣP = 1: 1/5 + a + 1/3 + 1/5 + b = 1, so a + b = 4/15.\n2. Mean: −2/5 − a + 1 + 4/5 + 6b = 2.3, so −a + 6b = 0.9.\n3. Adding: 7b = 4/15 + 0.9 = 7/6, so b = 1/6 and a = 4/15 − 1/6 = 1/10.\n4. E[X²] = 4(1/5) + 1(1/10) + 9(1/3) + 16(1/5) + 36(1/6) = 0.8 + 0.1 + 3 + 3.2 + 6 = 13.1.\n5. σ² = 13.1 − (2.3)² = 13.1 − 5.29 = 7.81, so 100σ² = 781.\nCommon mistake: Forgetting to subtract the square of the mean, or using ΣxP² instead of Σx²P.\nKey takeaway: Var = E[X²] − μ²; find the unknown probabilities from the normalisation and the mean.\nAnswer: 781",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B01",
@@ -2954,7 +2954,7 @@
     25
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: L'Hôpital: the limit is nf(1) − f′(1).\nSolution:\n1. f(1) = 9 and f′(1) = 6 + 8 + 3 + 2 = 19.\n2. 9n − 19 = 44, so n = 7.\nAnswer: 7",
+   "explanation": "Concept: At x = 1, the numerator is 1·f(1) − f(1) = 0, so the limit is 0/0. By L'Hôpital's rule, it equals the derivative of the numerator at x = 1: nx^{n−1}f(1) − f′(x) → nf(1) − f′(1).\nSolution:\n1. f(1) = 1 + 2 + 1 + 2 + 3 = 9.\n2. f′(x) = 6x⁵ + 8x³ + 3x² + 2, so f′(1) = 6 + 8 + 3 + 2 = 19.\n3. Limit = 9n − 19 = 44, so 9n = 63 and n = 7.\nCommon mistake: Differentiating x^n f(1) as if f(1) varied with x; f(1) is a constant.\nKey takeaway: A 0/0 limit at a point is the derivative of the numerator there (when the denominator is x − a).\nAnswer: 7",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B02",
@@ -2984,7 +2984,7 @@
     25
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: |3iz + 6| = 3|z − 2i|.\nSolution:\n1. We want the farthest point from (0, 2) in the disc with centre (2, 2) and radius 1, which is (3, 2).\n2. a + b = 5.\nAnswer: 5",
+   "explanation": "Concept: Rewrite the expression as a distance: |3iz + 6| = |3i| · |z + 6/(3i)| = 3|z − 2i|. It measures three times the distance from z to the point (0, 2). Maximising a distance from a fixed point over a disc gives the far end of the line through the centre.\nSolution:\n1. The disc |z − (2 + 2i)| ≤ 1 has centre C = (2, 2) and radius 1.\n2. Fixed point Q = (0, 2). The line QC is horizontal (y = 2).\n3. The farthest point of the disc from Q lies on the ray from Q through C, one radius beyond C: (3, 2).\n4. The maximum is 3 × 3 = 9, attained at z = 3 + 2i.\n5. a + b = 3 + 2 = 5.\nCommon mistake: Forgetting that 6/(3i) = −2i (not +2i), which puts Q at (0, −2).\nKey takeaway: max |z − Q| over a disc = |QC| + r, attained along the line QC.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B03",
@@ -3014,7 +3014,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The midpoints form the medial triangle, whose area is ¼ of ABC.\nSolution:\n1. The pairwise intersections are (1, 2), (2, 3) and (7, 5), enclosing an area of ½|−2 + 6 − 7| = 3/2.\n2. Area of ABC = 4 × 3/2 = 6.\nAnswer: 6",
+   "explanation": "Concept: The midpoints of the sides of a triangle form its medial triangle, whose area is exactly ¼ of the original. So find the three vertices where the lines meet, compute that area, and multiply by 4.\nSolution:\n1. x − y + 1 = 0 and x − 2y + 3 = 0 meet at (1, 2).\n2. x − y + 1 = 0 and 2x − 5y + 11 = 0 meet at (2, 3).\n3. x − 2y + 3 = 0 and 2x − 5y + 11 = 0 meet at (7, 5).\n4. Area = ½|1(3 − 5) + 2(5 − 2) + 7(2 − 3)| = ½|−2 + 6 − 7| = 3/2.\n5. Area of ABC = 4 × 3/2 = 6.\nCommon mistake: Multiplying by 2 instead of 4; the medial triangle's sides are half as long, so its area is a quarter.\nKey takeaway: Medial triangle area = ¼ × the original area.\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B04",
@@ -3044,7 +3044,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: g(x) = xf(x) + 2 is a quartic with roots 2, 3, 4, 5.\nSolution:\n1. g(x) = c(x − 2)(x − 3)(x − 4)(x − 5); g(0) = 2 gives 120c = 2, so c = 1/60.\n2. 10f(10) = g(10) − 2 = 1680/60 − 2 = 26.\n3. 52 − 26 = 26.\nAnswer: 26",
+   "explanation": "Concept: The condition f(k) = −2/k means kf(k) + 2 = 0 for k = 2, 3, 4, 5. So g(x) = xf(x) + 2 is a degree-4 polynomial with these four roots, which fixes it up to a constant, and g(0) = 2 fixes the constant.\nSolution:\n1. g(x) = c(x − 2)(x − 3)(x − 4)(x − 5).\n2. g(0) = 0·f(0) + 2 = 2, and g(0) = c(−2)(−3)(−4)(−5) = 120c, so c = 1/60.\n3. g(10) = (8 × 7 × 6 × 5)/60 = 1680/60 = 28.\n4. 10f(10) = g(10) − 2 = 26.\n5. 52 − 10f(10) = 52 − 26 = 26.\nCommon mistake: Trying to find the cubic's four coefficients directly; the auxiliary polynomial is far quicker.\nKey takeaway: When f(k) = h(k) at many points, build a polynomial that vanishes there.\nAnswer: 26",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B05",
@@ -3074,7 +3074,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Dictionary rank, counting only arrangements without \"RR\".\nSolution:\n1. Words starting with A or E: each leaves 5 letters with R, R, giving 5!/2 − 4! = 36 without RR. That makes 72.\n2. Starting with F, in order: FAERMR (73), FAMRER (74), FAREMR (75), FARERM (76), then FARMER (77). The other arrangements of FAE…/FAM… contain RR.\nAnswer: 77",
+   "explanation": "Concept: Dictionary rank: count the valid words that come before the target, letter by letter. Here the valid words are arrangements of F, A, R, M, E, R without the two R's adjacent. For each block, count = (all arrangements) − (arrangements with RR glued together).\nSolution:\n1. Alphabetical letters: A, E, F, M, R, R.\n2. Words starting with A: the remaining E, F, M, R, R give 5!/2 − 4! = 60 − 24 = 36 valid words. Starting with E: also 36. Running total 72.\n3. Starting FA, the remaining letters are E, M, R, R:\n - FAE + {M, R, R}: only FAERMR avoids RR, so it is 73rd.\n - FAM + {E, R, R}: only FAMRER is valid, so it is 74th.\n - FAR + {E, M, R}: FAREMR (75), FARERM (76), FARMER (77). FARREM and FARRME have RR.\n4. FARMER is 77th.\nCommon mistake: Counting all arrangements, including RR words, gives a larger rank.\nKey takeaway: For restricted ranks, subtract the forbidden patterns inside each prefix block.\nAnswer: 77",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B06",
@@ -3104,7 +3104,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The sum of the coefficients is 2ⁿ.\nSolution:\n1. 2ⁿ = 4096, so n = 12.\n2. The greatest coefficient is C(12, 6) = 924.\nAnswer: 924",
+   "explanation": "Concept: Putting x = y = 1 in (x + y)ⁿ gives the sum of all the binomial coefficients: 2ⁿ. The largest coefficient is the middle one, C(n, n/2) for even n.\nSolution:\n1. 2ⁿ = 4096 = 2¹², so n = 12.\n2. n is even, so the greatest coefficient is C(12, 6).\n3. C(12, 6) = 12!/(6!·6!) = 924.\nCommon mistake: Taking C(12, 5) or C(12, 7) = 792; for even n there is a single middle term.\nKey takeaway: Sum of coefficients = (value at x = y = 1); greatest coefficient = middle binomial.\nAnswer: 924",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B07",
@@ -3134,7 +3134,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Write v = λa + μb.\nSolution:\n1. v ⊥ (3, 2, −1): 2λ + 8μ = 0. Projection on a: v·a/3 = 19, so 9λ − 2μ = 57.\n2. μ = −3/2 and λ = 6, so v = (21/2, −9, 27/2) and |v|² = 373.5.\n3. |2v|² = 1494.\nAnswer: 1494",
+   "explanation": "Concept: A vector in the plane of a and b can be written as v = λa + μb. The perpendicularity and projection conditions give two linear equations for λ and μ.\nSolution:\n1. v = (2λ + μ, −λ + 2μ, 2λ − μ).\n2. v ⊥ (3, 2, −1): 3(2λ + μ) + 2(−λ + 2μ) − (2λ − μ) = 2λ + 8μ = 0, so λ = −4μ.\n3. Projection on a: v·a/|a| = 19 with |a| = 3. v·a = 9λ − 2μ (a·a = 9, b·a = 0) = 57.\n4. −36μ − 2μ = 57, so μ = −3/2 and λ = 6.\n5. v = (12 − 1.5, −6 − 3, 12 + 1.5) = (10.5, −9, 13.5), and |v|² = 110.25 + 81 + 182.25 = 373.5.\n6. |2v|² = 4 × 373.5 = 1494.\nCommon mistake: Using v·a = 19 (forgetting to divide by |a|), which gives a different λ.\nKey takeaway: \"In the plane of a, b\" means v = λa + μb; the projection is v·â, not v·a.\nAnswer: 1494",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B08",
@@ -3164,7 +3164,7 @@
     27
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Check continuity only at the integer points −1, 0, 1.\nSolution:\n1. x = −1: both sides equal 1, so f is continuous there.\n2. x = 0: the left value is 0 and the right value is √3/2 − 1, so f is discontinuous.\n3. x = 1: the left value is √3/2 − 1 and the right value is 1/√2 − 2, so f is discontinuous.\n4. There are 2 points of discontinuity.\nAnswer: 2",
+   "explanation": "Concept: f involves [x] and [x + 1], which jump only at integers. In (−2, 2), check only x = −1, 0 and 1, comparing the left limit, right limit and value. Every other piece (|x² − 1| and sin) is continuous.\nSolution:\n1. x = −1: left ([x] = −2): −2·0 + sin(π/1) − (−1) = 0 + 0 + 1 = 1. Right ([x] = −1): −1·0 + sin(π/2) − 0 = 1. Continuous.\n2. x = 0: left ([x] = −1): −|0 − 1| + sin(π/2) − 0 = −1 + 1 = 0. Right ([x] = 0): 0 + sin(π/3) − 1 = √3/2 − 1 ≈ −0.13. Discontinuous.\n3. x = 1: left ([x] = 0): 0 + sin(π/3) − 1 = √3/2 − 1. Right ([x] = 1): 1·0 + sin(π/4) − 2 = 1/√2 − 2. Discontinuous.\n4. Number of discontinuities = 2.\nCommon mistake: Assuming every integer is a discontinuity; at x = −1 the factor |x² − 1| = 0 and the jumps cancel.\nKey takeaway: At integer points, compute both one-sided limits; zero factors can absorb the jumps.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B09",
@@ -3194,7 +3194,7 @@
     27
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Shortest path via reflection: reflect P in the x-axis to P′(−3, −4).\nSolution:\n1. The line P′Q is y = 2x + 2, which meets the x-axis at R(−1, 0).\n2. PR² = 4 + 16 = 20 and RQ² = 1 + 4 = 5, so 50 × 25 = 1250.\nAnswer: 1250",
+   "explanation": "Concept: At constant speed, minimum time means minimum path length. For a path P → (x-axis) → Q with P and Q on the same side, reflect P in the x-axis. The straight line from the reflection P′ to Q crosses the axis at the optimal R (angle of incidence = angle of reflection).\nSolution:\n1. Reflect P(−3, 4) to P′(−3, −4).\n2. Line P′Q through (−3, −4) and (0, 2): slope = 6/3 = 2, so y = 2x + 2.\n3. At y = 0: x = −1, so R = (−1, 0).\n4. PR² = (−3 + 1)² + (4 − 0)² = 4 + 16 = 20.\n5. RQ² = (0 + 1)² + (2 − 0)² = 1 + 4 = 5.\n6. 50(PR² + RQ²) = 50 × 25 = 1250.\nCommon mistake: Reflecting Q instead of P gives the same R; the error is using the midpoint of P and Q's x-coordinates.\nKey takeaway: Shortest path via a mirror line: reflect one endpoint and join with a straight line.\nAnswer: 1250",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-09-01_E_MAT_B10",
