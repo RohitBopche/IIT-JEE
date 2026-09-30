@@ -1,169 +1,308 @@
 P A 1: |-
-  Concept: Small-angle equilibrium: $\tan\theta \approx \frac{x}{2l} = \frac{F_e}{mg}$.
+  Concept: Each ball is in equilibrium under three forces: weight mg (down), tension T (along the thread) and the electrostatic repulsion $F_e = \frac{q^2}{4\pi\varepsilon_0x^2}$ (horizontal). Resolving: $T\cos\theta = mg$ and $T\sin\theta = F_e$, so $\tan\theta = \frac{F_e}{mg}$. For a small angle, $\tan\theta \approx \sin\theta = \frac{x/2}{l}$.
   Solution:
   1. $\frac{x}{2l} = \frac{q^2}{4\pi\varepsilon_0x^2mg}$.
-  2. $x^3 = \frac{q^2l}{2\pi\varepsilon_0mg} \Rightarrow x = \left(\frac{q^2l}{2\pi\varepsilon_0mg}\right)^{1/3}$.
+  2. Multiply out: $x^3 = \frac{2l\,q^2}{4\pi\varepsilon_0mg} = \frac{q^2l}{2\pi\varepsilon_0mg}$.
+  3. $x = \left(\frac{q^2l}{2\pi\varepsilon_0mg}\right)^{1/3}$.
+  Why others are wrong:
+  - (A) uses the exponent $\frac{1}{2}$; the separation appears as $x^3$ (x from geometry times $x^2$ from Coulomb's law), so a cube root is needed.
+  - (C) and (D) have $l^2$ and $m^2$, which are dimensionally inconsistent: the bracket must have dimensions of length cubed.
+  Key idea: this "cube-root law" ($x \propto q^{2/3}$) is used in many follow-up questions, e.g. when charge leaks away.
   Answer: (B)
 P A 2: |-
-  Concept: Rod about its centre: $\frac{ML^2}{12}$; about an end: $\frac{ML^2}{3}$.
+  Concept: A thin uniform rod of mass m and length ℓ has moment of inertia $\frac{m\ell^2}{12}$ about a perpendicular axis through its centre, and $\frac{m\ell^2}{3}$ about a perpendicular axis through one end (parallel axis theorem).
   Solution:
-  1. (a) $\frac{ML^2}{12}$. (b) $\frac{2ML^2}{3}$ → (iv). (c) $\frac{M(2L)^2}{12} = \frac{ML^2}{3}$. (d) $\frac{2M(2L)^2}{3} = \frac{8ML^2}{3}$ → (i).
-  2. The key matches (a) with (iii) and (c) with (ii); one of the two printed "$ML^2/12$" entries should read $ML^2/3$.
+  1. (a) Mass M, length L, centre: $\frac{ML^2}{12}$.
+  2. (b) Mass 2M, length L, end: $\frac{2ML^2}{3}$ → (iv).
+  3. (c) Mass M, length 2L, centre: $\frac{M(2L)^2}{12} = \frac{ML^2}{3}$.
+  4. (d) Mass 2M, length 2L, end: $\frac{2M(2L)^2}{3} = \frac{8ML^2}{3}$ → (i).
+  5. So (b)-(iv) and (d)-(i) are certain. (a) and (c) must be matched to (ii) and (iii); the key pairs (a)-(iii) and (c)-(ii).
+  Note: List-II prints "$ML^2/12$" for both (ii) and (iii); one of them should read $ML^2/3$ (the value for (c)). Options (B) and (C) are also printed identically. The official key is (C), which is stored.
+  Why others are wrong:
+  - (A) gives (b)-(i) and (d)-(iv), swapping $\frac{2ML^2}{3}$ and $\frac{8ML^2}{3}$.
+  - (D) gives (c)-(i) — $\frac{8ML^2}{3}$ belongs to (d).
   Answer: (C)
 P A 3: |-
-  Concept: $I_{axis} = \frac{MR^2}{2}$; about a diameter, $\frac{mr^2}{4}$; same areal density means $m = M\frac{r^2}{R^2}$.
+  Concept: For a uniform disc of mass M and radius R: about the perpendicular axis through the centre, $I = \frac{MR^2}{2}$; about a diameter, $I = \frac{MR^2}{4}$ (perpendicular axis theorem). With the same mass per unit area σ, mass scales with area: $m = \sigma\pi r^2 = M\frac{r^2}{R^2}$.
   Solution:
-  1. $\frac{MR^2/2}{Mr^4/(4R^2)} = \frac{2R^4}{r^4}$.
+  1. Bigger disc about AB (perpendicular axis): $I_1 = \frac{MR^2}{2}$.
+  2. Smaller disc mass: $m = \frac{Mr^2}{R^2}$.
+  3. Smaller disc about a diameter: $I_2 = \frac{mr^2}{4} = \frac{Mr^4}{4R^2}$.
+  4. Ratio: $\frac{I_1}{I_2} = \frac{MR^2/2}{Mr^4/(4R^2)} = \frac{4R^4}{2r^4} = \frac{2R^4}{r^4}$.
+  Why others are wrong:
+  - (A) and (D) use $R^2 : r^2$, forgetting that the masses also differ (∝ area).
+  - (B) inverts the ratio.
   Answer: (C)
 P A 4: |-
-  Concept: Current is the same everywhere in series; $v_d = \frac{I}{neA}$ and $E = \rho\frac{I}{A}$.
+  Concept: In a series circuit the current I is the same at every cross-section (charge conservation). For a conductor of cross-section A: drift velocity $v_d = \frac{I}{neA}$ and electric field $E = \rho J = \frac{\rho I}{A}$.
   Solution:
-  1. From P to Q the area decreases, so the drift velocity increases (and E increases).
-  2. The current is constant, so (B), (D) and "all of these" are wrong.
+  1. Moving from P (radius $r_1$) to Q (radius $r_2 < r_1$), the area decreases.
+  2. I is constant, so $v_d \propto \frac{1}{A}$ increases → (C) is correct.
+  3. The electric field $E \propto \frac{1}{A}$ also increases.
+  Why others are wrong:
+  - (B) The electron current does not decrease — it is the same at every section.
+  - (D) The field increases towards the narrow end, not decreases.
+  - (A) "All of these" fails because (B) and (D) are false.
+  Analogy: water in a pipe speeds up where the pipe narrows, while the flow rate stays constant.
   Answer: (C)
 P A 5: |-
-  Concept: Charging: $V = V_0(1 - e^{-t/RC})$.
+  Concept: When an uncharged capacitor is charged through a resistor, $V_C(t) = V_0(1 - e^{-t/RC})$, with time constant τ = RC.
   Solution:
-  1. $50 = 100(1 - e^{-t/RC}) \Rightarrow t = RC\ln2 = 10^{-4}\times0.69 = 0.69\times10^{-4}$ s.
+  1. τ = RC = 100 × 1 × 10⁻⁶ = 10⁻⁴ s.
+  2. $50 = 100(1 - e^{-t/\tau}) \Rightarrow e^{-t/\tau} = \frac{1}{2}$.
+  3. $t = \tau\ln2 = 10^{-4}\times0.69 = 0.69\times10^{-4}$ s.
+  4. In words: a capacitor reaches half the supply voltage after 0.69τ, just as a radioactive sample reaches half its amount after one half-life.
+  Why others are wrong:
+  - (B) $1.44\times10^{-4}$ s is $\frac{\tau}{\ln2}$ (like a mean-life relation), not the half-charge time.
+  - (A) and (C) do not correspond to any natural multiple of τ here.
   Answer: (D)
 P A 6: |-
-  Concept: 1D elastic collision, then perfectly inelastic.
+  Concept: In a 1-D elastic collision with the target at rest, $v_2 = \frac{2m_1}{m_1 + m_2}u$. In a perfectly inelastic collision, bodies stick together and only momentum is conserved. (The mass of B is 2m; the printed "2" is a typo.)
   Solution:
-  1. A (m) on B (2m): $v_B = \frac{2m}{3m}\times9 = 6$ m/s.
-  2. B sticks to C: $2m\times6 = 4mv \Rightarrow v = 3$ m/s.
+  1. A (m, 9 m/s) hits B (2m, at rest) elastically:
+     $v_B = \frac{2m}{m + 2m}\times9 = 6$ m/s, and $v_A = \frac{m - 2m}{3m}\times9 = -3$ m/s (A rebounds).
+  2. B (2m, 6 m/s) sticks to C (2m, at rest):
+     $2m\times6 = (2m + 2m)v \Rightarrow v = 3$ m/s.
+  3. Final speed of C (moving together with B) = 3 m/s.
+  Why others are wrong:
+  - (B) 6 m/s is B's speed after the first collision.
+  - (C) 9 m/s assumes equal masses (full transfer of velocity).
+  - (A) 4 m/s comes from mixing the elastic formula into the second collision.
   Answer: (D)
 P A 7: |-
-  Concept: Slabs across the gap are capacitors in series: $\frac{1}{C} = \sum\frac{t_i}{K_i\varepsilon_0A}$.
+  Concept: Dielectric slabs stacked across the gap (each filling the whole plate area) act as capacitors in series: $\frac{1}{C} = \sum\frac{t_i}{K_i\varepsilon_0A}$.
   Solution:
-  1. $\frac{1}{C} = \frac{d}{K\varepsilon_0A}\left(1 + \frac{2}{3} + \frac{3}{5}\right) = \frac{34d}{15K\varepsilon_0A}$.
-  2. $C = \frac{15}{34}\frac{K\varepsilon_0A}{d}$.
+  1. From the figure: K with thickness d, 3K with 2d, 5K with 3d.
+  2. $\frac{1}{C} = \frac{1}{\varepsilon_0A}\left(\frac{d}{K} + \frac{2d}{3K} + \frac{3d}{5K}\right) = \frac{d}{K\varepsilon_0A}\left(1 + \frac{2}{3} + \frac{3}{5}\right)$.
+  3. $1 + \frac{2}{3} + \frac{3}{5} = \frac{15 + 10 + 9}{15} = \frac{34}{15}$.
+  4. $C = \frac{15}{34}\cdot\frac{K\varepsilon_0A}{d}$.
+  Why others are wrong:
+  - (B) $\frac{15}{6}$ and (D) $\frac{9}{6}$ add the capacitances as if the slabs were side by side (parallel).
+  - (C) $\frac{25}{6}$ also uses a parallel-type sum with wrong weights.
+  Check: the total gap is 6d; filled uniformly with K the value would be $\frac{1}{6}\frac{K\varepsilon_0A}{d}$, and filled with 5K it would be $\frac{5}{6}\frac{K\varepsilon_0A}{d}$; the result $\frac{15}{34} \approx 0.44$ lies between ✓.
   Answer: (A)
 P A 8: |-
-  Concept: Reaction force of the jet $= \rho av^2$ with $v^2 = 2gh$.
+  Concept: Liquid leaving a hole at depth h emerges with Torricelli speed $v = \sqrt{2gh}$. The jet's momentum flux gives a reaction force (thrust) on the vessel: $F = \rho av^2$. Friction must balance this thrust.
   Solution:
-  1. Thrust $= 2\rho agh$; friction limit $= \mu\rho Ahg$ (light vessel).
-  2. $\mu_{min} = \frac{2a}{A}$.
+  1. Thrust: $F = \rho a(2gh) = 2\rho agh$.
+  2. The vessel is "light", so the normal force is essentially the weight of the liquid: $N = \rho Ahg$.
+  3. No sliding: $\mu N \ge F \Rightarrow \mu\rho Ahg \ge 2\rho agh$.
+  4. $\mu_{min} = \frac{2a}{A}$.
+  Why others are wrong:
+  - (D) $\frac{a}{A}$ uses the static pressure force $\rho gha$, missing the factor 2 from the momentum flux.
+  - (C) $\frac{A}{2a}$ inverts the ratio; since a ≪ A, it would demand an enormous μ.
+  - (A) is incorrect because (B) is exact under the stated assumptions.
   Answer: (B)
 P A 9: |-
-  Concept: $v = \frac{c}{\sqrt{\varepsilon_r\mu_r}}$.
+  Concept: The speed of an electromagnetic wave in a medium is $v = \frac{1}{\sqrt{\mu\varepsilon}} = \frac{c}{\sqrt{\mu_r\varepsilon_r}}$.
   Solution:
-  1. $v = \frac{3\times10^8}{9} = 3.33\times10^7$ m/s.
+  1. $\varepsilon_r = 81$, $\mu_r = 1$.
+  2. $v = \frac{3\times10^8}{\sqrt{81}} = \frac{3\times10^8}{9} = 3.33\times10^7$ m/s.
+  Note: this uses the static permittivity of water; at optical frequencies water's refractive index is only about 1.33, so the question is really about the formula rather than visible light.
+  Why others are wrong:
+  - (A), (B), (C) do not equal $\frac{c}{9}$.
   Answer: (D)
 P A 10: |-
-  Concept: Triangle/polygon law with O as reference.
+  Concept: The polygon (triangle) law lets us write any vector $\vec{AX}$ as $\vec{AO} + \vec{OX}$, using the centre O as an intermediate point.
   Solution:
-  1. $\vec{AB} + \vec{AC} + \vec{AD} = (\vec{AO} + \vec{OB}) + (\vec{AO} + \vec{OC}) + 2\vec{AO} = 4\vec{AO} + \vec{OB} + \vec{OC}$: A is true.
-  2. R is true, but A follows from splitting via O rather than from R.
+  1. Assertion: $\vec{AB} = \vec{AO} + \vec{OB}$, $\vec{AC} = \vec{AO} + \vec{OC}$, and $\vec{AD} = 2\vec{AO}$ (AD is a diameter through O).
+  2. Sum: $\vec{AB} + \vec{AC} + \vec{AD} = 4\vec{AO} + \vec{OB} + \vec{OC}$. TRUE.
+  3. Reason: $\vec{AB} + \vec{BC} + \vec{CD} = \vec{AD}$ (polygon law), and $\vec{AD} = 2\vec{AO}$. TRUE.
+  4. However, the assertion's proof uses splitting each vector through O — it does not use the chain $\vec{AB} + \vec{BC} + \vec{CD}$ (nor the equal-length condition). So R does not explain A.
+  Why others are wrong:
+  - (A) and (B) mark one statement false; both are true.
+  - (C) claims R explains A, but A is proven independently.
   Answer: (D)
 P A 11: |-
-  Concept: $PV = \frac{2}{3}N\bar E$ (kinetic theory).
+  Concept: Kinetic theory: $P = \frac{2}{3}\frac{N}{V}\bar E$, where $\bar E$ is the mean translational kinetic energy per molecule. So $N = \frac{3PV}{2\bar E}$.
   Solution:
-  1. $N = \frac{3PV}{2\bar E} = \frac{3\times2\times1.013\times10^5\times10^{-3}}{2\times2\times10^{-9}} \approx 1.5\times10^{11}$.
+  1. P = 2 atm = 2 × 1.013 × 10⁵ Pa ≈ 2.026 × 10⁵ Pa; V = 1 L = 10⁻³ m³.
+  2. PV ≈ 202.6 J.
+  3. $N = \frac{3\times202.6}{2\times2\times10^{-9}} = \frac{607.8}{4\times10^{-9}} \approx 1.5\times10^{11}$.
+  Note: the given mean energy $2\times10^{-9}$ J is enormously larger than $\frac{3}{2}k_BT$ at 300 K (≈ 6 × 10⁻²¹ J); the temperature is not used — the question is a direct application of $PV = \frac{2}{3}N\bar E$.
+  Why others are wrong:
+  - (A) $0.75\times10^{11}$ halves the answer (e.g. using 1 atm).
+  - (B) and (C) double or quadruple it (dropping the $\frac{2}{3}$ factor or the 2 in the denominator).
   Answer: (D)
 P A 12: |-
-  Concept: Adiabatic work $W = -\Delta U = nC_V(T_i - T_f)$.
+  Concept: For an adiabatic process, q = 0, so the work done by the gas is $W = -\Delta U = nC_V(T_{initial} - T_{final})$. Work depends only on the end temperatures.
   Solution:
-  1. B→C: $W_{BC} = nC_V(T_1 - T_2)$.
-  2. A→D (going from T₁ to T₂ along DA reversed): $W_{AD} = nC_V(T_1 - T_2) = W_{BC}$.
+  1. A → B is isothermal at T₁ and C → D is isothermal at T₂. B → C and D → A are adiabatic.
+  2. B → C: from T₁ to T₂, $W_{BC} = nC_V(T_1 - T_2)$.
+  3. A → D (the reverse of D → A): also from T₁ to T₂, $W_{AD} = nC_V(T_1 - T_2)$.
+  4. So $W_{AD} = W_{BC}$.
+  Why others are wrong:
+  - (A) $W_{AB} = nRT_1\ln\frac{V_B}{V_A}$ and $W_{DC} = nRT_2\ln\frac{V_C}{V_D}$; with equal volume ratios (Carnot cycle) and $T_1 > T_2$, $W_{AB} > W_{DC}$.
+  - (C) $W_{AB}$ is positive (expansion) while $W_{CD}$ is negative (compression), so $W_{AB} > W_{CD}$.
+  - (D) $W_{BC} + W_{DA} = nC_V(T_1 - T_2) + nC_V(T_2 - T_1) = 0$, not > 0.
   Answer: (B)
 P A 13: |-
-  Concept: $f = \frac{N_0 - N}{N_0} = 1 - e^{-\lambda t}$.
+  Concept: Undecayed nuclei $N = N_0e^{-\lambda t}$, so decayed nuclei $N_d = N_0(1 - e^{-\lambda t})$.
   Solution:
-  1. $\frac{df}{dt} = \lambda e^{-\lambda t}$ (option A, printed without the exponent).
+  1. $f = \frac{N_d}{N_0} = 1 - e^{-\lambda t}$.
+  2. $\frac{df}{dt} = \lambda e^{-\lambda t}$.
+  3. This is option (A), whose printed text "λe – λt" is a typesetting slip for $\lambda e^{-\lambda t}$.
+  Interpretation: f rises quickly at first (slope λ at t = 0) and levels off towards 1.
+  Why others are wrong:
+  - (B) $\lambda(1 - e^{-\lambda t}) = \lambda f$ — grows with time, whereas the rate of decay must fall.
+  - (C) is negative, but f can only increase.
+  - (D) $-\lambda e^{-\lambda t}$ is $\frac{d}{dt}\left(\frac{N}{N_0}\right)$, the rate of change of the undecayed fraction.
   Answer: (A)
 P A 14: |-
-  Concept: Pitch = distance per rotation; LC = pitch ÷ circular divisions.
+  Concept: Pitch of a screw gauge = distance moved on the main scale per full rotation of the circular scale. Least count (LC) $= \frac{\text{pitch}}{\text{number of circular divisions}}$.
   Solution:
-  1. Pitch $= \frac{5}{5} = 1$ mm, so LC $= \frac{1}{50}$ mm $= 0.002$ cm, not 0.001 cm. A is false.
-  2. R is the correct formula.
+  1. 5 rotations move 5 mm, so pitch $= \frac{5}{5} = 1$ mm.
+  2. LC $= \frac{1\text{ mm}}{50} = 0.02$ mm $= 0.002$ cm.
+  3. The assertion claims 0.001 cm — FALSE.
+  4. The reason states the correct definition of least count — TRUE.
+  Why others are wrong:
+  - (A), (C) and (D) treat the assertion as correct.
+  Common trap: dividing 5 mm by 50 divisions directly and then by 10 (mixing units), or dividing by the number of rotations twice.
   Answer: (B)
 P A 15: |-
-  Concept: With the battery removed, the total charge is conserved.
+  Concept: After disconnecting the battery, the total charge on the isolated parallel combination stays constant. Inserting a dielectric multiplies that capacitor's capacitance by K, and the charge redistributes until both capacitors share a common voltage.
   Solution:
-  1. $Q = 3CV$; the new total capacitance is $2C + KC$.
-  2. $V' = \frac{3CV}{(K + 2)C} = \frac{3V}{K + 2}$.
+  1. Initial total charge: $Q = (2C + C)V = 3CV$.
+  2. After filling C with dielectric: capacitances 2C and KC in parallel, total $(K + 2)C$.
+  3. Common potential: $V' = \frac{Q}{(K + 2)C} = \frac{3V}{K + 2}$.
+  Check: K = 1 gives V′ = V ✓ (nothing changed).
+  Why others are wrong:
+  - (A) $\frac{3V}{K}$ ignores the 2C capacitor's share.
+  - (B) $\frac{V}{K}$ would hold for a single isolated capacitor filled with dielectric.
+  - (C) $\frac{V}{K + 2}$ forgets that the total charge is 3CV.
   Answer: (D)
 P A 16: |-
-  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Concept: In Young's double-slit experiment, fringe width $\beta = \frac{\lambda D}{d}$ is proportional to the wavelength.
   Solution:
-  1. Blue light has a shorter λ than orange, so β decreases.
+  1. Orange light: λ ≈ 600 nm; blue light: λ ≈ 450–480 nm.
+  2. Switching to blue decreases λ, so β decreases — the fringes come closer together.
+  Why others are wrong:
+  - (B) An increase would need a longer wavelength (towards red).
+  - (C) The central fringe is always bright, because the path difference there is zero for every wavelength.
+  - (D) With equal slit intensities, the minima remain perfectly dark (zero intensity) regardless of colour.
   Answer: (A)
 P A 17: |-
-  Concept: Solve $\frac{h}{3} = ut - \frac{1}{2}gt^2$ with $u^2 = 2gh$.
+  Concept: A ball thrown up to maximum height h has $u^2 = 2gh$. It passes height $\frac{h}{3}$ twice — once going up ($t_1$) and once coming down ($t_2$). These are the two roots of $\frac{h}{3} = ut - \frac{1}{2}gt^2$.
   Solution:
-  1. $t = \frac{u \pm \sqrt{u^2 - 2gh/3}}{g} = \frac{\sqrt{2gh} \pm \sqrt{4gh/3}}{g}$.
-  2. $\frac{t_1}{t_2} = \frac{\sqrt2 - \sqrt{4/3}}{\sqrt2 + \sqrt{4/3}} = \frac{\sqrt3 - \sqrt2}{\sqrt3 + \sqrt2}$.
+  1. $\frac{1}{2}gt^2 - ut + \frac{h}{3} = 0 \Rightarrow t = \frac{u \pm \sqrt{u^2 - \frac{2gh}{3}}}{g}$.
+  2. With $u^2 = 2gh$: $\sqrt{u^2 - \frac{2gh}{3}} = \sqrt{\frac{4gh}{3}}$.
+  3. $\frac{t_1}{t_2} = \frac{\sqrt{2gh} - \sqrt{\frac{4gh}{3}}}{\sqrt{2gh} + \sqrt{\frac{4gh}{3}}} = \frac{\sqrt2 - \frac{2}{\sqrt3}}{\sqrt2 + \frac{2}{\sqrt3}}$.
+  4. Multiply by $\frac{\sqrt3}{\sqrt2}$: $\frac{\sqrt3 - \sqrt2}{\sqrt3 + \sqrt2}$.
+  Why others are wrong:
+  - (C) $\frac{\sqrt3 - 1}{\sqrt3 + 1}$ corresponds to passing height $\frac{2h}{3}$, not $\frac{h}{3}$.
+  - (A) corresponds to height $\frac{h}{2}$.
+  - (D) $\frac{1}{3}$ assumes times scale linearly with height.
   Answer: (B)
 P A 18: |-
-  Concept: $PE = E\frac{y^2}{a^2}$.
+  Concept: In SHM with amplitude a and total energy E, the potential energy at displacement y is $U = \frac{1}{2}ky^2 = E\frac{y^2}{a^2}$; kinetic energy is $K = E - U$.
   Solution:
-  1. $KE = \frac{3E}{4} \Rightarrow PE = \frac{E}{4} \Rightarrow y = \frac{a}{2}$.
+  1. $K = \frac{3E}{4} \Rightarrow U = \frac{E}{4}$.
+  2. $E\frac{y^2}{a^2} = \frac{E}{4} \Rightarrow y^2 = \frac{a^2}{4} \Rightarrow y = \frac{a}{2}$.
+  Why others are wrong:
+  - (B) $\frac{a}{\sqrt2}$ is where K = U = $\frac{E}{2}$.
+  - (C) $\frac{\sqrt3a}{2}$ is where K = $\frac{E}{4}$ (the roles are reversed).
+  - (D) y = a is the extreme position, where K = 0.
   Answer: (A)
 P A 19: |-
-  Concept: $X_L = 2\pi fL$; $I = \frac{V}{Z}$; $\tan\phi = \frac{X_L}{R}$.
+  Concept: Series LR circuit: $X_L = 2\pi fL$, impedance $Z = \sqrt{R^2 + X_L^2}$, current $I = \frac{V}{Z}$, and phase angle $\tan\phi = \frac{X_L}{R}$ (current lags voltage).
   Solution:
-  1. The intended frequency is 50 Hz (the printed 5 Hz is a slip): $X_L = 2\times\frac{22}{7}\times50\times0.07 = 22\ \Omega$.
-  2. $Z = \sqrt{144 + 484} \approx 25\ \Omega$, so $I \approx 8.8$ A and $\tan\phi = \frac{22}{12} = \frac{11}{6}$.
+  1. The intended frequency is 50 Hz (the printed "5 Hz" is a slip; with 5 Hz no option fits).
+  2. $X_L = 2\times\frac{22}{7}\times50\times0.07 = 22\ \Omega$.
+  3. $Z = \sqrt{12^2 + 22^2} = \sqrt{144 + 484} = \sqrt{628} \approx 25\ \Omega$.
+  4. $I = \frac{220}{25} \approx 8.8$ A.
+  5. $\tan\phi = \frac{22}{12} = \frac{11}{6}$, so $\phi = \tan^{-1}\frac{11}{6}$.
+  Why others are wrong:
+  - (A) 88 A and (C) 0.88 A are off by factors of 10.
+  - (D) inverts the tangent: $\frac{R}{X_L}$ gives the complement angle.
+  Note: with 5 Hz literally, $X_L = 2.2\ \Omega$, I ≈ 18 A and tan φ ≈ 0.18, matching no option.
   Answer: (B)
 P A 20: |-
-  Concept: Newton's law of cooling (average form).
+  Concept: Newton's law of cooling (average form): $\frac{\Delta T}{t} = k(\bar T - T_0)$, where $\bar T$ is the mean temperature over the interval and $T_0$ is the surroundings.
   Solution:
-  1. $\frac{2}{4} = k(60 - 30) \Rightarrow k = \frac{1}{60}$.
-  2. $\frac{2}{t} = \frac{1}{60}(50 - 30) \Rightarrow t = 6$ min.
+  1. 61 → 59 °C in 4 min: mean 60 °C, excess 30 °C. $\frac{2}{4} = k\times30 \Rightarrow k = \frac{1}{60}$ per min.
+  2. 51 → 49 °C: mean 50 °C, excess 20 °C. $\frac{2}{t} = \frac{1}{60}\times20 = \frac{1}{3} \Rightarrow t = 6$ min.
+  3. It takes longer because the body is closer to the surroundings' temperature, so it cools more slowly.
+  Why others are wrong:
+  - (C) 4 min assumes a constant cooling rate.
+  - (B) 3 min would mean faster cooling at a lower temperature — the opposite of Newton's law.
+  - (D) 8 min uses the wrong excess-temperature ratio (e.g. 30 : 15).
   Answer: (A)
 P B 1: |-
-  Concept: $I_C = \frac{V_R}{R}$ and $I_B = \frac{I_C}{\beta}$.
+  Concept: In a common-emitter transistor, the collector current is found from the drop across the collector (load) resistor, and the current gain is $\beta = \frac{I_C}{I_B}$.
   Solution:
-  1. $I_C = \frac{0.6}{1000} = 0.6$ mA; $I_B = \frac{0.6}{24} = 0.025$ mA $= 25\ \mu$A.
+  1. $I_C = \frac{V_{R_C}}{R_C} = \frac{0.6}{1000} = 0.6$ mA.
+  2. $I_B = \frac{I_C}{\beta} = \frac{0.6\text{ mA}}{24} = 0.025$ mA $= 25\ \mu$A.
+  3. The collector supply voltage (10 V) is not needed for this calculation.
   Answer: 25
 P B 2: |-
-  Concept: No bending at BC when $n_1 = n_2$.
+  Concept: A ray crosses an interface without bending (for every angle of incidence) only if the two media have the same refractive index — then Snell's law gives equal angles on both sides.
   Solution:
-  1. $1.2 + \frac{10.8\times10^{-14}}{\lambda^2} = 1.45 + \frac{1.8\times10^{-14}}{\lambda^2} \Rightarrow \frac{9\times10^{-14}}{\lambda^2} = 0.25$.
-  2. $\lambda^2 = 3.6\times10^{-13} \Rightarrow \lambda = 6\times10^{-7}$ m $= 600$ nm.
+  1. Set $n_1 = n_2$: $1.2 + \frac{10.8\times10^{-14}}{\lambda^2} = 1.45 + \frac{1.8\times10^{-14}}{\lambda^2}$.
+  2. $\frac{9\times10^{-14}}{\lambda^2} = 0.25 \Rightarrow \lambda^2 = \frac{9\times10^{-14}}{0.25} = 3.6\times10^{-13}$ m².
+  3. $\lambda = 6\times10^{-7}$ m $= 600$ nm.
+  4. Check: $n_1 = 1.2 + \frac{10.8\times10^{-14}}{3.6\times10^{-13}} = 1.5$; $n_2 = 1.45 + 0.05 = 1.5$ ✓.
   Answer: 600
 P B 3: |-
-  Concept: Inductor current cannot change instantaneously.
+  Concept: An inductor opposes sudden changes in current: immediately after switching, the current through it equals its value just before. In steady DC, the inductor acts like a plain wire.
   Solution:
-  1. Steady current through L $= \frac{6}{6} = 1$ A.
-  2. Just after switching to T₃, this 1 A flows through r: $V = 1\times3 = 3$ V.
+  1. With T₁ connected to T₂, the steady current through R and L is $I = \frac{E}{R} = \frac{6}{6} = 1$ A.
+  2. When T₁ is switched to T₃, the battery is removed and the inductor's 1 A current is forced through the new path containing r = 3 Ω.
+  3. Immediately after switching, the current in r is still 1 A.
+  4. Potential drop across r: $V = Ir = 1\times3 = 3$ V.
+  5. Afterwards the current decays exponentially with time constant $\frac{L}{R + r}$.
   Answer: 3
 P B 4: |-
-  Concept: Elastic energy $\frac{1}{2}\frac{YA}{L}x^2$ becomes KE.
+  Concept: A stretched rubber cord behaves like a spring with $k = \frac{YA}{L}$. Its stored elastic energy $\frac{1}{2}kx^2$ is converted into the kinetic energy of the stone.
   Solution:
-  1. $k = \frac{0.5\times10^9\times10^{-6}}{0.1} = 5000$ N/m; energy $= \frac{1}{2}\times5000\times0.04^2 = 4$ J.
-  2. $\frac{1}{2}(0.02)v^2 = 4 \Rightarrow v = 20$ m/s.
+  1. $k = \frac{YA}{L} = \frac{0.5\times10^9\times10^{-6}}{0.1} = 5000$ N/m.
+  2. Stored energy: $U = \frac{1}{2}\times5000\times(0.04)^2 = 2500\times0.0016 = 4$ J.
+  3. $\frac{1}{2}mv^2 = 4 \Rightarrow \frac{1}{2}\times0.02\times v^2 = 4 \Rightarrow v^2 = 400$.
+  4. $v = 20$ m/s.
   Answer: 20
 P B 5: |-
-  Concept: $\lambda = \frac{h}{p}$ for both.
+  Concept: The de Broglie relation $\lambda = \frac{h}{p}$ applies to both matter and photons. So the ratio of wavelengths is the inverse ratio of momenta.
   Solution:
-  1. $\frac{\lambda_{photon}}{\lambda_{particle}} = \frac{mv}{p} = \frac{9.1\times10^{-31}\times10^6}{10^{-27}} = 910$.
+  1. Particle momentum: $p_1 = mv = 9.1\times10^{-31}\times10^6 = 9.1\times10^{-25}$ kg m/s.
+  2. Photon momentum: $p_2 = 10^{-27}$ kg m/s.
+  3. $\frac{\lambda_{photon}}{\lambda_{particle}} = \frac{p_1}{p_2} = \frac{9.1\times10^{-25}}{10^{-27}} = 910$.
+  Note: the medium does not matter here because the particle's speed in it is given directly.
   Answer: 910
 P B 6: |-
-  Concept: Each AM sideband has amplitude $\frac{\mu A_c}{2} = \frac{A_m}{2}$.
+  Concept: An AM wave $A_c[1 + \mu\sin\omega_mt]\sin\omega_ct$ expands into the carrier plus two side bands, each of amplitude $\frac{\mu A_c}{2} = \frac{A_m}{2}$.
   Solution:
-  1. Both sidebands are 2.5 V, so $\frac{a}{b} = 1$.
+  1. $\mu = \frac{A_m}{A_c} = \frac{5}{15} = \frac{1}{3}$.
+  2. Each side band amplitude: $\frac{\mu A_c}{2} = \frac{5}{2} = 2.5$ V $= \frac{25}{10}$ V.
+  3. So a = b = 25 and $\frac{a}{b} = 1$.
+  4. The side bands are at 11.21 MHz ± 7.7 kHz, but their amplitudes are equal.
   Answer: 1
 P B 7: |-
-  Concept: $T = 2\pi\sqrt{\frac{I}{MB}}$.
+  Concept: A magnetic needle of moment M in field B oscillates with period $T = 2\pi\sqrt{\frac{I}{MB}}$ (small oscillations).
   Solution:
-  1. $T = \frac{5}{10} = 0.5$ s.
-  2. $B = \frac{4\pi^2I}{MT^2} = \frac{4\times9.85\times5\times10^{-6}}{9.85\times10^{-2}\times0.25} = 8\times10^{-3}$ T = 8 mT.
+  1. T = $\frac{5\text{ s}}{10}$ = 0.5 s.
+  2. $B = \frac{4\pi^2I}{MT^2}$.
+  3. $B = \frac{4\times9.85\times5\times10^{-6}}{9.85\times10^{-2}\times0.25} = \frac{20\times10^{-6}}{0.25\times10^{-2}} = 8\times10^{-3}$ T.
+  4. B = 8 mT.
   Answer: 8
 P B 8: |-
-  Concept: The satellite only needs to reach the neutral point; beyond it, the second planet pulls it in.
+  Concept: Between the two planets there is a neutral point where their gravitational pulls cancel. The satellite needs just enough energy to reach that point; beyond it, the second planet pulls it in. Use energy conservation with both planets' potentials. (The text says 9M; the figure's "2M" label is inconsistent, and the key value 4 matches 9M.)
   Solution:
-  1. Neutral point: $\frac{M}{x^2} = \frac{9M}{(8R - x)^2} \Rightarrow x = 2R$.
-  2. $\frac{1}{2}v^2 - \frac{GM}{R} - \frac{9GM}{7R} = -\frac{GM}{2R} - \frac{9GM}{6R}$.
-  3. $v^2 = \frac{4GM}{7R}$, so $a = 4$.
+  1. Neutral point at distance x from M: $\frac{M}{x^2} = \frac{9M}{(8R - x)^2} \Rightarrow 8R - x = 3x \Rightarrow x = 2R$.
+  2. Energy per unit mass at launch (surface of M, distance 7R from the other centre): $\frac{v^2}{2} - \frac{GM}{R} - \frac{9GM}{7R}$.
+  3. At the neutral point (2R from M, 6R from 9M) with zero speed: $-\frac{GM}{2R} - \frac{9GM}{6R}$.
+  4. $\frac{v^2}{2} = \frac{GM}{R}\left(1 + \frac{9}{7} - \frac{1}{2} - \frac{3}{2}\right) = \frac{2}{7}\frac{GM}{R}$.
+  5. $v^2 = \frac{4}{7}\frac{GM}{R}$, so a = 4.
   Answer: 4
 P B 9: |-
-  Concept: $I = \frac{ev}{2\pi r}$.
+  Concept: An electron in a circular orbit is a tiny current loop. Current = charge passing a point per unit time $= \frac{e}{T}$, with period $T = \frac{2\pi r}{v}$. So $I = \frac{ev}{2\pi r}$.
   Solution:
-  1. $I = \frac{1.6\times10^{-19}\times2.2\times10^6}{2\times\frac{22}{7}\times0.5\times10^{-10}} = 1.12\times10^{-3}$ A $= 112\times10^{-2}$ mA.
+  1. $2\pi r = 2\times\frac{22}{7}\times0.5\times10^{-10} = 3.143\times10^{-10}$ m.
+  2. $I = \frac{1.6\times10^{-19}\times2.2\times10^6}{3.143\times10^{-10}} = \frac{3.52\times10^{-13}}{3.143\times10^{-10}} = 1.12\times10^{-3}$ A.
+  3. $1.12\times10^{-3}$ A $= 1.12$ mA $= 112\times10^{-2}$ mA.
   Answer: 112
 P B 10: |-
-  Concept: $q \propto e^{-t/RC}$ and $A \propto e^{-t/\tau}$; the ratio is constant iff $RC = \tau$.
+  Concept: A discharging capacitor loses charge exponentially, $q = q_0e^{-t/RC}$; a radioactive sample's activity also decays exponentially, $A = A_0e^{-t/\tau}$, where τ is the mean life. Their ratio stays constant only if the exponents are equal: RC = τ.
   Solution:
-  1. $R = \frac{30\times10^{-3}}{200\times10^{-6}} = 150\ \Omega$.
+  1. $\frac{q}{A} = \frac{q_0}{A_0}e^{-t\left(\frac{1}{RC} - \frac{1}{\tau}\right)}$ is time-independent iff RC = τ.
+  2. $R = \frac{\tau}{C} = \frac{30\times10^{-3}}{200\times10^{-6}} = 150\ \Omega$.
+  Note: the average (mean) life τ, not the half-life, is the time constant of exponential decay.
   Answer: 150

@@ -1,174 +1,309 @@
 C A 1: |-
-  Concept: Limitations of the early atomic models.
+  Concept: Each early atomic model had limitations that later theories exposed.
   Solution:
-  1. Rutherford's model has no quantised energy levels, so it cannot explain line spectra. I is true.
-  2. Bohr's fixed orbits specify both the position and momentum of the electron exactly, which the uncertainty principle forbids. II is true.
+  1. Statement I: Rutherford's nuclear model places electrons in orbits around the nucleus but gives no rule for allowed energies. By classical electrodynamics, an orbiting electron would radiate continuously and spiral into the nucleus, giving a continuous spectrum. So it cannot explain the discrete line spectrum of hydrogen. TRUE.
+  2. Statement II: Bohr's model assigns the electron a definite circular orbit (exact radius) and a definite momentum at every instant. Heisenberg's principle ($\Delta x\,\Delta p \ge \frac{h}{4\pi}$) says both cannot be known exactly at the same time. So Bohr's model contradicts it. TRUE.
+  3. Both statements are true.
+  Why others are wrong:
+  - (A) rejects Statement II, but fixed, well-defined orbits are exactly what the uncertainty principle rules out.
+  - (B) and (D) reject Statement I, although Rutherford's model has no mechanism for quantised energy levels.
   Answer: (C)
 C A 2: |-
-  Concept: Rate $= k[A]^n$, so the units of k are (concentration)$^{1-n}$ time⁻¹.
+  Concept: For rate $= k[A]^n$, rate has units mol L⁻¹ s⁻¹ and concentration has units mol L⁻¹. So the units of k are $\frac{\text{mol L}^{-1}\text{s}^{-1}}{(\text{mol L}^{-1})^n} = (\text{mol L}^{-1})^{1-n}\text{s}^{-1}$.
   Solution:
-  1. $(mol\,L^{-1})^{1-n}s^{-1} = mol^{1-n}L^{n-1}s^{-1}$.
+  1. $(\text{mol L}^{-1})^{1-n} = \text{mol}^{1-n}\,\text{L}^{-(1-n)} = \text{mol}^{1-n}\,\text{L}^{n-1}$.
+  2. Units of k: $\text{mol}^{1-n}\,\text{L}^{n-1}\,\text{s}^{-1}$.
+  3. Checks: n = 0 → mol L⁻¹ s⁻¹ ✓; n = 1 → s⁻¹ ✓; n = 2 → L mol⁻¹ s⁻¹ ✓.
+  Why others are wrong:
+  - (B) has $L^{1-n}$ — the wrong sign on the litre exponent (for n = 2 it gives mol⁻¹ L⁻¹ s⁻¹).
+  - (C) $L^{2n}$ has no basis.
+  - (D) has s instead of s⁻¹ and the wrong litre exponent.
   Answer: (A)
 C A 3: |-
-  Concept: Barfoed's reagent (Cu²⁺ in mildly acidic medium) is reduced quickly by monosaccharides but only slowly by reducing disaccharides.
+  Concept: Barfoed's test uses copper(II) acetate in dilute acetic acid. In this mildly acidic medium, monosaccharides reduce Cu²⁺ to red Cu₂O within about 2–3 minutes of heating, whereas reducing disaccharides (maltose, lactose) react much more slowly.
   Solution:
-  1. It distinguishes monosaccharides from disaccharides.
-  2. Tollens' test is given by all reducing sugars; Seliwanoff's test separates ketoses from aldoses; the iodine test detects starch.
+  1. The different reaction rates make Barfoed's test the standard way to distinguish monosaccharides from disaccharides.
+  Why others are wrong:
+  - (A) Tollens' test is positive for all reducing sugars (glucose, fructose, maltose, lactose), so it cannot separate mono- from disaccharides.
+  - (B) Seliwanoff's test (resorcinol + HCl) distinguishes ketoses (fast cherry-red colour, e.g. fructose) from aldoses.
+  - (C) Iodine test detects starch (blue-black), a polysaccharide.
   Answer: (D)
 C A 4: |-
-  Concept: Conformations are interconverted by rotation about a σ bond.
+  Concept: Conformations are different spatial arrangements of a molecule obtained by rotation about a single (σ) bond. They interconvert rapidly at room temperature and are called conformers or rotamers.
   Solution:
-  1. Staggered and eclipsed ethane are rotamers (conformational isomers), not mirror images.
+  1. In ethane, rotating one CH₃ group about the C–C bond converts the staggered form (H atoms as far apart as possible, lowest energy) into the eclipsed form (H atoms aligned, highest energy).
+  2. The energy barrier is only about 12.5 kJ/mol, so the forms interconvert freely.
+  3. Hence staggered and eclipsed ethane are rotamers (conformational isomers).
+  Why others are wrong:
+  - (A) and (C): enantiomers are non-superimposable mirror images; ethane conformers are achiral and superimposable on their own mirror images.
+  - (B) Polymers are large molecules made of repeating units — irrelevant here.
   Answer: (D)
 C A 5: |-
-  Concept: Geometrical isomerism in coordination compounds.
+  Concept: Geometrical (cis/trans, fac/mer) isomerism depends on the geometry and ligand pattern:
+  - Square planar MA₂B₂ → cis, trans (2).
+  - Tetrahedral → no geometrical isomers.
+  - Octahedral MA₃B₃ → fac, mer (2).
+  - Octahedral MA₄B₂ → cis, trans (2).
   Solution:
-  1. Square planar [PtCl₂(NH₃)₂]: cis and trans, 2.
-  2. Tetrahedral Ni(CO)₄: none, 0.
-  3. [Ru(H₂O)₃Cl₃] (MA₃B₃): fac and mer, 2.
-  4. [CoCl₂(NH₃)₄]⁺ (MA₄B₂): cis and trans, 2.
+  1. [PtCl₂(NH₃)₂]: square planar MA₂B₂ → 2 (cisplatin and transplatin).
+  2. [Ni(CO)₄]: tetrahedral, all ligands identical → 0.
+  3. [Ru(H₂O)₃Cl₃]: octahedral MA₃B₃ → 2 (fac and mer).
+  4. [CoCl₂(NH₃)₄]⁺: octahedral MA₄B₂ → 2 (cis and trans).
+  5. Sequence: 2, 0, 2, 2.
+  Why others are wrong:
+  - (A) and (D) give 1 for Ni(CO)₄ — a single structure is not a "geometrical isomer" count; the count of isomers is 0.
+  - (D) also gives 1 for the MA₄B₂ complex.
+  - (C) ignores the cis/trans and fac/mer possibilities.
   Answer: (B)
 C A 6: |-
-  Concept: 2,4-DNP forms coloured hydrazones only with aldehydes and ketones.
+  Concept: 2,4-Dinitrophenylhydrazine (2,4-DNP, Brady's reagent) reacts with the C=O group of aldehydes and ketones to form yellow/orange/red 2,4-dinitrophenylhydrazone precipitates. Carbonyls in esters, acids and amides do not react under these conditions, because resonance with –OR/–OH/–NH₂ reduces their electrophilicity.
   Solution:
-  1. Acetophenone (a ketone) gives an orange 2,4-dinitrophenylhydrazone.
-  2. Esters and carboxylic acids do not react.
+  1. Acetophenone, C₆H₅COCH₃, is a ketone → gives an orange precipitate (conjugation with the ring deepens the colour).
+  Why others are wrong:
+  - (A) Ethyl salicylate and (B) ethyl benzoate are esters — no hydrazone forms.
+  - (C) Salicylic acid is a carboxylic acid (with a phenolic OH) — no reaction with 2,4-DNP.
   Answer: (D)
 C A 7: |-
-  Concept: E1 dehydration with rearrangement, then hydroboration–oxidation (anti-Markovnikov, syn).
+  Concept: (1) Acid-catalysed dehydration of alcohols goes through carbocations, which rearrange to more stable ones (1,2-hydride shift). (2) Hydroboration–oxidation adds H and OH across a C=C with anti-Markovnikov regiochemistry and syn stereochemistry.
   Solution:
-  1. The primary cation from cyclohexylmethanol rearranges by a hydride shift to a tertiary cation, giving A = 1-methylcyclohexene.
-  2. BH₃, then H₂O₂/OH⁻, puts OH on the less substituted alkene carbon: P = (trans-)2-methylcyclohexanol.
+  1. Cyclohexylmethanol + H₃PO₄, heat: protonation and loss of water give a primary carbocation, C₆H₁₁–CH₂⁺.
+  2. A 1,2-hydride shift from the ring carbon gives a tertiary carbocation (1-methylcyclohexyl cation).
+  3. Loss of H⁺ gives the most substituted alkene (Zaitsev): A = 1-methylcyclohexene.
+  4. Hydroboration: B attaches to the less substituted alkene carbon (C-2), H to C-1; oxidation replaces B by OH.
+  5. P = 2-methylcyclohexanol (the trans isomer, from syn addition).
+  Why others are wrong:
+  - (D) 1-methylcyclohexanol is the Markovnikov product (acid-catalysed hydration or oxymercuration).
+  - (C) is the starting alcohol.
+  - (A) would need two OH groups.
   Answer: (B)
 C A 8: |-
-  Concept: Drug classes.
+  Concept: Classify each drug by its therapeutic action.
   Solution:
-  1. Furacin: antiseptic (iii).
-  2. Arsphenamine (salvarsan): antibiotic (i).
-  3. Dimetone: antihistamine (iv).
-  4. Valium: tranquilliser (ii).
+  1. (a) Furacin (nitrofurazone): applied to wounds and cuts → antiseptic → (iii).
+  2. (b) Arsphenamine (Salvarsan): Ehrlich's arsenic drug for syphilis → antibiotic (antimicrobial) → (i).
+  3. (c) Dimetone (dimetindene): → synthetic antihistamine → (iv).
+  4. (d) Valium (diazepam): → tranquilliser → (ii).
+  Correct: (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii).
+  Why others are wrong:
+  - (A) calls Furacin a tranquilliser and Valium an antihistamine.
+  - (B) calls Furacin an antibiotic and Arsphenamine an antiseptic — swapped.
+  - (D) calls Valium an antibiotic.
+  Other NCERT examples: antihistamines — brompheniramine (Dimetapp), terfenadine (Seldane); tranquillisers — equanil, meprobamate.
   Answer: (C)
 C A 9: |-
-  Concept: Crystal system parameters.
+  Concept: The seven crystal systems are defined by edge lengths and interaxial angles:
+  - Cubic: a = b = c, α = β = γ = 90°.
+  - Tetragonal: a = b ≠ c, all 90°.
+  - Orthorhombic: a ≠ b ≠ c, all 90°.
+  - Monoclinic: a ≠ b ≠ c, α = γ = 90°, β ≠ 90°.
+  - Triclinic: a ≠ b ≠ c, α ≠ β ≠ γ ≠ 90°.
+  - Hexagonal: a = b ≠ c, α = β = 90°, γ = 120°.
   Solution:
-  1. $a \ne b \ne c$ with $\alpha = \gamma = 90° \ne \beta$ is monoclinic.
+  1. Given a = 2.5, b = 3.0, c = 4.0 (all different), α = γ = 90°, β = 120°.
+  2. This matches monoclinic.
+  Why others are wrong:
+  - (B) Triclinic needs all three angles different from 90°.
+  - (C) Orthorhombic needs all angles 90°.
+  - (D) Hexagonal needs a = b and γ = 120° (not β).
   Answer: (A)
 C A 10: |-
-  Concept: Oxidation-state arithmetic (H = +1, O = −2).
+  Concept: In an oxoacid, H = +1 and O = −2 (unless there is a peroxide link). The sum of oxidation numbers is zero.
   Solution:
-  1. H₄P₂O₇: $2x = 14 - 4 = 10$, so +5.
-  2. H₄P₂O₅: $2x = 10 - 4 = 6$, so +3.
-  3. H₄P₂O₆: $2x = 12 - 4 = 8$, so +4.
+  1. H₄P₂O₇ (pyrophosphoric acid): 4(+1) + 2x + 7(−2) = 0 → 2x = 10 → x = +5.
+  2. H₄P₂O₅ (pyrophosphorous acid): 4 + 2x − 10 = 0 → 2x = 6 → x = +3.
+  3. H₄P₂O₆ (hypophosphoric acid): 4 + 2x − 12 = 0 → 2x = 8 → x = +4.
+  4. Sequence: 5, 3, 4.
+  Structural note: in hypophosphoric acid there is a direct P–P bond, consistent with the +4 state of each P.
+  Why others are wrong:
+  - (B) swaps the values for H₄P₂O₅ and H₄P₂O₆.
+  - (C) and (D) are too high by 1 and 2 — they forget that there are four H atoms (or miscount O).
   Answer: (A)
 C A 11: |-
-  Concept: Cl⁻ is a weak-field ligand, giving an outer-orbital complex.
+  Concept: Cl⁻ is a weak-field ligand (low in the spectrochemical series), so it does not force electron pairing. The metal then uses outer d orbitals (nd) for bonding — an outer-orbital (high-spin) complex.
   Solution:
-  1. Mn³⁺ (d⁴) stays high spin with 4 unpaired electrons, so the complex is paramagnetic.
-  2. It uses outer 4d orbitals: sp³d².
+  1. [MnCl₆]³⁻: Mn is +3 (x − 6 = −3), Mn³⁺ = [Ar]3d⁴.
+  2. Weak-field Cl⁻: the four 3d electrons stay unpaired (high spin, $t_{2g}^3e_g^1$).
+  3. The inner 3d orbitals are not free for d²sp³, so hybridisation uses 4s, 4p and 4d: sp³d² (octahedral).
+  4. With 4 unpaired electrons, the complex is paramagnetic ($\mu \approx \sqrt{24} \approx 4.9$ BM).
+  Why others are wrong:
+  - (B) and (C) propose d²sp³ (inner orbital), which would need pairing — not caused by Cl⁻.
+  - (C) and (D) say diamagnetic, impossible with a d⁴ ion.
   Answer: (A)
 C A 12: |-
-  Concept: Iodination is reversible because HI reduces CH₃I back; removing HI drives it forward.
+  Concept: Free-radical iodination of alkanes is reversible because the by-product HI is a strong reducing agent that converts CH₃I back to CH₄: CH₃I + HI → CH₄ + I₂. Removing HI as it forms drives the reaction forward.
   Solution:
-  1. An oxidising agent such as conc. HIO₃ destroys HI ($5HI + HIO_3 \to 3I_2 + 3H_2O$), making the reaction irreversible.
+  1. An oxidising agent such as concentrated HIO₃ (or HNO₃) destroys HI:
+     5HI + HIO₃ → 3I₂ + 3H₂O.
+  2. With HI removed, the reverse reaction cannot occur, so the iodination becomes irreversible (and the regenerated I₂ is reused).
+  Why others are wrong:
+  - (A) HOCl is not the standard reagent and could chlorinate instead.
+  - (B) Liquid NH₃ is a base/solvent; it neither oxidises HI nor helps here.
+  - (C) Dilute HNO₂ is not an effective oxidant for this purpose.
   Answer: (D)
 C A 13: |-
-  Concept: Complementary base pairing in DNA.
+  Concept: DNA base pairing (Watson–Crick): adenine (A) pairs with thymine (T) through two hydrogen bonds; guanine (G) pairs with cytosine (C) through three hydrogen bonds.
   Solution:
-  1. A is thymine, which pairs with adenine (two H-bonds).
+  1. Compound A is 5-methylpyrimidine-2,4-dione — thymine.
+  2. Thymine's complementary base in DNA is adenine.
+  Why others are wrong:
+  - (B) Cytosine is a pyrimidine; pyrimidines pair with purines, not with each other.
+  - (C) Guanine pairs with cytosine.
+  - (D) Uracil replaces thymine in RNA; it is not thymine's partner.
   Answer: (A)
 C A 14: |-
-  Concept: Acid–base nature of hydroxides.
+  Concept: Acid–base character of hydroxides depends on the metal/non-metal: strongly electropositive metals give basic hydroxides; Be and Al (small, highly polarising ions) give amphoteric hydroxides; boron (a non-metal) gives an acidic hydroxide.
   Solution:
-  1. NaOH: basic. Be(OH)₂: amphoteric. Ca(OH)₂: basic. B(OH)₃: acidic. Al(OH)₃: amphoteric.
+  1. (a) NaOH → basic (ii).
+  2. (b) Be(OH)₂ → amphoteric (iii): dissolves in acids and in NaOH (forming [Be(OH)₄]²⁻).
+  3. (c) Ca(OH)₂ → basic (ii).
+  4. (d) B(OH)₃ (boric acid) → acidic (i): a weak monobasic Lewis acid, B(OH)₃ + H₂O → [B(OH)₄]⁻ + H⁺.
+  5. (e) Al(OH)₃ → amphoteric (iii).
+  Correct: (a)-(ii), (b)-(iii), (c)-(ii), (d)-(i), (e)-(iii).
+  Why others are wrong:
+  - (A) calls Be(OH)₂ acidic and B(OH)₃ amphoteric.
+  - (C) and (D) call Be(OH)₂ basic and Ca(OH)₂ amphoteric.
   Answer: (B)
 C A 15: |-
-  Concept: Resonance > hyperconjugation; the s-character of the cationic carbon destabilises it.
+  Concept: Carbocation stability order: resonance stabilisation > hyperconjugation. A positive charge on a carbon with more s-character (sp > sp²) is strongly destabilised because s orbitals hold electrons closer to the nucleus.
   Solution:
-  1. Benzyl (resonance) > ethyl (hyperconjugation) > vinyl (sp) > ethynyl (most s-character).
+  1. A, benzyl C₆H₅CH₂⁺: positive charge delocalised into the ring by resonance → most stable.
+  2. C, ethyl CH₃CH₂⁺: stabilised by hyperconjugation (3 α-H) → next.
+  3. B, vinyl CH₂=CH⁺: charge on an sp carbon → unstable.
+  4. D, ethynyl HC≡C⁺: charge on an sp carbon that is also part of a triple bond — even more s-character pulls electrons, most unstable.
+  5. Order: A > C > B > D.
+  Why others are wrong:
+  - (B) and (D) reverse the order, placing the least stable cations first.
+  - (C) places ethyl above benzyl, ignoring resonance.
   Answer: (A)
 C A 16: |-
-  Concept: Fajans' rules.
+  Concept: Fajans' rules: a small, highly charged cation polarises (distorts) the electron cloud of a large anion, introducing covalent character into an ionic bond.
   Solution:
-  1. The small Li⁺ has high polarising power and distorts the halide cloud, giving covalent character.
-  2. Both A and R are true, and R explains A.
+  1. Assertion: lithium halides (especially LiI, LiBr) are somewhat covalent — e.g. LiCl is soluble in organic solvents such as ethanol and pyridine. TRUE.
+  2. Reason: Li⁺ is very small (≈ 76 pm), so it has a high charge density and high polarising power. TRUE.
+  3. The high polarising power of Li⁺ is precisely why its halides show covalent character, so R correctly explains A.
+  Why others are wrong:
+  - (A) and (C) mark one statement false; both are standard facts.
+  - (B) denies the causal link, which is the textbook explanation (Fajans' rules).
   Answer: (D)
 C A 17: |-
-  Concept: Eutrophication.
+  Concept: Eutrophication is the over-enrichment of a water body with nutrients (nitrates, phosphates from fertilisers and detergents). It causes algal blooms; when the algae die, bacteria decompose them and consume dissolved oxygen.
   Solution:
-  1. Excess nutrients cause algal blooms; their decay depletes dissolved O₂, leading to anaerobic conditions.
-  2. So "increase in oxygen level" (B) is not correct.
+  1. (A) Eutrophication indicates the water body is polluted — correct.
+  2. (B) "Increase in oxygen level" — NOT correct. Oxygen levels fall because decomposition consumes O₂ (high BOD).
+  3. (C) Leads to anaerobic conditions — correct (oxygen depletion).
+  4. (D) Dissolved oxygen below about 6 ppm inhibits fish growth — correct (NCERT value).
   Answer: (B)
 C A 18: |-
-  Concept: Anodic oxidation of sulphate/bisulphate.
+  Concept: Peroxodisulphuric acid (Marshall's acid), H₂S₂O₈, is prepared industrially by electrolytic (anodic) oxidation of cold, concentrated acidified sulphate (HSO₄⁻) solution at high current density.
   Solution:
-  1. $2HSO_4^- \to H_2S_2O_8 + 2e^-$: peroxodisulphuric acid, HO₃S–O–O–SO₃H.
+  1. At the anode: 2HSO₄⁻ → HO₃S–O–O–SO₃H + 2e⁻.
+  2. The product contains a peroxide (–O–O–) linkage joining two SO₃H groups: HO₃SOOSO₃H.
+  Why others are wrong:
+  - (A) HO₃S–O–SO₃H is pyrosulphuric acid (oleum, H₂S₂O₇), with a single –O– bridge — no oxidation required.
+  - (B) HSO₄⁻ is the starting ion, not the product.
+  - (C) HO₂S–O–SO₂H is not the anodic product (it is related to lower oxidation states).
   Answer: (D)
 C A 19: |-
-  Concept: An Ellingham diagram plots ΔG° against T, which is thermodynamics, not kinetics.
+  Concept: An Ellingham diagram plots the standard Gibbs energy of formation of oxides (ΔG°) against temperature. It is a thermodynamic tool: it tells whether a reduction is feasible, not how fast it happens.
   Solution:
-  1. It gives no information about reaction rate, so (A) is incorrect.
-  2. It does indicate ΔG, feasibility of reduction, and phase changes (kinks).
+  1. (A) "Provides idea about the reaction rate" — INCORRECT. Kinetics (rate, activation energy) cannot be read from ΔG° plots; a thermodynamically feasible reduction can still be very slow.
+  Why others are wrong (these are correct statements):
+  - (B) Changes of slope (kinks) in a line indicate phase changes (melting, boiling) of the metal or oxide.
+  - (C) The diagram directly gives ΔG° values at each temperature.
+  - (D) A metal whose line lies lower can reduce the oxide of a metal whose line lies higher, so the diagram guides the choice of reducing agent.
   Answer: (A)
 C A 20: |-
-  Concept: Basicity depends on lone-pair availability.
+  Concept: The basicity of nitrogen compounds depends on how available the N lone pair is for accepting a proton. Delocalisation of the lone pair lowers basicity.
   Solution:
-  1. In acetamide, the N lone pair is delocalised into C=O, making it far less basic than aniline, so Statement I is false.
-  2. Statement II (delocalisation in aniline) is true.
+  1. In acetamide, CH₃CONH₂, the N lone pair is strongly delocalised onto the carbonyl oxygen (amide resonance: O⁻–C=N⁺H₂). Amides are essentially neutral (pKa of conjugate acid ≈ −0.5).
+  2. In aniline, the lone pair is partly delocalised into the benzene ring, but less strongly; aniline is weakly basic (pKb ≈ 9.4).
+  3. So aniline is MORE basic than acetamide — Statement I is false.
+  4. Statement II correctly describes why aniline is less basic than aliphatic amines — it is true.
+  Why others are wrong:
+  - (A) and (C) accept Statement I.
+  - (D) rejects Statement II, which is a correct description of resonance in aniline.
   Answer: (B)
 C B 1: |-
-  Concept: $\Lambda_m = \frac{1000\kappa}{c}$, $\alpha = \frac{\Lambda_m}{\Lambda_m^\circ}$, $K_a = \frac{c\alpha^2}{1 - \alpha}$.
+  Concept: For a weak electrolyte: molar conductivity $\Lambda_m = \frac{1000\kappa}{c}$ (κ in S cm⁻¹, c in mol L⁻¹), degree of dissociation $\alpha = \frac{\Lambda_m}{\Lambda_m^\circ}$, and $K_a = \frac{c\alpha^2}{1 - \alpha}$ (Ostwald's dilution law).
   Solution:
-  1. $\Lambda_m = \frac{1000\times2\times10^{-5}}{0.001} = 20$ S cm² mol⁻¹, so $\alpha = \frac{20}{190} = \frac{2}{19}$.
-  2. $K_a = \frac{10^{-3}(2/19)^2}{17/19} = 12.4\times10^{-6}$ ≈ 12.
+  1. $\Lambda_m = \frac{1000\times2.0\times10^{-5}}{0.001} = 20$ S cm² mol⁻¹.
+  2. $\alpha = \frac{20}{190} = 0.1053$.
+  3. $K_a = \frac{0.001\times(0.1053)^2}{1 - 0.1053} = \frac{1.108\times10^{-5}}{0.8947} = 1.24\times10^{-5} = 12.4\times10^{-6}$.
+  4. Nearest integer: 12.
+  Note: using the approximation $K_a \approx c\alpha^2$ would give 11 — the full expression is needed here.
   Answer: 12
 C B 2: |-
-  Concept: Geometrical isomerism of MA₃B₃ and M(AA)₃.
+  Concept: Geometrical isomerism in octahedral complexes:
+  - MA₃B₃ → fac and mer (2 isomers).
+  - M(AA)₃ (three identical bidentate ligands) → no geometrical isomers; only optical (Δ and Λ).
   Solution:
-  1. [Co(NH₃)₃(NO₂)₃]: fac and mer, X = 2.
-  2. [Cr(ox)₃]³⁻: no geometrical isomers (only optical), Y = 0.
+  1. Triamminetrinitrocobalt(III), [Co(NH₃)₃(NO₂)₃]: type MA₃B₃ → fac and mer → X = 2.
+  2. Trioxalatochromate(III), [Cr(C₂O₄)₃]³⁻: type M(AA)₃ → no geometrical isomers → Y = 0 (it shows optical isomerism).
   3. X + Y = 2.
   Answer: 2
 C B 3: |-
-  Concept: VSEPR for an sp³ N with one lone pair.
+  Concept: VSEPR theory: an sp³ nitrogen with one lone pair has a pyramidal shape. Lone pair–bond pair repulsion compresses the bond angles below the tetrahedral value (109.5°) — to 107° in NH₃. Bulky alkyl groups repel each other and open the angle slightly.
   Solution:
-  1. lp–bp repulsion reduces the tetrahedral angle; for (C₂H₅)₃N the C–N–C angle is about 108°.
+  1. In triethylamine, (C₂H₅)₃N, nitrogen has three N–C bonds and one lone pair (sp³).
+  2. The lone pair compresses the angle, while steric repulsion between the ethyl groups widens it compared with NH₃.
+  3. The C–N–C bond angle is about 108° (as for trimethylamine, ≈ 108°).
   Answer: 108
 C B 4: |-
-  Concept: Carius method: %Cl $= \frac{35.5}{143.37}\times\frac{m_{AgCl}}{m}\times100$.
+  Concept: In the Carius method, all chlorine in the organic compound is converted to AgCl. Percentage of Cl $= \frac{\text{at. mass of Cl}}{\text{molar mass of AgCl}}\times\frac{m_{AgCl}}{m_{compound}}\times100$.
   Solution:
-  1. $\frac{35.5}{143.37}\times\frac{0.3849}{0.5}\times100 = 19.1 \approx 19$.
+  1. Molar mass of AgCl $= 107.87 + 35.5 = 143.37$ g/mol.
+  2. Mass of Cl in 0.3849 g AgCl $= \frac{35.5}{143.37}\times0.3849 = 0.0953$ g.
+  3. %Cl $= \frac{0.0953}{0.5}\times100 = 19.06\%$.
+  4. Nearest integer: 19.
+  Note: the 5.0 g of chlorine used for chlorination is irrelevant data.
   Answer: 19
 C B 5: |-
-  Concept: $\pi = \frac{w}{MV}RT$.
+  Concept: Osmotic pressure $\pi = CRT = \frac{w}{MV}RT$, so $M = \frac{wRT}{\pi V}$ (V in litres with R in L bar mol⁻¹ K⁻¹). Osmometry is preferred for polymers because it gives measurable effects even at very low molar concentrations.
   Solution:
-  1. $M = \frac{1.46\times0.083\times300}{2.42\times10^{-3}\times0.1} = 1.50\times10^5$ g mol⁻¹ $= 15\times10^4$.
+  1. w = 1.46 g, V = 0.1 L, T = 300 K, π = 2.42 × 10⁻³ bar, R = 0.083.
+  2. $M = \frac{1.46\times0.083\times300}{2.42\times10^{-3}\times0.1} = \frac{36.35}{2.42\times10^{-4}} = 1.50\times10^5$ g mol⁻¹.
+  3. $= 15\times10^4$ g mol⁻¹.
   Answer: 15
 C B 6: |-
-  Concept: Freundlich isotherm $\frac{x}{m} = kP^{1/n}$.
+  Concept: Freundlich adsorption isotherm: $\frac{x}{m} = kP^{1/n}$. For a fixed amount of adsorbent, the ratio of amounts adsorbed at two pressures is $\left(\frac{P_2}{P_1}\right)^{1/n}$.
   Solution:
-  1. $64 = 2^{1/n} \Rightarrow \frac{1}{n} = 6 \Rightarrow n = 0.167 \approx 17\times10^{-2}$.
+  1. Doubling the pressure multiplies adsorption by 64: $2^{1/n} = 64 = 2^6$.
+  2. $\frac{1}{n} = 6 \Rightarrow n = \frac{1}{6} = 0.1667$.
+  3. $n = 16.67\times10^{-2} \approx 17\times10^{-2}$.
+  Note: normally n > 1 (so 1/n between 0 and 1); the given data are hypothetical, and the calculation follows the formula.
   Answer: 17
 C B 7: |-
-  Concept: ICE table.
+  Concept: Set up an ICE table and solve $K_C = \frac{[PCl_3][Cl_2]}{[PCl_5]}$ (volume 1 L, so moles = concentration).
   Solution:
-  1. $\frac{x^2}{3 - x} = 1.844 \Rightarrow x^2 + 1.844x - 5.532 = 0 \Rightarrow x = 1.604$.
-  2. PCl₅ remaining $= 3 - 1.604 = 1.396$ mol $= 1396\times10^{-3}$.
+  1. Initially: PCl₅ = 3.0, PCl₃ = Cl₂ = 0. At equilibrium: PCl₅ = 3 − x, PCl₃ = Cl₂ = x.
+  2. $\frac{x^2}{3 - x} = 1.844 \Rightarrow x^2 + 1.844x - 5.532 = 0$.
+  3. $x = \frac{-1.844 + \sqrt{1.844^2 + 4\times5.532}}{2} = \frac{-1.844 + \sqrt{25.528}}{2} = \frac{-1.844 + 5.0525}{2} = 1.604$.
+  4. PCl₅ at equilibrium $= 3 - 1.604 = 1.396$ mol $= 1396\times10^{-3}$.
+  Check: $\frac{1.604^2}{1.396} = \frac{2.573}{1.396} = 1.843$ ✓.
   Answer: 1396
 C B 8: |-
-  Concept: CO and NO⁺ are isoelectronic (14 e⁻).
+  Concept: Isoelectronic diatomic species have the same molecular orbital configuration and hence the same bond order.
   Solution:
-  1. Both have bond order 3, so the difference is 0 and $x = 0$.
+  1. CO: 6 + 8 = 14 electrons. NO⁺: 7 + 8 − 1 = 14 electrons.
+  2. Both have the configuration of N₂: $\sigma1s^2\sigma^*1s^2\sigma2s^2\sigma^*2s^2\pi2p^4\sigma2p^2$ (10 bonding, 4 antibonding).
+  3. Bond order $= \frac{10 - 4}{2} = 3$ for both (triple bonds).
+  4. Difference $= 0 = \frac{x}{2} \Rightarrow x = 0$.
   Answer: 0
 C B 9: |-
-  Concept: Molality = moles of solute per kg of solvent.
+  Concept: Molality = moles of solute per kg of solvent. The problem gives only the solution density (1.2 g cm⁻³), so the official solution makes the simplifying assumption that the solvent water in x mL of solution has a volume equal to x mL (water density 1 g cm⁻³), i.e. the dissolved NaOH adds mass but no volume.
   Solution:
-  1. The official solution assumes x mL of solution contains x g of water (water density 1): solution mass $= 1.2x$ g, water $= x$ g, NaOH $= 0.2x$ g.
-  2. $m = \frac{0.2x/40}{x/1000} = 5$ m.
-  3. (The data are otherwise insufficient; this assumption gives the key's value.)
+  1. Take 1000 mL of solution: mass $= 1.2\times1000 = 1200$ g.
+  2. Water $= 1000$ g (by the assumption above), so NaOH $= 200$ g.
+  3. Moles of NaOH $= \frac{200}{40} = 5$ mol.
+  4. Molality $= \frac{5}{1\text{ kg}} = 5$ m.
+  Note: the data are strictly insufficient without this assumption; it gives the key's value 5.
   Answer: 5
 C B 10: |-
-  Concept: $\Delta H = \Delta U + \Delta n_gRT$.
+  Concept: $\Delta H = \Delta U + \Delta(PV)$. For a process producing gas (ideal) from liquid (negligible volume), $\Delta(PV) = \Delta n_gRT$.
   Solution:
-  1. H₂O(l) → H₂O(g): $\Delta n_g = 1$.
-  2. $\Delta H - \Delta U = 8.31\times373 = 3099.6$ J/mol ≈ $31\times10^2$.
+  1. H₂O(l) → H₂O(g): $\Delta n_g = 1 - 0 = 1$.
+  2. T = 100 °C = 373 K.
+  3. $\Delta_{vap}H - \Delta_{vap}U = \Delta n_gRT = 1\times8.31\times373 = 3099.6$ J mol⁻¹.
+  4. $\approx 31\times10^2$ J mol⁻¹.
+  Interpretation: this ≈ 3.1 kJ/mol is the work done by the vapour pushing back the atmosphere; ΔH_vap (≈ 40.7 kJ/mol) is only slightly larger than ΔU_vap.
   Answer: 31
