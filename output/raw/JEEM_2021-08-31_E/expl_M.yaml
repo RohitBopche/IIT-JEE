@@ -1,0 +1,191 @@
+M A 1: |-
+  Concept: A homogeneous system has infinitely many solutions iff D = 0.
+  Solution:
+  1. $D = 1 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma + 2\cos\alpha\cos\beta\cos\gamma$.
+  2. With γ = 2π − (α + β), cos γ = cos(α + β); substituting and simplifying gives D = 0.
+  3. So there are non-trivial solutions: infinitely many.
+  Answer: (B)
+M A 2: |-
+  Concept: $\vec a\times(\vec u\times\vec a) = |\vec a|^2\vec u - (\vec u\cdot\vec a)\vec a$, with |a| = |b| = |c| = k and all three mutually ⊥.
+  Solution:
+  1. Summing: $k^2(3\vec r - \vec a - \vec b - \vec c) - [(\vec r\cdot\vec a)\vec a + (\vec r\cdot\vec b)\vec b + (\vec r\cdot\vec c)\vec c] = 0$ (the cross terms like b·a vanish).
+  2. The bracket equals $k^2\vec r$ (the components of r along an orthogonal basis), so $2\vec r = \vec a + \vec b + \vec c$.
+  Answer: (C)
+M A 3: |-
+  Concept: Both arguments must lie in [−1, 1].
+  Solution:
+  1. $\left|\frac{x - 1}{x + 1}\right| \le 1$ gives x ≥ 0.
+  2. $\frac{3x^2 + x - 1}{(x - 1)^2} \le 1$ gives $2x^2 + 3x - 2 \le 0$, so $x \in \left[-2, \frac{1}{2}\right]$.
+  3. $\frac{3x^2 + x - 1}{(x - 1)^2} \ge -1$ gives $4x^2 - x \ge 0$, so $x \le 0$ or $x \ge \frac{1}{4}$.
+  4. Combining: $\{0\} \cup \left[\frac{1}{4}, \frac{1}{2}\right]$.
+  Answer: (C)
+M A 4: |-
+  Concept: Onto functions S → S are permutations (6! = 720).
+  Solution:
+  1. g(3) = 2g(1) allows (g(1), g(3)) = (1, 2), (2, 4) or (3, 6); the other 4 values can be arranged in 4! ways.
+  2. p = 3 × 24/720 = 1/10.
+  Answer: (A)
+M A 5: |-
+  Concept: Cauchy's functional equation on ℕ gives f(n) = n f(1).
+  Solution:
+  1. f(6) = 6f(1) = 18, so f(1) = 3 and f(n) = 3n.
+  2. f(2)f(3) = 6 × 9 = 54.
+  Answer: (B)
+M A 6: |-
+  Concept: The line passes through the origin with direction n₁ × n₂.
+  Solution:
+  1. (2, 3, 2) × (1, −2, 1) = (7, 0, −7), which is proportional to (1, 0, −1).
+  2. For P(−1, 2, −2): |OP|² = 9 and its projection on the direction is 1/√2.
+  3. Distance² = 9 − ½ = 17/2, so the distance is √34/2.
+  Answer: (D)
+M A 7: |-
+  Concept: ∼(X ⇒ Y) ≡ X ∧ ∼Y.
+  Solution:
+  1. (p ∨ r) ∧ ∼q ∧ ∼r = p ∧ ∼q ∧ ∼r (because ∼r removes the r).
+  Answer: (A)
+M A 8: |-
+  Concept: Evaluate both limits.
+  Solution:
+  1. α: tan x(tan²x − 1)/cos(x + π/4) → by L'Hôpital, α = −4.
+  2. β: $(\cos x)^{\cot x} = e^{\cot x\ln\cos x} \to e^0 = 1$.
+  3. The product of the roots is −4/a = −4, so a = 1; the sum is −b/a = −3, so b = 3.
+  Answer: (D)
+M A 9: |-
+  Concept: Midpoint (h, k), so the ellipse point is (2h + 3, 2k + 5).
+  Solution:
+  1. $\frac{(2h + 3)^2}{4} + \frac{(2k + 5)^2}{9} = 1$.
+  2. Expanding gives 36x² + 16y² + 108x + 80y + 145 = 0.
+  Answer: (C)
+M A 10: |-
+  Concept: Cancel 2ˣ and treat x as a function of y.
+  Solution:
+  1. $\frac{dx}{dy} = \frac{1 + 2^y\ln2}{y + 2^y}$, so $x = \ln(y + 2^y) + C$; y(0) = 0 gives C = 0.
+  2. At y = 1, x = ln 3 ≈ 1.10, which lies in (1, 2).
+  Answer: (A)
+M A 11: |-
+  Concept: Angle between the tangents at an intersection point.
+  Solution:
+  1. At the intersection: $x^2 = \frac{a^2b}{a + b}$ and $y^2 = \frac{ab^2}{a + b}$, so $\frac{x}{y} = \sqrt{\frac{a}{b}}$.
+  2. The slopes are $m_1 = -\frac{b^2x}{a^2y}$ (ellipse) and $m_2 = -\frac{x}{y}$ (circle).
+  3. $\tan\theta = \frac{m_1 - m_2}{1 + m_1m_2} = \frac{a - b}{\sqrt{ab}}$.
+  Answer: (C)
+M A 12: |-
+  Concept: Substitute v = y²/x².
+  Solution:
+  1. $yy' = \frac{x^2v'}{2} + xv$, so $\frac{xv'}{2} = \frac{\phi}{\phi'}$, which gives $\frac{\phi'(v)}{\phi(v)}dv = \frac{2dx}{x}$.
+  2. φ(v) = Cx², and y(1) = −1 gives C = φ(1).
+  3. At x = 2: $\phi\left(\frac{y^2}{4}\right) = 4\phi(1)$.
+  Answer: (B)
+M A 13: |-
+  Concept: Convert everything to base 2 and set t = 2ˣ.
+  Solution:
+  1. $2^{x+1}(10 - 2^{-x}) = (3 + 2^x)^2$ gives $20t - 2 = 9 + 6t + t^2$, so $t^2 - 14t + 11 = 0$.
+  2. Both roots are positive, with t₁t₂ = 11, so x₁ + x₂ = log₂11.
+  Answer: (B)
+M A 14: |-
+  Concept: Purely imaginary means ∠(z − i, z − 1) = 90°, so z lies on the circle with diameter joining i and 1.
+  Solution:
+  1. The centre is (½, ½) and the radius is 1/√2.
+  2. The distance from (3, 3) to the centre is 5/√2, so the minimum is 5/√2 − 1/√2 = 2√2.
+  Answer: (D)
+M A 15: |-
+  Concept: $\frac{S_{10}}{S_p} = \frac{10^2}{p^2}$ for all p, so S_n ∝ n² and a_n ∝ 2n − 1.
+  Solution:
+  1. $\frac{a_{11}}{a_{10}} = \frac{21}{19}$.
+  Answer: (C)
+M A 16: |-
+  Concept: Area = 12 fixes (α, β) on two parallel lines.
+  Solution:
+  1. ½|4α − 2β − 8| = 12, so 2α − β = 16 or 2α − β = −8.
+  2. The distances from the origin are 16/√5 and 8/√5; the least is 8/√5.
+  Answer: (C)
+M A 17: |-
+  Concept: sec²x = 1 + tan²x.
+  Solution:
+  1. $32^{t}(1 + 32) = 81$ with t = tan²x, so $32^{t} = \frac{27}{11}$ and $t = \log_{32}\frac{27}{11} \approx 0.26$.
+  2. On [0, π/4], tan²x ∈ [0, 1] and is monotonic, so there is exactly 1 solution.
+  Answer: (B)
+M A 18: |-
+  Concept: Mean value theorem twice, then Rolle's theorem on f′.
+  Solution:
+  1. The MVT on [0, 1] and [1, 2] gives f′(c₁) = 1 = f′(c₂).
+  2. Rolle's theorem on f′ then gives f″(c) = 0 for some c ∈ (c₁, c₂).
+  Answer: (B)
+M A 19: |-
+  Concept: Split at x = 1: $(x - [x])^{[x]}$ is 1 on [0, 1) and x − 1 on [1, 2).
+  Solution:
+  1. $\int_0^1\sin\frac{\pi x}{2}dx = \frac{2}{\pi}$.
+  2. $\int_1^2(x - 1)\sin\frac{\pi x}{2}dx = \frac{2(\pi - 2)}{\pi^2}$ (integration by parts).
+  3. $\pi^2\left[\frac{2}{\pi} + \frac{2(\pi - 2)}{\pi^2}\right] = 2\pi + 2\pi - 4 = 4(\pi - 1)$.
+  Answer: (B)
+M A 20: |-
+  Concept: Use Σx and Σx².
+  Solution:
+  1. Σx = 56, so the remaining 5 sum to 42.
+  2. Σx² = 7(16 + 64) = 560, so the remaining 5 have 560 − 36 − 64 = 460.
+  3. Variance = 460/5 − (42/5)² = 92 − 70.56 = 536/25.
+  Answer: (C)
+M B 1: |-
+  Concept: Multinomial: choose p a's, q (2b)'s and r (4ab)'s with p + q + r = 10.
+  Solution:
+  1. The power of a is p + r = 7 and the power of b is q + r = 8, with p + q + r = 10, so r = 5, p = 2, q = 3.
+  2. The coefficient is $\frac{10!}{2!3!5!}\cdot2^3\cdot4^5 = 2520\times2^{13} = 315\times2^{16}$.
+  Answer: 315
+M B 2: |-
+  Concept: A line lies in a plane when its point is on the plane and its direction is ⊥ to the normal.
+  Solution:
+  1. The point (2, 2, −2) gives 2 + 6 + 4 + β = 0, so β = −12.
+  2. The direction gives α − 15 − 4 = 0, so α = 19.
+  3. α + β = 7.
+  Answer: 7
+M B 3: |-
+  Concept: Inclusion–exclusion on 1000–9999.
+  Solution:
+  1. Total 9000; multiples of 3: 3000; of 7: 1286; of 21: 429.
+  2. 9000 − 3000 − 1286 + 429 = 5143.
+  Answer: 5143
+M B 4: |-
+  Concept: Divide the numerator and denominator by cos³x and put t = tan x.
+  Solution:
+  1. $I = \int\frac{t\,dt}{t^3 + 1} = -\frac{1}{3}\ln|1 + t| + \frac{1}{6}\ln|t^2 - t + 1| + \frac{1}{\sqrt3}\tan^{-1}\frac{2t - 1}{\sqrt3}$.
+  2. α = −1/3, β = 1/6 and γ² = 1/3, so α + β + γ² = 1/6 and 18 × 1/6 = 3.
+  Answer: 3
+M B 5: |-
+  Concept: Tangent to y² = 8x at (x₁, y₁): yy₁ = 4(x + x₁).
+  Solution:
+  1. −4y = 4(x + 2), that is, x + y + 2 = 0.
+  2. The distance from the origin is 2/√2 = √2, so a = r² = 2.
+  Answer: 2
+M B 6: |-
+  Concept: The numerators 7, 9, 13, 19, … are 7 + n(n − 1); use the standard sums Σn/5ⁿ and Σn²/5ⁿ.
+  Solution:
+  1. $S = 7\sum\frac{1}{5^n} + \sum\frac{n^2 - n}{5^n} = \frac{7}{4} + \left(\frac{15}{32} - \frac{5}{16}\right) = \frac{7}{4} + \frac{5}{32} = \frac{61}{32}$.
+  2. 160S = 305.
+  Answer: 305
+M B 7: |-
+  Concept: $(I - A)^3 = I - 3A + 3A^2 - A^3$, so the condition is A² = A (idempotent).
+  Solution:
+  1. For upper-triangular A: a² = a, d² = d and b(a + d) = b.
+  2. Count: a, d ∈ {0, 1} with b = 0 when a + d ≠ 1, and any b when a + d = 1.
+  3. (0,0): 1; (1,1): 1; (1,0): 3; (0,1): 3. Total 8.
+  Answer: 8
+M B 8: |-
+  Concept: Area under y = mx equals half the total area.
+  Solution:
+  1. Total = $\int_0^{3/2}(1 + 4x - x^2)dx = \frac{3}{2} + \frac{9}{2} - \frac{9}{8} = \frac{39}{8}$.
+  2. $\frac{m}{2}\cdot\frac{9}{4} = \frac{39}{16}$, so m = 13/6 and 12m = 26.
+  Answer: 26
+M B 9: |-
+  Concept: The two triangles share base PQ, so the area ratio equals the ratio of heights to PQ (the chord of contact).
+  Solution:
+  1. B = (1, −2), r = 2, and AB = √13.
+  2. Distance from B to PQ = r²/AB = 4/√13; distance from A to PQ = AB − 4/√13 = 9/√13.
+  3. The ratio is 9/4, so 8 × 9/4 = 18.
+  Answer: 18
+M B 10: |-
+  Concept: f′ is quadratic with its vertex at x = −1 and f′(1) = 0.
+  Solution:
+  1. f′ = k[(x + 1)² − 4] = k(x² + 2x − 3), so f = k(x³/3 + x² − 3x) + d.
+  2. f(1) = −5k/3 + d = −10 and f(−1) = 11k/3 + d = 6, giving k = 3 and d = −5.
+  3. f(3) = 3(9 + 9 − 9) − 5 = 22.
+  Answer: 22

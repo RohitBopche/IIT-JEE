@@ -39,11 +39,13 @@
     1
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The net gravitational pull of the other three particles supplies the centripetal force for circular motion.\nGiven: m = 1 kg, R = 1 m; the four particles sit at the corners of a square inscribed in the circle.\nSolution:\n1. Adjacent particles are at distance $\\sqrt{2}R$. Each pulls with $F_1 = \\frac{Gm^2}{2R^2}$; their components along the radius add: $2F_1\\cos45^\\circ = \\frac{Gm^2}{\\sqrt{2}R^2}$.\n2. The opposite particle is at distance 2R: $F_2 = \\frac{Gm^2}{4R^2}$, also towards the centre.\n3. Net force $F = \\frac{Gm^2}{R^2}\\left(\\frac{1}{\\sqrt{2}} + \\frac{1}{4}\\right) = \\frac{Gm^2}{R^2}\\cdot\\frac{2\\sqrt{2} + 1}{4}$.\n4. Set $\\frac{mv^2}{R} = F$: $v^2 = \\frac{Gm}{R}\\cdot\\frac{1 + 2\\sqrt{2}}{4}$. With m = 1, R = 1: $v = \\frac{\\sqrt{(1 + 2\\sqrt{2})G}}{2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -72,11 +74,13 @@
     2
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Angular velocity of uniform circular motion is $\\omega = \\frac{2\\pi}{T}$, so $\\omega \\propto \\frac{1}{T}$.\nSolution:\n1. $\\frac{\\omega_1}{\\omega_2} = \\frac{T_2}{T_1} = \\frac{8\\ \\text{hr}}{1\\ \\text{hr}} = 8$.\n2. So $\\omega_1 : \\omega_2 = 8 : 1$. (Kepler's law is not needed because the periods are already given.)\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -115,6 +119,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Net work in a cycle = sum of the work in each step; W = 0 for an isochoric step.\nSolution:\n1. A→B (isothermal, V doubles): $W_{AB} = nRT\\ln\\frac{V_2}{V_1} = nRT\\ln2$.\n2. At B: $P_2(2V_1) = nRT$, so $P_2V_1 = \\frac{nRT}{2}$.\n3. B→C (isobaric compression from $2V_1$ to $V_1$): $W_{BC} = P_2(V_1 - 2V_1) = -P_2V_1 = -\\frac{nRT}{2}$.\n4. C→A (isochoric): $W_{CA} = 0$.\n5. Total $W = nRT\\ln2 - \\frac{nRT}{2} = nRT\\left(\\ln2 - \\frac{1}{2}\\right)$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A03",
@@ -122,6 +127,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A03_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -150,11 +156,13 @@
     3
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Series: $\\frac{1}{C_s} = \\sum\\frac{1}{C_i}$; parallel: $C_p = \\sum C_i$.\nSolution:\n1. Two equal capacitors C in series: $C_s = \\frac{C}{2}$.\n2. In parallel: $C_p = 2C$.\n3. $C_s : C_p = \\frac{C}{2} : 2C = 1 : 4$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -193,6 +201,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Two cells connected in opposition in a closed loop: net emf = difference of emfs; the terminal voltage of a cell being charged is $V = E + Ir$.\nGiven: $E_1$ = 6 V, $r_1$ = 2 Ω; $E_2$ = 4 V, $r_2$ = 8 Ω; the wire PY closes the loop with the cells opposing each other (figure).\nSolution:\n1. Current $I = \\frac{E_1 - E_2}{r_1 + r_2} = \\frac{6 - 4}{2 + 8} = 0.2$ A.\n2. This current is driven by $E_1$ and flows through $E_2$ against its emf, so $E_2$ is being charged.\n3. Potential difference across $E_2$ (points X and Y): $V_{XY} = E_2 + Ir_2 = 4 + 0.2\\times8 = 5.6$ V.\n4. Check with $E_1$: $V = E_1 - Ir_1 = 6 - 0.4 = 5.6$ V (same, because P and Y are joined).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A05",
@@ -200,6 +209,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A05_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -228,11 +238,13 @@
     5
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Relation between the elastic moduli: $Y = \\frac{9K\\eta}{3K + \\eta}$.\nSolution:\n1. Rearrange: $Y(3K + \\eta) = 9K\\eta \\Rightarrow 3KY + \\eta Y = 9K\\eta$.\n2. Collect K: $K(9\\eta - 3Y) = Y\\eta \\Rightarrow K = \\frac{Y\\eta}{9\\eta - 3Y}$.\n3. This matches option (A). Options (C) and (D) have wrong denominators ($3K - \\eta$, $2\\eta + 3K$), and (B) is not a rearrangement of the correct formula.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -261,11 +273,13 @@
     5
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: In a binary system both bodies revolve about the common centre of mass with the same period; $T^2 = \\frac{4\\pi^2d^3}{G(m_1 + m_2)}$.\nSolution:\n1. For mass m: its orbit radius is $r_1 = \\frac{2m}{3m}d = \\frac{2d}{3}$.\n2. Gravity gives the centripetal force: $\\frac{G(m)(2m)}{d^2} = m\\omega^2\\cdot\\frac{2d}{3} \\Rightarrow \\omega^2 = \\frac{3Gm}{d^3}$.\n3. $T = \\frac{2\\pi}{\\omega} = 2\\pi\\sqrt{\\frac{d^3}{3Gm}}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -304,6 +318,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Acceleration is the slope of the velocity–time graph.\nSolution:\n1. From A to M the graph is a straight line going down: constant negative slope, so a is a constant negative value.\n2. From M to B the graph is a straight line going up with the same magnitude of slope: a is a constant positive value.\n3. So the a–t graph is a negative constant that jumps to a positive constant at M: a single step, option (A).\n4. The square wave (B) would need repeated reversals; the sinusoid and triangle need curved v–t graphs.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A08",
@@ -311,6 +326,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A08_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -339,11 +355,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Photon momentum $p = \\frac{h}{\\lambda}$ and energy $E = \\frac{hc}{\\lambda}$.\nSolution:\n1. Statement I: equal momenta give $\\lambda = \\frac{h}{p}$ equal, so it is true.\n2. Statement II: if λ decreases, both p and E increase (inverse relation). It says they decrease, so it is false.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -372,11 +390,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Current is the rate of flow of charge, so $q = \\int i\\,dt$.\nSolution:\n1. $q = \\int_0^{15}(20t + 8t^2)dt = \\left[10t^2 + \\frac{8t^3}{3}\\right]_0^{15}$.\n2. $= 10(225) + \\frac{8(3375)}{3} = 2250 + 9000 = 11250$ C.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -405,11 +425,13 @@
     8
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Each thermodynamic process keeps one quantity fixed.\nSolution:\n1. Isothermal: temperature constant, (a)–(ii).\n2. Isochoric: volume constant, (b)–(iii).\n3. Adiabatic: no heat exchange, so the heat content stays constant, (c)–(iv).\n4. Isobaric: pressure constant, (d)–(i).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -448,6 +470,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Lyman series ends on n = 1, Balmer on n = 2, Paschen on n = 3. The first member of a series comes from the nearest upper level; a jump from the continuum (n = ∞) is the series limit.\nSolution:\n1. A: continuum → n = 1, the series limit of the Lyman series.\n2. B: n = 5 → n = 2. Balmer members: 3→2 (first), 4→2 (second), 5→2 (third), so B is the third member of the Balmer series.\n3. C: n = 5 → n = 3. Paschen members: 4→3 (first), 5→3 (second), so C is the second member of the Paschen series.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A12",
@@ -455,6 +478,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A12_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -483,11 +507,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For a spherical mirror (paraxial rays) the focus lies midway between the pole and the centre of curvature: $f = \\frac{r}{2}$.\nSolution:\n1. For a convex mirror both F and C lie behind the mirror, so f and r have the same sign in the Cartesian convention.\n2. Hence $f = +\\frac{1}{2}r$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -516,11 +542,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Standard moments of inertia for mass M and radius R.\nSolution:\n1. $I_1$ (ring about a diameter) $= \\frac{1}{2}MR^2$.\n2. $I_2$ (disc about its central perpendicular axis) $= \\frac{1}{2}MR^2$.\n3. $I_3$ (solid cylinder about its axis) $= \\frac{1}{2}MR^2$.\n4. $I_4$ (solid sphere about a diameter) $= \\frac{2}{5}MR^2$.\n5. Since $\\frac{1}{2} > \\frac{2}{5}$: $I_1 = I_2 = I_3 > I_4$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -549,11 +577,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The argument of an exponential must be dimensionless.\nSolution:\n1. $\\frac{x^2}{\\alpha kT}$ is dimensionless, and kT has dimensions of energy $[ML^2T^{-2}]$.\n2. $[\\alpha] = \\frac{[L^2]}{[ML^2T^{-2}]} = [M^{-1}T^2]$.\n3. $W = \\alpha\\beta^2$ (times a dimensionless factor), so $[\\beta^2] = \\frac{[ML^2T^{-2}]}{[M^{-1}T^2]} = [M^2L^2T^{-4}]$.\n4. $[\\beta] = [MLT^{-2}]$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -582,11 +612,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Current gain of a transistor in CE mode: $\\beta = \\frac{\\Delta I_C}{\\Delta I_B}$, with $I_E = I_B + I_C$.\nSolution:\n1. $\\Delta I_B = \\Delta I_E - \\Delta I_C = 4 - 3.5 = 0.5$ mA.\n2. $\\beta = \\frac{3.5}{0.5} = 7$.\n3. The value 0.875 is $\\alpha = \\frac{\\Delta I_C}{\\Delta I_E}$, not β.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A16",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -615,11 +647,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $I_{max} = (a_1 + a_2)^2$, $I_{min} = (a_1 - a_2)^2$ for amplitudes $a_1$, $a_2$.\nSolution:\n1. Amplitude is proportional to slit width, so $a_1 : a_2 = 3 : 1$.\n2. $\\frac{I_{max}}{I_{min}} = \\frac{(3 + 1)^2}{(3 - 1)^2} = \\frac{16}{4} = 4$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -658,6 +692,7 @@
      ]
     }
    ],
+   "explanation": "Concept: When a mass is placed gently at the mean position, horizontal momentum is conserved; the new amplitude comes from the new speed and new angular frequency.\nSolution:\n1. Before: speed at the mean position $v = A\\omega$, where $\\omega = \\sqrt{\\frac{k}{M}}$.\n2. Momentum conservation: $Mv = (M + m)v'$, so $v' = \\frac{MA\\omega}{M + m}$.\n3. New angular frequency $\\omega' = \\sqrt{\\frac{k}{M + m}}$.\n4. New amplitude $A' = \\frac{v'}{\\omega'} = \\frac{MA}{M + m}\\sqrt{\\frac{k}{M}}\\sqrt{\\frac{M + m}{k}} = A\\sqrt{\\frac{M}{M + m}}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A18",
@@ -665,6 +700,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A18_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -703,6 +739,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Superposition. Eight equal charges +Q at the corners of a cube give zero field at the centre by symmetry.\nSolution:\n1. Write the charge at the origin as $-Q = +Q + (-2Q)$. The eight +Q charges give zero field; only the extra −2Q at the origin remains.\n2. Distance from a corner to the centre: $r = \\frac{\\sqrt{3}a}{2}$, so $r^2 = \\frac{3a^2}{4}$.\n3. Magnitude: $E = \\frac{1}{4\\pi\\varepsilon_0}\\cdot\\frac{2Q}{3a^2/4} = \\frac{2Q}{3\\pi\\varepsilon_0a^2}$.\n4. The field of a negative charge points towards it (towards the origin), along $-\\frac{(\\hat{x} + \\hat{y} + \\hat{z})}{\\sqrt{3}}$.\n5. $\\vec{E} = \\frac{-2Q}{3\\sqrt{3}\\pi\\varepsilon_0a^2}(\\hat{x} + \\hat{y} + \\hat{z})$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A19",
@@ -710,6 +747,7 @@
     "figures/JEEM_2021-02-24_M/PHY_A19_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -738,11 +776,13 @@
     14
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Volume expansion coefficient $\\gamma = 3\\alpha$, so $\\Delta V = 3\\alpha V\\Delta T$.\nSolution:\n1. The box encloses volume $V = a^3$, and it expands like a solid cube of the same material.\n2. $\\Delta V = 3\\alpha a^3\\Delta T$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_A20",
    "diagram_files": [],
    "text_recall": 0.9615384615384616,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -766,11 +806,13 @@
     15
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Quality factor of a series LR resonator: $Q = \\frac{\\omega L}{R} = \\frac{2\\pi fL}{R}$.\nSolution:\n1. $Q = \\frac{2\\times3.14\\times10^7\\times2\\times10^{-4}}{6.28}$.\n2. $= \\frac{6.28\\times2\\times10^3}{6.28} = 2000$.\nAnswer: 2000",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -794,11 +836,13 @@
     15
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Conservation of linear momentum in the direction perpendicular to the initial motion.\nSolution:\n1. Initially there is no momentum perpendicular to the original direction.\n2. The balls move at 30° on opposite sides: $mv_1\\sin30^\\circ = mv_2\\sin30^\\circ$.\n3. So $v_1 = v_2$ and the ratio is 1 : 1, x = 1.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -822,11 +866,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Modulation index $\\mu = \\frac{A_m}{A_c}$; percent modulation = $\\mu\\times100$.\nSolution:\n1. Message amplitude $A_m$ = 20, carrier amplitude $A_c$ = 80.\n2. $\\mu = \\frac{20}{80} = 0.25$, i.e. 25%.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -850,11 +896,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The horizontal push gives the normal reaction; static friction $f \\le \\mu N$ must balance the weight.\nSolution:\n1. For the block not to slide: $\\mu N \\ge mg$.\n2. Minimum force: $N = \\frac{mg}{\\mu} = \\frac{0.5\\times10}{0.2} = 25$ N.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -878,11 +926,13 @@
     17
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A block rests on an incline without slipping if $\\tan\\theta \\le \\mu$.\nSolution:\n1. Slope of the curve: $\\tan\\theta = \\frac{dy}{dx} = \\frac{x}{2}$.\n2. Limiting case: $\\frac{x}{2} = 0.5 \\Rightarrow x = 1$ m.\n3. Height $y = \\frac{x^2}{4} = \\frac{1}{4}$ m = 25 cm.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -906,11 +956,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Speed of an EM wave in a medium: $v = \\frac{c}{\\sqrt{\\mu_r\\varepsilon_r}}$ (frequency is not needed).\nSolution:\n1. $v = \\frac{3\\times10^8}{\\sqrt{2\\times2}} = 1.5\\times10^8$ m/s.\n2. $= 15\\times10^7$ m/s.\nAnswer: 15",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -934,11 +986,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Pascal's law: equal pressure on both pistons, $\\frac{F_1}{A_1} = \\frac{F_2}{A_2}$, and $A \\propto d^2$.\nSolution:\n1. Load lifted $\\propto \\frac{A_{large}}{A_{small}} = \\left(\\frac{d_{large}}{d_{small}}\\right)^2$.\n2. New ratio $= \\frac{(4d_L)^2}{(d_s/4)^2} = 16\\times16 = 256$ times the old ratio.\n3. New load = 100 × 256 = 25600 kg.\nAnswer: 25600",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -962,11 +1016,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ideal transformer: $\\frac{N_p}{N_s} = \\frac{V_p}{V_s}$.\nSolution:\n1. $V_p$ = 220 V, $V_s$ = 12 V, $N_s$ = 24.\n2. $N_p = 24\\times\\frac{220}{12} = 440$.\nAnswer: 440",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -990,11 +1046,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Malus' law, $I = I_0\\cos^2\\theta$ for light passing through the analyser.\nSolution:\n1. Taking the initial setting as the one of maximum transmission (polariser and analyser axes parallel), 100 lumen is the maximum intensity.\n2. After rotating the analyser by 30°: $I = 100\\cos^230^\\circ = 100\\times\\frac{3}{4} = 75$ lumen.\nAnswer: 75",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1028,6 +1086,7 @@
      ]
     }
    ],
+   "explanation": "Concept: A reverse-biased Zener diode in breakdown holds the voltage across it (and anything in parallel with it) at $V_Z$.\nSolution:\n1. Check breakdown: without the Zener, the voltage across 2 kΩ would be $10\\times\\frac{2}{3} \\approx 6.67$ V > 5 V, so the Zener conducts.\n2. The 2 kΩ resistor is in parallel with the Zener, so its voltage is 5 V.\n3. $I = \\frac{5}{2000} = 2.5\\times10^{-3}$ A $= 25\\times10^{-4}$ A.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_PHY_B10",
@@ -1035,6 +1094,7 @@
     "figures/JEEM_2021-02-24_M/PHY_B10_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1063,11 +1123,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Anaerobic (oxygen-free) decay of vegetation, e.g. in paddy fields and marshes, releases methane ($CH_4$).\nSolution:\n1. $CH_4$ is a strong greenhouse gas, so it adds to global warming.\n2. Of the options, only (A) names this effect (global warming); the official key takes (A).\n3. The others do not fit: acid rain comes from $SO_2$/$NO_x$, corrosion of metals from acidic gases, and the ozone hole from CFCs, none of which is produced by anaerobic decay.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1096,11 +1158,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Protein secondary structure (α-helix and β-pleated sheet) is held by hydrogen bonds between peptide groups.\nSolution:\n1. In an α-helix, the C=O of one residue forms a hydrogen bond with the N–H of the residue four places ahead, along the helix axis.\n2. Covalent (peptide) bonds make the primary structure; ionic and van der Waals interactions matter mainly for tertiary structure.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1129,11 +1193,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Isostructural species have the same shape (same hybridisation and number of lone pairs).\nSolution:\n1. $SO_4^{2-}$ and $CrO_4^{2-}$: both tetrahedral, isostructural.\n2. $SiCl_4$ and $TiCl_4$: both tetrahedral ($sp^3$ / four bond pairs), isostructural.\n3. $NH_3$ is trigonal pyramidal (one lone pair), $NO_3^-$ is trigonal planar, so not isostructural.\n4. $BCl_3$ is trigonal planar, $BrCl_3$ is T-shaped (two lone pairs on Br), so not isostructural.\n5. Only pairs A and B qualify.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1172,6 +1238,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Cold dilute $KMnO_4$ (Baeyer's reagent) adds two OH groups syn across a C=C; $CrO_3$ oxidises secondary alcohols to ketones but leaves tertiary alcohols unchanged.\nSolution:\n1. 1-Methylcyclopentene with cold dilute $KMnO_4$ gives A = 1-methylcyclopentane-1,2-diol (OH on the tertiary C1 and the secondary C2).\n2. $CrO_3$ oxidises only the secondary OH at C2 to C=O; the tertiary OH at C1 cannot be oxidised.\n3. B = 2-hydroxy-2-methylcyclopentan-1-one.\n4. Option (C) would need cleavage by hot concentrated $KMnO_4$; option (D) would need dehydration.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A04",
@@ -1179,6 +1246,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A04_1.png"
    ],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1217,6 +1285,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Alkyl halides react with magnesium in dry ether to form Grignard reagents (RMgBr).\nSolution:\n1. The compound is 2,4-dibromohexane, with Br on two secondary carbons.\n2. With excess Mg in dry ether, each C–Br bond inserts Mg in the first step, giving the di-Grignard reagent $CH_3CH_2CH(MgBr)CH_2CH(MgBr)CH_3$.\n3. Ring closure (cyclopropane) or coupling products would come from later steps, not the first step asked for.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-24_M_CHE_A05",
@@ -1224,6 +1293,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A05_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: options (1),(2) are drawn dimer structures; described approximately"
    ],
@@ -1254,11 +1324,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Standard electrode potentials $E^\\circ(M^{2+}/M)$ of the 3d series are negative except for copper.\nSolution:\n1. Values: Zn –0.76 V, Fe –0.44 V, Co –0.28 V, Cu +0.34 V.\n2. Cu has a high enthalpy of atomisation and a low hydration enthalpy of $Cu^{2+}$ that does not compensate, so its $E^\\circ$ is positive.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1297,6 +1369,7 @@
      ]
     }
    ],
+   "explanation": "Concept: In strongly acidic nitrating mixture, the basic $-NH_2$ group of aniline is protonated.\nSolution:\n1. $C_6H_5NH_2 + H^+ \\rightarrow C_6H_5NH_3^+$ (anilinium ion).\n2. $-NH_3^+$ has no lone pair and is strongly electron-withdrawing, so it is meta-directing.\n3. Free aniline gives o/p products; the anilinium ion gives the meta product, which is why about 47% m-nitroaniline forms.\n4. $-NH_2$ itself is o/p-directing, so option (D) is wrong.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A07",
@@ -1304,6 +1377,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A07_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1332,11 +1406,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $H_2O_2$ acts as a reducing agent when it is oxidised to $O_2$ (O: –1 → 0).\nSolution:\n1. (A) $HOCl \\rightarrow Cl^-$: Cl goes +1 → –1 (reduced), while $H_2O_2 \\rightarrow O_2$ (oxidised). So $H_2O_2$ is a reducing agent.\n2. (B) $I_2 \\rightarrow 2I^-$: I goes 0 → –1 (reduced), while $H_2O_2 \\rightarrow O_2$. Again $H_2O_2$ is a reducing agent.\n3. It acts as a reducing agent in both equations.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A08",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1365,11 +1441,13 @@
     25
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: In froth flotation of mixed sulphide ores, NaCN (a group-1 cyanide) is used as a depressant.\nSolution:\n1. Sphalerite (ZnS) usually occurs with galena (PbS).\n2. NaCN forms the soluble complex $Na_2[Zn(CN)_4]$ with ZnS, which stops ZnS from coming into the froth, so PbS floats and the two are separated.\n3. Siderite ($FeCO_3$), malachite and calamine ($ZnCO_3$) are not concentrated this way.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1377,12 +1455,12 @@
    "subject": "Chemistry",
    "section": "A",
    "q_no": 10,
-   "question_text": "Which is the final product (major) 'A' in the given reaction?\n[figure: 1-(2-methylcyclohexyl)propan-1-ol ($\\mathrm{C_6H_{10}(CH_3){-}CH(OH){-}CH_2CH_3}$) $\\xrightarrow{\\mathrm{HCl}}$ 'A' (major product)]",
+   "question_text": "Which is the final product (major) 'A' in the given reaction?\n[figure: 1-(2-methylcyclohexyl)ethan-1-ol ($\\mathrm{C_6H_{10}(CH_3){-}CH(OH){-}CH_3}$) $\\xrightarrow{\\mathrm{HCl}}$ 'A' (major product)]",
    "options": [
     "[figure] 1-methyl-2-vinylcyclohexane ($\\mathrm{CH{=}CH_2}$ on ring)",
-    "[figure] 1-methyl-2-propylidenecyclohexane (exocyclic $\\mathrm{=CH{-}CH_3}$)",
+    "[figure] 1-ethylidene-2-methylcyclohexane (exocyclic $\\mathrm{=CH{-}CH_3}$)",
     "[figure] 1-chloro-1-ethyl-2-methylcyclohexane (Cl and $\\mathrm{CH_2CH_3}$ on same ring carbon)",
-    "[figure] 1-(2-methylcyclohexyl)-1-chloropropane ($\\mathrm{CH(Cl)CH_2CH_3}$ side chain)"
+    "[figure] 1-chloro-1-(2-methylcyclohexyl)ethane ($\\mathrm{CH(Cl)CH_3}$ side chain)"
    ],
    "question_type": "MCQ-Single",
    "question_style": "Standard",
@@ -1391,7 +1469,7 @@
    "chapter": "Alcohols, Phenols and Ethers",
    "topic": "Carbocation rearrangement, hydride shift",
    "difficulty": "Medium",
-   "notes": "options (1),(2) side chains read from drawn structures",
+   "notes": "options are drawn structures, described in words",
    "page_index": 24,
    "page_indices": [
     24,
@@ -1408,6 +1486,7 @@
      ]
     }
    ],
+   "explanation": "Concept: HCl converts alcohols to alkyl chlorides through a carbocation ($S_N1$), and carbocations rearrange to more stable ones.\nSolution:\n1. Protonation of OH and loss of water give a secondary carbocation on the side-chain carbon: ring–$\\overset{+}{C}H$–$CH_3$.\n2. A 1,2-hydride shift from the adjacent ring carbon makes a tertiary carbocation on the ring (carrying the $CH_2CH_3$ group).\n3. $Cl^-$ attacks this tertiary carbocation: product = 1-chloro-1-ethyl-2-methylcyclohexane.\n4. Option (D) is the unrearranged product; (A) and (B) are elimination products, which are minor with HCl.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-24_M_CHE_A10",
@@ -1415,8 +1494,9 @@
     "figures/JEEM_2021-02-24_M/CHE_A10_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
-    "model note: options (1),(2) side chains read from drawn structures"
+    "model note: options are drawn structures, described in words"
    ],
    "confidence": 0.8
   },
@@ -1445,11 +1525,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Markovnikov addition of HI through a carbocation, with rearrangement to a more stable carbocation.\nSolution:\n1. 3,3-Dimethylbut-1-ene + $H^+$ gives a secondary carbocation at C2: $(CH_3)_3C-\\overset{+}{C}H-CH_3$.\n2. A 1,2-methyl shift gives the more stable tertiary carbocation $(CH_3)_2\\overset{+}{C}-CH(CH_3)-CH_3$.\n3. $I^-$ attacks: 2-iodo-2,3-dimethylbutane, $CH_3-CI(CH_3)-CH(CH_3)-CH_3$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1478,11 +1560,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Controlled oxidation of alkanes with $O_2$ over a catalyst gives aldehydes.\nSolution:\n1. Alkanes heated with oxygen in the presence of molybdenum oxide ($Mo_2O_3$) are oxidised to aldehydes (NCERT, e.g. $CH_4 \\rightarrow HCHO$).\n2. Propane → propanal in the same way.\n3. $KMnO_4$ gives acids; Cu at high temperature and pressure gives methanol from methane; manganese acetate gives carboxylic acids.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1521,6 +1605,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Freundlich isotherm: $\\frac{x}{m} = kP^{1/n}$.\nSolution:\n1. Taking logs: $\\log\\frac{x}{m} = \\log k + \\frac{1}{n}\\log P$, a straight line of $\\log\\frac{x}{m}$ against $\\log P$.\n2. Slope = $\\frac{1}{n}$, intercept = $\\log k$.\n3. Experimentally $\\frac{1}{n}$ lies between 0 and 1.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A13",
@@ -1528,6 +1613,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A13_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1556,11 +1642,13 @@
     27
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Composition of common alloys.\nSolution:\n1. Gun metal is a bronze: mainly copper with tin and some zinc (about Cu 87%, Sn 10%, Zn 3%).\n2. Duralumin contains Al, Cu, Mg, Mn; German silver contains Cu, Zn, Ni.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A14",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1599,6 +1687,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Diazotisation followed by cyanide substitution (Sandmeyer-type), then Stephen reduction of a nitrile.\nSolution:\n1. Aniline + $NaNO_2$/HCl (0–5 °C) gives benzenediazonium chloride; with KCN (CuCN) it gives A = benzonitrile, $C_6H_5CN$.\n2. $SnCl_2$/HCl reduces the nitrile to an imine salt, which hydrolyses ($H_3O^+$) to B = benzaldehyde, $C_6H_5CHO$ (Stephen reaction).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A15",
@@ -1606,6 +1695,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A15_1.png"
    ],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1644,6 +1734,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Phthalein test: a phenol with a free position para to OH condenses with phthalic anhydride (conc. $H_2SO_4$) to form a phenolphthalein-type dye, which is pink in NaOH.\nSolution:\n1. 2-Propylphenol (option 2) has a free para position, so it forms a phenolphthalein analogue and gives a pink colour in alkali.\n2. Resorcinol derivatives (option 1) give fluorescein-type dyes with green-yellow fluorescence, not pink.\n3. Option 4 has its para position blocked; the catechol derivative (option 3) gives a different (blue/violet) colour.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-02-24_M_CHE_A16",
@@ -1651,6 +1742,7 @@
     "figures/JEEM_2021-02-24_M/CHE_A16_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: options (3),(4) side chains drawn as -CH2CH2CH (misprint); described approximately"
    ],
@@ -1681,11 +1773,13 @@
     29
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ionisation enthalpy increases across period 3 but has two breaks: group 13 < group 2, and group 16 < group 15.\nSolution:\n1. Al (3p¹) < Mg (filled 3s²): the 3p electron of Al is easier to remove.\n2. S < P: P has a stable half-filled 3p³; S loses a paired 3p electron more easily.\n3. Order: Al < Mg < Si < S < P (578 < 738 < 786 < 1000 < 1012 kJ/mol).\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1714,11 +1808,13 @@
     29
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Borax bead test for copper.\nSolution:\n1. In the non-luminous (oxidising) flame, $CuSO_4 + B_2O_3 \\rightarrow Cu(BO_2)_2$ (cupric metaborate), which is blue-green, not colourless. So Statement II (cuprous metaborate in a non-luminous flame) is false.\n2. In the luminous (reducing) flame, cupric metaborate is reduced to colourless cuprous metaborate and red Cu. Statement I calls the cupric salt colourless, so it is false.\n3. Both statements are false.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A18",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1747,11 +1843,13 @@
     30
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Baeyer's process for purifying bauxite.\nSolution:\n1. Leaching with NaOH: $Al_2O_3 + 2NaOH + 3H_2O \\rightarrow 2Na[Al(OH)_4]$, so X = $Na[Al(OH)_4]$.\n2. Passing $CO_2$ (Y) neutralises the solution and precipitates hydrated alumina: $2Na[Al(OH)_4] + CO_2 \\rightarrow Al_2O_3\\cdot xH_2O + 2NaHCO_3$, so Z = $Al_2O_3\\cdot xH_2O$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1780,11 +1878,13 @@
     30
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Monomers of common polymers.\nSolution:\n1. Caprolactam → Nylon 6: (a)–(iii).\n2. 2-Chloro-1,3-butadiene (chloroprene) → Neoprene: (b)–(iv).\n3. Isoprene → natural rubber: (c)–(i).\n4. Acrylonitrile (with 1,3-butadiene) → Buna-N: (d)–(ii).\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_A20",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1796,27 +1896,29 @@
    "options": [],
    "question_type": "Numerical",
    "question_style": "Standard",
-   "answer": "1",
+   "answer": "13",
    "has_diagram": false,
    "chapter": "Coordination Compounds",
    "topic": "Stepwise and overall stability constants",
    "difficulty": "Medium",
-   "notes": "printed equations contain subscript misprints; intended stepwise equations given",
+   "notes": "printed key 1 (printed solution slips a power of 10); 1/(K1K2K3K4) = 1/(7.9e10) = 12.7e-12, so x = 13; subscript misprints in the printed equations corrected",
    "page_index": 30,
    "page_indices": [
     30,
     31
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The overall formation constant is the product of the stepwise constants, $\\beta_4 = K_1K_2K_3K_4$; the dissociation constant is its reciprocal.\nSolution:\n1. $\\beta_4 = 10^4\\times(1.58\\times10^2)\\times(5\\times10^2)\\times10^2 = 7.9\\times10^{10}$.\n2. $K_{diss} = \\frac{1}{7.9\\times10^{10}} = 1.27\\times10^{-11} = 12.7\\times10^{-12}$.\n3. So x ≈ 13.\nNote: the printed key gives x = 1 because its solution drops a power of ten ($1.26\\times10^{-12}$); the correct value is 13.\nAnswer: 13",
    "answer_source": "printed with question",
-   "model_confidence": "high",
+   "model_confidence": "medium",
    "q_id": "JEEM_2021-02-24_M_CHE_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
-    "model note: printed equations contain subscript misprints; intended stepwise equations given"
+    "model note: printed key 1 (printed solution slips a power of 10); 1/(K1K2K3K4) = 1/(7.9e10) = 12.7e-12, so x = 13; subscript misprin"
    ],
-   "confidence": 0.9
+   "confidence": 0.8
   },
   {
    "subject": "Chemistry",
@@ -1838,11 +1940,13 @@
     32
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $K_p$ in terms of partial pressures, $p_i = x_iP$.\nSolution:\n1. Equal numbers of $Cl_2$ and Cl, so each mole fraction is 0.5 and each partial pressure is 0.5 atm (P = 1 atm).\n2. $K_p = \\frac{p_{Cl}^2}{p_{Cl_2}} = \\frac{(0.5)^2}{0.5} = 0.5 = 5\\times10^{-1}$.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1866,11 +1970,13 @@
     32
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Molarity = moles of solute ÷ volume of solution in litres.\nSolution:\n1. Moles = $\\frac{4.5}{90} = 0.05$ mol.\n2. M = $\\frac{0.05}{0.250} = 0.2$ M = $2\\times10^{-1}$ M.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1894,11 +2000,13 @@
     33
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: In a body-centred cubic (bcc) lattice, the atom at the body centre touches the 8 atoms at the corners.\nSolution:\n1. Each atom has 8 nearest neighbours, so the coordination number is 8.\n2. (fcc/ccp gives 12; simple cubic gives 6.)\nAnswer: 8",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: Printed answer key shows (4), which is incorrect; correct coordination number for bcc is 8"
    ],
@@ -1924,11 +2032,13 @@
     33
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: In group 2, basic character of oxides and hydroxides increases down the group; beryllium compounds are amphoteric.\nSolution:\n1. BeO and $Be(OH)_2$ react with both acids and bases, so they are amphoteric.\n2. BaO and $Sr(OH)_2$ are basic.\n3. Number of amphoteric compounds = 2.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1952,11 +2062,13 @@
     33
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Depression of freezing point with dissociation: $\\Delta T_f = iK_fm$, with $i = 1 + \\alpha$ for HA ⇌ $H^+ + A^-$.\nSolution:\n1. Molar mass of $ClCH_2COOH$ = 94.5 g/mol, so moles = $\\frac{9.45}{94.5} = 0.1$; molality $m = \\frac{0.1}{0.5} = 0.2$ mol/kg.\n2. $0.5 = i\\times1.86\\times0.2 \\Rightarrow i = 1.344$, so $\\alpha \\approx 0.34$.\n3. $K_a = \\frac{C\\alpha^2}{1 - \\alpha} = \\frac{0.2\\times(0.34)^2}{0.66} \\approx 0.035 = 35\\times10^{-3}$ (taking molarity ≈ molality for a dilute solution).\n(Carrying α = 0.344 unrounded gives 36; the official answer is 35.)\nAnswer: 35",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1980,11 +2092,13 @@
     34
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For a charge q accelerated through potential V: $\\lambda = \\frac{h}{\\sqrt{2mqV}}$.\nSolution:\n1. $\\frac{\\lambda_{Li}}{\\lambda_p} = \\sqrt{\\frac{m_pq_p}{m_{Li}q_{Li}}} = \\sqrt{\\frac{m_p\\cdot e}{(8.3m_p)(3e)}} = \\sqrt{\\frac{1}{24.9}}$.\n2. $= 0.2 = 2\\times10^{-1}$.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2008,11 +2122,13 @@
     34
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: First-order kinetics: $t = \\frac{1}{k}\\ln\\frac{[A]_0}{[A]}$.\nSolution:\n1. 40% completion leaves 60%: $\\frac{[A]_0}{[A]} = \\frac{1}{0.6}$.\n2. $t = \\frac{\\ln(1.667)}{3.3\\times10^{-4}} = \\frac{0.511}{3.3\\times10^{-4}} \\approx 1548$ s.\n3. In minutes: $\\frac{1548}{60} \\approx 25.8 \\approx 26$ min.\nAnswer: 26",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2036,11 +2152,13 @@
     35
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Standard Gibbs energy change: $\\Delta_rG^\\circ = -RT\\ln K$.\nSolution:\n1. $\\Delta_rG^\\circ = -R(300)\\ln100 = -R(300)(2\\times2.3) = -1380R$.\n2. So x = 1380. (The question means the standard value; at equilibrium itself ΔG = 0.)\nAnswer: 1380",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2064,11 +2182,13 @@
     35
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Balance a disproportionation reaction in basic medium.\nSolution:\n1. Sulphur (0) goes to $S^{2-}$ (–2) and to $S_2O_3^{2-}$ (average +2).\n2. Balanced equation: $S_8 + 12OH^- \\rightarrow 4S^{2-} + 2S_2O_3^{2-} + 6H_2O$.\n3. Check: S: 4 + 4 = 8; O: 12 = 6 + 6; H: 12 = 12; charge: –12 = –8 – 4.\n4. So a = 12.\nAnswer: 12",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_CHE_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2097,11 +2217,13 @@
     36
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Find the locus by taking the parametric point $(at^2, 2at)$ on $y^2 = 4ax$.\nSolution:\n1. Focus S = (a, 0), point P = $(at^2, 2at)$. Midpoint: $h = \\frac{a + at^2}{2}$, $k = at$.\n2. Eliminate t using $t = \\frac{k}{a}$: $2h = a + \\frac{k^2}{a} \\Rightarrow k^2 = 2a\\left(h - \\frac{a}{2}\\right)$.\n3. Locus: $y^2 = 2a\\left(x - \\frac{a}{2}\\right)$, a parabola with vertex $\\left(\\frac{a}{2}, 0\\right)$ and $4A = 2a$, i.e. $A = \\frac{a}{2}$.\n4. Directrix: $x = \\frac{a}{2} - \\frac{a}{2} = 0$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2130,11 +2252,13 @@
     36
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Count case-wise selections using combinations.\nSolution:\n1. With i Indians we need 2i foreigners, i ≥ 2 and 2i ≤ 8, so i = 2, 3 or 4.\n2. i = 2: $^6C_2\\cdot{}^8C_4 = 15\\times70 = 1050$.\n3. i = 3: $^6C_3\\cdot{}^8C_6 = 20\\times28 = 560$.\n4. i = 4: $^6C_4\\cdot{}^8C_8 = 15\\times1 = 15$.\n5. Total = 1050 + 560 + 15 = 1625.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2163,11 +2287,13 @@
     37
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A plane perpendicular to two planes has its normal along the cross product of their normals.\nSolution:\n1. $\\vec{n} = (3, 1, -2)\\times(2, -5, -1) = (-11, -1, -17)$, i.e. direction (11, 1, 17).\n2. Through (1, 2, –3): $11(x - 1) + (y - 2) + 17(z + 3) = 0$.\n3. $11x + y + 17z + 38 = 0$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2196,11 +2322,13 @@
     37
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Intercept form of a line, $\\frac{x}{a} + \\frac{y}{b} = 1$.\nSolution:\n1. Given $\\frac{1}{2}\\left(\\frac{1}{a} + \\frac{1}{b}\\right) = \\frac{1}{4}$, so $\\frac{1}{a} + \\frac{1}{b} = \\frac{1}{2}$.\n2. Multiply by 2: $\\frac{2}{a} + \\frac{2}{b} = 1$, so (2, 2) always lies on the line.\n3. (1, 1) gives $\\frac{1}{2} \\ne 1$, and (4, 4) gives $2 \\ne 1$, so they are not on the path.\n4. Only stone B is on the path.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2229,11 +2357,13 @@
     38
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A tautology is true for every truth assignment.\nSolution:\n1. $[A \\wedge (A \\rightarrow B)] \\rightarrow B$ is modus ponens. If the antecedent is true, A is true and A → B is true, so B is true; hence the implication is never false.\n2. The others fail: $A \\wedge (A \\vee B)$ and $A \\vee (A \\wedge B)$ both equal A (false when A is false); $B \\rightarrow [A \\wedge (A \\rightarrow B)]$ fails when B is true and A is false.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2262,11 +2392,13 @@
     38
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Compute the composite and test injectivity and surjectivity.\nSolution:\n1. $f(g(x)) = 2\\cdot\\frac{x - \\frac{1}{2}}{x - 1} - 1 = \\frac{2x - 1 - x + 1}{x - 1} = \\frac{x}{x - 1}$, for x ≠ 1.\n2. $\\frac{x}{x - 1} = 1 + \\frac{1}{x - 1}$ is strictly monotonic on each branch and never repeats a value, so it is one-one.\n3. It never takes the value 1, but the codomain is ℝ, so it is not onto.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2295,11 +2427,13 @@
     39
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Continuity of a product where one factor jumps and the other vanishes at the jump points.\nSolution:\n1. [x – 1] is discontinuous only at integers.\n2. At any integer n: $\\cos\\left(\\frac{(2n - 1)\\pi}{2}\\right) = 0$.\n3. Near n, [x – 1] is bounded (n – 2 or n – 1) and the cosine factor tends to 0, so both one-sided limits are 0 = f(n).\n4. So f is continuous at every real x.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2328,11 +2462,13 @@
     39
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Monotonicity from the sign of f'(x).\nSolution:\n1. $f'(x) = 2x^2 - x - 2\\cos x + 2\\cos x - (2x - 1)\\sin x = (2x - 1)(x - \\sin x)$.\n2. $x - \\sin x$ has the sign of x (it is > 0 for x > 0 and < 0 for x < 0).\n3. For x ≥ 1/2 both factors are ≥ 0, so f is increasing on $\\left[\\frac{1}{2}, \\infty\\right)$.\n4. On $\\left(0, \\frac{1}{2}\\right)$, f' < 0, so options (B) and (C) are wrong on part of their intervals; (D) is the opposite of the truth.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A08",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2361,11 +2497,13 @@
     39
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Find the point of intersection of a line and a plane by substituting the parametric form.\nSolution:\n1. A general point on the line: (3 + t, 4 + 2t, 5 + 2t).\n2. In the plane: 12 + 5t = 17, so t = 1, giving the point (4, 6, 7).\n3. Distance from (1, 1, 9): $\\sqrt{3^2 + 5^2 + (-2)^2} = \\sqrt{38}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2387,20 +2525,24 @@
    "chapter": "Definite Integration",
    "topic": "Limit with Leibniz rule",
    "difficulty": "Medium",
-   "notes": "",
+   "notes": "two-sided limit does not exist (left limit -2/3); key uses right-hand limit 2/3",
    "page_index": 39,
    "page_indices": [
     39,
     40
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The limit has the form 0/0, so use L'Hospital's rule with the Leibniz rule.\nSolution:\n1. Derivative of the numerator: $\\sin\\sqrt{x^2}\\cdot2x = 2x\\sin|x|$; derivative of the denominator: $3x^2$.\n2. As $x \\to 0^+$: $\\frac{2x\\sin x}{3x^2} \\to \\frac{2}{3}$.\n3. Note: as $x \\to 0^-$ the ratio tends to $-\\frac{2}{3}$, so strictly the two-sided limit does not exist. The official key takes $\\sqrt{x^2} = x$ (the right-hand limit), giving $\\frac{2}{3}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A10",
    "diagram_files": [],
    "text_recall": null,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: two-sided limit does not exist (left limit -2/3); key uses right-hand limit 2/3"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Mathematics",
@@ -2427,11 +2569,13 @@
     40
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Complementary angles of elevation: tan α · tan(90° – α) = 1.\nSolution:\n1. Heights h and 3h; the observer is 75 m from each foot.\n2. $\\tan\\alpha = \\frac{h}{75}$ and $\\tan(90^\\circ - \\alpha) = \\frac{3h}{75}$.\n3. Product = 1: $\\frac{3h^2}{75^2} = 1 \\Rightarrow h = \\frac{75}{\\sqrt{3}} = 25\\sqrt{3}$ m.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2460,11 +2604,13 @@
     41
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Find the tangent, its second intersection with the curve, then use the section formula.\nSolution:\n1. Tangent at $(t, t^3)$: $y - t^3 = 3t^2(x - t)$.\n2. With $y = x^3$: $x^3 - t^3 = 3t^2(x - t) \\Rightarrow (x - t)^2(x + 2t) = 0$, so Q = $(-2t, -8t^3)$.\n3. The point dividing PQ internally in 1 : 2 has ordinate $\\frac{2(t^3) + 1(-8t^3)}{3} = -2t^3$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2493,11 +2639,13 @@
     41
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Required area = area of the circle – area common to the circle and the parabola.\nSolution:\n1. Intersection: $x^2 + 9x = 36 \\Rightarrow x = 3$, $y = \\pm3\\sqrt{3}$.\n2. Common area $= 2\\left[\\int_0^3 3\\sqrt{x}\\,dx + \\int_3^6\\sqrt{36 - x^2}\\,dx\\right]$.\n3. $\\int_0^3 3\\sqrt{x}\\,dx = 2(3)^{3/2} = 6\\sqrt{3}$; $\\int_3^6\\sqrt{36 - x^2}\\,dx = 9\\pi - \\left(\\frac{9\\sqrt{3}}{2} + 3\\pi\\right) = 6\\pi - \\frac{9\\sqrt{3}}{2}$.\n4. Common area $= 2\\left(6\\pi + \\frac{3\\sqrt{3}}{2}\\right) = 12\\pi + 3\\sqrt{3}$.\n5. Outside the parabola: $36\\pi - (12\\pi + 3\\sqrt{3}) = 24\\pi - 3\\sqrt{3}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2526,11 +2674,13 @@
     42
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Substitute $u = \\sin x + \\cos x$, since $du = (\\cos x - \\sin x)dx$ and $u^2 = 1 + \\sin2x$.\nSolution:\n1. $8 - \\sin2x = 8 - (u^2 - 1) = 9 - u^2$.\n2. $\\int\\frac{du}{\\sqrt{9 - u^2}} = \\sin^{-1}\\frac{u}{3} + c = \\sin^{-1}\\left(\\frac{\\sin x + \\cos x}{3}\\right) + c$.\n3. So a = 1, b = 3.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2559,11 +2709,13 @@
     43
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Linear differential equation, solved by separating variables.\nSolution:\n1. $\\frac{dP}{dt} = 0.5(P - 900) \\Rightarrow P - 900 = (P_0 - 900)e^{t/2} = -50e^{t/2}$.\n2. P = 0 when $50e^{t/2} = 900$, i.e. $e^{t/2} = 18$.\n3. $t = 2\\log_e18$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2592,11 +2744,13 @@
     43
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\sum r\\,{}^nC_r x^{r-1} = n(1 + x)^{n-1}$, and the odd-index binomial coefficients add to $2^{n-1}$.\nSolution:\n1. $\\sum_{r=1}^{15}(-1)^r r\\,{}^{15}C_r = -15(1 - 1)^{14} = 0$.\n2. $^{14}C_1 + {}^{14}C_3 + \\ldots + {}^{14}C_{13} = 2^{13}$; the given sum stops at $^{14}C_{11}$, so subtract $^{14}C_{13} = 14$.\n3. Value $= 0 + 2^{13} - 14$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A16",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2625,11 +2779,13 @@
     44
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Binomial distribution with p = q = 1/2 for odd/even outcomes on a die.\nSolution:\n1. $^nC_2\\left(\\frac{1}{2}\\right)^n = {}^nC_3\\left(\\frac{1}{2}\\right)^n \\Rightarrow {}^nC_2 = {}^nC_3 \\Rightarrow n = 5$.\n2. P(odd number of odd outcomes) $= \\frac{{}^5C_1 + {}^5C_3 + {}^5C_5}{2^5} = \\frac{16}{32} = \\frac{1}{2}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2651,20 +2807,24 @@
    "chapter": "Quadratic Equations",
    "topic": "Symmetric functions of roots",
    "difficulty": "Easy",
-   "notes": "",
+   "notes": "data inconsistent: positive p, q with p+q=2 cannot give p^4+q^4=272; key takes pq=16",
    "page_index": 43,
    "page_indices": [
     43,
     44
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Express $p^4 + q^4$ in terms of s = pq and p + q.\nSolution:\n1. $p^2 + q^2 = 4 - 2s$ and $p^4 + q^4 = (p^2 + q^2)^2 - 2s^2 = 2s^2 - 16s + 16$.\n2. $2s^2 - 16s + 16 = 272 \\Rightarrow s^2 - 8s - 128 = 0 \\Rightarrow s = 16$ or $s = -8$.\n3. With s = pq = 16 (the positive value taken by the key), the equation is $x^2 - 2x + 16 = 0$.\nNote: the data are inconsistent: no two positive reals can have sum 2 and $p^4 + q^4 = 272$ (s = 16 gives complex roots). The official key is (D).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A18",
    "diagram_files": [],
    "text_recall": 1.0,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: data inconsistent: positive p, q with p+q=2 cannot give p^4+q^4=272; key takes pq=16"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Mathematics",
@@ -2691,11 +2851,13 @@
     45
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Sum of an infinite GP, then solve the exponential equation.\nSolution:\n1. $\\cos^2x + \\cos^4x + \\ldots = \\frac{\\cos^2x}{1 - \\cos^2x} = \\cot^2x$, so the expression is $2^{\\cot^2x}$.\n2. The roots of $t^2 - 9t + 8 = 0$ are 1 and 8. For $0 < x < \\frac{\\pi}{2}$, $\\cot^2x > 0$, so $2^{\\cot^2x} = 8$ and $\\cot^2x = 3$, i.e. $x = \\frac{\\pi}{6}$.\n3. $\\frac{2\\sin x}{\\sin x + \\sqrt{3}\\cos x} = \\frac{2(1/2)}{1/2 + 3/2} = \\frac{1}{2}$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2724,11 +2886,13 @@
     45
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A linear system is inconsistent when the determinant is 0 and the equations contradict each other.\nSolution:\n1. $\\Delta = \\begin{vmatrix} 3 & -2 & -k \\\\ 2 & -4 & -2 \\\\ 1 & 2 & -1 \\end{vmatrix} = 24 - 8k$, which is 0 when k = 3.\n2. With k = 3, the coefficients of equation 1 equal equation 2 + equation 3: (3, –2, –3) = (2, –4, –2) + (1, 2, –1).\n3. The system is consistent only if 10 = 6 + 5m, i.e. $m = \\frac{4}{5}$.\n4. So it is inconsistent when k = 3 and $m \\ne \\frac{4}{5}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_A20",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2752,11 +2916,13 @@
     46
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $PQ = kI \\Rightarrow Q = kP^{-1} = \\frac{k}{|P|}\\text{adj}P$ and $|Q| = \\frac{k^3}{|P|}$.\nSolution:\n1. $|P| = 12\\alpha + 20$.\n2. $|Q| = \\frac{k^3}{|P|} = \\frac{k^2}{2} \\Rightarrow |P| = 2k$.\n3. $q_{23} = \\frac{k\\,C_{32}}{|P|}$ where the cofactor $C_{32} = -(3\\alpha + 4)$: $\\frac{-k(3\\alpha + 4)}{2k} = -\\frac{k}{8} \\Rightarrow 3\\alpha + 4 = \\frac{k}{4}$.\n4. From step 2: $12\\alpha + 20 = 2k$. Solving: α = –1, k = 4.\n5. $\\alpha^2 + k^2 = 1 + 16 = 17$.\nAnswer: 17",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2780,11 +2946,13 @@
     47
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For independent events, use the odds $\\frac{P(B_i)}{1 - P(B_i)}$.\nSolution:\n1. Let $x = P(B_1)$, $y = P(B_2)$, $z = P(B_3)$. Then $\\frac{\\alpha}{p} = \\frac{x}{1 - x}$, $\\frac{\\beta}{p} = \\frac{y}{1 - y}$, $\\frac{\\gamma}{p} = \\frac{z}{1 - z}$.\n2. Dividing $(\\alpha - 2\\beta)p = \\alpha\\beta$ by $\\alpha\\beta$: $\\frac{p}{\\beta} - \\frac{2p}{\\alpha} = 1 \\Rightarrow \\left(\\frac{1}{y} - 1\\right) - 2\\left(\\frac{1}{x} - 1\\right) = 1 \\Rightarrow \\frac{1}{y} = \\frac{2}{x}$.\n3. Similarly $(\\beta - 3\\gamma)p = 2\\beta\\gamma$ gives $\\left(\\frac{1}{z} - 1\\right) - 3\\left(\\frac{1}{y} - 1\\right) = 2 \\Rightarrow \\frac{1}{z} = \\frac{3}{y} = \\frac{6}{x}$.\n4. $\\frac{P(B_1)}{P(B_3)} = \\frac{x}{z} = 6$.\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2808,11 +2976,13 @@
     47
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Minimise $f(s) = \\frac{4}{s} + \\frac{1}{1 - s}$ for s = sin x in (0, 1).\nSolution:\n1. By the Cauchy–Schwarz (Titu) inequality: $\\frac{2^2}{s} + \\frac{1^2}{1 - s} \\ge \\frac{(2 + 1)^2}{s + (1 - s)} = 9$.\n2. Equality when $\\frac{2}{s} = \\frac{1}{1 - s}$, i.e. $s = \\frac{2}{3}$, which is possible in (0, 1).\n3. The equation has a solution for α ≥ 9, so the minimum α is 9.\nAnswer: 9",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2836,11 +3006,13 @@
     48
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The perpendicular from a circle's centre to a chord bisects the chord.\nSolution:\n1. Given circle: centre (1, 3), radius $\\sqrt{1 + 9 - 6} = 2$. Its diameter is a chord of C with midpoint (1, 3).\n2. Distance from C's centre (2, 1) to (1, 3): $\\sqrt{1 + 4} = \\sqrt{5}$.\n3. $R^2 = 2^2 + (\\sqrt{5})^2 = 9$, so R = 3.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2864,11 +3036,13 @@
     49
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Telescoping inverse tangents: $\\tan^{-1}\\frac{1}{1 + r(r + 1)} = \\tan^{-1}(r + 1) - \\tan^{-1}r$.\nSolution:\n1. $\\sum_{r=1}^{n} = \\tan^{-1}(n + 1) - \\tan^{-1}1$.\n2. As n → ∞: $\\frac{\\pi}{2} - \\frac{\\pi}{4} = \\frac{\\pi}{4}$.\n3. $\\tan\\frac{\\pi}{4} = 1$.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B05",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2892,11 +3066,13 @@
     49
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Use the given integral to find a, then integrate x + [x] piecewise.\nSolution:\n1. $\\int_{-a}^{a}|x|\\,dx = a^2$; $\\int_{-a}^{a}|x - 2|\\,dx = \\frac{(a + 2)^2 + (a - 2)^2}{2} = a^2 + 4$ (for a > 2).\n2. $2a^2 + 4 = 22 \\Rightarrow a = 3$.\n3. $\\int_{-3}^{3}x\\,dx = 0$ and $\\int_{-3}^{3}[x]\\,dx = -3 - 2 - 1 + 0 + 1 + 2 = -3$.\n4. $\\int_{3}^{-3}(x + [x])\\,dx = -(-3) = 3$.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2920,11 +3096,13 @@
     49
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A vector coplanar with $\\vec{a}$ and $\\vec{b}$ can be written as $\\vec{c} = \\lambda\\vec{a} + \\mu\\vec{b}$.\nSolution:\n1. $\\vec{a}\\cdot\\vec{b} = -1$, $|\\vec{a}|^2 = 3$, $|\\vec{b}|^2 = 5$.\n2. $\\vec{b}\\cdot\\vec{c} = 0$: $-\\lambda + 5\\mu = 0 \\Rightarrow \\lambda = 5\\mu$.\n3. $\\vec{a}\\cdot\\vec{c} = 7$: $3\\lambda - \\mu = 7 \\Rightarrow 14\\mu = 7$, so $\\mu = \\frac{1}{2}$, $\\lambda = \\frac{5}{2}$.\n4. $\\vec{c} = \\left(-\\frac{3}{2}, \\frac{5}{2}, 3\\right)$, and $\\vec{a} + \\vec{b} + \\vec{c} = \\left(-\\frac{1}{2}, \\frac{7}{2}, 5\\right)$.\n5. $|\\vec{a} + \\vec{b} + \\vec{c}|^2 = \\frac{1}{4} + \\frac{49}{4} + 25 = \\frac{75}{2}$, so twice it is 75.\nAnswer: 75",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2948,11 +3126,13 @@
     50
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Sum of an arithmetic progression.\nSolution:\n1. A ∩ B: 101, 110, ..., 992 → 100 terms, sum $= \\frac{100(101 + 992)}{2} = 54650$.\n2. Required sum $274\\times400 = 109600$, so A ∩ C must add $109600 - 54650 = 54950$ (C is disjoint from B when ℓ ≠ 2).\n3. For ℓ = 5: 104, 113, ..., 995 → 100 terms, sum $= \\frac{100(104 + 995)}{2} = 54950$. ✓\n4. So ℓ = 5.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2969,20 +3149,24 @@
    "chapter": "Complex Numbers",
    "topic": "Complex equation with modulus",
    "difficulty": "Hard",
-   "notes": "",
+   "notes": "key uses discriminant method; exact range of alpha is [-sqrt5/2, 1), no largest value",
    "page_index": 50,
    "page_indices": [
     50,
     51
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Separate real and imaginary parts of the complex equation.\nSolution:\n1. With z = x + iy: the imaginary part gives y = –2; the real part gives $x + \\alpha\\sqrt{(x - 1)^2 + 4} = 0$.\n2. Squaring: $\\alpha^2[(x - 1)^2 + 4] = x^2 \\Rightarrow (\\alpha^2 - 1)x^2 - 2\\alpha^2x + 5\\alpha^2 = 0$.\n3. Real x requires discriminant ≥ 0: $4\\alpha^4 - 20\\alpha^2(\\alpha^2 - 1) \\ge 0 \\Rightarrow \\alpha^2 \\le \\frac{5}{4}$.\n4. Taking $p = -\\frac{\\sqrt{5}}{2}$ and $q = \\frac{\\sqrt{5}}{2}$: $4(p^2 + q^2) = 4\\left(\\frac{5}{4} + \\frac{5}{4}\\right) = 10$.\nNote: squaring admits one extraneous value. Directly, $\\alpha = \\frac{-x}{\\sqrt{(x - 1)^2 + 4}}$ ranges over $\\left[-\\frac{\\sqrt{5}}{2}, 1\\right)$, so strictly no largest value exists. The official answer uses the discriminant method above.\nAnswer: 10",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B09",
    "diagram_files": [],
    "text_recall": 1.0,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: key uses discriminant method; exact range of alpha is [-sqrt5/2, 1), no largest value"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Mathematics",
@@ -3004,11 +3188,13 @@
     51
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The trace of $M^TM$ equals the sum of the squares of all entries of M.\nSolution:\n1. Entries are 0, 1, 2 with squares 0, 1, 4; we need nine squares adding to 7.\n2. Case 1: one entry 2 and three entries 1: $9\\times{}^8C_3 = 9\\times56 = 504$.\n3. Case 2: seven entries 1 and two entries 0: $^9C_7 = 36$.\n4. Total = 504 + 36 = 540.\nAnswer: 540",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-24_M_MAT_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   }

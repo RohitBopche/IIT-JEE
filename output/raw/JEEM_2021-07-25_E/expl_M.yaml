@@ -1,0 +1,176 @@
+M A 1: |-
+  Concept: Even n gives $\frac{n}{2}$; odd n gives $\left[-\frac{n}{2}\right] = -\frac{n + 1}{2}$.
+  Solution:
+  1. Pairs (8, 9), (10, 11), …, (98, 99): each contributes $-1$, and there are 46 pairs, giving $-46$.
+  2. Add $n = 100$: $+50$. Sum $= 4$.
+  Answer: (A)
+M A 2: |-
+  Concept: The circulant determinant equals $(s - c)^2(s + 2c)$ with $s = \sin x$, $c = \cos x$.
+  Solution:
+  1. $s = c \Rightarrow x = \frac{\pi}{4}$; $s = -2c \Rightarrow \tan x = -2$, which is not in $\left[-\frac{\pi}{4}, \frac{\pi}{4}\right]$.
+  2. One root.
+  Answer: (C)
+M A 3: |-
+  Concept: Coplanar means the determinant is zero.
+  Solution:
+  1. $\begin{vmatrix}a&a&c\\1&0&1\\c&c&b\end{vmatrix} = c^2 - ab = 0$.
+  2. $c = \sqrt{ab}$ (c > 0).
+  Answer: (D)
+M A 4: |-
+  Concept: A circle on BC (between the tangents at the vertices) as diameter passes through the foci.
+  Solution:
+  1. Tangent at $(2\cos\theta, \sin\theta)$ meets $x = \pm2$ at $y_1 = \frac{1 - \cos\theta}{\sin\theta}$ and $y_2 = \frac{1 + \cos\theta}{\sin\theta}$, with $y_1y_2 = 1$.
+  2. Circle: $(x^2 - 4) + (y - y_1)(y - y_2) = 0$; at $(\pm\sqrt3, 0)$: $-1 + 1 = 0$ ✓.
+  Answer: (C)
+M A 5: |-
+  Concept: $P = I + N$ with $N^2 = 0$.
+  Solution:
+  1. $P^{50} = I + 50N = \begin{bmatrix}1&0\\25&1\end{bmatrix}$.
+  Answer: (A)
+M A 6: |-
+  Concept: $T_{r+1} = \binom{12}{r}2^{\frac{12 - r}{3}}3^{\frac{r}{4}}$ is rational iff $3 \mid (12 - r)$ and $4 \mid r$.
+  Solution:
+  1. $r = 0$: $2^4 = 16$; $r = 12$: $3^3 = 27$.
+  2. Sum $= 43$.
+  Answer: (D)
+M A 7: |-
+  Concept: Bisectors of $ax^2 + 2hxy + by^2 = 0$: $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+  Solution:
+  1. $a = 1$, $h = -2$, $b = -5$: $\frac{x^2 - y^2}{6} = \frac{xy}{-2} \Rightarrow x^2 + 3xy - y^2 = 0$.
+  Answer: (B)
+M A 8: |-
+  Concept: Treat as a quadratic in |x|.
+  Solution:
+  1. $|x|^2 - |x| - 12 = 0 \Rightarrow |x| = 4$ (−3 is rejected).
+  2. $x = \pm4$: 2 solutions.
+  Answer: (D)
+M A 9: |-
+  Concept: $\left(1 + \frac{1}{n}\right)^n$ increases towards e ≈ 2.718.
+  Solution:
+  1. The value lies in (2, e), so the smallest integer greater than it is 3.
+  Answer: (A)
+M A 10: |-
+  Concept: $|\vec a\times\vec b|^2 + (\vec a\cdot\vec b)^2 = |\vec a|^2|\vec b|^2$.
+  Solution:
+  1. $(\vec a\cdot\vec b)^2 = 100 - 64 = 36 \Rightarrow |\vec a\cdot\vec b| = 6$.
+  Answer: (C)
+M A 11: |-
+  Concept: $\cot\frac{\theta}{2} = \frac{1 + \cos\theta}{\sin\theta}$ with $\theta = 15°$.
+  Solution:
+  1. $\cos15° = \frac{\sqrt6 + \sqrt2}{4}$ and $\sin15° = \frac{\sqrt6 - \sqrt2}{4}$.
+  2. $\cot7.5° = \frac{4 + \sqrt6 + \sqrt2}{\sqrt6 - \sqrt2}$; rationalising gives $\sqrt2 + \sqrt3 + 2 + \sqrt6$.
+  Answer: (A)
+M A 12: |-
+  Concept: $E(X) = \sum jP(j)$.
+  Solution:
+  1. Mean $= \sum_{j\ge1}\frac{j}{3^j} = \frac{1/3}{(2/3)^2} = \frac{3}{4}$.
+  2. $P(\text{positive even}) = \sum_{k\ge1}\frac{1}{9^k} = \frac{1}{8}$.
+  Answer: (C)
+M A 13: |-
+  Concept: $(gof)^{-1}$ exists iff gof is bijective.
+  Solution:
+  1. gof one-one forces f one-one; gof onto forces g onto.
+  Answer: (C)
+M A 14: |-
+  Concept: Combine groups using $\sum x^2 = n(\sigma^2 + \bar x^2)$.
+  Solution:
+  1. Second sample: $n = 150$, mean $= \frac{250\times15.6 - 1500}{150} = 16$.
+  2. $\sum x^2$: total $250(13.44 + 243.36) = 64200$; first $100(9 + 225) = 23400$; second $40800$.
+  3. $\sigma_2^2 = \frac{40800}{150} - 256 = 16$, so $\sigma_2 = 4$.
+  Answer: (A)
+M A 15: |-
+  Concept: $x\,dy - y\,dx = x^2d\left(\frac{y}{x}\right)$.
+  Solution:
+  1. $\left(\frac{y}{x}\right)' = x\cos x \Rightarrow \frac{y}{x} = x\sin x + \cos x + C$; $y(\pi) = 0 \Rightarrow C = 1$.
+  2. $y\left(\frac{\pi}{2}\right) = \frac{\pi}{2}\left(\frac{\pi}{2} + 1\right) = \frac{\pi^2}{4} + \frac{\pi}{2}$.
+  Answer: (B)
+M A 16: |-
+  Concept: $\ln(x + \sqrt{x^2 + 1})$ is odd.
+  Solution:
+  1. The integral over the symmetric interval [−1, 1] is 0.
+  Answer: (D)
+M A 17: |-
+  Concept: The constant term is the middle term $\binom{10}{5}(a\sin\alpha\cos\alpha)^5$.
+  Solution:
+  1. Its maximum is $\binom{10}{5}\left(\frac{a}{2}\right)^5$ (at $\sin2\alpha = 1$).
+  2. $\left(\frac{a}{2}\right)^5 = 1 \Rightarrow a = 2$.
+  Answer: (B)
+M A 18: |-
+  Concept: Evaluate the integral piecewise and compare at x = 2.
+  Solution:
+  1. For $x > 2$: $f = \int_0^1(6 - t)dt + \int_1^x(4 + t)dt = \frac{x^2}{2} + 4x + 1$, so $f(2^+) = 11 = f(2)$: continuous.
+  2. Derivatives: right $x + 4 = 6$, left 5, so f is not differentiable at 2.
+  Answer: (C)
+M A 19: |-
+  Concept: ${}^nP_{r+1} = {}^nP_r(n - r)$; ${}^nC_r = {}^nC_{r-1} \Rightarrow n = 2r - 1$.
+  Solution:
+  1. $n - r = 1$ and $n = 2r - 1$, so $r = 2$.
+  Answer: (D)
+M A 20: |-
+  Concept: "p only if q" means $p \Rightarrow q$; its negation is $p\wedge\sim q$.
+  Solution:
+  1. $\sim q$ = weather not good or ground wet.
+  2. Negation: "The match will be played and (weather is not good or ground is wet)".
+  Answer: (D)
+M B 1: |-
+  Concept: Continuity at 2 with $\sin(x - 2) \to 0$ needs $P(2) = 0$ and $P'(2) = 7$.
+  Solution:
+  1. P is quadratic: $P = a(x - 2)^2 + 7(x - 2)$.
+  2. $P(3) = a + 7 = 9 \Rightarrow a = 2$.
+  3. $P(5) = 18 + 21 = 39$.
+  Answer: 39
+M B 2: |-
+  Concept: Newton's identities.
+  Solution:
+  1. $p_2 = 1 - 4 = -3$; $p_3 = p_2 - 2p_1 + 3\cdot3 = 4$.
+  2. $p_4 = e_1p_3 - e_2p_2 + e_3p_1 = 4 + 6 + 3 = 13$.
+  Answer: 13
+M B 3: |-
+  Concept: Ratio of consecutive coefficients.
+  Solution:
+  1. $\binom{n}{7}2^{n-7}3^{-7} = \binom{n}{8}2^{n-8}3^{-8} \Rightarrow \frac{n - 7}{8} = 6$.
+  2. $n = 55$.
+  Answer: 55
+M B 4: |-
+  Concept: Coplanar lines: $(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2) = 0$.
+  Solution:
+  1. $\begin{vmatrix}k+1&4&6\\1&2&3\\3&2&1\end{vmatrix} = -4(k + 1) + 32 - 24 = 4 - 4k = 0$.
+  2. $k = 1$.
+  Answer: 1
+M B 5: |-
+  Concept: Rectangle of height y in a triangle of height h has width $s\left(1 - \frac{y}{h}\right)$.
+  Solution:
+  1. Area $= sy\left(1 - \frac{y}{h}\right)$, maximum at $y = \frac{h}{2}$: $A_{max} = \frac{sh}{4}$.
+  2. $s = 2\sqrt2$, $h = \sqrt6$: $A_{max} = \frac{2\sqrt2\cdot\sqrt6}{4} = \sqrt3$, so the square is 3.
+  Answer: 3
+M B 6: |-
+  Concept: Two dot-product equations in $a^2$, $b^2$ and $\vec a\cdot\vec b$.
+  Solution:
+  1. $7a^2 + 16\,\vec a\cdot\vec b - 15b^2 = 0$ and $7a^2 - 30\,\vec a\cdot\vec b + 8b^2 = 0$.
+  2. Subtracting: $\vec a\cdot\vec b = \frac{b^2}{2}$, and then $a^2 = b^2$.
+  3. $\cos\theta = \frac{1}{2}$, so $\theta = 60°$.
+  Answer: 60
+M B 7: |-
+  Concept: $\sum(2r + 1)\binom{n}{r} = 2n2^{n-1} + 2^n = 2^n(n + 1)$.
+  Solution:
+  1. $2^n(n + 1) = 2^{100}\cdot101 \Rightarrow n = 100$.
+  2. $2\left[\frac{99}{2}\right] = 98$.
+  Answer: 98
+M B 8: |-
+  Concept: $P(\text{at least one head}) = 1 - 2^{-n}$.
+  Solution:
+  1. $1 - 2^{-n} \ge 0.9 \Rightarrow 2^n \ge 10 \Rightarrow n = 4$.
+  Answer: 4
+M B 9: |-
+  Concept: Separable DE.
+  Solution:
+  1. $\frac{dy}{y} = \frac{2\,dx}{x\ln x} \Rightarrow y = k(\ln x)^2$.
+  2. Through $(2, (\ln2)^2)$: $k = 1$, so $f(e) = 1$.
+  Answer: 1
+M B 10: |-
+  Concept: Convert to Cartesian form.
+  Solution:
+  1. $x^2 - y^2 + 2y^2 + 2x = 0 \Rightarrow x^2 + y^2 + 2x = 0$, centre (−1, 0).
+  2. $y = (x - 3)^2 + 4$ has vertex (3, 4).
+  3. The line through them is $y = x + 1$, with y-intercept 1.
+  Answer: 1

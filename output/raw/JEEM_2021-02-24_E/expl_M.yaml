@@ -1,0 +1,215 @@
+M A 1: |-
+  Concept: For the image P' of P in a line: the midpoint of PP' lies on the line, and PP' is perpendicular to the line.
+  Solution:
+  1. Midpoint $M = \left(\frac{a + 20}{2}, \frac{6 + b}{2}, -\frac{a}{2}\right)$ must equal (3 + 7t, 2 + 5t, 1 – 9t) for some t.
+  2. $PP' = (20 - a, b - 6, -a - 18)$ is perpendicular to (7, 5, –9): $7(20 - a) + 5(b - 6) + 9(a + 18) = 0 \Rightarrow 2a + 5b + 272 = 0$.
+  3. Solving with the midpoint conditions: t = –3, a = –56, b = –32 (check: M = (–18, –13, 28) is on the line).
+  4. |a + b| = |–88| = 88.
+  Answer: (B)
+M A 2: |-
+  Concept: The determinant condition $ff'' - (f')^2 = 0$ means $\left(\frac{f'}{f}\right)' = 0$.
+  Solution:
+  1. $\frac{f'}{f}$ is constant $= \frac{f'(0)}{f(0)} = 2$.
+  2. $\ln f = 2x + c$, and f(0) = 1 gives $f(x) = e^{2x}$.
+  3. $f(1) = e^2 \approx 7.39$, which lies in (6, 9).
+  Answer: (B)
+M A 3: |-
+  Concept: Use half-angle formulas twice.
+  Solution:
+  1. Let $\theta = \sin^{-1}\frac{\sqrt{63}}{8}$; then $\cos\theta = \frac{1}{8}$.
+  2. $\cos\frac{\theta}{2} = \sqrt{\frac{1 + 1/8}{2}} = \frac{3}{4}$.
+  3. $\tan\frac{\theta}{4} = \sqrt{\frac{1 - \cos(\theta/2)}{1 + \cos(\theta/2)}} = \sqrt{\frac{1/4}{7/4}} = \frac{1}{\sqrt{7}}$.
+  Answer: (B)
+M A 4: |-
+  Concept: Count element by element: each element can be in both subsets, only the first, only the second, or neither (4 ways).
+  Solution:
+  1. Total ordered pairs of subsets: $4^5 = 1024$.
+  2. Choose the 2 elements in the intersection ($^5C_2 = 10$); each of the other 3 elements has 3 choices (not both): $3^3 = 27$.
+  3. Favourable = 270, so the probability is $\frac{270}{1024} = \frac{135}{2^9}$.
+  Answer: (B)
+M A 5: |-
+  Concept: A plane through the intersection of two planes: $\vec{r}\cdot(\vec{n}_1 + \lambda\vec{n}_2) = d_1 + \lambda d_2$.
+  Solution:
+  1. $\vec{r}\cdot[(1 + \lambda)\hat{i} + (1 - 2\lambda)\hat{j} + \hat{k}] = 1 - 2\lambda$.
+  2. Through (1, 0, 2): $1 + \lambda + 2 = 1 - 2\lambda \Rightarrow \lambda = -\frac{2}{3}$.
+  3. Normal $= \frac{1}{3}\hat{i} + \frac{7}{3}\hat{j} + \hat{k}$, right side $= \frac{7}{3}$. Multiplying by 3: $\vec{r}\cdot(\hat{i} + 7\hat{j} + 3\hat{k}) = 7$.
+  Answer: (B)
+M A 6: |-
+  Concept: The point of a curve closest to a line (that does not meet it) is where the tangent is parallel to the line.
+  Solution:
+  1. $\frac{dy}{dx} = 2x = 4$ (the slope of y = 4x – 1), so x = 2.
+  2. y = 4 + 4 = 8, so P = (2, 8).
+  Answer: (D)
+M A 7: |-
+  Concept: Use the centroid to find a, b, c, then symmetric functions of the roots.
+  Solution:
+  1. Centroid x: $\frac{2a + 2}{3} = \frac{10}{3} \Rightarrow a = 4$.
+  2. Centroid y: $\frac{c + 2b}{3} = \frac{7}{3}$, and AP gives c = 2b – a = 2b – 4, so 4b – 4 = 7 and $b = \frac{11}{4}$, $c = \frac{3}{2}$.
+  3. $4x^2 + \frac{11}{4}x + 1 = 0$: $\alpha + \beta = -\frac{11}{16}$, $\alpha\beta = \frac{1}{4}$.
+  4. $\alpha^2 + \beta^2 - \alpha\beta = (\alpha + \beta)^2 - 3\alpha\beta = \frac{121}{256} - \frac{192}{256} = -\frac{71}{256}$.
+  Answer: (D)
+M A 8: |-
+  Concept: Split the integral where the integrand crosses integer values.
+  Solution:
+  1. $[x^2 - 2x - 2] = [(x - 1)^2] - 3$. Put u = x – 1, with u from 0 to 2.
+  2. $\int_0^2[u^2]du = 0(1) + 1(\sqrt{2} - 1) + 2(\sqrt{3} - \sqrt{2}) + 3(2 - \sqrt{3}) = 5 - \sqrt{2} - \sqrt{3}$.
+  3. Subtract $\int_0^2 3\,du = 6$: result $= -1 - \sqrt{2} - \sqrt{3}$.
+  Answer: (C)
+M A 9: |-
+  Concept: f is increasing where f'(x) > 0.
+  Solution:
+  1. x < –5: f' = –55 < 0, decreasing.
+  2. –5 < x < 4: $f' = 6x^2 - 6x - 120 = 6(x - 5)(x + 4)$, positive only for x < –4, so increasing on (–5, –4).
+  3. x > 4: $f' = 6x^2 - 6x - 36 = 6(x - 3)(x + 2) > 0$, increasing on (4, ∞).
+  4. A = (–5, –4) ∪ (4, ∞).
+  Answer: (A)
+M A 10: |-
+  Concept: Use the conditions at the origin and at (1, 2).
+  Solution:
+  1. The tangent at the origin means the curve passes through (0, 0): c = 0.
+  2. Slope at the origin: y'(0) = b = 1.
+  3. Through (1, 2): a + b + c = 2, so a = 1.
+  Answer: (A)
+M A 11: |-
+  Concept: De Morgan's laws in logic.
+  Solution:
+  1. $\sim[\sim p \wedge (p \vee q)] = p \vee \sim(p \vee q) = p \vee (\sim p \wedge \sim q)$.
+  2. By distribution: $(p \vee \sim p) \wedge (p \vee \sim q) = T \wedge (p \vee \sim q) = p \vee \sim q$.
+  Answer: (D)
+M A 12: |-
+  Concept: Cramer's rule: unique solution when Δ ≠ 0; when Δ = 0, check consistency.
+  Solution:
+  1. $\Delta = \begin{vmatrix} 1 & -2 & 0 \\ 1 & -1 & k \\ 0 & k & 4 \end{vmatrix} = 4 - k^2$, so there is a unique solution for k ≠ ±2: statement (A) is true.
+  2. k = 2: equation 2 – equation 1 gives y + 2z = –3, while equation 3 gives y + 2z = 3. Contradiction, so no solution: (D) is true.
+  3. (B) and (C) are false (Δ = 0 there); (E) is false because for k ≠ ±2 the solution is unique.
+  Answer: (C)
+M A 13: |-
+  Concept: Tangent to $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ at $(x_1, y_1)$: $\frac{xx_1}{a^2} + \frac{yy_1}{b^2} = 1$.
+  Solution:
+  1. The point lies on $x^2 + 9y^2 = 9$: $\frac{27}{4} + \frac{9}{4} = 9$. ✓
+  2. Tangent: $\frac{3\sqrt{3}}{2}x + \frac{9}{2}y = 9$. Multiply by $\frac{2}{3\sqrt{3}}$: $x + \sqrt{3}y = 2\sqrt{3}$. ✓
+  Answer: (A)
+M A 14: |-
+  Concept: Heights and distances with a constant height h.
+  Solution:
+  1. Distance flown: 432 km/h = 120 m/s, and 120 × 20 = 2400 m.
+  2. $h\cot30^\circ - h\cot60^\circ = 2400 \Rightarrow h\left(\sqrt{3} - \frac{1}{\sqrt{3}}\right) = 2400 \Rightarrow h\cdot\frac{2}{\sqrt{3}} = 2400$.
+  3. $h = 1200\sqrt{3}$ m.
+  Answer: (A)
+M A 15: |-
+  Concept: Standard valid argument forms are tautologies.
+  Solution:
+  1. (a) $[\sim q \wedge (p \rightarrow q)] \rightarrow \sim p$ is modus tollens: if p were true, q would be true, contradicting ~q. Always true.
+  2. (b) $[(p \vee q) \wedge \sim p] \rightarrow q$ is disjunctive syllogism: if p is false and p ∨ q is true, q must be true. Always true.
+  3. Both are tautologies.
+  Answer: (C)
+M A 16: |-
+  Concept: A homogeneous system MX = O has infinitely many solutions when |M| = 0; every odd-order skew-symmetric matrix has determinant 0.
+  Solution:
+  1. $A^2$ is symmetric, and $B^2$ is symmetric because $(B^2)^T = (B^T)^2 = (-B)^2 = B^2$.
+  2. $(A^2B^2)^T = B^2A^2$, so $M = A^2B^2 - B^2A^2$ satisfies $M^T = -M$: M is skew-symmetric.
+  3. M is 3 × 3 skew-symmetric, so |M| = 0 and the system has infinitely many solutions.
+  Answer: (C)
+M A 17: |-
+  Concept: Hockey-stick identity: $\sum_{r=2}^{n}{}^rC_2 = {}^{n+1}C_3$.
+  Solution:
+  1. Sum $= {}^{n+1}C_2 + 2\,{}^{n+1}C_3 = \frac{(n + 1)n}{2} + \frac{(n + 1)n(n - 1)}{3}$.
+  2. $= \frac{n(n + 1)}{6}[3 + 2(n - 1)] = \frac{n(n + 1)(2n + 1)}{6}$ (this is $\sum k^2$).
+  Answer: (C)
+M A 18: |-
+  Concept: $x\frac{dy}{dx} + y = \frac{d}{dx}(xy)$.
+  Solution:
+  1. $(xy)' = bx^4 \Rightarrow xy = \frac{bx^5}{5} + C$. From y(1) = 2: $C = 2 - \frac{b}{5}$.
+  2. $f(x) = \frac{bx^4}{5} + \frac{2 - b/5}{x}$.
+  3. $\int_1^2 f\,dx = \frac{b}{25}(32 - 1) + \left(2 - \frac{b}{5}\right)\ln2 = \frac{31b}{25} + \left(2 - \frac{b}{5}\right)\ln2$.
+  4. For this to equal $\frac{62}{5}$ (no ln 2 term), $2 - \frac{b}{5} = 0$, so b = 10; check: $\frac{31\times10}{25} = \frac{62}{5}$. ✓
+  Answer: (D)
+M A 19: |-
+  Concept: Area between two curves = ∫(upper – lower) dx.
+  Solution:
+  1. Intersection: $5x^2 = 2x^2 + 9 \Rightarrow x = \pm\sqrt{3}$.
+  2. Area $= \int_{-\sqrt{3}}^{\sqrt{3}}(9 - 3x^2)\,dx = 2[9x - x^3]_0^{\sqrt{3}} = 2(9\sqrt{3} - 3\sqrt{3}) = 12\sqrt{3}$.
+  Answer: (B)
+M A 20: |-
+  Concept: Integrate the functional relation, then use the property $\int_0^2 f(x)dx = \int_0^2 f(2 - x)dx$.
+  Solution:
+  1. $f'(x) = f'(2 - x)$ integrates to $f(x) = -f(2 - x) + C$, i.e. $f(x) + f(2 - x) = C$.
+  2. At x = 0: $1 + e^2 = C$.
+  3. $2I = \int_0^2[f(x) + f(2 - x)]dx = 2C$, so $I = C = 1 + e^2$.
+  Answer: (A)
+M B 1: |-
+  Concept: Remove the modulus by splitting into cases.
+  Solution:
+  1. x ≤ 5: $(x + 1)^2 + 5 - x = \frac{27}{4} \Rightarrow x^2 + x - \frac{3}{4} = 0 \Rightarrow x = \frac{1}{2}$ or $-\frac{3}{2}$, both ≤ 5.
+  2. x > 5: $(x + 1)^2 + x - 5 = \frac{27}{4}$; the left side is already more than 36 at x = 5, so there is no root.
+  3. Number of real roots = 2.
+  Answer: 2
+M B 2: |-
+  Concept: Distribute distinct students into labelled groups, fixing group C's size first.
+  Solution:
+  1. C has c = 1, 2 or 3 students; the remaining 10 – c students go into A and B with neither empty: $2^{10-c} - 2$ ways.
+  2. c = 1: $10\times(2^9 - 2) = 5100$.
+  3. c = 2: $45\times(2^8 - 2) = 11430$.
+  4. c = 3: $120\times(2^7 - 2) = 15120$.
+  5. Total = 31650.
+  Answer: 31650
+M B 3: |-
+  Concept: Replace x by 1/x to get a second equation, then add.
+  Solution:
+  1. $af(x) + \alpha f\left(\frac{1}{x}\right) = bx + \frac{\beta}{x}$ and $af\left(\frac{1}{x}\right) + \alpha f(x) = \frac{b}{x} + \beta x$.
+  2. Adding: $(a + \alpha)\left[f(x) + f\left(\frac{1}{x}\right)\right] = (b + \beta)\left(x + \frac{1}{x}\right)$.
+  3. Ratio $= \frac{b + \beta}{a + \alpha} = \frac{2}{1} = 2$.
+  Answer: 2
+M B 4: |-
+  Concept: Variance $= \frac{\sum x^2}{n} - \bar{x}^2$.
+  Solution:
+  1. $\sigma^2 = \frac{9 + k^2}{10} - \left(\frac{9 + k}{10}\right)^2 = \frac{9(k - 1)^2}{100}$.
+  2. $\frac{9(k - 1)^2}{100} < 10 \Rightarrow (k - 1)^2 < 111.1 \Rightarrow k - 1 \le 10$.
+  3. Maximum k = 11.
+  Answer: 11
+M B 5: |-
+  Concept: Shortest distance between skew lines: $d = \frac{|(\vec{a}_2 - \vec{a}_1)\cdot(\vec{b}_1\times\vec{b}_2)|}{|\vec{b}_1\times\vec{b}_2|}$.
+  Solution:
+  1. Line 1 passes through $\left(\lambda, \frac{1}{2}, 0\right)$ with direction (2, 1, –1); line 2 through (0, –2λ, λ) with direction (1, 1, 1).
+  2. $\vec{b}_1\times\vec{b}_2 = (2, -3, 1)$, with magnitude $\sqrt{14}$.
+  3. $(\vec{a}_2 - \vec{a}_1)\cdot(2, -3, 1) = -2\lambda + 6\lambda + \frac{3}{2} + \lambda = 5\lambda + \frac{3}{2}$.
+  4. $\frac{|5\lambda + 1.5|}{\sqrt{14}} = \frac{\sqrt{7}}{2\sqrt{2}} \Rightarrow |5\lambda + 1.5| = 3.5 \Rightarrow \lambda = 0.4$ or –1.
+  5. λ is an integer, so λ = –1 and |λ| = 1.
+  Answer: 1
+M B 6: |-
+  Concept: Write the complex numbers in polar form.
+  Solution:
+  1. $-1 + i\sqrt{3} = 2e^{i2\pi/3}$, so its 21st power is $2^{21}e^{i14\pi} = 2^{21}$; similarly $(1 + i\sqrt{3})^{21} = 2^{21}e^{i7\pi} = -2^{21}$.
+  2. $(1 - i)^{24} = (\sqrt{2})^{24}e^{-i6\pi} = 2^{12}$ and $(1 + i)^{24} = 2^{12}$.
+  3. $k = \frac{2^{21}}{2^{12}} - \frac{2^{21}}{2^{12}} = 0$, so n = 0.
+  4. $\sum_{j=0}^{5}[(j + 5)^2 - (j + 5)] = \sum_{m=5}^{10}m(m - 1) = 20 + 30 + 42 + 56 + 72 + 90 = 310$.
+  Answer: 310
+M B 7: |-
+  Concept: Locus from a distance ratio (Apollonius circle).
+  Solution:
+  1. $(x - 5)^2 + y^2 = 9[(x + 5)^2 + y^2] \Rightarrow 8x^2 + 8y^2 + 100x + 200 = 0$.
+  2. $x^2 + y^2 + 12.5x + 25 = 0$: centre (–6.25, 0), $r^2 = 6.25^2 - 25 = 14.0625$.
+  3. $4r^2 = 56.25$.
+  Answer: 56.25
+M B 8: |-
+  Concept: Vandermonde's identity: $\sum_i{}^mC_i\,{}^nC_{k-i} = {}^{m+n}C_k$.
+  Solution:
+  1. The sum $= {}^{25}C_k + {}^{25}C_{k+1} = {}^{26}C_{k+1}$.
+  2. $^{26}C_{k+1}$ is largest when k + 1 = 13, i.e. k = 12; the question asks for the k that gives this maximum value of the sum.
+  Answer: 12
+M B 9: |-
+  Concept: GP terms a, ar, ar², ar³.
+  Solution:
+  1. Product of the first three terms $= (ar)^3 = 1$, so ar = 1.
+  2. Sum $S = a(1 + r + r^2 + r^3)$; sum of reciprocals $= \frac{1 + r + r^2 + r^3}{ar^3}$.
+  3. Dividing: $a^2r^3 = \frac{65/12}{65/18} = \frac{3}{2}$, i.e. $(ar)^2r = r = \frac{3}{2}$.
+  4. Third term $\alpha = ar^2 = r = \frac{3}{2}$, so 2α = 3.
+  Answer: 3
+M B 10: |-
+  Concept: The normal at a point of a circle passes through the centre; the tangent is perpendicular to it.
+  Solution:
+  1. Centre (2, 3). Normal through (5, 7) with slope $\frac{4}{3}$ meets the x-axis at $x = -\frac{1}{4}$.
+  2. Tangent slope $-\frac{3}{4}$: $y - 7 = -\frac{3}{4}(x - 5)$ meets the x-axis at $x = \frac{43}{3}$.
+  3. Base $= \frac{43}{3} + \frac{1}{4} = \frac{175}{12}$, height = 7, so $A = \frac{1}{2}\cdot\frac{175}{12}\cdot7 = \frac{1225}{24}$.
+  4. 24A = 1225.
+  Answer: 1225

@@ -1,0 +1,188 @@
+P A 1: |-
+  Concept: Rydberg formula $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
+  Solution:
+  1. Third Lyman line: 4 → 1, so $\frac{1}{\lambda_1} = R\left(1 - \frac{1}{16}\right) = \frac{15R}{16}$.
+  2. First Paschen line: 4 → 3, so $\frac{1}{\lambda_2} = R\left(\frac{1}{9} - \frac{1}{16}\right) = \frac{7R}{144}$.
+  3. $\frac{\lambda_1}{\lambda_2} = \frac{7/144}{15/16} = \frac{7}{135}$.
+  Answer: (C)
+P A 2: |-
+  Concept: In steady state the same heat current flows through both layers in series: $H = \frac{\Delta\theta}{R}$.
+  Solution:
+  1. $\frac{\theta_2 - \theta}{R_2} = \frac{\theta - \theta_1}{R_1}$.
+  2. $\theta(R_1 + R_2) = \theta_2R_1 + \theta_1R_2$, so $\theta = \frac{\theta_1R_2 + \theta_2R_1}{R_1 + R_2}$.
+  Answer: (A)
+P A 3: |-
+  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Solution:
+  1. $\beta = \frac{500\times10^{-9}\times1}{2\times10^{-3}} = 2.5\times10^{-4}$ m = 0.25 mm.
+  Answer: (D)
+P A 4: |-
+  Concept: Resolving power of a microscope is inversely proportional to the wavelength used.
+  Solution:
+  1. Electrons accelerated through high voltages have de Broglie wavelengths of a few picometres, far below visible light (400–700 nm).
+  2. So an electron microscope resolves much finer detail. A is true, R is true, and R explains A.
+  Answer: (C)
+P A 5: |-
+  Concept: Moment of inertia of a solid sphere about a diameter is $\frac{2}{5}ma^2$; use the parallel-axis theorem for the spheres off the axis.
+  Solution:
+  1. The two spheres whose centres lie on the chosen side: $2\times\frac{2}{5}ma^2$.
+  2. The two spheres on the opposite side (distance b): $2\left(\frac{2}{5}ma^2 + mb^2\right)$.
+  3. Total $= \frac{8}{5}ma^2 + 2mb^2$.
+  Answer: (D)
+P A 6: |-
+  Concept: Bulk modulus $K = \frac{P}{\Delta V/V}$; for a fixed mass, $\frac{\Delta\rho}{\rho} = \frac{\Delta V}{V}$ (in magnitude).
+  Solution:
+  1. $\frac{\Delta\rho}{\rho} = \frac{P}{K}$, so $\Delta\rho = \frac{\rho P}{K}$.
+  Answer: (D)
+P A 7: |-
+  Concept: Photon wavelength from the band gap: $\lambda = \frac{hc}{E_g}$.
+  Solution:
+  1. $E_g = 1.9\times1.6\times10^{-19} = 3.04\times10^{-19}$ J.
+  2. $\lambda = \frac{6.63\times10^{-34}\times3\times10^8}{3.04\times10^{-19}} \approx 654$ nm, which is in the red region (about 620–750 nm).
+  Answer: (A)
+P A 8: |-
+  Concept: Symmetry: points at the same potential can be joined or separated freely; a resistor between equipotential points carries no current.
+  Given: A is the central node (joined to D and E by R each); B is joined directly to C.
+  Solution:
+  1. The network is symmetric about the line through A and C, so D and E are at the same potential and the resistor DE carries no current.
+  2. Two identical paths remain: A→D→C (2R) and A→E→C (2R).
+  3. In parallel: $\frac{2R}{2} = R$.
+  Answer: (C)
+P A 9: |-
+  Concept: Field of a ring on its axis: $E = \frac{GMx}{(R^2 + x^2)^{3/2}}$; a uniform sphere acts as a point mass at its centre.
+  Solution:
+  1. Force between the ring and the sphere = (mass of sphere) × (ring's field at the sphere's centre), with $x = \sqrt{8}R$.
+  2. $F = \frac{GmM\sqrt{8}R}{(R^2 + 8R^2)^{3/2}} = \frac{GmM\sqrt{8}R}{27R^3} = \frac{\sqrt{8}}{27}\cdot\frac{GmM}{R^2}$.
+  Answer: (B)
+P A 10: |-
+  Concept: Inside the earth, gravity is proportional to distance from the centre: $g_r = \frac{gr}{R}$.
+  Solution:
+  1. At distance x from the middle of the chord, the component of gravity along the tunnel is $\frac{gr}{R}\cdot\frac{x}{r} = \frac{g}{R}x$.
+  2. This is SHM with $\omega^2 = \frac{g}{R}$, so $T = 2\pi\sqrt{\frac{R}{g}}$ for any chord.
+  Answer: (A)
+P A 11: |-
+  Concept: Field of a finite line charge on its perpendicular bisector: $E = \frac{2k\lambda}{a}\sin\theta$, where θ is the half-angle subtended at P.
+  Solution:
+  1. $\sin\theta = \frac{L/2}{\sqrt{a^2 + L^2/4}} = \frac{L/2}{\sqrt{3L^2/4 + L^2/4}} = \frac{1}{2}$.
+  2. $E = \frac{2kQ}{La}\cdot\frac{1}{2} = \frac{kQ}{L\cdot\frac{\sqrt{3}}{2}L} = \frac{2kQ}{\sqrt{3}L^2} = \frac{Q}{2\sqrt{3}\pi\varepsilon_0L^2}$.
+  Answer: (A)
+P A 12: |-
+  Concept: One-dimensional elastic collision with the target at rest: $v_2 = \frac{2m_1u}{m_1 + m_2}$.
+  Solution:
+  1. $v_Q = \frac{2Mu}{M + m} \rightarrow 2u$ when m << M, so A is correct.
+  2. This formula comes from conserving both momentum and kinetic energy, so R is correct and explains A.
+  Answer: (D)
+P A 13: |-
+  Concept: An erect image from a spherical mirror is always virtual; an erect, diminished image comes only from a convex mirror.
+  Solution:
+  1. m = +25/100 = +¼: erect and smaller.
+  2. A concave mirror gives erect images only when enlarged (object inside F), so the mirror is convex.
+  3. The image is virtual and behind the mirror (on the opposite side from the object).
+  Answer: (B)
+P A 14: |-
+  Concept: The central force provides the centripetal force.
+  Solution:
+  1. $\frac{mv^2}{R} = \frac{k}{R^3} \Rightarrow v \propto \frac{1}{R}$.
+  2. $T = \frac{2\pi R}{v} \propto R\cdot R = R^2$.
+  Answer: (B)
+P A 15: |-
+  Concept: Surface energy released = T × decrease in surface area; volume is conserved ($nr^3 = R^3$).
+  Solution:
+  1. Energy released $= T\cdot4\pi(nr^2 - R^2) = 4\pi TR^3\left(\frac{1}{r} - \frac{1}{R}\right)$ (using $n = \frac{R^3}{r^3}$).
+  2. Per unit volume: divide by $\frac{4}{3}\pi R^3$ to get $3T\left(\frac{1}{r} - \frac{1}{R}\right)$.
+  3. As heat: $\frac{3T}{J}\left(\frac{1}{r} - \frac{1}{R}\right)$.
+  Answer: (D)
+P A 16: |-
+  Concept: Kepler's second law: the radius vector sweeps equal areas in equal times (constant areal velocity, from conservation of angular momentum).
+  Solution:
+  1. A is false: the speed changes along the orbit. B is false: the speed is greatest at perihelion.
+  2. C and D are false: areal velocity is constant, not proportional to speed.
+  3. Only E is correct.
+  Answer: (B)
+P A 17: |-
+  Concept: Two perpendicular sinusoids combine into one sinusoid: $i_1\sin\omega t + i_2\cos\omega t = \sqrt{i_1^2 + i_2^2}\sin(\omega t + \phi)$.
+  Solution:
+  1. Peak value $= \sqrt{i_1^2 + i_2^2}$.
+  2. rms $= \frac{1}{\sqrt{2}}(i_1^2 + i_2^2)^{1/2}$.
+  Answer: (B)
+P A 18: |-
+  Concept: $C_p = C_1 + C_2$ and $C_s = \frac{C_1C_2}{C_1 + C_2}$.
+  Solution:
+  1. $C_1 + C_2 = \frac{15}{4}\cdot\frac{C_1C_2}{C_1 + C_2} \Rightarrow 4(C_1 + C_2)^2 = 15C_1C_2$.
+  2. With $x = \frac{C_2}{C_1}$: $4x^2 - 7x + 4 = 0$, whose discriminant is 49 – 64 < 0.
+  3. There is no real ratio, and none of the options satisfies the condition, so the question is a bonus.
+  Answer: Bonus
+P A 19: |-
+  Concept: Springs in series: $\frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2}$; $T \propto \frac{1}{\sqrt{k}}$.
+  Solution:
+  1. Two springs of constant $K_1$ in series: $k = \frac{K_1}{2}$, a factor of ½.
+  2. $T \propto \frac{1}{\sqrt{k}}$, so T increases by a factor $\sqrt{2}$.
+  Answer: (A)
+P A 20: |-
+  Concept: The exponent must be dimensionless.
+  Solution:
+  1. $\frac{\beta x^2}{kT}$ is dimensionless, so $[\beta] = \frac{[ML^2T^{-2}]}{[L^2]} = [MT^{-2}]$.
+  2. $W = \alpha^2\beta$, so $[\alpha^2] = \frac{[ML^2T^{-2}]}{[MT^{-2}]} = [L^2]$ and $[\alpha] = [M^0LT^0]$.
+  Answer: (A)
+P B 1: |-
+  Concept: Wave speed $v = \frac{\omega}{k}$ and $v = \sqrt{\frac{T}{\mu}}$.
+  Solution:
+  1. From y = –0.21 sin(x + 30t): k = 1 m⁻¹, ω = 30 rad/s, so v = 30 m/s.
+  2. μ = 0.135 g/cm = 0.0135 kg/m.
+  3. $T = \mu v^2 = 0.0135\times900 = 12.15$ N $= 1215\times10^{-2}$ N.
+  Answer: 1215
+P B 2: |-
+  Concept: Intensity $I = \frac{P}{4\pi r^2}$ and $I = \frac{1}{2}c\varepsilon_0E_0^2$.
+  Solution:
+  1. Radiated power = 1.25% of 1000 W = 12.5 W. $I = \frac{12.5}{4\pi(2)^2} = 0.249$ W/m².
+  2. $E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{0.497}{3\times10^8\times8.85\times10^{-12}}} = \sqrt{187.4} \approx 13.7$ V/m.
+  3. $= 137\times10^{-1}$ V/m.
+  Answer: 137
+P B 3: |-
+  Concept: Only a forward-biased diode conducts; it then adds its forward resistance to the branch.
+  Given: the battery's positive terminal drives current through the $D_1$ branch in its forward direction; $D_2$ is reversed.
+  Solution:
+  1. $D_2$ blocks (infinite resistance); the current flows through $D_1$ (50 Ω) + 130 Ω + 120 Ω.
+  2. $I = \frac{6}{50 + 130 + 120} = \frac{6}{300} = 0.02$ A = 20 mA.
+  Answer: 20
+P B 4: |-
+  Concept: The push has a downward component that increases the normal reaction; at the critical point the horizontal component equals the limiting friction.
+  Solution:
+  1. Force F at 60° below the horizontal: horizontal part $\frac{F}{2}$, vertical (downward) part $\frac{\sqrt{3}F}{2}$.
+  2. $N = mg + \frac{\sqrt{3}F}{2} = 10\sqrt{3} + \frac{\sqrt{3}F}{2}$.
+  3. Critical: $\frac{F}{2} = \mu N = \frac{1}{3\sqrt{3}}\left(10\sqrt{3} + \frac{\sqrt{3}F}{2}\right) = \frac{10}{3} + \frac{F}{6}$.
+  4. $\frac{F}{3} = \frac{10}{3}$, so F = 10 N = 3x and x = 3.33.
+  Answer: 3.33
+P B 5: |-
+  Concept: Quality factor of a series LCR circuit: $Q = \frac{1}{R}\sqrt{\frac{L}{C}}$.
+  Solution:
+  1. L → 2L multiplies Q by $\sqrt{2}$; R → R/2 multiplies Q by 2.
+  2. New Q = 100 × 2√2 ≈ 282.84.
+  Answer: 282.84
+P B 6: |-
+  Concept: Work done by a source = charge × potential difference.
+  Solution:
+  1. W = qV = 20 × 15 = 300 J.
+  Answer: 300
+P B 7: |-
+  Concept: When the partition is removed in an insulated container, the total internal energy of the ideal gas is conserved; U ∝ PV for a given gas.
+  Solution:
+  1. $P(V_1 + V_2) = P_1V_1 + P_2V_2 \Rightarrow P = \frac{2\times4.5 + 3\times5.5}{10} = \frac{25.5}{10} = 2.55$ atm.
+  2. $= 25.5\times10^{-1}$ atm, and the official answer takes x = 25.
+  Answer: 25
+P B 8: |-
+  Concept: Newton's second law along x, starting from rest.
+  Solution:
+  1. $a_x = \frac{20}{2} = 10$ m/s².
+  2. $x = \frac{1}{2}a_xt^2 = \frac{1}{2}\times10\times100 = 500$ m.
+  Answer: 500
+P B 9: |-
+  Concept: Modulation index $\mu = \frac{A_{max} - A_{min}}{A_{max} + A_{min}}$.
+  Solution:
+  1. $\mu = \frac{16 - 8}{16 + 8} = \frac{1}{3} \approx 0.33 = 33\times10^{-2}$.
+  Answer: 33
+P B 10: |-
+  Concept: Apparent weight in a lift accelerating downward: $W' = m(g - a)$.
+  Solution:
+  1. $W' = 60(10 - 1.8) = 60\times8.2 = 492$ N.
+  Answer: 492

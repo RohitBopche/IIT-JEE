@@ -1,0 +1,189 @@
+M A 1: |-
+  Concept: A point and its mirror image in L are symmetric about L, so the plane through Q perpendicular to L also passes through the original point.
+  Solution:
+  1. Plane ⊥ L (normal (2, 1, 1)) through (2, 3, −1): $2(x - 2) + (y - 3) + (z + 1) = 0$, i.e. $2x + y + z = 6$.
+  2. (1, 2, 2): $2 + 2 + 2 = 6$ ✓.
+  Answer: (A)
+M A 2: |-
+  Concept: $\text{Re}\frac{1}{z} = \frac{\text{Re}z}{|z|^2}$.
+  Solution:
+  1. $\frac{1 - \cos\theta}{(1 - \cos\theta)^2 + 4\sin^2\theta} = \frac{1}{5}$; dividing by $(1 - \cos\theta)$: $5 = (1 - c) + 4(1 + c) \Rightarrow c = 0$.
+  2. $\theta = \frac{\pi}{2}$, so $\int_0^{\pi/2}\sin x\,dx = 1$.
+  Answer: (D)
+M A 3: |-
+  Concept: Infinitely many solutions need $\Delta = 0$ and consistent equations.
+  Solution:
+  1. $\Delta = 3(2k + 15) + (k + 18) + 4(5 - 12) = 7k + 35 = 0 \Rightarrow k = -5$.
+  2. Check: $R_3 = R_1 + 3R_2$ gives $(6, 5, -5)$ with RHS $3 - 6 = -3$ ✓.
+  Answer: (C)
+M A 4: |-
+  Concept: Read $a_1$ and $a_2$ from the product of the two expansions.
+  Solution:
+  1. $a_1 = n - m = 10$.
+  2. $a_2 = \binom{m}{2} + \binom{n}{2} - mn = \frac{(n - m)^2 - (m + n)}{2} = 10$.
+  3. $100 - (m + n) = 20 \Rightarrow m + n = 80$.
+  Answer: (C)
+M A 5: |-
+  Concept: $\tan2A = \frac{2\tan A}{1 - \tan^2A}$ and the addition formula.
+  Solution:
+  1. $\tan\left(2\tan^{-1}\frac{3}{5}\right) = \frac{6/5}{16/25} = \frac{15}{8}$ and $\tan\left(\sin^{-1}\frac{5}{13}\right) = \frac{5}{12}$.
+  2. $\frac{15/8 + 5/12}{1 - 75/96} = \frac{55/24}{21/96} = \frac{220}{21}$.
+  Answer: (C)
+M A 6: |-
+  Concept: Riemann sum.
+  Solution:
+  1. The limit is $\int_0^1f(5x)dx = \int_0^1(5x + 1)dx = \frac{7}{2}$.
+  Answer: (C)
+M A 7: |-
+  Concept: Parametrise P as $(t, 4t^2 + 1)$; the foot on $y = x$ is $\left(\frac{t + 4t^2 + 1}{2}, \frac{t + 4t^2 + 1}{2}\right)$.
+  Solution:
+  1. Midpoint: $h = \frac{4t^2 + 3t + 1}{4}$, $k = \frac{12t^2 + t + 3}{4}$.
+  2. $3h - k = 2t$ and $h - 3k = -8t^2 - 2$.
+  3. Eliminating t: $2(3x - y)^2 + (x - 3y) + 2 = 0$.
+  Answer: (C)
+M A 8: |-
+  Concept: Find $f''$ first, then the critical points.
+  Solution:
+  1. $f''(x) = 6x - 6$: $f''(2) = 6$ and $f''(1) = 0$, so $f = x^3 - 3x^2 - 9x$.
+  2. $f' = 3(x - 3)(x + 1)$: local minimum at $x = 3$, $f(3) = -27$.
+  Answer: (D)
+M A 9: |-
+  Concept: The distance from a fixed point to points on a circle ranges over $[d - r, d + r]$.
+  Solution:
+  1. Centre (−1, −2), $r = 3$; distance to (−4, 1) is $3\sqrt2$.
+  2. $\frac{r_1}{r_2} = \frac{3\sqrt2 + 3}{3\sqrt2 - 3} = (\sqrt2 + 1)^2 = 3 + 2\sqrt2$.
+  3. $a + b = 5$.
+  Answer: (A)
+M A 10: |-
+  Concept: Use the sum and sum of squares.
+  Solution:
+  1. $a + b = 60 - 43 = 17$; $\sum x^2 = 6\left(\frac{20}{3} + 100\right) = 640$, so $a^2 + b^2 = 145$.
+  2. $(a - b)^2 = 2(145) - 289 = 1$, so $|a - b| = 1$.
+  Answer: (D)
+M A 11: |-
+  Concept: Linear DE after expanding the determinant.
+  Solution:
+  1. $|A| = -\frac{y}{x} + 2\sin x + 2$, so $y' + \frac{y}{x} = 2\sin x + 2$.
+  2. $(xy)' = 2x\sin x + 2x \Rightarrow xy = -2x\cos x + 2\sin x + x^2 + C$; $y(\pi) = \pi + 2$ gives $C = 0$.
+  3. At $x = \frac{\pi}{2}$: $\frac{\pi}{2}y = 2 + \frac{\pi^2}{4} \Rightarrow y = \frac{\pi}{2} + \frac{4}{\pi}$.
+  Answer: (A)
+M A 12: |-
+  Concept: $f(x) = \frac{ax + b}{cx + d}$ is its own inverse iff $a + d = 0$.
+  Solution:
+  1. $5 + (-\alpha) = 0 \Rightarrow \alpha = 5$.
+  Answer: (D)
+M A 13: |-
+  Concept: Coplanar lines: $(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2) = 0$.
+  Solution:
+  1. L₁: point $(0, \frac{1}{a}, 2)$, direction $(1, \frac{1}{a}, 1)$. L₂: point $(0, \frac{2}{3}, \frac{2}{b})$, direction $(1, \frac{1}{3}, \frac{1}{b})$.
+  2. The determinant simplifies to $-\frac{1}{a}\left(\frac{1}{b} - 1\right) = 0 \Rightarrow b = 1$ (any $a \ne 0$).
+  Answer: (B)
+M A 14: |-
+  Concept: Projection of $\vec{BA}$ on $\vec{BC}$ $= c\cos B = \frac{a^2 + c^2 - b^2}{2a}$.
+  Solution:
+  1. $a = 3$, $b = 5$, $c = 7$: $\frac{9 + 49 - 25}{6} = \frac{11}{2}$.
+  Answer: (D)
+M A 15: |-
+  Concept: $f(x) = \ln(x + \sqrt{x^2 + 1})$ is odd, so $\int\sin f = 0$ on a symmetric interval.
+  Solution:
+  1. $g(t) = \cos\frac{\pi t}{4}\int\cos f\,dx - \sin\frac{\pi t}{4}\int\sin f\,dx = K\cos\frac{\pi t}{4}$.
+  2. $g(1) = \frac{K}{\sqrt2}$ and $g(0) = K$, so $\sqrt2g(1) = g(0)$.
+  Answer: (D)
+M A 16: |-
+  Concept: $p \to q$ is false only when p is true and q is false.
+  Solution:
+  1. (A) F → F: true. (B) T → F: false.
+  2. (C) "(A) and (B) true" is false, so the implication is true.
+  Answer: (A)
+M A 17: |-
+  Concept: $\log_{9^{1/k}}x = k\log_9x$.
+  Solution:
+  1. $k = 2$ to $22$: $\sum k = 252$.
+  2. $252\log_9x = 504 \Rightarrow \log_9x = 2 \Rightarrow x = 81$.
+  Answer: (D)
+M A 18: |-
+  Concept: $[[x] - \sin x] = [x] + [-\sin x]$ (since [x] is an integer).
+  Solution:
+  1. $(-\frac{\pi}{2}, -1)$: $-2 + 0$. $(-1, 0)$: $-1 + 0$. $(0, 1)$: $0 - 1$. $(1, \frac{\pi}{2})$: $1 - 1 = 0$.
+  2. Integral $= -2\left(\frac{\pi}{2} - 1\right) - 1 - 1 + 0 = -\pi$.
+  Answer: (A)
+M A 19: |-
+  Concept: Sides $c\sin\theta < c\cos\theta < c$; the reciprocal triangle has hypotenuse $\frac{1}{c\sin\theta}$.
+  Solution:
+  1. $\frac{1}{\sin^2\theta} = \frac{1}{\cos^2\theta} + 1$. With $s = \sin^2\theta$: $s^2 - 3s + 1 = 0 \Rightarrow s = \frac{3 - \sqrt5}{2}$.
+  2. $\sin\theta = \sqrt{\frac{3 - \sqrt5}{2}} = \frac{\sqrt5 - 1}{2}$.
+  Answer: (C)
+M A 20: |-
+  Concept: $P(\text{exactly one of }X, Y) = P(X) + P(Y) - 2P(XY)$.
+  Solution:
+  1. Adding the three: $2\sum P(A) - 2\sum P(AB) = 3 - 4k$.
+  2. $P(A\cup B\cup C) = \frac{3 - 4k}{2} + k^2 = (k - 1)^2 + \frac{1}{2} > \frac{1}{2}$.
+  Answer: (A)
+M B 1: |-
+  Concept: Generating function of the recurrence.
+  Solution:
+  1. With $r = \frac{1}{8}$, $S = \sum a_nr^n$ satisfies $S(1 - 2r - r^2) = r - r^2$.
+  2. $S = \frac{7/64}{47/64} = \frac{7}{47}$, so $47S = 7$.
+  Answer: 7
+M B 2: |-
+  Concept: Match Maclaurin coefficients up to $x^3$ (denominator ≈ $x^3$).
+  Solution:
+  1. Numerator $= (\alpha - \beta)x + \left(\alpha + \frac{\beta}{2} + \gamma\right)x^2 + \left(\frac{\alpha}{2} - \frac{\beta}{3} - \gamma\right)x^3 + \dots$
+  2. $\alpha = \beta$ and $\gamma = -\frac{3\alpha}{2}$; the $x^3$ coefficient $= \frac{5\alpha}{3} = 10 \Rightarrow \alpha = 6$.
+  3. $\alpha + \beta + \gamma = 6 + 6 - 9 = 3$.
+  Answer: 3
+M B 3: |-
+  Concept: The line through the circumcentre and the midpoint of BC is the perpendicular bisector of BC.
+  Solution:
+  1. Midpoint of BC is (2, 8.5); BC has slope $-\frac{1}{2}$, so the bisector is $y = 2x + 4.5$.
+  2. y-intercept $\frac{9}{2} = \frac{\alpha}{2} \Rightarrow \alpha = 9$.
+  Answer: 9
+M B 4: |-
+  Concept: The nearest point lies on a normal through the given point.
+  Solution:
+  1. $y^2 = 6x$: point $(1.5t^2, 3t)$, normal $y = -tx + 3t + 1.5t^3$.
+  2. Through $(3, \frac{3}{2})$: $1.5t^3 = 1.5 \Rightarrow t = 1$, point (1.5, 3).
+  3. $2(\alpha + \beta) = 9$.
+  Answer: 9
+M B 5: |-
+  Concept: $\det(\text{adj}M) = (\det M)^{n-1}$ and $\det(kM) = k^n\det M$.
+  Solution:
+  1. $A = \begin{bmatrix}2&-1&1\\-1&2&-1\\1&-1&2\end{bmatrix}$, $\det A = 4$.
+  2. $\det(2A^{-1}) = \frac{8}{4} = 2$; $\det\text{adj}(2A^{-1}) = 2^2 = 4$.
+  3. $\det(3\,\text{adj}) = 27\times4 = 108$.
+  Answer: 108
+M B 6: |-
+  Concept: Rotation preserves length.
+  Solution:
+  1. $3p^2 + 1 = 4 + (p + 1)^2 \Rightarrow p = 2$: $\vec v_1 = (2\sqrt3, 1)$, $\vec v_2 = (2, 3)$.
+  2. $\tan\theta = \frac{\frac{3}{2} - \frac{1}{2\sqrt3}}{1 + \frac{3}{4\sqrt3}} = \frac{6\sqrt3 - 2}{4\sqrt3 + 3}$.
+  3. $\alpha = 6$.
+  Answer: 6
+M B 7: |-
+  Concept: $\cos\left(\frac{1}{2}\cos^{-1}u\right) = \sqrt{\frac{1 + u}{2}}$.
+  Solution:
+  1. $dy = \frac{dx}{\sqrt2e^{x/2}\sqrt{e^x - 1}}$; with $e^x = \sec^2\theta$ this integrates to $y = \sqrt{2(1 - e^{-x})} + C$.
+  2. $y(0) = -1 \Rightarrow C = -1$.
+  3. $y = 0$: $2(1 - e^{-\alpha}) = 1 \Rightarrow e^\alpha = 2$.
+  Answer: 2
+M B 8: |-
+  Concept: $2x^2 + 7x + 5 = (x + 1)(2x + 5)$; put $t = \log_{x+1}(2x + 5)$.
+  Solution:
+  1. The equation becomes $1 + t + \frac{2}{t} - 4 = 0 \Rightarrow t^2 - 3t + 2 = 0 \Rightarrow t = 1, 2$.
+  2. $t = 1$: $x = -4$ (rejected). $t = 2$: $(x + 1)^2 = 2x + 5 \Rightarrow x = 2$.
+  3. One solution.
+  Note: The key page prints 8; the printed solution itself concludes "only one solution", so 1 is stored.
+  Answer: 1
+M B 9: |-
+  Concept: Partial fractions: $A_k = \frac{(-1)^k}{k!(20 - k)!}$.
+  Solution:
+  1. $\frac{A_{14}}{A_{13}} = -\frac{7}{14} = -\frac{1}{2}$ and $\frac{A_{15}}{A_{13}} = \frac{7\cdot6}{14\cdot15} = \frac{1}{5}$.
+  2. Ratio $= -\frac{3}{10}$, so $100\times\frac{9}{100} = 9$.
+  Answer: 9
+M B 10: |-
+  Concept: Running maximum of $f(t) = t^3 - 6t^2 + 9t - 3$.
+  Solution:
+  1. f rises to $f(1) = 1$, then falls to $f(3) = -3$; so $g = f$ on [0, 1] and $g = 1$ on [1, 3].
+  2. At $x = 1$: $f'(1) = 0$ matches the slope of the constant, so g is differentiable.
+  3. At $x = 3$: the left derivative is 0 and the right derivative is −1, so g is not differentiable. Count = 1.
+  Answer: 1

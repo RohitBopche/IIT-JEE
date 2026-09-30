@@ -1,0 +1,211 @@
+M A 1: |-
+  Concept: Count digit multisets, then arrangements (multinomial).
+  Solution:
+  1. Let the number use $a$ ones, $b$ twos, $c$ threes: $a + b + c = 7$ and $a + 2b + 3c = 10$, so $b + 2c = 3$.
+  2. $(b, c) = (3, 0)$, $a = 4$: arrangements $\frac{7!}{4!\,3!} = 35$.
+  3. $(b, c) = (1, 1)$, $a = 5$: arrangements $\frac{7!}{5!\,1!\,1!} = 42$.
+  4. Total $= 35 + 42 = 77$.
+  Answer: (A)
+M A 2: |-
+  Concept: General term of a binomial expansion, then maximise over $x$.
+  Solution:
+  1. $T_{r+1} = \binom{10}{r}(tx^{1/5})^{10-r}\left(\frac{(1-x)^{1/10}}{t}\right)^r$; independent of $t$ when $10 - r = r$, i.e. $r = 5$.
+  2. Term $= \binom{10}{5}x(1-x)^{1/2} = 252\,x\sqrt{1-x}$.
+  3. $f(x) = x\sqrt{1-x}$: $f'(x) = \sqrt{1-x} - \frac{x}{2\sqrt{1-x}} = 0 \Rightarrow x = \frac{2}{3}$ (a maximum).
+  4. $f\left(\frac{2}{3}\right) = \frac{2}{3}\cdot\frac{1}{\sqrt3} = \frac{2}{3\sqrt3}$.
+  5. Maximum term $= \frac{10!}{(5!)^2}\cdot\frac{2}{3\sqrt3} = \frac{2\cdot10!}{3\sqrt3(5!)^2}$.
+  Answer: (D)
+M A 3: |-
+  Concept: $x - [x]$ is periodic with period 1.
+  Solution:
+  1. On $[n-1, n)$, $[x] = n - 1$, so $\int_{n-1}^{n}e^{x-(n-1)}dx = \int_0^1 e^t\,dt = e - 1$.
+  2. Each of the 100 integrals equals $e - 1$, so the sum is $100(e - 1)$.
+  Answer: (A)
+M A 4: |-
+  Concept: Exponential growth $\frac{dN}{dt} = \lambda N \Rightarrow N = N_0e^{\lambda t}$.
+  Solution:
+  1. $N = 1000e^{\lambda t}$; after 2 h, $1200 = 1000e^{2\lambda}$, so $\lambda = \frac{1}{2}\ln\frac{6}{5}$.
+  2. $N = 2000$: $e^{\lambda T} = 2 \Rightarrow T = \frac{\ln 2}{\lambda} = \frac{2\ln 2}{\ln(6/5)}$.
+  3. Comparing with $\frac{k}{\ln(6/5)}$: $k = 2\ln 2$, so $\left(\frac{k}{\ln 2}\right)^2 = 4$.
+  Answer: (A)
+M A 5: |-
+  Concept: $\vec a\times(\vec a\times\vec c) = (\vec a\cdot\vec c)\vec a - |\vec a|^2\vec c$.
+  Solution:
+  1. Since $\vec a\cdot\vec b = 0$: $\vec a\times(\vec a\times\vec b) = -|\vec a|^2\vec b$.
+  2. Apply the same step again to $-|\vec a|^2\vec b$ (still perpendicular to $\vec a$): $\vec a\times(\vec a\times(-|\vec a|^2\vec b)) = -|\vec a|^2(-|\vec a|^2\vec b) = |\vec a|^4\vec b$.
+  Answer: (C)
+M A 6: |-
+  Concept: Terms of a GP $ar^{n-1}$; use symmetric products.
+  Solution:
+  1. $T_3T_5 = (ar^3)^2 = 25 \Rightarrow ar^3 = 5$ (terms positive, series increasing).
+  2. $T_2 + T_6 = ar + ar^5 = \frac{5}{r^2} + 5r^2 = \frac{25}{2} \Rightarrow r^2 + \frac{1}{r^2} = \frac{5}{2}$, so $r^2 = 2$ (increasing, $r > 1$).
+  3. $T_4 + T_6 + T_8 = ar^3(1 + r^2 + r^4) = 5(1 + 2 + 4) = 35$.
+  Answer: (A)
+M A 7: |-
+  Concept: Planes are parallel when their normal vectors are proportional.
+  Solution:
+  1. Normals: $P_1$: $(3, 15, 21) = 3(1, 5, 7)$; $P_2$: $(1, -3, -1)$; $P_3$: $(2, 10, 14) = 2(1, 5, 7)$.
+  2. $P_1$ and $P_3$ have proportional normals: $P_1$ is $x + 5y + 7z = 3$ and $P_3$ is $x + 5y + 7z = \frac{5}{2}$, distinct parallel planes.
+  3. $(1, -3, -1)$ is not proportional to $(1, 5, 7)$, so $P_2$ is parallel to neither.
+  Why others are wrong: (B), (C) and (D) all need $P_2$ parallel to another plane, which fails.
+  Answer: (A)
+M A 8: |-
+  Concept: Arithmetico-geometric series; use $\sum_{n\ge1}\frac{n}{3^n} = \frac{1/3}{(1-1/3)^2} = \frac{3}{4}$.
+  Solution:
+  1. After the first term, the numerators are $5n - 3$: $S = 1 + \sum_{n\ge1}\frac{5n-3}{3^n}$.
+  2. $\sum\frac{5n}{3^n} = 5\cdot\frac{3}{4} = \frac{15}{4}$; $\sum\frac{3}{3^n} = 3\cdot\frac{1}{2} = \frac{3}{2}$.
+  3. $S = 1 + \frac{15}{4} - \frac{3}{2} = \frac{13}{4}$.
+  Answer: (C)
+M A 9: |-
+  Concept: Row operations do not change a determinant.
+  Solution:
+  1. $R_1 \to R_1 - R_2$: $(-2(a+2), -1, 0)$; $R_2 \to R_2 - R_3$: $(-2(a+3), -1, 0)$.
+  2. Expand along column 3 (only the $R_3$ entry 1 remains): $\Delta = (-2(a+2))(-1) - (-1)(-2(a+3)) = 2(a+2) - 2(a+3) = -2$.
+  Answer: (A)
+M A 10: |-
+  Concept: $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$ and $\cos2\theta = \frac{1-\tan^2\theta}{1+\tan^2\theta}$.
+  Solution:
+  1. Let the common ratio be $k$: $\sin^{-1}x = ak$, $\cos^{-1}x = bk$, so $(a+b)k = \frac{\pi}{2}$, $k = \frac{\pi}{2(a+b)}$.
+  2. $\tan^{-1}y = ck = \frac{\pi c}{2(a+b)}$, so $\frac{\pi c}{a+b} = 2\tan^{-1}y$.
+  3. $\cos(2\tan^{-1}y) = \frac{1-y^2}{1+y^2}$.
+  Answer: (B)
+M A 11: |-
+  Concept: For symmetric $A = \begin{pmatrix}a & b\\ b & d\end{pmatrix}$, $\operatorname{tr}(A^2) = a^2 + 2b^2 + d^2$.
+  Solution:
+  1. $a^2 + 2b^2 + d^2 = 1$ with integers forces $b = 0$ and $a^2 + d^2 = 1$.
+  2. $(a, d) = (\pm1, 0)$ or $(0, \pm1)$: 4 matrices.
+  Answer: (C)
+M A 12: |-
+  Concept: Find the vertices, then compare side lengths.
+  Solution:
+  1. $x - y = 0$ and $x + 2y = 3$ meet at $(1, 1)$; $x - y = 0$ and $2x + y = 6$ at $(2, 2)$; $x + 2y = 3$ and $2x + y = 6$ at $(3, 0)$.
+  2. Sides: $(1,1)$–$(2,2)$: $\sqrt2$; $(2,2)$–$(3,0)$: $\sqrt5$; $(1,1)$–$(3,0)$: $\sqrt5$.
+  3. Two equal sides, and $2 + 5 \ne 5$, so the triangle is isosceles but not right-angled.
+  Why others are wrong: not all sides equal (A); no Pythagorean relation (D).
+  Answer: (C)
+M A 13: |-
+  Concept: The slope $s = y'$ has a local maximum where $s' = 0$ and $s'' < 0$.
+  Solution:
+  1. $s = 2x^3 - 15x^2 + 36x - 19$, $s' = 6x^2 - 30x + 36 = 6(x-2)(x-3)$.
+  2. $s'' = 12x - 30$: at $x = 2$, $s'' = -6 < 0$, a local maximum of the slope (the intended meaning, since $s$ is unbounded as $x \to \infty$).
+  3. $y(2) = 8 - 40 + 72 - 38 = 2$, so the point is $(2, 2)$.
+  Answer: (B)
+M A 14: |-
+  Concept: A Lipschitz bound of order 2 forces the derivative to vanish.
+  Solution:
+  1. $\left|\frac{f(x) - f(y)}{x - y}\right| \le |x - y|$; letting $y \to x$ gives $f'(x) = 0$ for all $x$.
+  2. So $f$ is constant: $f(x) = f(0) = 1 > 0$ for all $x$.
+  Why others are wrong: $f \equiv 1$ is never negative (A) or zero (C), and takes only one value (B).
+  Answer: (D)
+M A 15: |-
+  Concept: King property on a symmetric interval: replace $x$ by $-x$.
+  Solution:
+  1. $I = \int_{-\pi/2}^{\pi/2}\frac{\cos^2x}{1+3^x}dx$; with $x \to -x$, $I = \int_{-\pi/2}^{\pi/2}\frac{3^x\cos^2x}{1+3^x}dx$.
+  2. Adding: $2I = \int_{-\pi/2}^{\pi/2}\cos^2x\,dx = \frac{\pi}{2}$, so $I = \frac{\pi}{4}$.
+  Answer: (D)
+M A 16: |-
+  Concept: $\sqrt3\sin\theta - \cos\theta = 2\sin\left(\theta - \frac{\pi}{6}\right)$ and $\lim\frac{\sin h}{h} = 1$.
+  Solution:
+  1. Numerator: $\sqrt3\sin\left(\frac{\pi}{6}+h\right) - \cos\left(\frac{\pi}{6}+h\right) = 2\sin h$.
+  2. Denominator: $\sqrt3h(\sqrt3\cos h - \sin h) \to \sqrt3h\cdot\sqrt3 = 3h$ as $h \to 0$.
+  3. Limit $= \lim\frac{2\sin h}{3h} = \frac{2}{3}$.
+  Note: The printed key gives (C) $\frac{4}{3}$, but its solution wrongly doubles the numerator. The correct value is $\frac{2}{3}$.
+  Answer: (D)
+M A 17: |-
+  Concept: $\binom{n}{r} = \binom{n}{s} \Rightarrow r + s = n$ (for $r \ne s$).
+  Solution:
+  1. $\binom{n}{7}\frac{1}{2^n} = \binom{n}{9}\frac{1}{2^n} \Rightarrow n = 16$.
+  2. $P(2\text{ heads}) = \binom{16}{2}\frac{1}{2^{16}} = \frac{120}{2^{16}} = \frac{15}{2^{13}}$.
+  Answer: (B)
+M A 18: |-
+  Concept: Four points are coplanar when the scalar triple product of three edge vectors from one of them is 0.
+  Solution:
+  1. From $(1, 5, 35)$: $(6, 0, -30)$, $(0, \lambda-5, -28)$, $(2\lambda-1, -4, -33)$.
+  2. $\begin{vmatrix}6 & 0 & -30\\ 0 & \lambda-5 & -28\\ 2\lambda-1 & -4 & -33\end{vmatrix} = 6[-33(\lambda-5) - 112] - 30[0 - (\lambda-5)(2\lambda-1)]$.
+  3. This simplifies to $60\lambda^2 - 528\lambda + 468 = 0$.
+  4. Sum of roots $= \frac{528}{60} = \frac{44}{5}$.
+  Answer: (D)
+M A 19: |-
+  Concept: The equivalence class of a point is the set of points related to it: here, the points at the same distance from the origin.
+  Solution:
+  1. The distance of $(1, -1)$ from the origin is $\sqrt2$.
+  2. Class $= \{(x, y) : x^2 + y^2 = 2\}$.
+  Answer: (D)
+M A 20: |-
+  Concept: In a circle with diameter $OB$ and chord $PQ \perp OB$ at $A$: $PA^2 = OA\cdot AB$ (intersecting chords).
+  Solution:
+  1. $OA = 1$, $AB = 13 - 1 = 12$, so $PA^2 = 12$, $PA = 2\sqrt3$, $PQ = 4\sqrt3$.
+  2. Area of $\triangle PQB = \frac{1}{2}\cdot PQ\cdot AB = \frac{1}{2}\cdot4\sqrt3\cdot12 = 24\sqrt3$.
+  Answer: (C)
+M B 1: |-
+  Concept: Sketch $y = ||x-1| - 2|$ by transforming $y = |x|$.
+  Solution:
+  1. $|x-1| - 2$ is a V with vertex $(1, -2)$ and zeros at $x = -1$ and $x = 3$.
+  2. Taking the modulus reflects the part below the axis: the graph is a W touching the x-axis at $(-1, 0)$ and $(3, 0)$ with a peak at $(1, 2)$.
+  3. The only closed region formed with the x-axis is the triangle $(-1, 0)$, $(1, 2)$, $(3, 0)$, of area $\frac{1}{2}\cdot4\cdot2 = 4$.
+  Note: As printed, the curve alone bounds no region, so the question is flawed. ALLEN marks it Bonus; the NTA key gives 8, which is recorded here.
+  Answer: 8
+M B 2: |-
+  Concept: $a\sin x + b\cos x$ takes every value in $[-\sqrt{a^2+b^2}, \sqrt{a^2+b^2}]$.
+  Solution:
+  1. $3\sin x + 4\cos x \in [-5, 5]$, so $-5 \le k + 1 \le 5$, i.e. $-6 \le k \le 4$.
+  2. Integers from $-6$ to $4$: 11.
+  Answer: 11
+M B 3: |-
+  Concept: $\binom{n}{r} = \binom{n}{n-r}$ and $\sum r\binom{n}{r} = n2^{n-1}$.
+  Solution:
+  1. The sum is $\sum_{r=0}^{30}(30 - r)\binom{30}{r}$ (the $r = 30$ term is 0).
+  2. Put $j = 30 - r$: $\sum_{j}j\binom{30}{j} = 30\cdot2^{29} = 15\cdot2^{30}$.
+  3. $n = 15$ (odd), $m = 30$, so $n + m = 45$.
+  Answer: 45
+M B 4: |-
+  Concept: Substitute $u = e^{\sin y}$ to get a linear equation.
+  Solution:
+  1. $\frac{du}{dx} = e^{\sin y}\cos y\frac{dy}{dx}$, so $u' + u\cos x = \cos x$, i.e. $(u - 1)' = -\cos x\,(u - 1)$.
+  2. $u - 1 = Ce^{-\sin x}$; $y(0) = 0$ gives $u(0) = 1$, so $C = 0$.
+  3. $u \equiv 1 \Rightarrow \sin y = 0 \Rightarrow y \equiv 0$.
+  4. The expression is $1 + 0 + 0 + 0 = 1$.
+  Answer: 1
+M B 5: |-
+  Concept: Change of base, $\log_4 t = \frac{1}{2}\log_2 t$, and check the domain.
+  Solution:
+  1. Domain: $x > 3$.
+  2. $\frac{1}{2}\log_2(x-1) = \log_2(x-3) \Rightarrow x - 1 = (x-3)^2 \Rightarrow x^2 - 7x + 10 = 0$, so $x = 2$ or $5$.
+  3. Only $x = 5$ satisfies $x > 3$, so there is 1 solution.
+  Answer: 1
+M B 6: |-
+  Concept: Solve as a quadratic in $\cos x$.
+  Solution:
+  1. $\sqrt3c^2 - (\sqrt3 - 1)c - 1 = 0$ factorises as $(c - 1)(\sqrt3c + 1) = 0$.
+  2. $\cos x = 1 \Rightarrow x = 0$ (in the interval).
+  3. $\cos x = -\frac{1}{\sqrt3} < 0$ has no solution in $\left[0, \frac{\pi}{2}\right]$.
+  4. Number of solutions: 1.
+  Answer: 1
+M B 7: |-
+  Concept: The line joining the two points gives the plane's normal.
+  Solution:
+  1. Normal $= (-1+2, -16+21, 23-29) = (1, 5, -6)$.
+  2. Plane through $(4, -2, 2)$: $(x-4) + 5(y+2) - 6(z-2) = 0$.
+  3. For $(\lambda, 2, 1)$: $\lambda - 4 + 20 + 6 = 0 \Rightarrow \lambda = -22$.
+  4. $\frac{\lambda}{11} = -2$: $4 + 8 - 4 = 8$.
+  Answer: 8
+M B 8: |-
+  Concept: Eliminate the one parameter; degree is the power of the highest derivative once the equation is free of radicals.
+  Solution:
+  1. $y^2 = ax + \frac{a^{3/2}}{2}$; differentiating gives $2yy' = a$.
+  2. Substitute: $y^2 = 2xyy' + \frac{(2yy')^{3/2}}{2}$, i.e. $2(y^2 - 2xyy') = (2yy')^{3/2}$.
+  3. Squaring: $4(y^2 - 2xyy')^2 = 8(yy')^3$, so the order is 1 and the degree is 3.
+  4. Difference $= 3 - 1 = 2$.
+  Answer: 2
+M B 9: |-
+  Concept: Factorise and use cube roots of unity.
+  Solution:
+  1. $x^3 - 2x^2 + 2x - 1 = (x - 1)(x^2 - x + 1)$; the roots are $1, -\omega, -\omega^2$.
+  2. 162 is even and a multiple of 3: $(-\omega)^{162} = \omega^{162} = 1$, and likewise $(-\omega^2)^{162} = 1$.
+  3. Sum $= 1 + 1 + 1 = 3$.
+  Answer: 3
+M B 10: |-
+  Concept: $|\sin2x|$ has period $\frac{\pi}{2}$.
+  Solution:
+  1. $\int_0^{\pi}|\sin2x|dx = 2\int_0^{\pi/2}\sin2x\,dx = 2\left[-\frac{\cos2x}{2}\right]_0^{\pi/2} = 2\cdot1 = 2$.
+  Answer: 2

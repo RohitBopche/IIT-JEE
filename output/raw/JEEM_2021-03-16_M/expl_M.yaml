@@ -1,0 +1,210 @@
+M A 1: |-
+  Concept: Remove the moduli case by case.
+  Solution:
+  1. $x \ge 0$: $(x - 3)(x + 4) = 6 \Rightarrow x^2 + x - 18 = 0 \Rightarrow x = \frac{-1 + \sqrt{73}}{2}$ (valid).
+  2. $-4 \le x < 0$: $-(x + 3)(x + 4) = 6 \Rightarrow x^2 + 7x + 18 = 0$, with discriminant $< 0$: none.
+  3. $x < -4$: $(x + 3)(x + 4) = 6 \Rightarrow x = -1$ or $-6$; only $x = -6$ is valid.
+  4. Two solutions.
+  Answer: (B)
+M A 2: |-
+  Concept: $\sqrt3\hat i + \hat j$ has length 2 at angle 30°; rotating by 45° gives angle 75°.
+  Solution:
+  1. $\alpha = 2\cos75° = \frac{\sqrt6 - \sqrt2}{2}$, $\beta = 2\sin75° = \frac{\sqrt6 + \sqrt2}{2}$.
+  2. The triangle with vertices $(\alpha, \beta)$, $(0, \beta)$, $(0, 0)$ is right-angled with legs $\alpha$ and $\beta$.
+  3. Area $= \frac{1}{2}\alpha\beta = \frac{1}{2}\cdot\frac{6 - 2}{4} = \frac{1}{2}$.
+  Answer: (A)
+M A 3: |-
+  Concept: $\vec{AC}$ is along the plane's normal, and C lies on the plane.
+  Solution:
+  1. Normal $\parallel \vec{CA} = (a, -a, 4)$. C on the plane: $a\cdot0 - a(-a) + 4(-1) = 0 \Rightarrow a = 2$.
+  2. Plane: $2x - 2y + 4z = 0$, i.e. $x - y + 2z = 0$.
+  3. Foot from B(0, 4, 5): $t = \frac{0 - 4 + 10}{6} = 1$, so $D = (0, 4, 5) - (1, -1, 2) = (-1, 5, 3)$.
+  4. $CD = |(-1, 7, 4)| = \sqrt{66}$.
+  Answer: (D)
+M A 4: |-
+  Concept: SD is unchanged by adding a constant; $\sigma^2 = \frac{\sum x^2}{n} - \bar x^2$.
+  Solution:
+  1. $d$ is the SD of $a, b, c$; the mean is $\frac{a + b + c}{3} = \frac{2b}{3}$.
+  2. $d^2 = \frac{a^2 + b^2 + c^2}{3} - \frac{4b^2}{9} \Rightarrow 9d^2 = 3(a^2 + c^2) - b^2$.
+  3. $b^2 = 3(a^2 + c^2) - 9d^2$.
+  Answer: (D)
+M A 5: |-
+  Concept: Log laws and $(\sin x + \cos x)^2 = 1 + 2\sin x\cos x$.
+  Solution:
+  1. $\sin x\cos x = \frac{1}{10}$, so $(\sin x + \cos x)^2 = \frac{6}{5}$.
+  2. $\log(\sin x + \cos x) = \frac{1}{2}\log\frac{6}{5} = \frac{1}{2}\log\frac{n}{10}$.
+  3. $n = 12$.
+  Answer: (B)
+M A 6: |-
+  Concept: $A = iM$ with $M = \begin{bmatrix}1 & -1\\ -1 & 1\end{bmatrix}$, and $M^2 = 2M$.
+  Solution:
+  1. $A^8 = i^8M^8 = 2^7M = 128M$.
+  2. Equations: $128(x - y) = 8$ and $128(y - x) = 64$, which are inconsistent.
+  3. So there is no solution.
+  Answer: (C)
+M A 7: |-
+  Concept: Normal to $y^2 = 4Ax$ (here $A = \frac{1}{2}$): $y = mx - 2Am - Am^3$.
+  Solution:
+  1. Normal: $y = mx - m - \frac{m^3}{2}$.
+  2. Through $(a, 0)$: $m\left(a - 1 - \frac{m^2}{2}\right) = 0 \Rightarrow m = 0$ or $m^2 = 2(a - 1)$.
+  3. Three distinct normals need $a - 1 > 0$, i.e. $a > 1$.
+  Answer: (D)
+M A 8: |-
+  Concept: Intersect the lines; TA is along $\vec{PR}\times\vec{QS}$.
+  Solution:
+  1. $(3 + 4s, -1 - s, 2 + 2s) = (1 - 2u, 2 + u, -4 - 2u)$: from y, $u = -3 - s$; then x gives $s = 2$, so $T = (11, -3, 6)$.
+  2. $(4, -1, 2)\times(-2, 1, -2) = (0, 4, 2)$, with unit vector $\frac{(0, 2, 1)}{\sqrt5}$.
+  3. $A = T \pm (0, 2, 1) = (11, -1, 7)$ or $(11, -5, 5)$.
+  4. $|\vec A| = \sqrt{121 + 1 + 49} = \sqrt{171}$ (the same for both).
+  Answer: (B)
+M A 9: |-
+  Concept: Write fog piecewise, then check continuity and one-sided derivatives at the joins.
+  Solution:
+  1. $x < 0$: $g = x^3 < 0$, so $fog = x^3 + 2$. For $0 \le x < 1$: $fog = x^6$. For $x \ge 1$: $fog = (3x - 2)^2$.
+  2. At $x = 0$: the left limit is 2 and the right limit is 0, so fog is discontinuous there and not differentiable.
+  3. At $x = 1$: both sides give value 1 and derivative 6, so fog is differentiable.
+  4. One point.
+  Answer: (B)
+M A 10: |-
+  Concept: $X \to Y$ is false only when X is true and Y is false.
+  Solution:
+  1. (D): if $p\wedge q$ is true, then $p \to q$ is true, so the implication is always true.
+  2. (A) fails at $p = q = F$; (B) fails at $p = T, q = F$; (C) fails at $p = F$.
+  Answer: (D)
+M A 11: |-
+  Concept: With base $< 1$, the inequality reverses: $\log_bX \le 2 \Leftrightarrow X \ge b^2$.
+  Solution:
+  1. $\frac{r + 11}{(r - 1)^2} \ge \frac{1}{2}$ with $r = |z|$.
+  2. $2r + 22 \ge r^2 - 2r + 1 \Rightarrow r^2 - 4r - 21 \le 0 \Rightarrow (r - 7)(r + 3) \le 0$.
+  3. $r \le 7$, so the largest $|z|$ is 7.
+  Answer: (B)
+M A 12: |-
+  Concept: $T_{r+1} = \binom{60}{r}3^{\frac{60-r}{4}}5^{\frac{r}{8}}$ is rational iff both exponents are integers.
+  Solution:
+  1. We need $8 \mid r$ and $4 \mid (60 - r)$, so $r = 0, 8, \dots, 56$: 8 rational terms.
+  2. Irrational terms: $61 - 8 = 53$, so $n - 1 = 52$, which is divisible by 26.
+  Answer: (A)
+M A 13: |-
+  Concept: A plane through the origin containing a line has normal perpendicular to both the line's direction and a point on it.
+  Solution:
+  1. The line passes through $(1, -4, -2)$ with direction $(-1, 2, 3)$.
+  2. $\vec n = (-1, 2, 3)\times(1, -4, -2) = (8, 1, 2)$, so the plane is $8x + y + 2z = 0$.
+  3. $P(A) = -24 - 6 + 2 = -28$ and $P(B) = 16 + 4 - 6 = 14$.
+  4. $k = \frac{|-28|}{14} = 2$.
+  Answer: (C)
+M A 14: |-
+  Concept: Simplify, then require $f'(x) = 0$ to be solvable.
+  Solution:
+  1. $2\cot\frac{x}{2}\sin^2\frac{x}{2} = \sin x$, so $f = (4a - 3)(x + \ln5) + (a - 7)\sin x$.
+  2. $f' = 0 \Rightarrow \cos x = \frac{3 - 4a}{a - 7}$, which needs $|3 - 4a| \le |a - 7|$.
+  3. $15a^2 - 10a - 40 \le 0 \Rightarrow (3a + 4)(a - 2) \le 0 \Rightarrow a \in \left[-\frac{4}{3}, 2\right]$.
+  Answer: (B)
+M A 15: |-
+  Concept: Bayes' theorem.
+  Solution:
+  1. P(missing is a spade) $= \frac{1}{4}$, and then P(2 spades drawn) $= \frac{12\cdot11}{51\cdot50}$.
+  2. P(missing is not a spade) $= \frac{3}{4}$, and then P(2 spades) $= \frac{13\cdot12}{51\cdot50}$.
+  3. $P = \frac{\frac{3}{4}\cdot156}{\frac{3}{4}\cdot156 + \frac{1}{4}\cdot132} = \frac{468}{600} = \frac{39}{50}$.
+  Answer: (C)
+M A 16: |-
+  Concept: Put $x = 1$ and $x = -1$ to separate even and odd coefficient sums.
+  Solution:
+  1. $x = 1$: $E + O = 1^n = 1$. $x = -1$: $E - O = (1 + 1 - 1)^n = 1$.
+  2. $E = 1$, $O = 0$, so $E + 4O = 1$.
+  Answer: (C)
+M A 17: |-
+  Concept: Linear DE with integrating factor $\sec^2x$.
+  Solution:
+  1. $(y\sec^2x)' = \sin x\sec^2x \Rightarrow y\sec^2x = \sec x + C$.
+  2. $y\left(\frac{\pi}{3}\right) = 0 \Rightarrow C = -2$, so $y = \cos x - 2\cos^2x$.
+  3. With $t = \cos x$: $t - 2t^2$ has maximum $\frac{1}{8}$ at $t = \frac{1}{4}$.
+  Answer: (D)
+M A 18: |-
+  Concept: Chord with midpoint $(h, k)$: $hx + ky = h^2 + k^2$; the line $lx + my = n$ touches $\frac{x^2}{9} - \frac{y^2}{16} = 1$ iff $9l^2 - 16m^2 = n^2$.
+  Solution:
+  1. $9h^2 - 16k^2 = (h^2 + k^2)^2$.
+  2. Locus: $(x^2 + y^2)^2 - 9x^2 + 16y^2 = 0$.
+  Answer: (D)
+M A 19: |-
+  Concept: Substitute $u = 81^{\sin^2x}$, so $81^{\cos^2x} = \frac{81}{u}$.
+  Solution:
+  1. $u + \frac{81}{u} = 30 \Rightarrow u = 27$ or $3$, so $\sin^2x = \frac{3}{4}$ or $\frac{1}{4}$.
+  2. In $[0, \pi]$: $x = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{\pi}{6}, \frac{5\pi}{6}$, i.e. 4 roots.
+  Answer: (B)
+M A 20: |-
+  Concept: Telescoping with $\tan^{-1}x - \tan^{-1}y = \tan^{-1}\frac{x - y}{1 + xy}$.
+  Solution:
+  1. Dividing numerator and denominator by $2^{2r+1}$: term $= \tan^{-1}\frac{(3/2)^{r+1} - (3/2)^r}{1 + (3/2)^{2r+1}} = \tan^{-1}(3/2)^{r+1} - \tan^{-1}(3/2)^r$.
+  2. $S_k = \tan^{-1}(3/2)^{k+1} - \tan^{-1}\frac{3}{2} \to \frac{\pi}{2} - \tan^{-1}\frac{3}{2} = \cot^{-1}\frac{3}{2}$.
+  Answer: (C)
+M B 1: |-
+  Concept: Choose an AP and a GP from the set, then count common terms.
+  Solution:
+  1. AP: 11, 16, 21, 26 ($d = 5$), i.e. terms $\equiv 1 \pmod 5$ up to 9996.
+  2. GP: 4, 8, 16, 32 ($r = 2$), i.e. powers $2^n$ up to 8192.
+  3. $2^n \equiv 1 \pmod 5$ iff $4 \mid n$: 16, 256, 4096.
+  4. Three common terms.
+  Answer: 3
+M B 2: |-
+  Concept: Riemann sum, then the property $\int_0^1f(x)dx = \int_0^1f(1 - x)dx$.
+  Solution:
+  1. The limit is $2\int_0^1\log_2\left(1 + \tan\frac{\pi x}{4}\right)dx = 2I$.
+  2. With $x \to 1 - x$: $1 + \tan\left(\frac{\pi}{4} - \theta\right) = \frac{2}{1 + \tan\theta}$, so $I = \int_0^1(1 - \log_2(1 + \tan))dx = 1 - I$.
+  3. $I = \frac{1}{2}$, so the limit is 1.
+  Answer: 1
+M B 3: |-
+  Concept: C₂ lies inside the corner at A, and its centre is on the diagonal AC.
+  Solution:
+  1. Radius $r$: $\sqrt2r = 1 - r \Rightarrow r = \sqrt2 - 1$ (internal touching).
+  2. Distance from C to the centre of C₂ $= \sqrt2 - \sqrt2r = 2(\sqrt2 - 1) = 2r$, so the tangent makes 30° with CA.
+  3. CA makes 45° with CB, so CE makes 15° with CB and $EB = \tan15° = 2 - \sqrt3$.
+  4. $\alpha = 2$, $\beta = -1$, so $\alpha + \beta = 1$.
+  Answer: 1
+M B 4: |-
+  Concept: Maclaurin expansion; the denominator $x\sin x \sim x^2$.
+  Solution:
+  1. Numerator $= (a - b + c) + (a - c)x + \frac{a + b + c}{2}x^2 + \dots$
+  2. The limit is finite only if $a - b + c = 0$ and $a = c$; then the limit is $\frac{a + b + c}{2} = 2$.
+  3. $a + b + c = 4$.
+  Answer: 4
+M B 5: |-
+  Concept: $\operatorname{tr}(AA^T)$ = sum of squares of all 9 entries.
+  Solution:
+  1. Write 9 as a sum of squares from {0, 1, 4, 9} over 9 entries.
+  2. One 3: $9$ ways. Two 2s and one 1: $\binom{9}{2}\cdot7 = 252$. One 2 and five 1s: $9\binom{8}{5} = 504$. Nine 1s: 1 way.
+  3. Total $= 9 + 252 + 504 + 1 = 766$.
+  Answer: 766
+M B 6: |-
+  Concept: $P^{-1}AP - I = P^{-1}(A - I)P$, so its determinant equals $\det(A - I)$.
+  Solution:
+  1. $\det(A - I) = 3 - 3\sqrt3i = -6\omega$.
+  2. $\det\left[(P^{-1}AP - I)^2\right] = 36\omega^2$, so $\alpha = 36$.
+  Answer: 36
+M B 7: |-
+  Concept: The normal is parallel to $x + 3y = -5$ (slope $-\frac{1}{3}$), so the tangent slope is 3.
+  Solution:
+  1. $y' = 2a^2 - 15a + 10 = 3 \Rightarrow 2a^2 - 15a + 7 = 0 \Rightarrow a = 7$ (since $a > 1$).
+  2. $b = \frac{2}{3}(343) - \frac{15}{2}(49) + 70 = -\frac{413}{6}$.
+  3. $|a + 6b| = |7 - 413| = 406$.
+  Answer: 406
+M B 8: |-
+  Concept: $y = (x + 1)^2 + c$; a bounded region with the x-axis needs $c < 0$.
+  Solution:
+  1. With $k = \sqrt{-c}$, the area between $y = u^2 - k^2$ and the axis is $\frac{4k^3}{3}$.
+  2. $\frac{4k^3}{3} = \frac{4\sqrt8}{3} \Rightarrow k^3 = 2\sqrt2 \Rightarrow k = \sqrt2$, $c = -2$.
+  3. $y(1) = 4 - 2 = 2$.
+  Answer: 2
+M B 9: |-
+  Concept: $f(x) + f(x+1) = 2$ gives $f(x + 2) = f(x)$ (period 2).
+  Solution:
+  1. $\int_0^2f = \int_0^1[f(x) + f(x + 1)]dx = 2$; any interval of length 2 gives 2.
+  2. $I_1 = 4\times2 = 8$ and $I_2 = 2\times2 = 4$.
+  3. $I_1 + 2I_2 = 16$.
+  Answer: 16
+M B 10: |-
+  Concept: $|z + i| = |z - 3i|$ is the perpendicular bisector, $\operatorname{Im}z = 1$.
+  Solution:
+  1. $z = x + i$: $w = x^2 + 1 - 2x - 2i + 2 = (x - 1)^2 + 2 - 2i$.
+  2. Re(w) is minimum at $x = 1$: $w = 2 - 2i = 2\sqrt2e^{-i\pi/4}$.
+  3. $w^n$ is real when $\frac{n\pi}{4}$ is a multiple of $\pi$, so the least $n$ is 4.
+  Answer: 4

@@ -1,0 +1,190 @@
+P A 1: |-
+  Concept: Blocks of a DC power supply.
+  Solution:
+  1. Rectifier: converts AC voltage to DC, (a)–(ii).
+  2. Stabilizer (regulator, e.g. Zener): keeps the output voltage constant when input or load changes, (b)–(iv).
+  3. Transformer: steps AC voltage up or down, (c)–(i).
+  4. Filter (capacitor/inductor): removes ripple from the rectified output, (d)–(iii).
+  Answer: (B)
+P A 2: |-
+  Concept: At t = 0: $y = A\sin\phi_0$ and velocity $v = A\omega\cos\phi_0$.
+  Solution:
+  1. $\frac{A}{2} = A\sin\phi_0 \Rightarrow \phi_0 = \frac{\pi}{6}$ or $\frac{5\pi}{6}$.
+  2. Moving in the negative direction means $\cos\phi_0 < 0$, so $\phi_0 = \frac{5\pi}{6}$.
+  Answer: (D)
+P A 3: |-
+  Concept: A block between two springs fixed to opposite walls: on displacement, one spring stretches and the other compresses, both pushing it back, so the springs act in parallel.
+  Solution:
+  1. $k_{eq} = 2k + 2k = 4k$.
+  2. $T = 2\pi\sqrt{\frac{m}{4k}} = \pi\sqrt{\frac{m}{k}}$.
+  Answer: (A)
+P A 4: |-
+  Concept: Rydberg formula $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
+  Solution:
+  1. $\frac{1}{\lambda} = 1.097\times10^7\left(1 - \frac{1}{4}\right) = 8.23\times10^6$ m⁻¹.
+  2. $\lambda \approx 1.22\times10^{-7}$ m ≈ 121.8 nm (first Lyman line; equivalently 1240/10.2 eV ≈ 121.6 nm).
+  Answer: (D)
+P A 5: |-
+  Concept: Below the Curie temperature a ferromagnet splits into domains, each spontaneously magnetised.
+  Solution:
+  1. Within a domain, all dipoles are aligned, so the domain is magnetised to saturation.
+  2. Domains are macroscopic (about 0.1 mm), and their directions differ from one another, which is why an unmagnetised sample has zero net magnetisation.
+  Answer: (C)
+P A 6: |-
+  Concept: The projection of uniform circular motion is SHM with the same ω; the restoring force per unit mass at an extreme is $\omega^2A$.
+  Solution:
+  1. $\omega = \frac{\pi/6}{0.1} = \frac{5\pi}{3}$ rad/s.
+  2. At M (an extreme, x = A = 0.36 m): $\frac{F}{m} = \omega^2A = \frac{25\pi^2}{9}\times0.36 = \pi^2 \approx 9.87$ N/kg.
+  Answer: (C)
+P A 7: |-
+  Concept: Einstein's equation $\frac{hc}{\lambda} = \phi + eV_0$, with hc = 1240 eV·nm.
+  Solution:
+  1. $\phi = \frac{1240}{491} - 0.710 = 2.525 - 0.710 = 1.815$ eV.
+  2. New photon energy = 1.815 + 1.43 = 3.245 eV.
+  3. $\lambda = \frac{1240}{3.245} \approx 382$ nm.
+  Answer: (B)
+P A 8: |-
+  Concept: A charge at a corner of a cube is shared by 8 identical cubes, so $\frac{q}{8\varepsilon_0}$ passes through this cube, all of it through the 3 faces not touching the charge.
+  Solution:
+  1. Each of the 3 far faces gets $\frac{q}{24\varepsilon_0}$.
+  2. The shaded region is two triangles, each half of one far face (split by a diagonal, symmetric about the charge): $2\times\frac{q}{48\varepsilon_0} = \frac{q}{24\varepsilon_0}$.
+  Answer: (C)
+P A 9: |-
+  Concept: Rolling without slipping conserves mechanical energy: $KE = \frac{1}{2}mv^2\left(1 + \frac{k^2}{R^2}\right)$ with $\frac{k^2}{R^2} = \frac{2}{5}$ for a solid sphere.
+  Solution:
+  1. $\frac{1}{2}mv_0^2\cdot\frac{7}{5} = mgh \Rightarrow h = \frac{7v_0^2}{10g}$.
+  2. Distance along the incline $= \frac{h}{\sin\theta} = \frac{7v_0^2}{10g\sin\theta}$.
+  Note: this exact result is not among the options (it is the reciprocal of option (B)'s coefficient); the official NTA key is (B), and some institutes treat the question as a bonus.
+  Answer: (B)
+P A 10: |-
+  Concept: Diffraction by a circular aperture: angular spread $\theta \approx \frac{1.22\lambda}{d}$.
+  Solution:
+  1. A larger d gives a smaller θ, so the diffraction pattern shrinks in size.
+  2. A larger hole lets more light through into a smaller spot, so the intensity increases.
+  Answer: (A)
+P A 11: |-
+  Concept: $\lambda = \frac{h}{mv}$.
+  Solution:
+  1. Same speed: $\frac{\lambda_e}{\lambda_p} = \frac{m_p}{m_e} = 1836$.
+  Answer: (B)
+P A 12: |-
+  Concept: Combine the process equation with the ideal gas law PV = RT.
+  Solution:
+  1. $PV^{1/2} = K \Rightarrow P = KV^{-1/2}$.
+  2. $T = \frac{PV}{R} = \frac{KV^{1/2}}{R} \propto \sqrt{V}$.
+  3. $\frac{T_2}{T_1} = \sqrt{\frac{V_2}{V_1}} = \sqrt{2}$.
+  Answer: (D)
+P A 13: |-
+  Concept: Motion under gravity (take g = 10 m/s²).
+  Solution:
+  1. After falling 5 m, the first stone's speed is $\sqrt{2\times10\times5} = 10$ m/s.
+  2. Let t be the remaining time and H the height. First stone: $H - 5 = 10t + 5t^2$. Second stone (from rest, 25 m down): $H - 25 = 5t^2$.
+  3. Subtracting: 20 = 10t, so t = 2 s.
+  4. H = 25 + 5(4) = 45 m.
+  Answer: (A)
+P A 14: |-
+  Concept: In AM the transmitted signal is at the carrier frequency (the message only modulates its amplitude).
+  Solution:
+  1. The radiated wave's wavelength is set by the carrier: $\lambda = \frac{c}{f_c}$.
+  Answer: (D)
+P A 15: |-
+  Concept: Equipartition: each degree of freedom has an average energy $\frac{1}{2}kT$.
+  Solution:
+  1. Statement I: molecular energies (including rotational) follow the Maxwell–Boltzmann distribution. True.
+  2. Statement II: a diatomic molecule has 2 rotational degrees of freedom (average kT) but 3 translational (average $\frac{3}{2}kT$), so they are not equal. False.
+  Answer: (D)
+P A 16: |-
+  Concept: The electric field between the plates is perpendicular to them, so the velocity component parallel to the plates stays constant.
+  Solution:
+  1. $v_1\cos\alpha = v_2\cos\beta$.
+  2. $\frac{K_1}{K_2} = \frac{v_1^2}{v_2^2} = \frac{\cos^2\beta}{\cos^2\alpha}$.
+  Answer: (B)
+P A 17: |-
+  Concept: Phase angle in RL / RC circuits: $\tan\phi = \frac{X}{R}$.
+  Solution:
+  1. Without C, lag 45°: $X_L = R$. Without L, lead 45°: $X_C = R$.
+  2. With all three, $X_L = X_C$, so the circuit is at resonance and Z = R = 110 Ω.
+  3. $I = \frac{220}{110} = 2$ A.
+  Answer: (B)
+P A 18: |-
+  Concept: Doping shifts the Fermi level towards the band that supplies the majority carriers.
+  Solution:
+  1. n-type: more donors put more electrons in the conduction band, so $E_F$ moves up towards the conduction band.
+  2. p-type: more acceptors, so $E_F$ moves down towards the valence band.
+  Answer: (B)
+P A 19: |-
+  Concept: $A\bar{B} + \bar{A}B$ is XOR; a NOR on these two terms gives the complement, XNOR.
+  Solution:
+  1. $Y = \overline{A\bar{B} + \bar{A}B} = A \odot B$ (XNOR).
+  2. Truth table: 00 → 1, 01 → 0, 10 → 0, 11 → 1, which is option (D).
+  Answer: (D)
+P A 20: |-
+  Concept: $\frac{e^2}{4\pi\varepsilon_0}$ has dimensions of energy × length, and so does hc.
+  Solution:
+  1. $\left[\frac{e^2}{4\pi\varepsilon_0r}\right]$ = energy, so $\left[\frac{e^2}{4\pi\varepsilon_0}\right] = [ML^3T^{-2}]$.
+  2. $[hc] = [ML^2T^{-1}][LT^{-1}] = [ML^3T^{-2}]$.
+  3. The ratio is dimensionless, $[M^0L^0T^0]$ (it is the fine-structure constant, about 1/137).
+  Answer: (B)
+P B 1: |-
+  Concept: Wave speed on a string $v = \sqrt{\frac{T}{\mu}}$, so $\frac{\Delta v}{v} = \frac{1}{2}\frac{\Delta T}{T}$.
+  Solution:
+  1. $\frac{\Delta v}{v} = \frac{1}{2}\times4\% = 2\%$.
+  Answer: 2
+P B 2: |-
+  Concept: Equilibrium of a charged pendulum: $\tan\theta = \frac{F_e}{mg}$.
+  Solution:
+  1. Half separation 0.1 m, thread 0.5 m: $\sin\theta = 0.2$, $\tan\theta = \frac{0.2}{\sqrt{0.96}} \approx 0.204$.
+  2. $mg = 10^{-5}\times10 = 10^{-4}$ N, so $F_e = 2.04\times10^{-5}$ N.
+  3. $\frac{9\times10^9q^2}{(0.2)^2} = 2.04\times10^{-5} \Rightarrow q^2 \approx 9.07\times10^{-17}$, $q \approx 9.5\times10^{-9}$ C.
+  4. $\frac{a}{21}\times10^{-8} = 9.5\times10^{-9} \Rightarrow a \approx 20$.
+  Answer: 20
+P B 3: |-
+  Concept: Intensity of a point source $I = \frac{P}{4\pi r^2}$, and $I = \frac{E_0^2}{2\mu_0c}$.
+  Solution:
+  1. The official solution uses the full 8 W: $I = \frac{8}{4\pi(100)} = \frac{0.02}{\pi}$ W/m².
+  2. $E_0^2 = 2\mu_0cI = \frac{0.04\mu_0c}{\pi} \Rightarrow E_0 = \frac{2}{10}\sqrt{\frac{\mu_0c}{\pi}}$, so x = 2.
+  Note: including the 10% efficiency (0.8 W radiated) would give $E_0 \approx 0.63\times\frac{1}{10}\sqrt{\frac{\mu_0c}{\pi}}$; the official answer 2 ignores the efficiency.
+  Answer: 2
+P B 4: |-
+  Concept: Identical conducting spheres share the total charge equally on contact.
+  Solution:
+  1. Total = 2.1 – 0.1 = 2.0 nC, so each sphere gets 1 nC.
+  2. $F = \frac{9\times10^9\times(10^{-9})^2}{0.5^2} = 36\times10^{-9}$ N.
+  Answer: 36
+P B 5: |-
+  Concept: Energy conservation in the earth's gravitational field.
+  Solution:
+  1. $\frac{1}{2}mv_i^2 - \frac{GMm}{R} = -\frac{GMm}{11R}$, so $v_i^2 = \frac{2GM}{R}\cdot\frac{10}{11}$.
+  2. Since $v_e^2 = \frac{2GM}{R}$: $v_i = \sqrt{\frac{10}{11}}v_e$, so x = 10.
+  Answer: 10
+P B 6: |-
+  Concept: Current divides between parallel paths in inverse ratio of their resistances.
+  Solution:
+  1. From P to R: direct path PR = 2 Ω; path P→Q→R = 4 Ω.
+  2. $i_1$ (via Q) $= 6\times\frac{2}{2 + 4} = 2$ A (and $i_2$ = 4 A).
+  Answer: 2
+P B 7: |-
+  Concept: Mass equivalent of photon energy: $mc^2 = \frac{hc}{\lambda} \Rightarrow m = \frac{h}{c\lambda}$.
+  Solution:
+  1. $m = \frac{h}{3\times10^8\times10^{-9}} = \frac{h}{0.3} = \frac{10}{3}h$.
+  2. x = 10.
+  Answer: 10
+P B 8: |-
+  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$.
+  Solution:
+  1. $\frac{1}{4} = 1 - \frac{T_2}{T_1} \Rightarrow T_2 = \frac{3}{4}T_1$.
+  2. $\frac{1}{2} = 1 - \frac{T_2 - 52}{T_1} \Rightarrow T_2 - 52 = \frac{T_1}{2}$.
+  3. $\frac{3T_1}{4} - 52 = \frac{T_1}{2} \Rightarrow T_1 = 208$ K.
+  Answer: 208
+P B 9: |-
+  Concept: $p = \sqrt{2mK}$.
+  Solution:
+  1. Equal K: $\frac{p_1}{p_2} = \sqrt{\frac{4}{16}} = \frac{1}{2}$.
+  2. n : 2 = 1 : 2, so n = 1.
+  Answer: 1
+P B 10: |-
+  Concept: The cross product is anti-commutative, $\vec{Q}\times\vec{P} = -\vec{P}\times\vec{Q}$.
+  Solution:
+  1. $\vec{P}\times\vec{Q} = -\vec{P}\times\vec{Q} \Rightarrow \vec{P}\times\vec{Q} = \vec{0}$, so the vectors are parallel or antiparallel.
+  2. With 0° < θ < 360°, θ = 180°.
+  Answer: 180

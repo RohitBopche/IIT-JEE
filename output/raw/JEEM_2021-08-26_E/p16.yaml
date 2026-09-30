@@ -71,11 +71,12 @@
   t: N
   q: |-
     The reaction rate for the reaction $\mathrm{[PtCl_4]^{2-} + H_2O \rightleftharpoons [Pt(H_2O)Cl_3]^- + Cl^-}$ was measured as a function of concentrations of different species. It was observed that $\frac{-d[\mathrm{[PtCl_4]^{2-}}]}{dt} = 4.8\times10^{-5}[\mathrm{[PtCl_4]^{2-}}] - 2.4\times10^{-3}[\mathrm{[Pt(H_2O)Cl_3]^-}][\mathrm{Cl^-}]$ where square brackets are used to denote molar concentrations. The equilibrium constant $K_c$ = _____. (Nearest integer)
-  a: '50'
+  a: '0.02'
   ch: Chemical Kinetics
   tp: Equilibrium constant from rate constants
   df: M
-  nt: 'Official NTA answer 50 (solution printed shows 0.02)'
+  c: m
+  nt: 'NTA answer 50 is 1/Kc (reverse reaction); Kc = kf/kb = 4.8e-5/2.4e-3 = 0.02 (printed solution also gives 0.02)'
 - n: 10
   s: C
   sec: B

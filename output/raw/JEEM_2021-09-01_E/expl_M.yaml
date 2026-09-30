@@ -1,0 +1,200 @@
+M A 1: |-
+  Concept: 0/0 form, so use L'Hôpital's rule with the Leibniz rule for the integral.
+  Solution:
+  1. The numerator's derivative is $\frac{\pi}{4}f(\sec^2x)\cdot2\sec^2x\tan x$; the denominator's is 2x.
+  2. At x = π/4: $\frac{\frac{\pi}{4}\cdot f(2)\cdot2\cdot2\cdot1}{\pi/2} = 2f(2)$.
+  Answer: (B)
+M A 2: |-
+  Concept: Bring each angle into the principal range.
+  Solution:
+  1. cos⁻¹(cos(−5)) = cos⁻¹(cos 5) = 2π − 5 (5 lies in (π, 2π)).
+  2. sin⁻¹(sin 6) = 6 − 2π.
+  3. tan⁻¹(tan 12) = 12 − 4π.
+  4. Total: (2π − 5) + (6 − 2π) − (12 − 4π) = 4π − 11.
+  Answer: (C)
+M A 3: |-
+  Concept: Examine D and the ranks.
+  Solution:
+  1. D = −(a − 3)(a − 4), so there is a unique solution unless a = 3 or 4.
+  2. For a = 3 and a = 4, the rank of the coefficient matrix is 2 but the augmented rank is 3, so the system is inconsistent.
+  3. n(S₁) = 2 and n(S₂) = 0.
+  Answer: (C)
+M A 4: |-
+  Concept: With both constants positive, the acute bisector takes the sign opposite to that of n₁·n₂ (here n₁·n₂ > 0).
+  Solution:
+  1. $\frac{x - 2y - 2z + 1}{3} = -\frac{2x - 3y - 6z + 1}{7}$ gives 13x − 23y − 32z + 10 = 0.
+  2. (−2, 0, −½): −26 + 16 + 10 = 0 ✓.
+  Answer: (B)
+M A 5: |-
+  Concept: p → q ≡ ∼p ∨ q.
+  Solution:
+  1. ∼(p → q) ≡ p ∧ ∼q.
+  Answer: (D)
+M A 6: |-
+  Concept: Count the adjacent (side-sharing) pairs.
+  Solution:
+  1. Horizontal pairs: 8 × 7 = 56; vertical pairs: 56; total 112.
+  2. Total pairs = C(64, 2) = 2016, so p = 112/2016 = 1/18.
+  Answer: (B)
+M A 7: |-
+  Concept: Linear equation $y' + \frac{y}{x^2} = \frac{1}{x^3}$ with integrating factor $e^{-1/x}$.
+  Solution:
+  1. $ye^{-1/x} = \int\frac{e^{-1/x}}{x^3}dx = \left(\frac{1}{x} + 1\right)e^{-1/x} + C$, so $y = \frac{1}{x} + 1 + Ce^{1/x}$.
+  2. y(1) = 1 gives C = −1/e.
+  3. y(½) = 2 + 1 − e²/e = 3 − e.
+  Answer: (D)
+M A 8: |-
+  Concept: $4\sin\left(\frac{\pi}{4} + x\right)\sin\left(\frac{\pi}{4} - x\right) = 2\cos2x$.
+  Solution:
+  1. 2cos x(2cos 2x − 1) = 2(4cos³x − 3cos x) = 2cos 3x = 1, so cos 3x = ½.
+  2. With 3x ∈ [0, 3π]: 3x = π/3, 5π/3, 7π/3, so x = π/9, 5π/9, 7π/9.
+  3. n = 3 and S = 13π/9.
+  Answer: (A)
+M A 9: |-
+  Concept: Find f, then use the intermediate value property of f′.
+  Solution:
+  1. f(2) = f(4) = 0 gives a = 8, b = 0, so f = x(x − 2)(x − 4) and f′ = 3x² − 12x + 8.
+  2. f′ rises from −4 to 8 on (2, 4), so it takes −1 and then 0: (S1) is true.
+  3. $x_4 = 2 + \frac{2}{\sqrt3}$ (the minimum of f), with $f(x_4) = -\frac{16}{3\sqrt3}$.
+  4. $2f'(x_3) = -\frac{16}{3}$ needs f′(x₃) = −8/3, which lies in (−4, 0), so such x₃ < x₄ exists: (S2) is true.
+  Answer: (A)
+M A 10: |-
+  Concept: $J_{n+3,3} - J_{n,3} = \int_0^{1/2}\frac{x^n(x^3 - 1)}{x^3 - 1}dx = \frac{(1/2)^{n+1}}{n + 1}$.
+  Solution:
+  1. The diagonal entries (i = 1, 2, 3, with n = i + 3) are 1/160, 1/384, 1/896; A is upper triangular.
+  2. |A| = 1/(160 × 384 × 896) = 1/(2¹⁹ × 105).
+  3. |adj A⁻¹| = |A⁻¹|² = (105)² × 2³⁸.
+  Answer: (C)
+M A 11: |-
+  Concept: The upper curve is sin x + cos x throughout; split at π/4 for the absolute value.
+  Solution:
+  1. On [0, π/4]: difference = 2 sin x; on [π/4, π/2]: difference = 2 cos x.
+  2. Area = 2(1 − 1/√2) + 2(1 − 1/√2) = 4 − 2√2 = 2√2(√2 − 1).
+  Answer: (A)
+M A 12: |-
+  Concept: Parametrise the line, then use |AP × d|/|d|.
+  Solution:
+  1. With z = t: x = (t − 4)/3 and y = (2t + 1)/3, so the direction is (1, 2, 3); t = 4 gives the point (0, 3, 4).
+  2. AP = (2, −4, 2), and AP × d = (−16, −4, 8), whose |·|² is 336.
+  3. Distance = √(336/14) = √24 = 2√6.
+  Answer: (C)
+M A 13: |-
+  Concept: Vertex (½, ¾) with directrix y = ½ gives a = ¼: $(x - \frac{1}{2})^2 = y - \frac{3}{4}$, that is, y = x² − x + 1.
+  Solution:
+  1. P = (−½, 7/4). The slope there is −2, so the normal has slope ½: y = ½x + 2.
+  2. x² − x + 1 = ½x + 2 gives x = −½ or x = 2, so Q = (2, 3).
+  3. PQ² = 2.5² + 1.25² = 125/16.
+  Answer: (B)
+M A 14: |-
+  Concept: The map t ↦ t² − 2 must send the root set into itself.
+  Solution:
+  1. Fixed points: t² − 2 = t gives t = 2 or −1. The roots {2,2}, {−1,−1} and {2,−1} give (a, b) = (−4, 4), (2, 1), (−1, −2).
+  2. A 2-cycle (s + t = −1, st = −1) gives x² + x − 1: (1, −1).
+  3. One root mapping to a fixed root: {−2, 2} gives (0, −4), and {1, −1} gives (0, −1).
+  4. Non-real roots are impossible, so there are 6 pairs.
+  Answer: (A)
+M A 15: |-
+  Concept: $S_n = \sum_{k=1}^{n-1}k(n - k) = \frac{n(n^2 - 1)}{6}$.
+  Solution:
+  1. $\frac{2S_n}{n!} = \frac{(n - 1)n(n + 1)}{3\cdot n!} = \frac{n + 1}{3(n - 2)!}$.
+  2. The term is $\frac{n + 1 - 3}{3(n - 2)!} = \frac{n - 2}{3(n - 2)!} = \frac{1}{3(n - 3)!}$.
+  3. $\sum_{n\ge4}\frac{1}{3(n - 3)!} = \frac{1}{3}\left(\frac{1}{1!} + \frac{1}{2!} + \ldots\right) = \frac{e - 1}{3}$.
+  Answer: (A)
+M A 16: |-
+  Concept: Complement counting.
+  Solution:
+  1. Total = C(15, 3) = 455.
+  2. Triples of distinct indices with i + j + k = 15: {1,2,12}, {1,3,11}, {1,4,10}, {1,5,9}, {1,6,8}, {2,3,10}, {2,4,9}, {2,5,8}, {2,6,7}, {3,4,8}, {3,5,7}, {4,5,6}. That is 12.
+  3. 455 − 12 = 443.
+  Answer: (C)
+M A 17: |-
+  Concept: Sum-to-product.
+  Solution:
+  1. cos(π/4 + x) + cos(π/4 − x) = √2 cos x, and cos(3π/4 + x) − cos(3π/4 − x) = −√2 sin x.
+  2. The argument is 3 + √2(cos x − sin x) = 3 + 2cos(x + π/4), which lies in [1, 5].
+  3. $\log_{\sqrt5}$ of [1, 5] is [0, 2].
+  Answer: (D)
+M A 18: |-
+  Concept: $\sum\frac{1}{a_na_{n+1}} = \frac{1}{d}\left(\frac{1}{a_1} - \frac{1}{a_{21}}\right) = \frac{20}{a_1a_{21}}$.
+  Solution:
+  1. a₁a₂₁ = 45, and 21(a₁ + a₂₁)/2 = 189 gives a₁ + a₂₁ = 18. So {a₁, a₂₁} = {3, 15} and d = ±0.6.
+  2. a₆ and a₁₆ are 6 and 12 (in some order), so the product is 72.
+  Answer: (B)
+M A 19: |-
+  Concept: f(x) = x + k sin x, where k = ∫₀^{π/2} cos y f(y) dy.
+  Solution:
+  1. $k = \int_0^{\pi/2}y\cos y\,dy + k\int_0^{\pi/2}\sin y\cos y\,dy = \left(\frac{\pi}{2} - 1\right) + \frac{k}{2}$.
+  2. k = π − 2.
+  Answer: (D)
+M A 20: |-
+  Concept: Slopes of both tangents at the intersection point.
+  Solution:
+  1. x²(1 − 1/9) = 2 gives P = (3/2, √3/2).
+  2. Ellipse slope: −x/(9y) = −1/(3√3). Circle slope: −x/y = −√3.
+  3. $\tan\theta = \frac{\sqrt3 - \frac{1}{3\sqrt3}}{1 + \frac{1}{3}} = \frac{8}{3\sqrt3}\cdot\frac{3}{4} = \frac{2}{\sqrt3}$.
+  Answer: (B)
+M B 1: |-
+  Concept: The probabilities sum to 1, and the mean is given.
+  Solution:
+  1. a + b = 4/15 and −a + 6b = 0.9 give b = 1/6 and a = 1/10.
+  2. E[X²] = 0.8 + 0.1 + 3 + 3.2 + 6 = 13.1, so σ² = 13.1 − 2.3² = 7.81.
+  3. 100σ² = 781.
+  Answer: 781
+M B 2: |-
+  Concept: L'Hôpital: the limit is nf(1) − f′(1).
+  Solution:
+  1. f(1) = 9 and f′(1) = 6 + 8 + 3 + 2 = 19.
+  2. 9n − 19 = 44, so n = 7.
+  Answer: 7
+M B 3: |-
+  Concept: |3iz + 6| = 3|z − 2i|.
+  Solution:
+  1. We want the farthest point from (0, 2) in the disc with centre (2, 2) and radius 1, which is (3, 2).
+  2. a + b = 5.
+  Answer: 5
+M B 4: |-
+  Concept: The midpoints form the medial triangle, whose area is ¼ of ABC.
+  Solution:
+  1. The pairwise intersections are (1, 2), (2, 3) and (7, 5), enclosing an area of ½|−2 + 6 − 7| = 3/2.
+  2. Area of ABC = 4 × 3/2 = 6.
+  Answer: 6
+M B 5: |-
+  Concept: g(x) = xf(x) + 2 is a quartic with roots 2, 3, 4, 5.
+  Solution:
+  1. g(x) = c(x − 2)(x − 3)(x − 4)(x − 5); g(0) = 2 gives 120c = 2, so c = 1/60.
+  2. 10f(10) = g(10) − 2 = 1680/60 − 2 = 26.
+  3. 52 − 26 = 26.
+  Answer: 26
+M B 6: |-
+  Concept: Dictionary rank, counting only arrangements without "RR".
+  Solution:
+  1. Words starting with A or E: each leaves 5 letters with R, R, giving 5!/2 − 4! = 36 without RR. That makes 72.
+  2. Starting with F, in order: FAERMR (73), FAMRER (74), FAREMR (75), FARERM (76), then FARMER (77). The other arrangements of FAE…/FAM… contain RR.
+  Answer: 77
+M B 7: |-
+  Concept: The sum of the coefficients is 2ⁿ.
+  Solution:
+  1. 2ⁿ = 4096, so n = 12.
+  2. The greatest coefficient is C(12, 6) = 924.
+  Answer: 924
+M B 8: |-
+  Concept: Write v = λa + μb.
+  Solution:
+  1. v ⊥ (3, 2, −1): 2λ + 8μ = 0. Projection on a: v·a/3 = 19, so 9λ − 2μ = 57.
+  2. μ = −3/2 and λ = 6, so v = (21/2, −9, 27/2) and |v|² = 373.5.
+  3. |2v|² = 1494.
+  Answer: 1494
+M B 9: |-
+  Concept: Check continuity only at the integer points −1, 0, 1.
+  Solution:
+  1. x = −1: both sides equal 1, so f is continuous there.
+  2. x = 0: the left value is 0 and the right value is √3/2 − 1, so f is discontinuous.
+  3. x = 1: the left value is √3/2 − 1 and the right value is 1/√2 − 2, so f is discontinuous.
+  4. There are 2 points of discontinuity.
+  Answer: 2
+M B 10: |-
+  Concept: Shortest path via reflection: reflect P in the x-axis to P′(−3, −4).
+  Solution:
+  1. The line P′Q is y = 2x + 2, which meets the x-axis at R(−1, 0).
+  2. PR² = 4 + 16 = 20 and RQ² = 1 + 4 = 5, so 50 × 25 = 1250.
+  Answer: 1250

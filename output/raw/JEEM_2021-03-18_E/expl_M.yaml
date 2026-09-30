@@ -1,0 +1,193 @@
+M A 1: |-
+  Concept: Bernoulli-type DE: substitute $w = \frac{1}{y + 1}$.
+  Solution:
+  1. With $v = y + 1$: $v' = v^2e^{x^2/2} - xv$, so $w' - xw = -e^{x^2/2}$.
+  2. $(we^{-x^2/2})' = -1 \Rightarrow we^{-x^2/2} = -x + C$; $y(2) = 0 \Rightarrow C = 2 + e^{-2}$.
+  3. At $x = 1$: $w = e^{1/2}\frac{e^2 + 1}{e^2}$, so $v = \frac{e^{3/2}}{e^2 + 1}$.
+  4. $y' = v(ve^{1/2} - 1) = \frac{e^{3/2}}{e^2 + 1}\left(\frac{e^2}{e^2 + 1} - 1\right) = -\frac{e^{3/2}}{(e^2 + 1)^2}$.
+  Answer: (A)
+M A 2: |-
+  Concept: Projection of $\vec{AB}$ on $\vec{AC}$ $= c\cos A = \frac{b^2 + c^2 - a^2}{2b}$.
+  Solution:
+  1. $a = 8$, $b = 7$, $c = 10$: $\frac{49 + 100 - 64}{14} = \frac{85}{14}$.
+  Answer: (B)
+M A 3: |-
+  Concept: A non-trivial solution needs $\Delta = 0$.
+  Solution:
+  1. $\Delta = 4(-3 - 2) - \lambda(6 - \mu) + 2(4 + \mu) = (\lambda + 2)(\mu - 6)$.
+  2. $\Delta = 0$ for $\mu = 6$ (any λ) or $\lambda = -2$ (any μ); the matching option is $\mu = 6$, $\lambda \in \mathbb{R}$.
+  Answer: (A)
+M A 4: |-
+  Concept: Find the inverse functions.
+  Solution:
+  1. $f^{-1}(x) = \frac{3x - 2}{x - 1}$ and $g^{-1}(x) = \frac{x + 3}{2}$.
+  2. $\frac{3x - 2}{x - 1} + \frac{x + 3}{2} = \frac{13}{2} \Rightarrow x^2 - 5x + 6 = 0$.
+  3. Sum of roots $= 5$ (both roots, 2 and 3, are valid).
+  Answer: (C)
+M A 5: |-
+  Concept: In an equilateral triangle, the centroid is also the incentre, and $R = 2r$.
+  Solution:
+  1. $r$ = distance from (0, 0) to $x + y = 3$ $= \frac{3}{\sqrt2}$.
+  2. $R + r = 3r = \frac{9}{\sqrt2}$.
+  Answer: (A)
+M A 6: |-
+  Concept: Tangent $\frac{xx_1}{4} - \frac{yy_1}{2} = 1$; focus $(ae, 0)$.
+  Solution:
+  1. $\frac{x^2}{4} - \frac{y^2}{2} = 1$: $e = \sqrt{3/2}$, so $F = (\sqrt6, 0)$.
+  2. Tangent at $(4, \sqrt6)$: $x - \frac{\sqrt6}{2}y = 1$, so $Q = (1, 0)$ and, at $x = \sqrt6$, $y_R = \frac{2(\sqrt6 - 1)}{\sqrt6}$.
+  3. Right triangle: area $= \frac{1}{2}(\sqrt6 - 1)\cdot\frac{2(\sqrt6 - 1)}{\sqrt6} = \frac{7 - 2\sqrt6}{\sqrt6} = \frac{7}{\sqrt6} - 2$.
+  Answer: (C)
+M A 7: |-
+  Concept: Modus tollens: $((P\Rightarrow Q)\wedge\sim Q) \Rightarrow \sim P$.
+  Solution:
+  1. If $P \Rightarrow Q$ and Q is false, then P must be false, so (B) is always true.
+  2. The others fail when P and Q are both false.
+  Answer: (B)
+M A 8: |-
+  Concept: Bound each part of the integral.
+  Solution:
+  1. $\int_0^1f \in \left[\frac{1}{3}, 1\right]$ and $\int_1^3f \in [0, 1]$.
+  2. $g(3) \in \left[\frac{1}{3}, 2\right]$.
+  Answer: (C)
+M A 9: |-
+  Concept: For an AP, $S_{2n}$, $S_{4n} - S_{2n}$, $S_{6n} - S_{4n}$ are in AP.
+  Solution:
+  1. $S_{6n} = 3(S_{4n} - S_{2n}) = 3\times1000 = 3000$.
+  Answer: (D)
+M A 10: |-
+  Concept: Area $= \frac{1}{2}|z||w|\sin(\text{angle between})$.
+  Solution:
+  1. $|w| = 2 \Rightarrow |z| = \frac{1}{2}$; the angle is $\frac{\pi}{2}$.
+  2. Area $= \frac{1}{2}\cdot\frac{1}{2}\cdot2 = \frac{1}{2}$.
+  Answer: (B)
+M A 11: |-
+  Concept: Adding a constant shifts the mean but not the SD.
+  Solution:
+  1. The original mean is 0 and the SD is $|a|$.
+  2. New mean $= b = 5$ and SD $= |a| = 20$.
+  3. $a^2 + b^2 = 400 + 25 = 425$.
+  Answer: (A)
+M A 12: |-
+  Concept: The sum of distances to the two centres is constant, so the locus is an ellipse.
+  Solution:
+  1. $|PO| = 3 - r$ and $|PC_2| = 1 + r$, so $|PO| + |PC_2| = 4$.
+  2. Ellipse with foci (0, 0) and (2, 0), $a = 2$, $c = 1$, $b^2 = 3$: $\frac{(x-1)^2}{4} + \frac{y^2}{3} = 1$.
+  3. $\left(2, \pm\frac{3}{2}\right)$: $\frac{1}{4} + \frac{3}{4} = 1$ ✓.
+  Answer: (C)
+M A 13: |-
+  Concept: $\vec a$, $\vec b$, $\vec a\times\vec b$ are mutually perpendicular.
+  Solution:
+  1. $|\vec a\times\vec b| = |\vec a|^2 = |\vec a| \Rightarrow |\vec a| = |\vec b| = 1$, so all three are unit vectors.
+  2. $\vec v = \vec a + \vec b + \vec a\times\vec b$ has $|\vec v| = \sqrt3$ and $\vec v\cdot\vec a = 1$.
+  3. $\cos\theta = \frac{1}{\sqrt3}$.
+  Answer: (B)
+M A 14: |-
+  Concept: $P(X = k) = \binom{5}{k}p^kq^{5-k}$.
+  Solution:
+  1. $\frac{P(2)}{P(1)} = \frac{10p^2q^3}{5pq^4} = \frac{2p}{q} = \frac{1}{2} \Rightarrow p = \frac{1}{5}$.
+  2. $P(3) = 10\cdot\frac{1}{125}\cdot\frac{16}{25} = \frac{32}{625}$.
+  Answer: (A)
+M A 15: |-
+  Concept: Tangent $\frac{x\cos\theta}{3\sqrt3} + y\sin\theta = 1$.
+  Solution:
+  1. Sum of intercepts $S = \frac{3\sqrt3}{\cos\theta} + \frac{1}{\sin\theta}$.
+  2. $S' = 0 \Rightarrow 3\sqrt3\frac{\sin\theta}{\cos^2\theta} = \frac{\cos\theta}{\sin^2\theta} \Rightarrow \tan^3\theta = \frac{1}{3\sqrt3}$.
+  3. $\tan\theta = \frac{1}{\sqrt3}$, so $\theta = \frac{\pi}{6}$.
+  Answer: (C)
+M A 16: |-
+  Concept: Matrix similarity.
+  Solution:
+  1. Reflexive: $P = I$. Symmetric: $A = P^{-1}B(P^{-1})^{-1}$. Transitive: $(QP)A(QP)^{-1} = C$.
+  2. So R is an equivalence relation.
+  Answer: (C)
+M A 17: |-
+  Concept: Equal elevation angles from A, B, C mean the foot of the pole is equidistant from them, i.e. at the circumcentre.
+  Solution:
+  1. $h = R\tan\frac{\pi}{3} = 2\sqrt3$.
+  Answer: (B)
+M A 18: |-
+  Concept: Write $6 = 6(\sin^2 + \cos^2)^2$ to get a perfect square.
+  Solution:
+  1. $15s^2 + 10c^2 = 6(s + c)^2 \Rightarrow (3s - 2c)^2 = 0$, so $\sin^2\alpha = \frac{2}{5}$ and $\cos^2\alpha = \frac{3}{5}$.
+  2. $27\sec^6\alpha = 27\cdot\frac{125}{27} = 125$ and $8\,\text{cosec}^6\alpha = 8\cdot\frac{125}{8} = 125$.
+  3. Sum $= 250$.
+  Answer: (D)
+M A 19: |-
+  Concept: The curve is symmetric about the x-axis and exists only for $2 \le x \le 4$.
+  Solution:
+  1. $y = \pm\frac{x}{2}\sqrt{(4 - x)(x - 2)}$.
+  2. Area $= \int_2^4x\sqrt{(4 - x)(x - 2)}\,dx$; with $x = 3 + t$, this is $3\int_{-1}^{1}\sqrt{1 - t^2}dt = \frac{3\pi}{2}$.
+  Answer: (C)
+M A 20: |-
+  Concept: Match the one-sided limits to b.
+  Solution:
+  1. RHL: $\frac{\sqrt x(\sqrt{1 + bx^2} - 1)}{bx^{5/2}} \to \frac{bx^2/2}{bx^2} = \frac{1}{2}$, so $b = \frac{1}{2}$.
+  2. LHL: $\frac{(a + 1) + 2}{2} = \frac{1}{2} \Rightarrow a = -2$.
+  3. $a + b = -\frac{3}{2}$.
+  Answer: (D)
+M B 1: |-
+  Concept: The roots of $x^2 + x + 1$ are ω and ω², with $\omega^3 = 1$.
+  Solution:
+  1. $P(\omega) = f(1) + \omega g(1) = 0$ and $P(\omega^2) = f(1) + \omega^2g(1) = 0$.
+  2. So $g(1) = 0 = f(1)$, and $P(1) = f(1) + g(1) = 0$.
+  Answer: 0
+M B 2: |-
+  Concept: Cayley–Hamilton: $P^2 - (\text{tr}P)P + (\det P)I = 0$.
+  Solution:
+  1. tr P = −1 and det P = −1, so $P^2 = I - P$.
+  2. $P^3 = 2P - I$, $P^4 = 2I - 3P$, $P^5 = 5P - 3I$, $P^6 = 5I - 8P$.
+  3. $n = 6$.
+  Answer: 6
+M B 3: |-
+  Concept: Telescoping: $r!(r^3 + 6r^2 + 2r + 5) = G(r + 1) - G(r)$ with $G(r) = (r+1)!(r + 3) - 8\cdot r!$.
+  Solution:
+  1. Sum $= G(11) - G(1) = 12!\cdot14 - 8\cdot11! - (2\cdot4 - 8)$.
+  2. $= 11!(168 - 8) = 160\cdot11!$, so $\alpha = 160$.
+  Answer: 160
+M B 4: |-
+  Concept: Simplify using $a^3 + 1$ and $a^2 - 1$ factorisations.
+  Solution:
+  1. $\frac{x + 1}{x^{2/3} - x^{1/3} + 1} = x^{1/3} + 1$ and $\frac{x - 1}{x - \sqrt x} = 1 + x^{-1/2}$.
+  2. The expression is $(x^{1/3} - x^{-1/2})^{10}$; the constant term needs $\frac{10 - r}{3} = \frac{r}{2} \Rightarrow r = 4$.
+  3. Term $= \binom{10}{4} = 210$.
+  Answer: 210
+M B 5: |-
+  Concept: $P'(x) = k(x^2 - 1)$ (extrema at ±1).
+  Solution:
+  1. $P = k\left(\frac{x^3}{3} - x\right) + d$; $\int_{-1}^1P = 2d = 18 \Rightarrow d = 9$.
+  2. $P(-3) = -6k + 9 = 0 \Rightarrow k = \frac{3}{2}$ (k > 0 gives a minimum at x = 1 ✓).
+  3. Sum of coefficients $= P(1) = \frac{1}{2} - \frac{3}{2} + 9 = 8$.
+  Answer: 8
+M B 6: |-
+  Concept: For a mirror image, the midpoint lies on the plane and the joining segment is along the normal.
+  Solution:
+  1. Direction $(-4, 2, 2 - a) \parallel (2, -1, 1) \Rightarrow 2 - a = -2 \Rightarrow a = 4$.
+  2. Midpoint $(-1, 4, 3)$: $-2 - 4 + 3 = b = -3$.
+  3. $|a + b| = 1$.
+  Answer: 1
+M B 7: |-
+  Concept: $f(x + y) = f(x)f(y)$ with $f \ne 0$ gives $f(0) = 1$.
+  Solution:
+  1. $\lim_{h\to0}\frac{f(h) - 1}{h} = \lim\frac{f(h) - f(0)}{h} = f'(0) = 3$.
+  Answer: 3
+M B 8: |-
+  Concept: Take $n = 10$ (as intended); use $\sum\binom{10}{k} = 2^{10}$ and $\sum k\binom{10}{k} = 10\cdot2^9$.
+  Solution:
+  1. $\sum(4 + 3k)\binom{10}{k} = 4\cdot2^{10} + 3\cdot10\cdot2^9 = 19\cdot2^{10}$.
+  2. $\alpha = 0$ and $\beta = 19$, so $\alpha + \beta = 19$.
+  Note: ALLEN marks this Bonus because the printed $^nC_k$ should be $^{10}C_k$.
+  Answer: 19
+M B 9: |-
+  Concept: The plane's normal is the cross product of the two line directions.
+  Solution:
+  1. $\vec n = (3, 4, 2)\times(4, -3, 7) = (34, -13, -25)$.
+  2. Through (1, −6, −5): $34(x - 1) - 13(y + 6) - 25(z + 5) = 0$.
+  3. At $(1, -1, \alpha)$: $-65 - 25(\alpha + 5) = 0 \Rightarrow \alpha = -7.6$, so $|5\alpha| = 38$.
+  Answer: 38
+M B 10: |-
+  Concept: $x\,dy - y\,dx = x^2d\left(\frac{y}{x}\right)$ makes the DE separable.
+  Solution:
+  1. $\frac{d(y/x)}{\sqrt{1 - (y/x)^2}} = \frac{dx}{x} \Rightarrow \sin^{-1}\frac{y}{x} = \ln x$ (y(1) = 0), so $y = x\sin(\ln x) \ge 0$ on $[1, e^\pi]$.
+  2. Area $= \int_1^{e^\pi}x\sin(\ln x)dx = \frac{e^{2\pi} + 1}{5}$.
+  3. $\alpha = \beta = \frac{1}{5}$, so $10(\alpha + \beta) = 4$.
+  Answer: 4

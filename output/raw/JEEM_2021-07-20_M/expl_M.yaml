@@ -1,0 +1,199 @@
+M A 1: |-
+  Concept: The vertex of a downward parabola is its maximum.
+  Solution:
+  1. $f'(x) = 2ax + 6 = 0$ at $x = \frac{3}{4}$ gives $a = -4$.
+  2. $g(x) = -4x^2 - 6x + 15$: $g' = -8x - 6 = 0$ at $x = -\frac{3}{4}$, and $g'' < 0$.
+  3. So g has a local maximum at $x = -\frac{3}{4}$.
+  Answer: (D)
+M A 2: |-
+  Concept: Expand the determinant and find the local extrema of the cubic.
+  Solution:
+  1. $f(x) = \begin{vmatrix}1&-x&2x+1\\-x&1&-x\\2x+1&-x&1\end{vmatrix} = 4x^3 - 4x^2 - 4x$.
+  2. $f'(x) = 12x^2 - 8x - 4 = 0 \Rightarrow x = 1$ or $-\frac{1}{3}$.
+  3. $f(-\frac{1}{3}) = \frac{20}{27}$ (local max) and $f(1) = -4$ (local min); sum $= -\frac{88}{27}$.
+  Answer: (A)
+M A 3: |-
+  Concept: $|\bar z\omega| = 1$ and $\arg(\bar z\omega) = \arg\omega - \arg z$.
+  Solution:
+  1. $\arg(\bar z\omega) = -\frac{3\pi}{2}$, so $\bar z\omega = i$.
+  2. $\frac{1 - 2i}{1 + 3i} = \frac{(1 - 2i)(1 - 3i)}{10} = \frac{-5 - 5i}{10}$.
+  3. This lies in the third quadrant with argument $-\frac{3\pi}{4}$.
+  Answer: (B)
+M A 4: |-
+  Concept: Sine rule $\frac{a}{\sin A} = 2R$.
+  Solution:
+  1. $c = 5 = 2R\sin C \Rightarrow \sin C = \frac{1}{2}$, so $C = 30°$ (150° is impossible with $\cos B = \frac{3}{5}$).
+  2. $\sin A = \sin(B + C) = \frac{4}{5}\cdot\frac{\sqrt3}{2} + \frac{3}{5}\cdot\frac{1}{2} = \frac{4\sqrt3 + 3}{10}$, so $a = 10\sin A = 4\sqrt3 + 3$.
+  3. Area $= \frac{1}{2}ac\sin B = \frac{1}{2}(4\sqrt3 + 3)(5)\left(\frac{4}{5}\right) = 6 + 8\sqrt3$.
+  Answer: (A)
+M A 5: |-
+  Concept: In a random arrangement, each position is equally likely to hold a given letter.
+  Solution:
+  1. EXAMINATION has 11 letters with exactly one M.
+  2. P(M in 4th place) $= \frac{1}{11}$.
+  Answer: (B)
+M A 6: |-
+  Concept: $(1 - x)(1 + x + x^2) = 1 - x^3$.
+  Solution:
+  1. The expression is $(1 - x)(1 - x^3)^{100}$.
+  2. $x^{256} = x\cdot x^{255}$, and $x^{255} = (x^3)^{85}$. The coefficient is $-1\times\binom{100}{85}(-1)^{85} = \binom{100}{85} = \binom{100}{15}$.
+  3. (The $x^{256}$ term from the "1" part needs $3 \mid 256$, which fails.)
+  Answer: (D)
+M A 7: |-
+  Concept: A quadratic is positive for all x iff its discriminant is negative.
+  Solution:
+  1. $4(a + 4)^2 - 4(64 - 5a) < 0 \Rightarrow a^2 + 13a - 48 < 0 \Rightarrow -16 < a < 3$.
+  2. Integers in $[-5, 30]$: 36 in total, of which 8 ($-5$ to $2$) are favourable.
+  3. $P = \frac{8}{36} = \frac{2}{9}$.
+  Answer: (A)
+M A 8: |-
+  Concept: $X \Rightarrow Y \equiv \sim X\vee Y$.
+  Solution:
+  1. $\sim(p\wedge\sim q)\vee(q\vee\sim p) = (\sim p\vee q)\vee(q\vee\sim p) = \sim p\vee q$.
+  2. This is $p \Rightarrow q$.
+  Answer: (C)
+M A 9: |-
+  Concept: $e^{x - [x]}$ has period 1, and each unit contributes $e - 1$.
+  Solution:
+  1. With $a = 10 + t$: $10(e - 1) + (e^t - 1) = 10e - 9 \Rightarrow e^t = 2$.
+  2. $a = 10 + \ln2$.
+  Answer: (A)
+M A 10: |-
+  Concept: $P = \frac{A + A^T}{2}$ and $Q = \frac{A - A^T}{2}$.
+  Solution:
+  1. $\det Q = \left(\frac{3 - a}{2}\right)^2 = 9 \Rightarrow a = -3$ or $9$.
+  2. $\det P = -\left(\frac{3 + a}{2}\right)^2$: 0 for $a = -3$ and $-36$ for $a = 9$.
+  3. The modulus of the sum is 36.
+  Answer: (B)
+M A 11: |-
+  Concept: Substitute $x = 3^{1/4}t$ to get $t^2 + t + 1 = 0$.
+  Solution:
+  1. $\alpha = 3^{1/4}\omega$ and $\beta = 3^{1/4}\omega^2$.
+  2. $\alpha^{96} = 3^{24}$ and $\alpha^{12} = 27$ (similarly for β).
+  3. The sum is $2\times3^{24}\times26 = 52\times3^{24}$.
+  Answer: (C)
+M A 12: |-
+  Concept: Domain restrictions.
+  Solution:
+  1. $\sqrt{x(x+1)}$ needs $x(x + 1) \ge 0$, and $\sin^{-1}\sqrt{x^2 + x + 1}$ needs $x^2 + x + 1 \le 1$, i.e. $x(x+1) \le 0$.
+  2. So $x = 0$ or $-1$, giving LHS $= 0 + \frac{\pi}{2} \ne \frac{\pi}{4}$.
+  3. No real roots.
+  Answer: (C)
+M A 13: |-
+  Concept: Integration by parts, then simplify the derivative.
+  Solution:
+  1. $I = [x\ln(\sqrt{1-x} + \sqrt{1+x})]_{-1}^{1} - \int x\,d(\ldots) = \ln2 + \int_{-1}^{1}\frac{1 - \sqrt{1 - x^2}}{2\sqrt{1 - x^2}}dx$.
+  2. $= \ln2 + \frac{1}{2}(\pi - 2) = \ln2 + \frac{\pi}{2} - 1$.
+  Answer: (B)
+M A 14: |-
+  Concept: Use the sum and sum of squares.
+  Solution:
+  1. Sum $= 39$, so $a + b = 21$. $\sum x^2 = 6(10.25 + 42.25) = 315$, so $a^2 + b^2 = 315 - 94 = 221$.
+  2. $ab = 110$, so the values are 10 and 11.
+  Answer: (A)
+M A 15: |-
+  Concept: Tangent and normal to $y^2 = 2x$.
+  Solution:
+  1. Tangent at (2, 2): $2y = x + 2$, so $Q = (-2, 0)$.
+  2. Normal (slope −2): $y = -2x + 6$; with $y^2 = 2x$: $y^2 + y - 6 = 0$, so $R = \left(\frac{9}{2}, -3\right)$.
+  3. Area $= \frac{1}{2}|2(3) + (-2)(-5) + 4.5(2)| = \frac{25}{2}$.
+  Answer: (D)
+M A 16: |-
+  Concept: Continuity at 0 and at 1.
+  Solution:
+  1. $f(0) = -1$; for $0 < x < 1$, $[-x] = -1$, so $a - 1 = -1 \Rightarrow a = 0$.
+  2. At $x = 1$: $2 - b = -1 \Rightarrow b = 3$.
+  3. $a + b = 3$.
+  Answer: (C)
+M A 17: |-
+  Concept: $|\vec u\times\vec c| = |\vec u||\vec c|\sin\theta$.
+  Solution:
+  1. $|\vec c - \vec a|^2 = |\vec c|^2 - 2|\vec c| + 9 = 8 \Rightarrow |\vec c| = 1$.
+  2. $\vec a\times\vec b = (2, -2, 1)$ with magnitude 3.
+  3. $|(\vec a\times\vec b)\times\vec c| = 3\times1\times\frac{1}{2} = \frac{3}{2}$.
+  Answer: (C)
+M A 18: |-
+  Concept: Separate the variables: $xe^xdx = -\frac{y\,dy}{\sqrt{1 - y^2}}$.
+  Solution:
+  1. $(x - 1)e^x = \sqrt{1 - y^2} + C$; $y(1) = -1 \Rightarrow C = 0$.
+  2. At $x = 3$: $\sqrt{1 - y^2} = 2e^3 \Rightarrow y^2 = 1 - 4e^6$.
+  3. (This is negative, so the question is inconsistent, but the key follows this working.)
+  Answer: (D)
+M A 19: |-
+  Concept: $\frac{n - 2}{n - 3} \ge 0$ with $n = |[x]|$ gives $n \le 2$ or $n \ge 4$.
+  Solution:
+  1. $|[x]| \le 2 \Rightarrow x \in [-2, 3)$; $|[x]| \ge 4 \Rightarrow x < -3$ or $x \ge 4$.
+  2. Domain $= (-\infty, -3)\cup[-2, 3)\cup[4, \infty)$, so $a + b + c = -3 - 2 + 3 = -2$.
+  Answer: (C)
+M A 20: |-
+  Concept: Homogeneous DE: put $y = vx$.
+  Solution:
+  1. The DE reduces to $\tan v\,dv = -\frac{dx}{x}$, so $\cos\frac{y}{x} = kx$; $y(\frac{1}{2}) = \frac{\pi}{6}$ gives $k = 1$, i.e. $y = x\cos^{-1}x$.
+  2. Area $= \int_0^{1/\sqrt2}x\cos^{-1}x\,dx = \frac{\pi}{16} + \frac{1}{2}\left(\frac{\pi}{8} - \frac{1}{4}\right) = \frac{\pi - 1}{8}$.
+  Answer: (B)
+M B 1: |-
+  Concept: $A = I + N$ with N nilpotent ($N^3 = 0$), so $A^n = I + nN + \binom{n}{2}N^2$.
+  Solution:
+  1. $N^2$ has a single entry $(1, 3) = 1$, and N has 0 there.
+  2. $b_{13} = 7\binom{20}{2} - 20\binom{7}{2} = 7\times190 - 20\times21 = 1330 - 420 = 910$.
+  Answer: 910
+M B 2: |-
+  Concept: A focal chord passes through the focus (−16, 0) of $y^2 = -64x$.
+  Solution:
+  1. $y = m(x + 16)$, so $c = 16m$.
+  2. Tangent to the circle with centre (−10, 0), r = 2: $\frac{6m}{\sqrt{1 + m^2}} = 2 \Rightarrow m^2 = \frac{1}{8}$, $m = \frac{1}{2\sqrt2}$, $c = 4\sqrt2$.
+  3. $4\sqrt2(m + c) = 2 + 32 = 34$.
+  Answer: 34
+M B 3: |-
+  Concept: Write $b = a + \lambda$, $c = a + 2\lambda$, $d = a + 3\lambda$ and simplify by row/column operations.
+  Solution:
+  1. The determinant simplifies to $2\lambda^2$ (independent of x and a).
+  2. $2\lambda^2 = 2 \Rightarrow \lambda^2 = 1$.
+  Answer: 1
+M B 4: |-
+  Concept: For mutually perpendicular vectors of equal length k, $|\vec a + \vec b + \vec c| = \sqrt3k$.
+  Solution:
+  1. $\cos\theta = \frac{k^2}{k\cdot\sqrt3k} = \frac{1}{\sqrt3}$.
+  2. $\cos2\theta = \frac{2}{3} - 1 = -\frac{1}{3}$, so $36\cos^22\theta = 4$.
+  Answer: 4
+M B 5: |-
+  Concept: Area between the tangent line (above) and the ellipse arc (below).
+  Solution:
+  1. Tangent at (1, 1): $x + 4y = 5$. Ellipse (upper part): $y = \frac{1}{2}\sqrt{5 - x^2}$.
+  2. $\int_1^{\sqrt5}\frac{5 - x}{4}dx = \frac{5\sqrt5 - 7}{4}$; $\int_1^{\sqrt5}\frac{1}{2}\sqrt{5 - x^2}dx = -\frac{1}{2} + \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$.
+  3. Area $= \frac{5}{4}\sqrt5 - \frac{5}{4} - \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$, so $|\alpha + \beta + \gamma| = \frac{5}{4} = 1.25$.
+  Note: NTA gave 1; the exact value 1.25 (as in the printed key) is stored.
+  Answer: 1.25
+M B 6: |-
+  Concept: Case-wise selection with the minimum requirements.
+  Solution:
+  1. (4 bowlers, 5 batsmen, 2 WK): $15\times21\times1 = 315$.
+  2. (4, 6, 1): $15\times7\times2 = 210$.
+  3. (5, 5, 1): $6\times21\times2 = 252$.
+  4. Total $= 777$.
+  Answer: 777
+M B 7: |-
+  Concept: $4^{1/4} = 2^{1/2}$; the general term is $\binom{120}{r}2^{\frac{120 - r}{2}}5^{\frac{r}{6}}$.
+  Solution:
+  1. The term is rational iff $r$ is even and a multiple of 6, i.e. $r = 0, 6, \dots, 120$.
+  2. That gives 21 rational terms.
+  Answer: 21
+M B 8: |-
+  Concept: $\vec a$ is perpendicular to the plane's normal and to $(1, 2, 3)$.
+  Solution:
+  1. Normal $= (0, -2, 0)\times(-1, 1, -3) = (6, 0, -2)$.
+  2. Solve $6\alpha - 2\gamma = 0$, $\alpha + 2\beta + 3\gamma = 0$, $\alpha + \beta + 2\gamma = 2$: $(\alpha, \beta, \gamma) = (1, -5, 3)$.
+  3. $(\alpha - \beta + \gamma)^2 = 9^2 = 81$.
+  Answer: 81
+M B 9: |-
+  Concept: A $1^\infty$ limit equals $e^{\lim(f - 1)g}$.
+  Solution:
+  1. $1 - \cos x\sqrt{\cos2x} \approx \frac{x^2}{2} + x^2 = \frac{3x^2}{2}$.
+  2. Exponent: $\frac{3x^2}{2}\cdot\frac{x + 2}{x^2} \to 3$, so $a = 3$.
+  Answer: 3
+M B 10: |-
+  Concept: $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
+  Solution:
+  1. $\vec b_1\times\vec b_2 = (8, 8, 4)$, magnitude 12; $\vec a_1 - \vec a_2 = (\alpha + 4, 2, 3)$.
+  2. $\frac{|8\alpha + 60|}{12} = 9 \Rightarrow 8\alpha + 60 = 108 \Rightarrow \alpha = 6$ ($\alpha > 0$).
+  Answer: 6

@@ -53,6 +53,28 @@ def similarity(a, b):
     return SequenceMatcher(None, a or "", b or "").ratio()
 
 
+def explanation_check(q):
+    """'' if no explanation, 'ok' if its final 'Answer:' line matches the stored answer, else a reason."""
+    ex = (q.get("explanation") or "").strip()
+    if not ex:
+        return ""
+    m = re.findall(r"(?im)^\s*\**answer\**\s*[:=]\s*(.+?)\s*$", ex)
+    if not m:
+        return "no final 'Answer:' line"
+    got, want = m[-1].strip(" *").rstrip("."), (q.get("answer") or "").strip()
+    if want == "Bonus":
+        return "ok" if re.search(r"(?i)bonus|no option|none of", got) else f"says {got}, stored Bonus"
+    if q["question_type"].startswith("MCQ"):
+        g = norm_answer(re.sub(r"\$|\\text\{|\}", "", got).split()[0] if got else "", q["question_type"], 4)
+        return "ok" if g == want else f"says {got}, stored {want}"
+    try:
+        gv = float(re.search(r"-?\d+(?:\.\d+)?", got.replace(",", "")).group(0))
+        wv = float(re.search(r"-?\d+(?:\.\d+)?", want).group(0))
+        return "ok" if abs(gv - wv) <= max(0.011, abs(wv) * 1e-3) else f"says {got}, stored {want}"
+    except (AttributeError, ValueError):
+        return f"says {got}, stored {want}"
+
+
 def check_question(q):
     """Return list of issue strings for one question (already normalised)."""
     issues = []
@@ -87,6 +109,12 @@ def check_question(q):
         issues.append("model reported low confidence")
     if q.get("notes"):
         issues.append("model note: " + q["notes"][:120])
+    ec = explanation_check(q)
+    q["explanation_check"] = ec
+    if ec and ec != "ok":
+        issues.append("explanation mismatch: " + ec)
+    if ec and ("$" in q["explanation"]) and q["explanation"].count("$") % 2:
+        issues.append("explanation has unbalanced $")
     return issues
 
 
@@ -103,6 +131,8 @@ PENALTY = [
     (r"^model reported low", 0.3),
     (r"^model note", 0.1),
     (r"^numbering", 0.15),
+    (r"^explanation mismatch", 0.3),
+    (r"^explanation has", 0.1),
     (r"^verification disagrees", 0.3),
 ]
 

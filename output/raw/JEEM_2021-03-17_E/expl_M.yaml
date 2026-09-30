@@ -1,0 +1,208 @@
+M A 1: |-
+  Concept: $F'(x) = f(x)$ (FTC), so the integrand is $2f(x)e^x = 2\sin x$.
+  Solution:
+  1. $\int_0^12\sin x\,dx = 2(1 - \cos1) = 0.9194$.
+  2. $0.9194\times360 = 330.98$, so the value lies in $\left[\frac{330}{360}, \frac{331}{360}\right]$.
+  Answer: (B)
+M A 2: |-
+  Concept: On each unit interval, $[\sin2\pi x] = 0$ on the first half and $-1$ on the second half (up to measure zero).
+  Solution:
+  1. Per unit: $\int_{1/2}^{1}(-1)e^{-s}ds = e^{-1} - e^{-1/2}$.
+  2. Over 10 units: $10e^{-1} - 10e^{-1/2}$, so $\alpha = 10$, $\beta = -10$, $\gamma = 0$.
+  3. $\alpha + \beta + \gamma = 0$.
+  Answer: (A)
+M A 3: |-
+  Concept: Recognise the exact differential $d(y\cos x) = \cos x\,dy - y\sin x\,dx$.
+  Solution:
+  1. With $P = 3\sin x + \cos x + 3$, the DE is $P\,d(y\cos x) = dx$.
+  2. $t = \tan\frac{x}{2}$: $\int\frac{dx}{P} = \int\frac{dt}{(t+1)(t+2)} = \ln\frac{t+1}{t+2} + C$; $y(0) = 0 \Rightarrow C = \ln2$.
+  3. At $x = \frac{\pi}{3}$ ($t = \frac{1}{\sqrt3}$): $\frac{y}{2} = \ln\frac{2(1+\sqrt3)}{1+2\sqrt3} = \ln\frac{10+2\sqrt3}{11}$.
+  4. $y = 2\ln\frac{2\sqrt3 + 10}{11}$.
+  Answer: (B)
+M A 4: |-
+  Concept: Vandermonde's identity: $\sum_r\binom{m}{r}\binom{n}{k-r} = \binom{m+n}{k}$.
+  Solution:
+  1. $\sum_{r=0}^{6}\binom{6}{r}\binom{6}{6-r} = \binom{12}{6} = 924$.
+  Answer: (D)
+M A 5: |-
+  Concept: Sandwich theorem with $kr - 1 < [kr] \le kr$.
+  Solution:
+  1. $\frac{r\frac{n(n+1)}{2} - n}{n^2} < S \le \frac{r\frac{n(n+1)}{2}}{n^2}$.
+  2. Both bounds tend to $\frac{r}{2}$.
+  Answer: (A)
+M A 6: |-
+  Concept: Evaluate the greatest-integer brackets on $x^2 \in [0, 1]$.
+  Solution:
+  1. $x^2 < \frac{2}{3}$: brackets are 0 and −1, so the LHS is $0 + \pi = \pi > 1 \ge x^2$.
+  2. $x^2 \ge \frac{2}{3}$: brackets are 1 and 0, so the LHS is $\frac{\pi}{2} + \frac{\pi}{2} = \pi > x^2$.
+  3. No solutions.
+  Answer: (B)
+M A 7: |-
+  Concept: Multiply independent position-wise probabilities over both parities of the starting place.
+  Solution:
+  1. "1001" starting at an odd place: $P(1)_{odd}P(0)_{even}P(0)_{odd}P(1)_{even} = \frac{2}{3}\cdot\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2} = \frac{1}{18}$.
+  2. Starting at an even place: $\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2}\cdot\frac{2}{3} = \frac{1}{18}$.
+  3. Total $= \frac{1}{9}$ (official interpretation).
+  Answer: (D)
+M A 8: |-
+  Concept: Count intersections of $y = \tan x$ with the line $y = \frac{\pi/2 - x}{2}$.
+  Solution:
+  1. The line falls from $\frac{\pi}{4}$ at $x = 0$ to $-\frac{3\pi}{4}$ at $x = 2\pi$.
+  2. On $[0, \frac{\pi}{2})$, tan rises from 0 to ∞: one crossing.
+  3. On $(\frac{\pi}{2}, \frac{3\pi}{2})$, tan covers ℝ: one crossing.
+  4. On $(\frac{3\pi}{2}, 2\pi]$, tan rises from −∞ to 0, above the line at $2\pi$: one crossing. Total 3.
+  Answer: (A)
+M A 9: |-
+  Concept: Interpret each set geometrically.
+  Solution:
+  1. $S_1$: the disc with centre (1, 0) and radius $\sqrt2$.
+  2. $S_2$: $\text{Re}((1 - i)(x + iy)) = x + y \ge 1$, a half-plane.
+  3. $S_3$: $y \le 1$.
+  4. The three overlap in a region of positive area (e.g. near (2, 0)), so there are infinitely many points.
+  Answer: (C)
+M A 10: |-
+  Concept: Factor out $(x^{3/4} + 1)$ to get a linear DE; integrating factor $x^{-1/2}$.
+  Solution:
+  1. $\frac{dy}{dx} - \frac{y}{2x} = \frac{x}{x^{3/4} + 1}$, so $(yx^{-1/2})' = \frac{x^{1/2}}{x^{3/4} + 1}$.
+  2. With $u = x^{1/4}$: $\int\frac{4u^5}{u^3 + 1}du = \frac{4}{3}\left[u^3 - \ln(1 + u^3)\right]$.
+  3. $\frac{y}{\sqrt x} = \frac{4}{3}\left(x^{3/4} - \ln(1 + x^{3/4})\right) + C$; at (1, $1 - \frac{4}{3}\ln2$): $C = -\frac{1}{3}$.
+  4. $x = 16$: $\frac{y}{4} = \frac{4}{3}(8 - \ln9) - \frac{1}{3} = \frac{31}{3} - \frac{8}{3}\ln3$.
+  Answer: (C)
+M A 11: |-
+  Concept: Choose 3 of the 14 points, minus collinear triples on the same side.
+  Solution:
+  1. $\binom{14}{3} - \binom{3}{3} - \binom{5}{3} - \binom{6}{3} = 364 - 1 - 10 - 20 = 333$.
+  Answer: (C)
+M A 12: |-
+  Concept: Use $x + z = 2y$ through the row operation $R_1 + R_3 - 2R_2$.
+  Solution:
+  1. The new $R_1 = (0, k - 6\sqrt2, 0)$.
+  2. $\Delta = -(k - 6\sqrt2)(4z - 5y)$, and $4z - 5y = 3d - x \ne 0$.
+  3. So $k = 6\sqrt2$ and $k^2 = 72$.
+  Answer: (A)
+M A 13: |-
+  Concept: Perpendicularity, a length condition, then coplanarity (zero triple product).
+  Solution:
+  1. $\vec{OP}\cdot\vec{OQ} = -4x + 2y = 0 \Rightarrow y = 2x$.
+  2. $|PQ|^2 = (1 + x)^2 + (2 - 2x)^2 + (3x + 1)^2 = 14x^2 + 6 = 20 \Rightarrow x = 1$, $y = 2$.
+  3. $\begin{vmatrix}1&2&-1\\-1&2&3\\3&z&-7\end{vmatrix} = -4 - 2z = 0 \Rightarrow z = -2$.
+  4. $x^2 + y^2 + z^2 = 9$.
+  Answer: (B)
+M A 14: |-
+  Concept: $\triangle PAB$ and $\triangle CAB$ share base AB, so the area ratio is PM : CM (M = midpoint of AB).
+  Solution:
+  1. Circle: centre (1, 2), $r = 1$. $\tan\theta = \frac{12}{5} \Rightarrow \tan\frac{\theta}{2} = \frac{2}{3}$.
+  2. $PA = \frac{r}{\tan(\theta/2)} = \frac{3}{2}$; $PM = PA\cos\frac{\theta}{2}$; $CM = r\sin\frac{\theta}{2}$.
+  3. $\frac{PM}{CM} = \frac{3}{2}\cot\frac{\theta}{2} = \frac{3}{2}\cdot\frac{3}{2} = \frac{9}{4}$.
+  Answer: (B)
+M A 15: |-
+  Concept: Check the sign of $f'$.
+  Solution:
+  1. For $x > 0$: $f' = 2 - \sin\frac{1}{x} + \frac{1}{x}\cos\frac{1}{x}$.
+  2. The last term is unbounded and oscillates as $x \to 0^+$, so $f'$ changes sign infinitely often. Similarly for $x < 0$.
+  3. f is not monotonic on either interval.
+  Answer: (B)
+M A 16: |-
+  Concept: Tangent to $y^2 = 4(x - 5)$, then the ellipse tangency condition $c^2 = a^2m^2 + b$.
+  Solution:
+  1. Tangent at (6, 2): $2y = 2(x + 6) - 20 \Rightarrow y = x - 4$.
+  2. For $\frac{x^2}{2} + \frac{y^2}{b} = 1$: $16 = 2(1) + b \Rightarrow b = 14$.
+  Answer: (B)
+M A 17: |-
+  Concept: $\tan(\pi - u) = -\tan u$ and small-angle approximations.
+  Solution:
+  1. $\tan(\pi\cos^2\theta) = \tan(\pi - \pi\sin^2\theta) = -\tan(\pi\sin^2\theta) \approx -\pi\theta^2$.
+  2. $\sin(2\pi\sin^2\theta) \approx 2\pi\theta^2$.
+  3. Limit $= -\frac{1}{2}$.
+  Answer: (A)
+M A 18: |-
+  Concept: For a right triangle, the incentre is $(r_{in}, r_{in})$ with $r_{in} = \frac{a + b - c}{2}$.
+  Solution:
+  1. Tangent: $3x + 4y = 25$, so $P = \left(\frac{25}{3}, 0\right)$, $Q = \left(0, \frac{25}{4}\right)$, $PQ = \frac{125}{12}$.
+  2. $r_{in} = \frac{1}{2}\left(\frac{100 + 75 - 125}{12}\right) = \frac{25}{12}$.
+  3. $r^2 = 2\left(\frac{25}{12}\right)^2 = \frac{625}{72}$.
+  Answer: (C)
+M A 19: |-
+  Concept: Test each pair of connectives.
+  Solution:
+  1. $(p\wedge q) \to (p \to q)$: when $p\wedge q$ is true, $p \to q$ is also true, so it is a tautology.
+  2. The other choices fail for some assignment (e.g. $p\wedge q$ false makes the ∧ versions false).
+  Answer: (A)
+M A 20: |-
+  Concept: Image of a point in a line, then the plane through a point and a line.
+  Solution:
+  1. Foot on the line: $(-1 + 2t, 3 + t, -2 - t)$ with $(\text{foot} - P)\cdot(2, 1, -1) = 0 \Rightarrow t = \frac{1}{2}$, foot $= (0, 3.5, -2.5)$; image $= (-2, 4, -6)$.
+  2. Line through (2, 1, −1) with direction (3, −2, 1). Normal $= (3, -2, 1)\times(-4, 3, -5) = (7, 11, 1)$.
+  3. Plane: $7x + 11y + z = 24$, so $\alpha + \beta + \gamma = 19$.
+  Answer: (B)
+M B 1: |-
+  Concept: AP condition, then evaluate the determinant.
+  Solution:
+  1. $2\log(4^x - 2) = 1 + \log\left(4^x + \frac{18}{5}\right) \Rightarrow (t - 2)^2 = 10t + 36$ with $t = 4^x$.
+  2. $t^2 - 14t - 32 = 0 \Rightarrow t = 16$, so $x = 2$.
+  3. $\begin{vmatrix}3&1&4\\1&0&2\\2&1&0\end{vmatrix} = -6 + 4 + 4 = 2$.
+  Answer: 2
+M B 2: |-
+  Concept: For a quadratic, $f'' = 2a$ is constant.
+  Solution:
+  1. $2a = \frac{1}{2} \Rightarrow a = \frac{1}{4}$; $f'(-1) = -\frac{1}{2} + b = 1 \Rightarrow b = \frac{3}{2}$; $f(-1) = 2 \Rightarrow c = \frac{13}{4}$.
+  2. The vertex is at $x = -3$, so f is increasing on $[-1, 1]$; max $f(1) = \frac{1}{4} + \frac{3}{2} + \frac{13}{4} = 5$.
+  3. Least $\alpha = 5$.
+  Answer: 5
+M B 3: |-
+  Concept: Identify which branch is the min/max on each part.
+  Solution:
+  1. $[-3, -2]$: $x + 6 \le x^2$, area $\int_{-3}^{-2}(x + 6)dx = \frac{7}{2}$.
+  2. $[-2, 0]$: $x^2$, area $\frac{8}{3}$.
+  3. $[0, 1]$: $\sqrt x \ge x^2$, area $\frac{2}{3}$.
+  4. $A = \frac{7}{2} + \frac{10}{3} = \frac{41}{6}$, so $6A = 41$.
+  Answer: 41
+M B 4: |-
+  Concept: With circumcentre O, the orthocentre is $\vec H = \vec A + \vec B + \vec C$.
+  Solution:
+  1. $A = R(\cos\alpha, \sin\alpha)$, etc. H on the y-axis means $\cos\alpha + \cos\beta + \cos\gamma = 0$.
+  2. Then $\sum\cos^3 = 3\prod\cos$, and $\sum\cos3\theta = 4\sum\cos^3 - 3\sum\cos = 12\prod\cos$.
+  3. The ratio is 12; squared, 144.
+  Answer: 144
+M B 5: |-
+  Concept: $\sum x^2 = N(\sigma^2 + \bar x^2)$.
+  Solution:
+  1. Overall mean $= \frac{12n + 3n}{3n} = 5$, so $\sum x^2 = 3n(4 + 25) = 87n$.
+  2. New sum $= 14n + 2n = 16n$, mean $\frac{16}{3}$.
+  3. New $\sum x^2 = 87n + 2(12n) + 2n - 2(3n) + n = 108n$.
+  4. $k = 36 - \frac{256}{9} = \frac{68}{9}$, so $9k = 68$.
+  Answer: 68
+M B 6: |-
+  Concept: Ratios of consecutive coefficients $\binom{n}{r}a^r$.
+  Solution:
+  1. $\frac{T_4}{T_3} = \frac{(n-2)a}{3} = \frac{2}{3}$ and $\frac{T_5}{T_4} = \frac{(n-3)a}{4} = \frac{3}{8}$, so $n = 6$, $a = \frac{1}{2}$.
+  2. Constant term: $6 - 3r = 0 \Rightarrow r = 2$: $\binom{6}{2}\left(\frac{1}{2}\right)^2 = \frac{15}{4}$.
+  3. The key records the nearest integer, 4.
+  Answer: 4
+M B 7: |-
+  Concept: $AB = B$ with $B \ne 0$ means 1 is an eigenvalue of A.
+  Solution:
+  1. The eigenvalues are 1 and $\lambda$ with $1 + \lambda = 2021$, so $\lambda = 2020$.
+  2. $ad - bc = 1\times2020 = 2020$.
+  Answer: 2020
+M B 8: |-
+  Concept: $\vec x = \lambda\vec a + \mu\vec b$.
+  Solution:
+  1. $\vec x = (2\lambda + \mu, -\lambda + 2\mu, \lambda - \mu)$; $\vec x\cdot(3, 2, -1) = 3\lambda + 8\mu = 0$.
+  2. Projection: $\frac{6\lambda - \mu}{\sqrt6} = \frac{17\sqrt6}{2} \Rightarrow 6\lambda - \mu = 51$.
+  3. $\lambda = 8$, $\mu = -3$: $\vec x = (13, -14, 11)$, $|\vec x|^2 = 486$.
+  Answer: 486
+M B 9: |-
+  Concept: Integration by parts gives $20I_n = e^{20} - nI_{n-1}$.
+  Solution:
+  1. $20I_{10} = e^{20} - 10I_9$ and $20I_9 = e^{20} - 9I_8$.
+  2. Eliminating $e^{20}$: $20I_{10} = 10I_9 + 9I_8$.
+  3. $\alpha - \beta = 10 - 9 = 1$.
+  Answer: 1
+M B 10: |-
+  Concept: Sum of squared distances $= x^2 + y^2 + z^2$ identically.
+  Solution:
+  1. $\frac{(x+y+z)^2}{3} + \frac{(x-2y+z)^2}{6} = \frac{x^2 + 2y^2 + z^2 + 2zx}{2}$.
+  2. The remainder is $\frac{(x - z)^2}{2}$, so $\frac{(lx - nz)^2}{l^2 + n^2} = \frac{(x - z)^2}{2}$, giving $l = n$.
+  3. $l - n = 0$.
+  Answer: 0

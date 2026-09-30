@@ -1,0 +1,175 @@
+P A 1: |-
+  Concept: A NAND gate with its inputs tied is a NOT gate; by De Morgan, $\overline{\bar A\cdot\bar B} = A + B$.
+  Solution:
+  1. The first two NANDs invert the inputs: $\bar A$ and $\bar B$.
+  2. The middle NAND gives $\overline{\bar A\bar B} = A + B$ (OR).
+  3. The last NAND with tied inputs inverts: $Y = \overline{A + B}$, a NOR gate.
+  Answer: (A)
+P A 2: |-
+  Concept: Momentum is conserved in the collision; mechanical energy is conserved in the swing.
+  Solution:
+  1. After the collision: $v_1 = \sqrt{2gh} = \sqrt{2\times9.8\times0.098} = 1.386$ m/s.
+  2. $mv = (M + m)v_1 \Rightarrow v = \frac{6}{0.01}\times1.386 \approx 831.5$ m/s.
+  Answer: (C)
+P A 3: |-
+  Concept: The magnetic force $q\vec v\times\vec B$ is always perpendicular to the velocity.
+  Solution:
+  1. $dW = \vec F\cdot d\vec l = 0$ since $\vec F \perp d\vec l$.
+  2. The work done by $\vec B$ is zero.
+  Answer: (C)
+P A 4: |-
+  Concept: Reynolds number $Re = \frac{\rho vD}{\eta}$, with $v = \frac{Q}{\pi r^2}$. Flow is steady for Re < 1000 and unsteady for 1000–2000 (NCERT).
+  Solution:
+  1. $0.18$ L/min $= 3\times10^{-6}$ m³/s, so $v = \frac{3\times10^{-6}}{\pi(0.005)^2} = 0.038$ m/s and $Re = \frac{10^3\times0.038\times0.01}{10^{-3}} \approx 382$ (steady).
+  2. $0.48$ L/min $= 8\times10^{-6}$ m³/s, so $v = 0.102$ m/s and $Re \approx 1019$ (unsteady).
+  3. The flow changes from steady to unsteady.
+  Answer: (D)
+P A 5: |-
+  Concept: Direction of the velocity vector at $t = 2$ s.
+  Solution:
+  1. $\vec v(2) = 2\hat i + 6\hat j + 9\hat k$, $|\vec v| = 11$ m/s.
+  2. Its direction cosines are $\frac{2}{11}, \frac{6}{11}, \frac{9}{11}$; none of the listed angles describes this vector exactly.
+  3. The official key takes (B), $\tan^{-1}\frac{2}{3}$ from the y-axis.
+  Note: The question is flawed; ALLEN marks it Bonus because no option matches.
+  Answer: (B)
+P A 6: |-
+  Concept: For a line charge, $E = \frac{\lambda}{2\pi\varepsilon_0r}$; the equivalent surface charge density is $\sigma = \varepsilon_0E = \frac{\lambda}{2\pi r}$.
+  Solution:
+  1. $\sigma = \frac{8\times10^{-9}}{2\pi\times3} = 0.424\times10^{-9}$ C/m² $= 0.424$ nC m⁻².
+  Answer: (A)
+P A 7: |-
+  Concept: $\lambda = \frac{h}{\sqrt{2mqV}}$; with the same $q$ and $V$, $\lambda \propto \frac{1}{\sqrt m}$.
+  Solution:
+  1. $\frac{\lambda_e}{\lambda_p} = \sqrt{\frac{m_p}{m_e}} = \sqrt{\frac{1.00727}{0.00055}} = \sqrt{1831} \approx 43$.
+  Answer: (D)
+P A 8: |-
+  Concept: Compare the secondary voltage with the primary voltage.
+  Solution:
+  1. $V_s = \frac{P}{i_L} = \frac{60}{0.11} \approx 545$ V.
+  2. $V_s > V_p = 220$ V, so it is a step-up transformer.
+  Answer: (C)
+P A 9: |-
+  Concept: Activity $A = \lambda N$ with $\lambda = \frac{0.693}{T_{1/2}}$; 1 Ci $= 3.7\times10^{10}$ Bq.
+  Solution:
+  1. $N = \frac{1.5\times10^{-3}}{198}\times6\times10^{23} = 4.55\times10^{18}$.
+  2. $\lambda = \frac{0.693}{2.7\times86400} = 2.97\times10^{-6}$ s⁻¹.
+  3. $A = 1.35\times10^{13}$ Bq $\approx 3.6\times10^2$ Ci; the nearest option is 357 Ci.
+  Answer: (B)
+P A 10: |-
+  Concept: $\lambda = \frac{kT}{\sqrt2\pi d^2P}$.
+  Solution:
+  1. $\lambda = \frac{1.38\times10^{-23}\times300}{1.414\times3.14\times(0.3\times10^{-9})^2\times1.01\times10^5} = \frac{4.14\times10^{-21}}{4.04\times10^{-14}}$.
+  2. $\lambda \approx 1.02\times10^{-7}$ m $= 102$ nm.
+  Answer: (D)
+P A 11: |-
+  Concept: Lens maker's formula in a medium: $\frac{1}{f} = \left(\frac{\mu_l}{\mu_m} - 1\right)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$.
+  Solution:
+  1. $\mu_l = \mu_m = 1.4$, so $\frac{1}{f} = 0$ and $f$ is infinite (the lens behaves like a plane sheet).
+  Answer: (B)
+P A 12: |-
+  Concept: $Y = \frac{MgL}{\pi r^2l}$, so $\frac{\Delta Y}{Y} = \frac{\Delta M}{M} + \frac{\Delta L}{L} + 2\frac{\Delta r}{r} + \frac{\Delta l}{l}$.
+  Solution:
+  1. $\frac{1}{1000} + \frac{1}{1000} + 2\times\frac{0.001}{0.2} + \frac{0.001}{0.5} = 0.001 + 0.001 + 0.010 + 0.002 = 0.014$.
+  2. Fractional error $= 1.4\%$.
+  Answer: (D)
+P A 13: |-
+  Concept: On cooling, the metal with the larger expansion coefficient contracts more and ends up on the concave side.
+  Solution:
+  1. A (left) contracts more than B (right).
+  2. The strip bends towards A, i.e. to the left.
+  Answer: (D)
+P A 14: |-
+  Concept: Joule heating $H = I^2Rt$.
+  Solution:
+  1. Doubling the current multiplies H by 4: $4\times500 = 2000$ J.
+  Answer: (D)
+P A 15: |-
+  Concept: Unbanked road: $v_{max} = \sqrt{\mu Rg}$. Banked road: $v_{max} = \sqrt{Rg\frac{\tan\theta + \mu}{1 - \mu\tan\theta}}$.
+  Solution:
+  1. I: $v_{max} = \sqrt{0.2\times2\times9.8} = 1.98$ m/s; 7 km/h $= 1.94$ m/s < $v_{max}$, so there is no slipping. True.
+  2. II: $v_{max} = \sqrt{2\times9.8\times\frac{1.2}{0.8}} = 5.42$ m/s; 18.5 km/h $= 5.14$ m/s < $v_{max}$. True.
+  Answer: (D)
+P A 16: |-
+  Concept: LOS range for two antennas of height h: $D = 2\sqrt{2Rh}$.
+  Solution:
+  1. $h = \frac{D^2}{8R} = \frac{45^2}{8\times6400}$ km $= 0.03955$ km ≈ 39.55 m.
+  Answer: (B)
+P A 17: |-
+  Concept: Motional emf in the two sides parallel to y; the field differs between them.
+  Solution:
+  1. Side at $x + d$: $\varepsilon_1 = B_0\frac{x + d}{a}v_0d$; side at $x$: $\varepsilon_2 = B_0\frac{x}{a}v_0d$.
+  2. They oppose each other around the loop: $\varepsilon = \varepsilon_1 - \varepsilon_2 = \frac{B_0v_0d^2}{a}$.
+  Answer: (C)
+P A 18: |-
+  Concept: Damped amplitude $A = A_0e^{-bt/2m}$.
+  Solution:
+  1. $\frac{bt}{2m} = \ln2 \Rightarrow t = \frac{2m\ln2}{b} = \frac{2\times500\times0.693}{20} = 34.65$ s.
+  Answer: (A)
+P A 19: |-
+  Concept: $N = N_0e^{-\lambda t}$.
+  Solution:
+  1. After 33% decay, 67% remains; after 67% decay, 33% remains.
+  2. $\frac{0.67}{0.33} \approx 2$, so the interval is one half-life: 20 min.
+  Answer: (B)
+P A 20: |-
+  Concept: Colour is set by frequency; in a given medium $\lambda = \frac{v}{f}$.
+  Solution:
+  1. Red and blue light have different frequencies and hence different wavelengths.
+  Answer: (A)
+P B 1: |-
+  Concept: $H = I^2Rt$.
+  Solution:
+  1. $R = \frac{10\times10^{-3}}{(2\times10^{-3})^2\times1} = 2500\,\Omega$.
+  Answer: 2500
+P B 2: |-
+  Concept: A slab of thickness t in a gap d gives $C = \frac{\varepsilon_0A}{d - t + t/K}$.
+  Solution:
+  1. $C = \frac{2\varepsilon_0}{0.5 + 0.5/3.2} = \frac{2\varepsilon_0}{0.656} = 3.05\varepsilon_0 \approx 3\varepsilon_0$.
+  Answer: 3
+P B 3: |-
+  Concept: $\vec\tau = (\vec r - \vec r_0)\times\vec F$.
+  Solution:
+  1. Point of application $(2, 0, 0)$; $\vec r - \vec r_0 = (0, -3, -4)$.
+  2. $\vec\tau = (0, -3, -4)\times(4, 3, 4) = (0, -16, 12)$.
+  3. $|\vec\tau| = 20$.
+  Answer: 20
+P B 4: |-
+  Concept: The gravitational self-energy of a uniform sphere is $-\frac{3GM^2}{5R}$.
+  Solution:
+  1. Energy needed to disperse it $= \frac{3}{5}\frac{GM^2}{R}$, so $x = 3$.
+  Answer: 3
+P B 5: |-
+  Concept: Achromatism: $\omega_1\delta_1 = \omega_2\delta_2$ (opposite prisms); net deviation $\delta_1 - \delta_2 = 2°$.
+  Solution:
+  1. $\delta_1 = 0.5A_1$ and $\delta_2 = 0.6A_2$; $0.02\times0.5A_1 = 0.03\times0.6A_2 \Rightarrow A_2 = \frac{5}{9}A_1$.
+  2. $0.5A_1 - 0.6\cdot\frac{5}{9}A_1 = \frac{A_1}{6} = 2 \Rightarrow A_1 = 12°$.
+  Answer: 12
+P B 6: |-
+  Concept: Starting from rest, $\vec s = \frac{1}{2}\vec at^2$.
+  Solution:
+  1. $\vec a = \frac{\vec F}{m} = (1, 1.5, 2.5)$ m/s².
+  2. $\vec s = 8\vec a = (8, 12, 20)$, so $b = 12$.
+  Answer: 12
+P B 7: |-
+  Concept: To reach the directly opposite point, the swimmer's velocity component along the flow must cancel the river's.
+  Solution:
+  1. $12\cos\theta + 6 = 0 \Rightarrow \cos\theta = -\frac{1}{2} \Rightarrow \theta = 120°$ with the flow.
+  Answer: 120
+P B 8: |-
+  Concept: $v = \sqrt{\frac{B}{\rho}}$. First overtone: closed pipe $\frac{3v}{4L}$, open pipe $\frac{v}{L'}$.
+  Solution:
+  1. $\frac{3v_1}{4L} = \frac{v_2}{L'} \Rightarrow L' = \frac{4L}{3}\frac{v_2}{v_1} = \frac{4}{3}L\sqrt{\frac{\rho_1}{\rho_2}}$.
+  2. $x = 4$.
+  Answer: 4
+P B 9: |-
+  Concept: Rolling acceleration $a = \frac{g\sin\theta}{1 + K^2/R^2}$.
+  Solution:
+  1. Disc: $\frac{K^2}{R^2} = \frac{1}{2}$, so $a = \frac{2}{3}g\sin\theta$ and $b = 3$.
+  Answer: 3
+P B 10: |-
+  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ (kelvin).
+  Solution:
+  1. $T_1 = 400$ K; $T_2 = 0.4\times400 = 160$ K $= -113$ °C.
+  2. The sink is at −113 °C; the official key records the magnitude, 113.
+  Note: ALLEN gives −113, which is the physically correct value.
+  Answer: 113

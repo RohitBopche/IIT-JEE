@@ -1,0 +1,194 @@
+M A 1: |-
+  Concept: A circle avoids an axis iff its radius is less than the distance from the centre to that axis; a point is inside iff its distance from the centre is less than r.
+  Solution:
+  1. $x^2 + y^2 - 3x + \frac{10}{3}y + \frac{C}{36} = 0$: centre $\left(\frac{3}{2}, -\frac{5}{3}\right)$, $r^2 = \frac{181 - C}{36}$.
+  2. $r < \frac{3}{2} \Rightarrow 181 - C < 81 \Rightarrow C > 100$.
+  3. The lines meet at (2, −1): $\frac{1}{4} + \frac{4}{9} = \frac{25}{36} < r^2 \Rightarrow C < 156$.
+  Answer: (C)
+M A 2: |-
+  Concept: $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
+  Solution:
+  1. L₁: point (1, 2, 1), direction (2, 1, 3). L₂: point (2, λ, 3), direction (1, 2, 4).
+  2. $\vec b_1\times\vec b_2 = (-2, -5, 3)$, with magnitude $\sqrt{38}$.
+  3. $|(1, \lambda - 2, 2)\cdot(-2, -5, 3)| = |14 - 5\lambda| = 1 \Rightarrow \lambda = 3$ or $\frac{13}{5}$; the integer value is 3.
+  Answer: (A)
+M A 3: |-
+  Concept: Put $z = x + iy$ and separate real and imaginary parts.
+  Solution:
+  1. Imaginary part: $2xy - 3y = 0 \Rightarrow y = 0$ or $x = \frac{3}{2}$.
+  2. $y = 0$: $x^2 + 3x = 0 \Rightarrow z = 0, -3$. $x = \frac{3}{2}$: $y^2 = \frac{27}{4}$, giving two more roots.
+  3. $n = 4$, so $\sum\frac{1}{4^k} = \frac{1}{1 - 1/4} = \frac{4}{3}$.
+  Answer: (D)
+M A 4: |-
+  Concept: The integrand has period π.
+  Solution:
+  1. $I = 100\int_0^\pi\sin^2x\,e^{-x/\pi}dx = 50\int_0^\pi(1 - \cos2x)e^{-x/\pi}dx$.
+  2. This evaluates to $\frac{200(1 - e^{-1})\pi^3}{1 + 4\pi^2}$, so $\alpha = 200(1 - e^{-1})$.
+  Answer: (C)
+M A 5: |-
+  Concept: $[e^x + 1] = [e^x] + 1$; put $t = [e^x]$.
+  Solution:
+  1. $t^2 + t - 2 = 0 \Rightarrow t = 1$ ($t \ge 0$).
+  2. $1 \le e^x < 2 \Rightarrow x \in [0, \ln2)$.
+  Answer: (C)
+M A 6: |-
+  Concept: $\sim p \Rightarrow q \equiv p\vee q$.
+  Solution:
+  1. (A) $= (p\vee q)\vee(q\vee p) = p\vee q$, which is false when both p and q are false. Not a tautology.
+  2. The others each contain some $X\vee\sim X$.
+  Answer: (A)
+M A 7: |-
+  Concept: Tangency conditions: $c^2 = a^2m^2 - b^2$ (hyperbola) and $c = \frac{A}{m}$ for $y^2 = 4Ax$.
+  Solution:
+  1. $y = -2x + k$: $k^2 = 3(4) - 3 = 9 \Rightarrow k = 3$.
+  2. For $y^2 = \alpha x$ ($A = \frac{\alpha}{4}$): $3 = \frac{\alpha/4}{-2} \Rightarrow \alpha = -24$.
+  Answer: (B)
+M A 8: |-
+  Concept: Divide by cosec²x: $dy = \cos2x(1 + y)dx$.
+  Solution:
+  1. $\ln(1 + y) = \frac{1}{2}\sin2x + C$; $y(\frac{\pi}{4}) = 0 \Rightarrow C = -\frac{1}{2}$.
+  2. At $x = 0$: $\ln(1 + y) = -\frac{1}{2} \Rightarrow (1 + y)^2 = e^{-1}$.
+  Answer: (C)
+M A 9: |-
+  Concept: Sign of f′ on each piece.
+  Solution:
+  1. $x \le 0$: $f' = 3e^x(1 + x) > 0$ for $x > -1$.
+  2. $x > 0$: $f' = -4x^2 + 4x + 3 = -(2x - 3)(2x + 1) > 0$ for $x < \frac{3}{2}$.
+  3. f is increasing on $\left(-1, \frac{3}{2}\right)$.
+  Answer: (B)
+M A 10: |-
+  Concept: $\vec a = \lambda\vec b + \mu\vec c$, so $[\vec a\,\vec b\,\vec c] = 0$.
+  Solution:
+  1. $\vec a\cdot\vec d = 0$ and $|\vec a| = \sqrt{10}$ give $\vec a = \pm(0, -3, 1)$.
+  2. For $\vec a = (0, 3, -1)$: $[\vec a\,\vec b\,\vec d] + [\vec a\,\vec c\,\vec d] = -42$.
+  Answer: (C)
+M A 11: |-
+  Concept: $S_n = \frac{n}{2}(2a + (n - 1)d)$.
+  Solution:
+  1. $2a + 9d = 106$ and $2a + 4d = 56 \Rightarrow d = 10$, $a = 8$.
+  2. $S_{20} = 10(16 + 190) = 2060$ and $S_6 = 3(16 + 50) = 198$; difference $= 1862$.
+  Answer: (D)
+M A 12: |-
+  Concept: Series expansions near 0.
+  Solution:
+  1. $(1 - \cos2x)^2 \approx 4x^4$.
+  2. $\ln(1 + 2xe^{-2x}) - 2\ln(1 - xe^{-x}) \approx (2x - 4x^2 - 2x^2) + (2x - 2x^2 + x^2) = 4x + O(x^2)$.
+  3. $f \to \frac{x^3\cdot4x}{4x^4} = 1$, so $\alpha = 1$.
+  Answer: (B)
+M A 13: |-
+  Concept: $\sin^7x \le \sin^2x$ and $\cos^7x \le \cos^2x$, with equality only at 0 or ±1 values.
+  Solution:
+  1. We need $(\sin x, \cos x) = (1, 0)$ or $(0, 1)$.
+  2. In $[0, 4\pi]$: $x = 0, \frac{\pi}{2}, 2\pi, \frac{5\pi}{2}, 4\pi$, i.e. 5 solutions.
+  Answer: (C)
+M A 14: |-
+  Concept: $\vec a$, $\vec b$, $\vec c$ are mutually perpendicular with $|\vec b| = 1$ and $|\vec c| = |\vec a| = 2$.
+  Solution:
+  1. (A) $\vec b\times\vec c = \vec a$, so the projection is $|\vec a| = 2$ ✓. (B) $4 + 4 = 8$ ✓. (D) $(\vec b + \vec c)\times(\vec b - \vec c) = -2\vec a$, so the cross product with $\vec a$ is $\vec0$ ✓.
+  2. (C) $|3\vec a + \vec b - 2\vec c|^2 = 36 + 1 + 16 = 53 \ne 51$, so it is not true.
+  Answer: (C)
+M A 15: |-
+  Concept: Foot of the perpendicular on a line.
+  Solution:
+  1. Direction $= (1, -1, 2)\times(2, 1, -1) = (-1, 5, 3)$; point $\left(\frac{4}{3}, -\frac{2}{3}, 0\right)$.
+  2. $P = \left(\frac{4}{3} - t, -\frac{2}{3} + 5t, 3t\right)$ with $(P - (1, 2, 0))\cdot(-1, 5, 3) = 35t - \frac{41}{3} = 0$.
+  3. $\alpha + \beta + \gamma = \frac{2}{3} + 7t = \frac{51}{15}$, so $35\times\frac{51}{15} = 119$.
+  Answer: (D)
+M A 16: |-
+  Concept: Row sums 1 means $A\mathbf{1} = \mathbf{1}$.
+  Solution:
+  1. $A^3\mathbf{1} = \mathbf{1}$, so each row of $A^3$ sums to 1.
+  2. The sum of all entries is 3.
+  Answer: (B)
+M A 17: |-
+  Concept: Domains of $\cos^{-1}$ and of a square root in a denominator.
+  Solution:
+  1. $\sqrt{x^2 - x + 1} \le 1 \Rightarrow 0 \le x \le 1$.
+  2. $\sin^{-1}\frac{2x - 1}{2} > 0 \Rightarrow x > \frac{1}{2}$.
+  3. Domain $\left(\frac{1}{2}, 1\right]$, so $\alpha + \beta = \frac{3}{2}$.
+  Answer: (D)
+M A 18: |-
+  Concept: No solution means $\Delta = 0$ with inconsistent equations.
+  Solution:
+  1. $\Delta = 2\lambda - 4 = 0 \Rightarrow \lambda = 2$.
+  2. From the first two equations: $x = 2$ and $y + z = 4$, so $x + 2y + 2z = 10$.
+  3. No solution when $\mu \ne 10$.
+  Answer: (A)
+M A 19: |-
+  Concept: $E_2$ has semi-minor axis a, with foci at $(0, \pm b)$.
+  Solution:
+  1. $E_2$: $\frac{x^2}{a^2} + \frac{y^2}{B^2} = 1$ with $B^2 - a^2 = b^2$, so $e_2^2 = \frac{b^2}{a^2 + b^2}$.
+  2. With $k = \frac{b^2}{a^2}$: $1 - k = \frac{k}{1 + k} \Rightarrow k^2 + k - 1 = 0 \Rightarrow k = \frac{\sqrt5 - 1}{2}$.
+  3. $e^2 = 1 - k = \frac{3 - \sqrt5}{2} \Rightarrow e = \frac{\sqrt5 - 1}{2}$.
+  Answer: (A)
+M A 20: |-
+  Concept: Count ordered 4-tuples of distinct faces with $ad \ne bc$.
+  Solution:
+  1. Distinct entries: $6\cdot5\cdot4\cdot3 = 360$ tuples.
+  2. Subtract those with $ad = bc$ (e.g. $\{1, 6\}$ vs $\{2, 3\}$, $\{2, 6\}$ vs $\{3, 4\}$); 344 remain.
+  3. $P = \frac{344}{1296} = \frac{43}{162}$.
+  Answer: (C)
+M B 1: |-
+  Concept: $f(1) + f(2) + f(3) = 3$ with distinct values from A forces $\{0, 1, 2\}$.
+  Solution:
+  1. Assign {0, 1, 2} to 1, 2, 3 in $3!$ ways and the remaining 5 values in $5!$ ways.
+  2. Total $= 6\times120 = 720$.
+  Answer: 720
+M B 2: |-
+  Concept: g is the difference of two shifted triangles.
+  Solution:
+  1. $g$ = a triangle of height 3 on [−4, 0] minus a triangle on [0, 4]; it is continuous everywhere, so there are no discontinuities (n = 0 as intended).
+  2. Corners at $x = -4, -2, 2, 4$ (at 0 both sides have slope $-\frac{3}{2}$), so m = 4.
+  3. $n + m = 4$.
+  Answer: 4
+M B 3: |-
+  Concept: Homogeneous in $X = x + 2$, $Y = y + 1$: $Y' = e^{Y/X} + \frac{Y}{X}$.
+  Solution:
+  1. $v = \frac{Y}{X}$: $e^{-v}dv = \frac{dX}{X} \Rightarrow e^{-v} = e^{-2/3} + \ln3 - \ln|x + 2| > 0$.
+  2. The official solution takes $0 < \frac{|x + 2|}{3} < e^{e^{-2/3}}$, i.e. an interval symmetric about $x = -2$, giving $\alpha + \beta = -4$.
+  Note: The solution through (1, 1) actually exists only for $x > -2$, which would give $|\alpha + \beta| \approx 1.01$; the key's 4 is recorded.
+  Answer: 4
+M B 4: |-
+  Concept: Check small n; once $\left(\frac{10}{11}\right)^n + \left(\frac{9}{11}\right)^n < 1$ it stays so.
+  Solution:
+  1. n = 4: 14641 < 16561 (fails). n = 5: 161051 > 159049 (holds).
+  2. So $n = 5$ to $100$: 96 values.
+  Answer: 96
+M B 5: |-
+  Concept: Region between the two sideways parabolas, above the downward parabola.
+  Solution:
+  1. $y^2 = 4(1 \pm x)$ meet at (0, 2); the area they enclose above the x-axis is $2\int_0^2\left(1 - \frac{y^2}{4}\right)dy = \frac{8}{3}$.
+  2. Subtract the area under $y = \frac{1 - x^2}{2}$ on [−1, 1]: $\frac{2}{3}$.
+  3. Area $= 2$.
+  Answer: 2
+M B 6: |-
+  Concept: A swaps the first two rows (on the left) or columns (on the right).
+  Solution:
+  1. AB = BA forces $b_{11} = b_{22}$, $b_{12} = b_{21}$, $b_{13} = b_{23}$, $b_{31} = b_{32}$.
+  2. Free entries: $b_{11}, b_{12}, b_{13}, b_{31}, b_{33}$: $5^5 = 3125$.
+  Answer: 3125
+M B 7: |-
+  Concept: Numbers above 10000 from five distinct digits must be 5-digit with a non-zero first digit.
+  Solution:
+  1. $4\times4! = 96$.
+  Answer: 96
+M B 8: |-
+  Concept: $2040 = 2^3\cdot3\cdot5\cdot17$, so we need n ≤ 100 coprime to 2, 3, 5 and 17 (inclusion–exclusion).
+  Solution:
+  1. Sum of n ≤ 100 coprime to 30: $5050 - (2550 + 1683 + 1050) + (816 + 550 + 315) - 180 = 1268$.
+  2. Multiples of 17 up to 100 that are coprime to 30: only 17 (34, 68 are even; 51 = 3·17; 85 = 5·17).
+  3. Sum $= 1268 - 17 = 1251$.
+  Answer: 1251
+M B 9: |-
+  Concept: General term $\binom{10}{k}(2x^r)^{10-k}x^{-2k}$.
+  Solution:
+  1. $\binom{10}{k}2^{10-k} = 180$ gives $k = 8$ ($45\times4$).
+  2. Constant term: $r(10 - 8) = 16 \Rightarrow r = 8$.
+  Answer: 8
+M B 10: |-
+  Concept: Grouped median and mean formulas.
+  Solution:
+  1. Median 14 lies in 12–18: $14 = 12 + \frac{N/2 - (a + b)}{12}\times6$, with $N = a + b + 26$, giving $a + b = 18$ and $N = 44$.
+  2. Mean: $3a + 9b + 180 + 189 + 135 = \frac{309}{22}\times44 = 618 \Rightarrow a + 3b = 38$.
+  3. $b = 10$, $a = 8$, so $(a - b)^2 = 4$.
+  Answer: 4

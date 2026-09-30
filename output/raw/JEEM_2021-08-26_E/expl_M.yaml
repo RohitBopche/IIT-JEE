@@ -1,0 +1,205 @@
+M A 1: |-
+  Concept: $h(x) = \min(\{x\}, 1 - \{x\})$ is a continuous triangular wave with period 1.
+  Solution:
+  1. f and g are each discontinuous at integers, but their minimum → 0 from both sides there, so h is continuous on [−2, 2].
+  2. h has corners at the integers (minima, value 0) and at the half-integers (maxima, value ½).
+  3. In (−2, 2), the corners are −1, 0, 1 and −1.5, −0.5, 0.5, 1.5: 7 points, which is more than four.
+  Answer: (A)
+M A 2: |-
+  Concept: Find the pattern of $A^n$.
+  Solution:
+  1. $A^2 = \begin{pmatrix}1&0&0\\1&1&1\\1&0&0\end{pmatrix}$; by induction, $A^n$ has rows (1, 0, 0), (n − 1, 1, 1), (1, 0, 0).
+  2. $A^{2025} - A^{2020}$ has middle row (5, 0, 0) and zeros elsewhere.
+  3. $A^6 - A$ has the same middle row (5, 0, 0). ($A^5 - A$ gives (4, 0, 0), and $A^5$, $A^6$ alone are non-zero in other rows.)
+  Answer: (A)
+M A 3: |-
+  Concept: Differentiate ln f.
+  Solution:
+  1. $\ln f = x^2(\ln2 - \ln x)$, so $\frac{f'}{f} = 2x\ln\frac{2}{x} - x = 0$ gives $\ln\frac{2}{x} = \frac{1}{2}$, so $x = \frac{2}{\sqrt e}$.
+  2. The sign of f′ changes from + to −, so this is a maximum.
+  3. $f = (\sqrt e)^{4/e} = e^{2/e}$.
+  Answer: (C)
+M A 4: |-
+  Concept: Split at integers: on [k, k + 1], put x = k + t.
+  Solution:
+  1. $\int_0^1(t + 2k)e^{-t}dt = \left(1 - \frac{2}{e}\right) + 2k\left(1 - \frac{1}{e}\right)$.
+  2. Summing over k = 0 to 4: $5 - \frac{10}{e} + 20\left(1 - \frac{1}{e}\right) = 25 - 30e^{-1}$.
+  3. α = −30 and β = 25 (check: 5α + 6β = 0), so $(\alpha + \beta)^2 = 25$.
+  Answer: (B)
+M A 5: |-
+  Concept: $e^2 = 1 + \frac{b^2}{a^2}$; tangent $\frac{xx_1}{a^2} - \frac{yy_1}{b^2} = 1$; normal $\frac{a^2x}{x_1} + \frac{b^2y}{y_1} = a^2 + b^2$.
+  Solution:
+  1. $b^2 = \frac{a^2}{4}$ and $\frac{24}{a^2} - \frac{12}{a^2} = 1$ give $a^2 = 12$, $b^2 = 3$.
+  2. Tangent at x = 0: $-\frac{\sqrt3y}{3} = 1$, so Q = (0, −√3).
+  3. Normal at x = 0: $\sqrt3y = 15$, so R = (0, 5√3).
+  4. QR = 6√3.
+  Answer: (C)
+M A 6: |-
+  Concept: Substitute $u = e^{-y}$ to get a linear equation.
+  Solution:
+  1. $\frac{dy}{dx} = \frac{2x - e^y}{2x^2}$, so $\frac{du}{dx} = -u\frac{dy}{dx}$ gives $\frac{du}{dx} + \frac{u}{x} = \frac{1}{2x^2}$.
+  2. $(xu)' = \frac{1}{2x}$, so $xe^{-y} = \frac{1}{2}\ln x + C$.
+  3. y(e) = 1 gives 1 = ½ + C, so C = ½.
+  4. At x = 1: $e^{-y} = \frac{1}{2}$, so $y = \log_e2$.
+  Answer: (C)
+M A 7: |-
+  Concept: Simplify using $p \to q \equiv \sim p \vee q$.
+  Solution:
+  1. S1: $(\sim p \vee q) \vee (q \vee p)$ contains $p \vee \sim p$, so it is always true (a tautology).
+  2. S2: $\sim p \vee q = \sim(p \wedge \sim q)$, so the expression is $X \wedge \sim X$, which is always false (a fallacy).
+  3. Both statements are true.
+  Answer: (C)
+M A 8: |-
+  Concept: $\text{cosec}^{-1}t$ needs |t| ≥ 1.
+  Solution:
+  1. $\left|\frac{1 + x}{x}\right| \ge 1$ means $(1 + x)^2 \ge x^2$, so 2x + 1 ≥ 0 and x ≥ −½, with x ≠ 0.
+  2. The domain is $\left[-\frac{1}{2}, \infty\right) - \{0\}$.
+  Answer: (D)
+M A 9: |-
+  Concept: Geometric distribution: $P(X > k) = \left(\frac{5}{6}\right)^k$.
+  Solution:
+  1. $P(X \ge 5 \mid X > 2) = \frac{P(X > 4)}{P(X > 2)} = \left(\frac{5}{6}\right)^2 = \frac{25}{36}$.
+  Answer: (D)
+M A 10: |-
+  Concept: Telescoping: $\tan^{-1}\frac{2}{4r^2} = \tan^{-1}(2r + 1) - \tan^{-1}(2r - 1)$.
+  Solution:
+  1. $p = \tan^{-1}101 - \tan^{-1}1$.
+  2. $\tan p = \frac{101 - 1}{1 + 101} = \frac{50}{51}$.
+  Answer: (B)
+M A 11: |-
+  Concept: Unique solution iff det ≠ 0; otherwise check consistency.
+  Solution:
+  1. det = λ − 5, so a unique solution needs λ ≠ 5: p = 5/6.
+  2. For λ = 5: (eq3 − eq2) gives y + 2z = 1 − μ, and (eq2 − eq1) gives y + 2z = μ − 5. These are consistent only if μ = 3.
+  3. No solution: λ = 5 and μ ≠ 3, so q = 5/36.
+  Answer: (B)
+M A 12: |-
+  Concept: Chord with midpoint (h, k): T = S₁; tangency to y² = 4ax needs c = a/m.
+  Solution:
+  1. The chord is $hx - ky = h^2 - k^2$, so $y = \frac{h}{k}x - \frac{h^2 - k^2}{k}$.
+  2. Tangency to y² = 8x (a = 2): $-\frac{h^2 - k^2}{k} = \frac{2k}{h}$, so $k^2h - h^3 = 2k^2$.
+  3. Locus: $y^2(x - 2) = x^3$.
+  Answer: (C)
+M A 13: |-
+  Concept: Use $\sin(\pi - \theta) = \sin\theta$ and $\sin\frac{3\pi}{8} = \cos\frac{\pi}{8}$.
+  Solution:
+  1. $\sin\frac{\pi}{8}\sin\frac{3\pi}{8}\sin\frac{5\pi}{8}\sin\frac{7\pi}{8} = \left(\sin\frac{\pi}{8}\cos\frac{\pi}{8}\right)^2 = \left(\frac{1}{2\sqrt2}\right)^2 = \frac{1}{8}$.
+  2. $\sin\frac{2\pi}{8}\sin\frac{6\pi}{8} = \frac{1}{2}$.
+  3. Value $= 2\times\frac{1}{8}\times\frac{1}{2} = \frac{1}{8}$.
+  Answer: (C)
+M A 14: |-
+  Concept: Polar form: $\sqrt3 + i = 2e^{i\pi/6}$.
+  Solution:
+  1. $(\sqrt3 + i)^{100} = 2^{100}e^{i50\pi/3} = 2^{100}e^{i2\pi/3} = 2^{99}(-1 + i\sqrt3)$.
+  2. p = −1 and q = √3, so the sum is √3 − 1 and the product is −√3.
+  3. The equation is $x^2 - (\sqrt3 - 1)x - \sqrt3 = 0$.
+  Answer: (A)
+M A 15: |-
+  Concept: Angle between the space diagonals using coordinates.
+  Solution:
+  1. Take A(0, 0, 0), B(10, 0, 0), G(10, 10, h) and H(0, 10, h).
+  2. $\vec{AG} = (10, 10, h)$ and $\vec{BH} = (-10, 10, h)$, so $\cos\theta = \frac{h^2}{200 + h^2} = \frac{1}{5}$.
+  3. 4h² = 200, so h = 5√2 m.
+  Answer: (D)
+M A 16: |-
+  Concept: Plane through the line of intersection: $P_1 + kP_2 = 0$.
+  Solution:
+  1. (x + y + 4z − 16) + k(−x + y + z − 6) = 0; the point (1, 2, 3) gives −1 − 2k = 0, so k = −½.
+  2. The plane is 3x + y + 7z = 26.
+  3. (3, 3, 2), (6, −6, 2) and (−8, 8, 6) all give 26; (4, 2, 2) gives 28, so it does not lie on P.
+  Answer: (C)
+M A 17: |-
+  Concept: Perpendicular distance = PC·sin(angle between PC and the pencil).
+  Solution:
+  1. Now tan θ = 2, so sin θ = 2/√5 and the distance is √5 · 2/√5 = 2.
+  2. For a distance of 1: sin φ = 1/√5, so tan φ = ½.
+  3. The rotation is θ − φ: $\tan(\theta - \varphi) = \frac{2 - \frac{1}{2}}{1 + 1} = \frac{3}{4}$.
+  Answer: (A)
+M A 18: |-
+  Concept: $\int_{-a}^{a}f(x)dx = \int_0^{a}[f(x) + f(-x)]dx$.
+  Solution:
+  1. $\frac{1}{1 + \pi^{\sin x}} + \frac{1}{1 + \pi^{-\sin x}} = 1$, so $I = \int_0^{\pi/2}(1 + \sin^2x)dx$.
+  2. $I = \frac{\pi}{2} + \frac{\pi}{4} = \frac{3\pi}{4}$.
+  Answer: (C)
+M A 19: |-
+  Concept: Family of circles touching a line at a point: $(x - 2)^2 + (y - 1)^2 + \lambda(x - 2y) = 0$. PQ is a diameter of C₁, so the common chord passes through C₁'s centre (0, −1).
+  Solution:
+  1. The common chord (C − C₁) is $(\lambda - 4)x - (2\lambda + 4)y + 10 = 0$; through (0, −1): 2λ + 14 = 0, so λ = −7.
+  2. C is $x^2 + y^2 - 11x + 12y + 5 = 0$, so $r^2 = \frac{121}{4} + 36 - 5 = \frac{245}{4}$.
+  3. r = 7√5/2, so the diameter is 7√5.
+  Answer: (A)
+M A 20: |-
+  Concept: Substitute x = 2 (continuous) and telescope.
+  Solution:
+  1. The denominator is $4n(n + 1) + 4(2n + 1) + 4 = 4(n + 1)(n + 2)$.
+  2. The term is $\frac{1}{2}\left(\frac{1}{n + 1} - \frac{1}{n + 2}\right)$.
+  3. Sum $= \frac{1}{2}\left(\frac{1}{2} - \frac{1}{11}\right) = \frac{9}{44}$.
+  Answer: (A)
+M B 1: |-
+  Concept: List the multiples of 11 from 100 to 500 and drop those containing the digit 1.
+  Solution:
+  1. The multiples are 110, 121, …, 495 (36 numbers) and sum to 10890.
+  2. Those containing 1 are 110, 121, 132, 143, 154, 165, 176, 187, 198, 231, 319, 341, 418, 451, whose sum is 3146.
+  3. Required sum = 10890 − 3146 = 7744.
+  Answer: 7744
+M B 2: |-
+  Concept: $f'(x) = 6(x + 1)(x - 2)$, so the maximum is at a = −1 and the minimum at b = 2.
+  Solution:
+  1. f > 0 on (−1, 0) and f < 0 on (0, 2).
+  2. $\int_{-1}^0f = \frac{9}{2}$ and $\int_0^2f = -24$, so A = 4.5 + 24 = 28.5.
+  3. 4A = 114.
+  Answer: 114
+M B 3: |-
+  Concept: Projection of $\vec a$ on $\vec b$ is $\frac{\vec a\cdot\vec b}{|\vec b|}$.
+  Solution:
+  1. $\vec b = (2 - \lambda, 6, -2)$, and $\vec a\cdot\vec b = 12 - \lambda$.
+  2. $(12 - \lambda)^2 = (2 - \lambda)^2 + 40$, so 144 − 24λ = 44 − 4λ, and λ = 5.
+  Answer: 5
+M B 4: |-
+  Concept: Solve for a₁ and b₁ from c₂ and c₃.
+  Solution:
+  1. $a_1 - 3 + 2b_1 = 12$ and $a_1 - 6 + 4b_1 = 13$ give b₁ = 2 and a₁ = 11.
+  2. $\sum a_k = 10(11) + 45(-3) = -25$ and $\sum b_k = 2(2^{10} - 1) = 2046$.
+  3. The total is 2021.
+  Answer: 2021
+M B 5: |-
+  Concept: The plane contains both lines, so its normal is $\vec d_1\times\vec d_2$.
+  Solution:
+  1. (6, 7, 8) × (3, 5, 7) = (9, −18, 9), which is proportional to (1, −2, 1).
+  2. The plane through (−1, 1, 3) is x − 2y + z = 0.
+  3. $PQ^2 = \frac{(7 + 4 + 13)^2}{6} = \frac{576}{6} = 96$.
+  Answer: 96
+M B 6: |-
+  Concept: Vandermonde's identity $\sum\binom{m}{i}\binom{n}{k - i} = \binom{m + n}{k}$.
+  Solution:
+  1. $\binom{12}{12 - k + i} = \binom{12}{k - i}$, so the first sum is $\binom{21}{k}$; similarly the second is $\binom{21}{k}$.
+  2. $A_k = 2\binom{21}{k}$, so $A_4 - A_3 = 2(5985 - 1330) = 9310 = 190\times49$.
+  Answer: 49
+M B 7: |-
+  Concept: Common root.
+  Solution:
+  1. 3(α² − α + 2λ) − (3α² − 10α + 27λ) = 0 gives 7α = 21λ, so α = 3λ.
+  2. 9λ² − 3λ + 2λ = 0 gives λ = 1/9 and α = 1/3.
+  3. β = 1 − α = 2/3 and γ = 10/3 − α = 3.
+  4. $\frac{\beta\gamma}{\lambda} = \frac{2}{1/9} = 18$.
+  Answer: 18
+M B 8: |-
+  Concept: Use the mean and variance to find x and y.
+  Solution:
+  1. x + y = 10, and $\frac{9 + 49 + x^2 + y^2}{4} - 25 = 10$ gives x² + y² = 82.
+  2. Then xy = 9, so x = 9 and y = 1.
+  3. The new numbers are 21, 9, 10 and 8, with mean 48/4 = 12.
+  Answer: 12
+M B 9: |-
+  Concept: For 3 × 3 matrices: adj(kA) = k² adj A, adj(adj A) = |A|A, and |adj A| = |A|².
+  Solution:
+  1. adj(2A) = 4 adj A, and adj(4 adj A) = 16|A|A, so 2 adj(adj(2A)) = 32|A|A.
+  2. adj(32|A|A) = (32|A|)² adj A, and its determinant after doubling is $2^3(32|A|)^6|A|^2 = 2^{33}|A|^8$.
+  3. $2^{33}|A|^8 = 2^{41}$, so |A|⁸ = 2⁸ and det(A²) = |A|² = 4.
+  Answer: 4
+M B 10: |-
+  Concept: $(1 - i)^2 = -2i$, so write the expression as a power.
+  Solution:
+  1. $\frac{(2i)^n}{(1 - i)^{n-2}} = (1 - i)^2\left(\frac{2i}{1 - i}\right)^n = -2i\,(i - 1)^n$.
+  2. Checking n = 1, 2, …: n = 2 gives −4, n = 4 gives 8i, and n = 6 gives 16 (the first positive integer).
+  Answer: 6

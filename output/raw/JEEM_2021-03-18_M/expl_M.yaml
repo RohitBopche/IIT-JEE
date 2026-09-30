@@ -1,0 +1,186 @@
+M A 1: |-
+  Concept: Eliminate the parameter a by differentiating.
+  Solution:
+  1. $2yy' = 4a \Rightarrow a = \frac{yy'}{2}$.
+  2. $y^2 = 2yy'\left(x + \frac{yy'}{2}\right) \Rightarrow y = 2xy' + yy'^2$.
+  3. $y\left(\frac{dy}{dx}\right)^2 + 2x\frac{dy}{dx} - y = 0$.
+  Answer: (C)
+M A 2: |-
+  Concept: Solve for the abscissa and require it to be an integer.
+  Solution:
+  1. $3x + 4(mx + 1) = 9 \Rightarrow x = \frac{5}{3 + 4m}$.
+  2. $3 + 4m \in \{\pm1, \pm5\} \Rightarrow m = -\frac{1}{2}, -1, \frac{1}{2}, -2$.
+  3. Integral values: $m = -1, -2$, i.e. 2 values.
+  Answer: (B)
+M A 3: |-
+  Concept: $\frac{f(1) - f(-1)}{2}$ gives the sum of odd-index coefficients.
+  Solution:
+  1. $f(1) = 4^{20}$ and $f(-1) = 2^{20}$, so the odd sum $= 2^{19}(2^{20} - 1)$.
+  2. Remove $a_{39}$: $a_{39} = 20\cdot2^{19}$ (from $x\cdot(2x^2)^{19}$).
+  3. $a_1 + \dots + a_{37} = 2^{19}(2^{20} - 21)$.
+  Answer: (B)
+M A 4: |-
+  Concept: Row operations reduce the determinant.
+  Solution:
+  1. $R_1 \to R_1 + R_2$ gives $(2, 2, 1)$; then $C_1 \to C_1 - C_2$ simplifies to $\Delta = 2 + 4\sin2x$.
+  2. $\sin2x = -\frac{1}{2}$, so $2x = \frac{7\pi}{6}, \frac{11\pi}{6}$, i.e. $x = \frac{7\pi}{12}, \frac{11\pi}{12}$.
+  Answer: (D)
+M A 5: |-
+  Concept: Compare the distance between centres with $r_1 + r_2$.
+  Solution:
+  1. Centres (5, 5) and (11, 5), each of radius 3; distance $= 6 = r_1 + r_2$.
+  2. The circles touch externally: one common point.
+  Answer: (C)
+M A 6: |-
+  Concept: A homogeneous system has a non-trivial solution iff the determinant is 0 (a circulant here).
+  Solution:
+  1. $\Delta = -(\alpha^3 + \beta^3 + \gamma^3 - 3\alpha\beta\gamma) = -(\alpha + \beta + \gamma)\left(\sum\alpha^2 - \sum\alpha\beta\right) = 0$.
+  2. $\sum\alpha = -a \ne 0$, so $\sum\alpha^2 = \sum\alpha\beta \Rightarrow a^2 - 2b = b \Rightarrow a^2 = 3b$.
+  3. $\frac{a^2}{b} = 3$.
+  Answer: (B)
+M A 7: |-
+  Concept: Substitution $t = \sqrt{(2x - 1)^2 + 5}$ (note $4x^2 - 4x + 6 = (2x - 1)^2 + 5$).
+  Solution:
+  1. $dt = \frac{2(2x - 1)}{t}dx$, so the integrand becomes $\frac{1}{2}\cos t\,dt$.
+  2. Result: $\frac{1}{2}\sin\sqrt{(2x - 1)^2 + 5} + c$.
+  Answer: (A)
+M A 8: |-
+  Concept: Angle between lines: $\tan\theta = \left|\frac{m - m_1}{1 + mm_1}\right|$.
+  Solution:
+  1. $m_1 = 3\sqrt2$: $m - 3\sqrt2 = \sqrt2(1 + 3\sqrt2m) \Rightarrow m = -\frac{4\sqrt2}{5}$.
+  2. Line through (1, 3): $5y - 15 = -4\sqrt2(x - 1) \Rightarrow 4\sqrt2x + 5y - (15 + 4\sqrt2) = 0$.
+  Answer: (A)
+M A 9: |-
+  Concept: Series: $\sin^{-1}x = x + \frac{x^3}{6} + \dots$, $\tan^{-1}x = x - \frac{x^3}{3} + \dots$
+  Solution:
+  1. Numerator $\approx \frac{x^3}{2}$, so $L = \frac{1}{6}$.
+  2. $6L + 1 = 2$.
+  Answer: (D)
+M A 10: |-
+  Concept: Rotation of axes preserves the vector's magnitude.
+  Solution:
+  1. $9p^2 + 1 = (p + 1)^2 + 10 \Rightarrow 4p^2 - p - 5 = 0 \Rightarrow p = -1$ or $\frac{5}{4}$.
+  2. The option given is $p = -1$.
+  Answer: (D)
+M A 11: |-
+  Concept: $a|z|^2 + \bar\alpha z + \alpha\bar z + d = 0$ is a circle with centre $-\frac{\alpha}{a}$ and radius² $\frac{|\alpha|^2 - ad}{a^2}$.
+  Solution:
+  1. We need $a \ne 0$ (otherwise it is a line) and a positive radius², i.e. $|\alpha|^2 - ad > 0$.
+  Answer: (B)
+M A 12: |-
+  Concept: Find the centres.
+  Solution:
+  1. M (0, 0), N (1, 0), O (1, 1), P (0, 1).
+  2. These are the vertices of a unit square.
+  Answer: (B)
+M A 13: |-
+  Concept: $(100 - k)(100 + k) = 100^2 - k^2$.
+  Solution:
+  1. Sum $= \sum_{k=0}^{99}(10^4 - k^2) = 10^6 - \frac{99\cdot100\cdot199}{6} = 100^3 - 199\times1650$.
+  2. $\alpha = 3$, $\beta = 1650$, so the slope is $\frac{1650}{3} = 550$.
+  Answer: (B)
+M A 14: |-
+  Concept: Domain: $\text{cosec}^{-1}x$ needs $|x| \ge 1$; $\sqrt{x - [x]}$ in the denominator needs $\{x\} > 0$.
+  Solution:
+  1. x must be a non-integer with $|x| \ge 1$, i.e. all non-integers outside $[-1, 1]$.
+  Answer: (B)
+M A 15: |-
+  Concept: $\frac{1}{(2k+1)^2 - 1} = \frac{1}{4k(k+1)} = \frac{1}{4}\left(\frac{1}{k} - \frac{1}{k+1}\right)$.
+  Solution:
+  1. Telescoping over $k = 1$ to $100$: $\frac{1}{4}\left(1 - \frac{1}{101}\right) = \frac{25}{101}$.
+  Answer: (B)
+M A 16: |-
+  Concept: Intersect the domains, excluding zeros of denominators.
+  Solution:
+  1. $f \pm g$ needs $0 \le x \le 1$; $\frac{f}{g}$ needs $x < 1$; $\frac{g}{f}$ needs $x > 0$.
+  2. Common domain: $0 < x < 1$.
+  Answer: (C)
+M A 17: |-
+  Concept: Continuity and equal one-sided derivatives at $x = 1$ (symmetry handles $x = -1$).
+  Solution:
+  1. $a + b = 1$.
+  2. $2a = \frac{d}{dx}\frac{1}{x}\Big|_{x=1} = -1 \Rightarrow a = -\frac{1}{2}$, $b = \frac{3}{2}$.
+  Answer: (D)
+M A 18: |-
+  Concept: Trace is linear.
+  Solution:
+  1. $\text{tr}A + 2\,\text{tr}B = -1$ and $2\,\text{tr}A - \text{tr}B = 3$.
+  2. $\text{tr}A = 1$ and $\text{tr}B = -1$, so the difference is 2.
+  Answer: (B)
+M A 19: |-
+  Concept: Sum over positions: (sum of digits in each place) × 1111.
+  Solution:
+  1. There are $\frac{4!}{2!} = 12$ numbers. In each place, 1 appears 3 times, 2 appears 6 times and 3 appears 3 times.
+  2. Place sum $= 3 + 12 + 9 = 24$, so the total is $24\times1111 = 26664$.
+  Answer: (A)
+M A 20: |-
+  Concept: A periodic continued fraction satisfies a quadratic.
+  Solution:
+  1. $t = 3 + \frac{t}{4t + 1} \Rightarrow 4t^2 - 12t - 3 = 0$.
+  2. $t = \frac{12 + 8\sqrt3}{8} = 1.5 + \sqrt3$.
+  Answer: (A)
+M B 1: |-
+  Concept: Count digit occurrences by position over 000–999.
+  Solution:
+  1. In each of the 3 positions, 3 appears in 100 of the 1000 strings.
+  2. Total $= 300$ (1000 has no 3).
+  Answer: 300
+M B 2: |-
+  Concept: The perpendicular bisector plane has normal along AB and passes through the midpoint.
+  Solution:
+  1. $\vec{AB} = (-2, 6, -6) \parallel (1, -3, 3)$; midpoint (3, 0, −2).
+  2. $x - 3y + 3z + d = 0$: $3 - 6 + d = 0 \Rightarrow d = 3$.
+  3. Minimum $a^2 + b^2 + c^2 + d^2 = 1 + 9 + 9 + 9 = 28$.
+  Answer: 28
+M B 3: |-
+  Concept: $g(4 - x) = -g(x)$ makes $\int_0^4g = 0$.
+  Solution:
+  1. $f(x^2) = 4x^3 - g(4 - x) = 4x^3 + g(x)$, and $f(x^2)$ is even in x.
+  2. $\int_{-4}^{4}f(x^2)dx = 2\int_0^4(4x^3 + g(x))dx = 2(256 + 0) = 512$.
+  3. (The printed "$f(x)^2$" is intended as $f(x^2)$.)
+  Answer: 512
+M B 4: |-
+  Concept: Spot the pattern in the inner values.
+  Solution:
+  1. The inner values are $1^{1!}$, ?, $3^{3!} = 3^6$, $4^{4!} = 4^{24}$.
+  2. The missing term is $2^{2!} = 4$.
+  Answer: 4
+M B 5: |-
+  Concept: $0, z_1, z_2$ form an equilateral triangle iff $z_1^2 + z_2^2 = z_1z_2$.
+  Solution:
+  1. $(z_1 + z_2)^2 = 3z_1z_2 \Rightarrow a^2 = 36$.
+  2. $|a| = 6$.
+  Answer: 6
+M B 6: |-
+  Concept: Parallel plane $x - 2y + 2z + d = 0$ at unit distance.
+  Solution:
+  1. $\frac{|1 - 4 + 6 + d|}{3} = 1 \Rightarrow d = 0$ or $-6$.
+  2. $b - d = K(c - a) = K$: $d = 0$ gives $K = -2$; $d = -6$ gives $K = 4$.
+  3. Positive $K = 4$.
+  Answer: 4
+M B 7: |-
+  Concept: Total age changes by (new − old).
+  Solution:
+  1. $25\times40 - 60 + x = 25\times39 \Rightarrow x = 35$.
+  Answer: 35
+M B 8: |-
+  Concept: Divide numerator and denominator by $x^{14}$.
+  Solution:
+  1. The integrand becomes $\frac{5x^{-6} + 7x^{-8}}{(x^{-5} + x^{-7} + 2)^2}$, i.e. $-\frac{du}{u^2}$ with $u = x^{-5} + x^{-7} + 2$.
+  2. $f(x) = \frac{1}{u} = \frac{x^7}{2x^7 + x^2 + 1}$ (with $f(0) = 0$).
+  3. $f(1) = \frac{1}{4}$, so $K = 4$.
+  Answer: 4
+M B 9: |-
+  Concept: The square is symmetric about the origin: vertices $(a, b), (-b, a), (-a, -b), (b, -a)$.
+  Solution:
+  1. Vertices on the curve: $ab = \pm1$. Midpoints $\left(\frac{a-b}{2}, \frac{a+b}{2}\right)$ on the curve: $(a^2 - b^2)^2 = 16$.
+  2. With $ab = 1$: $a^2 = 2 + \sqrt5$, $b^2 = \sqrt5 - 2$.
+  3. Area $= $ side² $= 2(a^2 + b^2) = 4\sqrt5$, so area² $= 80$.
+  Answer: 80
+M B 10: |-
+  Concept: Case on the sign of cot x.
+  Solution:
+  1. If $\cot x \ge 0$: $\frac{1}{\sin x} = 0$, impossible.
+  2. If $\cot x < 0$: $-2\cot x = \frac{1}{\sin x} \Rightarrow \cos x = -\frac{1}{2}$.
+  3. $x = \frac{2\pi}{3}$ works (cot < 0); $x = \frac{4\pi}{3}$ has cot > 0 and is rejected. So 1 solution.
+  Answer: 1

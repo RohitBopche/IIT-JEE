@@ -1,0 +1,192 @@
+M A 1: |-
+  Concept: The general term is $\frac{2n - 1}{n}x^n = 2x^n - \frac{x^n}{n}$ (n ≥ 2).
+  Solution:
+  1. $\sum_{n\ge2}2x^n = \frac{2x^2}{1 - x}$.
+  2. $\sum_{n\ge2}\frac{x^n}{n} = -\log_e(1 - x) - x$.
+  3. Sum $= \frac{2x^2}{1 - x} + x + \log_e(1 - x) = x\frac{1 + x}{1 - x} + \log_e(1 - x)$.
+  Answer: (A)
+M A 2: |-
+  Concept: GP of logarithms, and the ratio of arithmetic sums.
+  Solution:
+  1. $y = \log_{10}x\left(1 + \frac{1}{3} + \frac{1}{9} + \ldots\right) = \frac{3}{2}\log_{10}x$.
+  2. $\frac{2(1 + 2 + \ldots + y)}{3(1 + 2 + \ldots + y)} = \frac{2}{3} = \frac{4}{\log_{10}x}$, so $\log_{10}x = 6$.
+  3. x = 10⁶ and y = 9.
+  Answer: (D)
+M A 3: |-
+  Concept: Parametrise and eliminate t.
+  Solution:
+  1. M = (t, 3); the slope of AB is −3/t, so the perpendicular bisector is $y - 3 = \frac{t}{3}(x - t)$.
+  2. It meets the y-axis at C = (0, 3 − t²/3).
+  3. P = (t/2, 3 − t²/6); with t = 2x, y = 3 − 2x²/3, so 2x² + 3y − 9 = 0.
+  Answer: (C)
+M A 4: |-
+  Concept: $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$.
+  Solution:
+  1. Difference of squares: $(\sin^{-1}x - \cos^{-1}x)\frac{\pi}{2} = a$, so $2\sin^{-1}x - \frac{\pi}{2} = \frac{2a}{\pi}$.
+  2. $2x^2 - 1 = -\cos(2\sin^{-1}x) = -\cos\left(\frac{\pi}{2} + \frac{2a}{\pi}\right) = \sin\frac{2a}{\pi}$.
+  Answer: (B)
+M A 5: |-
+  Concept: Use the Cayley–Hamilton theorem: $A^2 = -A + 2KI$ (trace −1, det −2K).
+  Solution:
+  1. $A^2 + A - 2KI = 0$. Expanding $A^4 + 3A - 2I = 0$ with this relation and comparing coefficients gives K = ½.
+  2. Check: with K = ½, $A^2 = I - A$, so $A^4 = (I - A)^2 = I - 2A + A^2 = 2I - 3A$.
+  3. Then $A^4 + 3A = 2I$ ✓.
+  Answer: (A)
+M A 6: |-
+  Concept: Move along the given direction until you reach the plane.
+  Solution:
+  1. The point on the line is (1 + 2r, −2 + 3r, 3 − 6r), and |direction| = 7.
+  2. Substituting into the plane: 6 − 7r = 5, so r = 1/7.
+  3. Distance = 7 × 1/7 = 1.
+  Answer: (D)
+M A 7: |-
+  Concept: $\frac{z - z_1}{z - z_2}$ is real exactly when z is collinear with z₁ and z₂.
+  Solution:
+  1. z lies on the line through i and −2i, which is the imaginary axis (x = 0), with z = −2i excluded.
+  2. So S is a straight line.
+  Answer: (D)
+M A 8: |-
+  Concept: Substitute u = y + 2 sin x − 5.
+  Solution:
+  1. u′ = y′ + 2cos x = 2xu, so $u = Ce^{x^2}$; u(0) = 7 − 5 = 2, so C = 2.
+  2. $y = 2e^{x^2} - 2\sin x + 5$, so $y(\pi) = 2e^{\pi^2} + 5$.
+  Answer: (A)
+M A 9: |-
+  Concept: Plane through the line of intersection: $P_1 + \lambda P_2 = 0$, then apply the distance condition.
+  Solution:
+  1. The normal is (1 + 2λ, λ − 1, −1 − 3λ) and the constant is 4λ − 1.
+  2. $\frac{(4\lambda - 1)^2}{14\lambda^2 + 8\lambda + 3} = \frac{2}{21}$ gives $308\lambda^2 - 184\lambda + 15 = 0$, so λ = ½ (or 15/154).
+  3. λ = ½ gives 4x − y − 5z + 2 = 0.
+  Answer: (D)
+M A 10: |-
+  Concept: Limit of a sum as a definite integral.
+  Solution:
+  1. $-\frac{4}{n^2}\ln U_n = -4\cdot\frac{1}{n}\sum\frac{r}{n}\ln\left(1 + \frac{r^2}{n^2}\right) \to -4\int_0^1x\ln(1 + x^2)dx$.
+  2. $\int_0^1x\ln(1 + x^2)dx = \frac{1}{2}(2\ln2 - 1)$.
+  3. The limit is $e^{2 - 4\ln2} = \frac{e^2}{16}$.
+  Answer: (A)
+M A 11: |-
+  Concept: Modus ponens chained through a syllogism.
+  Solution:
+  1. p and p → q give q; q and q → r give r.
+  2. So the premise implies r, and the whole statement is always true: a tautology.
+  Answer: (A)
+M A 12: |-
+  Concept: $f + xf' = \frac{d}{dx}(xf)$.
+  Solution:
+  1. $xf = \frac{x^3}{3} + C$; the point (−2, 2) gives −4 = −8/3 + C, so C = −4/3.
+  2. So 3xf = x³ − 4, that is, x³ − 3xf(x) − 4 = 0.
+  Answer: (C)
+M A 13: |-
+  Concept: Vandermonde's identity.
+  Solution:
+  1. $\sum_{k=0}^{n}\binom{n}{k}^2 = \binom{2n}{n}$, so the sum is $\binom{40}{20}$.
+  Answer: (C)
+M A 14: |-
+  Concept: Tangent $yy_1 = 4(x + x_1)$ and directrix x = −2.
+  Solution:
+  1. Tangent at P: y = −x − 2, which meets the directrix at A(−2, 0).
+  2. Normal at P: y = x − 6, which meets it at B(−2, −8).
+  3. In square AQBP, PQ is a diagonal, so Q = A + B − P = (−6, −4).
+  4. 2a + b = −12 − 4 = −16.
+  Answer: (A)
+M A 15: |-
+  Concept: $\sin(X + Y)\sin(X - Y) = \sin^2X - \sin^2Y$, with sin A = sin(B + C) and so on.
+  Solution:
+  1. $\sin(C + B)\sin(C - B) = \sin(A + C)\sin(A - C)$, so $\sin^2C - \sin^2B = \sin^2A - \sin^2C$.
+  2. So 2c² = a² + b², and b², c², a² are in AP.
+  Answer: (B)
+M A 16: |-
+  Concept: $e^{2u} - 1 - 2u \approx 2u^2$ for small u.
+  Solution:
+  1. u = (x − α)(x − β), so $\frac{2u^2}{(x - \beta)^2} \to 2(\beta - \alpha)^2$.
+  2. $(\alpha - \beta)^2 = b^2 - 4c$, so the limit is 2(b² − 4c).
+  Answer: (C)
+M A 17: |-
+  Concept: A sum of 7 needs opposite faces; the pairs are (1,6), (2,5), (3,4) in either order.
+  Solution:
+  1. P = 2[(1/6 − x)(1/6 + x) + 2/36] = 1/6 − 2x².
+  2. 1/6 − 2x² = 13/96 gives x² = 1/64, so x = 1/8.
+  Answer: (B)
+M A 18: |-
+  Concept: Complete the square to get an ellipse.
+  Solution:
+  1. (x − 2)² + 9y² = 1, so |x − 2| ≤ 1 and |3y| ≤ 1.
+  2. x ∈ [1, 3] and y ∈ [−1/3, 1/3].
+  Answer: (D)
+M A 19: |-
+  Concept: x² − 44x + 484 = (22 − x)²; use the property x → a + b − x with a + b = 22.
+  Solution:
+  1. $I = \int_6^{16}\frac{\ln x^2}{\ln x^2 + \ln(22 - x)^2}dx$; replacing x by 22 − x gives the complementary integrand.
+  2. Adding: 2I = ∫ 1 dx = 10, so I = 5.
+  Answer: (C)
+M A 20: |-
+  Concept: Minimise the total area subject to a fixed perimeter.
+  Solution:
+  1. 4a + 6s = 20, and Area = a² + (3√3/2)s² with a = 5 − 1.5s.
+  2. dA/ds = −3(5 − 1.5s) + 3√3 s = 0, so s(4.5 + 3√3) = 15.
+  3. $s = \frac{10}{3 + 2\sqrt3}$.
+  Answer: (D)
+M B 1: |-
+  Concept: Cross-product magnitude and perpendicularity.
+  Solution:
+  1. $\vec b\times\vec c = (-9 - 2\beta, 3 - \beta, 5)$, and |·|² = 75 gives β² + 6β + 8 = 0, so β = −2 or −4.
+  2. $\vec a\cdot\vec b = 16 + \alpha\beta = 0$ gives α = 8 or 4.
+  3. |a|² = 26 + α² = 90 or 42; the greatest is 90.
+  Answer: 90
+M B 2: |-
+  Concept: Study the critical values of f(x) = 3x⁴ + 4x³ − 12x² + 4.
+  Solution:
+  1. f′ = 12x(x + 2)(x − 1), with f(−2) = −28, f(0) = 4, f(1) = −1.
+  2. The sign changes on (−∞, −2), (−2, 0), (0, 1) and (1, ∞) give 4 real roots.
+  Answer: 4
+M B 3: |-
+  Concept: $r^2 = \frac{p^2 + (1 - p)^2}{4} - 5$.
+  Solution:
+  1. 0 < r² ≤ 25 gives 19 < 2p² − 2p ≤ 119.
+  2. So p ∈ [−7.23, −2.62) ∪ (3.62, 8.23], giving p² ∈ (6.88, 52.3] ∪ (13.1, 67.7].
+  3. Integers q from 7 to 67: 61 values.
+  Answer: 61
+M B 4: |-
+  Concept: Solve each set, intersect, and take the complement.
+  Solution:
+  1. A: x < 1 or x > 3. B: |x| > 2. C: x ≤ 2 or x ≥ 6.
+  2. A ∩ B ∩ C = (−∞, −2) ∪ [6, ∞).
+  3. The complement contains the integers −2, …, 5 (8 elements), so there are 2⁸ = 256 subsets.
+  Answer: 256
+M B 5: |-
+  Concept: Differentiate the answer form, or use the standard result for ∫dx/(t² + k²)².
+  Solution:
+  1. $\int\frac{dx}{(x^2 + x + 1)^2} = \frac{2x + 1}{3(x^2 + x + 1)} + \frac{4}{3\sqrt3}\tan^{-1}\frac{2x + 1}{\sqrt3} + C$.
+  2. a = 4/(3√3) and b = 1/3, so √3a + b = 5/3 and 9(√3a + b) = 15.
+  Answer: 15
+M B 6: |-
+  Concept: Infinitely many solutions need D = 0 and a consistent system.
+  Solution:
+  1. D = −3β − 3 = 0, so β = −1.
+  2. eq3 = 2·eq1 − eq2 (check the z coefficient: −2 + 1 = −1 ✓), so 3 = 6 − α and α = 3.
+  3. α + β − αβ = 3 − 1 + 3 = 5.
+  Answer: 5
+M B 7: |-
+  Concept: The variance of 1, 2, …, n is $\frac{n^2 - 1}{12}$.
+  Solution:
+  1. n² − 1 = 168, so n = 13.
+  Answer: 13
+M B 8: |-
+  Concept: For an ellipse with semi-axes p and q, the minimum area of the tangent–axes triangle is pq.
+  Solution:
+  1. The tangent $\frac{x\cos\theta}{p} + \frac{y\sin\theta}{q} = 1$ gives Area $= \frac{pq}{\sin2\theta} \ge pq$.
+  2. Here p = b and q = 2a, so the minimum is 2ab and k = 2.
+  Answer: 2
+M B 9: |-
+  Concept: Every even-length palindrome is divisible by 11 (the alternating digit sum is 0).
+  Solution:
+  1. The number abccba must be divisible by 5, so its last digit a is 0 or 5; a ≠ 0, so a = 5.
+  2. b and c are free: 10 × 10 = 100.
+  Answer: 100
+M B 10: |-
+  Concept: $y^{1/4} = x \pm \sqrt{x^2 - 1}$, so $y = (x \pm \sqrt{x^2 - 1})^{4}$ (or its reciprocal).
+  Solution:
+  1. For $y = (x + \sqrt{x^2 - 1})^m$: $y' = \frac{my}{\sqrt{x^2 - 1}}$, so $(x^2 - 1)y'' + xy' - m^2y = 0$.
+  2. With m = 4: α = 1 and β = −16, so |α − β| = 17.
+  Answer: 17

@@ -1,0 +1,182 @@
+P A 1: |-
+  Concept: The packet keeps the helicopter's horizontal speed, so its horizontal range is $R = v\sqrt{\frac{2h}{g}}$.
+  Solution:
+  1. The fall time is $t = \sqrt{2h/g}$, so the man must be $R = v\sqrt{2h/g}$ ahead horizontally.
+  2. The straight-line distance is $D = \sqrt{R^2 + h^2} = \sqrt{\frac{2v^2h}{g} + h^2}$.
+  Answer: (C)
+P A 2: |-
+  Concept: From the figure, Y = NAND(A·B, A + B).
+  Solution:
+  1. (0,0): A·B = 0, so Y = 1. (0,1): A·B = 0, so Y = 1. (1,0): A·B = 0, so Y = 1.
+  2. (1,1): A·B = 1 and A + B = 1, so Y = 0.
+  3. Output sequence: 1, 1, 1, 0.
+  Answer: (C)
+P A 3: |-
+  Concept: For unlike charges, the null point lies outside the pair, on the side of the smaller charge.
+  Solution:
+  1. At distance x to the right of −5 μC: $\frac{5}{x^2} = \frac{20}{(5 + x)^2}$, so $\frac{5 + x}{x} = 2$ and x = 5 cm.
+  2. Between the charges the fields add, so there is no null point there.
+  Answer: (B)
+P A 4: |-
+  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ in kelvin.
+  Solution:
+  1. $T_2 = \frac{3}{4}T_1$, and $\frac{1}{2} = 1 - \frac{T_2 - 58}{T_1}$.
+  2. Subtracting gives $\frac{58}{T_1} = \frac{1}{4}$, so $T_1 = 232$ K and $T_2 = 174$ K.
+  Note: The sink is at 174 K (−99°C), not 174°C, so no option is strictly correct; ALLEN marks the question Bonus. The official key (1) matches the number.
+  Answer: (A)
+P A 5: |-
+  Concept: Lens formula $\frac{1}{v} - \frac{1}{u} = \frac{1}{F}$ with F = −f and u = −f.
+  Solution:
+  1. $\frac{1}{v} = -\frac{1}{f} - \frac{1}{f}$, so $v = -\frac{f}{2}$ (virtual, same side).
+  2. $m = \frac{v}{u} = \frac{1}{2}$, and the distance is f/2.
+  Answer: (C)
+P A 6: |-
+  Concept: Chain decay A → B → C with $N_B(0) = 0$.
+  Solution:
+  1. $N_B = \frac{\lambda_AN_0}{\lambda_B - \lambda_A}(e^{-\lambda_At} - e^{-\lambda_Bt})$, which starts at 0.
+  2. It rises while formation exceeds decay, peaks, and then decays towards 0.
+  Answer: (B)
+P A 7: |-
+  Concept: The turns are uniformly spread in radius: $dN = \frac{N\,dr}{b - a}$, and each gives $dB = \frac{\mu_0I\,dN}{2r}$.
+  Solution:
+  1. $B = \frac{\mu_0IN}{2(b - a)}\int_a^b\frac{dr}{r} = \frac{\mu_0IN}{2(b - a)}\ln\frac{b}{a}$.
+  Answer: (A)
+P A 8: |-
+  Concept: Conserve momentum (both components) and kinetic energy with θ₁ = θ₂ = θ.
+  Solution:
+  1. The perpendicular component gives $Mv_1 = mv_2$; the parallel component gives $V_0 = 2v_1\cos\theta$.
+  2. Energy: $MV_0^2 = Mv_1^2\left(1 + \frac{M}{m}\right)$, so $\frac{M}{m} = 4\cos^2\theta - 1$.
+  3. The maximum, at θ → 0, is 3.
+  Answer: (C)
+P A 9: |-
+  Concept: Total energy ≥ 0 at the midpoint.
+  Solution:
+  1. At the midpoint (distance r/2 from each body): $U = -\frac{2G(M_1 + M_2)m}{r}$.
+  2. $\frac{1}{2}mv^2 = \frac{2G(M_1 + M_2)m}{r}$, so $v = \sqrt{\frac{4G(M_1 + M_2)}{r}}$.
+  Answer: (B)
+P A 10: |-
+  Concept: The field at the centre of a square loop of side b is $B = 4\times\frac{\mu_0I}{4\pi(b/2)}\cdot2\sin45° = \frac{2\sqrt2\mu_0I}{\pi b}$; take it as uniform over the small loop.
+  Solution:
+  1. $\Phi = Ba^2$, so $M = \frac{\Phi}{I} = \frac{2\sqrt2\mu_0a^2}{\pi b} = \frac{\mu_0}{4\pi}\cdot8\sqrt2\frac{a^2}{b}$.
+  Answer: (A)
+P A 11: |-
+  Concept: An ideal diode conducts only when $V_i > 3$ V (the battery opposes it).
+  Solution:
+  1. For $V_i > 3$ V: $V_R = V_i - 3$ (peak 7 V). Otherwise the diode is off and $V_R = 0$.
+  2. So R shows only the portions of the sine wave above the +3 V level.
+  Note: The option graphs are similar; ALLEN picked (1), and the official key is (3).
+  Answer: (C)
+P A 12: |-
+  Concept: Elongation of a hanging rod under its own weight: $\Delta l = \frac{WL}{2AY}$.
+  Solution:
+  1. $\Delta l = \frac{10\times0.2}{2\times10^{-2}\times2\times10^{11}} = 5\times10^{-10}$ m.
+  Answer: (D)
+P A 13: |-
+  Concept: Perpendicular mirrors form 3 images: one in each mirror and one double reflection.
+  Solution:
+  1. With the mirrors as axes and P = (a, 2a), the images are I₁ (−a, 2a), I₂ (a, −2a) and I₃ (−a, −2a).
+  2. The official answer takes |I₁I₂| = √((2a)² + (4a)²) = 2√5a ≈ 4.6a.
+  Note: The actual shortest separation is |I₁I₃| = 4a or |I₂I₃| = 2a, so the true answer 2a is not among the options. The official key is kept.
+  Answer: (B)
+P A 14: |-
+  Concept: Dimensions.
+  Solution:
+  1. Torque: ML²T⁻², (iii). Impulse: MLT⁻¹, (i).
+  2. Tension (a force): MLT⁻², (iv). Surface tension (force per length): MT⁻², (ii).
+  3. Only option (A) gives a–iii, b–i, c–iv, d–ii.
+  Answer: (A)
+P A 15: |-
+  Concept: Integrate to get $p = p_0e^{-av}$; T = pv/R for one mole.
+  Solution:
+  1. $T = \frac{p_0ve^{-av}}{R}$; setting dT/dv = 0 gives 1 − av = 0, so v = 1/a.
+  2. $T_{max} = \frac{p_0}{aeR}$.
+  Answer: (A)
+P A 16: |-
+  Concept: Check each side's dimensions.
+  Solution:
+  1. Poiseuille: $\frac{\pi pa^4}{8\eta L}$ is a volume flow rate (L³T⁻¹), not a volume v, so (A) is dimensionally wrong.
+  2. (B) is the capillary rise (L). (C) ε ∂E/∂t is the displacement current density. (D) W = Γθ is correct.
+  Answer: (A)
+P A 17: |-
+  Concept: $\vec L = m\vec r\times\vec v$ about the centre, for uniform circular motion.
+  Solution:
+  1. |L| = mvr is constant, and its direction is always perpendicular to the plane of motion (fixed).
+  2. So L stays the same in both magnitude and direction.
+  Answer: (B)
+P A 18: |-
+  Concept: $Z = \sqrt{R^2 + (X_L - X_C)^2}$.
+  Solution:
+  1. $X_L = X_C$, so Z = R (resonance).
+  Answer: (C)
+P A 19: |-
+  Concept: $\lambda = \frac{h}{p}$ and $K = \frac{p^2}{2m}$.
+  Solution:
+  1. Equal λ means equal p.
+  2. $m_p > m_e$, so $K_p < K_e$.
+  Answer: (A)
+P A 20: |-
+  Concept: The galvanometer and shunt share the same potential difference.
+  Solution:
+  1. $I_g = 0.02I$ and $I_s = 0.98I$.
+  2. $G = \frac{0.98\times5}{0.02} = 245$ Ω.
+  Answer: (C)
+P B 1: |-
+  Concept: $K = \frac{\Delta p}{\Delta V/V}$ and Δp = ρgh.
+  Solution:
+  1. Δp = 9.8 × 10⁸ × 0.005 = 4.9 × 10⁶ Pa.
+  2. $h = \frac{4.9\times10^6}{10^3\times9.8} = 500$ m.
+  Answer: 500
+P B 2: |-
+  Concept: KE = PE when $x = \frac{A}{\sqrt2}$.
+  Solution:
+  1. Starting from the mean position, $x = A\sin\frac{2\pi t}{T} = \frac{A}{\sqrt2}$ gives $\frac{2\pi t}{T} = \frac{\pi}{4}$, so t = T/8.
+  2. x = 8.
+  Answer: 8
+P B 3: |-
+  Concept: $d = \sqrt{2Rh_1} + \sqrt{2Rh_2}$ with $h_1 + h_2$ fixed; the maximum is at $h_1 = h_2$.
+  Solution:
+  1. $h_1 = h_2 = 80$ m, so $d = 2\sqrt{2\times6.4\times10^6\times80} = 2\times32$ km = 64 km.
+  Answer: 64
+P B 4: |-
+  Concept: The total resistance is 12 Ω; the two halves of the circle are in parallel.
+  Solution:
+  1. Each semicircle is 6 Ω, and 6 ∥ 6 = 3 Ω.
+  Answer: 3
+P B 5: |-
+  Concept: Successive harmonics differ by $\frac{v}{2L}$.
+  Solution:
+  1. $v = \sqrt{\frac{900}{9\times10^{-4}}} = 1000$ m/s.
+  2. $\frac{v}{2L} = 550 - 500 = 50$, so L = 10 m.
+  Answer: 10
+P B 6: |-
+  Concept: Reduce the parallel groups.
+  Solution:
+  1. Top branch: (4 ∥ 4) + 2 + (15 ∥ 10) = 2 + 2 + 6 = 10 Ω. Bottom branch: (8 ∥ 8) + (12 ∥ 12) = 4 + 6 = 10 Ω.
+  2. Total: 10 ∥ 10 + 1 = 6 Ω, so I = 12/6 = 2 A and each branch carries 1 A.
+  3. The voltage across 15 ∥ 10 (6 Ω) is 1 × 6 = 6 V.
+  Answer: 6
+P B 7: |-
+  Concept: Momentum is conserved; kinetic energy is not.
+  Solution:
+  1. M × 40 = (M/2) × 60 + (M/2)v, so v = 20 m/s.
+  2. $K_i = 800M$ and $K_f = \frac{M}{4}(3600 + 400) = 1000M$.
+  3. $\frac{\Delta K}{K_i} = \frac{200}{800} = \frac{1}{4}$, so x = 1.
+  Answer: 1
+P B 8: |-
+  Concept: The average energy density of an EM wave is $u = \frac{1}{2}\varepsilon_0E_0^2$.
+  Solution:
+  1. u = ½ × 8.8 × 10⁻¹² × 2500 = 1.1 × 10⁻⁸ J/m³.
+  2. $V = \frac{5.5\times10^{-12}}{1.1\times10^{-8}} = 5\times10^{-4}$ m³ = 500 cm³.
+  Answer: 500
+P B 9: |-
+  Concept: In steady state no current flows into the capacitor; it takes the voltage of the resistor it spans.
+  Solution:
+  1. I = 6 V / 6 kΩ = 1 mA, so each 2 kΩ resistor has 2 V across it.
+  2. Q = 50 μF × 2 V = 100 μC.
+  Answer: 100
+P B 10: |-
+  Concept: In the car's frame, $\vec g_{eff} = \vec g - \vec a$.
+  Solution:
+  1. $\vec a$ = 10 m/s² up the 30° incline = (8.66, 5), so $\vec g_{eff}$ = (−8.66, −15).
+  2. $\tan\alpha = \frac{8.66}{15} = \frac{1}{\sqrt3}$, so the string makes 30° with the vertical.
+  Answer: 30
