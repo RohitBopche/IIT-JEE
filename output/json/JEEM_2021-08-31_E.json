@@ -2052,7 +2052,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The Arrhenius equation in log form is $\\log k = \\log A - \\frac{E_a}{2.303RT}$. Comparing it with the given expression, the coefficient of 1/T equals $\\frac{E_a}{2.303R}$.\nSolution:\n1. Given $\\log_{10}k = 20.35 - \\frac{2.47\\times10^3}{T}$, so $\\frac{E_a}{2.303R} = 2470$ K.\n2. $E_a = 2470\\times2.303\\times8.314$ J/mol.\n3. 2.303 × 8.314 = 19.147, and 2470 × 19.147 = 47,293 J/mol ≈ 47.3 kJ/mol.\n4. To the nearest integer: 47.\nCommon mistake: Forgetting the factor 2.303 (natural log versus log₁₀) gives about 20.5 kJ/mol.\nKey takeaway: In log₁₀ form, the slope of log k against 1/T is −Ea/(2.303R).\nAnswer: 47",
+   "explanation": "Concept: The Arrhenius equation in log form is $\\log k = \\log A - \\frac{E_a}{2.303RT}$. Comparing it with the given expression, the coefficient of 1/T equals $\\frac{E_a}{2.303R}$.\nSolution:\n1. Given $\\log_{10}k = 20.35 - \\frac{2.47\\times10^3}{T}$, so $\\frac{E_a}{2.303R} = 2470$ K.\n2. $E_a = 2470\\times2.303\\times8.314$ J/mol.\n3. 2.303 × 8.314 = 19.147, and 2470 × 19.147 = 47,293 J/mol ≈ 47.3 kJ/mol.\n4. To the nearest integer: 47.\nCommon mistake: Forgetting the factor 2.303 (natural log versus log₁₀) gives about 20.5 kJ/mol.\nPre-exponential factor: log A = 20.35, so A ≈ 2.2 × 10²⁰ s⁻¹; only the slope term is needed for Ea.\nKey takeaway: In log₁₀ form, the slope of log k against 1/T is −Ea/(2.303R).\nAnswer: 47",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-31_E_CHE_B07",

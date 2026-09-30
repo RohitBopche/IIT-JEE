@@ -3142,7 +3142,7 @@
     48
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: |sin 2x| has period π/2 (sin 2x has period π, and the absolute value halves it). So an integral over [0, π] covers two identical humps.\nSolution:\n1. On [0, π/2], sin 2x ≥ 0: $\\int_0^{\\pi/2}\\sin2x\\,dx = \\left[-\\frac{\\cos2x}{2}\\right]_0^{\\pi/2} = \\frac{1}{2} + \\frac{1}{2} = 1$.\n2. On [π/2, π], sin 2x ≤ 0, but the absolute value flips it, giving another area of 1.\n3. Total = 2.\nCommon mistake: dropping the absolute value, which gives ∫₀^π sin 2x dx = 0.\nTip: in general, $\\int_0^{n\\pi/k}|\\sin kx|\\,dx = \\frac{2n}{k}$. Each hump of |sin kx| has area 2/k.\nAnswer: 2",
+   "explanation": "Concept: |sin 2x| has period π/2 (sin 2x has period π, and the absolute value halves it). So an integral over [0, π] covers two identical humps.\nSolution:\n1. On [0, π/2], sin 2x ≥ 0: $\\int_0^{\\pi/2}\\sin2x\\,dx = \\left[-\\frac{\\cos2x}{2}\\right]_0^{\\pi/2} = \\frac{1}{2} + \\frac{1}{2} = 1$.\n2. On [π/2, π], sin 2x ≤ 0, but the absolute value flips it, giving another area of 1.\n3. Total = 2.\nCommon mistake: dropping the absolute value, which gives ∫₀^π sin 2x dx = 0.\nTip: in general, $\\int_0^{n\\pi/k}|\\sin kx|\\,dx = \\frac{2n}{k}$. Each hump of |sin kx| has area 2/k.\nCheck with symmetry: ∫₀^π |sin 2x| dx = 2∫₀^{π/2} sin 2x dx = 2 × 1 = 2.\nKey takeaway: For |periodic function| integrals, count the identical humps and multiply by the area of one.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-02-26_M_MAT_B10",

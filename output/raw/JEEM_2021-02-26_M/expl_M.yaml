@@ -363,4 +363,6 @@ M B 10: |-
   3. Total = 2.
   Common mistake: dropping the absolute value, which gives ∫₀^π sin 2x dx = 0.
   Tip: in general, $\int_0^{n\pi/k}|\sin kx|\,dx = \frac{2n}{k}$. Each hump of |sin kx| has area 2/k.
+  Check with symmetry: ∫₀^π |sin 2x| dx = 2∫₀^{π/2} sin 2x dx = 2 × 1 = 2.
+  Key takeaway: For |periodic function| integrals, count the identical humps and multiply by the area of one.
   Answer: 2
