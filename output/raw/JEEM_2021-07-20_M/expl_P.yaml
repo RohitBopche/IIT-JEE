@@ -1,183 +1,358 @@
 P A 1: |-
-  Concept: With no work done (constant volume), $Q = nC_V\Delta T$.
+  Concept: First law of thermodynamics: Q = ΔU + W. If no work is done (constant volume), all the heat goes into internal energy: Q = nC_VΔT.
   Solution:
-  1. Rigid diatomic: $C_V = \frac{5}{2}R$.
-  2. $Q = 4\times\frac{5}{2}R\times50 = 500R$.
+  1. A rigid diatomic molecule has 3 translational + 2 rotational = 5 degrees of freedom (no vibration). So $C_V = \frac{5}{2}R$.
+  2. n = 4 mol and ΔT = 50 − 0 = 50 K (a temperature difference is the same in °C and K).
+  3. $Q = nC_V\Delta T = 4\times\frac{5}{2}R\times50 = 500R$.
+  4. Numerically: 500 × 8.314 ≈ 4157 J.
+  Comparison: at constant pressure, $C_P = \frac{7}{2}R$ and Q = 4 × $\frac{7}{2}$R × 50 = 700R. The extra 200R (= nRΔT) is the work done in expanding.
+  Why others are wrong:
+  - (A) 175R and (B) 750R come from wrong heat capacities or temperature changes (e.g. using C_P with other slips).
+  - (C) 250R uses $C_V = \frac{5}{4}R$ or n = 2.
   Answer: (D)
 P A 2: |-
-  Concept: $r = \frac{\sqrt{2mK}}{qB}$.
+  Concept: A charge moving perpendicular to a uniform magnetic field moves in a circle of radius $r = \frac{mv}{qB} = \frac{\sqrt{2mK}}{qB}$ (using $p = \sqrt{2mK}$).
   Solution:
-  1. $\frac{r_d}{r_\alpha} = \sqrt{\frac{m_d}{m_\alpha}}\cdot\frac{q_\alpha}{q_d} = \sqrt{\frac{2}{4}}\times2 = \sqrt2$.
+  1. Deuteron: mass 2m_p, charge e. Alpha particle: mass 4m_p, charge 2e.
+  2. With equal kinetic energy K and the same field B: $\frac{r_d}{r_\alpha} = \frac{\sqrt{m_d}/q_d}{\sqrt{m_\alpha}/q_\alpha} = \sqrt{\frac{m_d}{m_\alpha}}\cdot\frac{q_\alpha}{q_d}$.
+  3. $\sqrt{\frac{2}{4}}\times\frac{2e}{e} = \frac{1}{\sqrt2}\times2 = \sqrt2$.
+  Comparison with other conditions:
+  - Same speed: r ∝ $\frac{m}{q}$. Deuteron $\frac{2}{1}$, alpha $\frac{4}{2}$: equal radii (ratio 1).
+  - Same momentum: r ∝ $\frac{1}{q}$: ratio 2.
+  - Same accelerating voltage V (K = qV): r ∝ $\sqrt{\frac{m}{q}}$: $\sqrt{\frac{2}{1}}$ : $\sqrt{\frac{4}{2}}$ = 1 : 1.
+  Why others are wrong:
+  - (B) 2 is the equal-momentum case.
+  - (C) $\frac{1}{\sqrt2}$ is the inverse.
+  - (D) 1 is the equal-speed (or equal-voltage) case.
   Answer: (A)
 P A 3: |-
-  Concept: $AB\cos\theta = AB\sin\theta \Rightarrow \theta = 45°$.
+  Concept: $\vec A\cdot\vec B = AB\cos\theta$ and $|\vec A\times\vec B| = AB\sin\theta$. Setting them equal fixes the angle between the vectors. Then use the cosine rule for the magnitude of a difference.
   Solution:
-  1. $|\vec A - \vec B|^2 = A^2 + B^2 - 2AB\cos45° = A^2 + B^2 - \sqrt2AB$.
+  1. AB cos θ = AB sin θ, so tan θ = 1 and θ = 45°.
+  2. $|\vec A - \vec B|^2 = A^2 + B^2 - 2AB\cos\theta = A^2 + B^2 - 2AB\cdot\frac{1}{\sqrt2} = A^2 + B^2 - \sqrt2AB$.
+  3. $|\vec A - \vec B| = \sqrt{A^2 + B^2 - \sqrt2AB}$.
+  Check with A = B = 1: |A − B|² = 2 − √2 ≈ 0.586. Directly, two unit vectors at 45° have a difference of magnitude 2 sin 22.5° = 0.765, whose square is 0.586 ✓.
+  Why others are wrong:
+  - (B) $\sqrt{A^2 + B^2}$ would need θ = 90°.
+  - (C) $\sqrt{A^2 + B^2 + 2AB}$ = A + B is the maximum (θ = 0 for the sum).
+  - (D) has +√2AB, which is |A + B|, not |A − B|.
   Answer: (A)
 P A 4: |-
-  Concept: At the same temperature, $v_{rms} = \sqrt{\frac{3kT}{m}} \propto \frac{1}{\sqrt m}$.
+  Concept: In a gas mixture at a common temperature, all molecules have the same average translational kinetic energy, $\frac{3}{2}kT$. So the rms speed is $v_{rms} = \sqrt{\frac{3kT}{m}} \propto \frac{1}{\sqrt m}$: lighter molecules move faster.
   Solution:
-  1. $m_A < m_B < m_C \Rightarrow v_A > v_B > v_C \Rightarrow \frac{1}{v_A} < \frac{1}{v_B} < \frac{1}{v_C}$.
+  1. m_A < m_B < m_C, so v_A > v_B > v_C.
+  2. Taking reciprocals reverses the inequality: $\frac{1}{v_A} < \frac{1}{v_B} < \frac{1}{v_C}$.
+  3. This matches option (C).
+  Example at room temperature: H₂ (2 g/mol) has v_rms ≈ 1930 m/s, N₂ (28 g/mol) ≈ 515 m/s, and CO₂ (44 g/mol) ≈ 410 m/s.
+  Application: this is the basis of Graham's law of diffusion (rate ∝ $\frac{1}{\sqrt M}$), used to separate uranium isotopes (²³⁵UF₆ from ²³⁸UF₆) by gaseous diffusion.
+  Why others are wrong:
+  - (A) reverses the inequality.
+  - (B) Speeds are not zero at normal temperature.
+  - (D) Equal speeds would require equal masses.
   Answer: (C)
 P A 5: |-
-  Concept: The nucleus recoils with the photon's momentum $\frac{h\nu}{c}$.
+  Concept: When a nucleus emits a γ-ray photon, momentum is conserved. The photon carries momentum $\frac{h\nu}{c}$, so the nucleus recoils with equal and opposite momentum. The internal energy lost supplies both the photon energy and the recoil kinetic energy.
   Solution:
-  1. Recoil KE $= \frac{p^2}{2M} = \frac{(h\nu)^2}{2Mc^2}$.
-  2. Loss of internal energy $= h\nu + \frac{(h\nu)^2}{2Mc^2} = h\nu\left[1 + \frac{h\nu}{2Mc^2}\right]$.
+  1. Photon momentum: $p = \frac{h\nu}{c}$.
+  2. Nucleus recoil momentum: p (opposite direction). Recoil kinetic energy (non-relativistic): $K = \frac{p^2}{2M} = \frac{(h\nu)^2}{2Mc^2}$.
+  3. Energy conservation: loss of internal energy = photon energy + recoil energy = $h\nu + \frac{(h\nu)^2}{2Mc^2} = h\nu\left[1 + \frac{h\nu}{2Mc^2}\right]$.
+  Size of the correction: for a 1 MeV photon from a nucleus of mass 100 u (Mc² ≈ 93,000 MeV), $\frac{h\nu}{2Mc^2} \approx 5\times10^{-6}$. The recoil energy is only about 5 eV, but this is enough to shift the γ-ray energy slightly, which matters in resonance absorption. (The Mössbauer effect avoids this recoil by embedding the nucleus in a crystal lattice.)
+  Why others are wrong:
+  - (B) 0 would mean no photon is emitted.
+  - (C) subtracts the recoil energy instead of adding it.
+  - (D) hν ignores the recoil.
   Answer: (A)
 P A 6: |-
-  Concept: Parallel decays: $\lambda = \lambda_1 + \lambda_2$.
+  Concept: When a nucleus can decay by two independent routes, the decay constants add: λ = λ₁ + λ₂. The amount remaining is $N = N_0e^{-\lambda t}$.
   Solution:
-  1. $\lambda = \ln2\left(\frac{1}{1400} + \frac{1}{700}\right) = \frac{3\ln2}{1400}$.
-  2. $t = \frac{\ln3}{\lambda} = \frac{1.1\times1400}{3\times0.693} \approx 740$ years.
+  1. λ₁ = $\frac{\ln2}{1400}$ and λ₂ = $\frac{\ln2}{700}$ (per year).
+  2. λ = ln 2 $\left(\frac{1}{1400} + \frac{2}{1400}\right) = \frac{3\ln2}{1400}$.
+  3. Effective half-life: $\frac{\ln2}{\lambda} = \frac{1400}{3} \approx 467$ years.
+  4. For one-third to remain: $e^{-\lambda t} = \frac{1}{3}$, so λt = ln 3 and $t = \frac{\ln3}{\lambda} = \frac{1.1\times1400}{3\times0.693} = \frac{1540}{2.079} \approx 741$ years ≈ 740 years.
+  Check with the effective half-life: one-third remaining takes $\frac{\ln3}{\ln2} = 1.585$ half-lives, and 1.585 × 467 = 740 ✓.
+  Why others are wrong:
+  - (A) 340 years is less than one effective half-life.
+  - (B) 1110 years uses only the 700-year process (ln 3 × $\frac{700}{\ln2}$).
+  - (C) 700 years is just one of the half-lives.
   Answer: (D)
 P A 7: |-
-  Concept: Nodal analysis.
+  Concept: Kirchhoff's current law (nodal analysis). Pick one node as reference (0 V) and write the current balance at the other node.
   Solution:
-  1. Let V be the top-node potential (bottom = 0): $\frac{140 - V}{20} + \frac{90 - V}{5} = \frac{V}{6}$.
-  2. $3(140 - V) + 12(90 - V) = 10V \Rightarrow V = 60$ V.
-  3. $I_6 = \frac{60}{6} = 10$ A.
+  1. From the figure: the circuit has two nodes (top and bottom). Between them are three branches: a 140 V source in series with 20 Ω, a 90 V source in series with 5 Ω, and the 6 Ω resistor.
+  2. Let the top node be at V (bottom = 0). Currents flowing into the top node from each source branch must equal the current leaving through the 6 Ω resistor:
+     $\frac{140 - V}{20} + \frac{90 - V}{5} = \frac{V}{6}$.
+  3. Multiply by 60: 3(140 − V) + 12(90 − V) = 10V, so 420 − 3V + 1080 − 12V = 10V.
+  4. 1500 = 25V, so V = 60 V.
+  5. Current in 6 Ω: $\frac{60}{6} = 10$ A.
+  Check: current from the 140 V branch = $\frac{80}{20}$ = 4 A; from the 90 V branch = $\frac{30}{5}$ = 6 A. Total 10 A, which all flows through the 6 Ω resistor ✓.
   Answer: (B)
 P A 8: |-
-  Concept: $K_{max} = h\nu - \phi$; the largest radius $r = \frac{mv}{eB}$ gives $v_{max}$.
+  Concept: The photon energy of a hydrogen transition is $E = 13.6\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ eV. The fastest photoelectrons (maximum KE) follow the largest circles in a magnetic field, with $r = \frac{mv}{eB}$. Einstein's equation then gives the work function: φ = hν − K_max.
   Solution:
-  1. $h\nu = 13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 1.89$ eV.
-  2. $v = \frac{eBr}{m} = \frac{1.6\times10^{-19}\times5\times10^{-4}\times7\times10^{-3}}{9.1\times10^{-31}} = 6.15\times10^5$ m/s, so $K = 1.72\times10^{-19}$ J $= 1.08$ eV.
-  3. $\phi = 1.89 - 1.08 \approx 0.82$ eV.
+  1. Photon energy (3 → 2, Balmer Hα): $13.6\left(\frac{1}{4} - \frac{1}{9}\right) = 13.6\times\frac{5}{36} = 1.89$ eV.
+  2. Maximum speed from the largest radius: $v = \frac{eBr}{m} = \frac{1.6\times10^{-19}\times5\times10^{-4}\times7\times10^{-3}}{9.1\times10^{-31}} = \frac{5.6\times10^{-25}}{9.1\times10^{-31}} = 6.15\times10^5$ m/s.
+  3. $K_{max} = \frac{1}{2}mv^2 = \frac{1}{2}\times9.1\times10^{-31}\times(6.15\times10^5)^2 = 1.72\times10^{-19}$ J = 1.08 eV.
+  4. φ = 1.89 − 1.08 = 0.81 eV ≈ 0.82 eV.
+  Note: the real work function of gold is about 5.1 eV, far above 1.89 eV, so real gold would emit no photoelectrons with this light. The question's numbers are hypothetical.
+  Why others are wrong:
+  - (B) 1.88 eV is the photon energy itself (it would mean K_max = 0).
+  - (C) 1.36 eV and (D) 0.16 eV come from errors in K_max.
   Answer: (A)
 P A 9: |-
-  Concept: The zener fixes 50 V across the load.
+  Concept: A zener diode in breakdown holds a constant voltage V_Z across itself and its parallel load. The series resistor takes the difference between the supply and V_Z. The zener current is the series current minus the load current.
   Solution:
-  1. Series current $= \frac{100 - 50}{1000} = 50$ mA; load current $= \frac{50}{2000} = 25$ mA.
-  2. $I_Z = 50 - 25 = 25$ mA.
+  1. From the figure: a 100 V supply, a 1 kΩ series resistor, a 50 V zener, and a 2 kΩ load in parallel with the zener.
+  2. Check that the zener is in breakdown: without it, the load voltage would be $100\times\frac{2}{3} = 66.7$ V > 50 V ✓.
+  3. Series current: $I_S = \frac{100 - 50}{1000} = 0.05$ A = 50 mA.
+  4. Load current: $I_L = \frac{50}{2000} = 0.025$ A = 25 mA.
+  5. Zener current: I_Z = 50 − 25 = 25 mA.
+  Power dissipated in the zener: 50 V × 25 mA = 1.25 W. This must be within the zener's power rating.
+  Why others are wrong:
+  - (A) 0.15 A adds the currents incorrectly.
+  - (B) 0.1 A uses the full supply voltage across 1 kΩ.
+  - (D) 0.05 A is the total series current, not the zener current.
   Answer: (C)
 P A 10: |-
-  Concept: Flux $= B\times$(field area enclosed); emf $= -\frac{d\phi}{dt}$; power $\propto$ emf².
+  Concept: The magnetic flux through the circuit is B × (area of the field region enclosed). The induced EMF is $-\frac{d\Phi}{dt}$, which is non-zero only while the enclosed field area changes. The power dissipated is $\frac{\varepsilon^2}{R}$, which is never negative.
   Solution:
-  1. Flux grows linearly for $0 < x < b$, stays constant for $b < x < 2b$ (the field region is fully enclosed), and falls symmetrically on return: the trapezoid A.
-  2. Emf is constant while the arm is in the field (0 to b), zero from b to 2b, and reversed on the way back: B.
-  3. Power $\frac{\varepsilon^2}{R}$ is positive whenever emf ≠ 0: the two positive pulses C.
+  1. From the figure, the field exists only for 0 < x < b. The arm PQ moves out from x = 0 to 2b, then back.
+  2. Flux:
+     - 0 → b (outward): the enclosed field area grows linearly with x, so Φ rises linearly.
+     - b → 2b: the whole field region is already enclosed, so Φ stays constant at its maximum.
+     - On the return, 2b → b: Φ stays constant; b → 0: Φ decreases linearly.
+     - Graph A (a trapezoid) is the flux.
+  3. EMF = $-\frac{d\Phi}{dt}$ = −Bℓv (constant) while the arm is in the field:
+     - 0 → b: constant (one sign). b → 2b and back to b: zero. b → 0: constant, opposite sign.
+     - Graph B (constant, zero, then reversed) is the EMF.
+  4. Power = $\frac{\varepsilon^2}{R}$: constant and positive whenever ε ≠ 0, zero otherwise. Graph C (two positive pulses) is the power.
+  5. So A is flux, B is EMF and C is power.
   Answer: (A)
 P A 11: |-
-  Concept: Refraction at a spherical surface: $\frac{\mu_2}{v} - \frac{\mu_1}{u} = \frac{\mu_2 - \mu_1}{R}$.
+  Concept: Refraction at a single spherical surface: $\frac{\mu_2}{v} - \frac{\mu_1}{u} = \frac{\mu_2 - \mu_1}{R}$, with distances measured from the pole in the direction of the incident light.
   Solution:
-  1. Light goes from region I (1.25) to II (1.4). The centre is on the object side, so $R = -25$ cm; $u = -40$ cm.
-  2. $\frac{1.4}{v} + \frac{1.25}{40} = \frac{0.15}{-25} \Rightarrow \frac{1.4}{v} = -0.03725 \Rightarrow v = -37.58$ cm.
-  3. The virtual image is 37.58 cm from the surface.
+  1. Light travels from region I (μ₁ = 1.25) into region II (μ₂ = 1.4).
+  2. The object is in region I, 40 cm from the surface: u = −40 cm.
+  3. From the figure, the centre of curvature C is in region I (on the object side), so the surface is concave as seen from the incident light: R = −25 cm.
+  4. $\frac{1.4}{v} - \frac{1.25}{-40} = \frac{1.4 - 1.25}{-25}$, so $\frac{1.4}{v} + 0.03125 = -0.006$.
+  5. $\frac{1.4}{v} = -0.03725$, so v = −37.58 cm.
+  6. The image is virtual, 37.58 cm from the surface on the same side as the object (in region I).
+  Check: a surface concave towards the incoming light, going into a denser medium, acts as a diverging surface, so a virtual image on the object side is expected ✓.
+  Why others are wrong:
+  - (A) 9.52 cm and (B) 18.23 cm come from using R = +25 cm or swapping μ₁ and μ₂.
+  - (D) 55.44 cm comes from other sign errors.
   Answer: (C)
 P A 12: |-
-  Concept: At maximum speed, limiting friction acts down the incline.
+  Concept: At the maximum speed on a banked road, the car tends to slide up and out, so limiting friction μN acts down the slope. The vertical forces balance, and the horizontal forces provide the centripetal force.
   Solution:
-  1. Vertical balance: $N\cos\theta - \mu N\sin\theta = mg$.
-  2. $N = \frac{8000}{0.87 - 0.2\times0.5} = \frac{8000}{0.77} \approx 10.4\times10^3$ N, closest to option (B) $10.2\times10^3$.
+  1. Forces: weight mg (down), normal reaction N (perpendicular to the road, tilted inward at 30° from vertical), and friction μN (down the slope).
+  2. Vertical balance: N cos θ − μN sin θ = mg.
+  3. $N = \frac{mg}{\cos\theta - \mu\sin\theta} = \frac{800\times10}{0.87 - 0.2\times0.5} = \frac{8000}{0.77} = 10390$ N ≈ 10.4 × 10³ N.
+  4. The closest option is 10.2 × 10³ N. (The slight difference comes from rounding; with g = 9.8, N = $\frac{7840}{0.77}$ = 10.18 × 10³ N ✓.)
+  Maximum speed (for reference): horizontal: N sin θ + μN cos θ = $\frac{mv^2}{r}$. So $v_{max}^2 = rg\frac{\sin\theta + \mu\cos\theta}{\cos\theta - \mu\sin\theta} = rg\frac{0.674}{0.77}$.
+  Note: N is greater than mg (8000 N) because, at high speed, the road must push harder to provide the centripetal force.
+  Why others are wrong:
+  - (A) 6.96 is mg cos θ (8000 × 0.87), the value with no speed.
+  - (C) 12.4 and (D) 7.2 come from sign errors in the friction term.
   Answer: (B)
 P A 13: |-
-  Concept: The argument of ln must be dimensionless.
+  Concept: The argument of a logarithm must be dimensionless. So each term inside the ln has no dimensions, which relates the dimensions of the constants. Entropy has the dimensions of heat ÷ temperature (J/K).
   Solution:
-  1. J is dimensionless, so $\beta^2 \sim k\mu R$ and β has the dimensions of k (J K⁻¹), as do S and μR.
-  2. $S = \alpha^2\beta \Rightarrow \alpha$ is dimensionless, like J.
-  3. So (A), (C) and (D) hold, while (B) "α and k have the same dimensions" is incorrect.
+  1. J (mechanical equivalent of heat) converts calories to joules; it is a pure number (dimensionless).
+  2. $\frac{\mu kR}{J\beta^2}$ must be dimensionless, so [β²] = [kμR] = [k][μR].
+  3. k (Boltzmann constant) and μR (moles × gas constant) both have dimensions J/K (energy per kelvin). So [β²] = [J/K]², and [β] = J/K.
+  4. S = α²β × (dimensionless). [S] = J/K and [β] = J/K, so α² is dimensionless and α is dimensionless.
+  5. Check the options:
+     - (A) S, β, k and μR all have dimensions J/K ✓ (correct statement).
+     - (B) α (dimensionless) and k (J/K) do not have the same dimensions ✗ (incorrect statement).
+     - (C) S (J/K) and α (dimensionless) differ ✓ (correct statement).
+     - (D) α and J are both dimensionless ✓ (correct statement).
+  6. The incorrect option is (B).
   Answer: (B)
 P A 14: |-
-  Concept: $I = JA\cos\theta$ and $E = \rho J$.
+  Concept: Current through a surface is the flux of the current density: $I = \vec J\cdot\vec A = JA\cos\theta$. In an ohmic conductor, $\vec E = \rho\vec J$.
   Solution:
-  1. $J = \frac{5}{0.04\times\cos60°} = 250$ A/m².
-  2. $E = 44\times10^{-8}\times250 = 11\times10^{-5}$ V/m.
+  1. θ = 60° between $\vec J$ and the area vector, so I = JA cos 60°.
+  2. $J = \frac{I}{A\cos60°} = \frac{5}{0.04\times0.5} = \frac{5}{0.02} = 250$ A/m².
+  3. E = ρJ = 44 × 10⁻⁸ × 250 = 11000 × 10⁻⁸ = 11 × 10⁻⁵ V/m.
+  Interpretation: because $\vec J$ is inclined to the cross-section's normal, only its component along the normal carries current through it. So the full magnitude of J must be larger than $\frac{I}{A}$ = 125 A/m², by the factor $\frac{1}{\cos60°} = 2$.
+  Why others are wrong:
+  - (A) 11 × 10⁻⁷ and (B) 11 × 10⁻² V/m are powers-of-ten errors.
+  - (D) 11 × 10⁻³ V/m is 100 times too large.
+  (Without the angle, E would be 5.5 × 10⁻⁵ V/m, which is not an option.)
   Answer: (C)
 P A 15: |-
-  Concept: Hooke's law: $T = k(\ell - L)$.
+  Concept: Hooke's law for a wire: the extension is proportional to the tension, T = k(ℓ − L), where L is the natural (unstretched) length and k is the effective spring constant ($\frac{YA}{L}$).
   Solution:
-  1. $T_1(\ell_2 - L) = T_2(\ell_1 - L)$.
-  2. $L = \frac{T_1\ell_2 - T_2\ell_1}{T_1 - T_2}$.
+  1. T₁ = k(ℓ₁ − L) and T₂ = k(ℓ₂ − L).
+  2. Divide: $\frac{T_1}{T_2} = \frac{\ell_1 - L}{\ell_2 - L}$, so T₁(ℓ₂ − L) = T₂(ℓ₁ − L).
+  3. T₁ℓ₂ − T₁L = T₂ℓ₁ − T₂L, so L(T₂ − T₁) = T₂ℓ₁ − T₁ℓ₂.
+  4. $L = \frac{T_1\ell_2 - T_2\ell_1}{T_1 - T_2}$.
+  Check: if T₁ = 0, then ℓ₁ = L (unstretched), and the formula gives $L = \frac{-T_2\ell_1}{-T_2} = \ell_1$ ✓.
+  Geometric view: the points (T₁, ℓ₁) and (T₂, ℓ₂) lie on a straight line ℓ = L + $\frac{T}{k}$. L is the intercept of this line at T = 0, found by linear extrapolation.
+  Why others are wrong:
+  - (B) and (C) are geometric and arithmetic means, which have no physical basis here.
+  - (D) has the subscripts in the numerator the wrong way round (it gives the wrong intercept).
   Answer: (A)
 P A 16: |-
-  Concept: Displacement current amplitude $= C\omega V_0$.
+  Concept: The displacement current in a capacitor equals the conduction current in the connecting wires: $I_d = \varepsilon_0\frac{d\Phi_E}{dt} = C\frac{dV}{dt}$. For V = V₀ sin ωt, the amplitude is CωV₀.
   Solution:
-  1. $C = \frac{\varepsilon_0A}{d} = \frac{8.85\times10^{-12}}{2\times10^{-3}} = 4.425\times10^{-9}$ F.
-  2. $I = 4.425\times10^{-9}\times100\pi\times20 = 27.8\ \mu$A.
+  1. Capacitance: $C = \frac{\varepsilon_0A}{d} = \frac{8.85\times10^{-12}\times1}{2\times10^{-3}} = 4.425\times10^{-9}$ F.
+  2. ω = 2π × 50 = 100π ≈ 314.2 rad/s.
+  3. $I_0 = C\omega V_0 = 4.425\times10^{-9}\times314.2\times20 = 2.78\times10^{-5}$ A = 27.8 μA.
+  Why the displacement current matters: Maxwell added it to Ampère's law to make it consistent. Between the plates there is no moving charge, yet the magnetic field there is the same as around the wire. The changing electric field acts as a "current" that completes the circuit.
+  Phase: I_d = CωV₀ cos ωt, which leads the voltage by 90°, as in any capacitor.
+  Why others are wrong:
+  - (A) 83.37 μA and (B) 55.58 μA are 3 and 2 times the correct value.
+  - (C) 21.14 μA comes from an arithmetic slip.
   Answer: (D)
 P A 17: |-
-  Concept: Vector addition of velocities.
+  Concept: The butterfly's velocity relative to the ground is the vector sum of its velocity relative to the air and the wind velocity.
   Solution:
-  1. Butterfly: (4, 4) m/s (NE); wind: (0, −1) m/s; resultant (4, 3), i.e. 5 m/s.
-  2. Displacement in 3 s $= 15$ m.
+  1. Take east as +x and north as +y.
+  2. Butterfly (relative to air): 4√2 m/s towards north-east, i.e. at 45°: (4√2 cos 45°, 4√2 sin 45°) = (4, 4) m/s.
+  3. Wind: blowing from north to south at 1 m/s: (0, −1) m/s.
+  4. Resultant: (4, 3) m/s, magnitude √(16 + 9) = 5 m/s.
+  5. Displacement in 3 s: 5 × 3 = 15 m (direction tan⁻¹ $\frac{3}{4}$ ≈ 37° north of east).
+  Note: "wind blowing from north to south" means the air moves southward, so it reduces the northward component.
+  Why others are wrong:
+  - (B) 20 m would need a resultant speed of about 6.7 m/s, which does not follow from the vectors.
+  - (C) 3 m uses only the wind or a wrong speed.
+  - (D) 12√2 m ignores the wind.
   Answer: (A)
 P A 18: |-
-  Concept: $F \propto q(Q - q)$ is maximum when $q = \frac{Q}{2}$.
+  Concept: The Coulomb force between charges q and (Q − q) at a fixed distance r is $F = k\frac{q(Q - q)}{r^2}$. Maximise the product q(Q − q) with respect to q.
   Solution:
-  1. $\frac{d}{dq}[q(Q - q)] = Q - 2q = 0 \Rightarrow Q = 2q$.
+  1. f(q) = q(Q − q) = Qq − q².
+  2. $\frac{df}{dq} = Q - 2q = 0$, so $q = \frac{Q}{2}$, i.e. Q = 2q.
+  3. $\frac{d^2f}{dq^2} = -2 < 0$, confirming a maximum.
+  4. The charge should be divided into two equal halves.
+  Maximum force: $F_{max} = k\frac{(Q/2)^2}{r^2} = \frac{kQ^2}{4r^2}$.
+  AM–GM view: for a fixed sum q + (Q − q) = Q, the product is greatest when the two parts are equal. The same principle applies to many other problems (for example, maximising the area of a rectangle with a fixed perimeter).
+  Why others are wrong:
+  - (A) Q = $\frac{q}{2}$ would make q larger than Q.
+  - (B) Q = 4q and (D) Q = 3q give unequal parts, and a smaller product.
   Answer: (C)
 P A 19: |-
-  Concept: Newton's second law for the whole system moving down with acceleration a.
+  Concept: Treat the block and cylinders as one system moving together. The external forces are gravity (total weight) and the normal reaction from the floor. Newton's second law: Mg − R′ = Ma for downward acceleration.
   Solution:
-  1. Total mass $= 10 + 3\times20 = 70$ kg.
-  2. $R' = m(g - a) = 70\times(10 - 0.2) = 686$ N.
+  1. Total mass: M = 10 + 3 × 20 = 70 kg.
+  2. The system moves down with acceleration a = 0.2 m/s².
+  3. Mg − R′ = Ma, so R′ = M(g − a) = 70 × (10 − 0.2) = 70 × 9.8 = 686 N.
+  Interpretation: when a system accelerates downward, the supporting force is less than its weight (700 N). This is the same principle as feeling lighter in a lift that accelerates downward.
+  Note: the coefficient of friction μ_s is not needed, since there is no horizontal motion or force.
+  Why others are wrong:
+  - (A) 714 N and (C) 716 N correspond to upward acceleration (R′ = M(g + a) = 714 N).
+  - (B) 684 N comes from an arithmetic slip.
   Answer: (D)
 P A 20: |-
-  Concept: Net gravitational pull decreases from Earth, vanishes at the neutral point, then increases towards Mars.
+  Concept: The weight (net gravitational pull) of the passenger during the trip depends on the combined pull of the Earth and Mars. The Earth's pull weakens with distance and Mars's pull strengthens as the ship approaches. At some point (the neutral point) the two pulls cancel.
   Solution:
-  1. Weight starts at 1000 N, falls to zero at the neutral point, then rises to 400 N at Mars.
-  2. Curve (c) shows this dip to zero and rise to 400 N.
+  1. On the Earth's surface: weight = mg_E = 100 × 10 = 1000 N.
+  2. Leaving the Earth: the Earth's pull decreases (∝ $\frac{1}{r^2}$), so the net weight falls.
+  3. At the neutral point, the pulls of the Earth and Mars are equal and opposite: net weight = 0.
+  4. Beyond this point, Mars's pull dominates and increases as the ship approaches Mars.
+  5. On the surface of Mars: weight = mg_M = 100 × 4 = 400 N.
+  6. So the weight falls from 1000 N to zero, then rises to 400 N. Curve (c) shows this shape (option A).
+  Note: the question asks for the weight due to gravity, ignoring the effects of the ship's acceleration. The neutral point is much closer to Mars than to the Earth, because Mars is less massive (about 0.11 of the Earth's mass).
+  Why others are wrong: the other curves show the weight not reaching zero, reaching zero at the wrong place, or ending at the wrong value.
   Answer: (A)
 P B 1: |-
-  Concept: $y = f(x - vt)$ for a wave travelling without change of shape.
+  Concept: A wave that travels without changing shape has the form y = f(x − vt). Comparing the pulse at two times gives the distance moved, and hence the speed.
   Solution:
-  1. The pulse peak moves from $x = 0$ to $x = 2$ m in 1 s, so $v = 2$ m/s.
+  1. At t = 0: $y = \frac{1}{1 + x^2}$, a pulse with its peak at x = 0.
+  2. At t = 1 s: $y = \frac{1}{1 + (x - 2)^2}$, the same pulse with its peak at x = 2 m.
+  3. General form: $y = \frac{1}{1 + (x - vt)^2}$. At t = 1, vt = 2, so v = 2 m/s.
+  4. The wave moves along +x at 2 m/s.
+  Note: the minus sign in (x − vt) means travel in the +x direction. A plus sign, (x + vt), would mean travel in the −x direction.
+  Also, this is a single pulse (not a periodic wave), but the same principle applies: any function of (x − vt) describes a shape moving at speed v without distortion.
   Answer: 2
 P B 2: |-
-  Concept: In a cyclic process, $Q = W$ = area of the loop.
+  Concept: In a cyclic process, the system returns to its initial state, so ΔU = 0. By the first law, the net heat absorbed equals the net work done, which is the area enclosed by the loop on a P–V diagram.
   Solution:
-  1. The circle has radius 10 kPa along P and 10 L along V.
-  2. $W = \pi\times(10\times10^3)\times(10\times10^{-3}) = 100\pi$ J.
+  1. From the figure, the cycle is a circle on the P–V diagram, with P from 20 to 40 kPa and V from 20 to 40 L. So the "radius" is 10 kPa along P and 10 L along V.
+  2. Area of the loop (an ellipse in general, a circle in these scaled units): π × (10 kPa) × (10 L).
+  3. Convert: 10 kPa = 10 × 10³ Pa and 10 L = 10 × 10⁻³ m³.
+  4. W = π × 10⁴ × 10⁻² = 100π J.
+  5. Q = W = 100π J. So the answer is 100.
+  Sign: if the cycle runs clockwise on a P–V diagram, the net work done by the gas is positive, so heat is absorbed. The question asks for the heat absorbed, 100π J.
+  Note: the formula π × a × b is the area of an ellipse with semi-axes a and b. It applies here even though the axes have different units.
   Answer: 100
 P B 3: |-
-  Concept: Spring energy gives the launch speed; horizontal projectile.
+  Concept: The energy stored in the compressed spring becomes the ball's kinetic energy. The ball then leaves the gun horizontally and follows a projectile path: horizontal motion at constant speed, vertical free fall.
   Solution:
-  1. $v = x\sqrt{\frac{k}{m}} = 0.05\sqrt{1000} = 1.58$ m/s.
-  2. $t = \sqrt{\frac{2h}{g}} = \sqrt{0.4} = 0.632$ s.
-  3. $d = vt = 1.0$ m.
+  1. Spring energy: ½kx² = ½ × 100 × (0.05)² = 0.125 J.
+  2. Launch speed: ½mv² = 0.125, so v² = $\frac{2\times0.125}{0.1}$ = 2.5 and v = 1.58 m/s.
+  3. Time to fall 2 m: $t = \sqrt{\frac{2h}{g}} = \sqrt{\frac{4}{10}} = 0.632$ s.
+  4. Horizontal distance: d = vt = 1.58 × 0.632 = 1.0 m.
+  Neat form: $d = x\sqrt{\frac{k}{m}}\cdot\sqrt{\frac{2h}{g}} = 0.05\sqrt{1000}\cdot\sqrt{0.4} = 0.05\sqrt{400} = 0.05\times20 = 1$ m ✓.
+  Assumptions: no friction in the barrel, no air resistance, and the spring's own mass is negligible.
   Answer: 1
 P B 4: |-
-  Concept: Echo from a wall with a moving source/observer: $f' = f\frac{v + v_c}{v - v_c}$.
+  Concept: When a car approaches a wall while sounding its horn, the sound undergoes two Doppler shifts. First, the wall receives sound from a moving source (the car). Then the wall reflects it, and the moving car receives the echo as a moving observer. The combined result is $f' = f\frac{v + v_c}{v - v_c}$.
   Solution:
-  1. $\frac{500}{400} = \frac{330 + v_c}{330 - v_c} \Rightarrow v_c = \frac{330}{9}$ m/s.
-  2. $v_c = \frac{330}{9}\times\frac{18}{5} = 132$ km/h.
+  1. At the wall (stationary observer, source approaching): $f_1 = f\frac{v}{v - v_c}$.
+  2. The wall re-emits f₁. The car (observer approaching the stationary source) hears $f' = f_1\frac{v + v_c}{v} = f\frac{v + v_c}{v - v_c}$.
+  3. $\frac{500}{400} = \frac{330 + v_c}{330 - v_c}$, so 5(330 − v_c) = 4(330 + v_c).
+  4. 1650 − 5v_c = 1320 + 4v_c, so 9v_c = 330 and $v_c = \frac{330}{9} = 36.67$ m/s.
+  5. In km/h: 36.67 × 3.6 = 132 km/h.
+  Check: $\frac{330 + 36.67}{330 - 36.67} = \frac{366.67}{293.33} = 1.25$ ✓.
   Answer: 132
 P B 5: |-
-  Concept: Uniform acceleration $\frac{qE}{m}$; an elastic bounce makes the motion periodic.
+  Concept: A uniform electric field gives a constant force qE and constant acceleration $a = \frac{q}{m}E$. After a perfectly elastic collision, the body rebounds with the same speed, decelerates to rest at its starting point, and the motion repeats (like a ball bouncing under gravity).
   Solution:
-  1. $a = 8\times10^{-3}$ C/kg $\times100 = 0.8$ m/s².
-  2. Time to the wall $= \sqrt{\frac{2\times0.1}{0.8}} = 0.5$ s; period $= 2\times0.5 = 1$ s.
+  1. Specific charge: $\frac{q}{m}$ = 8 μC/g = 8 × 10⁻⁶ C per 10⁻³ kg = 8 × 10⁻³ C/kg.
+  2. Acceleration: a = 8 × 10⁻³ × 100 = 0.8 m/s² (towards the wall).
+  3. Time to reach the wall from rest over 0.1 m: $t = \sqrt{\frac{2d}{a}} = \sqrt{\frac{0.2}{0.8}} = 0.5$ s.
+  4. After the elastic bounce, the body moves away, decelerating at 0.8 m/s², and stops after another 0.5 s at its starting point.
+  5. Period: 0.5 + 0.5 = 1 s.
+  Note: this is periodic but not simple harmonic motion, since the force is constant (not proportional to displacement).
   Answer: 1
 P B 6: |-
-  Concept: Conserve linear momentum, angular momentum and KE (elastic).
+  Concept: For a collision on a frictionless surface, linear momentum, angular momentum (about any fixed point, e.g. the rod's centre) and, for an elastic collision, kinetic energy are all conserved.
   Solution:
-  1. $mu = Mv$; $mu\frac{L}{2} = \frac{ML^2}{12}\omega \Rightarrow \omega = \frac{6mu}{ML}$.
-  2. Energy: $mu^2 = Mv^2 + \frac{ML^2}{12}\omega^2 \Rightarrow 1 = \frac{m}{M} + \frac{3m}{M}$.
-  3. $\frac{m}{M} = \frac{1}{4}$, so $x = 4$.
+  1. After the collision, the particle is at rest. The rod moves with centre-of-mass velocity v and rotates with angular velocity ω.
+  2. Linear momentum: mu = Mv.
+  3. Angular momentum about the rod's centre (the particle hits the end, at distance $\frac{L}{2}$): $mu\frac{L}{2} = \frac{ML^2}{12}\omega$, so $\omega = \frac{6mu}{ML}$.
+  4. Kinetic energy: $\frac{1}{2}mu^2 = \frac{1}{2}Mv^2 + \frac{1}{2}\cdot\frac{ML^2}{12}\omega^2$.
+  5. Substitute $v = \frac{mu}{M}$ and ω: $mu^2 = \frac{m^2u^2}{M} + \frac{ML^2}{12}\cdot\frac{36m^2u^2}{M^2L^2} = \frac{m^2u^2}{M} + \frac{3m^2u^2}{M}$.
+  6. Divide by mu²: $1 = \frac{m}{M} + \frac{3m}{M} = \frac{4m}{M}$, so $\frac{m}{M} = \frac{1}{4}$ and x = 4.
+  Check: energy is split between the rod's translation (¼) and rotation (¾).
   Answer: 4
 P B 7: |-
-  Concept: Simple microscope $m = 1 + \frac{D}{f}$; compound microscope (image at ∞) $m = \frac{L}{f_o}\cdot\frac{D}{f_e}$.
+  Concept: A simple microscope (single lens) with the final image at the near point D has magnification $m = 1 + \frac{D}{f}$. A compound microscope with the final image at infinity has $m = \frac{L}{f_o}\cdot\frac{D}{f_e}$ (approximately), where L is the tube length.
   Solution:
-  1. $6 = 1 + \frac{25}{f} \Rightarrow f_o = 5$ cm.
-  2. $12 = \frac{60}{5}\times\frac{25}{f_e} \Rightarrow f_e = 25$ cm.
+  1. The given lens used as a simple microscope: $6 = 1 + \frac{25}{f}$, so f = 5 cm. This lens becomes the objective: f_o = 5 cm.
+  2. Compound microscope: total magnification double the earlier = 12, tube length L = 0.6 m = 60 cm, final image at infinity.
+  3. $12 = \frac{60}{5}\times\frac{25}{f_e} = 12\times\frac{25}{f_e}$, so f_e = 25 cm.
+  Note: with f_e = 25 cm, the eyepiece contributes a magnification of $\frac{D}{f_e}$ = 1 (it only lets the eye view the image at infinity comfortably). All the magnification (12) comes from the objective. This is an unusual design, but it follows from the numbers given.
   Answer: 25
 P B 8: |-
-  Concept: Current leads by 45° means $X_C - X_L = R$.
+  Concept: In a series LCR circuit, the phase angle φ between voltage and current satisfies $\tan\phi = \frac{X_L - X_C}{R}$. The current leads the voltage when the circuit is capacitive (X_C > X_L).
   Solution:
-  1. $X_L = 300\times0.03 = 9\ \Omega$, so $X_C = 10\ \Omega$.
-  2. $C = \frac{1}{300\times10} = \frac{1}{3}\times10^{-3}$ F, so $x = 3$.
+  1. X_L = ωL = 300 × 30 × 10⁻³ = 9 Ω.
+  2. Current leads by 45°: $\tan45° = \frac{X_C - X_L}{R} = 1$, so X_C − X_L = R = 1 Ω.
+  3. X_C = 9 + 1 = 10 Ω.
+  4. $C = \frac{1}{\omega X_C} = \frac{1}{300\times10} = \frac{1}{3000}$ F = $\frac{1}{3}\times10^{-3}$ F.
+  5. So x = 3.
+  Check: Z = √(1² + (9 − 10)²) = √2 Ω. Power factor = $\frac{R}{Z} = \frac{1}{\sqrt2}$ ✓ (45°).
+  Note: resonance would occur at X_C = X_L = 9 Ω. Here X_C is slightly larger, so the circuit is slightly capacitive.
   Answer: 3
 P B 9: |-
-  Concept: Sliding (frictionless): $a_1 = g\sin\theta$. Rolling disc: $a_2 = \frac{g\sin\theta}{1 + 1/2} = \frac{2}{3}g\sin\theta$.
+  Concept: On a frictionless incline, a body slides with acceleration g sin θ. A disc rolling without slipping has acceleration $\frac{g\sin\theta}{1 + K^2/R^2} = \frac{2}{3}g\sin\theta$ (since $\frac{K^2}{R^2} = \frac{1}{2}$). The time to cover length L from rest is $t = \sqrt{\frac{2L}{a}}$.
   Solution:
-  1. $t = \sqrt{\frac{2L}{a}}$, so $\frac{t_1}{t_2} = \sqrt{\frac{a_2}{a_1}} = \sqrt{\frac{2}{3}}$.
-  2. $\sqrt{\frac{3}{x}} = \sqrt{\frac{2}{3}} \Rightarrow x = 4.5$.
-  Note: The key gives 2 because the printed solution inverts $1 + \frac{k^2}{R^2}$ (giving $t_1 > t_2$, which is impossible since sliding is faster).
+  1. Sliding: a₁ = g sin θ. Rolling: a₂ = ⅔ g sin θ.
+  2. $\frac{t_1}{t_2} = \sqrt{\frac{a_2}{a_1}} = \sqrt{\frac{2}{3}}$.
+  3. Setting $\sqrt{\frac{3}{x}} = \sqrt{\frac{2}{3}}$: $\frac{3}{x} = \frac{2}{3}$, so x = $\frac{9}{2}$ = 4.5.
+  4. Sliding is faster than rolling (t₁ < t₂), consistent with t₁/t₂ < 1 ✓.
+  Why sliding is faster: when rolling, part of the energy goes into rotation (⅓ for a disc), leaving less for translation. When sliding without friction, all the energy becomes translational kinetic energy.
+  Note: The key gives 2 because the printed solution inverts $1 + \frac{k^2}{R^2}$ (giving t₁ > t₂, which is impossible since sliding is faster). The correct value, 4.5, is stored here.
   Answer: 4.5
 P B 10: |-
-  Concept: Modulation index $\mu = \frac{V_{max} - V_{min}}{V_{max} + V_{min}} = \frac{A_m}{A_c}$.
+  Concept: In amplitude modulation, the envelope of the modulated wave varies between V_max = A_c + A_m and V_min = A_c − A_m. The modulation index is $\mu = \frac{A_m}{A_c} = \frac{V_{max} - V_{min}}{V_{max} + V_{min}}$.
   Solution:
-  1. $\mu = \frac{80}{320} = \frac{1}{4}$.
-  2. $A_m = \frac{160}{4} = 40$ V.
+  1. μ = $\frac{200 - 120}{200 + 120} = \frac{80}{320} = \frac{1}{4}$.
+  2. The carrier amplitude is A_c = 160 V (from V_c(t)). Check: $\frac{V_{max} + V_{min}}{2} = 160$ ✓.
+  3. A_m = μA_c = $\frac{1}{4}\times160$ = 40 V.
+  4. Directly: $A_m = \frac{V_{max} - V_{min}}{2} = \frac{80}{2} = 40$ V ✓.
+  Note: μ = 0.25 (25% modulation) is well below 1, so there is no over-modulation and the envelope faithfully follows the message.
   Answer: 40
