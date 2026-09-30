@@ -1,182 +1,300 @@
 P A 1: |-
-  Concept: The packet keeps the helicopter's horizontal speed, so its horizontal range is $R = v\sqrt{\frac{2h}{g}}$.
+  Concept: A packet released from a horizontally moving helicopter keeps its horizontal velocity v and falls freely. It lands a horizontal distance R = v·t ahead, where $t = \sqrt{\frac{2h}{g}}$.
   Solution:
-  1. The fall time is $t = \sqrt{2h/g}$, so the man must be $R = v\sqrt{2h/g}$ ahead horizontally.
-  2. The straight-line distance is $D = \sqrt{R^2 + h^2} = \sqrt{\frac{2v^2h}{g} + h^2}$.
+  1. Fall time: $t = \sqrt{\frac{2h}{g}}$.
+  2. Horizontal distance: $R = v\sqrt{\frac{2h}{g}}$, so $R^2 = \frac{2v^2h}{g}$.
+  3. At the moment of release, the man is R ahead horizontally and h below: $D = \sqrt{R^2 + h^2} = \sqrt{\frac{2v^2h}{g} + h^2}$.
+  Why others are wrong:
+  - (B) and (D) have g in the wrong place (dimensionally incorrect).
+  - (A) is dimensionally inconsistent.
+  Key takeaway: always check dimensions — every term under the root must be a length squared.
   Answer: (C)
 P A 2: |-
-  Concept: From the figure, Y = NAND(A·B, A + B).
+  Concept: From the circuit, Y is the NAND of (A AND B) and (A OR B): Y = $\overline{(AB)(A + B)}$. Since AB·(A + B) = AB, this simplifies to Y = $\overline{AB}$ (a NAND gate).
   Solution:
-  1. (0,0): A·B = 0, so Y = 1. (0,1): A·B = 0, so Y = 1. (1,0): A·B = 0, so Y = 1.
-  2. (1,1): A·B = 1 and A + B = 1, so Y = 0.
-  3. Output sequence: 1, 1, 1, 0.
+  1. (0, 0): AB = 0 → Y = 1.
+  2. (0, 1): AB = 0 → Y = 1.
+  3. (1, 0): AB = 0 → Y = 1.
+  4. (1, 1): AB = 1 → Y = 0.
+  5. Sequence: 1, 1, 1, 0.
+  Why others are wrong:
+  - (A) and (B) alternate — they follow a single input.
+  - (D) is the AND-like pattern 0, 0, 1, 1 (follows A).
+  Key takeaway: AB·(A + B) = AB by absorption, so the whole circuit is just a NAND.
   Answer: (C)
 P A 3: |-
-  Concept: For unlike charges, the null point lies outside the pair, on the side of the smaller charge.
+  Concept: A third charge feels zero net force where the fields of A and B cancel. For unlike charges, the null point lies outside the pair, nearer the smaller-magnitude charge.
   Solution:
-  1. At distance x to the right of −5 μC: $\frac{5}{x^2} = \frac{20}{(5 + x)^2}$, so $\frac{5 + x}{x} = 2$ and x = 5 cm.
-  2. Between the charges the fields add, so there is no null point there.
+  1. Take the point at distance x beyond B (−5 μC), away from A: distances x from B and 5 + x from A.
+  2. $\frac{k(5)}{x^2} = \frac{k(20)}{(5 + x)^2} \Rightarrow \frac{5 + x}{x} = 2 \Rightarrow x = 5$ cm.
+  3. So the point is 5 cm from −5 μC, on the side away from 20 μC (to the right).
+  Why others are wrong:
+  - (C) and (D) are between the charges, where the forces from unlike charges add.
+  - (A) is beside the larger charge, where its field always dominates.
+  Key takeaway: the null point is always closer to the smaller charge.
   Answer: (B)
 P A 4: |-
-  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ in kelvin.
+  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ with T in kelvin. A change of 58 °C equals a change of 58 K.
   Solution:
-  1. $T_2 = \frac{3}{4}T_1$, and $\frac{1}{2} = 1 - \frac{T_2 - 58}{T_1}$.
-  2. Subtracting gives $\frac{58}{T_1} = \frac{1}{4}$, so $T_1 = 232$ K and $T_2 = 174$ K.
-  Note: The sink is at 174 K (−99°C), not 174°C, so no option is strictly correct; ALLEN marks the question Bonus. The official key (1) matches the number.
+  1. η = ¼ ⇒ $\frac{T_2}{T_1} = \frac{3}{4}$.
+  2. After cooling the sink by 58: η = ½ ⇒ $\frac{T_2 - 58}{T_1} = \frac{1}{2}$.
+  3. Subtract: $\frac{58}{T_1} = \frac{1}{4}$ ⇒ T₁ = 232 K, T₂ = 174 K.
+  Note: Official NTA answer is (A) 174 °C. The sink is actually at 174 K (−99 °C), not 174 °C, so no option is strictly correct; ALLEN marks the question Bonus. The official key (A) matches the number.
+  Key takeaway: always check the units of the final answer — K vs °C.
   Answer: (A)
 P A 5: |-
-  Concept: Lens formula $\frac{1}{v} - \frac{1}{u} = \frac{1}{F}$ with F = −f and u = −f.
+  Concept: Lens formula $\frac{1}{v} - \frac{1}{u} = \frac{1}{F}$ with sign convention; for a concave lens F = −f. A concave lens always forms a virtual, erect, diminished image.
   Solution:
-  1. $\frac{1}{v} = -\frac{1}{f} - \frac{1}{f}$, so $v = -\frac{f}{2}$ (virtual, same side).
-  2. $m = \frac{v}{u} = \frac{1}{2}$, and the distance is f/2.
+  1. u = −f (object at the focus, on the incident side), F = −f.
+  2. $\frac{1}{v} = \frac{1}{F} + \frac{1}{u} = -\frac{1}{f} - \frac{1}{f} = -\frac{2}{f}$ ⇒ v = $-\frac{f}{2}$.
+  3. Magnification m = $\frac{v}{u} = \frac{-f/2}{-f} = \frac{1}{2}$ (erect, half size).
+  4. Image distance from the optical centre: $\frac{f}{2}$.
+  Why others are wrong:
+  - (A) and (B) give images at infinity — true for an object at the focus of a convex lens, not a concave one.
+  - (D) ¼ corresponds to an object at 3f.
+  Key takeaway: a concave lens can never form an image at infinity for a real object.
   Answer: (C)
 P A 6: |-
-  Concept: Chain decay A → B → C with $N_B(0) = 0$.
+  Concept: In a decay chain A → B → C with no B initially, B is produced by A's decay and removed by its own decay: $N_B = \frac{\lambda_AN_0}{\lambda_B - \lambda_A}(e^{-\lambda_At} - e^{-\lambda_Bt})$.
   Solution:
-  1. $N_B = \frac{\lambda_AN_0}{\lambda_B - \lambda_A}(e^{-\lambda_At} - e^{-\lambda_Bt})$, which starts at 0.
-  2. It rises while formation exceeds decay, peaks, and then decays towards 0.
+  1. At t = 0, N_B = 0.
+  2. Initially production (λ_A N_A) exceeds decay (λ_B N_B ≈ 0), so N_B rises.
+  3. N_B peaks when λ_A N_A = λ_B N_B.
+  4. Eventually A is used up, and N_B decays towards 0.
+  5. Graph (B): rises from zero to a maximum, then decreases.
+  Why others are wrong:
+  - (A) starts at a maximum, but N_B(0) = 0.
+  - (C) and (D) show linear rises and plateaus that don't match exponential kinetics.
+  Key takeaway: the intermediate in a chain decay always shows a rise-and-fall curve.
   Answer: (B)
 P A 7: |-
-  Concept: The turns are uniformly spread in radius: $dN = \frac{N\,dr}{b - a}$, and each gives $dB = \frac{\mu_0I\,dN}{2r}$.
+  Concept: In a flat spiral, the N turns are spread uniformly between radii a and b: the number of turns between r and r + dr is $dN = \frac{N}{b - a}dr$. Each turn of radius r gives a field $\frac{\mu_0I}{2r}$ at the centre.
   Solution:
-  1. $B = \frac{\mu_0IN}{2(b - a)}\int_a^b\frac{dr}{r} = \frac{\mu_0IN}{2(b - a)}\ln\frac{b}{a}$.
+  1. $dB = \frac{\mu_0I}{2r}\cdot\frac{N\,dr}{b - a}$.
+  2. $B = \frac{\mu_0IN}{2(b - a)}\int_a^b\frac{dr}{r} = \frac{\mu_0IN}{2(b - a)}\ln\frac{b}{a}$.
+  Why others are wrong:
+  - (B), (C), (D) lack the logarithm and have no N — they do not come from integrating $\frac{1}{r}$.
+  Key takeaway: check the limit b → a: $\ln\frac{b}{a} \approx \frac{b - a}{a}$, giving $\frac{\mu_0NI}{2a}$, the field of N coincident loops ✓.
   Answer: (A)
 P A 8: |-
-  Concept: Conserve momentum (both components) and kinetic energy with θ₁ = θ₂ = θ.
+  Concept: In an elastic collision in two dimensions, momentum is conserved along both axes and kinetic energy is conserved. Set θ₁ = θ₂ = θ (on opposite sides of the initial direction).
   Solution:
-  1. The perpendicular component gives $Mv_1 = mv_2$; the parallel component gives $V_0 = 2v_1\cos\theta$.
-  2. Energy: $MV_0^2 = Mv_1^2\left(1 + \frac{M}{m}\right)$, so $\frac{M}{m} = 4\cos^2\theta - 1$.
-  3. The maximum, at θ → 0, is 3.
+  1. Perpendicular momentum: Mv₁ sin θ = mv₂ sin θ ⇒ Mv₁ = mv₂.
+  2. Parallel momentum: MV₀ = (Mv₁ + mv₂)cos θ = 2Mv₁ cos θ ⇒ V₀ = 2v₁ cos θ.
+  3. Energy: MV₀² = Mv₁² + mv₂² = Mv₁²(1 + M/m).
+  4. Substitute V₀: 4cos²θ = 1 + $\frac{M}{m}$ ⇒ $\frac{M}{m} = 4\cos^2\theta - 1$.
+  5. Maximum when cos θ → 1: $\frac{M}{m} = 3$.
+  Why others are wrong:
+  - (A) 4 would need cos²θ > 1.
+  - (B) 1 is the equal-mass case (θ = 45° each, 90° apart).
+  - (D) 2 is possible but not the largest.
+  Key takeaway: for equal masses, elastic scattering always sends the two particles off at 90° to each other.
   Answer: (C)
 P A 9: |-
-  Concept: Total energy ≥ 0 at the midpoint.
+  Concept: A particle escapes if its total mechanical energy is at least zero. At the midpoint, it is at distance r/2 from both bodies.
   Solution:
-  1. At the midpoint (distance r/2 from each body): $U = -\frac{2G(M_1 + M_2)m}{r}$.
-  2. $\frac{1}{2}mv^2 = \frac{2G(M_1 + M_2)m}{r}$, so $v = \sqrt{\frac{4G(M_1 + M_2)}{r}}$.
+  1. PE at the midpoint: $U = -\frac{GM_1m}{r/2} - \frac{GM_2m}{r/2} = -\frac{2G(M_1 + M_2)m}{r}$.
+  2. $\frac{1}{2}mv^2 + U = 0 \Rightarrow v^2 = \frac{4G(M_1 + M_2)}{r}$.
+  3. $v = \sqrt{\frac{4G(M_1 + M_2)}{r}}$.
+  Why others are wrong:
+  - (A) and (C) have an extra ½ outside the root.
+  - (D) is dimensionally incorrect (mass not under the root).
+  Key takeaway: the radii R₁, R₂ are irrelevant — only the distances from the launch point matter.
   Answer: (B)
 P A 10: |-
-  Concept: The field at the centre of a square loop of side b is $B = 4\times\frac{\mu_0I}{4\pi(b/2)}\cdot2\sin45° = \frac{2\sqrt2\mu_0I}{\pi b}$; take it as uniform over the small loop.
+  Concept: Mutual inductance M = Φ/I. Because the small loop (side a) is tiny, the field of the big loop at its centre can be treated as uniform over it.
   Solution:
-  1. $\Phi = Ba^2$, so $M = \frac{\Phi}{I} = \frac{2\sqrt2\mu_0a^2}{\pi b} = \frac{\mu_0}{4\pi}\cdot8\sqrt2\frac{a^2}{b}$.
+  1. Field at the centre of a square loop of side b: each side is at distance b/2 and contributes $\frac{\mu_0I}{4\pi(b/2)}(\sin45° + \sin45°) = \frac{\mu_0I\sqrt2}{2\pi b}$.
+  2. Four sides: $B = \frac{2\sqrt2\mu_0I}{\pi b}$.
+  3. Flux through the small loop: $\Phi = Ba^2 = \frac{2\sqrt2\mu_0Ia^2}{\pi b}$.
+  4. $M = \frac{\Phi}{I} = \frac{2\sqrt2\mu_0a^2}{\pi b} = \frac{\mu_0}{4\pi}\cdot8\sqrt2\frac{a^2}{b}$.
+  Why others are wrong:
+  - (B), (C), (D) have the wrong dependence on a and b (M must scale as area a² of the small loop and 1/b).
+  Key takeaway: mutual inductance is symmetric — computing flux through the smaller loop is easiest.
   Answer: (A)
 P A 11: |-
-  Concept: An ideal diode conducts only when $V_i > 3$ V (the battery opposes it).
+  Concept: With an ideal diode in series with a 3 V battery (opposing the diode's forward direction), current flows only when the input exceeds 3 V. Then $V_R = V_i - 3$; otherwise V_R = 0.
   Solution:
-  1. For $V_i > 3$ V: $V_R = V_i - 3$ (peak 7 V). Otherwise the diode is off and $V_R = 0$.
-  2. So R shows only the portions of the sine wave above the +3 V level.
-  Note: The option graphs are similar; ALLEN picked (1), and the official key is (3).
+  1. Vᵢ = 10 sin ωt.
+  2. When Vᵢ > 3 V: the diode conducts, V_R = Vᵢ − 3 (peak 7 V).
+  3. When Vᵢ ≤ 3 V: the diode is off, V_R = 0.
+  4. So the output shows only the tops of the positive half-cycles above the 3 V level — graph (C) per the official key.
+  Note: Official NTA answer is (C); ALLEN chose (A). The option graphs are similar, and the stored answer follows the official key.
+  Key takeaway: a diode with a series battery forms a clipper — it passes only the part of the signal beyond the battery voltage.
   Answer: (C)
 P A 12: |-
-  Concept: Elongation of a hanging rod under its own weight: $\Delta l = \frac{WL}{2AY}$.
+  Concept: A rod hanging under its own weight: tension at distance y from the free end is $W\frac{y}{L}$, so the average tension is W/2. Elongation $\Delta l = \frac{WL}{2AY}$.
   Solution:
-  1. $\Delta l = \frac{10\times0.2}{2\times10^{-2}\times2\times10^{11}} = 5\times10^{-10}$ m.
+  1. W = 10 N (weight given as 10 kg m s⁻²), L = 0.2 m, A = 100 cm² = 10⁻² m², Y = 2 × 10¹¹ N/m².
+  2. $\Delta l = \frac{10\times0.2}{2\times10^{-2}\times2\times10^{11}} = \frac{2}{4\times10^9} = 5\times10^{-10}$ m.
+  Why others are wrong:
+  - (A) $2\times10^{-9}$ forgets the ½ and mis-scales.
+  - (B) and (C) are 100 times larger (area in cm² not converted).
+  Key takeaway: self-weight elongation is half of what the same weight would produce if hung at the end.
   Answer: (D)
 P A 13: |-
-  Concept: Perpendicular mirrors form 3 images: one in each mirror and one double reflection.
+  Concept: Two perpendicular plane mirrors form three images: one in each mirror (single reflection) and one by double reflection (the point diagonally opposite).
   Solution:
-  1. With the mirrors as axes and P = (a, 2a), the images are I₁ (−a, 2a), I₂ (a, −2a) and I₃ (−a, −2a).
-  2. The official answer takes |I₁I₂| = √((2a)² + (4a)²) = 2√5a ≈ 4.6a.
-  Note: The actual shortest separation is |I₁I₃| = 4a or |I₂I₃| = 2a, so the true answer 2a is not among the options. The official key is kept.
+  1. Take the mirrors as the y-axis (M₁) and x-axis (M₂), with P = (a, 2a).
+  2. Images: I₁ = (−a, 2a) (in M₁), I₂ = (a, −2a) (in M₂), I₃ = (−a, −2a) (double reflection).
+  3. The official answer uses |I₁I₂| = $\sqrt{(2a)^2 + (4a)^2} = 2\sqrt5a \approx 4.6a$.
+  Note: This question is flawed. The actual shortest separation is |I₂I₃| = 2a (and |I₁I₃| = 4a), and the true answer 2a is not among the options. The official key (B) is kept.
+  Key takeaway: the number of images for mirrors at angle θ is $\frac{360°}{\theta} - 1$ = 3 for 90°.
   Answer: (B)
 P A 14: |-
-  Concept: Dimensions.
+  Concept: Derive dimensions from definitions.
   Solution:
-  1. Torque: ML²T⁻², (iii). Impulse: MLT⁻¹, (i).
-  2. Tension (a force): MLT⁻², (iv). Surface tension (force per length): MT⁻², (ii).
-  3. Only option (A) gives a–iii, b–i, c–iv, d–ii.
+  1. (a) Torque = force × distance: [MLT⁻²][L] = [ML²T⁻²] → (iii).
+  2. (b) Impulse = force × time = change in momentum: [MLT⁻¹] → (i).
+  3. (c) Tension is a force: [MLT⁻²] → (iv).
+  4. (d) Surface tension = force/length: [MT⁻²] → (ii).
+  Correct: (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii).
+  Why others are wrong:
+  - (B) gives torque the dimensions of surface tension.
+  - (C) swaps torque and impulse.
+  - (D) swaps impulse and tension.
+  Key takeaway: torque and work share dimensions but are different physical quantities.
   Answer: (A)
 P A 15: |-
-  Concept: Integrate to get $p = p_0e^{-av}$; T = pv/R for one mole.
+  Concept: Solve the differential equation for p(v), then use pv = RT (one mole) to express T(v) and maximise.
   Solution:
-  1. $T = \frac{p_0ve^{-av}}{R}$; setting dT/dv = 0 gives 1 − av = 0, so v = 1/a.
-  2. $T_{max} = \frac{p_0}{aeR}$.
+  1. $\frac{dp}{p} = -a\,dv \Rightarrow p = p_0e^{-av}$ (using p = p₀ at v = 0).
+  2. $T = \frac{pv}{R} = \frac{p_0ve^{-av}}{R}$.
+  3. $\frac{dT}{dv} = \frac{p_0}{R}e^{-av}(1 - av) = 0 \Rightarrow v = \frac{1}{a}$.
+  4. $T_{max} = \frac{p_0}{R}\cdot\frac{1}{a}\cdot e^{-1} = \frac{p_0}{aeR}$.
+  Why others are wrong:
+  - (B) has a in the numerator (dimensionally inconsistent).
+  - (C) and (D): T is bounded, with a finite maximum.
+  Key takeaway: the function $ve^{-av}$ always peaks at v = 1/a.
   Answer: (A)
 P A 16: |-
-  Concept: Check each side's dimensions.
+  Concept: Check dimensional consistency of each equation.
   Solution:
-  1. Poiseuille: $\frac{\pi pa^4}{8\eta L}$ is a volume flow rate (L³T⁻¹), not a volume v, so (A) is dimensionally wrong.
-  2. (B) is the capillary rise (L). (C) ε ∂E/∂t is the displacement current density. (D) W = Γθ is correct.
+  1. (A) Poiseuille's equation gives the volume flow rate $\frac{dV}{dt} = \frac{\pi pa^4}{8\eta L}$ (dimensions L³T⁻¹). Setting it equal to a volume v (L³) is dimensionally incorrect.
+  2. (B) $h = \frac{2s\cos\theta}{\rho rg}$: $\frac{[MT^{-2}]}{[ML^{-3}][L][LT^{-2}]} = [L]$ ✓ (capillary rise).
+  3. (C) $J = \varepsilon\frac{\partial E}{\partial t}$: displacement current density, A/m² ✓.
+  4. (D) W = Γθ: torque × angle = work ✓.
+  Key takeaway: a dimensionally correct equation may still be physically wrong, but a dimensionally wrong one is always wrong.
   Answer: (A)
 P A 17: |-
-  Concept: $\vec L = m\vec r\times\vec v$ about the centre, for uniform circular motion.
+  Concept: Angular momentum about the centre: $\vec L = m\vec r\times\vec v$. In uniform circular motion, r and v are constant in magnitude and always perpendicular, with $\vec r\times\vec v$ always along the axis of rotation.
   Solution:
-  1. |L| = mvr is constant, and its direction is always perpendicular to the plane of motion (fixed).
-  2. So L stays the same in both magnitude and direction.
+  1. |L| = mvr = constant.
+  2. Direction: perpendicular to the plane of the circle, same sense throughout.
+  3. So L is constant in both magnitude and direction.
+  Why others are wrong:
+  - (A) and (C) claim changes.
+  - (D) L is non-zero for circular motion.
+  Key takeaway: no torque acts about the centre (the centripetal force passes through it), so L is conserved.
   Answer: (B)
 P A 18: |-
-  Concept: $Z = \sqrt{R^2 + (X_L - X_C)^2}$.
+  Concept: Series LCR impedance $Z = \sqrt{R^2 + (X_L - X_C)^2}$.
   Solution:
-  1. $X_L = X_C$, so Z = R (resonance).
+  1. X_L = X_C ⇒ reactances cancel ⇒ Z = R (resonance).
+  2. The condition X_L = R is extra information; only X_L − X_C matters.
+  Why others are wrong:
+  - (A) 2R² has the wrong dimensions.
+  - (B) zero would need R = 0.
+  - (D) R√2 would need |X_L − X_C| = R.
+  Key takeaway: at resonance, the circuit behaves as a pure resistor and current is in phase with voltage.
   Answer: (C)
 P A 19: |-
-  Concept: $\lambda = \frac{h}{p}$ and $K = \frac{p^2}{2m}$.
+  Concept: De Broglie: λ = h/p, so equal wavelengths mean equal momenta. Kinetic energy K = $\frac{p^2}{2m}$.
   Solution:
-  1. Equal λ means equal p.
-  2. $m_p > m_e$, so $K_p < K_e$.
+  1. $P_p = P_e$.
+  2. For equal p, K ∝ 1/m. The proton is about 1836 times heavier, so $K_p < K_e$.
+  Why others are wrong:
+  - (B) equal KE would need equal masses.
+  - (C) momenta must be equal, not unequal.
+  - (D) reverses the KE inequality.
+  Key takeaway: at the same wavelength, lighter particles carry more kinetic energy.
   Answer: (A)
 P A 20: |-
-  Concept: The galvanometer and shunt share the same potential difference.
+  Concept: A shunt S in parallel with a galvanometer G shares the same voltage: $I_gG = I_sS$.
   Solution:
-  1. $I_g = 0.02I$ and $I_s = 0.98I$.
-  2. $G = \frac{0.98\times5}{0.02} = 245$ Ω.
+  1. $I_g = 0.02I$, $I_s = 0.98I$.
+  2. $G = \frac{I_sS}{I_g} = \frac{0.98\times5}{0.02} = 245\ \Omega$.
+  Why others are wrong:
+  - (A), (B), (D) do not satisfy the current-division ratio 49 : 1.
+  Key takeaway: the resistance ratio G/S equals the inverse current ratio I_s/I_g = 49.
   Answer: (C)
 P B 1: |-
-  Concept: $K = \frac{\Delta p}{\Delta V/V}$ and Δp = ρgh.
+  Concept: Bulk modulus $K = \frac{\Delta p}{-\Delta V/V}$. The extra pressure at depth h is Δp = ρgh.
   Solution:
-  1. Δp = 9.8 × 10⁸ × 0.005 = 4.9 × 10⁶ Pa.
-  2. $h = \frac{4.9\times10^6}{10^3\times9.8} = 500$ m.
+  1. Δp = K × $\frac{\Delta V}{V}$ = 9.8 × 10⁸ × 0.005 = 4.9 × 10⁶ Pa.
+  2. $h = \frac{\Delta p}{\rho g} = \frac{4.9\times10^6}{10^3\times9.8} = 500$ m.
+  Key takeaway: a small fractional volume change (0.5%) needs a large pressure (≈ 48 atm) for a stiff material.
   Answer: 500
 P B 2: |-
-  Concept: KE = PE when $x = \frac{A}{\sqrt2}$.
+  Concept: In SHM, KE = PE when x = $\frac{A}{\sqrt2}$ (each is half the total energy). The mass is released from the extreme position, but the time from the mean position to $\frac{A}{\sqrt2}$ is the same.
   Solution:
-  1. Starting from the mean position, $x = A\sin\frac{2\pi t}{T} = \frac{A}{\sqrt2}$ gives $\frac{2\pi t}{T} = \frac{\pi}{4}$, so t = T/8.
-  2. x = 8.
+  1. From the mean position: $x = A\sin\frac{2\pi t}{T} = \frac{A}{\sqrt2} \Rightarrow \frac{2\pi t}{T} = \frac{\pi}{4} \Rightarrow t = \frac{T}{8}$.
+  2. (From the extreme, $A\cos\frac{2\pi t}{T} = \frac{A}{\sqrt2}$ also gives t = T/8.)
+  3. x = 8.
+  Key takeaway: KE = PE occurs four times per period, at intervals of T/4.
   Answer: 8
 P B 3: |-
-  Concept: $d = \sqrt{2Rh_1} + \sqrt{2Rh_2}$ with $h_1 + h_2$ fixed; the maximum is at $h_1 = h_2$.
+  Concept: LOS range $d = \sqrt{2Rh_1} + \sqrt{2Rh_2}$. With h₁ + h₂ fixed, $\sqrt{h_1} + \sqrt{h_2}$ is maximum when h₁ = h₂ (concave function).
   Solution:
-  1. $h_1 = h_2 = 80$ m, so $d = 2\sqrt{2\times6.4\times10^6\times80} = 2\times32$ km = 64 km.
+  1. h₁ = h₂ = 80 m.
+  2. $\sqrt{2\times6.4\times10^6\times80} = \sqrt{1.024\times10^9} = 32000$ m = 32 km.
+  3. d = 2 × 32 = 64 km.
+  Key takeaway: for a fixed total height, splitting it equally between the two antennas maximises the range.
   Answer: 64
 P B 4: |-
-  Concept: The total resistance is 12 Ω; the two halves of the circle are in parallel.
+  Concept: Reshaping the wire does not change its total resistance (same length, same cross-section). Diametrically opposite points split the circle into two equal halves in parallel.
   Solution:
-  1. Each semicircle is 6 Ω, and 6 ∥ 6 = 3 Ω.
+  1. Total resistance = 4 × 3 = 12 Ω.
+  2. Each semicircle: 6 Ω.
+  3. 6 ∥ 6 = 3 Ω.
+  Key takeaway: for a uniform ring of resistance R, the resistance across a diameter is R/4.
   Answer: 3
 P B 5: |-
-  Concept: Successive harmonics differ by $\frac{v}{2L}$.
+  Concept: For a string fixed at both ends, resonant frequencies are $f_n = \frac{nv}{2L}$. Consecutive resonances differ by the fundamental $\frac{v}{2L}$. Wave speed $v = \sqrt{\frac{T}{\mu}}$.
   Solution:
-  1. $v = \sqrt{\frac{900}{9\times10^{-4}}} = 1000$ m/s.
-  2. $\frac{v}{2L} = 550 - 500 = 50$, so L = 10 m.
+  1. $v = \sqrt{\frac{900}{9\times10^{-4}}} = \sqrt{10^6} = 1000$ m/s.
+  2. $\frac{v}{2L} = 550 - 500 = 50$ Hz ⇒ $L = \frac{1000}{100} = 10$ m.
+  3. (500 Hz is the 10th harmonic, 550 Hz the 11th.)
   Answer: 10
 P B 6: |-
-  Concept: Reduce the parallel groups.
+  Concept: Reduce the network (from the figure) step by step using series and parallel combinations; then use current division.
   Solution:
-  1. Top branch: (4 ∥ 4) + 2 + (15 ∥ 10) = 2 + 2 + 6 = 10 Ω. Bottom branch: (8 ∥ 8) + (12 ∥ 12) = 4 + 6 = 10 Ω.
-  2. Total: 10 ∥ 10 + 1 = 6 Ω, so I = 12/6 = 2 A and each branch carries 1 A.
-  3. The voltage across 15 ∥ 10 (6 Ω) is 1 × 6 = 6 V.
+  1. Top branch: (4 ∥ 4) + 2 + (15 ∥ 10) = 2 + 2 + 6 = 10 Ω.
+  2. Bottom branch: (8 ∥ 8) + (12 ∥ 12) = 4 + 6 = 10 Ω.
+  3. The two branches in parallel: 5 Ω; with the 1 Ω internal/series resistance: 6 Ω total.
+  4. I = $\frac{12}{6}$ = 2 A, splitting equally: 1 A in the top branch.
+  5. Voltage across the 15 ∥ 10 combination (6 Ω): 1 × 6 = 6 V.
+  Key takeaway: parallel resistors share the same voltage, so the 15 Ω and 10 Ω each have 6 V.
   Answer: 6
 P B 7: |-
-  Concept: Momentum is conserved; kinetic energy is not.
+  Concept: In an explosion (splitting), momentum is conserved but kinetic energy can increase (internal energy is released).
   Solution:
-  1. M × 40 = (M/2) × 60 + (M/2)v, so v = 20 m/s.
-  2. $K_i = 800M$ and $K_f = \frac{M}{4}(3600 + 400) = 1000M$.
-  3. $\frac{\Delta K}{K_i} = \frac{200}{800} = \frac{1}{4}$, so x = 1.
+  1. Momentum: M × 40 = $\frac{M}{2}\times60 + \frac{M}{2}v$ ⇒ v = 20 m/s.
+  2. KE before: $\frac{1}{2}M(40)^2 = 800M$.
+  3. KE after: $\frac{1}{2}\cdot\frac{M}{2}(60^2 + 20^2) = \frac{M}{4}(4000) = 1000M$.
+  4. Fractional change: $\frac{1000M - 800M}{800M} = \frac{1}{4}$ ⇒ x = 1.
+  Key takeaway: KE gained = energy released by the splitting mechanism.
   Answer: 1
 P B 8: |-
-  Concept: The average energy density of an EM wave is $u = \frac{1}{2}\varepsilon_0E_0^2$.
+  Concept: The average energy density of a plane EM wave is $u = \frac{1}{2}\varepsilon_0E_0^2$ (electric and magnetic parts each contribute $\frac{1}{4}\varepsilon_0E_0^2$).
   Solution:
-  1. u = ½ × 8.8 × 10⁻¹² × 2500 = 1.1 × 10⁻⁸ J/m³.
-  2. $V = \frac{5.5\times10^{-12}}{1.1\times10^{-8}} = 5\times10^{-4}$ m³ = 500 cm³.
+  1. u = ½ × 8.8 × 10⁻¹² × 50² = ½ × 8.8 × 10⁻¹² × 2500 = 1.1 × 10⁻⁸ J/m³.
+  2. $V = \frac{U}{u} = \frac{5.5\times10^{-12}}{1.1\times10^{-8}} = 5\times10^{-4}$ m³ = 500 cm³.
+  Key takeaway: 1 m³ = 10⁶ cm³ — convert the final answer carefully.
   Answer: 500
 P B 9: |-
-  Concept: In steady state no current flows into the capacitor; it takes the voltage of the resistor it spans.
+  Concept: In steady state, no current flows into a capacitor; it acquires the potential difference between the points it connects.
   Solution:
-  1. I = 6 V / 6 kΩ = 1 mA, so each 2 kΩ resistor has 2 V across it.
-  2. Q = 50 μF × 2 V = 100 μC.
+  1. From the circuit: 6 V drives current through a 6 kΩ chain: I = 1 mA.
+  2. The capacitor is connected across one 2 kΩ resistor: V = 1 mA × 2 kΩ = 2 V.
+  3. Q = CV = 50 μF × 2 V = 100 μC (on the upper, higher-potential plate).
+  Key takeaway: treat capacitors as open circuits in DC steady state.
   Answer: 100
 P B 10: |-
-  Concept: In the car's frame, $\vec g_{eff} = \vec g - \vec a$.
+  Concept: In the accelerating car's frame, the bob experiences an effective gravity $\vec g_{eff} = \vec g - \vec a$; the string aligns with $\vec g_{eff}$.
   Solution:
-  1. $\vec a$ = 10 m/s² up the 30° incline = (8.66, 5), so $\vec g_{eff}$ = (−8.66, −15).
-  2. $\tan\alpha = \frac{8.66}{15} = \frac{1}{\sqrt3}$, so the string makes 30° with the vertical.
+  1. $\vec a$ = 10 m/s² along the incline upward at 30°: components (10 cos 30°, 10 sin 30°) = (8.66, 5).
+  2. $\vec g$ = (0, −10). $\vec g_{eff} = \vec g - \vec a = (-8.66, -15)$.
+  3. Angle with the vertical: $\tan\alpha = \frac{8.66}{15} = \frac{1}{\sqrt3}$ ⇒ α = 30°.
+  Key takeaway: in an accelerating frame, add the pseudo-force −m$\vec a$; the string then hangs along the effective gravity.
   Answer: 30
