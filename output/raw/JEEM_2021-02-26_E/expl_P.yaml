@@ -1,197 +1,383 @@
 P A 1: |-
-  Concept: Beat frequency $= |f_A - f_B|$; filing a fork raises its frequency.
+  Concept: The beat frequency is the difference of the two frequencies, |f_A − f_B|. Filing the prongs of a tuning fork removes mass, so its frequency increases. Loading the prongs with wax lowers it.
+  Given: 5 beats/s with a 340 Hz fork; after filing A, 2 beats/s.
   Solution:
-  1. 5 beats/s with 340 Hz means $f_A = 345$ Hz or $335$ Hz.
-  2. Filing raises $f_A$. If $f_A = 345$, the beats would increase; if $f_A = 335$, rising to 338 Hz gives 2 beats/s.
-  3. So $f_A = 335$ Hz.
+  1. Before filing, f_A = 340 ± 5, i.e. 345 Hz or 335 Hz.
+  2. Filing raises f_A.
+     - If f_A were 345 Hz, raising it would move it further from 340, so the beats would increase above 5.
+     - If f_A = 335 Hz, raising it to 338 Hz gives |338 − 340| = 2 beats/s ✓.
+  3. So the original frequency of A is 335 Hz.
+  Why others are wrong:
+  - (D) 345 Hz would give more than 5 beats after filing.
+  - (A) 342 Hz and (C) 338 Hz do not give 5 beats initially.
+  Tip: "filing up, waxing down". Use the direction of the change in beat frequency to decide between the two candidate values.
   Answer: (B)
 P A 2: |-
-  Concept: Compare with the standard trajectory $y = x\tan\theta - \frac{g x^2}{2u^2\cos^2\theta}$.
+  Concept: A projectile launched from the origin follows $y = x\tan\theta - \frac{g}{2u^2\cos^2\theta}x^2$. Comparing with y = αx − βx² identifies the launch angle. The maximum height is where dy/dx = 0.
   Solution:
-  1. $\tan\theta = \alpha \Rightarrow \theta = \tan^{-1}\alpha$.
-  2. Maximum height where $\frac{dy}{dx} = 0$: $x = \frac{\alpha}{2\beta}$.
-  3. $H = \alpha\cdot\frac{\alpha}{2\beta} - \beta\frac{\alpha^2}{4\beta^2} = \frac{\alpha^2}{4\beta}$.
+  1. The coefficient of x is tan θ = α, so θ = tan⁻¹α.
+  2. The highest point: dy/dx = α − 2βx = 0, so x = α/(2β).
+  3. $H = \alpha\cdot\frac{\alpha}{2\beta} - \beta\cdot\frac{\alpha^2}{4\beta^2} = \frac{\alpha^2}{2\beta} - \frac{\alpha^2}{4\beta} = \frac{\alpha^2}{4\beta}$.
+  4. The range (where y = 0 again) is α/β, twice the x-coordinate of the peak, as expected by symmetry.
+  Why others are wrong:
+  - (B) and (C) misidentify θ (tan⁻¹β or tan⁻¹(β/α)).
+  - (D) has H = 4α²/β, 16 times too large.
+  Tip: for any downward parabola y = αx − βx², the vertex height is α²/(4β). This is the same as completing the square.
   Answer: (A)
 P A 3: |-
-  Concept: Energy conservation with the rolling constraint $v = \omega r$.
+  Concept: As the weight falls, the cord unwinds without slipping, so the weight's speed is v = ωr. Energy conservation: the potential energy lost is shared between the kinetic energy of the falling weight and the rotational energy of the wheel.
+  Given: moment of inertia I, radius r, falling mass m, distance fallen h.
   Solution:
-  1. $mgh = \frac{1}{2}I\omega^2 + \frac{1}{2}m(\omega r)^2$.
-  2. $\omega^2 = \frac{2mgh}{I + mr^2}$.
+  1. PE lost: mgh.
+  2. KE gained: ½Iω² + ½mv² = ½Iω² + ½m(ωr)² = ½ω²(I + mr²).
+  3. Equate: mgh = ½ω²(I + mr²).
+  4. $\omega^2 = \frac{2mgh}{I + mr^2}$.
+  Check: with I = 0 (a massless wheel), ω²r² = 2gh, i.e. free fall ✓.
+  Why others are wrong:
+  - (A) is missing m in the numerator, so its dimensions are inconsistent.
+  - (B) 2gh is v², not ω².
+  - (C) has 2mr² in the denominator.
+  Tip: the result is an "effective mass" problem. The falling weight behaves as if its mass were m + I/r², so its acceleration is a = mg/(m + I/r²).
   Answer: (D)
 P A 4: |-
-  Concept: Series LCR: $I_0 = \frac{V_0}{Z}$, $Z = \sqrt{R^2 + (X_L - X_C)^2}$, $f_0 = \frac{1}{2\pi\sqrt{LC}}$.
+  Concept: For a series LCR circuit driven at angular frequency ω:
+  - X_L = ωL and X_C = 1/(ωC);
+  - Z = √(R² + (X_L − X_C)²) and I₀ = V₀/Z;
+  - the resonant frequency is f₀ = 1/(2π√(LC)), which does not depend on the driving frequency.
+  Given: V = 30 sin 100t, so V₀ = 30 V and ω = 100 rad/s. L = 0.1 H, C = 100 μF, R = 120 Ω.
   Solution:
-  1. $\omega = 100$ rad/s: $X_L = 100\times0.1 = 10\,\Omega$, $X_C = \frac{1}{100\times100\times10^{-6}} = 100\,\Omega$.
-  2. $Z = \sqrt{120^2 + 90^2} = 150\,\Omega$, so $I_0 = \frac{30}{150} = 0.2$ A.
-  3. $f_0 = \frac{1}{2\pi\sqrt{0.1\times10^{-4}}} = \frac{1}{2\pi\times3.16\times10^{-3}} \approx 50$ Hz.
+  1. X_L = 100 × 0.1 = 10 Ω. X_C = 1/(100 × 10⁻⁴) = 100 Ω.
+  2. Z = √(120² + (10 − 100)²) = √(14400 + 8100) = √22500 = 150 Ω.
+  3. I₀ = 30/150 = 0.2 A.
+  4. Resonance: √(LC) = √(0.1 × 10⁻⁴) = √10⁻⁵ = 3.16 × 10⁻³ s, so f₀ = 1/(2π × 3.16 × 10⁻³) ≈ 50.3 Hz ≈ 50 Hz.
+  Why others are wrong:
+  - (B) and (C) give 2 A, i.e. 30/15, a wrong impedance.
+  - (A) and (C) give 100 Hz, which confuses ω₀ (about 316 rad/s) with f₀ or with the driving ω.
+  Tip: the circuit is driven below resonance (100 < 316 rad/s), so it behaves capacitively and the current leads the voltage.
   Answer: (D)
 P A 5: |-
-  Concept: Law of reflection in vector form: the normal component reverses, the tangential component is unchanged.
+  Concept: Law of reflection in vector form. Resolve the incident direction into components along and perpendicular to the normal. On reflection, the normal component reverses and the tangential component is unchanged.
+  Given: unit vectors â (incident), b̂ (reflected) and ĉ (outward normal).
   Solution:
-  1. Split $\vec a = (\vec a\cdot\vec c)\vec c + \vec a_\parallel$.
-  2. Reflected: $\vec b = \vec a_\parallel - (\vec a\cdot\vec c)\vec c = \vec a - 2(\vec a\cdot\vec c)\vec c$.
-  Why others are wrong: (A), (B) and (C) are not unit vectors in general and do not preserve the tangential component.
+  1. Normal component of â: (â·ĉ)ĉ. Tangential component: â − (â·ĉ)ĉ.
+  2. Reflected: b̂ = [â − (â·ĉ)ĉ] − (â·ĉ)ĉ = â − 2(â·ĉ)ĉ.
+  3. Check: |b̂|² = 1 − 4(â·ĉ)² + 4(â·ĉ)² = 1, so b̂ is a unit vector ✓. Also b̂·ĉ = −â·ĉ (angle of reflection = angle of incidence) ✓.
+  Why others are wrong:
+  - (A) 2â + ĉ, (B) â − ĉ and (C) â + 2ĉ are not unit vectors in general.
+  - They also do not preserve the tangential component. For example, (B) would be correct only for particular angles.
+  Tip: the same formula, v − 2(v·n)n, is the standard reflection formula used in computer graphics and in elastic collisions of a ball with a wall.
   Answer: (D)
 P A 6: |-
-  Concept: $A = A_0e^{-\lambda t}$; mean life $\tau = \frac{1}{\lambda}$.
+  Concept: Radioactive activity decays exponentially, A(t) = A₀e^{−λt}. The mean life (average life) is τ = 1/λ.
+  Given: activity A at time t₁ and A/5 at t₂.
   Solution:
-  1. $\frac{A}{5} = Ae^{-\lambda(t_2 - t_1)} \Rightarrow \lambda = \frac{\ln5}{t_2 - t_1}$.
-  2. $\tau = \frac{t_2 - t_1}{\ln5}$.
+  1. A/5 = A e^{−λ(t₂ − t₁)}, so e^{λ(t₂ − t₁)} = 5.
+  2. λ = ln 5/(t₂ − t₁).
+  3. τ = 1/λ = (t₂ − t₁)/ln 5.
+  4. The half-life would be T₁/₂ = τ ln 2 = (t₂ − t₁) ln 2/ln 5.
+  Why others are wrong:
+  - (C) (t₁ − t₂)/ln 5 is negative, since t₂ > t₁.
+  - (D) is λ, not τ.
+  - (B) is dimensionally meaningless (the log of a time).
+  Tip: since activity is proportional to N, activity ratios give λ directly. The type of decay (α here) does not matter.
   Answer: (A)
 P A 7: |-
-  Concept: In SHM, $v = \omega\sqrt{A^2 - x^2}$.
+  Concept: In SHM the speed at displacement x is v = ω√(A² − x²). This links v and x without any reference to time.
   Solution:
-  1. $v^2 = \omega^2(A^2 - x^2) \Rightarrow \frac{x^2}{A^2} + \frac{v^2}{\omega^2A^2} = 1$.
-  2. This is an ellipse (a circle only if $\omega = 1$ in chosen units).
+  1. Square: v² = ω²(A² − x²), i.e. ω²x² + v² = ω²A².
+  2. Divide by ω²A²: $\frac{x^2}{A^2} + \frac{v^2}{\omega^2A^2} = 1$.
+  3. This is an ellipse in the x–v plane, with semi-axes A along x and ωA along v.
+  4. It becomes a circle only in the special case ω = 1 (in the chosen units), or if v/ω is plotted instead of v.
+  Why others are wrong:
+  - (A) A circle is only a special case.
+  - (B) Parabola: v² is not linear in x.
+  - (D) A helix is a 3D curve, for example x, v and t together.
+  Tip: this ellipse is the "phase portrait" of SHM. Energy conservation (½mv² + ½kx² = E) gives the same ellipse directly.
   Answer: (C)
 P A 8: |-
-  Concept: The peak speed is reached at the end of acceleration and lost during retardation.
+  Concept: The scooter reaches its peak speed at the end of the acceleration phase. It must lose exactly that speed during the retardation phase. With constant accelerations, speed = acceleration × time for each phase.
+  Given: acceleration a₁ for time t₁ from rest; retardation a₂ for time t₂ to rest.
   Solution:
-  1. $v_{max} = a_1t_1 = a_2t_2$.
-  2. $\frac{t_1}{t_2} = \frac{a_2}{a_1}$.
+  1. Peak speed: v_max = a₁t₁ (from rest).
+  2. Stopping from v_max: 0 = v_max − a₂t₂, so v_max = a₂t₂.
+  3. a₁t₁ = a₂t₂, so t₁/t₂ = a₂/a₁.
+  4. The phase with the larger acceleration lasts a shorter time.
+  Why others are wrong:
+  - (D) a₁/a₂ inverts the ratio.
+  - (A) and (C) involve a₁ + a₂, which appears in the formula for the total time or distance, not in this ratio.
+  Tip: in a v–t graph this is a triangle. Its rising and falling slopes are a₁ and a₂, and the two legs share the same peak height.
   Answer: (B)
 P A 9: |-
-  Concept: A NAND with its inputs tied is a NOT gate; by De Morgan, $\overline{\bar A + B} = A\bar B$.
+  Concept: A NAND gate with both inputs joined acts as a NOT gate. De Morgan's theorem: $\overline{X + Y} = \bar X\cdot\bar Y$.
+  Given (figure): A goes through a NAND (as NOT) to give Ā. Ā is ORed with B, and the result goes through a NOT to give Y. Inputs: A is high during 0–2 s and 3–5 s; B is high during 1–2 s and 3–4 s.
   Solution:
-  1. $Y = \overline{\bar A + B} = A\cdot\bar B$: Y is high only when A = 1 and B = 0.
-  2. A is high for 0–2 s and 3–5 s; B is high for 1–2 s and 3–4 s.
-  3. A = 1 and B = 0 during 0–1 s and 4–5 s; Y is low otherwise.
+  1. $Y = \overline{\bar A + B} = A\cdot\bar B$.
+  2. So Y = 1 only when A = 1 and B = 0.
+  3. Check each interval:
+     - 0–1 s: A = 1, B = 0, so Y = 1.
+     - 1–2 s: A = 1, B = 1, so Y = 0.
+     - 2–3 s: A = 0, so Y = 0.
+     - 3–4 s: A = 1, B = 1, so Y = 0.
+     - 4–5 s: A = 1, B = 0, so Y = 1.
+  4. Y is high during 0–1 s and 4–5 s, and low otherwise. This matches option (A).
+  Why others are wrong:
+  - (B) and (D) are constant outputs.
+  - (C) is the complement of the correct waveform over part of the time.
   Answer: (A)
 P A 10: |-
-  Concept: Newton's second law along the incline, with the normal reaction modified by the electric force.
+  Concept: Apply Newton's second law along the incline. The horizontal electric force has components both along and perpendicular to the incline. The perpendicular component changes the normal reaction, which changes the friction.
+  Given (figure): 30° incline, height 1 m; m = 1 kg; q = 5 mC; E = 200 N/C (horizontal, as shown); μ = 0.2; g = 9.8 m/s².
   Solution:
-  1. Incline length $= \frac{1}{\sin30°} = 2$ m; $qE = 5\times10^{-3}\times200 = 1$ N (horizontal, directed as in the figure against the sliding direction).
-  2. Components of $qE$: $1\cos30° = 0.866$ N up the incline, $1\sin30° = 0.5$ N into the incline.
-  3. $N = mg\cos30° + 0.5 = 8.49 + 0.5 = 8.99$ N; friction $= 0.2\times8.99 = 1.80$ N.
-  4. $a = 9.8\times0.5 - 0.866 - 1.80 = 2.24$ m/s².
-  5. $t = \sqrt{\frac{2s}{a}} = \sqrt{\frac{4}{2.24}} \approx 1.34$ s $\approx 1.3$ s.
+  1. Length of the incline: s = 1/sin 30° = 2 m.
+  2. Electric force: qE = 5 × 10⁻³ × 200 = 1 N, horizontal. From the figure it opposes the downhill motion.
+     - Component up the incline: 1 × cos 30° = 0.866 N.
+     - Component into the incline: 1 × sin 30° = 0.5 N.
+  3. Normal reaction: N = mg cos 30° + 0.5 = 8.487 + 0.5 = 8.987 N. Friction: f = 0.2 × 8.987 = 1.797 N.
+  4. Acceleration down the incline: a = g sin 30° − 0.866 − 1.797 = 4.9 − 2.663 = 2.237 m/s².
+  5. From rest: s = ½at², so t = √(2 × 2/2.237) = √1.788 ≈ 1.34 s ≈ 1.3 s.
+  Why others are wrong:
+  - (D) 0.92 s ignores the electric force and friction.
+  - (B) and (A) come from other sign errors.
+  Tip: always resolve an external force into components along and perpendicular to the incline. The perpendicular part changes N and hence the friction.
   Answer: (C)
 P A 11: |-
-  Concept: $C = \frac{Q}{V}$, so $\frac{C}{V} = \frac{Q}{V^2}$.
+  Concept: Build the dimensions from definitions:
+  - capacitance: C = Q/V;
+  - voltage: V = W/Q, with [W] = [ML²T⁻²] and [Q] = [IT].
+  So λ = C/V = Q/V².
   Solution:
-  1. $[V] = [ML^2T^{-3}I^{-1}]$, $[Q] = [IT]$.
-  2. $[\lambda] = \frac{[IT]}{[M^2L^4T^{-6}I^{-2}]} = [M^{-2}L^{-4}I^3T^7]$.
+  1. [V] = [ML²T⁻²]/[IT] = [ML²T⁻³I⁻¹].
+  2. [V²] = [M²L⁴T⁻⁶I⁻²].
+  3. [λ] = [Q]/[V²] = [IT]/[M²L⁴T⁻⁶I⁻²] = [M⁻²L⁻⁴I³T⁷].
+  Cross-check: [C] = [M⁻¹L⁻²I²T⁴] (a standard result). Dividing by [V] gives [M⁻²L⁻⁴I³T⁷] ✓.
+  Why others are wrong: (B), (C) and (D) have mistakes in the powers of M, L, I or T. For example, (D) has M⁻³.
+  Tip: memorise the core electrical dimensions:
+  - V: [ML²T⁻³I⁻¹];
+  - R: [ML²T⁻³I⁻²];
+  - C: [M⁻¹L⁻²T⁴I²];
+  - L: [ML²T⁻²I⁻²].
   Answer: (A)
 P A 12: |-
-  Concept: A simple microscope lets the object be brought close to the eye, inside the near point, while the virtual image forms at a comfortable distance.
+  Concept: A simple microscope (magnifying glass) is a convex lens held close to the eye. The object is placed inside the focal length, and the lens forms an enlarged virtual image at a comfortable viewing distance (about 25 cm or more).
   Solution:
-  1. The image and the object subtend the same angle at the lens (and hence the eye close to it), so A is true.
-  2. Magnification comes from being able to bring the object much closer than 25 cm, so it subtends a larger angle than it would at 25 cm. R is true and explains A.
-  Why others are wrong: both statements are correct and linked, which rules out (A), (C) and (D).
+  1. Assertion A: with the eye close to the lens, rays from the object and from the corresponding point of the virtual image pass through the lens centre undeviated. So the object and its image subtend the same angle at the eye. True.
+  2. Reason R: without the lens, the closest comfortable distance is D = 25 cm. The lens lets you bring the object much closer, to about f, while still seeing it clearly. So it subtends a larger angle, which is the magnification (M = D/f for an image at infinity). True.
+  3. R explains the point of A: since the angular sizes of image and object are equal, the gain comes entirely from the object being closer. So R is the correct explanation.
+  Why others are wrong: (A), (C) and (D) either reject a true statement or deny the link between them.
   Answer: (B)
 P A 13: |-
-  Concept: Momentum conservation: the atom recoils with the photon's momentum $p = \frac{E}{c}$.
+  Concept: When an atom emits a photon, momentum is conserved. The atom recoils with momentum equal and opposite to the photon's: p = E/c. For a light, non-relativistic atom, v = E/(mc).
+  Given: hydrogen, transition n = 5 → n = 1; m_H ≈ 1.67 × 10⁻²⁷ kg.
   Solution:
-  1. $E = 13.6\left(1 - \frac{1}{25}\right) = 13.056$ eV $= 2.09\times10^{-18}$ J.
-  2. $v = \frac{E}{mc} = \frac{2.09\times10^{-18}}{1.67\times10^{-27}\times3\times10^8} \approx 4.17$ m/s.
+  1. Photon energy: E = 13.6(1 − 1/25) = 13.6 × 0.96 = 13.056 eV = 13.056 × 1.6 × 10⁻¹⁹ = 2.089 × 10⁻¹⁸ J.
+  2. Recoil speed: v = E/(mc) = 2.089 × 10⁻¹⁸/(1.67 × 10⁻²⁷ × 3 × 10⁸) = 2.089 × 10⁻¹⁸/5.01 × 10⁻¹⁹ ≈ 4.17 m/s.
+  3. The recoil kinetic energy, ½mv² ≈ 9 × 10⁻⁸ eV, is negligible compared with 13 eV, so ignoring it in the photon energy is justified.
+  Why others are wrong:
+  - (C) 219 m/s is far too large.
+  - (B) and (D) come from different energy values, for example 13.6 eV or 10.2 eV.
+  Tip: recoil speeds of atoms after emitting visible or UV photons are always only a few m/s.
   Answer: (A)
 P A 14: |-
-  Concept: Newton's laws with the spring force acting equally and oppositely on both masses.
+  Concept: A spring pulls both masses with equal and opposite forces (Newton's third law). A has no external force except the spring, so the spring force equals M × a_A. That same force acts on B in the opposite direction, alongside F.
+  Given (figure): B is pulled by F away from A. A accelerates at a, away from B.
   Solution:
-  1. A accelerates only because of the spring, so the spring force on A is $Ma$.
-  2. The spring exerts an equal and opposite force $Ma$ on B, opposing $F$.
-  3. $a_B = \frac{F - Ma}{M}$.
+  1. Force on A: the spring tension T = Ma, directed towards B's side. Here A accelerates in the direction of F, following B.
+  2. Force on B: F forward and the spring tension T backward (towards A).
+  3. Newton's second law for B: M a_B = F − T = F − Ma.
+  4. $a_B = \frac{F - Ma}{M}$.
+  Check: if the spring were rigid, a_B = a, giving F = 2Ma, which is consistent with a system of mass 2M ✓.
+  Why others are wrong:
+  - (A) adds Ma instead of subtracting it.
+  - (C) reverses the sign.
+  - (D) is dimensionally inconsistent.
+  Tip: for spring-connected blocks, find the spring force from the block with no other forces, then apply it with the opposite sign to the other block.
   Answer: (B)
 P A 15: |-
-  Concept: At constant volume $R = \frac{\rho l^2}{V} \propto l^2$.
+  Concept: When a wire is stretched, its volume stays constant (V = Al). The resistance R = ρl/A = ρl²/V is therefore proportional to l².
+  Given: the length increases by 25%, so l′ = 1.25 l.
   Solution:
-  1. $\frac{R'}{R} = (1.25)^2 = 1.5625$.
-  2. Change $= 56.25\% \approx 56\%$.
+  1. R′/R = (l′/l)² = (1.25)² = 1.5625.
+  2. Percentage change = (1.5625 − 1) × 100 = 56.25% ≈ 56%.
+  3. So the resistance increases from 1 Ω to 1.5625 Ω.
+  Why others are wrong:
+  - (A) 25% assumes R ∝ l with the area unchanged.
+  - (B) 12.5% halves the length change.
+  - (C) 76% comes from a miscalculation.
+  Tip: for small stretches the fractional change in R is 2 × (fractional change in l). But 25% is not small, so use the exact square: 1.25² = 1.5625, not 1.50.
   Answer: (D)
 P A 16: |-
-  Concept: A seconds pendulum has a period of 2 s.
+  Concept: A seconds pendulum is defined as one whose half-period is exactly 1 s. It "beats seconds", taking 1 s for each swing from one extreme to the other. Its full period is T = 2 s.
   Solution:
-  1. Statement I (period 1 s) is false.
-  2. Moving from one extreme to the other takes $\frac{T}{2} = 1$ s, so Statement II is true.
+  1. Statement I: "a second's pendulum has a time period of 1 second" is false. T = 2 s, which corresponds to L ≈ 0.99 m on Earth.
+  2. Statement II: "it takes precisely one second to move between the two extreme positions" is true. Extreme to extreme is half a period, T/2 = 1 s.
+  3. So Statement I is false and Statement II is true.
+  Why others are wrong:
+  - (B) and (D) accept Statement I.
+  - (A) rejects Statement II.
+  Tip: the length of a seconds pendulum is L = gT²/(4π²) = 9.8 × 4/39.48 ≈ 0.993 m. It is roughly 1 m long, which is why it was once proposed as a length standard.
   Answer: (C)
 P A 17: |-
-  Concept: A horizontal wing cuts the vertical component of the earth's field: $\varepsilon = B_Vlv$.
+  Concept: Motional emf, ε = Blv. For a horizontal wing moving horizontally, only the vertical component of the Earth's field is cut by the wing. So ε = B_V × l × v, with B_V = B sin δ, where δ is the angle of dip.
+  Given: l = 10 m; v = 180 km/h = 50 m/s; B = 2.5 × 10⁻⁴ T; dip δ = 60°.
   Solution:
-  1. $B_V = B\sin60° = 2.5\times10^{-4}\times0.866 = 2.165\times10^{-4}$ T; $v = 180$ km/h $= 50$ m/s.
-  2. $\varepsilon = 2.165\times10^{-4}\times10\times50 = 0.10825$ V $= 108.25$ mV.
+  1. B_V = B sin 60° = 2.5 × 10⁻⁴ × 0.866 = 2.165 × 10⁻⁴ T.
+  2. ε = B_V l v = 2.165 × 10⁻⁴ × 10 × 50 = 0.10825 V = 108.25 mV.
+  Why others are wrong:
+  - (B) 62.50 mV uses B_H = B cos 60°.
+  - (A) and (C) use other wrong angles or values.
+  Tip: this emf cannot drive a current through a closed circuit that moves with the plane. Any loop in the plane has the same emf around it, so no net current flows. The emf is real but not usable.
   Answer: (D)
 P A 18: |-
-  Concept: Hooke's law: extension is proportional to tension, $T = k(l - L)$.
+  Concept: Hooke's law: the extension is proportional to the tension, T = k(l − L), where L is the natural (original) length.
+  Given: length l₁ at tension T₁ and length l₂ at tension T₂.
   Solution:
-  1. $T_1 = k(l_1 - L)$ and $T_2 = k(l_2 - L)$, so $T_1(l_2 - L) = T_2(l_1 - L)$.
-  2. $L(T_2 - T_1) = T_2l_1 - T_1l_2 \Rightarrow L = \frac{T_2l_1 - T_1l_2}{T_2 - T_1}$.
+  1. T₁ = k(l₁ − L) and T₂ = k(l₂ − L).
+  2. Divide: T₁/T₂ = (l₁ − L)/(l₂ − L), so T₁(l₂ − L) = T₂(l₁ − L).
+  3. T₁l₂ − T₁L = T₂l₁ − T₂L, so L(T₂ − T₁) = T₂l₁ − T₁l₂.
+  4. $L = \frac{T_2l_1 - T_1l_2}{T_2 - T_1}$.
+  Check: if T₁ = 0, then L = T₂l₁/T₂ = l₁ ✓ (zero tension gives the natural length).
+  Why others are wrong:
+  - (A) the simple average is not right.
+  - (B) and (C) have wrong combinations or signs.
+  Tip: this is linear interpolation. Plot l against T and extrapolate the straight line back to T = 0.
   Answer: (D)
 P A 19: |-
-  Concept: $U = \frac{f}{2}nRT = \frac{f}{2}PV$ for an ideal gas.
+  Concept: For an ideal gas with f degrees of freedom, U = (f/2)nRT = (f/2)PV. So the coefficient of PV in the expression for U gives f/2.
+  Given: U = 3PV + 4. The constant 4 is just a reference offset.
   Solution:
-  1. Comparing $U = 3PV + 4$ with $U = \frac{f}{2}PV$ + constant gives $\frac{f}{2} = 3$, so $f = 6$.
-  2. Six degrees of freedom (3 translational + 3 rotational) means a non-linear polyatomic gas.
-  Why others are wrong: monoatomic has $f = 3$ and diatomic $f = 5$.
+  1. Compare: f/2 = 3, so f = 6.
+  2. f = 6 means 3 translational and 3 rotational degrees of freedom, with vibrations not excited.
+  3. Three rotational degrees of freedom need a non-linear molecule, i.e. a polyatomic gas such as H₂O or NH₃.
+  4. So the gas is polyatomic.
+  Why others are wrong:
+  - (B) A monoatomic gas has f = 3, i.e. U = 1.5PV.
+  - (D) A diatomic gas has f = 5, i.e. U = 2.5PV (rigid).
+  - (C) is ruled out for the same reasons.
+  Tip: γ = 1 + 2/f, so f = 6 gives γ = 4/3, the textbook value for non-linear polyatomic gases.
   Answer: (A)
 P A 20: |-
-  Concept: Gauss's law: flux $= \frac{q_{enc}}{\varepsilon_0}$; the field inside a conductor is zero.
+  Concept: Gauss's law: the flux through a closed surface equals q_enc/ε₀. The field at a point can be non-zero even when the net flux is zero. In a conductor at equilibrium, the field inside is zero and all excess charge sits on the outer surface.
   Solution:
-  1. Statement I: the dipole's net charge is 0, so the flux is zero, but the dipole field is non-zero at every finite point. True.
-  2. Statement II: inside a metallic sphere the charge sits on the surface, so a sphere of radius $r < R$ encloses no charge and the flux through it is also zero. False.
+  1. Statement I: a dipole has net charge +q − q = 0, so the total flux through the enclosing sphere is 0.
+     - The dipole's field is non-zero everywhere (at finite distances): field lines leave from +q and return to −q through the surface.
+     - So the flux is zero but the field is not. True.
+  2. Statement II: in a solid metallic sphere, the charge Q resides entirely on the outer surface (radius R).
+     - A Gaussian sphere of radius r < R encloses no charge, so the flux through it is 0, not "non-zero".
+     - The field inside is also zero, consistent with this.
+     False.
+  3. So Statement I is true and Statement II is false.
+  Why others are wrong: (B), (C) and (D) either reject Statement I or accept a non-zero flux inside the conductor.
   Answer: (A)
 P B 1: |-
-  Concept: AM bandwidth $= 2f_m$.
+  Concept: An AM signal with maximum modulating frequency f_m occupies a bandwidth of 2f_m (two sidebands, f_c ± f_m). The number of non-overlapping stations in a band is the total bandwidth divided by the bandwidth per station.
+  Given: f_m = 5 kHz; total bandwidth 90 kHz.
   Solution:
-  1. Each station needs $2\times5 = 10$ kHz.
-  2. Number of stations $= \frac{90}{10} = 9$.
+  1. Bandwidth per station: 2 × 5 = 10 kHz.
+  2. Number of stations: 90/10 = 9.
+  Common mistake: using f_m (5 kHz) as the channel width, which gives 18 stations.
+  Tip: in practice, guard bands are also left between stations, so the real number is somewhat smaller. JEE problems ignore guard bands unless they say otherwise.
   Answer: 9
 P B 2: |-
-  Concept: First law $Q = \Delta U + W$, with molar heat capacity $C = \frac{Q}{n\Delta T}$.
+  Concept: The first law of thermodynamics, Q = ΔU + W. The molar heat capacity for a process is C = Q/(nΔT). For a rigid diatomic gas (no vibrations), C_v = (5/2)R, so ΔU = n(5/2)RΔT.
+  Given: n = 1 mol; the work done is W = Q/5.
   Solution:
-  1. $W = \frac{Q}{5} \Rightarrow \Delta U = \frac{4Q}{5}$.
-  2. Rigid diatomic: $\Delta U = \frac{5}{2}R\Delta T$, so $Q = \frac{5}{4}\cdot\frac{5}{2}R\Delta T$.
-  3. $C = \frac{25R}{8}$, so $x = 25$.
+  1. ΔU = Q − Q/5 = (4/5)Q.
+  2. ΔU = (5/2)RΔT, so Q = (5/4) × (5/2)RΔT = (25/8)RΔT.
+  3. C = Q/ΔT = (25/8)R, so x = 25.
+  Check: C lies between C_v (2.5R) and C_p (3.5R) ✓. It is a polytropic-type process in which part of the heat does work.
+  Common mistake: taking the monoatomic C_v (1.5R), which gives x = 15.
+  Tip: in general, C = C_v/(fraction of Q that goes into ΔU). Here that fraction is 4/5, so C = C_v × 5/4.
   Answer: 25
 P B 3: |-
-  Concept: $v = \omega\sqrt{a^2 - x^2}$, $v_{max} = \omega a$.
+  Concept: In SHM the speed at displacement x is v = ω√(a² − x²). The maximum speed ωa occurs at the mean position.
+  Given: v = ½ v_max.
   Solution:
-  1. $\omega\sqrt{a^2 - x^2} = \frac{\omega a}{2} \Rightarrow a^2 - x^2 = \frac{a^2}{4}$.
-  2. $x = \frac{\sqrt3a}{2}$, so $x = 3$.
+  1. ω√(a² − x²) = ½ωa.
+  2. a² − x² = a²/4, so x² = 3a²/4.
+  3. x = (√3/2)a. Comparing with (√x·a)/2: x = 3.
+  4. Energy check: KE = ¼ of the total energy and PE = ¾ of it, so x² = ¾a² ✓.
+  Common mistakes:
+  - setting x = a/2 (half-amplitude), which gives speed (√3/2)v_max, the reverse question;
+  - forgetting to square.
+  Tip: in SHM, speed and position trade off like sine and cosine. Half the maximum speed occurs at √3/2 of the amplitude, and half the amplitude gives √3/2 of the maximum speed.
   Answer: 3
 P B 4: |-
-  Concept: Photoelectric equation $K_{max} = h\nu - \phi$, with $v_{max} \propto \sqrt{K_{max}}$.
+  Concept: Einstein's photoelectric equation: K_max = hν − φ = ½mv²_max. So the maximum speed is proportional to √(hν − φ).
+  Given: photon energies 2φ and 10φ.
   Solution:
-  1. $K_1 = 2\phi - \phi = \phi$ and $K_2 = 10\phi - \phi = 9\phi$.
-  2. $\frac{v_1}{v_2} = \sqrt{\frac{1}{9}} = \frac{1}{3}$, so $x = 1$.
+  1. Case 1: K₁ = 2φ − φ = φ.
+  2. Case 2: K₂ = 10φ − φ = 9φ.
+  3. v₁/v₂ = √(K₁/K₂) = √(1/9) = 1/3.
+  4. So x : y = 1 : 3, and x = 1.
+  Common mistakes:
+  - using the photon energies directly, √(2/10), which gives 1 : √5;
+  - forgetting the square root, which gives 1 : 9.
+  Tip: always subtract the work function before comparing speeds. The ratio of kinetic energies, not photon energies, controls the speed ratio.
   Answer: 1
 P B 5: |-
-  Concept: Rays reaching the eye appear to come from the image $S'$ and must pass through the mirror.
+  Concept: To see a source in a plane mirror, the reflected ray must reach the eye. Every reflected ray appears to come from the image S′, which lies as far behind the mirror as S is in front. The visible region is bounded by the lines from S′ through the edges of the mirror.
+  Given (figure): the mirror is 50 cm wide (±25 cm from its centre); S is 60 cm in front of its centre; the man walks along a line 1.2 m (120 cm) in front of the mirror.
   Solution:
-  1. $S'$ is 60 cm behind the mirror; the man's path is 120 cm in front, i.e. 180 cm from $S'$.
-  2. Lines from $S'$ through the mirror edges ($\pm25$ cm at 60 cm) reach $\pm25\times\frac{180}{60} = \pm75$ cm on the path.
-  3. Distance between the extreme points $= 150$ cm.
+  1. S′ is 60 cm behind the mirror, so the man's path is 60 + 120 = 180 cm from S′.
+  2. Lines from S′ through the mirror edges spread out by similar triangles: the half-width on the path is 25 × 180/60 = 75 cm.
+  3. So he can see the image from −75 cm to +75 cm along his path, a distance of 150 cm.
+  Common mistake: using the distance from the mirror (120 cm) instead of from the image (180 cm), which gives 25 × 120/60 × 2 = 100 cm.
+  Tip: in all plane-mirror field-of-view problems, draw the rays from the image, not from the object.
   Answer: 150
 P B 6: |-
-  Concept: The zener keeps the load at $V_Z$; current splits between the zener and the load.
+  Concept: A Zener diode in reverse breakdown holds a constant voltage V_Z across itself and across anything in parallel with it. The series resistor takes the remaining voltage, and the current divides between the Zener and the load.
+  Given (figure): 90 V source; 4 kΩ series resistor; V_Z = 30 V; 5 kΩ load in parallel with the Zener.
   Solution:
-  1. Series current $= \frac{90 - 30}{4\text{ k}\Omega} = 15$ mA.
-  2. Load current $= \frac{30}{5\text{ k}\Omega} = 6$ mA.
-  3. Zener current $= 15 - 6 = 9$ mA.
+  1. Check breakdown: without the Zener, the load would get 90 × 5/9 = 50 V > 30 V. So the Zener conducts.
+  2. Series resistor: its voltage is 90 − 30 = 60 V, so the current is 60/4000 = 15 mA.
+  3. Load current: 30/5000 = 6 mA.
+  4. Zener current: 15 − 6 = 9 mA.
+  Common mistake: forgetting to subtract the load current, which gives 15 mA.
+  Tip: the Zener absorbs whatever current the load does not take. That is how it regulates the load voltage.
   Answer: 9
 P B 7: |-
-  Concept: $g_h = \frac{gR^2}{(R+h)^2}$ above the surface; $g_d = g\frac{r}{R}$ inside.
+  Concept: How g varies with position:
+  - above the surface at height h: $g_h = \frac{gR^2}{(R + h)^2}$;
+  - inside a uniform Earth at distance r from the centre: g_r = g r/R.
+  Given (figure): R = 6400 km. C is 3200 km (R/2) above the surface point B. A is inside, on OB. g is equal at A and C.
   Solution:
-  1. C is at $h = 3200$ km $= \frac{R}{2}$: $g_C = \frac{g}{(3/2)^2} = \frac{4g}{9}$.
-  2. At A, $g\frac{OA}{R} = \frac{4g}{9} \Rightarrow OA = \frac{4R}{9}$ and $AB = \frac{5R}{9}$.
-  3. $OA : AB = 4 : 5$, so $x = 4$.
+  1. At C: g_C = gR²/(1.5R)² = g/2.25 = 4g/9.
+  2. At A: g × OA/R = 4g/9, so OA = 4R/9.
+  3. AB = R − OA = 5R/9.
+  4. OA : AB = 4 : 5, so x = 4.
+  Check: both g_A and g_C are less than g at the surface (B), as the question states ✓.
+  Tip: g is maximum at the surface. It decreases linearly going inward and as an inverse square going outward.
   Answer: 4
 P B 8: |-
-  Concept: Volume conservation gives $R = n^{1/3}r$; the self-energy of a charged sphere is $U = \frac{Q^2}{8\pi\varepsilon_0R}$.
+  Concept: When n identical charged drops merge, both the volume and the charge are conserved. The electrostatic (self) energy of a charged sphere is U = Q²/(8πε₀R), i.e. U ∝ Q²/R.
+  Given: 27 drops, each at 10 V.
   Solution:
-  1. $R = 3r$ and $Q = 27q$.
-  2. $\frac{U_{big}}{U_{small}} = \frac{(27)^2}{3} = 243$.
+  1. Volume: R³ = 27r³, so R = 3r.
+  2. Charge: Q = 27q.
+  3. U_big/U_small = (Q²/R)/(q²/r) = (27² q²/3r)/(q²/r) = 729/3 = 243.
+  4. In general, the energy ratio is n^{5/3}: 27^{5/3} = 3⁵ = 243 ✓.
+  Related results:
+  - potential ratio: n^{2/3} = 9, so the big drop is at 90 V;
+  - capacitance ratio: n^{1/3} = 3.
+  The total energy after merging (243U) exceeds the total before (27U). The extra comes from the work done against repulsion in bringing the drops together.
   Answer: 243
 P B 9: |-
-  Concept: $W = \int PdV$ with $P = \frac{nRT}{V}$ (take $n = 1$).
+  Concept: The work done by a gas is W = ∫P dV. For one mole of an ideal gas P = RT/V, so W = ∫(RT/V) dV. Use the given V(T) relation to write dV/V in terms of dT.
+  Given: V = KT^{2/3}; ΔT = 90 K; n = 1 mol (implied by the answer being in units of R).
   Solution:
-  1. $V = KT^{2/3} \Rightarrow \frac{dV}{V} = \frac{2}{3}\frac{dT}{T}$.
-  2. $W = \int\frac{RT}{V}dV = \frac{2}{3}R\,\Delta T = \frac{2}{3}R\times90 = 60R$.
-  3. $x = 60$.
+  1. ln V = ln K + (2/3) ln T, so dV/V = (2/3) dT/T.
+  2. W = ∫RT (dV/V) = ∫RT (2/3)(dT/T) = (2/3)R ∫dT = (2/3)R ΔT.
+  3. W = (2/3) × 90 × R = 60R, so x = 60.
+  Note: the gas being monatomic does not affect the work. It would matter for ΔU and Q.
+  Tip: for a polytropic process PVⁿ = constant, V ∝ T^{1/(1−n)}. Here 1/(1 − n) = 2/3 gives n = −½. Then W = RΔT/(1 − n) = RΔT/(3/2) = (2/3)RΔT ✓.
   Answer: 60
 P B 10: |-
-  Concept: Read "$\frac{5}{8}$ oscillation" as the fraction of the path $4A$ travelled per oscillation, i.e. a distance $2.5A$; use $x = A\sin\omega t$.
+  Concept: In one oscillation a pendulum travels a total path of 4A. "5/8 of an oscillation" is interpreted as 5/8 of that path, i.e. a distance of 2.5A starting from the mean position. Use x = A sin(2πt/T) for the partial swing.
   Solution:
-  1. From the mean position, $\frac{T}{2}$ covers $2A$ and returns the bob to the mean position.
-  2. The remaining $0.5A$ from the mean: $\frac{A}{2} = A\sin\frac{2\pi t}{T} \Rightarrow t = \frac{T}{12}$.
-  3. Total $= \frac{T}{2} + \frac{T}{12} = \frac{7T}{12}$, so $\alpha = 7$.
+  1. From the mean position, the bob covers A (to one extreme) and A back to the mean. That is 2A in T/2.
+  2. The remaining 0.5A from the mean position: A/2 = A sin(2πt/T), so 2πt/T = π/6 and t = T/12.
+  3. Total time: T/2 + T/12 = 7T/12.
+  4. So α/β = 7/12, and α = 7.
+  Note: if "5/8 oscillation" were read as 5/8 of the period, the answer would simply be 5T/8. The intended (official) reading is the distance-based one, giving 7T/12.
+  Tip: in SHM, displacement is not proportional to time. Covering half the amplitude from the mean takes T/12, but from an extreme it takes T/6.
   Answer: 7

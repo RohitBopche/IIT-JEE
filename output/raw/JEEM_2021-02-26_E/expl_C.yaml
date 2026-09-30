@@ -1,202 +1,342 @@
 C A 1: |-
-  Concept: 2,4-Dinitrophenylhydrazine condenses with carbonyl compounds to give coloured hydrazones.
+  Concept: 2,4-Dinitrophenylhydrazine (Brady's reagent) is a nucleophile that condenses with the C=O group of aldehydes and ketones. The product is a 2,4-dinitrophenylhydrazone, which separates as a yellow, orange or red precipitate. It is therefore a general test for the carbonyl group.
   Solution:
-  1. Aldehydes and ketones give a yellow-orange 2,4-DNP precipitate.
-  2. Halogens, ethers and amines have no C=O and give no precipitate.
+  1. With an aldehyde: $RCHO + H_2N-NH-C_6H_3(NO_2)_2 \to RCH=N-NH-C_6H_3(NO_2)_2 + H_2O$.
+  2. This is an addition–elimination (condensation) reaction at the electrophilic carbonyl carbon, catalysed by acid.
+  3. The hydrazones are highly crystalline and have sharp melting points, so they were also used to identify individual carbonyl compounds.
+  Why others are wrong:
+  - (B) Halogens are detected by Lassaigne's test (sodium fusion, then AgNO₃), not by 2,4-DNP.
+  - (C) Ethers have no C=O group and are quite unreactive; they give no hydrazone.
+  - (D) Amines are themselves nucleophiles and have no carbonyl group. They are identified by the carbylamine or Hinsberg tests.
   Answer: (A)
 C A 2: |-
-  Concept: Cross-Cannizzaro, Williamson ether synthesis, then ether cleavage by HI.
+  Concept: Three steps in sequence: a cross-Cannizzaro reaction, Williamson ether synthesis, and cleavage of ethers by hot HI.
   Solution:
-  1. HCHO/NaOH (cross-Cannizzaro): HCHO is oxidised and the aryl aldehyde is reduced to 4-methoxybenzyl alcohol.
-  2. NaH/EtBr: the alkoxide gives the ethyl benzyl ether 4-MeO–C₆H₄–CH₂OEt.
-  3. HI, Δ: the aryl methyl ether cleaves to the phenol (+ CH₃I), and the benzylic ether cleaves by an SN1-like path to benzyl iodide (+ EtOH).
-  4. A = 4-(iodomethyl)phenol, HO–C₆H₄–CH₂I.
+  1. HCHO/NaOH (cross-Cannizzaro): 4-methoxybenzaldehyde has no α-H. HCHO, the more reactive aldehyde, is oxidised to formate and acts as the hydride donor. The aryl aldehyde is reduced to 4-methoxybenzyl alcohol, 4-MeO–C₆H₄–CH₂OH.
+  2. NaH, then CH₃CH₂Br in DMF (Williamson): NaH forms the alkoxide, which does an SN2 on ethyl bromide. The product is the ethyl benzyl ether 4-MeO–C₆H₄–CH₂OEt.
+  3. HI, Δ: the aryl methyl ether is cleaved at the CH₃–O bond (SN2 on methyl), giving the phenol and CH₃I. The aryl–O bond is never broken.
+  4. The benzylic ether cleaves at the benzylic C–O bond, because the benzylic cation or SN2 transition state is stabilised. This gives ArCH₂I and ethanol.
+  5. So A = 4-(iodomethyl)phenol, HO–C₆H₄–CH₂I.
+  Why others are wrong:
+  - (A) needs an oxidation to an ester, which never happens.
+  - (B) and (D) ignore the HI step (the OMe survives in B, and the CH₂–O bond would not be retained as OH in D).
   Answer: (C)
 C A 3: |-
-  Concept: Hydrolysis of FeCl₃ gives a sol that adsorbs its common ion.
+  Concept: A sol's particles take their charge by preferentially adsorbing an ion common to their own lattice that is present in excess (Fajans' rule).
   Solution:
-  1. $FeCl_3 + 3H_2O \to Fe(OH)_3 + 3HCl$ (hydrated ferric oxide sol).
-  2. With excess water, the particles adsorb Fe³⁺ and become positively charged.
-  3. (Adding NaOH to FeCl₃ instead would give a negative sol.)
+  1. Ferric chloride added to excess hot water hydrolyses: $FeCl_3 + 3H_2O \to Fe(OH)_3\ (\text{sol}) + 3HCl$.
+  2. Some FeCl₃ is left in the medium, so Fe³⁺ ions are present.
+  3. The hydrated ferric oxide particles adsorb the common ion Fe³⁺: $Fe_2O_3\cdot xH_2O/Fe^{3+}$. The sol is therefore positively charged.
+  4. Contrast: if FeCl₃ is added to NaOH solution, OH⁻ is in excess and is adsorbed, giving a negatively charged sol $Fe_2O_3\cdot xH_2O/OH^-$.
+  5. The charge is fixed by the conditions of preparation, not random. The positive charge also explains why Fe(OH)₃ sol is coagulated most effectively by multivalent anions such as PO₄³⁻ (Hardy–Schulze rule).
+  Why others are wrong:
+  - (B) Sol particles are always charged; the charge is what keeps them apart.
+  - (C) Under the stated conditions the charge is definitely positive.
+  - (D) A negative sol forms only when OH⁻ is in excess.
   Answer: (A)
 C A 4: |-
-  Concept: Name reactions of diazonium salts and haloalkanes/arenes with sodium.
+  Concept: Name reactions that turn diazonium salts into aryl halides, and coupling reactions of halides with sodium metal.
   Solution:
-  1. (a) Cu₂Cl₂/HCl is the Sandmeyer reaction → (ii).
-  2. (b) Cu powder/HCl is the Gattermann reaction → (iv).
-  3. (c) Two alkyl halides + Na is the Wurtz reaction → (i).
-  4. (d) Two aryl halides + Na is the Fittig reaction → (iii).
+  1. (a) $C_6H_5N_2^+Cl^- \xrightarrow{Cu_2Cl_2/HCl} C_6H_5Cl + N_2$: copper(I) salt catalyses the replacement. This is the Sandmeyer reaction → (ii).
+  2. (b) $C_6H_5N_2^+Cl^- \xrightarrow{Cu\ powder,\ HCl} C_6H_5Cl + N_2$: copper powder is used instead of the Cu(I) salt. This is the Gattermann reaction → (iv). The yield is usually lower than in the Sandmeyer reaction.
+  3. (c) $2C_2H_5Cl + 2Na \xrightarrow{dry\ ether} C_4H_{10} + 2NaCl$: two alkyl halides couple. This is the Wurtz reaction → (i).
+  4. (d) $2C_6H_5Cl + 2Na \xrightarrow{ether} C_6H_5-C_6H_5 + 2NaCl$: two aryl halides couple to biphenyl. This is the Fittig reaction → (iii). (Aryl + alkyl halide would be Wurtz–Fittig.)
+  Why others are wrong:
+  - (A) and (D) swap the Gattermann reaction with Wurtz or Fittig; Wurtz and Fittig use Na and ether, not copper.
+  - (B) wrongly labels Cu₂Cl₂ as Fittig and the biphenyl coupling as Sandmeyer.
   Answer: (C)
 C A 5: |-
-  Concept: Hybridisation from the number of σ-bonds (steric number).
+  Concept: Hybridisation of carbon follows from its number of σ-bonds (with no lone pairs): 4 σ → sp³, 3 σ → sp², 2 σ → sp. Each double bond contributes one σ and one π bond.
   Solution:
-  1. C1 (=CH₂, one double bond): sp².
-  2. C2 (two double bonds, cumulated): sp.
-  3. C3 (=CH–): sp².
-  4. C4 (CH₃, all single bonds): sp³.
+  1. The molecule is buta-1,2-diene, CH₂=C=CH–CH₃, a cumulated diene (allene).
+  2. C1 (=CH₂): two σ bonds to H and one σ bond to C2, so 3 σ → sp².
+  3. C2 (the central allene carbon, =C=): σ bonds only to C1 and C3, and two π bonds, so 2 σ → sp. It is linear, and its two π bonds are perpendicular.
+  4. C3 (=CH–): σ bonds to C2, C4 and H, so 3 σ → sp².
+  5. C4 (CH₃): four single bonds, so sp³.
+  6. Sequence: sp², sp, sp², sp³.
+  Because C2's two π bonds are at right angles, the H atoms on C1 lie in a plane perpendicular to the substituents on C3. This is why suitably substituted allenes can be chiral.
+  Why others are wrong:
+  - (B) treats the central carbon as sp², but it has only two σ bonds.
+  - (C) makes C2 sp³, which is impossible for a carbon with two double bonds.
+  - (D) makes C1 and C3 sp³, ignoring their π bonds.
   Answer: (A)
 C A 6: |-
-  Concept: Monosaccharide units of common disaccharides.
+  Concept: Every common disaccharide is two monosaccharide units joined by a glycosidic bond. Learn the units and the linkage.
   Solution:
-  1. Sucrose: α-D-glucose + β-D-fructose → (ii).
-  2. Lactose: β-D-galactose + β-D-glucose → (i).
-  3. Maltose: two α-D-glucose units → (iii).
+  1. Sucrose = α-D-glucose + β-D-fructose, linked C1(α)–C2(β). Both anomeric carbons are used, so sucrose is non-reducing. Match (a) → (ii).
+  2. Lactose (milk sugar) = β-D-galactose + β-D-glucose, with a β(1→4) link from galactose C1 to glucose C4. The glucose C1 is free, so lactose is reducing. Match (b) → (i).
+  3. Maltose = two α-D-glucose units, α(1→4) linked. It is reducing. Match (c) → (iii).
+  4. Extra facts often asked: hydrolysis of sucrose gives invert sugar (the rotation changes from dextro to laevo). Starch hydrolysed by diastase gives maltose. Cellobiose is two β-D-glucose units.
+  Why others are wrong:
+  - (A) assigns α,α-glucose to sucrose; that is maltose.
+  - (B) gives sucrose α,α-glucose and maltose glucose–fructose, both reversed.
+  - (C) gives sucrose the galactose–glucose units, which belong to lactose.
   Answer: (D)
 C A 7: |-
-  Concept: Oxides of non-metals are acidic; those of alkali and alkaline-earth metals are basic.
+  Concept: Non-metal oxides are generally acidic, and oxides of the electropositive s-block metals are basic. Some oxides of metalloids or less electropositive metals are amphoteric, and a few non-metal oxides (CO, NO, N₂O) are neutral.
   Solution:
-  1. B₂O₃ (gives boric acid) and SiO₂ (reacts with bases to form silicates) are acidic.
-  2. BaO and CaO are basic; N₂O is neutral.
+  1. B₂O₃: boron is a non-metal. $B_2O_3 + 3H_2O \to 2H_3BO_3$ (boric acid), and B₂O₃ dissolves in alkalis to give borates. Acidic.
+  2. SiO₂: silicon dioxide reacts with bases, $SiO_2 + 2NaOH \to Na_2SiO_3 + H_2O$, and with basic oxides in slag formation ($CaO + SiO_2 \to CaSiO_3$). Acidic.
+  3. So the pair B₂O₃ and SiO₂ is acidic.
+  4. Note the diagonal relationship between B and Si: both form acidic oxides and covalent hydrides.
+  Why others are wrong:
+  - (A) N₂O is a neutral oxide, and BaO is strongly basic.
+  - (B) CaO (quicklime) is basic, although SiO₂ is acidic.
+  - (C) CaO is basic, although B₂O₃ is acidic.
   Answer: (D)
 C A 8: |-
-  Concept: Calgon is sodium hexametaphosphate, $Na_6P_6O_{18}$ (Graham's salt).
+  Concept: Calgon is sodium hexametaphosphate, $Na_6P_6O_{18}$ (often written $Na_2[Na_4(PO_3)_6]$). It softens water by complexing Ca²⁺ and Mg²⁺.
   Solution:
-  1. (B) True: it is Graham's salt.
-  2. (C) True: it is a polymeric metaphosphate and dissolves in water.
-  3. (D) True: it sequesters Ca²⁺/Mg²⁺ as soluble complexes and does not precipitate them.
-  4. (A) False: the second most abundant element in the crust is silicon, but calgon contains P, Na and O, not Si.
+  1. (B) True: sodium hexametaphosphate is also called Graham's salt.
+  2. (C) True: it is a polymeric (cyclic) metaphosphate, (NaPO₃)ₙ, and is readily soluble in water.
+  3. (D) True: it does not precipitate Ca²⁺. It exchanges Na⁺ for Ca²⁺ to form a soluble complex: $Na_2[Na_4(PO_3)_6] + 2Ca^{2+} \to Na_2[Ca_2(PO_3)_6] + 4Na^+$. The Ca²⁺ stays in solution but can no longer form scum with soap.
+  4. (A) False: the most abundant elements in the Earth's crust by weight are O (≈46%) > Si (≈28%) > Al > Fe. The second most abundant is silicon, and Calgon contains no Si. It contains Na, P and O. Oxygen, the most abundant element, is present, but that is the first, not the second.
+  5. So the statement that is NOT true is (A).
   Answer: (A)
 C A 9: |-
-  Concept: Characteristic functional-group tests.
+  Concept: Standard functional-group tests in qualitative organic analysis.
   Solution:
-  1. Ceric ammonium nitrate gives a red colour with alcohols.
-  2. CHCl₃/alc. KOH is the carbylamine test for primary amines (foul-smelling isocyanide).
+  1. Ceric ammonium nitrate (CAN), $(NH_4)_2[Ce(NO_3)_6]$, is yellow. With an alcohol, one nitrate ligand is replaced by the alkoxide: $(NH_4)_2[Ce(NO_3)_6] + ROH \to (NH_4)_2[Ce(OR)(NO_3)_5] + HNO_3$. The colour turns red, which is the test for –OH (alcohols).
+  2. CHCl₃/alcoholic KOH is the carbylamine (isocyanide) test. On warming with a primary amine, dichlorocarbene (:CCl₂) forms and gives an isocyanide: $RNH_2 + CHCl_3 + 3KOH \to RNC + 3KCl + 3H_2O$. The isocyanide has an offensive smell, which shows a primary amine (aliphatic or aromatic).
+  3. Secondary and tertiary amines give no carbylamine reaction.
+  4. So the groups are alcohol and amine, in that order.
+  Why others are wrong:
+  - (B) reverses the order.
+  - (C) and (D) name phenol. Phenols are identified with neutral FeCl₃ (violet colour); CHCl₃/KOH with phenol is the Reimer–Tiemann reaction, a synthesis rather than an identification test.
   Answer: (A)
 C A 10: |-
-  Concept: TlI₃ is Tl⁺(I₃⁻), with Tl⁺ stabilised by the inert-pair effect.
+  Concept: Inert-pair effect in group 13, and the structure of trihalide salts containing I₃⁻.
   Solution:
-  1. A is true: TlI₃ is isomorphous with CsI₃, which contains Cs⁺ and I₃⁻, so Tl is +1.
-  2. R is true: Tl is [Xe]4f¹⁴5d¹⁰6s²6p¹.
-  3. The +1 state is due to the inert-pair effect (poor shielding by the 4f/5d electrons) and the fact that I⁻ reduces Tl³⁺, so R is not a direct explanation.
+  1. Assertion: TlI₃ has the same crystal structure as CsI₃, which is Cs⁺I₃⁻ (the triiodide ion). So TlI₃ is Tl⁺I₃⁻, with thallium in the +1 state. A is correct.
+  2. Why +1: down group 13, the 6s² pair becomes reluctant to take part in bonding (inert-pair effect), so Tl⁺ is more stable than Tl³⁺. Also, I⁻ is a good reducing agent and would reduce Tl³⁺ to Tl⁺ ($Tl^{3+} + 2I^- \to Tl^+ + I_2$). Tl(III) iodide is therefore not formed.
+  3. Reason: the configuration of Tl is [Xe]4f¹⁴5d¹⁰6s²6p¹. It does contain fourteen 4f electrons, so R is a true statement.
+  4. The poor shielding by the 4f and 5d electrons contributes to the inert-pair effect. But R only states the number of f electrons; it does not explain why TlI₃ contains Tl⁺ (the triiodide structure and the reduction of Tl³⁺ by I⁻ do). So R is not the correct explanation of A.
+  Why others are wrong:
+  - (A) R does not account for the +1 state in TlI₃.
+  - (B) and (D) each call one of two true statements false.
   Answer: (C)
 C A 11: |-
-  Concept: Electron gain enthalpy becomes less negative down a group, but O is anomalous because of its small size and high electron–electron repulsion.
+  Concept: Electron gain enthalpy (ΔegH) is normally more negative for smaller atoms, but the second-period element is anomalous. Its compact 2p shell has strong electron–electron repulsion, so the incoming electron is less welcome.
   Solution:
-  1. The magnitude of electron gain enthalpy is greatest for S, then Se, then Te.
-  2. O has the least negative value in group 16.
-  3. Order: S > Se > Te > O.
+  1. Approximate values (kJ mol⁻¹): O ≈ −141, S ≈ −200, Se ≈ −195, Te ≈ −190.
+  2. Going down the group from S to Te, the atomic size increases and the attraction for an added electron decreases. So the magnitude of ΔegH falls: S > Se > Te.
+  3. Oxygen, although at the top of the group, has the least negative value in group 16 because of its very small size and high charge density in the 2p subshell.
+  4. Order (by magnitude, i.e. how negative): S > Se > Te > O.
+  5. The same anomaly appears in group 17: Cl > F > Br > I, where F is less negative than Cl.
+  Why others are wrong:
+  - (B) assumes oxygen, being smallest, is the most negative; this ignores the repulsion.
+  - (C) places O second, but it is actually below Te.
+  - (D) reverses the order of S, Se and Te.
   Answer: (A)
 C A 12: |-
-  Concept: Intramolecular aldol condensation of a dialdehyde.
+  Concept: A molecule with two carbonyl groups, each with α-hydrogens, undergoes intramolecular aldol condensation in base. Ring size decides the product; 5-, 6- and 7-membered rings form readily.
   Solution:
-  1. The α-carbon of one –CH₂CH₂CHO chain forms an enolate and attacks the CHO of the other chain.
-  2. The new ring contains the α-C, the β-CH₂, two aromatic carbons, the other β-CH₂, the α-CH₂ and the former carbonyl carbon: a 7-membered ring fused to benzene.
-  3. Dehydration on heating gives a conjugated α,β-unsaturated aldehyde: 6,7-dihydro-5H-benzo[7]annulene-8-carbaldehyde.
+  1. The substrate is benzene with two ortho –CH₂CH₂CHO chains (β-C, α-C, CHO on each).
+  2. NaOH removes an α-H from one chain to give an enolate. This attacks the aldehyde carbon of the other chain.
+  3. Count the new ring: α-C (chain 1), β-C (chain 1), aromatic C, aromatic C, β-C (chain 2), α-C (chain 2), carbonyl C (chain 2), back to the α-C of chain 1. That is 7 atoms, a seven-membered ring fused to benzene.
+  4. The aldol (β-hydroxy aldehyde) dehydrates on heating, because the resulting C=C is conjugated with the remaining CHO.
+  5. Product A: 6,7-dihydro-5H-benzo[7]annulene-8-carbaldehyde, an α,β-unsaturated aldehyde in a benzo-fused 7-membered ring.
+  Why others are wrong:
+  - (B) is a diketone that would need oxidation.
+  - (C) has a 6-membered ring with one carbon fewer, which this chain length cannot give.
+  - (D) is a Cannizzaro-type product, but these aldehydes have α-H, so aldol wins.
   Answer: (A)
 C A 13: |-
-  Concept: Common ores.
+  Concept: Important ores and the metals extracted from them.
   Solution:
-  1. Siderite FeCO₃ → Fe (iii).
-  2. Calamine ZnCO₃ → Zn (v).
-  3. Malachite CuCO₃·Cu(OH)₂ → Cu (i).
-  4. Cryolite Na₃AlF₆ → Al (iv).
+  1. (a) Siderite is FeCO₃, an iron carbonate ore → Fe (iii). Other iron ores are haematite Fe₂O₃, magnetite Fe₃O₄ and limonite.
+  2. (b) Calamine is ZnCO₃, a zinc carbonate ore → Zn (v). Zinc blende (ZnS) is the other main zinc ore.
+  3. (c) Malachite is CuCO₃·Cu(OH)₂, the green basic copper carbonate → Cu (i). Other copper ores are copper pyrites CuFeS₂, cuprite Cu₂O and copper glance Cu₂S.
+  4. (d) Cryolite is Na₃AlF₆ → Al (iv). It is not the source of Al (bauxite is), but it is added in the Hall–Héroult electrolysis. It lowers the melting point of alumina and raises the conductivity.
+  5. Option (v) Zn is used once, and (ii) Ca is a distractor that matches nothing.
+  Why others are wrong:
+  - (A) matches siderite with Cu and calamine with Ca, both wrong.
+  - (C) matches malachite with Fe.
+  - (D) matches calamine with Cu and cryolite with Ca.
   Answer: (B)
 C A 14: |-
-  Concept: SOCl₂ replaces alcoholic –OH by –Cl but does not affect phenolic –OH (the C–O bond has partial double-bond character).
+  Concept: Thionyl chloride converts alcohols into alkyl chlorides: $ROH + SOCl_2 \to RCl + SO_2 + HCl$. It does not replace a phenolic –OH. In phenols, the oxygen lone pair is delocalised into the ring, giving the C–O bond partial double-bond character, and an sp² carbon resists substitution.
   Solution:
-  1. The aliphatic ring –OH becomes –Cl.
-  2. The benzylic –CH₂OH becomes –CH₂Cl.
-  3. The phenolic –OH is retained.
+  1. The substrate has three –OH groups: a phenolic OH on the aromatic ring, a secondary alcoholic OH on the saturated (tetrahydro) ring, and a primary benzylic –CH₂OH.
+  2. Ring alcohol (secondary, aliphatic): converted to –Cl.
+  3. Benzylic –CH₂OH (primary, and activated): converted to –CH₂Cl.
+  4. Phenolic –OH: unchanged.
+  5. Product A keeps the phenolic OH, with Cl on the saturated ring and CH₂Cl on the aromatic ring.
+  Why others are wrong:
+  - (A) leaves the secondary alcohol untouched, but SOCl₂ converts it too.
+  - (C) replaces the phenolic OH only, which is the exact opposite of the real selectivity.
+  - (D) assumes the phenolic OH is replaced as well; that would need something like PCl₅ at high temperature, and even then only in poor yield.
   Answer: (B)
 C A 15: |-
-  Concept: Industrial processes.
+  Concept: Industrial preparation and refining processes named after their inventors.
   Solution:
-  1. Sodium carbonate: Solvay process → (iv).
-  2. Titanium: van Arkel (iodide) refining → (iii).
-  3. Chlorine: Deacon process → (i).
-  4. Sodium hydroxide: Castner–Kellner cell → (ii).
+  1. (a) Sodium carbonate: Solvay (ammonia–soda) process → (iv). CO₂ is passed into brine saturated with NH₃, NaHCO₃ precipitates, and it is heated to give Na₂CO₃. NH₃ is recovered with Ca(OH)₂.
+  2. (b) Titanium: van Arkel (iodide) method → (iii). Impure Ti forms volatile TiI₄ with I₂, and this decomposes on a hot tungsten filament to deposit very pure Ti. The same method is used for Zr.
+  3. (c) Chlorine: Deacon process → (i). HCl is oxidised by air over a CuCl₂ catalyst at about 723 K: $4HCl + O_2 \to 2Cl_2 + 2H_2O$.
+  4. (d) Sodium hydroxide: Castner–Kellner cell → (ii). Brine is electrolysed with a mercury cathode; Na–amalgam forms and reacts with water to give NaOH and H₂.
+  Why others are wrong:
+  - (A) makes Solvay produce NaOH and Castner–Kellner produce titanium.
+  - (C) links titanium to Deacon and chlorine to Castner–Kellner.
+  - (D) links sodium carbonate to Deacon and chlorine to Solvay.
   Answer: (B)
 C A 16: |-
-  Concept: MO theory: bond order $= \frac{N_b - N_a}{2}$.
+  Concept: In molecular orbital theory, bond order $= \frac{N_b - N_a}{2}$, where N_b and N_a count electrons in bonding and antibonding MOs.
   Solution:
-  1. Ne₂ (20 e⁻): $\frac{10 - 10}{2} = 0$ → (iii).
-  2. N₂ (14 e⁻): $\frac{10 - 4}{2} = 3$ → (iv).
-  3. F₂ (18 e⁻): $\frac{10 - 8}{2} = 1$ → (i).
-  4. O₂ (16 e⁻): $\frac{10 - 6}{2} = 2$ → (ii).
+  1. Ne₂ (20 electrons): all bonding and antibonding orbitals up to σ*2p are filled. $N_b = 10$, $N_a = 10$, so bond order $= 0$ and the molecule does not exist → (iii).
+  2. N₂ (14 electrons): $σ1s^2σ^*1s^2σ2s^2σ^*2s^2π2p^4σ2p^2$. $N_b = 10$, $N_a = 4$, so bond order $= 3$ (N≡N) → (iv).
+  3. F₂ (18 electrons): after σ2p², π2p⁴ comes π*2p⁴. $N_b = 10$, $N_a = 8$, so bond order $= 1$ → (i).
+  4. O₂ (16 electrons): π*2p has 2 electrons, one in each degenerate orbital. $N_b = 10$, $N_a = 6$, so bond order $= 2$. These two unpaired electrons make O₂ paramagnetic → (ii).
+  5. Matching: (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii).
+  Why others are wrong:
+  - (B), (C) and (D) all pair Ne₂ with a non-zero bond order, which is impossible for a molecule with equal bonding and antibonding electrons.
   Answer: (A)
 C A 17: |-
-  Concept: Of the hydrogen isotopes, only tritium is radioactive.
+  Concept: Hydrogen has three isotopes: protium ¹H, deuterium ²H (D) and tritium ³H (T). Only tritium is radioactive.
   Solution:
-  1. $^3_1H \to\ ^3_2He + \beta^-$, a low-energy β emitter ($t_{1/2} \approx 12.3$ y).
-  2. Protium and deuterium are stable; H⁺ is just a proton.
+  1. Tritium has one proton and two neutrons. This neutron-rich nucleus is unstable and decays by β⁻ emission, converting a neutron into a proton: $^3_1H \to\ ^3_2He + \beta^- + \bar{\nu}$.
+  2. The emitted β particles have very low energy (maximum ≈ 18.6 keV, average ≈ 5.7 keV). The half-life is about 12.3 years.
+  3. Tritium occurs naturally only in traces (about 1 in 10¹⁸ H atoms), formed by cosmic-ray neutrons acting on nitrogen in the upper atmosphere. It is made artificially by bombarding ⁶Li with neutrons: $^6_3Li + ^1_0n \to\ ^3_1H + ^4_2He$.
+  Why others are wrong:
+  - (A) H⁺ is simply a bare proton; it is not a radioactive species.
+  - (B) Deuterium (one proton, one neutron) is stable. It makes up about 0.0156% of natural hydrogen and is used as heavy water in nuclear reactors.
+  - (C) Protium (no neutron) is the stable, most abundant isotope, about 99.98% of natural hydrogen.
   Answer: (D)
 C A 18: |-
-  Concept: Availability of the N lone pair: aliphatic > aromatic (in aryl amines the lone pair is delocalised into the ring).
+  Concept: Basicity of amines depends on how available the nitrogen lone pair is. In aryl amines (anilines), the lone pair is delocalised into the benzene ring, so they are much weaker bases than amines whose N is not attached to the ring.
   Solution:
-  1. Phenylmethanamine, C₆H₅CH₂NH₂, has its lone pair on a non-conjugated N: most basic.
-  2. Among the aryl amines, +I alkyl groups raise basicity: N,N-dimethylaniline > N-methylaniline > aniline (official order).
-  3. Order: A > B > C > D.
+  1. A = phenylmethanamine (benzylamine, C₆H₅CH₂NH₂). The CH₂ group insulates N from the ring, so the lone pair is not delocalised. pKb ≈ 4.7, the most basic of the four.
+  2. B = N,N-dimethylaniline, C = N-methylaniline, D = aniline (benzenamine). All three are aryl amines, with pKb around 9.
+  3. Among these, methyl groups donate electrons (+I) and increase the electron density on N. With the textbook reasoning of +I effects, the order is B > C > D (official answer).
+  4. (Experimental pKb values are close: N-methylaniline 9.2, N,N-dimethylaniline 8.9, aniline 9.4. In water, solvation and steric effects in the dimethyl compound make the real order debatable, but the official key uses the +I argument.)
+  5. Overall order: A > B > C > D.
+  Why others are wrong:
+  - (A) and (B) place aniline first, but it is the weakest base here because of resonance.
+  - (C) puts C above B, which does not follow the official +I sequence.
   Answer: (D)
 C A 19: |-
-  Concept: Clemmensen reduction, then catalytic aromatisation (Cr₂O₃, high T) of an alkane with a C₆ chain.
+  Concept: Two steps. First, Clemmensen reduction (Zn–Hg/HCl) converts C=O into CH₂. Second, alkanes with a chain of six or more carbons undergo aromatisation (cyclisation plus dehydrogenation) over Cr₂O₃, V₂O₅ or Mo₂O₃ at about 773 K and 10–20 atm.
   Solution:
-  1. 4-Ethylhexan-3-one, CH₃CH₂COCH(C₂H₅)CH₂CH₃, is reduced by Zn(Hg)/HCl to 3-ethylhexane.
-  2. The hexane chain C1–C6 cyclises and dehydrogenates to a benzene ring carrying the ethyl group.
-  3. Product: ethylbenzene, C₆H₅CH₂CH₃.
+  1. Substrate: 4-ethylhexan-3-one, CH₃CH₂–CO–CH(C₂H₅)–CH₂CH₃.
+  2. Clemmensen reduction: the C=O becomes CH₂, giving CH₃CH₂CH₂CH(C₂H₅)CH₂CH₃, i.e. 3-ethylhexane (C₈H₁₈).
+  3. The longest chain has six carbons (C1–C6), with an ethyl branch at C3.
+  4. Aromatisation: C1 and C6 of the hexane chain join to form a six-membered ring, and loss of 4H₂ gives benzene. The ethyl branch stays as a substituent.
+  5. Product: ethylbenzene, C₆H₅CH₂CH₃ (C₈H₁₀). This is analogous to n-hexane → benzene and n-heptane → toluene.
+  Why others are wrong:
+  - (A) keeps a ketone, but the Clemmensen step has removed it.
+  - (B) is propylbenzene, with the wrong carbon count and skeleton.
+  - (D) o-xylene would need two methyl groups on the ring, which this skeleton cannot provide.
   Answer: (C)
 C A 20: |-
-  Concept: Colour tests for biomolecules.
+  Concept: Colour tests used to identify classes of biomolecules.
   Solution:
-  1. Seliwanoff's reagent (resorcinol/HCl) gives a rapid cherry-red colour with ketoses.
-  2. The xanthoproteic test (conc. HNO₃, yellow) detects proteins with aromatic amino acids.
+  1. Seliwanoff's test: the reagent is resorcinol in concentrated HCl. Ketoses (e.g. fructose) are dehydrated quickly by hot acid to hydroxymethylfurfural, which condenses with resorcinol to give a cherry-red colour within about a minute. Aldoses react much more slowly and give only a faint pink. So the test distinguishes ketoses.
+  2. Xanthoproteic test: the sample is heated with concentrated HNO₃. The aromatic rings of tyrosine, tryptophan and phenylalanine residues are nitrated, giving a yellow colour that turns orange on adding alkali. So it identifies proteins (those with aromatic amino acids). The yellow stain on skin from nitric acid is the same reaction.
+  3. Order: ketoses, proteins.
+  Why others are wrong:
+  - (B) reverses the order.
+  - (C) and (D) name only sugars. The xanthoproteic test does not detect carbohydrates, and Seliwanoff's test is positive for ketoses, not aldoses.
+  - Related tests: Molisch (all carbohydrates), Fehling/Tollens (reducing sugars) and biuret (peptide bonds).
   Answer: (A)
 C B 1: |-
-  Concept: Mass of salt from the mass of the ion it supplies.
+  Concept: To make a solution with a given concentration of an ion, work out the mass of the ion needed, then scale up by the ratio of the salt's molar mass to the ion's contribution.
   Solution:
-  1. Na⁺ needed $= 70.0\times50 = 3500$ mg $= 3.5$ g.
-  2. NaNO₃ (M = 85) contains 23 g Na per 85 g: mass $= 3.5\times\frac{85}{23} = 12.93$ g ≈ 13 g.
+  1. Required Na⁺ per mL: 70.0 mg. For 50 mL: $70.0\times50 = 3500$ mg $= 3.50$ g of Na⁺.
+  2. Molar mass of NaNO₃ $= 23 + 14 + 3(16) = 85$ g mol⁻¹. Each mole contains one mole of Na (23 g).
+  3. Moles of Na⁺ $= \frac{3.50}{23} = 0.1522$ mol, so moles of NaNO₃ are also 0.1522 mol.
+  4. Mass of NaNO₃ $= 0.1522\times85 = 12.93$ g.
+  5. Equivalent shortcut: mass $= 3.50\times\frac{85}{23} = 12.93$ g.
+  6. Rounded to the nearest integer: 13 g.
+  Check: 12.93 g in 50 mL is 258.6 g L⁻¹, which is well within the solubility of NaNO₃ (about 900 g L⁻¹ at room temperature), so the solution can be made. A common slip is to forget to convert mg to g, or to use 50 L instead of 50 mL; keep the units consistent throughout.
   Answer: 13
 C B 2: |-
-  Concept: Octahedral $[M(AA)_2BC]$ complexes show geometrical and optical isomerism.
+  Concept: Octahedral complexes of the type $[M(AA)_2BC]$, where AA is a symmetrical bidentate ligand such as oxalate, show both geometrical (cis/trans) and optical isomerism.
   Solution:
-  1. Trans (Br and NH₃ opposite): has a mirror plane, 1 isomer.
-  2. Cis (Br and NH₃ adjacent): chiral, 2 enantiomers.
-  3. Total $= 3$.
+  1. In $[Co(ox)_2(Br)(NH_3)]^{2-}$, the two oxalates occupy four positions and Br and NH₃ occupy the remaining two.
+  2. Trans isomer: Br and NH₃ are opposite each other, and the two oxalates lie in the equatorial plane. This plane is a mirror plane of the complex, so the trans form is achiral: 1 isomer.
+  3. Cis isomer: Br and NH₃ are adjacent (90° apart). The two chelate rings are arranged like a propeller, with no mirror plane or centre of symmetry, so the complex is chiral and exists as a pair of enantiomers (Δ and Λ): 2 isomers.
+  4. Total stereoisomers $= 1 + 2 = 3$.
+  Check against the known case: $[Co(en)_2Cl_2]^+$, which has the same pattern, gives trans (1) + cis-d and cis-l (2) = 3 stereoisomers. Replacing one Cl with a different monodentate ligand does not change the count. Structural isomers (e.g. linkage) are not included in "stereoisomers".
   Answer: 3
 C B 3: |-
-  Concept: Average bond energy from the atomisation enthalpy (Hess's law).
+  Concept: The average bond energy in a molecule equals its enthalpy of atomisation divided by the number of equivalent bonds. The atomisation enthalpy is obtained from standard enthalpies of formation by Hess's law.
   Solution:
-  1. $SF_6(g) \to S(g) + 6F(g)$: $\Delta H = 275 + 6(80) - (-1100) = 1855$ kJ.
-  2. Average S–F bond energy $= \frac{1855}{6} = 309.2 \approx 309$ kJ mol⁻¹.
+  1. Atomisation of gaseous SF₆: $SF_6(g) \to S(g) + 6F(g)$. This breaks all six S–F bonds.
+  2. $\Delta_{at}H = \Delta_fH[S(g)] + 6\Delta_fH[F(g)] - \Delta_fH[SF_6(g)]$.
+  3. Substitute: $\Delta_{at}H = 275 + 6(80) - (-1100) = 275 + 480 + 1100 = 1855$ kJ mol⁻¹.
+  4. Six equivalent S–F bonds, so the average S–F bond energy $= \frac{1855}{6} = 309.17$ kJ mol⁻¹.
+  5. Rounded: 309 kJ mol⁻¹.
+  The given values for S(g) and F(g) are the enthalpies of formation of the gaseous atoms from their standard elemental forms (rhombic S and F₂ gas). They already include the sublimation of sulphur and half the F–F bond energy. A common error is to forget the minus sign of ΔfH(SF₆), which would give $\frac{755}{6} = 126$, a much lower (wrong) value.
   Answer: 309
 C B 4: |-
-  Concept: Nernst equation.
+  Concept: Nernst equation for a galvanic cell: $E = E^\circ - \frac{0.059}{n}\log Q$ at 298 K.
   Solution:
-  1. $Zn + 2Ag^+ \to Zn^{2+} + 2Ag$, $E^0 = 0.80 - (-0.76) = 1.56$ V, $n = 2$.
-  2. $Q = \frac{0.1}{(0.01)^2} = 10^3$.
-  3. $E = 1.56 - \frac{0.059}{2}\times3 = 1.4715$ V $\approx 147\times10^{-2}$ V.
+  1. Anode (oxidation): $Zn \to Zn^{2+} + 2e^-$. Cathode (reduction): $2Ag^+ + 2e^- \to 2Ag$.
+  2. Overall: $Zn + 2Ag^+ \to Zn^{2+} + 2Ag$, with $n = 2$.
+  3. $E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} = 0.80 - (-0.76) = 1.56$ V.
+  4. Reaction quotient: $Q = \frac{[Zn^{2+}]}{[Ag^+]^2} = \frac{0.1}{(0.01)^2} = \frac{0.1}{10^{-4}} = 10^3$.
+  5. $E = 1.56 - \frac{0.059}{2}\log10^3 = 1.56 - 0.0295\times3 = 1.56 - 0.0885 = 1.4715$ V.
+  6. Writing $E = x\times10^{-2}$ V gives $x = 147.15 \approx 147$.
+  Note: the concentration of Ag⁺ is squared because two Ag⁺ ions appear in the balanced equation. The squaring is essential; with [Ag⁺] to the first power, Q would be 10 and E would be 1.53 V. The low [Ag⁺] at the cathode and the relatively high [Zn²⁺] both lower the EMF below E°.
   Answer: 147
 C B 5: |-
-  Concept: Heisenberg uncertainty principle, $\Delta x\cdot m\Delta v \ge \frac{h}{4\pi}$.
+  Concept: Heisenberg's uncertainty principle: $\Delta x\cdot\Delta p \ge \frac{h}{4\pi}$, with $\Delta p = m\Delta v$ for a body of fixed mass.
   Solution:
-  1. $\Delta v = 5\%$ of $90 = 4.5$ m/s; $m = 0.01$ kg.
-  2. $\Delta x = \frac{6.63\times10^{-34}}{4\pi\times0.01\times4.5} = 1.17\times10^{-33}$ m ≈ $1\times10^{-33}$ m.
+  1. Mass $m = 10$ g $= 0.010$ kg (SI units are needed because h is in J s).
+  2. Velocity $v = 90$ m s⁻¹, and the uncertainty is 5%: $\Delta v = 0.05\times90 = 4.5$ m s⁻¹.
+  3. $\Delta p = m\Delta v = 0.010\times4.5 = 0.045$ kg m s⁻¹.
+  4. $\Delta x = \frac{h}{4\pi\Delta p} = \frac{6.63\times10^{-34}}{4\times3.1416\times0.045} = \frac{6.63\times10^{-34}}{0.5655}$.
+  5. $\Delta x = 1.17\times10^{-33}$ m.
+  6. Rounded to the nearest integer in units of 10⁻³³ m: 1.
+  Interpretation: an uncertainty of about 10⁻³³ m is far smaller than even a nucleus (about 10⁻¹⁵ m). So for macroscopic objects such as a ball, the uncertainty principle is irrelevant in practice, and classical mechanics works. For an electron (m ≈ 9.1×10⁻³¹ kg), the same Δv would give an uncertainty of metres, which is why quantum treatment is essential at the atomic scale.
   Answer: 1
 C B 6: |-
-  Concept: Permanganate in neutral or faintly alkaline medium oxidises thiosulphate completely to sulphate.
+  Concept: The product of permanganate oxidation depends on the medium. In acid, MnO₄⁻ → Mn²⁺ (5 e⁻). In neutral or faintly alkaline solution, MnO₄⁻ → MnO₂ (3 e⁻). The product of thiosulphate also depends on the oxidant.
   Solution:
-  1. $8MnO_4^- + 3S_2O_3^{2-} + H_2O \to 8MnO_2 + 6SO_4^{2-} + 2OH^-$.
-  2. A = SO₄²⁻, in which S is +6.
+  1. In neutral or faintly alkaline medium, permanganate oxidises thiosulphate quantitatively to sulphate. This is a standard NCERT reaction.
+  2. Balanced ionic equation: $8MnO_4^- + 3S_2O_3^{2-} + H_2O \to 8MnO_2 + 6SO_4^{2-} + 2OH^-$.
+  3. Electron check: each S goes from +2 (average in S₂O₃²⁻) to +6, so each S₂O₃²⁻ loses 8e⁻ and three give 24e⁻. Each MnO₄⁻ gains 3e⁻ (+7 → +4), and eight take 24e⁻. Balanced.
+  4. A = SO₄²⁻. Oxidation state of S: x + 4(−2) = −2, so x = +6.
+  Contrast: iodine, a mild oxidant, converts thiosulphate only to tetrathionate, $2S_2O_3^{2-} + I_2 \to S_4O_6^{2-} + 2I^-$, in which the average oxidation state of S is +2.5. This is the reaction used in iodometric titrations. Chlorine, like permanganate, goes all the way to sulphate.
   Answer: 6
 C B 7: |-
-  Concept: $\Delta T_f = iK_fm$; for association into n-mers, $i = \frac{1}{n}$ (100% association).
+  Concept: Colligative properties depend on the number of particles. For association of n molecules into one aggregate ($nA \rightleftharpoons A_n$), the van't Hoff factor is $i = 1 - \alpha + \frac{\alpha}{n}$, which becomes $\frac{1}{n}$ for 100% association.
   Solution:
-  1. $m = \frac{12.2/122}{0.100} = 1$ mol kg⁻¹.
-  2. $0.93 = i\times1.86\times1 \Rightarrow i = 0.5$.
-  3. $n = 2$ (dimers).
+  1. Molar mass of benzoic acid, C₆H₅COOH, is 122 g mol⁻¹. Moles $= \frac{12.2}{122} = 0.100$ mol.
+  2. Molality $m = \frac{0.100}{0.100\ \text{kg}} = 1.00$ mol kg⁻¹.
+  3. Observed depression: $\Delta T_f = 0 - (-0.93) = 0.93$ K.
+  4. $\Delta T_f = iK_fm$ gives $0.93 = i\times1.86\times1.00$, so $i = 0.50$.
+  5. With 100% association, $i = \frac{1}{n}$, so $n = \frac{1}{0.50} = 2$.
+  So benzoic acid behaves as a dimer: two molecules are held together by a pair of hydrogen bonds between their –COOH groups (a cyclic dimer). This dimerisation is usually quoted in non-polar solvents such as benzene. In water, hydrogen bonding with the solvent competes, but the question explicitly assumes 100% association, so the data give n = 2.
   Answer: 2
 C B 8: |-
-  Concept: Fraction of molecules with $E \ge E_a$ is $e^{-E_a/RT}$.
+  Concept: From the Maxwell–Boltzmann distribution, the fraction of molecules with energy at least equal to the activation energy is $f = e^{-E_a/RT}$. This is the exponential factor in the Arrhenius equation, $k = Ae^{-E_a/RT}$.
   Solution:
-  1. $x = \frac{E_a}{RT} = \frac{80900}{8.31\times700} = 13.9 \approx 14$.
+  1. $E_a = 80.9$ kJ mol⁻¹ $= 80900$ J mol⁻¹. Convert to joules to match R.
+  2. $RT = 8.31\times700 = 5817$ J mol⁻¹.
+  3. $x = \frac{E_a}{RT} = \frac{80900}{5817} = 13.91$.
+  4. So the fraction is $e^{-13.9}$, and x rounds to 14.
+  Magnitude check: $e^{-14} \approx 8.3\times10^{-7}$. Less than one molecule in a million has enough energy to react at 700 K. This is why rate constants are so sensitive to temperature; a modest rise in T sharply increases this small fraction.
+  Common errors: leaving Ea in kJ gives x ≈ 0.014. Using log₁₀ instead of the natural exponent gives x ≈ 6. The question asks for the exponent of e, so no factor of 2.303 is needed.
   Answer: 14
 C B 9: |-
-  Concept: Salt of a weak acid and a weak base: $pH = 7 + \frac{1}{2}(pK_a - pK_b)$.
+  Concept: A salt of a weak acid and a weak base hydrolyses at both ions. Its pH is independent of concentration: $pH = 7 + \frac{1}{2}(pK_a - pK_b)$ at 25 °C.
   Solution:
-  1. $pH = 7 + \frac{1}{2}(5.23 - 4.75) = 7 + 0.24 = 7.24 \approx 7$.
+  1. Ammonium phosphate, (NH₄)₃PO₄, is formed from the weak acid H₃PO₄ and the weak base NH₄OH.
+  2. Given $pK_a = 5.23$ and $pK_b = 4.75$.
+  3. $pH = 7 + \frac{1}{2}(5.23 - 4.75) = 7 + \frac{1}{2}(0.48) = 7 + 0.24 = 7.24$.
+  4. Rounded to the nearest integer: 7.
+  Derivation sketch: for BA, $B^+ + A^- + H_2O \rightleftharpoons BOH + HA$, $K_h = \frac{K_w}{K_aK_b}$. Solving gives $[H^+] = \sqrt{\frac{K_wK_a}{K_b}}$, which in log form is the formula above.
+  Interpretation: pKa > pKb means the acid is weaker than the base, so the anion hydrolyses more and the solution is slightly basic (pH above 7). With equal pKa and pKb (e.g. ammonium acetate, both ≈ 4.75), the pH would be exactly 7.
+  (The single pKa given is treated as a lumped value; the real stepwise pKa values of H₃PO₄ are 2.1, 7.2 and 12.4.)
   Answer: 7
 C B 10: |-
-  Concept: In a close-packed lattice of N sites there are N octahedral and 2N tetrahedral voids.
+  Concept: In a close-packed arrangement (ccp or hcp) of N spheres, there are N octahedral voids and 2N tetrahedral voids.
   Solution:
-  1. Octahedral voids per lattice site $= 1$.
+  1. Octahedral voids per lattice site $= \frac{N}{N} = 1$.
+  2. Check with the fcc (ccp) unit cell: it contains 4 lattice points (8 corners × 1/8 + 6 faces × 1/2).
+  3. Octahedral voids in the fcc cell: 1 at the body centre + 12 at the edge centres × 1/4 = 1 + 3 = 4.
+  4. So 4 octahedral voids per 4 lattice points: 1 per site.
+  5. Tetrahedral voids: 8 per cell (one in each eighth of the cube), so 2 per site.
+  6. Answer: 1 octahedral void per lattice site.
+  Application: in NaCl, Cl⁻ forms the ccp lattice and Na⁺ occupies all the octahedral voids, giving a 1:1 formula. In ZnS (zinc blende), S²⁻ is ccp and Zn²⁺ fills half of the tetrahedral voids, again 1:1. If a cation filled 2/3 of the octahedral voids (as in Al₂O₃), the formula would be M₂X₃. An octahedral void is surrounded by 6 spheres and fits a sphere of radius ratio 0.414; a tetrahedral void is surrounded by 4 and fits 0.225.
   Answer: 1
