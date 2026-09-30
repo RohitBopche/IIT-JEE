@@ -167,6 +167,8 @@ P A 14: |-
   - (B) has the fraction inverted ($\frac{9}{8}$).
   - (C) has m and P swapped — dimensionally wrong.
   - (D) has $t^{2/3}$ instead of $t^{3/2}$.
+  Result: (2/3)√(2P/m) = √(4 × 2P/(9m)) = √(8P/(9m)), so x = (8P/9m)^{1/2} t^{3/2}.
+  Common mistake: Assuming constant acceleration (x ∝ t²); with constant power the force falls as speed rises, so x grows as t^{3/2}.
   Key takeaway: under constant power, $v \propto t^{1/2}$ and $x \propto t^{3/2}$ (compare constant force: $v \propto t$, $x \propto t^2$).
   Answer: (A)
 P A 15: |-
@@ -260,6 +262,8 @@ P B 3: |-
   1. Difference between air and vacuum: $\frac{\mu t}{\lambda} - \frac{t}{\lambda} = \frac{(\mu - 1)t}{\lambda} = 1$.
   2. $t = \frac{\lambda}{\mu - 1} = \frac{6000\times10^{-10}}{0.0003} = \frac{6\times10^{-7}}{3\times10^{-4}} = 2\times10^{-3}$ m.
   3. t = 2 mm.
+  Result: t = λ/(μ − 1) = 6 × 10⁻⁷/0.0003 = 2 × 10⁻³ m = 2 mm.
+  Common mistake: Dividing by μ (1.0003) instead of μ − 1; the tiny difference in refractive index is what creates the one-wave difference.
   Key takeaway: $(\mu - 1)t$ is the extra optical path; one extra wavelength means $(\mu - 1)t = \lambda$.
   Answer: 2
 P B 4: |-
@@ -268,6 +272,8 @@ P B 4: |-
   1. $\phi_B = 10t^2 + 20t$ mWb, so $\frac{d\phi_B}{dt} = 20t + 20$ mV.
   2. At t = 5 s: ε = 100 + 20 = 120 mV.
   3. $I = \frac{120\text{ mV}}{2\ \Omega} = 60$ mA.
+  Why the current is not constant: The flux grows quadratically, so its rate of change (the emf) grows linearly with time; the question asks for the value at t = 5 s.
+  Common mistake: Using the flux value at t = 5 s (350 mWb) instead of its rate of change.
   Key takeaway: since the flux increases, Lenz's law makes the induced current oppose the increase, but only the magnitude is asked here.
   Answer: 60
 P B 5: |-
@@ -283,6 +289,8 @@ P B 6: |-
   Solution:
   1. $E_{K\alpha} = \frac{hc}{\lambda} = \frac{4.14\times10^{-15}\times3\times10^8}{0.071\times10^{-9}} = \frac{1.242\times10^{-6}}{7.1\times10^{-11}} \approx 1.75\times10^4$ eV = 17.5 keV.
   2. Energy with an L vacancy = 27.5 − 17.5 = 10 keV.
+  Result: hc/λ = (4.14 × 10⁻¹⁵ × 3 × 10⁸)/(0.071 × 10⁻⁹) ≈ 17.5 keV. So E(L vacancy) = 27.5 − 17.5 = 10 keV.
+  Common mistake: Adding the Kα energy to 27.5 keV; an L vacancy is a lower-energy state than a K vacancy.
   Key takeaway: X-ray lines measure differences between inner-shell vacancy energies, just as optical lines measure differences between outer levels.
   Answer: 10
 P B 7: |-
@@ -291,6 +299,8 @@ P B 7: |-
   1. $\mu = \frac{12 - 3}{12 + 3} = \frac{9}{15} = 0.6$.
   2. 0.6x = 0.6 → x = 1.
   3. (Carrier amplitude $A_c = \frac{12 + 3}{2} = 7.5$ V; message amplitude $\frac{12 - 3}{2} = 4.5$ V.)
+  Carrier amplitude: A_c = (12 + 3)/2 = 7.5 V and the message amplitude A_m = (12 − 3)/2 = 4.5 V, so μ = 4.5/7.5 = 0.6 ✓.
+  Common mistake: Taking μ = A_min/A_max = 0.25.
   Key takeaway: μ can be read directly from an oscilloscope trace using the maximum and minimum envelope amplitudes.
   Answer: 1
 P B 8: |-
@@ -308,6 +318,8 @@ P B 9: |-
   1. $r_P = 3r_Q \Rightarrow \omega_Q = 3\omega_P$.
   2. Equal KE: $\frac{1}{2}I_1\omega_P^2 = \frac{1}{2}I_2\omega_Q^2 = \frac{1}{2}I_2(9\omega_P^2)$.
   3. $\frac{I_1}{I_2} = 9$, so x = 9.
+  Result: I₁/I₂ = ω_Q²/ω_P² = 9, so x = 9.
+  Why the larger wheel turns slower: The belt moves both rims at the same linear speed, so a wheel three times larger needs one-third the angular speed.
   Key takeaway: the larger, slower wheel must have 9 times the moment of inertia to store the same energy, because KE depends on ω².
   Answer: 9
 P B 10: |-
@@ -316,5 +328,7 @@ P B 10: |-
   1. $x_0 = 2$ cm, $\frac{v_0}{\omega} = \frac{2\omega}{\omega} = 2$ cm.
   2. $A^2 = 4 + 4 = 8 \Rightarrow A = 2\sqrt2$ cm.
   3. So x = 2. (Also tan φ = 1, φ = 45°.)
+  Why square and add: sin²φ + cos²φ = 1 eliminates the unknown phase φ, leaving A in terms of the initial position and velocity.
+  Common mistake: Taking A = x₀ = 2 cm, ignoring the initial velocity.
   Key takeaway: this formula follows from energy conservation: $\frac{1}{2}kA^2 = \frac{1}{2}kx_0^2 + \frac{1}{2}mv_0^2$.
   Answer: 2

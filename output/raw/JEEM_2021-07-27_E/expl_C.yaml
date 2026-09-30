@@ -45,6 +45,8 @@ C A 4: |-
   - (A) Amylose (a component of starch) gives only D-glucose.
   - (B) Sucrose gives D-glucose + D-fructose (invert sugar).
   - (C) Maltose gives two units of D-glucose.
+  Linkage: In lactose, C1 of β-D-galactose is linked to C4 of D-glucose. Lactose is a reducing sugar because the glucose unit keeps a free anomeric carbon.
+  Common mistake: Picking sucrose, which gives glucose and fructose, not galactose.
   Key takeaway: remember the monomer pairs: sucrose (Glc + Fru), maltose (Glc + Glc), lactose (Gal + Glc). Lactose is a reducing sugar, while sucrose is non-reducing.
   Answer: (D)
 C A 5: |-
@@ -247,6 +249,8 @@ C B 1: |-
   3. The other 50 dissociate: HA → H⁺ + A⁻ gives 100 particles.
   4. Total particles = 25 + 100 = 125.
   5. $i = \frac{125}{100} = 1.25 = 125\times10^{-2}$.
+  Result: Total particles = 25 + 100 = 125 from 100 molecules, so i = 1.25 = 125 × 10⁻².
+  Common mistake: Treating dimerisation as halving the particle count of all molecules, or counting each ionised molecule as 1 particle instead of 2.
   Key takeaway: association lowers i below 1, dissociation raises it above 1; when both occur, simply count the final particles.
   Answer: 125
 C B 2: |-
@@ -256,6 +260,8 @@ C B 2: |-
   2. $k = \frac{1}{100}\ln\frac{1}{0.9} = \frac{\ln(10/9)}{100} = \frac{0.1054}{100} = 1.054\times10^{-3}$ min⁻¹.
   3. $t_{1/2} = \frac{0.69}{1.054\times10^{-3}} \approx 654$ min.
   Common trap: taking 0.2 mol of A as reacted (ignoring the 1 : 2 stoichiometry) would give a half-life of about 310 min.
+  Result: ln(10/9) = ln 10 − 2 ln 3 ≈ 2.303 − 2.197 ≈ 0.105, so k ≈ 1.05 × 10⁻³ min⁻¹ and t½ = 0.69/k ≈ 654 min.
+  Common mistake: Taking 0.2 mol of A as reacted (ignoring the 1 : 2 stoichiometry), which gives k = ln(1.25)/100 and t½ ≈ 309 min.
   Key takeaway: always convert product amounts into reactant consumed using the balanced equation.
   Answer: 654
 C B 3: |-
@@ -273,6 +279,8 @@ C B 4: |-
   Solution:
   1. A(s) ⇌ M(s) + ½O₂(g): $K_p = (p_{O_2})^{1/2}$.
   2. $(p_{O_2})^{1/2} = 4 \Rightarrow p_{O_2} = 16$ atm.
+  Why the square root: The equilibrium expression uses each stoichiometric coefficient as a power, and O₂ appears with coefficient ½, so K_p = p^{1/2}.
+  Common mistake: Writing K_p = p_O₂ (ignoring the ½), which gives 4 atm.
   Key takeaway: for decomposition of solids giving one gas (e.g. CaCO₃ ⇌ CaO + CO₂), the equilibrium pressure of the gas is fixed at a given temperature, regardless of the amounts of the solids.
   Answer: 16
 C B 5: |-
@@ -306,6 +314,8 @@ C B 8: |-
   2. So the complex is [Co(en)₂Cl₂]Cl.
   3. Coordination sphere: 2 en (bidentate, 2 × 2 = 4 donor sites) + 2 Cl⁻ = 6.
   4. Secondary valency of Co = 6.
+  Result: Each ethylenediamine is bidentate (2 sites × 2 = 4) and there are 2 coordinated Cl⁻, so the coordination number (secondary valency) is 6.
+  Common mistake: Counting each en as one donor, which gives 4.
   Key takeaway: count donor atoms, not ligands — each en occupies two sites.
   Answer: 6
 C B 9: |-
@@ -324,5 +334,7 @@ C B 10: |-
   1. $5\times0.05\times10 = 2\times M\times10 \Rightarrow M = 0.125$ M.
   2. Oxalic acid dihydrate, H₂C₂O₄·2H₂O: molar mass 90 + 36 = 126 g/mol.
   3. Strength = 0.125 × 126 = 15.75 g/L = $1575\times10^{-2}$ g/L.
+  Result: 0.125 M × 126 g/mol = 15.75 g/L = 1575 × 10⁻² g/L.
+  Common mistake: Using the anhydrous molar mass (90 g/mol), which gives 11.25 g/L.
   Key takeaway: the balanced reaction is 2MnO₄⁻ + 5C₂O₄²⁻ + 16H⁺ → 2Mn²⁺ + 10CO₂ + 8H₂O; KMnO₄ acts as its own indicator (pink end point).
   Answer: 1575
