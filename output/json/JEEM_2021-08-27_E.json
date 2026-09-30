@@ -49,6 +49,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Lens-maker's formula for lenses in contact: $\\frac{1}{f} = \\frac{1}{f_1} + \\frac{1}{f_2}$.\nSolution:\n1. Plano-convex: $\\frac{1}{f_1} = \\frac{\\mu_1 - 1}{R}$. Plano-concave: $\\frac{1}{f_2} = -\\frac{\\mu_2 - 1}{R}$.\n2. $\\frac{1}{f} = \\frac{\\mu_1 - \\mu_2}{R}$, so $\\frac{R}{f} = \\mu_1 - \\mu_2$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A01",
@@ -56,6 +57,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A01_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -94,6 +96,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Pulley constraint: the 8 kg block hangs from a movable pulley, so the 2 kg block's acceleration is twice the 8 kg block's.\nSolution:\n1. 8g − 2T = 8a and T − 2g = 2(2a).\n2. Eliminating T: 8g − 4g = 16a, so a = g/4 = 2.5 m/s².\n3. $0.2 = \\frac{1}{2}(2.5)t^2$, so t = 0.4 s.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A02",
@@ -101,6 +104,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A02_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -129,11 +133,13 @@
     2
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $I_E = I_B + I_C$.\nSolution:\n1. $\\beta = \\frac{I_C}{I_E - I_C} = \\frac{I_C/I_E}{1 - I_C/I_E} = \\frac{\\alpha}{1 - \\alpha}$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -162,11 +168,13 @@
     2
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Drops leave at equal intervals τ, and each falls freely.\nSolution:\n1. When the third drop starts, the first has fallen for 2τ, covering 9.8 m.\n2. The second has fallen for τ, which is ¼ of that distance: 2.45 m.\n3. Its height above the floor is 9.8 − 2.45 = 7.35 m.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -195,11 +203,13 @@
     2
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Angular momentum is conserved; kinetic energy is lost (a perfectly inelastic rotational collision).\nSolution:\n1. $\\omega = \\frac{I_1\\omega_1 + I_2\\omega_2}{I_1 + I_2}$.\n2. $\\Delta K = \\frac{1}{2}(I_1\\omega_1^2 + I_2\\omega_2^2) - \\frac{1}{2}(I_1 + I_2)\\omega^2 = \\frac{I_1I_2}{2(I_1 + I_2)}(\\omega_1 - \\omega_2)^2$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -238,6 +248,7 @@
      ]
     }
    ],
+   "explanation": "Concept: From the figure, C₂ and C₃ are in series between A and B, and C₁ is directly across the battery V.\nSolution:\n1. q₁ = 2V (μC).\n2. C₂ and C₃ in series: $\\frac{6\\times12}{18} = 4$ μF, so q₂ = q₃ = 4V.\n3. Ratio = 2 : 4 : 4 = 1 : 2 : 2.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A06",
@@ -245,6 +256,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A06_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -283,6 +295,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Colour code: violet = 7, green = 5, red = ×10², gold = ±5%.\nSolution:\n1. R = 75 × 10² = 7500 Ω.\n2. Tolerance = 5% of 7500 = 375 Ω.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A07",
@@ -290,6 +303,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A07_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -311,20 +325,24 @@
    "chapter": "Communication Systems",
    "topic": "Antenna size and wavelength",
    "difficulty": "Medium",
-   "notes": "",
+   "notes": "Ill-posed: the 44 km range is not needed; the official answer takes the only option with wavelength greater than the 400 m antenna height",
    "page_index": 2,
    "page_indices": [
     2,
     3
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For effective radiation, the antenna size should be comparable to the wavelength.\nSolution:\n1. The official solution requires the wavelength to exceed the antenna height (λ > 400 m).\n2. Of the options, only 605 m satisfies this.\nNote: The question is ill-posed. The 44 km range plays no role (a 400 m tower gives LoS ≈ √(2Rh) ≈ 71.6 km anyway), and the criterion λ > h is not standard. The official key is kept.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A08",
    "diagram_files": [],
    "text_recall": 1.0,
-   "issues": [],
-   "confidence": 1.0
+   "explanation_check": "ok",
+   "issues": [
+    "model note: Ill-posed: the 44 km range is not needed; the official answer takes the only option with wavelength greater than the 400"
+   ],
+   "confidence": 0.9
   },
   {
    "subject": "Physics",
@@ -351,11 +369,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $v_{rms} = \\sqrt{\\frac{3RT}{M}}$, so $v \\propto \\frac{1}{\\sqrt M}$ at the same T.\nSolution:\n1. $\\frac{v_{H_2}}{v_{O_2}} = \\sqrt{\\frac{32}{2}} = 4$, so v = 4 × 160 = 640 m/s.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -394,6 +414,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Motional emf of a ring partly inside a field: ε = B × (chord length at the boundary) × v.\nSolution:\n1. At t = 1 s the centre is at x = 0, so half the ring is in the field.\n2. The effective length is the diameter, 2R = 2 m, so ε = 1 × 2 × 1 = 2 V.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A10",
@@ -401,6 +422,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A10_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -429,11 +451,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Inside a shell, its potential is constant ($-\\frac{GM}{R}$); add the point mass's potential.\nSolution:\n1. $V = -\\frac{G\\times50}{25} - \\frac{G\\times100}{50} = -2G - 2G = -4G$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -462,11 +486,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Current sensitivity = divisions per unit current.\nSolution:\n1. $I_{fs} = \\frac{50}{2} = 25$ mA.\n2. $R = \\frac{50\\ \\text{mV}}{25\\ \\text{mA}} = 2$ Ω.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -495,11 +521,13 @@
     4
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $eV_0 = \\frac{hc}{\\lambda} - \\phi$, so $\\Delta V_0 = 1240\\left(\\frac{1}{\\lambda_2} - \\frac{1}{\\lambda_1}\\right)$ (with λ in nm).\nSolution:\n1. $\\Delta V_0 = 1240\\left(\\frac{1}{474.6} - \\frac{1}{670.5}\\right) = 2.613 - 1.849 = 0.76$ V.\n2. V₀ = 0.48 + 0.76 = 1.24 ≈ 1.25 V.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -528,11 +556,13 @@
     5
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: SI units.\nSolution:\n1. R_H is in m⁻¹, which is (iii). h is in J s = kg m² s⁻¹, which is (ii).\n2. Energy density is in J/m³ = kg m⁻¹ s⁻², which is (iv). η is in Pa s = kg m⁻¹ s⁻¹, which is (i).\n3. Only option (B) gives a–iii, b–ii, c–iv, d–i.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -561,11 +591,13 @@
     5
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Express mass in terms of F, L and T: M = F T² L⁻¹.\nSolution:\n1. Density $= \\frac{M}{L^3} = FL^{-4}T^2$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -594,11 +626,13 @@
     5
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ampère's law for the coaxial cable.\nSolution:\n1. x < a: $B_1 = \\frac{\\mu_0i_0x}{2\\pi a^2}$ (only the enclosed fraction x²/a² of the current counts).\n2. a < x < b: $B_2 = \\frac{\\mu_0i_0}{2\\pi x}$.\n3. $\\frac{B_1}{B_2} = \\frac{x^2}{a^2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A16",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -627,11 +661,13 @@
     6
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: All the potential energy is converted to heat: gh = sΔT.\nSolution:\n1. $\\Delta T = \\frac{9.8\\times63}{4200} = 0.147$°C.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -660,11 +696,13 @@
     6
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $H = \\frac{u^2\\sin^2\\theta}{2g}$ and $t = \\frac{u\\sin\\theta}{g}$.\nSolution:\n1. $H = \\frac{625\\times\\frac{1}{2}}{20} = 15.625$ m.\n2. $t = \\frac{25\\times0.707}{10} = 1.77$ s.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A18",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -693,11 +731,13 @@
     6
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $I_{max} = (\\sqrt{I_1} + \\sqrt{I_2})^2$.\nSolution:\n1. Minima are zero because I₁ = I₂ = I₀, so $I_{max} = (2\\sqrt{I_0})^2 = 4I_0$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -736,6 +776,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Field at the centre of an arc of angle θ: $E = \\frac{2k\\lambda}{R}\\sin\\frac{\\theta}{2}$, along the axis of symmetry.\nSolution:\n1. $\\lambda = \\frac{Q}{R(2\\pi/3)} = \\frac{3Q}{2\\pi R}$ and θ = 120°.\n2. $E = \\frac{2}{4\\pi\\varepsilon_0}\\cdot\\frac{3Q}{2\\pi R^2}\\cdot\\frac{\\sqrt3}{2} = \\frac{3\\sqrt3Q}{8\\pi^2\\varepsilon_0R^2}$.\n3. The arc is symmetric about +x and the charge is negative, so the field points toward the arc: $+\\hat i$.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A20",
@@ -743,6 +784,7 @@
     "figures/JEEM_2021-08-27_E/PHY_A20_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -766,11 +808,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Real efficiency ≤ Carnot efficiency.\nSolution:\n1. $\\eta = \\frac{300 - 240}{300} = \\frac{1}{5}$.\n2. $1 - \\frac{400}{T_1} \\ge \\frac{1}{5}$, so $T_1 \\ge 500$ K.\nAnswer: 500",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -794,11 +838,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $a\\sin x + b\\cos x = \\sqrt{a^2 + b^2}\\sin(x + \\phi)$.\nSolution:\n1. $y_2 = 5\\cdot2\\sin\\left(3\\pi t + \\frac{\\pi}{3}\\right) = 10\\sin\\left(3\\pi t + \\frac{\\pi}{3}\\right)$.\n2. Both amplitudes are 10, so x = 1.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -822,11 +868,13 @@
     7
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The number of spectral lines from level n is $\\frac{n(n - 1)}{2}$.\nSolution:\n1. $\\frac{6\\times5}{2} = 15$.\nAnswer: 15",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -860,6 +908,7 @@
      ]
     }
    ],
+   "explanation": "Concept: The worst case is at the maximum input, when the Zener current is largest.\nSolution:\n1. $I_{max} = \\frac{P}{V_Z} = \\frac{2}{10} = 0.2$ A.\n2. At 14 V: $R_s = \\frac{14 - 10}{0.2} = 20$ Ω.\nAnswer: 20",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B04",
@@ -867,6 +916,7 @@
     "figures/JEEM_2021-08-27_E/PHY_B04_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -900,6 +950,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Check each wire's breaking tension, T = stress × area.\nSolution:\n1. W₁: T ≤ 1.25 × 10⁹ × 8 × 10⁻⁷ = 1000 N, and it supports (20 + 10 + m)g, so m ≤ 70 kg.\n2. W₂: T ≤ 500 N, and it supports (10 + m)g, so m ≤ 40 kg.\n3. The maximum is 40 kg.\nAnswer: 40",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B05",
@@ -907,6 +958,7 @@
     "figures/JEEM_2021-08-27_E/PHY_B05_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -940,6 +992,7 @@
      ]
     }
    ],
+   "explanation": "Concept: To complete a vertical circle on a string, the bob needs $v \\ge \\sqrt{5gL}$ at the bottom.\nSolution:\n1. $v_{bob} = \\sqrt{5\\times10\\times0.5} = 5$ m/s.\n2. Momentum, with the bullet recoiling at 100 m/s: 0.01v = 1 × 5 − 0.01 × 100 = 4, so v = 400 m/s.\nAnswer: 400",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B06",
@@ -947,6 +1000,7 @@
     "figures/JEEM_2021-08-27_E/PHY_B06_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -970,11 +1024,13 @@
     8
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Power factor $= \\frac{R}{Z}$.\nSolution:\n1. Old: $\\frac{R}{\\sqrt{R^2 + 9R^2}} = \\frac{1}{\\sqrt{10}}$. New: $\\frac{R}{\\sqrt{R^2 + R^2}} = \\frac{1}{\\sqrt2}$.\n2. The ratio is $\\sqrt5 : 1$, so x = 1.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1008,6 +1064,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Series and parallel reduction; the switch joins the middle nodes.\nSolution:\n1. Open: (R + 2R) ∥ (2R + R) = 1.5R.\n2. Closed: (R ∥ 2R) + (2R ∥ R) = $\\frac{2R}{3} + \\frac{2R}{3} = \\frac{4R}{3}$.\n3. The ratio is $1.5 : \\frac{4}{3} = 9 : 8$, so x = 9.\nAnswer: 9",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B08",
@@ -1015,6 +1072,7 @@
     "figures/JEEM_2021-08-27_E/PHY_B08_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1038,11 +1096,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $B = \\frac{E}{c}$.\nSolution:\n1. $B = \\frac{6}{3\\times10^8} = 2\\times10^{-8}$ T, so x = 2.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1066,11 +1126,13 @@
     9
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The shortest closed pipe resonates at its fundamental: $L = \\frac{\\lambda}{4}$.\nSolution:\n1. $L = \\frac{340}{4\\times250} = 0.34$ m = 34 cm.\nAnswer: 34",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1099,11 +1161,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Trends among alkali metal halides.\nSolution:\n1. LiF has a very high lattice enthalpy (small Li⁺ and F⁻) that its hydration enthalpy cannot overcome, so it is the least soluble. (C) is true.\n2. (A) is false: ΔfH of the bromides becomes more negative down the group.\n3. (B) is false: CsI is poorly soluble because the large ions have small hydration enthalpies.\n4. (D) is false: LiF has the most negative ΔfH among the fluorides.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1132,11 +1196,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Cr³⁺ with dilute alkali.\nSolution:\n1. Dilute NaOH precipitates hydrated chromium(III) oxide, Cr₂O₃·nH₂O (a green gelatinous precipitate, often written Cr(OH)₃).\n2. Only excess NaOH dissolves it to [Cr(OH)₄]⁻ (or [Cr(OH)₆]³⁻), which is soluble, not a precipitate.\n3. The official key prefers the formulation Cr₂O₃·nH₂O.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1165,11 +1231,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A Grignard reagent reacts with an acidic ≡C–H and twice with an ester.\nSolution:\n1. HC≡C–CH₂CH₂COOEt: the first CH₃MgBr deprotonates the terminal alkyne (giving CH₄).\n2. Two more equivalents convert the ester to the 3° alcohol –C(OH)(CH₃)₂. Statement I is true.\n3. In total 3 mol of CH₃MgBr are used, not 2, so Statement II is false.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1198,11 +1266,13 @@
     10
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ozone formation in the stratosphere.\nSolution:\n1. UV splits O₂ into 2O, and O + O₂ gives O₃.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1241,6 +1311,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Intermolecular versus intramolecular H-bonding, and steric hindrance.\nSolution:\n1. (a) o-Nitrophenol forms an intramolecular H-bond (chelation).\n2. (b) Paracetamol's para OH and NH groups can only H-bond with other molecules, so it is strongly intermolecular.\n3. (c) Two bulky t-butyl groups shield the OH, so there is no significant intermolecular H-bonding.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A05",
@@ -1248,6 +1319,7 @@
     "figures/JEEM_2021-08-27_E/CHE_A05_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1286,6 +1358,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Histamine stimulates gastric acid secretion.\nSolution:\n1. Histamine (imidazole–CH₂CH₂NH₂) stimulates HCl release in the stomach; antacids such as cimetidine and ranitidine block its receptors.\n2. Saccharin is a sweetener, serotonin a neurotransmitter, and phenelzine an antidepressant.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A06",
@@ -1293,6 +1366,7 @@
     "figures/JEEM_2021-08-27_E/CHE_A06_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1321,11 +1395,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Peroxides give H₂O₂ on hydrolysis.\nSolution:\n1. $\\mathrm{Na_2O_2 + 2H_2O \\to 2NaOH + H_2O_2}$ happens readily (in cold water).\n2. BaO₂ needs acid (H₂SO₄); PbO₂ and SnO₂ are dioxides, not peroxides.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1354,11 +1430,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Carbon count in each reaction.\nSolution:\n1. (A) The haloform reaction of butanone gives CH₃CH₂COOH.\n2. (B) Oxidation gives propanoic acid per the key.\n3. (C) Hydrolysis of –CCl₃ gives –COOH, so CH₃CH₂COOH.\n4. (D) The Grignard reagent from CH₃CH₂CH₂Br plus CO₂ adds a carbon, giving butanoic acid, not propionic acid.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1387,11 +1465,13 @@
     11
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Isoelectronic ions (18 e⁻): the radius falls as nuclear charge rises.\nSolution:\n1. Z runs P (15) < S (16) < Cl (17) < K (19) < Ca (20).\n2. So P³⁻ > S²⁻ > Cl⁻ > K⁺ > Ca²⁺.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1439,6 +1519,7 @@
      ]
     }
    ],
+   "explanation": "Concept: CH₃MgBr adds to both C=O and C≡N; then acid-catalysed dehydration.\nSolution:\n1. One CH₃MgBr turns the ketone into a 3° alkoxide.\n2. The other adds to –C≡N to form an imine salt, which H₃O⁺ hydrolyses to –COCH₃.\n3. H₂SO₄ with heat dehydrates the 3° alcohol to a ring C=C, giving an acetyl-substituted trimethyl-dihydronaphthalene.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "medium",
    "q_id": "JEEM_2021-08-27_E_CHE_A10",
@@ -1447,6 +1528,7 @@
     "figures/JEEM_2021-08-27_E/CHE_A10_2.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: options are structures; double-bond positions described approximately"
    ],
@@ -1477,11 +1559,13 @@
     12
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: A strong base with an acidic (benzylic) β-H favours E2.\nSolution:\n1. The β-H on CH(C₆H₅) is benzylic and acidic, and the product alkene is conjugated with the ring.\n2. CH₃O⁻ causes E2, giving CH₃CH₂C(C₆H₅)=CH₂.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1510,11 +1594,13 @@
     12
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: O₂F₂ is a powerful fluorinating agent.\nSolution:\n1. O₂F₂ oxidises Pu to volatile PuF₆ at low temperature, which removes plutonium from spent fuel.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1543,11 +1629,13 @@
     12
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Stability of lyophilic sols.\nSolution:\n1. The particles are extensively solvated, and this solvent layer (plus any charge) prevents coagulation.\n2. Charge alone ((A) and (B)) is the stabilising factor for lyophobic sols.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A13",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1586,6 +1674,7 @@
      ]
     }
    ],
+   "explanation": "Concept: SN2 occurs with the phenoxide attacking the primary allylic carbon directly, with no allylic shift.\nSolution:\n1. K₂CO₃ generates PhO⁻, which displaces Br⁻ at the CH₂ of (CH₃)₂C=CH–CH₂Br.\n2. The product is PhO–CH₂CH=C(CH₃)₂ (prenyl phenyl ether). Option (B) would need SN2′ attack.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A14",
@@ -1593,6 +1682,7 @@
     "figures/JEEM_2021-08-27_E/CHE_A14_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1621,11 +1711,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\mathrm{2KMnO_4 \\xrightarrow{513\\ K} K_2MnO_4 + MnO_2 + O_2}$.\nSolution:\n1. K₂MnO₄ (manganate, Mn⁶⁺, d¹) is green and has one unpaired electron, so it is paramagnetic.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1654,11 +1746,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Reagents used in carbohydrate and protein tests.\nSolution:\n1. Barfoed's test uses Cu(OAc)₂, Benedict's uses CuSO₄/citrate, and the biuret test uses CuSO₄/NaOH.\n2. Seliwanoff's test (for ketoses) uses resorcinol/HCl, with no copper.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A16",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1687,11 +1781,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Sucrose is α-D-glucopyranose (C1) linked to β-D-fructofuranose (C2).\nSolution:\n1. Hydrolysis gives α-D-(+)-glucose and β-D-(−)-fructose (invert sugar).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A17",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1720,11 +1816,13 @@
     13
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Ore formulae.\nSolution:\n1. Calamine is ZnCO₃, (iii). Malachite is CuCO₃·Cu(OH)₂, (iv).\n2. Siderite is FeCO₃, (ii). Sphalerite is ZnS, (i).\n3. Only option (A) gives a–iii, b–iv, c–ii, d–i.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A18",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1753,11 +1851,13 @@
     14
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Allotropes of phosphorus.\nSolution:\n1. Red P heated in a sealed tube at 803 K gives α-black phosphorus.\n2. β-Black P forms from white P heated at 473 K under high pressure.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A19",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1796,6 +1896,7 @@
      ]
     }
    ],
+   "explanation": "Concept: Selective reduction, then selective acylation (NH₂ is more nucleophilic than OH).\nSolution:\n1. H₂/Pd reduces NO₂ to NH₂: A = 4-aminophenol.\n2. With 1 eq of Ac₂O, N-acetylation gives B = 4-HO–C₆H₄–NHCOCH₃ (paracetamol).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A20",
@@ -1803,6 +1904,7 @@
     "figures/JEEM_2021-08-27_E/CHE_A20_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1826,11 +1928,13 @@
     14
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Arrhenius equation: $\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$.\nSolution:\n1. $\\log\\frac{k_{600}}{k_{700}} = \\frac{209000}{2.303\\times8.31}\\left(\\frac{1}{700} - \\frac{1}{600}\\right) = -2.60$.\n2. log k = −2.19 − 2.60 = −4.79, so k = 1.62 × 10⁻⁵ = 16 × 10⁻⁶ s⁻¹.\nAnswer: 16",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1854,11 +1958,13 @@
     15
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: [M(AA)₃] complexes are chiral (propeller shape).\nSolution:\n1. [Cr(ox)₃]³⁻ exists as the Δ and Λ enantiomers: 2 optical isomers.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1892,6 +1998,7 @@
      ]
     }
    ],
+   "explanation": "Concept: When the valve opens, the gas mixes adiabatically; with equal Cv, the final T is the mole-weighted average.\nSolution:\n1. n₁ = 2.8/28 = 0.1 mol at 300 K; n₂ = 0.2/28 = 0.00714 mol at 60 K.\n2. $T_f = \\frac{0.1\\times300 + 0.00714\\times60}{0.10714} = 284$ K.\n3. $P = \\frac{0.10714\\times8.31\\times284}{3\\times10^{-3}} = 8.43\\times10^4$ Pa = 0.84 bar, so x = 84.\nAnswer: 84",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B03",
@@ -1899,6 +2006,7 @@
     "figures/JEEM_2021-08-27_E/CHE_B03_1.png"
    ],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1922,11 +2030,13 @@
     15
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\mathrm{C_3H_8 + 5O_2 \\to 3CO_2 + 4H_2O}$; propane is the limiting reagent.\nSolution:\n1. Propane = 100/44.09 = 2.268 mol and O₂ = 31.25 mol.\n2. O₂ left = 31.25 − 11.34 = 19.91 mol; CO₂ = 6.804 mol; H₂O = 9.072 mol.\n3. x(CO₂) = 6.804/35.79 = 0.19, so x = 19.\nAnswer: 19",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1950,11 +2060,13 @@
     15
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\Delta T_f = K_f m$.\nSolution:\n1. m = (40/180)/0.2 = 1.111 mol/kg, so ΔT_f = 2.07 K.\n2. T_f = 273.15 − 2.07 = 271.08 ≈ 271 K.\nAnswer: 271",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -1978,11 +2090,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\kappa = \\frac{G^*}{R}$ and $\\Lambda_m = \\frac{1000\\kappa}{C}$.\nSolution:\n1. κ = 1.14/1500 = 7.6 × 10⁻⁴ S cm⁻¹.\n2. Λ_m = 7.6 × 10⁻⁴ × 1000/0.001 = 760 S cm² mol⁻¹.\nAnswer: 760",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2006,11 +2120,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: N = energy emitted / energy per photon.\nSolution:\n1. E = hc/λ = 1.989 × 10⁻¹⁹ J, and the energy in 0.1 s is 10⁻⁴ J.\n2. N = 10⁻⁴/1.989 × 10⁻¹⁹ = 5.03 × 10¹⁴ ≈ 50 × 10¹³.\nAnswer: 50",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2034,11 +2150,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\mathrm{NH_4HS(s) \\rightleftharpoons NH_3(g) + H_2S(g)}$, with $K_p = p_{NH_3}\\,p_{H_2S}$.\nSolution:\n1. 5.1/51 = 0.1 mol, and 20% decomposes, giving 0.02 mol of each gas.\n2. $p = \\frac{0.02\\times0.082\\times300}{2} = 0.246$ atm.\n3. Kp = 0.246² = 0.0605 ≈ 6 × 10⁻².\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2062,11 +2180,13 @@
     16
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: VSEPR shapes.\nSolution:\n1. SO₃, NO₃⁻ and CO₃²⁻ are trigonal planar (sp², no lone pair).\n2. PCl₃ is pyramidal (one lone pair).\n3. So 3 species are non-pyramidal.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2090,11 +2210,13 @@
     17
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The reaction becomes spontaneous when $T > \\frac{\\Delta H}{\\Delta S}$.\nSolution:\n1. ΔH = −110.5 − (−266.3) = 155.8 kJ.\n2. ΔS = 27.28 + 197.6 − 57.49 − 5.74 = 161.65 J/K.\n3. T = 155800/161.65 = 963.8 ≈ 964 K.\nAnswer: 964",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2123,11 +2245,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Eliminate n and factor the resulting quadratic in l and m.\nSolution:\n1. n = 2(l + m), so 2(l + m)² + lm = 0, which gives 2l² + 5lm + 2m² = 0, that is, (2l + m)(l + 2m) = 0.\n2. m = −2l gives n = −2l, so direction (1, −2, −2).\n3. l = −2m gives n = −2m, so direction (−2, 1, −2).\n4. Dot product = −2 − 2 + 4 = 0, so the angle is π/2.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2156,11 +2280,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Write [x + k] = [x] + k with n = [x], then expand.\nSolution:\n1. $\\det\\begin{pmatrix}n + 1 & n + 2 & n + 3\\\\ n & n + 3 & n + 3\\\\ n & n + 2 & n + 4\\end{pmatrix} = 3n + 6$ (after row operations).\n2. 3n + 6 = 192 gives n = 62, so x ∈ [62, 63).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2189,11 +2315,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\sin x + \\cos x = \\sqrt2\\sin\\left(x + \\frac{\\pi}{4}\\right) \\in [1, \\sqrt2]$ on $\\left[0, \\frac{\\pi}{2}\\right]$.\nSolution:\n1. M = tan⁻¹√2 and m = tan⁻¹1 = π/4.\n2. $\\tan(M - m) = \\frac{\\sqrt2 - 1}{1 + \\sqrt2} = (\\sqrt2 - 1)^2 = 3 - 2\\sqrt2$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2222,11 +2350,13 @@
     18
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Sum over k of P(A gets k heads) × P(B gets k heads).\nSolution:\n1. $\\sum_{k=0}^{3}\\left(\\frac{\\binom{3}{k}}{8}\\right)^2 = \\frac{1 + 9 + 9 + 1}{64} = \\frac{5}{16}$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2255,11 +2385,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Parabola $(x - h)^2 = L(y - k)$ with latus rectum L.\nSolution:\n1. $L = \\frac{|6 - 12 - 5|}{5} = \\frac{11}{5}$.\n2. Differentiating twice: $2(x - h) = \\frac{11}{5}y'$, then $2 = \\frac{11}{5}y''$, so $11\\frac{d^2y}{dx^2} = 10$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2288,11 +2420,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Perpendicular tangents to a parabola meet on its directrix.\nSolution:\n1. $y^2 = 16(x - 3)$ has vertex (3, 0) and a = 4, so its directrix is x = 3 − 4 = −1.\n2. The locus is x + 1 = 0.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2321,11 +2455,13 @@
     19
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $P_1 + \\lambda P_2 = 0$; parallel to the x-axis means the x-coefficient is 0.\nSolution:\n1. (x + y + z − 1) + λ(2x + 3y − z + 4) = 0 with 1 + 2λ = 0, so λ = −½.\n2. Doubling: −y + 3z − 6 = 0, that is, $\\vec r\\cdot(\\hat j - 3\\hat k) + 6 = 0$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2354,11 +2490,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Treat x as the dependent variable: $\\frac{dx}{dy} + \\frac{2}{y}x = 10y^2$.\nSolution:\n1. The integrating factor is y², so xy² = 2y⁵ + C; the point (0, 1) gives C = −2.\n2. At (2, β): 2β² = 2β⁵ − 2, so β⁵ − β² − 1 = 0.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2387,11 +2525,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Area by the determinant formula.\nSolution:\n1. Area $= \\frac{1}{2}|a(b + 1) + b^2| = 1$, so a(b + 1) + b² = ±2.\n2. $a = \\frac{\\pm2 - b^2}{b + 1}$, and the sum of both values is $\\frac{-2b^2}{b + 1}$.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2420,11 +2560,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Check D = 0 separately for consistency.\nSolution:\n1. D = −9 − [λ], so there is a unique solution whenever [λ] ≠ −9.\n2. For [λ] = −9: eq3 = −6·eq1 + 5·eq2 (z: −6 + 25 = 19 ✓; RHS: −24 + 15 = −9 ✓), so the system is consistent with infinitely many solutions.\n3. It has a solution for all real λ.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2453,11 +2595,13 @@
     20
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: With a = 3x² + 4x + 3 and b = 3x² + 4x + 2, the equation factors as (a − b)(a − kb) = 0.\nSolution:\n1. a − b = 1 ≠ 0, so a = kb, that is, 3(1 − k)x² + 4(1 − k)x + (3 − 2k) = 0.\n2. Discriminant ≥ 0 gives 4(1 − k)(2k − 5) ≥ 0, so 1 ≤ k ≤ 5/2.\n3. k = 1 gives 1 = 0, which is impossible, so k ∈ (1, 5/2].\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A11",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2486,11 +2630,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: V = x(a − 2x)(b − 2x); set V′ = 0.\nSolution:\n1. V′ = 12x² − 4(a + b)x + ab = 0, so $x = \\frac{(a + b) \\pm \\sqrt{a^2 - ab + b^2}}{6}$.\n2. The smaller root gives the maximum (and a feasible x < min(a, b)/2).\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A12",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2519,11 +2665,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: When p ∧ q holds, the consequent reduces to r.\nSolution:\n1. The given expression is equivalent to (p ∧ q) ⇒ r.\n2. (p ∧ q) ⇒ (r ∧ q) is also equivalent to (p ∧ q) ⇒ r, since q is already true.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A13",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2552,11 +2700,13 @@
     21
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The number of relations from X to Y is $2^{|X||Y|}$.\nSolution:\n1. A ∩ B = {(0, 0), (1, 0), (2, 0), (1, 1), (1, −1)}, which has 5 points.\n2. A ∩ C = {(2, 0), (4, 2), (2, 2), (1, 1), (3, 1)}, which has 5 points.\n3. p = 5 × 5 = 25.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A14",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2585,11 +2735,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Integrate along y (the parabola opens along x).\nSolution:\n1. At y = 3, x = 2. The slope is dx/dy = 2(y − 2) = 2, so the tangent is x = 2y − 4, meeting the x-axis at (−4, 0).\n2. Area $= \\int_0^3[(y - 2)^2 + 1 - (2y - 4)]dy = \\int_0^3(y - 3)^2dy = 9$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A15",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2618,11 +2770,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Half-angle forms; for x ∈ (π/2, π), sin(x/2) > cos(x/2) > 0.\nSolution:\n1. √(1 + sin x) = sin(x/2) + cos(x/2) and √(1 − sin x) = sin(x/2) − cos(x/2).\n2. The ratio is 2sin(x/2)/2cos(x/2) = tan(x/2), so y = cot⁻¹(tan(x/2)) = π/2 − x/2.\n3. dy/dx = −½.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A16",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2651,11 +2805,13 @@
     22
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Coordinates: B(0, 0), A(0, a), D(x, 0), C(x, a + b); take the angle between CA and CB.\nSolution:\n1. CA = (−x, −b) and CB = (−x, −(a + b)).\n2. $\\tan\\angle ACB = \\frac{|x(a + b) - xb|}{x^2 + b(a + b)} = \\frac{ax}{x^2 + b(a + b)} = \\frac{1}{2}$.\n3. So x² − 2ax + b(a + b) = 0.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A17",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2684,11 +2840,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\frac{n}{n + 1}x^{n+1} = x^{n+1} - \\frac{x^{n+1}}{n + 1}$.\nSolution:\n1. $y = \\frac{x^2}{1 - x} + x + \\ln(1 - x) = \\frac{x}{1 - x} + \\ln(1 - x)$.\n2. At x = ½: y = 1 − ln 2, so $e^{1+y} = e^{2}\\cdot\\frac{1}{2}$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A18",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2717,11 +2875,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Put x = t², then use partial fractions in t².\nSolution:\n1. $I = \\int_0^1\\frac{2t^2dt}{(1 + t^2)(1 + 3t^2)(3 + t^2)} = \\int_0^1\\left[\\frac{1}{2(1 + t^2)} - \\frac{3}{8(1 + 3t^2)} - \\frac{3}{8(3 + t^2)}\\right]dt$.\n2. The three integrals are $\\frac{\\pi}{4}$, $\\frac{\\pi}{3\\sqrt3}$ and $\\frac{\\pi}{6\\sqrt3}$.\n3. $I = \\frac{\\pi}{8} - \\frac{3}{8}\\cdot\\frac{\\pi}{2\\sqrt3} = \\frac{\\pi}{8}\\left(1 - \\frac{\\sqrt3}{2}\\right)$.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A19",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2750,11 +2910,13 @@
     23
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: For a finite limit, a = 1; then rationalise.\nSolution:\n1. $\\sqrt{x^2 - x + 1} - x = \\frac{-x + 1}{\\sqrt{x^2 - x + 1} + x} \\to -\\frac{1}{2}$.\n2. (a, b) = (1, −½).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A20",
    "diagram_files": [],
    "text_recall": null,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2778,11 +2940,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: $\\sin^4 + \\cos^4 = 1 - \\frac{1}{2}\\sin^22\\theta$.\nSolution:\n1. With s = sin 2θ: 1 − s²/2 − s/2 = 0, so s² + s − 2 = 0 and s = 1.\n2. θ = π/4 + kπ in [0, 4π]: π/4, 5π/4, 9π/4, 13π/4, with S = 7π.\n3. 8S/π = 56.\nAnswer: 56",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B01",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2806,11 +2970,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Mirror image in a plane: $S = Q - \\frac{2(ax_0 + by_0 + cz_0 + d)}{a^2 + b^2 + c^2}(a, b, c)$.\nSolution:\n1. For Q: the value is 2 − 3 + 4 + 3 = 6, so S = (1, 3, 4) − 2(2, −1, 1) = (−3, 5, 2).\n2. R is on the plane: 6 − 5 + γ + 3 = 0, so γ = −4.\n3. SR² = 36 + 0 + 36 = 72.\nAnswer: 72",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B02",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2834,11 +3000,13 @@
     24
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Normalise the probabilities, then apply the conditional probability.\nSolution:\n1. 9K = 1, so K = 1/9.\n2. $p = \\frac{P(X = 2)}{P(X < 3)} = \\frac{2K}{3K} = \\frac{2}{3}$.\n3. 5p = 10/3 = λ/9, so λ = 30.\nAnswer: 30",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B03",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2862,11 +3030,13 @@
     25
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: |z − 3| = Re z is the parabola y² = 6x − 9.\nSolution:\n1. For points on it, $x = \\frac{y^2 + 9}{6}$, so the chord slope is $\\frac{6}{y_1 + y_2}$.\n2. arg(z₁ − z₂) = π/4 means the slope is 1, so y₁ + y₂ = 6.\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B04",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2890,11 +3060,13 @@
     25
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Classify the elements mod 3: {3, 6, 9} ≡ 0, {1, 4} ≡ 1, {2, 5} ≡ 2.\nSolution:\n1. Subsets of {1, 2, 4, 5} with sum ≡ 0 (mod 3): ∅, {1,2}, {1,5}, {4,2}, {4,5}, {1,4,2,5}, which is 6 subsets.\n2. Subsets with sum a multiple of 3 = 6 × 2³ = 48 (including ∅). Non-empty multiples of 3: 47.\n3. T has 127 − 47 = 80 elements.\nAnswer: 80",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B05",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2918,11 +3090,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Normal to 2x² − y² = 2 at (x₀, y₀): $y_0x + 2x_0y = 3x_0y_0$.\nSolution:\n1. At A: x cos θ + y cot θ = 3. At B (φ = π/2 − θ): x sin θ + y tan θ = 3.\n2. Eliminating x: y(cos θ − sin θ) = 3(sin θ − cos θ), so β = −3 and (2β)² = 36.\nNote: The points (sec θ, 2tan θ) do not actually lie on 2x² − y² = 2 (its parametric form is (sec θ, √2 tan θ)), so ALLEN marks the question Bonus. The official answer applies the normal formula at the given points.\nAnswer: 36",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B06",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [
     "model note: Official NTA answer 36; ALLEN answer BONUS (points do not lie on hyperbola unless θ = 0)"
    ],
@@ -2948,11 +3122,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: The centres lie on the normal to the common tangent through (1, 2), at distance 5.\nSolution:\n1. The unit normal is (4, 3)/5, so the centres are (1, 2) ± (4, 3): (5, 5) and (−3, −1).\n2. |(5 + 5)(−3 − 1)| = 40.\nAnswer: 40",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B07",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -2976,11 +3152,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Work mod 2 and mod 9, then combine.\nSolution:\n1. 7³ ≡ 1 (mod 9), so 7²² ≡ 7 and 3 × 7 = 21 ≡ 3.\n2. 10 ≡ 1 (mod 9), so 2 × 10²² ≡ 2; and 44 ≡ 8.\n3. The total ≡ 3 + 2 − 8 = −3 ≡ 6 (mod 9).\n4. The number is odd, since 3 × 7²² is odd and the rest is even.\n5. The odd residue ≡ 6 (mod 9) below 18 is 15.\nAnswer: 15",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B08",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -3004,11 +3182,13 @@
     26
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Combine the groups using Σx and Σx².\nSolution:\n1. Girls' mean: (750 − 240)/30 = 17, so μ = 17.\n2. Σx² = 20(2 + 144) + 30(2 + 289) = 2920 + 8730 = 11650.\n3. σ² = 11650/50 − 15² = 233 − 225 = 8, so μ + σ² = 25.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B09",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   },
@@ -3032,11 +3212,13 @@
     27
    ],
    "diagram_boxes": [],
+   "explanation": "Concept: Write the numerator as A(denominator) + B(derivative of the denominator).\nSolution:\n1. 2eˣ + 3e⁻ˣ = A(4eˣ + 7e⁻ˣ) + B(4eˣ − 7e⁻ˣ) gives A = 13/28 and B = 1/28.\n2. $I = \\frac{13}{28}x + \\frac{1}{28}\\ln(4e^x + 7e^{-x}) = \\frac{1}{14}\\left(\\frac{13}{2}x + \\frac{1}{2}\\ln(\\ldots)\\right)$.\n3. u + v = 13/2 + 1/2 = 7.\nAnswer: 7",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B10",
    "diagram_files": [],
    "text_recall": 1.0,
+   "explanation_check": "ok",
    "issues": [],
    "confidence": 1.0
   }
