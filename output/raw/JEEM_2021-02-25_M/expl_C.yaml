@@ -1,197 +1,387 @@
 C A 1: |-
-  Concept: An Ellingham diagram plots the standard Gibbs energy of formation of oxides (per mole of $O_2$) against temperature.
+  Concept: An Ellingham diagram plots the standard Gibbs energy of formation of metal oxides (or sulphides, or chlorides), taken per mole of O₂, against temperature. It shows which reducing agent can reduce which oxide at a given temperature.
   Solution:
-  1. It is a $\Delta G^\circ$ vs T plot. The slopes equal $-\Delta S^\circ$, and a lower line means a more stable oxide.
-  2. It is used to choose reducing agents in metallurgy.
+  1. From ΔG° = ΔH° − TΔS°, each line has slope −ΔS° and intercept ΔH°. Most lines are straight, with breaks where a phase changes.
+  2. Forming a metal oxide consumes O₂ gas, so ΔS° < 0 and most lines slope upwards.
+  3. A metal can reduce the oxide of any metal whose line lies above its own at that temperature. For example, Al reduces Cr₂O₃ (the thermite process).
+  4. The C → CO line slopes downwards (ΔS° > 0). So at high temperature carbon can reduce many oxides, which is why coke works in the blast furnace.
+  5. So the diagram is a plot of ΔG° against T.
+  Why others are wrong:
+  - (B) ΔG − TΔS is not a standard thermodynamic quantity to plot.
+  - (C) ΔH against T is almost flat and not useful here.
+  - (D) ΔG against P is not what Ellingham plotted.
+  Tip: limitation: the diagram says nothing about reaction rate (kinetics). It only shows thermodynamic feasibility.
   Answer: (A)
 C A 2: |-
-  Concept: $H_2O_2$ acts as an oxidising agent when it is itself reduced to $H_2O$/OH⁻ (O: –1 → –2).
+  Concept: H₂O₂ has oxygen in the −1 state, so it can go either way:
+  - as an oxidant, H₂O₂ is reduced to H₂O or OH⁻ (O: −1 → −2);
+  - as a reductant, H₂O₂ is oxidised to O₂ (O: −1 → 0).
   Solution:
-  1. (C) $2I^- + H_2O_2 + 2H^+ \rightarrow I_2 + 2H_2O$: I⁻ is oxidised to $I_2$, and $H_2O_2$ is reduced to water. Oxidising.
-  2. In (A), (B) and (D), $H_2O_2$ is converted to $O_2$, i.e. it is oxidised, so it acts as a reducing agent there.
+  1. (C) 2I⁻ + H₂O₂ + 2H⁺ → I₂ + 2H₂O:
+     - I⁻ (−1) is oxidised to I₂ (0);
+     - H₂O₂ goes to H₂O, so it is reduced and acts as the oxidising agent.
+  2. (A) Cl₂ + H₂O₂ → 2HCl + O₂: H₂O₂ goes to O₂, so it is oxidised (a reductant).
+  3. (B) KIO₄ + H₂O₂ → KIO₃ + H₂O + O₂: O₂ is released, so H₂O₂ is again the reductant (IO₄⁻ is reduced to IO₃⁻).
+  4. (D) I₂ + H₂O₂ + 2OH⁻ → 2I⁻ + … + O₂: O₂ is released, so H₂O₂ is the reductant.
+  5. Only (C) shows H₂O₂ as an oxidising agent.
+  Tip: quick rule: if O₂ appears among the products, H₂O₂ was oxidised (it acted as a reductant). If only water forms from it, H₂O₂ was the oxidant.
   Answer: (C)
 C A 3: |-
-  Concept: Freundlich isotherm: $\frac{x}{m} = kP^{1/n}$ (n > 1).
+  Concept: The Freundlich adsorption isotherm is x/m = kP^{1/n}, with n > 1. The effective power of P changes with the pressure range.
   Solution:
-  1. At low pressure $\frac{x}{m} \propto P^1$; at high pressure $\frac{x}{m} \propto P^0$ (saturation).
-  2. At moderate pressure $\frac{x}{m} \propto P^{1/n}$, with 0 < 1/n < 1.
+  1. At low pressure: x/m ∝ P¹. Adsorption is roughly linear, because there are plenty of free sites.
+  2. At high pressure: x/m ∝ P⁰, i.e. constant. The surface becomes saturated.
+  3. At moderate (intermediate) pressure: x/m ∝ P^{1/n}, where 0 < 1/n < 1.
+  4. So the exponent x = 1/n.
+  Why others are wrong:
+  - (B) 1 is the low-pressure limit.
+  - (C) zero is the high-pressure limit.
+  - (A) ∞ has no physical meaning here.
+  Graphical form: log(x/m) = log k + (1/n) log P, a straight line of slope 1/n.
+  Tip: the Freundlich equation is empirical. The Langmuir isotherm, x/m = aP/(1 + bP), explains all three regimes from a monolayer model.
   Answer: (D)
 C A 4: |-
-  Concept: A species exists (in MOT) only if its bond order $= \frac{N_b - N_a}{2}$ is greater than 0.
+  Concept: In molecular orbital theory, bond order = (N_bonding − N_antibonding)/2. A species with bond order 0 has no net bonding and does not exist as a stable molecule.
   Solution:
-  1. $He_2^+$ (3 e⁻): BO = ½. $He_2^-$ (5 e⁻): BO = ½, both can exist.
-  2. $O_2^{2-}$: BO = 1, exists (peroxide).
-  3. $Be_2$ (8 e⁻): $\sigma1s^2\sigma^*1s^2\sigma2s^2\sigma^*2s^2$, BO = 0, so it does not exist.
+  1. He₂⁺ (3 electrons): σ1s² σ*1s¹, bond order = (2 − 1)/2 = ½. It exists and has been observed.
+  2. He₂⁻ (5 electrons): σ1s² σ*1s² σ2s¹, bond order = (3 − 2)/2 = ½. It can exist (a weak bond).
+  3. O₂²⁻ (18 electrons, the peroxide ion): bond order = (10 − 8)/2 = 1. It exists, for example in Na₂O₂.
+  4. Be₂ (8 electrons): σ1s² σ*1s² σ2s² σ*2s², bond order = (4 − 4)/2 = 0. It does not exist.
+  5. So Be₂ is the species that does not exist.
+  Why others are wrong: (A), (B) and (C) all have a positive bond order.
+  Tip: He₂ (4 electrons) and Be₂ (8 electrons) both have bond order 0. Any species with equal numbers of bonding and antibonding electrons is predicted not to exist.
   Answer: (D)
 C A 5: |-
-  Concept: Aromatisation: n-alkanes with six or more carbons, heated over $Mo_2O_3$/$Cr_2O_3$/$V_2O_5$ at about 773 K and 10–20 atm, cyclise and dehydrogenate to arenes.
+  Concept: Aromatisation (catalytic reforming): alkanes with six or more carbons in a chain, heated with Cr₂O₃, V₂O₅ or Mo₂O₃ on alumina at about 773 K and 10–20 atm, undergo cyclisation followed by dehydrogenation to give arenes.
   Solution:
-  1. The reactant is 2-methylhexane, a $C_7$ alkane.
-  2. Cyclisation of the six-carbon chain, with the extra methyl as a substituent, followed by dehydrogenation gives methylbenzene.
-  3. A = toluene ($C_6H_5CH_3$).
+  1. The reactant, 2-methylhexane, has seven carbons with a six-carbon chain to close.
+  2. Cyclisation joins the ends of the six-carbon chain into a ring, leaving the extra carbon as a methyl substituent (methylcyclohexane).
+  3. Dehydrogenation removes 3 H₂ from methylcyclohexane to give the aromatic ring.
+  4. So A = toluene (methylbenzene), C₆H₅CH₃.
+  Why others are wrong:
+  - (A) Benzene would need loss of the methyl carbon, which does not happen.
+  - (B) Cyclohexane and (C) methylcyclohexane are intermediates or saturated rings, not the final aromatic product under these dehydrogenating conditions.
+  Related examples:
+  - n-hexane gives benzene;
+  - n-heptane gives toluene;
+  - n-octane gives xylenes or ethylbenzene.
   Answer: (D)
 C A 6: |-
-  Concept: Common oxidation state of lanthanoids is +3; Ce(+4) tends to go to +3 and Eu(+2) to +3.
+  Concept: The common, most stable oxidation state of the lanthanoids is +3. Ions in other oxidation states tend to return to +3:
+  - Ce⁴⁺ gains an electron (Ce⁴⁺ → Ce³⁺), so it is an oxidising agent;
+  - Eu²⁺ loses an electron (Eu²⁺ → Eu³⁺), so it is a reducing agent.
   Solution:
-  1. $Ce^{4+}$ is a good oxidising agent ($Ce^{4+} \rightarrow Ce^{3+}$), so $CeO_2$ can oxidise aldehydes and ketones. Statement I is true.
-  2. $Eu^{2+}$ readily goes to $Eu^{3+}$, so aqueous $EuSO_4$ is a strong reducing agent. Statement II is true.
+  1. Statement I: CeO₂ contains Ce⁴⁺ (4f⁰). Its reduction to Ce³⁺ is favourable (E° about +1.74 V), so CeO₂ and Ce(IV) salts are strong oxidants. They are used in organic chemistry to oxidise aldehydes, ketones and alcohols. True.
+  2. Statement II: Eu²⁺ (4f⁷) is stabilised by its half-filled f shell, but in water it is readily oxidised to Eu³⁺. Aqueous EuSO₄ is therefore a strong reducing agent. True.
+  3. Both statements are true.
+  Why others are wrong: (A), (B) and (C) reject at least one statement that follows from the stability of Ln³⁺.
+  Tip: Ce⁴⁺ (like Pb⁴⁺ and Tl³⁺) is an oxidant. Eu²⁺, Sm²⁺ and Yb²⁺ are reductants.
   Answer: (D)
 C A 7: |-
-  Concept: Nitrile → acid → acid chloride → aldehyde (Rosenmund reduction).
+  Concept: This is a three-step sequence: nitrile → carboxylic acid → acid chloride → aldehyde. The last step is the Rosenmund reduction.
   Solution:
-  1. $CH_3CH_2CN \xrightarrow{H_3O^+,\ \Delta} CH_3CH_2COOH$.
-  2. $SOCl_2$ gives $CH_3CH_2COCl$.
-  3. $H_2$/Pd–$BaSO_4$ (poisoned catalyst) reduces the acid chloride only as far as the aldehyde: $CH_3CH_2CHO$.
+  1. H₃O⁺ with heat hydrolyses the nitrile completely: CH₃CH₂CN → CH₃CH₂COOH (propanoic acid, releasing NH₄⁺).
+  2. SOCl₂ converts the acid into the acid chloride: CH₃CH₂COCl (with SO₂ and HCl as gaseous by-products).
+  3. H₂ over Pd on BaSO₄ (a poisoned catalyst) reduces RCOCl to RCHO and stops there. Product: CH₃CH₂CHO (propanal).
+  Why others are wrong:
+  - (A) The anhydride would need a different reaction, the acid chloride with a carboxylate.
+  - (C) Propane would need complete deoxygenation.
+  - (D) Propanol would result from over-reduction with an unpoisoned catalyst or LiAlH₄.
+  Tip: BaSO₄ (sometimes with quinoline or sulphur) poisons Pd so that the aldehyde is not reduced further to the alcohol. This selectivity is the whole point of the Rosenmund reduction.
   Answer: (B)
 C A 8: |-
-  Concept: Mass of C and H from the $CO_2$ and $H_2O$ formed; oxygen by difference.
+  Concept: Liebig combustion analysis:
+  - all the carbon ends up in CO₂: mass of C = (12/44) × mass of CO₂;
+  - all the hydrogen ends up in H₂O: mass of H = (2/18) × mass of H₂O;
+  - oxygen is found by difference.
+  Given: 1.80 g of compound gave 2.64 g of CO₂ and 1.08 g of H₂O.
   Solution:
-  1. C = $2.64\times\frac{12}{44} = 0.72$ g; H = $1.08\times\frac{2}{18} = 0.12$ g.
-  2. O = 1.80 – 0.72 – 0.12 = 0.96 g.
-  3. % O = $\frac{0.96}{1.80}\times100 = 53.33\%$.
+  1. Mass of C = 2.64 × 12/44 = 0.72 g.
+  2. Mass of H = 1.08 × 2/18 = 0.12 g.
+  3. Mass of O = 1.80 − 0.72 − 0.12 = 0.96 g.
+  4. % O = 0.96/1.80 × 100 = 53.33%.
+  5. Bonus: the mole ratio C : H : O = 0.06 : 0.12 : 0.06 = 1 : 2 : 1, so the empirical formula is CH₂O (as in glucose or formaldehyde). Its oxygen content is 16/30 = 53.3% ✓.
+  Why others are wrong: (A), (C) and (D) come from arithmetic errors in the C or H masses.
+  Tip: never try to measure O directly from the combustion data. It is always found by difference.
   Answer: (B)
 C A 9: |-
-  Concept: Structure of diborane: 4 terminal 2c–2e B–H bonds and 2 bridging 3c–2e B–H–B bonds.
+  Concept: Structure of diborane, B₂H₆:
+  - each B is roughly sp³ hybridised;
+  - there are 4 terminal B–H bonds, normal 2-centre–2-electron bonds lying in one plane;
+  - there are 2 bridging B–H–B bonds, 3-centre–2-electron "banana" bonds above and below that plane.
   Solution:
-  1. Each B is roughly $sp^3$. The terminal B–H bonds use orbitals with more s character; the bridging bonds get more p character. So terminal B–H bonds have less p-character: (C) is correct.
-  2. (A) The B–H–B angle is about 83°, not 120°. (B) $BH_3$ is a Lewis acid (electron deficient). (D) Both bridges are identical.
+  1. (C): the terminal B–H bonds are shorter (119 pm) and stronger, and use hybrid orbitals richer in s character. The bridging bonds (133 pm) use orbitals richer in p character. So the terminal bonds have less p character. Correct.
+  2. (A): the B–H–B angle is about 83°, and the H–B–H angle between terminal hydrogens is about 120°. "All B–H–B angles 120°" is false.
+  3. (B): BH₃ has only 6 valence electrons on B, so it is an electron-pair acceptor (a Lewis acid). This is why it dimerises and forms adducts such as H₃B·NH₃. False.
+  4. (D): the two bridges are equivalent by symmetry, so both B–H–B bonds have the same length. False.
+  Tip: the 3c–2e bonds are why diborane is described as "electron-deficient" yet stable.
   Answer: (C)
 C A 10: |-
-  Concept: 3d transition metal ions lose 4s electrons first.
+  Concept: When 3d transition metals form cations, the 4s electrons are removed before the 3d electrons. Watch for the exceptional ground states Cr (3d⁵4s¹) and Cu (3d¹⁰4s¹).
   Solution:
-  1. $Cr^+$: Cr is $3d^54s^1$, so $Cr^+$ is $3d^5$.
-  2. $Mn^{2+}$: Mn is $3d^54s^2$, so $Mn^{2+}$ is $3d^5$. Same configuration.
-  3. Others differ: $Fe^{2+}$ $3d^6$ vs $Co^+$ $3d^8$ (or $3d^74s^1$); $Ni^{2+}$ $3d^8$ vs $Cu^+$ $3d^{10}$; $V^{2+}$ $3d^3$ vs $Cr^+$ $3d^5$.
+  1. Cr (Z = 24) is [Ar]3d⁵4s¹. Removing the 4s electron gives Cr⁺ = [Ar]3d⁵.
+  2. Mn (Z = 25) is [Ar]3d⁵4s². Removing both 4s electrons gives Mn²⁺ = [Ar]3d⁵.
+  3. So Cr⁺ and Mn²⁺ have the same outer configuration, 3d⁵. They are isoelectronic.
+  4. The other pairs:
+     - Fe²⁺ is 3d⁶, but Co⁺ is 3d⁸ (or 3d⁷4s¹);
+     - Ni²⁺ is 3d⁸, but Cu⁺ is 3d¹⁰;
+     - V²⁺ is 3d³, but Cr⁺ is 3d⁵.
+  Why others are wrong: each of those pairs has a different number of d electrons.
+  Tip: to find isoelectronic transition-metal ions, count the total electrons. Cr⁺ has 23 and Mn²⁺ has 23. For ions this simple count usually confirms the d-configuration match.
   Answer: (B)
 C A 11: |-
-  Concept: Types and preparation of synthetic rubbers.
+  Concept: Synthetic rubbers: know their monomers, their polymerisation type and their uses.
   Solution:
-  1. Buna-S (butadiene + styrene) is made by free-radical copolymerisation started by a peroxide initiator, which supplies nascent oxygen/free radicals, so (C) is the statement taken as correct.
-  2. (A) Buna-S is an elastomer, not a thermosetting polymer. (B) Neoprene is a homopolymer of chloroprene used for gaskets and hoses, not buckets. (D) Buna-N is synthetic.
+  1. (C): Buna-S (butadiene + styrene) is made by free-radical copolymerisation. The initiator is a peroxide, which provides the radicals ("nascent oxygen" in older textbook language). So "synthesis of Buna-S needs nascent oxygen" is the statement taken as correct.
+  2. (A) is wrong. Buna-S is an elastomer (a rubber), not a thermosetting polymer. Thermosets such as Bakelite are rigid and cross-linked.
+  3. (B) is wrong. Neoprene is a homopolymer of chloroprene, not a copolymer. It is used for gaskets, hoses and conveyor belts, not plastic buckets (those are made of polyethylene or polypropylene).
+  4. (D) is wrong. Buna-N (butadiene + acrylonitrile) is synthetic. Natural rubber is cis-polyisoprene.
+  Tip: in "Buna-X" rubbers:
+  - Bu = butadiene;
+  - Na = sodium (the original catalyst);
+  - X = the comonomer (S for styrene, N for acrylonitrile).
   Answer: (C)
 C A 12: |-
-  Concept: Two kinds of smog: classical (reducing) smog from smoke and $SO_2$, and photochemical (oxidising) smog from $NO_x$, hydrocarbons and sunlight.
+  Concept: There are two kinds of smog.
+  - Classical smog (London type): smoke, fog and SO₂ in cool, humid weather. It is reducing in character.
+  - Photochemical smog (Los Angeles type): NOₓ and hydrocarbons react in sunlight to give O₃, PAN and aldehydes. It is oxidising in character.
   Solution:
-  1. Ozone (an allotrope of oxygen) is an intermediate in photochemical, i.e. oxidising, smog, not reducing smog. Statement I is false.
-  2. Photochemical smog involves oxides of nitrogen and hydrocarbons; oxides of sulphur belong to classical smog. Statement II is false.
+  1. Statement I: ozone (an allotrope of oxygen) is a key intermediate and product of photochemical smog, which is oxidising, not reducing. Statement I is false.
+  2. Statement II: photochemical smog involves oxides of nitrogen and hydrocarbons. Oxides of sulphur belong to classical smog. Grouping SO₂ with photochemical smog makes Statement II false.
+  3. Both statements are false.
+  Why others are wrong: (A), (B) and (D) accept at least one statement, but each mislabels the type of smog or its components.
+  Tip: photochemical smog forms in warm, sunny, dry conditions, with NO₂ + hν → NO + O, then O + O₂ → O₃. Classical smog needs cold, damp conditions with coal smoke.
   Answer: (C)
 C A 13: |-
-  Concept: Number of radial nodes = n – l – 1; the radial distribution plot shows (radial nodes + 1) maxima.
+  Concept: A radial distribution function, 4πr²R², shows the probability of finding the electron at distance r. An orbital has (n − l − 1) radial nodes, so its plot has (n − l) maxima, and the largest maximum is usually the outermost one.
   Solution:
-  1. 3s: n = 3, l = 0, so there are 2 radial nodes and 3 maxima, the largest being the farthest out.
-  2. Plot D has three peaks with the largest near 6 Å, which matches 3s.
-  3. The option that names plot D is (A).
+  1. 3s: n = 3 and l = 0, so there are 3 − 0 − 1 = 2 radial nodes and 3 maxima.
+  2. The main peak of 3s lies well out (several Å), since 3s is larger than 1s and 2s.
+  3. Checking the plots:
+     - (A) a single peak near 0.5 Å fits 1s;
+     - (B) two peaks fits 2s;
+     - (C) a single peak near 2 Å fits 2p or 3d;
+     - (D) three peaks with the largest near 6 Å fits 3s.
+  4. So the 3s plot is D, which corresponds to option (A).
+  Why others are wrong: plots A, B and C have one or two maxima, the wrong number for 3s.
+  Tip: for any orbital:
+  - number of maxima = n − l;
+  - radial nodes = n − l − 1;
+  - angular nodes = l;
+  - total nodes = n − 1.
   Answer: (A)
 C A 14: |-
-  Concept: Lactose is β-D-galactose linked to β-D-glucose.
+  Concept: Lactose (milk sugar) is a disaccharide of β-D-galactose and β-D-glucose.
   Solution:
-  1. The anomeric C1 of galactose is linked to C4 of glucose: a β(1→4) glycosidic linkage.
-  2. Glucose keeps a free anomeric carbon, so lactose is a reducing sugar.
+  1. The anomeric carbon C-1 of β-D-galactose forms a glycosidic bond with the C-4 hydroxyl of D-glucose.
+  2. So the link is β(1→4): C-1 of galactose to C-4 of glucose.
+  3. The glucose unit keeps its anomeric C-1 free (it can open to an aldehyde), so lactose is a reducing sugar. It gives positive Tollens' and Fehling's tests.
+  Why others are wrong:
+  - (A) and (C) make glucose's C-1 part of the linkage.
+  - (D) uses C-6 of glucose, as in some other disaccharides.
+  Related disaccharides:
+  - maltose: α-glucose C1 → C4 glucose, reducing;
+  - sucrose: α-glucose C1 ↔ β-fructose C2, non-reducing, because both anomeric carbons are used;
+  - cellobiose: β-glucose C1 → C4 glucose.
+  Tip: lactase enzyme hydrolyses this β(1→4) bond. People without it are lactose-intolerant.
   Answer: (B)
 C A 15: |-
-  Concept: Oxidising strength decides whether a primary alcohol stops at the aldehyde.
+  Concept: Primary alcohols are oxidised first to aldehydes and then to carboxylic acids. A strong oxidant in aqueous acid does not stop at the aldehyde stage.
   Solution:
-  1. $CrO_3$–$H_2SO_4$ (Jones reagent) oxidises ethanol all the way to acetic acid, so no acetaldehyde is obtained.
-  2. DIBAL-H reduces $CH_3CN$ to $CH_3CHO$; the Wacker process converts ethene to $CH_3CHO$; Cu at 573 K dehydrogenates ethanol to $CH_3CHO$.
+  1. (A) Ethanol with CrO₃–H₂SO₄ (Jones reagent, strong and aqueous) oxidises all the way to acetic acid, CH₃COOH. Acetaldehyde is not isolated. This is the reaction that does not give acetaldehyde.
+  2. (B) CH₃CN with DIBAL-H, then H₂O: DIBAL-H partially reduces the nitrile to an imine–aluminium complex, which hydrolyses to CH₃CHO. It gives acetaldehyde.
+  3. (C) Wacker process: CH₂=CH₂ + ½O₂ over PdCl₂/CuCl₂ in water gives CH₃CHO. It gives acetaldehyde.
+  4. (D) Ethanol over Cu at 573 K is dehydrogenated: CH₃CH₂OH → CH₃CHO + H₂. It gives acetaldehyde.
+  Tip: to stop a primary alcohol at the aldehyde, use PCC in CH₂Cl₂ (a mild, anhydrous oxidant) or Cu/573 K dehydrogenation, not Jones reagent or KMnO₄.
   Answer: (A)
 C A 16: |-
-  Concept: p-Aminoazobenzene forms by coupling a benzenediazonium ion with aniline.
+  Concept: p-Aminoazobenzene, C₆H₅–N=N–C₆H₄–NH₂(p), forms when benzenediazonium chloride couples with aniline at the para position. To make it you need aniline, a diazotisation step, and aniline as the coupling partner.
   Solution:
-  1. (A) Sn/HCl gives aniline, $HNO_2$ gives the diazonium salt, which couples with aniline. It works.
-  2. (C) Aniline is diazotised, then coupled with aniline in acid. It works.
-  3. (B) $NaBH_4$ does not reduce nitrobenzene to aniline, and there is no diazotisation step, so no p-aminoazobenzene forms.
+  1. (A) Nitrobenzene with Sn/HCl gives aniline; HNO₂ (0–5 °C) gives C₆H₅N₂⁺; coupling with aniline gives p-aminoazobenzene (through diazoaminobenzene rearranging in acid). It works.
+  2. (C) Aniline with HNO₂ gives the diazonium salt, which couples with aniline in HCl. It works.
+  3. (B) Nitrobenzene with NaBH₄: NaBH₄ does not reduce aromatic nitro groups to amines, and the sequence has no diazotisation step. NaOH and aniline alone cannot build an azo linkage. It does not give the product.
+  4. So only (B) fails.
+  Tip: NaBH₄ is mild; it reduces aldehydes and ketones, not nitro groups. Use Sn/HCl, Fe/HCl or H₂/Pd for Ar–NO₂ → Ar–NH₂.
   Answer: (A)
 C A 17: |-
-  Concept: Strong-field CN⁻ causes pairing; count unpaired electrons.
+  Concept: CN⁻ is a strong-field ligand. In octahedral complexes it forces electron pairing (low spin), and inner-orbital d²sp³ hybridisation is used. The magnetism depends on the number of unpaired electrons left over.
   Solution:
-  1. $[Mn(CN)_6]^{4-}$: $Mn^{2+}$ $d^5$, low spin $t_{2g}^5$, 1 unpaired electron, $d^2sp^3$, paramagnetic.
-  2. $[Fe(CN)_6]^{3-}$: $Fe^{3+}$ $d^5$, low spin, 1 unpaired electron, $d^2sp^3$, paramagnetic.
+  1. [Mn(CN)₆]⁴⁻: x + 6(−1) = −4, so Mn is +2, d⁵.
+     - Low spin: t₂g⁵ e_g⁰, with 1 unpaired electron.
+     - Two empty 3d orbitals are available, so the hybridisation is d²sp³.
+     - It is paramagnetic, μ ≈ 1.73 BM.
+  2. [Fe(CN)₆]³⁻: Fe is +3, also d⁵.
+     - Low spin: t₂g⁵, with 1 unpaired electron.
+     - Hybridisation d²sp³; paramagnetic, 1.73 BM.
+  3. So both are d²sp³ and paramagnetic.
+  Why others are wrong:
+  - (B) and (D) use sp³d², which is outer-orbital and high-spin, typical of weak-field ligands such as F⁻ and H₂O.
+  - (C) and (D) say diamagnetic, but d⁵ low-spin still has one unpaired electron.
+  Tip: compare [Fe(CN)₆]⁴⁻ (Fe²⁺, d⁶, low spin t₂g⁶), which is diamagnetic.
   Answer: (A)
 C A 18: |-
-  Concept: Electrophilic addition of HCl through the more stable carbocation, followed by the Finkelstein reaction.
+  Concept: HCl adds to an alkene through the more stable carbocation. Nearby substituents change carbocation stability:
+  - –NO₂ withdraws electrons (–I), so it destabilises a nearby positive charge;
+  - –OCH₃ on an adjacent carbon withdraws inductively as well, but less strongly.
+  Then NaI in dry acetone swaps Cl for I (the Finkelstein reaction).
   Solution:
-  1. The ring C=C lies between a carbon next to C–OCH₃ and a carbon next to C–NO₂. A carbocation next to C–NO₂ is strongly destabilised (–I), so $H^+$ adds so that the positive charge sits next to the C–OCH₃ carbon.
-  2. $Cl^-$ attacks there: A = 2-chloro-1-methoxy-4-nitrocyclohexane.
-  3. NaI in dry acetone exchanges Cl for I (Finkelstein; NaCl precipitates): B = 2-iodo-1-methoxy-4-nitrocyclohexane.
+  1. The ring C=C lies between a carbon next to C–OCH₃ and a carbon next to C–NO₂.
+  2. A carbocation next to the C–NO₂ carbon would be strongly destabilised. So H⁺ adds to the carbon near NO₂, leaving the positive charge on the carbon adjacent to C–OCH₃.
+  3. Cl⁻ attacks that carbon: A = 2-chloro-1-methoxy-4-nitrocyclohexane.
+  4. NaI in dry acetone: I⁻ replaces Cl⁻ by SN2. NaCl is insoluble in acetone and precipitates, which drives the reaction. B = 2-iodo-1-methoxy-4-nitrocyclohexane.
+  Why others are wrong:
+  - (A) replaces OCH₃ with I.
+  - (B) puts Cl near NO₂.
+  - (C) makes B a mere rearranged isomer.
+  - NaI swaps only the halide; it does not touch the OCH₃ group.
   Answer: (D)
 C A 19: |-
-  Concept: An acid liberates $CO_2$ from $NaHCO_3$ only if it is stronger than carbonic acid ($pK_a \approx 6.4$).
+  Concept: NaHCO₃ releases CO₂ only with acids stronger than carbonic acid (pKa ≈ 6.4). Carboxylic acids and phenols carrying strong electron-withdrawing groups qualify; ordinary phenols (pKa ≈ 10) do not.
   Solution:
-  1. Benzoic acid ($pK_a$ 4.2) and picric acid ($pK_a$ 0.4, made very acidic by three $-NO_2$ groups) are stronger acids, so both give $CO_2$.
-  2. 2,4,6-Triaminophenol: the electron-donating $-NH_2$ groups make it a weaker acid than phenol, so no $CO_2$.
-  3. B and C only.
+  1. B, benzoic acid (pKa 4.2), is stronger than H₂CO₃: C₆H₅COOH + NaHCO₃ → C₆H₅COONa + H₂O + CO₂↑.
+  2. C, picric acid (2,4,6-trinitrophenol, pKa about 0.4):
+     - three –NO₂ groups at the ortho and para positions strongly stabilise the phenoxide by resonance;
+     - so it is a strong acid and releases CO₂.
+  3. A, 2,4,6-triaminophenol:
+     - –NH₂ groups donate electrons (+R), which destabilise the phenoxide;
+     - so it is even weaker than phenol, and there is no CO₂.
+  4. So B and C only.
+  Tip: this effervescence test distinguishes carboxylic acids from ordinary phenols. Picric acid is a notable exception among phenols because of its three nitro groups.
   Answer: (A)
 C A 20: |-
-  Concept: Solubility of a salt of a weak acid increases in acidic buffer because $H^+ + CN^- \rightarrow HCN$.
+  Concept: When a salt contains the anion of a weak acid, its solubility increases in acid. Here H⁺ converts CN⁻ to HCN, which pulls the dissolution equilibrium forward. Total dissolved cyanide = [CN⁻] + [HCN] = [CN⁻](1 + [H⁺]/Ka).
+  Given: Ksp(AgCN) = 2.2 × 10⁻¹⁶; Ka(HCN) = 6.2 × 10⁻¹⁰; pH 3, so [H⁺] = 10⁻³.
   Solution:
-  1. $s = [Ag^+]$ = total cyanide $= [CN^-]\left(1 + \frac{[H^+]}{K_a}\right)$.
-  2. $s^2 = K_{sp}\left(1 + \frac{[H^+]}{K_a}\right) = 2.2\times10^{-16}\left(1 + \frac{10^{-3}}{6.2\times10^{-10}}\right) \approx 2.2\times10^{-16}\times1.61\times10^6 = 3.55\times10^{-10}$.
-  3. $s \approx 1.9\times10^{-5}$ mol/L.
+  1. Let s be the solubility. Then [Ag⁺] = s and [CN⁻] + [HCN] = s.
+  2. [CN⁻] = s/(1 + [H⁺]/Ka), and Ksp = [Ag⁺][CN⁻] = s²/(1 + [H⁺]/Ka).
+  3. [H⁺]/Ka = 10⁻³/6.2 × 10⁻¹⁰ = 1.61 × 10⁶, which is much greater than 1.
+  4. s² = 2.2 × 10⁻¹⁶ × 1.61 × 10⁶ = 3.55 × 10⁻¹⁰, so s = 1.9 × 10⁻⁵ mol/L.
+  Comparison: in pure water, s = √Ksp = 1.5 × 10⁻⁸ M. So the acid raises the solubility about 1300-fold.
+  Why others are wrong:
+  - (C) is Ksp itself.
+  - (A) and (B) use the wrong combination of Ka and [H⁺].
   Answer: (D)
 C B 1: |-
-  Concept: $\Delta H = \Delta U + \Delta n_gRT$ (bomb calorimeter gives ΔU).
+  Concept: A bomb calorimeter works at constant volume, so it measures ΔU. The enthalpy change follows from ΔH = ΔU + Δn_gRT, where Δn_g counts only gaseous species.
+  Given: ΔU = −742.24 kJ/mol; NH₂CN(s) + 3/2 O₂(g) → N₂(g) + CO₂(g) + H₂O(l). (The question prints "O₂" in the products; it means CO₂.)
   Solution:
-  1. $\Delta n_g$ = (1 + 1) – 1.5 = 0.5 (liquid water is not counted).
-  2. $\Delta n_gRT = 0.5\times8.314\times298 = 1239$ J = 1.24 kJ.
-  3. $\Delta H = -742.24 + 1.24 = -741.0$ kJ, magnitude 741.
+  1. Gaseous products: N₂ (1) + CO₂ (1) = 2 mol. Gaseous reactants: O₂ = 1.5 mol. Δn_g = 2 − 1.5 = 0.5. Liquid water is not counted.
+  2. Δn_gRT = 0.5 × 8.314 × 298 = 1239 J = 1.24 kJ.
+  3. ΔH = −742.24 + 1.24 = −741.0 kJ/mol.
+  4. The magnitude is 741 kJ.
+  Common mistakes:
+  - counting H₂O as a gas, which gives Δn_g = 1.5;
+  - using R = 8.314 kJ instead of J.
+  Tip: when Δn_g > 0, ΔH is less negative than ΔU for an exothermic reaction. The system does expansion work, so less heat is released at constant pressure.
   Answer: 741
 C B 2: |-
-  Concept: Equivalents of oxidant = equivalents of reductant.
+  Concept: In redox titrations, the milliequivalents of oxidant equal the milliequivalents of reductant: N₁V₁ = N₂V₂, where N = M × n-factor. The n-factor is the change in oxidation number per formula unit.
   Solution:
-  1. $CrO_4^{2-}$ (Cr +6) → $Cr(OH)_4^-$ (Cr +3): n-factor 3.
-  2. $S_2O_3^{2-}$ (each S +2) → $2SO_4^{2-}$ (S +6): n-factor 8.
-  3. $V\times0.154\times3 = 40\times0.25\times8 = 80 \Rightarrow V = \frac{80}{0.462} \approx 173$ mL.
+  1. Oxidant: CrO₄²⁻ (Cr +6) → Cr(OH)₄⁻ (Cr +3), so its n-factor is 3.
+  2. Reductant: S₂O₃²⁻, with average S oxidation state +2, → SO₄²⁻ (S +6). Each S changes by 4, and there are two S atoms, so the n-factor is 8.
+  3. Equivalents: V × 0.154 × 3 = 40 × 0.25 × 8 = 80.
+  4. V = 80/0.462 = 173.2 mL ≈ 173 mL.
+  5. Mole check: the stoichiometry is 8CrO₄²⁻ : 3S₂O₃²⁻. Thiosulphate is 10 mmol, so chromate = 10 × 8/3 = 26.7 mmol, and 26.7/0.154 = 173 mL ✓.
+  Common mistakes:
+  - using the n-factor 1 (thiosulphate → tetrathionate, as with iodine) instead of 8 (full oxidation to sulphate);
+  - forgetting that there are two S atoms.
   Answer: 173
 C B 3: |-
-  Concept: Arrhenius equation: $\log k = \log A - \frac{E_a}{2.303RT}$; the slope of log k vs 1/T is $-\frac{E_a}{2.303R}$ = –10000 K.
+  Concept: Arrhenius equation in log form: log k = log A − Ea/(2.303RT). A plot of log k against 1/T is a straight line with slope −Ea/(2.303R). Here the slope is given as −10000 K.
+  Given: k₁ = 10⁻⁵ s⁻¹ at T₁ = 500 K; find T₂ where k₂ = 10⁻⁴ s⁻¹.
   Solution:
-  1. $\log\frac{k_2}{k_1} = -10000\left(\frac{1}{T_2} - \frac{1}{T_1}\right)$.
-  2. $\log\frac{10^{-4}}{10^{-5}} = 1 = 10000\left(\frac{1}{500} - \frac{1}{T_2}\right) \Rightarrow \frac{1}{T_2} = 0.002 - 0.0001 = 0.0019$.
-  3. $T_2 = 526.3$ K ≈ 526 K.
+  1. log(k₂/k₁) = −10000(1/T₂ − 1/T₁).
+  2. log(10⁻⁴/10⁻⁵) = log 10 = 1.
+  3. 1 = 10000(1/500 − 1/T₂), so 1/T₂ = 0.002 − 0.0001 = 0.0019 K⁻¹.
+  4. T₂ = 1/0.0019 = 526.3 K ≈ 526 K.
+  5. Activation energy for interest: Ea = 10000 × 2.303 × 8.314 ≈ 191 kJ/mol.
+  Common mistakes:
+  - using ln instead of log with the given slope;
+  - getting the sign wrong. A higher k requires a higher T.
+  Tip: with this steep slope, a rise of only 26 K increases the rate 10-fold. Reactions with high Ea are very temperature-sensitive.
   Answer: 526
 C B 4: |-
-  Concept: Double-indicator titration. The phenolphthalein end point titrates all the NaOH plus half the $Na_2CO_3$ (to $NaHCO_3$); the methyl orange stage titrates $NaHCO_3 \rightarrow CO_2$.
+  Concept: Double-indicator titration of NaOH + Na₂CO₃ with HCl:
+  - Phenolphthalein end point (pH ≈ 8.3): all the NaOH is neutralised and Na₂CO₃ is converted only to NaHCO₃ (half-neutralised).
+  - Methyl orange end point (pH ≈ 4): NaHCO₃ is converted to CO₂ + H₂O.
+  So the second titre corresponds exactly to the moles of Na₂CO₃.
+  Given: 0.4 g sample, 0.1 N HCl; the second (methyl orange) titre is 1.5 mL.
   Solution:
-  1. Methyl orange stage: 1.5 mL of 0.1 N HCl = 0.15 mmol, equal to the moles of $Na_2CO_3$.
-  2. Mass of $Na_2CO_3 = 0.15\times10^{-3}\times106 = 0.0159$ g.
-  3. % = $\frac{0.0159}{0.4}\times100 = 3.98 \approx 4$.
-  Note: the printed key gives 3 because its solution divides by 0.5 g; with the 0.4 g sample given, the answer is 4.
+  1. Moles of Na₂CO₃ = moles of HCl in the second titre = 1.5 × 0.1 = 0.15 mmol.
+  2. Mass = 0.15 × 10⁻³ × 106 = 0.0159 g.
+  3. % Na₂CO₃ = 0.0159/0.4 × 100 = 3.98% ≈ 4.
+  4. For interest, NaOH = (17.5 − 1.5) × 0.1 = 1.6 mmol = 0.064 g (16%).
+  Note: the printed key gives 3, because its solution divides by 0.5 g. With the 0.4 g sample stated, the answer is 4.
   Answer: 4
 C B 5: |-
-  Concept: Born–Haber type sum for $Na(g) + Br(g) \rightarrow NaBr(s)$.
+  Concept: The formation of an ionic solid from gaseous atoms can be broken into steps (Born–Haber reasoning):
+  1. Na(g) → Na⁺(g) + e⁻: ionisation enthalpy.
+  2. Br(g) + e⁻ → Br⁻(g): electron-gain enthalpy.
+  3. Na⁺(g) + Br⁻(g) → NaBr(s): lattice enthalpy (formation, negative).
   Solution:
-  1. $\Delta H = IE(Na) + \Delta_{eg}H(Br) + \text{lattice enthalpy} = 495.8 - 325.0 - 728.4 = -557.6$ kJ/mol.
-  2. $= -5576\times10^{-1}$ kJ/mol.
+  1. Sum = IE(Na) + ΔegH(Br) + lattice enthalpy = 495.8 + (−325.0) + (−728.4).
+  2. = 495.8 − 1053.4 = −557.6 kJ/mol.
+  3. In the requested form: −5576 × 10⁻¹ kJ/mol, so the answer is 5576.
+  4. Interpretation: forming NaBr(s) from gaseous atoms is strongly exothermic. The lattice energy more than pays for the energy needed to make the ions (495.8 − 325.0 = +170.8 kJ).
+  Note: the full ΔfH° from the elements in their standard states would also need the sublimation energy of Na and the dissociation energy of Br₂. The question asks only for the step from gaseous atoms.
   Answer: 5576
 C B 6: |-
-  Concept: Cyclic trimerisation of ethyne, then Gattermann–Koch formylation.
+  Concept: Two classic reactions:
+  - cyclic trimerisation: ethyne passed through a red-hot iron (or quartz) tube at 873 K gives benzene;
+  - Gattermann–Koch formylation: benzene + CO + HCl with anhydrous AlCl₃ (and CuCl) gives benzaldehyde.
   Solution:
-  1. Red hot iron tube at 873 K: 3 HC≡CH → benzene.
-  2. CO + HCl / anhydrous $AlCl_3$ adds –CHO: benzaldehyde, $C_6H_5CHO$.
-  3. $sp^2$ carbons: 6 ring carbons + 1 carbonyl carbon = 7.
+  1. 3HC≡CH → C₆H₆ (benzene).
+  2. C₆H₆ + CO + HCl, with AlCl₃, → C₆H₅CHO (benzaldehyde). The electrophile is the formyl cation, HCO⁺.
+  3. sp² carbons in benzaldehyde:
+     - 6 aromatic ring carbons;
+     - 1 carbonyl carbon (C=O).
+     Total = 7.
+  4. No sp³ carbon is present. The ethyne carbons (sp) have become sp² in the aromatic ring.
+  Tip: Gattermann–Koch formylation works on benzene and alkylbenzenes, but not on phenols or anilines, which complex with AlCl₃.
   Answer: 7
 C B 7: |-
-  Concept: Gay-Lussac's law at constant volume: $\frac{P_1}{T_1} = \frac{P_2}{T_2}$.
+  Concept: Gay-Lussac's law. For a fixed amount of gas at constant volume (a rigid tyre), P ∝ T in kelvin: P₁/T₁ = P₂/T₂.
+  Given: P₁ = 35 psi at T₁ = 27 °C = 300 K; the tyre bursts at P₂ = 40 psi.
   Solution:
-  1. $T_2 = 300\times\frac{40}{35} = 342.9$ K.
-  2. In °C: 342.9 – 273 ≈ 70 °C.
+  1. T₂ = T₁ × P₂/P₁ = 300 × 40/35 = 342.86 K.
+  2. In Celsius: 342.86 − 273 ≈ 69.9 °C ≈ 70 °C.
+  3. The pressure units (psi) cancel in the ratio, so no conversion is needed.
+  Common mistake: using Celsius in the ratio (27 × 40/35 ≈ 30.9 °C), which is badly wrong. Gas-law ratios always need absolute temperature.
+  Tip: a real tyre flexes a little, so its volume is not perfectly constant, but the constant-volume approximation is standard. This is why tyre pressures should be checked "cold".
   Answer: 70
 C B 8: |-
-  Concept: Hydrolysis needs the central atom to accept a lone pair from water (vacant orbital, not sterically blocked).
+  Concept: A covalent halide hydrolyses if water can attack the central atom. That needs a vacant orbital (p or d) and enough room around the atom (no steric shielding).
   Solution:
-  1. $BF_3$ (vacant p orbital), $SiCl_4$ (vacant d orbitals) and $PCl_5$ all hydrolyse.
-  2. In $SF_6$ the S atom is coordinatively saturated and shielded by six F atoms, so water cannot attack; it is inert.
-  3. Number = 1.
+  1. BF₃: B has a vacant 2p orbital and accepts a lone pair from water. It hydrolyses to boric acid and HBF₄.
+  2. SiCl₄: Si has vacant 3d orbitals and is large enough to be attacked. It hydrolyses readily to Si(OH)₄ + HCl.
+  3. PCl₅: it hydrolyses vigorously to POCl₃ and then H₃PO₄ + HCl.
+  4. SF₆: S is surrounded by six F atoms. It is coordinatively saturated and sterically shielded, so water cannot approach. Kinetically, SF₆ is inert to hydrolysis, even though hydrolysis would be thermodynamically favourable.
+  5. Number of inert halides = 1.
+  Comparison: CCl₄ is also inert (C has no d orbitals and is crowded), whereas SiCl₄ hydrolyses. This is a classic contrast.
+  Tip: the inertness of SF₆ is used in high-voltage gas insulation.
   Answer: 1
 C B 9: |-
-  Concept: Elevation of boiling point with van't Hoff factor: $\Delta T_b = iK_bm$.
+  Concept: Colligative properties depend on the number of particles. For an electrolyte that dissociates into ν ions with degree α, i = 1 + (ν − 1)α, and ΔT_b = iK_bm.
+  Given: 1 molal A₂B₃, 60% ionised; K_b = 0.52 K kg/mol.
   Solution:
-  1. $A_2B_3 \rightarrow 2A^{3+} + 3B^{2-}$ (5 ions), so $i = 1 + (5 - 1)\alpha = 1 + 4\times0.6 = 3.4$.
-  2. $\Delta T_b = 3.4\times0.52\times1 = 1.77$ K.
-  3. Boiling point = 373.15 + 1.77 ≈ 375 K.
+  1. A₂B₃ → 2A³⁺ + 3B²⁻, so ν = 5 ions.
+  2. i = 1 + (5 − 1) × 0.6 = 1 + 2.4 = 3.4.
+  3. ΔT_b = 3.4 × 0.52 × 1 = 1.768 K.
+  4. Boiling point = 373.15 + 1.77 = 374.9 K ≈ 375 K.
+  Common mistakes:
+  - using ν = 2 (treating A₂B₃ as a 1 : 1 salt);
+  - using i = να instead of 1 + (ν − 1)α.
+  Tip: complete ionisation (α = 1) would give i = 5 and ΔT_b = 2.6 K. Partial ionisation always gives 1 < i < ν.
   Answer: 375
 C B 10: |-
-  Concept: Retardation factor $R_f = \frac{\text{distance moved by the spot}}{\text{distance moved by the solvent front}}$.
+  Concept: In chromatography, the retardation factor is Rf = (distance moved by the spot from the base line) / (distance moved by the solvent front from the base line). It always lies between 0 and 1.
+  Given (figure): the solvent front is 5 cm above the base line; spot A is at 2 cm and spot B at 4 cm.
   Solution:
-  1. For A: $R_f = \frac{2\ \text{cm}}{5\ \text{cm}} = 0.4 = 4\times10^{-1}$.
+  1. Rf(A) = 2/5 = 0.4 = 4 × 10⁻¹.
+  2. For comparison, Rf(B) = 4/5 = 0.8.
+  3. A moved less, so it is held more strongly by the stationary phase (it is more polar with respect to the paper) than B.
+  Common mistakes:
+  - measuring from the bottom edge of the paper instead of the base line;
+  - dividing by the length of the paper instead of the solvent front distance.
+  Tip: Rf values are characteristic of a compound for a given solvent and stationary phase. Spots that are colourless can be seen under UV light or by spraying reagents such as ninhydrin (for amino acids).
   Answer: 4
