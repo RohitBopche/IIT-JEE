@@ -106,6 +106,8 @@ M A 9: |-
   Why others are wrong:
   - (A) $\frac{1}{4}$ has the wrong sign.
   - (C) 2 and (D) $-\frac{1}{2}$ come from mishandling the factor 4 in $e^{-4y}$.
+  Final steps: e^{3x} = ¼, so −e^{−4y}/4 = 1/12 − 7/12 = −½, giving e^{−4y} = 2 and y = −(ln 2)/4. Hence α = −¼.
+  Common mistake: Forgetting the minus sign from ∫e^{−4y} dy = −e^{−4y}/4.
   Answer: (B)
 M A 10: |-
   Concept: (1) A ray reflected at a mirror (here the y-axis) appears to come from the image of the source. (2) For an ellipse with eccentricity e, the distance from a focus to the nearer directrix is $\frac{a}{e} - ae$, and the two directrices are $\frac{2a}{e}$ apart (parallel).
@@ -206,6 +208,8 @@ M A 18: |-
   Why others are wrong:
   - (C) 16 ignores the f′ term.
   - (B) 4 and (D) 8 come from mis-differentiating $x^2f(2)$ (e.g. using 2x alone).
+  Check with a concrete f: take f(x) = x + 2 (so f(2) = 4, f′(2) = 1). The expression becomes (4x² − 4x − 8)/(x − 2) = 4(x + 1) → 12 ✓.
+  Common mistake: Forgetting that f(2) = 4 is a constant, and differentiating x²f(2) as 2x f(2) + x²f′(2).
   Answer: (A)
 M A 19: |-
   Concept: Build higher power sums from $\alpha + \beta$ and $\alpha\beta$ using $\alpha^{2k} + \beta^{2k} = (\alpha^k + \beta^k)^2 - 2(\alpha\beta)^k$.
@@ -238,6 +242,8 @@ M B 1: |-
   3. At $x = \frac{\pi}{2}$: tan y = 2, so $\cos^2y = \frac{1}{1 + 4} = \frac{1}{5}$.
   4. $y' = 2\sin x\cos^2y = 2\times1\times\frac{1}{5} = \frac{2}{5}$.
   5. $5y'\left(\frac{\pi}{2}\right) = 2$.
+  Finishing: At x = π/2, tan y = 2, so cos²y = 1/5. Then y′ = 2 sin x cos²y = 2 × 1 × 1/5 = 2/5, and 5y′ = 2.
+  Common mistake: Using the identity sin(x + y) − sin(x − y) instead of their sum.
   Answer: 2
 M B 2: |-
   Concept: A system with infinitely many solutions needs Δ = 0 and consistency (the dependent equation's RHS must match the same combination of the other RHS values).
@@ -290,6 +296,8 @@ M B 7: |-
   2. f is not differentiable at its corners: the peaks at half-integers ($\frac{1}{2}, \frac{3}{2}, \frac{5}{2}$) and the valleys at integers (1, 2) inside (0, 3).
   3. |Q| = 5 (0 and 3 are excluded as they are not in the open interval).
   4. Sum = 0 + 5 = 5.
+  Counting: f is not differentiable at 0.5, 1, 1.5, 2 and 2.5 in (0, 3), so Q has 5 elements. P is empty, so the total is 0 + 5 = 5.
+  Common mistake: Counting the endpoints 0 and 3, which are excluded from the open interval (0, 3).
   Answer: 5
 M B 8: |-
   Concept: The condition f(mn) = f(m)f(n) only applies when mn ∈ S = {1, …, 7}. The relevant products are 1·n, 2·2 = 4, 2·3 = 6.

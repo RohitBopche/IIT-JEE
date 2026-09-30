@@ -101,6 +101,8 @@ P A 9: |-
   Note: this uses the static permittivity of water; at optical frequencies water's refractive index is only about 1.33, so the question is really about the formula rather than visible light.
   Why others are wrong:
   - (A), (B), (C) do not equal $\frac{c}{9}$.
+  Refractive index view: n = √(ε_r μ_r) = 9 here, so v = c/9.
+  Common mistake: Dividing c by 81 instead of √81, which gives 3.7 × 10⁶ m/s (not an option).
   Answer: (D)
 P A 10: |-
   Concept: The polygon (triangle) law lets us write any vector $\vec{AX}$ as $\vec{AO} + \vec{OX}$, using the centre O as an intermediate point.
@@ -180,6 +182,8 @@ P A 16: |-
   - (B) An increase would need a longer wavelength (towards red).
   - (C) The central fringe is always bright, because the path difference there is zero for every wavelength.
   - (D) With equal slit intensities, the minima remain perfectly dark (zero intensity) regardless of colour.
+  Why (C) and (D) fail: The central fringe is bright for any wavelength (zero path difference), and with equal slit intensities the minima stay perfectly dark whatever the colour.
+  Common mistake: Thinking blue light, being "more energetic", spreads the fringes further apart.
   Answer: (A)
 P A 17: |-
   Concept: A ball thrown up to maximum height h has $u^2 = 2gh$. It passes height $\frac{h}{3}$ twice — once going up ($t_1$) and once coming down ($t_2$). These are the two roots of $\frac{h}{3} = ut - \frac{1}{2}gt^2$.
@@ -202,6 +206,8 @@ P A 18: |-
   - (B) $\frac{a}{\sqrt2}$ is where K = U = $\frac{E}{2}$.
   - (C) $\frac{\sqrt3a}{2}$ is where K = $\frac{E}{4}$ (the roles are reversed).
   - (D) y = a is the extreme position, where K = 0.
+  Why PE ∝ y²: U = ½ky² and E = ½ka², so U/E = y²/a². A quarter of the energy as PE means y is half the amplitude.
+  Common mistake: Solving y²/a² = 3/4 (using KE instead of PE), which gives a√3/2, option (C).
   Answer: (A)
 P A 19: |-
   Concept: Series LR circuit: $X_L = 2\pi fL$, impedance $Z = \sqrt{R^2 + X_L^2}$, current $I = \frac{V}{Z}$, and phase angle $\tan\phi = \frac{X_L}{R}$ (current lags voltage).
@@ -233,6 +239,8 @@ P B 1: |-
   1. $I_C = \frac{V_{R_C}}{R_C} = \frac{0.6}{1000} = 0.6$ mA.
   2. $I_B = \frac{I_C}{\beta} = \frac{0.6\text{ mA}}{24} = 0.025$ mA $= 25\ \mu$A.
   3. The collector supply voltage (10 V) is not needed for this calculation.
+  Why the supply voltage is not needed: Only the voltage drop across the known collector resistor gives I_C; the rest of the 10 V appears across the transistor (V_CE).
+  Common mistake: Using V_CC/R_C = 10 mA as the collector current, which gives 417 μA.
   Answer: 25
 P B 2: |-
   Concept: A ray crosses an interface without bending (for every angle of incidence) only if the two media have the same refractive index — then Snell's law gives equal angles on both sides.
@@ -241,6 +249,8 @@ P B 2: |-
   2. $\frac{9\times10^{-14}}{\lambda^2} = 0.25 \Rightarrow \lambda^2 = \frac{9\times10^{-14}}{0.25} = 3.6\times10^{-13}$ m².
   3. $\lambda = 6\times10^{-7}$ m $= 600$ nm.
   4. Check: $n_1 = 1.2 + \frac{10.8\times10^{-14}}{3.6\times10^{-13}} = 1.5$; $n_2 = 1.45 + 0.05 = 1.5$ ✓.
+  Final step: λ² = 9 × 10⁻¹⁴/0.25 = 3.6 × 10⁻¹³ m², so λ = 6 × 10⁻⁷ m = 600 nm.
+  Physical idea: The two glasses have different dispersion curves that cross at one wavelength; there the interface becomes invisible to light.
   Answer: 600
 P B 3: |-
   Concept: An inductor opposes sudden changes in current: immediately after switching, the current through it equals its value just before. In steady DC, the inductor acts like a plain wire.
@@ -258,6 +268,8 @@ P B 4: |-
   2. Stored energy: $U = \frac{1}{2}\times5000\times(0.04)^2 = 2500\times0.0016 = 4$ J.
   3. $\frac{1}{2}mv^2 = 4 \Rightarrow \frac{1}{2}\times0.02\times v^2 = 4 \Rightarrow v^2 = 400$.
   4. $v = 20$ m/s.
+  Final step: ½ × 0.02 × v² = 4, so v² = 400 and v = 20 m/s.
+  Common mistake: Using the mass in grams (20) instead of kilograms (0.02), which gives v ≈ 0.63 m/s.
   Answer: 20
 P B 5: |-
   Concept: The de Broglie relation $\lambda = \frac{h}{p}$ applies to both matter and photons. So the ratio of wavelengths is the inverse ratio of momenta.
@@ -266,6 +278,8 @@ P B 5: |-
   2. Photon momentum: $p_2 = 10^{-27}$ kg m/s.
   3. $\frac{\lambda_{photon}}{\lambda_{particle}} = \frac{p_1}{p_2} = \frac{9.1\times10^{-25}}{10^{-27}} = 910$.
   Note: the medium does not matter here because the particle's speed in it is given directly.
+  Final step: p₁/p₂ = 9.1 × 10⁻²⁵/10⁻²⁷ = 910.
+  Common mistake: Inverting the ratio; a smaller momentum means a longer wavelength, and the photon has the smaller momentum here.
   Answer: 910
 P B 6: |-
   Concept: An AM wave $A_c[1 + \mu\sin\omega_mt]\sin\omega_ct$ expands into the carrier plus two side bands, each of amplitude $\frac{\mu A_c}{2} = \frac{A_m}{2}$.
@@ -274,6 +288,8 @@ P B 6: |-
   2. Each side band amplitude: $\frac{\mu A_c}{2} = \frac{5}{2} = 2.5$ V $= \frac{25}{10}$ V.
   3. So a = b = 25 and $\frac{a}{b} = 1$.
   4. The side bands are at 11.21 MHz ± 7.7 kHz, but their amplitudes are equal.
+  Why the side bands are equal: sin ω_c t × sin ω_m t splits by the product-to-sum identity into two cosine terms at f_c ± f_m with equal coefficients μA_c/2.
+  Common mistake: Taking the side-band amplitude as μA_c (without the ½), which still gives a/b = 1 but the wrong individual values.
   Answer: 1
 P B 7: |-
   Concept: A magnetic needle of moment M in field B oscillates with period $T = 2\pi\sqrt{\frac{I}{MB}}$ (small oscillations).
@@ -282,6 +298,8 @@ P B 7: |-
   2. $B = \frac{4\pi^2I}{MT^2}$.
   3. $B = \frac{4\times9.85\times5\times10^{-6}}{9.85\times10^{-2}\times0.25} = \frac{20\times10^{-6}}{0.25\times10^{-2}} = 8\times10^{-3}$ T.
   4. B = 8 mT.
+  Why π² cancels: Using π² = 9.85, the same number as the magnetic moment's digits, makes the arithmetic clean.
+  Common mistake: Taking the period as 5 s (the total time) instead of 5/10 = 0.5 s.
   Answer: 8
 P B 8: |-
   Concept: Between the two planets there is a neutral point where their gravitational pulls cancel. The satellite needs just enough energy to reach that point; beyond it, the second planet pulls it in. Use energy conservation with both planets' potentials. (The text says 9M; the figure's "2M" label is inconsistent, and the key value 4 matches 9M.)
@@ -298,6 +316,8 @@ P B 9: |-
   1. $2\pi r = 2\times\frac{22}{7}\times0.5\times10^{-10} = 3.143\times10^{-10}$ m.
   2. $I = \frac{1.6\times10^{-19}\times2.2\times10^6}{3.143\times10^{-10}} = \frac{3.52\times10^{-13}}{3.143\times10^{-10}} = 1.12\times10^{-3}$ A.
   3. $1.12\times10^{-3}$ A $= 1.12$ mA $= 112\times10^{-2}$ mA.
+  Final step: I = 3.52 × 10⁻¹³/3.143 × 10⁻¹⁰ ≈ 1.12 × 10⁻³ A = 1.12 mA = 112 × 10⁻² mA.
+  Common mistake: Using the radius instead of the circumference (2πr) in the period.
   Answer: 112
 P B 10: |-
   Concept: A discharging capacitor loses charge exponentially, $q = q_0e^{-t/RC}$; a radioactive sample's activity also decays exponentially, $A = A_0e^{-t/\tau}$, where τ is the mean life. Their ratio stays constant only if the exponents are equal: RC = τ.
@@ -305,4 +325,6 @@ P B 10: |-
   1. $\frac{q}{A} = \frac{q_0}{A_0}e^{-t\left(\frac{1}{RC} - \frac{1}{\tau}\right)}$ is time-independent iff RC = τ.
   2. $R = \frac{\tau}{C} = \frac{30\times10^{-3}}{200\times10^{-6}} = 150\ \Omega$.
   Note: the average (mean) life τ, not the half-life, is the time constant of exponential decay.
+  Final step: R = τ/C = 30 × 10⁻³/200 × 10⁻⁶ = 150 Ω.
+  Common mistake: Using the half-life relation (τ ln 2) instead of the mean life; the time constant RC corresponds to the mean life, not the half-life.
   Answer: 150
