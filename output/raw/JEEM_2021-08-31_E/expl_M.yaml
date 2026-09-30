@@ -1,191 +1,360 @@
 M A 1: |-
-  Concept: A homogeneous system has infinitely many solutions iff D = 0.
+  Concept: A homogeneous linear system always has the trivial solution x = y = z = 0. It has infinitely many (non-trivial) solutions exactly when its coefficient determinant D is 0; otherwise the trivial solution is the only one.
   Solution:
-  1. $D = 1 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma + 2\cos\alpha\cos\beta\cos\gamma$.
-  2. With γ = 2π − (α + β), cos γ = cos(α + β); substituting and simplifying gives D = 0.
-  3. So there are non-trivial solutions: infinitely many.
+  1. Expanding the symmetric determinant: $D = 1 - \cos^2\alpha - \cos^2\beta - \cos^2\gamma + 2\cos\alpha\cos\beta\cos\gamma$.
+  2. Standard identity: this expression equals $4\sin s\,\sin(s - \alpha)\sin(s - \beta)\sin(s - \gamma)$ with $s = \frac{\alpha + \beta + \gamma}{2}$.
+  3. Here s = π, so sin s = 0 and D = 0.
+  4. Direct check: with cos γ = cos(α + β), $\cos^2\alpha + \cos^2\beta + \cos^2(\alpha + \beta) - 2\cos\alpha\cos\beta\cos(\alpha + \beta) = 1$ is a known identity, which again gives D = 0.
+  5. So the system has infinitely many solutions.
+  Why others are wrong:
+  - (A) is impossible: a homogeneous system always has at least the zero solution.
+  - (C) is impossible: a linear system never has exactly two solutions.
+  - (D) would need D ≠ 0.
+  Key takeaway: For a homogeneous system, D = 0 gives infinitely many solutions and D ≠ 0 gives only the trivial one.
   Answer: (B)
 M A 2: |-
-  Concept: $\vec a\times(\vec u\times\vec a) = |\vec a|^2\vec u - (\vec u\cdot\vec a)\vec a$, with |a| = |b| = |c| = k and all three mutually ⊥.
+  Concept: Use the vector triple product identity $\vec a\times(\vec u\times\vec a) = |\vec a|^2\vec u - (\vec u\cdot\vec a)\vec a$. Since $\vec a$, $\vec b$, $\vec c$ are mutually perpendicular with a common magnitude k, they form an orthogonal basis, and any vector satisfies $\vec r = \frac{(\vec r\cdot\vec a)\vec a + (\vec r\cdot\vec b)\vec b + (\vec r\cdot\vec c)\vec c}{k^2}$.
   Solution:
-  1. Summing: $k^2(3\vec r - \vec a - \vec b - \vec c) - [(\vec r\cdot\vec a)\vec a + (\vec r\cdot\vec b)\vec b + (\vec r\cdot\vec c)\vec c] = 0$ (the cross terms like b·a vanish).
-  2. The bracket equals $k^2\vec r$ (the components of r along an orthogonal basis), so $2\vec r = \vec a + \vec b + \vec c$.
+  1. First term: $k^2(\vec r - \vec b) - ((\vec r - \vec b)\cdot\vec a)\vec a = k^2(\vec r - \vec b) - (\vec r\cdot\vec a)\vec a$, because $\vec b\cdot\vec a = 0$.
+  2. Similarly: $k^2(\vec r - \vec c) - (\vec r\cdot\vec b)\vec b$ and $k^2(\vec r - \vec a) - (\vec r\cdot\vec c)\vec c$.
+  3. Sum: $k^2(3\vec r - \vec a - \vec b - \vec c) - k^2\vec r = 0$, using the basis expansion.
+  4. So $2\vec r = \vec a + \vec b + \vec c$ and $\vec r = \frac12(\vec a + \vec b + \vec c)$.
+  Why others are wrong:
+  - (A) uses a factor of ⅓, forgetting that the projection terms add back one copy of $\vec r$.
+  - (B) and (D) have unequal coefficients, which break the cyclic symmetry of the equation.
+  Key takeaway: The projections of r onto an orthogonal basis sum back to r; this collapses the equation.
   Answer: (C)
 M A 3: |-
-  Concept: Both arguments must lie in [−1, 1].
+  Concept: $\sin^{-1}u$ and $\cos^{-1}v$ are defined only for u, v ∈ [−1, 1]. The domain is the intersection of both conditions, excluding x = ±1 where the fractions are undefined.
   Solution:
-  1. $\left|\frac{x - 1}{x + 1}\right| \le 1$ gives x ≥ 0.
-  2. $\frac{3x^2 + x - 1}{(x - 1)^2} \le 1$ gives $2x^2 + 3x - 2 \le 0$, so $x \in \left[-2, \frac{1}{2}\right]$.
-  3. $\frac{3x^2 + x - 1}{(x - 1)^2} \ge -1$ gives $4x^2 - x \ge 0$, so $x \le 0$ or $x \ge \frac{1}{4}$.
-  4. Combining: $\{0\} \cup \left[\frac{1}{4}, \frac{1}{2}\right]$.
+  1. $\cos^{-1}$: $\left|\frac{x - 1}{x + 1}\right| \le 1$ means |x − 1| ≤ |x + 1|, so x ≥ 0 (x ≠ 1 is taken care of next).
+  2. $\sin^{-1}$ upper bound: $3x^2 + x - 1 \le (x - 1)^2$ gives $2x^2 + 3x - 2 \le 0$, that is, (2x − 1)(x + 2) ≤ 0, so $x \in [-2, \frac12]$.
+  3. $\sin^{-1}$ lower bound: $3x^2 + x - 1 \ge -(x - 1)^2$ gives $4x^2 - x \ge 0$, that is, x(4x − 1) ≥ 0, so x ≤ 0 or x ≥ ¼.
+  4. Intersection: x ≥ 0, x ≤ ½ and (x ≤ 0 or x ≥ ¼) gives $\{0\}\cup\left[\frac14, \frac12\right]$.
+  Why others are wrong:
+  - (A) and (D) include (0, ¼), where the sin⁻¹ argument is below −1.
+  - (B) includes [−2, 0), which violates the cos⁻¹ condition.
+  Key takeaway: Intersect all the conditions carefully; isolated points such as {0} often survive.
   Answer: (C)
 M A 4: |-
-  Concept: Onto functions S → S are permutations (6! = 720).
+  Concept: A function from a finite set onto itself is onto exactly when it is one-to-one. So the onto functions from S to S are the permutations of S, and there are 6! = 720 of them.
   Solution:
-  1. g(3) = 2g(1) allows (g(1), g(3)) = (1, 2), (2, 4) or (3, 6); the other 4 values can be arranged in 4! ways.
-  2. p = 3 × 24/720 = 1/10.
+  1. g(3) = 2g(1) needs both values in S: g(1) ∈ {1, 2, 3} gives g(3) ∈ {2, 4, 6}.
+  2. The valid pairs are (g(1), g(3)) = (1, 2), (2, 4), (3, 6): 3 choices, each with distinct values.
+  3. The remaining 4 elements of S map bijectively onto the remaining 4 values in 4! = 24 ways.
+  4. Favourable = 3 × 24 = 72, so P = 72/720 = 1/10.
+  Why others are wrong:
+  - (B) 1/15 and (D) 1/30 undercount, typically by also fixing the other images.
+  - (C) 1/5 double-counts the pairs, for example by allowing g(1) = g(3).
+  Key takeaway: On a finite set, onto = one-to-one = permutation. Fix the constrained values and permute the rest.
   Answer: (A)
 M A 5: |-
-  Concept: Cauchy's functional equation on ℕ gives f(n) = n f(1).
+  Concept: Cauchy's functional equation f(m + n) = f(m) + f(n) on natural numbers forces linearity. By induction, f(n) = f(1 + 1 + … + 1) = n·f(1).
   Solution:
-  1. f(6) = 6f(1) = 18, so f(1) = 3 and f(n) = 3n.
-  2. f(2)f(3) = 6 × 9 = 54.
+  1. f(6) = 6f(1) = 18, so f(1) = 3.
+  2. Hence f(n) = 3n for every n ∈ ℕ.
+  3. f(2) = 6 and f(3) = 9.
+  4. f(2)·f(3) = 54.
+  Check: f(2) + f(4) = 6 + 12 = 18 = f(6). ✓
+  Why others are wrong:
+  - (A) 6 is f(2) alone.
+  - (C) 18 is f(6), and (D) 36 is f(2)² or f(12).
+  Key takeaway: Additive functions on ℕ are f(n) = n·f(1); find f(1) from the given value.
   Answer: (B)
 M A 6: |-
-  Concept: The line passes through the origin with direction n₁ × n₂.
+  Concept: The line of intersection of two planes through the origin also passes through the origin, and its direction is $\vec n_1\times\vec n_2$. The distance of a point P from a line through O with unit direction $\hat d$ is $\sqrt{|OP|^2 - (\vec{OP}\cdot\hat d)^2}$.
   Solution:
-  1. (2, 3, 2) × (1, −2, 1) = (7, 0, −7), which is proportional to (1, 0, −1).
-  2. For P(−1, 2, −2): |OP|² = 9 and its projection on the direction is 1/√2.
-  3. Distance² = 9 − ½ = 17/2, so the distance is √34/2.
+  1. Both planes have zero constant term, so O(0, 0, 0) lies on the line.
+  2. Direction: (2, 3, 2) × (1, −2, 1) = (3·1 − 2·(−2), 2·1 − 2·1, 2·(−2) − 3·1) = (7, 0, −7), proportional to (1, 0, −1). Unit vector $\hat d = \frac{(1, 0, -1)}{\sqrt2}$.
+  3. $\vec{OP} = (-1, 2, -2)$, so |OP|² = 1 + 4 + 4 = 9.
+  4. Projection: $\vec{OP}\cdot\hat d = \frac{-1 + 0 + 2}{\sqrt2} = \frac{1}{\sqrt2}$.
+  5. Distance² = 9 − ½ = 17/2, so the distance is $\sqrt{\frac{17}{2}} = \frac{\sqrt{34}}{2}$.
+  Why others are wrong:
+  - (A) 1/√2 is the projection length, not the perpendicular distance.
+  - (B) and (C) come from arithmetic slips in the cross product or the projection.
+  Key takeaway: Distance from a line = √(|OP|² − projection²), a Pythagoras shortcut.
   Answer: (D)
 M A 7: |-
-  Concept: ∼(X ⇒ Y) ≡ X ∧ ∼Y.
+  Concept: An implication X ⇒ Y is false only when X is true and Y is false. So ∼(X ⇒ Y) ≡ X ∧ ∼Y. De Morgan's law gives ∼(q ∨ r) ≡ ∼q ∧ ∼r.
   Solution:
-  1. (p ∨ r) ∧ ∼q ∧ ∼r = p ∧ ∼q ∧ ∼r (because ∼r removes the r).
+  1. ∼[(p ∨ r) ⇒ (q ∨ r)] ≡ (p ∨ r) ∧ ∼(q ∨ r) ≡ (p ∨ r) ∧ ∼q ∧ ∼r.
+  2. Distribute: [(p ∧ ∼r) ∨ (r ∧ ∼r)] ∧ ∼q.
+  3. r ∧ ∼r is a contradiction (F), so this reduces to p ∧ ∼r ∧ ∼q.
+  4. Result: p ∧ ∼q ∧ ∼r.
+  Check: With p = T, q = F, r = F, the original statement reads T ⇒ F, which is false, so its negation is true. ✓
+  Why others are wrong:
+  - (B) and (C) have ∼p; if p is false and r false, the antecedent is false and the implication is true.
+  - (D) has q true, which makes the consequent true and the implication true.
+  Key takeaway: Negating an implication gives "antecedent AND not consequent"; then simplify.
   Answer: (A)
 M A 8: |-
-  Concept: Evaluate both limits.
+  Concept: If α and β are the roots of ax² + bx − 4 = 0, then αβ = −4/a and α + β = −b/a. So first evaluate both limits.
   Solution:
-  1. α: tan x(tan²x − 1)/cos(x + π/4) → by L'Hôpital, α = −4.
-  2. β: $(\cos x)^{\cot x} = e^{\cot x\ln\cos x} \to e^0 = 1$.
-  3. The product of the roots is −4/a = −4, so a = 1; the sum is −b/a = −3, so b = 3.
+  1. α: Put x = π/4 + t. Then cos(x + π/4) = cos(π/2 + t) = −sin t ≈ −t. Also tan x ≈ 1 + 2t, so tan x(tan²x − 1) ≈ 1 × (4t) = 4t. Hence α = 4t/(−t) = −4.
+  2. β: $(\cos x)^{\cot x} = e^{\cot x\ln\cos x}$. As x → 0, $\ln\cos x \approx -\frac{x^2}{2}$ and cot x ≈ 1/x, so the exponent is about −x/2 → 0 and β = e⁰ = 1.
+  3. Product: αβ = −4 = −4/a, so a = 1.
+  4. Sum: α + β = −3 = −b/a, so b = 3.
+  5. (a, b) = (1, 3). Check: x² + 3x − 4 = (x + 4)(x − 1). ✓
+  Why others are wrong:
+  - (A), (B) and (C) get a sign wrong in α, or in the sum/product relations.
+  Key takeaway: Use a substitution or L'Hôpital for 0/0 and the exponential form for 1^∞.
   Answer: (D)
 M A 9: |-
-  Concept: Midpoint (h, k), so the ellipse point is (2h + 3, 2k + 5).
+  Concept: For a locus of midpoints, write the moving point on the curve in terms of the midpoint (h, k), substitute into the curve's equation, and then replace (h, k) with (x, y).
   Solution:
-  1. $\frac{(2h + 3)^2}{4} + \frac{(2k + 5)^2}{9} = 1$.
-  2. Expanding gives 36x² + 16y² + 108x + 80y + 145 = 0.
+  1. If (h, k) is the midpoint of (−3, −5) and (x₁, y₁), then x₁ = 2h + 3 and y₁ = 2k + 5.
+  2. (x₁, y₁) lies on the ellipse: $\frac{(2h + 3)^2}{4} + \frac{(2k + 5)^2}{9} = 1$.
+  3. Multiply by 36: 9(4h² + 12h + 9) + 4(4k² + 20k + 25) = 36.
+  4. 36h² + 108h + 81 + 16k² + 80k + 100 − 36 = 0.
+  5. Locus: 36x² + 16y² + 108x + 80y + 145 = 0.
+  Why others are wrong:
+  - (A) has the wrong x², y² coefficients (forgetting the factor 4 from (2h)²).
+  - (B) and (D) have wrong linear coefficients; they come from sign or scaling errors in 2h + 3 and 2k + 5.
+  Key takeaway: The midpoint locus of a fixed point and a point on a conic is a scaled (½) copy of the conic.
   Answer: (C)
 M A 10: |-
-  Concept: Cancel 2ˣ and treat x as a function of y.
+  Concept: When dy/dx looks messy, consider inverting to dx/dy. Here, after cancelling 2ˣ, the equation in x as a function of y is exact and separates immediately.
   Solution:
-  1. $\frac{dx}{dy} = \frac{1 + 2^y\ln2}{y + 2^y}$, so $x = \ln(y + 2^y) + C$; y(0) = 0 gives C = 0.
-  2. At y = 1, x = ln 3 ≈ 1.10, which lies in (1, 2).
+  1. Factor out 2ˣ: $\frac{dy}{dx} = \frac{2^x(y + 2^y)}{2^x(1 + 2^y\ln2)} = \frac{y + 2^y}{1 + 2^y\ln2}$.
+  2. Invert: $\frac{dx}{dy} = \frac{1 + 2^y\ln2}{y + 2^y}$. The numerator is the derivative of the denominator.
+  3. Integrate: $x = \ln|y + 2^y| + C$.
+  4. y(0) = 0 gives 0 = ln(0 + 1) + C, so C = 0.
+  5. At y = 1: x = ln(1 + 2) = ln 3 ≈ 1.0986, which lies in (1, 2).
+  Why others are wrong:
+  - (B) and (D) require ln 3 < 1, but e < 3, so ln 3 > 1.
+  - (C) requires ln 3 > 2, but 3 < e² ≈ 7.39.
+  Key takeaway: Recognise f′/f forms; ln 3 ≈ 1.0986 is just above 1.
   Answer: (A)
 M A 11: |-
-  Concept: Angle between the tangents at an intersection point.
+  Concept: The angle between two curves at a common point is the angle between their tangents: $\tan\theta = \left|\frac{m_1 - m_2}{1 + m_1m_2}\right|$.
   Solution:
-  1. At the intersection: $x^2 = \frac{a^2b}{a + b}$ and $y^2 = \frac{ab^2}{a + b}$, so $\frac{x}{y} = \sqrt{\frac{a}{b}}$.
-  2. The slopes are $m_1 = -\frac{b^2x}{a^2y}$ (ellipse) and $m_2 = -\frac{x}{y}$ (circle).
-  3. $\tan\theta = \frac{m_1 - m_2}{1 + m_1m_2} = \frac{a - b}{\sqrt{ab}}$.
+  1. Intersection: From x² + y² = ab and b²x² + a²y² = a²b², we get $x^2 = \frac{a^2b}{a + b}$ and $y^2 = \frac{ab^2}{a + b}$, so $\frac{x^2}{y^2} = \frac{a}{b}$.
+  2. Slopes: ellipse $m_1 = -\frac{b^2x}{a^2y}$; circle $m_2 = -\frac{x}{y}$.
+  3. $m_1m_2 = \frac{b^2x^2}{a^2y^2} = \frac{b^2}{a^2}\cdot\frac{a}{b} = \frac{b}{a}$, so $1 + m_1m_2 = \frac{a + b}{a}$.
+  4. $m_1 - m_2 = \frac{x}{y}\left(1 - \frac{b^2}{a^2}\right) = \sqrt{\frac{a}{b}}\cdot\frac{a^2 - b^2}{a^2}$.
+  5. $\tan\theta = \sqrt{\frac{a}{b}}\cdot\frac{(a - b)(a + b)}{a^2}\cdot\frac{a}{a + b} = \frac{a - b}{\sqrt{ab}}$.
+  Why others are wrong:
+  - (A) has a + b, a sign error in the numerator.
+  - (B) has an extra factor of ½.
+  - (D) is dimensionally inconsistent.
+  Key takeaway: Use the product x²/y² from the intersection to simplify m₁m₂ neatly.
   Answer: (C)
 M A 12: |-
-  Concept: Substitute v = y²/x².
+  Concept: The expression y²/x² suggests substituting v = y²/x², a homogeneous-type substitution. Then y² = vx², and differentiating gives $2yy' = v'x^2 + 2vx$.
   Solution:
-  1. $yy' = \frac{x^2v'}{2} + xv$, so $\frac{xv'}{2} = \frac{\phi}{\phi'}$, which gives $\frac{\phi'(v)}{\phi(v)}dv = \frac{2dx}{x}$.
-  2. φ(v) = Cx², and y(1) = −1 gives C = φ(1).
-  3. At x = 2: $\phi\left(\frac{y^2}{4}\right) = 4\phi(1)$.
+  1. $yy' = \frac{x^2v'}{2} + xv$.
+  2. The equation becomes $\frac{x^2v'}{2} + xv = x\left[v + \frac{\phi(v)}{\phi'(v)}\right]$, so $\frac{xv'}{2} = \frac{\phi(v)}{\phi'(v)}$.
+  3. Separate: $\frac{\phi'(v)}{\phi(v)}dv = \frac{2}{x}dx$, which integrates to ln φ(v) = 2 ln x + c, so φ(v) = Cx².
+  4. y(1) = −1: at x = 1, v = 1, so C = φ(1).
+  5. So $\phi\left(\frac{y^2}{x^2}\right) = \phi(1)x^2$. At x = 2: $\phi\left(\frac{y^2}{4}\right) = 4\phi(1)$.
+  Why others are wrong:
+  - (A) uses φ(2), confusing x with v.
+  - (C) and (D) use the wrong power of x (2 or 1 instead of x² = 4).
+  Key takeaway: φ′/φ integrates to ln φ; the substitution v = y²/x² removes the complication.
   Answer: (B)
 M A 13: |-
-  Concept: Convert everything to base 2 and set t = 2ˣ.
+  Concept: Convert all the logs to base 2 (log₄u = ½log₂u), combine them, and then put t = 2ˣ to get a quadratic. The sum of the roots in x is then log₂ of the product of the t-roots.
   Solution:
-  1. $2^{x+1}(10 - 2^{-x}) = (3 + 2^x)^2$ gives $20t - 2 = 9 + 6t + t^2$, so $t^2 - 14t + 11 = 0$.
-  2. Both roots are positive, with t₁t₂ = 11, so x₁ + x₂ = log₂11.
+  1. $2\log_4(10 - 2^{-x}) = \log_2(10 - 2^{-x})$, and x + 1 = log₂2^{x+1}.
+  2. The equation becomes $\log_2[2^{x+1}(10 - 2^{-x})] = \log_2(3 + 2^x)^2$.
+  3. With t = 2ˣ: 2t(10 − 1/t) = (3 + t)², so 20t − 2 = 9 + 6t + t², giving t² − 14t + 11 = 0.
+  4. The roots are t = 7 ± √38 (≈ 13.16 and 0.836). Both are positive and exceed 0.1, so 10 − 2^{−x} > 0 holds and both are valid.
+  5. x₁ + x₂ = log₂t₁ + log₂t₂ = log₂(t₁t₂) = log₂11.
+  Why others are wrong:
+  - (A) log₂14 uses the sum of the t-roots instead of their product.
+  - (C) and (D) come from arithmetic slips in the quadratic's constant term.
+  Key takeaway: For exponential equations, Σx = log(product of the t-roots); check the domain of each root.
   Answer: (B)
 M A 14: |-
-  Concept: Purely imaginary means ∠(z − i, z − 1) = 90°, so z lies on the circle with diameter joining i and 1.
+  Concept: $\frac{z - i}{z - 1}$ is purely imaginary exactly when arg[(z − i)/(z − 1)] = ±π/2. Geometrically, the segments from z to i and from z to 1 are perpendicular, so z lies on the circle with diameter joining i and 1 (excluding the endpoints).
   Solution:
-  1. The centre is (½, ½) and the radius is 1/√2.
-  2. The distance from (3, 3) to the centre is 5/√2, so the minimum is 5/√2 − 1/√2 = 2√2.
+  1. The endpoints are A = (0, 1) and B = (1, 0), so the centre is C = (½, ½) and the radius is AB/2 = √2/2 = 1/√2.
+  2. Distance from P = (3, 3) to C: $\sqrt{(2.5)^2 + (2.5)^2} = \frac{5}{\sqrt2}$.
+  3. P lies outside the circle, so the minimum distance to it is PC − r = 5/√2 − 1/√2 = 4/√2 = 2√2.
+  Why others are wrong:
+  - (A) 2√2 − 1 subtracts 1 instead of the radius 1/√2.
+  - (B) 3√2 is PC + r, the maximum distance.
+  - (C) 6√2 is not related to the geometry.
+  Key takeaway: Purely imaginary ratio → right angle → circle on a diameter. Minimum distance to a circle = (distance to centre) − radius.
   Answer: (D)
 M A 15: |-
-  Concept: $\frac{S_{10}}{S_p} = \frac{10^2}{p^2}$ for all p, so S_n ∝ n² and a_n ∝ 2n − 1.
+  Concept: For an AP, $S_n = \frac{n}{2}[2a + (n - 1)d]$. If S₁₀/S_p = 10²/p² for every p ≠ 10, the sums must be proportional to n², which pins down the ratio of a to d.
   Solution:
-  1. $\frac{a_{11}}{a_{10}} = \frac{21}{19}$.
+  1. $\frac{S_{10}}{S_p} = \frac{10[2a + 9d]}{p[2a + (p - 1)d]} = \frac{100}{p^2}$ gives $p(2a + 9d) = 10(2a + (p - 1)d)$.
+  2. Rearranging: 2ap + 9dp = 20a + 10pd − 10d, so 2a(p − 10) = d(p − 10). Since p ≠ 10, d = 2a.
+  3. So a_n = a + (n − 1)2a = a(2n − 1): the terms are proportional to the odd numbers.
+  4. $\frac{a_{11}}{a_{10}} = \frac{21}{19}$.
+  Why others are wrong:
+  - (A) 19/21 is the inverted ratio.
+  - (B) and (D) are ratios of the squares 100 and 121, which confuse term ratios with sum ratios.
+  Key takeaway: S_n ∝ n² ⇔ the AP is a, 3a, 5a, …, so a_n ∝ (2n − 1).
   Answer: (C)
 M A 16: |-
-  Concept: Area = 12 fixes (α, β) on two parallel lines.
+  Concept: Triangles with a fixed base and a fixed area have their third vertex on two lines parallel to the base, one on each side. The least distance from the origin to set A is the smaller perpendicular distance from O to these lines.
   Solution:
-  1. ½|4α − 2β − 8| = 12, so 2α − β = 16 or 2α − β = −8.
-  2. The distances from the origin are 16/√5 and 8/√5; the least is 8/√5.
+  1. Area $= \frac12|5(2 - \beta) + 3(\beta - 6) + \alpha(6 - 2)| = \frac12|4\alpha - 2\beta - 8| = 12$.
+  2. |2α − β − 4| = 12, so 2α − β = 16 or 2α − β = −8.
+  3. Distance from O to 2x − y − 16 = 0: 16/√5. Distance to 2x − y + 8 = 0: 8/√5.
+  4. Least length = 8/√5.
+  Why others are wrong:
+  - (B) 16/√5 is the distance to the farther line.
+  - (A) 4/√5 is the distance to the base line itself (area 0).
+  - (D) 12/√5 comes from mishandling the absolute value.
+  Key takeaway: A fixed area gives two parallel lines; compare both perpendicular distances.
   Answer: (C)
 M A 17: |-
-  Concept: sec²x = 1 + tan²x.
+  Concept: Rewrite sec²x as 1 + tan²x so both terms share the same exponent variable. That turns the equation into a simple exponential equation in t = tan²x.
   Solution:
-  1. $32^{t}(1 + 32) = 81$ with t = tan²x, so $32^{t} = \frac{27}{11}$ and $t = \log_{32}\frac{27}{11} \approx 0.26$.
-  2. On [0, π/4], tan²x ∈ [0, 1] and is monotonic, so there is exactly 1 solution.
+  1. $32^{\tan^2x} + 32^{1 + \tan^2x} = 81$ gives $32^t(1 + 32) = 81$, so $32^t = \frac{81}{33} = \frac{27}{11}$.
+  2. $t = \log_{32}\frac{27}{11}$. Since 1 < 27/11 ≈ 2.45 < 32, we get 0 < t < 1 (in fact t ≈ 0.26).
+  3. On [0, π/4], tan²x increases continuously from 0 to 1, so it takes the value t exactly once.
+  4. The number of solutions is 1.
+  Why others are wrong:
+  - (C) 0 misses that t lies strictly between 0 and 1.
+  - (A) 3 and (D) 2 ignore the restricted interval, on which tan²x is one-to-one.
+  Key takeaway: sec² = 1 + tan² turns these into one-variable equations; count solutions using monotonicity.
   Answer: (B)
 M A 18: |-
-  Concept: Mean value theorem twice, then Rolle's theorem on f′.
+  Concept: The mean value theorem gives a point where the derivative equals the average slope. Applying it on two sub-intervals, then Rolle's theorem to f′, produces a zero of f″.
   Solution:
-  1. The MVT on [0, 1] and [1, 2] gives f′(c₁) = 1 = f′(c₂).
-  2. Rolle's theorem on f′ then gives f″(c) = 0 for some c ∈ (c₁, c₂).
+  1. On [0, 1]: f′(c₁) = (1 − 0)/1 = 1 for some c₁ ∈ (0, 1).
+  2. On [1, 2]: f′(c₂) = (2 − 1)/1 = 1 for some c₂ ∈ (1, 2).
+  3. f′ is differentiable on (0, 2), and f′(c₁) = f′(c₂), so Rolle's theorem gives f″(c) = 0 for some c ∈ (c₁, c₂) ⊂ (0, 2).
+  Why others are wrong:
+  - (A) f″ ≡ 0 holds only if f(x) = x; other functions through these points exist, such as x + sin(πx).
+  - (C) f′ = 0 need not occur (f(x) = x has f′ = 1).
+  - (D) f″ > 0 everywhere contradicts (B); strict convexity cannot pass through three collinear points.
+  Key takeaway: Three collinear points on a twice-differentiable curve force an inflection-type point where f″ = 0.
   Answer: (B)
 M A 19: |-
-  Concept: Split at x = 1: $(x - [x])^{[x]}$ is 1 on [0, 1) and x − 1 on [1, 2).
+  Concept: Integrals involving [x] are split at the integers so that [x] is constant on each piece. Here $(x - [x])^{[x]}$ is 1 on [0, 1) (since anything⁰ = 1) and x − 1 on [1, 2).
   Solution:
-  1. $\int_0^1\sin\frac{\pi x}{2}dx = \frac{2}{\pi}$.
-  2. $\int_1^2(x - 1)\sin\frac{\pi x}{2}dx = \frac{2(\pi - 2)}{\pi^2}$ (integration by parts).
-  3. $\pi^2\left[\frac{2}{\pi} + \frac{2(\pi - 2)}{\pi^2}\right] = 2\pi + 2\pi - 4 = 4(\pi - 1)$.
+  1. $I_1 = \int_0^1\sin\frac{\pi x}{2}dx = \left[-\frac{2}{\pi}\cos\frac{\pi x}{2}\right]_0^1 = \frac{2}{\pi}$.
+  2. $I_2 = \int_1^2(x - 1)\sin\frac{\pi x}{2}dx$. Put u = x − 1: $\int_0^1 u\cos\frac{\pi u}{2}du = \left[\frac{2u}{\pi}\sin\frac{\pi u}{2}\right]_0^1 - \frac{2}{\pi}\int_0^1\sin\frac{\pi u}{2}du = \frac{2}{\pi} - \frac{4}{\pi^2}$.
+  3. Total × π²: π²(2/π + 2/π − 4/π²) = 2π + 2π − 4 = 4π − 4 = 4(π − 1).
+  Why others are wrong:
+  - (A) 2(π − 1) keeps only half, missing I₁ or the doubling.
+  - (C) and (D) have +1, a sign error in the integration by parts.
+  Key takeaway: Split at integers for [x]; the shift u = x − 1 turns sin into cos and simplifies the parts integral.
   Answer: (B)
 M A 20: |-
-  Concept: Use Σx and Σx².
+  Concept: Mean and variance give Σx = nx̄ and Σx² = n(σ² + x̄²). Remove the known observations from both sums, then recompute the variance for the rest.
   Solution:
-  1. Σx = 56, so the remaining 5 sum to 42.
-  2. Σx² = 7(16 + 64) = 560, so the remaining 5 have 560 − 36 − 64 = 460.
-  3. Variance = 460/5 − (42/5)² = 92 − 70.56 = 536/25.
+  1. Σx = 7 × 8 = 56, so the remaining five sum to 56 − 6 − 8 = 42.
+  2. Σx² = 7(16 + 64) = 560, so the remaining five have 560 − 36 − 64 = 460.
+  3. The new mean is 42/5 = 8.4.
+  4. Variance = Σx²/n − mean² = 460/5 − (42/5)² = 92 − 1764/25 = (2300 − 1764)/25 = 536/25.
+  Why others are wrong:
+  - (A) 92/5 and (D) 112/5 misuse the sum of squares or the new mean.
+  - (B) 134/5 = 670/25 uses the wrong subtraction.
+  Key takeaway: Work with Σx and Σx², which are additive, rather than with the means and variances directly.
   Answer: (C)
 M B 1: |-
-  Concept: Multinomial: choose p a's, q (2b)'s and r (4ab)'s with p + q + r = 10.
+  Concept: Multinomial theorem: in (x + y + z)ⁿ, the term with powers p, q, r (p + q + r = n) has coefficient $\frac{n!}{p!q!r!}$. Here x = a, y = 2b, z = 4ab, and the powers of a and b come from these choices.
   Solution:
-  1. The power of a is p + r = 7 and the power of b is q + r = 8, with p + q + r = 10, so r = 5, p = 2, q = 3.
-  2. The coefficient is $\frac{10!}{2!3!5!}\cdot2^3\cdot4^5 = 2520\times2^{13} = 315\times2^{16}$.
+  1. Choose p factors of a, q of 2b and r of 4ab, with p + q + r = 10.
+  2. Power of a: p + r = 7. Power of b: q + r = 8.
+  3. Adding: p + q + 2r = 15, so r = 15 − 10 = 5. Then p = 2 and q = 3.
+  4. Coefficient: $\frac{10!}{2!\,3!\,5!}\cdot2^3\cdot4^5 = 2520\times8\times1024 = 2520\times2^{13}$.
+  5. 2520 × 2¹³ = 315 × 2³ × 2¹³ = 315 × 2¹⁶, so K = 315.
+  Common mistake: Treating a and b as independent (a binomial approach), which misses that the 4ab term contributes to both powers.
+  Key takeaway: Set up linear equations for the exponents and solve for the unique (p, q, r).
   Answer: 315
 M B 2: |-
-  Concept: A line lies in a plane when its point is on the plane and its direction is ⊥ to the normal.
+  Concept: A line lies in a plane when (i) a point of the line satisfies the plane equation and (ii) the direction of the line is perpendicular to the plane's normal (their dot product is 0).
   Solution:
-  1. The point (2, 2, −2) gives 2 + 6 + 4 + β = 0, so β = −12.
-  2. The direction gives α − 15 − 4 = 0, so α = 19.
-  3. α + β = 7.
+  1. Point on the line: (2, 2, −2). Substituting: 2 + 3(2) − 2(−2) + β = 0, so 12 + β = 0 and β = −12.
+  2. Direction (α, −5, 2) with normal (1, 3, −2): α − 15 − 4 = 0, so α = 19.
+  3. α + β = 19 − 12 = 7.
+  Common mistake: Using only the direction condition, which gives a line parallel to the plane but not necessarily in it.
+  Key takeaway: Line in plane ⇔ point on plane AND direction ⊥ normal.
   Answer: 7
 M B 3: |-
-  Concept: Inclusion–exclusion on 1000–9999.
+  Concept: Inclusion–exclusion: |not A and not B| = Total − |A| − |B| + |A ∩ B|. Multiples of both 3 and 7 are multiples of 21.
   Solution:
-  1. Total 9000; multiples of 3: 3000; of 7: 1286; of 21: 429.
-  2. 9000 − 3000 − 1286 + 429 = 5143.
+  1. The 4-digit numbers are 1000 to 9999: 9000 numbers.
+  2. Multiples of 3: from 1002 to 9999, (9999 − 1002)/3 + 1 = 3000.
+  3. Multiples of 7: from 1001 to 9996, (9996 − 1001)/7 + 1 = 1286.
+  4. Multiples of 21: from 1008 to 9996, (9996 − 1008)/21 + 1 = 429.
+  5. Neither: 9000 − 3000 − 1286 + 429 = 5143.
+  Common mistake: Forgetting to add back the multiples of 21 gives 4714.
+  Key takeaway: Count multiples in [a, b] as ⌊b/k⌋ − ⌊(a − 1)/k⌋, then apply inclusion–exclusion.
   Answer: 5143
 M B 4: |-
-  Concept: Divide the numerator and denominator by cos³x and put t = tan x.
+  Concept: For $\frac{\sin x}{\sin^3x + \cos^3x}$, divide the numerator and denominator by cos³x to get $\frac{\tan x\sec^2x}{\tan^3x + 1}$, then put t = tan x and use partial fractions with $t^3 + 1 = (t + 1)(t^2 - t + 1)$.
   Solution:
-  1. $I = \int\frac{t\,dt}{t^3 + 1} = -\frac{1}{3}\ln|1 + t| + \frac{1}{6}\ln|t^2 - t + 1| + \frac{1}{\sqrt3}\tan^{-1}\frac{2t - 1}{\sqrt3}$.
-  2. α = −1/3, β = 1/6 and γ² = 1/3, so α + β + γ² = 1/6 and 18 × 1/6 = 3.
+  1. $I = \int\frac{t\,dt}{(t + 1)(t^2 - t + 1)}$.
+  2. Partial fractions: $\frac{t}{(t + 1)(t^2 - t + 1)} = -\frac{1}{3(t + 1)} + \frac{t + 1}{3(t^2 - t + 1)}$.
+  3. $\int\frac{t + 1}{t^2 - t + 1}dt = \frac12\ln(t^2 - t + 1) + \frac{3}{2}\int\frac{dt}{(t - \frac12)^2 + \frac34} = \frac12\ln(\ldots) + \sqrt3\tan^{-1}\frac{2t - 1}{\sqrt3}$.
+  4. So α = −1/3, β = 1/6 and γ = 1/√3 (γ² = 1/3).
+  5. α + β + γ² = −1/3 + 1/6 + 1/3 = 1/6, and 18 × 1/6 = 3.
+  Common mistake: Sign errors in the partial-fraction constant A = −1/3.
+  Key takeaway: sin/(sin³ + cos³) becomes t/(t³ + 1) with t = tan x; then factor the sum of cubes.
   Answer: 3
 M B 5: |-
-  Concept: Tangent to y² = 8x at (x₁, y₁): yy₁ = 4(x + x₁).
+  Concept: The tangent to y² = 4ax at (x₁, y₁) is yy₁ = 2a(x + x₁). A line is tangent to the circle x² + y² = r² exactly when its distance from the origin equals r.
   Solution:
-  1. −4y = 4(x + 2), that is, x + y + 2 = 0.
-  2. The distance from the origin is 2/√2 = √2, so a = r² = 2.
+  1. y² = 8x has 4a = 8, so 2a = 4. The tangent at (2, −4) is y(−4) = 4(x + 2), that is, −4y = 4x + 8, or x + y + 2 = 0.
+  2. Distance from the origin: |0 + 0 + 2|/√2 = √2.
+  3. The circle x² + y² = a has radius √a, so √a = √2 and a = 2.
+  Common mistake: Setting a equal to the distance √2 instead of its square; a is r², not r.
+  Key takeaway: Use the T = 0 tangent form for conics and the perpendicular-distance condition for circles.
   Answer: 2
 M B 6: |-
-  Concept: The numerators 7, 9, 13, 19, … are 7 + n(n − 1); use the standard sums Σn/5ⁿ and Σn²/5ⁿ.
+  Concept: The numerators 7, 9, 13, 19, … have differences 2, 4, 6, …, so they are quadratic in n: 7 + n(n − 1). Split the series into standard sums $\sum x^n$, $\sum nx^n$ and $\sum n^2x^n$ with x = 1/5.
   Solution:
-  1. $S = 7\sum\frac{1}{5^n} + \sum\frac{n^2 - n}{5^n} = \frac{7}{4} + \left(\frac{15}{32} - \frac{5}{16}\right) = \frac{7}{4} + \frac{5}{32} = \frac{61}{32}$.
-  2. 160S = 305.
+  1. $S = \sum_{n\ge1}\frac{7 + n^2 - n}{5^n}$.
+  2. $\sum\frac{1}{5^n} = \frac{1/5}{4/5} = \frac14$, so 7 × ¼ = 7/4.
+  3. $\sum\frac{n}{5^n} = \frac{x}{(1 - x)^2} = \frac{1/5}{16/25} = \frac{5}{16}$.
+  4. $\sum\frac{n^2}{5^n} = \frac{x(1 + x)}{(1 - x)^3} = \frac{(1/5)(6/5)}{64/125} = \frac{15}{32}$.
+  5. $S = \frac74 + \frac{15}{32} - \frac{5}{16} = \frac{56 + 15 - 10}{32} = \frac{61}{32}$.
+  6. 160S = 5 × 61 = 305.
+  Common mistake: Using the wrong general term (for example 5 + 2n).
+  Key takeaway: Constant second differences mean a quadratic general term; then use the arithmetic-geometric sums.
   Answer: 305
 M B 7: |-
-  Concept: $(I - A)^3 = I - 3A + 3A^2 - A^3$, so the condition is A² = A (idempotent).
+  Concept: Expanding with the identity (I and A commute): (I − A)³ = I − 3A + 3A² − A³. Setting this equal to I − A³ gives 3A² − 3A = 0, so A must be idempotent (A² = A).
   Solution:
-  1. For upper-triangular A: a² = a, d² = d and b(a + d) = b.
-  2. Count: a, d ∈ {0, 1} with b = 0 when a + d ≠ 1, and any b when a + d = 1.
-  3. (0,0): 1; (1,1): 1; (1,0): 3; (0,1): 3. Total 8.
+  1. For $A = \begin{pmatrix}a & b\\ 0 & d\end{pmatrix}$: $A^2 = \begin{pmatrix}a^2 & b(a + d)\\ 0 & d^2\end{pmatrix}$.
+  2. A² = A needs a² = a and d² = d (so a, d ∈ {0, 1}), and b(a + d) = b.
+  3. Case a = d = 0: b·0 = b, so b = 0. Count 1.
+  4. Case a = d = 1: 2b = b, so b = 0. Count 1.
+  5. Case a + d = 1 ((1, 0) or (0, 1)): b = b always, so b ∈ {−1, 0, 1}. Count 3 + 3 = 6.
+  6. Total = 1 + 1 + 6 = 8.
+  Common mistake: Allowing a or d = −1; (−1)² = 1 ≠ −1 breaks idempotency.
+  Key takeaway: (I − A)³ = I − A³ ⇔ A² = A. For triangular matrices, check the entries case by case.
   Answer: 8
 M B 8: |-
-  Concept: Area under y = mx equals half the total area.
+  Concept: The line y = mx through the origin cuts the region into two parts. For bisection, the area of the region under y = mx (the triangle) must equal half the total area, provided the line stays below the curve on [0, 3/2].
   Solution:
-  1. Total = $\int_0^{3/2}(1 + 4x - x^2)dx = \frac{3}{2} + \frac{9}{2} - \frac{9}{8} = \frac{39}{8}$.
-  2. $\frac{m}{2}\cdot\frac{9}{4} = \frac{39}{16}$, so m = 13/6 and 12m = 26.
+  1. Total area: $\int_0^{3/2}(1 + 4x - x^2)dx = \left[x + 2x^2 - \frac{x^3}{3}\right]_0^{3/2} = \frac32 + \frac92 - \frac98 = \frac{39}{8}$.
+  2. Area under y = mx from 0 to 3/2: $\frac12\cdot\frac32\cdot\frac{3m}{2} = \frac{9m}{8}$.
+  3. Setting 9m/8 = 39/16 gives m = 39/18 = 13/6.
+  4. 12m = 26.
+  5. Check: at x = 3/2, the line gives 13/4 = 3.25, while the curve gives 1 + 6 − 2.25 = 4.75. The line stays below, so the setup holds.
+  Common mistake: Integrating (curve − line) and setting it equal to the total, which double-counts.
+  Key takeaway: For bisection, the area of one piece = half the total; confirm the line stays inside the region.
   Answer: 26
 M B 9: |-
-  Concept: The two triangles share base PQ, so the area ratio equals the ratio of heights to PQ (the chord of contact).
+  Concept: PQ is the chord of contact from A. Triangles APQ and BPQ share the base PQ, so their area ratio equals the ratio of their heights: the perpendicular distances of A and B from PQ. A, the midpoint of PQ and B are collinear on line AB, which is perpendicular to PQ.
   Solution:
-  1. B = (1, −2), r = 2, and AB = √13.
-  2. Distance from B to PQ = r²/AB = 4/√13; distance from A to PQ = AB − 4/√13 = 9/√13.
-  3. The ratio is 9/4, so 8 × 9/4 = 18.
+  1. The circle (x − 1)² + (y + 2)² = 4 has centre B = (1, −2) and radius r = 2.
+  2. AB = √((3 − 1)² + (1 + 2)²) = √13.
+  3. Distance from B to the chord of contact = r²/AB = 4/√13 (a standard result, from similar right triangles).
+  4. Distance from A to PQ = AB − 4/√13 = (13 − 4)/√13 = 9/√13.
+  5. Ratio = 9/4, and 8 × 9/4 = 18.
+  Common mistake: Using AB and r directly as the heights, instead of the distances measured to the chord.
+  Key takeaway: The centre is r²/d from the chord of contact, and the external point is (d² − r²)/d from it.
   Answer: 18
 M B 10: |-
-  Concept: f′ is quadratic with its vertex at x = −1 and f′(1) = 0.
+  Concept: A cubic f has a quadratic derivative f′. A local minimum of f′ at x = −1 makes x = −1 the vertex of the parabola f′ (opening upward), and a local minimum of f at x = 1 needs f′(1) = 0.
   Solution:
-  1. f′ = k[(x + 1)² − 4] = k(x² + 2x − 3), so f = k(x³/3 + x² − 3x) + d.
-  2. f(1) = −5k/3 + d = −10 and f(−1) = 11k/3 + d = 6, giving k = 3 and d = −5.
-  3. f(3) = 3(9 + 9 − 9) − 5 = 22.
+  1. f′(x) = k(x + 1)² + c with k > 0. f′(1) = 0 gives 4k + c = 0, so f′ = k[(x + 1)² − 4] = k(x² + 2x − 3).
+  2. Integrate: f(x) = k(x³/3 + x² − 3x) + d.
+  3. f(1) = k(1/3 + 1 − 3) + d = −5k/3 + d = −10.
+  4. f(−1) = k(−1/3 + 1 + 3) + d = 11k/3 + d = 6.
+  5. Subtracting: 16k/3 = 16, so k = 3 and d = −5.
+  6. f(3) = 3(9 + 9 − 9) − 5 = 27 − 5 = 22.
+  Common mistake: Taking f′ = k(x − 1)(x + 1), which puts the vertex at 0, not −1.
+  Key takeaway: The extremum of f′ is the inflection point of f; build f′ from its vertex and root.
   Answer: 22

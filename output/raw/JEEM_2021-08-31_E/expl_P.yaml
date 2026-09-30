@@ -1,181 +1,330 @@
 P A 1: |-
-  Concept: Strain $= \frac{F}{AY}$ with the load shared equally by the four columns.
+  Concept: Longitudinal strain in a column under compression is $\text{strain} = \frac{\text{stress}}{Y} = \frac{F}{AY}$. The total weight of the structure is shared equally by the four identical columns, so each column carries one quarter of the load. For a hollow cylinder, the load-bearing cross-section is the annular ring between the inner and outer radii.
   Solution:
-  1. Area of each hollow column $= \pi(1^2 - 0.5^2) = 0.75\pi$ m².
-  2. Strain $= \frac{50\times10^3\times9.8}{4\times0.75\pi\times2\times10^{11}} = 2.6\times10^{-7}$.
+  1. Area of each column: $A = \pi(R^2 - r^2) = \pi(1.0^2 - 0.5^2) = 0.75\pi \approx 2.36$ m².
+  2. Force on each column: $F = \frac{Mg}{4} = \frac{50\times10^3\times9.8}{4} = 1.225\times10^5$ N.
+  3. Strain $= \frac{F}{AY} = \frac{1.225\times10^5}{2.36\times2\times10^{11}} \approx 2.6\times10^{-7}$.
+  Why others are wrong:
+  - (A) $3.6\times10^{-8}$ is far too small; it comes from mixing up the radii or the area.
+  - (C) and (D) are orders of magnitude too large; steel columns this thick barely compress.
+  Key takeaway: Use the annular area $\pi(R^2 - r^2)$ for hollow members, and divide the load among the supports.
   Answer: (B)
 P A 2: |-
-  Concept: Each side contributes $B = \frac{\mu_0i}{4\pi r}(\sin60° + \sin60°)$, where r is the distance from the centroid to a side.
+  Concept: The field of a finite straight wire at perpendicular distance r is $B = \frac{\mu_0 i}{4\pi r}(\sin\alpha + \sin\beta)$. At the centroid of an equilateral triangle, each side subtends 60° on either side of the perpendicular, and all three sides give equal fields in the same direction.
   Solution:
-  1. $r = \frac{l}{2\sqrt3} = \frac{0.09}{2\sqrt3}$ m.
-  2. $B = 3\times\frac{10^{-7}\times1.5}{r}\times\sqrt3 = 3\times10^{-5}$ T.
-  3. The current is clockwise, so by the right-hand rule the field points into the plane.
+  1. Distance from the centroid to each side (the inradius): $r = \frac{l}{2\sqrt3} = \frac{0.09}{2\sqrt3} = \frac{0.045}{\sqrt3}$ m.
+  2. One side: $B_1 = \frac{10^{-7}\times1.5}{r}(2\sin60°) = \frac{1.5\times10^{-7}\times\sqrt3\times\sqrt3}{0.045} = 10^{-5}$ T.
+  3. Three sides: $B = 3\times10^{-5}$ T.
+  4. Direction: for clockwise current (viewed from the front), the right-hand rule gives a field into the plane.
+  Why others are wrong:
+  - (A) and (B) are too small by a factor of 100 and point the wrong way (clockwise current gives an inward field).
+  - (C) has the right direction, but $2\sqrt3\times10^{-5}$ T does not match the calculation.
+  Key takeaway: Centroid field of an equilateral triangle $= \frac{9\mu_0 i}{2\pi l}$; check: $\frac{9\times4\pi\times10^{-7}\times1.5}{2\pi\times0.09} = 3\times10^{-5}$ T.
   Answer: (D)
 P A 3: |-
-  Concept: Parallel-axis theorem for each sphere: $I = \frac{2}{5}Mr^2 + Md^2$, with d = 2.5 m.
+  Concept: For a rigid body, the moment of inertia about any axis is the sum over its parts. Each sphere's moment about the central axis follows from the parallel-axis theorem: $I = I_{cm} + Md^2$, with $I_{cm} = \frac{2}{5}MR^2$ for a solid sphere. The rod is light, so it contributes nothing.
   Solution:
-  1. $I = 2\left(\frac{2}{5}\times1.5\times0.25 + 1.5\times6.25\right) = 2(0.15 + 9.375) = 19.05$ kg m².
+  1. Each centre is d = 5/2 = 2.5 m from the axis.
+  2. $I_{cm} = \frac{2}{5}\times1.5\times(0.5)^2 = 0.15$ kg m².
+  3. $Md^2 = 1.5\times6.25 = 9.375$ kg m².
+  4. One sphere: 9.525 kg m². Two spheres: $I = 19.05$ kg m².
+  Why others are wrong:
+  - (A) 18.75 kg m² treats the spheres as point masses and drops the $\frac{2}{5}MR^2$ term.
+  - (B) and (D) are 10⁴ times too large; they come from using cm instead of m for the radius or distance.
+  Key takeaway: Always add the body's own moment of inertia to the $Md^2$ term; point-mass approximations lose it.
   Answer: (C)
 P A 4: |-
-  Concept: Since P ⊥ Q, $|\vec P + \vec Q| = |\vec P - \vec Q| = \sqrt{P^2 + Q^2} = s$, so the resultant is $R^2 = 2s^2(1 + \cos\theta)$.
+  Concept: Since $\vec P \perp \vec Q$, both $|\vec P + \vec Q|$ and $|\vec P - \vec Q|$ equal $\sqrt{P^2 + Q^2}$; call this s. Two equal vectors of magnitude s at angle θ have resultant $R^2 = s^2 + s^2 + 2s^2\cos\theta = 2s^2(1 + \cos\theta)$.
   Solution:
-  1. R² = 3s² gives cos θ₁ = ½, so θ₁ = 60°. R² = 2s² gives cos θ₂ = 0, so θ₂ = 90°.
-  2. So θ₁ < θ₂ (Statement I is true), and the values in Statement II are correct.
+  1. For $R^2 = 3s^2$: $1 + \cos\theta_1 = \frac{3}{2}$, so $\cos\theta_1 = \frac12$ and θ₁ = 60°.
+  2. For $R^2 = 2s^2$: $1 + \cos\theta_2 = 1$, so $\cos\theta_2 = 0$ and θ₂ = 90°.
+  3. A larger resultant needs a smaller angle, so θ₁ < θ₂ and Statement I is true.
+  4. The computed values are exactly θ₁ = 60° and θ₂ = 90°, so Statement II is true.
+  Why others are wrong:
+  - (A), (C) and (D) each call at least one statement false, but both follow directly from the resultant formula.
+  Key takeaway: The resultant of two equal vectors is $2s\cos(\theta/2)$; it shrinks as the angle between them grows.
   Answer: (B)
 P A 5: |-
-  Concept: Energy released = the electron's KE + the binding energy of the n = 2 level (3.4 eV).
+  Concept: When a free electron is captured by a proton into level n, the energy released as a photon equals the electron's kinetic energy plus the binding energy of that level. In hydrogen, $E_n = -\frac{13.6}{n^2}$ eV, and the first excited state is n = 2, with binding energy 3.4 eV.
   Solution:
-  1. E = 2.6 + 3.4 = 6.0 eV.
-  2. $\nu = \frac{6\times1.6\times10^{-19}}{6.6\times10^{-34}} = 1.45\times10^{15}$ Hz = 1.45 × 10⁹ MHz.
+  1. Photon energy: E = KE + |E₂| = 2.6 + 3.4 = 6.0 eV.
+  2. In joules: $6.0\times1.6\times10^{-19} = 9.6\times10^{-19}$ J.
+  3. Frequency: $\nu = \frac{E}{h} = \frac{9.6\times10^{-19}}{6.6\times10^{-34}} \approx 1.45\times10^{15}$ Hz.
+  4. Since 1 MHz = 10⁶ Hz, ν = 1.45 × 10⁹ MHz.
+  Why others are wrong:
+  - (A) $1.45\times10^{16}$ MHz forgets to convert Hz to MHz and adds an extra factor.
+  - (B) uses only the 2.6 eV kinetic energy, or only part of the energy.
+  - (D) is physically absurd for an atomic transition.
+  Key takeaway: Recombination photon energy = KE of the free electron + binding energy of the final level. Watch the units in the options.
   Answer: (C)
 P A 6: |-
-  Concept: Radial conduction through a spherical shell: $H = \frac{4\pi Kr_1r_2(\theta_2 - \theta_1)}{r_2 - r_1}$.
+  Concept: In steady-state radial conduction, the same heat current H passes through every spherical surface of radius r, but the area $4\pi r^2$ changes with r. So Fourier's law must be integrated: $H = -K(4\pi r^2)\frac{d\theta}{dr}$.
   Solution:
-  1. $H = -K4\pi r^2\frac{d\theta}{dr}$; integrating from r₁ to r₂ gives $H\left(\frac{1}{r_1} - \frac{1}{r_2}\right) = 4\pi K(\theta_2 - \theta_1)$.
+  1. Separate the variables: $H\frac{dr}{r^2} = -4\pi K\,d\theta$.
+  2. Integrate from r₁ to r₂: $H\left(\frac{1}{r_1} - \frac{1}{r_2}\right) = 4\pi K(\theta_2 - \theta_1)$ in magnitude.
+  3. $H = \frac{4\pi Kr_1r_2(\theta_2 - \theta_1)}{r_2 - r_1}$, flowing inward because the outer shell is hotter.
+  Why others are wrong:
+  - (B) is missing K, so its dimensions are wrong.
+  - (C) is the slab formula per unit area; it ignores the spherical geometry.
+  - (D) inverts the geometric factor, so its dimensions are wrong too.
+  Key takeaway: Thermal resistance of a spherical shell is $\frac{r_2 - r_1}{4\pi Kr_1r_2}$, the analogue of a spherical capacitor.
   Answer: (A)
 P A 7: |-
-  Concept: A diode OR gate and a transistor inverter.
+  Concept: Identify each gate from its input–output truth table. Circuit (A) uses diodes feeding a common resistor, a diode logic gate. Circuit (B) is a single transistor with its output taken at the collector, the standard inverter.
   Solution:
-  1. (A): if either input is 5 V, a diode conducts and V₀ = 5 V; with both at 0 V, V₀ = 0. This is OR.
-  2. (B): V_B high drives the transistor into saturation, so V₀ ≈ 0; V_B low turns it off, so V₀ = 5 V. This is NOT.
+  1. Circuit (A): If either V_A or V_B is at 5 V, that diode is forward-biased and pulls the output up to about 5 V. Only when both inputs are 0 V is the output 0 V. The table 00→0, 01→1, 10→1, 11→1 is OR.
+  2. Circuit (B): V_B = 5 V saturates the transistor, so the collector (V₀) drops to about 0 V. V_B = 0 V turns the transistor off, so no collector current flows and V₀ = V_CC = 5 V. The output is the complement of the input: NOT.
+  Why others are wrong:
+  - (A) and (D): circuit (A) is not AND, since one high input already gives a high output.
+  - (C): NAND and NOR need two inputs to the transistor stage; (B) has one input.
+  Key takeaway: Diodes with the output across the load resistor form an OR gate, and a common-emitter transistor is an inverter.
   Answer: (B)
 P A 8: |-
-  Concept: $\Delta x \ge \frac{h}{4\pi\Delta p}$, with Δp ~ p = √(3mkT).
+  Concept: By the Heisenberg uncertainty principle, $\Delta x\,\Delta p \ge \frac{h}{4\pi}$. For thermal particles, the momentum spread is of the order of the typical momentum, $p = \sqrt{2mE}$ or $\sqrt{3mkT}$.
   Solution:
-  1. At the same T, $\Delta x \propto \frac{1}{\sqrt m}$.
-  2. $\frac{\Delta x_e}{\Delta x_p} = \sqrt{\frac{m_p}{m_e}}$.
+  1. At the same temperature, both gases have the same average kinetic energy $\frac{3}{2}kT$.
+  2. So $\Delta p \propto \sqrt m$ and $\Delta x \propto \frac{1}{\Delta p} \propto \frac{1}{\sqrt m}$.
+  3. $\frac{\Delta x_e}{\Delta x_p} = \sqrt{\frac{m_p}{m_e}}$.
+  Why others are wrong:
+  - (B) is the inverse ratio; the lighter electron has smaller momentum and so a larger position uncertainty.
+  - (A) and (D) use the wrong power of the mass ratio; the dependence is on √m because p = √(2mE).
+  Key takeaway: At equal kinetic energy, $\lambda$ and Δx scale as $1/\sqrt m$, so lighter particles are more "wave-like".
   Answer: (C)
 P A 9: |-
-  Concept: Buoyancy reduces the effective g: $g_{eff} = g\left(1 - \frac{\sigma}{\rho}\right)$.
+  Concept: In a liquid, buoyancy acts upward on the bob and reduces the net restoring force. The pendulum behaves as if gravity were $g_{eff} = g\left(1 - \frac{\sigma}{\rho}\right)$, where σ is the liquid density and ρ the bob density. The period is $T = 2\pi\sqrt{\frac{l}{g_{eff}}}$.
   Solution:
-  1. $g_{eff} = \frac{3g}{4}$ and $l' = \frac{4l}{3}$.
-  2. $T' = 2\pi\sqrt{\frac{4l/3}{3g/4}} = \frac{4}{3}T$.
+  1. σ/ρ = 1/4, so $g_{eff} = \frac{3}{4}g$.
+  2. The new length is $l' = l + \frac{l}{3} = \frac{4}{3}l$.
+  3. $T' = 2\pi\sqrt{\frac{4l/3}{3g/4}} = 2\pi\sqrt{\frac{16l}{9g}} = \frac{4}{3}\cdot2\pi\sqrt{\frac{l}{g}} = \frac{4}{3}T$.
+  Why others are wrong:
+  - (A) T would need the two effects to cancel; both actually increase the period.
+  - (B) and (C) use the wrong factors ($\sqrt{4/3}$ or $\sqrt{3/4}$ alone).
+  Key takeaway: The buoyant force reduces the effective g (ignoring viscous drag), and both a longer thread and a smaller g lengthen the period.
   Answer: (D)
 P A 10: |-
-  Concept: Forces forming a closed triangle (taken in order) sum to zero.
+  Concept: If three force vectors taken in order form the sides of a closed triangle, their vector sum is zero: $\vec F_1 + \vec F_2 + \vec F_3 = 0$. This is the triangle law of forces, the condition for translational equilibrium.
   Solution:
-  1. $\vec F_1 + \vec F_2 + \vec F_3 = 0$ means zero net force (translational equilibrium). Treated as concurrent forces, they are in equilibrium.
-  2. The official key takes both statements as true.
+  1. Statement I: $\vec F_1 + \vec F_2 = -\vec F_3$ means the net force is zero. If the forces act at a single point (concurrent), there is no torque either, so the system is in equilibrium. The official key treats Statement I as true.
+  2. Statement II: Forces forming a closed triangle in order have zero resultant, which is exactly the translational equilibrium condition. True.
+  3. Both statements are true.
+  Why others are wrong:
+  - (A), (B) and (C) each reject a statement that follows directly from the triangle law of forces.
+  Key takeaway: A closed force polygon means zero net force (translational equilibrium); rotational equilibrium also needs the forces to be concurrent or to have zero net torque.
   Answer: (D)
 P A 11: |-
-  Concept: F = ma, so M = F/(V/T).
+  Concept: To express one quantity in a new set of base quantities, write a physical law that links them. Newton's second law, F = ma, relates mass to force and acceleration, and acceleration = velocity/time.
   Solution:
-  1. $[M] = \frac{F}{VT^{-1}} = [FTV^{-1}]$.
+  1. $a = \frac{V}{T}$, so dimensionally $[a] = [VT^{-1}]$.
+  2. $M = \frac{F}{a} = \frac{F}{VT^{-1}}$.
+  3. $[M] = [FTV^{-1}]$.
+  Check: F·T is an impulse (momentum), and momentum/velocity = mass. Consistent.
+  Why others are wrong:
+  - (A) $[FT^{-1}V^{-1}]$ divides by time instead of multiplying.
+  - (C) $[FT^2V]$ has the velocity power inverted and an extra T.
+  - (D) $[FVT^{-1}]$ is power per second, not mass.
+  Key takeaway: Impulse = FT = MV, so M = FT/V; linking to a known formula is the quickest check.
   Answer: (B)
 P A 12: |-
-  Concept: The Lorentz force $q(\vec E + \vec v\times\vec B)$; both fields vary as cos(kz − ωt).
+  Concept: The force on a moving charge in an EM wave is the Lorentz force $\vec F = q(\vec E + \vec v\times\vec B)$. Both $\vec E$ and $\vec B$ vary as cos(kz − ωt), so the fields at two points have equal magnitude whenever the phase factors have equal magnitude.
   Solution:
-  1. At t = 0: cos(π) = cos(3π) = −1, so the field magnitudes are equal at both positions.
-  2. Both charges have the same velocity, so F ∝ q and the ratio is 4π : 2π = 2 : 1.
+  1. At t = 0, the phase at z = π/k is π, so cos π = −1. At z = 3π/k the phase is 3π, so cos 3π = −1.
+  2. So $\vec E$ and $\vec B$ are identical at both locations.
+  3. Both charges have the same velocity $0.5c\hat i$, so the bracket $(\vec E + \vec v\times\vec B)$ is the same vector for both.
+  4. So F ∝ q: $\frac{F_1}{F_2} = \frac{4\pi}{2\pi} = 2:1$.
+  Why others are wrong:
+  - (A), (B) and (D) bring in factors of √2 from the $\frac{\hat i + \hat j}{\sqrt2}$ direction, but that direction is common to both points and cancels in the ratio.
+  Key takeaway: Before computing vectors, check whether the fields are the same at both points; if so, the force ratio is just the charge ratio.
   Answer: (C)
 P A 13: |-
-  Concept: Look for shorted elements first. In the figure, the left border wire joins the top-left node to the bottom rail.
+  Concept: For a complex network, look first for resistors shorted by plain wires. Both ends of a shorted resistor sit at the same potential, so it carries no current and can be removed. Then combine the rest in series and parallel steps.
   Solution:
-  1. Both ends of the 5 Ω resistor are on the bottom rail, so no current flows through it. The first 2 Ω resistor then runs from the middle node to the bottom rail.
-  2. That 2 Ω ∥ the vertical 2 Ω = 1 Ω; adding the series 2 Ω gives 3 Ω.
-  3. 3 Ω ∥ (3 ∥ 3 = 1.5 Ω) = 1 Ω.
+  1. In the figure, the left border wire connects the top-left node directly to the bottom rail, so both ends of the 5 Ω resistor are at the bottom-rail potential. It carries no current; remove it.
+  2. The first 2 Ω resistor now lies between the middle node and the bottom rail, in parallel with the vertical 2 Ω: 2 ∥ 2 = 1 Ω.
+  3. The series 2 Ω adds to this: 1 + 2 = 3 Ω.
+  4. The two 3 Ω resistors on the right are in parallel: 3 ∥ 3 = 1.5 Ω.
+  5. The 3 Ω branch is in parallel with the 1.5 Ω combination: $\frac{3\times1.5}{4.5} = 1$ Ω.
+  Why others are wrong:
+  - (A) 0 Ω would need A and B shorted directly, which is not the case.
+  - (B) 3 Ω and (C) 4.5 Ω come from stopping partway or keeping the shorted 5 Ω.
+  Key takeaway: Look for shorted elements first; they often make an intimidating network simple.
   Answer: (D)
 P A 14: |-
-  Concept: $\phi = \oint\vec E\cdot d\vec A$.
+  Concept: Electric flux is $\phi = \oint\vec E\cdot d\vec A$, with $d\vec A$ pointing outward. By Gauss's law, the net flux equals $q_{enc}/\varepsilon_0$.
   Solution:
-  1. (a) Inward lines give negative flux: true. (b) By symmetry, all 6 faces get q/6ε₀: true. (c) With no enclosed charge, the net flux is 0: true.
-  2. (d) If E is parallel to the surface, E ⊥ dA, so the flux is zero. (d) is the incorrect statement.
+  1. (a) Lines entering the surface have $\vec E$ opposite to the outward $d\vec A$, so they give negative flux. Correct.
+  2. (b) A charge at the centre of a cube sees six identical faces, so each gets $\frac{q}{6\varepsilon_0}$. Correct.
+  3. (c) With no net enclosed charge, the net flux is zero by Gauss's law (a uniform field enters and leaves equally). Correct.
+  4. (d) If $\vec E$ is parallel to the surface, it is perpendicular to $d\vec A$, so $\vec E\cdot d\vec A = 0$ and the flux is zero, not finite and non-zero. Incorrect.
+  Why others are wrong:
+  - (A) and (B) wrongly include (c) or (b), which are true statements.
+  - (D) marks (a) and (c) as incorrect, but both are correct.
+  Key takeaway: Flux counts only the component of E normal to the surface; a tangential field contributes nothing.
   Answer: (C)
 P A 15: |-
-  Concept: Total moles from PV = nRT, then solve two equations.
+  Concept: For an ideal gas mixture, PV = n_total RT gives the total moles. Combined with the total mass, this gives two linear equations for the two unknown masses.
   Solution:
-  1. $n = \frac{400\times10^3\times500\times10^{-6}}{8.3\times300} \approx 0.08$ mol.
-  2. $\frac{m_H}{2} + \frac{m_O}{32} = 0.08$ and $m_H + m_O = 0.76$, giving m_H = 0.12 g and m_O = 0.64 g.
-  3. m_O : m_H = 16 : 3.
+  1. $n = \frac{PV}{RT} = \frac{400\times10^3\times500\times10^{-6}}{8.3\times300} = \frac{200}{2490} \approx 0.08$ mol.
+  2. Let the masses be m_H and m_O (in grams). Then $\frac{m_H}{2} + \frac{m_O}{32} = 0.08$ and $m_H + m_O = 0.76$.
+  3. Multiply the first equation by 32: 16m_H + m_O = 2.56. Subtract the second: 15m_H = 1.80, so m_H = 0.12 g.
+  4. m_O = 0.76 − 0.12 = 0.64 g.
+  5. m_O : m_H = 0.64 : 0.12 = 16 : 3.
+  Why others are wrong:
+  - (D) 8 : 3 and (A) 3 : 8 use the wrong molar-mass ratio.
+  - (B) 3 : 16 is the inverted ratio (hydrogen to oxygen).
+  Key takeaway: For mixtures, set up a mole-count equation and a mass equation, then solve the pair.
   Answer: (C)
 P A 16: |-
-  Concept: Momentum is conserved during the split.
+  Concept: An internal explosion or split does not change the total momentum on a frictionless surface. Kinetic energy is not conserved: internal energy (the explosion) can increase it.
   Solution:
-  1. 3M × 40 = M × 60 + 2M v, so v = 30 m/s.
-  2. $K_i = 2400M$ and $K_f = 1800M + 900M = 2700M$.
-  3. $\frac{\Delta K}{K_i} = \frac{300}{2400} = \frac{1}{8}$.
+  1. Let the masses be M and 2M, with total 3M moving at 40 m/s.
+  2. Momentum: 3M(40) = M(60) + 2M·v, so 120M − 60M = 2Mv and v = 30 m/s.
+  3. $K_i = \frac12(3M)(40)^2 = 2400M$.
+  4. $K_f = \frac12 M(60)^2 + \frac12(2M)(30)^2 = 1800M + 900M = 2700M$.
+  5. Fractional change $= \frac{2700 - 2400}{2400} = \frac{1}{8}$ (an increase).
+  Why others are wrong:
+  - (A) and (B) use a wrong final velocity (for example, assuming the larger part stops).
+  - (D) uses the wrong reference energy.
+  Key takeaway: In a split, conserve momentum and compute KE separately; the increase comes from the internal energy released.
   Answer: (C)
 P A 17: |-
-  Concept: Lenz's law: the induced current opposes the change in flux.
+  Concept: By Faraday's law, an emf is induced only when the magnetic flux through the coil changes. By Lenz's law, the induced current creates a field that opposes that change.
   Solution:
-  1. The induced current is anticlockwise (as seen), which produces an outward field.
-  2. The flux must be changing, so B cannot lie in the coil's plane (that gives zero flux).
-  3. An outward induced field opposes a decrease, so B is outward and decreasing.
+  1. The figure shows the induced current's sense in the coil (anticlockwise as seen from the front), which by the right-hand rule produces a field pointing outward through the coil.
+  2. For a field parallel to the coil's plane, the flux is zero at every instant, so nothing is induced. Options (B) and (D) are impossible.
+  3. The induced field is outward, the same direction as B. An induced field supports the original flux only when that flux is decreasing.
+  4. So B is outward and decreasing with time.
+  Why others are wrong:
+  - (B) and (D): a field in the plane of the coil threads no flux, so it induces no current.
+  - (C): an increasing outward field would induce an inward field (clockwise current), opposite to the one shown.
+  Key takeaway: If the induced field is along B, the flux is falling; if it is opposite to B, the flux is rising.
   Answer: (A)
 P A 18: |-
-  Concept: Energy in SHM.
+  Concept: In SHM, $KE = \frac12k(A^2 - x^2)$ and $PE = \frac12kx^2$, so the total energy $E = \frac12kA^2$ is constant. Over a complete cycle, the time averages of KE and PE are each E/2.
   Solution:
-  1. (c) Total energy = ½kA² at all times: true.
-  2. (d) Over a full period, ⟨KE⟩ = ⟨PE⟩ = ¼kA²: true.
-  3. (a) and (b) fail in general; KE = PE only at x = A/√2, and averages over arbitrary intervals differ.
+  1. (a) KE = PE only at $x = \pm\frac{A}{\sqrt2}$, not always. False.
+  2. (b) Over an arbitrary interval (say, near an extreme position), the average PE exceeds the average KE. They are equal only over whole periods (or half periods). False.
+  3. (c) The mechanical energy is conserved at every instant: KE + PE = ½kA². True.
+  4. (d) Over one full period, ⟨KE⟩ = ⟨PE⟩ = ¼kA². True.
+  Why others are wrong:
+  - (B) only (c) leaves out the true statement (d).
+  - (C) and (D) include (b), which fails for arbitrary intervals.
+  Key takeaway: KE and PE have equal averages over full cycles, not over arbitrary intervals, and they are equal instantaneously only at x = A/√2.
   Answer: (A)
 P A 19: |-
-  Concept: Filter circuits.
+  Concept: A full-wave rectifier gives a pulsating DC output: a DC component with a large AC ripple. Filters smooth it by blocking or bypassing the AC part.
   Solution:
-  1. A shunt capacitor bypasses the AC ripple, so Statement I is true.
-  2. A series inductor (choke) opposes changes in current, so Statement II is true.
+  1. Statement I: A capacitor in parallel with R_L charges near the voltage peaks and discharges slowly through the load between peaks, filling in the dips. It offers a low-reactance path for the ripple frequencies. This is the standard capacitor-input filter. True.
+  2. Statement II: An inductor (choke) in series with R_L has high reactance ωL for the AC ripple but zero reactance for DC. It opposes changes in current and so smooths the load current. True.
+  3. Both statements describe valid filtering methods (often combined as an LC or π filter).
+  Why others are wrong:
+  - (A), (B) and (C) each reject a valid filter; both the shunt capacitor and the series inductor reduce ripple.
+  Key takeaway: A capacitor goes across the load and an inductor goes in series with it; each suppresses the AC ripple.
   Answer: (D)
 P A 20: |-
-  Concept: $g_{down} = g\left(1 - \frac{r}{R}\right)$ and $g_{up} = \frac{g}{(1 + r/R)^2}$.
+  Concept: Below the surface, only the mass inside radius (R − r) attracts, so $g_d = g\left(1 - \frac{r}{R}\right)$ (exact for uniform density). Above the surface, the inverse-square law gives $g_h = \frac{g}{(1 + r/R)^2}$ (exact).
   Solution:
-  1. $\frac{g_{down}}{g_{up}} = \left(1 - \frac{r}{R}\right)\left(1 + \frac{r}{R}\right)^2 = 1 + \frac{r}{R} - \frac{r^2}{R^2} - \frac{r^3}{R^3}$.
+  1. Ratio: $\frac{g_d}{g_h} = \left(1 - \frac{r}{R}\right)\left(1 + \frac{r}{R}\right)^2$.
+  2. Let x = r/R. Then (1 − x)(1 + 2x + x²) = 1 + 2x + x² − x − 2x² − x³.
+  3. This simplifies to $1 + x - x^2 - x^3 = 1 + \frac{r}{R} - \frac{r^2}{R^2} - \frac{r^3}{R^3}$.
+  Why others are wrong:
+  - (A) makes every term negative, which is the wrong expansion.
+  - (B) makes every term positive and so ignores the (1 − x) factor.
+  - (C) has +x³ instead of −x³, a sign error in the last term.
+  Key takeaway: Use the exact expressions, not binomial approximations, when the options contain higher-order terms.
   Answer: (D)
 P B 1: |-
-  Concept: Each AM station needs a bandwidth of 2f_m.
+  Concept: In amplitude modulation, the modulated wave has a carrier with an upper and a lower sideband at $f_c \pm f_m$. Each station therefore occupies a bandwidth of $2f_m$, and stations can share a band without overlap only if each one gets its own slot of width $2f_m$.
   Solution:
-  1. 2 × 6 kHz = 12 kHz per station.
-  2. N = 6 MHz / 12 kHz = 500.
+  1. Bandwidth per station: $2f_m = 2\times6$ kHz = 12 kHz.
+  2. Available band: 6 MHz = 6000 kHz.
+  3. Number of stations: $N = \frac{6000}{12} = 500$.
+  Common mistake: Dividing by $f_m$ instead of $2f_m$ gives 1000; it forgets that AM produces two sidebands.
+  Key takeaway: AM bandwidth = 2 × (highest modulating frequency). Divide the band by this to count non-interfering channels.
   Answer: 500
 P B 2: |-
-  Concept: With the battery connected, V stays constant and C becomes KC.
+  Concept: When the battery stays connected, the voltage V stays fixed. Inserting a dielectric of constant K raises the capacitance to KC, and the battery supplies extra charge. The stored energy $U = \frac12CV^2$ therefore rises.
   Solution:
-  1. $\Delta U = \frac{1}{2}(K - 1)CV^2 = \frac{1}{2}\times200\times10^{-6}\times200^2 = 4$ J.
+  1. Initial energy: $U_i = \frac12CV^2 = \frac12\times200\times10^{-6}\times(200)^2 = 4$ J.
+  2. Final energy: $U_f = \frac12KCV^2 = 2\times4 = 8$ J.
+  3. Change: $\Delta U = U_f - U_i = \frac12(K - 1)CV^2 = 4$ J (an increase).
+  Common mistake: The formula U = Q²/2C with fixed Q gives a decrease; that applies only when the battery is disconnected.
+  Key takeaway: With the battery connected (V fixed), U rises by a factor of K; with it disconnected (Q fixed), U falls by a factor of K.
   Answer: 4
 P B 3: |-
-  Concept: The core's magnetic moment is M = χHV with χ = μ_r − 1, and H = nI is unchanged.
+  Concept: The magnetic moment of the core is its magnetisation times its volume: $M = IV = \chi HV$. Here χ = μ_r − 1 is the susceptibility, and H = nI depends only on the winding and current, so it is unchanged.
   Solution:
-  1. $\frac{\Delta M}{M} = \frac{749 - 499}{499} = \frac{250}{499}$, so x = 250.
+  1. With H and V fixed, M ∝ χ.
+  2. χ₁ = 500 − 1 = 499 and χ₂ = 750 − 1 = 749.
+  3. Fractional change: $\frac{M_2 - M_1}{M_1} = \frac{749 - 499}{499} = \frac{250}{499}$.
+  4. Comparing with $\frac{x}{499}$ gives x = 250.
+  Common mistake: Using μ_r directly gives 250/500, which does not match the form x/499. The core's moment comes from its magnetisation, which is set by χ, not μ_r.
+  Key takeaway: Magnetisation $I = \chi H$ with $\chi = \mu_r - 1$; the core moment scales with χ.
   Answer: 250
 P B 4: |-
-  Concept: $v^2 = u^2 + 2ax$, so the slope of the v²–x graph is 2a.
+  Concept: For constant acceleration, $v^2 = u^2 + 2ax$. A plot of v² against x is therefore a straight line with slope 2a and intercept u².
   Solution:
-  1. From the graph, the slope is 20/10 = 2, so 2a = 2 and a = 1 m/s².
+  1. Read the slope from the graph: v² changes by 20 m²/s² over a displacement of 10 m, so the slope is 20/10 = 2 m/s².
+  2. Set slope = 2a: 2a = 2, so a = 1 m/s².
+  Common mistake: Taking the slope itself as the acceleration gives 2 m/s²; remember the factor of 2 in the kinematic equation.
+  Key takeaway: v²–x graph slope = 2a; v–t graph slope = a; x–t graph slope = v.
   Answer: 1
 P B 5: |-
-  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Concept: In YDSE, bright fringes are equally spaced with fringe width $\beta = \frac{\lambda D}{d}$. The n-th bright fringe on one side is nβ from the centre, so the n-th bright fringes on the two sides are 2nβ apart.
   Solution:
-  1. The 4th bright fringes on the two sides are 8β apart: 8β = 2.4 cm, so β = 3 mm.
-  2. $\lambda = \frac{3\times10^{-3}\times0.3\times10^{-3}}{1.5} = 6\times10^{-7}$ m.
-  3. $f = \frac{c}{\lambda} = 5\times10^{14}$ Hz.
+  1. Distance between the two 4th bright fringes: 8β = 2.4 cm, so β = 0.3 cm = 3 × 10⁻³ m.
+  2. Wavelength: $\lambda = \frac{\beta d}{D} = \frac{3\times10^{-3}\times0.3\times10^{-3}}{1.5} = 6\times10^{-7}$ m = 600 nm.
+  3. Frequency: $f = \frac{c}{\lambda} = \frac{3\times10^8}{6\times10^{-7}} = 5\times10^{14}$ Hz.
+  Common mistake: Using 4β instead of 8β doubles λ and halves f to 2.5; "on both sides" means across the central fringe.
+  Key takeaway: Symmetric fringes of order n on both sides are 2nβ apart.
   Answer: 5
 P B 6: |-
-  Concept: Least count = 1 MSD − 1 VSD; subtract a positive zero error.
+  Concept: Least count of a vernier = 1 MSD − 1 VSD. The reading is MSR + (coinciding VSD × LC), and a positive zero error is subtracted from the observed reading.
   Solution:
-  1. 1 VSD = 0.9 mm, so LC = 0.1 mm. The reading is 10 + 8 × 0.1 = 10.8 mm.
-  2. Corrected: 10.8 − 0.4 = 10.4 mm, so the radius is 5.2 mm = 52 × 10⁻² cm.
+  1. 10 VSD = 9 MSD = 9 mm, so 1 VSD = 0.9 mm and LC = 1 − 0.9 = 0.1 mm.
+  2. Observed reading = 10 + 8 × 0.1 = 10.8 mm.
+  3. Zero error = +0.04 cm = +0.4 mm, so the true diameter = 10.8 − 0.4 = 10.4 mm.
+  4. Radius = 10.4/2 = 5.2 mm = 0.52 cm = 52 × 10⁻² cm.
+  Common mistake: Adding the positive zero error (giving 11.2 mm) or reporting the diameter instead of the radius.
+  Key takeaway: True value = observed reading − zero error (with its sign). Read the question for diameter versus radius.
   Answer: 52
 P B 7: |-
-  Concept: Adiabatic: $PV^\gamma$ = constant and $|W| = \frac{P_2V_2 - P_1V_1}{\gamma - 1}$.
+  Concept: For a reversible adiabatic process, $PV^\gamma$ = constant, and the work done by the gas is $W = \frac{P_1V_1 - P_2V_2}{\gamma - 1}$. In a compression, the work done by the gas is negative; its absolute value is asked for.
   Solution:
-  1. $P_2 = 200\times4^{1.5} = 1600$ kPa.
-  2. $|W| = \frac{1600\times300 - 200\times1200}{0.5}\times10^{-3} = \frac{480 - 240}{0.5} = 480$ J.
+  1. Final pressure: $P_2 = P_1\left(\frac{V_1}{V_2}\right)^\gamma = 200\times(4)^{1.5} = 200\times8 = 1600$ kPa.
+  2. $P_1V_1 = 200\times10^3\times1200\times10^{-6} = 240$ J.
+  3. $P_2V_2 = 1600\times10^3\times300\times10^{-6} = 480$ J.
+  4. $|W| = \frac{480 - 240}{1.5 - 1} = \frac{240}{0.5} = 480$ J.
+  Common mistake: Using the isothermal formula, or forgetting to convert cm³ to m³ and kPa to Pa.
+  Key takeaway: Adiabatic work = ΔU = $\frac{\Delta(PV)}{\gamma - 1}$; compute PV at both ends in joules first.
   Answer: 480
 P B 8: |-
-  Concept: At very high f, an inductor behaves as an open circuit and a capacitor as a short circuit.
+  Concept: Reactances depend on frequency: $X_L = \omega L$ and $X_C = \frac{1}{\omega C}$. As ω → ∞, an inductor's reactance becomes infinite (an open circuit), and a capacitor's goes to zero (a short circuit).
   Solution:
-  1. The 20 H branch is open; all the capacitors act as wires.
-  2. The circuit reduces to 1 Ω in series with (2 Ω ∥ 2 Ω), so Z = 1 + 1 = 2 Ω.
+  1. The branch containing the 20 H inductor behaves as an open circuit and carries no current.
+  2. Every capacitor in the network is replaced by a plain wire.
+  3. The remaining purely resistive network is a 1 Ω resistor in series with two 2 Ω resistors in parallel.
+  4. Z = 1 + (2 ∥ 2) = 1 + 1 = 2 Ω.
+  Common mistake: Reversing the limits (treating L as a short and C as open) gives the DC equivalent, not the high-frequency one.
+  Key takeaway: At high frequency, L is an open circuit and C a short; at DC, L is a short and C an open circuit.
   Answer: 2
 P B 9: |-
-  Concept: At minimum deviation, $\delta = 2i - A$ and $\mu = \frac{\sin\frac{A + \delta}{2}}{\sin\frac{A}{2}}$.
+  Concept: At minimum deviation, the ray passes symmetrically through the prism, so i = e and $\delta_m = 2i - A$. The refractive index is $\mu = \frac{\sin\frac{A + \delta_m}{2}}{\sin\frac{A}{2}}$, and light slows to v = c/μ inside the glass.
   Solution:
-  1. i = A = 60°, so δ = 60° and μ = sin 60°/sin 30° = √3.
-  2. AP = 10 × (√3/2) = 5√3 cm, and v = c/√3.
-  3. $t = \frac{5\sqrt3\times10^{-2}\times\sqrt3}{3\times10^8} = 5\times10^{-10}$ s.
+  1. i = A = 60°, so δ_m = 2(60°) − 60° = 60°.
+  2. $\mu = \frac{\sin60°}{\sin30°} = \frac{\sqrt3/2}{1/2} = \sqrt3$.
+  3. With side 10 cm (from the figure), AP is the median (altitude) of the equilateral triangle: $AP = 10\cos30° = 5\sqrt3$ cm.
+  4. Speed in the glass: $v = \frac{c}{\sqrt3}$.
+  5. $t = \frac{AP}{v} = \frac{5\sqrt3\times10^{-2}\times\sqrt3}{3\times10^8} = \frac{15\times10^{-2}}{3\times10^8} = 5\times10^{-10}$ s.
+  Common mistake: Using c instead of c/μ inside the prism gives a time √3 times too small.
+  Key takeaway: At minimum deviation, δ = 2i − A; time in a medium = distance × μ / c.
   Answer: 5
 P B 10: |-
-  Concept: Joule heating, E = I²Rt.
+  Concept: Joule heating in a resistor is $E = I^2Rt$. First find the resistance from the given data, then apply the new current and time.
   Solution:
-  1. 192 = 16R × 1, so R = 12 Ω.
-  2. E = 8² × 12 × 5 = 3840 J.
+  1. From the first situation: 192 = (4)² × R × 1, so R = 192/16 = 12 Ω.
+  2. The doubled current is 8 A, and t = 5 s.
+  3. $E = (8)^2\times12\times5 = 64\times60 = 3840$ J.
+  Shortcut: Doubling I multiplies the power by 4 (192 → 768 W), and 5 s gives 768 × 5 = 3840 J.
+  Common mistake: Doubling the energy instead of quadrupling the power gives 1920 J.
+  Key takeaway: Heat ∝ I², so doubling the current quadruples the power.
   Answer: 3840
