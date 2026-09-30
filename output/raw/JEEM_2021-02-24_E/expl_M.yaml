@@ -1,215 +1,399 @@
 M A 1: |-
-  Concept: For the image P' of P in a line: the midpoint of PP' lies on the line, and PP' is perpendicular to the line.
+  Concept: The mirror image P′ of a point P in a line satisfies two conditions:
+  - the midpoint M of PP′ lies on the line;
+  - PP′ is perpendicular to the line's direction.
+  Given: P(a, 6, 9), P′(20, b, −a − 9). The line passes through (3, 2, 1) with direction (7, 5, −9).
   Solution:
-  1. Midpoint $M = \left(\frac{a + 20}{2}, \frac{6 + b}{2}, -\frac{a}{2}\right)$ must equal (3 + 7t, 2 + 5t, 1 – 9t) for some t.
-  2. $PP' = (20 - a, b - 6, -a - 18)$ is perpendicular to (7, 5, –9): $7(20 - a) + 5(b - 6) + 9(a + 18) = 0 \Rightarrow 2a + 5b + 272 = 0$.
-  3. Solving with the midpoint conditions: t = –3, a = –56, b = –32 (check: M = (–18, –13, 28) is on the line).
-  4. |a + b| = |–88| = 88.
+  1. Midpoint: $M = \left(\frac{a + 20}{2}, \frac{6 + b}{2}, -\frac{a}{2}\right)$. It must equal (3 + 7t, 2 + 5t, 1 − 9t) for some t.
+  2. Perpendicularity: PP′ = (20 − a, b − 6, −a − 18), and its dot product with (7, 5, −9) is 0: 7(20 − a) + 5(b − 6) + 9(a + 18) = 0, which gives 2a + 5b + 272 = 0.
+  3. From the z-coordinate of M: −a/2 = 1 − 9t, so a = 18t − 2. From the x-coordinate: (a + 20)/2 = 3 + 7t, so a = 14t − 14.
+  4. Equating: 18t − 2 = 14t − 14, so t = −3 and a = −56.
+  5. y-coordinate: (6 + b)/2 = 2 + 5(−3) = −13, so b = −32. Check: 2(−56) + 5(−32) + 272 = 0 ✓.
+  6. |a + b| = |−88| = 88.
+  Tip: M = (−18, −13, 28) lies on the line (t = −3), which confirms the working.
   Answer: (B)
 M A 2: |-
-  Concept: The determinant condition $ff'' - (f')^2 = 0$ means $\left(\frac{f'}{f}\right)' = 0$.
+  Concept: The determinant condition f f″ − (f′)² = 0 is exactly the numerator of the derivative of f′/f. So f′/f is constant, which means f is an exponential function.
+  Given: f(0) = 1 and f′(0) = 2.
   Solution:
-  1. $\frac{f'}{f}$ is constant $= \frac{f'(0)}{f(0)} = 2$.
-  2. $\ln f = 2x + c$, and f(0) = 1 gives $f(x) = e^{2x}$.
-  3. $f(1) = e^2 \approx 7.39$, which lies in (6, 9).
+  1. $\frac{d}{dx}\left(\frac{f'}{f}\right) = \frac{ff'' - (f')^2}{f^2} = 0$, so $\frac{f'}{f} = k$ is constant.
+  2. At x = 0: k = f′(0)/f(0) = 2.
+  3. Integrate: ln f = 2x + c. Since f(0) = 1, c = 0, so f(x) = e²ˣ.
+  4. f(1) = e² ≈ 7.39, which lies in (6, 9).
+  Check: f′ = 2e²ˣ is never zero (as required), and f f″ − f′² = e²ˣ·4e²ˣ − 4e⁴ˣ = 0 ✓.
+  Why others are wrong:
+  - (A) (9, 12) would need e² > 9.
+  - (C) and (D) are too small. They could come from, for example, e ≈ 2.72 (f′(0) = 1).
+  Tip: whenever you see f f″ = (f′)², think "f′/f is constant, so f is exponential". The analogous condition f f′ = constant gives square-root-type functions.
   Answer: (B)
 M A 3: |-
-  Concept: Use half-angle formulas twice.
+  Concept: To find tan(θ/4) from sin θ, use the half-angle formulas twice:
+  - $\cos\frac{\theta}{2} = \sqrt{\frac{1 + \cos\theta}{2}}$;
+  - $\tan\frac{\phi}{2} = \sqrt{\frac{1 - \cos\phi}{1 + \cos\phi}}$.
   Solution:
-  1. Let $\theta = \sin^{-1}\frac{\sqrt{63}}{8}$; then $\cos\theta = \frac{1}{8}$.
-  2. $\cos\frac{\theta}{2} = \sqrt{\frac{1 + 1/8}{2}} = \frac{3}{4}$.
-  3. $\tan\frac{\theta}{4} = \sqrt{\frac{1 - \cos(\theta/2)}{1 + \cos(\theta/2)}} = \sqrt{\frac{1/4}{7/4}} = \frac{1}{\sqrt{7}}$.
+  1. Let θ = sin⁻¹(√63/8). θ is in the first quadrant, so cos θ = √(1 − 63/64) = 1/8.
+  2. $\cos\frac{\theta}{2} = \sqrt{\frac{1 + \frac{1}{8}}{2}} = \sqrt{\frac{9}{16}} = \frac{3}{4}$ (positive, since θ/2 is acute).
+  3. $\tan\frac{\theta}{4} = \sqrt{\frac{1 - \frac{3}{4}}{1 + \frac{3}{4}}} = \sqrt{\frac{1}{7}} = \frac{1}{\sqrt7}$.
+  4. θ/4 lies in (0, π/8), so the positive root is correct.
+  Why others are wrong:
+  - (A) $\frac{1}{2\sqrt2}$ would follow from cos(θ/2) = 7/9.
+  - (C) √7 − 1 and (D) 2√2 − 1 come from misapplying tan(φ/2) = (1 − cos φ)/sin φ with the wrong values.
+  Check: tan(θ/2) = 2t/(1 − t²) with t = 1/√7 gives (2/√7)/(6/7) = √7/3. Then cos(θ/2) = 1/√(1 + 7/9) = 3/4 ✓.
   Answer: (B)
 M A 4: |-
-  Concept: Count element by element: each element can be in both subsets, only the first, only the second, or neither (4 ways).
+  Concept: When choosing two subsets of an n-element set, decide the fate of each element independently. Each element can be in both subsets, only the first, only the second, or neither: 4 choices. So there are 4ⁿ ordered pairs of subsets.
+  Given: the set {1, 2, 3, 4, 5}, with n = 5.
   Solution:
-  1. Total ordered pairs of subsets: $4^5 = 1024$.
-  2. Choose the 2 elements in the intersection ($^5C_2 = 10$); each of the other 3 elements has 3 choices (not both): $3^3 = 27$.
-  3. Favourable = 270, so the probability is $\frac{270}{1024} = \frac{135}{2^9}$.
+  1. Total ordered pairs: 4⁵ = 1024.
+  2. Favourable pairs (the intersection has exactly 2 elements):
+     - choose the two common elements: ⁵C₂ = 10 ways;
+     - each of the other 3 elements must not be in both, so it has 3 choices (first only, second only, neither): 3³ = 27 ways.
+  3. Favourable = 10 × 27 = 270.
+  4. Probability = 270/1024 = 135/512 = 135/2⁹.
+  Why others are wrong:
+  - (A) 65/2⁷ and (C) 65/2⁸ use different counts.
+  - (D) 35/2⁷ may come from treating the subsets as unordered or by choosing subsets of fixed size.
+  Tip: the "4 choices per element" trick counts ordered pairs of subsets easily. For |A ∩ B| = k, the answer is always $^nC_k\cdot3^{n-k}/4^n$.
   Answer: (B)
 M A 5: |-
-  Concept: A plane through the intersection of two planes: $\vec{r}\cdot(\vec{n}_1 + \lambda\vec{n}_2) = d_1 + \lambda d_2$.
+  Concept: A plane through the line of intersection of $\vec r\cdot\vec n_1 = d_1$ and $\vec r\cdot\vec n_2 = d_2$ has the form $\vec r\cdot(\vec n_1 + \lambda\vec n_2) = d_1 + \lambda d_2$.
+  Given: $\vec n_1 = (1, 1, 1)$ with d₁ = 1; $\vec n_2 = (1, -2, 0)$ with d₂ = −2. The plane passes through (1, 0, 2).
   Solution:
-  1. $\vec{r}\cdot[(1 + \lambda)\hat{i} + (1 - 2\lambda)\hat{j} + \hat{k}] = 1 - 2\lambda$.
-  2. Through (1, 0, 2): $1 + \lambda + 2 = 1 - 2\lambda \Rightarrow \lambda = -\frac{2}{3}$.
-  3. Normal $= \frac{1}{3}\hat{i} + \frac{7}{3}\hat{j} + \hat{k}$, right side $= \frac{7}{3}$. Multiplying by 3: $\vec{r}\cdot(\hat{i} + 7\hat{j} + 3\hat{k}) = 7$.
+  1. The family: $\vec r\cdot[(1 + \lambda)\hat i + (1 - 2\lambda)\hat j + \hat k] = 1 - 2\lambda$.
+  2. Substitute (1, 0, 2): (1 + λ)(1) + (1 − 2λ)(0) + 1(2) = 1 − 2λ, so 3 + λ = 1 − 2λ and λ = −2/3.
+  3. Normal: $\left(\frac{1}{3}, \frac{7}{3}, 1\right)$; right-hand side: $1 + \frac{4}{3} = \frac{7}{3}$.
+  4. Multiply through by 3: $\vec r\cdot(\hat i + 7\hat j + 3\hat k) = 7$.
+  5. Check with (1, 0, 2): 1 + 0 + 6 = 7 ✓.
+  Why others are wrong:
+  - (D) has the correct normal but the right-hand side was not scaled (7/3).
+  - (A) has a sign error in the ĵ component.
+  - (C) scales only part of the normal.
+  Tip: after finding λ, always clear fractions consistently on both sides, and verify with the given point.
   Answer: (B)
 M A 6: |-
-  Concept: The point of a curve closest to a line (that does not meet it) is where the tangent is parallel to the line.
+  Concept: The point of a curve nearest to a line it does not cross is where the tangent to the curve is parallel to the line. There, the common normal is perpendicular to both.
+  Given: the parabola y = x² + 4 and the line y = 4x − 1, with slope 4.
   Solution:
-  1. $\frac{dy}{dx} = 2x = 4$ (the slope of y = 4x – 1), so x = 2.
-  2. y = 4 + 4 = 8, so P = (2, 8).
+  1. Check that they do not meet: x² + 4 = 4x − 1 gives x² − 4x + 5 = 0, with discriminant 16 − 20 < 0. So there is no intersection.
+  2. Tangent slope of the parabola: dy/dx = 2x. Set it equal to 4, so x = 2.
+  3. y = 2² + 4 = 8, so P = (2, 8).
+  4. Distance from P to the line 4x − y − 1 = 0: $\frac{|8 - 8 - 1|}{\sqrt{17}} = \frac{1}{\sqrt{17}}$, the minimum distance.
+  Why others are wrong:
+  - (A) (−2, 8) has slope −4 there.
+  - (B) (1, 5) and (C) (3, 13) have slopes 2 and 6, not parallel to the line.
+  - Their distances are larger: (1, 5) gives 2/√17 and (3, 13) gives 2/√17.
+  Tip: you can also minimise $D(x) = \frac{|4x - x^2 - 5|}{\sqrt{17}}$ directly. The vertex of x² − 4x + 5 is at x = 2, as before.
   Answer: (D)
 M A 7: |-
-  Concept: Use the centroid to find a, b, c, then symmetric functions of the roots.
+  Concept: Use the centroid and the AP condition to find a, b, c. Then express α² + β² − αβ through the sum and product of the roots: (α + β)² − 3αβ.
   Solution:
-  1. Centroid x: $\frac{2a + 2}{3} = \frac{10}{3} \Rightarrow a = 4$.
-  2. Centroid y: $\frac{c + 2b}{3} = \frac{7}{3}$, and AP gives c = 2b – a = 2b – 4, so 4b – 4 = 7 and $b = \frac{11}{4}$, $c = \frac{3}{2}$.
-  3. $4x^2 + \frac{11}{4}x + 1 = 0$: $\alpha + \beta = -\frac{11}{16}$, $\alpha\beta = \frac{1}{4}$.
-  4. $\alpha^2 + \beta^2 - \alpha\beta = (\alpha + \beta)^2 - 3\alpha\beta = \frac{121}{256} - \frac{192}{256} = -\frac{71}{256}$.
+  1. The centroid's x-coordinate: (a + 2 + a)/3 = 10/3, so 2a + 2 = 10 and a = 4.
+  2. The centroid's y-coordinate: (c + b + b)/3 = 7/3, so c + 2b = 7.
+  3. a, b, c in AP means 2b = a + c, so c = 2b − 4. Substituting: 2b − 4 + 2b = 7, so b = 11/4 and c = 3/2.
+  4. The equation ax² + bx + 1 = 0 is 4x² + (11/4)x + 1 = 0. Sum α + β = −(11/4)/4 = −11/16; product αβ = 1/4.
+  5. α² + β² − αβ = (α + β)² − 3αβ = 121/256 − 3/4 = 121/256 − 192/256 = −71/256.
+  Note: a negative value is possible because α and β are complex. The discriminant (11/4)² − 16 < 0.
+  Why others are wrong:
+  - (A) +71/256 has the wrong sign.
+  - (B) and (C) use 69, from an arithmetic slip, for example (α + β)² − 2αβ − αβ with the wrong product.
   Answer: (D)
 M A 8: |-
-  Concept: Split the integral where the integrand crosses integer values.
+  Concept: To integrate the greatest-integer function of an expression, rewrite the expression in a convenient form and split the interval where it crosses integer values.
   Solution:
-  1. $[x^2 - 2x - 2] = [(x - 1)^2] - 3$. Put u = x – 1, with u from 0 to 2.
-  2. $\int_0^2[u^2]du = 0(1) + 1(\sqrt{2} - 1) + 2(\sqrt{3} - \sqrt{2}) + 3(2 - \sqrt{3}) = 5 - \sqrt{2} - \sqrt{3}$.
-  3. Subtract $\int_0^2 3\,du = 6$: result $= -1 - \sqrt{2} - \sqrt{3}$.
+  1. x² − 2x − 2 = (x − 1)² − 3, so [x² − 2x − 2] = [(x − 1)²] − 3, because subtracting an integer commutes with [ ].
+  2. Substitute u = x − 1; as x runs from 1 to 3, u runs from 0 to 2.
+  3. $\int_0^2[u^2]du$: [u²] is 0 on [0, 1), 1 on [1, √2), 2 on [√2, √3) and 3 on [√3, 2).
+  4. So $\int_0^2[u^2]du = 0 + (\sqrt2 - 1) + 2(\sqrt3 - \sqrt2) + 3(2 - \sqrt3) = 5 - \sqrt2 - \sqrt3$.
+  5. Subtract $\int_0^2 3\,du = 6$: the result is 5 − √2 − √3 − 6 = −1 − √2 − √3.
+  Why others are wrong:
+  - (A) −4 and (B) −5 treat [u²] as if it jumped only at integer u.
+  - (D) has a sign error on the constant.
+  Tip: for [f(x)], find where f(x) crosses each integer. These are often irrational points such as √2 and √3.
   Answer: (C)
 M A 9: |-
-  Concept: f is increasing where f'(x) > 0.
+  Concept: f is increasing on the intervals where f′(x) > 0. For a piecewise function, check each piece separately.
   Solution:
-  1. x < –5: f' = –55 < 0, decreasing.
-  2. –5 < x < 4: $f' = 6x^2 - 6x - 120 = 6(x - 5)(x + 4)$, positive only for x < –4, so increasing on (–5, –4).
-  3. x > 4: $f' = 6x^2 - 6x - 36 = 6(x - 3)(x + 2) > 0$, increasing on (4, ∞).
-  4. A = (–5, –4) ∪ (4, ∞).
+  1. For x < −5: f(x) = −55x, so f′ = −55 < 0. Decreasing.
+  2. For −5 < x < 4: f′ = 6x² − 6x − 120 = 6(x² − x − 20) = 6(x − 5)(x + 4).
+     - In (−5, 4), the factor x − 5 is negative.
+     - So f′ > 0 only where x + 4 < 0, i.e. on (−5, −4).
+     - On (−4, 4), f is decreasing.
+  3. For x > 4: f′ = 6x² − 6x − 36 = 6(x − 3)(x + 2), which is positive for all x > 4 (both factors are positive). Increasing.
+  4. So A = (−5, −4) ∪ (4, ∞).
+  Why others are wrong:
+  - (B) (−5, ∞) ignores the decreasing stretch on (−4, 4).
+  - (C) includes x < −5, where f′ = −55.
+  - (D) includes (−∞, −5) and (−4, 4), both decreasing.
+  Tip: in a piecewise function, factor each piece's derivative and restrict its sign analysis to that piece's own interval.
   Answer: (A)
 M A 10: |-
-  Concept: Use the conditions at the origin and at (1, 2).
+  Concept: Translate each geometric condition into an equation in a, b and c:
+  - passing through a point gives an equation;
+  - a tangent line at a point gives both the point condition and the slope condition.
+  Given: y = ax² + bx + c. The tangent at the origin is y = x, and the curve passes through (1, 2).
   Solution:
-  1. The tangent at the origin means the curve passes through (0, 0): c = 0.
-  2. Slope at the origin: y'(0) = b = 1.
+  1. The tangent at the origin touches the curve at (0, 0), so c = 0.
+  2. The slope at the origin: y′ = 2ax + b, so y′(0) = b. It must equal the slope of y = x, so b = 1.
   3. Through (1, 2): a + b + c = 2, so a = 1.
+  4. So a = 1, b = 1, c = 0, and the curve is y = x² + x.
+  Check: the tangent at (0, 0) has slope 1 ✓, and y(1) = 2 ✓.
+  Why others are wrong:
+  - (B), (C) and (D) all have c ≠ 0, so the curve would not pass through the origin, and y = x could not be its tangent there.
+  - (C) also has b = 0, which gives the wrong slope.
+  Tip: "the tangent at the origin is y = mx" immediately gives c = 0 and b = m for any polynomial.
   Answer: (A)
 M A 11: |-
-  Concept: De Morgan's laws in logic.
+  Concept: Negate a compound statement with De Morgan's laws: ∼(P ∧ Q) = ∼P ∨ ∼Q and ∼(P ∨ Q) = ∼P ∧ ∼Q. Then simplify with the distributive law.
   Solution:
-  1. $\sim[\sim p \wedge (p \vee q)] = p \vee \sim(p \vee q) = p \vee (\sim p \wedge \sim q)$.
-  2. By distribution: $(p \vee \sim p) \wedge (p \vee \sim q) = T \wedge (p \vee \sim q) = p \vee \sim q$.
+  1. ∼[∼p ∧ (p ∨ q)] = ∼(∼p) ∨ ∼(p ∨ q) = p ∨ (∼p ∧ ∼q).
+  2. Distribute: (p ∨ ∼p) ∧ (p ∨ ∼q).
+  3. p ∨ ∼p is always true (T), so the expression is T ∧ (p ∨ ∼q) = p ∨ ∼q.
+  4. Check: the original ∼p ∧ (p ∨ q) simplifies to ∼p ∧ q. Its negation is p ∨ ∼q ✓.
+  Why others are wrong:
+  - (A) ∼p ∧ q is the original statement (simplified), not its negation.
+  - (B) p ∧ ∼q is the negation of ∼p ∨ q, a different statement.
+  - (C) ∼p ∨ q is the implication p → q, unrelated.
+  Tip: simplify the original first (absorption: ∼p ∧ (p ∨ q) = ∼p ∧ q). Then negate the simple form directly.
   Answer: (D)
 M A 12: |-
-  Concept: Cramer's rule: unique solution when Δ ≠ 0; when Δ = 0, check consistency.
+  Concept: For three equations in three unknowns:
+  - if the coefficient determinant Δ ≠ 0, the solution is unique (Cramer's rule);
+  - if Δ = 0, the system has either no solution or infinitely many, depending on consistency.
   Solution:
-  1. $\Delta = \begin{vmatrix} 1 & -2 & 0 \\ 1 & -1 & k \\ 0 & k & 4 \end{vmatrix} = 4 - k^2$, so there is a unique solution for k ≠ ±2: statement (A) is true.
-  2. k = 2: equation 2 – equation 1 gives y + 2z = –3, while equation 3 gives y + 2z = 3. Contradiction, so no solution: (D) is true.
-  3. (B) and (C) are false (Δ = 0 there); (E) is false because for k ≠ ±2 the solution is unique.
+  1. $\Delta = \begin{vmatrix}1 & -2 & 0\\ 1 & -1 & k\\ 0 & k & 4\end{vmatrix} = 1(-4 - k^2) + 2(4 - 0) + 0 = 4 - k^2$.
+  2. Δ ≠ 0 when k ≠ ±2, so there is a unique solution. Statement (A) is true.
+  3. k = 2: equation 2 minus equation 1 gives y + 2z = −3, while equation 3 (2y + 4z = 6) gives y + 2z = 3. Contradiction, so there is no solution. Statement (D) is true.
+  4. k = −2: Δ = 0, so the solution is not unique. (B) is false.
+  5. (C) is false because Δ = 0 at k = 2.
+  6. (E) is false: for k ≠ ±2 the solution is unique, not infinite.
+  7. So the correct statements are (A) and (D).
+  Tip: when Δ = 0, eliminate a variable and look for two equations with identical left sides but different constants. That shows inconsistency.
   Answer: (C)
 M A 13: |-
-  Concept: Tangent to $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ at $(x_1, y_1)$: $\frac{xx_1}{a^2} + \frac{yy_1}{b^2} = 1$.
+  Concept: For a conic, the tangent at (x₁, y₁) is found by the "T = 0" rule. For $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ it is $\frac{xx_1}{a^2} + \frac{yy_1}{b^2} = 1$. Check both that the point lies on the curve and that the tangent matches the given line.
+  Given: the line x + √3y = 2√3 and the point (3√3/2, 1/2).
   Solution:
-  1. The point lies on $x^2 + 9y^2 = 9$: $\frac{27}{4} + \frac{9}{4} = 9$. ✓
-  2. Tangent: $\frac{3\sqrt{3}}{2}x + \frac{9}{2}y = 9$. Multiply by $\frac{2}{3\sqrt{3}}$: $x + \sqrt{3}y = 2\sqrt{3}$. ✓
+  1. (A) x² + 9y² = 9:
+     - the point gives 27/4 + 9/4 = 36/4 = 9 ✓, so it is on the curve;
+     - tangent: x·(3√3/2) + 9y·(1/2) = 9, i.e. (3√3/2)x + (9/2)y = 9;
+     - multiply by 2/(3√3): x + √3y = 2√3 ✓.
+  2. (D) x² + y² = 7: the point gives 27/4 + 1/4 = 7 ✓, but the tangent is (3√3/2)x + (1/2)y = 7, i.e. 3√3x + y = 14, which differs from the given line.
+  3. (B) 2x² − 18y² = 9: 2(27/4) − 18(1/4) = 9 ✓, but the tangent is 3√3x − 9y = 9, a different line.
+  4. (C): the point does not satisfy y² = x/(6√3).
+  Tip: several curves may pass through the point. Only one has the given line as its tangent, so always verify the tangent equation.
   Answer: (A)
 M A 14: |-
-  Concept: Heights and distances with a constant height h.
+  Concept: The plane flies at a constant height h. The horizontal distances from A are h cot θ, so the distance flown equals the difference of the two cot values times h.
+  Given: speed 432 km/h for 20 s; the angles of elevation are 60° and then 30°.
   Solution:
-  1. Distance flown: 432 km/h = 120 m/s, and 120 × 20 = 2400 m.
-  2. $h\cot30^\circ - h\cot60^\circ = 2400 \Rightarrow h\left(\sqrt{3} - \frac{1}{\sqrt{3}}\right) = 2400 \Rightarrow h\cdot\frac{2}{\sqrt{3}} = 2400$.
-  3. $h = 1200\sqrt{3}$ m.
+  1. Speed: 432 km/h = 432 × 1000/3600 = 120 m/s. Distance flown: 120 × 20 = 2400 m.
+  2. First horizontal distance: h cot 60° = h/√3. Second: h cot 30° = √3h.
+  3. The difference equals the distance flown: √3h − h/√3 = 2400.
+  4. $h\cdot\frac{3 - 1}{\sqrt3} = h\cdot\frac{2}{\sqrt3} = 2400$, so $h = 1200\sqrt3$ m ≈ 2078 m.
+  Why others are wrong:
+  - (B), (C) and (D) come from using the wrong speed conversion (for example 432 m/s) or the cot values without subtracting.
+  - Check: 1200√3 × (2/√3) = 2400 ✓.
+  Tip: in "angle of elevation changes as the object moves at a fixed height" problems, always use h(cot θ₂ − cot θ₁) = the distance moved. Convert km/h to m/s by multiplying by 5/18.
   Answer: (A)
 M A 15: |-
-  Concept: Standard valid argument forms are tautologies.
+  Concept: Standard rules of inference are tautologies:
+  - modus tollens: [∼q ∧ (p → q)] → ∼p;
+  - disjunctive syllogism: [(p ∨ q) ∧ ∼p] → q.
   Solution:
-  1. (a) $[\sim q \wedge (p \rightarrow q)] \rightarrow \sim p$ is modus tollens: if p were true, q would be true, contradicting ~q. Always true.
-  2. (b) $[(p \vee q) \wedge \sim p] \rightarrow q$ is disjunctive syllogism: if p is false and p ∨ q is true, q must be true. Always true.
-  3. Both are tautologies.
+  1. (a) [∼q ∧ (p → q)] → ∼p: suppose the premise is true, so q is false and p → q is true. If p were true, q would have to be true, a contradiction. So p is false, i.e. ∼p is true. The conditional can never be T → F, so (a) is a tautology.
+  2. (b) [(p ∨ q) ∧ ∼p] → q: if the premise is true, p is false and p ∨ q is true, so q must be true. Again never T → F, so (b) is a tautology.
+  3. Truth-table check for (b) with p = F, q = F: p ∨ q = F, so the premise is F and the conditional is T ✓. Every other row also gives T.
+  4. Both are tautologies.
+  Why others are wrong: (A), (B) and (D) deny at least one of these valid argument forms.
+  Tip: the valid forms are modus ponens, modus tollens, hypothetical syllogism and disjunctive syllogism. Each, written as "premises → conclusion", is a tautology.
   Answer: (C)
 M A 16: |-
-  Concept: A homogeneous system MX = O has infinitely many solutions when |M| = 0; every odd-order skew-symmetric matrix has determinant 0.
+  Concept:
+  - A homogeneous system MX = O always has the trivial solution. It has infinitely many solutions when det M = 0.
+  - Every skew-symmetric matrix of odd order has determinant 0, because det M = det Mᵀ = det(−M) = (−1)³ det M, which forces det M = 0.
   Solution:
-  1. $A^2$ is symmetric, and $B^2$ is symmetric because $(B^2)^T = (B^T)^2 = (-B)^2 = B^2$.
-  2. $(A^2B^2)^T = B^2A^2$, so $M = A^2B^2 - B^2A^2$ satisfies $M^T = -M$: M is skew-symmetric.
-  3. M is 3 × 3 skew-symmetric, so |M| = 0 and the system has infinitely many solutions.
+  1. A is symmetric, so A² is symmetric.
+  2. B is skew-symmetric, so B² is symmetric: (B²)ᵀ = (Bᵀ)² = (−B)² = B².
+  3. Let M = A²B² − B²A². Then Mᵀ = (B²)ᵀ(A²)ᵀ − (A²)ᵀ(B²)ᵀ = B²A² − A²B² = −M.
+  4. So M is a 3 × 3 skew-symmetric matrix, and det M = 0.
+  5. The homogeneous system MX = O therefore has infinitely many solutions (a non-trivial null space).
+  Why others are wrong:
+  - (A) would need det M ≠ 0.
+  - (B) A linear system never has exactly two solutions.
+  - (D) A homogeneous system always has at least X = O.
+  Tip: for symmetric P and Q, PQ − QP is always skew-symmetric. In odd dimensions its determinant is zero.
   Answer: (C)
 M A 17: |-
-  Concept: Hockey-stick identity: $\sum_{r=2}^{n}{}^rC_2 = {}^{n+1}C_3$.
+  Concept: Hockey-stick identity: $\sum_{r=k}^{n}{}^rC_k = {}^{n+1}C_{k+1}$. Here $\sum_{r=2}^{n}{}^rC_2 = {}^{n+1}C_3$.
   Solution:
-  1. Sum $= {}^{n+1}C_2 + 2\,{}^{n+1}C_3 = \frac{(n + 1)n}{2} + \frac{(n + 1)n(n - 1)}{3}$.
-  2. $= \frac{n(n + 1)}{6}[3 + 2(n - 1)] = \frac{n(n + 1)(2n + 1)}{6}$ (this is $\sum k^2$).
+  1. The sum is $^{n+1}C_2 + 2\cdot{}^{n+1}C_3$.
+  2. $^{n+1}C_2 = \frac{(n + 1)n}{2}$ and $^{n+1}C_3 = \frac{(n + 1)n(n - 1)}{6}$.
+  3. Sum $= \frac{n(n + 1)}{2} + \frac{n(n + 1)(n - 1)}{3} = \frac{n(n + 1)}{6}[3 + 2(n - 1)] = \frac{n(n + 1)(2n + 1)}{6}$.
+  4. This is the familiar formula for 1² + 2² + … + n².
+  Check with n = 2: ³C₂ + 2(²C₂) = 3 + 2 = 5, and 2·3·5/6 = 5 ✓.
+  Why others are wrong:
+  - (A) resembles the formula for a sum of cubes.
+  - (B) has (n − 1) where (n + 1) should be.
+  - (D) is a different cubic.
+  - Testing n = 2 rules them out quickly: (A) gives 6, (B) gives 5/3 and (D) gives 35/3.
+  Tip: small-value substitution (n = 2 or 3) is the fastest way to check closed-form options.
   Answer: (C)
 M A 18: |-
-  Concept: $x\frac{dy}{dx} + y = \frac{d}{dx}(xy)$.
+  Concept: x y′ + y is the derivative of the product xy. The equation integrates directly: (xy)′ = bx⁴.
+  Given: y(1) = 2 and $\int_1^2 f(x)\,dx = \frac{62}{5}$.
   Solution:
-  1. $(xy)' = bx^4 \Rightarrow xy = \frac{bx^5}{5} + C$. From y(1) = 2: $C = 2 - \frac{b}{5}$.
+  1. xy = bx⁵/5 + C. At x = 1: 2 = b/5 + C, so C = 2 − b/5.
   2. $f(x) = \frac{bx^4}{5} + \frac{2 - b/5}{x}$.
-  3. $\int_1^2 f\,dx = \frac{b}{25}(32 - 1) + \left(2 - \frac{b}{5}\right)\ln2 = \frac{31b}{25} + \left(2 - \frac{b}{5}\right)\ln2$.
-  4. For this to equal $\frac{62}{5}$ (no ln 2 term), $2 - \frac{b}{5} = 0$, so b = 10; check: $\frac{31\times10}{25} = \frac{62}{5}$. ✓
+  3. $\int_1^2 f\,dx = \frac{b}{25}(2^5 - 1) + \left(2 - \frac{b}{5}\right)\ln2 = \frac{31b}{25} + \left(2 - \frac{b}{5}\right)\ln2$.
+  4. The target 62/5 is rational, while ln 2 is irrational. So the ln 2 term must vanish: 2 − b/5 = 0, i.e. b = 10.
+  5. Check: 31 × 10/25 = 310/25 = 62/5 ✓.
+  6. With b = 10, f(x) = 2x⁴, which indeed passes through (1, 2).
+  Why others are wrong:
+  - (A) 5 gives 31/5 + ln 2.
+  - (B) and (C) confuse the value of the integral with b.
+  Tip: when the answer must be rational, any irrational term such as ln 2 must have a zero coefficient. This often fixes a parameter immediately.
   Answer: (D)
 M A 19: |-
-  Concept: Area between two curves = ∫(upper – lower) dx.
+  Concept: The area between two curves is $\int(\text{upper} - \text{lower})\,dx$ between their intersection points. For a region symmetric about the y-axis, double the integral from 0.
+  Given: 5x² ≤ y ≤ 2x² + 9, so the region lies between the parabola y = 5x² (below) and y = 2x² + 9 (above).
   Solution:
-  1. Intersection: $5x^2 = 2x^2 + 9 \Rightarrow x = \pm\sqrt{3}$.
-  2. Area $= \int_{-\sqrt{3}}^{\sqrt{3}}(9 - 3x^2)\,dx = 2[9x - x^3]_0^{\sqrt{3}} = 2(9\sqrt{3} - 3\sqrt{3}) = 12\sqrt{3}$.
+  1. Intersection: 5x² = 2x² + 9, so 3x² = 9 and x = ±√3.
+  2. Height of the region: (2x² + 9) − 5x² = 9 − 3x².
+  3. Area $= \int_{-\sqrt3}^{\sqrt3}(9 - 3x^2)\,dx = 2\int_0^{\sqrt3}(9 - 3x^2)\,dx = 2[9x - x^3]_0^{\sqrt3}$.
+  4. = 2(9√3 − 3√3) = 2 × 6√3 = 12√3 square units.
+  Alternative: the region between the chord y = 9 + 2x² and a parabola is a parabolic segment. Its area is ⅔ × width × height = ⅔ × 2√3 × 9 = 12√3 ✓.
+  Why others are wrong:
+  - (A) 9√3 and (D) 6√3 are half-regions or have arithmetic slips.
+  - (C) 11√3 does not correspond to any natural error.
   Answer: (B)
 M A 20: |-
-  Concept: Integrate the functional relation, then use the property $\int_0^2 f(x)dx = \int_0^2 f(2 - x)dx$.
+  Concept: Integrating f′(x) = f′(2 − x) gives a symmetry relation for f. Combine it with the "King's rule", $\int_0^a f(x)dx = \int_0^a f(a - x)dx$.
   Solution:
-  1. $f'(x) = f'(2 - x)$ integrates to $f(x) = -f(2 - x) + C$, i.e. $f(x) + f(2 - x) = C$.
-  2. At x = 0: $1 + e^2 = C$.
-  3. $2I = \int_0^2[f(x) + f(2 - x)]dx = 2C$, so $I = C = 1 + e^2$.
+  1. Integrate both sides: f(x) = −f(2 − x) + C. The minus sign comes from the chain rule, since $\frac{d}{dx}f(2 - x) = -f'(2 - x)$.
+  2. So f(x) + f(2 − x) = C for all x.
+  3. At x = 0: f(0) + f(2) = 1 + e² = C.
+  4. Let I = $\int_0^2 f(x)dx = \int_0^2 f(2 - x)dx$. Adding: $2I = \int_0^2[f(x) + f(2 - x)]dx = \int_0^2 C\,dx = 2C$.
+  5. So I = C = 1 + e².
+  Why others are wrong:
+  - (B) 1 − e² has a sign error.
+  - (D) 2(1 + e²) forgets to halve after adding.
+  - (C) combines both mistakes.
+  Tip: whenever f(x) + f(a − x) is constant on [0, a], the integral is simply (a/2) × that constant. Here (2/2)(1 + e²).
   Answer: (A)
 M B 1: |-
-  Concept: Remove the modulus by splitting into cases.
+  Concept: To solve an equation containing |x − a|, split into the cases x ≤ a and x > a. Keep only the roots that satisfy each case's condition.
   Solution:
-  1. x ≤ 5: $(x + 1)^2 + 5 - x = \frac{27}{4} \Rightarrow x^2 + x - \frac{3}{4} = 0 \Rightarrow x = \frac{1}{2}$ or $-\frac{3}{2}$, both ≤ 5.
-  2. x > 5: $(x + 1)^2 + x - 5 = \frac{27}{4}$; the left side is already more than 36 at x = 5, so there is no root.
-  3. Number of real roots = 2.
+  1. Case x ≤ 5: |x − 5| = 5 − x.
+     - (x + 1)² + 5 − x = 27/4.
+     - x² + 2x + 1 + 5 − x − 27/4 = 0, i.e. x² + x − 3/4 = 0.
+     - Roots: (−1 ± √(1 + 3))/2 = (−1 ± 2)/2, so x = 1/2 or x = −3/2.
+     - Both satisfy x ≤ 5, so both are valid.
+  2. Case x > 5: |x − 5| = x − 5.
+     - (x + 1)² + x − 5 = 27/4, i.e. x² + 3x − 4 − 27/4 = 0.
+     - For x > 5, the left side is already more than 36 + 0 = 36 > 27/4, so there is no root in this region.
+  3. Total number of real roots = 2.
+  Tip: sketch or estimate the minimum of each piece. If the function is already above the target on the region, no root can exist there.
   Answer: 2
 M B 2: |-
-  Concept: Distribute distinct students into labelled groups, fixing group C's size first.
+  Concept: Distribute distinct students into labelled groups A, B and C. Fix the size of the constrained group C first. Then distribute the rest into A and B with neither empty: 2ᵐ − 2 ways for m students.
+  Given: 10 students; every group is non-empty, and 1 ≤ |C| ≤ 3.
   Solution:
-  1. C has c = 1, 2 or 3 students; the remaining 10 – c students go into A and B with neither empty: $2^{10-c} - 2$ ways.
-  2. c = 1: $10\times(2^9 - 2) = 5100$.
-  3. c = 2: $45\times(2^8 - 2) = 11430$.
-  4. c = 3: $120\times(2^7 - 2) = 15120$.
-  5. Total = 31650.
+  1. |C| = 1: choose the student in 10 ways; the other 9 go to A or B with neither empty: 2⁹ − 2 = 510. Total 10 × 510 = 5100.
+  2. |C| = 2: ¹⁰C₂ = 45 choices; 2⁸ − 2 = 254. Total 45 × 254 = 11430.
+  3. |C| = 3: ¹⁰C₃ = 120 choices; 2⁷ − 2 = 126. Total 120 × 126 = 15120.
+  4. Grand total: 5100 + 11430 + 15120 = 31650.
+  Common mistakes:
+  - forgetting to subtract the 2 cases where A or B is empty;
+  - treating the groups as unlabelled and dividing by 2.
+  Tip: the number of ways to put m distinct objects into k labelled non-empty boxes is k!·S(m, k), a Stirling number. For k = 2 it is simply 2ᵐ − 2.
   Answer: 31650
 M B 3: |-
-  Concept: Replace x by 1/x to get a second equation, then add.
+  Concept: For a functional equation involving f(x) and f(1/x), substitute x → 1/x to get a second equation. Then add or subtract the two to isolate the combination you need.
+  Given: a + α = 1, b + β = 2 and af(x) + αf(1/x) = bx + β/x.
   Solution:
-  1. $af(x) + \alpha f\left(\frac{1}{x}\right) = bx + \frac{\beta}{x}$ and $af\left(\frac{1}{x}\right) + \alpha f(x) = \frac{b}{x} + \beta x$.
-  2. Adding: $(a + \alpha)\left[f(x) + f\left(\frac{1}{x}\right)\right] = (b + \beta)\left(x + \frac{1}{x}\right)$.
-  3. Ratio $= \frac{b + \beta}{a + \alpha} = \frac{2}{1} = 2$.
+  1. Original: af(x) + αf(1/x) = bx + β/x.
+  2. Replace x by 1/x: af(1/x) + αf(x) = b/x + βx.
+  3. Add: (a + α)[f(x) + f(1/x)] = (b + β)x + (b + β)/x = (b + β)(x + 1/x).
+  4. So $\frac{f(x) + f(1/x)}{x + 1/x} = \frac{b + β}{a + α} = \frac{2}{1} = 2$.
+  5. The result does not depend on the individual values of a, α, b and β. Only their sums matter.
+  Tip: subtracting instead of adding would give (a − α)[f(x) − f(1/x)] = (b − β)(x − 1/x), useful if the question asked for f(x) − f(1/x). Adding is the natural choice here because the given sums are a + α and b + β.
   Answer: 2
 M B 4: |-
-  Concept: Variance $= \frac{\sum x^2}{n} - \bar{x}^2$.
+  Concept: Variance = (mean of the squares) − (square of the mean): $\sigma^2 = \frac{\sum x_i^2}{n} - \bar{x}^2$.
+  Given: nine 1's and one k, all natural numbers; σ² < 10.
   Solution:
-  1. $\sigma^2 = \frac{9 + k^2}{10} - \left(\frac{9 + k}{10}\right)^2 = \frac{9(k - 1)^2}{100}$.
-  2. $\frac{9(k - 1)^2}{100} < 10 \Rightarrow (k - 1)^2 < 111.1 \Rightarrow k - 1 \le 10$.
-  3. Maximum k = 11.
+  1. Σx = 9 + k, so the mean is (9 + k)/10.
+  2. Σx² = 9 + k².
+  3. $\sigma^2 = \frac{9 + k^2}{10} - \frac{(9 + k)^2}{100} = \frac{90 + 10k^2 - 81 - 18k - k^2}{100} = \frac{9k^2 - 18k + 9}{100} = \frac{9(k - 1)^2}{100}$.
+  4. Condition: 9(k − 1)²/100 < 10, so (k − 1)² < 1000/9 ≈ 111.1.
+  5. The largest integer with (k − 1)² < 111.1 is k − 1 = 10 (since 10² = 100 and 11² = 121 > 111). So k = 11.
+  Check: k = 11 gives σ² = 9 × 100/100 = 9 < 10 ✓; k = 12 gives 9 × 121/100 = 10.89 > 10 ✗.
+  Tip: for a data set with one outlier and all other values equal, σ² = p(1 − p)d², where p is the outlier's share (1/10) and d is its distance from the others. Here 0.1 × 0.9 × (k − 1)² ✓.
   Answer: 11
 M B 5: |-
-  Concept: Shortest distance between skew lines: $d = \frac{|(\vec{a}_2 - \vec{a}_1)\cdot(\vec{b}_1\times\vec{b}_2)|}{|\vec{b}_1\times\vec{b}_2|}$.
+  Concept: The shortest distance between two skew lines $\vec r = \vec a_1 + t\vec b_1$ and $\vec r = \vec a_2 + s\vec b_2$ is $d = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
   Solution:
-  1. Line 1 passes through $\left(\lambda, \frac{1}{2}, 0\right)$ with direction (2, 1, –1); line 2 through (0, –2λ, λ) with direction (1, 1, 1).
-  2. $\vec{b}_1\times\vec{b}_2 = (2, -3, 1)$, with magnitude $\sqrt{14}$.
-  3. $(\vec{a}_2 - \vec{a}_1)\cdot(2, -3, 1) = -2\lambda + 6\lambda + \frac{3}{2} + \lambda = 5\lambda + \frac{3}{2}$.
-  4. $\frac{|5\lambda + 1.5|}{\sqrt{14}} = \frac{\sqrt{7}}{2\sqrt{2}} \Rightarrow |5\lambda + 1.5| = 3.5 \Rightarrow \lambda = 0.4$ or –1.
-  5. λ is an integer, so λ = –1 and |λ| = 1.
+  1. Line 1: x − λ = 2y − 1 = −2z. Write it as $\frac{x - \lambda}{1} = \frac{y - 1/2}{1/2} = \frac{z}{-1/2}$, i.e. the point (λ, ½, 0) with direction (2, 1, −1) after scaling.
+  2. Line 2: x = y + 2λ = z − λ, i.e. the point (0, −2λ, λ) with direction (1, 1, 1).
+  3. $\vec b_1\times\vec b_2 = (1\cdot1 - (-1)\cdot1,\ (-1)\cdot1 - 2\cdot1,\ 2\cdot1 - 1\cdot1) = (2, -3, 1)$, with magnitude √14.
+  4. $\vec a_2 - \vec a_1 = (-\lambda, -2\lambda - \tfrac12, \lambda)$. Its dot product with (2, −3, 1) is −2λ + 6λ + 3/2 + λ = 5λ + 3/2.
+  5. $\frac{|5\lambda + 3/2|}{\sqrt{14}} = \frac{\sqrt7}{2\sqrt2}$, so |5λ + 1.5| = √14·√7/(2√2) = 7/2.
+  6. 5λ + 1.5 = ±3.5, so λ = 0.4 or λ = −1. λ is an integer, so λ = −1 and |λ| = 1.
   Answer: 1
 M B 6: |-
-  Concept: Write the complex numbers in polar form.
+  Concept: Raise complex numbers to high powers with the polar (Euler) form: (re^{iθ})ⁿ = rⁿe^{inθ}. Then evaluate the finite sums with standard formulas, or by listing the terms.
   Solution:
-  1. $-1 + i\sqrt{3} = 2e^{i2\pi/3}$, so its 21st power is $2^{21}e^{i14\pi} = 2^{21}$; similarly $(1 + i\sqrt{3})^{21} = 2^{21}e^{i7\pi} = -2^{21}$.
-  2. $(1 - i)^{24} = (\sqrt{2})^{24}e^{-i6\pi} = 2^{12}$ and $(1 + i)^{24} = 2^{12}$.
-  3. $k = \frac{2^{21}}{2^{12}} - \frac{2^{21}}{2^{12}} = 0$, so n = 0.
-  4. $\sum_{j=0}^{5}[(j + 5)^2 - (j + 5)] = \sum_{m=5}^{10}m(m - 1) = 20 + 30 + 42 + 56 + 72 + 90 = 310$.
+  1. −1 + i√3 = 2e^{i2π/3}. Its 21st power is 2²¹e^{i14π} = 2²¹, since 14π is a multiple of 2π.
+  2. 1 + i√3 = 2e^{iπ/3}. Its 21st power is 2²¹e^{i7π} = −2²¹.
+  3. 1 − i = √2e^{−iπ/4}. Its 24th power is 2¹²e^{−i6π} = 2¹². Similarly (1 + i)²⁴ = 2¹².
+  4. k = 2²¹/2¹² + (−2²¹)/2¹² = 2⁹ − 2⁹ = 0, so n = [|k|] = 0.
+  5. The required value is $\sum_{j=0}^{5}[(j + 5)^2 - (j + 5)] = \sum_{m=5}^{10}m(m - 1)$.
+  6. = 20 + 30 + 42 + 56 + 72 + 90 = 310.
+  Check with formulas: Σm² over m = 5 to 10 is 355, and Σm over the same range is 45; 355 − 45 = 310 ✓.
+  Tip: −1 + i√3 = 2ω and 1 + i√3 = −2ω², where ω is a cube root of unity. Powers that are multiples of 3 then simplify quickly.
   Answer: 310
 M B 7: |-
-  Concept: Locus from a distance ratio (Apollonius circle).
+  Concept: The locus of points whose distances from two fixed points are in a constant ratio k ≠ 1 is a circle (the circle of Apollonius).
+  Given: PA = 3·PB, with A(5, 0) and B(−5, 0).
   Solution:
-  1. $(x - 5)^2 + y^2 = 9[(x + 5)^2 + y^2] \Rightarrow 8x^2 + 8y^2 + 100x + 200 = 0$.
-  2. $x^2 + y^2 + 12.5x + 25 = 0$: centre (–6.25, 0), $r^2 = 6.25^2 - 25 = 14.0625$.
-  3. $4r^2 = 56.25$.
+  1. (x − 5)² + y² = 9[(x + 5)² + y²].
+  2. Expand: x² − 10x + 25 + y² = 9x² + 90x + 225 + 9y².
+  3. Rearrange: 8x² + 8y² + 100x + 200 = 0, i.e. x² + y² + 12.5x + 25 = 0.
+  4. Centre (−6.25, 0); r² = (6.25)² − 25 = 39.0625 − 25 = 14.0625, so r = 3.75.
+  5. 4r² = 56.25.
+  Check with the formula for the Apollonius circle: $r = \frac{k\cdot AB}{|k^2 - 1|} = \frac{3\times10}{8} = 3.75$ ✓.
+  Tip: the circle lies on the side of the point with the smaller distance (here B), and it separates A from B.
   Answer: 56.25
 M B 8: |-
-  Concept: Vandermonde's identity: $\sum_i{}^mC_i\,{}^nC_{k-i} = {}^{m+n}C_k$.
+  Concept: Vandermonde's identity: $\sum_i\binom{m}{i}\binom{n}{k - i} = \binom{m + n}{k}$. Also $\binom{n}{r} + \binom{n}{r + 1} = \binom{n + 1}{r + 1}$ (Pascal's rule).
   Solution:
-  1. The sum $= {}^{25}C_k + {}^{25}C_{k+1} = {}^{26}C_{k+1}$.
-  2. $^{26}C_{k+1}$ is largest when k + 1 = 13, i.e. k = 12; the question asks for the k that gives this maximum value of the sum.
+  1. First sum: $\sum_i\binom{10}{i}\binom{15}{k - i} = \binom{25}{k}$.
+  2. Second sum: $\sum_i\binom{12}{i}\binom{13}{k + 1 - i} = \binom{25}{k + 1}$.
+  3. Total: $\binom{25}{k} + \binom{25}{k + 1} = \binom{26}{k + 1}$.
+  4. $\binom{26}{r}$ is largest at the middle, r = 13. So the sum is greatest when k + 1 = 13, i.e. k = 12.
+  5. The question (as intended by the official key) asks for the k that makes the sum a maximum, which is k = 12.
+  Tip: for $\binom{n}{r}$ with n even, the unique maximum is at r = n/2. With n odd, the two middle values tie.
   Answer: 12
 M B 9: |-
-  Concept: GP terms a, ar, ar², ar³.
+  Concept: Write the GP as a, ar, ar², ar³ and use the given sum, reciprocal sum and product to find a and r.
   Solution:
-  1. Product of the first three terms $= (ar)^3 = 1$, so ar = 1.
-  2. Sum $S = a(1 + r + r^2 + r^3)$; sum of reciprocals $= \frac{1 + r + r^2 + r^3}{ar^3}$.
-  3. Dividing: $a^2r^3 = \frac{65/12}{65/18} = \frac{3}{2}$, i.e. $(ar)^2r = r = \frac{3}{2}$.
-  4. Third term $\alpha = ar^2 = r = \frac{3}{2}$, so 2α = 3.
+  1. The product of the first three terms is a·ar·ar² = (ar)³ = 1, so ar = 1.
+  2. The sum is S = a(1 + r + r² + r³) = 65/12.
+  3. The reciprocals 1/a, 1/(ar), 1/(ar²), 1/(ar³) sum to $\frac{r^3 + r^2 + r + 1}{ar^3} = \frac{65}{18}$.
+  4. Divide (2) by (3): a²r³ = (65/12)/(65/18) = 18/12 = 3/2.
+  5. a²r³ = (ar)²·r = r, since ar = 1. So r = 3/2 and a = 2/3.
+  6. The third term is α = ar² = (ar)·r = 3/2, so 2α = 3.
+  Check: the terms are 2/3, 1, 3/2, 9/4, summing to (8 + 12 + 18 + 27)/12 = 65/12 ✓. Their product of the first three is 1 ✓.
   Answer: 3
 M B 10: |-
-  Concept: The normal at a point of a circle passes through the centre; the tangent is perpendicular to it.
+  Concept: At a point on a circle, the normal passes through the centre, and the tangent is perpendicular to the normal. Find where each meets the x-axis to get the triangle's base.
+  Given: circle (x − 2)² + (y − 3)² = 25 and the point P(5, 7) on it.
   Solution:
-  1. Centre (2, 3). Normal through (5, 7) with slope $\frac{4}{3}$ meets the x-axis at $x = -\frac{1}{4}$.
-  2. Tangent slope $-\frac{3}{4}$: $y - 7 = -\frac{3}{4}(x - 5)$ meets the x-axis at $x = \frac{43}{3}$.
-  3. Base $= \frac{43}{3} + \frac{1}{4} = \frac{175}{12}$, height = 7, so $A = \frac{1}{2}\cdot\frac{175}{12}\cdot7 = \frac{1225}{24}$.
-  4. 24A = 1225.
+  1. The normal is the line through the centre (2, 3) and P(5, 7), with slope 4/3: y − 7 = (4/3)(x − 5). At y = 0: x = 5 − 21/4 = −1/4.
+  2. The tangent has slope −3/4: y − 7 = −(3/4)(x − 5). At y = 0: x = 5 + 28/3 = 43/3.
+  3. Base on the x-axis: 43/3 − (−1/4) = 172/12 + 3/12 = 175/12. Height = the y-coordinate of P = 7.
+  4. Area A = ½ × 175/12 × 7 = 1225/24.
+  5. 24A = 1225.
+  Check: the triangle is right-angled at P. The normal leg is √((21/4)² + 7²) = 35/4 and the tangent leg is √((28/3)² + 7²) = 35/3; ½ × 35/4 × 35/3 = 1225/24 ✓.
+  Tip: a right angle at P means the base on the x-axis equals the sum of the projections of the two legs, which is a quick cross-check.
   Answer: 1225
