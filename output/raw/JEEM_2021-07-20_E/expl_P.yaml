@@ -1,169 +1,343 @@
 P A 1: |-
-  Concept: Compare $X_L$ and $X_C$; $\tan\phi = \frac{X_L - X_C}{R}$.
+  Concept: In a series LCR circuit, $\tan\phi = \frac{X_L - X_C}{R}$. If one reactance is enormously larger than R and the other reactance, the phase angle approaches 90°, and the circuit behaves as that reactive element alone.
   Solution:
-  1. $X_L = 2\pi\times50\times0.5\times10^{-3} = 0.157\ \Omega$.
-  2. $X_C = \frac{1}{2\pi\times50\times10^{-13}} \approx 3.2\times10^{10}\ \Omega$, which is far larger than R.
-  3. $\phi \approx 90°$ and the circuit is predominantly capacitive.
+  1. $X_L = 2\pi fL = 2\pi\times50\times0.5\times10^{-3} = 0.157$ Ω.
+  2. $X_C = \frac{1}{2\pi fC} = \frac{1}{2\pi\times50\times0.1\times10^{-12}} = \frac{1}{3.14\times10^{-11}} \approx 3.18\times10^{10}$ Ω.
+  3. X_C ≫ R (100 Ω) and X_C ≫ X_L, so $\tan\phi = \frac{X_L - X_C}{R} \approx -3.2\times10^8$, a very large negative number.
+  4. |φ| ≈ 90°, with the current leading the voltage. The circuit is predominantly capacitive.
+  Physical meaning: a 0.1 pF capacitor at 50 Hz is almost an open circuit, so the current is tiny: $I \approx \frac{220}{3.2\times10^{10}} \approx 7$ nA. The resonant frequency, $\frac{1}{2\pi\sqrt{LC}} \approx 22.5$ MHz, is far above 50 Hz.
+  Why others are wrong:
+  - (A) The circuit is capacitive, not inductive, since X_C ≫ X_L.
+  - (B) and (D) Resonance or purely resistive behaviour would need X_L ≈ X_C, which is far from true at 50 Hz.
   Answer: (C)
 P A 2: |-
-  Concept: $p = \sqrt{2mK}$.
+  Concept: Kinetic energy and momentum are related by $K = \frac{p^2}{2m}$, so $p = \sqrt{2mK}$. For a fixed mass, p ∝ √K.
   Solution:
-  1. K becomes 4 times, so p doubles: a 100% increase.
+  1. K becomes 4K, so $p' = \sqrt{2m\cdot4K} = 2\sqrt{2mK} = 2p$.
+  2. The momentum doubles.
+  3. Percentage change: $\frac{2p - p}{p}\times100 = 100\%$.
+  Contrast: doubling the momentum quadruples the kinetic energy (a 300% increase in K). The relative changes differ because K depends on the square of p.
+  Why others are wrong:
+  - (B) 200% would mean the momentum triples.
+  - (C) 400% would mean the momentum increases fivefold.
+  - (D) 300% is the percentage increase in K, not in p.
   Answer: (A)
 P A 3: |-
-  Concept: Express M in terms of $l = [ML^2T^{-1}]$, $v = [LT^{-1}]$ and $t = [T]$.
+  Concept: To express one quantity in terms of a new set of fundamental quantities, write each new base in terms of M, L and T, then solve for M.
   Solution:
-  1. $M = \frac{lT}{L^2}$ and $L = vt$.
-  2. $M = \frac{lt}{v^2t^2} = [t^{-1}v^{-2}l]$.
+  1. Angular momentum: [l] = [ML²T⁻¹]. Velocity: [v] = [LT⁻¹]. Time: [t] = [T].
+  2. From v: L = vt (dimensionally).
+  3. From l: M = $\frac{l}{L^2T^{-1}} = \frac{lT}{L^2}$.
+  4. Substitute L = vt: $M = \frac{lt}{(vt)^2} = \frac{l}{v^2t} = [t^{-1}v^{-2}l^1]$.
+  Check: $\frac{[ML^2T^{-1}]}{[L^2T^{-2}][T]} = \frac{ML^2T^{-1}}{L^2T^{-1}} = [M]$ ✓.
+  Method (general): write M = t^a v^b l^c and equate the powers: [M¹L⁰T⁰] = [T]^a[LT⁻¹]^b[ML²T⁻¹]^c. M: c = 1. L: b + 2c = 0, so b = −2. T: a − b − c = 0, so a = −1 ✓.
+  Why others are wrong: (A), (B) and (D) fail the dimensional check (for example, (D) is the reciprocal of the correct expression).
   Answer: (C)
 P A 4: |-
-  Concept: The cut-off wavelength corresponds to the full electron KE: $\lambda_{min} = \frac{hc}{K}$.
+  Concept: In an X-ray tube, the shortest (cut-off) wavelength is produced when an electron gives up all its kinetic energy in a single collision, producing one photon: $\frac{hc}{\lambda_{min}} = K$ (the Duane–Hunt law).
   Solution:
-  1. $K = \frac{p^2}{2m} = \frac{h^2}{2m\lambda^2}$.
-  2. $\lambda_{min} = \frac{hc\cdot2m\lambda^2}{h^2} = \frac{2mc\lambda^2}{h}$.
+  1. The electron's de Broglie wavelength is λ, so its momentum is $p = \frac{h}{\lambda}$.
+  2. Kinetic energy: $K = \frac{p^2}{2m} = \frac{h^2}{2m\lambda^2}$.
+  3. Cut-off wavelength: $\lambda_{min} = \frac{hc}{K} = \frac{hc\cdot2m\lambda^2}{h^2} = \frac{2mc\lambda^2}{h}$.
+  Dimension check: $\frac{mc\lambda^2}{h}$ has units $\frac{\text{kg}\cdot\text{m/s}\cdot\text{m}^2}{\text{J s}} = \frac{\text{kg m}^3/\text{s}}{\text{kg m}^2/\text{s}} = $ m ✓.
+  Interpretation: $\frac{\lambda_{min}}{\lambda} = \frac{2mc\lambda}{h} = \frac{2\lambda}{\lambda_C}$, where $\lambda_C = \frac{h}{mc}$ is the Compton wavelength. For non-relativistic electrons, λ ≫ λ_C, so the X-ray cut-off wavelength is much longer than the electron's de Broglie wavelength.
+  Why others are wrong:
+  - (A) 0 would need infinite electron energy.
+  - (C) $\frac{hc}{mc}$ has the wrong dimensions.
+  - (D) has the wrong dimensions (m²c²λ²/h² is not a length).
   Answer: (B)
 P A 5: |-
-  Concept: Surface energy ∝ surface area; volume is conserved.
+  Concept: Surface energy = surface tension × surface area. When drops coalesce, the total volume is conserved, but the total surface area decreases.
   Solution:
-  1. New radius $r = 2^{1/3}R$.
-  2. $\frac{E_{before}}{E_{after}} = \frac{2\cdot4\pi R^2}{4\pi(2^{1/3}R)^2} = 2^{1/3} : 1$.
+  1. Volume: $2\times\frac{4}{3}\pi R^3 = \frac{4}{3}\pi r^3$, so r³ = 2R³ and r = 2^{1/3}R.
+  2. Surface area before: 2 × 4πR² = 8πR².
+  3. Surface area after: 4πr² = 4π × 2^{2/3}R².
+  4. Ratio: $\frac{8\pi R^2}{4\pi\cdot2^{2/3}R^2} = \frac{2}{2^{2/3}} = 2^{1/3}$.
+  5. E_before : E_after = 2^{1/3} : 1 ≈ 1.26 : 1.
+  Consequence: the surface energy decreases on coalescence. The released energy appears as heat (the drop warms slightly) or kinetic energy. This is why small drops tend to merge spontaneously.
+  Generalisation: n identical drops merging give a ratio of $n^{1/3}$ : 1. For example, 1000 small drops merging into one lose 90% of their surface energy.
+  Why others are wrong:
+  - (B) is the inverse ratio (surface energy would increase).
+  - (C) 2 : 1 and (D) 1 : 2 ignore the change in radius.
   Answer: (A)
 P A 6: |-
-  Concept: For equal magnitudes, $|P \pm Q|^2 = 2P^2(1 \pm \cos\theta)$.
+  Concept: For two vectors of equal magnitude P at angle θ: $|\vec P + \vec Q|^2 = 2P^2(1 + \cos\theta)$ and $|\vec P - \vec Q|^2 = 2P^2(1 - \cos\theta)$.
   Solution:
-  1. $\frac{1 + \cos\theta}{1 - \cos\theta} = n^2 \Rightarrow \cos\theta = \frac{n^2 - 1}{n^2 + 1}$.
+  1. Given |P + Q| = n|P − Q|: $\frac{1 + \cos\theta}{1 - \cos\theta} = n^2$.
+  2. 1 + cos θ = n² − n² cos θ, so cos θ(1 + n²) = n² − 1.
+  3. $\cos\theta = \frac{n^2 - 1}{n^2 + 1}$, so $\theta = \cos^{-1}\frac{n^2 - 1}{n^2 + 1}$.
+  Checks:
+  - n = 1 (|P + Q| = |P − Q|): cos θ = 0, θ = 90° ✓ (perpendicular vectors).
+  - n → ∞: cos θ → 1, θ → 0 ✓ (parallel vectors, |P − Q| → 0).
+  Alternative form: using half-angles, $\frac{1 + \cos\theta}{1 - \cos\theta} = \cot^2\frac{\theta}{2}$, so $\cot\frac{\theta}{2} = n$ and $\theta = 2\cot^{-1}n$.
+  Why others are wrong:
+  - (A) uses sin⁻¹ instead of cos⁻¹.
+  - (C) and (D) use n instead of n² (forgetting that magnitudes are squared).
   Answer: (B)
 P A 7: |-
-  Concept: Relative velocities add.
+  Concept: When the boy walks on a moving escalator, his speed relative to the ground is the sum of his walking speed and the escalator's speed.
   Solution:
-  1. Walking speed $= \frac{L}{t_1}$ and escalator speed $= \frac{L}{t_2}$.
-  2. $t = \frac{L}{L/t_1 + L/t_2} = \frac{t_1t_2}{t_1 + t_2}$.
+  1. Let the length of the escalator be L.
+  2. Walking on the stationary escalator: his walking speed is $v_b = \frac{L}{t_1}$.
+  3. Standing on the moving escalator: its speed is $v_e = \frac{L}{t_2}$.
+  4. Walking on the moving escalator: speed $v_b + v_e = \frac{L}{t_1} + \frac{L}{t_2}$.
+  5. Time: $t = \frac{L}{L/t_1 + L/t_2} = \frac{1}{1/t_1 + 1/t_2} = \frac{t_1t_2}{t_1 + t_2}$.
+  Check: if t₁ = t₂ = T, then t = $\frac{T}{2}$ (double speed, half the time) ✓.
+  Note: the time is always less than both t₁ and t₂ (like resistors in parallel). It is half the harmonic mean of t₁ and t₂.
+  Why others are wrong:
+  - (B) t₂ − t₁ could be negative or zero.
+  - (C) the arithmetic mean is longer than the shorter time, which is impossible when both speeds help.
+  - (D) $\frac{t_1t_2}{t_2 - t_1}$ corresponds to walking against the escalator.
   Answer: (A)
 P A 8: |-
-  Concept: $\gamma = 1 + \frac{2}{f}$.
+  Concept: For an ideal gas with f degrees of freedom, $C_V = \frac{f}{2}R$, $C_P = C_V + R = \left(\frac{f}{2} + 1\right)R$, and $\gamma = \frac{C_P}{C_V} = 1 + \frac{2}{f}$.
   Solution:
-  1. $f = \frac{2}{\gamma - 1}$.
+  1. γ − 1 = $\frac{2}{f}$, so $f = \frac{2}{\gamma - 1}$.
+  Checks:
+  - Monatomic (γ = $\frac{5}{3}$): f = $\frac{2}{2/3}$ = 3 ✓.
+  - Diatomic (γ = $\frac{7}{5}$): f = $\frac{2}{2/5}$ = 5 ✓.
+  - Rigid polyatomic (γ = $\frac{4}{3}$): f = $\frac{2}{1/3}$ = 6 ✓.
+  Related: $C_V = \frac{R}{\gamma - 1}$ and $C_P = \frac{\gamma R}{\gamma - 1}$, which are often used in thermodynamics problems.
+  Why others are wrong:
+  - (A) $\frac{2}{\gamma + 1}$ gives f ≈ 0.75 for a monatomic gas.
+  - (C) and (D) do not give integer degrees of freedom for standard gases.
   Answer: (B)
 P A 9: |-
-  Concept: $\ln R = \ln R_0 - \lambda t$; the slope gives λ.
+  Concept: The decay rate (activity) is R = R₀e^{−λt}. Taking natural logs: ln R = ln R₀ − λt. So a graph of ln R against t is a straight line with slope −λ.
   Solution:
-  1. From the graph, ln R falls from about 6 to 0 in 40 s, so $\lambda = \frac{6}{40} = 0.15$ s⁻¹.
-  2. $T_{1/2} = \frac{0.693}{0.15} \approx 4.62$ s.
+  1. From the graph: ln R starts at about 6 at t = 0 and falls linearly to 0 at t = 40 s.
+  2. Slope = $\frac{0 - 6}{40} = -0.15$ s⁻¹, so λ = 0.15 s⁻¹.
+  3. $T_{1/2} = \frac{\ln2}{\lambda} = \frac{0.693}{0.15} = 4.62$ s.
+  Alternative check: in 40 s, ln R drops by 6, i.e. R falls by a factor e⁶ ≈ 403. The number of half-lives is log₂ 403 ≈ 8.66, so T½ ≈ $\frac{40}{8.66}$ ≈ 4.62 s ✓.
+  Why others are wrong:
+  - (A) 2.62 s and (B) 9.15 s come from misreading the slope.
+  - (D) 6.93 s would need λ = 0.1 s⁻¹ (ln R falling by 4 over 40 s).
   Answer: (C)
 P A 10: |-
-  Concept: $\frac{KE_{rot}}{KE_{trans}} = \frac{K^2}{R^2}$.
+  Concept: For a body rolling without slipping, v = ωR. The rotational kinetic energy is ½Iω² = ½mK²ω² and the translational KE is ½mv² = ½mω²R². So $\frac{KE_{rot}}{KE_{trans}} = \frac{K^2}{R^2}$, where K is the radius of gyration.
   Solution:
-  1. $\frac{K^2}{R^2} = \frac{1}{2}$ is a solid cylinder (disc).
+  1. Given: KE_rot = 50% of KE_trans, so $\frac{K^2}{R^2} = \frac{1}{2}$.
+  2. Values of $\frac{K^2}{R^2}$:
+     - Ring or hollow cylinder: 1.
+     - Solid cylinder or disc: ½ ✓.
+     - Solid sphere: $\frac{2}{5}$.
+     - Hollow sphere: $\frac{2}{3}$.
+  3. So the body is a solid cylinder.
+  Energy distribution: for a solid cylinder, the total KE = $\frac{3}{2}$ × KE_trans, so rotation takes ⅓ of the total and translation ⅔.
+  Why others are wrong:
+  - (A) and (B) Hollow cylinder and ring have KE_rot = KE_trans (100%).
+  - (C) Solid sphere has KE_rot = 40% of KE_trans.
   Answer: (D)
 P A 11: |-
-  Concept: The wave propagates along $\vec E\times\vec B$.
+  Concept: In an electromagnetic wave, the direction of propagation is along $\vec E\times\vec B$ (the direction of the Poynting vector $\vec S = \frac{1}{\mu_0}\vec E\times\vec B$).
   Solution:
-  1. $\hat i\times\hat k = -\hat j$.
+  1. $\vec E$ is along $\hat i$ and $\vec B$ is along $\hat k$.
+  2. $\hat i\times\hat k = -(\hat k\times\hat i) = -\hat j$.
+  3. So the wave propagates along $-\hat j$.
+  Cyclic rule: $\hat i\times\hat j = \hat k$, $\hat j\times\hat k = \hat i$, $\hat k\times\hat i = \hat j$. Reversing the order gives a minus sign.
+  Check: E (x-direction), B (z-direction) and the propagation direction (−y) are mutually perpendicular ✓, as they must be for a transverse wave.
+  Why others are wrong:
+  - (A) and (B) The wave cannot travel along ±z, since B is already along z.
+  - (D) +ĵ is the result of the reversed product $\hat k\times\hat i$.
   Answer: (C)
 P A 12: |-
-  Concept: Hooke's law: $T = k(l - L)$.
+  Concept: Hooke's law for a wire: the extension is proportional to the tension, T = k(l − L), where L is the natural length.
   Solution:
-  1. $T_2(l_1 - L) = T_1(l_2 - L) \Rightarrow L = \frac{l_1T_2 - l_2T_1}{T_2 - T_1}$.
+  1. T₁ = k(l₁ − L) and T₂ = k(l₂ − L).
+  2. Divide: $\frac{T_1}{T_2} = \frac{l_1 - L}{l_2 - L}$, so T₁(l₂ − L) = T₂(l₁ − L).
+  3. T₁l₂ − T₁L = T₂l₁ − T₂L, so L(T₂ − T₁) = T₂l₁ − T₁l₂.
+  4. $L = \frac{l_1T_2 - l_2T_1}{T_2 - T_1}$.
+  Check: if T₁ = 0, then l₁ = L (no tension, natural length). The formula gives $\frac{l_1T_2}{T_2} = l_1$ ✓.
+  Graphical view: l increases linearly with T. The points (T₁, l₁) and (T₂, l₂) define the line, and L is where it meets T = 0.
+  Why others are wrong:
+  - (A) and (B) are the geometric and arithmetic means of the lengths, which have no physical basis.
+  - (D) has plus signs, which gives a weighted average of l₁ and l₂, always between them, whereas L must be less than both.
   Answer: (C)
 P A 13: |-
-  Concept: Constant power: $mv\frac{dv}{dt} = P$.
+  Concept: A machine delivering constant power P satisfies P = Fv = mv$\frac{dv}{dt}$. Integrating gives v(t), and integrating again gives x(t).
   Solution:
-  1. $v \propto t^{1/2}$, so $x \propto t^{3/2}$.
+  1. $mv\frac{dv}{dt} = P$, so v dv = $\frac{P}{m}$dt.
+  2. Integrate from rest: $\frac{v^2}{2} = \frac{P}{m}t$, so $v = \sqrt{\frac{2P}{m}}t^{1/2}$.
+  3. $x = \int_0^tv\,dt = \sqrt{\frac{2P}{m}}\cdot\frac{2}{3}t^{3/2}$.
+  4. So x ∝ t^{3/2}.
+  Energy check: the work done by the machine in time t is Pt, which equals the kinetic energy ½mv². So v ∝ √t ✓.
+  Other consequences: the force F = $\frac{P}{v}$ ∝ t^{−1/2} decreases with time, and so does the acceleration.
+  Why others are wrong:
+  - (A) t^{3/4} and (D) t^{1/4} do not follow from any consistent integration.
+  - (C) t^{1/2} is the dependence of the velocity, not the distance.
   Answer: (B)
 P A 14: |-
-  Concept: Ideal gas: $PV = nRT$.
+  Concept: For an ideal gas, PV = nRT. For a fixed amount of gas, PV is directly proportional to the absolute temperature T.
   Solution:
-  1. PV is proportional to T: a straight line through the origin, rising with T.
+  1. PV = (nR)T, the equation of a straight line through the origin with slope nR.
+  2. So a graph of PV against T is a straight line rising from (near) the origin.
+  3. This matches graph (C).
+  Why others are wrong:
+  - (A) PV constant at all temperatures would describe an isothermal curve (Boyle's law at one T), not the variation with T.
+  - (B) and (D) PV decreasing with T is not possible for an ideal gas.
+  Note: for real gases, PV/T deviates from a constant at high pressure and low temperature (the compressibility factor Z = $\frac{PV}{nRT}$ ≠ 1). But the question asks for ideal behaviour.
   Answer: (C)
 P A 15: |-
-  Concept: Doppler red shift: $\frac{\Delta\lambda}{\lambda} = \frac{v}{c}$.
+  Concept: For light from a source moving away at speed v ≪ c, the observed wavelength is longer (redshift): $\frac{\Delta\lambda}{\lambda} = \frac{v}{c}$.
   Solution:
-  1. $v = 3\times10^5\times\frac{6}{5890} \approx 306$ km/s.
+  1. Δλ = 5896 − 5890 = 6 Å.
+  2. $v = c\frac{\Delta\lambda}{\lambda} = 3\times10^8\times\frac{6}{5890} = 3.056\times10^5$ m/s ≈ 306 km/s.
+  3. The wavelength increased, so the galaxy is moving away (receding).
+  Note: 5890 Å and 5896 Å happen to be the two sodium D lines (D₂ and D₁). The question uses one as the rest wavelength and the other as the observed wavelength.
+  Significance: Hubble used such redshifts to show that galaxies are receding with speeds proportional to their distances.
+  Why others are wrong:
+  - (A) 322 km/s, (B) 296 km/s and (D) 336 km/s come from arithmetic slips (e.g. dividing by 5896 or using a different c).
   Answer: (C)
 P A 16: |-
-  Concept: $v^2 = \omega^2(A^2 - x^2)$.
+  Concept: In SHM, the speed at displacement x is $v = \omega\sqrt{A^2 - x^2}$, so v² = ω²(A² − x²). Two measurements (x₁, v₁) and (x₂, v₂) let us eliminate the amplitude A and find ω.
   Solution:
-  1. $v_1^2 - v_2^2 = \omega^2(x_2^2 - x_1^2)$.
-  2. $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{x_2^2 - x_1^2}{v_1^2 - v_2^2}}$.
+  1. $v_1^2 = \omega^2(A^2 - x_1^2)$ and $v_2^2 = \omega^2(A^2 - x_2^2)$.
+  2. Subtract: $v_1^2 - v_2^2 = \omega^2(x_2^2 - x_1^2)$.
+  3. $\omega = \sqrt{\frac{v_1^2 - v_2^2}{x_2^2 - x_1^2}}$.
+  4. $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{x_2^2 - x_1^2}{v_1^2 - v_2^2}}$.
+  Consistency: if x₂ > x₁ (farther from the mean position), then v₂ < v₁ (slower). So both the numerator and the denominator are positive ✓.
+  Amplitude (bonus): $A^2 = \frac{v_1^2x_2^2 - v_2^2x_1^2}{v_1^2 - v_2^2}$.
+  Why others are wrong: (B), (C) and (D) have sums where differences are needed; A² does not cancel from sums.
   Answer: (A)
 P A 17: |-
-  Concept: $T \propto R^{3/2}$, so $\frac{\Delta T}{T} = \frac{3}{2}\frac{\Delta R}{R}$.
+  Concept: Kepler's third law: T² ∝ R³, i.e. T ∝ R^{3/2}. For small changes, $\frac{\Delta T}{T} \approx \frac{3}{2}\frac{\Delta R}{R}$ (differentiating the logarithm).
   Solution:
-  1. $\frac{3}{2}\times2\% = 3\%$.
+  1. $\frac{\Delta R}{R}$ = 2% (from R to 1.02R).
+  2. $\frac{\Delta T}{T} = \frac{3}{2}\times2\% = 3\%$.
+  Exact check: (1.02)^{1.5} = 1.0301, i.e. a 3.01% increase ✓.
+  General rule for small changes: if y ∝ xⁿ, then the percentage change in y ≈ n × the percentage change in x.
+  Why others are wrong:
+  - (A) 0.7 has no basis.
+  - (C) 2.0 assumes T ∝ R.
+  - (D) 1.5 halves the correct value (using T ∝ R^{3/4}, or dividing by 2 instead of multiplying by $\frac{3}{2}$).
   Answer: (B)
 P A 18: |-
-  Concept: Both stars revolve about the common centre of mass with the same angular velocity.
+  Concept: In a binary star system, the two stars attract each other and both revolve around their common centre of mass. The line joining them always passes through the centre of mass, so they must complete their orbits in the same time.
   Solution:
-  1. The line joining them always passes through the centre of mass, so $T_A = T_B$.
+  1. The centre of mass lies on the line joining A and B, with m_Ar_A = m_Br_B.
+  2. As A goes around, B is always on the opposite side of the centre of mass. The two stars share the same angular velocity ω.
+  3. So T_A = T_B = $\frac{2\pi}{\omega}$.
+  Formula for the common period: $T^2 = \frac{4\pi^2(r_A + r_B)^3}{G(m_A + m_B)}$, where r_A + r_B is the separation. This is Kepler's third law with the total mass.
+  Why others are wrong:
+  - (B) and (D) suggest different periods depending on mass or radius, but the stars are locked together.
+  - (C) Kepler's third law in that form applies to different bodies orbiting the same central mass, not to the two members of a binary.
   Answer: (A)
 P A 19: |-
-  Concept: Apparent dip: $\tan\delta' = \frac{\tan\delta}{\cos\beta}$.
+  Concept: A dip needle measures the true dip δ only in the magnetic meridian. In a vertical plane at angle β to the meridian, the horizontal component along that plane is B_H cos β, while the vertical component B_V is unchanged. So the apparent dip δ′ satisfies $\tan\delta' = \frac{\tan\delta}{\cos\beta}$.
   Solution:
-  1. $\tan\delta = \tan45°\cos30° = \frac{\sqrt3}{2}$.
-  2. $\delta = \tan^{-1}\frac{\sqrt3}{2}$.
+  1. β = 30° and δ′ = 45°.
+  2. tan δ = tan δ′ × cos β = tan 45° × cos 30° = 1 × $\frac{\sqrt3}{2}$ = $\frac{\sqrt3}{2}$.
+  3. True dip: δ = tan⁻¹ $\frac{\sqrt3}{2}$ ≈ 40.9°.
+  Check: the apparent dip (45°) is greater than the true dip (40.9°) ✓. The apparent dip is always greater than or equal to the true dip, reaching 90° in the plane perpendicular to the meridian (β = 90°).
+  Two-plane method: if δ₁ and δ₂ are the apparent dips in two perpendicular planes, then cot²δ = cot²δ₁ + cot²δ₂.
+  Why others are wrong:
+  - (B) tan⁻¹ √3 = 60° and (D) tan⁻¹ $\frac{2}{\sqrt3}$ are larger than the apparent dip, which is impossible.
+  - (C) tan⁻¹ $\frac{1}{\sqrt3}$ = 30° uses tan 30° instead of cos 30°.
   Answer: (A)
 P A 20: |-
-  Concept: $\mu = \mu_0(1 + \chi)$.
+  Concept: Relative permeability is μ_r = 1 + χ (χ is the magnetic susceptibility). Absolute permeability is μ = μ₀μ_r.
   Solution:
-  1. $\mu = 4\pi\times10^{-7}\times500 = 2\pi\times10^{-4}$ H/m.
+  1. μ_r = 1 + 499 = 500.
+  2. μ = 4π × 10⁻⁷ × 500 = 2000π × 10⁻⁷ = 2π × 10⁻⁴ H/m.
+  Classification: χ = 499 (large and positive) indicates a ferromagnetic material. Paramagnets have small positive χ (about 10⁻⁵ to 10⁻³), and diamagnets have small negative χ.
+  Relations to remember:
+  - B = μH = μ₀(H + M).
+  - M = χH.
+  - μ_r = $\frac{\mu}{\mu_0}$ = 1 + χ.
+  Why others are wrong:
+  - (A) 3π × 10⁻⁴ and (D) 4π × 10⁻⁴ use μ_r = 750 or 1000.
+  - (B) π × 10⁻⁴ uses μ_r = 250.
   Answer: (C)
 P B 1: |-
-  Concept: $\frac{1}{16} = \left(\frac{1}{2}\right)^4$ means 4 half-lives.
+  Concept: In radioactive decay, the activity halves every half-life. After n half-lives, the activity is $\left(\frac{1}{2}\right)^n$ of its initial value.
   Solution:
-  1. $T_{1/2} = \frac{80}{4} = 20$ days.
+  1. $\frac{1}{16} = \left(\frac{1}{2}\right)^4$, so 4 half-lives have passed.
+  2. 4 × T½ = 80 days, so T½ = 20 days.
+  Alternative: λ = $\frac{\ln16}{80} = \frac{4\ln2}{80}$, so T½ = $\frac{\ln2}{\lambda} = \frac{80}{4}$ = 20 days ✓.
+  Note: activity (decay rate) is proportional to the number of undecayed nuclei, so it follows the same decay law and has the same half-life.
   Answer: 20
 P B 2: |-
-  Concept: Einstein's equation $eV = \frac{hc}{\lambda} - \phi$.
+  Concept: Einstein's photoelectric equation: $eV_s = \frac{hc}{\lambda} - \phi$, where V_s is the stopping potential and φ the work function. The threshold wavelength λ₀ is where the photon energy equals φ: $\lambda_0 = \frac{hc}{\phi}$.
   Solution:
-  1. $\frac{hc}{\lambda} = \phi + 3eV_0$ and $\frac{hc}{2\lambda} = \phi + eV_0$.
-  2. Subtracting: $\frac{hc}{2\lambda} = 2eV_0$, so $\phi = \frac{hc}{4\lambda}$.
-  3. $\lambda_0 = \frac{hc}{\phi} = 4\lambda$.
+  1. Wavelength λ: $3eV_0 = \frac{hc}{\lambda} - \phi$.
+  2. Wavelength 2λ: $eV_0 = \frac{hc}{2\lambda} - \phi$.
+  3. Subtract: $2eV_0 = \frac{hc}{\lambda} - \frac{hc}{2\lambda} = \frac{hc}{2\lambda}$, so $eV_0 = \frac{hc}{4\lambda}$.
+  4. From the second equation: $\phi = \frac{hc}{2\lambda} - eV_0 = \frac{hc}{2\lambda} - \frac{hc}{4\lambda} = \frac{hc}{4\lambda}$.
+  5. $\lambda_0 = \frac{hc}{\phi} = 4\lambda$.
+  Check: with λ₀ = 4λ, $eV_s = hc\left(\frac{1}{\lambda} - \frac{1}{4\lambda}\right) = \frac{3hc}{4\lambda} = 3eV_0$ ✓, and at 2λ: $hc\left(\frac{1}{2\lambda} - \frac{1}{4\lambda}\right) = \frac{hc}{4\lambda} = eV_0$ ✓.
   Answer: 4
 P B 3: |-
-  Concept: Rolling from height h: $v^2 = \frac{2gh}{1 + K^2/R^2}$.
+  Concept: For a body rolling without slipping from height h, energy conservation gives $mgh = \frac{1}{2}mv^2\left(1 + \frac{K^2}{R^2}\right)$, so $v = \sqrt{\frac{2gh}{1 + K^2/R^2}}$. The speed depends only on the shape factor $\frac{K^2}{R^2}$, not on the mass, radius or material.
   Solution:
-  1. Ring: $1 + 1 = 2$. Cylinder: $1 + \frac{1}{2} = \frac{3}{2}$.
-  2. $\frac{v_r}{v_c} = \sqrt{\frac{3/2}{2}} = \frac{\sqrt3}{2}$, so $x = 3$.
+  1. Ring: $\frac{K^2}{R^2}$ = 1, so $v_r = \sqrt{\frac{2gh}{2}} = \sqrt{gh}$.
+  2. Solid cylinder: $\frac{K^2}{R^2}$ = ½, so $v_c = \sqrt{\frac{2gh}{3/2}} = \sqrt{\frac{4gh}{3}}$.
+  3. $\frac{v_r}{v_c} = \sqrt{\frac{gh}{4gh/3}} = \sqrt{\frac{3}{4}} = \frac{\sqrt3}{2}$.
+  4. Comparing with $\frac{\sqrt x}{2}$: x = 3.
+  Interpretation: the ring is slower at the bottom because half of its kinetic energy is rotational, compared with a third for the cylinder.
+  Note: "same material" and "same radius" are irrelevant; only the mass distribution (shape) matters.
   Answer: 3
 P B 4: |-
-  Concept: At resonance $Z = R$, so $P = \frac{V^2}{R}$.
+  Concept: At resonance in a series LCR circuit, X_L = X_C, so the impedance equals R. The average power is $P = \frac{V_{rms}^2}{R}$ (the power factor is 1).
   Solution:
-  1. $P = \frac{250^2}{5} = 12500$ W $= 125\times10^2$ W.
+  1. The 250 V supply rating is taken as the rms voltage (the usual convention for AC supplies).
+  2. $P = \frac{250^2}{5} = \frac{62500}{5} = 12500$ W = 125 × 10² W.
+  3. The values of L and C only fix the resonant frequency: $\omega_0 = \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{20\times10^{-3}\times0.5\times10^{-6}}} = 10^4$ rad/s (f₀ ≈ 1.6 kHz).
+  Current at resonance: $I = \frac{250}{5}$ = 50 A, a large current, because the only opposition is the 5 Ω resistance.
+  Note: if 250 V were the peak value, the power would be half this (6250 W). The question's answer uses 250 V as rms.
   Answer: 125
 P B 5: |-
-  Concept: With uniform angular acceleration, rotations = average rate × time.
+  Concept: For uniform angular acceleration, the angle turned equals the average angular speed times the time: $\theta = \frac{\omega_0 + \omega}{2}t$.
   Solution:
-  1. Average $= \frac{600 + 1800}{2} = 1200$ rpm.
-  2. Rotations $= 1200\times\frac{10}{60} = 200$.
+  1. ω₀ = 600 rpm and ω = 1800 rpm. Average: 1200 rpm = 20 rev/s.
+  2. Time: 10 s.
+  3. Number of rotations: 20 × 10 = 200.
+  Check in rad/s: ω₀ = 20π rad/s and ω = 60π rad/s. α = $\frac{40\pi}{10}$ = 4π rad/s². θ = ω₀t + ½αt² = 200π + 200π = 400π rad = 200 rotations ✓.
   Answer: 200
 P B 6: |-
-  Concept: Dynamic resistance $r = \frac{\Delta V}{\Delta I}$ from the linear part of the curve.
+  Concept: The dynamic (AC) resistance of a diode at an operating point is $r_d = \frac{\Delta V}{\Delta I}$, the reciprocal of the slope of the I–V characteristic there. It is much smaller than the static resistance $\frac{V}{I}$ in the conducting region.
   Solution:
-  1. Around 3 mA, the current changes by 2 mA for a voltage change of about 0.05 V.
-  2. $r = \frac{0.05}{2\times10^{-3}} = 25\ \Omega$.
+  1. From the graph: around I_D = 3 mA, the reference lines at 2 mA and 4 mA correspond to diode voltages that differ by about 0.05 V (the steep part of the curve).
+  2. ΔI = 4 − 2 = 2 mA, ΔV ≈ 0.05 V.
+  3. $r_d = \frac{0.05}{2\times10^{-3}} = 25$ Ω.
+  Theory check: for an ideal diode, $r_d \approx \frac{V_T}{I} = \frac{26\text{ mV}}{3\text{ mA}} \approx 8.7$ Ω at room temperature. Real diodes (with an ideality factor above 1 and some bulk resistance) give larger values, so 25 Ω from the graph is plausible.
+  Note: the dynamic resistance decreases as the current increases, since the curve gets steeper.
   Answer: 25
 P B 7: |-
-  Concept: Isothermal work $W = nRT\ln\frac{V_2}{V_1}$.
+  Concept: In an isothermal process for an ideal gas, the work done by the gas is $W = nRT\ln\frac{V_2}{V_1}$.
   Solution:
-  1. $V_2/V_1 = 2$ (from 2 m³ to 4 m³), T = 300 K, n = 1.
-  2. $W = 8.3\times300\times0.6931 = 1725.8$ J $= 17258\times10^{-1}$ J.
+  1. From the figure: A = (2 m³, 200 N/m²) and B = (4 m³, 100 N/m²). PV = 400 J at both points, confirming an isothermal process.
+  2. n = 1 mol and T = 27 °C = 300 K.
+  3. $W = 1\times8.3\times300\times\ln\frac{4}{2} = 2490\times0.6931 = 1725.8$ J.
+  4. In units of 10⁻¹ J: 17258.
+  Note: the pressures and volumes shown give PV = 400 J, whereas nRT = 2490 J. These are not consistent for 1 mol at 300 K (the figure's scale is illustrative). The question intends W = nRT ln 2, as in the key.
+  Using the figure's values instead: W = PV ln 2 = 400 × 0.693 = 277 J, which is not the intended answer.
   Answer: 17258
 P B 8: |-
-  Concept: Closing the switches joins the upper and lower junctions, so each section becomes a parallel pair.
+  Concept: Closing a switch that connects two points puts them at the same potential. Resistors that then share both end-points are in parallel.
   Solution:
-  1. Sections: $12\parallel6 = 4$, $4\parallel4 = 2$, $6\parallel12 = 4$.
-  2. $R_{ab} = 4 + 2 + 4 = 10\ \Omega$.
+  1. From the figure: between a and b there are two branches, each with three resistors in series: upper 12 Ω, 4 Ω, 6 Ω and lower 6 Ω, 4 Ω, 12 Ω. Switches S₁ and S₂ connect the junctions between the first and second, and between the second and third resistors, of the two branches.
+  2. With both switches closed, the corresponding junctions are shorted together. The network becomes three parallel pairs in series:
+     - First section: 12 ∥ 6 = $\frac{72}{18}$ = 4 Ω.
+     - Second section: 4 ∥ 4 = 2 Ω.
+     - Third section: 6 ∥ 12 = 4 Ω.
+  3. R_ab = 4 + 2 + 4 = 10 Ω.
+  Comparison with the switches open: each branch is 22 Ω, and the two branches in parallel give 11 Ω. Closing the switches reduces the resistance slightly, to 10 Ω.
   Answer: 10
 P B 9: |-
-  Concept: Up: $a_1 = g(\sin\theta + \mu\cos\theta)$. Down: $a_2 = g(\sin\theta - \mu\cos\theta)$. Same distance, so $t \propto \frac{1}{\sqrt a}$.
+  Concept: On a rough incline, friction always opposes motion. Going up, friction and the weight component both act down the slope: $a_{up} = g(\sin\theta + \mu\cos\theta)$. Coming down, friction acts up the slope: $a_{down} = g(\sin\theta - \mu\cos\theta)$. For the same distance from or to rest, $t = \sqrt{\frac{2s}{a}}$, so t ∝ $\frac{1}{\sqrt a}$.
   Solution:
-  1. $\frac{t_{up}}{t_{down}} = \sqrt{\frac{a_2}{a_1}} = \frac{1}{2} \Rightarrow a_1 = 4a_2$.
-  2. $5\mu\cos\theta = 3\sin\theta \Rightarrow \mu = \frac{3}{5}\tan30° = \frac{\sqrt3}{5}$.
-  3. $x = 3$.
+  1. $\frac{t_{up}}{t_{down}} = \sqrt{\frac{a_{down}}{a_{up}}} = \frac{1}{2}$, so a_up = 4a_down.
+  2. sin θ + μ cos θ = 4(sin θ − μ cos θ), so 5μ cos θ = 3 sin θ.
+  3. μ = $\frac{3}{5}$ tan θ = $\frac{3}{5}$ tan 30° = $\frac{3}{5\sqrt3} = \frac{\sqrt3}{5}$.
+  4. Comparing with $\frac{\sqrt x}{5}$: x = 3.
+  Check that the body slides back: it needs tan θ > μ, i.e. 0.577 > 0.346 ✓.
   Answer: 3
 P B 10: |-
-  Concept: The maximum zener current comes from its power rating; $R_p$ drops the remaining voltage.
+  Concept: A zener diode's maximum safe current is fixed by its power rating: $I_{max} = \frac{P_{max}}{V_Z}$. A protective series resistor limits the current, dropping the difference between the applied voltage and V_Z.
   Solution:
-  1. $I_{max} = \frac{0.5}{8} = 62.5$ mA.
-  2. With the full 20 V applied, $R_p = \frac{20 - 8}{0.0625} = 192\ \Omega$.
+  1. $I_{max} = \frac{0.5\text{ W}}{8\text{ V}} = 0.0625$ A = 62.5 mA.
+  2. From the figure, the maximum voltage that can be applied across the zener branch (the full potential divider output) is 20 V.
+  3. R_p must drop 20 − 8 = 12 V at the maximum current: $R_p = \frac{12}{0.0625} = 192$ Ω.
+  4. With this resistor, the zener current never exceeds 62.5 mA, keeping the power within 0.5 W.
+  Check: at 20 V, the current is $\frac{12}{192}$ = 62.5 mA, and the zener dissipates 8 × 0.0625 = 0.5 W ✓.
   Answer: 192
