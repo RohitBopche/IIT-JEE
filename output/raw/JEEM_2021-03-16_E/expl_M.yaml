@@ -1,211 +1,400 @@
 M A 1: |-
-  Concept: Row operations to simplify, then use the range of $a\cos\theta + b\sin\theta$.
+  Concept: Simplify the determinant with row operations before expanding. The maximum of $a\cos\theta + b\sin\theta$ is $\sqrt{a^2 + b^2}$.
   Solution:
-  1. $R_1 \to R_1 - R_3$: $(0, 1, \cos2x - \sin2x)$. $R_2 \to R_2 - R_3$: $(1, 0, \cos2x - \sin2x)$.
-  2. Expanding: $f(x) = \cos2x - 2\sin2x$.
-  3. Maximum $= \sqrt{1^2 + 2^2} = \sqrt5$.
+  1. Rows: $R_1 = (\sin^2x, 1 + \cos^2x, \cos2x)$, $R_2 = (1 + \sin^2x, \cos^2x, \cos2x)$, $R_3 = (\sin^2x, \cos^2x, \sin2x)$.
+  2. $R_1 \to R_1 - R_3$: $(0, 1, \cos2x - \sin2x)$. $R_2 \to R_2 - R_3$: $(1, 0, \cos2x - \sin2x)$. (Row operations do not change the determinant.)
+  3. Let $k = \cos2x - \sin2x$. Expand along the first row:
+     $f = 0 - 1\cdot(1\cdot\sin2x - k\sin^2x) + k(1\cdot\cos^2x - 0\cdot\sin^2x)$
+     $= -\sin2x + k\sin^2x + k\cos^2x = -\sin2x + k$.
+  4. So $f(x) = \cos2x - \sin2x - \sin2x = \cos2x - 2\sin2x$.
+  5. Maximum of $\cos2x - 2\sin2x$ is $\sqrt{1^2 + 2^2} = \sqrt5$, reached when $(\cos2x, \sin2x) = \left(\frac{1}{\sqrt5}, -\frac{2}{\sqrt5}\right)$.
+  Why others are wrong:
+  - (A) $\sqrt7$ and (D) 5 come from errors in expansion or from adding the coefficients' squares incorrectly.
+  - (B) $\frac{3}{4}$ is not related to the amplitude of a sinusoid with coefficients 1 and −2.
   Answer: (C)
 M A 2: |-
-  Concept: $0 + 1 + \dots + 6 = 21$, so a 6-digit choice is divisible by 3 iff the omitted digit is 0, 3 or 6.
+  Concept: A number is divisible by 3 iff the sum of its digits is. The digits 0 to 6 sum to 21, so a 6-digit number using six of these seven digits has digit sum 21 − (omitted digit). It is divisible by 3 iff the omitted digit is 0, 3 or 6.
   Solution:
-  1. Total: omit 0 → $6! = 720$; omit a non-zero digit (6 ways) → $6! - 5! = 600$ each. Total $= 720 + 3600 = 4320$.
-  2. Favourable: omit 0 → 720; omit 3 → 600; omit 6 → 600. Total 1920.
-  3. $P = \frac{1920}{4320} = \frac{4}{9}$.
+  1. Total 6-digit numbers (no repetition, first digit not 0):
+     - Omit 0: digits 1–6, all arrangements valid, 6! = 720.
+     - Omit one non-zero digit (6 ways): the six digits include 0, so there are 6! − 5! = 720 − 120 = 600 valid arrangements (subtracting those starting with 0). Total 6 × 600 = 3600.
+     - Total: 720 + 3600 = 4320.
+  2. Favourable (omit 0, 3 or 6):
+     - Omit 0: 720.
+     - Omit 3: 600.
+     - Omit 6: 600.
+     - Total: 1920.
+  3. $P(A) = \frac{1920}{4320} = \frac{4}{9}$.
+  Common error: treating each omitted digit as equally likely ($\frac{3}{7}$, option C). That ignores the fact that omitting 0 gives more valid numbers (720) than omitting any other digit (600), because 0 cannot lead.
+  Why others are wrong:
+  - (A) $\frac{9}{56}$ and (D) $\frac{11}{27}$ come from miscounting the leading-zero cases.
+  - (C) $\frac{3}{7}$ ignores the leading-zero restriction.
   Answer: (B)
 M A 3: |-
-  Concept: Near $x = 0$, $\{x\} \to 0$ from the right and $\{x\} \to 1$ from the left.
+  Concept: The fractional part {x} jumps at integers: as $x \to 0^+$, $\{x\} = x \to 0$, but as $x \to 0^-$, $\{x\} = x + 1 \to 1$. So the left and right limits must be computed separately. For continuity they must be equal (and equal to α).
   Solution:
-  1. RHL ($\{x\} = x \to 0^+$): $\cos^{-1}(1 - x^2) \approx \sqrt2x$ and $\sin^{-1}(1 - x) \to \frac{\pi}{2}$, so RHL $= \frac{\sqrt2x\cdot\pi/2}{x} = \frac{\pi}{\sqrt2}$.
-  2. LHL ($\{x\} = 1 - t$, $t \to 0^+$): numerator $\approx \frac{\pi}{2}\cdot t$ and denominator $= \{x\}(1 - \{x\})(1 + \{x\}) \approx 2t$, so LHL $= \frac{\pi}{4}$.
-  3. LHL ≠ RHL, so no value of $\alpha$ makes f continuous.
+  1. Right-hand limit ($\{x\} = x \to 0^+$):
+     - $\cos^{-1}(1 - x^2)$: set $\cos\theta = 1 - x^2$. For small θ, $1 - \frac{\theta^2}{2} \approx 1 - x^2$, so $\theta \approx \sqrt2x$.
+     - $\sin^{-1}(1 - x) \to \sin^{-1}1 = \frac{\pi}{2}$.
+     - Denominator: $x - x^3 = x(1 - x^2) \approx x$.
+     - RHL $= \frac{\sqrt2x\cdot\frac{\pi}{2}}{x} = \frac{\pi}{\sqrt2}$.
+  2. Left-hand limit ($\{x\} = 1 - t$, $t \to 0^+$):
+     - $\cos^{-1}(1 - (1 - t)^2) = \cos^{-1}(2t - t^2) \to \cos^{-1}0 = \frac{\pi}{2}$.
+     - $\sin^{-1}(1 - (1 - t)) = \sin^{-1}t \approx t$.
+     - Denominator: $\{x\}(1 - \{x\})(1 + \{x\}) = (1 - t)(t)(2 - t) \approx 2t$.
+     - LHL $= \frac{\frac{\pi}{2}\cdot t}{2t} = \frac{\pi}{4}$.
+  3. LHL $= \frac{\pi}{4} \ne$ RHL $= \frac{\pi}{\sqrt2}$. The limit at 0 does not exist, so no value of α makes f continuous.
+  Why others are wrong:
+  - (A) $\frac{\pi}{\sqrt2}$ is only the right-hand limit.
+  - (D) $\frac{\pi}{4}$ is only the left-hand limit.
+  - (B) 0 matches neither.
   Answer: (C)
 M A 4: |-
-  Concept: If $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$.
+  Concept: The identity: if $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$. Look for a substitution that makes three quantities sum to zero.
   Solution:
-  1. Plane: $x + y + z = 42$. Let $a = x - 11$, $b = y - 19$, $c = z - 12$; then $a + b + c = 0$.
-  2. Expression $= 3 + \frac{a^3 + b^3 + c^3}{a^2b^2c^2} - \frac{42}{14abc} = 3 + \frac{3}{abc} - \frac{3}{abc} = 3$.
+  1. The plane through (42, 0, 0), (0, 42, 0) and (0, 0, 42) has intercept form $\frac{x}{42} + \frac{y}{42} + \frac{z}{42} = 1$, i.e. $x + y + z = 42$.
+  2. Let $a = x - 11$, $b = y - 19$, $c = z - 12$. Then $a + b + c = x + y + z - 42 = 0$.
+  3. Put the three middle fractions over the common denominator $a^2b^2c^2$:
+     $\frac{a}{b^2c^2} + \frac{b}{a^2c^2} + \frac{c}{a^2b^2} = \frac{a^3 + b^3 + c^3}{a^2b^2c^2} = \frac{3abc}{a^2b^2c^2} = \frac{3}{abc}$.
+  4. Last term: $\frac{x + y + z}{14abc} = \frac{42}{14abc} = \frac{3}{abc}$.
+  5. Expression $= 3 + \frac{3}{abc} - \frac{3}{abc} = 3$.
+  (This holds for every point of the plane where a, b and c are non-zero, so the expression is defined.)
+  Numerical check: take (13, 18, 11), which lies on the plane: a = 2, b = −1, c = −1, sum 0 ✓. Middle terms: $\frac{2}{1} + \frac{-1}{4} + \frac{-1}{4} = 1.5$. abc = 2, so $\frac{3}{abc} = 1.5$ ✓. Expression $= 3 + 1.5 - 1.5 = 3$ ✓.
   Answer: (B)
 M A 5: |-
-  Concept: Split the integral at the integers.
+  Concept: For integrals involving [x], split the range at the integers, where [x] is constant on each piece.
   Solution:
-  1. On $[k, k+1)$: $\int_k^{k+1}ke^ke^{1-x}dx = ke^{k+1}(e^{-k} - e^{-k-1}) = k(e - 1)$.
-  2. $I = (e - 1)\sum_{k=0}^{9}k = 45(e - 1)$.
+  1. On $[k, k + 1)$, [x] = k, so the integrand is $\frac{ke^k}{e^{x-1}} = ke^{k+1}e^{-x}$.
+  2. $\int_k^{k+1}ke^{k+1}e^{-x}dx = ke^{k+1}\left[-e^{-x}\right]_k^{k+1} = ke^{k+1}(e^{-k} - e^{-k-1})$.
+  3. Simplify: $ke^{k+1}e^{-k}(1 - e^{-1}) = ke(1 - e^{-1}) = k(e - 1)$.
+  4. Sum over k = 0 to 9 (the range [0, 10) is covered; the endpoint x = 10 has no effect):
+     $I = (e - 1)\sum_{k=0}^{9}k = (e - 1)\times45 = 45(e - 1)$.
+  Observation: each unit interval contributes k(e − 1), independent of the exponential factors, because $e^{[x]}$ and $e^{-x}$ nearly cancel. The integrand on each piece is $ke^{1 - \{x\}}$, where {x} is the fractional part. So $\int_0^1e^{1 - t}dt = e - 1$ appears as a factor.
+  Why others are wrong:
+  - (A) 9(e − 1) counts the number of intervals instead of summing k.
+  - (B) and (D) have (e + 1), from a sign slip in the integral of $e^{-x}$.
   Answer: (C)
 M A 6: |-
-  Concept: Reflecting in $y = x$ swaps x and y.
+  Concept: Reflection in the line y = x maps (x, y) to (y, x). So the image of a curve is obtained by swapping x and y in its equation. The tangent to $x^2 = 4ay$ at $(x_1, y_1)$ is $xx_1 = 2a(y + y_1)$.
   Solution:
-  1. C: $x^2 = 4y$.
-  2. Tangent at $(2, 1)$: $2x = 2(y + 1) \Rightarrow x - y = 1$.
+  1. A point (t², 2t) on $y^2 = 4x$ reflects to (2t, t²).
+  2. Swap x and y in $y^2 = 4x$: the image curve C is $x^2 = 4y$ (an upward parabola, with a = 1).
+  3. Check that P(2, 1) lies on C: 4 = 4(1) ✓. (It is the image of (1, 2) on the original parabola.)
+  4. Tangent at (2, 1) using $xx_1 = 2a(y + y_1)$: $2x = 2(y + 1)$, i.e. $x = y + 1$, or $x - y = 1$.
+  5. Check by differentiation: $y = \frac{x^2}{4}$, $y' = \frac{x}{2} = 1$ at x = 2. Tangent: $y - 1 = 1(x - 2)$, i.e. $x - y = 1$ ✓.
+  Alternative: reflect the tangent. The tangent to $y^2 = 4x$ at (1, 2) is $2y = 2(x + 1)$, i.e. $y = x + 1$. Swapping x and y gives $x = y + 1$ ✓.
+  Why others are wrong:
+  - (B) 2x + y = 5, (C) x + 3y = 5 and (D) x + 2y = 4 all pass through (2, 1) but have negative slopes. The tangent to an upward parabola at x = 2 > 0 has positive slope.
   Answer: (A)
 M A 7: |-
-  Concept: Linear DE with integrating factor $\sec x$.
+  Concept: A linear equation $y' + P(x)y = Q(x)$ is solved by the integrating factor $e^{\int P\,dx}$.
   Solution:
-  1. $(y\sec x)' = \tan x \Rightarrow y\sec x = -\ln\cos x + C$; $y(0) = 0 \Rightarrow C = 0$.
-  2. $y = -\cos x\ln\cos x$.
-  3. $y\left(\frac{\pi}{4}\right) = -\frac{1}{\sqrt2}\ln\frac{1}{\sqrt2} = \frac{1}{2\sqrt2}\ln2$.
+  1. P = tan x, so $\int\tan x\,dx = -\ln\cos x = \ln\sec x$ (cos x > 0 on $\left[0, \frac{\pi}{3}\right]$). The integrating factor is sec x.
+  2. Multiply: $\frac{d}{dx}(y\sec x) = \sin x\sec x = \tan x$.
+  3. Integrate: $y\sec x = \ln\sec x + C = -\ln\cos x + C$.
+  4. y(0) = 0: $0 = -\ln1 + C$, so C = 0.
+  5. $y = -\cos x\ln\cos x$.
+  6. At $x = \frac{\pi}{4}$: $\cos\frac{\pi}{4} = \frac{1}{\sqrt2}$, so $y = -\frac{1}{\sqrt2}\ln\frac{1}{\sqrt2} = \frac{1}{\sqrt2}\cdot\frac{1}{2}\ln2 = \frac{1}{2\sqrt2}\ln2$.
+  Verification: $y' = \sin x\ln\cos x + \sin x$ (by the product rule), and $y\tan x = -\sin x\ln\cos x$. Sum: $y' + y\tan x = \sin x$ ✓.
+  Why others are wrong:
+  - (A) $\frac{1}{4}\ln2$ and (D) $\frac{1}{2}\ln2$ drop the factor cos x or $\frac{1}{\sqrt2}$.
+  - (C) $\ln2$ misses both factors of $\frac{1}{2}$ and $\frac{1}{\sqrt2}$.
   Answer: (B)
 M A 8: |-
-  Concept: $(a, b) \simeq (4, 3) \Leftrightarrow 3a = 4b$.
+  Concept: The relation (a, b) ≃ (c, d) iff ad = bc means $\frac{a}{b} = \frac{c}{d}$: pairs are equivalent when they represent the same fraction. The equivalence class of (4, 3) is the set of pairs (a, b) with $\frac{a}{b} = \frac{4}{3}$.
   Solution:
-  1. $a = 4t$, $b = 3t$ with both in $[2, 30]$: $t = 1, \dots, 7$.
-  2. There are 7 pairs, from $(4, 3)$ to $(28, 21)$.
+  1. Condition: $a\cdot3 = b\cdot4$, i.e. 3a = 4b.
+  2. Since gcd(3, 4) = 1, a must be a multiple of 4 and b a multiple of 3: a = 4t and b = 3t for a positive integer t.
+  3. Both must lie in A = {2, 3, …, 30}:
+     - a = 4t ≤ 30 gives t ≤ 7.
+     - b = 3t ≥ 2 gives t ≥ 1 (and b ≤ 30 gives t ≤ 10).
+  4. So t = 1, 2, …, 7: the pairs (4, 3), (8, 6), (12, 9), (16, 12), (20, 15), (24, 18) and (28, 21).
+  5. Number of ordered pairs: 7 (including (4, 3) itself, since the relation is reflexive).
+  Why others are wrong:
+  - (B) 6 excludes (4, 3) itself.
+  - (A) 5 and (C) 8 come from wrong limits for t.
+  Note: this relation is an equivalence relation on A × A. Its classes correspond to positive rational numbers (with representatives restricted to A).
   Answer: (D)
 M A 9: |-
-  Concept: Intercepts: $2\sqrt{g^2 - c}$ on the x-axis and $2\sqrt{f^2 - c}$ on the y-axis.
+  Concept: For $x^2 + y^2 + 2gx + 2fy + c = 0$, the x-intercept is $2\sqrt{g^2 - c}$ and the y-intercept is $2\sqrt{f^2 - c}$. A tangent's distance from the centre equals the radius.
   Solution:
-  1. $\frac{a^2}{4} - c = 2$ and $a^2 - c = 5$, so $a^2 = 4$, $a = -2$, $c = -1$.
-  2. Circle: centre $(1, 2)$, $r = \sqrt6$.
-  3. Tangent with slope 2: $2x - y + k = 0$; $\frac{|k|}{\sqrt5} = \sqrt6 \Rightarrow |k| = \sqrt{30}$.
-  4. Distance from the origin $= \frac{\sqrt{30}}{\sqrt5} = \sqrt6$.
+  1. Here $2g = a$ and $2f = 2a$, so $g = \frac{a}{2}$ and f = a.
+  2. x-intercept: $2\sqrt{\frac{a^2}{4} - c} = 2\sqrt2$, so $\frac{a^2}{4} - c = 2$.
+  3. y-intercept: $2\sqrt{a^2 - c} = 2\sqrt5$, so $a^2 - c = 5$.
+  4. Subtract: $\frac{3a^2}{4} = 3$, so $a^2 = 4$. With a < 0, a = −2. Then c = 4 − 5 = −1.
+  5. Circle: $x^2 + y^2 - 2x - 4y - 1 = 0$, centre (1, 2), radius $\sqrt{1 + 4 + 1} = \sqrt6$.
+  6. The line x + 2y = 0 has slope $-\frac{1}{2}$. Tangents perpendicular to it have slope 2: $2x - y + k = 0$.
+  7. Distance from (1, 2): $\frac{|2 - 2 + k|}{\sqrt5} = \sqrt6$, so $|k| = \sqrt{30}$.
+  8. Distance from the origin to $2x - y + k = 0$: $\frac{|k|}{\sqrt5} = \frac{\sqrt{30}}{\sqrt5} = \sqrt6$.
+  9. Both tangents ($k = \pm\sqrt{30}$) are at distance $\sqrt6$ from the origin, so the shortest distance is $\sqrt6$.
+  (The centre (1, 2) lies on the line through the origin with slope 2, which is why the two distances coincide.)
   Answer: (C)
 M A 10: |-
-  Concept: $|5\sqrt7 + 9i| = \sqrt{175 + 81} = 16$, and $\log_{\sqrt2}16 = 8$.
+  Concept: Simplify both sides. $e^{k\ln2} = 2^k$, and $\log_{\sqrt2}N = 2\log_2N$.
   Solution:
-  1. $2^{\frac{(r+3)(r-1)}{r+1}} \ge 8 = 2^3$ with $r = |z|$.
-  2. $(r + 3)(r - 1) \ge 3(r + 1) \Rightarrow r^2 - r - 6 \ge 0 \Rightarrow r \ge 3$.
-  3. The least $|z|$ is 3.
+  1. Right side: $|5\sqrt7 + 9i| = \sqrt{(5\sqrt7)^2 + 81} = \sqrt{175 + 81} = \sqrt{256} = 16$. Then $\log_{\sqrt2}16 = \frac{\log_216}{\log_2\sqrt2} = \frac{4}{1/2} = 8$.
+  2. Left side: let r = |z| ≥ 0. Then ||z| + 1| = r + 1, and $\exp\left(\frac{(r + 3)(r - 1)}{r + 1}\ln2\right) = 2^{\frac{(r + 3)(r - 1)}{r + 1}}$.
+  3. Inequality: $2^{\frac{(r + 3)(r - 1)}{r + 1}} \ge 8 = 2^3$. Since $2^t$ is increasing: $\frac{(r + 3)(r - 1)}{r + 1} \ge 3$.
+  4. r + 1 > 0, so multiply: $r^2 + 2r - 3 \ge 3r + 3$, i.e. $r^2 - r - 6 \ge 0$, i.e. $(r - 3)(r + 2) \ge 0$.
+  5. With r ≥ 0: r ≥ 3.
+  6. The least value of |z| is 3.
+  Check at r = 3: $\frac{6\times2}{4} = 3$, so the left side is $2^3 = 8$ ✓ (equality).
+  Why others are wrong:
+  - (B) $\sqrt5 \approx 2.24$ and (C) 2 are less than 3, so they fail the inequality.
+  - (D) 8 satisfies the inequality but is not the least value.
   Answer: (A)
 M A 11: |-
-  Concept: Choose one point from each of the chosen sides.
+  Concept: A triangle (or quadrilateral) with vertices on different sides needs one point from each of 3 (or 4) different sides. Choosing one point from each chosen side gives a valid figure, since no two vertices lie on the same side, so no three are collinear.
   Solution:
-  1. $\alpha = 5\cdot7\cdot6 + 5\cdot7\cdot9 + 5\cdot6\cdot9 + 7\cdot6\cdot9 = 210 + 315 + 270 + 378 = 1173$.
-  2. $\beta = 5\cdot7\cdot6\cdot9 = 1890$.
-  3. $\beta - \alpha = 717$.
+  1. Points: AB has 5, CD has 7, BC has 6 and DA has 9.
+  2. Triangles (α): choose 3 of the 4 sides and one point from each:
+     - AB, CD, BC: 5 × 7 × 6 = 210.
+     - AB, CD, DA: 5 × 7 × 9 = 315.
+     - AB, BC, DA: 5 × 6 × 9 = 270.
+     - CD, BC, DA: 7 × 6 × 9 = 378.
+     - α = 210 + 315 + 270 + 378 = 1173.
+  3. Quadrilaterals (β): one point from each of the four sides: β = 5 × 7 × 6 × 9 = 1890.
+  4. β − α = 1890 − 1173 = 717.
+  Why no collinearity problems arise: the points are in the interiors of the sides, so three points from three different sides of a rectangle are never collinear. Four points, one from each side, taken in order around the rectangle, always form a convex quadrilateral.
+  Why others are wrong:
+  - (A) 795 has an arithmetic slip in one product.
+  - (B) 1173 is α itself.
+  - (C) 1890 is β itself.
   Answer: (D)
 M A 12: |-
-  Concept: Substitute $y^2 = 3x^2$ into both curves.
+  Concept: The intersection points lie on all three curves, so substitute $y^2 = 3x^2$ into the circle and the ellipse and solve for b.
   Solution:
-  1. Circle: $4x^2 = 4b \Rightarrow x^2 = b$ and $y^2 = 3b$.
-  2. Ellipse: $\frac{b}{16} + \frac{3}{b} = 1 \Rightarrow b^2 - 16b + 48 = 0 \Rightarrow b = 12$ or $4$.
-  3. Since $b > 4$, $b = 12$.
+  1. Circle: $x^2 + y^2 = 4b$ with $y^2 = 3x^2$ gives $4x^2 = 4b$, so $x^2 = b$ and $y^2 = 3b$.
+  2. Ellipse: $\frac{x^2}{16} + \frac{y^2}{b^2} = 1$ gives $\frac{b}{16} + \frac{3b}{b^2} = 1$, i.e. $\frac{b}{16} + \frac{3}{b} = 1$.
+  3. Multiply by 16b: $b^2 + 48 = 16b$, so $b^2 - 16b + 48 = 0$ and $(b - 12)(b - 4) = 0$.
+  4. b = 12 or b = 4. The condition b > 4 gives b = 12.
+  Check: with b = 12, the intersection points satisfy $x^2 = 12$ and $y^2 = 36$. Ellipse: $\frac{12}{16} + \frac{36}{144} = 0.75 + 0.25 = 1$ ✓. Circle: 12 + 36 = 48 = 4 × 12 ✓. Curve: $36 = 3\times12$ ✓.
+  Note: with b = 12 > 4, the ellipse $\frac{x^2}{16} + \frac{y^2}{144} = 1$ has its major axis along y. The four intersection points $(\pm2\sqrt3, \pm6)$ lie on the lines $y = \pm\sqrt3x$, i.e. on $y^2 = 3x^2$.
   Answer: (A)
 M A 13: |-
-  Concept: Take sine of both sides, then check principal values.
+  Concept: Taking sine of both sides can introduce extra solutions, so every candidate must be checked against the principal-value ranges. Also, the domains require $\left|\frac{3x}{5}\right|, \left|\frac{4x}{5}\right|, |x| \le 1$, i.e. $|x| \le 1$.
   Solution:
-  1. $\frac{3x}{5}\sqrt{1 - \frac{16x^2}{25}} + \frac{4x}{5}\sqrt{1 - \frac{9x^2}{25}} = x$.
-  2. Either $x = 0$, or $3\sqrt{25 - 16x^2} + 4\sqrt{25 - 9x^2} = 25$, which gives $x = \pm1$ ($9 + 16 = 25$).
-  3. Check: $\sin^{-1}\frac{3}{5} + \sin^{-1}\frac{4}{5} = \frac{\pi}{2} = \sin^{-1}1$ (and similarly for −1).
-  4. Three values: $0, \pm1$.
+  1. Take sine: $\sin(A + B) = \sin A\cos B + \cos A\sin B$ with $\sin A = \frac{3x}{5}$ and $\sin B = \frac{4x}{5}$.
+     $\frac{3x}{5}\sqrt{1 - \frac{16x^2}{25}} + \frac{4x}{5}\sqrt{1 - \frac{9x^2}{25}} = x$.
+  2. So x = 0, or $\frac{3}{25}\sqrt{25 - 16x^2} + \frac{4}{25}\sqrt{25 - 9x^2} = 1$, i.e. $3\sqrt{25 - 16x^2} + 4\sqrt{25 - 9x^2} = 25$.
+  3. At x² = 1: $3\sqrt9 + 4\sqrt{16} = 9 + 16 = 25$ ✓. For x² < 1, the left side is larger than 25 (both square roots are bigger), so x² = 1 is the only solution with |x| ≤ 1.
+  4. Check x = 1 with principal values: $\sin^{-1}\frac{3}{5} + \sin^{-1}\frac{4}{5} = \frac{\pi}{2}$ (complementary angles, since $\frac{3}{5}$ and $\frac{4}{5}$ are the sine and cosine of the same angle). And $\sin^{-1}1 = \frac{\pi}{2}$ ✓.
+  5. Check x = −1: both sides are negated (sin⁻¹ is odd), so it also holds ✓.
+  6. Check x = 0: 0 + 0 = 0 ✓.
+  7. Number of real solutions: 3 (x = −1, 0, 1).
+  Why others are wrong:
+  - (A) 2 misses x = 0 or one of ±1.
+  - (B) 1 counts only x = 0.
+  - (D) 0 ignores the obvious solution x = 0.
   Answer: (C)
 M A 14: |-
-  Concept: For P on CA and Q on CB, $\frac{[PQC]}{[ABC]} = \frac{CP}{CA}\cdot\frac{CQ}{CB}$.
+  Concept: If P lies on CA and Q lies on CB, then triangles PQC and ABC share the angle at C, so $\frac{[PQC]}{[ABC]} = \frac{CP}{CA}\cdot\frac{CQ}{CB}$. Areas can also be computed directly with the coordinate (shoelace) formula.
   Solution:
-  1. $[ABC] = \frac{13}{2}$, so $[PQC] = \frac{13}{6}$ is required.
-  2. With $m = 1$: AC is $y = -\frac{x-2}{3}$, giving $P = \left(\frac{1}{2}, \frac{1}{2}\right)$; BC is $y = 4(x - 2)$, giving $Q = \left(\frac{8}{3}, \frac{8}{3}\right)$.
-  3. $[PQC] = \frac{1}{2}\left|2\left(\frac{1}{2} - \frac{8}{3}\right)\right| = \frac{13}{6}$, as required, so $m = 1$.
+  1. $[ABC] = \frac{1}{2}|(A - C)\times(B - C)| = \frac{1}{2}|(-3)(4) - (1)(1)| = \frac{13}{2}$.
+  2. We need $[PQC] = \frac{A_1}{3} = \frac{13}{6}$.
+  3. Line AC through (−1, 1) and (2, 0): $y = -\frac{1}{3}(x - 2)$. Line BC through (3, 4) and (2, 0): $y = 4(x - 2)$.
+  4. Test the option m = 1 (y = x):
+     - With AC: $x = -\frac{x - 2}{3}$, so 4x = 2 and $P = \left(\frac{1}{2}, \frac{1}{2}\right)$.
+     - With BC: $x = 4x - 8$, so $Q = \left(\frac{8}{3}, \frac{8}{3}\right)$.
+  5. $[PQC] = \frac{1}{2}\left|\left(-\frac{3}{2}\right)\left(\frac{8}{3}\right) - \left(\frac{1}{2}\right)\left(\frac{2}{3}\right)\right| = \frac{1}{2}\left|-4 - \frac{1}{3}\right| = \frac{13}{6}$ ✓.
+  6. So m = 1.
+  Ratio check: $\frac{CP}{CA} = \frac{3/2}{3} = \frac{1}{2}$ (by x-coordinates) and $\frac{CQ}{CB} = \frac{2/3}{1} = \frac{2}{3}$. Product $= \frac{1}{3}$ ✓.
+  Why others are wrong: substituting m = 2, 3 or $\frac{4}{15}$ gives area ratios different from $\frac{1}{3}$.
   Answer: (B)
 M A 15: |-
-  Concept: Sign of $f'(x)$.
+  Concept: f is increasing where $f'(x) \ge 0$. Put f′ over a common denominator and study the sign of each factor.
   Solution:
-  1. $f'(x) = \frac{6}{x^2 - 1} + \frac{2}{(x - 1)^2} = \frac{4(2x - 1)}{(x - 1)^2(x + 1)}$.
-  2. $f' \ge 0 \Leftrightarrow \frac{2x - 1}{x + 1} \ge 0 \Leftrightarrow x < -1$ or $x \ge \frac{1}{2}$ (excluding $x = 1$).
+  1. $f(x) = 3\ln|x - 1| - 3\ln|x + 1| - \frac{2}{x - 1}$.
+  2. $f'(x) = \frac{3}{x - 1} - \frac{3}{x + 1} + \frac{2}{(x - 1)^2} = \frac{6}{x^2 - 1} + \frac{2}{(x - 1)^2}$.
+  3. Common denominator $(x - 1)^2(x + 1)$: $f'(x) = \frac{6(x - 1) + 2(x + 1)}{(x - 1)^2(x + 1)} = \frac{8x - 4}{(x - 1)^2(x + 1)} = \frac{4(2x - 1)}{(x - 1)^2(x + 1)}$.
+  4. $(x - 1)^2 > 0$ for x ≠ 1, so the sign of f′ is the sign of $\frac{2x - 1}{x + 1}$.
+  5. Sign analysis (critical points −1 and $\frac{1}{2}$):
+     - x < −1: numerator < 0, denominator < 0, so f′ > 0 (increasing).
+     - $-1 < x < \frac{1}{2}$: numerator < 0, denominator > 0, so f′ < 0 (decreasing).
+     - $x > \frac{1}{2}$, x ≠ 1: both positive, so f′ > 0 (increasing).
+  6. f is increasing on $(-\infty, -1) \cup \left(\left[\frac{1}{2}, \infty\right) - \{1\}\right)$.
+  Why others are wrong:
+  - (B) claims f increases everywhere, but it decreases on $\left(-1, \frac{1}{2}\right)$.
+  - (C) is exactly the interval where f decreases.
+  - (D) includes $\left(-1, \frac{1}{2}\right)$, where f decreases.
   Answer: (A)
 M A 16: |-
-  Concept: Take logs: $g(x + 1) = \ln x + g(x)$.
+  Concept: The functional equation f(x + 1) = x f(x) is the gamma-function relation. Taking logarithms turns the product into a sum. Differentiating twice removes g itself and leaves a simple relation between second derivatives.
   Solution:
-  1. Differentiating twice: $g''(x + 1) - g''(x) = -\frac{1}{x^2}$.
-  2. $g''(5) - g''(1) = -\left(1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16}\right) = -\frac{205}{144}$.
-  3. The absolute value is $\frac{205}{144}$.
+  1. Since f > 0 on S, g = ln f is defined. Then $g(x + 1) = \ln x + g(x)$.
+  2. Differentiate: $g'(x + 1) = \frac{1}{x} + g'(x)$.
+  3. Differentiate again: $g''(x + 1) = -\frac{1}{x^2} + g''(x)$, i.e. $g''(x + 1) - g''(x) = -\frac{1}{x^2}$.
+  4. Telescope from x = 1 to x = 4:
+     $g''(5) - g''(1) = \sum_{x=1}^{4}[g''(x + 1) - g''(x)] = -\left(1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16}\right)$.
+  5. Common denominator 144: $1 + \frac{1}{4} + \frac{1}{9} + \frac{1}{16} = \frac{144 + 36 + 16 + 9}{144} = \frac{205}{144}$.
+  6. $|g''(5) - g''(1)| = \frac{205}{144}$.
+  Connection: for the gamma function, $\frac{d^2}{dx^2}\ln\Gamma(x) = \sum_{k=0}^{\infty}\frac{1}{(x + k)^2}$ (the trigamma function). The difference between x = 1 and x = 5 is the sum of the first four terms, $\frac{205}{144}$ ✓.
+  Why others are wrong: (B) and (C) have arithmetic slips in the sum of reciprocal squares. (D) 1 keeps only the first term.
   Answer: (A)
 M A 17: |-
-  Concept: Remainder theorem and direct integration.
+  Concept: Two conditions fix the two unknown coefficients: the definite integral, and the remainder theorem (the remainder on dividing P(x) by x − a is P(a)).
   Solution:
-  1. $\int_0^1P = \frac{1}{3} + \frac{b}{2} + c = 1$ and $P(2) = 4 + 2b + c = 5$.
-  2. $c = 1 - 2b \Rightarrow \frac{1}{3} + \frac{b}{2} + 1 - 2b = 1 \Rightarrow b = \frac{2}{9}$, $c = \frac{5}{9}$.
-  3. $9(b + c) = 7$.
+  1. Integral: $\int_0^1(x^2 + bx + c)dx = \frac{1}{3} + \frac{b}{2} + c = 1$, so $\frac{b}{2} + c = \frac{2}{3}$.
+  2. Remainder theorem: P(2) = 5, so 4 + 2b + c = 5, i.e. 2b + c = 1.
+  3. Subtract the first from the second: $2b - \frac{b}{2} = 1 - \frac{2}{3}$, so $\frac{3b}{2} = \frac{1}{3}$ and $b = \frac{2}{9}$.
+  4. $c = 1 - 2b = 1 - \frac{4}{9} = \frac{5}{9}$.
+  5. $b + c = \frac{2}{9} + \frac{5}{9} = \frac{7}{9}$, so $9(b + c) = 7$.
+  Verification:
+  - $P(x) = x^2 + \frac{2}{9}x + \frac{5}{9}$.
+  - $\int_0^1P = \frac{1}{3} + \frac{1}{9} + \frac{5}{9} = \frac{3 + 1 + 5}{9} = 1$ ✓.
+  - $P(2) = 4 + \frac{4}{9} + \frac{5}{9} = 5$ ✓.
+  Why others are wrong: (A) 9, (B) 15 and (D) 11 come from sign or arithmetic slips, e.g. using $\int_0^1x^2dx = \frac{1}{2}$.
   Answer: (C)
 M A 18: |-
-  Concept: Use the foot of the perpendicular to fix $L_1$, then $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec d_1\times\vec d_2)|}{|\vec d_1\times\vec d_2|}$.
+  Concept: The foot of the perpendicular F from a point Q to a line satisfies two conditions: F lies on the line, and $\vec{QF}$ is perpendicular to the line's direction. These fix the unknowns l, a and b. Then the shortest distance between skew lines is $\frac{|(\vec a_2 - \vec a_1)\cdot(\vec d_1\times\vec d_2)|}{|\vec d_1\times\vec d_2|}$.
   Solution:
-  1. $(4, 3, 8) - (3, 5, 7) = (1, -2, 1) \perp (l, 3, 4) \Rightarrow l = 2$.
-  2. $(3, 5, 7)$ lies on $L_1$ with parameter 1, so $a = 1$ and $b = 3$. $L_1$: $(1, 2, 3) + t(2, 3, 4)$.
-  3. $\vec d_1\times\vec d_2 = (2, 3, 4)\times(3, 4, 5) = (-1, 2, -1)$; $(2, 4, 5) - (1, 2, 3) = (1, 2, 2)$.
-  4. $SD = \frac{|-1 + 4 - 2|}{\sqrt6} = \frac{1}{\sqrt6}$.
+  1. $\vec{FQ} = (4, 3, 8) - (3, 5, 7) = (1, -2, 1)$. Perpendicular to (l, 3, 4): $l - 6 + 4 = 0$, so l = 2.
+  2. F = (3, 5, 7) lies on L₁: $\frac{3 - a}{2} = \frac{5 - 2}{3} = \frac{7 - b}{4}$. The middle ratio is 1, so a = 1 and b = 3.
+  3. L₁ passes through (1, 2, 3) with direction $\vec d_1 = (2, 3, 4)$. L₂ passes through (2, 4, 5) with direction $\vec d_2 = (3, 4, 5)$.
+  4. $\vec d_1\times\vec d_2 = (3\cdot5 - 4\cdot4,\ 4\cdot3 - 2\cdot5,\ 2\cdot4 - 3\cdot3) = (-1, 2, -1)$, with magnitude $\sqrt6$.
+  5. $\vec a_2 - \vec a_1 = (1, 2, 2)$.
+  6. $(\vec a_2 - \vec a_1)\cdot(\vec d_1\times\vec d_2) = -1 + 4 - 2 = 1$.
+  7. Shortest distance $= \frac{1}{\sqrt6}$.
+  Why others are wrong:
+  - (A) $\frac{1}{2}$, (C) $\sqrt{\frac{2}{3}}$ and (D) $\frac{1}{\sqrt3}$ come from errors in l, a or b, or in the cross product.
   Answer: (B)
 M A 19: |-
-  Concept: Both are homogeneous DEs; their solutions are circles.
+  Concept: Both equations are homogeneous. Their solutions are families of circles through the origin: C₁ has centres on the x-axis and C₂ has centres on the y-axis. The enclosed area is the lens where two circles overlap.
   Solution:
-  1. C₁: $x^2 + y^2 = Cx$ (check: $2x + 2yy' = \frac{x^2 + y^2}{x}$ gives the DE). Through (1, 1): $x^2 + y^2 = 2x$, centre (1, 0), radius 1.
-  2. C₂: $x^2 + y^2 = Cy$; through (1, 1): $x^2 + y^2 = 2y$, centre (0, 1), radius 1.
-  3. Two unit circles with centres $\sqrt2$ apart overlap in two circular segments of angle 90°: area $= 2\left(\frac{\pi}{4} - \frac{1}{2}\right) = \frac{\pi}{2} - 1$.
+  1. C₁: $2xy\frac{dy}{dx} = y^2 - x^2$. Try $x^2 + y^2 = Cx$: differentiating gives $2x + 2yy' = C = \frac{x^2 + y^2}{x}$. So $2xyy' = x^2 + y^2 - 2x^2 = y^2 - x^2$ ✓.
+     Through (1, 1): C = 2, so $x^2 + y^2 = 2x$, i.e. $(x - 1)^2 + y^2 = 1$. Centre (1, 0), radius 1.
+  2. C₂: $\frac{dy}{dx} = \frac{2xy}{x^2 - y^2}$. Try $x^2 + y^2 = Cy$: $2x + 2yy' = Cy'$, so $y'(C - 2y) = 2x$. With $C = \frac{x^2 + y^2}{y}$: $C - 2y = \frac{x^2 - y^2}{y}$, giving $y' = \frac{2xy}{x^2 - y^2}$ ✓.
+     Through (1, 1): C = 2, so $x^2 + (y - 1)^2 = 1$. Centre (0, 1), radius 1.
+  3. The circles meet at (0, 0) and (1, 1). The common chord from (0, 0) to (1, 1) subtends a right angle at each centre (e.g. at (1, 0), the radii to (0, 0) and (1, 1) are along −x and +y).
+  4. Each circular segment cut off by this chord has area $\frac{1}{2}r^2(\theta - \sin\theta) = \frac{1}{2}\left(\frac{\pi}{2} - 1\right) = \frac{\pi}{4} - \frac{1}{2}$.
+  5. The lens consists of two such segments: area $= 2\left(\frac{\pi}{4} - \frac{1}{2}\right) = \frac{\pi}{2} - 1$.
+  Why others are wrong: (A) π − 1 doubles the lens; (C) and (D) add areas that should be subtracted.
   Answer: (B)
 M A 20: |-
-  Concept: $\vec r\times\vec a = \vec b\times\vec r \Rightarrow \vec r\times(\vec a + \vec b) = \vec0$, so $\vec r\parallel\vec a + \vec b$.
+  Concept: $\vec r\times\vec a = \vec b\times\vec r = -\vec r\times\vec b$ gives $\vec r\times(\vec a + \vec b) = \vec0$. So $\vec r$ is parallel to $\vec a + \vec b$.
   Solution:
-  1. $\vec r = \lambda(3, -1, 2)$.
-  2. $\lambda(3\alpha - 2 + 2) = 3 \Rightarrow \alpha\lambda = 1$; $\lambda(6 - 5 - 2\alpha) = -1 \Rightarrow \lambda - 2 = -1$.
-  3. $\lambda = 1$, $\alpha = 1$, $|\vec r|^2 = 14$, so $\alpha + |\vec r|^2 = 15$.
+  1. $\vec a + \vec b = (1 + 2,\ 2 - 3,\ -3 + 5) = (3, -1, 2)$. So $\vec r = \lambda(3, -1, 2)$.
+  2. First condition: $\vec r\cdot(\alpha, 2, 1) = \lambda(3\alpha - 2 + 2) = 3\alpha\lambda = 3$, so αλ = 1.
+  3. Second condition: $\vec r\cdot(2, 5, -\alpha) = \lambda(6 - 5 - 2\alpha) = \lambda(1 - 2\alpha) = -1$, i.e. $\lambda - 2\alpha\lambda = -1$.
+  4. Substitute αλ = 1: λ − 2 = −1, so λ = 1 and α = 1.
+  5. $\vec r = (3, -1, 2)$, and $|\vec r|^2 = 9 + 1 + 4 = 14$.
+  6. $\alpha + |\vec r|^2 = 1 + 14 = 15$.
+  Verification: $\vec r\cdot(1, 2, 1) = 3 - 2 + 2 = 3$ ✓. $\vec r\cdot(2, 5, -1) = 6 - 5 - 2 = -1$ ✓. $\vec r\times\vec a = (3, -1, 2)\times(1, 2, -3) = (3 - 4, 2 + 9, 6 + 1) = (-1, 11, 7)$, and $\vec b\times\vec r = (2, -3, 5)\times(3, -1, 2) = (-6 + 5, 15 - 4, -2 + 9) = (-1, 11, 7)$ ✓.
+  Why others are wrong: (A), (C) and (D) come from errors in α or λ (e.g. taking $\vec r\parallel\vec a - \vec b$).
   Answer: (B)
 M B 1: |-
-  Concept: Move from the point along the given direction until the plane is reached.
+  Concept: The distance of a point from a plane measured along a given direction is the length of the segment from the point, in that direction, to where it meets the plane. Parametrise this line and substitute into the plane.
   Solution:
-  1. Direction $(3, -m, 1)$; point $(1 + 3t, -2 - mt, 3 + t)$.
-  2. In the plane: $1 + 3t - 4 - 2mt - 9 - 3t + 10 = 0 \Rightarrow t = -\frac{1}{m}$.
-  3. Distance $= |t|\sqrt{10 + m^2} = \sqrt{\frac{7}{2}} \Rightarrow \frac{10 + m^2}{m^2} = \frac{7}{2} \Rightarrow m^2 = 4$.
-  4. $|m| = 2$.
+  1. Rewrite the line: $\frac{x - 1}{3} = \frac{y - 2}{-m} = \frac{z + 3}{1}$, so its direction is (3, −m, 1).
+  2. Line through (1, −2, 3) in this direction: $(1 + 3t,\ -2 - mt,\ 3 + t)$.
+  3. Substitute into x + 2y − 3z + 10 = 0: $(1 + 3t) + 2(-2 - mt) - 3(3 + t) + 10 = 0$.
+  4. Simplify: $1 + 3t - 4 - 2mt - 9 - 3t + 10 = 0$, so $-2 - 2mt = 0$ and $t = -\frac{1}{m}$.
+  5. Distance $= |t|\cdot|(3, -m, 1)| = \frac{1}{|m|}\sqrt{10 + m^2}$.
+  6. Set it equal to $\sqrt{\frac{7}{2}}$: $\frac{10 + m^2}{m^2} = \frac{7}{2}$, so $20 + 2m^2 = 7m^2$ and $m^2 = 4$.
+  7. |m| = 2.
+  Check: with m = 2, t = −½, and the point reached is $\left(-\frac{1}{2}, -1, \frac{5}{2}\right)$. Plane: $-\frac{1}{2} - 2 - \frac{15}{2} + 10 = 0$ ✓. Distance $= \frac{1}{2}\sqrt{14} = \sqrt{\frac{7}{2}}$ ✓.
   Answer: 2
 M B 2: |-
-  Concept: Combine the sums of squares: $\sum x^2 = n(\sigma^2 + \bar x^2)$.
+  Concept: To combine two sets of data, add their sums and their sums of squares. For each set, $\sum x^2 = n(\sigma^2 + \bar x^2)$.
   Solution:
-  1. $\sum x^2 = 10(2 + 4) + n(1 + 9) = 60 + 10n$; $\sum x = 20 + 3n$.
-  2. Try $n = 5$: $\frac{110}{15} - \left(\frac{35}{15}\right)^2 = \frac{22}{3} - \frac{49}{9} = \frac{17}{9}$. ✓
-  3. $n = 5$.
+  1. Set I: n = 10, mean 2, variance 2. $\sum x = 20$ and $\sum x^2 = 10(2 + 4) = 60$.
+  2. Set II: size n, mean 3, variance 1. $\sum x = 3n$ and $\sum x^2 = n(1 + 9) = 10n$.
+  3. Combined (N = 10 + n): $\sigma^2 = \frac{60 + 10n}{10 + n} - \left(\frac{20 + 3n}{10 + n}\right)^2 = \frac{17}{9}$.
+  4. Multiply by $(10 + n)^2$: $(60 + 10n)(10 + n) - (20 + 3n)^2 = \frac{17}{9}(10 + n)^2$.
+  5. Left side: $600 + 160n + 10n^2 - 400 - 120n - 9n^2 = n^2 + 40n + 200$.
+  6. $9(n^2 + 40n + 200) = 17(n^2 + 20n + 100)$, so $9n^2 + 360n + 1800 = 17n^2 + 340n + 1700$, i.e. $8n^2 - 20n - 100 = 0$.
+  7. $2n^2 - 5n - 25 = 0$, so $(2n + 5)(n - 5) = 0$ and n = 5 (n must be a positive integer).
+  Check: N = 15, mean $\frac{35}{15} = \frac{7}{3}$, $\frac{\sum x^2}{N} = \frac{110}{15} = \frac{22}{3}$. Variance $= \frac{22}{3} - \frac{49}{9} = \frac{66 - 49}{9} = \frac{17}{9}$ ✓.
   Answer: 5
 M B 3: |-
-  Concept: $a_1^2 + a_2^2 = B^T(X^TX)B$.
+  Concept: For a column vector A = XB, $a_1^2 + a_2^2 = A^TA = B^T(X^TX)B$. Comparing this quadratic form with $\frac{2}{3}(b_1^2 + b_2^2)$ gives a condition on k.
   Solution:
-  1. $X^TX = \frac{1}{3}\begin{bmatrix}2 & k - 1\\ k - 1 & 1 + k^2\end{bmatrix}$.
-  2. The condition gives $2(k - 1)b_1b_2 + (k^2 - 1)b_2^2 = 0 \Rightarrow (k - 1)[2b_1b_2 + (k + 1)b_2^2] = 0$.
-  3. The given restriction rules out the second factor, so $k = 1$.
+  1. $X = \frac{1}{\sqrt3}\begin{bmatrix}1 & -1\\ 1 & k\end{bmatrix}$, so $X^TX = \frac{1}{3}\begin{bmatrix}1 & 1\\ -1 & k\end{bmatrix}\begin{bmatrix}1 & -1\\ 1 & k\end{bmatrix} = \frac{1}{3}\begin{bmatrix}2 & k - 1\\ k - 1 & 1 + k^2\end{bmatrix}$.
+  2. $a_1^2 + a_2^2 = \frac{1}{3}[2b_1^2 + 2(k - 1)b_1b_2 + (1 + k^2)b_2^2]$.
+  3. Set equal to $\frac{2}{3}(b_1^2 + b_2^2)$ and multiply by 3:
+     $2b_1^2 + 2(k - 1)b_1b_2 + (1 + k^2)b_2^2 = 2b_1^2 + 2b_2^2$.
+  4. Simplify: $2(k - 1)b_1b_2 + (k^2 - 1)b_2^2 = 0$, i.e. $(k - 1)[2b_1b_2 + (k + 1)b_2^2] = 0$.
+  5. The second factor being zero would mean $(k + 1)b_2^2 = -2b_1b_2$. The given condition $(k^2 + 1)b_2^2 \ne -2b_1b_2$ is intended to exclude this case (as in the official solution).
+  6. So k − 1 = 0, and k = 1.
+  Check: with k = 1, $X = \frac{1}{\sqrt3}\begin{bmatrix}1 & -1\\ 1 & 1\end{bmatrix}$, and $X^TX = \frac{2}{3}I$. So $|A|^2 = \frac{2}{3}|B|^2$ for every B ✓. (X is $\sqrt{\frac{2}{3}}$ times a rotation by 45°.)
   Answer: 1
 M B 4: |-
-  Concept: $\frac{d}{dx}\tan^{-1}\left(x + \frac{1}{x}\right) = \frac{x^2 - 1}{x^4 + 3x^2 + 1}$.
+  Concept: Split the integrand into a part of the form $\frac{f'}{f}$ (which gives a log) and a rational part. For $\frac{1}{x^4 + 3x^2 + 1}$, divide by x² and use the substitutions $x \mp \frac{1}{x}$.
   Solution:
-  1. Split the integrand: $\frac{x^2 - 1}{(x^4 + 3x^2 + 1)t} + \frac{1}{x^4 + 3x^2 + 1}$, with $t = \tan^{-1}\frac{x^2 + 1}{x}$. The first part integrates to $\ln t$, so $\alpha = 1$.
-  2. $\frac{1}{x^4 + 3x^2 + 1} = \frac{1}{2}\left[\frac{x^2 + 1}{x^4 + 3x^2 + 1} - \frac{x^2 - 1}{x^4 + 3x^2 + 1}\right]$.
-  3. $\int\frac{1 + 1/x^2}{(x - 1/x)^2 + 5}dx = \frac{1}{\sqrt5}\tan^{-1}\frac{x^2 - 1}{\sqrt5x}$, so $\beta = \frac{1}{2\sqrt5}$, $\gamma = \frac{1}{\sqrt5}$, and $\delta = -\frac{1}{2}$.
-  4. $10\left(1 + \frac{1}{10} - \frac{1}{2}\right) = 6$.
+  1. Let $t = \tan^{-1}\left(x + \frac{1}{x}\right)$. Then $\frac{dt}{dx} = \frac{1 - \frac{1}{x^2}}{1 + \left(x + \frac{1}{x}\right)^2} = \frac{x^2 - 1}{x^4 + 3x^2 + 1}$.
+  2. The integrand is $\frac{x^2 - 1}{(x^4 + 3x^2 + 1)t} + \frac{1}{x^4 + 3x^2 + 1} = \frac{t'}{t} + \frac{1}{x^4 + 3x^2 + 1}$.
+  3. The first part integrates to ln t, so α = 1.
+  4. Write $\frac{1}{x^4 + 3x^2 + 1} = \frac{1}{2}\cdot\frac{x^2 + 1}{x^4 + 3x^2 + 1} - \frac{1}{2}\cdot\frac{x^2 - 1}{x^4 + 3x^2 + 1}$.
+  5. $\int\frac{x^2 + 1}{x^4 + 3x^2 + 1}dx = \int\frac{1 + \frac{1}{x^2}}{\left(x - \frac{1}{x}\right)^2 + 5}dx = \frac{1}{\sqrt5}\tan^{-1}\frac{x - \frac{1}{x}}{\sqrt5} = \frac{1}{\sqrt5}\tan^{-1}\frac{x^2 - 1}{\sqrt5x}$.
+  6. $\int\frac{x^2 - 1}{x^4 + 3x^2 + 1}dx = t = \tan^{-1}\frac{x^2 + 1}{x}$.
+  7. So $\beta = \frac{1}{2\sqrt5}$, $\gamma = \frac{1}{\sqrt5}$ and $\delta = -\frac{1}{2}$.
+  8. $\beta\gamma = \frac{1}{10}$, so $10(\alpha + \beta\gamma + \delta) = 10\left(1 + \frac{1}{10} - \frac{1}{2}\right) = 10\times0.6 = 6$.
   Answer: 6
 M B 5: |-
-  Concept: Check continuity of gof at $x = 0$ and where $f$ changes sign.
+  Concept: A composite of piecewise functions can be discontinuous at the joins of the inner function (here x = 0) and at points where the inner function crosses a join of the outer function (where f(x) = 0, since g changes formula at 0).
   Solution:
-  1. At $x = 0$: $g(f(0)) = g(1) = b$. As $x \to 0^-$, $f \to a$, so $gof \to (a - 1)^2 + b$ if $a > 0$ (or $\to 1$ if $a = 0$).
-  2. If $a > 0$: $a = 1$; continuity at $x = -1$ (where $x + a$ changes sign) needs $1 = 1 + b$, so $b = 0$.
-  3. If $a = 0$: $1 = b$.
-  4. Either way, $a + b = 1$.
+  1. For x ≥ 0: f(x) = |x − 1| ≥ 0, so g(f(x)) = (|x − 1| − 1)² + b. This is continuous for x ≥ 0, and at x = 0 its value is (1 − 1)² + b = b.
+  2. For x < 0: f(x) = x + a.
+  3. Case a > 0: f(x) < 0 for x < −a, giving g(f) = x + a + 1; and f(x) ≥ 0 for −a ≤ x < 0, giving g(f) = (x + a − 1)² + b.
+     - At x = −a: left value 1, right value (−1)² + b = 1 + b. Continuity needs b = 0.
+     - At x = 0: left limit (a − 1)² + b, right value b. Continuity needs (a − 1)² = 0, so a = 1.
+     - So a = 1, b = 0 and a + b = 1.
+  4. Case a = 0: f(x) = x < 0 for all x < 0, so g(f) = x + 1 → 1 as x → 0⁻. Right value b. Continuity needs b = 1. So a + b = 1.
+  5. In both cases, a + b = 1.
+  Check (a = 1, b = 0): for −1 ≤ x < 0, gof = x², for x < −1, gof = x + 2, and for x ≥ 0, gof = (|x − 1| − 1)². Values match at x = −1 (both 1) and x = 0 (both 0) ✓.
   Answer: 1
 M B 6: |-
-  Concept: GP: $a^2 = \frac{b}{16}$; AP: $\frac{2}{b} = \frac{1}{a} + 6$.
+  Concept: Three terms p, q, r are in GP iff $q^2 = pr$, and in AP iff 2q = p + r.
   Solution:
-  1. $b = 16a^2 \Rightarrow \frac{1}{8a^2} = \frac{1}{a} + 6 \Rightarrow 48a^2 + 8a - 1 = 0 \Rightarrow a = \frac{1}{12}$.
-  2. $b = \frac{1}{9}$, so $72(a + b) = 6 + 8 = 14$.
+  1. GP: $\frac{1}{16}$, a, b gives $a^2 = \frac{b}{16}$, so $b = 16a^2$.
+  2. AP: $\frac{1}{a}, \frac{1}{b}, 6$ gives $\frac{2}{b} = \frac{1}{a} + 6$.
+  3. Substitute $b = 16a^2$: $\frac{2}{16a^2} = \frac{1}{8a^2} = \frac{1}{a} + 6$.
+  4. Multiply by 8a²: $1 = 8a + 48a^2$, so $48a^2 + 8a - 1 = 0$.
+  5. $a = \frac{-8 \pm \sqrt{64 + 192}}{96} = \frac{-8 \pm 16}{96}$, so $a = \frac{1}{12}$ or $a = -\frac{1}{4}$. Since a > 0, $a = \frac{1}{12}$.
+  6. $b = 16\times\frac{1}{144} = \frac{1}{9}$.
+  7. $72(a + b) = 72\times\frac{1}{12} + 72\times\frac{1}{9} = 6 + 8 = 14$.
+  Check: the GP $\frac{1}{16}, \frac{1}{12}, \frac{1}{9}$ has ratio $\frac{4}{3}$ ✓. The AP 12, 9, 6 has common difference −3 ✓.
   Answer: 14
 M B 7: |-
-  Concept: Area $= \frac{1}{2}bc\sin A$; in a right triangle $R = \frac{\text{hyp}}{2}$ and $r = \frac{a + b - c}{2}$.
+  Concept: Area $= \frac{1}{2}bc\sin A$ determines angle A. In a right-angled triangle, the circumradius is half the hypotenuse, and the inradius is $r = \frac{\text{sum of legs} - \text{hypotenuse}}{2}$ (or $r = \frac{\Delta}{s}$).
   Solution:
-  1. $30 = \frac{1}{2}\cdot12\cdot5\sin A \Rightarrow A = 90°$, so $BC = 13$.
-  2. $R = 6.5$ and $r = \frac{5 + 12 - 13}{2} = 2$.
-  3. $2R + r = 15$.
+  1. AC = b = 12 and AB = c = 5. Area $= \frac{1}{2}\times12\times5\times\sin A = 30\sin A = 30$, so sin A = 1 and A = 90°.
+  2. The triangle is right-angled at A. Hypotenuse $BC = \sqrt{12^2 + 5^2} = 13$ (the 5–12–13 triangle).
+  3. Circumradius: $R = \frac{13}{2} = 6.5$ cm (the hypotenuse is a diameter of the circumcircle).
+  4. Inradius: $r = \frac{5 + 12 - 13}{2} = 2$ cm. Check: $s = \frac{5 + 12 + 13}{2} = 15$, and $r = \frac{\Delta}{s} = \frac{30}{15} = 2$ ✓.
+  5. $2R + r = 13 + 2 = 15$ cm.
+  Note: 30 cm² is the largest possible area for two sides of 12 and 5, since sin A ≤ 1. So the triangle is uniquely determined as right-angled at A.
   Answer: 15
 M B 8: |-
-  Concept: $\sum_k(-1)^k\binom{n}{k}t^k = (1 - t)^n$.
+  Concept: The binomial theorem gives $\sum_{k=0}^{n}(-1)^k\binom{n}{k}t^k = (1 - t)^n$. Apply it to each of the five terms, then sum the resulting geometric series.
   Solution:
-  1. $A = \left(\frac{1}{2}\right)^n + \left(\frac{1}{4}\right)^n + \dots + \left(\frac{1}{32}\right)^n = \frac{2^{-n}(1 - 2^{-5n})}{1 - 2^{-n}}$.
-  2. For $n = 6$: $A = \frac{1 - 2^{-30}}{63}$, so $63A = 1 - 2^{-30}$.
-  3. $n = 6$.
+  1. With $t = \frac{1}{2}, \frac{3}{4}, \frac{7}{8}, \frac{15}{16}, \frac{31}{32}$, the values $1 - t$ are $\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \frac{1}{16}, \frac{1}{32}$.
+  2. $A = \left(\frac{1}{2}\right)^n + \left(\frac{1}{4}\right)^n + \left(\frac{1}{8}\right)^n + \left(\frac{1}{16}\right)^n + \left(\frac{1}{32}\right)^n = r + r^2 + r^3 + r^4 + r^5$ with $r = 2^{-n}$.
+  3. $A = \frac{r(1 - r^5)}{1 - r} = \frac{2^{-n}(1 - 2^{-5n})}{1 - 2^{-n}} = \frac{1 - 2^{-5n}}{2^n - 1}$.
+  4. Given $63A = 1 - 2^{-30}$, i.e. $A = \frac{1 - 2^{-30}}{63}$.
+  5. Compare: 5n = 30 and $2^n - 1 = 63$ both give n = 6 ✓.
   Answer: 6
 M B 9: |-
-  Concept: $\vec c \parallel \vec a\times\vec b$.
+  Concept: A vector perpendicular to both $\vec a$ and $\vec b$ is parallel to $\vec a\times\vec b$. So $\vec c = \lambda(\vec a\times\vec b)$, and the given dot product fixes λ.
   Solution:
-  1. $\vec a\times\vec b = (3, -2, 1)$, so $\vec c = \lambda(3, -2, 1)$.
-  2. $\lambda(3 - 2 + 3) = 8 \Rightarrow \lambda = 2$.
-  3. $\vec c\cdot(\vec a\times\vec b) = 2\times14 = 28$.
+  1. $\vec a\times\vec b = \begin{vmatrix}\hat i & \hat j & \hat k\\ 1 & 1 & -1\\ 1 & 2 & 1\end{vmatrix} = \hat i(1 + 2) - \hat j(1 + 1) + \hat k(2 - 1) = 3\hat i - 2\hat j + \hat k$.
+  2. $\vec c = \lambda(3, -2, 1)$.
+  3. $\vec c\cdot(1, 1, 3) = \lambda(3 - 2 + 3) = 4\lambda = 8$, so λ = 2.
+  4. $\vec c = (6, -4, 2)$.
+  5. $\vec c\cdot(\vec a\times\vec b) = (6, -4, 2)\cdot(3, -2, 1) = 18 + 8 + 2 = 28$.
+  Equivalently, $\vec c\cdot(\vec a\times\vec b) = \lambda|\vec a\times\vec b|^2 = 2\times14 = 28$.
+  Checks: $\vec c\cdot\vec a = 6 - 4 - 2 = 0$ ✓ and $\vec c\cdot\vec b = 6 - 8 + 2 = 0$ ✓, so $\vec c$ is indeed perpendicular to both.
+  Note: $\vec c\cdot(\vec a\times\vec b)$ is the scalar triple product $[\vec c\ \vec a\ \vec b]$. It is non-zero here because $\vec c$ is not in the plane of $\vec a$ and $\vec b$.
   Answer: 28
 M B 10: |-
-  Concept: $\log_{a^{1/k}}x = k\log_ax$; the k's 2, 3, 6, 11, 18, … are $2 + (r - 1)^2$.
+  Concept: The change-of-base rule $\log_{a^{1/k}}x = \frac{\log_ax}{1/k} = k\log_ax$ turns the sum into $\left(\sum k\right)\log_ax$. The multipliers 2, 3, 6, 11, 18, 27, … have differences 1, 3, 5, 7, 9, so $k_r = 2 + (r - 1)^2$.
   Solution:
-  1. $\sum_{r=1}^{n}k_r = 2n + \frac{(n-1)n(2n-1)}{6}$: 4372 for $n = 24$ and 530 for $n = 12$.
-  2. $4372\log_ax = 1093 \Rightarrow \log_ax = \frac{1}{4}$.
-  3. $530\log_a2x = 265 \Rightarrow \log_a2 + \frac{1}{4} = \frac{1}{2} \Rightarrow \log_a2 = \frac{1}{4}$.
-  4. $a = 16$.
+  1. $S_n(x) = \left[\sum_{r=1}^{n}k_r\right]\log_ax$, with $\sum_{r=1}^{n}k_r = 2n + \sum_{j=0}^{n-1}j^2 = 2n + \frac{(n - 1)n(2n - 1)}{6}$.
+  2. n = 24: $48 + \frac{23\times24\times47}{6} = 48 + 4324 = 4372$.
+  3. n = 12: $24 + \frac{11\times12\times23}{6} = 24 + 506 = 530$.
+  4. $S_{24}(x) = 4372\log_ax = 1093$, so $\log_ax = \frac{1093}{4372} = \frac{1}{4}$.
+  5. $S_{12}(2x) = 530\log_a(2x) = 265$, so $\log_a(2x) = \frac{1}{2}$.
+  6. $\log_a2 + \log_ax = \frac{1}{2}$, so $\log_a2 = \frac{1}{2} - \frac{1}{4} = \frac{1}{4}$.
+  7. $a^{1/4} = 2$, so $a = 2^4 = 16$.
+  Check: $x = a^{1/4} = 2$, and $2x = 4 = 16^{1/2}$ ✓.
   Answer: 16
