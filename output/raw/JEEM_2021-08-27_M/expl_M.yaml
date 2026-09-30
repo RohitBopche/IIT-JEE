@@ -136,6 +136,8 @@ M A 12: |-
   3. $3xf(x) = x^3 - 4 \Rightarrow x^3 - 3xf(x) - 4 = 0$.
   Why others are wrong:
   - (A), (B), (D) come from integrating the wrong expression or mis-evaluating C.
+  Check the point: At x = −2, x³ − 3xf(x) − 4 = −8 − 3(−2)(2) − 4 = −8 + 12 − 4 = 0 ✓.
+  Common mistake: Treating f + xf′ = x² as a linear equation in f and computing an integrating factor; that works but is slower than spotting d(xf)/dx.
   Key takeaway: spotting a product-rule derivative turns a differential equation into direct integration.
   Answer: (C)
 M A 13: |-
@@ -146,6 +148,8 @@ M A 13: |-
   Why others are wrong:
   - (A) and (B) $\binom{40}{21} = \binom{40}{19}$ correspond to $\sum\binom{20}{k}\binom{20}{k + 1}$.
   - (D) $\binom{41}{20}$ has no basis here.
+  Quick check for small n: n = 2 gives 1² + 2² + 1² = 6 = C(4, 2) ✓.
+  Common mistake: Confusing Σ C(n, k)² with Σ C(n, k) = 2ⁿ; squaring the coefficients gives the central coefficient of (1 + x)^{2n}.
   Key takeaway: coefficient of $x^{20}$ in $(1 + x)^{20}(1 + x)^{20}$ gives this sum directly.
   Answer: (C)
 M A 14: |-
@@ -202,6 +206,8 @@ M A 18: |-
   3. |x − 2| ≤ 1 ⇒ x ∈ [1, 3]; |y| ≤ ⅓ ⇒ y ∈ [−⅓, ⅓].
   Why others are wrong:
   - (A), (B), (C) assign the intervals to the wrong variables.
+  Geometric picture: The curve is a flat ellipse centred at (2, 0), stretching from x = 1 to x = 3 horizontally but only from −⅓ to ⅓ vertically.
+  Common mistake: Forgetting to divide by 9 when finding the y semi-axis: 9y² ≤ 1 gives |y| ≤ ⅓, not |y| ≤ 1.
   Key takeaway: each squared term must be ≤ 1 when the sum of squares equals 1.
   Answer: (D)
 M A 19: |-
@@ -269,6 +275,8 @@ M B 5: |-
   1. First term: $\frac{x + \frac{1}{2}}{2\cdot\frac{3}{4}(x^2 + x + 1)} = \frac{2x + 1}{3(x^2 + x + 1)}$ ⇒ b = ⅓.
   2. Second term: $\frac{1}{2k^3} = \frac{1}{2\cdot\frac{3\sqrt3}{8}} = \frac{4}{3\sqrt3}$, with $\frac{t}{k} = \frac{2x + 1}{\sqrt3}$ ⇒ a = $\frac{4}{3\sqrt3}$.
   3. $\sqrt3a + b = \frac{4}{3} + \frac{1}{3} = \frac{5}{3}$; $9(\sqrt3a + b) = 15$.
+  Final step: √3a + b = 5/3, so 9 × 5/3 = 15.
+  Common mistake: Losing the factor ½ in 1/(2k³) or 1/(2k²), which doubles a or b. The reduction formula comes from integrating 1/(t² + k²) by parts.
   Answer: 15
 M B 6: |-
   Concept: Infinitely many solutions require det = 0 and the dependent equation to be consistent.
@@ -277,12 +285,16 @@ M B 6: |-
   2. With β = −1: 2·(eq1) − (eq2) = (3, 3, −1), which matches eq3's coefficients.
   3. RHS: 2(3) − α = 3 ⇒ α = 3.
   4. α + β − αβ = 3 − 1 + 3 = 5.
+  Why the RHS must match: When det = 0, one equation is a combination of the others. For infinitely many solutions (not none), the right-hand sides must follow the same combination: 2 × 3 − α = 3.
+  Common mistake: Stopping at det = 0 (β = −1) and not fixing α, which leaves the system possibly inconsistent.
   Answer: 5
 M B 7: |-
   Concept: For the first n natural numbers, mean = $\frac{n + 1}{2}$ and variance = $\frac{n^2 - 1}{12}$.
   Solution:
   1. $\frac{n^2 - 1}{12} = 14 \Rightarrow n^2 = 169 \Rightarrow n = 13$ (odd ✓).
   Derivation: $\frac{\sum k^2}{n} - \left(\frac{n + 1}{2}\right)^2 = \frac{(n + 1)(2n + 1)}{6} - \frac{(n + 1)^2}{4} = \frac{n^2 - 1}{12}$.
+  Why odd matters: n² = 169 gives n = ±13, and only the positive odd value is valid.
+  Common mistake: Using the variance formula (n² + 1)/12 or (n² − 1)/6, which gives non-integer n.
   Answer: 13
 M B 8: |-
   Concept: For an ellipse with semi-axes p (along x) and q (along y), the tangent at (p cos θ, q sin θ) is $\frac{x\cos\theta}{p} + \frac{y\sin\theta}{q} = 1$, meeting the axes at $\frac{p}{\cos\theta}$ and $\frac{q}{\sin\theta}$.
@@ -290,6 +302,8 @@ M B 8: |-
   1. Triangle area $= \frac{1}{2}\cdot\frac{p}{\cos\theta}\cdot\frac{q}{\sin\theta} = \frac{pq}{\sin2\theta} \ge pq$.
   2. Here p = b and q = 2a (from $\frac{y^2}{4a^2}$).
   3. Minimum area = 2ab ⇒ k = 2.
+  Watch the axes: Here b² sits under x² and 4a² under y², so the x semi-axis is b and the y semi-axis is 2a (not a).
+  Common mistake: Using q = a (forgetting the square root of 4a²), which gives k = 1.
   Key takeaway: the minimum occurs at θ = 45° (sin 2θ = 1).
   Answer: 2
 M B 9: |-
@@ -298,6 +312,8 @@ M B 9: |-
   1. Last digit = a must be 0 or 5; a is also the first digit, so a ≠ 0 ⇒ a = 5.
   2. b and c are free: 10 × 10 = 100 choices.
   3. Number of palindromes = 100.
+  Why every even-length palindrome is divisible by 11: By the alternating-sum test, a − b + c − c + b − a = 0, which is divisible by 11.
+  Common mistake: Allowing a = 0, which makes the number five-digit; the first digit must be non-zero.
   Answer: 100
 M B 10: |-
   Concept: Solve for $y^{1/4}$: $t + \frac{1}{t} = 2x$ gives $t = x \pm \sqrt{x^2 - 1}$, so $y = (x \pm \sqrt{x^2 - 1})^4$. For $y = (x + \sqrt{x^2 - 1})^m$, a standard derivation gives $(x^2 - 1)y'' + xy' - m^2y = 0$.

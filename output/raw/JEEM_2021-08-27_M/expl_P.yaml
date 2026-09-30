@@ -19,6 +19,8 @@ P A 2: |-
   Why others are wrong:
   - (A) and (D) are larger than the initial number — impossible for decay.
   - (C) $10^5$ is absurdly small (it would need many half-lives).
+  Why not 0.75: The decay rate is proportional to the number still present, so more nuclei decay in the first 30 s than in the second 30 s. After 30 s, 70.7% remain, and after 60 s, 50%.
+  Common mistake: Interpolating linearly between N₀ and N₀/2, which gives 7.5 × 10⁹.
   Key takeaway: decay is exponential, so after half a half-life, the fraction left is $\frac{1}{\sqrt2} \approx 0.707$, not 0.75.
   Answer: (B)
 P A 3: |-
@@ -28,6 +30,8 @@ P A 3: |-
   2. (B) Power factor = cos φ → dimensionless.
   3. (D) Quality factor $Q = \frac{\omega_0L}{R}$ (ratio of reactance to resistance) → dimensionless.
   4. (C) Permeability of free space μ₀ has SI unit H/m (T m/A) and dimensions [MLT⁻²A⁻²] → NOT dimensionless.
+  Dimensions of μ₀: From F/l = μ₀I₁I₂/(2πd), μ₀ = force/(current²), which gives [MLT⁻²A⁻²].
+  Common mistake: Thinking μ₀ is dimensionless because μ_r is; μ_r = μ/μ₀ is the ratio, while μ₀ itself carries units (H/m).
   Key takeaway: absolute constants like μ₀, ε₀ and G carry dimensions; "relative" quantities are dimensionless.
   Answer: (C)
 P A 4: |-
@@ -38,6 +42,8 @@ P A 4: |-
   Why others are wrong:
   - (B) mho is the unit of conductance (the inverse).
   - (C) joule and (D) newton are units of energy and force.
+  Derivation of 377 Ω: In vacuum, E = cB and B = μ₀H, so E/H = cμ₀ = μ₀/√(μ₀ε₀) = √(μ₀/ε₀) ≈ 377 Ω.
+  Common mistake: Confusing H (magnetising field, A/m) with B (magnetic field, tesla); E/B has units of m/s.
   Key takeaway: E/B has units of speed (m/s), while E/H has units of resistance (Ω).
   Answer: (A)
 P A 5: |-
@@ -128,6 +134,8 @@ P A 12: |-
   Why others are wrong:
   - (A) $\frac{1}{T}$ is the isobaric (P constant) value.
   - (B) and (D) correspond to V ∝ T² or T³.
+  Check with the isobaric case: If P were constant, V ∝ T and γ_V = 1/T. Here the pressure falls as T rises (P ∝ T⁻³), so the gas expands faster and γ_V is larger (4/T).
+  Common mistake: Writing V ∝ T³ (forgetting the extra T from PV = nRT), which gives 3/T.
   Key takeaway: for V ∝ Tⁿ, the coefficient of volume expansion is $\frac{n}{T}$.
   Answer: (C)
 P A 13: |-
@@ -185,6 +193,8 @@ P A 17: |-
   3. Weight = viscous force $= 4.02\times10^{-11}\times9.8 \approx 3.9\times10^{-10}$ N.
   Why others are wrong:
   - (A) is ten times too small; (C) and (D) use wrong radius powers.
+  Why terminal velocity: The drop accelerates until the upward viscous drag (6πηrv) equals its weight; after that it falls at constant speed, so drag = mg.
+  Common mistake: Computing 6πηr × (some velocity) without a velocity given; the force balance makes the velocity unnecessary.
   Key takeaway: the viscosity value is not needed for the force — only for the terminal speed ($v = \frac{2r^2\rho g}{9\eta}$).
   Answer: (B)
 P A 18: |-
@@ -196,6 +206,8 @@ P A 18: |-
   Why others are wrong:
   - (A) $\frac{3}{2}C$ exceeds the speed of light.
   - (B) and (D) do not match ω/k.
+  Refractive index: n = c/v = 3 × 10⁸ / 2 × 10⁸ = 1.5, which is typical of glass.
+  Common mistake: Taking the speed as k/ω (5 × 10⁻⁹), or reading ω as 10 × 10¹⁰ = 10¹⁰ instead of 10¹¹.
   Key takeaway: the refractive index of the medium is $\frac{C}{v} = 1.5$.
   Answer: (C)
 P A 19: |-
@@ -235,6 +247,8 @@ P B 2: |-
   1. $I_{dc} = 10$ A, $I_0 = \sqrt{42}$ A.
   2. $I_{rms}^2 = 100 + \frac{42}{2} = 121$.
   3. $I_{rms} = 11$ A.
+  Why the cross term vanishes: i² = 100 + 20√42 sin ωt + 42 sin²ωt. Over one period, sin ωt averages to 0 and sin²ωt averages to ½, so ⟨i²⟩ = 100 + 21 = 121.
+  Common mistake: Adding the rms values linearly, 10 + √42/√2 ≈ 14.6 A.
   Key takeaway: rms values of independent components add in quadrature (not linearly).
   Answer: 11
 P B 3: |-
@@ -251,6 +265,8 @@ P B 4: |-
   1. Transistor OFF → collector current ≈ 0.
   2. No current through the collector resistor → no voltage drop across it.
   3. Output V₀ = supply voltage = 5 V.
+  Why no base current: The antiparallel diodes clamp the base–emitter voltage to below the transistor's turn-on threshold (about 0.7 V), so the transistor is off (cut-off).
+  Common mistake: Assuming the transistor saturates and taking V₀ ≈ 0 V; that would need sufficient base current.
   Key takeaway: in cut-off, a common-emitter stage outputs its full supply voltage (logic HIGH), acting like an open switch.
   Answer: 5
 P B 5: |-
@@ -259,6 +275,8 @@ P B 5: |-
   1. Series: $R_{ext} = 10n$ → $I_s = \frac{20}{10n + 10} = \frac{2}{n + 1}$.
   2. Parallel: $R_{ext} = \frac{10}{n}$ → $I_p = \frac{20}{\frac{10}{n} + 10} = \frac{2n}{n + 1}$.
   3. $\frac{I_p}{I_s} = n = 20$.
+  Check with n = 20: series I = 20/(200 + 10) = 0.0952 A; parallel I = 20/(0.5 + 10) = 1.905 A; ratio = 20 ✓.
+  Common mistake: Ignoring the internal resistance, which gives a ratio of n² = 20 and so n ≈ 4.47 (not an integer).
   Key takeaway: when each resistor equals the internal resistance, the parallel/series current ratio is exactly n.
   Answer: 20
 P B 6: |-
@@ -267,6 +285,8 @@ P B 6: |-
   1. Source (car X): 36 km/h = 10 m/s. Observer (car Y): 72 km/h = 20 m/s.
   2. $1320 = f\times\frac{340 + 20}{340 - 10} = f\times\frac{360}{330} = f\times\frac{12}{11}$.
   3. $f = 1320\times\frac{11}{12} = 1210$ Hz.
+  Sign convention: The observer moving towards the source adds v_o in the numerator; the source moving towards the observer subtracts v_s in the denominator. Both effects raise the heard frequency.
+  Common mistake: Forgetting to convert km/h to m/s (÷ 3.6).
   Key takeaway: approaching motion raises the heard frequency, so the actual frequency is lower than 1320 Hz.
   Answer: 1210
 P B 7: |-
@@ -275,6 +295,8 @@ P B 7: |-
   1. $v^2 = 5000 + 24x$.
   2. $a = \frac{1}{2}\times24 = 12$ m/s² (constant).
   3. Comparing with $v^2 = u^2 + 2ax$: u² = 5000, 2a = 24 ✓.
+  Why a = v dv/dx: By the chain rule, a = dv/dt = (dv/dx)(dx/dt) = v dv/dx. With v² = 5000 + 24x, 2v dv/dx = 24, so v dv/dx = 12.
+  Common mistake: Differentiating v with respect to x only, dv/dx = 12/v, and forgetting to multiply by v.
   Key takeaway: a linear v²–x relation always means uniform acceleration.
   Answer: 12
 P B 8: |-
@@ -292,6 +314,8 @@ P B 9: |-
   1. $F_A\cos45° = F_B\cos60°$.
   2. $\frac{F_A}{F_B} = \frac{\cos60°}{\cos45°} = \frac{1/2}{1/\sqrt2} = \frac{1}{\sqrt2}$.
   3. x = 2.
+  Physical sense: B pushes at 60°, so only half of B's force does work (cos 60° = ½), while A's force at 45° is about 71% effective. A therefore needs a smaller force: F_A/F_B = 0.707.
+  Common mistake: Inverting the ratio (√2 : 1).
   Key takeaway: the larger the angle to the displacement, the larger the force needed for the same work.
   Answer: 2
 P B 10: |-
@@ -300,5 +324,7 @@ P B 10: |-
   1. $\sqrt{2\times6.4\times10^6\times320} = \sqrt{4.096\times10^9} = 64$ km.
   2. $\sqrt{2\times6.4\times10^6\times2000} = \sqrt{2.56\times10^{10}} = 160$ km.
   3. d = 64 + 160 = 224 km.
+  Why add the two horizons: Each antenna "sees" the Earth's surface out to √(2Rh). The signal can reach the receiver as long as the two horizons meet, so the maximum separation is the sum.
+  Common mistake: Using the combined height √(2R(h_T + h_R)), which gives about 173 km.
   Key takeaway: choose numbers so that 2Rh is a perfect square — a common trick in these questions.
   Answer: 224

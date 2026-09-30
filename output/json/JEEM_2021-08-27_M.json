@@ -74,7 +74,7 @@
     1
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Radioactive decay: $N = N_0\\left(\\frac{1}{2}\\right)^{t/T_{1/2}}$.\nSolution:\n1. t = 30 s = ½ half-life.\n2. $N = 10^{10}\\times\\left(\\frac{1}{2}\\right)^{1/2} = \\frac{10^{10}}{\\sqrt2} = \\frac{10^{10}}{1.414} = 7.07\\times10^9 \\approx 7\\times10^9$.\nWhy others are wrong:\n- (A) and (D) are larger than the initial number — impossible for decay.\n- (C) $10^5$ is absurdly small (it would need many half-lives).\nKey takeaway: decay is exponential, so after half a half-life, the fraction left is $\\frac{1}{\\sqrt2} \\approx 0.707$, not 0.75.\nAnswer: (B)",
+   "explanation": "Concept: Radioactive decay: $N = N_0\\left(\\frac{1}{2}\\right)^{t/T_{1/2}}$.\nSolution:\n1. t = 30 s = ½ half-life.\n2. $N = 10^{10}\\times\\left(\\frac{1}{2}\\right)^{1/2} = \\frac{10^{10}}{\\sqrt2} = \\frac{10^{10}}{1.414} = 7.07\\times10^9 \\approx 7\\times10^9$.\nWhy others are wrong:\n- (A) and (D) are larger than the initial number — impossible for decay.\n- (C) $10^5$ is absurdly small (it would need many half-lives).\nWhy not 0.75: The decay rate is proportional to the number still present, so more nuclei decay in the first 30 s than in the second 30 s. After 30 s, 70.7% remain, and after 60 s, 50%.\nCommon mistake: Interpolating linearly between N₀ and N₀/2, which gives 7.5 × 10⁹.\nKey takeaway: decay is exponential, so after half a half-life, the fraction left is $\\frac{1}{\\sqrt2} \\approx 0.707$, not 0.75.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A02",
@@ -109,7 +109,7 @@
     1
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A quantity is dimensionless if it is a ratio of like quantities (or a pure number).\nSolution:\n1. (A) Relative permeability $\\mu_r = \\frac{\\mu}{\\mu_0}$ — ratio → dimensionless.\n2. (B) Power factor = cos φ → dimensionless.\n3. (D) Quality factor $Q = \\frac{\\omega_0L}{R}$ (ratio of reactance to resistance) → dimensionless.\n4. (C) Permeability of free space μ₀ has SI unit H/m (T m/A) and dimensions [MLT⁻²A⁻²] → NOT dimensionless.\nKey takeaway: absolute constants like μ₀, ε₀ and G carry dimensions; \"relative\" quantities are dimensionless.\nAnswer: (C)",
+   "explanation": "Concept: A quantity is dimensionless if it is a ratio of like quantities (or a pure number).\nSolution:\n1. (A) Relative permeability $\\mu_r = \\frac{\\mu}{\\mu_0}$ — ratio → dimensionless.\n2. (B) Power factor = cos φ → dimensionless.\n3. (D) Quality factor $Q = \\frac{\\omega_0L}{R}$ (ratio of reactance to resistance) → dimensionless.\n4. (C) Permeability of free space μ₀ has SI unit H/m (T m/A) and dimensions [MLT⁻²A⁻²] → NOT dimensionless.\nDimensions of μ₀: From F/l = μ₀I₁I₂/(2πd), μ₀ = force/(current²), which gives [MLT⁻²A⁻²].\nCommon mistake: Thinking μ₀ is dimensionless because μ_r is; μ_r = μ/μ₀ is the ratio, while μ₀ itself carries units (H/m).\nKey takeaway: absolute constants like μ₀, ε₀ and G carry dimensions; \"relative\" quantities are dimensionless.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A03",
@@ -144,7 +144,7 @@
     2
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Electric field E is measured in V/m; magnetising field (magnetic intensity) H is measured in A/m.\nSolution:\n1. $\\frac{E}{H}$ has units $\\frac{\\text{V/m}}{\\text{A/m}} = \\frac{\\text{V}}{\\text{A}} = \\Omega$ (ohm).\n2. For an EM wave in vacuum, $\\frac{E}{H} = \\sqrt{\\frac{\\mu_0}{\\varepsilon_0}} \\approx 377\\ \\Omega$ — the impedance of free space.\nWhy others are wrong:\n- (B) mho is the unit of conductance (the inverse).\n- (C) joule and (D) newton are units of energy and force.\nKey takeaway: E/B has units of speed (m/s), while E/H has units of resistance (Ω).\nAnswer: (A)",
+   "explanation": "Concept: Electric field E is measured in V/m; magnetising field (magnetic intensity) H is measured in A/m.\nSolution:\n1. $\\frac{E}{H}$ has units $\\frac{\\text{V/m}}{\\text{A/m}} = \\frac{\\text{V}}{\\text{A}} = \\Omega$ (ohm).\n2. For an EM wave in vacuum, $\\frac{E}{H} = \\sqrt{\\frac{\\mu_0}{\\varepsilon_0}} \\approx 377\\ \\Omega$ — the impedance of free space.\nWhy others are wrong:\n- (B) mho is the unit of conductance (the inverse).\n- (C) joule and (D) newton are units of energy and force.\nDerivation of 377 Ω: In vacuum, E = cB and B = μ₀H, so E/H = cμ₀ = μ₀/√(μ₀ε₀) = √(μ₀/ε₀) ≈ 377 Ω.\nCommon mistake: Confusing H (magnetising field, A/m) with B (magnetic field, tesla); E/B has units of m/s.\nKey takeaway: E/B has units of speed (m/s), while E/H has units of resistance (Ω).\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A04",
@@ -448,7 +448,7 @@
     3
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Combine the process equation with the ideal gas law to find how V depends on T, then use the definition $\\gamma_V = \\frac{1}{V}\\frac{dV}{dT}$.\nSolution:\n1. $P = \\frac{nRT}{V}$; $PT^3 = \\frac{nRT^4}{V}$ = constant ⇒ V ∝ T⁴.\n2. $\\ln V = 4\\ln T + $ const ⇒ $\\frac{1}{V}\\frac{dV}{dT} = \\frac{4}{T}$.\nWhy others are wrong:\n- (A) $\\frac{1}{T}$ is the isobaric (P constant) value.\n- (B) and (D) correspond to V ∝ T² or T³.\nKey takeaway: for V ∝ Tⁿ, the coefficient of volume expansion is $\\frac{n}{T}$.\nAnswer: (C)",
+   "explanation": "Concept: Combine the process equation with the ideal gas law to find how V depends on T, then use the definition $\\gamma_V = \\frac{1}{V}\\frac{dV}{dT}$.\nSolution:\n1. $P = \\frac{nRT}{V}$; $PT^3 = \\frac{nRT^4}{V}$ = constant ⇒ V ∝ T⁴.\n2. $\\ln V = 4\\ln T + $ const ⇒ $\\frac{1}{V}\\frac{dV}{dT} = \\frac{4}{T}$.\nWhy others are wrong:\n- (A) $\\frac{1}{T}$ is the isobaric (P constant) value.\n- (B) and (D) correspond to V ∝ T² or T³.\nCheck with the isobaric case: If P were constant, V ∝ T and γ_V = 1/T. Here the pressure falls as T rises (P ∝ T⁻³), so the gas expands faster and γ_V is larger (4/T).\nCommon mistake: Writing V ∝ T³ (forgetting the extra T from PV = nRT), which gives 3/T.\nKey takeaway: for V ∝ Tⁿ, the coefficient of volume expansion is $\\frac{n}{T}$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A12",
@@ -657,7 +657,7 @@
     5
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: An uncharged oil drop falling at terminal velocity has zero net force, so the viscous force equals its weight (buoyancy neglected).\nSolution:\n1. Volume: $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(2\\times10^{-5})^3 = 3.35\\times10^{-14}$ m³.\n2. Mass: $3.35\\times10^{-14}\\times1.2\\times10^3 = 4.02\\times10^{-11}$ kg.\n3. Weight = viscous force $= 4.02\\times10^{-11}\\times9.8 \\approx 3.9\\times10^{-10}$ N.\nWhy others are wrong:\n- (A) is ten times too small; (C) and (D) use wrong radius powers.\nKey takeaway: the viscosity value is not needed for the force — only for the terminal speed ($v = \\frac{2r^2\\rho g}{9\\eta}$).\nAnswer: (B)",
+   "explanation": "Concept: An uncharged oil drop falling at terminal velocity has zero net force, so the viscous force equals its weight (buoyancy neglected).\nSolution:\n1. Volume: $\\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(2\\times10^{-5})^3 = 3.35\\times10^{-14}$ m³.\n2. Mass: $3.35\\times10^{-14}\\times1.2\\times10^3 = 4.02\\times10^{-11}$ kg.\n3. Weight = viscous force $= 4.02\\times10^{-11}\\times9.8 \\approx 3.9\\times10^{-10}$ N.\nWhy others are wrong:\n- (A) is ten times too small; (C) and (D) use wrong radius powers.\nWhy terminal velocity: The drop accelerates until the upward viscous drag (6πηrv) equals its weight; after that it falls at constant speed, so drag = mg.\nCommon mistake: Computing 6πηr × (some velocity) without a velocity given; the force balance makes the velocity unnecessary.\nKey takeaway: the viscosity value is not needed for the force — only for the terminal speed ($v = \\frac{2r^2\\rho g}{9\\eta}$).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A17",
@@ -692,7 +692,7 @@
     5
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For $E = E_0\\sin(kx - \\omega t)$, the wave speed is $v = \\frac{\\omega}{k}$.\nSolution:\n1. ω = 10 × 10¹⁰ = 10¹¹ rad/s; k = 500 m⁻¹.\n2. $v = \\frac{10^{11}}{500} = 2\\times10^8$ m/s.\n3. $\\frac{v}{C} = \\frac{2}{3}$ → v = $\\frac{2}{3}C$ (refractive index 1.5).\nWhy others are wrong:\n- (A) $\\frac{3}{2}C$ exceeds the speed of light.\n- (B) and (D) do not match ω/k.\nKey takeaway: the refractive index of the medium is $\\frac{C}{v} = 1.5$.\nAnswer: (C)",
+   "explanation": "Concept: For $E = E_0\\sin(kx - \\omega t)$, the wave speed is $v = \\frac{\\omega}{k}$.\nSolution:\n1. ω = 10 × 10¹⁰ = 10¹¹ rad/s; k = 500 m⁻¹.\n2. $v = \\frac{10^{11}}{500} = 2\\times10^8$ m/s.\n3. $\\frac{v}{C} = \\frac{2}{3}$ → v = $\\frac{2}{3}C$ (refractive index 1.5).\nWhy others are wrong:\n- (A) $\\frac{3}{2}C$ exceeds the speed of light.\n- (B) and (D) do not match ω/k.\nRefractive index: n = c/v = 3 × 10⁸ / 2 × 10⁸ = 1.5, which is typical of glass.\nCommon mistake: Taking the speed as k/ω (5 × 10⁻⁹), or reading ω as 10 × 10¹⁰ = 10¹⁰ instead of 10¹¹.\nKey takeaway: the refractive index of the medium is $\\frac{C}{v} = 1.5$.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_A18",
@@ -858,7 +858,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For $i = I_{dc} + I_0\\sin\\omega t$, the cross term averages to zero over a period, so $I_{rms}^2 = I_{dc}^2 + \\frac{I_0^2}{2}$.\nSolution:\n1. $I_{dc} = 10$ A, $I_0 = \\sqrt{42}$ A.\n2. $I_{rms}^2 = 100 + \\frac{42}{2} = 121$.\n3. $I_{rms} = 11$ A.\nKey takeaway: rms values of independent components add in quadrature (not linearly).\nAnswer: 11",
+   "explanation": "Concept: For $i = I_{dc} + I_0\\sin\\omega t$, the cross term averages to zero over a period, so $I_{rms}^2 = I_{dc}^2 + \\frac{I_0^2}{2}$.\nSolution:\n1. $I_{dc} = 10$ A, $I_0 = \\sqrt{42}$ A.\n2. $I_{rms}^2 = 100 + \\frac{42}{2} = 121$.\n3. $I_{rms} = 11$ A.\nWhy the cross term vanishes: i² = 100 + 20√42 sin ωt + 42 sin²ωt. Over one period, sin ωt averages to 0 and sin²ωt averages to ½, so ⟨i²⟩ = 100 + 21 = 121.\nCommon mistake: Adding the rms values linearly, 10 + √42/√2 ≈ 14.6 A.\nKey takeaway: rms values of independent components add in quadrature (not linearly).\nAnswer: 11",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B02",
@@ -928,7 +928,7 @@
      ]
     }
    ],
-   "explanation": "Concept: From the circuit: the base of the transistor is connected through two antiparallel diodes that are forward-biased and clamp the base–emitter voltage near 0 V. With no base drive, the transistor is in cut-off.\nSolution:\n1. Transistor OFF → collector current ≈ 0.\n2. No current through the collector resistor → no voltage drop across it.\n3. Output V₀ = supply voltage = 5 V.\nKey takeaway: in cut-off, a common-emitter stage outputs its full supply voltage (logic HIGH), acting like an open switch.\nAnswer: 5",
+   "explanation": "Concept: From the circuit: the base of the transistor is connected through two antiparallel diodes that are forward-biased and clamp the base–emitter voltage near 0 V. With no base drive, the transistor is in cut-off.\nSolution:\n1. Transistor OFF → collector current ≈ 0.\n2. No current through the collector resistor → no voltage drop across it.\n3. Output V₀ = supply voltage = 5 V.\nWhy no base current: The antiparallel diodes clamp the base–emitter voltage to below the transistor's turn-on threshold (about 0.7 V), so the transistor is off (cut-off).\nCommon mistake: Assuming the transistor saturates and taking V₀ ≈ 0 V; that would need sufficient base current.\nKey takeaway: in cut-off, a common-emitter stage outputs its full supply voltage (logic HIGH), acting like an open switch.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B04",
@@ -960,7 +960,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Ohm's law including internal resistance: I = $\\frac{E}{R_{ext} + r}$.\nSolution:\n1. Series: $R_{ext} = 10n$ → $I_s = \\frac{20}{10n + 10} = \\frac{2}{n + 1}$.\n2. Parallel: $R_{ext} = \\frac{10}{n}$ → $I_p = \\frac{20}{\\frac{10}{n} + 10} = \\frac{2n}{n + 1}$.\n3. $\\frac{I_p}{I_s} = n = 20$.\nKey takeaway: when each resistor equals the internal resistance, the parallel/series current ratio is exactly n.\nAnswer: 20",
+   "explanation": "Concept: Ohm's law including internal resistance: I = $\\frac{E}{R_{ext} + r}$.\nSolution:\n1. Series: $R_{ext} = 10n$ → $I_s = \\frac{20}{10n + 10} = \\frac{2}{n + 1}$.\n2. Parallel: $R_{ext} = \\frac{10}{n}$ → $I_p = \\frac{20}{\\frac{10}{n} + 10} = \\frac{2n}{n + 1}$.\n3. $\\frac{I_p}{I_s} = n = 20$.\nCheck with n = 20: series I = 20/(200 + 10) = 0.0952 A; parallel I = 20/(0.5 + 10) = 1.905 A; ratio = 20 ✓.\nCommon mistake: Ignoring the internal resistance, which gives a ratio of n² = 20 and so n ≈ 4.47 (not an integer).\nKey takeaway: when each resistor equals the internal resistance, the parallel/series current ratio is exactly n.\nAnswer: 20",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B05",
@@ -990,7 +990,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Doppler effect for source and observer approaching each other: $f' = f\\frac{v + v_o}{v - v_s}$.\nSolution:\n1. Source (car X): 36 km/h = 10 m/s. Observer (car Y): 72 km/h = 20 m/s.\n2. $1320 = f\\times\\frac{340 + 20}{340 - 10} = f\\times\\frac{360}{330} = f\\times\\frac{12}{11}$.\n3. $f = 1320\\times\\frac{11}{12} = 1210$ Hz.\nKey takeaway: approaching motion raises the heard frequency, so the actual frequency is lower than 1320 Hz.\nAnswer: 1210",
+   "explanation": "Concept: Doppler effect for source and observer approaching each other: $f' = f\\frac{v + v_o}{v - v_s}$.\nSolution:\n1. Source (car X): 36 km/h = 10 m/s. Observer (car Y): 72 km/h = 20 m/s.\n2. $1320 = f\\times\\frac{340 + 20}{340 - 10} = f\\times\\frac{360}{330} = f\\times\\frac{12}{11}$.\n3. $f = 1320\\times\\frac{11}{12} = 1210$ Hz.\nSign convention: The observer moving towards the source adds v_o in the numerator; the source moving towards the observer subtracts v_s in the denominator. Both effects raise the heard frequency.\nCommon mistake: Forgetting to convert km/h to m/s (÷ 3.6).\nKey takeaway: approaching motion raises the heard frequency, so the actual frequency is lower than 1320 Hz.\nAnswer: 1210",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B06",
@@ -1020,7 +1020,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: When v is given as a function of x, acceleration $a = v\\frac{dv}{dx} = \\frac{1}{2}\\frac{d(v^2)}{dx}$.\nSolution:\n1. $v^2 = 5000 + 24x$.\n2. $a = \\frac{1}{2}\\times24 = 12$ m/s² (constant).\n3. Comparing with $v^2 = u^2 + 2ax$: u² = 5000, 2a = 24 ✓.\nKey takeaway: a linear v²–x relation always means uniform acceleration.\nAnswer: 12",
+   "explanation": "Concept: When v is given as a function of x, acceleration $a = v\\frac{dv}{dx} = \\frac{1}{2}\\frac{d(v^2)}{dx}$.\nSolution:\n1. $v^2 = 5000 + 24x$.\n2. $a = \\frac{1}{2}\\times24 = 12$ m/s² (constant).\n3. Comparing with $v^2 = u^2 + 2ax$: u² = 5000, 2a = 24 ✓.\nWhy a = v dv/dx: By the chain rule, a = dv/dt = (dv/dx)(dx/dt) = v dv/dx. With v² = 5000 + 24x, 2v dv/dx = 24, so v dv/dx = 12.\nCommon mistake: Differentiating v with respect to x only, dv/dx = 12/v, and forgetting to multiply by v.\nKey takeaway: a linear v²–x relation always means uniform acceleration.\nAnswer: 12",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B07",
@@ -1092,7 +1092,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Work W = Fd cos θ. Equal work over equal displacement means equal force components along the displacement.\nSolution:\n1. $F_A\\cos45° = F_B\\cos60°$.\n2. $\\frac{F_A}{F_B} = \\frac{\\cos60°}{\\cos45°} = \\frac{1/2}{1/\\sqrt2} = \\frac{1}{\\sqrt2}$.\n3. x = 2.\nKey takeaway: the larger the angle to the displacement, the larger the force needed for the same work.\nAnswer: 2",
+   "explanation": "Concept: Work W = Fd cos θ. Equal work over equal displacement means equal force components along the displacement.\nSolution:\n1. $F_A\\cos45° = F_B\\cos60°$.\n2. $\\frac{F_A}{F_B} = \\frac{\\cos60°}{\\cos45°} = \\frac{1/2}{1/\\sqrt2} = \\frac{1}{\\sqrt2}$.\n3. x = 2.\nPhysical sense: B pushes at 60°, so only half of B's force does work (cos 60° = ½), while A's force at 45° is about 71% effective. A therefore needs a smaller force: F_A/F_B = 0.707.\nCommon mistake: Inverting the ratio (√2 : 1).\nKey takeaway: the larger the angle to the displacement, the larger the force needed for the same work.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B09",
@@ -1122,7 +1122,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Line-of-sight range: $d = \\sqrt{2Rh_T} + \\sqrt{2Rh_R}$ (sum of both radio horizons), R = 6400 km.\nSolution:\n1. $\\sqrt{2\\times6.4\\times10^6\\times320} = \\sqrt{4.096\\times10^9} = 64$ km.\n2. $\\sqrt{2\\times6.4\\times10^6\\times2000} = \\sqrt{2.56\\times10^{10}} = 160$ km.\n3. d = 64 + 160 = 224 km.\nKey takeaway: choose numbers so that 2Rh is a perfect square — a common trick in these questions.\nAnswer: 224",
+   "explanation": "Concept: Line-of-sight range: $d = \\sqrt{2Rh_T} + \\sqrt{2Rh_R}$ (sum of both radio horizons), R = 6400 km.\nSolution:\n1. $\\sqrt{2\\times6.4\\times10^6\\times320} = \\sqrt{4.096\\times10^9} = 64$ km.\n2. $\\sqrt{2\\times6.4\\times10^6\\times2000} = \\sqrt{2.56\\times10^{10}} = 160$ km.\n3. d = 64 + 160 = 224 km.\nWhy add the two horizons: Each antenna \"sees\" the Earth's surface out to √(2Rh). The signal can reach the receiver as long as the two horizons meet, so the maximum separation is the sum.\nCommon mistake: Using the combined height √(2R(h_T + h_R)), which gives about 173 km.\nKey takeaway: choose numbers so that 2Rh is a perfect square — a common trick in these questions.\nAnswer: 224",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_PHY_B10",
@@ -1553,7 +1553,7 @@
     11
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Fe³⁺ reacts with ferrocyanide [Fe(CN)₆]⁴⁻ to give Prussian blue. The composition depends on which reagent is in excess.\nSolution:\n1. With excess K₄[Fe(CN)₆], the product is \"soluble Prussian blue\", KFe[Fe(CN)₆], which forms a colloidal dispersion (K⁺ ions keep the particles charged).\n2. With excess Fe³⁺, the insoluble form Fe₄[Fe(CN)₆]₃ precipitates.\n3. The question specifies excess ferrocyanide → KFe[Fe(CN)₆].\nWhy others are wrong:\n- (A) is the insoluble form (excess Fe³⁺).\n- (B) and (C) are not the standard products.\nKey takeaway: Prussian blue formation is the basis of the test for nitrogen in Lassaigne's extract.\nAnswer: (D)",
+   "explanation": "Concept: Fe³⁺ reacts with ferrocyanide [Fe(CN)₆]⁴⁻ to give Prussian blue. The composition depends on which reagent is in excess.\nSolution:\n1. With excess K₄[Fe(CN)₆], the product is \"soluble Prussian blue\", KFe[Fe(CN)₆], which forms a colloidal dispersion (K⁺ ions keep the particles charged).\n2. With excess Fe³⁺, the insoluble form Fe₄[Fe(CN)₆]₃ precipitates.\n3. The question specifies excess ferrocyanide → KFe[Fe(CN)₆].\nWhy others are wrong:\n- (A) is the insoluble form (excess Fe³⁺).\n- (B) and (C) are not the standard products.\nWhy the colour: Prussian blue contains Fe(II) and Fe(III) linked by cyanide bridges; charge transfer between them absorbs orange-red light, so the compound looks deep blue.\nCommon mistake: Picking Fe₄[Fe(CN)₆]₃ automatically; that insoluble form needs excess Fe³⁺, not excess ferrocyanide.\nKey takeaway: Prussian blue formation is the basis of the test for nitrogen in Lassaigne's extract.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_A11",
@@ -1623,7 +1623,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Calcium sulphate forms hydrates that differ in water content.\nSolution:\n1. Gypsum: CaSO₄·2H₂O → 2 water molecules.\n2. Dead-burnt plaster: anhydrous CaSO₄ (formed above ~473 K) → 0.\n3. Plaster of Paris: CaSO₄·½H₂O (formed at 393 K) → 0.5.\n4. Sequence: 2, 0, 0.5.\nWhy others are wrong:\n- (A) gives plaster of Paris 1 H₂O.\n- (B) and (C) misassign gypsum.\nKey takeaway: plaster of Paris sets by rehydration to gypsum; dead-burnt plaster has lost the ability to set.\nAnswer: (D)",
+   "explanation": "Concept: Calcium sulphate forms hydrates that differ in water content.\nSolution:\n1. Gypsum: CaSO₄·2H₂O → 2 water molecules.\n2. Dead-burnt plaster: anhydrous CaSO₄ (formed above ~473 K) → 0.\n3. Plaster of Paris: CaSO₄·½H₂O (formed at 393 K) → 0.5.\n4. Sequence: 2, 0, 0.5.\nWhy others are wrong:\n- (A) gives plaster of Paris 1 H₂O.\n- (B) and (C) misassign gypsum.\nTemperatures: Heating gypsum at 393 K gives plaster of Paris (2CaSO₄·H₂O); heating above 473 K removes all the water, giving dead-burnt plaster.\nCommon mistake: Writing plaster of Paris as CaSO₄·H₂O (1 water); it is one water per two CaSO₄, that is, ½ per formula unit.\nKey takeaway: plaster of Paris sets by rehydration to gypsum; dead-burnt plaster has lost the ability to set.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_A13",
@@ -1658,7 +1658,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For a given transition metal, oxides in low oxidation states are basic, intermediate states are amphoteric, and high oxidation states are acidic (the metal becomes more covalent/electronegative).\nSolution:\n1. V₂O₃: V is +3 (low) → basic.\n2. CrO: Cr is +2 (low) → basic.\n3. So X = basic, Y = basic.\nComparison: V₂O₄ (+4) is amphoteric, V₂O₅ (+5) acidic; Cr₂O₃ (+3) amphoteric, CrO₃ (+6) acidic.\nWhy others are wrong:\n- (A), (B), (C) assign amphoteric or acidic character to low-oxidation-state oxides.\nKey takeaway: acidity of oxides rises with the oxidation state of the metal.\nAnswer: (D)",
+   "explanation": "Concept: For a given transition metal, oxides in low oxidation states are basic, intermediate states are amphoteric, and high oxidation states are acidic (the metal becomes more covalent/electronegative).\nSolution:\n1. V₂O₃: V is +3 (low) → basic.\n2. CrO: Cr is +2 (low) → basic.\n3. So X = basic, Y = basic.\nComparison: V₂O₄ (+4) is amphoteric, V₂O₅ (+5) acidic; Cr₂O₃ (+3) amphoteric, CrO₃ (+6) acidic.\nWhy others are wrong:\n- (A), (B), (C) assign amphoteric or acidic character to low-oxidation-state oxides.\nWhy low oxidation states are basic: A low-charge metal ion forms ionic M–O bonds, so the oxide releases O²⁻/OH⁻ and neutralises acids. A high-charge metal polarises the oxygen strongly, making the M–O bond covalent and the oxide acidic.\nCommon mistake: Assuming V₂O₃ is amphoteric like V₂O₄ or Cr₂O₃; its +3 state is still low for vanadium.\nKey takeaway: acidity of oxides rises with the oxidation state of the metal.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_A14",
@@ -1703,7 +1703,7 @@
      ]
     }
    ],
-   "explanation": "Concept: Nucleobases can exist as keto (lactam) or enol (lactim) tautomers. In nucleic acids they exist predominantly in the keto form, which gives the correct hydrogen-bonding pattern for base pairing.\nSolution:\n1. Uracil in RNA: pyrimidine-2,4(1H,3H)-dione — both oxygens as C=O and both ring nitrogens bearing H (diketo form).\n2. This form pairs with adenine via two hydrogen bonds.\nWhy others are wrong:\n- (A) is the di-enol (2,4-dihydroxypyrimidine) form.\n- (B) and (C) are mixed keto–enol tautomers, which would mispair.\nKey takeaway: rare tautomers can cause mutations by mispairing during replication.\nAnswer: (D)",
+   "explanation": "Concept: Nucleobases can exist as keto (lactam) or enol (lactim) tautomers. In nucleic acids they exist predominantly in the keto form, which gives the correct hydrogen-bonding pattern for base pairing.\nSolution:\n1. Uracil in RNA: pyrimidine-2,4(1H,3H)-dione — both oxygens as C=O and both ring nitrogens bearing H (diketo form).\n2. This form pairs with adenine via two hydrogen bonds.\nWhy others are wrong:\n- (A) is the di-enol (2,4-dihydroxypyrimidine) form.\n- (B) and (C) are mixed keto–enol tautomers, which would mispair.\nWhy the keto form matters: In the diketo form, N3–H acts as a hydrogen-bond donor and C4=O as an acceptor, which matches adenine's pattern exactly. An enol tautomer would present the wrong donor/acceptor pattern and could pair with guanine instead, causing mutations.\nKey takeaway: rare tautomers can cause mutations by mispairing during replication.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_A15",
@@ -1810,7 +1810,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In the van der Waals equation, every term added to P must have pressure units. So $\\frac{an^2}{V^2}$ is a pressure.\nSolution:\n1. $a = \\frac{P\\cdot V^2}{n^2}$.\n2. Units: atm × (dm³)² / mol² = atm dm⁶ mol⁻² (or Pa m⁶ mol⁻² = N m⁴ mol⁻²).\nWhy others are wrong:\n- (B) dm³ mol⁻¹ is the unit of b (excluded volume per mole).\n- (A) kg m s⁻² is the unit of force.\n- (C) kg m s⁻¹ is the unit of momentum.\nKey takeaway: 'a' measures intermolecular attraction; 'b' measures molecular size.\nAnswer: (D)",
+   "explanation": "Concept: In the van der Waals equation, every term added to P must have pressure units. So $\\frac{an^2}{V^2}$ is a pressure.\nSolution:\n1. $a = \\frac{P\\cdot V^2}{n^2}$.\n2. Units: atm × (dm³)² / mol² = atm dm⁶ mol⁻² (or Pa m⁶ mol⁻² = N m⁴ mol⁻²).\nWhy others are wrong:\n- (B) dm³ mol⁻¹ is the unit of b (excluded volume per mole).\n- (A) kg m s⁻² is the unit of force.\n- (C) kg m s⁻¹ is the unit of momentum.\nSI units: a = Pa m⁶ mol⁻², equivalent to N m⁴ mol⁻² or kg m⁵ s⁻² mol⁻².\nCommon mistake: Picking dm³ mol⁻¹, which belongs to b, the volume correction term; a is the pressure correction.\nKey takeaway: 'a' measures intermolecular attraction; 'b' measures molecular size.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_A18",
@@ -1910,7 +1910,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Carius method: all bromine forms AgBr (M = 188). %Br $= \\frac{80}{188}\\times\\frac{m_{AgBr}}{m_{compound}}\\times100$.\nSolution:\n1. $\\frac{80}{188}\\times\\frac{0.188}{0.2}\\times100 = \\frac{80\\times0.188\\times100}{188\\times0.2} = \\frac{1504}{37.6} = 40\\%$.\nKey takeaway: 0.188 g AgBr is exactly 1 mmol, containing 0.080 g Br — a quick mental check.\nAnswer: 40",
+   "explanation": "Concept: Carius method: all bromine forms AgBr (M = 188). %Br $= \\frac{80}{188}\\times\\frac{m_{AgBr}}{m_{compound}}\\times100$.\nSolution:\n1. $\\frac{80}{188}\\times\\frac{0.188}{0.2}\\times100 = \\frac{80\\times0.188\\times100}{188\\times0.2} = \\frac{1504}{37.6} = 40\\%$.\nMethod: The organic compound is heated with fuming HNO₃ and AgNO₃ in a sealed (Carius) tube, so the bromine is converted quantitatively to AgBr, which is filtered, dried and weighed.\nCommon mistake: Using the atomic mass of Ag (108) instead of the formula mass of AgBr (188) in the ratio.\nKey takeaway: 0.188 g AgBr is exactly 1 mmol, containing 0.080 g Br — a quick mental check.\nAnswer: 40",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B01",
@@ -1940,7 +1940,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For aA + bB → cC + dD, the rate is $-\\frac{1}{a}\\frac{d[A]}{dt} = \\frac{1}{c}\\frac{d[C]}{dt}$.\nSolution:\n1. Coefficients: Cr₂(SO₄)₃ = 2, C₂H₆O = 3.\n2. $-\\frac{1}{3}\\frac{d[C_2H_6O]}{dt} = \\frac{1}{2}\\frac{d[Cr_2(SO_4)_3]}{dt}$.\n3. $-\\frac{d[C_2H_6O]}{dt} = \\frac{3}{2}\\times2.67 = 4.0$ mol min⁻¹.\nKey takeaway: in the breath analyser, orange Cr(VI) turns green Cr(III) as ethanol is oxidised to acetic acid.\nAnswer: 4",
+   "explanation": "Concept: For aA + bB → cC + dD, the rate is $-\\frac{1}{a}\\frac{d[A]}{dt} = \\frac{1}{c}\\frac{d[C]}{dt}$.\nSolution:\n1. Coefficients: Cr₂(SO₄)₃ = 2, C₂H₆O = 3.\n2. $-\\frac{1}{3}\\frac{d[C_2H_6O]}{dt} = \\frac{1}{2}\\frac{d[Cr_2(SO_4)_3]}{dt}$.\n3. $-\\frac{d[C_2H_6O]}{dt} = \\frac{3}{2}\\times2.67 = 4.0$ mol min⁻¹.\nBalance check: 2 K₂Cr₂O₇ give 2 Cr₂(SO₄)₃, oxidising 3 C₂H₅OH to 3 CH₃COOH, so ethanol disappears 3/2 times as fast as the chromium sulphate appears.\nCommon mistake: Using the inverse ratio 2/3, which gives 1.78 mol min⁻¹.\nKey takeaway: in the breath analyser, orange Cr(VI) turns green Cr(III) as ethanol is oxidised to acetic acid.\nAnswer: 4",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B02",
@@ -1970,7 +1970,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In Bohr's model, mvr = $\\frac{nh}{2\\pi}$, so $KE = \\frac{1}{2}mv^2 = \\frac{n^2h^2}{8\\pi^2mr^2}$, with $r_n = n^2a_0$.\nSolution:\n1. n = 2: r = 4a₀.\n2. $KE = \\frac{4h^2}{8\\pi^2m(16a_0^2)} = \\frac{h^2}{32\\pi^2ma_0^2}$.\n3. x = 32π² = 32 × 9.8596 = 315.5; 10x ≈ 3155.\nKey takeaway: KE in the nth orbit scales as $\\frac{1}{n^2}$ — here one quarter of the ground-state value.\nAnswer: 3155",
+   "explanation": "Concept: In Bohr's model, mvr = $\\frac{nh}{2\\pi}$, so $KE = \\frac{1}{2}mv^2 = \\frac{n^2h^2}{8\\pi^2mr^2}$, with $r_n = n^2a_0$.\nSolution:\n1. n = 2: r = 4a₀.\n2. $KE = \\frac{4h^2}{8\\pi^2m(16a_0^2)} = \\frac{h^2}{32\\pi^2ma_0^2}$.\n3. x = 32π² = 32 × 9.8596 = 315.5; 10x ≈ 3155.\nWhy the expression: From mvr = nh/2π, v = nh/(2πmr). Squaring and multiplying by m/2 gives KE = n²h²/(8π²mr²).\nCommon mistake: Taking r₂ = 2a₀ instead of 4a₀ (r ∝ n²), which gives x = 8π² and 10x ≈ 789.\nKey takeaway: KE in the nth orbit scales as $\\frac{1}{n^2}$ — here one quarter of the ground-state value.\nAnswer: 3155",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B03",
@@ -2030,7 +2030,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Only chloride ions outside the coordination sphere precipitate with AgNO₃. For an octahedral complex, coordination number = 6.\nSolution:\n1. 1 mol AgCl per mol complex → 1 ionisable Cl⁻ → [MCl₂(L)₂]Cl.\n2. Donor sites: 2 (from Cl) + 2 × (denticity of L) = 6.\n3. Denticity of L = 2 (bidentate, e.g. ethylenediamine).\nAnswer: 2",
+   "explanation": "Concept: Only chloride ions outside the coordination sphere precipitate with AgNO₃. For an octahedral complex, coordination number = 6.\nSolution:\n1. 1 mol AgCl per mol complex → 1 ionisable Cl⁻ → [MCl₂(L)₂]Cl.\n2. Donor sites: 2 (from Cl) + 2 × (denticity of L) = 6.\n3. Denticity of L = 2 (bidentate, e.g. ethylenediamine).\nWhy only one chloride: The two Cl⁻ bonded directly to M are inside the coordination sphere and do not ionise; only the counter-ion Cl⁻ precipitates as AgCl.\nCommon mistake: Assuming all 3 Cl are ionic, which would leave 6 donor sites for the two L ligands (tridentate), contradicting the AgCl data.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B05",
@@ -2090,7 +2090,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Neptunium (Z = 93), an actinide, has the ground-state configuration [Rn]5f⁴6d¹7s².\nSolution:\n1. The valence 5f subshell contains 4 electrons — the official answer.\nNote: Official NTA answer is 4; ALLEN's answer is 18, which also counts the filled 4f¹⁴ core (14 + 4). The official key counts only the 5f electrons.\nKey takeaway: early actinides (Pa, U, Np) have 6d¹ configurations because 5f and 6d energies are very close.\nAnswer: 4",
+   "explanation": "Concept: Neptunium (Z = 93), an actinide, has the ground-state configuration [Rn]5f⁴6d¹7s².\nSolution:\n1. The valence 5f subshell contains 4 electrons — the official answer.\nNote: Official NTA answer is 4; ALLEN's answer is 18, which also counts the filled 4f¹⁴ core (14 + 4). The official key counts only the 5f electrons.\nWhy 6d¹: In the early actinides, the 5f and 6d orbitals are very close in energy, so one electron occupies 6d, as in U ([Rn]5f³6d¹7s²) and Np ([Rn]5f⁴6d¹7s²).\nThe stored answer follows the official NTA key (4 electrons in 5f).\nKey takeaway: early actinides (Pa, U, Np) have 6d¹ configurations because 5f and 6d energies are very close.\nAnswer: 4",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B07",
@@ -2122,7 +2122,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Heat released in neutralisation = (moles of water formed) × 57.1 kJ; the limiting reagent decides. Temperature rise ΔT = q/(mc).\nSolution:\n1. HCl: 0.2 L × 0.2 M = 0.04 mol; NaOH: 0.3 L × 0.1 M = 0.03 mol (limiting).\n2. q = 0.03 × 57100 = 1713 J.\n3. Total volume 500 mL → mass 500 g.\n4. ΔT = $\\frac{1713}{500\\times4.18} = 0.82$ °C = 82 × 10⁻².\nKey takeaway: compare the moles of H⁺ and OH⁻ first; only the smaller amount reacts.\nAnswer: 82",
+   "explanation": "Concept: Heat released in neutralisation = (moles of water formed) × 57.1 kJ; the limiting reagent decides. Temperature rise ΔT = q/(mc).\nSolution:\n1. HCl: 0.2 L × 0.2 M = 0.04 mol; NaOH: 0.3 L × 0.1 M = 0.03 mol (limiting).\n2. q = 0.03 × 57100 = 1713 J.\n3. Total volume 500 mL → mass 500 g.\n4. ΔT = $\\frac{1713}{500\\times4.18} = 0.82$ °C = 82 × 10⁻².\nWhy 500 g: The total solution volume is 500 mL, and with density 1 g/mL (dilute aqueous solutions) its mass is 500 g. The heat warms all of it.\nCommon mistake: Using 0.04 mol (the excess HCl) as the moles reacted, which gives 1.09 °C.\nKey takeaway: compare the moles of H⁺ and OH⁻ first; only the smaller amount reacts.\nAnswer: 82",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B08",
@@ -2152,7 +2152,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺, $K_f = \\frac{[\\text{complex}]}{[Ag^+][NH_3]^2} = 10^8$. Since Ag⁺ must fall to 5 × 10⁻⁸ M, essentially all silver (0.8 M) is complexed.\nSolution:\n1. [complex] ≈ 0.80 M.\n2. $[NH_3]^2 = \\frac{0.80}{5\\times10^{-8}\\times10^8} = \\frac{0.80}{5} = 0.16$ → free [NH₃] = 0.4 M.\n3. NH₃ used in the complex: 2 × 0.8 = 1.6 M.\n4. Total NH₃ = (1.6 + 0.4) M × 2 L = 4 mol.\nKey takeaway: remember to add the free ligand left in solution to the ligand bound in the complex.\nAnswer: 4",
+   "explanation": "Concept: Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺, $K_f = \\frac{[\\text{complex}]}{[Ag^+][NH_3]^2} = 10^8$. Since Ag⁺ must fall to 5 × 10⁻⁸ M, essentially all silver (0.8 M) is complexed.\nSolution:\n1. [complex] ≈ 0.80 M.\n2. $[NH_3]^2 = \\frac{0.80}{5\\times10^{-8}\\times10^8} = \\frac{0.80}{5} = 0.16$ → free [NH₃] = 0.4 M.\n3. NH₃ used in the complex: 2 × 0.8 = 1.6 M.\n4. Total NH₃ = (1.6 + 0.4) M × 2 L = 4 mol.\nCheck: [complex]/([Ag⁺][NH₃]²) = 0.8/(5 × 10⁻⁸ × 0.16) = 0.8/(8 × 10⁻⁹) = 10⁸ ✓.\nCommon mistake: Adding only the bound NH₃ (1.6 M × 2 L = 3.2 mol), which ignores the free ammonia needed to hold the equilibrium.\nKey takeaway: remember to add the free ligand left in solution to the ligand bound in the complex.\nAnswer: 4",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B09",
@@ -2182,7 +2182,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In acidic medium, MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (n-factor 5), Fe²⁺ → Fe³⁺ + e⁻ (n-factor 1). At equivalence: $n_1M_1V_1 = n_2M_2V_2$.\nSolution:\n1. $5\\times M\\times10 = 1\\times0.1\\times10 \\Rightarrow M = 0.02$ M.\n2. Molar mass of KMnO₄ = 39 + 55 + 64 = 158 g/mol.\n3. Strength = 0.02 × 158 = 3.16 g/L = 316 × 10⁻² g/L.\nKey takeaway: KMnO₄ is self-indicating — the end point is the first permanent pink colour.\nAnswer: 316",
+   "explanation": "Concept: In acidic medium, MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (n-factor 5), Fe²⁺ → Fe³⁺ + e⁻ (n-factor 1). At equivalence: $n_1M_1V_1 = n_2M_2V_2$.\nSolution:\n1. $5\\times M\\times10 = 1\\times0.1\\times10 \\Rightarrow M = 0.02$ M.\n2. Molar mass of KMnO₄ = 39 + 55 + 64 = 158 g/mol.\n3. Strength = 0.02 × 158 = 3.16 g/L = 316 × 10⁻² g/L.\nWhy n = 5: In acid, Mn goes from +7 in MnO₄⁻ to +2 in Mn²⁺, a change of 5 electrons per ion. Fe goes from +2 to +3, 1 electron.\nCommon mistake: Using the neutral or basic n-factor (3, MnO₄⁻ → MnO₂), which gives 5.27 g/L.\nKey takeaway: KMnO₄ is self-indicating — the end point is the first permanent pink colour.\nAnswer: 316",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_CHE_B10",
@@ -2602,7 +2602,7 @@
     19
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $f(x) + xf'(x) = \\frac{d}{dx}[xf(x)]$ (product rule).\nSolution:\n1. $\\frac{d}{dx}(xf) = x^2 \\Rightarrow xf(x) = \\frac{x^3}{3} + C$.\n2. Through (−2, 2): (−2)(2) = $-\\frac{8}{3} + C$ ⇒ C = $-\\frac{4}{3}$.\n3. $3xf(x) = x^3 - 4 \\Rightarrow x^3 - 3xf(x) - 4 = 0$.\nWhy others are wrong:\n- (A), (B), (D) come from integrating the wrong expression or mis-evaluating C.\nKey takeaway: spotting a product-rule derivative turns a differential equation into direct integration.\nAnswer: (C)",
+   "explanation": "Concept: $f(x) + xf'(x) = \\frac{d}{dx}[xf(x)]$ (product rule).\nSolution:\n1. $\\frac{d}{dx}(xf) = x^2 \\Rightarrow xf(x) = \\frac{x^3}{3} + C$.\n2. Through (−2, 2): (−2)(2) = $-\\frac{8}{3} + C$ ⇒ C = $-\\frac{4}{3}$.\n3. $3xf(x) = x^3 - 4 \\Rightarrow x^3 - 3xf(x) - 4 = 0$.\nWhy others are wrong:\n- (A), (B), (D) come from integrating the wrong expression or mis-evaluating C.\nCheck the point: At x = −2, x³ − 3xf(x) − 4 = −8 − 3(−2)(2) − 4 = −8 + 12 − 4 = 0 ✓.\nCommon mistake: Treating f + xf′ = x² as a linear equation in f and computing an integrating factor; that works but is slower than spotting d(xf)/dx.\nKey takeaway: spotting a product-rule derivative turns a differential equation into direct integration.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_A12",
@@ -2637,7 +2637,7 @@
     19
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Vandermonde's identity: $\\sum_k\\binom{m}{k}\\binom{n}{r - k} = \\binom{m + n}{r}$. With m = n and r = n, and $\\binom{n}{n - k} = \\binom{n}{k}$: $\\sum_k\\binom{n}{k}^2 = \\binom{2n}{n}$.\nSolution:\n1. n = 20: $\\sum_{k=0}^{20}\\binom{20}{k}^2 = \\binom{40}{20}$.\n2. Combinatorial view: choosing 20 people from 20 men and 20 women, splitting by k men chosen.\nWhy others are wrong:\n- (A) and (B) $\\binom{40}{21} = \\binom{40}{19}$ correspond to $\\sum\\binom{20}{k}\\binom{20}{k + 1}$.\n- (D) $\\binom{41}{20}$ has no basis here.\nKey takeaway: coefficient of $x^{20}$ in $(1 + x)^{20}(1 + x)^{20}$ gives this sum directly.\nAnswer: (C)",
+   "explanation": "Concept: Vandermonde's identity: $\\sum_k\\binom{m}{k}\\binom{n}{r - k} = \\binom{m + n}{r}$. With m = n and r = n, and $\\binom{n}{n - k} = \\binom{n}{k}$: $\\sum_k\\binom{n}{k}^2 = \\binom{2n}{n}$.\nSolution:\n1. n = 20: $\\sum_{k=0}^{20}\\binom{20}{k}^2 = \\binom{40}{20}$.\n2. Combinatorial view: choosing 20 people from 20 men and 20 women, splitting by k men chosen.\nWhy others are wrong:\n- (A) and (B) $\\binom{40}{21} = \\binom{40}{19}$ correspond to $\\sum\\binom{20}{k}\\binom{20}{k + 1}$.\n- (D) $\\binom{41}{20}$ has no basis here.\nQuick check for small n: n = 2 gives 1² + 2² + 1² = 6 = C(4, 2) ✓.\nCommon mistake: Confusing Σ C(n, k)² with Σ C(n, k) = 2ⁿ; squaring the coefficients gives the central coefficient of (1 + x)^{2n}.\nKey takeaway: coefficient of $x^{20}$ in $(1 + x)^{20}(1 + x)^{20}$ gives this sum directly.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_A13",
@@ -2812,7 +2812,7 @@
     20
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Complete the square to recognise an ellipse; the coordinate ranges follow from its semi-axes.\nSolution:\n1. $x^2 - 4x + 4 + 9y^2 = 1 \\Rightarrow (x - 2)^2 + 9y^2 = 1$.\n2. Ellipse centred at (2, 0) with semi-axes 1 (x-direction) and ⅓ (y-direction).\n3. |x − 2| ≤ 1 ⇒ x ∈ [1, 3]; |y| ≤ ⅓ ⇒ y ∈ [−⅓, ⅓].\nWhy others are wrong:\n- (A), (B), (C) assign the intervals to the wrong variables.\nKey takeaway: each squared term must be ≤ 1 when the sum of squares equals 1.\nAnswer: (D)",
+   "explanation": "Concept: Complete the square to recognise an ellipse; the coordinate ranges follow from its semi-axes.\nSolution:\n1. $x^2 - 4x + 4 + 9y^2 = 1 \\Rightarrow (x - 2)^2 + 9y^2 = 1$.\n2. Ellipse centred at (2, 0) with semi-axes 1 (x-direction) and ⅓ (y-direction).\n3. |x − 2| ≤ 1 ⇒ x ∈ [1, 3]; |y| ≤ ⅓ ⇒ y ∈ [−⅓, ⅓].\nWhy others are wrong:\n- (A), (B), (C) assign the intervals to the wrong variables.\nGeometric picture: The curve is a flat ellipse centred at (2, 0), stretching from x = 1 to x = 3 horizontally but only from −⅓ to ⅓ vertically.\nCommon mistake: Forgetting to divide by 9 when finding the y semi-axis: 9y² ≤ 1 gives |y| ≤ ⅓, not |y| ≤ 1.\nKey takeaway: each squared term must be ≤ 1 when the sum of squares equals 1.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_A18",
@@ -3032,7 +3032,7 @@
     22
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Complete the square: x² + x + 1 = t² + k² with t = x + ½, k² = ¾. Standard result: $\\int\\frac{dt}{(t^2 + k^2)^2} = \\frac{t}{2k^2(t^2 + k^2)} + \\frac{1}{2k^3}\\tan^{-1}\\frac{t}{k}$.\nSolution:\n1. First term: $\\frac{x + \\frac{1}{2}}{2\\cdot\\frac{3}{4}(x^2 + x + 1)} = \\frac{2x + 1}{3(x^2 + x + 1)}$ ⇒ b = ⅓.\n2. Second term: $\\frac{1}{2k^3} = \\frac{1}{2\\cdot\\frac{3\\sqrt3}{8}} = \\frac{4}{3\\sqrt3}$, with $\\frac{t}{k} = \\frac{2x + 1}{\\sqrt3}$ ⇒ a = $\\frac{4}{3\\sqrt3}$.\n3. $\\sqrt3a + b = \\frac{4}{3} + \\frac{1}{3} = \\frac{5}{3}$; $9(\\sqrt3a + b) = 15$.\nAnswer: 15",
+   "explanation": "Concept: Complete the square: x² + x + 1 = t² + k² with t = x + ½, k² = ¾. Standard result: $\\int\\frac{dt}{(t^2 + k^2)^2} = \\frac{t}{2k^2(t^2 + k^2)} + \\frac{1}{2k^3}\\tan^{-1}\\frac{t}{k}$.\nSolution:\n1. First term: $\\frac{x + \\frac{1}{2}}{2\\cdot\\frac{3}{4}(x^2 + x + 1)} = \\frac{2x + 1}{3(x^2 + x + 1)}$ ⇒ b = ⅓.\n2. Second term: $\\frac{1}{2k^3} = \\frac{1}{2\\cdot\\frac{3\\sqrt3}{8}} = \\frac{4}{3\\sqrt3}$, with $\\frac{t}{k} = \\frac{2x + 1}{\\sqrt3}$ ⇒ a = $\\frac{4}{3\\sqrt3}$.\n3. $\\sqrt3a + b = \\frac{4}{3} + \\frac{1}{3} = \\frac{5}{3}$; $9(\\sqrt3a + b) = 15$.\nFinal step: √3a + b = 5/3, so 9 × 5/3 = 15.\nCommon mistake: Losing the factor ½ in 1/(2k³) or 1/(2k²), which doubles a or b. The reduction formula comes from integrating 1/(t² + k²) by parts.\nAnswer: 15",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_B05",
@@ -3062,7 +3062,7 @@
     22
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Infinitely many solutions require det = 0 and the dependent equation to be consistent.\nSolution:\n1. det $= \\begin{vmatrix}2&1&-1\\\\1&-1&-1\\\\3&3&\\beta\\end{vmatrix} = 2(-\\beta + 3) - (\\beta + 3) - 6 = -3\\beta - 3 = 0$ ⇒ β = −1.\n2. With β = −1: 2·(eq1) − (eq2) = (3, 3, −1), which matches eq3's coefficients.\n3. RHS: 2(3) − α = 3 ⇒ α = 3.\n4. α + β − αβ = 3 − 1 + 3 = 5.\nAnswer: 5",
+   "explanation": "Concept: Infinitely many solutions require det = 0 and the dependent equation to be consistent.\nSolution:\n1. det $= \\begin{vmatrix}2&1&-1\\\\1&-1&-1\\\\3&3&\\beta\\end{vmatrix} = 2(-\\beta + 3) - (\\beta + 3) - 6 = -3\\beta - 3 = 0$ ⇒ β = −1.\n2. With β = −1: 2·(eq1) − (eq2) = (3, 3, −1), which matches eq3's coefficients.\n3. RHS: 2(3) − α = 3 ⇒ α = 3.\n4. α + β − αβ = 3 − 1 + 3 = 5.\nWhy the RHS must match: When det = 0, one equation is a combination of the others. For infinitely many solutions (not none), the right-hand sides must follow the same combination: 2 × 3 − α = 3.\nCommon mistake: Stopping at det = 0 (β = −1) and not fixing α, which leaves the system possibly inconsistent.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_B06",
@@ -3092,7 +3092,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For the first n natural numbers, mean = $\\frac{n + 1}{2}$ and variance = $\\frac{n^2 - 1}{12}$.\nSolution:\n1. $\\frac{n^2 - 1}{12} = 14 \\Rightarrow n^2 = 169 \\Rightarrow n = 13$ (odd ✓).\nDerivation: $\\frac{\\sum k^2}{n} - \\left(\\frac{n + 1}{2}\\right)^2 = \\frac{(n + 1)(2n + 1)}{6} - \\frac{(n + 1)^2}{4} = \\frac{n^2 - 1}{12}$.\nAnswer: 13",
+   "explanation": "Concept: For the first n natural numbers, mean = $\\frac{n + 1}{2}$ and variance = $\\frac{n^2 - 1}{12}$.\nSolution:\n1. $\\frac{n^2 - 1}{12} = 14 \\Rightarrow n^2 = 169 \\Rightarrow n = 13$ (odd ✓).\nDerivation: $\\frac{\\sum k^2}{n} - \\left(\\frac{n + 1}{2}\\right)^2 = \\frac{(n + 1)(2n + 1)}{6} - \\frac{(n + 1)^2}{4} = \\frac{n^2 - 1}{12}$.\nWhy odd matters: n² = 169 gives n = ±13, and only the positive odd value is valid.\nCommon mistake: Using the variance formula (n² + 1)/12 or (n² − 1)/6, which gives non-integer n.\nAnswer: 13",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_B07",
@@ -3122,7 +3122,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For an ellipse with semi-axes p (along x) and q (along y), the tangent at (p cos θ, q sin θ) is $\\frac{x\\cos\\theta}{p} + \\frac{y\\sin\\theta}{q} = 1$, meeting the axes at $\\frac{p}{\\cos\\theta}$ and $\\frac{q}{\\sin\\theta}$.\nSolution:\n1. Triangle area $= \\frac{1}{2}\\cdot\\frac{p}{\\cos\\theta}\\cdot\\frac{q}{\\sin\\theta} = \\frac{pq}{\\sin2\\theta} \\ge pq$.\n2. Here p = b and q = 2a (from $\\frac{y^2}{4a^2}$).\n3. Minimum area = 2ab ⇒ k = 2.\nKey takeaway: the minimum occurs at θ = 45° (sin 2θ = 1).\nAnswer: 2",
+   "explanation": "Concept: For an ellipse with semi-axes p (along x) and q (along y), the tangent at (p cos θ, q sin θ) is $\\frac{x\\cos\\theta}{p} + \\frac{y\\sin\\theta}{q} = 1$, meeting the axes at $\\frac{p}{\\cos\\theta}$ and $\\frac{q}{\\sin\\theta}$.\nSolution:\n1. Triangle area $= \\frac{1}{2}\\cdot\\frac{p}{\\cos\\theta}\\cdot\\frac{q}{\\sin\\theta} = \\frac{pq}{\\sin2\\theta} \\ge pq$.\n2. Here p = b and q = 2a (from $\\frac{y^2}{4a^2}$).\n3. Minimum area = 2ab ⇒ k = 2.\nWatch the axes: Here b² sits under x² and 4a² under y², so the x semi-axis is b and the y semi-axis is 2a (not a).\nCommon mistake: Using q = a (forgetting the square root of 4a²), which gives k = 1.\nKey takeaway: the minimum occurs at θ = 45° (sin 2θ = 1).\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_B08",
@@ -3152,7 +3152,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A six-digit palindrome abccba = 100001a + 10010b + 1100c. Each coefficient is divisible by 11, so every even-length palindrome is divisible by 11. Divisibility by 55 then needs divisibility by 5.\nSolution:\n1. Last digit = a must be 0 or 5; a is also the first digit, so a ≠ 0 ⇒ a = 5.\n2. b and c are free: 10 × 10 = 100 choices.\n3. Number of palindromes = 100.\nAnswer: 100",
+   "explanation": "Concept: A six-digit palindrome abccba = 100001a + 10010b + 1100c. Each coefficient is divisible by 11, so every even-length palindrome is divisible by 11. Divisibility by 55 then needs divisibility by 5.\nSolution:\n1. Last digit = a must be 0 or 5; a is also the first digit, so a ≠ 0 ⇒ a = 5.\n2. b and c are free: 10 × 10 = 100 choices.\n3. Number of palindromes = 100.\nWhy every even-length palindrome is divisible by 11: By the alternating-sum test, a − b + c − c + b − a = 0, which is divisible by 11.\nCommon mistake: Allowing a = 0, which makes the number five-digit; the first digit must be non-zero.\nAnswer: 100",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_M_MAT_B09",
