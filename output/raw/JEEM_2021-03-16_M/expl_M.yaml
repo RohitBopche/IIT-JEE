@@ -1,210 +1,382 @@
 M A 1: |-
-  Concept: Remove the moduli case by case.
+  Concept: Equations with |x| and |x + 4| are solved by splitting the real line at the points where the expressions inside the moduli change sign (x = 0 and x = −4). Solve in each interval and keep only the roots that lie in it.
   Solution:
-  1. $x \ge 0$: $(x - 3)(x + 4) = 6 \Rightarrow x^2 + x - 18 = 0 \Rightarrow x = \frac{-1 + \sqrt{73}}{2}$ (valid).
-  2. $-4 \le x < 0$: $-(x + 3)(x + 4) = 6 \Rightarrow x^2 + 7x + 18 = 0$, with discriminant $< 0$: none.
-  3. $x < -4$: $(x + 3)(x + 4) = 6 \Rightarrow x = -1$ or $-6$; only $x = -6$ is valid.
-  4. Two solutions.
+  1. Case $x \ge 0$: $|x| = x$ and $|x + 4| = x + 4$. So $(x - 3)(x + 4) = 6$, i.e. $x^2 + x - 18 = 0$, giving $x = \frac{-1 \pm \sqrt{73}}{2}$. Only $\frac{-1 + \sqrt{73}}{2} \approx 3.77$ is non-negative. One solution.
+  2. Case $-4 \le x < 0$: $|x| = -x$ and $|x + 4| = x + 4$. So $(-x - 3)(x + 4) = 6$, i.e. $x^2 + 7x + 18 = 0$. Discriminant $49 - 72 < 0$: no real roots.
+  3. Case $x < -4$: $|x| = -x$ and $|x + 4| = -(x + 4)$. So $(-x - 3)(-(x + 4)) = (x + 3)(x + 4) = 6$, i.e. $x^2 + 7x + 6 = 0$, giving $x = -1$ or $x = -6$. Only $x = -6$ satisfies $x < -4$. One solution.
+  4. Check x = −6: $(6 - 3)\times|-2| = 3\times2 = 6$ ✓.
+  5. Total: 2 elements.
+  Why others are wrong:
+  - (A) 3 would wrongly include x = −1, which is not in the interval x < −4 (check: $(1 - 3)\times3 = -6 \ne 6$).
+  - (C) 4 would also include the negative root from case 1.
+  - (D) 1 misses one of the valid roots.
   Answer: (B)
 M A 2: |-
-  Concept: $\sqrt3\hat i + \hat j$ has length 2 at angle 30°; rotating by 45° gives angle 75°.
+  Concept: Rotating a vector by angle θ about the origin keeps its length and adds θ to its polar angle. So write the vector in polar form first.
   Solution:
-  1. $\alpha = 2\cos75° = \frac{\sqrt6 - \sqrt2}{2}$, $\beta = 2\sin75° = \frac{\sqrt6 + \sqrt2}{2}$.
-  2. The triangle with vertices $(\alpha, \beta)$, $(0, \beta)$, $(0, 0)$ is right-angled with legs $\alpha$ and $\beta$.
-  3. Area $= \frac{1}{2}\alpha\beta = \frac{1}{2}\cdot\frac{6 - 2}{4} = \frac{1}{2}$.
+  1. $\sqrt3\hat i + \hat j$ has length $\sqrt{3 + 1} = 2$ and makes angle $\tan^{-1}\frac{1}{\sqrt3} = 30°$ with the x-axis.
+  2. Rotating it by 45° counterclockwise gives angle 75° and the same length 2.
+  3. $\alpha = 2\cos75° = 2\cdot\frac{\sqrt6 - \sqrt2}{4} = \frac{\sqrt6 - \sqrt2}{2}$, and $\beta = 2\sin75° = \frac{\sqrt6 + \sqrt2}{2}$.
+  4. The triangle has vertices $(\alpha, \beta)$, $(0, \beta)$ and $(0, 0)$. The side from $(0, 0)$ to $(0, \beta)$ is vertical, and the side from $(0, \beta)$ to $(\alpha, \beta)$ is horizontal, so there is a right angle at $(0, \beta)$. The legs have lengths α and β.
+  5. Area $= \frac{1}{2}\alpha\beta = \frac{1}{2}\cdot\frac{(\sqrt6 - \sqrt2)(\sqrt6 + \sqrt2)}{4} = \frac{1}{2}\cdot\frac{6 - 2}{4} = \frac{1}{2}$.
+  Shortcut: $\alpha\beta = 4\sin75°\cos75° = 2\sin150° = 1$, so the area is $\frac{1}{2}$.
+  Why others are wrong:
+  - (B) 1 forgets the factor $\frac{1}{2}$ for a triangle.
+  - (C) and (D) use the rotated vector's length or a 45° angle incorrectly.
   Answer: (A)
 M A 3: |-
-  Concept: $\vec{AC}$ is along the plane's normal, and C lies on the plane.
+  Concept: The foot of the perpendicular C from A to a plane lies on the plane, and $\vec{CA}$ is parallel to the plane's normal. Here the plane passes through the origin ($lx + my + nz = 0$), which gives an extra condition.
   Solution:
-  1. Normal $\parallel \vec{CA} = (a, -a, 4)$. C on the plane: $a\cdot0 - a(-a) + 4(-1) = 0 \Rightarrow a = 2$.
-  2. Plane: $2x - 2y + 4z = 0$, i.e. $x - y + 2z = 0$.
-  3. Foot from B(0, 4, 5): $t = \frac{0 - 4 + 10}{6} = 1$, so $D = (0, 4, 5) - (1, -1, 2) = (-1, 5, 3)$.
-  4. $CD = |(-1, 7, 4)| = \sqrt{66}$.
+  1. $\vec{CA} = A - C = (a - 0, -2a + a, 3 + 1) = (a, -a, 4)$. This is along the normal, so take $(l, m, n) = (a, -a, 4)$.
+  2. C lies on the plane: $a(0) + (-a)(-a) + 4(-1) = 0$, so $a^2 = 4$. With a > 0, a = 2.
+  3. Plane: $2x - 2y + 4z = 0$, i.e. $x - y + 2z = 0$, with normal $\vec n = (1, -1, 2)$ and $|\vec n|^2 = 6$.
+  4. Foot from B(0, 4, 5): $D = B - \frac{\vec n\cdot B}{|\vec n|^2}\vec n$. $\vec n\cdot B = 0 - 4 + 10 = 6$, so the factor is $\frac{6}{6} = 1$.
+  5. $D = (0, 4, 5) - (1, -1, 2) = (-1, 5, 3)$. Check: $-1 - 5 + 6 = 0$ ✓.
+  6. With a = 2, $C = (0, -2, -1)$. Then $\vec{CD} = (-1, 7, 4)$ and $CD = \sqrt{1 + 49 + 16} = \sqrt{66}$.
+  Why others are wrong: (A), (B) and (C) come from arithmetic slips, e.g. using $C = (0, -a, -1)$ without substituting a = 2, or taking the foot with the wrong sign.
   Answer: (D)
 M A 4: |-
-  Concept: SD is unchanged by adding a constant; $\sigma^2 = \frac{\sum x^2}{n} - \bar x^2$.
+  Concept: Standard deviation is unchanged when a constant is added to every observation. Variance can be written as $\sigma^2 = \frac{\sum x_i^2}{n} - \bar x^2$.
   Solution:
-  1. $d$ is the SD of $a, b, c$; the mean is $\frac{a + b + c}{3} = \frac{2b}{3}$.
-  2. $d^2 = \frac{a^2 + b^2 + c^2}{3} - \frac{4b^2}{9} \Rightarrow 9d^2 = 3(a^2 + c^2) - b^2$.
-  3. $b^2 = 3(a^2 + c^2) - 9d^2$.
+  1. The SD of $a + 2, b + 2, c + 2$ equals the SD of $a, b, c$. So d is the SD of a, b, c.
+  2. Mean: $\bar x = \frac{a + b + c}{3}$. With $a + c = b$, this is $\frac{2b}{3}$.
+  3. Variance: $d^2 = \frac{a^2 + b^2 + c^2}{3} - \left(\frac{2b}{3}\right)^2 = \frac{a^2 + b^2 + c^2}{3} - \frac{4b^2}{9}$.
+  4. Multiply by 9: $9d^2 = 3(a^2 + b^2 + c^2) - 4b^2 = 3(a^2 + c^2) - b^2$.
+  5. Rearrange: $b^2 = 3(a^2 + c^2) - 9d^2$.
+  Check with numbers: a = 1, c = 1, b = 2. The data 1, 2, 1 have mean $\frac{4}{3}$ and variance $\frac{1 + 4 + 1}{3} - \frac{16}{9} = 2 - \frac{16}{9} = \frac{2}{9}$, so $9d^2 = 2$. Formula: $3(1 + 1) - 2 = 4 = b^2$ ✓.
+  Why others are wrong:
+  - (A) has +9d² instead of −9d².
+  - (B) and (C) have the wrong coefficients. For example, in (C), $3(1 + 1 + \frac{2}{9}) \ne 4$ in the check above.
   Answer: (D)
 M A 5: |-
-  Concept: Log laws and $(\sin x + \cos x)^2 = 1 + 2\sin x\cos x$.
+  Concept: Use the log laws ($\log A + \log B = \log AB$, $k\log A = \log A^k$) and the identity $(\sin x + \cos x)^2 = 1 + 2\sin x\cos x$.
   Solution:
-  1. $\sin x\cos x = \frac{1}{10}$, so $(\sin x + \cos x)^2 = \frac{6}{5}$.
-  2. $\log(\sin x + \cos x) = \frac{1}{2}\log\frac{6}{5} = \frac{1}{2}\log\frac{n}{10}$.
-  3. $n = 12$.
+  1. First equation: $\log_{10}(\sin x\cos x) = -1$, so $\sin x\cos x = \frac{1}{10}$. (Both are positive for $x \in \left(0, \frac{\pi}{2}\right)$, so the logs are defined.)
+  2. $(\sin x + \cos x)^2 = 1 + 2\cdot\frac{1}{10} = \frac{6}{5}$.
+  3. Since $\sin x + \cos x > 0$: $\log_{10}(\sin x + \cos x) = \frac{1}{2}\log_{10}\frac{6}{5}$.
+  4. Second equation: $\frac{1}{2}(\log_{10}n - 1) = \frac{1}{2}(\log_{10}n - \log_{10}10) = \frac{1}{2}\log_{10}\frac{n}{10}$.
+  5. Equate: $\frac{n}{10} = \frac{6}{5}$, so $n = 12$.
+  Check: $\log_{10}12 - 1 = \log_{10}1.2$, and $\frac{1}{2}\log_{10}1.2 = \log_{10}\sqrt{1.2} = \log_{10}(\sin x + \cos x)$ ✓.
+  Why others are wrong:
+  - (A) 20 would need $(\sin x + \cos x)^2 = 2$, i.e. $\sin x\cos x = \frac{1}{2}$.
+  - (C) 9 and (D) 16 correspond to different products or misuse of the "−1" as a factor rather than $\log_{10}10$.
   Answer: (B)
 M A 6: |-
-  Concept: $A = iM$ with $M = \begin{bmatrix}1 & -1\\ -1 & 1\end{bmatrix}$, and $M^2 = 2M$.
+  Concept: Factor out a scalar to simplify matrix powers. If $M^2 = kM$, then $M^n = k^{n-1}M$.
   Solution:
-  1. $A^8 = i^8M^8 = 2^7M = 128M$.
-  2. Equations: $128(x - y) = 8$ and $128(y - x) = 64$, which are inconsistent.
-  3. So there is no solution.
+  1. $A = i\begin{bmatrix}1 & -1\\ -1 & 1\end{bmatrix} = iM$.
+  2. $M^2 = \begin{bmatrix}1 + 1 & -1 - 1\\ -1 - 1 & 1 + 1\end{bmatrix} = 2M$, so $M^8 = 2^7M = 128M$.
+  3. $i^8 = (i^4)^2 = 1$, so $A^8 = i^8M^8 = 128M = \begin{bmatrix}128 & -128\\ -128 & 128\end{bmatrix}$.
+  4. The system: $128x - 128y = 8$ and $-128x + 128y = 64$.
+  5. The first gives $x - y = \frac{1}{16}$. The second gives $x - y = -\frac{1}{2}$.
+  6. These contradict each other, so there is no solution.
+  Structure: $\det(A^8) = 128^2 - 128^2 = 0$, so a unique solution is impossible. For solutions to exist, the right-hand side would need the same dependence as the rows (the second entry equal to minus the first, e.g. (8, −8)). Since (8, 64) does not satisfy this, the system is inconsistent.
+  Why others are wrong:
+  - (A) A unique solution needs det ≠ 0.
+  - (B) Infinitely many solutions would need consistent equations.
+  - (D) A linear system never has exactly two solutions.
   Answer: (C)
 M A 7: |-
-  Concept: Normal to $y^2 = 4Ax$ (here $A = \frac{1}{2}$): $y = mx - 2Am - Am^3$.
+  Concept: In slope form, the normal to $y^2 = 4Ax$ is $y = mx - 2Am - Am^3$. The number of normals through a point equals the number of real roots m of the resulting cubic.
   Solution:
-  1. Normal: $y = mx - m - \frac{m^3}{2}$.
-  2. Through $(a, 0)$: $m\left(a - 1 - \frac{m^2}{2}\right) = 0 \Rightarrow m = 0$ or $m^2 = 2(a - 1)$.
-  3. Three distinct normals need $a - 1 > 0$, i.e. $a > 1$.
+  1. $y^2 = 2x$ is $y^2 = 4Ax$ with $A = \frac{1}{2}$.
+  2. Normal: $y = mx - m - \frac{m^3}{2}$.
+  3. Passing through $(a, 0)$: $0 = ma - m - \frac{m^3}{2}$, i.e. $m\left(a - 1 - \frac{m^2}{2}\right) = 0$.
+  4. Roots: m = 0 (the x-axis itself, always a normal) and $m^2 = 2(a - 1)$.
+  5. For three distinct normals, $m^2 = 2(a - 1)$ must give two distinct non-zero real values of m. This needs $a - 1 > 0$, i.e. $a > 1$.
+  6. If $a \le 1$, only the axis (m = 0) is a normal through (a, 0).
+  General result: for $y^2 = 4Ax$, three normals pass through (h, 0) only if $h > 2A$. Here $2A = 1$. The point $(2A, 0)$ is the centre of curvature at the vertex.
+  Why others are wrong:
+  - (A) $a > \frac{1}{2}$ uses the focus $(A, 0)$ instead of $2A$. For example, a = 0.75 gives $m^2 < 0$.
+  - (B) and (C) are even smaller bounds.
   Answer: (D)
 M A 8: |-
-  Concept: Intersect the lines; TA is along $\vec{PR}\times\vec{QS}$.
+  Concept: Find T by intersecting the two lines. A vector perpendicular to both lines is parallel to the cross product of their direction vectors.
   Solution:
-  1. $(3 + 4s, -1 - s, 2 + 2s) = (1 - 2u, 2 + u, -4 - 2u)$: from y, $u = -3 - s$; then x gives $s = 2$, so $T = (11, -3, 6)$.
-  2. $(4, -1, 2)\times(-2, 1, -2) = (0, 4, 2)$, with unit vector $\frac{(0, 2, 1)}{\sqrt5}$.
-  3. $A = T \pm (0, 2, 1) = (11, -1, 7)$ or $(11, -5, 5)$.
-  4. $|\vec A| = \sqrt{121 + 1 + 49} = \sqrt{171}$ (the same for both).
+  1. PR: $(3 + 4s,\ -1 - s,\ 2 + 2s)$. QS: $(1 - 2u,\ 2 + u,\ -4 - 2u)$.
+  2. Equate the y-coordinates: $-1 - s = 2 + u$, so $u = -3 - s$.
+  3. Equate the x-coordinates: $3 + 4s = 1 - 2(-3 - s) = 7 + 2s$, so $s = 2$ and $u = -5$.
+  4. Check z: $2 + 2(2) = 6$ and $-4 - 2(-5) = 6$ ✓. So $T = (11, -3, 6)$.
+  5. $\vec d_1\times\vec d_2 = (4, -1, 2)\times(-2, 1, -2) = ((-1)(-2) - 2\cdot1,\ 2(-2) - 4(-2),\ 4\cdot1 - (-1)(-2)) = (0, 4, 2)$.
+  6. Unit vector: $\frac{(0, 2, 1)}{\sqrt5}$. With $|TA| = \sqrt5$: $\vec{TA} = \pm(0, 2, 1)$.
+  7. $A = (11, -1, 7)$ or $(11, -5, 5)$.
+  8. $|\vec{OA}| = \sqrt{121 + 1 + 49} = \sqrt{171}$, or $\sqrt{121 + 25 + 25} = \sqrt{171}$. Both give the same value.
+  Why others are wrong: (A), (C) and (D) come from errors in the intersection point or the cross product. For example, (C) $\sqrt5$ is just |TA|.
   Answer: (B)
 M A 9: |-
-  Concept: Write fog piecewise, then check continuity and one-sided derivatives at the joins.
+  Concept: For a composite of piecewise functions, first write fog explicitly on each interval. Then check continuity and the one-sided derivatives at every joining point. A function that is not continuous at a point cannot be differentiable there.
   Solution:
-  1. $x < 0$: $g = x^3 < 0$, so $fog = x^3 + 2$. For $0 \le x < 1$: $fog = x^6$. For $x \ge 1$: $fog = (3x - 2)^2$.
-  2. At $x = 0$: the left limit is 2 and the right limit is 0, so fog is discontinuous there and not differentiable.
-  3. At $x = 1$: both sides give value 1 and derivative 6, so fog is differentiable.
-  4. One point.
+  1. For $x < 0$: $g(x) = x^3 < 0$, so $f(g(x)) = x^3 + 2$.
+  2. For $0 \le x < 1$: $g(x) = x^3 \in [0, 1)$, so $f(g) = (x^3)^2 = x^6$.
+  3. For $x \ge 1$: $g(x) = 3x - 2 \ge 1$, so $f(g) = (3x - 2)^2$.
+  4. At x = 0: the left limit is $0 + 2 = 2$ and the right value is $0^6 = 0$. There is a jump, so fog is not continuous, and hence not differentiable, at x = 0.
+  5. At x = 1: the left value is $1^6 = 1$ and the right value is $(3 - 2)^2 = 1$, so fog is continuous. Derivatives: left $6x^5 = 6$; right $2(3x - 2)\cdot3 = 6$. Equal, so fog is differentiable at x = 1.
+  6. Elsewhere, fog is a polynomial on each piece and is differentiable.
+  7. Number of points of non-differentiability: 1 (at x = 0).
+  Why others are wrong:
+  - (C) 0 misses the jump at x = 0.
+  - (D) 2 and (A) 3 wrongly count x = 1 (and other points), where the derivatives actually agree.
   Answer: (B)
 M A 10: |-
-  Concept: $X \to Y$ is false only when X is true and Y is false.
+  Concept: A tautology is true for all truth values. An implication $X \to Y$ is false only when X is true and Y is false. So $X \to Y$ is a tautology whenever X logically implies Y.
   Solution:
-  1. (D): if $p\wedge q$ is true, then $p \to q$ is true, so the implication is always true.
-  2. (A) fails at $p = q = F$; (B) fails at $p = T, q = F$; (C) fails at $p = F$.
+  1. (D) $(p \wedge q) \to (p \to q)$: when $p \wedge q$ is true, both p and q are true, so $p \to q$ is true. The implication can never have a true premise with a false conclusion, so it is a tautology.
+  2. (A) $(p \wedge q) \vee (p \vee q)$: with p = q = F, both parts are false. Not a tautology. (It simplifies to $p \vee q$.)
+  3. (B) $(p \wedge q) \vee (p \to q)$: with p = T and q = F, $p \wedge q = F$ and $p \to q = F$. Not a tautology. (It simplifies to $p \to q$.)
+  4. (C) $(p \wedge q) \wedge (p \to q)$: with p = F, $p \wedge q = F$, so the whole conjunction is false. Not a tautology. (It simplifies to $p \wedge q$.)
+  Algebraic check of (D): $(p \wedge q) \to (p \to q) \equiv \sim(p \wedge q) \vee \sim p \vee q \equiv (\sim p \vee \sim q) \vee \sim p \vee q \equiv \sim p \vee (\sim q \vee q) \equiv T$.
   Answer: (D)
 M A 11: |-
-  Concept: With base $< 1$, the inequality reverses: $\log_bX \le 2 \Leftrightarrow X \ge b^2$.
+  Concept: For a logarithm with base b between 0 and 1, the function is decreasing. So $\log_bX \le k$ is equivalent to $X \ge b^k$: the inequality reverses when the log is removed.
   Solution:
-  1. $\frac{r + 11}{(r - 1)^2} \ge \frac{1}{2}$ with $r = |z|$.
-  2. $2r + 22 \ge r^2 - 2r + 1 \Rightarrow r^2 - 4r - 21 \le 0 \Rightarrow (r - 7)(r + 3) \le 0$.
-  3. $r \le 7$, so the largest $|z|$ is 7.
+  1. Base $b = \frac{1}{\sqrt2}$, so $b^2 = \frac{1}{2}$.
+  2. Let $r = |z| \ge 0$, with $r \ne 1$. The argument $\frac{r + 11}{(r - 1)^2}$ is always positive, so the log is defined.
+  3. $\log_b\frac{r + 11}{(r - 1)^2} \le 2$ is equivalent to $\frac{r + 11}{(r - 1)^2} \ge \frac{1}{2}$.
+  4. Multiply by $2(r - 1)^2 > 0$: $2r + 22 \ge r^2 - 2r + 1$, i.e. $r^2 - 4r - 21 \le 0$.
+  5. Factorise: $(r - 7)(r + 3) \le 0$, so $-3 \le r \le 7$. With $r \ge 0$ and $r \ne 1$: $r \in [0, 1)\cup(1, 7]$.
+  6. The largest value of |z| is 7.
+  Check at r = 7: $\frac{18}{36} = \frac{1}{2}$ and $\log_{1/\sqrt2}\frac{1}{2} = 2$ ✓ (equality holds).
+  Why others are wrong:
+  - (A) 8: $\frac{19}{49} < \frac{1}{2}$, so the log exceeds 2.
+  - (C) 6 and (D) 5 satisfy the inequality but are not the largest value.
   Answer: (B)
 M A 12: |-
-  Concept: $T_{r+1} = \binom{60}{r}3^{\frac{60-r}{4}}5^{\frac{r}{8}}$ is rational iff both exponents are integers.
+  Concept: In $(a^{1/p} + b^{1/q})^N$, the general term is $T_{r+1} = \binom{N}{r}a^{\frac{N - r}{p}}b^{\frac{r}{q}}$. It is rational exactly when both exponents are integers (a and b being primes).
   Solution:
-  1. We need $8 \mid r$ and $4 \mid (60 - r)$, so $r = 0, 8, \dots, 56$: 8 rational terms.
-  2. Irrational terms: $61 - 8 = 53$, so $n - 1 = 52$, which is divisible by 26.
+  1. $T_{r+1} = \binom{60}{r}3^{\frac{60 - r}{4}}5^{\frac{r}{8}}$, with r = 0, 1, …, 60 (61 terms in all).
+  2. $5^{r/8}$ is rational iff $8 \mid r$: r = 0, 8, 16, 24, 32, 40, 48, 56.
+  3. $3^{(60 - r)/4}$ is rational iff $4 \mid (60 - r)$, i.e. $4 \mid r$ (since $4 \mid 60$). Every multiple of 8 is a multiple of 4, so all eight values above work.
+  4. Rational terms: 8. Irrational terms: $n = 61 - 8 = 53$.
+  5. $n - 1 = 52 = 2^2\times13$.
+  6. Test the options: 52 is divisible by 26 ✓, but not by 30, 8 or 7.
+  Common slips: counting 60 terms instead of 61 (N + 1 terms in all), or forgetting r = 0, both of which change the count.
   Answer: (A)
 M A 13: |-
-  Concept: A plane through the origin containing a line has normal perpendicular to both the line's direction and a point on it.
+  Concept: A plane through the origin that contains a line must contain both the line's direction and the position vector of a point on the line. So its normal is their cross product. A plane divides segment AB in the ratio $|P(A)| : |P(B)|$, where P(X) is the value of the plane's expression at X.
   Solution:
-  1. The line passes through $(1, -4, -2)$ with direction $(-1, 2, 3)$.
-  2. $\vec n = (-1, 2, 3)\times(1, -4, -2) = (8, 1, 2)$, so the plane is $8x + y + 2z = 0$.
-  3. $P(A) = -24 - 6 + 2 = -28$ and $P(B) = 16 + 4 - 6 = 14$.
-  4. $k = \frac{|-28|}{14} = 2$.
+  1. Line: $\frac{1 - x}{1} = \frac{y + 4}{2} = \frac{z + 2}{3}$, i.e. $\frac{x - 1}{-1} = \frac{y + 4}{2} = \frac{z + 2}{3}$. It passes through (1, −4, −2) with direction (−1, 2, 3).
+  2. Normal: $\vec n = (-1, 2, 3)\times(1, -4, -2) = (2(-2) - 3(-4),\ 3(1) - (-1)(-2),\ (-1)(-4) - 2(1)) = (8, 1, 2)$.
+  3. Plane: $8x + y + 2z = 0$. Check the point (1, −4, −2): $8 - 4 - 4 = 0$ ✓.
+  4. $P(A) = 8(-3) + (-6) + 2(1) = -28$ and $P(B) = 8(2) + 4 + 2(-3) = 14$. Opposite signs, so A and B are on opposite sides and the plane divides AB internally.
+  5. Ratio $k : 1 = |P(A)| : |P(B)| = 28 : 14 = 2 : 1$, so k = 2.
+  Verification: the dividing point is $\frac{2B + A}{3} = \left(\frac{1}{3}, \frac{2}{3}, -\frac{5}{3}\right)$. Then $\frac{8}{3} + \frac{2}{3} - \frac{10}{3} = 0$ ✓.
   Answer: (C)
 M A 14: |-
-  Concept: Simplify, then require $f'(x) = 0$ to be solvable.
+  Concept: A critical point is where f′(x) = 0 (or f′ is undefined within the domain). Here, simplify f first, then ask when f′(x) = 0 has a solution.
   Solution:
-  1. $2\cot\frac{x}{2}\sin^2\frac{x}{2} = \sin x$, so $f = (4a - 3)(x + \ln5) + (a - 7)\sin x$.
-  2. $f' = 0 \Rightarrow \cos x = \frac{3 - 4a}{a - 7}$, which needs $|3 - 4a| \le |a - 7|$.
-  3. $15a^2 - 10a - 40 \le 0 \Rightarrow (3a + 4)(a - 2) \le 0 \Rightarrow a \in \left[-\frac{4}{3}, 2\right]$.
+  1. Simplify: $2\cot\frac{x}{2}\sin^2\frac{x}{2} = 2\cdot\frac{\cos(x/2)}{\sin(x/2)}\cdot\sin^2\frac{x}{2} = 2\sin\frac{x}{2}\cos\frac{x}{2} = \sin x$.
+  2. So $f(x) = (4a - 3)(x + \ln5) + (a - 7)\sin x$ (for $x \ne 2n\pi$).
+  3. $f'(x) = (4a - 3) + (a - 7)\cos x$.
+  4. $f'(x) = 0$ gives $\cos x = \frac{3 - 4a}{a - 7}$ (a ≠ 7; for a = 7, $f' = 25 \ne 0$).
+  5. This has a solution iff $\left|\frac{3 - 4a}{a - 7}\right| \le 1$, i.e. $(3 - 4a)^2 \le (a - 7)^2$.
+  6. Expand: $16a^2 - 24a + 9 \le a^2 - 14a + 49$, so $15a^2 - 10a - 40 \le 0$, i.e. $3a^2 - 2a - 8 \le 0$.
+  7. Factorise: $(3a + 4)(a - 2) \le 0$, so $a \in \left[-\frac{4}{3}, 2\right]$.
+  8. Endpoints: at $a = -\frac{4}{3}$, $\cos x = -1$ (odd multiples of π, which are allowed). At a = 2, $\cos x = 1$, which holds at x = 0. Since n ∈ ℕ, x = 0 is not excluded. So both endpoints are included.
+  Why others are wrong: (A), (C) and (D) do not match the solution set of the quadratic inequality.
   Answer: (B)
 M A 15: |-
-  Concept: Bayes' theorem.
+  Concept: Bayes' theorem. The two cards drawn give information about the missing card. The hypotheses are "the missing card is a spade" and "the missing card is not a spade".
   Solution:
-  1. P(missing is a spade) $= \frac{1}{4}$, and then P(2 spades drawn) $= \frac{12\cdot11}{51\cdot50}$.
-  2. P(missing is not a spade) $= \frac{3}{4}$, and then P(2 spades) $= \frac{13\cdot12}{51\cdot50}$.
-  3. $P = \frac{\frac{3}{4}\cdot156}{\frac{3}{4}\cdot156 + \frac{1}{4}\cdot132} = \frac{468}{600} = \frac{39}{50}$.
+  1. Prior probabilities: P(S) = $\frac{13}{52} = \frac{1}{4}$ (missing card is a spade); P(N) = $\frac{3}{4}$ (not a spade).
+  2. If the missing card is a spade, the remaining 51 cards contain 12 spades. P(two spades | S) = $\frac{\binom{12}{2}}{\binom{51}{2}} = \frac{12\cdot11}{51\cdot50} = \frac{132}{2550}$.
+  3. If it is not a spade, 13 spades remain. P(two spades | N) = $\frac{\binom{13}{2}}{\binom{51}{2}} = \frac{13\cdot12}{51\cdot50} = \frac{156}{2550}$.
+  4. Bayes: P(N | two spades) $= \frac{\frac{3}{4}\cdot156}{\frac{3}{4}\cdot156 + \frac{1}{4}\cdot132} = \frac{468}{468 + 132} = \frac{468}{600} = \frac{39}{50}$.
+  Interpretation: without the draw, P(N) = $\frac{3}{4} = 0.75$. After seeing two spades, P(N) rises to 0.78. Drawing spades makes it slightly more likely that no spade is missing, since more spades being present makes this observation more likely.
+  Why others are wrong:
+  - (A) $\frac{3}{4}$ ignores the evidence (it is the prior).
+  - (B) and (D) are the likelihoods or products, not the posterior.
   Answer: (C)
 M A 16: |-
-  Concept: Put $x = 1$ and $x = -1$ to separate even and odd coefficient sums.
+  Concept: For a polynomial $P(x) = \sum a_jx^j$, the sum of all coefficients is P(1). The alternating sum is P(−1). So the even-index sum is $E = \frac{P(1) + P(-1)}{2}$ and the odd-index sum is $O = \frac{P(1) - P(-1)}{2}$.
   Solution:
-  1. $x = 1$: $E + O = 1^n = 1$. $x = -1$: $E - O = (1 + 1 - 1)^n = 1$.
-  2. $E = 1$, $O = 0$, so $E + 4O = 1$.
+  1. $P(x) = (1 - x + x^3)^n$, of degree 3n.
+  2. $P(1) = (1 - 1 + 1)^n = 1$, so $E + O = 1$.
+  3. $P(-1) = (1 + 1 - 1)^n = 1$, so $E - O = 1$.
+  4. Solving: E = 1 and O = 0.
+  5. The first sum in the question, $\sum_{j=0}^{[3n/2]}a_{2j}$, runs over all even-index coefficients (indices 0, 2, …, up to 3n), so it is E. The second, $\sum_{j=0}^{[(3n-1)/2]}a_{2j+1}$, runs over all odd-index coefficients, so it is O.
+  6. Required value: $E + 4O = 1 + 4(0) = 1$.
+  Check with n = 1: $1 - x + x^3$ has $a_0 = 1$, $a_1 = -1$, $a_2 = 0$, $a_3 = 1$. E = 1 + 0 = 1 and O = −1 + 1 = 0, so $E + 4O = 1$ ✓.
+  Why others are wrong: (A) 2, (B) $2^{n-1}$ and (D) n all depend on mistaken values of P(1) or P(−1). For example, $2^{n-1}$ would arise for $(1 + x)^n$.
   Answer: (C)
 M A 17: |-
-  Concept: Linear DE with integrating factor $\sec^2x$.
+  Concept: A linear first-order equation $y' + P(x)y = Q(x)$ is solved with the integrating factor $e^{\int P\,dx}$. The maximum of the solution is found by writing it as a quadratic in cos x.
   Solution:
-  1. $(y\sec^2x)' = \sin x\sec^2x \Rightarrow y\sec^2x = \sec x + C$.
-  2. $y\left(\frac{\pi}{3}\right) = 0 \Rightarrow C = -2$, so $y = \cos x - 2\cos^2x$.
-  3. With $t = \cos x$: $t - 2t^2$ has maximum $\frac{1}{8}$ at $t = \frac{1}{4}$.
+  1. $P = 2\tan x$, so $\int P\,dx = -2\ln|\cos x|$ and the integrating factor is $\sec^2x$.
+  2. $\frac{d}{dx}(y\sec^2x) = \sin x\sec^2x = \sec x\tan x$.
+  3. Integrate: $y\sec^2x = \sec x + C$.
+  4. $y\left(\frac{\pi}{3}\right) = 0$: $0 = \sec\frac{\pi}{3} + C = 2 + C$, so $C = -2$.
+  5. $y = \cos^2x(\sec x - 2) = \cos x - 2\cos^2x$.
+  6. Let $t = \cos x \in [-1, 1]$. Then $y = t - 2t^2$, a downward parabola with vertex at $t = \frac{1}{4}$.
+  7. Maximum: $y = \frac{1}{4} - 2\cdot\frac{1}{16} = \frac{1}{4} - \frac{1}{8} = \frac{1}{8}$.
+  8. $t = \frac{1}{4}$ is inside [−1, 1], so it is attained.
+  Why others are wrong:
+  - (A) 8 inverts the maximum.
+  - (B) $\frac{1}{2}$ is the value of t that makes y = 0, not the maximum.
+  - (C) $-\frac{15}{4}$ is negative, but y takes the positive value $\frac{1}{8}$, so it cannot be the maximum.
   Answer: (D)
 M A 18: |-
-  Concept: Chord with midpoint $(h, k)$: $hx + ky = h^2 + k^2$; the line $lx + my = n$ touches $\frac{x^2}{9} - \frac{y^2}{16} = 1$ iff $9l^2 - 16m^2 = n^2$.
+  Concept: The chord of $x^2 + y^2 = a^2$ with midpoint (h, k) is $T = S_1$: $hx + ky = h^2 + k^2$. The line $lx + my = n$ touches the hyperbola $\frac{x^2}{A^2} - \frac{y^2}{B^2} = 1$ iff $A^2l^2 - B^2m^2 = n^2$.
   Solution:
-  1. $9h^2 - 16k^2 = (h^2 + k^2)^2$.
-  2. Locus: $(x^2 + y^2)^2 - 9x^2 + 16y^2 = 0$.
+  1. Chord with midpoint (h, k): $hx + ky = h^2 + k^2$. So l = h, m = k and $n = h^2 + k^2$.
+  2. Hyperbola: $A^2 = 9$ and $B^2 = 16$.
+  3. Tangency: $9h^2 - 16k^2 = (h^2 + k^2)^2$.
+  4. Replace (h, k) by (x, y): $(x^2 + y^2)^2 = 9x^2 - 16y^2$, i.e. $(x^2 + y^2)^2 - 9x^2 + 16y^2 = 0$.
+  Derivation of the tangency condition: $y = mx + c$ touches $\frac{x^2}{A^2} - \frac{y^2}{B^2} = 1$ iff $c^2 = A^2m^2 - B^2$. Writing $lx + my = n$ as $y = -\frac{l}{m}x + \frac{n}{m}$ and substituting gives $A^2l^2 - B^2m^2 = n^2$.
+  Note: the tangent must also cut the circle $x^2 + y^2 = 25$ in a real chord, which requires its distance from the centre to be less than 5. The locus equation is the standard answer and ignores this range restriction.
+  Why others are wrong:
+  - (A) swaps 9 and 16.
+  - (B) uses 144 instead of 16.
+  - (C) has −16y², which corresponds to an ellipse, not a hyperbola.
   Answer: (D)
 M A 19: |-
-  Concept: Substitute $u = 81^{\sin^2x}$, so $81^{\cos^2x} = \frac{81}{u}$.
+  Concept: Because $\sin^2x + \cos^2x = 1$, we have $81^{\cos^2x} = \frac{81}{81^{\sin^2x}}$. Substituting $u = 81^{\sin^2x}$ reduces the equation to a quadratic.
   Solution:
-  1. $u + \frac{81}{u} = 30 \Rightarrow u = 27$ or $3$, so $\sin^2x = \frac{3}{4}$ or $\frac{1}{4}$.
-  2. In $[0, \pi]$: $x = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{\pi}{6}, \frac{5\pi}{6}$, i.e. 4 roots.
+  1. Let $u = 81^{\sin^2x}$, with $u \in [1, 81]$. Then $81^{\cos^2x} = 81^{1 - \sin^2x} = \frac{81}{u}$.
+  2. $u + \frac{81}{u} = 30$, so $u^2 - 30u + 81 = 0$ and $(u - 27)(u - 3) = 0$. So u = 27 or u = 3.
+  3. $81^{\sin^2x} = 3^{4\sin^2x}$.
+     - u = 27: $4\sin^2x = 3$, so $\sin^2x = \frac{3}{4}$ and $\sin x = \frac{\sqrt3}{2}$ (sin x ≥ 0 on [0, π]).
+     - u = 3: $4\sin^2x = 1$, so $\sin^2x = \frac{1}{4}$ and $\sin x = \frac{1}{2}$.
+  4. In [0, π]:
+     - $\sin x = \frac{\sqrt3}{2}$: $x = \frac{\pi}{3}, \frac{2\pi}{3}$.
+     - $\sin x = \frac{1}{2}$: $x = \frac{\pi}{6}, \frac{5\pi}{6}$.
+  5. Total: 4 roots.
+  Check x = π/6: $81^{1/4} + 81^{3/4} = 3 + 27 = 30$ ✓.
+  Why others are wrong:
+  - (A) 3 and (D) 2 miss some roots, e.g. counting only one solution per value of sin x.
+  - (C) 8 counts roots over [0, 2π], or includes negative values of sin x, which are impossible on [0, π].
   Answer: (B)
 M A 20: |-
-  Concept: Telescoping with $\tan^{-1}x - \tan^{-1}y = \tan^{-1}\frac{x - y}{1 + xy}$.
+  Concept: Sums of inverse tangents often telescope using $\tan^{-1}x - \tan^{-1}y = \tan^{-1}\frac{x - y}{1 + xy}$ (for xy > −1). The trick is to write each term in this difference form.
   Solution:
-  1. Dividing numerator and denominator by $2^{2r+1}$: term $= \tan^{-1}\frac{(3/2)^{r+1} - (3/2)^r}{1 + (3/2)^{2r+1}} = \tan^{-1}(3/2)^{r+1} - \tan^{-1}(3/2)^r$.
-  2. $S_k = \tan^{-1}(3/2)^{k+1} - \tan^{-1}\frac{3}{2} \to \frac{\pi}{2} - \tan^{-1}\frac{3}{2} = \cot^{-1}\frac{3}{2}$.
+  1. Term: $\frac{6^r}{2^{2r+1} + 3^{2r+1}}$. Divide the numerator and denominator by $2^{2r+1}$:
+     numerator: $\frac{6^r}{2^{2r+1}} = \frac{3^r}{2^{r+1}} = \frac{1}{2}\left(\frac{3}{2}\right)^r$;
+     denominator: $1 + \left(\frac{3}{2}\right)^{2r+1}$.
+  2. Let $t = \left(\frac{3}{2}\right)^r$. The numerator is $\frac{t}{2} = \frac{3t}{2} - t = \left(\frac{3}{2}\right)^{r+1} - \left(\frac{3}{2}\right)^r$, and the denominator is $1 + \left(\frac{3}{2}\right)^{r+1}\left(\frac{3}{2}\right)^r$.
+  3. So each term is $\tan^{-1}\left(\frac{3}{2}\right)^{r+1} - \tan^{-1}\left(\frac{3}{2}\right)^r$.
+  4. Telescoping: $S_k = \tan^{-1}\left(\frac{3}{2}\right)^{k+1} - \tan^{-1}\frac{3}{2}$.
+  5. As $k \to \infty$, $\left(\frac{3}{2}\right)^{k+1} \to \infty$ and $\tan^{-1} \to \frac{\pi}{2}$.
+  6. Limit $= \frac{\pi}{2} - \tan^{-1}\frac{3}{2} = \cot^{-1}\frac{3}{2}$ (= $\tan^{-1}\frac{2}{3}$).
+  Why others are wrong:
+  - (A) $\tan^{-1}\frac{3}{2}$ is the subtracted term, not the limit.
+  - (B) $\frac{\pi}{2}$ forgets the first term.
+  - (D) $\tan^{-1}3$ comes from misreading the ratio as 3.
   Answer: (C)
 M B 1: |-
-  Concept: Choose an AP and a GP from the set, then count common terms.
+  Concept: Pick four numbers from the set that form an AP and four that form a GP. Then count the common terms of the two progressions up to the largest possible four-digit terms.
   Solution:
-  1. AP: 11, 16, 21, 26 ($d = 5$), i.e. terms $\equiv 1 \pmod 5$ up to 9996.
-  2. GP: 4, 8, 16, 32 ($r = 2$), i.e. powers $2^n$ up to 8192.
-  3. $2^n \equiv 1 \pmod 5$ iff $4 \mid n$: 16, 256, 4096.
-  4. Three common terms.
+  1. Set: {11, 8, 21, 16, 26, 32, 4}.
+  2. AP: 11, 16, 21, 26 (d = 5). Its terms are $11 + 5k$, i.e. numbers ≡ 1 (mod 5). The largest four-digit term is 9996.
+  3. GP: 4, 8, 16, 32 (r = 2). Its terms are $2^n$ for n ≥ 2. The largest four-digit term is $2^{13} = 8192$.
+  4. Common terms: powers of 2 from 16 upward (the AP starts at 11, so 4 and 8 are excluded) that are ≡ 1 (mod 5).
+  5. Powers of 2 mod 5 cycle with period 4: $2^1 \equiv 2$, $2^2 \equiv 4$, $2^3 \equiv 3$, $2^4 \equiv 1$. So $2^n \equiv 1 \pmod 5$ iff $4 \mid n$.
+  6. With $4 \le n \le 13$: n = 4, 8, 12, giving 16, 256 and 4096.
+  7. Check: 16 = 11 + 5(1) ✓, 256 = 11 + 5(49) ✓, 4096 = 11 + 5(817) ✓. All are four digits or fewer and within both series.
+  8. Number of common terms: 3.
   Answer: 3
 M B 2: |-
-  Concept: Riemann sum, then the property $\int_0^1f(x)dx = \int_0^1f(1 - x)dx$.
+  Concept: $\lim_{n\to\infty}\frac{1}{n}\sum_{r=1}^{n}f\left(\frac{r}{n}\right) = \int_0^1f(x)dx$ (a Riemann sum). Then use the property $\int_0^af(x)dx = \int_0^af(a - x)dx$ with the identity $\left(1 + \tan\theta\right)\left(1 + \tan\left(\frac{\pi}{4} - \theta\right)\right) = 2$.
   Solution:
   1. The limit is $2\int_0^1\log_2\left(1 + \tan\frac{\pi x}{4}\right)dx = 2I$.
-  2. With $x \to 1 - x$: $1 + \tan\left(\frac{\pi}{4} - \theta\right) = \frac{2}{1 + \tan\theta}$, so $I = \int_0^1(1 - \log_2(1 + \tan))dx = 1 - I$.
-  3. $I = \frac{1}{2}$, so the limit is 1.
+  2. Replace x by 1 − x: $\frac{\pi(1 - x)}{4} = \frac{\pi}{4} - \frac{\pi x}{4}$.
+  3. With $\theta = \frac{\pi x}{4}$: $1 + \tan\left(\frac{\pi}{4} - \theta\right) = 1 + \frac{1 - \tan\theta}{1 + \tan\theta} = \frac{2}{1 + \tan\theta}$.
+  4. So $I = \int_0^1\log_2\frac{2}{1 + \tan\theta}dx = \int_0^1\left[1 - \log_2(1 + \tan\theta)\right]dx = 1 - I$.
+  5. $2I = 1$, so $I = \frac{1}{2}$.
+  6. Limit $= 2I = 1$.
+  This is the base-2 version of the classic $\int_0^{\pi/4}\ln(1 + \tan\theta)d\theta = \frac{\pi}{8}\ln2$. With the substitution $\theta = \frac{\pi x}{4}$, that integral becomes $\frac{\pi}{4}\ln2\cdot I$, which gives the same $I = \frac{1}{2}$ ✓.
   Answer: 1
 M B 3: |-
-  Concept: C₂ lies inside the corner at A, and its centre is on the diagonal AC.
+  Concept: A circle tangent to both sides of a right angle at A has its centre on the angle bisector, the diagonal AC. Then use the tangent-from-a-point geometry: $\sin(\text{angle}) = \frac{\text{radius}}{\text{distance to centre}}$.
   Solution:
-  1. Radius $r$: $\sqrt2r = 1 - r \Rightarrow r = \sqrt2 - 1$ (internal touching).
-  2. Distance from C to the centre of C₂ $= \sqrt2 - \sqrt2r = 2(\sqrt2 - 1) = 2r$, so the tangent makes 30° with CA.
-  3. CA makes 45° with CB, so CE makes 15° with CB and $EB = \tan15° = 2 - \sqrt3$.
-  4. $\alpha = 2$, $\beta = -1$, so $\alpha + \beta = 1$.
+  1. Place A at the origin, with B = (1, 0), D = (0, 1) and C = (1, 1).
+  2. C₂ touches AB and AD, so its centre is O₂ = (r, r), at distance $\sqrt2r$ from A.
+  3. C₂ touches C₁ (radius 1, centre A) internally: $\sqrt2r = 1 - r$, so $r = \frac{1}{\sqrt2 + 1} = \sqrt2 - 1$.
+  4. Distance from C to O₂: $\sqrt2(1 - r) = \sqrt2(2 - \sqrt2) = 2\sqrt2 - 2 = 2(\sqrt2 - 1) = 2r$.
+  5. So the tangent from C to C₂ makes an angle φ with CA, where $\sin\phi = \frac{r}{2r} = \frac{1}{2}$, i.e. φ = 30°.
+  6. CA makes 45° with CB (the diagonal of the square). The tangent that meets side AB lies between CA and CB, at 45° − 30° = 15° from CB.
+  7. CB is vertical with length 1, and E is on AB (y = 0). So $EB = CB\tan15° = 2 - \sqrt3$.
+  8. $\alpha + \sqrt3\beta = 2 - \sqrt3$, so α = 2 and β = −1. Then $\alpha + \beta = 1$.
   Answer: 1
 M B 4: |-
-  Concept: Maclaurin expansion; the denominator $x\sin x \sim x^2$.
+  Concept: For a limit of the form $\frac{0}{0}$ with denominator of order x², expand the numerator as a Maclaurin series. The constant and x terms must vanish, and the x² coefficient then gives the limit.
   Solution:
-  1. Numerator $= (a - b + c) + (a - c)x + \frac{a + b + c}{2}x^2 + \dots$
-  2. The limit is finite only if $a - b + c = 0$ and $a = c$; then the limit is $\frac{a + b + c}{2} = 2$.
-  3. $a + b + c = 4$.
+  1. $e^x = 1 + x + \frac{x^2}{2} + \dots$, $\cos x = 1 - \frac{x^2}{2} + \dots$, $e^{-x} = 1 - x + \frac{x^2}{2} - \dots$.
+  2. Numerator: $a\left(1 + x + \frac{x^2}{2}\right) - b\left(1 - \frac{x^2}{2}\right) + c\left(1 - x + \frac{x^2}{2}\right) + \dots$
+     $= (a - b + c) + (a - c)x + \frac{a + b + c}{2}x^2 + O(x^3)$.
+  3. Denominator: $x\sin x = x^2 - \frac{x^4}{6} + \dots \sim x^2$.
+  4. For a finite limit: the constant term must vanish, $a - b + c = 0$, and the x term must vanish, $a = c$.
+  5. Then the limit $= \frac{a + b + c}{2} = 2$, so $a + b + c = 4$.
+  6. Solving fully: a = c and b = a + c = 2a. Then a + 2a + a = 4 gives a = 1, b = 2, c = 1.
+  Check: $\frac{e^x - 2\cos x + e^{-x}}{x\sin x} = \frac{2\cosh x - 2\cos x}{x\sin x} \approx \frac{2x^2}{x^2} = 2$ ✓.
   Answer: 4
 M B 5: |-
-  Concept: $\operatorname{tr}(AA^T)$ = sum of squares of all 9 entries.
+  Concept: The (i, i) diagonal entry of $AA^T$ is the sum of the squares of row i of A. So the trace of $AA^T$ is the sum of the squares of all 9 entries of A.
   Solution:
-  1. Write 9 as a sum of squares from {0, 1, 4, 9} over 9 entries.
-  2. One 3: $9$ ways. Two 2s and one 1: $\binom{9}{2}\cdot7 = 252$. One 2 and five 1s: $9\binom{8}{5} = 504$. Nine 1s: 1 way.
+  1. The entries come from {0, 1, 2, 3}, with squares {0, 1, 4, 9}. We need 9 squares (one per entry) that add up to 9.
+  2. The possible combinations of non-zero squares that make 9:
+     - One 9 (one entry is 3, the rest 0): choose its position, $\binom{9}{1} = 9$ ways.
+     - 4 + 4 + 1 (two 2s and one 1): positions for the 2s, $\binom{9}{2} = 36$; then the 1, 7 ways. Total $36\times7 = 252$.
+     - 4 + 1 + 1 + 1 + 1 + 1 (one 2 and five 1s): position of the 2, 9 ways; then five of the remaining eight for the 1s, $\binom{8}{5} = 56$. Total $9\times56 = 504$.
+     - Nine 1s (every entry is 1): 1 way.
+     - 4 + 4 + 4 = 12 and other combinations overshoot or cannot be completed with the available squares (e.g. 9 needs 4 + 4 + 1 exactly, not 4 + 5).
   3. Total $= 9 + 252 + 504 + 1 = 766$.
+  Checking the cases systematically: let k be the number of 2s. With one 3, nothing else is possible. Otherwise $4k + (\text{number of 1s}) = 9$ with k = 0, 1 or 2, giving nine, five or one 1s respectively. These are exactly the cases above.
   Answer: 766
 M B 6: |-
-  Concept: $P^{-1}AP - I = P^{-1}(A - I)P$, so its determinant equals $\det(A - I)$.
+  Concept: Similar matrices have the same determinant: $\det(P^{-1}BP) = \det B$. Also $P^{-1}AP - I = P^{-1}(A - I)P$. So the matrix P never needs to be inverted.
   Solution:
-  1. $\det(A - I) = 3 - 3\sqrt3i = -6\omega$.
-  2. $\det\left[(P^{-1}AP - I)^2\right] = 36\omega^2$, so $\alpha = 36$.
+  1. $\det\left[(P^{-1}AP - I)^2\right] = \left[\det(A - I)\right]^2$ (P is invertible, as the question implies).
+  2. $A - I = \begin{bmatrix}1 & 7 & \omega^2\\ -1 & -\omega - 1 & 1\\ 0 & -\omega & -\omega\end{bmatrix}$. Using $1 + \omega + \omega^2 = 0$: $-\omega - 1 = \omega^2$.
+  3. Expand along row 1:
+     $1\cdot[\omega^2(-\omega) - 1(-\omega)] - 7[(-1)(-\omega) - 1\cdot0] + \omega^2[(-1)(-\omega) - \omega^2\cdot0]$.
+  4. $= (-\omega^3 + \omega) - 7\omega + \omega^3 = \omega - 7\omega = -6\omega$ (using $\omega^3 = 1$, the ω³ terms cancel).
+  5. $[\det(A - I)]^2 = 36\omega^2$.
+  6. So $\alpha\omega^2 = 36\omega^2$ and α = 36.
+  Note: the large entries of P are a distraction. Only its invertibility matters. (Check: det P ≠ 0 is needed for P⁻¹ to exist, which the question assumes.)
   Answer: 36
 M B 7: |-
-  Concept: The normal is parallel to $x + 3y = -5$ (slope $-\frac{1}{3}$), so the tangent slope is 3.
+  Concept: By the Fundamental Theorem of Calculus, $y'(x) = 2x^2 - 15x + 10$. A normal parallel to a given line means the tangent slope is the negative reciprocal of that line's slope.
   Solution:
-  1. $y' = 2a^2 - 15a + 10 = 3 \Rightarrow 2a^2 - 15a + 7 = 0 \Rightarrow a = 7$ (since $a > 1$).
-  2. $b = \frac{2}{3}(343) - \frac{15}{2}(49) + 70 = -\frac{413}{6}$.
-  3. $|a + 6b| = |7 - 413| = 406$.
+  1. The line $x + 3y = -5$ has slope $-\frac{1}{3}$. The normal at (a, b) has this slope, so the tangent slope is 3.
+  2. $y'(a) = 2a^2 - 15a + 10 = 3$, so $2a^2 - 15a + 7 = 0$, giving $(2a - 1)(a - 7) = 0$ and $a = \frac{1}{2}$ or 7.
+  3. With a > 1: a = 7.
+  4. $b = y(7) = \int_0^7(2t^2 - 15t + 10)dt = \left[\frac{2t^3}{3} - \frac{15t^2}{2} + 10t\right]_0^7$.
+  5. $= \frac{2(343)}{3} - \frac{15(49)}{2} + 70 = \frac{686}{3} - \frac{735}{2} + 70 = \frac{1372 - 2205 + 420}{6} = -\frac{413}{6}$.
+  6. $a + 6b = 7 - 413 = -406$, so $|a + 6b| = 406$.
+  Check: $\frac{686}{3} \approx 228.67$, $\frac{735}{2} = 367.5$, so $b \approx 228.67 - 367.5 + 70 = -68.83$, and $6b = -413$ ✓.
   Answer: 406
 M B 8: |-
-  Concept: $y = (x + 1)^2 + c$; a bounded region with the x-axis needs $c < 0$.
+  Concept: Integrate the differential equation to get a family of parabolas. For the curve to enclose a finite region with the x-axis, it must cross the axis twice. The area between $y = u^2 - k^2$ and the axis is $\frac{4k^3}{3}$.
   Solution:
-  1. With $k = \sqrt{-c}$, the area between $y = u^2 - k^2$ and the axis is $\frac{4k^3}{3}$.
-  2. $\frac{4k^3}{3} = \frac{4\sqrt8}{3} \Rightarrow k^3 = 2\sqrt2 \Rightarrow k = \sqrt2$, $c = -2$.
-  3. $y(1) = 4 - 2 = 2$.
+  1. $\frac{dy}{dx} = 2(x + 1)$, so $y = (x + 1)^2 + c$.
+  2. The parabola opens upward. It encloses a finite region with the x-axis only if its vertex is below the axis: c < 0. Write $c = -k^2$ with k > 0.
+  3. With u = x + 1: $y = u^2 - k^2$, which meets the axis at u = ±k.
+  4. Area $= \int_{-k}^{k}(k^2 - u^2)du = 2\left(k^3 - \frac{k^3}{3}\right) = \frac{4k^3}{3}$.
+  5. $\frac{4k^3}{3} = \frac{4\sqrt8}{3}$, so $k^3 = \sqrt8 = 2\sqrt2 = (\sqrt2)^3$ and $k = \sqrt2$.
+  6. $c = -k^2 = -2$, so $y = (x + 1)^2 - 2$.
+  7. $y(1) = 4 - 2 = 2$.
+  Check: the roots are $x = -1 \pm \sqrt2$. The area is $\frac{2}{3}\times\text{base}\times\text{depth}$ (the parabolic segment rule) $= \frac{2}{3}\times2\sqrt2\times2 = \frac{8\sqrt2}{3} = \frac{4\sqrt8}{3}$ ✓.
   Answer: 2
 M B 9: |-
-  Concept: $f(x) + f(x+1) = 2$ gives $f(x + 2) = f(x)$ (period 2).
+  Concept: A functional equation such as $f(x) + f(x + 1) = 2$ implies periodicity. Replacing x by x + 1 and subtracting shows that f has period 2. The integral of a periodic function over any interval of one full period is the same.
   Solution:
-  1. $\int_0^2f = \int_0^1[f(x) + f(x + 1)]dx = 2$; any interval of length 2 gives 2.
-  2. $I_1 = 4\times2 = 8$ and $I_2 = 2\times2 = 4$.
-  3. $I_1 + 2I_2 = 16$.
+  1. $f(x) + f(x + 1) = 2$ and $f(x + 1) + f(x + 2) = 2$. Subtracting: $f(x + 2) = f(x)$. So f has period 2.
+  2. Integral over one period: $\int_0^2f(x)dx = \int_0^1f(x)dx + \int_1^2f(x)dx$. In the second, put x = t + 1: $\int_0^1f(t + 1)dt$.
+  3. So $\int_0^2f = \int_0^1[f(x) + f(x + 1)]dx = \int_0^12\,dx = 2$.
+  4. Any interval of length 2 gives the same integral, 2 (by periodicity).
+  5. $I_1 = \int_0^8f = 4$ periods $\times2 = 8$.
+  6. $I_2 = \int_{-1}^3f$ spans length 4 = 2 periods, so $I_2 = 2\times2 = 4$.
+  7. $I_1 + 2I_2 = 8 + 8 = 16$.
+  Example: f(x) = 1 + sin(πx) satisfies $f(x) + f(x + 1) = 2 + \sin\pi x - \sin\pi x = 2$ ✓. Its integral over [0, 8] is 8 ✓.
   Answer: 16
 M B 10: |-
-  Concept: $|z + i| = |z - 3i|$ is the perpendicular bisector, $\operatorname{Im}z = 1$.
+  Concept: $\left|\frac{z + i}{z - 3i}\right| = 1$ means z is equidistant from −i and 3i, so it lies on the perpendicular bisector of the segment joining them: Im z = 1. A complex number $re^{i\theta}$ raised to the power n is real iff nθ is a multiple of π.
   Solution:
-  1. $z = x + i$: $w = x^2 + 1 - 2x - 2i + 2 = (x - 1)^2 + 2 - 2i$.
-  2. Re(w) is minimum at $x = 1$: $w = 2 - 2i = 2\sqrt2e^{-i\pi/4}$.
-  3. $w^n$ is real when $\frac{n\pi}{4}$ is a multiple of $\pi$, so the least $n$ is 4.
+  1. The points −i and 3i are (0, −1) and (0, 3). Their perpendicular bisector is the horizontal line y = 1. So z = x + i with x real.
+  2. $z\bar z = |z|^2 = x^2 + 1$, and $-2z = -2x - 2i$.
+  3. $w = x^2 + 1 - 2x - 2i + 2 = (x^2 - 2x + 3) - 2i = [(x - 1)^2 + 2] - 2i$.
+  4. Re(w) $= (x - 1)^2 + 2$ is minimum (value 2) at x = 1.
+  5. Then $w = 2 - 2i = 2\sqrt2\left(\cos\frac{\pi}{4} - i\sin\frac{\pi}{4}\right) = 2\sqrt2e^{-i\pi/4}$.
+  6. $w^n = (2\sqrt2)^ne^{-in\pi/4}$ is real iff $\frac{n\pi}{4}$ is a multiple of π, i.e. $4 \mid n$.
+  7. The least natural n is 4.
+  Check: $w^2 = (2 - 2i)^2 = 4 - 8i - 4 = -8i$ (not real). $w^4 = (-8i)^2 = -64$ (real) ✓.
   Answer: 4

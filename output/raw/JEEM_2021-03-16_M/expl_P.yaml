@@ -1,188 +1,373 @@
 P A 1: |-
-  Concept: Least count = 1 MSD − 1 VSD.
+  Concept: The least count (LC) of vernier callipers is the difference between one main-scale division (MSD) and one vernier-scale division (VSD): LC = 1 MSD − 1 VSD.
   Solution:
-  1. $n$ VSD $= (n - 1)$ MSD, so 1 VSD $= \frac{(n-1)a}{n}$ cm.
-  2. LC $= a - \frac{(n-1)a}{n} = \frac{a}{n}$ cm $= \frac{10a}{n}$ mm.
+  1. Given: 1 MSD = a cm.
+  2. The nth vernier division coincides with the (n − 1)th main-scale division, so n VSD = (n − 1) MSD.
+  3. So 1 VSD $= \frac{n - 1}{n}$ MSD $= \frac{(n - 1)a}{n}$ cm.
+  4. LC $= a - \frac{(n - 1)a}{n} = \frac{a}{n}$ cm.
+  5. Convert to mm (1 cm = 10 mm): LC $= \frac{10a}{n}$ mm.
+  Check with standard callipers: MSD = 1 mm (a = 0.1 cm), and 10 VSD = 9 MSD, so n = 10. Then LC $= \frac{10\times0.1}{10} = 0.1$ mm, the familiar value. ✓
+  Why others are wrong:
+  - (A) and (B) divide by $(n - 1)$. That would come from writing (n − 1) VSD = n MSD, which reverses the given coincidence.
+  - (C) $\frac{(n - 1)a}{10n}$ is the length of one VSD (and in the wrong units), not the least count.
+  Remember: LC = (value of 1 MSD) ÷ (number of vernier divisions) whenever n VSD = (n − 1) MSD.
   Answer: (D)
 P A 2: |-
-  Concept: A partially filled capacitor acts as a dielectric capacitor and an air capacitor in series.
+  Concept: A dielectric slab that fills the plate area but only part of the gap acts like two capacitors in series: one filled with dielectric (thickness t) and one with air (thickness d − t).
   Solution:
-  1. $C' = \frac{\varepsilon_0A}{\frac{3d/4}{K} + \frac{d}{4}} = \frac{\varepsilon_0A}{d}\cdot\frac{4K}{3 + K}$.
-  2. $C' = \frac{4K}{K + 3}C_0$.
+  1. Original capacitance: $C_0 = \frac{\varepsilon_0A}{d}$.
+  2. Dielectric part: $C_1 = \frac{K\varepsilon_0A}{3d/4} = \frac{4K\varepsilon_0A}{3d}$.
+  3. Air part (thickness $\frac{d}{4}$): $C_2 = \frac{\varepsilon_0A}{d/4} = \frac{4\varepsilon_0A}{d}$.
+  4. In series: $\frac{1}{C'} = \frac{3d}{4K\varepsilon_0A} + \frac{d}{4\varepsilon_0A} = \frac{d}{4\varepsilon_0A}\left(\frac{3}{K} + 1\right) = \frac{d}{4\varepsilon_0A}\cdot\frac{3 + K}{K}$.
+  5. $C' = \frac{4K}{K + 3}\cdot\frac{\varepsilon_0A}{d} = \frac{4K}{K + 3}C_0$.
+  Equivalent shortcut: $C' = \frac{\varepsilon_0A}{d - t + \frac{t}{K}}$ with $t = \frac{3d}{4}$.
+  Checks: K = 1 (no dielectric) gives $C' = C_0$ ✓. K → ∞ (a conductor) gives $C' = 4C_0$, as if the gap were only $\frac{d}{4}$ ✓.
+  Why others are wrong:
+  - (A) is the reciprocal factor; it would make C decrease with K.
+  - (B) wrongly adds the capacitances as if in parallel.
+  - (D) gives $C' < C_0$ for K > 1, which is impossible when a dielectric is inserted.
   Answer: (C)
 P A 3: |-
-  Concept: The upward component of the pull reduces the normal reaction and hence the friction.
+  Concept: When a pull is applied at an angle θ above the horizontal, its vertical component lifts the block partly, reducing the normal reaction N. Kinetic friction is $\mu_KN$.
   Solution:
-  1. The force F acts at $\theta$ above the horizontal: $N = mg - F\sin\theta$.
-  2. $ma = F\cos\theta - \mu_K(mg - F\sin\theta)$.
-  3. $a = \frac{F}{m}\cos\theta - \mu_K\left(g - \frac{F}{m}\sin\theta\right)$.
+  1. Forces on the block: weight mg (down), normal reaction N (up), applied force F at angle θ above the horizontal (as in the figure), and kinetic friction $f = \mu_KN$ opposite to the motion.
+  2. Vertical balance (no vertical acceleration): $N + F\sin\theta = mg$, so $N = mg - F\sin\theta$.
+  3. Horizontal (Newton's second law): $ma = F\cos\theta - \mu_KN = F\cos\theta - \mu_K(mg - F\sin\theta)$.
+  4. Divide by m: $a = \frac{F}{m}\cos\theta - \mu_K\left(g - \frac{F}{m}\sin\theta\right)$.
+  Why others are wrong:
+  - (A) makes the driving term negative, as if F pointed backwards.
+  - (C) has $g + \frac{F}{m}\sin\theta$, which applies if F pushes down at angle θ below the horizontal. That increases N; it is not this figure.
+  - (D) adds friction to the driving force, but friction always opposes the sliding.
+  Physical insight: pulling slightly upward reduces friction, which is why dragging a heavy box with a rope angled upward is easier than pushing it horizontally.
   Answer: (B)
 P A 4: |-
-  Concept: $P = P_0 + \rho gh$.
+  Concept: The absolute pressure at depth h in a liquid is $P = P_0 + \rho gh$. Only the gauge part $\rho gh$ scales with depth; the atmospheric pressure $P_0$ stays the same.
   Solution:
-  1. $3\times10^5 = 10^5 + \rho gh \Rightarrow \rho gh = 2\times10^5$ Pa.
-  2. Doubling the depth: $P' = 10^5 + 4\times10^5 = 5\times10^5$ Pa.
-  3. Increase $= \frac{2\times10^5}{3\times10^5}\times100 = \frac{200}{3}\%$.
+  1. At the initial depth: $3\times10^5 = 1\times10^5 + \rho gh$, so $\rho gh = 2\times10^5$ Pa.
+  2. (With ρ = 10³ kg m⁻³ and g = 10 m s⁻², this is h = 20 m.)
+  3. Doubling the depth doubles the gauge pressure: $\rho g(2h) = 4\times10^5$ Pa.
+  4. New absolute pressure: $P' = 1\times10^5 + 4\times10^5 = 5\times10^5$ Pa.
+  5. Percentage increase: $\frac{P' - P}{P}\times100 = \frac{5 - 3}{3}\times100 = \frac{200}{3}\% \approx 66.7\%$.
+  Common trap: doubling the depth does not double the total pressure (that would be a 100% increase), because $P_0$ does not change. The increase equals the extra gauge pressure $\rho gh = 2\times10^5$ Pa, relative to the original $3\times10^5$ Pa.
+  Why others are wrong:
+  - (B) $\frac{200}{5}\% = 40\%$ uses the new pressure as the base.
+  - (C) and (D) are the inverted ratios, which are far too small.
   Answer: (A)
 P A 5: |-
-  Concept: Minimum deviation condition of a prism.
+  Concept: For a prism, the deviation $\delta = i + e - A$ is minimum when the ray passes symmetrically through the prism: $i = e$, and then $r_1 = r_2 = \frac{A}{2}$.
   Solution:
-  1. At minimum deviation, $i = e$ and $r_1 = r_2 = \frac{A}{2}$, so (C) is true.
-  2. The ray passes symmetrically through the prism, so (A) is true.
-  3. For an isosceles prism, the refracted ray inside is parallel to the base, so (B) is true.
-  4. (D) contradicts $i = e$, so it is false.
+  1. Statement (C): at minimum deviation, the angle of incidence equals the angle of emergence. This follows from the reversibility of light: if $i \ne e$ at the minimum, swapping them would give a second minimum at the same δ, which contradicts the uniqueness of the minimum. True.
+  2. Statement (A): because $i = e$ and $r_1 = r_2$, the incident and emergent rays are symmetric about the bisector of the prism angle. True.
+  3. Statement (B): with $r_1 = r_2$, the ray inside makes equal angles with both refracting faces. For the usual isosceles or equilateral prism, the refracted ray is then parallel to the base. True (this is the standard textbook statement).
+  4. Statement (D): $e = 2i$ contradicts $i = e$ (except for the trivial i = 0). False.
+  5. At minimum deviation: $\mu = \frac{\sin\frac{A + \delta_m}{2}}{\sin\frac{A}{2}}$, used to measure the refractive index of the prism material.
+  Why others are wrong:
+  - (B) Only (D) is exactly the false statement.
+  - (C) and (D) omit a true statement (C or A respectively).
   Answer: (A)
 P A 6: |-
-  Concept: $E = cB$, and $\vec E\times\vec B$ points along the direction of propagation.
+  Concept: In a plane EM wave in vacuum, E and B are perpendicular to each other and to the direction of propagation. Their magnitudes are related by $E = cB$, and the direction of propagation is along $\vec E\times\vec B$.
   Solution:
-  1. $|E| = 3\times10^8\times8\times10^{-8} = 24$ V/m.
-  2. Propagation along $+\hat y$ with $\vec B$ along $\hat z$: since $(-\hat x)\times\hat z = \hat y$, $\vec E$ is along $-\hat x$.
-  3. $\vec E = -24\hat x$ V/m.
+  1. Magnitude: $E = cB = 3\times10^8\times8.0\times10^{-8} = 24$ V/m.
+  2. Direction: the propagation is along $+\hat y$ and $\vec B$ is along $+\hat z$. $\vec E$ must be along $\pm\hat x$ (perpendicular to both).
+  3. Test $+\hat x$: $\hat x\times\hat z = -\hat y$, the wrong direction.
+  4. Test $-\hat x$: $(-\hat x)\times\hat z = \hat y$ ✓.
+  5. So $\vec E = -24\hat x$ V/m.
+  6. The frequency (500 MHz) is not needed for this instantaneous relation. It gives $\lambda = \frac{c}{f} = 0.6$ m.
+  Remember the cyclic order: $\hat x\times\hat y = \hat z$, $\hat y\times\hat z = \hat x$, $\hat z\times\hat x = \hat y$. Reversing the order introduces a minus sign.
+  Why others are wrong:
+  - (B) and (D) use $E = \frac{B}{c}$ or a similar wrong relation (the magnitude 2.6 is unrelated), and (D) also has E along the propagation direction, which is impossible for a transverse wave.
+  - (C) has the correct magnitude but the wrong sign, which would make the wave travel along $-\hat y$.
   Answer: (A)
 P A 7: |-
-  Concept: Conservation of angular momentum: $v_1r_1 = v_2r_2$ at perihelion and aphelion.
+  Concept: Gravity is a central force, so the comet's angular momentum about the Sun is conserved. At perihelion and aphelion, the velocity is perpendicular to the radius vector, so $L = mvr$ exactly.
   Solution:
-  1. $v_{far} = \frac{6\times10^4\times8\times10^{10}}{1.6\times10^{12}} = 3\times10^3$ m/s.
+  1. Conservation: $mv_{near}r_{min} = mv_{far}r_{max}$.
+  2. $v_{far} = v_{near}\cdot\frac{r_{min}}{r_{max}} = 6\times10^4\times\frac{8.0\times10^{10}}{1.6\times10^{12}}$.
+  3. $\frac{8.0\times10^{10}}{1.6\times10^{12}} = 5\times10^{-2} = \frac{1}{20}$.
+  4. $v_{far} = \frac{6\times10^4}{20} = 3\times10^3$ m/s.
+  Physical picture: this is Kepler's second law (equal areas in equal times). The comet moves fastest when closest to the Sun and slowest when farthest. Here the distance ratio is 20, so the speed ratio is also 20.
+  Note: $v \propto \frac{1}{r}$ holds only at these two extreme points, where the velocity is perpendicular to r. At other points $L = mvr\sin\phi$, and the angle must be included.
+  Why others are wrong:
+  - (A) $1.5\times10^3$ would use a ratio of 40.
+  - (B) $6\times10^3$ would use a ratio of 10.
+  - (D) $4.5\times10^3$ fits no consistent calculation.
   Answer: (C)
 P A 8: |-
-  Concept: With the N pole pointing north, the neutral points lie on the equatorial line, where $\frac{\mu_0}{4\pi}\frac{M}{(r^2 + l^2)^{3/2}} = B_H$.
+  Concept: A neutral point is where the magnet's field exactly cancels the Earth's horizontal field $B_H$. With the N pole pointing geographic north, the magnet's field on its equatorial line points south (opposite to $B_H$), so the neutral points lie on the equatorial (broadside-on) line.
   Solution:
-  1. $l = 7$ cm, $r = 18$ cm: $(r^2 + l^2)^{3/2} = (0.0373)^{3/2} = 7.20\times10^{-3}$ m³.
-  2. $M = \frac{B_H(r^2+l^2)^{3/2}}{10^{-7}} = \frac{0.4\times10^{-4}\times7.20\times10^{-3}}{10^{-7}} \approx 2.88$ J T⁻¹.
+  1. Magnet length 14 cm, so half-length $l = 7$ cm $= 0.07$ m. Distance of the neutral point from the centre: $r = 18$ cm $= 0.18$ m.
+  2. Equatorial field of a bar magnet: $B = \frac{\mu_0}{4\pi}\frac{M}{(r^2 + l^2)^{3/2}}$.
+  3. $r^2 + l^2 = 0.0324 + 0.0049 = 0.0373$ m². $(0.0373)^{3/2} = 0.0373\times0.1931 = 7.20\times10^{-3}$ m³.
+  4. At the neutral point, $B = B_H = 0.4$ G $= 0.4\times10^{-4}$ T.
+  5. $M = \frac{B_H(r^2 + l^2)^{3/2}}{\mu_0/4\pi} = \frac{0.4\times10^{-4}\times7.20\times10^{-3}}{10^{-7}} = 2.88$ J T⁻¹.
+  Note: if the N pole pointed south instead, the neutral points would lie on the axial line, and we would use $B = \frac{\mu_0}{4\pi}\frac{2Mr}{(r^2 - l^2)^2}$.
+  Why others are wrong: (A), (B) and (D) are powers-of-ten slips, typically from leaving r and l in cm or forgetting that 1 G = 10⁻⁴ T.
   Answer: (C)
 P A 9: |-
-  Concept: Dalton's law: $P = \frac{n_{total}RT}{V}$.
+  Concept: For a mixture of ideal gases that do not react, Dalton's law of partial pressures gives the total pressure as $P = \frac{(n_1 + n_2 + \dots)RT}{V}$. Only the total number of moles matters, not the identity of the gases.
   Solution:
-  1. Moles: O₂ $\frac{16}{32} = 0.5$, N₂ $\frac{28}{28} = 1$, CO₂ $\frac{44}{44} = 1$; total 2.5.
-  2. $P = \frac{5}{2}\frac{RT}{V}$.
+  1. Moles of O₂: $\frac{16}{32} = 0.5$ mol.
+  2. Moles of N₂: $\frac{28}{28} = 1$ mol.
+  3. Moles of CO₂: $\frac{44}{44} = 1$ mol.
+  4. Total: $n = 0.5 + 1 + 1 = 2.5$ mol.
+  5. $P = \frac{2.5RT}{V} = \frac{5}{2}\frac{RT}{V}$.
+  6. Partial pressures: $p_{O_2} = \frac{0.5RT}{V}$, $p_{N_2} = p_{CO_2} = \frac{RT}{V}$. Their sum is the same.
+  Why others are wrong:
+  - (A) $\frac{88RT}{V}$ uses the total mass (16 + 28 + 44 = 88 g) instead of moles.
+  - (B) $\frac{3RT}{V}$ counts one mole of each gas, forgetting that 16 g of O₂ is only half a mole.
+  - (D) $\frac{4RT}{V}$ fits no consistent calculation.
+  Common slip: using the atomic mass of O (16) instead of the molecular mass of O₂ (32).
   Answer: (C)
 P A 10: |-
-  Concept: State functions depend only on the state; heat and work depend on the process.
+  Concept: A state function (point function) depends only on the equilibrium state of a system (P, V, T, U, H, S and so on). A path function depends on the process by which the system goes from one state to another.
   Solution:
-  1. $Q$ and $W$ depend on the path between states, so they are path functions (not state variables).
-  2. Their sum, $\Delta U$, is a state function.
+  1. Work: $W = \int P\,dV$ is the area under the curve on a P–V diagram. Different paths between the same two states enclose different areas, so W depends on the path.
+  2. Heat: from the first law, $Q = \Delta U + W$. ΔU is fixed by the end states, but W is not, so Q also depends on the path.
+  3. So heat and work are path functions. They are energy in transit, not properties that a system "has".
+  4. In differential form this is written with inexact differentials, δQ and δW, compared with the exact dU.
+  5. The combination $Q - W = \Delta U$ is path-independent. This is the content of the first law.
+  6. Example: in a cyclic process ΔU = 0, but the net work (the area of the loop) and the net heat are non-zero. A state function would return to its initial value.
+  Why others are wrong:
+  - (B) and (C) Intensive variables (T, P) and extensive variables (V, U) are both state variables, and Q and W are not state variables at all.
+  - (D) "Point function" is another name for a state function, the opposite of the correct answer.
   Answer: (A)
 P A 11: |-
-  Concept: $I = \sum mr_\perp^2$.
+  Concept: The moment of inertia of point masses about an axis is $I = \sum m_ir_i^2$, where $r_i$ is the perpendicular distance of each mass from the axis.
   Solution:
-  1. For the axis through A parallel to diagonal DB: A is at distance 0, B and D at $\frac{l}{\sqrt2}$, C at $\sqrt2l$ (the full diagonal).
-  2. $I = 0 + 2m\frac{l^2}{2} + m(2l^2) = 3ml^2$.
+  1. Square ABCD with side l. The diagonals AC and BD each have length $\sqrt2l$ and bisect each other at right angles at the centre O.
+  2. The axis passes through A and is parallel to diagonal DB. It is therefore perpendicular to diagonal AC.
+  3. Distances from this axis, measured along AC:
+     - A lies on the axis: $r_A = 0$.
+     - B and D lie on DB, which is parallel to the axis at a distance AO $= \frac{\sqrt2l}{2} = \frac{l}{\sqrt2}$. So $r_B = r_D = \frac{l}{\sqrt2}$.
+     - C is at the far end of diagonal AC: $r_C = AC = \sqrt2l$.
+  4. $I = m(0) + m\frac{l^2}{2} + m\frac{l^2}{2} + m(2l^2) = ml^2 + 2ml^2 = 3ml^2$.
+  Check with the parallel-axis theorem: about the diagonal DB through the centre, $I_{DB} = 2m\left(\frac{l}{\sqrt2}\right)^2 = ml^2$. Shifting to a parallel axis through A (distance $\frac{l}{\sqrt2}$, total mass 4m) adds $4m\frac{l^2}{2} = 2ml^2$. Total $3ml^2$ ✓.
   Answer: (C)
 P A 12: |-
-  Concept: $R = \frac{\rho l}{A}$ and $I = \frac{V}{R}$.
+  Concept: The resistance of a uniform wire is $R = \frac{\rho l}{A}$, where the resistivity ρ depends only on the material and temperature. The current follows from Ohm's law, $I = \frac{V}{R}$.
   Solution:
-  1. $R' = \frac{\rho(2l)}{A/2} = 4R$.
-  2. $I' = \frac{V}{4R} = \frac{1}{4}\frac{VA}{\rho l}$.
+  1. Original resistance: $R = \frac{\rho l}{A}$, so the original current is $I = \frac{VA}{\rho l}$.
+  2. New wire of the same material: length $2l$, area $\frac{A}{2}$.
+  3. $R' = \frac{\rho(2l)}{A/2} = \frac{4\rho l}{A} = 4R$.
+  4. With the same potential difference V across the wire: $I' = \frac{V}{R'} = \frac{V}{4R} = \frac{1}{4}\frac{VA}{\rho l}$.
+  Note on the situation: this is the case of a different wire with doubled length and halved area. If an existing wire were stretched to twice its length, the volume would stay constant and the area would halve automatically, again giving R′ = 4R. The resistivity is unchanged in both cases because it is a material property.
+  Why others are wrong:
+  - (B) $\frac{3}{4}$ has no basis.
+  - (C) is the reciprocal expression, $\frac{R}{V}$, which has the dimensions of 1/current, not current.
+  - (D) $4\frac{VA}{\rho l}$ would need the resistance to fall to a quarter, the opposite of what happens.
   Answer: (A)
 P A 13: |-
-  Concept: In an accelerating lift, $g_{eff} = g + a$ (upward acceleration).
+  Concept: In an accelerating frame, a pendulum behaves as if gravity were replaced by the effective gravity $\vec g_{eff} = \vec g - \vec a_{frame}$. For a lift accelerating upward with acceleration a, $g_{eff} = g + a$. The period is $T = 2\pi\sqrt{\frac{L}{g_{eff}}}$.
   Solution:
-  1. $g_{eff} = \frac{3g}{2}$.
-  2. $T' = T\sqrt{\frac{g}{3g/2}} = \sqrt{\frac{2}{3}}T$.
+  1. Stationary lift: $T = 2\pi\sqrt{\frac{L}{g}}$.
+  2. Lift accelerating upward with $a = \frac{g}{2}$: the pseudo-force $ma$ acts downward in the lift frame, adding to gravity. $g_{eff} = g + \frac{g}{2} = \frac{3g}{2}$.
+  3. $T' = 2\pi\sqrt{\frac{L}{3g/2}} = T\sqrt{\frac{g}{3g/2}} = T\sqrt{\frac{2}{3}}$.
+  4. $T' = \sqrt{\frac{2}{3}}T \approx 0.816T$: the pendulum swings faster.
+  Other cases for comparison:
+  - Lift accelerating downward with a: $g_{eff} = g - a$, so the period increases.
+  - Free fall (a = g): $g_{eff} = 0$ and the pendulum does not oscillate at all.
+  - Uniform velocity (a = 0): the period is unchanged.
+  Why others are wrong:
+  - (A) $\sqrt3T$ and (C) $\sqrt{\frac{3}{2}}T$ increase the period, which would correspond to downward acceleration.
+  - (B) $\frac{T}{\sqrt3}$ corresponds to $g_{eff} = 3g$, i.e. a = 2g.
   Answer: (D)
 P A 14: |-
-  Concept: $a = v\frac{dv}{dx}$.
+  Concept: When velocity is given as a function of position, the acceleration is $a = \frac{dv}{dt} = \frac{dv}{dx}\cdot\frac{dx}{dt} = v\frac{dv}{dx}$.
   Solution:
-  1. From the graph, $v$ rises linearly from 10 to 50 m/s over 0–200 m: $v = 10 + 0.2x$, $\frac{dv}{dx} = 0.2$.
-  2. $a = 0.2(10 + 0.2x) = 2 + 0.04x$, a straight line from 2 to 18 m/s² up to 200 m.
-  3. Beyond 200 m, $v$ is constant, so $a = 0$.
+  1. Reading the v–x graph: v increases linearly from 10 m/s at x = 0 to 50 m/s at x = 200 m, then stays at 50 m/s up to 400 m.
+  2. For $0 \le x \le 200$ m: slope $\frac{dv}{dx} = \frac{50 - 10}{200} = 0.2$ s⁻¹, so $v = 10 + 0.2x$.
+  3. $a = v\frac{dv}{dx} = 0.2(10 + 0.2x) = 2 + 0.04x$.
+  4. This is linear in x: $a = 2$ m/s² at x = 0 and $a = 2 + 8 = 18$ m/s² at x = 200 m. It is a straight line, not a curve.
+  5. For $200 < x \le 400$ m: v is constant, so $\frac{dv}{dx} = 0$ and a = 0.
+  6. The a–x graph is a straight line rising from 2 to 18 m/s² up to 200 m, then dropping to zero.
+  Why others are wrong:
+  - (B) The rise is linear, not concave up, because a is linear in x.
+  - (C) and (D) keep a = 18 beyond 200 m, but constant velocity means zero acceleration.
+  Note: the official NTA key is option (A). Some coaching keys suggested a bonus because of the sudden jump in a at x = 200 m (a kink in v), but the physics above matches (A).
   Answer: (A)
 P A 15: |-
-  Concept: A quarter-wave antenna has length $\frac{\lambda}{4}$.
+  Concept: For efficient radiation, the length of a transmitting antenna should be comparable to the wavelength. The standard (Marconi) antenna is a quarter-wave antenna: length $= \frac{\lambda}{4}$.
   Solution:
-  1. $\lambda = 4\times25 = 100$ m (the tower height does not matter).
+  1. Antenna length $l = 25$ m.
+  2. $l = \frac{\lambda}{4}$, so $\lambda = 4l = 4\times25 = 100$ m.
+  3. The corresponding frequency is $f = \frac{c}{\lambda} = \frac{3\times10^8}{100} = 3$ MHz, in the medium-wave/short-wave (HF) band.
+  4. The tower height (75 m) is a distractor. Tower height decides the line-of-sight range, $d = \sqrt{2Rh}$, for space-wave communication. It has nothing to do with the wavelength.
+  Why others are wrong:
+  - (A) 300 m would be $4\times75$ (using the tower height), or $3\times(25 + 75)$ (using the total height); neither is how the antenna length works.
+  - (B) 400 m would be $4\times(25 + 75)$, again adding the tower height.
+  - (C) 200 m would treat the 25 m antenna as $\frac{\lambda}{8}$, or confuse it with a half-wave dipole; neither fits.
+  Rule: the default in JEE problems is the quarter-wave antenna, unless the question explicitly says "half-wave dipole", for which $l = \frac{\lambda}{2}$.
   Answer: (D)
 P A 16: |-
-  Concept: In an EM wave, $E = cB$, so $\frac{1}{2}\varepsilon_0E^2 = \frac{B^2}{2\mu_0}$.
+  Concept: In an electromagnetic wave in vacuum, the field amplitudes are related by $E_0 = cB_0$, and $c = \frac{1}{\sqrt{\mu_0\varepsilon_0}}$.
   Solution:
-  1. The average electric and magnetic energy densities are equal, each half of the total.
+  1. Electric energy density: $u_E = \frac{1}{2}\varepsilon_0E^2$.
+  2. Magnetic energy density: $u_B = \frac{B^2}{2\mu_0}$.
+  3. Substitute $B = \frac{E}{c}$: $u_B = \frac{E^2}{2\mu_0c^2} = \frac{E^2\mu_0\varepsilon_0}{2\mu_0} = \frac{1}{2}\varepsilon_0E^2 = u_E$.
+  4. This equality holds at every instant and point, since E and B oscillate in phase. It therefore also holds for the time averages: $U_e = U_m = \frac{1}{4}\varepsilon_0E_0^2$.
+  5. Total average energy density: $\langle u\rangle = U_e + U_m = \frac{1}{2}\varepsilon_0E_0^2$. The intensity is $I = \langle u\rangle c = \frac{1}{2}\varepsilon_0E_0^2c$.
+  Common misconception: because the numerical value of E (in V/m) is much larger than that of B (in T), students sometimes think the electric field carries more energy. The factor $c^2$ in the conversion exactly compensates for this.
+  Why others are wrong:
+  - (B) and (C) claim one form dominates, which contradicts the calculation above.
+  - (D) "not equal" is simply the negation of the correct result.
   Answer: (A)
 P A 17: |-
-  Concept: The capacitor voltage in an RC circuit charges and discharges exponentially.
+  Concept: When a square wave drives an RC circuit, the capacitor alternately charges (while the input is high) and discharges (while the input is low). Both happen exponentially with time constant τ = RC. The output is taken across the capacitor, as in the figure.
   Solution:
-  1. On the high half of the square wave, C charges: the output rises along a concave-down exponential.
-  2. On the low half, C discharges: the output falls along a concave-up exponential.
-  3. The CRO shows alternating charging and discharging curves.
+  1. Charging (input high, $V_0$): $V_C = V_0(1 - e^{-t/RC})$. This rises quickly at first and then flattens: a concave-down curve approaching $V_0$.
+  2. Discharging (input low, 0): $V_C = V_0e^{-t/RC}$. This falls quickly at first and then flattens: a concave-up curve approaching zero.
+  3. So the CRO shows a repeating pattern: a concave-down rise, then a concave-up fall, then another rise, and so on. These are shark-fin shapes, as in option (C).
+  4. If RC is much less than the half-period, the output is almost a square wave with rounded corners. If RC is much greater than the half-period, the curves are nearly straight, giving a near-triangular wave (an integrator). For intermediate values we see the exponential shapes.
+  Why others are wrong:
+  - (A) and (B) show a sharp (instantaneous) drop. A capacitor voltage cannot change instantaneously; it must discharge through R.
+  - (D) A sawtooth has a linear rise and sudden fall, again not possible for the capacitor voltage.
   Answer: (C)
 P A 18: |-
-  Concept: $eV_0 = h\nu - \phi$.
+  Concept: Einstein's photoelectric equation is $K_{max} = h\nu - \phi$. The stopping potential $V_0$ is the reverse voltage that just stops the most energetic photoelectrons: $eV_0 = K_{max}$.
   Solution:
-  1. The stopping potential depends only on the frequency of the radiation (for a given metal).
-  2. Intensity (amplitude) changes only the photocurrent; phase has no effect.
+  1. $V_0 = \frac{h\nu - \phi}{e} = \frac{h}{e}\nu - \frac{\phi}{e}$.
+  2. For a given metal (fixed work function φ), $V_0$ depends only on the frequency ν of the incident radiation. It increases linearly with ν, with slope $\frac{h}{e}$.
+  3. Intensity: higher intensity means more photons per second, so more photoelectrons and a larger saturation current. But each photon still has energy hν, so $K_{max}$ and $V_0$ are unchanged.
+  4. Amplitude: in the wave picture, amplitude sets the intensity ($I \propto E_0^2$), so it too affects only the current.
+  5. Phase: the phase of the wave has no effect on photoemission.
+  Historical significance: the independence of $V_0$ from intensity could not be explained by classical wave theory. It was key evidence for the photon (quantum) nature of light. Millikan's experiments plotting $V_0$ against ν confirmed the linear relation and gave an accurate value of h.
+  Why others are wrong: (A) phase, (B) intensity and (C) amplitude do not affect $V_0$, as explained above.
   Answer: (D)
 P A 19: |-
-  Concept: The wall supplies the centripetal force $N = m\omega^2R$.
+  Concept: For uniform circular motion, the required centripetal force is $F = m\omega^2R$. In a horizontal groove, gravity is balanced by the floor of the groove, and the outer side wall supplies the horizontal centripetal force as its normal reaction.
   Solution:
-  1. $\omega = \frac{2\pi}{40}$ rad/s.
-  2. $N = 0.2\times\frac{4\pi^2}{1600}\times0.2 = 9.87\times10^{-4}$ N.
+  1. Mass $m = 200$ g $= 0.2$ kg. Radius $R = 20$ cm $= 0.2$ m. Period $T = 40$ s.
+  2. Angular speed: $\omega = \frac{2\pi}{T} = \frac{2\pi}{40} = \frac{\pi}{20}$ rad/s.
+  3. $\omega^2 = \frac{\pi^2}{400} = \frac{9.87}{400} = 0.02467$ rad²/s².
+  4. $N = m\omega^2R = 0.2\times0.02467\times0.2 = 9.87\times10^{-4}$ N.
+  5. This matches option (D), $9.859\times10^{-4}$ N (the small difference comes from rounding π²).
+  Physical picture: the block moves very slowly (one round in 40 s, a speed of only about 3 cm/s), so the centripetal force is tiny, less than a millinewton, compared with the block's weight of about 2 N. The weight is supported by the floor of the groove, not the side wall.
+  Why others are wrong:
+  - (A) 0.0314 N and (C) $6.28\times10^{-3}$ N involve π only to the first power, e.g. using ω instead of ω².
+  - (B) is 100 times too large, a units slip such as using R = 20 instead of 0.2 m.
   Answer: (D)
 P A 20: |-
-  Concept: Lenz's law: the induced current opposes the change in flux through each loop.
+  Concept: The moving bar divides the rails into two circuits: one closed by $R_1$ and one closed by $R_2$. By Lenz's law, the current in each loop opposes the change of magnetic flux through that loop.
   Solution:
-  1. The bar moves left, so the loop containing $R_1$ shrinks: the inward flux decreases, and the induced current (to add inward field) is clockwise.
-  2. The loop containing $R_2$ grows: the inward flux increases, and the induced current is anticlockwise.
+  1. From the figure: $R_1$ is at the left end and $R_2$ at the right end of the rails. The bar is pulled to the left at speed v, and $\vec B$ points into the page.
+  2. Loop with $R_1$ (left loop): its area shrinks as the bar moves left, so the inward flux decreases. To oppose this decrease, the induced current must produce an inward field inside the loop, which means clockwise circulation (right-hand rule). So $I_1$ is clockwise.
+  3. Loop with $R_2$ (right loop): its area grows, so the inward flux increases. The induced current must produce an outward field, which means anticlockwise circulation. So $I_2$ is anticlockwise.
+  4. Consistency check: the motional EMF in the bar is $\varepsilon = BLv$. The same current through the bar splits between $R_1$ and $R_2$ in parallel. Viewed around each loop, this common current in the bar gives opposite senses of circulation in the two loops, as found.
+  Why others are wrong:
+  - (A) and (B) give both loops the same sense. That is impossible, since one loop's flux increases while the other's decreases.
+  - (D) is the reverse of the correct answer, which would apply if the bar moved to the right.
   Answer: (C)
 P B 1: |-
-  Concept: Series–parallel reduction, including the internal resistance.
+  Concept: Reduce the network step by step (parallel groups first, then series), then apply Ohm's law. The internal resistance of the source must be included in series.
   Solution:
-  1. Three 3 kΩ in parallel $= 1$ kΩ.
-  2. Total $= 5 + 1 + 1$ (internal) $= 7$ kΩ.
-  3. $I = \frac{21}{7} = 3$ mA, all of which flows through the 5 kΩ resistor.
+  1. From the figure: a 21 V source with internal resistance 1 kΩ drives a 5 kΩ resistor in series with a group of three 3 kΩ resistors connected in parallel.
+  2. Three equal resistors in parallel: $R_p = \frac{3}{3} = 1$ kΩ.
+  3. Total resistance: $5 + 1 + 1 = 7$ kΩ.
+  4. Current from the source: $I = \frac{21\ \text{V}}{7\ \text{k}\Omega} = 3$ mA.
+  5. The 5 kΩ resistor is in series with the source, so the entire current flows through it: $x = 3$ mA.
+  6. Each 3 kΩ branch carries $\frac{3}{3} = 1$ mA.
+  Checks:
+  - Voltage across 5 kΩ: $5\times3 = 15$ V. Across the parallel group: $1\times3 = 3$ V. Lost in the internal resistance: 3 V. Total $15 + 3 + 3 = 21$ V ✓.
+  - A common slip is to forget the internal resistance, giving $\frac{21}{6} = 3.5$ mA.
   Answer: 3
 P B 2: |-
-  Concept: $\beta = \frac{\lambda D}{d}$.
+  Concept: In Young's double-slit experiment, the fringe width is $\beta = \frac{\lambda D}{d}$, where D is the slit–screen distance and d is the slit separation.
   Solution:
-  1. $\lambda = \frac{\beta d}{D} = \frac{6\times10^{-3}\times10^{-3}}{10} = 6\times10^{-7}$ m $= 600$ nm.
+  1. Given: $\beta = 6$ mm $= 6\times10^{-3}$ m, $d = 1$ mm $= 1\times10^{-3}$ m, $D = 10$ m.
+  2. Rearrange: $\lambda = \frac{\beta d}{D}$.
+  3. $\lambda = \frac{6\times10^{-3}\times1\times10^{-3}}{10} = \frac{6\times10^{-6}}{10} = 6\times10^{-7}$ m.
+  4. In nanometres (1 nm = 10⁻⁹ m): $\lambda = 600$ nm, orange-red visible light.
+  Checks and insights:
+  - The fringe width is proportional to λ and D and inversely proportional to d. A large D (10 m) and a small d (1 mm) are why the fringes are several millimetres wide and easy to see.
+  - The formula assumes a small angle, D ≫ d, which clearly holds here (10 m vs 1 mm).
+  - Unit slips are the main danger: keep everything in metres, then convert the final answer. Using d in mm and β in mm but D in m would give 0.6, which is wrong by 1000.
   Answer: 600
 P B 3: |-
-  Concept: $\tau = I\alpha$ and $\omega^2 = 2\alpha\theta$.
+  Concept: A constant tangential force gives a constant torque, so the disc undergoes uniform angular acceleration. Use the rotational analogue of $v^2 = u^2 + 2as$: $\omega^2 = \omega_0^2 + 2\alpha\theta$.
   Solution:
-  1. $\alpha = \frac{FR}{MR^2/2} = \frac{2F}{MR} = \frac{40}{20\times0.2} = 10$ rad/s².
-  2. $\theta = \frac{50^2}{2\times10} = 125$ rad.
-  3. $n = \frac{125}{6.28} \approx 20$.
+  1. Moment of inertia of a uniform disc about its central axis: $I = \frac{1}{2}MR^2 = \frac{1}{2}\times20\times0.2^2 = 0.4$ kg m².
+  2. Torque from the string (tangent to the rim): $\tau = FR = 20\times0.2 = 4$ N m.
+  3. Angular acceleration: $\alpha = \frac{\tau}{I} = \frac{4}{0.4} = 10$ rad/s².
+  4. Starting from rest ($\omega_0 = 0$) to $\omega = 50$ rad/s: $\theta = \frac{\omega^2}{2\alpha} = \frac{2500}{20} = 125$ rad.
+  5. Number of revolutions: $n = \frac{\theta}{2\pi} = \frac{125}{6.28} = 19.9 \approx 20$.
+  Energy check: work done by the torque is $\tau\theta = 4\times125 = 500$ J. Final kinetic energy is $\frac{1}{2}I\omega^2 = \frac{1}{2}\times0.4\times2500 = 500$ J ✓.
+  Also, the length of string unwound is $R\theta = 0.2\times125 = 25$ m, and $F\times25 = 500$ J, the same work.
   Answer: 20
 P B 4: |-
-  Concept: Balmer series: $\frac{1}{\lambda} = R\left(\frac{1}{4} - \frac{1}{n^2}\right)$.
+  Concept: The Balmer series consists of transitions ending on n = 2: $\frac{1}{\lambda} = R\left(\frac{1}{2^2} - \frac{1}{n^2}\right)$ with n = 3, 4, 5, …. The first line (Hα) is n = 3 → 2, the second n = 4 → 2 and the third n = 5 → 2.
   Solution:
-  1. First line ($n = 3$): $\frac{1}{\lambda_1} = \frac{5R}{36}$; third line ($n = 5$): $\frac{1}{\lambda_3} = \frac{21R}{100}$.
-  2. $\frac{\lambda_1}{\lambda_3} = \frac{21}{100}\times\frac{36}{5} = 1.512 = 15.12\times10^{-1}$.
-  3. $x \approx 15$.
+  1. First line (n = 3): $\frac{1}{\lambda_1} = R\left(\frac{1}{4} - \frac{1}{9}\right) = \frac{5R}{36}$.
+  2. Third line (n = 5): $\frac{1}{\lambda_3} = R\left(\frac{1}{4} - \frac{1}{25}\right) = \frac{21R}{100}$.
+  3. Ratio: $\frac{\lambda_1}{\lambda_3} = \frac{1/\lambda_3}{1/\lambda_1} = \frac{21/100}{5/36} = \frac{21\times36}{100\times5} = \frac{756}{500} = 1.512$.
+  4. Written as $x\times10^{-1}$: $1.512 = 15.12\times10^{-1}$, so x ≈ 15.
+  Check with known wavelengths: Hα = 656.3 nm and Hγ (n = 5 → 2) = 434.0 nm. The ratio is $\frac{656.3}{434.0} = 1.512$ ✓.
+  Note: the first line has the longest wavelength (smallest energy gap), so the ratio is greater than 1. Inverting it (0.66) is a common mistake that gives x ≈ 7.
   Answer: 15
 P B 5: |-
-  Concept: The zener holds 15 V across the load; current divides.
+  Concept: A zener diode in reverse breakdown keeps a constant voltage $V_Z$ across itself and anything in parallel with it (the load). The series resistor takes up the rest of the supply voltage. The zener current is the series current minus the load current.
   Solution:
-  1. $I_S = \frac{22 - 15}{35} = 0.2$ A; $I_L = \frac{15}{90} = \frac{1}{6}$ A.
-  2. $I_Z = \frac{1}{5} - \frac{1}{6} = \frac{1}{30}$ A.
-  3. $P = 15\times\frac{1}{30} = 0.5$ W $= 5\times10^{-1}$ W.
+  1. From the figure: a 22 V supply, a 35 Ω series resistor, and the zener (15 V) in parallel with a 90 Ω load.
+  2. Check that the zener is in breakdown: without it, the load voltage would be $22\times\frac{90}{125} = 15.84$ V > 15 V. So the zener conducts and clamps the load at 15 V.
+  3. Current through the series resistor: $I_S = \frac{22 - 15}{35} = \frac{7}{35} = 0.2$ A.
+  4. Load current: $I_L = \frac{15}{90} = \frac{1}{6} \approx 0.167$ A.
+  5. Zener current: $I_Z = I_S - I_L = 0.2 - 0.1667 = 0.0333$ A $= \frac{1}{30}$ A.
+  6. Power in the zener: $P_Z = V_ZI_Z = 15\times\frac{1}{30} = 0.5$ W $= 5\times10^{-1}$ W.
+  7. So x = 5.
+  Check: the power delivered by the supply is $22\times0.2 = 4.4$ W. This splits as 1.4 W in 35 Ω + 2.5 W in 90 Ω + 0.5 W in the zener = 4.4 W ✓.
   Answer: 5
 P B 6: |-
-  Concept: At resonance $Z = R$, so $P = \frac{V_{rms}^2}{R}$.
+  Concept: At resonance in a series LCR circuit, $X_L = X_C$. The impedance equals R (its minimum), the current is in phase with the voltage (power factor 1), and the power dissipated is maximum: $P = \frac{V_{rms}^2}{R}$.
   Solution:
-  1. $P = \frac{(250/\sqrt2)^2}{8} = \frac{31250}{8} = 3906$ W ≈ 4 kW.
+  1. Peak voltage $V_0 = 250$ V, so $V_{rms} = \frac{250}{\sqrt2}$ V and $V_{rms}^2 = \frac{62500}{2} = 31250$ V².
+  2. At resonance Z = R = 8 Ω.
+  3. $P = \frac{V_{rms}^2}{R} = \frac{31250}{8} = 3906.25$ W ≈ 3.9 kW.
+  4. To the nearest integer in kW: x = 4.
+  5. The values of L and C only fix the resonant frequency: $\omega_0 = \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{24\times10^{-3}\times60\times10^{-6}}} = \frac{1}{1.2\times10^{-3}} \approx 833$ rad/s. They do not affect the power at resonance.
+  Common slip: using the peak voltage directly gives $\frac{250^2}{8} = 7812$ W ≈ 8 kW. That is double the true average power. Average power always uses rms values ($P = V_{rms}I_{rms}\cos\phi$), or equivalently $\frac{V_0^2}{2R}$.
   Answer: 4
 P B 7: |-
-  Concept: Trace the logic levels gate by gate.
+  Concept: Evaluate a combinational logic circuit by tracing the input values gate by gate, using each gate's truth table. NOR gives 1 only when all inputs are 0. NAND gives 0 only when all inputs are 1. AND gives 1 only when all inputs are 1.
   Solution:
-  1. With A = 0 and B = 1, the inverted signal fed to the upper NOR gate is 1, so the NOR output is 0.
-  2. The lower NAND gate has a 0 input, so its output is 1.
-  3. The final AND gate gets 0 and 1, so Y = 0.
+  1. Inputs: A = 0 and B = 1.
+  2. Upper branch (from the figure): the signal reaching the NOR gate includes an inverted input that evaluates to 1. Since one NOR input is 1, the NOR output is 0 (any 1 forces NOR to 0).
+  3. Lower branch: the NAND gate receives a 0 among its inputs (from A = 0). Any 0 forces NAND to output 1.
+  4. Final gate: AND with inputs 0 (from the NOR) and 1 (from the NAND). AND needs all inputs to be 1, so Y = 0.
+  5. So x = 0.
+  Useful shortcuts for tracing:
+  - A 1 on any input of NOR forces 0; a 0 on any input of NAND forces 1.
+  - A 0 on any input of AND forces 0; a 1 on any input of OR forces 1.
+  Spotting a forcing input like these saves working out the full truth table. Here the NOR output alone is enough to decide the final AND output.
   Answer: 0
 P B 8: |-
-  Concept: For a quotient, the relative errors add.
+  Concept: For a quantity formed by multiplying or dividing measured quantities, the maximum relative (fractional) errors add. For $R = \frac{V}{I}$: $\frac{\Delta R}{R} = \frac{\Delta V}{V} + \frac{\Delta I}{I}$.
   Solution:
-  1. $\frac{\Delta R}{R} = \frac{2}{50} + \frac{0.2}{20} = 4\% + 1\% = 5\%$.
+  1. $V = (50 \pm 2)$ V: relative error $\frac{2}{50} = 0.04 = 4\%$.
+  2. $I = (20 \pm 0.2)$ A: relative error $\frac{0.2}{20} = 0.01 = 1\%$.
+  3. $\frac{\Delta R}{R} = 4\% + 1\% = 5\%$.
+  4. $R = \frac{50}{20} = 2.5$ Ω, so the absolute error is $\Delta R = 0.05\times2.5 = 0.125$ Ω. The result is $R = (2.5 \pm 0.125)$ Ω.
+  5. So x = 5.
+  Why the errors add even for division: in the worst case, V is at its maximum while I is at its minimum. Then R is overestimated by both errors together, not reduced by one of them. The subtraction of errors never happens in maximum-error analysis.
+  For powers, $Z = \frac{A^pB^q}{C^r}$ gives $\frac{\Delta Z}{Z} = p\frac{\Delta A}{A} + q\frac{\Delta B}{B} + r\frac{\Delta C}{C}$, where the exponents multiply the individual relative errors.
   Answer: 5
 P B 9: |-
-  Concept: Component of a force along a direction $= F\cos(\text{angle between them})$.
+  Concept: To find the component of a force along a given direction, project it: component $= F\cos\phi$, where φ is the angle between the force and that direction.
   Solution:
-  1. From the figure, AC makes 35° with the vertical (the angle at C is 145°).
-  2. Component of P along AC $= 100\cos35° = 100\times0.819 = 81.9$ N ≈ 82 N (as in the official solution).
+  1. The vertical force P = 100 N acts at the apex A of the frame.
+  2. From the figure, arm AC is inclined so that it makes 35° with the vertical line through A. (The figure shows the angle 145° at C between the arm and the horizontal on one side, i.e. 35° with the vertical.)
+  3. Component of P along arm AC: $P_{AC} = P\cos35° = 100\times0.819 = 81.9$ N.
+  4. To the nearest integer: x = 82.
+  Note on the method: the question says P is "resolved parallel to the arms AB and AC". Strictly, a parallelogram (non-orthogonal) resolution along two oblique arms uses the sine rule: $P_{AC} = \frac{P\sin\beta}{\sin(\alpha + \beta)}$, where α and β are the arms' angles with P. That is why sin 110° and cos 110° are also provided. The official answer, 82 N, corresponds to the direct projection $P\cos35°$, and the answer here follows the official key.
   Answer: 82
 P B 10: |-
-  Concept: Conservation of linear momentum in both directions.
+  Concept: In any collision or explosion, with no external force, the total linear momentum is conserved as a vector. Apply conservation separately along x and y.
   Solution:
-  1. Initial momentum: $10\times10\sqrt3 = 100\sqrt3$ along x.
-  2. x: $10\times20\cos\theta = 100\sqrt3 \Rightarrow \cos\theta = \frac{\sqrt3}{2}$.
-  3. y: $10\times10 = 10\times20\sin\theta \Rightarrow \sin\theta = \frac{1}{2}$ (the piece moves below the x-axis).
-  4. $\theta = 30°$.
+  1. Initial momentum: ball 1 has $10\times10\sqrt3 = 100\sqrt3$ kg m/s along +x. Ball 2 is at rest. Total $p_y = 0$.
+  2. After the collision, ball 1 is at rest. Ball 2 (20 kg) breaks into two 10 kg pieces.
+     Piece 1: 10 m/s along +y, so its momentum is (0, 100).
+     Piece 2: 20 m/s at angle θ with the x-axis, so its momentum is $(200\cos\theta, -200\sin\theta)$ (below the x-axis, as in the figure).
+  3. x-direction: $200\cos\theta = 100\sqrt3$, so $\cos\theta = \frac{\sqrt3}{2}$.
+  4. y-direction: $100 - 200\sin\theta = 0$, so $\sin\theta = \frac{1}{2}$.
+  5. Both equations give θ = 30°, which confirms the data is consistent.
+  Energy check (not required): initial KE $= \frac{1}{2}\times10\times300 = 1500$ J. Final KE $= \frac{1}{2}\times10\times100 + \frac{1}{2}\times10\times400 = 500 + 2000 = 2500$ J. The kinetic energy increases, so energy must have been released in the disintegration (like an explosion). That is allowed, since only momentum must be conserved.
   Answer: 30
