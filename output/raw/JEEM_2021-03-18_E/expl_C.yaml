@@ -1,189 +1,363 @@
 C A 1: |-
-  Concept: Oxidation-state arithmetic (O = −2).
+  Concept: Oxidation states are found by assigning O = −2 and requiring the sum to equal the overall charge.
   Solution:
-  1. NO₃⁻: +5; NO₂: +4; NO: +2; N₂O: +1.
-  2. Order: NO₃⁻ > NO₂ > NO > N₂O.
+  1. NO₃⁻: x + 3(−2) = −1, so x = +5.
+  2. NO₂: x + 2(−2) = 0, so x = +4.
+  3. NO: x − 2 = 0, so x = +2.
+  4. N₂O: 2x − 2 = 0, so x = +1.
+  5. Order: NO₃⁻ (+5) > NO₂ (+4) > NO (+2) > N₂O (+1).
+  The full range for nitrogen: from −3 (NH₃, NH₄⁺) through 0 (N₂) to +5 (HNO₃, NO₃⁻, N₂O₅). Other examples: N₂H₄ (−2), NH₂OH (−1), N₂O₃ and HNO₂ (+3).
+  Chemical consequence: species with N in high oxidation states (NO₃⁻, NO₂) are oxidising agents. Those in intermediate states (NO, HNO₂) can act as both oxidants and reductants.
+  Why others are wrong:
+  - (B) puts NO₂ above NO₃⁻.
+  - (C) and (D) put the lower oxidation states first or scramble the order.
   Answer: (A)
 C A 2: |-
-  Concept: H₂O₂ acts as an oxidant and a reductant in basic medium.
+  Concept: In H₂O₂, oxygen has oxidation state −1, between 0 (O₂) and −2 (H₂O/OH⁻). So H₂O₂ can act as an oxidant (O goes to −2) or a reductant (O goes to 0), in both acidic and basic media. Which reaction is quoted depends on the medium.
   Solution:
-  1. (A) Oxidant: $Mn^{2+} + H_2O_2 + 2OH^- \to MnO_2 + 2H_2O$ (Mn²⁺ → Mn⁴⁺).
-  2. (B) Reductant: $I_2 + H_2O_2 + 2OH^- \to 2I^- + 2H_2O + O_2$.
-  3. PbS → PbSO₄ is the standard acidic-medium example.
+  1. (A) Mn²⁺ → Mn⁴⁺ in basic medium: H₂O₂ is the oxidant. $Mn^{2+} + H_2O_2 + 2OH^- \to MnO_2 + 2H_2O$. This is a standard basic-medium example ✓.
+  2. (B) I₂ → I⁻ in basic medium: H₂O₂ is the reductant. $I_2 + H_2O_2 + 2OH^- \to 2I^- + 2H_2O + O_2$. Also a standard basic-medium example ✓.
+  3. (C) PbS → PbSO₄: H₂O₂ oxidises black lead sulphide to white lead sulphate, $PbS + 4H_2O_2 \to PbSO_4 + 4H_2O$. NCERT lists this under acidic medium (it is used to restore old oil paintings, where lead pigments have blackened). So it is not included for basic medium.
+  4. The answer is (A) and (B) only.
+  Other basic-medium examples: $2Fe^{2+} + H_2O_2 \to 2Fe^{3+} + 2OH^-$ (oxidant); $2MnO_4^- + 3H_2O_2 \to 2MnO_2 + 3O_2 + 2H_2O + 2OH^-$ (reductant).
+  Why others are wrong:
+  - (A) and (B) (as options) include (C) or omit (B).
+  - (C) (B only) omits (A).
   Answer: (D)
 C A 3: |-
-  Concept: Mechanism of the Hofmann bromamide reaction.
+  Concept: The Hofmann bromamide degradation converts a primary amide RCONH₂ into an amine RNH₂ with one carbon fewer, using Br₂ and NaOH (hypobromite). The lost carbon is the carbonyl carbon.
   Solution:
-  1. The isocyanate intermediate R–N=C=O is hydrolysed by NaOH.
-  2. The carbonyl carbon leaves as carbonate: $RNCO + 2OH^- \to RNH_2 + CO_3^{2-}$.
+  1. Mechanism:
+     - N-bromination: RCONH₂ + OBr⁻ → RCONHBr.
+     - Deprotonation, then rearrangement: the R group migrates from carbon to nitrogen as Br⁻ leaves, giving the isocyanate R–N=C=O.
+     - Hydrolysis: R–N=C=O + H₂O → R–NH–COOH (a carbamic acid), which decarboxylates to RNH₂ + CO₂.
+  2. In the strongly basic reaction mixture, the CO₂ is captured by NaOH as carbonate: CO₂ + 2OH⁻ → CO₃²⁻ + H₂O.
+  3. Overall: $RCONH_2 + Br_2 + 4NaOH \to RNH_2 + Na_2CO_3 + 2NaBr + 2H_2O$.
+  4. So the carbonyl carbon is lost as carbonate, CO₃²⁻.
+  Why others are wrong:
+  - (B) Hydrogencarbonate would need less base; with excess NaOH, carbonate forms.
+  - (C) CO₂ is formed transiently, but in the alkaline medium it is converted to carbonate.
+  - (D) CO is not formed in this reaction.
   Answer: (A)
 C A 4: |-
-  Concept: Magnetic behaviour needs unpaired d-electrons.
+  Concept: A substance shows magnetic behaviour (paramagnetism, ferromagnetism or ferrimagnetism) if it contains unpaired electrons, typically from transition-metal ions with partly filled d-orbitals.
   Solution:
-  1. Mn₃O₄ (Mn²⁺/Mn³⁺, a spinel) has unpaired electrons and shows magnetic (ferrimagnetic) behaviour.
-  2. SiO₂, Na₂O and MgO are diamagnetic.
+  1. (B) Mn₃O₄ (hausmannite): a mixed-valence oxide, MnO·Mn₂O₃, containing Mn²⁺ (3d⁵, 5 unpaired electrons) and Mn³⁺ (3d⁴, 4 unpaired electrons). It has a spinel structure and is ferrimagnetic at low temperature, paramagnetic at room temperature. It shows magnetic properties.
+  2. (A) SiO₂: Si⁴⁺ and O²⁻ have only closed shells. Diamagnetic.
+  3. (C) Na₂O: Na⁺ and O²⁻ have noble-gas configurations. Diamagnetic.
+  4. (D) MgO: Mg²⁺ and O²⁻ have noble-gas configurations. Diamagnetic.
+  5. So the oxide with magnetic properties is Mn₃O₄.
+  Related: Fe₃O₄ (magnetite, FeO·Fe₂O₃) is the best-known ferrimagnetic spinel oxide. In NCERT, Fe₃O₄ is given as an example of ferrimagnetism and MnO as antiferromagnetic.
   Answer: (B)
 C A 5: |-
-  Concept: HI cleaves aryl alkyl ethers at the alkyl–O bond (the aryl C–O bond has partial double-bond character).
+  Concept: HI cleaves ethers. The first step protonates the ether oxygen. Then I⁻ attacks one of the carbons bonded to O. For aryl alkyl ethers, the attack occurs at the alkyl carbon, because the aryl C–O bond is strengthened by resonance (partial double-bond character), and an sp² aryl carbon cannot undergo SN2.
   Solution:
-  1. 1-Methoxynaphthalene + HI gives 1-naphthol + CH₃I (SN2 at CH₃).
+  1. 1-Methoxynaphthalene: the naphthalene ring carries –O–CH₃.
+  2. Protonation: Ar–O(H⁺)–CH₃.
+  3. I⁻ attacks the methyl carbon (SN2, easy for CH₃): Ar–OH + CH₃I.
+  4. Products: 1-naphthol and methyl iodide.
+  Why others are wrong:
+  - (A) and (D) give 1-iodonaphthalene, which would require substitution at the aryl carbon. This does not happen.
+  - (C) gives CH₃OH, which would require I⁻ to attack the aryl carbon, again not possible. (Excess HI would convert any methanol to CH₃I anyway.)
+  Analogy: anisole (C₆H₅OCH₃) with HI gives phenol and CH₃I, by the same mechanism. Even with excess HI, the phenol is not converted to iodobenzene.
   Answer: (B)
 C A 6: |-
-  Concept: Vitamin K is needed to synthesise clotting factors (prothrombin).
+  Concept: Vitamin K is a fat-soluble vitamin needed by the liver to make several blood-clotting proteins, including prothrombin (factor II) and factors VII, IX and X.
   Solution:
-  1. Its deficiency increases the blood clotting time.
-  2. Cheilosis is due to B₂ deficiency; RBC fragility to vitamin E deficiency.
+  1. Without vitamin K, these clotting factors are not made in their active forms.
+  2. The blood clots more slowly, so the clotting time increases. Deficiency can cause excessive bleeding (haemorrhage).
+  3. So deficiency of vitamin K increases the blood-clotting time.
+  Deficiency diseases for comparison:
+  - Vitamin A: night blindness, xerophthalmia.
+  - Vitamin B₁: beriberi. Vitamin B₂: cheilosis (cracking at the corners of the mouth), digestive disorders.
+  - Vitamin B₆: convulsions. Vitamin B₁₂: pernicious anaemia.
+  - Vitamin C: scurvy.
+  - Vitamin D: rickets, osteomalacia.
+  - Vitamin E: increased fragility of red blood cells, muscular weakness.
+  Why others are wrong:
+  - (B) RBC fragility is due to vitamin E deficiency.
+  - (C) Cheilosis is due to vitamin B₂ deficiency.
+  - (D) is the opposite of the actual effect.
   Answer: (A)
 C A 7: |-
-  Concept: Hinsberg test: a sulphonamide from a 1° amine has an acidic N–H and dissolves in alkali.
+  Concept: The Hinsberg test uses benzenesulphonyl chloride, C₆H₅SO₂Cl.
+  - A primary amine gives an N-alkylbenzenesulphonamide with an acidic N–H, which dissolves in aqueous alkali.
+  - A secondary amine gives an N,N-dialkylsulphonamide with no N–H, which is insoluble in alkali.
+  - A tertiary amine does not react.
   Solution:
-  1. Only (D), C₆H₅CH(CH₃)NH₂, is a primary amine; its sulphonamide dissolves in dil. NaOH.
-  2. (B) and (C) are 2° amines (insoluble products); (A) is 3° (no reaction).
+  1. B is soluble in dilute NaOH, so A must be a primary amine.
+  2. (A) C₆H₅N(CH₃)₂ (N,N-dimethylaniline): tertiary. No reaction.
+  3. (B) C₆H₅NHCH₂CH₃ (N-ethylaniline): secondary. Its sulphonamide is insoluble in alkali.
+  4. (C) C₆H₅CH₂NHCH₃ (N-methylbenzylamine): secondary. Insoluble sulphonamide.
+  5. (D) C₆H₅CH(CH₃)NH₂ (1-phenylethylamine): primary (NH₂ group). It gives C₆H₅SO₂NH–CH(CH₃)C₆H₅, whose N–H is acidic (activated by the strongly electron-withdrawing SO₂ group). It dissolves in NaOH as the sodium salt.
+  6. So A is (D).
+  Note: the carbon bearing the NH₂ in (D) is secondary, but the amine is still primary (classification depends on the number of carbons attached to N, not on the carbon itself).
   Answer: (D)
 C A 8: |-
-  Concept: Ionisation energy trends across period 3.
+  Concept: Across a period, the first ionisation energy (IE₁) generally increases (increasing nuclear charge, similar shielding), with small dips at group 13 and group 16. Noble gases have the highest IE₁ in their periods.
   Solution:
-  1. IE: Ar (1520) > Cl (1251) > Mg (737) > Na (496) kJ/mol.
-  2. X = argon, Y = chlorine, Z = sodium.
+  1. IE₁ values (kJ/mol) for period 3: Na 496, Mg 737, Al 577, Si 786, P 1012, S 999, Cl 1251, Ar 1520.
+  2. Mg (737) must be smaller than X and Y and larger than Z.
+  3. Argon (1520) and chlorine (1251) are both larger than Mg. Sodium (496) is smaller.
+  4. So X = argon, Y = chlorine and Z = sodium.
+  Check the other options:
+  - (A) Chlorine, lithium, sodium: Li (520) is smaller than Mg, so it cannot be X or Y.
+  - (B) Argon, lithium, sodium: again Li is smaller than Mg.
+  - (D) Neon, sodium, chlorine: Na is smaller than Mg (so cannot be Y), and Cl is larger (so cannot be Z).
+  Note: Mg's IE₁ is relatively high for its position because its outer configuration 3s² is fully paired; removing an electron from a full s subshell costs extra energy. That is why Al (3s²3p¹) has a lower IE₁ than Mg.
   Answer: (C)
 C A 9: |-
-  Concept: Structure of blue vitriol: [Cu(H₂O)₄]SO₄·H₂O.
+  Concept: Blue vitriol, CuSO₄·5H₂O, has the structure [Cu(H₂O)₄]SO₄·H₂O. Four water molecules are coordinated to Cu²⁺ in a square plane (with two sulphate oxygens weakly bound above and below, making a distorted octahedron). The fifth water is held in the lattice by hydrogen bonds.
   Solution:
-  1. Four water molecules are coordinated to Cu²⁺, so the secondary valency is 4 (as per NCERT).
-  2. The fifth water is held by hydrogen bonds (bridging sulphate and coordinated water): 1.
+  1. Secondary valency (coordination number) as given in NCERT: 4 (the four coordinated water molecules).
+  2. Hydrogen-bonded water: the fifth H₂O is not bonded to Cu. It is held by hydrogen bonds between a sulphate oxygen and coordinated water molecules. Number: 1.
+  3. Answer: 4 and 1.
+  Evidence: on heating, CuSO₄·5H₂O loses water in stages. Four molecules come off at lower temperatures (around 373 K), while the last (hydrogen-bonded) water requires a higher temperature (about 523 K). The anhydrous salt is white; on adding water, it turns blue again (a test for water).
+  Note: considering the two weakly bound sulphate oxygens as well, the coordination is actually a distorted octahedron (6). The key follows the NCERT convention of 4 water ligands.
+  Why others are wrong:
+  - (A) and (C) take 6 as the secondary valency.
+  - (D) takes 5 (all water molecules coordinated).
   Answer: (B)
 C A 10: |-
-  Concept: Bohr's model works only for one-electron species.
+  Concept: Bohr's model successfully explains hydrogen and hydrogen-like (one-electron) species such as He⁺, Li²⁺ and Be³⁺. It fails for multi-electron atoms and ions, and it cannot explain fine details of spectra.
   Solution:
-  1. Li⁺ has 2 electrons, so Bohr's theory cannot explain it. Statement I is false.
-  2. Bohr's theory cannot explain the Zeeman effect. Statement II is true.
+  1. Statement I: Li⁺ (Z = 3) has 2 electrons (1s²). Bohr's theory cannot account for electron–electron repulsion, so it cannot explain the stability or line spectrum of Li⁺. (It can explain Li²⁺, which has one electron.) Statement I is false.
+  2. Statement II: Bohr's theory could not explain the splitting of spectral lines in a magnetic field (the Zeeman effect) or in an electric field (the Stark effect). Statement II is true.
+  3. Answer: Statement I is false and Statement II is true.
+  Other limitations of Bohr's model:
+  - It contradicts Heisenberg's uncertainty principle (it gives precise orbits with definite radii and momenta).
+  - It cannot explain the fine structure (closely spaced doublets) of hydrogen lines.
+  - It cannot explain the ability of atoms to form molecules by chemical bonds.
+  These were resolved by quantum mechanics (the Schrödinger equation).
   Answer: (B)
 C A 11: |-
-  Concept: In strongly acidic medium, aniline is protonated to anilinium (a meta director).
+  Concept: The –NH₂ group is a strong ortho/para director. But in a strongly acidic nitrating mixture (HNO₃ + H₂SO₄), aniline is largely protonated to the anilinium ion, C₆H₅NH₃⁺, which is deactivating and meta-directing. Nitration goes through both forms.
   Solution:
-  1. Typical yields: p-nitroaniline 51%, m-nitroaniline 47%, o-nitroaniline 2%.
-  2. C > B > A.
+  1. The free amine (small amount) is highly reactive and gives ortho and para products.
+  2. The anilinium ion (large amount) is less reactive but meta-directing, giving the meta product.
+  3. The typical yields (NCERT) are: p-nitroaniline ≈ 51%, m-nitroaniline ≈ 47%, o-nitroaniline ≈ 2%.
+  4. So C (para) > B (meta) > A (ortho).
+  5. The ortho product is very small because of steric hindrance and because the para position is preferred in the free-amine pathway.
+  Also: the nitrating mixture partly oxidises aniline to tarry products. To obtain mainly the para product cleanly, the amino group is first protected by acetylation (to acetanilide), which is still o/p-directing but less activating. After nitration, hydrolysis gives p-nitroaniline.
+  Why others are wrong:
+  - (A) C > A > B puts ortho above meta.
+  - (B) B > C > A puts meta above para.
+  - (C) A > C > B puts ortho first.
   Answer: (D)
 C A 12: |-
-  Concept: The charge on a sol depends on its method of formation.
+  Concept: The charge on a colloidal particle depends on the ions it preferentially adsorbs, which depends on how the sol is made. Some common patterns:
+  - Negatively charged sols: metal sulphides (As₂S₃, CdS), metals (Au, Ag, Cu), starch, clay, and dyes such as eosin.
+  - Positively charged sols: hydrated metal oxides and hydroxides (Fe(OH)₃, Al(OH)₃, TiO₂), basic dyes such as methylene blue, and haemoglobin.
   Solution:
-  1. Metal sulphide sols such as CdS (and As₂S₃) are negative.
-  2. Metal oxide/hydroxide sols such as TiO₂ are positive.
+  1. CdS sol: made by passing H₂S into a cadmium salt solution. The particles adsorb S²⁻ or HS⁻ ions, becoming negatively charged.
+  2. TiO₂ sol: a metal oxide sol, which adsorbs H⁺ or Ti⁴⁺ (cations), becoming positively charged.
+  3. Answer: negative and positive.
+  Why the charge matters: it stabilises the sol, since particles of like charge repel each other and do not aggregate. Adding an electrolyte with ions of opposite charge neutralises the particles and causes coagulation. By the Hardy–Schulze rule, Al³⁺ coagulates CdS sol effectively, while PO₄³⁻ coagulates TiO₂ sol effectively.
+  Why others are wrong:
+  - (A) and (C) give the same charge for both.
+  - (B) reverses the charges.
   Answer: (D)
 C A 13: |-
-  Concept: Drug classes and examples.
+  Concept: Classes of drugs and chemicals with typical examples (NCERT, "Chemistry in Everyday Life").
   Solution:
-  1. Antifertility: norethindrone (iii).
-  2. Antibiotic: salvarsan (iv).
-  3. Tranquilliser: meprobamate (i).
-  4. Artificial sweetener: alitame (ii).
+  1. (a) Antifertility drug: norethindrone → (iii). A synthetic progestogen used in oral contraceptives (usually with an oestrogen such as ethynylestradiol).
+  2. (b) Antibiotic: salvarsan → (iv). An arsenic-containing compound discovered by Paul Ehrlich (1909) to treat syphilis. It is often cited as the first modern chemotherapeutic agent. (Salvarsan resembles an azo dye in structure, with an As=As link.)
+  3. (c) Tranquilliser: meprobamate → (i). A mild tranquilliser for relieving anxiety and tension. Others: equanil, chlordiazepoxide, valium, barbiturates.
+  4. (d) Artificial sweetener: alitame → (ii). A high-potency sweetener (about 2000 times sweeter than sugar).
+  5. Matching: (a)-(iii), (b)-(iv), (c)-(i), (d)-(ii).
+  Why others are wrong:
+  - (A) and (D) call alitame an antifertility drug.
+  - (B) calls salvarsan an antifertility drug.
   Answer: (C)
 C A 14: |-
-  Concept: Self-aldol condensation of a ketone, followed by dehydration.
+  Concept: Ketones with α-hydrogens undergo aldol addition with dilute base. The enolate of one molecule attacks the carbonyl of another, giving a β-hydroxy ketone. On heating with acid, it dehydrates to an α,β-unsaturated ketone (aldol condensation).
   Solution:
-  1. dil. NaOH: the enolate of one cyclopentanone adds to the other, giving X = 2-(1-hydroxycyclopentyl)cyclopentan-1-one.
-  2. H⁺/heat: dehydration gives the conjugated enone Y = 2-cyclopentylidenecyclopentan-1-one.
+  1. Step 1 (dil. NaOH): an α-H of one cyclopentanone is removed, forming an enolate. This attacks the C=O carbon of a second cyclopentanone.
+  2. X = 2-(1-hydroxycyclopentyl)cyclopentan-1-one. It has a ketone in one ring and a tertiary OH on the other ring's carbon (the former carbonyl carbon), which is bonded to the α-carbon of the first ring.
+  3. Step 2 (H⁺, heat): the tertiary OH is protonated and lost as water. The C=C forms between the two rings, conjugated with the remaining C=O.
+  4. Y = 2-cyclopentylidenecyclopentan-1-one (an exocyclic C=C connecting the two rings, conjugated with the ketone). Option (C).
+  Why conjugation decides the product: the α,β-unsaturated ketone (C=C in conjugation with C=O) is more stable than an isomer in which the double bond is inside the second ring and not conjugated, as in (D).
+  Why others are wrong:
+  - (A) X has the OH on the wrong carbon (a secondary alcohol from reduction).
+  - (B) and (D) put the double bond in the ring, out of conjugation with the carbonyl.
   Answer: (C)
 C A 15: |-
-  Concept: Uses of alkaline-earth metals.
+  Concept: Uses of the alkaline-earth metals (group 2).
   Solution:
-  1. Be: X-ray tube windows (transparent to X-rays) (iv).
-  2. Mg: incendiary bombs and signals (iii).
-  3. Ca: extraction of metals (reducing agent) (ii).
-  4. Ra: cancer treatment (radiotherapy) (i).
+  1. (a) Beryllium: has a very low atomic number (Z = 4), so it absorbs X-rays very weakly. Thin Be sheets are used as windows in X-ray tubes → (iv). It is also used in alloys (Cu–Be springs) and as a neutron moderator.
+  2. (b) Magnesium: burns with a brilliant white light. Mg powder and ribbon are used in flash bulbs, incendiary bombs and signals (flares) → (iii). Mg–Al alloys are light and used in aircraft.
+  3. (c) Calcium: a strong reducing agent used in the extraction of metals from their oxides that are difficult to reduce with carbon, e.g. uranium, zirconium and thorium → (ii).
+  4. (d) Radium: radioactive. Its salts were used in radiotherapy for cancer → (i).
+  5. Matching: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i). Option (v), bearings for motor engines, is a distractor (it would fit Mg or Be alloys but is not matched here).
+  Why others are wrong:
+  - (A) links Ca to cancer treatment and Ra to metal extraction.
+  - (C) and (D) swap Be and Mg.
   Answer: (B)
 C A 16: |-
-  Concept: Generating nucleophiles, and the ambident behaviour of cyanide.
+  Concept: A nucleophile is an electron-rich species with a lone pair. Some reagents supply nucleophiles directly; others do so after deprotonation. Cyanide is an ambident nucleophile: it can attack through C (giving nitriles, R–C≡N) or through N (giving isocyanides, R–N≡C).
   Solution:
-  1. C₂H₅OH gives C₂H₅O⁻ (with Na/base), and AgCN supplies a cyanide nucleophile. I is true.
-  2. AgCN (covalent) attacks through N and gives isocyanides, while KCN gives nitriles. II is false.
+  1. Statement I:
+     - C₂H₅OH can act as a nucleophile through its O lone pairs (e.g. in solvolysis), and with a base or Na it forms ethoxide, C₂H₅O⁻, a strong nucleophile.
+     - AgCN supplies cyanide as a nucleophile (it reacts with alkyl halides).
+     - So both can generate nucleophiles. Statement I is true.
+  2. Statement II:
+     - KCN is ionic and gives free CN⁻. The carbon end, which is more nucleophilic, attacks, giving nitriles (R–CN) as the main product.
+     - AgCN is largely covalent (Ag–C bond), so the carbon end is not free. The nitrogen lone pair attacks instead, giving isocyanides (R–NC) as the main product.
+     - So AgCN does not give nitriles under all conditions. Statement II is false.
+  3. Answer: Statement I true, Statement II false.
+  Similar case: KNO₂ gives alkyl nitrites (R–ONO) through O, while AgNO₂ gives nitroalkanes (R–NO₂) through N.
   Answer: (A)
 C A 17: |-
-  Concept: Environmental chemistry.
+  Concept: Classifying wastes and understanding the causes of eutrophication.
   Solution:
-  1. Thermal power plants produce fly ash, which is non-biodegradable. I is true.
-  2. Even biodegradable detergents contain phosphates that promote algal bloom (eutrophication). II is true.
+  1. Statement I: thermal power plants burn coal and produce huge amounts of fly ash (and slag). Fly ash consists of silica, alumina and metal oxides; it is not broken down by microorganisms. So it is non-biodegradable waste. Statement I is true.
+  2. Statement II: "biodegradable" detergents have straight-chain (unbranched) alkyl groups that bacteria can break down, so they do not cause persistent foam. However, detergent formulations often contain phosphates (as builders). Phosphates are plant nutrients; discharged into lakes, they promote excessive algal growth (eutrophication), which depletes dissolved oxygen. Statement II is true.
+  3. Both statements are true.
+  Eutrophication summary: nutrient enrichment (N, P) → algal bloom → algae die and decompose → oxygen depletion (high BOD) → fish die.
+  Uses of fly ash: it can be used in cement and bricks, turning a waste into a resource.
+  Why others are wrong: (A), (B) and (C) each call at least one of the true statements false.
   Answer: (D)
 C A 18: |-
-  Concept: Refining methods.
+  Concept: The refining method for each metal is chosen according to its properties.
   Solution:
-  1. Hg: distillation (ii).
-  2. Cu: electrolytic refining (iii).
-  3. Si: zone refining (iv).
-  4. Ni: vapour-phase (Mond) refining (i).
+  1. (a) Mercury: low boiling point (630 K). Impure mercury is heated, the pure metal vaporises and is condensed, leaving non-volatile impurities. This is distillation refining → (ii). (Zinc is refined the same way.)
+  2. (b) Copper: electrolytic refining → (iii). Impure copper is the anode and a thin strip of pure copper the cathode, in an acidified CuSO₄ electrolyte. Pure Cu deposits on the cathode. Impurities such as Ag, Au and Pt collect as anode mud.
+  3. (c) Silicon: zone refining → (iv). It is based on the fact that impurities are more soluble in the melt than in the solid. A molten zone is moved along a rod, sweeping impurities to one end. It gives ultra-pure Si and Ge for semiconductors.
+  4. (d) Nickel: vapour-phase refining (Mond process) → (i). $Ni + 4CO \xrightarrow{330-350\text{ K}} Ni(CO)_4$ (volatile). This decomposes at 450–470 K to give pure Ni.
+  5. Matching: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i).
+  Other vapour-phase method: the van Arkel process (Ti, Zr, via their iodides).
+  Why others are wrong: (A), (B) and (D) swap zone refining with other methods, e.g. assigning it to copper or nickel.
   Answer: (C)
 C A 19: |-
-  Concept: Hybridisation from σ-bond count.
+  Concept: The hybridisation of carbon is found from the number of σ bonds it forms (with no lone pairs): 4 σ → sp³, 3 σ → sp², 2 σ → sp.
   Solution:
-  1. Ca (CH₃): sp³.
-  2. Cb (=CH–O): sp².
-  3. Cc (aromatic ring carbon): sp².
+  1. The molecule is CH₃–CH=CH–O–C₆H₅ (a prop-1-enyl phenyl ether).
+  2. Carbon a (CH₃): four single bonds (3 C–H and 1 C–C). sp³.
+  3. Carbon b (the =CH–O carbon): σ bonds to the other alkene carbon, to H and to O (3 σ), plus one π bond. sp².
+  4. Carbon c (the ring carbon attached to O): σ bonds to two ring carbons and to O (3 σ), and part of the aromatic π system. sp².
+  5. Answer: sp³, sp², sp².
+  Note: all benzene ring carbons are sp². An sp carbon would require a triple bond or two cumulated double bonds (as in alkynes, allenes or nitriles), which are not present here.
+  Why others are wrong:
+  - (A), (B) and (D) assign sp to carbon b or c, but neither has two π bonds.
   Answer: (C)
 C A 20: |-
-  Concept: Properties of solids.
+  Concept: Solids are classified by the forces that hold their particles together. These forces determine hardness, melting point and electrical conductivity.
   Solution:
-  1. Hard, very high melting point, and non-conducting even when molten describes a covalent network solid (e.g. diamond, SiO₂).
-  2. Ionic solids conduct when molten; metallic solids always conduct; molecular solids are soft.
+  1. Properties given: hard, high melting point, and an insulator in both the solid and molten states.
+  2. Covalent (network) solids: atoms linked by a continuous network of strong covalent bonds, e.g. diamond, SiO₂ (quartz) and SiC. They are very hard, have very high melting points (diamond sublimes above about 3800 K, quartz melts at about 1983 K), and have no mobile ions or free electrons, so they are insulators in both states. (Graphite is an exception: it conducts because of its delocalised π electrons.)
+  3. So the solid is most likely a covalent solid.
+  Why others are wrong:
+  - (A) Ionic solids (e.g. NaCl) are hard and high-melting, but they conduct electricity when molten (or dissolved), because the ions become mobile.
+  - (B) Molecular solids (e.g. ice, I₂, naphthalene) are held by weak intermolecular forces. They are soft and have low melting points.
+  - (C) Metallic solids conduct electricity in both solid and molten states, because of their delocalised electrons.
   Answer: (D)
 C B 1: |-
-  Concept: First order: $t = \frac{1}{k}\ln\frac{[A]_0}{[A]}$ with $k = \frac{\ln2}{t_{1/2}}$.
+  Concept: The half-life does not depend on concentration, which shows the reaction is first order. For a first-order reaction, $t = \frac{1}{k}\ln\frac{[A]_0}{[A]}$ with $k = \frac{\ln2}{t_{1/2}}$.
   Solution:
-  1. For 99.9% completion, $\frac{[A]_0}{[A]} = 1000$ and $\ln1000 = 3\times2.3 = 6.9$.
-  2. $t = \frac{6.9}{0.69}\times1 = 10$ min.
+  1. 99.9% completion means 0.1% remains: $\frac{[A]_0}{[A]} = \frac{100}{0.1} = 1000$.
+  2. ln 1000 = 3 ln 10 = 3 × 2.3 = 6.9.
+  3. k = $\frac{0.69}{1\text{ min}}$ = 0.69 min⁻¹.
+  4. $t = \frac{6.9}{0.69} = 10$ min.
+  Half-life view: 1000 ≈ 2¹⁰ = 1024. So about 10 half-lives are needed to reduce the reactant to about 0.1%. Each half-life is 1 min, giving about 10 min ✓.
+  General rule: for a first-order reaction, 99.9% completion takes about 10 half-lives, and 99% takes about 6.64 half-lives.
+  Assumption: the question does not state the order. The value of a constant half-life is characteristic of first-order kinetics, as the key assumes.
   Answer: 10
 C B 2: |-
-  Concept: Kohlrausch's law.
+  Concept: Kohlrausch's law of independent migration of ions: at infinite dilution, each ion contributes a fixed amount to the molar conductivity. So the limiting molar conductivity of any electrolyte can be found by adding and subtracting those of other electrolytes containing the same ions.
   Solution:
-  1. $\Lambda^\circ(BaSO_4) = \Lambda^\circ(BaCl_2) + \Lambda^\circ(H_2SO_4) - 2\Lambda^\circ(HCl)$.
-  2. $= 280 + 860 - 852 = 288$ S cm² mol⁻¹.
+  1. Target: $\Lambda^\circ(BaSO_4) = \lambda^\circ(Ba^{2+}) + \lambda^\circ(SO_4^{2-})$.
+  2. Combination:
+     - $\Lambda^\circ(BaCl_2) = \lambda^\circ(Ba^{2+}) + 2\lambda^\circ(Cl^-) = 280$.
+     - $\Lambda^\circ(H_2SO_4) = 2\lambda^\circ(H^+) + \lambda^\circ(SO_4^{2-}) = 860$.
+     - $2\Lambda^\circ(HCl) = 2\lambda^\circ(H^+) + 2\lambda^\circ(Cl^-) = 852$.
+  3. BaCl₂ + H₂SO₄ − 2HCl: the H⁺ and Cl⁻ contributions cancel, leaving Ba²⁺ + SO₄²⁻.
+  4. $\Lambda^\circ(BaSO_4) = 280 + 860 - 852 = 288$ S cm² mol⁻¹.
+  Why this is useful: BaSO₄ is sparingly soluble, so its limiting molar conductivity cannot be measured directly by dilution. Kohlrausch's law gives it from soluble electrolytes. It is then used to find the solubility of BaSO₄ from the conductivity of its saturated solution: $s = \frac{\kappa}{\Lambda^\circ}$.
   Answer: 288
 C B 3: |-
-  Concept: Lone pairs on the central atom from VSEPR.
+  Concept: VSEPR theory: the number of lone pairs on the central atom = $\frac{1}{2}$(valence electrons of the central atom − electrons used in bonds ± charge).
   Solution:
-  1. SF₄: 1; BF₄⁻: 0; ClF₃: 2; AsF₃: 1; PCl₅: 0; BrF₅: 1; XeF₄: 2; SF₆: 0.
-  2. Species with two lone pairs: ClF₃ and XeF₄, i.e. 2.
+  1. SF₄: S has 6 valence electrons; 4 are used in bonds, leaving 2 = 1 lone pair (see-saw).
+  2. BF₄⁻: B has 3 + 1 (charge) = 4; all 4 are used in bonds. 0 lone pairs (tetrahedral).
+  3. ClF₃: Cl has 7; 3 are used, leaving 4 = 2 lone pairs (T-shaped) ✓.
+  4. AsF₃: As has 5; 3 are used, leaving 2 = 1 lone pair (trigonal pyramidal).
+  5. PCl₅: P has 5; all 5 are used. 0 lone pairs (trigonal bipyramidal).
+  6. BrF₅: Br has 7; 5 are used, leaving 2 = 1 lone pair (square pyramidal).
+  7. XeF₄: Xe has 8; 4 are used, leaving 4 = 2 lone pairs (square planar) ✓.
+  8. SF₆: S has 6; all 6 are used. 0 lone pairs (octahedral).
+  9. Species with two lone pairs on the central atom: ClF₃ and XeF₄. Count: 2.
+  Note: the two lone pairs occupy different positions in these two molecules. In ClF₃ (trigonal bipyramidal electron geometry), they are equatorial. In XeF₄ (octahedral electron geometry), they are trans to each other (above and below the plane).
   Answer: 2
 C B 4: |-
-  Concept: $XeF_6 + 2H_2O \to XeO_2F_2 + 4HF$ (partial hydrolysis).
+  Concept: Xenon fluorides hydrolyse in stages. Partial hydrolysis of XeF₆ gives oxyfluorides: $XeF_6 + H_2O \to XeOF_4 + 2HF$, then $XeF_6 + 2H_2O \to XeO_2F_2 + 4HF$. Complete hydrolysis gives XeO₃.
   Solution:
-  1. A = XeF₆.
-  2. Lone pairs: 1 on Xe + 6 × 3 on F = 19.
+  1. A = XeF₆ (it gives XeO₂F₂ on partial hydrolysis).
+  2. Lone pairs on Xe: Xe has 8 valence electrons, and 6 are used in the six Xe–F bonds. The remaining 2 form 1 lone pair. (XeF₆ has a distorted octahedral shape because of this lone pair.)
+  3. Lone pairs on each F: F has 7 valence electrons; one is used in the Xe–F bond, and the remaining 6 form 3 lone pairs. Six F atoms: 6 × 3 = 18 lone pairs.
+  4. Total lone pairs in XeF₆: 1 + 18 = 19.
+  Check with the electron count: total valence electrons = 8 + 6 × 7 = 50, i.e. 25 pairs. Bonding pairs = 6. Lone pairs = 25 − 6 = 19 ✓.
   Answer: 19
 C B 5: |-
-  Concept: $\Delta G^\circ = -RT\ln K_p$ and $K_C = K_P(RT)^{-\Delta n}$ with $\Delta n = -1$.
+  Concept: ΔG° = −RT ln K_P gives the equilibrium constant in terms of pressure (standard state 1 bar). Then K_C = K_P(RT)^{−Δn}, where Δn = moles of gaseous products − moles of gaseous reactants.
   Solution:
-  1. $\log K_p = \frac{-25200}{2.3\times8.3\times400} = -3.3 \Rightarrow K_p = 0.501\times10^{-3}$ bar⁻¹.
-  2. $K_C = K_P\cdot RT = 5.01\times10^{-4}\times0.083\times400 = 1.66\times10^{-2}$ ≈ $2\times10^{-2}$.
+  1. $\ln K_P = -\frac{\Delta G^\circ}{RT} = -\frac{25200}{8.3\times400} = -\frac{25200}{3320} = -7.59$.
+  2. $\log_{10}K_P = \frac{-7.59}{2.3} = -3.3$.
+  3. $K_P = 10^{-3.3} = 10^{-3}\times10^{-0.3} = 0.501\times10^{-3} = 5.01\times10^{-4}$ bar⁻¹.
+  4. For 2A ⇌ A₂: Δn = 1 − 2 = −1. So $K_C = K_P(RT)^{-\Delta n} = K_P\times RT$.
+  5. With R = 0.083 L bar K⁻¹ mol⁻¹: RT = 0.083 × 400 = 33.2 L bar/mol.
+  6. $K_C = 5.01\times10^{-4}\times33.2 = 1.66\times10^{-2}$ L/mol.
+  7. In units of 10⁻²: 1.66, which rounds to 2.
   Note: The NTA key gives 166, which does not match the "× 10⁻²" format; 2 is used here, as ALLEN also gives.
   Answer: 2
 C B 6: |-
-  Concept: Tollens' oxidation: $RCHO + 2[Ag(NH_3)_2]^+ + 3OH^- \to RCOO^- + 2Ag + 4NH_3 + 2H_2O$.
+  Concept: Tollens' reagent, ammoniacal silver nitrate [Ag(NH₃)₂]⁺, oxidises an aldehyde group to a carboxylate. The silver ions are reduced to metallic silver, forming a mirror on the glass.
   Solution:
-  1. The aldehyde carbon goes from +1 to +3, releasing 2e⁻, which reduce 2Ag⁺.
-  2. Electrons transferred = 2.
+  1. Balanced equation: $RCHO + 2[Ag(NH_3)_2]^+ + 3OH^- \to RCOO^- + 2Ag\downarrow + 4NH_3 + 2H_2O$.
+  2. Oxidation states: the aldehyde carbon goes from +1 (in –CHO) to +3 (in –COO⁻), losing 2 electrons.
+  3. Each Ag⁺ gains one electron to become Ag⁰. So 2 Ag⁺ are reduced per aldehyde group.
+  4. The total number of electrons transferred to the Tollens' reagent per aldehyde group is 2.
+  Half-equations:
+  - Oxidation: $RCHO + 3OH^- \to RCOO^- + 2H_2O + 2e^-$.
+  - Reduction: $[Ag(NH_3)_2]^+ + e^- \to Ag + 2NH_3$ (twice).
+  Note: formic acid (HCOOH) also gives a positive Tollens' test, as do α-hydroxy ketones such as fructose (via isomerisation). Most ketones do not.
   Answer: 2
 C B 7: |-
-  Concept: Common-ion effect: $s' = \frac{K_{sp}}{[SO_4^{2-}]}$.
+  Concept: For a salt that dissociates into two ions, K_sp = s². Adding a common ion (here SO₄²⁻ from H₂SO₄) suppresses the dissolution: the new solubility is $s' = \frac{K_{sp}}{[\text{common ion}]}$.
   Solution:
-  1. $K_{sp} = (8.0\times10^{-4})^2 = 6.4\times10^{-7}$.
-  2. $s' = \frac{6.4\times10^{-7}}{0.01} = 64\times10^{-6}$ mol L⁻¹.
+  1. In pure water: CdSO₄ ⇌ Cd²⁺ + SO₄²⁻. $K_{sp} = s^2 = (8.0\times10^{-4})^2 = 6.4\times10^{-7}$.
+  2. In 0.01 M H₂SO₄, [SO₄²⁻] ≈ 0.01 M from the acid (taking complete dissociation to SO₄²⁻, as the question intends, and s′ ≪ 0.01).
+  3. $s' = \frac{K_{sp}}{[SO_4^{2-}]} = \frac{6.4\times10^{-7}}{0.01} = 6.4\times10^{-5} = 64\times10^{-6}$ mol/L.
+  Check the assumption: s′ = 6.4 × 10⁻⁵ is indeed much less than 0.01 M ✓.
+  Effect: the solubility falls from 8.0 × 10⁻⁴ to 6.4 × 10⁻⁵ mol/L, a factor of 12.5, because of the common-ion effect.
+  Note: CdSO₄ is actually quite soluble in water; the numbers in this question are hypothetical, chosen to illustrate the calculation.
   Answer: 64
 C B 8: |-
-  Concept: $\Delta T_b = iK_bm$; for dimerisation, $i = 1 - \frac{\alpha}{2}$.
+  Concept: For a solute that associates (2A ⇌ A₂) with degree of association α, the van't Hoff factor is $i = 1 - \alpha + \frac{\alpha}{2} = 1 - \frac{\alpha}{2}$. Boiling point elevation: ΔT_b = iK_bm.
   Solution:
-  1. $0.52 = i\times0.52\times2 \Rightarrow i = 0.5$.
-  2. $1 - \frac{\alpha}{2} = 0.5 \Rightarrow \alpha = 1$, i.e. 100% association.
+  1. ΔT_b = 100.52 − 100 = 0.52 K.
+  2. $i = \frac{\Delta T_b}{K_bm} = \frac{0.52}{0.52\times2} = 0.5$ (treating the 2 molar solution as 2 molal).
+  3. $1 - \frac{\alpha}{2} = 0.5$, so α = 1, i.e. 100% association.
+  4. So all of A exists as dimers A₂.
+  Derivation of i: start with 1 mol of A. At equilibrium there are (1 − α) mol of A and $\frac{\alpha}{2}$ mol of A₂, for a total of $1 - \frac{\alpha}{2}$.
   Note: The NTA key gives 50, but the calculation gives 100 (ALLEN), which is used here.
   Answer: 100
 C B 9: |-
-  Concept: Use the concordant titre; $Na_2CO_3 + 2HCl \to 2NaCl + H_2O + CO_2$.
+  Concept: In titrimetric analysis, the titre used for the calculation is the concordant value, i.e. the value that agrees in repeated readings, not a simple average that includes outliers. Then use the stoichiometry of the reaction.
   Solution:
-  1. Concordant reading: 5.0 mL, giving HCl $= 5.0\times0.2 = 1.0$ mmol.
-  2. Na₂CO₃ $= 0.5$ mmol in 10 mL, i.e. 0.05 M = 50 mM.
+  1. The readings are 4.8, 4.9, 5.0, 5.0 and 5.0 mL. The last three agree, so the concordant titre is 5.0 mL. The early readings are typical rough or overshoot-corrected trials.
+  2. Moles of HCl: 5.0 mL × 0.2 M = 1.0 mmol.
+  3. Reaction (to the methyl orange end point): $Na_2CO_3 + 2HCl \to 2NaCl + H_2O + CO_2$.
+  4. Na₂CO₃ = ½ × 1.0 = 0.5 mmol in 10.0 mL.
+  5. Concentration: $\frac{0.5\text{ mmol}}{10.0\text{ mL}} = 0.05$ M = 50 mM.
+  Note on indicators: with phenolphthalein, the end point comes at Na₂CO₃ + HCl → NaHCO₃ + NaCl (1 : 1). The convention for estimating carbonate with HCl uses methyl orange (complete neutralisation, 1 : 2), as assumed here.
   Answer: 50
 C B 10: |-
-  Concept: Percentage yield.
+  Concept: Percentage yield = actual yield ÷ theoretical yield × 100. The theoretical yield comes from the moles of the limiting reagent and the balanced equation.
   Solution:
-  1. Benzoic acid $= \frac{6.1}{122} = 0.05$ mol, so theoretical m-bromobenzoic acid (M = 201) $= 10.05$ g.
-  2. Yield $= \frac{7.8}{10.05}\times100 = 77.6 \approx 78\%$.
+  1. Reaction: C₆H₅COOH + Br₂ → m-BrC₆H₄COOH + HBr (1 : 1).
+  2. Molar mass of benzoic acid (C₇H₆O₂): 84 + 6 + 32 = 122 g/mol. Moles: $\frac{6.1}{122} = 0.050$ mol.
+  3. Molar mass of m-bromobenzoic acid (C₇H₅O₂Br): 84 + 5 + 32 + 80 = 201 g/mol.
+  4. Theoretical yield: 0.050 × 201 = 10.05 g.
+  5. Percentage yield: $\frac{7.8}{10.05}\times100 = 77.6\% \approx 78\%$.
+  Chemistry note: the –COOH group is electron-withdrawing and meta-directing, and it deactivates the ring. So bromination needs a Lewis acid catalyst (FeBr₃) and goes to the meta position.
   Answer: 78

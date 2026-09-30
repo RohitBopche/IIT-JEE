@@ -1,193 +1,362 @@
 M A 1: |-
-  Concept: Bernoulli-type DE: substitute $w = \frac{1}{y + 1}$.
+  Concept: The equation $y' = (y + 1)^2e^{x^2/2} - x(y + 1)$ is a Bernoulli equation in v = y + 1. The substitution $w = \frac{1}{v}$ turns it into a linear equation.
   Solution:
-  1. With $v = y + 1$: $v' = v^2e^{x^2/2} - xv$, so $w' - xw = -e^{x^2/2}$.
-  2. $(we^{-x^2/2})' = -1 \Rightarrow we^{-x^2/2} = -x + C$; $y(2) = 0 \Rightarrow C = 2 + e^{-2}$.
-  3. At $x = 1$: $w = e^{1/2}\frac{e^2 + 1}{e^2}$, so $v = \frac{e^{3/2}}{e^2 + 1}$.
-  4. $y' = v(ve^{1/2} - 1) = \frac{e^{3/2}}{e^2 + 1}\left(\frac{e^2}{e^2 + 1} - 1\right) = -\frac{e^{3/2}}{(e^2 + 1)^2}$.
+  1. Let v = y + 1. Then $v' = v^2e^{x^2/2} - xv$.
+  2. With $w = \frac{1}{v}$: $w' = -\frac{v'}{v^2} = -e^{x^2/2} + \frac{x}{v} = -e^{x^2/2} + xw$. So $w' - xw = -e^{x^2/2}$.
+  3. Integrating factor $e^{-x^2/2}$: $\left(we^{-x^2/2}\right)' = -1$, so $we^{-x^2/2} = -x + C$.
+  4. y(2) = 0 means v = 1 and w = 1 at x = 2: $e^{-2} = -2 + C$, so $C = 2 + e^{-2}$.
+  5. At x = 1: $we^{-1/2} = 1 + e^{-2}$, so $w = e^{1/2}\cdot\frac{e^2 + 1}{e^2}$ and $v = \frac{1}{w} = \frac{e^{3/2}}{e^2 + 1}$.
+  6. $\frac{dy}{dx} = v\left(ve^{1/2} - 1\right)$. Here $ve^{1/2} = \frac{e^2}{e^2 + 1}$, so $ve^{1/2} - 1 = -\frac{1}{e^2 + 1}$.
+  7. $\frac{dy}{dx}\Big|_{x=1} = \frac{e^{3/2}}{e^2 + 1}\cdot\left(-\frac{1}{e^2 + 1}\right) = -\frac{e^{3/2}}{(e^2 + 1)^2}$.
+  Why others are wrong: (B), (C) and (D) come from errors in the constant C or the substitution (e.g. a positive sign or the wrong power of e).
   Answer: (A)
 M A 2: |-
-  Concept: Projection of $\vec{AB}$ on $\vec{AC}$ $= c\cos A = \frac{b^2 + c^2 - a^2}{2b}$.
+  Concept: The scalar projection of $\vec{AB}$ on $\vec{AC}$ is $|\vec{AB}|\cos A$, where A is the angle between them. The cosine rule gives cos A from the side lengths.
   Solution:
-  1. $a = 8$, $b = 7$, $c = 10$: $\frac{49 + 100 - 64}{14} = \frac{85}{14}$.
+  1. Standard notation: a = BC = 8, b = CA = 7, c = AB = 10.
+  2. Cosine rule: $\cos A = \frac{b^2 + c^2 - a^2}{2bc} = \frac{49 + 100 - 64}{2\times7\times10} = \frac{85}{140}$.
+  3. Projection = c cos A = $10\times\frac{85}{140} = \frac{85}{14}$.
+  4. Equivalently, projection = $\frac{b^2 + c^2 - a^2}{2b} = \frac{85}{14} \approx 6.07$.
+  Vector check: $\vec{AB}\cdot\vec{AC} = bc\cos A = \frac{b^2 + c^2 - a^2}{2} = \frac{85}{2}$. Projection = $\frac{\vec{AB}\cdot\vec{AC}}{|\vec{AC}|} = \frac{85/2}{7} = \frac{85}{14}$ ✓.
+  Sense check: the projection must be less than |AB| = 10, and angle A is acute (cos A > 0), so the projection is positive ✓.
+  Why others are wrong:
+  - (A) $\frac{25}{4}$, (C) $\frac{127}{20}$ and (D) $\frac{115}{16}$ come from using the wrong side as the base (e.g. dividing by a or c instead of b) or mislabelling the sides.
   Answer: (B)
 M A 3: |-
-  Concept: A non-trivial solution needs $\Delta = 0$.
+  Concept: A homogeneous linear system has a non-trivial solution iff the determinant of its coefficients is zero.
   Solution:
-  1. $\Delta = 4(-3 - 2) - \lambda(6 - \mu) + 2(4 + \mu) = (\lambda + 2)(\mu - 6)$.
-  2. $\Delta = 0$ for $\mu = 6$ (any λ) or $\lambda = -2$ (any μ); the matching option is $\mu = 6$, $\lambda \in \mathbb{R}$.
+  1. $\Delta = \begin{vmatrix}4 & \lambda & 2\\ 2 & -1 & 1\\ \mu & 2 & 3\end{vmatrix}$.
+  2. Expand along row 1: $4(-3 - 2) - \lambda(6 - \mu) + 2(4 + \mu) = -20 - 6\lambda + \lambda\mu + 8 + 2\mu$.
+  3. Simplify: $\lambda\mu - 6\lambda + 2\mu - 12 = \lambda(\mu - 6) + 2(\mu - 6) = (\lambda + 2)(\mu - 6)$.
+  4. Δ = 0 when μ = 6 (for any λ) or when λ = −2 (for any μ).
+  5. Among the options, "μ = 6, λ ∈ ℝ" matches.
+  Check with μ = 6: the third equation is 6x + 2y + 3z = 0. The first two give (from 2x − y + z = 0) y = 2x + z. Then 4x + λ(2x + z) + 2z = 0 and 6x + 4x + 2z + 3z = 10x + 5z = 0, so z = −2x, y = 0. The first equation: 4x + 0 − 4x = 0 ✓ for any λ. So (1, 0, −2) is a non-trivial solution for every λ ✓.
+  Why others are wrong:
+  - (B) λ = 2 and (C) λ = 3 do not make Δ zero for all μ.
+  - (D) μ = −6 gives Δ = −12(λ + 2), zero only if λ = −2.
   Answer: (A)
 M A 4: |-
-  Concept: Find the inverse functions.
+  Concept: To find the inverse, solve y = f(x) for x in terms of y. Then solve the resulting equation in x, checking that the solutions lie in the domains of the inverse functions.
   Solution:
-  1. $f^{-1}(x) = \frac{3x - 2}{x - 1}$ and $g^{-1}(x) = \frac{x + 3}{2}$.
-  2. $\frac{3x - 2}{x - 1} + \frac{x + 3}{2} = \frac{13}{2} \Rightarrow x^2 - 5x + 6 = 0$.
-  3. Sum of roots $= 5$ (both roots, 2 and 3, are valid).
+  1. $y = \frac{x - 2}{x - 3}$ gives y(x − 3) = x − 2, so x(y − 1) = 3y − 2 and $x = \frac{3y - 2}{y - 1}$. So $f^{-1}(x) = \frac{3x - 2}{x - 1}$ (defined for x ≠ 1).
+  2. y = 2x − 3 gives $g^{-1}(x) = \frac{x + 3}{2}$.
+  3. Equation: $\frac{3x - 2}{x - 1} + \frac{x + 3}{2} = \frac{13}{2}$.
+  4. Multiply by 2(x − 1): 2(3x − 2) + (x + 3)(x − 1) = 13(x − 1).
+     6x − 4 + x² + 2x − 3 = 13x − 13, so x² − 5x + 6 = 0 and (x − 2)(x − 3) = 0.
+  5. x = 2 or x = 3. Both are ≠ 1, so both are valid.
+  6. Sum: 2 + 3 = 5.
+  Check x = 2: $f^{-1}(2) = \frac{4}{1} = 4$ and $g^{-1}(2) = \frac{5}{2}$. Sum $= \frac{13}{2}$ ✓. Check x = 3: $f^{-1}(3) = \frac{7}{2}$ and $g^{-1}(3) = 3$. Sum $= \frac{13}{2}$ ✓.
+  Why others are wrong: (A) 7, (B) 2 and (D) 3 count only one root, or come from an algebra slip.
   Answer: (C)
 M A 5: |-
-  Concept: In an equilateral triangle, the centroid is also the incentre, and $R = 2r$.
+  Concept: In an equilateral triangle, the centroid, circumcentre and incentre coincide. The inradius is the distance from this centre to any side, and the circumradius is twice the inradius (R = 2r).
   Solution:
-  1. $r$ = distance from (0, 0) to $x + y = 3$ $= \frac{3}{\sqrt2}$.
-  2. $R + r = 3r = \frac{9}{\sqrt2}$.
+  1. The centroid (= incentre) is at the origin, and one side lies on x + y = 3.
+  2. Inradius: $r = \frac{|0 + 0 - 3|}{\sqrt{1 + 1}} = \frac{3}{\sqrt2}$.
+  3. Circumradius: $R = 2r = \frac{6}{\sqrt2} = 3\sqrt2$.
+  4. $R + r = 3r = \frac{9}{\sqrt2}$.
+  Why R = 2r: the centroid divides each median in the ratio 2 : 1 from the vertex. In an equilateral triangle, the median is also the altitude. The circumradius is the distance from the centre to a vertex (⅔ of the median), and the inradius is the distance to a side (⅓ of the median). So R = 2r.
+  Side length (for reference): the altitude is 3r = $\frac{9}{\sqrt2}$, so the side is $\frac{2}{\sqrt3}\times\frac{9}{\sqrt2} = \frac{18}{\sqrt6} = 3\sqrt6$.
+  Why others are wrong:
+  - (B) 7√2 and (C) 2√2 do not fit R + r = 3r.
+  - (D) 3√2 is R alone.
   Answer: (A)
 M A 6: |-
-  Concept: Tangent $\frac{xx_1}{4} - \frac{yy_1}{2} = 1$; focus $(ae, 0)$.
+  Concept: For the hyperbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$, the tangent at (x₁, y₁) is $\frac{xx_1}{a^2} - \frac{yy_1}{b^2} = 1$. The foci are (±ae, 0) with $e^2 = 1 + \frac{b^2}{a^2}$, and the latus rectum through a focus is the line x = ±ae.
   Solution:
-  1. $\frac{x^2}{4} - \frac{y^2}{2} = 1$: $e = \sqrt{3/2}$, so $F = (\sqrt6, 0)$.
-  2. Tangent at $(4, \sqrt6)$: $x - \frac{\sqrt6}{2}y = 1$, so $Q = (1, 0)$ and, at $x = \sqrt6$, $y_R = \frac{2(\sqrt6 - 1)}{\sqrt6}$.
-  3. Right triangle: area $= \frac{1}{2}(\sqrt6 - 1)\cdot\frac{2(\sqrt6 - 1)}{\sqrt6} = \frac{7 - 2\sqrt6}{\sqrt6} = \frac{7}{\sqrt6} - 2$.
+  1. x² − 2y² = 4 gives $\frac{x^2}{4} - \frac{y^2}{2} = 1$: a² = 4 and b² = 2.
+  2. $e^2 = 1 + \frac{2}{4} = \frac{3}{2}$, so ae = 2 × $\sqrt{\frac{3}{2}}$ = √6. The focus nearer to P(4, √6) is F = (√6, 0).
+  3. Tangent at P: $\frac{4x}{4} - \frac{\sqrt6y}{2} = 1$, i.e. $x - \frac{\sqrt6}{2}y = 1$.
+  4. Q (on the x-axis, y = 0): x = 1, so Q = (1, 0).
+  5. R (on the latus rectum x = √6, with x₁ > 0): $\frac{\sqrt6}{2}y = \sqrt6 - 1$, so $y_R = \frac{2(\sqrt6 - 1)}{\sqrt6}$.
+  6. Triangle QFR is right-angled at F (QF is along the x-axis, FR is vertical).
+     QF = √6 − 1 and FR = $\frac{2(\sqrt6 - 1)}{\sqrt6}$.
+  7. Area $= \frac{1}{2}(\sqrt6 - 1)\cdot\frac{2(\sqrt6 - 1)}{\sqrt6} = \frac{(\sqrt6 - 1)^2}{\sqrt6} = \frac{7 - 2\sqrt6}{\sqrt6} = \frac{7}{\sqrt6} - 2$.
   Answer: (C)
 M A 7: |-
-  Concept: Modus tollens: $((P\Rightarrow Q)\wedge\sim Q) \Rightarrow \sim P$.
+  Concept: Modus tollens: from "P implies Q" and "not Q", conclude "not P". As a statement, $((P \Rightarrow Q) \wedge \sim Q) \Rightarrow \sim P$ is a tautology.
   Solution:
-  1. If $P \Rightarrow Q$ and Q is false, then P must be false, so (B) is always true.
-  2. The others fail when P and Q are both false.
+  1. Let H = (P ⇒ Q) ∧ ∼Q. H is true only when Q is false and P ⇒ Q is true. With Q false, P ⇒ Q is true only if P is false. So H is true only when P = F and Q = F.
+  2. An implication H ⇒ X is a tautology iff X is true whenever H is true, i.e. X must be true at P = F, Q = F.
+  3. Check each conclusion at P = F, Q = F:
+     - (A) Q: false. Not a tautology.
+     - (B) ∼P: true ✓. Tautology.
+     - (C) P: false. Not a tautology.
+     - (D) P ∧ Q: false. Not a tautology.
+  4. So (B) is the tautology.
+  Related valid argument forms:
+  - Modus ponens: ((P ⇒ Q) ∧ P) ⇒ Q.
+  - Hypothetical syllogism: ((P ⇒ Q) ∧ (Q ⇒ R)) ⇒ (P ⇒ R).
+  Common fallacies: "affirming the consequent" ((P ⇒ Q) ∧ Q) ⇒ P and "denying the antecedent" ((P ⇒ Q) ∧ ∼P) ⇒ ∼Q are not tautologies.
   Answer: (B)
 M A 8: |-
-  Concept: Bound each part of the integral.
+  Concept: If m ≤ f(t) ≤ M on an interval of length L, then mL ≤ ∫f ≤ ML. Apply this to each part and add.
   Solution:
-  1. $\int_0^1f \in \left[\frac{1}{3}, 1\right]$ and $\int_1^3f \in [0, 1]$.
-  2. $g(3) \in \left[\frac{1}{3}, 2\right]$.
+  1. $g(3) = \int_0^1f(t)dt + \int_1^3f(t)dt$.
+  2. On [0, 1], ⅓ ≤ f ≤ 1, over length 1: $\frac{1}{3} \le \int_0^1f \le 1$.
+  3. On (1, 3], 0 ≤ f ≤ ½, over length 2: $0 \le \int_1^3f \le 1$.
+  4. Adding: $\frac{1}{3} \le g(3) \le 2$.
+  5. The largest possible interval (the tightest bounds allowed by the given information) is $\left[\frac{1}{3}, 2\right]$.
+  Note: continuity at t = 1 links the two bounds (f(1) ≥ ⅓ from the first interval but f ≤ ½ just after 1). This affects whether the extreme values are exactly attained, but the key takes $\left[\frac{1}{3}, 2\right]$ as the bounding interval.
+  Why others are wrong:
+  - (A) and (B) are negative intervals, but f ≥ 0 everywhere, so g(3) > 0.
+  - (D) [1, 3] exceeds the maximum possible value (2).
   Answer: (C)
 M A 9: |-
-  Concept: For an AP, $S_{2n}$, $S_{4n} - S_{2n}$, $S_{6n} - S_{4n}$ are in AP.
+  Concept: For an AP, the sums of consecutive blocks of equal length (S_k, S_{2k} − S_k, S_{3k} − S_{2k}) form another AP. So the middle block is the average of the other two, and S_{3k} = 3(S_{2k} − S_k).
   Solution:
-  1. $S_{6n} = 3(S_{4n} - S_{2n}) = 3\times1000 = 3000$.
+  1. Take blocks of 2n terms: B₁ = S_{2n}, B₂ = S_{4n} − S_{2n} = 1000 and B₃ = S_{6n} − S_{4n}.
+  2. B₁, B₂ and B₃ are in AP, so B₁ + B₃ = 2B₂.
+  3. S_{6n} = B₁ + B₂ + B₃ = 3B₂ = 3 × 1000 = 3000.
+  Derivation: with first term a and common difference d, the sum of the 2n terms in B₂ exceeds that in B₁ by 2n × (2n)d = 4n²d (each term in B₂ is 2nd larger than the corresponding term in B₁). The same holds between B₃ and B₂. So the block sums are in AP.
   Answer: (D)
 M A 10: |-
-  Concept: Area $= \frac{1}{2}|z||w|\sin(\text{angle between})$.
+  Concept: The area of the triangle with vertices 0, z and w is $\frac{1}{2}|z||w|\sin\theta$, where θ is the angle between z and w (the difference of their arguments).
   Solution:
-  1. $|w| = 2 \Rightarrow |z| = \frac{1}{2}$; the angle is $\frac{\pi}{2}$.
-  2. Area $= \frac{1}{2}\cdot\frac{1}{2}\cdot2 = \frac{1}{2}$.
+  1. w = 1 − √3i: |w| = √(1 + 3) = 2 and arg w = $-\frac{\pi}{3}$.
+  2. |zw| = |z||w| = 1, so $|z| = \frac{1}{2}$.
+  3. The angle between z and w is arg z − arg w = $\frac{\pi}{2}$.
+  4. Area $= \frac{1}{2}\cdot\frac{1}{2}\cdot2\cdot\sin\frac{\pi}{2} = \frac{1}{2}$.
+  Explicit points: arg z = $-\frac{\pi}{3} + \frac{\pi}{2} = \frac{\pi}{6}$, so $z = \frac{1}{2}\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right) = \frac{\sqrt3}{4} + \frac{i}{4}$.
+  Check with the determinant formula: area $= \frac{1}{2}|x_1y_2 - x_2y_1| = \frac{1}{2}\left|\frac{\sqrt3}{4}(-\sqrt3) - 1\cdot\frac{1}{4}\right| = \frac{1}{2}\left|-\frac{3}{4} - \frac{1}{4}\right| = \frac{1}{2}$ ✓.
+  Why others are wrong:
+  - (A) 4 and (D) 2 use |z| = 2 or omit the factor ½.
+  - (C) ¼ uses |w| = 1.
   Answer: (B)
 M A 11: |-
-  Concept: Adding a constant shifts the mean but not the SD.
+  Concept: Adding a constant b to every observation shifts the mean by b but leaves the standard deviation unchanged. For the given data (n values a and n values −a), the mean is 0 and the SD is |a|.
   Solution:
-  1. The original mean is 0 and the SD is $|a|$.
-  2. New mean $= b = 5$ and SD $= |a| = 20$.
-  3. $a^2 + b^2 = 400 + 25 = 425$.
+  1. Original mean: $\frac{na + n(-a)}{2n} = 0$.
+  2. Original variance: $\frac{na^2 + na^2}{2n} - 0^2 = a^2$, so SD = |a|.
+  3. After adding b: new mean = 0 + b = b = 5, and new SD = |a| = 20.
+  4. $a^2 + b^2 = 400 + 25 = 425$.
+  Why the SD is unchanged: the SD measures spread about the mean. Adding b moves every observation and the mean by the same amount, so the deviations from the mean are unchanged.
+  Contrast: multiplying every observation by a constant k multiplies both the mean and the SD by |k|.
+  Why others are wrong:
+  - (B) 650 and (D) 925 take the SD to depend on b.
+  - (C) 250 uses a wrong value of a.
   Answer: (A)
 M A 12: |-
-  Concept: The sum of distances to the two centres is constant, so the locus is an ellipse.
+  Concept: If a circle of radius r touches circle 1 internally and circle 2 externally, the distances from its centre P to the two fixed centres are R₁ − r and R₂ + r. Their sum is R₁ + R₂, a constant, so P moves on an ellipse with the two fixed centres as foci.
   Solution:
-  1. $|PO| = 3 - r$ and $|PC_2| = 1 + r$, so $|PO| + |PC_2| = 4$.
-  2. Ellipse with foci (0, 0) and (2, 0), $a = 2$, $c = 1$, $b^2 = 3$: $\frac{(x-1)^2}{4} + \frac{y^2}{3} = 1$.
-  3. $\left(2, \pm\frac{3}{2}\right)$: $\frac{1}{4} + \frac{3}{4} = 1$ ✓.
+  1. S₁: centre O = (0, 0), radius 3. S₂: centre C = (2, 0), radius 1. (S₂ lies inside S₁ and touches it at (3, 0).)
+  2. Circle S (centre P, radius r) touches S₁ internally: |PO| = 3 − r. It touches S₂ externally: |PC| = 1 + r.
+  3. Sum: |PO| + |PC| = 4, a constant.
+  4. So the locus is an ellipse with foci (0, 0) and (2, 0), with 2a = 4 (a = 2) and 2c = 2 (c = 1). Then b² = a² − c² = 3.
+  5. Centre at (1, 0): $\frac{(x - 1)^2}{4} + \frac{y^2}{3} = 1$.
+  6. Test the options:
+     - (A) (0, ±√3): $\frac{1}{4} + 1 \ne 1$ ✗.
+     - (B) $\left(\frac{1}{2}, \pm\frac{\sqrt5}{2}\right)$: $\frac{1}{16} + \frac{5}{12} \ne 1$ ✗.
+     - (C) $\left(2, \pm\frac{3}{2}\right)$: $\frac{1}{4} + \frac{9/4}{3} = \frac{1}{4} + \frac{3}{4} = 1$ ✓.
+     - (D) (1, ±2): $0 + \frac{4}{3} \ne 1$ ✗.
+  7. The locus passes through $\left(2, \pm\frac{3}{2}\right)$.
   Answer: (C)
 M A 13: |-
-  Concept: $\vec a$, $\vec b$, $\vec a\times\vec b$ are mutually perpendicular.
+  Concept: If $\vec a$ and $\vec b$ are perpendicular, then $\vec a$, $\vec b$ and $\vec a\times\vec b$ are mutually perpendicular, and $|\vec a\times\vec b| = |\vec a||\vec b|$.
   Solution:
-  1. $|\vec a\times\vec b| = |\vec a|^2 = |\vec a| \Rightarrow |\vec a| = |\vec b| = 1$, so all three are unit vectors.
-  2. $\vec v = \vec a + \vec b + \vec a\times\vec b$ has $|\vec v| = \sqrt3$ and $\vec v\cdot\vec a = 1$.
-  3. $\cos\theta = \frac{1}{\sqrt3}$.
+  1. $|\vec a\times\vec b| = |\vec a||\vec b|\sin90° = |\vec a|^2$ (since |a| = |b|).
+  2. Given $|\vec a\times\vec b| = |\vec a|$: $|\vec a|^2 = |\vec a|$, so |a| = 1. Then |b| = 1 and |a × b| = 1.
+  3. So $\vec a$, $\vec b$ and $\vec a\times\vec b$ are three mutually perpendicular unit vectors (like $\hat i$, $\hat j$, $\hat k$).
+  4. Let $\vec v = \vec a + \vec b + \vec a\times\vec b$. Then $|\vec v| = \sqrt{1 + 1 + 1} = \sqrt3$.
+  5. $\vec v\cdot\vec a = |\vec a|^2 + 0 + 0 = 1$.
+  6. $\cos\theta = \frac{\vec v\cdot\vec a}{|\vec v||\vec a|} = \frac{1}{\sqrt3}$, so $\theta = \cos^{-1}\frac{1}{\sqrt3} \approx 54.7°$.
+  Geometric picture: this is the angle between the body diagonal of a unit cube, (1, 1, 1), and one of its edges.
+  Why others are wrong:
+  - (A) $\sin^{-1}\frac{1}{\sqrt3}$ is the complementary angle (35.3°).
+  - (C) $\cos^{-1}\frac{1}{\sqrt2}$ = 45° is the angle between a face diagonal and an edge.
+  - (D) $\sin^{-1}\frac{1}{\sqrt6}$ has no basis here.
   Answer: (B)
 M A 14: |-
-  Concept: $P(X = k) = \binom{5}{k}p^kq^{5-k}$.
+  Concept: In a binomial distribution with n trials and success probability p (q = 1 − p), $P(X = k) = \binom{n}{k}p^kq^{n - k}$. The ratio of consecutive probabilities is simple and gives p directly.
   Solution:
-  1. $\frac{P(2)}{P(1)} = \frac{10p^2q^3}{5pq^4} = \frac{2p}{q} = \frac{1}{2} \Rightarrow p = \frac{1}{5}$.
-  2. $P(3) = 10\cdot\frac{1}{125}\cdot\frac{16}{25} = \frac{32}{625}$.
+  1. $\frac{P(X = 2)}{P(X = 1)} = \frac{\binom{5}{2}p^2q^3}{\binom{5}{1}pq^4} = \frac{10p}{5q} = \frac{2p}{q}$.
+  2. Given: $\frac{0.2048}{0.4096} = \frac{1}{2}$. So $\frac{2p}{q} = \frac{1}{2}$, i.e. q = 4p. With p + q = 1: p = $\frac{1}{5}$ and q = $\frac{4}{5}$.
+  3. Check: P(X = 1) = 5 × $\frac{1}{5}$ × $\left(\frac{4}{5}\right)^4$ = $\frac{256}{625}$ = 0.4096 ✓.
+  4. $P(X = 3) = \binom{5}{3}\left(\frac{1}{5}\right)^3\left(\frac{4}{5}\right)^2 = 10\times\frac{1}{125}\times\frac{16}{25} = \frac{160}{3125} = \frac{32}{625}$ = 0.0512.
+  Ratio check: $\frac{P(3)}{P(2)} = \frac{\binom{5}{3}}{\binom{5}{2}}\cdot\frac{p}{q} = 1\times\frac{1}{4} = \frac{1}{4}$, so P(3) = $\frac{0.2048}{4}$ = 0.0512 ✓.
+  Why others are wrong:
+  - (B) $\frac{80}{243}$ and (C) $\frac{40}{243}$ use p = ⅓ (denominator 3⁵).
+  - (D) $\frac{128}{625}$ = 0.2048 is P(X = 2).
   Answer: (A)
 M A 15: |-
-  Concept: Tangent $\frac{x\cos\theta}{3\sqrt3} + y\sin\theta = 1$.
+  Concept: The tangent to $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ at (a cos θ, b sin θ) is $\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$. Its intercepts are $\frac{a}{\cos\theta}$ and $\frac{b}{\sin\theta}$. Minimise their sum.
   Solution:
-  1. Sum of intercepts $S = \frac{3\sqrt3}{\cos\theta} + \frac{1}{\sin\theta}$.
-  2. $S' = 0 \Rightarrow 3\sqrt3\frac{\sin\theta}{\cos^2\theta} = \frac{\cos\theta}{\sin^2\theta} \Rightarrow \tan^3\theta = \frac{1}{3\sqrt3}$.
-  3. $\tan\theta = \frac{1}{\sqrt3}$, so $\theta = \frac{\pi}{6}$.
+  1. a = 3√3, b = 1. Tangent: $\frac{x\cos\theta}{3\sqrt3} + y\sin\theta = 1$.
+  2. Intercepts: x-intercept $\frac{3\sqrt3}{\cos\theta}$, y-intercept $\frac{1}{\sin\theta}$.
+  3. $S(\theta) = 3\sqrt3\sec\theta + \text{cosec}\,\theta$.
+  4. $S'(\theta) = 3\sqrt3\sec\theta\tan\theta - \text{cosec}\,\theta\cot\theta = 0$.
+  5. $3\sqrt3\frac{\sin\theta}{\cos^2\theta} = \frac{\cos\theta}{\sin^2\theta}$, so $\tan^3\theta = \frac{1}{3\sqrt3} = \left(\frac{1}{\sqrt3}\right)^3$.
+  6. $\tan\theta = \frac{1}{\sqrt3}$, so $\theta = \frac{\pi}{6}$.
+  7. It is a minimum: S → ∞ as θ → 0 or $\frac{\pi}{2}$, and there is only one critical point.
+  Minimum value: $S = 3\sqrt3\cdot\frac{2}{\sqrt3} + 2 = 6 + 2 = 8$.
+  General result: the sum of intercepts is minimised when $\tan^3\theta = \frac{b}{a}$, and the minimum is $(a^{2/3} + b^{2/3})^{3/2}$. Here $(3 + 1)^{3/2} = 8$ ✓.
   Answer: (C)
 M A 16: |-
-  Concept: Matrix similarity.
+  Concept: A relation is an equivalence relation if it is reflexive, symmetric and transitive. Here ARB means A and B are similar matrices.
   Solution:
-  1. Reflexive: $P = I$. Symmetric: $A = P^{-1}B(P^{-1})^{-1}$. Transitive: $(QP)A(QP)^{-1} = C$.
-  2. So R is an equivalence relation.
+  1. Reflexive: take P = I (the identity, non-singular): IAI⁻¹ = A. So ARA ✓.
+  2. Symmetric: if PAP⁻¹ = B, multiply by P⁻¹ on the left and P on the right: A = P⁻¹BP = (P⁻¹)B(P⁻¹)⁻¹. With Q = P⁻¹ (non-singular), QBQ⁻¹ = A, so BRA ✓.
+  3. Transitive: if PAP⁻¹ = B and QBQ⁻¹ = C, then C = Q(PAP⁻¹)Q⁻¹ = (QP)A(QP)⁻¹. QP is non-singular (product of non-singular matrices). So ARC ✓.
+  4. R is reflexive, symmetric and transitive: an equivalence relation.
+  Significance: similar matrices represent the same linear transformation in different bases. They share the same eigenvalues, determinant, trace, rank and characteristic polynomial. The equivalence classes are the similarity classes.
+  Why others are wrong: (A), (B) and (D) each deny one of the three properties, all of which hold.
   Answer: (C)
 M A 17: |-
-  Concept: Equal elevation angles from A, B, C mean the foot of the pole is equidistant from them, i.e. at the circumcentre.
+  Concept: If the angle of elevation of the top of a pole of height h is the same from several points, those points are all at the same horizontal distance $\frac{h}{\tan\theta}$ from the foot of the pole. So the foot is equidistant from A, B and C, i.e. it is the circumcentre of triangle ABC.
   Solution:
-  1. $h = R\tan\frac{\pi}{3} = 2\sqrt3$.
+  1. Let the foot of the pole be O and the height h. From each corner, $\tan\frac{\pi}{3} = \frac{h}{OA} = \frac{h}{OB} = \frac{h}{OC}$.
+  2. So OA = OB = OC: O is the circumcentre, and each distance equals the circumradius R = 2.
+  3. h = R tan $\frac{\pi}{3}$ = 2√3.
+  Note: the pole is inside the park, which requires the circumcentre to be inside the triangle, i.e. the triangle must be acute. The question says the pole stands inside, which is consistent.
+  Why others are wrong:
+  - (A) $\frac{2\sqrt3}{3} = \frac{2}{\sqrt3}$ uses tan 30°.
+  - (C) √3 uses R = 1.
+  - (D) $\frac{1}{\sqrt3}$ uses both errors.
   Answer: (B)
 M A 18: |-
-  Concept: Write $6 = 6(\sin^2 + \cos^2)^2$ to get a perfect square.
+  Concept: Write the constant 6 as 6(sin²α + cos²α)². Then the equation becomes a perfect square in sin²α and cos²α.
   Solution:
-  1. $15s^2 + 10c^2 = 6(s + c)^2 \Rightarrow (3s - 2c)^2 = 0$, so $\sin^2\alpha = \frac{2}{5}$ and $\cos^2\alpha = \frac{3}{5}$.
-  2. $27\sec^6\alpha = 27\cdot\frac{125}{27} = 125$ and $8\,\text{cosec}^6\alpha = 8\cdot\frac{125}{8} = 125$.
-  3. Sum $= 250$.
+  1. Let s = sin²α and c = cos²α, with s + c = 1.
+  2. 15s² + 10c² = 6(s + c)² = 6s² + 12sc + 6c².
+  3. 9s² − 12sc + 4c² = 0, i.e. (3s − 2c)² = 0, so 3s = 2c.
+  4. With s + c = 1: s = $\frac{2}{5}$ and c = $\frac{3}{5}$.
+  5. sec⁶α = $\frac{1}{c^3} = \frac{125}{27}$, so 27 sec⁶α = 125.
+  6. cosec⁶α = $\frac{1}{s^3} = \frac{125}{8}$, so 8 cosec⁶α = 125.
+  7. Sum: 125 + 125 = 250.
+  Check: 15 × $\frac{4}{25}$ + 10 × $\frac{9}{25}$ = $\frac{60 + 90}{25}$ = 6 ✓.
+  Alternative: this is the equality case of the Cauchy–Schwarz inequality, $\frac{s^2}{1/15} + \frac{c^2}{1/10} \ge \frac{(s + c)^2}{1/15 + 1/10} = 6$. Equality holds when $s : c = \frac{1}{15} : \frac{1}{10} = 2 : 3$ ✓.
   Answer: (D)
 M A 19: |-
-  Concept: The curve is symmetric about the x-axis and exists only for $2 \le x \le 4$.
+  Concept: For a closed curve of the form y² = g(x), the region exists only where g(x) ≥ 0, and it is symmetric about the x-axis. The area is $2\int\sqrt{g(x)}\,dx$ over that range.
   Solution:
-  1. $y = \pm\frac{x}{2}\sqrt{(4 - x)(x - 2)}$.
-  2. Area $= \int_2^4x\sqrt{(4 - x)(x - 2)}\,dx$; with $x = 3 + t$, this is $3\int_{-1}^{1}\sqrt{1 - t^2}dt = \frac{3\pi}{2}$.
+  1. $4y^2 = x^2(4 - x)(x - 2)$ gives $y = \pm\frac{x}{2}\sqrt{(4 - x)(x - 2)}$.
+  2. Real y needs (4 − x)(x − 2) ≥ 0, i.e. 2 ≤ x ≤ 4. (At x = 0, the curve has an isolated point, which does not bound any area.)
+  3. Area $= 2\int_2^4\frac{x}{2}\sqrt{(4 - x)(x - 2)}\,dx = \int_2^4x\sqrt{(4 - x)(x - 2)}\,dx$.
+  4. Substitute x = 3 + t (t from −1 to 1): (4 − x)(x − 2) = (1 − t)(1 + t) = 1 − t².
+  5. Area $= \int_{-1}^{1}(3 + t)\sqrt{1 - t^2}\,dt = 3\int_{-1}^{1}\sqrt{1 - t^2}\,dt + \int_{-1}^{1}t\sqrt{1 - t^2}\,dt$.
+  6. The second integral is 0 (odd function). The first is the area of a semicircle of radius 1: $\frac{\pi}{2}$.
+  7. Area = 3 × $\frac{\pi}{2}$ = $\frac{3\pi}{2}$.
+  Why others are wrong: (A) $\frac{\pi}{8}$, (B) $\frac{3\pi}{8}$ and (D) $\frac{\pi}{16}$ come from dropping the factor x (≈ 3 on average) or the factor 2 from the symmetry.
   Answer: (C)
 M A 20: |-
-  Concept: Match the one-sided limits to b.
+  Concept: A piecewise function is continuous at 0 if the left limit, the right limit and f(0) are all equal. Use $\lim\frac{\sin kx}{x} = k$ and $\sqrt{1 + u} - 1 \approx \frac{u}{2}$ for small u.
   Solution:
-  1. RHL: $\frac{\sqrt x(\sqrt{1 + bx^2} - 1)}{bx^{5/2}} \to \frac{bx^2/2}{bx^2} = \frac{1}{2}$, so $b = \frac{1}{2}$.
-  2. LHL: $\frac{(a + 1) + 2}{2} = \frac{1}{2} \Rightarrow a = -2$.
-  3. $a + b = -\frac{3}{2}$.
+  1. Right-hand limit (x > 0): $\frac{\sqrt{x + bx^3} - \sqrt x}{bx^{5/2}} = \frac{\sqrt x\left(\sqrt{1 + bx^2} - 1\right)}{bx^{5/2}} = \frac{\sqrt{1 + bx^2} - 1}{bx^2}$.
+     As x → 0: $\sqrt{1 + bx^2} - 1 \approx \frac{bx^2}{2}$, so the limit is ½.
+  2. Continuity: f(0) = b = ½.
+  3. Left-hand limit (x < 0): $\frac{\sin(a + 1)x + \sin2x}{2x} \to \frac{(a + 1) + 2}{2} = \frac{a + 3}{2}$.
+  4. Set equal to ½: a + 3 = 1, so a = −2.
+  5. a + b = −2 + ½ = $-\frac{3}{2}$.
+  Check the right-hand limit by rationalising: $\frac{\sqrt{1 + bx^2} - 1}{bx^2} = \frac{bx^2}{bx^2(\sqrt{1 + bx^2} + 1)} = \frac{1}{\sqrt{1 + bx^2} + 1} \to \frac{1}{2}$ ✓. (This is independent of b, which is why b is fixed by the condition f(0) = ½.)
+  Why others are wrong:
+  - (A) $-\frac{5}{2}$, (B) −2 and (C) −3 come from errors in a or b (e.g. b = 0 or a = −3).
   Answer: (D)
 M B 1: |-
-  Concept: The roots of $x^2 + x + 1$ are ω and ω², with $\omega^3 = 1$.
+  Concept: A polynomial is divisible by x² + x + 1 iff it vanishes at both roots, ω and ω² (the complex cube roots of unity). Since ω³ = 1, $f(\omega^3) = f(1)$.
   Solution:
-  1. $P(\omega) = f(1) + \omega g(1) = 0$ and $P(\omega^2) = f(1) + \omega^2g(1) = 0$.
-  2. So $g(1) = 0 = f(1)$, and $P(1) = f(1) + g(1) = 0$.
+  1. P(ω) = f(ω³) + ωg(ω³) = f(1) + ωg(1) = 0.
+  2. P(ω²) = f(ω⁶) + ω²g(ω⁶) = f(1) + ω²g(1) = 0.
+  3. Subtract: (ω − ω²)g(1) = 0. Since ω ≠ ω², g(1) = 0.
+  4. Then f(1) = 0.
+  5. P(1) = f(1) + 1·g(1) = 0 + 0 = 0.
+  Interpretation: in fact, x − 1 also divides P(x), so P(x) is divisible by x³ − 1 = (x − 1)(x² + x + 1).
+  Example: f(x) = x − 1 and g(x) = 0 give P(x) = x³ − 1, which is divisible by x² + x + 1, and P(1) = 0 ✓.
   Answer: 0
 M B 2: |-
-  Concept: Cayley–Hamilton: $P^2 - (\text{tr}P)P + (\det P)I = 0$.
+  Concept: The Cayley–Hamilton theorem: every square matrix satisfies its own characteristic equation. For a 2 × 2 matrix, $P^2 - (\text{tr}P)P + (\det P)I = 0$. This lets us reduce any power Pⁿ to the form aI + bP.
   Solution:
-  1. tr P = −1 and det P = −1, so $P^2 = I - P$.
-  2. $P^3 = 2P - I$, $P^4 = 2I - 3P$, $P^5 = 5P - 3I$, $P^6 = 5I - 8P$.
-  3. $n = 6$.
+  1. tr P = 2 + (−3) = −1 and det P = 2(−3) − (−1)(5) = −6 + 5 = −1.
+  2. Cayley–Hamilton: P² + P − I = 0, so P² = I − P.
+  3. Compute successive powers:
+     - P³ = P·P² = P − P² = P − (I − P) = 2P − I.
+     - P⁴ = P·P³ = 2P² − P = 2I − 2P − P = 2I − 3P.
+     - P⁵ = P·P⁴ = 2P − 3P² = 2P − 3I + 3P = 5P − 3I.
+     - P⁶ = P·P⁵ = 5P² − 3P = 5I − 5P − 3P = 5I − 8P ✓.
+  4. So n = 6.
+  Pattern: the coefficients follow the Fibonacci numbers (1, 1, 2, 3, 5, 8, …), with alternating signs. Pⁿ = (−1)ⁿ(F_{n−1}I − F_nP). For n = 6: F₅ = 5 and F₆ = 8 ✓.
   Answer: 6
 M B 3: |-
-  Concept: Telescoping: $r!(r^3 + 6r^2 + 2r + 5) = G(r + 1) - G(r)$ with $G(r) = (r+1)!(r + 3) - 8\cdot r!$.
+  Concept: Sums of the form Σ r!·(polynomial in r) can telescope if the summand is written as G(r + 1) − G(r) for a suitable G. Guess G of the form (r + 1)!(linear in r) + c·r!.
   Solution:
-  1. Sum $= G(11) - G(1) = 12!\cdot14 - 8\cdot11! - (2\cdot4 - 8)$.
-  2. $= 11!(168 - 8) = 160\cdot11!$, so $\alpha = 160$.
+  1. Take G(r) = (r + 1)!(r + 3) − 8·r!.
+  2. Check: G(r + 1) − G(r) = (r + 2)!(r + 4) − (r + 1)!(r + 3) − 8(r + 1)! + 8r!
+     $= (r + 1)![(r + 2)(r + 4) - (r + 3) - 8] + 8r! = (r + 1)!(r^2 + 5r - 3) + 8r!$
+     $= r![(r + 1)(r^2 + 5r - 3) + 8] = r!(r^3 + 6r^2 + 2r + 5)$ ✓.
+  3. Sum from r = 1 to 10: G(11) − G(1).
+  4. G(11) = 12!·14 − 8·11! = 11!(12 × 14 − 8) = 160·11!.
+  5. G(1) = 2!·4 − 8·1! = 8 − 8 = 0.
+  6. Sum = 160·11!, so α = 160.
+  Check with r = 1: the first term is 1!(1 + 6 + 2 + 5) = 14. And G(2) − G(1) = 3!·5 − 8·2! − 0 = 30 − 16 = 14 ✓.
   Answer: 160
 M B 4: |-
-  Concept: Simplify using $a^3 + 1$ and $a^2 - 1$ factorisations.
+  Concept: Simplify each fraction with the identities $a^3 + 1 = (a + 1)(a^2 - a + 1)$ and $b^2 - 1 = (b - 1)(b + 1)$. Then use the general term of a binomial expansion.
   Solution:
-  1. $\frac{x + 1}{x^{2/3} - x^{1/3} + 1} = x^{1/3} + 1$ and $\frac{x - 1}{x - \sqrt x} = 1 + x^{-1/2}$.
-  2. The expression is $(x^{1/3} - x^{-1/2})^{10}$; the constant term needs $\frac{10 - r}{3} = \frac{r}{2} \Rightarrow r = 4$.
-  3. Term $= \binom{10}{4} = 210$.
+  1. Let a = x^{1/3}: x + 1 = a³ + 1 = (a + 1)(a² − a + 1). So $\frac{x + 1}{x^{2/3} - x^{1/3} + 1} = a + 1 = x^{1/3} + 1$.
+  2. Let b = √x: x − 1 = (b − 1)(b + 1) and x − √x = b(b − 1). So $\frac{x - 1}{x - \sqrt x} = \frac{b + 1}{b} = 1 + x^{-1/2}$.
+  3. The expression becomes $\left(x^{1/3} + 1 - 1 - x^{-1/2}\right)^{10} = \left(x^{1/3} - x^{-1/2}\right)^{10}$.
+  4. General term: $T_{r+1} = \binom{10}{r}(x^{1/3})^{10 - r}(-x^{-1/2})^r = (-1)^r\binom{10}{r}x^{\frac{10 - r}{3} - \frac{r}{2}}$.
+  5. Constant term: $\frac{10 - r}{3} = \frac{r}{2}$, so 20 − 2r = 3r and r = 4.
+  6. Term: $(-1)^4\binom{10}{4} = 210$.
   Answer: 210
 M B 5: |-
-  Concept: $P'(x) = k(x^2 - 1)$ (extrema at ±1).
+  Concept: A cubic with a local maximum at x = −1 and a local minimum at x = 1 has P′(x) = k(x + 1)(x − 1) = k(x² − 1), with k > 0 (so P′ changes from + to − at −1 and from − to + at 1).
   Solution:
-  1. $P = k\left(\frac{x^3}{3} - x\right) + d$; $\int_{-1}^1P = 2d = 18 \Rightarrow d = 9$.
-  2. $P(-3) = -6k + 9 = 0 \Rightarrow k = \frac{3}{2}$ (k > 0 gives a minimum at x = 1 ✓).
-  3. Sum of coefficients $= P(1) = \frac{1}{2} - \frac{3}{2} + 9 = 8$.
+  1. Integrate: $P(x) = k\left(\frac{x^3}{3} - x\right) + d$.
+  2. $\int_{-1}^{1}P(x)\,dx$: the odd part integrates to 0, so the integral is 2d = 18, giving d = 9.
+  3. P(−3) = 0: $k\left(\frac{-27}{3} + 3\right) + 9 = k(-9 + 3) + 9 = -6k + 9 = 0$, so $k = \frac{3}{2}$. (k > 0 ✓, consistent with a minimum at x = 1.)
+  4. $P(x) = \frac{3}{2}\left(\frac{x^3}{3} - x\right) + 9 = \frac{1}{2}x^3 - \frac{3}{2}x + 9$.
+  5. Sum of all coefficients = P(1) = ½ − $\frac{3}{2}$ + 9 = 8.
+  Checks: P′(x) = $\frac{3}{2}$x² − $\frac{3}{2}$ = $\frac{3}{2}$(x² − 1), zero at ±1 ✓. P″(1) = 3 > 0 (minimum) ✓. P(−3) = −13.5 + 4.5 + 9 = 0 ✓.
   Answer: 8
 M B 6: |-
-  Concept: For a mirror image, the midpoint lies on the plane and the joining segment is along the normal.
+  Concept: If Q is the mirror image of P in a plane, then the segment PQ is perpendicular to the plane (parallel to its normal), and its midpoint lies on the plane.
   Solution:
-  1. Direction $(-4, 2, 2 - a) \parallel (2, -1, 1) \Rightarrow 2 - a = -2 \Rightarrow a = 4$.
-  2. Midpoint $(-1, 4, 3)$: $-2 - 4 + 3 = b = -3$.
-  3. $|a + b| = 1$.
+  1. Plane: 2x − y + z = b, with normal (2, −1, 1).
+  2. P = (1, 3, a) and Q = (−3, 5, 2). $\vec{PQ} = (-4, 2, 2 - a)$.
+  3. PQ parallel to (2, −1, 1): $\frac{-4}{2} = \frac{2}{-1} = \frac{2 - a}{1}$, so each ratio is −2 and 2 − a = −2, giving a = 4.
+  4. Midpoint: $\left(\frac{1 - 3}{2}, \frac{3 + 5}{2}, \frac{4 + 2}{2}\right) = (-1, 4, 3)$.
+  5. On the plane: 2(−1) − 4 + 3 = −3 = b.
+  6. |a + b| = |4 − 3| = 1.
+  Check: the distance from P = (1, 3, 4) to the plane 2x − y + z + 3 = 0 is $\frac{|2 - 3 + 4 + 3|}{\sqrt6} = \frac{6}{\sqrt6} = \sqrt6$. The distance from Q: $\frac{|-6 - 5 + 2 + 3|}{\sqrt6} = \frac{6}{\sqrt6}$. Equal, and on opposite sides (signs +6 and −6) ✓.
   Answer: 1
 M B 7: |-
-  Concept: $f(x + y) = f(x)f(y)$ with $f \ne 0$ gives $f(0) = 1$.
+  Concept: The functional equation f(x + y) = f(x)f(y) with f never zero forces f(0) = 1. Then the given limit is exactly the derivative at 0.
   Solution:
-  1. $\lim_{h\to0}\frac{f(h) - 1}{h} = \lim\frac{f(h) - f(0)}{h} = f'(0) = 3$.
+  1. Put x = y = 0: f(0) = f(0)². Since f(0) ≠ 0, f(0) = 1.
+  2. $\lim_{h\to0}\frac{f(h) - 1}{h} = \lim_{h\to0}\frac{f(0 + h) - f(0)}{h} = f'(0) = 3$.
+  Further consequences (not needed here): for any x, $f'(x) = \lim\frac{f(x + h) - f(x)}{h} = f(x)\lim\frac{f(h) - 1}{h} = 3f(x)$. So f(x) = e^{3x}. This satisfies f(x + y) = e^{3x}e^{3y} ✓ and f′(0) = 3 ✓.
+  Why f can never be zero is needed: if f(0) were 0, then f(x) = f(x + 0) = f(x)f(0) = 0 for all x, the trivial solution. The condition f(x) ≠ 0 excludes it.
   Answer: 3
 M B 8: |-
-  Concept: Take $n = 10$ (as intended); use $\sum\binom{10}{k} = 2^{10}$ and $\sum k\binom{10}{k} = 10\cdot2^9$.
+  Concept: Use the binomial sums $\sum_{k=0}^{n}\binom{n}{k} = 2^n$ and $\sum_{k=0}^{n}k\binom{n}{k} = n2^{n-1}$. The question intends n = 10 (the sum runs from k = 0 to 10).
   Solution:
-  1. $\sum(4 + 3k)\binom{10}{k} = 4\cdot2^{10} + 3\cdot10\cdot2^9 = 19\cdot2^{10}$.
-  2. $\alpha = 0$ and $\beta = 19$, so $\alpha + \beta = 19$.
-  Note: ALLEN marks this Bonus because the printed $^nC_k$ should be $^{10}C_k$.
+  1. $\sum_{k=0}^{10}(2^2 + 3k)\binom{10}{k} = 4\sum\binom{10}{k} + 3\sum k\binom{10}{k}$.
+  2. $4\times2^{10} + 3\times10\times2^9 = 4\times2^{10} + 15\times2^{10} = 19\times2^{10}$.
+  3. Compare with $\alpha\cdot3^{10} + \beta\cdot2^{10}$: α = 0 and β = 19.
+  4. α + β = 19.
+  Why $\sum k\binom{n}{k} = n2^{n-1}$: $k\binom{n}{k} = n\binom{n-1}{k-1}$, and summing over k gives $n\cdot2^{n-1}$. Alternatively, differentiate (1 + x)ⁿ and put x = 1.
+  Note: ALLEN marks this Bonus because the printed $^nC_k$ should be $^{10}C_k$. The official answer, 19, uses n = 10 and is kept here.
   Answer: 19
 M B 9: |-
-  Concept: The plane's normal is the cross product of the two line directions.
+  Concept: A plane containing one line and parallel to another has a normal perpendicular to both lines' directions: $\vec n = \vec d_1\times\vec d_2$. It passes through any point of the contained line.
   Solution:
-  1. $\vec n = (3, 4, 2)\times(4, -3, 7) = (34, -13, -25)$.
-  2. Through (1, −6, −5): $34(x - 1) - 13(y + 6) - 25(z + 5) = 0$.
-  3. At $(1, -1, \alpha)$: $-65 - 25(\alpha + 5) = 0 \Rightarrow \alpha = -7.6$, so $|5\alpha| = 38$.
+  1. Line 1 (in the plane): through (1, −6, −5), direction $\vec d_1 = (3, 4, 2)$.
+  2. Line 2 (parallel to the plane): direction $\vec d_2 = (4, -3, 7)$.
+  3. $\vec n = \vec d_1\times\vec d_2 = (4\cdot7 - 2(-3),\ 2\cdot4 - 3\cdot7,\ 3(-3) - 4\cdot4) = (28 + 6,\ 8 - 21,\ -9 - 16) = (34, -13, -25)$.
+  4. Plane: 34(x − 1) − 13(y + 6) − 25(z + 5) = 0.
+  5. Point (1, −1, α): 34(0) − 13(5) − 25(α + 5) = 0, so −65 − 25α − 125 = 0 and 25α = −190.
+  6. α = −7.6, so |5α| = 38.
+  Check that the plane contains line 1: $\vec n\cdot\vec d_1 = 102 - 52 - 50 = 0$ ✓. Parallel to line 2: $\vec n\cdot\vec d_2 = 136 + 39 - 175 = 0$ ✓.
   Answer: 38
 M B 10: |-
-  Concept: $x\,dy - y\,dx = x^2d\left(\frac{y}{x}\right)$ makes the DE separable.
+  Concept: The combination x dy − y dx suggests the quotient rule: $x\,dy - y\,dx = x^2\,d\left(\frac{y}{x}\right)$. With $v = \frac{y}{x}$, the equation becomes separable.
   Solution:
-  1. $\frac{d(y/x)}{\sqrt{1 - (y/x)^2}} = \frac{dx}{x} \Rightarrow \sin^{-1}\frac{y}{x} = \ln x$ (y(1) = 0), so $y = x\sin(\ln x) \ge 0$ on $[1, e^\pi]$.
-  2. Area $= \int_1^{e^\pi}x\sin(\ln x)dx = \frac{e^{2\pi} + 1}{5}$.
-  3. $\alpha = \beta = \frac{1}{5}$, so $10(\alpha + \beta) = 4$.
+  1. $x^2\,d\left(\frac{y}{x}\right) = \sqrt{x^2 - y^2}\,dx = x\sqrt{1 - \frac{y^2}{x^2}}\,dx$ (x ≥ 1 > 0).
+  2. With v = $\frac{y}{x}$: $\frac{dv}{\sqrt{1 - v^2}} = \frac{dx}{x}$, so sin⁻¹v = ln x + C.
+  3. y(1) = 0: v = 0 at x = 1, so C = 0. Then sin⁻¹$\frac{y}{x}$ = ln x and y = x sin(ln x).
+  4. On [1, e^π], ln x ∈ [0, π], so sin(ln x) ≥ 0 and y ≥ 0. The area is simply the integral.
+  5. Area $= \int_1^{e^\pi}x\sin(\ln x)\,dx$. Substitute x = eᵗ (dx = eᵗdt): $\int_0^\pi e^{2t}\sin t\,dt$.
+  6. Standard result: $\int e^{2t}\sin t\,dt = \frac{e^{2t}(2\sin t - \cos t)}{5}$.
+  7. Evaluate from 0 to π: $\frac{e^{2\pi}(0 + 1) - (0 - 1)}{5} = \frac{e^{2\pi} + 1}{5}$.
+  8. α = β = ⅕, so 10(α + β) = 4.
   Answer: 4
