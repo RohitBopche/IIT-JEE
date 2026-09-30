@@ -1,188 +1,386 @@
 P A 1: |-
-  Concept: Rydberg formula $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
+  Concept: Rydberg formula for hydrogen: $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
+  - Lyman lines end on n₁ = 1; the k-th member starts from n₂ = k + 1.
+  - Paschen lines end on n₁ = 3; the first member starts from n₂ = 4.
   Solution:
-  1. Third Lyman line: 4 → 1, so $\frac{1}{\lambda_1} = R\left(1 - \frac{1}{16}\right) = \frac{15R}{16}$.
-  2. First Paschen line: 4 → 3, so $\frac{1}{\lambda_2} = R\left(\frac{1}{9} - \frac{1}{16}\right) = \frac{7R}{144}$.
-  3. $\frac{\lambda_1}{\lambda_2} = \frac{7/144}{15/16} = \frac{7}{135}$.
+  1. Third Lyman line (4 → 1): $\frac{1}{\lambda_1} = R\left(1 - \frac{1}{16}\right) = \frac{15R}{16}$.
+  2. First Paschen line (4 → 3): $\frac{1}{\lambda_2} = R\left(\frac{1}{9} - \frac{1}{16}\right) = \frac{7R}{144}$.
+  3. $\frac{\lambda_1}{\lambda_2} = \frac{1/\lambda_2}{1/\lambda_1} = \frac{7/144}{15/16} = \frac{7\times16}{144\times15} = \frac{7}{135}$.
+  4. λ₁ ≈ 97 nm (UV) and λ₂ ≈ 1875 nm (IR). Their ratio is about 0.052 ✓.
+  Why others are wrong:
+  - (A) 1 : 3 and (B) 1 : 9 compare just the n₁ values.
+  - (D) 7 : 108 uses the third Lyman line as 3 → 1 (the second member).
+  Tip: count members from the nearest level. The first member is n₁ + 1 → n₁, the second is n₁ + 2 → n₁, and so on.
   Answer: (C)
 P A 2: |-
-  Concept: In steady state the same heat current flows through both layers in series: $H = \frac{\Delta\theta}{R}$.
+  Concept: Heat conduction through layers in series is like current through resistors in series. In the steady state the same heat current H flows through each layer, with H = Δθ/R for each.
+  Given (figure): the top layer R₂ is at θ₂, the bottom layer R₁ is at θ₁, and the junction is at θ.
   Solution:
-  1. $\frac{\theta_2 - \theta}{R_2} = \frac{\theta - \theta_1}{R_1}$.
-  2. $\theta(R_1 + R_2) = \theta_2R_1 + \theta_1R_2$, so $\theta = \frac{\theta_1R_2 + \theta_2R_1}{R_1 + R_2}$.
+  1. Heat current through R₂: (θ₂ − θ)/R₂. Through R₁: (θ − θ₁)/R₁.
+  2. Setting them equal: R₁(θ₂ − θ) = R₂(θ − θ₁).
+  3. θ(R₁ + R₂) = θ₂R₁ + θ₁R₂, so $\theta = \frac{\theta_1R_2 + \theta_2R_1}{R_1 + R_2}$.
+  4. Check: if R₁ = 0, the junction takes the temperature of face 1: θ = θ₁R₂/R₂ = θ₁ ✓. With R₁ = R₂, θ is the average ✓.
+  Why others are wrong:
+  - (D) swaps the weights. The junction is closer in temperature to the face with the smaller resistance.
+  - (B) and (C) have differences in the denominator, which is not dimensionally sensible for a weighted mean.
+  Tip: the junction temperature is a weighted average, each face temperature weighted by the other layer's resistance, just like the voltage divider formula.
   Answer: (A)
 P A 3: |-
-  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Concept: In Young's double-slit experiment, bright fringes are separated by the fringe width β = λD/d.
+  Given: d = 2 mm = 2 × 10⁻³ m, D = 1 m, λ = 500 nm = 5 × 10⁻⁷ m.
   Solution:
-  1. $\beta = \frac{500\times10^{-9}\times1}{2\times10^{-3}} = 2.5\times10^{-4}$ m = 0.25 mm.
+  1. $\beta = \frac{5\times10^{-7}\times1}{2\times10^{-3}} = 2.5\times10^{-4}$ m.
+  2. β = 0.25 mm.
+  3. So adjacent bright (or dark) fringes are 0.25 mm apart on the screen.
+  Why others are wrong:
+  - (B) 0.50 mm uses d = 1 mm.
+  - (C) 1 mm and (A) 0.75 mm come from unit slips (nm to m or mm to m).
+  Common mistakes:
+  - using d/2 (the half-separation);
+  - mixing nm and mm without converting to metres.
+  Tip: β is proportional to λ and D and inversely proportional to d. Such small fringe widths (sub-millimetre) are why a travelling microscope or eyepiece is used to measure them.
   Answer: (D)
 P A 4: |-
-  Concept: Resolving power of a microscope is inversely proportional to the wavelength used.
+  Concept: The resolving power of a microscope (the smallest separation it can distinguish) is limited by the wavelength of the probe. The minimum resolvable distance is d ≈ λ/(2 NA), so a smaller λ gives better resolution.
   Solution:
-  1. Electrons accelerated through high voltages have de Broglie wavelengths of a few picometres, far below visible light (400–700 nm).
-  2. So an electron microscope resolves much finer detail. A is true, R is true, and R explains A.
+  1. Visible light has λ ≈ 400–700 nm, which limits optical microscopes to about 200 nm.
+  2. Electrons accelerated through V volts have $\lambda = \frac{h}{\sqrt{2meV}} \approx \frac{1.227}{\sqrt V}$ nm. At 50 kV this is about 0.0055 nm, roughly 10⁵ times smaller than visible light.
+  3. So an electron microscope can resolve far finer detail, down to atomic scales. Assertion A is true.
+  4. Reason R, that the electron's de Broglie wavelength is much smaller than visible wavelengths, is true, and it is exactly why A holds.
+  5. Both are true, and R explains A.
+  Why others are wrong:
+  - (A) and (D) deny one true statement.
+  - (B) denies the causal link, which is the core principle of electron microscopy.
+  Tip: in practice, lens aberrations limit electron microscopes more than the wavelength does.
   Answer: (C)
 P A 5: |-
-  Concept: Moment of inertia of a solid sphere about a diameter is $\frac{2}{5}ma^2$; use the parallel-axis theorem for the spheres off the axis.
+  Concept: For each sphere, use its own moment of inertia about a diameter, $\frac{2}{5}ma^2$, together with the parallel-axis theorem, I = I_cm + md², where d is the distance of its centre from the axis.
+  Given: four spheres (mass m, radius a) at the corners of a square of side b. The axis is along one side of the square.
   Solution:
-  1. The two spheres whose centres lie on the chosen side: $2\times\frac{2}{5}ma^2$.
-  2. The two spheres on the opposite side (distance b): $2\left(\frac{2}{5}ma^2 + mb^2\right)$.
-  3. Total $= \frac{8}{5}ma^2 + 2mb^2$.
+  1. The two spheres whose centres lie on the axis (the chosen side) have d = 0: 2 × (2/5)ma² = (4/5)ma².
+  2. The two spheres on the opposite side have d = b: 2 × [(2/5)ma² + mb²] = (4/5)ma² + 2mb².
+  3. Total: I = (8/5)ma² + 2mb².
+  Why others are wrong:
+  - (A) omits the parallel-axis terms entirely.
+  - (B) has only mb², i.e. one off-axis sphere.
+  - (C) counts only two spheres' own moments of inertia.
+  Common mistake: using (7/5)ma² per sphere, i.e. the sphere about a tangent, for those on the axis. The axis passes through their centres, so the right value is (2/5)ma².
+  Tip: when spheres are "point-like" (a ≪ b), I ≈ 2mb². The sphere terms are corrections.
   Answer: (D)
 P A 6: |-
-  Concept: Bulk modulus $K = \frac{P}{\Delta V/V}$; for a fixed mass, $\frac{\Delta\rho}{\rho} = \frac{\Delta V}{V}$ (in magnitude).
+  Concept: The bulk modulus is K = P/(|ΔV|/V). For a fixed mass, ρV = constant, so for small changes |Δρ|/ρ = |ΔV|/V.
+  Given: pressure P applied on all sides; original density ρ.
   Solution:
-  1. $\frac{\Delta\rho}{\rho} = \frac{P}{K}$, so $\Delta\rho = \frac{\rho P}{K}$.
+  1. |ΔV|/V = P/K.
+  2. So Δρ/ρ = P/K, and the increase in density is Δρ = ρP/K.
+  3. The material is compressed, so its density rises.
+  4. Dimensions check: P/K is dimensionless, so Δρ has the dimensions of density ✓.
+  Why others are wrong:
+  - (A) ρK/P and (C) PK/ρ have the wrong dimensions (not a density).
+  - (B) K/(ρP) is dimensionally wrong too.
+  Tip: to first order, d(ρV) = 0 gives dρ/ρ = −dV/V. Fractional changes in density and volume are equal and opposite.
   Answer: (D)
 P A 7: |-
-  Concept: Photon wavelength from the band gap: $\lambda = \frac{hc}{E_g}$.
+  Concept: In an LED, electrons fall across the band gap and emit photons of energy about E_g. The wavelength is λ = hc/E_g, conveniently λ(nm) ≈ 1240/E(eV).
+  Given: E_g = 1.9 eV.
   Solution:
-  1. $E_g = 1.9\times1.6\times10^{-19} = 3.04\times10^{-19}$ J.
-  2. $\lambda = \frac{6.63\times10^{-34}\times3\times10^8}{3.04\times10^{-19}} \approx 654$ nm, which is in the red region (about 620–750 nm).
+  1. E_g = 1.9 × 1.6 × 10⁻¹⁹ = 3.04 × 10⁻¹⁹ J.
+  2. $\lambda = \frac{6.63\times10^{-34}\times3\times10^8}{3.04\times10^{-19}} = 6.54\times10^{-7}$ m = 654 nm.
+  3. Quick check: 1240/1.9 ≈ 653 nm ✓.
+  4. 654 nm lies in the red part of the visible spectrum (about 620–750 nm).
+  Why others are wrong:
+  - (D) has the right wavelength, but 654 nm is red, not orange (orange is about 590–620 nm).
+  - (B) and (C) give 1046 nm, which is infrared and not visible, and comes from a calculation error.
+  Tip: GaAsP LEDs are the classic red LEDs. Changing the As/P ratio tunes the band gap from red to yellow.
   Answer: (A)
 P A 8: |-
-  Concept: Symmetry: points at the same potential can be joined or separated freely; a resistor between equipotential points carries no current.
-  Given: A is the central node (joined to D and E by R each); B is joined directly to C.
+  Concept: Symmetry in resistor networks. Points at the same potential carry no current between them, so a resistor joining two equipotential points can be removed.
+  Given (figure): triangle D–E–C, with R on DE, DC and EC. The central node A is joined to D and to E through R each. B is joined directly to C.
   Solution:
-  1. The network is symmetric about the line through A and C, so D and E are at the same potential and the resistor DE carries no current.
-  2. Two identical paths remain: A→D→C (2R) and A→E→C (2R).
-  3. In parallel: $\frac{2R}{2} = R$.
+  1. The network is symmetric about the line through A and C, which bisects DE.
+  2. So D and E are at the same potential, and the resistor DE carries no current. Remove it.
+  3. Two identical paths remain from A to C (i.e. to B):
+     - A → D → C: R + R = 2R;
+     - A → E → C: R + R = 2R.
+  4. In parallel: (2R × 2R)/(4R) = R.
+  Why others are wrong:
+  - (A) 3R/2 and (D) 2R treat the resistor DE as carrying current, or take only one path.
+  - (B) R/2 over-simplifies.
+  Tip: in symmetric networks, look for a mirror line through the input and output terminals. Points that are mirror images of each other are equipotential.
   Answer: (C)
 P A 9: |-
-  Concept: Field of a ring on its axis: $E = \frac{GMx}{(R^2 + x^2)^{3/2}}$; a uniform sphere acts as a point mass at its centre.
+  Concept:
+  - The gravitational field on the axis of a ring (mass m, radius R) at distance x from its centre is $E = \frac{Gmx}{(R^2 + x^2)^{3/2}}$.
+  - A uniform sphere behaves as a point mass at its centre for external gravity.
+  So the force is M × (the ring's field at the sphere's centre).
+  Given: the distance between the centres is x = √8 R.
   Solution:
-  1. Force between the ring and the sphere = (mass of sphere) × (ring's field at the sphere's centre), with $x = \sqrt{8}R$.
-  2. $F = \frac{GmM\sqrt{8}R}{(R^2 + 8R^2)^{3/2}} = \frac{GmM\sqrt{8}R}{27R^3} = \frac{\sqrt{8}}{27}\cdot\frac{GmM}{R^2}$.
+  1. R² + x² = R² + 8R² = 9R², so (R² + x²)^{3/2} = 27R³.
+  2. $F = \frac{GmM\cdot\sqrt8R}{27R^3} = \frac{\sqrt8}{27}\cdot\frac{GmM}{R^2}$.
+  3. Direction: along the axis, attractive.
+  Why others are wrong:
+  - (A) has 1/R instead of 1/R², so its dimensions are wrong.
+  - (C) and (D) use the point-mass formula GMm/(8R²) or other incorrect forms.
+  Note: the ring's field is not GM/x², because the ring's mass is spread at distance √(R² + x²) from the sphere's centre, with only the axial components adding.
+  Tip: the field on a ring's axis is largest at x = R/√2.
   Answer: (B)
 P A 10: |-
-  Concept: Inside the earth, gravity is proportional to distance from the centre: $g_r = \frac{gr}{R}$.
+  Concept: Inside a uniform Earth, the gravitational acceleration at distance r from the centre is g_r = g r/R, directed towards the centre. In a smooth tunnel along a chord, only the component along the tunnel accelerates the particle.
+  Given: the chord is at distance d = R/2 from the centre.
   Solution:
-  1. At distance x from the middle of the chord, the component of gravity along the tunnel is $\frac{gr}{R}\cdot\frac{x}{r} = \frac{g}{R}x$.
-  2. This is SHM with $\omega^2 = \frac{g}{R}$, so $T = 2\pi\sqrt{\frac{R}{g}}$ for any chord.
+  1. Let x be the displacement from the midpoint of the chord. The distance to the centre is r = √(d² + x²).
+  2. The component of gravity along the tunnel: g_r × (x/r) = (g r/R)(x/r) = (g/R)x, directed towards the midpoint.
+  3. So a = −(g/R)x, which is SHM with ω² = g/R.
+  4. $T = 2\pi\sqrt{\frac{R}{g}} \approx 84$ minutes. This is independent of the chord's position, so d = R/2 is irrelevant.
+  Why others are wrong:
+  - (B) is a frequency, not a period.
+  - (C) and (D) are dimensionally inconsistent as periods.
+  Tip: this 84-minute period equals that of a satellite orbiting just above the Earth's surface, a classic coincidence.
   Answer: (A)
 P A 11: |-
-  Concept: Field of a finite line charge on its perpendicular bisector: $E = \frac{2k\lambda}{a}\sin\theta$, where θ is the half-angle subtended at P.
+  Concept: The field of a finite uniform line charge at distance a on its perpendicular bisector is $E = \frac{2k\lambda}{a}\sin\theta$, where θ is the half-angle subtended by the rod at P and λ = Q/L.
+  Given: rod length L, charge Q, a = (√3/2)L.
   Solution:
-  1. $\sin\theta = \frac{L/2}{\sqrt{a^2 + L^2/4}} = \frac{L/2}{\sqrt{3L^2/4 + L^2/4}} = \frac{1}{2}$.
-  2. $E = \frac{2kQ}{La}\cdot\frac{1}{2} = \frac{kQ}{L\cdot\frac{\sqrt{3}}{2}L} = \frac{2kQ}{\sqrt{3}L^2} = \frac{Q}{2\sqrt{3}\pi\varepsilon_0L^2}$.
+  1. Half-length: L/2. Distance from P to an end: $\sqrt{a^2 + L^2/4} = \sqrt{\frac{3L^2}{4} + \frac{L^2}{4}} = L$.
+  2. sin θ = (L/2)/L = ½, so θ = 30°. The rod subtends 60° at P, making an equilateral-type geometry.
+  3. $E = \frac{2kQ}{L}\cdot\frac{1}{a}\cdot\frac{1}{2} = \frac{kQ}{La} = \frac{kQ}{L\cdot\frac{\sqrt3}{2}L} = \frac{2kQ}{\sqrt3L^2}$.
+  4. With k = 1/(4πε₀): $E = \frac{Q}{2\sqrt3\pi\varepsilon_0L^2}$.
+  Why others are wrong:
+  - (B) √3Q/(4πε₀L²) omits the sin θ factor.
+  - (D) is the point-charge result kQ/L², since P is at distance L from the ends.
+  - (C) has the wrong factor.
+  Tip: when the geometry gives an equilateral triangle (rod and P), expect sin θ = ½.
   Answer: (A)
 P A 12: |-
-  Concept: One-dimensional elastic collision with the target at rest: $v_2 = \frac{2m_1u}{m_1 + m_2}$.
+  Concept: In a one-dimensional elastic collision with the target at rest, conserving both momentum and kinetic energy gives:
+  - projectile: $v_1 = \frac{M - m}{M + m}u$;
+  - target: $v_2 = \frac{2M}{M + m}u$.
   Solution:
-  1. $v_Q = \frac{2Mu}{M + m} \rightarrow 2u$ when m << M, so A is correct.
-  2. This formula comes from conserving both momentum and kinetic energy, so R is correct and explains A.
+  1. Assertion A: with m ≪ M, $v_Q = \frac{2Mu}{M + m} \to 2u$. That is the maximum possible speed of the target. A is correct.
+  2. Reason R: in an elastic collision both momentum and kinetic energy are conserved. This is correct.
+  3. The formula for v_Q is derived precisely from these two conservation laws. So R is the correct explanation of A.
+  Physical picture: in the frame of the heavy body P, the light body Q approaches at u and rebounds at u. Back in the ground frame, its speed is u + u = 2u, like a ball bouncing off a moving wall.
+  Why others are wrong:
+  - (A) and (C) reject one correct statement.
+  - (B) denies the explanatory link, but the result follows directly from conservation of momentum and energy.
   Answer: (D)
 P A 13: |-
-  Concept: An erect image from a spherical mirror is always virtual; an erect, diminished image comes only from a convex mirror.
+  Concept: Sign rules for images formed by mirrors:
+  - erect images (positive m) from mirrors are always virtual, formed behind the mirror;
+  - a convex mirror always gives erect, diminished, virtual images;
+  - a concave mirror gives an erect image only when the object is inside F, and that image is magnified.
+  Given: object height 100 cm, image height 25 cm with the same orientation, so m = +¼.
   Solution:
-  1. m = +25/100 = +¼: erect and smaller.
-  2. A concave mirror gives erect images only when enlarged (object inside F), so the mirror is convex.
-  3. The image is virtual and behind the mirror (on the opposite side from the object).
+  1. m > 0, so the image is erect and therefore virtual.
+  2. |m| < 1, so the image is diminished. A concave mirror cannot give an erect, diminished image.
+  3. So the mirror is convex, and the virtual image lies behind the mirror, on the side opposite the object.
+  4. For |f| = 40 cm: m = f/(f − u) = ¼ with f = +40 gives u = −120 cm. The object is 120 cm in front and the image is 30 cm behind.
+  Why others are wrong:
+  - (A) and (D) say "real", but a real image from a single mirror is always inverted.
+  - (C) says concave, which cannot give an erect, diminished image.
   Answer: (B)
 P A 14: |-
-  Concept: The central force provides the centripetal force.
+  Concept: For uniform circular motion under a central force, the force supplies the centripetal requirement: F = mv²/R. The period is T = 2πR/v.
+  Given: F = k/R³.
   Solution:
-  1. $\frac{mv^2}{R} = \frac{k}{R^3} \Rightarrow v \propto \frac{1}{R}$.
-  2. $T = \frac{2\pi R}{v} \propto R\cdot R = R^2$.
+  1. mv²/R = k/R³, so v² = k/(mR²) and v ∝ 1/R.
+  2. T = 2πR/v ∝ R/(1/R) = R².
+  3. So T ∝ R².
+  General result: if F ∝ R⁻ⁿ, then v² ∝ R^{1−n} and T ∝ R^{(n+1)/2}.
+  - For gravity (n = 2), T ∝ R^{3/2}, which is Kepler's third law.
+  - Here n = 3, so T ∝ R².
+  Why others are wrong:
+  - (D) R^{3/2} is the gravitational (inverse-square) case.
+  - (A) R^{5/2} corresponds to n = 4.
+  - (C) R^{4/3} has no simple match.
+  Tip: this general formula lets you answer any power-law central-force question instantly.
   Answer: (B)
 P A 15: |-
-  Concept: Surface energy released = T × decrease in surface area; volume is conserved ($nr^3 = R^3$).
+  Concept: When small drops merge, the total surface area decreases while the volume stays the same. The surface energy released, T × ΔA, appears as heat, and dividing by J converts work units into heat units.
+  Given: n drops of radius r merge into one drop of radius R.
   Solution:
-  1. Energy released $= T\cdot4\pi(nr^2 - R^2) = 4\pi TR^3\left(\frac{1}{r} - \frac{1}{R}\right)$ (using $n = \frac{R^3}{r^3}$).
-  2. Per unit volume: divide by $\frac{4}{3}\pi R^3$ to get $3T\left(\frac{1}{r} - \frac{1}{R}\right)$.
-  3. As heat: $\frac{3T}{J}\left(\frac{1}{r} - \frac{1}{R}\right)$.
+  1. Volume conservation: n(4/3)πr³ = (4/3)πR³, so n = R³/r³.
+  2. Decrease in area: ΔA = 4π(nr² − R²) = 4π(R³/r − R²) = 4πR³(1/r − 1/R).
+  3. Energy released: E = TΔA = 4πTR³(1/r − 1/R).
+  4. Per unit volume: divide by (4/3)πR³, giving 3T(1/r − 1/R).
+  5. As heat: $\frac{3T}{J}\left(\frac{1}{r} - \frac{1}{R}\right)$.
+  Why others are wrong:
+  - (C) uses 2T, which is the formula for excess pressure, not energy.
+  - (A) and (B) drop the 1/R term, which is valid only when R ≫ r.
+  Tip: this is why merging drops warm up slightly. Conversely, splitting a drop into droplets needs energy.
   Answer: (D)
 P A 16: |-
-  Concept: Kepler's second law: the radius vector sweeps equal areas in equal times (constant areal velocity, from conservation of angular momentum).
+  Concept: Kepler's laws of planetary motion.
+  - Second law: the line joining the planet to the Sun sweeps out equal areas in equal times, so the areal velocity dA/dt = L/(2m) is constant.
+  - This follows from conservation of angular momentum under a central force.
   Solution:
-  1. A is false: the speed changes along the orbit. B is false: the speed is greatest at perihelion.
-  2. C and D are false: areal velocity is constant, not proportional to speed.
-  3. Only E is correct.
+  1. A: "constant velocity" is false. The speed varies along the ellipse and the direction changes continuously.
+  2. B: "least velocity when nearest to the Sun" is false. The speed is greatest at perihelion (nearest) and least at aphelion.
+  3. C and D: "areal velocity is proportional (or inversely proportional) to its velocity" are both false. The areal velocity is constant, while the speed varies.
+  4. E: the trajectory has constant areal velocity. True.
+  5. So only E is correct.
+  Tip: from r_p v_p = r_a v_a (angular momentum at perihelion and aphelion), the ratio of speeds equals the inverse ratio of distances.
   Answer: (B)
 P A 17: |-
-  Concept: Two perpendicular sinusoids combine into one sinusoid: $i_1\sin\omega t + i_2\cos\omega t = \sqrt{i_1^2 + i_2^2}\sin(\omega t + \phi)$.
+  Concept: Sine and cosine terms of the same frequency combine into a single sinusoid: a sin ωt + b cos ωt = √(a² + b²) sin(ωt + φ). The rms value of a sinusoid is its peak divided by √2.
   Solution:
-  1. Peak value $= \sqrt{i_1^2 + i_2^2}$.
-  2. rms $= \frac{1}{\sqrt{2}}(i_1^2 + i_2^2)^{1/2}$.
+  1. i = i₁ sin ωt + i₂ cos ωt = √(i₁² + i₂²) sin(ωt + φ), where tan φ = i₂/i₁.
+  2. Peak current: $i_0 = \sqrt{i_1^2 + i_2^2}$.
+  3. $i_{rms} = \frac{i_0}{\sqrt2} = \frac{1}{\sqrt2}(i_1^2 + i_2^2)^{1/2}$.
+  Alternative: average i² over a period. The cross term i₁i₂ sin ωt cos ωt averages to zero, so ⟨i²⟩ = (i₁² + i₂²)/2 ✓.
+  Why others are wrong:
+  - (D) adds the amplitudes linearly, as if the two terms were in phase.
+  - (C) is dimensionally wrong (current squared).
+  - (A) uses ½ instead of 1/√2.
+  Tip: out-of-phase (quadrature) components add in quadrature, like perpendicular vectors (phasors).
   Answer: (B)
 P A 18: |-
-  Concept: $C_p = C_1 + C_2$ and $C_s = \frac{C_1C_2}{C_1 + C_2}$.
+  Concept: For two capacitors, C_p = C₁ + C₂ (parallel) and C_s = C₁C₂/(C₁ + C₂) (series). The ratio C_p/C_s = (C₁ + C₂)²/(C₁C₂) is at least 4 (by AM–GM), with equality only when C₁ = C₂.
   Solution:
-  1. $C_1 + C_2 = \frac{15}{4}\cdot\frac{C_1C_2}{C_1 + C_2} \Rightarrow 4(C_1 + C_2)^2 = 15C_1C_2$.
-  2. With $x = \frac{C_2}{C_1}$: $4x^2 - 7x + 4 = 0$, whose discriminant is 49 – 64 < 0.
-  3. There is no real ratio, and none of the options satisfies the condition, so the question is a bonus.
+  1. The condition is C_p = (15/4)C_s, i.e. (C₁ + C₂)²/(C₁C₂) = 15/4.
+  2. But (C₁ + C₂)² ≥ 4C₁C₂, so this ratio can never be less than 4, and 15/4 = 3.75 < 4.
+  3. Algebraically, with x = C₂/C₁: 4(1 + x)² = 15x gives 4x² − 7x + 4 = 0, whose discriminant is 49 − 64 = −15 < 0. There is no real solution.
+  4. None of the options can satisfy the stated condition, so the question was declared a bonus.
+  Note: if the intended factor were, for example, 16/3 or larger, a real ratio would exist.
+  Tip: C_p/C_s = 2 + x + 1/x ≥ 4 is a quick sanity check whenever a question gives this ratio.
   Answer: Bonus
 P A 19: |-
-  Concept: Springs in series: $\frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2}$; $T \propto \frac{1}{\sqrt{k}}$.
+  Concept: Springs in series share the same force but add their extensions: 1/k = 1/k₁ + 1/k₂. The period of a spring–mass system is T = 2π√(m/k), so T ∝ 1/√k.
+  Given: two identical springs, each of constant K₁, joined in series.
   Solution:
-  1. Two springs of constant $K_1$ in series: $k = \frac{K_1}{2}$, a factor of ½.
-  2. $T \propto \frac{1}{\sqrt{k}}$, so T increases by a factor $\sqrt{2}$.
+  1. 1/k = 2/K₁, so k = K₁/2. The spring constant changes by a factor of ½.
+  2. $T' = 2\pi\sqrt{\frac{m}{K_1/2}} = \sqrt2\cdot2\pi\sqrt{\frac{m}{K_1}}$. The period changes by a factor of √2.
+  3. The combination is softer (stretches more easily), so it oscillates more slowly.
+  Why others are wrong:
+  - (B) and (D) use ¼, as if the constants were multiplied.
+  - (C) gives the period factor as 2√2 instead of √2.
+  Tip: in parallel, identical springs give k = 2K₁ and T ∝ 1/√2. In series, k = K₁/2 and T ∝ √2. Cutting a spring in half doubles its constant.
   Answer: (A)
 P A 20: |-
-  Concept: The exponent must be dimensionless.
+  Concept: The argument of an exponential must be dimensionless. This fixes the dimensions of β. Then W = α²β (times a dimensionless factor) fixes α.
+  Given: W = α²β e^{−βx²/kT}, where x is a displacement and kT is an energy.
   Solution:
-  1. $\frac{\beta x^2}{kT}$ is dimensionless, so $[\beta] = \frac{[ML^2T^{-2}]}{[L^2]} = [MT^{-2}]$.
-  2. $W = \alpha^2\beta$, so $[\alpha^2] = \frac{[ML^2T^{-2}]}{[MT^{-2}]} = [L^2]$ and $[\alpha] = [M^0LT^0]$.
+  1. βx²/kT is dimensionless, so [β] = [kT]/[x²] = [ML²T⁻²]/[L²] = [MT⁻²]. This is like a spring constant.
+  2. [W] = [α²][β], so [α²] = [ML²T⁻²]/[MT⁻²] = [L²].
+  3. So [α] = [L] = [M⁰LT⁰].
+  4. Physically, α is a length, and the expression looks like ½kx²-type energy with a Boltzmann factor.
+  Why others are wrong:
+  - (C) [MLT⁻²] is force. It would follow from mistakenly putting β's dimensions into α.
+  - (B) and (D) do not come from any consistent assignment.
+  Tip: always begin with the exponent. It usually fixes one constant immediately.
   Answer: (A)
 P B 1: |-
-  Concept: Wave speed $v = \frac{\omega}{k}$ and $v = \sqrt{\frac{T}{\mu}}$.
+  Concept: For a transverse wave y = A sin(kx + ωt), the wave speed is v = ω/k. On a string, v = √(T/μ), so the tension is T = μv².
+  Given: y = −0.21 sin(x + 30t), with x in m and t in s; μ = 0.135 g/cm.
   Solution:
-  1. From y = –0.21 sin(x + 30t): k = 1 m⁻¹, ω = 30 rad/s, so v = 30 m/s.
-  2. μ = 0.135 g/cm = 0.0135 kg/m.
-  3. $T = \mu v^2 = 0.0135\times900 = 12.15$ N $= 1215\times10^{-2}$ N.
+  1. Comparing: k = 1 m⁻¹ and ω = 30 rad/s, so v = 30 m/s (travelling in −x).
+  2. Convert μ: 0.135 g/cm = 0.135 × 10⁻³ kg/10⁻² m = 0.0135 kg/m.
+  3. T = μv² = 0.0135 × 900 = 12.15 N.
+  4. In the requested form: 1215 × 10⁻² N, so x = 1215.
+  Common mistakes:
+  - using μ = 0.135 kg/m without converting from g/cm, which gives a factor-of-10 error;
+  - using v = k/ω.
+  Tip: the amplitude (0.21) and its sign play no role in the speed or the tension.
   Answer: 1215
 P B 2: |-
-  Concept: Intensity $I = \frac{P}{4\pi r^2}$ and $I = \frac{1}{2}c\varepsilon_0E_0^2$.
+  Concept: A point source radiates its power uniformly over a sphere, so the intensity is I = P/(4πr²). For an EM wave, I = ½cε₀E₀², which links the intensity to the peak electric field.
+  Given: 1000 W bulb, efficiency 1.25%, r = 2 m.
   Solution:
-  1. Radiated power = 1.25% of 1000 W = 12.5 W. $I = \frac{12.5}{4\pi(2)^2} = 0.249$ W/m².
-  2. $E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{0.497}{3\times10^8\times8.85\times10^{-12}}} = \sqrt{187.4} \approx 13.7$ V/m.
-  3. $= 137\times10^{-1}$ V/m.
+  1. Radiated power: P = 0.0125 × 1000 = 12.5 W.
+  2. I = 12.5/(4π × 4) = 12.5/50.27 = 0.2487 W/m².
+  3. $E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{0.4974}{3\times10^8\times8.85\times10^{-12}}} = \sqrt{\frac{0.4974}{2.655\times10^{-3}}} = \sqrt{187.3} = 13.7$ V/m.
+  4. In the requested form: 137 × 10⁻¹ V/m, so x = 137.
+  Common mistakes:
+  - using the full 1000 W, which gives about 122 V/m;
+  - using I = cε₀E₀² without the ½, which gives the rms field instead of the peak.
+  Tip: E_rms = E₀/√2 ≈ 9.7 V/m here. Always check whether the question asks for the peak or the rms value.
   Answer: 137
 P B 3: |-
-  Concept: Only a forward-biased diode conducts; it then adds its forward resistance to the branch.
-  Given: the battery's positive terminal drives current through the $D_1$ branch in its forward direction; $D_2$ is reversed.
+  Concept: An ideal-type diode conducts only when forward biased. Here a conducting diode has a forward resistance of 50 Ω, and a reverse-biased diode blocks its branch completely.
+  Given (figure): branch 1 has D₁ with 130 Ω; branch 2 has D₂ (reversed) with 100 Ω. The branches are in parallel, then in series with 120 Ω and a 6 V battery.
   Solution:
-  1. $D_2$ blocks (infinite resistance); the current flows through $D_1$ (50 Ω) + 130 Ω + 120 Ω.
-  2. $I = \frac{6}{50 + 130 + 120} = \frac{6}{300} = 0.02$ A = 20 mA.
+  1. With the battery's polarity, D₁ is forward biased and D₂ is reverse biased.
+  2. Branch 2 carries no current. The only path is D₁ (50 Ω) + 130 Ω + 120 Ω = 300 Ω.
+  3. I = 6/300 = 0.02 A = 20 mA.
+  4. This is also the current through the 120 Ω resistor, which is in series.
+  Common mistakes:
+  - treating both branches as conducting, which gives a different parallel combination;
+  - ignoring the diode's 50 Ω, which gives 6/250 = 24 mA.
+  Tip: in diode circuits, first decide the bias of each diode from the battery's polarity. Then redraw the circuit with the ON diodes as resistors and the OFF diodes as open circuits.
   Answer: 20
 P B 4: |-
-  Concept: The push has a downward component that increases the normal reaction; at the critical point the horizontal component equals the limiting friction.
+  Concept: A push directed downwards at an angle presses the block harder into the floor, which increases the normal reaction and hence the limiting friction. At the critical point, the horizontal component of the push equals μN.
+  Given (figure): m = √3 kg, μ = 1/(3√3), push F at 60° below the horizontal.
   Solution:
-  1. Force F at 60° below the horizontal: horizontal part $\frac{F}{2}$, vertical (downward) part $\frac{\sqrt{3}F}{2}$.
-  2. $N = mg + \frac{\sqrt{3}F}{2} = 10\sqrt{3} + \frac{\sqrt{3}F}{2}$.
-  3. Critical: $\frac{F}{2} = \mu N = \frac{1}{3\sqrt{3}}\left(10\sqrt{3} + \frac{\sqrt{3}F}{2}\right) = \frac{10}{3} + \frac{F}{6}$.
-  4. $\frac{F}{3} = \frac{10}{3}$, so F = 10 N = 3x and x = 3.33.
+  1. Components of F: horizontal F cos 60° = F/2; vertical (downward) F sin 60° = (√3/2)F.
+  2. Normal reaction: N = mg + (√3/2)F = 10√3 + (√3/2)F.
+  3. Critical condition: F/2 = μN = (1/(3√3))(10√3 + (√3/2)F) = 10/3 + F/6.
+  4. F/2 − F/6 = 10/3, so F/3 = 10/3 and F = 10 N.
+  5. F = 3x gives x = 10/3 ≈ 3.33.
+  Common mistake: taking N = mg and ignoring the downward component, which gives F = 2μmg = 20/3 ≈ 6.67 N.
+  Tip: pushing down at a steep angle can make it impossible to move the block at all. That happens when tan θ ≥ 1/μ, i.e. at the angle of friction.
   Answer: 3.33
 P B 5: |-
-  Concept: Quality factor of a series LCR circuit: $Q = \frac{1}{R}\sqrt{\frac{L}{C}}$.
+  Concept: The quality factor of a series LCR circuit is $Q = \frac{\omega_0L}{R} = \frac{1}{R}\sqrt{\frac{L}{C}}$. So Q ∝ √L/R when C is fixed.
+  Given: Q = 100; L is doubled and R is halved.
   Solution:
-  1. L → 2L multiplies Q by $\sqrt{2}$; R → R/2 multiplies Q by 2.
-  2. New Q = 100 × 2√2 ≈ 282.84.
+  1. Doubling L multiplies Q by √2.
+  2. Halving R multiplies Q by 2.
+  3. New Q = 100 × √2 × 2 = 200√2 ≈ 282.84.
+  4. The resonant frequency also changes (ω₀ = 1/√(LC) falls by √2), but Q depends on L and R as above.
+  Common mistakes:
+  - using Q ∝ L/R (i.e. ω₀L/R with ω₀ held fixed), which gives 400;
+  - forgetting that ω₀ changes with L.
+  Tip: a higher Q means a sharper resonance, with bandwidth Δω = R/L = ω₀/Q. Reducing R is the usual way to raise Q.
   Answer: 282.84
 P B 6: |-
-  Concept: Work done by a source = charge × potential difference.
+  Concept: The work done by a source in moving charge q through a potential difference V is W = qV. By definition, V is the work done per unit charge.
+  Given: q = 20 C and V = 15 V.
   Solution:
   1. W = qV = 20 × 15 = 300 J.
+  2. The time taken does not matter for the total work. It would only be needed to find the power, P = W/t.
+  3. This energy comes from the battery's chemical energy and is delivered to the external circuit, for example as heat in resistors.
+  Tip: 1 volt means 1 joule per coulomb, so W(J) = q(C) × V(V) directly.
   Answer: 300
 P B 7: |-
-  Concept: When the partition is removed in an insulated container, the total internal energy of the ideal gas is conserved; U ∝ PV for a given gas.
+  Concept: When a partition inside a rigid, insulated container is removed, no work is done and no heat flows, so the total internal energy is conserved. For the same ideal gas, U = (f/2)nRT = (f/2)PV, so ΣPV is conserved.
+  Given: V₁ = 4.5 L at P₁ = 2.0 atm, and V₂ = 5.5 L at P₂ = 3.0 atm.
   Solution:
-  1. $P(V_1 + V_2) = P_1V_1 + P_2V_2 \Rightarrow P = \frac{2\times4.5 + 3\times5.5}{10} = \frac{25.5}{10} = 2.55$ atm.
-  2. $= 25.5\times10^{-1}$ atm, and the official answer takes x = 25.
+  1. P(V₁ + V₂) = P₁V₁ + P₂V₂.
+  2. P = (2.0 × 4.5 + 3.0 × 5.5)/(4.5 + 5.5) = (9 + 16.5)/10 = 2.55 atm.
+  3. In the requested form: P = 25.5 × 10⁻¹ atm.
+  4. The official answer takes x = 25, i.e. the integer part.
+  Note: the exact value is 25.5. The mole numbers given (3 and 4) are not needed for the pressure, though they fix the individual temperatures.
   Answer: 25
 P B 8: |-
-  Concept: Newton's second law along x, starting from rest.
+  Concept: Newton's second law applied component-wise, F = ma. Starting from rest with constant acceleration, x = ½at².
+  Given: m = 2 kg; F = (20î + 10ĵ) N on a frictionless surface; t = 10 s.
   Solution:
-  1. $a_x = \frac{20}{2} = 10$ m/s².
-  2. $x = \frac{1}{2}a_xt^2 = \frac{1}{2}\times10\times100 = 500$ m.
+  1. a_x = F_x/m = 20/2 = 10 m/s².
+  2. x = ½ × 10 × 10² = 500 m.
+  3. The y-component (10 N) produces a separate acceleration a_y = 5 m/s², giving 250 m along y. It does not affect the x-displacement.
+  Note: if the box stays on a horizontal surface, the ĵ component might instead be a vertical push balanced by the normal force. Either way, the x-motion is the same.
+  Tip: in 2D problems with constant forces, treat each axis independently. The motions along perpendicular directions do not affect each other.
   Answer: 500
 P B 9: |-
-  Concept: Modulation index $\mu = \frac{A_{max} - A_{min}}{A_{max} + A_{min}}$.
+  Concept: The envelope of an AM wave swings between A_max = A_c + A_m and A_min = A_c − A_m. The modulation index is μ = A_m/A_c = (A_max − A_min)/(A_max + A_min).
+  Given: A_max = 16 V and A_min = 8 V.
   Solution:
-  1. $\mu = \frac{16 - 8}{16 + 8} = \frac{1}{3} \approx 0.33 = 33\times10^{-2}$.
+  1. μ = (16 − 8)/(16 + 8) = 8/24 = 1/3 ≈ 0.333.
+  2. In the requested form: 33 × 10⁻², so x = 33.
+  3. So A_c = (16 + 8)/2 = 12 V and A_m = (16 − 8)/2 = 4 V. Check: 4/12 = ⅓ ✓.
+  Common mistake: using A_min/A_max = 0.5, which is not the modulation index.
+  Tip: μ must stay ≤ 1 to avoid over-modulation. Here μ = 33%, a typical and safe value.
   Answer: 33
 P B 10: |-
-  Concept: Apparent weight in a lift accelerating downward: $W' = m(g - a)$.
+  Concept: A spring balance reads the normal force N. In a lift accelerating downwards with acceleration a, Newton's second law gives mg − N = ma, so N = m(g − a). The person feels lighter.
+  Given: the reading at rest corresponds to 60 kg; a = 1.8 m/s² downward; g = 10 m/s².
   Solution:
-  1. $W' = 60(10 - 1.8) = 60\times8.2 = 492$ N.
+  1. N = 60 × (10 − 1.8) = 60 × 8.2 = 492 N.
+  2. In "kg" units the balance would show 49.2 kg.
+  Other cases for comparison:
+  - lift accelerating upward: N = m(g + a) = 708 N;
+  - lift moving at constant velocity: N = mg = 600 N;
+  - free fall (a = g): N = 0, i.e. weightless.
+  Common mistake: adding a instead of subtracting for downward acceleration. "Descending with uniform acceleration" means the acceleration points downward.
   Answer: 492
