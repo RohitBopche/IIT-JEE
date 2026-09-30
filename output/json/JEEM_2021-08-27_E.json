@@ -133,7 +133,7 @@
     2
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Transistor currents: $I_E = I_B + I_C$. Current gains: α = $\\frac{I_C}{I_E}$ (common base), β = $\\frac{I_C}{I_B}$ (common emitter).\nSolution:\n1. $\\beta = \\frac{I_C}{I_B} = \\frac{I_C}{I_E - I_C}$.\n2. Divide numerator and denominator by $I_E$: $\\beta = \\frac{\\alpha}{1 - \\alpha}$.\n3. Equivalently, $\\alpha = \\frac{\\beta}{1 + \\beta}$.\nWhy others are wrong:\n- (D) has 1 − β in the denominator (should be 1 + β).\n- (A) and (C) have no basis.\nKey takeaway: α is slightly less than 1 (e.g. 0.98), making β large (e.g. 49).\nAnswer: (B)",
+   "explanation": "Concept: Transistor currents: $I_E = I_B + I_C$. Current gains: α = $\\frac{I_C}{I_E}$ (common base), β = $\\frac{I_C}{I_B}$ (common emitter).\nSolution:\n1. $\\beta = \\frac{I_C}{I_B} = \\frac{I_C}{I_E - I_C}$.\n2. Divide numerator and denominator by $I_E$: $\\beta = \\frac{\\alpha}{1 - \\alpha}$.\n3. Equivalently, $\\alpha = \\frac{\\beta}{1 + \\beta}$.\nWhy others are wrong:\n- (D) has 1 − β in the denominator (should be 1 + β).\n- (A) and (C) have no basis.\nCheck with numbers: If α = 0.98, β = 0.98/0.02 = 49; and 49/(1 + 49) = 0.98 ✓.\nCommon mistake: Writing I_E = I_C − I_B; the emitter current is the largest, the sum of the base and collector currents.\nKey takeaway: α is slightly less than 1 (e.g. 0.98), making β large (e.g. 49).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A03",
@@ -369,7 +369,7 @@
     4
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $v_{rms} = \\sqrt{\\frac{3RT}{M}}$. At the same temperature, $v_{rms} \\propto \\frac{1}{\\sqrt M}$.\nSolution:\n1. $\\frac{v_{H_2}}{v_{O_2}} = \\sqrt{\\frac{M_{O_2}}{M_{H_2}}} = \\sqrt{\\frac{32}{2}} = 4$.\n2. $v_{H_2} = 4\\times160 = 640$ m/s.\nWhy others are wrong:\n- (B) 40 m/s divides instead of multiplying (heavier gas would be faster).\n- (C) 80 m/s uses a factor of ½; (D) 332 m/s is the speed of sound in air.\nKey takeaway: the lighter molecule moves faster at the same temperature.\nAnswer: (A)",
+   "explanation": "Concept: $v_{rms} = \\sqrt{\\frac{3RT}{M}}$. At the same temperature, $v_{rms} \\propto \\frac{1}{\\sqrt M}$.\nSolution:\n1. $\\frac{v_{H_2}}{v_{O_2}} = \\sqrt{\\frac{M_{O_2}}{M_{H_2}}} = \\sqrt{\\frac{32}{2}} = 4$.\n2. $v_{H_2} = 4\\times160 = 640$ m/s.\nWhy others are wrong:\n- (B) 40 m/s divides instead of multiplying (heavier gas would be faster).\n- (C) 80 m/s uses a factor of ½; (D) 332 m/s is the speed of sound in air.\nPhysical reason: At the same temperature, all ideal gases have the same average translational KE (3/2 kT per molecule). A lighter molecule must therefore move faster.\nCommon mistake: Using the ratio 32/2 = 16 without the square root, which gives 2560 m/s.\nKey takeaway: the lighter molecule moves faster at the same temperature.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A09",
@@ -451,7 +451,7 @@
     4
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Gravitational potentials add as scalars. Inside a uniform shell, the shell's potential is constant, $-\\frac{GM}{R}$. A point mass gives $-\\frac{Gm}{r}$.\nSolution:\n1. Shell (100 kg, R = 50 m) at any interior point: $-\\frac{100G}{50} = -2G$.\n2. Point mass (50 kg) at distance 25 m: $-\\frac{50G}{25} = -2G$.\n3. Total V = −4G.\nWhy others are wrong:\n- (B) +2G is positive; gravitational potential is always negative.\n- (A) −60G and (C) −20G use wrong distances.\nKey takeaway: inside a shell, the shell's field is zero but its potential is not.\nAnswer: (D)",
+   "explanation": "Concept: Gravitational potentials add as scalars. Inside a uniform shell, the shell's potential is constant, $-\\frac{GM}{R}$. A point mass gives $-\\frac{Gm}{r}$.\nSolution:\n1. Shell (100 kg, R = 50 m) at any interior point: $-\\frac{100G}{50} = -2G$.\n2. Point mass (50 kg) at distance 25 m: $-\\frac{50G}{25} = -2G$.\n3. Total V = −4G.\nWhy others are wrong:\n- (B) +2G is positive; gravitational potential is always negative.\n- (A) −60G and (C) −20G use wrong distances.\nWhy the shell's potential is constant inside: The field inside a uniform shell is zero, so no work is needed to move a test mass around inside it; the potential stays at its surface value −GM/R.\nCommon mistake: Using −GM/r with r = 25 m for the shell, which gives −4G for the shell alone and −6G in total.\nKey takeaway: inside a shell, the shell's field is zero but its potential is not.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A11",
@@ -486,7 +486,7 @@
     4
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Current sensitivity = divisions per unit current. Full-scale current $I_g = \\frac{\\text{total divisions}}{\\text{current sensitivity}}$; galvanometer resistance $R = \\frac{V_{fs}}{I_g}$.\nSolution:\n1. $I_g = \\frac{50\\text{ div}}{2\\text{ div/mA}} = 25$ mA.\n2. $R = \\frac{50\\text{ mV}}{25\\text{ mA}} = 2\\ \\Omega$.\nWhy others are wrong:\n- (A) 1 Ω and (C) 4 Ω halve or double the correct current.\n- (B) 5 Ω has no basis.\nKey takeaway: voltage sensitivity = current sensitivity / resistance = 1 div/mV here.\nAnswer: (D)",
+   "explanation": "Concept: Current sensitivity = divisions per unit current. Full-scale current $I_g = \\frac{\\text{total divisions}}{\\text{current sensitivity}}$; galvanometer resistance $R = \\frac{V_{fs}}{I_g}$.\nSolution:\n1. $I_g = \\frac{50\\text{ div}}{2\\text{ div/mA}} = 25$ mA.\n2. $R = \\frac{50\\text{ mV}}{25\\text{ mA}} = 2\\ \\Omega$.\nWhy others are wrong:\n- (A) 1 Ω and (C) 4 Ω halve or double the correct current.\n- (B) 5 Ω has no basis.\nUnit check: 50 mV / 25 mA = 50 × 10⁻³ / 25 × 10⁻³ = 2 Ω.\nCommon mistake: Multiplying instead of dividing, I_g = 50 × 2 = 100 mA, which gives 0.5 Ω.\nKey takeaway: voltage sensitivity = current sensitivity / resistance = 1 div/mV here.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A12",
@@ -591,7 +591,7 @@
     5
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: With F, L, T as fundamental quantities, express mass using F = ma: $[M] = \\frac{[F]}{[LT^{-2}]} = [FL^{-1}T^2]$.\nSolution:\n1. Density = mass/volume: $\\frac{[FL^{-1}T^2]}{[L^3]} = [FL^{-4}T^2]$.\nWhy others are wrong:\n- (B) $[FL^{-3}T^2]$ forgets that mass itself contains L⁻¹.\n- (C) and (D) have wrong powers of L or T.\nKey takeaway: change of fundamental units — first write each old base quantity in terms of the new ones.\nAnswer: (A)",
+   "explanation": "Concept: With F, L, T as fundamental quantities, express mass using F = ma: $[M] = \\frac{[F]}{[LT^{-2}]} = [FL^{-1}T^2]$.\nSolution:\n1. Density = mass/volume: $\\frac{[FL^{-1}T^2]}{[L^3]} = [FL^{-4}T^2]$.\nWhy others are wrong:\n- (B) $[FL^{-3}T^2]$ forgets that mass itself contains L⁻¹.\n- (C) and (D) have wrong powers of L or T.\nCheck with SI units: FL⁻⁴T² = (kg m s⁻²) m⁻⁴ s² = kg m⁻³, which is density ✓.\nCommon mistake: Keeping M as a fundamental quantity and writing ML⁻³; the question removes M from the base set.\nKey takeaway: change of fundamental units — first write each old base quantity in terms of the new ones.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A15",
@@ -661,7 +661,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: If all the potential energy of falling water becomes heat in the water itself: mgh = msΔT ⇒ ΔT = $\\frac{gh}{s}$ (s in J kg⁻¹ K⁻¹).\nSolution:\n1. s = 1 cal g⁻¹ °C⁻¹ = 4200 J kg⁻¹ °C⁻¹.\n2. $\\Delta T = \\frac{9.8\\times63}{4200} = \\frac{617.4}{4200} = 0.147$ °C.\nWhy others are wrong:\n- (B) and (C) are 100 or 10 times too large (unit slip with calories/grams).\n- (D) is 10 times too small.\nKey takeaway: this is the idea behind Joule's experiment — mechanical energy produces a measurable (small) temperature rise.\nAnswer: (A)",
+   "explanation": "Concept: If all the potential energy of falling water becomes heat in the water itself: mgh = msΔT ⇒ ΔT = $\\frac{gh}{s}$ (s in J kg⁻¹ K⁻¹).\nSolution:\n1. s = 1 cal g⁻¹ °C⁻¹ = 4200 J kg⁻¹ °C⁻¹.\n2. $\\Delta T = \\frac{9.8\\times63}{4200} = \\frac{617.4}{4200} = 0.147$ °C.\nWhy others are wrong:\n- (B) and (C) are 100 or 10 times too large (unit slip with calories/grams).\n- (D) is 10 times too small.\nWhy mass cancels: Both the potential energy lost (mgh) and the heat needed (msΔT) are proportional to the mass of water, so ΔT is independent of how much water falls.\nCommon mistake: Using s = 1 cal g⁻¹ °C⁻¹ = 4.2 J kg⁻¹ °C⁻¹ (forgetting the factor 1000 for kg), which gives an absurdly large ΔT.\nKey takeaway: this is the idea behind Joule's experiment — mechanical energy produces a measurable (small) temperature rise.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A17",
@@ -696,7 +696,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Projectile formulas: time to highest point $t = \\frac{u\\sin\\theta}{g}$; maximum height $H = \\frac{u^2\\sin^2\\theta}{2g}$.\nSolution:\n1. u = 25 m/s, θ = 45°: $u\\sin\\theta = \\frac{25}{\\sqrt2} = 17.68$ m/s.\n2. $t = \\frac{17.68}{10} = 1.77$ s.\n3. $H = \\frac{(17.68)^2}{20} = \\frac{312.5}{20} = 15.625$ m.\nWhy others are wrong:\n- (B) 3.54 s is the total time of flight (2t).\n- (A) and (D) use wrong formulas.\nKey takeaway: the time to reach the top is half the total flight time.\nAnswer: (C)",
+   "explanation": "Concept: Projectile formulas: time to highest point $t = \\frac{u\\sin\\theta}{g}$; maximum height $H = \\frac{u^2\\sin^2\\theta}{2g}$.\nSolution:\n1. u = 25 m/s, θ = 45°: $u\\sin\\theta = \\frac{25}{\\sqrt2} = 17.68$ m/s.\n2. $t = \\frac{17.68}{10} = 1.77$ s.\n3. $H = \\frac{(17.68)^2}{20} = \\frac{312.5}{20} = 15.625$ m.\nWhy others are wrong:\n- (B) 3.54 s is the total time of flight (2t).\n- (A) and (D) use wrong formulas.\nCheck: At 45°, H = u²/(4g) = 625/40 = 15.625 m, and t = u/(√2 g) = 25/14.14 ≈ 1.77 s ✓.\nCommon mistake: Using u instead of u sin θ in the height formula, which gives 31.25 m.\nKey takeaway: the time to reach the top is half the total flight time.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A18",
@@ -731,7 +731,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For two coherent sources, $I_{max} = (\\sqrt{I_1} + \\sqrt{I_2})^2$ and $I_{min} = (\\sqrt{I_1} - \\sqrt{I_2})^2$.\nSolution:\n1. I₁ = I₂ = I₀ gives $I_{min} = 0$ ✓ (consistent with the question).\n2. $I_{max} = (2\\sqrt{I_0})^2 = 4I_0$.\nWhy others are wrong:\n- (B) 2I₀ is the average intensity (simple sum of intensities).\n- (A) I₀ and (C) 5I₀ have no basis.\nKey takeaway: interference redistributes energy — maxima get 4I₀, minima 0, averaging 2I₀.\nAnswer: (D)",
+   "explanation": "Concept: For two coherent sources, $I_{max} = (\\sqrt{I_1} + \\sqrt{I_2})^2$ and $I_{min} = (\\sqrt{I_1} - \\sqrt{I_2})^2$.\nSolution:\n1. I₁ = I₂ = I₀ gives $I_{min} = 0$ ✓ (consistent with the question).\n2. $I_{max} = (2\\sqrt{I_0})^2 = 4I_0$.\nWhy others are wrong:\n- (B) 2I₀ is the average intensity (simple sum of intensities).\n- (A) I₀ and (C) 5I₀ have no basis.\nDerivation: I = I₁ + I₂ + 2√(I₁I₂)cos φ. At maxima cos φ = 1, so I = I₀ + I₀ + 2I₀ = 4I₀.\nEnergy is conserved: the pattern averages to 2I₀, the same as two incoherent sources.\nKey takeaway: interference redistributes energy — maxima get 4I₀, minima 0, averaging 2I₀.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_A19",
@@ -808,7 +808,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: No engine can be more efficient than a Carnot engine between the same reservoirs: $\\eta \\le 1 - \\frac{T_2}{T_1}$.\nSolution:\n1. Actual efficiency: $\\eta = \\frac{W}{Q_1} = \\frac{300 - 240}{300} = 0.2$.\n2. $0.2 \\le 1 - \\frac{400}{T_1} \\Rightarrow \\frac{400}{T_1} \\le 0.8 \\Rightarrow T_1 \\ge 500$ K.\n3. Minimum hot-reservoir temperature = 500 K.\nKey takeaway: equality (T₁ = 500 K) corresponds to a reversible (Carnot) engine.\nAnswer: 500",
+   "explanation": "Concept: No engine can be more efficient than a Carnot engine between the same reservoirs: $\\eta \\le 1 - \\frac{T_2}{T_1}$.\nSolution:\n1. Actual efficiency: $\\eta = \\frac{W}{Q_1} = \\frac{300 - 240}{300} = 0.2$.\n2. $0.2 \\le 1 - \\frac{400}{T_1} \\Rightarrow \\frac{400}{T_1} \\le 0.8 \\Rightarrow T_1 \\ge 500$ K.\n3. Minimum hot-reservoir temperature = 500 K.\nWhy \"minimum\": A real engine's efficiency cannot exceed the Carnot limit. For a given cold reservoir, a higher T₁ raises the limit, so 500 K is the lowest T₁ compatible with 20% efficiency.\nNote: Setting Q₂/Q₁ = T₂/T₁ (240/300 = 0.8) gives the same 500 K; that equality holds only for the reversible (Carnot) limit.\nKey takeaway: equality (T₁ = 500 K) corresponds to a reversible (Carnot) engine.\nAnswer: 500",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B01",
@@ -838,7 +838,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $a\\sin\\theta + b\\cos\\theta = \\sqrt{a^2 + b^2}\\sin(\\theta + \\phi)$ with tan φ = b/a.\nSolution:\n1. $y_2 = 5(\\sin3\\pi t + \\sqrt3\\cos3\\pi t) = 5\\times2\\left(\\frac{1}{2}\\sin3\\pi t + \\frac{\\sqrt3}{2}\\cos3\\pi t\\right) = 10\\sin\\left(3\\pi t + \\frac{\\pi}{3}\\right)$.\n2. Amplitude of y₂ = 10, same as y₁ (and even the same phase).\n3. Ratio = 1 : 1, so x = 1.\nKey takeaway: y₁ and y₂ are in fact identical motions.\nAnswer: 1",
+   "explanation": "Concept: $a\\sin\\theta + b\\cos\\theta = \\sqrt{a^2 + b^2}\\sin(\\theta + \\phi)$ with tan φ = b/a.\nSolution:\n1. $y_2 = 5(\\sin3\\pi t + \\sqrt3\\cos3\\pi t) = 5\\times2\\left(\\frac{1}{2}\\sin3\\pi t + \\frac{\\sqrt3}{2}\\cos3\\pi t\\right) = 10\\sin\\left(3\\pi t + \\frac{\\pi}{3}\\right)$.\n2. Amplitude of y₂ = 10, same as y₁ (and even the same phase).\n3. Ratio = 1 : 1, so x = 1.\nUsing the compound-angle identity: sin(3πt + π/3) = sin 3πt cos(π/3) + cos 3πt sin(π/3) = ½ sin 3πt + (√3/2) cos 3πt, so 10 sin(3πt + π/3) = 5 sin 3πt + 5√3 cos 3πt ✓.\nCommon mistake: Taking the amplitude of y₂ as 5 (the outside factor) instead of 5 × √(1 + 3) = 10.\nKey takeaway: y₁ and y₂ are in fact identical motions.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B02",
@@ -868,7 +868,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: An electron in level n can return to the ground state by many routes; every pair of levels (i, j) with i > j gives a distinct line. Number of lines = $\\binom{n}{2} = \\frac{n(n - 1)}{2}$.\nSolution:\n1. n = 6: $\\frac{6\\times5}{2} = 15$ possible transitions.\n2. X = 15.\nKey takeaway: a single atom can emit at most n − 1 photons, but a sample of many atoms shows all $\\frac{n(n - 1)}{2}$ lines.\nAnswer: 15",
+   "explanation": "Concept: An electron in level n can return to the ground state by many routes; every pair of levels (i, j) with i > j gives a distinct line. Number of lines = $\\binom{n}{2} = \\frac{n(n - 1)}{2}$.\nSolution:\n1. n = 6: $\\frac{6\\times5}{2} = 15$ possible transitions.\n2. X = 15.\nListing them: From n = 6 there are lines to 5, 4, 3, 2 and 1 (5 lines); from 5 to lower levels 4 lines; then 3, 2 and 1. Total 5 + 4 + 3 + 2 + 1 = 15.\nCommon mistake: Counting only the n − 1 = 5 lines of a single cascade.\nKey takeaway: a single atom can emit at most n − 1 photons, but a sample of many atoms shows all $\\frac{n(n - 1)}{2}$ lines.\nAnswer: 15",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B03",
@@ -908,7 +908,7 @@
      ]
     }
    ],
-   "explanation": "Concept: The series resistor must limit the Zener current to its maximum rating, $I_{max} = \\frac{P}{V_Z}$. The worst case is the highest input voltage (and no load).\nSolution:\n1. $I_{max} = \\frac{2\\text{ W}}{10\\text{ V}} = 0.2$ A.\n2. At the maximum input (14 V): $R_s = \\frac{14 - 10}{0.2} = 20\\ \\Omega$.\n3. At 6 V (below V_Z), the Zener would not conduct — regulation fails at that end, but safety is set by the 14 V case.\nKey takeaway: size R_s for the worst-case (highest) input voltage.\nAnswer: 20",
+   "explanation": "Concept: The series resistor must limit the Zener current to its maximum rating, $I_{max} = \\frac{P}{V_Z}$. The worst case is the highest input voltage (and no load).\nSolution:\n1. $I_{max} = \\frac{2\\text{ W}}{10\\text{ V}} = 0.2$ A.\n2. At the maximum input (14 V): $R_s = \\frac{14 - 10}{0.2} = 20\\ \\Omega$.\n3. At 6 V (below V_Z), the Zener would not conduct — regulation fails at that end, but safety is set by the 14 V case.\nWhy no load is the worst case: With no load, all the current through R_s goes into the Zener. Any load current would reduce the Zener current, so the no-load case sets the safety limit.\nCommon mistake: Using the lower input voltage (6 V), which is below the breakdown voltage.\nKey takeaway: size R_s for the worst-case (highest) input voltage.\nAnswer: 20",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B04",
@@ -992,7 +992,7 @@
      ]
     }
    ],
-   "explanation": "Concept: For a bob on a string to complete a vertical circle, its speed at the bottom must be at least $\\sqrt{5gL}$. The bullet–bob collision conserves momentum.\nSolution:\n1. Required bob speed: $\\sqrt{5\\times10\\times0.5} = 5$ m/s.\n2. Momentum: 0.01v = 1 × 5 + 0.01 × (−100) (the bullet recoils backward).\n3. 0.01v = 5 − 1 = 4 ⇒ v = 400 m/s.\nKey takeaway: a recoiling bullet transfers more momentum than one that stops or sticks.\nAnswer: 400",
+   "explanation": "Concept: For a bob on a string to complete a vertical circle, its speed at the bottom must be at least $\\sqrt{5gL}$. The bullet–bob collision conserves momentum.\nSolution:\n1. Required bob speed: $\\sqrt{5\\times10\\times0.5} = 5$ m/s.\n2. Momentum: 0.01v = 1 × 5 + 0.01 × (−100) (the bullet recoils backward).\n3. 0.01v = 5 − 1 = 4 ⇒ v = 400 m/s.\nWhy √(5gL): At the top of the circle the tension can be zero at minimum, so mg = mv_top²/L, which gives v_top² = gL. Energy conservation adds 2g(2L) = 4gL, so v_bottom² = 5gL.\nCommon mistake: Taking the recoil velocity as +100 m/s (same direction), which gives v = 600 m/s.\nKey takeaway: a recoiling bullet transfers more momentum than one that stops or sticks.\nAnswer: 400",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B06",
@@ -1024,7 +1024,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Power factor cos φ = $\\frac{R}{Z}$, with $Z = \\sqrt{R^2 + (X_L - X_C)^2}$.\nSolution:\n1. Old (R–L): $Z = \\sqrt{R^2 + 9R^2} = \\sqrt{10}R$ ⇒ cos φ₁ = $\\frac{1}{\\sqrt{10}}$.\n2. New (R–L–C): $X_L - X_C = R$ ⇒ $Z = \\sqrt2R$ ⇒ cos φ₂ = $\\frac{1}{\\sqrt2}$.\n3. Ratio $\\frac{\\cos\\phi_2}{\\cos\\phi_1} = \\frac{\\sqrt{10}}{\\sqrt2} = \\sqrt5$ ⇒ √5 : 1, so x = 1.\nKey takeaway: adding capacitance partly cancels inductive reactance and improves the power factor.\nAnswer: 1",
+   "explanation": "Concept: Power factor cos φ = $\\frac{R}{Z}$, with $Z = \\sqrt{R^2 + (X_L - X_C)^2}$.\nSolution:\n1. Old (R–L): $Z = \\sqrt{R^2 + 9R^2} = \\sqrt{10}R$ ⇒ cos φ₁ = $\\frac{1}{\\sqrt{10}}$.\n2. New (R–L–C): $X_L - X_C = R$ ⇒ $Z = \\sqrt2R$ ⇒ cos φ₂ = $\\frac{1}{\\sqrt2}$.\n3. Ratio $\\frac{\\cos\\phi_2}{\\cos\\phi_1} = \\frac{\\sqrt{10}}{\\sqrt2} = \\sqrt5$ ⇒ √5 : 1, so x = 1.\nPhase angles: Old circuit tan φ = 3 (φ ≈ 71.6°); new circuit tan φ = 1 (φ = 45°). The smaller phase angle means a larger power factor.\nCommon mistake: Taking the ratio old/new (1 : √5) instead of new/old.\nKey takeaway: adding capacitance partly cancels inductive reactance and improves the power factor.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B07",
@@ -1096,7 +1096,7 @@
     9
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In a plane EM wave in free space, the instantaneous fields are related by E = cB.\nSolution:\n1. $B = \\frac{E}{c} = \\frac{6}{3\\times10^8} = 2\\times10^{-8}$ T.\n2. x = 2. (The frequency, 30 MHz, is not needed.)\nKey takeaway: this relation holds at every point and instant, not just for amplitudes.\nAnswer: 2",
+   "explanation": "Concept: In a plane EM wave in free space, the instantaneous fields are related by E = cB.\nSolution:\n1. $B = \\frac{E}{c} = \\frac{6}{3\\times10^8} = 2\\times10^{-8}$ T.\n2. x = 2. (The frequency, 30 MHz, is not needed.)\nDirection: B is perpendicular to both E and the direction of propagation, and E × B points along the propagation.\nCommon mistake: Multiplying by c instead of dividing (B = E/c, not Ec), or trying to use the frequency.\nKey takeaway: this relation holds at every point and instant, not just for amplitudes.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B09",
@@ -1126,7 +1126,7 @@
     9
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A pipe closed at one end resonates at odd harmonics; its fundamental has $L = \\frac{\\lambda}{4}$. The shortest resonating pipe corresponds to the fundamental.\nSolution:\n1. λ = $\\frac{v}{f} = \\frac{340}{250} = 1.36$ m.\n2. $L = \\frac{\\lambda}{4} = 0.34$ m = 34 cm.\nKey takeaway: next resonant lengths are $\\frac{3\\lambda}{4}$ = 102 cm, $\\frac{5\\lambda}{4}$ = 170 cm, … (end correction ignored).\nAnswer: 34",
+   "explanation": "Concept: A pipe closed at one end resonates at odd harmonics; its fundamental has $L = \\frac{\\lambda}{4}$. The shortest resonating pipe corresponds to the fundamental.\nSolution:\n1. λ = $\\frac{v}{f} = \\frac{340}{250} = 1.36$ m.\n2. $L = \\frac{\\lambda}{4} = 0.34$ m = 34 cm.\nEnd correction: In practice the effective length is L + 0.3d (d = pipe diameter), so the real pipe is slightly shorter; the question ignores this.\nCommon mistake: Using the open-pipe relation L = λ/2 = 68 cm.\nKey takeaway: next resonant lengths are $\\frac{3\\lambda}{4}$ = 102 cm, $\\frac{5\\lambda}{4}$ = 170 cm, … (end correction ignored).\nAnswer: 34",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_PHY_B10",
@@ -1266,7 +1266,7 @@
     10
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Stratospheric ozone forms when UV radiation splits O₂ molecules into oxygen atoms, which then combine with O₂.\nSolution:\n1. O₂ + hν (UV) → O + O.\n2. O + O₂ ⇌ O₃.\n3. So ozone formation is assisted by ultraviolet radiation.\nWhy others are wrong:\n- (A) cosmic rays and (B) γ-rays are not the main drivers.\n- (D) visible light lacks enough energy to break the O=O bond (498 kJ/mol).\nKey takeaway: the same UV absorption by O₃ protects life on Earth from harmful radiation.\nAnswer: (C)",
+   "explanation": "Concept: Stratospheric ozone forms when UV radiation splits O₂ molecules into oxygen atoms, which then combine with O₂.\nSolution:\n1. O₂ + hν (UV) → O + O.\n2. O + O₂ ⇌ O₃.\n3. So ozone formation is assisted by ultraviolet radiation.\nWhy others are wrong:\n- (A) cosmic rays and (B) γ-rays are not the main drivers.\n- (D) visible light lacks enough energy to break the O=O bond (498 kJ/mol).\nWavelength needed: Breaking O=O requires light shorter than about 240 nm (the UV-C region), which is plentiful in the stratosphere but largely absorbed before reaching the ground.\nBalance: O₃ is also destroyed by UV (O₃ + hν → O₂ + O), which sets up a steady-state ozone layer.\nKey takeaway: the same UV absorption by O₃ protects life on Earth from harmful radiation.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A04",
@@ -1711,7 +1711,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: On heating (513 K), KMnO₄ decomposes: 2KMnO₄ → K₂MnO₄ + MnO₂ + O₂.\nSolution:\n1. K₂MnO₄ contains the manganate ion MnO₄²⁻ with Mn in +6 (3d¹): one unpaired electron → paramagnetic.\n2. Manganate is dark green.\n3. So the product is paramagnetic and green.\nWhy others are wrong:\n- (A) and (C) \"colourless\" — manganate is intensely green.\n- (B) \"diamagnetic\" — a d¹ ion has an unpaired electron.\nKey takeaway: permanganate (Mn⁷⁺, d⁰) is purple and diamagnetic; manganate (Mn⁶⁺, d¹) is green and paramagnetic.\nAnswer: (D)",
+   "explanation": "Concept: On heating (513 K), KMnO₄ decomposes: 2KMnO₄ → K₂MnO₄ + MnO₂ + O₂.\nSolution:\n1. K₂MnO₄ contains the manganate ion MnO₄²⁻ with Mn in +6 (3d¹): one unpaired electron → paramagnetic.\n2. Manganate is dark green.\n3. So the product is paramagnetic and green.\nWhy others are wrong:\n- (A) and (C) \"colourless\" — manganate is intensely green.\n- (B) \"diamagnetic\" — a d¹ ion has an unpaired electron.\nBalanced decomposition: 2KMnO₄ → K₂MnO₄ + MnO₂ + O₂. The oxygen released is why heated permanganate is used as a lab source of O₂.\nCommon mistake: Taking MnO₂ as \"the product\" (black, Mn⁴⁺ d³); the question points to the coloured salt K₂MnO₄.\nKey takeaway: permanganate (Mn⁷⁺, d⁰) is purple and diamagnetic; manganate (Mn⁶⁺, d¹) is green and paramagnetic.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A15",
@@ -1746,7 +1746,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Identify the reagent in each test.\nSolution:\n1. Barfoed's test: copper(II) acetate in dilute acetic acid — copper ✓.\n2. Benedict's test: CuSO₄ with sodium citrate/carbonate — copper ✓.\n3. Biuret test: CuSO₄ in NaOH (violet complex with peptide bonds) — copper ✓.\n4. Seliwanoff's test: resorcinol in concentrated HCl — NO copper. It distinguishes ketoses (rapid cherry-red colour) from aldoses.\nKey takeaway: most sugar tests (Fehling's, Benedict's, Barfoed's) rely on Cu²⁺ reduction; Seliwanoff's and Molisch's rely on dehydration to furfurals.\nAnswer: (B)",
+   "explanation": "Concept: Identify the reagent in each test.\nSolution:\n1. Barfoed's test: copper(II) acetate in dilute acetic acid — copper ✓.\n2. Benedict's test: CuSO₄ with sodium citrate/carbonate — copper ✓.\n3. Biuret test: CuSO₄ in NaOH (violet complex with peptide bonds) — copper ✓.\n4. Seliwanoff's test: resorcinol in concentrated HCl — NO copper. It distinguishes ketoses (rapid cherry-red colour) from aldoses.\nWhy Seliwanoff distinguishes sugars: Ketoses dehydrate much faster than aldoses in hot HCl, giving hydroxymethylfurfural, which condenses with resorcinol to a red product.\nCommon mistake: Thinking the biuret test uses a biuret reagent without copper; it relies on alkaline CuSO₄.\nKey takeaway: most sugar tests (Fehling's, Benedict's, Barfoed's) rely on Cu²⁺ reduction; Seliwanoff's and Molisch's rely on dehydration to furfurals.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A16",
@@ -1781,7 +1781,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Sucrose is made of α-D-glucopyranose and β-D-fructofuranose linked through C1 (glucose) and C2 (fructose).\nSolution:\n1. Hydrolysis gives α-D-(+)-glucose (dextrorotatory, +52.5°) and β-D-(−)-fructose (laevorotatory, −92.4°).\n2. The mixture is laevorotatory overall → \"invert sugar\" (sucrose itself is dextrorotatory).\nWhy others are wrong:\n- (A) and (C) give glucose a (−) sign; D-glucose is dextrorotatory (+).\n- (B) and (C) give α-fructose; the fructose unit in sucrose is β.\nKey takeaway: D/L refers to configuration; (+)/(−) refers to observed rotation — they are independent.\nAnswer: (D)",
+   "explanation": "Concept: Sucrose is made of α-D-glucopyranose and β-D-fructofuranose linked through C1 (glucose) and C2 (fructose).\nSolution:\n1. Hydrolysis gives α-D-(+)-glucose (dextrorotatory, +52.5°) and β-D-(−)-fructose (laevorotatory, −92.4°).\n2. The mixture is laevorotatory overall → \"invert sugar\" (sucrose itself is dextrorotatory).\nWhy others are wrong:\n- (A) and (C) give glucose a (−) sign; D-glucose is dextrorotatory (+).\n- (B) and (C) give α-fructose; the fructose unit in sucrose is β.\nWhy \"invert\": Sucrose rotates light to +66.5°. After hydrolysis, the strong laevorotation of fructose (−92.4°) outweighs glucose (+52.5°), so the sign of rotation inverts.\nThe enzyme invertase (or dilute acid) catalyses this hydrolysis.\nKey takeaway: D/L refers to configuration; (+)/(−) refers to observed rotation — they are independent.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A17",
@@ -1816,7 +1816,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Common ores and their formulae.\nSolution:\n1. (a) Calamine: ZnCO₃ → (iii).\n2. (b) Malachite: CuCO₃·Cu(OH)₂ (green basic copper carbonate) → (iv).\n3. (c) Siderite: FeCO₃ → (ii).\n4. (d) Sphalerite (zinc blende): ZnS → (i).\nCorrect: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i).\nWhy others are wrong:\n- (B) swaps siderite and sphalerite.\n- (C) swaps calamine and malachite.\n- (D) gives malachite the formula of siderite.\nKey takeaway: carbonate ores (calamine, siderite, malachite) are calcined; sulphide ores (sphalerite) are roasted.\nAnswer: (A)",
+   "explanation": "Concept: Common ores and their formulae.\nSolution:\n1. (a) Calamine: ZnCO₃ → (iii).\n2. (b) Malachite: CuCO₃·Cu(OH)₂ (green basic copper carbonate) → (iv).\n3. (c) Siderite: FeCO₃ → (ii).\n4. (d) Sphalerite (zinc blende): ZnS → (i).\nCorrect: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i).\nWhy others are wrong:\n- (B) swaps siderite and sphalerite.\n- (C) swaps calamine and malachite.\n- (D) gives malachite the formula of siderite.\nMemory aid: Siderite contains iron (\"sidero\" = iron), sphalerite is the zinc sulphide blende, and malachite is the green copper mineral.\nCommon mistake: Confusing calamine (ZnCO₃) with zincite (ZnO).\nKey takeaway: carbonate ores (calamine, siderite, malachite) are calcined; sulphide ores (sphalerite) are roasted.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A18",
@@ -1851,7 +1851,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Phosphorus has several allotropes: white (P₄, reactive), red (polymeric), and black (layered, most stable).\nSolution:\n1. Red phosphorus heated in a sealed tube at 803 K → α-black phosphorus.\n2. β-Black phosphorus is obtained by heating white phosphorus at 473 K under high pressure.\nWhy others are wrong:\n- (A) and (B) White/yellow phosphorus is obtained by rapidly cooling phosphorus vapour, not by heating red P in a sealed tube.\n- (C) β-black P comes from white P under pressure.\nKey takeaway: reactivity order: white > red > black phosphorus.\nAnswer: (D)",
+   "explanation": "Concept: Phosphorus has several allotropes: white (P₄, reactive), red (polymeric), and black (layered, most stable).\nSolution:\n1. Red phosphorus heated in a sealed tube at 803 K → α-black phosphorus.\n2. β-Black phosphorus is obtained by heating white phosphorus at 473 K under high pressure.\nWhy others are wrong:\n- (A) and (B) White/yellow phosphorus is obtained by rapidly cooling phosphorus vapour, not by heating red P in a sealed tube.\n- (C) β-black P comes from white P under pressure.\nStructure of black phosphorus: It is a layered, graphite-like network of puckered P₆ rings. It is the most stable allotrope and conducts electricity, unlike white and red phosphorus.\nCommon mistake: Mixing up the two black forms; α comes from red P at 803 K, β from white P under pressure at 473 K.\nKey takeaway: reactivity order: white > red > black phosphorus.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_A19",
@@ -1928,7 +1928,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Arrhenius equation in log form: $\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$.\nSolution:\n1. $\\frac{E_a}{2.303R} = \\frac{209000}{2.303\\times8.31} = 10921$ K.\n2. $\\frac{1}{700} - \\frac{1}{600} = -2.381\\times10^{-4}$.\n3. $\\log\\frac{k_{600}}{k_{700}} = 10921\\times(-2.381\\times10^{-4}) = -2.60$.\n4. $\\log k_{600} = -2.19 - 2.60 = -4.79 \\Rightarrow k_{600} = 1.62\\times10^{-5}$ s⁻¹ = 16.2 × 10⁻⁶.\n5. x = 16.\nKey takeaway: lowering T by only 100 K reduces the rate constant about 400-fold for this high-Ea reaction.\nAnswer: 16",
+   "explanation": "Concept: Arrhenius equation in log form: $\\log\\frac{k_2}{k_1} = \\frac{E_a}{2.303R}\\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$.\nSolution:\n1. $\\frac{E_a}{2.303R} = \\frac{209000}{2.303\\times8.31} = 10921$ K.\n2. $\\frac{1}{700} - \\frac{1}{600} = -2.381\\times10^{-4}$.\n3. $\\log\\frac{k_{600}}{k_{700}} = 10921\\times(-2.381\\times10^{-4}) = -2.60$.\n4. $\\log k_{600} = -2.19 - 2.60 = -4.79 \\Rightarrow k_{600} = 1.62\\times10^{-5}$ s⁻¹ = 16.2 × 10⁻⁶.\n5. x = 16.\nCommon mistake: Swapping the order of the temperatures, which gives a positive log ratio and a larger k at the lower temperature; k must fall as T falls.\nSanity check: k₇₀₀/k₆₀₀ = 6.36 × 10⁻³ / 1.62 × 10⁻⁵ ≈ 390.\nKey takeaway: lowering T by only 100 K reduces the rate constant about 400-fold for this high-Ea reaction.\nAnswer: 16",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B01",
@@ -1958,7 +1958,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Octahedral complexes with three identical bidentate ligands, [M(AA)₃], have no mirror plane or centre of symmetry — they are chiral, like a three-bladed propeller.\nSolution:\n1. [Cr(C₂O₄)₃]³⁻ is of type [M(AA)₃].\n2. It exists as two non-superimposable mirror images: Δ and Λ.\n3. Number of optical isomers = 2 (no geometrical isomers).\nKey takeaway: [Co(en)₃]³⁺ and [Cr(ox)₃]³⁻ are the classic chiral octahedral complexes.\nAnswer: 2",
+   "explanation": "Concept: Octahedral complexes with three identical bidentate ligands, [M(AA)₃], have no mirror plane or centre of symmetry — they are chiral, like a three-bladed propeller.\nSolution:\n1. [Cr(C₂O₄)₃]³⁻ is of type [M(AA)₃].\n2. It exists as two non-superimposable mirror images: Δ and Λ.\n3. Number of optical isomers = 2 (no geometrical isomers).\nWhy there are no geometrical isomers: All three ligands are the same symmetric bidentate oxalate, so there is no cis/trans arrangement to vary.\nCommon mistake: Counting 3 (one per ligand); chirality gives exactly one pair of enantiomers.\nKey takeaway: [Co(en)₃]³⁺ and [Cr(ox)₃]³⁻ are the classic chiral octahedral complexes.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B02",
@@ -2030,7 +2030,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Identify the limiting reagent, then count moles of every gas after reaction (including excess O₂ and water vapour) for the mole fraction.\nSolution:\n1. C₃H₈ + 5O₂ → 3CO₂ + 4H₂O.\n2. Propane: $\\frac{100}{44.09} = 2.268$ mol; O₂: $\\frac{1000}{32} = 31.25$ mol (needs only 11.34 mol) → propane is limiting.\n3. After reaction: O₂ = 19.91 mol, CO₂ = 6.804 mol, H₂O = 9.072 mol; total = 35.79 mol.\n4. $x_{CO_2} = \\frac{6.804}{35.79} = 0.190 = 19\\times10^{-2}$.\nKey takeaway: remember to include unreacted excess reagent in the total moles.\nAnswer: 19",
+   "explanation": "Concept: Identify the limiting reagent, then count moles of every gas after reaction (including excess O₂ and water vapour) for the mole fraction.\nSolution:\n1. C₃H₈ + 5O₂ → 3CO₂ + 4H₂O.\n2. Propane: $\\frac{100}{44.09} = 2.268$ mol; O₂: $\\frac{1000}{32} = 31.25$ mol (needs only 11.34 mol) → propane is limiting.\n3. After reaction: O₂ = 19.91 mol, CO₂ = 6.804 mol, H₂O = 9.072 mol; total = 35.79 mol.\n4. $x_{CO_2} = \\frac{6.804}{35.79} = 0.190 = 19\\times10^{-2}$.\nWhy water counts: The question asks for the mole fraction in the resulting gaseous mixture; the H₂O formed is included as vapour in the total moles.\nCommon mistake: Forgetting the unreacted O₂ (19.91 mol), which gives x_CO₂ ≈ 0.43.\nKey takeaway: remember to include unreacted excess reagent in the total moles.\nAnswer: 19",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B04",
@@ -2060,7 +2060,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Freezing-point depression for a non-electrolyte: $\\Delta T_f = K_fm$.\nSolution:\n1. Moles of glucose = $\\frac{40}{180} = 0.2222$ mol; water = 200 g = 0.2 kg.\n2. m = $\\frac{0.2222}{0.2} = 1.111$ mol/kg.\n3. ΔT_f = 1.86 × 1.111 = 2.07 K.\n4. T_f = 273.15 − 2.07 = 271.08 K ≈ 271 K.\nAnswer: 271",
+   "explanation": "Concept: Freezing-point depression for a non-electrolyte: $\\Delta T_f = K_fm$.\nSolution:\n1. Moles of glucose = $\\frac{40}{180} = 0.2222$ mol; water = 200 g = 0.2 kg.\n2. m = $\\frac{0.2222}{0.2} = 1.111$ mol/kg.\n3. ΔT_f = 1.86 × 1.111 = 2.07 K.\n4. T_f = 273.15 − 2.07 = 271.08 K ≈ 271 K.\nWhy molality: Molality uses kilograms of solvent, which here is 200 g of water (density 1 g/mL), independent of temperature.\nCommon mistake: Reporting ΔT_f (2.07 K) instead of the freezing point, or subtracting from 273 instead of 273.15.\nAnswer: 271",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B05",
@@ -2090,7 +2090,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Conductivity κ = (cell constant) × (conductance) = $\\frac{G^*}{R}$. Molar conductivity $\\Lambda_m = \\frac{1000\\kappa}{C}$ (κ in S cm⁻¹, C in mol L⁻¹).\nSolution:\n1. κ = $\\frac{1.14}{1500} = 7.6\\times10^{-4}$ S cm⁻¹.\n2. $\\Lambda_m = \\frac{7.6\\times10^{-4}\\times1000}{0.001} = 760$ S cm² mol⁻¹.\nNote: the realistic value for 0.001 M KCl is about 147 S cm² mol⁻¹; the data here are hypothetical, and the calculation follows the formula.\nKey takeaway: the factor 1000 converts litres to cm³.\nAnswer: 760",
+   "explanation": "Concept: Conductivity κ = (cell constant) × (conductance) = $\\frac{G^*}{R}$. Molar conductivity $\\Lambda_m = \\frac{1000\\kappa}{C}$ (κ in S cm⁻¹, C in mol L⁻¹).\nSolution:\n1. κ = $\\frac{1.14}{1500} = 7.6\\times10^{-4}$ S cm⁻¹.\n2. $\\Lambda_m = \\frac{7.6\\times10^{-4}\\times1000}{0.001} = 760$ S cm² mol⁻¹.\nNote: the realistic value for 0.001 M KCl is about 147 S cm² mol⁻¹; the data here are hypothetical, and the calculation follows the formula.\nUnit check: κ (S cm⁻¹) × 1000 (cm³ L⁻¹) / C (mol L⁻¹) gives S cm² mol⁻¹ ✓.\nCommon mistake: Forgetting the factor 1000, which gives 0.76 S cm² mol⁻¹.\nKey takeaway: the factor 1000 converts litres to cm³.\nAnswer: 760",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B06",
@@ -2120,7 +2120,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Number of photons = total energy emitted / energy per photon, with E = $\\frac{hc}{\\lambda}$.\nSolution:\n1. Photon energy: $\\frac{6.63\\times10^{-34}\\times3\\times10^8}{1000\\times10^{-9}} = 1.989\\times10^{-19}$ J.\n2. Energy in 0.1 s: 1 × 10⁻³ W × 0.1 s = 10⁻⁴ J.\n3. N = $\\frac{10^{-4}}{1.989\\times10^{-19}} = 5.03\\times10^{14} = 50\\times10^{13}$.\nAnswer: 50",
+   "explanation": "Concept: Number of photons = total energy emitted / energy per photon, with E = $\\frac{hc}{\\lambda}$.\nSolution:\n1. Photon energy: $\\frac{6.63\\times10^{-34}\\times3\\times10^8}{1000\\times10^{-9}} = 1.989\\times10^{-19}$ J.\n2. Energy in 0.1 s: 1 × 10⁻³ W × 0.1 s = 10⁻⁴ J.\n3. N = $\\frac{10^{-4}}{1.989\\times10^{-19}} = 5.03\\times10^{14} = 50\\times10^{13}$.\nWhy power × time: Power is energy per second, so the total energy emitted in 0.1 s is P × t = 10⁻⁴ J; dividing by the energy of one photon gives the count.\nCommon mistake: Not converting 1 mW to 10⁻³ W, or using 1000 nm as 10⁻⁶ m (correct) but then slipping a power of ten.\nAnswer: 50",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B07",
@@ -2150,7 +2150,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Heterogeneous equilibrium NH₄HS(s) ⇌ NH₃(g) + H₂S(g): the solid is omitted, so $K_p = p_{NH_3}\\times p_{H_2S}$.\nSolution:\n1. NH₄HS: M = 51 g/mol; 5.1 g = 0.1 mol; 20% decomposes = 0.02 mol, giving 0.02 mol NH₃ and 0.02 mol H₂S.\n2. $p = \\frac{nRT}{V} = \\frac{0.02\\times0.082\\times300}{2} = 0.246$ atm each.\n3. $K_p = 0.246^2 = 0.0605 \\approx 6\\times10^{-2}$.\nKey takeaway: the amount of solid does not enter K; it only needs to be present at equilibrium.\nAnswer: 6",
+   "explanation": "Concept: Heterogeneous equilibrium NH₄HS(s) ⇌ NH₃(g) + H₂S(g): the solid is omitted, so $K_p = p_{NH_3}\\times p_{H_2S}$.\nSolution:\n1. NH₄HS: M = 51 g/mol; 5.1 g = 0.1 mol; 20% decomposes = 0.02 mol, giving 0.02 mol NH₃ and 0.02 mol H₂S.\n2. $p = \\frac{nRT}{V} = \\frac{0.02\\times0.082\\times300}{2} = 0.246$ atm each.\n3. $K_p = 0.246^2 = 0.0605 \\approx 6\\times10^{-2}$.\nWhy each partial pressure is equal: The decomposition gives NH₃ and H₂S in a 1 : 1 ratio, so they have the same moles and the same partial pressure in the same flask.\nCommon mistake: Including the solid NH₄HS in K_p, or using the total moles of NH₄HS (0.1) instead of the decomposed amount (0.02).\nKey takeaway: the amount of solid does not enter K; it only needs to be present at equilibrium.\nAnswer: 6",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B08",
@@ -2180,7 +2180,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: VSEPR: AB₃ with no lone pair → trigonal planar; AB₃ with one lone pair → trigonal pyramidal.\nSolution:\n1. SO₃: S has 3 σ bonds, no lone pair → trigonal planar.\n2. NO₃⁻: 3 σ bonds, no lone pair on N → trigonal planar.\n3. PCl₃: 3 bonds + 1 lone pair → pyramidal.\n4. CO₃²⁻: 3 σ bonds, no lone pair → trigonal planar.\n5. Non-pyramidal species = 3.\nAnswer: 3",
+   "explanation": "Concept: VSEPR: AB₃ with no lone pair → trigonal planar; AB₃ with one lone pair → trigonal pyramidal.\nSolution:\n1. SO₃: S has 3 σ bonds, no lone pair → trigonal planar.\n2. NO₃⁻: 3 σ bonds, no lone pair on N → trigonal planar.\n3. PCl₃: 3 bonds + 1 lone pair → pyramidal.\n4. CO₃²⁻: 3 σ bonds, no lone pair → trigonal planar.\n5. Non-pyramidal species = 3.\nWhy the lone pair matters: In PCl₃ the lone pair on P pushes the three P–Cl bonds downward, giving a pyramid (about 100°). In the others, the central atom has no lone pair, so the three bonds spread into a flat triangle at 120°.\nCommon mistake: Counting SO₃ as pyramidal like SO₃²⁻; the neutral SO₃ has no lone pair on S.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B09",
@@ -2210,7 +2210,7 @@
     17
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A reaction with ΔH > 0 and ΔS > 0 becomes spontaneous above $T = \\frac{\\Delta H}{\\Delta S}$ (where ΔG = 0).\nSolution:\n1. ΔH° = [0 + (−110.5)] − [(−266.3) + 0] = 155.8 kJ.\n2. ΔS° = (27.28 + 197.6) − (57.49 + 5.74) = 161.65 J K⁻¹.\n3. $T = \\frac{155800}{161.65} = 963.8$ K ≈ 964 K.\nKey takeaway: this is exactly the kind of calculation an Ellingham diagram summarises — carbon reduces FeO only at high temperature.\nAnswer: 964",
+   "explanation": "Concept: A reaction with ΔH > 0 and ΔS > 0 becomes spontaneous above $T = \\frac{\\Delta H}{\\Delta S}$ (where ΔG = 0).\nSolution:\n1. ΔH° = [0 + (−110.5)] − [(−266.3) + 0] = 155.8 kJ.\n2. ΔS° = (27.28 + 197.6) − (57.49 + 5.74) = 161.65 J K⁻¹.\n3. $T = \\frac{155800}{161.65} = 963.8$ K ≈ 964 K.\nSign check: ΔH > 0 (endothermic) and ΔS > 0 (a gas, CO, is produced). At low T, ΔG = ΔH − TΔS > 0; above 964 K, the TΔS term wins and ΔG < 0.\nCommon mistake: Forgetting to convert ΔH from kJ to J, which gives T ≈ 0.96 K.\nKey takeaway: this is exactly the kind of calculation an Ellingham diagram summarises — carbon reduces FeO only at high temperature.\nAnswer: 964",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_CHE_B10",
@@ -2350,7 +2350,7 @@
     18
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: The number of heads in 3 fair tosses is Binomial(3, ½): P(k) = $\\frac{\\binom{3}{k}}{8}$. A and B are independent, so P(same) = Σ P(k)².\nSolution:\n1. P(0) = P(3) = $\\frac{1}{8}$; P(1) = P(2) = $\\frac{3}{8}$.\n2. P(same) = $\\frac{1^2 + 3^2 + 3^2 + 1^2}{64} = \\frac{20}{64} = \\frac{5}{16}$.\nWhy others are wrong:\n- (A) ⅛ counts only one value of k.\n- (B) ⅝ doubles the answer.\n- (D) 1 is certainty.\nKey takeaway: $\\sum\\binom{n}{k}^2 = \\binom{2n}{n}$, so P(same) = $\\frac{\\binom{6}{3}}{64} = \\frac{20}{64}$ ✓.\nAnswer: (C)",
+   "explanation": "Concept: The number of heads in 3 fair tosses is Binomial(3, ½): P(k) = $\\frac{\\binom{3}{k}}{8}$. A and B are independent, so P(same) = Σ P(k)².\nSolution:\n1. P(0) = P(3) = $\\frac{1}{8}$; P(1) = P(2) = $\\frac{3}{8}$.\n2. P(same) = $\\frac{1^2 + 3^2 + 3^2 + 1^2}{64} = \\frac{20}{64} = \\frac{5}{16}$.\nWhy others are wrong:\n- (A) ⅛ counts only one value of k.\n- (B) ⅝ doubles the answer.\n- (D) 1 is certainty.\nWhy square the probabilities: A's count and B's count are independent, so P(both get k heads) = P(k) × P(k). Summing over k = 0, 1, 2, 3 covers every way of matching.\nCommon mistake: Adding P(k) values instead of squaring them, which gives 1 (option D).\nKey takeaway: $\\sum\\binom{n}{k}^2 = \\binom{2n}{n}$, so P(same) = $\\frac{\\binom{6}{3}}{64} = \\frac{20}{64}$ ✓.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_A04",
@@ -2940,7 +2940,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $\\sin^4\\theta + \\cos^4\\theta = 1 - 2\\sin^2\\theta\\cos^2\\theta = 1 - \\frac{1}{2}\\sin^22\\theta$. Let s = sin 2θ.\nSolution:\n1. $1 - \\frac{s^2}{2} - \\frac{s}{2} = 0 \\Rightarrow s^2 + s - 2 = 0 \\Rightarrow s = 1$ (s = −2 is impossible).\n2. sin 2θ = 1 ⇒ θ = $\\frac{\\pi}{4} + k\\pi$.\n3. In [0, 4π]: $\\frac{\\pi}{4}, \\frac{5\\pi}{4}, \\frac{9\\pi}{4}, \\frac{13\\pi}{4}$; sum S = 7π.\n4. $\\frac{8S}{\\pi} = 56$.\nAnswer: 56",
+   "explanation": "Concept: $\\sin^4\\theta + \\cos^4\\theta = 1 - 2\\sin^2\\theta\\cos^2\\theta = 1 - \\frac{1}{2}\\sin^22\\theta$. Let s = sin 2θ.\nSolution:\n1. $1 - \\frac{s^2}{2} - \\frac{s}{2} = 0 \\Rightarrow s^2 + s - 2 = 0 \\Rightarrow s = 1$ (s = −2 is impossible).\n2. sin 2θ = 1 ⇒ θ = $\\frac{\\pi}{4} + k\\pi$.\n3. In [0, 4π]: $\\frac{\\pi}{4}, \\frac{5\\pi}{4}, \\frac{9\\pi}{4}, \\frac{13\\pi}{4}$; sum S = 7π.\n4. $\\frac{8S}{\\pi} = 56$.\nWhy s = −2 is rejected: sin 2θ must lie in [−1, 1].\nCheck one root: θ = π/4 gives sin⁴ + cos⁴ = ¼ + ¼ = ½ and sin θ cos θ = ½, so ½ − ½ = 0 ✓.\nCommon mistake: Stopping at [0, 2π] (2 roots, sum 3π/2), forgetting that the interval runs to 4π.\nAnswer: 56",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B01",
@@ -3000,7 +3000,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Probabilities must sum to 1; then use conditional probability P(E | F) = $\\frac{P(E \\cap F)}{P(F)}$.\nSolution:\n1. K + 2K + 2K + 3K + K = 9K = 1 ⇒ K = $\\frac{1}{9}$.\n2. E: 1 < X < 4 → X ∈ {2, 3}; F: X < 3 → X ∈ {1, 2}; E ∩ F = {2}.\n3. p = $\\frac{2K}{K + 2K} = \\frac{2}{3}$.\n4. 5p = $\\frac{10}{3}$ = λK = $\\frac{\\lambda}{9}$ ⇒ λ = 30.\nAnswer: 30",
+   "explanation": "Concept: Probabilities must sum to 1; then use conditional probability P(E | F) = $\\frac{P(E \\cap F)}{P(F)}$.\nSolution:\n1. K + 2K + 2K + 3K + K = 9K = 1 ⇒ K = $\\frac{1}{9}$.\n2. E: 1 < X < 4 → X ∈ {2, 3}; F: X < 3 → X ∈ {1, 2}; E ∩ F = {2}.\n3. p = $\\frac{2K}{K + 2K} = \\frac{2}{3}$.\n4. 5p = $\\frac{10}{3}$ = λK = $\\frac{\\lambda}{9}$ ⇒ λ = 30.\nCommon mistake: Including X = 3 in the numerator (P(1 < X < 4) = 4K) without intersecting with X < 3; the condition restricts the sample space to {1, 2}.\nNote that K cancels in p, so p = 2/3 regardless of K; K reappears only in λK.\nAnswer: 30",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B03",
@@ -3122,7 +3122,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Two equal circles touching at a point have their centres on the common normal at that point, one on each side, each at distance r.\nSolution:\n1. Normal direction to 4x + 3y = 10: (4, 3), unit vector $\\frac{1}{5}(4, 3)$.\n2. Centres: (1, 2) ± 5 × $\\frac{1}{5}$(4, 3) = (5, 5) and (−3, −1).\n3. (α + β)(γ + δ) = (10)(−4) = −40 ⇒ absolute value 40.\nKey takeaway: (1, 2) lies on the tangent (4 + 6 = 10 ✓), confirming it is the point of contact.\nAnswer: 40",
+   "explanation": "Concept: Two equal circles touching at a point have their centres on the common normal at that point, one on each side, each at distance r.\nSolution:\n1. Normal direction to 4x + 3y = 10: (4, 3), unit vector $\\frac{1}{5}(4, 3)$.\n2. Centres: (1, 2) ± 5 × $\\frac{1}{5}$(4, 3) = (5, 5) and (−3, −1).\n3. (α + β)(γ + δ) = (10)(−4) = −40 ⇒ absolute value 40.\nWhy the centres lie on the normal: The line joining the centre of a circle to the point of contact is perpendicular to the tangent. With two equal circles touching externally at (1, 2), the centres are on opposite sides at distance 5.\nCheck: (5, 5) is at distance √(16 + 9) = 5 from (1, 2) ✓.\nKey takeaway: (1, 2) lies on the tangent (4 + 6 = 10 ✓), confirming it is the point of contact.\nAnswer: 40",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B07",
@@ -3182,7 +3182,7 @@
     26
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Combine groups using totals: Σx = n·mean, Σx² = n(σ² + mean²).\nSolution:\n1. Total marks: 50 × 15 = 750; boys: 20 × 12 = 240; girls: 510 ⇒ μ = $\\frac{510}{30} = 17$.\n2. Σx²: boys 20(2 + 144) = 2920; girls 30(2 + 289) = 8730; total 11650.\n3. σ² = $\\frac{11650}{50} - 15^2 = 233 - 225 = 8$.\n4. μ + σ² = 17 + 8 = 25.\nKey takeaway: combined variance = average within-group variance (2) + variance of group means (6) = 8 ✓.\nAnswer: 25",
+   "explanation": "Concept: Combine groups using totals: Σx = n·mean, Σx² = n(σ² + mean²).\nSolution:\n1. Total marks: 50 × 15 = 750; boys: 20 × 12 = 240; girls: 510 ⇒ μ = $\\frac{510}{30} = 17$.\n2. Σx²: boys 20(2 + 144) = 2920; girls 30(2 + 289) = 8730; total 11650.\n3. σ² = $\\frac{11650}{50} - 15^2 = 233 - 225 = 8$.\n4. μ + σ² = 17 + 8 = 25.\nWhy add σ² + mean²: For each group, the average of x² equals σ² + (mean)², so Σx² = n(σ² + mean²). Adding the groups' Σx² gives the combined sum of squares.\nCommon mistake: Averaging the two variances (2) and ignoring the spread between the group means.\nKey takeaway: combined variance = average within-group variance (2) + variance of group means (6) = 8 ✓.\nAnswer: 25",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B09",
@@ -3212,7 +3212,7 @@
     27
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For $\\int\\frac{pe^x + qe^{-x}}{re^x + se^{-x}}dx$, write the numerator as A·(denominator) + B·(derivative of denominator); the integral is Ax + B ln|denominator|.\nSolution:\n1. 2eˣ + 3e⁻ˣ = A(4eˣ + 7e⁻ˣ) + B(4eˣ − 7e⁻ˣ).\n2. eˣ: 4A + 4B = 2; e⁻ˣ: 7A − 7B = 3 ⇒ A + B = ½, A − B = $\\frac{3}{7}$ ⇒ A = $\\frac{13}{28}$, B = $\\frac{1}{28}$.\n3. $I = \\frac{13}{28}x + \\frac{1}{28}\\ln(4e^x + 7e^{-x}) + C = \\frac{1}{14}\\left(\\frac{13}{2}x + \\frac{1}{2}\\ln(\\dots)\\right) + C$.\n4. u = $\\frac{13}{2}$, v = $\\frac{1}{2}$ ⇒ u + v = 7.\nAnswer: 7",
+   "explanation": "Concept: For $\\int\\frac{pe^x + qe^{-x}}{re^x + se^{-x}}dx$, write the numerator as A·(denominator) + B·(derivative of denominator); the integral is Ax + B ln|denominator|.\nSolution:\n1. 2eˣ + 3e⁻ˣ = A(4eˣ + 7e⁻ˣ) + B(4eˣ − 7e⁻ˣ).\n2. eˣ: 4A + 4B = 2; e⁻ˣ: 7A − 7B = 3 ⇒ A + B = ½, A − B = $\\frac{3}{7}$ ⇒ A = $\\frac{13}{28}$, B = $\\frac{1}{28}$.\n3. $I = \\frac{13}{28}x + \\frac{1}{28}\\ln(4e^x + 7e^{-x}) + C = \\frac{1}{14}\\left(\\frac{13}{2}x + \\frac{1}{2}\\ln(\\dots)\\right) + C$.\n4. u = $\\frac{13}{2}$, v = $\\frac{1}{2}$ ⇒ u + v = 7.\nCheck by differentiating: d/dx[(13/28)x + (1/28)ln(4eˣ + 7e⁻ˣ)] = 13/28 + (1/28)(4eˣ − 7e⁻ˣ)/(4eˣ + 7e⁻ˣ). Combining over the common denominator gives (56eˣ + 84e⁻ˣ)/(28(4eˣ + 7e⁻ˣ)) = (2eˣ + 3e⁻ˣ)/(4eˣ + 7e⁻ˣ) ✓.\nAnswer: 7",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-27_E_MAT_B10",

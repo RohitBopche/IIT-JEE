@@ -31,6 +31,8 @@ P A 3: |-
   Why others are wrong:
   - (D) has 1 − β in the denominator (should be 1 + β).
   - (A) and (C) have no basis.
+  Check with numbers: If α = 0.98, β = 0.98/0.02 = 49; and 49/(1 + 49) = 0.98 ✓.
+  Common mistake: Writing I_E = I_C − I_B; the emitter current is the largest, the sum of the base and collector currents.
   Key takeaway: α is slightly less than 1 (e.g. 0.98), making β large (e.g. 49).
   Answer: (B)
 P A 4: |-
@@ -96,6 +98,8 @@ P A 9: |-
   Why others are wrong:
   - (B) 40 m/s divides instead of multiplying (heavier gas would be faster).
   - (C) 80 m/s uses a factor of ½; (D) 332 m/s is the speed of sound in air.
+  Physical reason: At the same temperature, all ideal gases have the same average translational KE (3/2 kT per molecule). A lighter molecule must therefore move faster.
+  Common mistake: Using the ratio 32/2 = 16 without the square root, which gives 2560 m/s.
   Key takeaway: the lighter molecule moves faster at the same temperature.
   Answer: (A)
 P A 10: |-
@@ -119,6 +123,8 @@ P A 11: |-
   Why others are wrong:
   - (B) +2G is positive; gravitational potential is always negative.
   - (A) −60G and (C) −20G use wrong distances.
+  Why the shell's potential is constant inside: The field inside a uniform shell is zero, so no work is needed to move a test mass around inside it; the potential stays at its surface value −GM/R.
+  Common mistake: Using −GM/r with r = 25 m for the shell, which gives −4G for the shell alone and −6G in total.
   Key takeaway: inside a shell, the shell's field is zero but its potential is not.
   Answer: (D)
 P A 12: |-
@@ -129,6 +135,8 @@ P A 12: |-
   Why others are wrong:
   - (A) 1 Ω and (C) 4 Ω halve or double the correct current.
   - (B) 5 Ω has no basis.
+  Unit check: 50 mV / 25 mA = 50 × 10⁻³ / 25 × 10⁻³ = 2 Ω.
+  Common mistake: Multiplying instead of dividing, I_g = 50 × 2 = 100 mA, which gives 0.5 Ω.
   Key takeaway: voltage sensitivity = current sensitivity / resistance = 1 div/mV here.
   Answer: (D)
 P A 13: |-
@@ -163,6 +171,8 @@ P A 15: |-
   Why others are wrong:
   - (B) $[FL^{-3}T^2]$ forgets that mass itself contains L⁻¹.
   - (C) and (D) have wrong powers of L or T.
+  Check with SI units: FL⁻⁴T² = (kg m s⁻²) m⁻⁴ s² = kg m⁻³, which is density ✓.
+  Common mistake: Keeping M as a fundamental quantity and writing ML⁻³; the question removes M from the base set.
   Key takeaway: change of fundamental units — first write each old base quantity in terms of the new ones.
   Answer: (A)
 P A 16: |-
@@ -184,6 +194,8 @@ P A 17: |-
   Why others are wrong:
   - (B) and (C) are 100 or 10 times too large (unit slip with calories/grams).
   - (D) is 10 times too small.
+  Why mass cancels: Both the potential energy lost (mgh) and the heat needed (msΔT) are proportional to the mass of water, so ΔT is independent of how much water falls.
+  Common mistake: Using s = 1 cal g⁻¹ °C⁻¹ = 4.2 J kg⁻¹ °C⁻¹ (forgetting the factor 1000 for kg), which gives an absurdly large ΔT.
   Key takeaway: this is the idea behind Joule's experiment — mechanical energy produces a measurable (small) temperature rise.
   Answer: (A)
 P A 18: |-
@@ -195,6 +207,8 @@ P A 18: |-
   Why others are wrong:
   - (B) 3.54 s is the total time of flight (2t).
   - (A) and (D) use wrong formulas.
+  Check: At 45°, H = u²/(4g) = 625/40 = 15.625 m, and t = u/(√2 g) = 25/14.14 ≈ 1.77 s ✓.
+  Common mistake: Using u instead of u sin θ in the height formula, which gives 31.25 m.
   Key takeaway: the time to reach the top is half the total flight time.
   Answer: (C)
 P A 19: |-
@@ -205,6 +219,8 @@ P A 19: |-
   Why others are wrong:
   - (B) 2I₀ is the average intensity (simple sum of intensities).
   - (A) I₀ and (C) 5I₀ have no basis.
+  Derivation: I = I₁ + I₂ + 2√(I₁I₂)cos φ. At maxima cos φ = 1, so I = I₀ + I₀ + 2I₀ = 4I₀.
+  Energy is conserved: the pattern averages to 2I₀, the same as two incoherent sources.
   Key takeaway: interference redistributes energy — maxima get 4I₀, minima 0, averaging 2I₀.
   Answer: (D)
 P A 20: |-
@@ -225,6 +241,8 @@ P B 1: |-
   1. Actual efficiency: $\eta = \frac{W}{Q_1} = \frac{300 - 240}{300} = 0.2$.
   2. $0.2 \le 1 - \frac{400}{T_1} \Rightarrow \frac{400}{T_1} \le 0.8 \Rightarrow T_1 \ge 500$ K.
   3. Minimum hot-reservoir temperature = 500 K.
+  Why "minimum": A real engine's efficiency cannot exceed the Carnot limit. For a given cold reservoir, a higher T₁ raises the limit, so 500 K is the lowest T₁ compatible with 20% efficiency.
+  Note: Setting Q₂/Q₁ = T₂/T₁ (240/300 = 0.8) gives the same 500 K; that equality holds only for the reversible (Carnot) limit.
   Key takeaway: equality (T₁ = 500 K) corresponds to a reversible (Carnot) engine.
   Answer: 500
 P B 2: |-
@@ -233,6 +251,8 @@ P B 2: |-
   1. $y_2 = 5(\sin3\pi t + \sqrt3\cos3\pi t) = 5\times2\left(\frac{1}{2}\sin3\pi t + \frac{\sqrt3}{2}\cos3\pi t\right) = 10\sin\left(3\pi t + \frac{\pi}{3}\right)$.
   2. Amplitude of y₂ = 10, same as y₁ (and even the same phase).
   3. Ratio = 1 : 1, so x = 1.
+  Using the compound-angle identity: sin(3πt + π/3) = sin 3πt cos(π/3) + cos 3πt sin(π/3) = ½ sin 3πt + (√3/2) cos 3πt, so 10 sin(3πt + π/3) = 5 sin 3πt + 5√3 cos 3πt ✓.
+  Common mistake: Taking the amplitude of y₂ as 5 (the outside factor) instead of 5 × √(1 + 3) = 10.
   Key takeaway: y₁ and y₂ are in fact identical motions.
   Answer: 1
 P B 3: |-
@@ -240,6 +260,8 @@ P B 3: |-
   Solution:
   1. n = 6: $\frac{6\times5}{2} = 15$ possible transitions.
   2. X = 15.
+  Listing them: From n = 6 there are lines to 5, 4, 3, 2 and 1 (5 lines); from 5 to lower levels 4 lines; then 3, 2 and 1. Total 5 + 4 + 3 + 2 + 1 = 15.
+  Common mistake: Counting only the n − 1 = 5 lines of a single cascade.
   Key takeaway: a single atom can emit at most n − 1 photons, but a sample of many atoms shows all $\frac{n(n - 1)}{2}$ lines.
   Answer: 15
 P B 4: |-
@@ -248,6 +270,8 @@ P B 4: |-
   1. $I_{max} = \frac{2\text{ W}}{10\text{ V}} = 0.2$ A.
   2. At the maximum input (14 V): $R_s = \frac{14 - 10}{0.2} = 20\ \Omega$.
   3. At 6 V (below V_Z), the Zener would not conduct — regulation fails at that end, but safety is set by the 14 V case.
+  Why no load is the worst case: With no load, all the current through R_s goes into the Zener. Any load current would reduce the Zener current, so the no-load case sets the safety limit.
+  Common mistake: Using the lower input voltage (6 V), which is below the breakdown voltage.
   Key takeaway: size R_s for the worst-case (highest) input voltage.
   Answer: 20
 P B 5: |-
@@ -264,6 +288,8 @@ P B 6: |-
   1. Required bob speed: $\sqrt{5\times10\times0.5} = 5$ m/s.
   2. Momentum: 0.01v = 1 × 5 + 0.01 × (−100) (the bullet recoils backward).
   3. 0.01v = 5 − 1 = 4 ⇒ v = 400 m/s.
+  Why √(5gL): At the top of the circle the tension can be zero at minimum, so mg = mv_top²/L, which gives v_top² = gL. Energy conservation adds 2g(2L) = 4gL, so v_bottom² = 5gL.
+  Common mistake: Taking the recoil velocity as +100 m/s (same direction), which gives v = 600 m/s.
   Key takeaway: a recoiling bullet transfers more momentum than one that stops or sticks.
   Answer: 400
 P B 7: |-
@@ -272,6 +298,8 @@ P B 7: |-
   1. Old (R–L): $Z = \sqrt{R^2 + 9R^2} = \sqrt{10}R$ ⇒ cos φ₁ = $\frac{1}{\sqrt{10}}$.
   2. New (R–L–C): $X_L - X_C = R$ ⇒ $Z = \sqrt2R$ ⇒ cos φ₂ = $\frac{1}{\sqrt2}$.
   3. Ratio $\frac{\cos\phi_2}{\cos\phi_1} = \frac{\sqrt{10}}{\sqrt2} = \sqrt5$ ⇒ √5 : 1, so x = 1.
+  Phase angles: Old circuit tan φ = 3 (φ ≈ 71.6°); new circuit tan φ = 1 (φ = 45°). The smaller phase angle means a larger power factor.
+  Common mistake: Taking the ratio old/new (1 : √5) instead of new/old.
   Key takeaway: adding capacitance partly cancels inductive reactance and improves the power factor.
   Answer: 1
 P B 8: |-
@@ -287,6 +315,8 @@ P B 9: |-
   Solution:
   1. $B = \frac{E}{c} = \frac{6}{3\times10^8} = 2\times10^{-8}$ T.
   2. x = 2. (The frequency, 30 MHz, is not needed.)
+  Direction: B is perpendicular to both E and the direction of propagation, and E × B points along the propagation.
+  Common mistake: Multiplying by c instead of dividing (B = E/c, not Ec), or trying to use the frequency.
   Key takeaway: this relation holds at every point and instant, not just for amplitudes.
   Answer: 2
 P B 10: |-
@@ -294,5 +324,7 @@ P B 10: |-
   Solution:
   1. λ = $\frac{v}{f} = \frac{340}{250} = 1.36$ m.
   2. $L = \frac{\lambda}{4} = 0.34$ m = 34 cm.
+  End correction: In practice the effective length is L + 0.3d (d = pipe diameter), so the real pipe is slightly shorter; the question ignores this.
+  Common mistake: Using the open-pipe relation L = λ/2 = 68 cm.
   Key takeaway: next resonant lengths are $\frac{3\lambda}{4}$ = 102 cm, $\frac{5\lambda}{4}$ = 170 cm, … (end correction ignored).
   Answer: 34
