@@ -1,195 +1,383 @@
 C A 1: |-
-  Concept: Diazotisation, then azo coupling at the para position of an activated arene.
+  Concept: Primary aromatic amines are diazotised by nitrous acid at 0–5 °C. The diazonium ion is a weak electrophile that couples with strongly activated aromatic rings (phenols, aromatic amines) in an electrophilic substitution called azo coupling.
   Solution:
-  1. Aniline + NaNO₂/HCl (0–5 °C) gives X = benzenediazonium chloride.
-  2. X couples with N,N-dimethylaniline at the para position (less hindered, strongly activated).
-  3. Y = 4-(dimethylamino)azobenzene (butter yellow).
+  1. Diazotisation: $C_6H_5NH_2 + NaNO_2 + 2HCl \xrightarrow{273-278\text{ K}} C_6H_5N_2^+Cl^- + NaCl + 2H_2O$.
+     X = benzenediazonium chloride.
+  2. Coupling: the N(CH₃)₂ group of N,N-dimethylaniline strongly activates the ring (ortho/para director). The bulky N(CH₃)₂ group and the bulky diazonium electrophile make the ortho positions crowded, so attack occurs at the para position.
+     $C_6H_5N_2^+ + C_6H_5N(CH_3)_2 \to C_6H_5{-}N{=}N{-}C_6H_4{-}N(CH_3)_2\ (p) + H^+$.
+  3. Y = 4-(dimethylamino)azobenzene (p-dimethylaminoazobenzene, "butter yellow", a yellow azo dye).
+  4. The coupling is done in weakly acidic solution: if too acidic, the amine is protonated and deactivated; if too basic, the diazonium ion is destroyed.
+  Why others are wrong:
+  - (A) Ortho coupling is disfavoured when the para position is free.
+  - (C) and (D) Chlorobenzene is not formed by NaNO₂/HCl. It would need the Sandmeyer reaction (CuCl), and chlorobenzene cannot couple to form an azo dye.
   Answer: (B)
 C A 2: |-
-  Concept: In an isoelectronic series, radius decreases as nuclear charge increases.
+  Concept: In an isoelectronic series (ions with the same number of electrons), the radius decreases as the nuclear charge increases, because the same electron cloud is pulled in more strongly.
   Solution:
-  1. Na⁺, Mg²⁺ and Al³⁺ all have 10 electrons; Z increases, so the radius decreases.
-  2. Mg²⁺ = 0.72 Å and Al³⁺ = 0.54 Å.
+  1. Na⁺ (Z = 11), Mg²⁺ (Z = 12) and Al³⁺ (Z = 13) all have 10 electrons, the neon configuration 1s²2s²2p⁶.
+  2. As Z increases from 11 to 13, the effective nuclear charge on the same 10 electrons increases, so the ions become smaller.
+  3. Order: Na⁺ (1.02 Å) > Mg²⁺ > Al³⁺.
+  4. Standard values (six-coordinate): Mg²⁺ = 0.72 Å and Al³⁺ = 0.54 Å.
+  5. Only option (B) gives two values that both decrease below 1.02 Å in the correct order.
+  The complete isoelectronic series: N³⁻ (1.71 Å) > O²⁻ (1.40) > F⁻ (1.33) > Na⁺ (1.02) > Mg²⁺ (0.72) > Al³⁺ (0.54). The anions are larger because they have fewer protons than electrons.
+  Why others are wrong:
+  - (A) makes Mg²⁺ larger than Na⁺.
+  - (C) makes Al³⁺ larger than Mg²⁺.
+  - (D) makes Al³⁺ larger than Mg²⁺.
   Answer: (B)
 C A 3: |-
-  Concept: A Grignard reagent adds to a ketone to give a 3° alcohol, which reacts instantly with Lucas reagent.
+  Concept: A Grignard reagent adds to a ketone to give a tertiary alcohol after hydrolysis. The Lucas test (conc. HCl + anhydrous ZnCl₂) distinguishes alcohols: tertiary alcohols react instantly (immediate turbidity) because they form stable tertiary carbocations.
   Solution:
-  1. C₈H₈O = acetophenone, C₆H₅COCH₃.
-  2. + C₂H₅MgBr, then hydrolysis, gives A = 2-phenylbutan-2-ol (3°).
-  3. Lucas reagent gives B = 2-chloro-2-phenylbutane, C₁₀H₁₃Cl.
+  1. C₈H₈O: the degree of unsaturation is $\frac{2(8) + 2 - 8}{2} = 5$, consistent with a benzene ring (4) plus C=O (1). With a ketone, this is acetophenone, C₆H₅COCH₃.
+  2. Grignard addition: $C_6H_5COCH_3 + C_2H_5MgBr \to C_6H_5C(OMgBr)(CH_3)C_2H_5 \xrightarrow{H_3O^+} C_6H_5C(OH)(CH_3)C_2H_5$.
+     A = 2-phenylbutan-2-ol, a tertiary (and benzylic) alcohol, C₁₀H₁₄O.
+  3. Lucas reagent: the tertiary benzylic OH is replaced instantly by Cl via a stable carbocation (SN1):
+     B = C₆H₅C(Cl)(CH₃)CH₂CH₃, 2-chloro-2-phenylbutane, C₁₀H₁₃Cl ✓.
+  Why others are wrong:
+  - (A), (B) and (D) put Cl on a primary or secondary carbon away from the ring. These would come from primary or secondary alcohols, which react slowly (or not at all at room temperature) with the Lucas reagent. They also do not match the Grignard product of acetophenone.
+  Note: if C₈H₈O were phenylacetaldehyde (C₆H₅CH₂CHO), the Grignard product would be a secondary alcohol, which does not react instantly. The instant reaction confirms the ketone.
   Answer: (C)
 C A 4: |-
-  Concept: Griess–Ilosvay test.
+  Concept: The Griess–Ilosvay test is a sensitive test for the nitrite ion. In acid, nitrite diazotises sulphanilic acid, and the diazonium salt couples with 1-naphthylamine to give a red azo dye.
   Solution:
-  1. Sulphanilic acid + 1-naphthylamine in acetic acid forms a red azo dye with nitrite ion.
-  2. It detects NO₂⁻.
+  1. Step 1 (diazotisation): $NO_2^- + H^+ \to HNO_2$. HNO₂ reacts with sulphanilic acid (4-aminobenzenesulphonic acid) to form its diazonium salt.
+  2. Step 2 (coupling): the diazonium ion couples with 1-naphthylamine to give a red-coloured azo dye.
+  3. The appearance of a red colour indicates nitrite ion, NO₂⁻.
+  4. This is how nitrite is distinguished from nitrate: nitrate does not diazotise amines. To test for nitrate with this reagent, it must first be reduced to nitrite (e.g. with zinc dust).
+  Why others are wrong:
+  - (A) N₂O is an unreactive gas; it does not diazotise amines.
+  - (B) Nitrate does not react directly. It is detected by the brown ring test (FeSO₄ + conc. H₂SO₄).
+  - (C) NO is a gas; it is the species that forms the brown ring complex [Fe(H₂O)₅NO]²⁺ in the brown ring test, but it is not what this reagent detects.
   Answer: (D)
 C A 5: |-
-  Concept: Sucrose is non-reducing because its glycosidic link joins both anomeric carbons.
+  Concept: A sugar is reducing if it has a free hemiacetal or hemiketal group (a free anomeric carbon), which opens to a free aldehyde or α-hydroxy ketone that can reduce Tollens' or Fehling's reagent. A sugar is non-reducing if all its anomeric carbons are tied up in glycosidic bonds.
   Solution:
-  1. Sucrose hydrolyses to glucose + fructose, both reducing sugars.
-  2. Glucose, fructose and galactose are monosaccharides and are themselves reducing.
+  1. Sucrose is a disaccharide of α-D-glucose and β-D-fructose. They are joined by a glycosidic bond between C1 of glucose and C2 of fructose, i.e. between the two anomeric carbons.
+  2. Since neither anomeric carbon is free, sucrose cannot open to a free carbonyl form. It is non-reducing.
+  3. Hydrolysis (by acid or the enzyme invertase): sucrose + H₂O → glucose + fructose. Both monosaccharides have free anomeric carbons, so both are reducing sugars.
+  4. So sugar A is sucrose.
+  Why others are wrong:
+  - (A) Fructose, (B) galactose and (C) glucose are monosaccharides. They do not hydrolyse further, and they are all reducing sugars.
+  Comparison: maltose (glucose + glucose, α-1,4) and lactose (galactose + glucose, β-1,4) are reducing disaccharides, because each has one free anomeric carbon.
+  The hydrolysis of sucrose also inverts the sign of optical rotation (from +66.5° to about −20°), which is why the product mixture is called invert sugar.
   Answer: (D)
 C A 6: |-
-  Concept: Drug classes and examples.
+  Concept: Classes of drugs and chemicals with typical examples (NCERT).
   Solution:
-  1. Antacid: cimetidine (ii).
-  2. Artificial sweetener: alitame (iv).
-  3. Antifertility: novestrol (i).
-  4. Tranquilliser: valium (iii).
+  1. (a) Antacid: cimetidine (Tagamet) → (ii). It blocks the H₂ receptors that stimulate gastric acid secretion. (Earlier antacids were simple bases such as Mg(OH)₂ and NaHCO₃.)
+  2. (b) Artificial sweetener: alitame → (iv). Alitame is about 2000 times sweeter than sucrose. Other examples: saccharin, aspartame and sucralose.
+  3. (c) Antifertility drug: novestrol → (i). Novestrol (ethynylestradiol) is a synthetic oestrogen used in birth-control pills. Norethindrone is a synthetic progestogen.
+  4. (d) Tranquilliser: valium (diazepam) → (iii). It reduces anxiety and tension. Other tranquillisers: equanil (meprobamate), barbiturates (veronal, luminal, seconal).
+  5. Matching: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii).
+  Why others are wrong:
+  - (B) and (C) call alitame (a sweetener) an antacid.
+  - (D) swaps the antifertility drug and the tranquilliser.
   Answer: (A)
 C A 7: |-
-  Concept: Nitrile hydrolysis proceeds through the amide.
+  Concept: Nitriles are hydrolysed in two stages: first to an amide (partial hydrolysis), then to a carboxylic acid (complete hydrolysis, with more vigorous heating).
   Solution:
-  1. $RC\equiv N \xrightarrow{H_2O/H^+} RCONH_2 \xrightarrow{H_2O/H^+,\Delta} RCOOH$.
-  2. A = cyclohexanecarboxamide, C₆H₁₁CONH₂.
+  1. Stage 1: $R{-}C{\equiv}N + H_2O \xrightarrow{H^+} R{-}CONH_2$ (via the tautomer R–C(OH)=NH, an imidic acid).
+  2. Stage 2: $R{-}CONH_2 + H_2O \xrightarrow{H^+,\ \Delta} R{-}COOH + NH_4^+$.
+  3. Here R = cyclohexyl (C₆H₁₁). So A = cyclohexanecarboxamide, C₆H₁₁CONH₂, and the final product is cyclohexanecarboxylic acid ✓.
+  Why others are wrong:
+  - (A) C₆H₁₁CH₂NH₂ (cyclohexylmethanamine) is the reduction product of the nitrile (with LiAlH₄ or H₂/Ni), not a hydrolysis product. It cannot be hydrolysed to the acid.
+  - (B) A nitromethyl compound is unrelated to nitrile chemistry.
+  - (D) The oxime C₆H₁₁CH=N–OH would come from the aldehyde and hydroxylamine. It is not formed by hydrolysis of a nitrile.
+  Note: the amide stage can be isolated under mild conditions (e.g. with H₂O₂/OH⁻ or controlled acid hydrolysis). Under vigorous conditions, the reaction goes straight to the acid.
   Answer: (C)
 C A 8: |-
-  Concept: Metals in biomolecules and catalysts.
+  Concept: Metal ions in biologically important coordination compounds and catalysts.
   Solution:
-  1. Chlorophyll: Mg (iv).
-  2. Vitamin B₁₂: Co (iii).
-  3. Anticancer cisplatin: Pt (ii).
-  4. Grubbs catalyst: Ru (i).
+  1. (a) Chlorophyll: a green pigment in plants, a porphyrin complex of magnesium (Mg²⁺) → (iv). It absorbs light for photosynthesis.
+  2. (b) Vitamin B₁₂ (cyanocobalamin): contains cobalt (Co³⁺) in a corrin ring → (iii). A deficiency causes pernicious anaemia.
+  3. (c) Anticancer drug: cisplatin, cis-[Pt(NH₃)₂Cl₂], contains platinum → (ii). It binds to DNA and blocks cell division.
+  4. (d) Grubbs catalyst: a ruthenium carbene complex used in olefin metathesis → (i). (The 2005 Nobel Prize in Chemistry was awarded for this work.)
+  5. Matching: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i).
+  Other examples to remember:
+  - Haemoglobin: Fe (porphyrin).
+  - Wilkinson's catalyst, [RhCl(PPh₃)₃]: Rh (hydrogenation).
+  - Ziegler–Natta catalyst: TiCl₄ + Al(C₂H₅)₃ (polymerisation).
+  - EDTA is used to treat lead poisoning (it chelates Pb²⁺).
+  Why others are wrong:
+  - (A) links chlorophyll to cobalt.
+  - (C) links the anticancer drug to ruthenium and Grubbs catalyst to platinum.
+  - (D) links vitamin B₁₂ to platinum.
   Answer: (B)
 C A 9: |-
-  Concept: Reagents and materials.
+  Concept: Uses and preparations of some chemicals in hydrocarbon chemistry.
   Solution:
-  1. Alcoholic KOH: β-elimination (dehydrohalogenation) (iii).
-  2. Pd/BaSO₄: Lindlar's/Rosenmund catalyst (iv).
-  3. BHC is made by addition of Cl₂ to benzene (ii).
-  4. Polyacetylene: electrodes in batteries (i).
+  1. (a) Alcoholic KOH: a strong base in a less polar solvent. It promotes β-elimination (dehydrohalogenation) of alkyl halides to alkenes, e.g. $CH_3CH_2Br + KOH(alc) \to CH_2{=}CH_2 + KBr + H_2O$ → (iii). (Aqueous KOH favours substitution to give an alcohol.)
+  2. (b) Pd/BaSO₄: palladium on barium sulphate, a partially poisoned catalyst. It is a form of Lindlar's catalyst (used for partial hydrogenation of alkynes to cis-alkenes) and is also used in the Rosenmund reduction → (iv).
+  3. (c) BHC (benzene hexachloride, C₆H₆Cl₆, also called gammexane or lindane): made by adding Cl₂ to benzene in UV light. Three molecules of Cl₂ add across the ring → (ii).
+  4. (d) Polyacetylene: when doped (e.g. with iodine), it becomes an electrically conducting polymer. It is used as electrodes in batteries → (i).
+  5. Matching: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i).
+  Why others are wrong:
+  - (A) and (D) say alcoholic KOH is "obtained by an addition reaction".
+  - (C) says Pd/BaSO₄ is used for battery electrodes.
   Answer: (B)
 C A 10: |-
-  Concept: Methane as a pollutant.
+  Concept: Methane as a pollutant: its role in global warming and in smog formation.
   Solution:
-  1. (A) True: CH₄ is a greenhouse gas and, as a hydrocarbon, contributes to photochemical smog.
-  2. (B) True: it is produced anaerobically in paddy fields.
-  3. (C) True: it is a far more potent greenhouse gas than CO₂ per molecule.
-  4. (D) False: reducing smog is smoke + fog + SO₂.
+  1. (A) True: methane is a greenhouse gas (it absorbs IR radiation). As a hydrocarbon, it also takes part in the reactions that form photochemical smog (with NOₓ and sunlight), although less reactively than other hydrocarbons.
+  2. (B) True: methane is generated in paddy fields by anaerobic decomposition of organic matter by bacteria in the waterlogged soil. Other sources: cattle (enteric fermentation), landfills, wetlands and natural gas leaks.
+  3. (C) True: molecule for molecule, methane is a much stronger greenhouse gas than CO₂. Its global warming potential is about 25–30 times that of CO₂ over 100 years (more over shorter periods).
+  4. (D) False: reducing (classical, London) smog is a mixture of smoke, fog and SO₂. Methane is not a characteristic component.
+  5. So the true statements are (A), (B) and (C) only.
+  Why others are wrong:
+  - (B) (A and B only) misses the true statement (C).
+  - (C) and (D) include (D), which is false.
   Answer: (A)
 C A 11: |-
-  Concept: Uses of calcium compounds.
+  Concept: Common compounds of calcium and their uses.
   Solution:
-  1. Ca(OCl)₂: bleach (iii).
-  2. CaSO₄·½H₂O: plaster of Paris (iv).
-  3. CaO: cement manufacture (ii).
-  4. CaCO₃: antacid (i).
+  1. (a) Ca(OCl)₂: calcium hypochlorite, the active ingredient of bleaching powder. It releases chlorine for bleaching and disinfection → (iii).
+  2. (b) CaSO₄·½H₂O: calcium sulphate hemihydrate, plaster of Paris. When mixed with water, it sets into a hard mass of gypsum (CaSO₄·2H₂O). Used in plaster casts and moulds → (iv).
+  3. (c) CaO: quicklime, a major component in the manufacture of cement. Cement is made by heating limestone (giving CaO) with clay; the main compounds are calcium silicates and aluminates → (ii).
+  4. (d) CaCO₃: calcium carbonate. It neutralises stomach acid ($CaCO_3 + 2HCl \to CaCl_2 + H_2O + CO_2$), so it is used as an antacid → (i). It is also a component of toothpaste, a filler and a calcium supplement.
+  5. Matching: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i).
+  Why others are wrong:
+  - (A) calls bleaching powder an antacid.
+  - (B) calls plaster of Paris cement and CaO plaster of Paris.
+  - (D) calls CaO an antacid and CaCO₃ plaster of Paris.
+  Note: heating gypsum to 393 K gives plaster of Paris. Above 473 K, it becomes anhydrous "dead burnt plaster", which no longer sets with water.
   Answer: (C)
 C A 12: |-
-  Concept: Isomers of C₃H₆O.
+  Concept: Structural isomers of C₃H₆O. The degree of unsaturation is 1, so each isomer has one C=O, one C=C, or one ring.
   Solution:
-  1. Propanal (CH₃CH₂CHO) and propanone (CH₃COCH₃) are functional group isomers; other isomers include allyl alcohol and methyl vinyl ether.
-  2. Positional isomerism and metamerism are not possible for the carbonyl isomers here.
+  1. Isomers include:
+     - Propanal, CH₃CH₂CHO (aldehyde).
+     - Propanone (acetone), CH₃COCH₃ (ketone).
+     - Prop-2-en-1-ol (allyl alcohol), CH₂=CH–CH₂OH (unsaturated alcohol).
+     - Methoxyethene (methyl vinyl ether), CH₂=CH–OCH₃ (unsaturated ether).
+     - Cyclic forms: cyclopropanol, oxetane, methyloxirane.
+  2. Propanal and propanone have the same formula but different functional groups (aldehyde vs ketone): functional group isomerism. This is the key type for C₃H₆O.
+  3. Positional isomerism: for the carbonyl compounds, the C=O at C1 gives an aldehyde and at C2 a ketone, a change of functional group rather than of position. So positional isomerism (in the usual sense) is not the characteristic type here.
+  4. Metamerism requires different alkyl groups on either side of a polyvalent functional group (e.g. an ether or a ketone). For C₃H₆O, there is only one possible saturated ketone (acetone), so metamerism is not possible.
+  5. So the correct answer is functional group isomerism.
+  Why others are wrong:
+  - (A), (B) and (C) claim positional isomerism or metamerism, which the official key rejects for this formula.
   Answer: (D)
 C A 13: |-
-  Concept: Geometrical isomers: trans means opposite; mer means the three identical ligands lie in one plane (a meridian).
+  Concept: Geometrical isomerism in coordination compounds.
+  - In square planar MA₂B₂ complexes, cis means the identical ligands are adjacent (90°) and trans means opposite (180°).
+  - In octahedral MA₃B₃ complexes, fac (facial) means the three identical ligands occupy one face of the octahedron (all mutually cis). mer (meridional) means they lie on a meridian, in one plane containing the metal, with two of them trans to each other.
   Solution:
-  1. trans-[NiBr₂(PPh₃)₂] is square planar with the two Br atoms opposite each other.
-  2. mer-[Co(NH₃)₃(NO₂)₃] has the three NO₂ groups in one plane, two of them trans to each other.
+  1. trans-[NiBr₂(PPh₃)₂]: Ni(II) with two bulky phosphines forms a square planar complex. In the trans isomer, the two Br atoms are opposite each other (180°), as are the two PPh₃ ligands. (Such complexes are often square planar in the trans form; the corresponding tetrahedral forms have no cis/trans isomers.)
+  2. mer-[Co(NH₃)₃(NO₂)₃]: octahedral Co(III). The three NO₂ groups lie in one plane that passes through Co, forming a T arrangement: two NO₂ are trans to each other, and the third is cis to both. The three NH₃ groups have the same meridional arrangement.
+  3. The option that shows trans square planar Ni and meridional Co is (D).
+  Why others are wrong:
+  - (A) shows the facial isomer for Co (all three NO₂ on one face, mutually at 90°).
+  - (B) shows cis-Ni and fac-Co.
+  - (C) shows cis-Ni.
+  Note: [Co(NH₃)₃(NO₂)₃] is a neutral complex with fac and mer isomers, neither of which is chiral.
   Answer: (D)
 C A 14: |-
-  Concept: Angular nodes $= l$; radial nodes $= n - l - 1$.
+  Concept: For an orbital with quantum numbers n and l: the number of angular nodes is l, the number of radial nodes is n − l − 1, and the total number of nodes is n − 1.
   Solution:
-  1. No angular nodes means $l = 0$ (s orbital).
-  2. $n - 1 = 2 \Rightarrow n = 3$, so the orbital is 3s.
+  1. No angular nodes means l = 0, an s orbital.
+  2. Two radial nodes: n − 0 − 1 = 2, so n = 3.
+  3. The orbital is 3s.
+  Check the other options:
+  - 2s: l = 0, radial nodes = 2 − 0 − 1 = 1. Only one radial node.
+  - 3p: l = 1, one angular node (a nodal plane), radial nodes = 3 − 1 − 1 = 1.
+  - 2p: l = 1, one angular node, radial nodes = 0.
+  Physical picture: radial nodes are spherical shells where the probability density is zero. The 3s orbital has two such spheres, giving three regions of electron density (an inner core, a middle shell and an outer shell). Angular nodes are planes or cones; s orbitals have none, since they are spherically symmetric.
   Answer: (B)
 C A 15: |-
-  Concept: Side-chain oxidation of alkylbenzenes by KMnO₄.
+  Concept: Alkyl side chains on a benzene ring are oxidised to –COOH by hot alkaline KMnO₄, followed by acidification, provided the benzylic carbon has a hydrogen. Aryl ethers (–OCH₃) are stable to these conditions.
   Solution:
-  1. The Ar–CH₃ group is oxidised to COOH; the OCH₃ ether is unaffected.
-  2. X = 4-methoxybenzoic acid.
+  1. 4-Methylanisole: CH₃O–C₆H₄–CH₃ (para).
+  2. Alkaline KMnO₄ oxidises the benzylic CH₃ all the way to a carboxylate: Ar–CH₃ → Ar–COO⁻K⁺.
+  3. Acidification (H⁺) gives the free acid: Ar–COOH.
+  4. The methoxy group is unaffected (the aryl–O and O–CH₃ bonds are not attacked by permanganate).
+  5. X = 4-methoxybenzoic acid (anisic acid), CH₃O–C₆H₄–COOH.
+  Why others are wrong:
+  - (A) 4-Methoxybenzaldehyde is an intermediate that is oxidised further under these conditions. Stopping at the aldehyde needs special reagents (e.g. CrO₂Cl₂, the Étard reaction, or CrO₃ with acetic anhydride).
+  - (B) 4-Methoxybenzyl alcohol is also an intermediate that is oxidised further.
+  - (D) 4-Methylphenol would require cleavage of the ether, which KMnO₄ does not do (that needs HI or BBr₃).
   Answer: (C)
 C A 16: |-
-  Concept: Industrial catalysts.
+  Concept: Catalysts used in important industrial processes.
   Solution:
-  1. Deacon process: CuCl₂ (ii).
-  2. Contact process: V₂O₅ (iv).
-  3. Cracking: zeolite ZSM-5 (i).
-  4. Hydrogenation of oils: finely divided Ni (iii).
+  1. (a) Deacon's process: oxidation of HCl to Cl₂ by air, $4HCl + O_2 \xrightarrow{CuCl_2} 2Cl_2 + 2H_2O$, at about 723 K. Catalyst: CuCl₂ → (ii).
+  2. (b) Contact process: oxidation of SO₂ to SO₃, $2SO_2 + O_2 \rightleftharpoons 2SO_3$, used to make H₂SO₄. Catalyst: V₂O₅ (earlier platinised asbestos) → (iv).
+  3. (c) Cracking of hydrocarbons: breaking large hydrocarbons into smaller ones (e.g. for petrol). Catalyst: zeolites such as ZSM-5 → (i). ZSM-5 is also used to convert alcohols directly into petrol (shape-selective catalysis).
+  4. (d) Hydrogenation of vegetable oils: adding H₂ to C=C bonds to make vanaspati ghee (hardened fat). Catalyst: finely divided nickel → (iii).
+  5. Matching: (a)-(ii), (b)-(iv), (c)-(i), (d)-(iii).
+  Other catalysts to remember:
+  - Haber process: Fe with Mo as promoter.
+  - Ostwald process: Pt/Rh gauze.
+  - Ziegler–Natta polymerisation: TiCl₄ + Al(C₂H₅)₃.
+  Why others are wrong: (B), (C) and (D) each assign at least two catalysts to the wrong processes (e.g. V₂O₅ to Deacon).
   Answer: (A)
 C A 17: |-
-  Concept: Removal of temporary hardness by boiling.
+  Concept: Temporary hardness is caused by the hydrogencarbonates of calcium and magnesium. It is removed by boiling, which decomposes them into insoluble compounds.
   Solution:
-  1. On boiling, $Mg(HCO_3)_2 \to Mg(OH)_2\downarrow + 2CO_2$, not MgCO₃, because Mg(OH)₂ is less soluble. A is false.
-  2. The official key takes R as true and marks (D).
-  Note: ALLEN points out that $K_{sp}$ of Mg(OH)₂ is actually smaller than that of MgCO₃, so R is also false and the question should be a Bonus.
+  1. Calcium: $Ca(HCO_3)_2 \xrightarrow{\Delta} CaCO_3\downarrow + H_2O + CO_2$.
+  2. Magnesium: $Mg(HCO_3)_2 \xrightarrow{\Delta} Mg(OH)_2\downarrow + 2CO_2$. Magnesium precipitates as the hydroxide, not the carbonate, because Mg(OH)₂ is less soluble than MgCO₃ (and MgCO₃ hydrolyses in hot water).
+  3. So Assertion A (that Mg(HCO₃)₂ is converted to MgCO₃) is false.
+  4. Reason R states that the solubility product of Mg(OH)₂ is greater than that of MgCO₃. The official key treats R as true and marks (D).
+  5. In fact, K_sp of Mg(OH)₂ (about 1.8 × 10⁻¹¹) is much smaller than that of MgCO₃ (about 3.5 × 10⁻⁸ to 10⁻⁵). This lower solubility is exactly why Mg(OH)₂ precipitates. So R, as worded, is also false.
+  Note: ALLEN points out that K_sp of Mg(OH)₂ is actually smaller than that of MgCO₃, so R is also false and the question should be a Bonus. The official answer (D) is kept here.
   Answer: (D)
 C A 18: |-
-  Concept: PCl₃ condenses with H₃PO₃ to give pyrophosphorous acid.
+  Concept: In phosphorus oxoacids, only the hydrogens attached to oxygen (P–OH) are acidic (ionisable). Hydrogens bonded directly to phosphorus (P–H) are not ionisable.
   Solution:
-  1. $PCl_3 + 5H_3PO_3 \to 3H_4P_2O_5 + 3HCl$.
-  2. H₄P₂O₅ has two P–OH (ionisable) and two P–H (non-ionisable) hydrogens, so 2 ionisable H.
+  1. Phosphonic acid (phosphorous acid), H₃PO₃, has the structure HP(O)(OH)₂: one P–H and two P–OH groups.
+  2. PCl₃ reacts with H₃PO₃ to form pyrophosphorous acid (diphosphonic acid):
+     $PCl_3 + 5H_3PO_3 \to 3H_4P_2O_5 + 3HCl$.
+  3. Structure of H₄P₂O₅: two P atoms joined by a P–O–P bridge. Each P carries one H (P–H), one OH (P–OH) and one =O. So the formula is (HO)(H)P(O)–O–P(O)(H)(OH).
+  4. Ionisable hydrogens: the two P–OH groups, so 2.
+  5. The two P–H hydrogens are not ionisable.
+  Comparison of basicity:
+  - H₃PO₂ (hypophosphorous): 1 ionisable H.
+  - H₃PO₃ (phosphorous): 2.
+  - H₃PO₄ (orthophosphoric): 3.
+  - H₄P₂O₇ (pyrophosphoric): 4.
+  - H₄P₂O₅ (pyrophosphorous): 2.
+  Why others are wrong:
+  - (A) 3 and (D) 1 miscount the P–OH groups.
+  - (B) 0 would mean no P–OH groups, which is not the case.
   Answer: (C)
 C A 19: |-
-  Concept: In hcp there are 2 tetrahedral voids per atom.
+  Concept: In a close-packed structure (hcp or ccp) of N atoms, there are N octahedral voids and 2N tetrahedral voids. The formula comes from the ratio of the numbers of each kind of atom.
   Solution:
-  1. For N atoms of A, M occupies $\frac{2}{3}\times2N = \frac{4N}{3}$ voids.
-  2. M : A = 4 : 3, so the formula is M₄A₃.
+  1. Element A forms the hcp lattice: N atoms of A.
+  2. Tetrahedral voids: 2N.
+  3. Element M occupies ⅔ of them: $\frac{2}{3}\times2N = \frac{4N}{3}$ atoms of M.
+  4. Ratio M : A = $\frac{4N}{3} : N$ = 4 : 3.
+  5. Formula: M₄A₃.
+  Check with a unit cell: an hcp unit cell has 6 atoms of A and 12 tetrahedral voids. M fills ⅔ × 12 = 8 of them. So M : A = 8 : 6 = 4 : 3 ✓.
+  Related examples:
+  - If M filled ⅔ of the octahedral voids instead, the ratio would be ⅔ : 1 = 2 : 3, giving M₂A₃ (the corundum structure, Al₂O₃).
+  - If M filled all tetrahedral voids, M₂A (the antifluorite structure, e.g. Na₂O).
+  Why others are wrong:
+  - (A) M₂A₃ is the octahedral-void case.
+  - (C) M₄A and (D) MA₃ have no basis in the void counts.
   Answer: (B)
 C A 20: |-
-  Concept: Hall–Héroult electrolysis.
+  Concept: In the Hall–Héroult process, aluminium is extracted by electrolysis of alumina (Al₂O₃). Pure alumina melts at about 2323 K, which is impractically high, and it is a poor conductor when molten.
   Solution:
-  1. Cryolite (Na₃AlF₆) lowers the melting point of alumina (from ~2323 K to ~1140 K) and increases conductivity.
+  1. Alumina is dissolved in molten cryolite, Na₃AlF₆ (with some CaF₂).
+  2. This lowers the melting point of the mixture to about 1140–1270 K and increases the electrical conductivity.
+  3. Electrolysis: at the steel cathode (lined with carbon), Al³⁺ + 3e⁻ → Al. At the carbon anodes, oxygen is released and burns the anodes to CO and CO₂, so the anodes must be replaced regularly.
+  4. So the chemical added to reduce the melting point is cryolite.
+  Why others are wrong:
+  - (B) Bauxite is the ore (Al₂O₃·xH₂O), which is purified to alumina by the Bayer process; it is not an additive.
+  - (C) Calamine is a zinc ore (ZnCO₃).
+  - (D) Kaolinite is a clay mineral (an aluminium silicate), not used in electrolysis.
+  Note: fluorspar (CaF₂) is also added to further lower the melting point and improve fluidity. The overall process is energy-intensive, which is why aluminium recycling saves about 95% of the energy.
   Answer: (A)
 C B 1: |-
-  Concept: MO bond orders for second-period diatomics.
+  Concept: In molecular orbital theory, bond order = $\frac{N_b - N_a}{2}$. For second-period diatomic molecules, the bond order changes predictably with the total number of electrons.
   Solution:
-  1. A bond order of 2.5 (as in NO or CN⁻-like configurations) for a neutral heteronuclear second-row molecule gives NO.
-  2. NO has $7 + 8 = 15$ electrons.
+  1. Bond orders by total electron count (for species like N₂, O₂ and their neighbours):
+     - 14 electrons (N₂, CO, CN⁻, NO⁺): bond order 3.
+     - 15 electrons (NO, N₂⁻, O₂⁺): one electron in an antibonding π* orbital, bond order 2.5.
+     - 16 electrons (O₂, NO⁻): bond order 2.
+  2. So a bond order of 2.5 corresponds to 15 electrons (the extra electron over 14 goes into π*).
+  3. For a heteronuclear AX molecule of second-row elements with 15 electrons: NO (N has 7 and O has 8).
+  4. The total number of electrons in AX is 15.
+  Note: the question as printed gives the bond order as "25", which is a typo for 2.5.
+  Check with NO: configuration $\sigma1s^2\sigma^*1s^2\sigma2s^2\sigma^*2s^2\sigma2p^2\pi2p^4\pi^*2p^1$. N_b = 10 and N_a = 5, so bond order = $\frac{10 - 5}{2} = 2.5$ ✓. The single unpaired electron makes NO paramagnetic.
   Answer: 15
 C B 2: |-
-  Concept: Henderson equation $pH = pK_a + \log\frac{[salt]}{[acid]}$.
+  Concept: For an acidic buffer (a weak acid and its salt), the Henderson–Hasselbalch equation gives $pH = pK_a + \log\frac{[\text{salt}]}{[\text{acid}]}$.
   Solution:
-  1. $5.74 = 4.74 + \log\frac{[salt]}{1.0} \Rightarrow [salt] = 10$ M.
+  1. $5.74 = 4.74 + \log\frac{[CH_3COONa]}{1.0}$.
+  2. $\log[CH_3COONa] = 1$, so [CH₃COONa] = 10 M.
+  Interpretation: to raise the pH one unit above pKa, the salt-to-acid ratio must be 10 : 1. Each extra pH unit needs another factor of 10.
+  Buffer effectiveness: a buffer works best within about pKa ± 1. At pH 5.74 (pKa + 1), this buffer is at the edge of its effective range. It resists added acid well (lots of acetate) but resists added base less well.
+  Practical note: 10 M sodium acetate is very concentrated (near the solubility limit, about 1.2 kg/L of the trihydrate at room temperature). The numbers are chosen for an easy calculation rather than practicality.
   Answer: 10
 C B 3: |-
-  Concept: Method of initial rates.
+  Concept: With the method of initial rates, rate = k[NO]ˣ[Cl₂]ʸ. Compare runs in which only one concentration changes to find each order.
   Solution:
-  1. Runs 1→2: [Cl₂] doubles and the rate roughly doubles (0.18 → 0.35), so the order in Cl₂ is 1.
-  2. Runs 2→3: [NO] doubles and the rate quadruples (0.35 → 1.40), so the order in NO is 2.
-  3. Overall order $= 3$.
+  1. Runs 1 and 2: [NO] is constant (0.10) and [Cl₂] doubles (0.10 → 0.20). The rate goes from 0.18 to 0.35, a factor of about 1.94 ≈ 2. So $2^y = 2$ and y = 1.
+  2. Runs 2 and 3: [Cl₂] is constant (0.20) and [NO] doubles (0.10 → 0.20). The rate goes from 0.35 to 1.40, a factor of 4. So $2^x = 4$ and x = 2.
+  3. Rate law: rate = k[NO]²[Cl₂].
+  4. Overall order: 2 + 1 = 3.
+  Rate constant from run 1: $k = \frac{0.18}{(0.1)^2(0.1)} = 180$ (in units of M⁻² time⁻¹). Run 3: $\frac{1.40}{0.04\times0.2} = 175$, consistent ✓.
+  Note: this third-order rate law matches the stoichiometry (2NO + Cl₂), suggesting the reaction may be elementary (or follows a mechanism with a fast pre-equilibrium). Termolecular elementary reactions are rare but known for NO with O₂ and Cl₂.
   Answer: 3
 C B 4: |-
-  Concept: $\Delta H$ = bonds broken − bonds formed.
+  Concept: Reaction enthalpy from bond enthalpies (for gases): ΔH = Σ(bond enthalpies of bonds broken) − Σ(bond enthalpies of bonds formed).
   Solution:
-  1. Broken: C–C (347) + 2 C–H (828). Formed: C=C (611) + H–H (436).
-  2. $\Delta H = 1175 - 1047 = 128$ kJ mol⁻¹.
+  1. Reaction: H₃C–CH₃ → H₂C=CH₂ + H–H.
+  2. Bonds in ethane: 1 C–C and 6 C–H. Bonds in ethene: 1 C=C and 4 C–H. Plus 1 H–H.
+  3. Net change: 2 C–H and 1 C–C are broken; 1 C=C and 1 H–H are formed. (The other 4 C–H bonds remain.)
+  4. Broken: 347 + 2(414) = 347 + 828 = 1175 kJ/mol.
+  5. Formed: 611 + 436 = 1047 kJ/mol.
+  6. ΔH = 1175 − 1047 = +128 kJ/mol.
+  7. The dehydrogenation of ethane is endothermic.
+  Check by writing all bonds: ethane (347 + 6 × 414 = 2831) − [ethene (611 + 4 × 414 = 2267) + H₂ (436)] = 2831 − 2703 = 128 ✓.
+  Industrial context: this reaction (steam cracking of ethane) is the main source of ethylene. Because it is endothermic and increases the number of moles of gas, it is favoured by high temperature (about 1100 K) and low pressure.
   Answer: 128
 C B 5: |-
-  Concept: Mass required, allowing for percentage yield.
+  Concept: When the percentage yield is less than 100%, more starting material is needed than the stoichiometric amount: moles needed = moles of product ÷ (yield fraction).
   Solution:
-  1. Acrolein $= \frac{7.8}{56} = 0.139$ mol; required $= \frac{0.139}{0.64} = 0.218$ mol of 3-hydroxypropanal.
-  2. Mass $= 0.218\times74 = 16.1 \approx 16$ g.
+  1. Reaction: HOCH₂CH₂CHO → CH₂=CH–CHO + H₂O (1 : 1).
+  2. Moles of acrolein required: $\frac{7.8}{56} = 0.1393$ mol.
+  3. With a 64% yield, the moles of 3-hydroxypropanal needed: $\frac{0.1393}{0.64} = 0.2176$ mol.
+  4. Mass: 0.2176 × 74 = 16.1 g ≈ 16 g.
+  Check: 16.1 g ÷ 74 = 0.2176 mol. 64% of that is 0.1393 mol of acrolein, i.e. 0.1393 × 56 = 7.8 g ✓.
+  Chemistry note: 3-hydroxypropanal is a β-hydroxy aldehyde (an aldol). It dehydrates easily to the conjugated α,β-unsaturated aldehyde acrolein (the second step of an aldol condensation). Acrolein is a pungent, toxic compound; it is also formed when fats are overheated (from glycerol).
   Answer: 16
 C B 6: |-
-  Concept: Exhaustive methylation needs 3 CH₃Br per primary amine.
+  Concept: A primary amine reacts with an excess of an alkyl halide in successive SN2 steps, becoming secondary, then tertiary, then a quaternary ammonium salt (exhaustive alkylation). Each step uses one molecule of the alkyl halide.
   Solution:
-  1. Product C₆H₅CH₂N(CH₃)₃⁺Br⁻ has M = 230, so 23 g = 0.1 mol.
-  2. CH₃Br consumed $= 3\times0.1 = 0.3$ mol $= 3\times10^{-1}$.
+  1. C₆H₅CH₂NH₂ + CH₃Br → C₆H₅CH₂NHCH₃ + HBr.
+  2. C₆H₅CH₂NHCH₃ + CH₃Br → C₆H₅CH₂N(CH₃)₂ + HBr.
+  3. C₆H₅CH₂N(CH₃)₂ + CH₃Br → C₆H₅CH₂N(CH₃)₃⁺Br⁻.
+  4. Overall: 3 molecules of CH₃Br per molecule of benzylamine (the HBr formed is neutralised by a base).
+  5. Molar mass of the product, C₁₀H₁₆NBr: 120 + 16 + 14 + 80 = 230 g/mol. 23 g = 0.1 mol, which matches the 0.1 mol of benzylamine (100% conversion).
+  6. CH₃Br consumed: 3 × 0.1 = 0.3 mol = 3 × 10⁻¹ mol.
+  7. So n = 3.
+  Note: quaternary ammonium hydroxides are used in the Hofmann elimination, and quaternary ammonium salts with long alkyl chains are cationic detergents (e.g. cetyltrimethylammonium bromide).
   Answer: 3
 C B 7: |-
-  Concept: Oxidation state and d-electron count.
+  Concept: To count unpaired electrons in a complex, find the oxidation state of the metal, write its d-electron configuration, and place the electrons in the split d orbitals. For d¹, d², d³ and d⁸ in octahedral fields, the number of unpaired electrons does not depend on the ligand field strength.
   Solution:
-  1. In K₃[Cr(ox)₃], Cr is +3, i.e. 3d³, with 3 unpaired electrons (t₂g³ regardless of field strength).
+  1. K₃[Cr(C₂O₄)₃]: three K⁺ give a charge of +3, so the complex ion is [Cr(C₂O₄)₃]³⁻.
+  2. Oxalate is C₂O₄²⁻. So x + 3(−2) = −3, giving x = +3.
+  3. Cr (Z = 24): [Ar]3d⁵4s¹. Cr³⁺: [Ar]3d³.
+  4. Octahedral field: the three d electrons occupy the three t₂g orbitals singly (t₂g³). Unpaired electrons: 3.
+  5. The magnetic moment is $\sqrt{3\times5} = \sqrt{15} = 3.87$ BM.
+  Why the field strength doesn't matter: with only three electrons, there are exactly three t₂g orbitals available for singly-occupied placement. The question of whether to pair up or go to e_g arises only with four or more electrons.
+  Note: the complex is chiral (tris-chelate, Δ and Λ forms), similar to [Co(en)₃]³⁺.
   Answer: 3
 C B 8: |-
-  Concept: $\Delta T_f = iK_fm$ and $i = 1 + \alpha$ for HA.
+  Concept: For a weak electrolyte HA ⇌ H⁺ + A⁻ with degree of dissociation α, the van't Hoff factor is i = 1 + α. The freezing point depression is ΔT_f = iK_fm.
   Solution:
-  1. The depression is 3.885 K (the printed "3.885°C" should read −3.885 °C).
-  2. $i = \frac{3.885}{1.85\times2} = 1.05 \Rightarrow \alpha = 0.05 = 50\times10^{-3}$.
+  1. The freezing point is printed as 3.885 °C, but a solution freezes below 0 °C. It should be −3.885 °C, so ΔT_f = 3.885 K.
+  2. $i = \frac{\Delta T_f}{K_fm} = \frac{3.885}{1.85\times2} = \frac{3.885}{3.70} = 1.05$.
+  3. i = 1 + α, so α = 0.05 = 50 × 10⁻³.
+  Derivation of i: start with 1 mol of HA; at equilibrium there are (1 − α) mol HA + α mol H⁺ + α mol A⁻, so the total is 1 + α.
+  Interpretation: only 5% of the acid is dissociated, typical of a weak acid at this high concentration (2 molal).
+  Note: the printed freezing point 3.885 °C should read −3.885 °C, since dissolving a solute always lowers the freezing point.
   Answer: 50
 C B 9: |-
-  Concept: Combine electrode potentials through ΔG, then $\Delta G^\circ = -nFE^\circ$.
+  Concept: Electrode potentials cannot be added directly, but Gibbs energies can. ΔG° = −nFE°, and for a half-reaction combination, ΔG° values are additive. Then E°_cell = E°_cathode − E°_anode for the cell reaction.
   Solution:
-  1. $E^\circ(Fe^{3+}/Fe^{2+}) = 3(-0.036) - 2(-0.440) = 0.772$ V.
-  2. $E^\circ_{cell} = 0.772 - 0.539 = 0.233$ V.
-  3. $\Delta G^\circ = -2\times96500\times0.233 = -44.97$ kJ, magnitude ≈ 45.
-  Note: The NTA key gives 46; the exact working gives 45 (as ALLEN also finds), which is stored here.
+  1. Find E°(Fe³⁺/Fe²⁺) from the given data.
+     - Fe³⁺ + 3e⁻ → Fe: ΔG₁ = −3F(−0.036) = +0.108F.
+     - Fe²⁺ + 2e⁻ → Fe: ΔG₂ = −2F(−0.440) = +0.880F.
+     - Subtract: Fe³⁺ + e⁻ → Fe²⁺, ΔG₃ = ΔG₁ − ΔG₂ = 0.108F − 0.880F = −0.772F.
+     - So E°(Fe³⁺/Fe²⁺) = +0.772 V.
+  2. Cell reaction: 2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂. Cathode: Fe³⁺/Fe²⁺ (0.772 V). Anode: I₂/I⁻ (0.539 V).
+  3. E°_cell = 0.772 − 0.539 = 0.233 V.
+  4. ΔG° = −nFE° = −2 × 96500 × 0.233 = −44,969 J ≈ −44.97 kJ.
+  5. The magnitude is 45 kJ.
+  Note: The NTA key gives 46; the exact working gives 45 (as ALLEN also finds), which is stored here. The actual standard value of E°(Fe³⁺/Fe²⁺) is 0.77 V, consistent with this calculation.
   Answer: 45
 C B 10: |-
-  Concept: Stoichiometry: $C_2H_6 + \frac{7}{2}O_2 \to 2CO_2 + 3H_2O$.
+  Concept: Use the balanced equation to relate moles of ethane to moles of water, then multiply by Avogadro's number.
   Solution:
-  1. 3 g ethane = 0.1 mol, giving 0.3 mol H₂O.
-  2. Molecules $= 0.3\times6.023\times10^{23} = 1.81\times10^{23} = 18\times10^{22}$.
+  1. Combustion of ethane: $2C_2H_6 + 7O_2 \to 4CO_2 + 6H_2O$, i.e. $C_2H_6 + \frac{7}{2}O_2 \to 2CO_2 + 3H_2O$.
+  2. Molar mass of C₂H₆: 2 × 12 + 6 × 1 = 30 g/mol. So 3 g = 0.1 mol.
+  3. Moles of H₂O: 3 × 0.1 = 0.3 mol (each ethane molecule has 6 H atoms, giving 3 H₂O).
+  4. Molecules: 0.3 × 6.023 × 10²³ = 1.807 × 10²³ = 18.07 × 10²².
+  5. x ≈ 18.
+  Quick check by hydrogen atoms: 0.1 mol of ethane has 0.6 mol of H atoms, which form 0.3 mol of H₂O ✓.
+  Also: CO₂ formed = 0.2 mol (8.8 g), and O₂ used = 0.35 mol (11.2 g). Mass balance: 3 + 11.2 = 14.2 g of reactants, and 8.8 + 5.4 = 14.2 g of products ✓.
   Answer: 18
