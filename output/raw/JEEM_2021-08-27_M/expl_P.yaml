@@ -1,0 +1,182 @@
+P A 1: |-
+  Concept: Integrate rings of the disc: $E = \frac{\sigma}{2\varepsilon_0}\left(1 - \frac{Z}{\sqrt{Z^2 + R^2}}\right)$.
+  Solution:
+  1. A ring of radius r and width dr gives $dE = \frac{\sigma Z\,r\,dr}{2\varepsilon_0(Z^2 + r^2)^{3/2}}$.
+  2. Integrating r from 0 to R gives the result above.
+  3. Checks: as R → ∞ it gives σ/2ε₀ (infinite sheet), and at Z = 0 the field is σ/2ε₀.
+  Answer: (A)
+P A 2: |-
+  Concept: $N = N_0\left(\frac{1}{2}\right)^{t/T_{1/2}}$.
+  Solution:
+  1. t = 30 s is half a half-life, so $N = \frac{10^{10}}{\sqrt2} = 7.07\times10^9 \approx 7\times10^9$.
+  Answer: (B)
+P A 3: |-
+  Concept: Check each quantity for units.
+  Solution:
+  1. μ_r = μ/μ₀, power factor cos φ, and quality factor ω₀L/R are all ratios, so they are dimensionless.
+  2. μ₀ has units of H/m, with dimensions $MLT^{-2}A^{-2}$, so it is not dimensionless.
+  Answer: (C)
+P A 4: |-
+  Concept: E is in V/m and H is in A/m.
+  Solution:
+  1. $\frac{E}{H}$ has units $\frac{\text{V/m}}{\text{A/m}} = \frac{\text{V}}{\text{A}} = \Omega$ (the wave impedance, 377 Ω in vacuum).
+  Answer: (A)
+P A 5: |-
+  Concept: Add components. From the figure: OP = 20 N at 30° from +y; OQ = 10 N at 30° above +x; OR = 20 N at 45° below +x; OS = 15 N at 45° below −x; OT = 15 N at 30° above −x.
+  Solution:
+  1. $F_x = 20(0.5) + 10(0.85) + 20(0.7) - 15(0.7) - 15(0.85) = 10 + 8.5 + 14 - 10.5 - 12.75 = 9.25$.
+  2. $F_y = 20(0.85) + 10(0.5) - 20(0.7) - 15(0.7) + 15(0.5) = 17 + 5 - 14 - 10.5 + 7.5 = 5$.
+  Answer: (A)
+P A 6: |-
+  Concept: At constant volume, the load (displaced air mass) is proportional to the air density ρ ∝ P/T.
+  Solution:
+  1. $M_2 = 185\times\frac{45}{76}\times\frac{300}{266} = 123.54$ kg.
+  Answer: (D)
+P A 7: |-
+  Concept: Newton's form of the mirror formula: $x_1x_2 = f^2$, with distances measured from the focus.
+  Solution:
+  1. The object is at 2f + d₁ from the pole, so $x_1 = f + d_1$; the image is at 2f − d₂, so $x_2 = f - d_2$.
+  2. $(f + d_1)(f - d_2) = f^2$ gives $f(d_1 - d_2) = d_1d_2$.
+  3. $R = 2f = \frac{2d_1d_2}{d_1 - d_2}$.
+  Answer: (A)
+P A 8: |-
+  Concept: $R = \frac{l}{\theta}$, where θ = 4 arc-seconds in radians.
+  Solution:
+  1. $\theta = \frac{4}{3600}\times\frac{\pi}{180} = 1.94\times10^{-5}$ rad, so $R = \frac{4.4\times9.46\times10^{15}}{1.94\times10^{-5}} = 2.15\times10^{21}$ m.
+  2. $t = \frac{4\times2\pi R}{v} = \frac{5.39\times10^{22}}{8\times1.5\times10^{11}} \approx 4.5\times10^{10}$ s.
+  Answer: (B)
+P A 9: |-
+  Concept: In steady state no current flows through the capacitor branch.
+  Solution:
+  1. The current through the 4 Ω resistor is $\frac{5}{4 + 1} = 1$ A, so the terminal voltage is 4 V.
+  2. The capacitor branch is 4 μF in series with (2 μF ∥ 2 μF = 4 μF), which gives 2 μF across 4 V.
+  3. Q = 2 × 4 = 8 μC, and this is the charge on the 4 μF capacitor.
+  Answer: (A)
+P A 10: |-
+  Concept: Perpendicular-axis theorem, then the parallel-axis theorem.
+  Solution:
+  1. About the centre: $I_z = \frac{Ml^2}{6}$.
+  2. The corner is at distance $\frac{l}{\sqrt2}$ from the centre, so $I = \frac{Ml^2}{6} + \frac{Ml^2}{2} = \frac{2}{3}Ml^2$.
+  Answer: (D)
+P A 11: |-
+  Concept: Transistor operating regions.
+  Solution:
+  1. Amplification needs a linear input–output relation, which exists only in the active region (base–emitter junction forward-biased, base–collector junction reverse-biased).
+  2. Cut-off and saturation are the OFF/ON states used in switching.
+  Answer: (D)
+P A 12: |-
+  Concept: Combine with PV = nRT and use $\gamma = \frac{1}{V}\frac{dV}{dT}$.
+  Solution:
+  1. $P = \frac{nRT}{V}$, so $\frac{T^4}{V}$ = constant and V ∝ T⁴.
+  2. $\gamma = \frac{1}{V}\frac{dV}{dT} = \frac{4}{T}$.
+  Answer: (C)
+P A 13: |-
+  Concept: Intensity fixes the number of photons; frequency fixes the photon energy.
+  Solution:
+  1. Higher intensity means more photons, so more photoelectrons (a larger current).
+  2. The maximum KE is hν − φ, which is independent of intensity.
+  Answer: (D)
+P A 14: |-
+  Concept: Faraday's law: emf = −dΦ/dt.
+  Solution:
+  1. As the N pole enters, the flux through the loop rises, giving a pulse of one sign.
+  2. While the loop is inside the long magnet, the flux is nearly constant, so the emf is about 0.
+  3. As the S end leaves, the flux falls, giving an opposite pulse, a time $l/\upsilon$ later.
+  4. With the official sign convention, the first pulse is negative and the second positive.
+  Answer: (C)
+P A 15: |-
+  Concept: $r = \frac{\sqrt{2mK}}{qB}$; a smaller radius means more deflection.
+  Solution:
+  1. For equal K, $r \propto \frac{\sqrt m}{q}$: $r_1 \propto \frac{2}{2} = 1$ and $r_2 \propto \frac{4}{3}$.
+  2. The lighter ion has the smaller radius, so it is deflected more.
+  Answer: (B)
+P A 16: |-
+  Concept: Successive imaging through the lenses.
+  Solution:
+  1. Lens 1 (f = 10, u = −30): v = 15 cm, which lies 10 cm beyond the concave lens.
+  2. Concave lens (f = −10, virtual object at +10): $\frac{1}{v} = \frac{1}{10} - \frac{1}{10} = 0$, so the rays emerge parallel.
+  3. Lens 3 (f = 30) focuses the parallel rays 30 cm behind it.
+  4. Distance from O = 30 + 5 + 10 + 30 = 75 cm.
+  Answer: (A)
+P A 17: |-
+  Concept: At terminal velocity, the viscous force equals the weight (buoyancy neglected).
+  Solution:
+  1. $F = \frac{4}{3}\pi r^3\rho g = \frac{4}{3}\pi(2\times10^{-5})^3\times1.2\times10^3\times9.8 \approx 3.9\times10^{-10}$ N.
+  Answer: (B)
+P A 18: |-
+  Concept: $v = \frac{\omega}{k}$.
+  Solution:
+  1. $v = \frac{10\times10^{10}}{500} = 2\times10^8$ m/s $= \frac{2}{3}C$.
+  Answer: (C)
+P A 19: |-
+  Concept: Series cells: emf 5E and resistance 5r; parallel cells: emf E and resistance r/5.
+  Solution:
+  1. $\frac{25}{5 + R} = \frac{5}{R + 0.2}$, so 25R + 5 = 25 + 5R and R = 1 Ω.
+  Answer: (A)
+P A 20: |-
+  Concept: $U = \frac{1}{2}kx^2 \ge 0$, and it is zero wherever x = 0.
+  Solution:
+  1. x = 0 at O, A, B and C, so U = 0 there.
+  2. Between these points, U rises to a maximum at each extreme displacement.
+  3. U has period T/2 and is never negative. Options (A) and (B) go negative, and (C) is non-positive.
+  Answer: (D)
+P B 1: |-
+  Concept: Mutual PE of the square: each side joins m and (M − m); the diagonals join like masses.
+  Solution:
+  1. $U = -\frac{G}{d}\left[4m(M - m) + \frac{m^2 + (M - m)^2}{\sqrt2}\right]$.
+  2. With S = m(M − m), the bracket is $\left(4 - \sqrt2\right)S + \frac{M^2}{\sqrt2}$, which is extreme when S is maximum, at m = M/2.
+  3. The official answer takes this point: M/m = 2.
+  Note: At m = M/2 the energy is most negative, which is its maximum magnitude (the minimum of U). The algebraic maximum would need m → 0. The official key (2) is kept.
+  Answer: 2
+P B 2: |-
+  Concept: For a DC offset plus a sinusoid, $I_{rms}^2 = I_{dc}^2 + \left(\frac{I_0}{\sqrt2}\right)^2$.
+  Solution:
+  1. $I_{rms}^2 = 100 + \frac{42}{2} = 121$, so $I_{rms} = 11$ A.
+  Answer: 11
+P B 3: |-
+  Concept: The same wire and voltage give the same current, and m = NIA.
+  Solution:
+  1. Triangle: N = 24a/3a = 8 and $A = \frac{\sqrt3}{4}a^2$, so NA = 2√3 a².
+  2. Square: N = 24a/4a = 6 and A = a², so NA = 6a².
+  3. The ratio is 2√3 : 6 = 1 : √3, so y = 3.
+  Answer: 3
+P B 4: |-
+  Concept: The antiparallel diodes are forward-biased, so they clamp the transistor's input to about 0 V.
+  Solution:
+  1. With zero base drive, the transistor is in cut-off, so the collector current is 0.
+  2. With no drop across the collector resistor, V₀ = 5 V.
+  Answer: 5
+P B 5: |-
+  Concept: Ohm's law with internal resistance.
+  Solution:
+  1. Series: $I_s = \frac{20}{10n + 10}$. Parallel: $I_p = \frac{20}{10/n + 10} = \frac{2n}{1 + n}$.
+  2. $\frac{I_p}{I_s} = n = 20$.
+  Answer: 20
+P B 6: |-
+  Concept: Doppler effect with both source and observer approaching: $f' = f\frac{v + v_o}{v - v_s}$.
+  Solution:
+  1. $v_s$ = 10 m/s (car X) and $v_o$ = 20 m/s (car Y).
+  2. $1320 = f\frac{360}{330}$, so f = 1210 Hz.
+  Answer: 1210
+P B 7: |-
+  Concept: $a = v\frac{dv}{dx} = \frac{1}{2}\frac{d(v^2)}{dx}$.
+  Solution:
+  1. v² = 5000 + 24x, so $a = \frac{24}{2} = 12$ m/s².
+  Answer: 12
+P B 8: |-
+  Concept: Heat-current junction rule at C: AC and CB are 5 K/W each, CD is 10 K/W.
+  Solution:
+  1. $\frac{200 - T}{5} = \frac{T - 100}{5} + \frac{T - 125}{10}$ gives 400 − 2T = 2T − 200 + T − 125, so T = 145°C.
+  2. $P = \frac{145 - 125}{10} = 2$ W.
+  Answer: 2
+P B 9: |-
+  Concept: W = Fd cos θ.
+  Solution:
+  1. $F_A\cos45° = F_B\cos60°$, so $\frac{F_A}{F_B} = \frac{1/2}{1/\sqrt2} = \frac{1}{\sqrt2}$ and x = 2.
+  Answer: 2
+P B 10: |-
+  Concept: $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$ with R = 6400 km.
+  Solution:
+  1. $\sqrt{2\times6.4\times10^6\times320} = 64$ km and $\sqrt{2\times6.4\times10^6\times2000} = 160$ km.
+  2. d = 224 km.
+  Answer: 224
