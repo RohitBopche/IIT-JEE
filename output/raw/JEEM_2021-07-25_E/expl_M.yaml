@@ -54,6 +54,8 @@ M A 5: |-
   Why others are wrong:
   - (C) uses 50 (forgetting the factor $\frac{1}{2}$).
   - (B) and (D) put the entry in the upper-right corner — that would be the transpose.
+  Why the binomial expansion is allowed: The expansion (I + N)ᵏ = Σ C(k, r)Nʳ requires I and N to commute, which they always do. All terms with N² or higher vanish.
+  Common mistake: Picking the transpose (options B, D); the non-zero entry stays in the lower-left position.
   Answer: (A)
 M A 6: |-
   Concept: General term $T_{r+1} = \binom{12}{r}\left(2^{1/3}\right)^{12 - r}\left(3^{1/4}\right)^r = \binom{12}{r}2^{\frac{12 - r}{3}}3^{\frac{r}{4}}$. It is rational iff both exponents are integers.
@@ -112,6 +114,8 @@ M A 10: |-
   4. Angle check: $\sin\theta = \frac{8}{10} = 0.8$, $|\cos\theta| = 0.6$; $2\times5\times0.6 = 6$ ✓.
   Why others are wrong:
   - (A) 5, (B) 4, (D) 3 do not satisfy $64 + (\vec a\cdot\vec b)^2 = 100$.
+  Why take the absolute value: a·b can be +6 or −6 depending on whether θ is acute or obtuse; the cross-product data fix only |sin θ| = 0.8.
+  Common mistake: Subtracting magnitudes (10 − 8 = 2) instead of squares.
   Answer: (C)
 M A 11: |-
   Concept: Half-angle formula $\cot\frac{\theta}{2} = \frac{1 + \cos\theta}{\sin\theta}$. With $\frac{\pi}{24} = 7.5°$, take θ = 15°.
@@ -254,6 +258,8 @@ M B 3: |-
   2. Equal for r = 7 and r = 8: $\binom{n}{7}2^{n-7}3^{-7} = \binom{n}{8}2^{n-8}3^{-8}$.
   3. $\frac{\binom{n}{8}}{\binom{n}{7}} = 2\times3 = 6$, and $\frac{\binom{n}{8}}{\binom{n}{7}} = \frac{n - 7}{8}$.
   4. $\frac{n - 7}{8} = 6 \Rightarrow n = 55$.
+  Solving the ratio: Dividing the two coefficients gives [C(n, 8)/C(n, 7)] × (1/3)/2 = 1. Since C(n, 8)/C(n, 7) = (n − 7)/8, we get (n − 7)/8 = 6, so n − 7 = 48 and n = 55.
+  Common mistake: Forgetting the powers of 2 and 1/3 and setting C(n, 7) = C(n, 8), which gives n = 15.
   Answer: 55
 M B 4: |-
   Concept: Lines through $\vec a_1$, $\vec a_2$ with directions $\vec b_1$, $\vec b_2$ are coplanar iff $\left[\vec a_2 - \vec a_1,\ \vec b_1,\ \vec b_2\right] = 0$.
@@ -290,6 +296,8 @@ M B 7: |-
   2. Sum $= 2^n(n + 1) = 2^{100}\cdot101 \Rightarrow n = 100$.
   3. $2\left[\frac{n - 1}{2}\right] = 2\left[\frac{99}{2}\right] = 2\times49 = 98$.
   Check: $\sum r\binom{n}{r} = n2^{n-1}$ follows from differentiating $(1 + x)^n$ and setting x = 1.
+  Final step: [99/2] = [49.5] = 49, so 2 × 49 = 98.
+  Why the sum formula works: Σ r C(n, r) = n2ⁿ⁻¹ counts committees with a chosen leader, and Σ C(n, r) = 2ⁿ counts all subsets.
   Answer: 98
 M B 8: |-
   Concept: P(at least one head in n tosses) = 1 − P(no heads) = $1 - \left(\frac{1}{2}\right)^n$.
@@ -298,6 +306,8 @@ M B 8: |-
   2. $2^3 = 8 < 10$, $2^4 = 16 \ge 10$.
   3. Minimum n = 4.
   Check: n = 3 gives 0.875 < 0.9; n = 4 gives 0.9375 ≥ 0.9 ✓.
+  Why use the complement: "At least one head" includes many cases; its complement "no heads" is a single outcome (all tails), with probability (½)ⁿ.
+  Common mistake: Solving (½)ⁿ ≥ 0.9, which confuses the event with its complement.
   Answer: 4
 M B 9: |-
   Concept: Separable differential equation: $\frac{dy}{dx} = \frac{2y}{x\ln x}$.
@@ -307,6 +317,8 @@ M B 9: |-
   3. Through $(2, (\ln2)^2)$: $(\ln2)^2 = k(\ln2)^2 \Rightarrow k = 1$.
   4. $f(x) = (\ln x)^2$, so $f(e) = (\ln e)^2 = 1$.
   Check: $f'(x) = \frac{2\ln x}{x} = \frac{2(\ln x)^2}{x\ln x} = \frac{2y}{x\ln x}$ ✓.
+  Integration step: ∫ dx/(x ln x) = ln|ln x| (substitute u = ln x, du = dx/x).
+  Common mistake: Writing ∫ 2 dx/(x ln x) = 2 ln x instead of 2 ln(ln x), which gives the wrong family of curves.
   Answer: 1
 M B 10: |-
   Concept: Convert the complex equation to Cartesian form using z = x + iy: $\text{Re}(z^2) = x^2 - y^2$, $\text{Im}(z) = y$, $\text{Re}(z) = x$.

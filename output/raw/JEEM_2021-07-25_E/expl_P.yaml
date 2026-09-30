@@ -103,6 +103,8 @@ P A 9: |-
   - (B) $\cos^{-1}\frac{\mu}{2}$ is only $\frac{A}{2}$ (missing the factor 2).
   - (C) uses sin instead of cos.
   - (D) has no basis in the prism formula.
+  Physical constraint: Since cos(A/2) ≤ 1, this situation needs μ ≤ 2; for μ = √3 the prism angle is 60°, as in an equilateral glass prism.
+  Common mistake: Dropping the factor 2 when inverting, which gives option (B).
   Answer: (A)
 P A 10: |-
   Concept: Weight W = mg with $g = \frac{GM}{R^2}$. With equal density ρ, $M = \frac{4}{3}\pi R^3\rho$, so $R \propto M^{1/3}$ and hence $g = \frac{4}{3}\pi G\rho R \propto R \propto M^{1/3}$.
@@ -136,6 +138,8 @@ P A 12: |-
   - (B) 2 : 3 is the speed ratio alone, ignoring charge.
   - (D) 1 : 4 multiplies the charge ratio instead of dividing.
   - (A) 3 : 1 has no basis.
+  Why r ∝ v/q: A faster ion needs a bigger circle to be turned by the same force, while a larger charge feels a stronger force and curves more tightly.
+  Common mistake: Multiplying the speed ratio by q₁/q₂ instead of q₂/q₁, which gives 1 : 3.
   Answer: (C)
 P A 13: |-
   Concept: A dielectric slab polarises in the field of the free charges, creating bound surface charges of opposite sign on its faces. These reduce the field inside the dielectric by the factor k: $E = \frac{E_0}{k}$.
@@ -231,6 +235,8 @@ P A 20: |-
   - (D) $\frac{1}{4}$ is the potential energy fraction at this point.
   - (A) $\frac{1}{2}$ assumes energy varies linearly with x; the equal-sharing point is actually $x = \frac{A}{\sqrt2}$.
   - (C) $\frac{1}{3}$ has no basis.
+  Why not ½: KE depends on (A² − x²), not on x linearly. At x = A/2, x² is only A²/4, so the PE is just a quarter of the total.
+  Common mistake: Assuming energy is shared equally at the midpoint; KE = PE only at x = A/√2 ≈ 0.707A.
   Answer: (B)
 P B 1: |-
   Concept: The energy needed to break a nucleus into its nucleons equals its binding energy, $E = \Delta m\times(\text{energy per u})$, where the mass defect Δm is (mass of separate nucleons − mass of nucleus).
@@ -241,6 +247,8 @@ P B 1: |-
   4. Energy: $0.02716\,x$ J $= 27.16\times10^{-3}x$ J.
   5. Nearest integer: 27.
   (Using 1 u = 931.5 MeV, this is about 25.3 MeV.)
+  Common mistake: Using the atomic mass of aluminium (including electrons) with proton masses, which mixes nuclear and atomic data; here all masses are nuclear, so the calculation is consistent.
+  The binding energy per nucleon is BE/27, a measure of nuclear stability.
   Answer: 27
 P B 2: |-
   Concept: For a variable force along one axis, work $W = \int F\,dy$ (the area under the F–y graph).
@@ -248,6 +256,8 @@ P B 2: |-
   1. $W = \int_0^{10}(5y + 20)\,dy = \left[\frac{5y^2}{2} + 20y\right]_0^{10}$.
   2. $= \frac{5\times100}{2} + 200 = 250 + 200 = 450$ J.
   Graphical check: F rises linearly from 20 N (y = 0) to 70 N (y = 10). Area of the trapezium $= \frac{(20 + 70)}{2}\times10 = 450$ J ✓.
+  Why integrate: The force changes with position (from 20 N to 70 N), so W = F × d cannot be used with a single value of F; the average force (45 N) times 10 m gives the same 450 J only because F is linear.
+  Common mistake: Using the final force, 70 × 10 = 700 J.
   Answer: 450
 P B 3: |-
   Concept: Rotational analogue of Newton's second law: $\tau = I\alpha$. A uniform deceleration from ω to 0 in time t needs $\alpha = \frac{\omega}{t}$.
@@ -257,6 +267,8 @@ P B 3: |-
   3. $\alpha = \frac{20\pi}{10} = 2\pi$ rad/s².
   4. $\tau = I\alpha = 0.2\times2\pi = 0.4\pi$ N m $= 4\pi\times10^{-1}$ N m.
   5. So the required value is 4.
+  Final step: τ = Iα = 0.2 × 2π = 0.4π N m = 4π × 10⁻¹ N m, so the answer is 4.
+  Common mistake: Forgetting to convert rpm to rad/s (multiply by 2π/60).
   Answer: 4
 P B 4: |-
   Concept: A uniform 16 Ω wire bent into a square has 4 Ω per side. A source connected across one side sees that side (4 Ω) in parallel with the other three sides in series (12 Ω).
@@ -274,6 +286,8 @@ P B 5: |-
   2. $LC = 0.1\times40\times10^{-6} = 4\times10^{-6}$ s².
   3. $\omega = \frac{1}{2\times10^{-3}} = 500$ rad/s.
   4. At this frequency, $X_L = 500\times0.1 = 50\ \Omega$ and $X_C = \frac{1}{500\times40\times10^{-6}} = 50\ \Omega$ — they cancel ✓.
+  Final step: ω = 1/√(4 × 10⁻⁶) = 1/(2 × 10⁻³) = 500 rad/s.
+  Why resonance: At resonance X_L = X_C, so Z = R and the LCR circuit draws exactly the same current and power as the resistor alone.
   Answer: 500
 P B 6: |-
   Concept: Photoelectric effect gives the maximum kinetic energy $K = \frac{hc}{\lambda} - \phi$. An electron moving perpendicular to B follows a circle with $r = \frac{mv}{eB}$, so $B = \frac{mv}{er}$.
@@ -283,6 +297,8 @@ P B 6: |-
   3. $v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{4\times10^{-19}}{9\times10^{-31}}} = \frac{2}{3}\times10^6 \approx 6.67\times10^5$ m/s.
   4. $B = \frac{mv}{er} = \frac{9\times10^{-31}\times6.67\times10^5}{1.6\times10^{-19}\times0.3} = \frac{6\times10^{-25}}{4.8\times10^{-20}} = 1.25\times10^{-5}$ T.
   5. $= 125\times10^{-7}$ T.
+  Why perpendicular matters: Only the velocity component perpendicular to B produces circular motion with r = mv/(eB); the question states the electrons move perpendicular to B.
+  Common mistake: Using the photon energy (2.5 eV) instead of the maximum kinetic energy (1.25 eV).
   Answer: 125
 P B 7: |-
   Concept: In amplitude modulation, the modulation index is the ratio of the message amplitude to the carrier amplitude: $\mu = \frac{A_m}{A_c}$.
@@ -291,6 +307,8 @@ P B 7: |-
   2. $\mu = \frac{20}{20} = 1$ (100% modulation).
   3. The frequencies (20 kHz and 1 MHz) do not affect μ; they set the side-band positions (0.98 MHz and 1.02 MHz).
   Note: μ ≤ 1 is needed to avoid over-modulation and distortion; μ = 1 is the limiting case.
+  Consequence of μ = 1: The envelope just touches zero at its minimum, which is the limit of undistorted AM.
+  Common mistake: Taking the ratio of frequencies (20 kHz/1 MHz = 0.02) as the modulation index.
   Answer: 1
 P B 8: |-
   Concept: Mean free path $\lambda = \frac{1}{\sqrt2\,\pi d^2n}$, where d is the molecular diameter and n the number density. (As in the intended solution, each species' own diameter and the common n are used.)
@@ -299,6 +317,8 @@ P B 8: |-
   2. $\frac{\lambda_A}{\lambda_B} = \frac{d_B^2}{d_A^2} = \left(\frac{5}{10}\right)^2 = \frac{1}{4} = 0.25$.
   3. $0.25 = 25\times10^{-2}$.
   Interpretation: the larger molecule A presents a bigger collision cross-section, so it travels a shorter distance between collisions.
+  Why larger molecules travel less: A molecule sweeps out a collision cylinder of cross-section πd²; doubling d quadruples the target area, so collisions come four times as often.
+  Common mistake: Using λ ∝ 1/d (instead of 1/d²), which gives 50 × 10⁻².
   Answer: 25
 P B 9: |-
   Concept: In thermal equilibrium, a semiconductor obeys the mass action law $n_en_h = n_i^2$, whether intrinsic or doped.
@@ -307,6 +327,8 @@ P B 9: |-
   2. Doped (p-type): $n_h = 4.5\times10^{22}$ m⁻³.
   3. $n_e = \frac{2.25\times10^{32}}{4.5\times10^{22}} = 5\times10^9$ m⁻³.
   Interpretation: adding acceptors hugely increases holes and correspondingly suppresses electrons (by recombination), keeping the product fixed.
+  Why electrons fall: Doping with acceptors adds so many holes that the rate of electron–hole recombination rises, pushing the electron density far below the intrinsic value.
+  Common mistake: Adding the carrier densities or subtracting n_i instead of using the product law n_e n_h = n_i².
   Answer: 5
 P B 10: |-
   Concept: Activity decays like the number of nuclei: $A = A_0\left(\frac{1}{2}\right)^{t/T_{1/2}}$.
@@ -315,4 +337,6 @@ P B 10: |-
   2. $3T_{1/2} = 30$ years $\Rightarrow T_{1/2} = 10$ years.
   Check: after 10 y → ½, 20 y → ¼, 30 y → ⅛ ✓.
   Alternative: $\lambda = \frac{\ln8}{30} = \frac{3\ln2}{30}$, so $T_{1/2} = \frac{\ln2}{\lambda} = 10$ years.
+  Why activity follows N: A = λN and λ is constant for a given nuclide, so activity falls by the same fraction as the number of undecayed nuclei.
+  Common mistake: Dividing 30 by 8 (3.75 years), treating the decay as linear.
   Answer: 10
