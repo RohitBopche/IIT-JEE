@@ -1,228 +1,395 @@
 M A 1: |-
-  Concept: Find the locus by taking the parametric point $(at^2, 2at)$ on $y^2 = 4ax$.
+  Concept: To find a locus, write the moving point in parametric form, express the required point (h, k) in terms of the parameter, and eliminate the parameter. For y² = 4ax the standard parametric point is (at², 2at), and the focus is S(a, 0).
   Solution:
-  1. Focus S = (a, 0), point P = $(at^2, 2at)$. Midpoint: $h = \frac{a + at^2}{2}$, $k = at$.
-  2. Eliminate t using $t = \frac{k}{a}$: $2h = a + \frac{k^2}{a} \Rightarrow k^2 = 2a\left(h - \frac{a}{2}\right)$.
-  3. Locus: $y^2 = 2a\left(x - \frac{a}{2}\right)$, a parabola with vertex $\left(\frac{a}{2}, 0\right)$ and $4A = 2a$, i.e. $A = \frac{a}{2}$.
-  4. Directrix: $x = \frac{a}{2} - \frac{a}{2} = 0$.
+  1. P = (at², 2at) and S = (a, 0). The midpoint M(h, k) is:
+     - $h = \frac{a + at^2}{2}$;
+     - $k = \frac{2at}{2} = at$.
+  2. From the second equation, t = k/a. Substituting in the first: $2h = a + a\cdot\frac{k^2}{a^2} = a + \frac{k^2}{a}$.
+  3. Rearranging: $k^2 = 2ah - a^2 = 2a\left(h - \frac{a}{2}\right)$.
+  4. The locus is $y^2 = 2a\left(x - \frac{a}{2}\right)$. This is a parabola with:
+     - vertex $\left(\frac{a}{2}, 0\right)$;
+     - latus rectum 4A = 2a, so $A = \frac{a}{2}$.
+  5. Its directrix lies a distance A to the left of the vertex: $x = \frac{a}{2} - \frac{a}{2} = 0$, i.e. the y-axis.
+  Check: the focus of the new parabola is at $\frac{a}{2} + \frac{a}{2} = a$, the same focus S. This makes sense geometrically, since the whole figure is a half-size copy of the original scaled about S.
   Answer: (B)
 M A 2: |-
-  Concept: Count case-wise selections using combinations.
+  Concept: When a selection must satisfy a condition, split it into disjoint cases and use the multiplication and addition principles.
+  Given: 6 Indians and 8 foreigners. The committee has i Indians (i ≥ 2) and 2i foreigners.
   Solution:
-  1. With i Indians we need 2i foreigners, i ≥ 2 and 2i ≤ 8, so i = 2, 3 or 4.
-  2. i = 2: $^6C_2\cdot{}^8C_4 = 15\times70 = 1050$.
-  3. i = 3: $^6C_3\cdot{}^8C_6 = 20\times28 = 560$.
-  4. i = 4: $^6C_4\cdot{}^8C_8 = 15\times1 = 15$.
-  5. Total = 1050 + 560 + 15 = 1625.
+  1. We need 2i ≤ 8, so the possible values are i = 2, 3, 4.
+  2. Case i = 2 (2 Indians, 4 foreigners): $^6C_2\cdot{}^8C_4 = 15\times70 = 1050$.
+  3. Case i = 3 (3 Indians, 6 foreigners): $^6C_3\cdot{}^8C_6 = 20\times28 = 560$.
+  4. Case i = 4 (4 Indians, 8 foreigners): $^6C_4\cdot{}^8C_8 = 15\times1 = 15$.
+  5. The cases are disjoint, so we add them: 1050 + 560 + 15 = 1625.
+  Why others are wrong:
+  - (B) 1050 is only the i = 2 case.
+  - (A) 560 is only the i = 3 case.
+  - (D) 575 = 560 + 15 misses the i = 2 case.
+  Tip: in "at least" problems, list every allowed case explicitly. The upper limit here comes from the number of foreigners available (2i ≤ 8), which is easy to overlook.
   Answer: (C)
 M A 3: |-
-  Concept: A plane perpendicular to two planes has its normal along the cross product of their normals.
+  Concept: If a plane is perpendicular to two given planes, its normal is perpendicular to both of their normals. So it is parallel to the cross product $\vec{n}_1\times\vec{n}_2$.
+  Given: $\vec{n}_1 = (3, 1, -2)$ and $\vec{n}_2 = (2, -5, -1)$. The plane passes through (1, 2, −3).
   Solution:
-  1. $\vec{n} = (3, 1, -2)\times(2, -5, -1) = (-11, -1, -17)$, i.e. direction (11, 1, 17).
-  2. Through (1, 2, –3): $11(x - 1) + (y - 2) + 17(z + 3) = 0$.
-  3. $11x + y + 17z + 38 = 0$.
+  1. $\vec{n}_1\times\vec{n}_2 = \begin{vmatrix}\hat{i} & \hat{j} & \hat{k}\\ 3 & 1 & -2\\ 2 & -5 & -1\end{vmatrix}$.
+  2. Components:
+     - $\hat{i}$: (1)(−1) − (−2)(−5) = −1 − 10 = −11;
+     - $\hat{j}$: −[(3)(−1) − (−2)(2)] = −[−3 + 4] = −1;
+     - $\hat{k}$: (3)(−5) − (1)(2) = −17.
+  3. Normal: (−11, −1, −17), or equivalently (11, 1, 17).
+  4. Plane through (1, 2, −3): 11(x − 1) + 1(y − 2) + 17(z + 3) = 0.
+  5. Expanding: 11x + y + 17z − 11 − 2 + 51 = 0, i.e. 11x + y + 17z + 38 = 0.
+  Check: (1, 2, −3) gives 11 + 2 − 51 + 38 = 0 ✓; n·n₁ = 33 + 1 − 34 = 0 ✓; n·n₂ = 22 − 5 − 17 = 0 ✓.
   Answer: (C)
 M A 4: |-
-  Concept: Intercept form of a line, $\frac{x}{a} + \frac{y}{b} = 1$.
+  Concept: A line with x-intercept a and y-intercept b has the equation $\frac{x}{a} + \frac{y}{b} = 1$. A condition on $\frac{1}{a} + \frac{1}{b}$ means the line always passes through a fixed point.
+  Given: the arithmetic mean of 1/a and 1/b is 1/4.
   Solution:
-  1. Given $\frac{1}{2}\left(\frac{1}{a} + \frac{1}{b}\right) = \frac{1}{4}$, so $\frac{1}{a} + \frac{1}{b} = \frac{1}{2}$.
-  2. Multiply by 2: $\frac{2}{a} + \frac{2}{b} = 1$, so (2, 2) always lies on the line.
-  3. (1, 1) gives $\frac{1}{2} \ne 1$, and (4, 4) gives $2 \ne 1$, so they are not on the path.
-  4. Only stone B is on the path.
+  1. $\frac{1}{2}\left(\frac{1}{a} + \frac{1}{b}\right) = \frac{1}{4}$, so $\frac{1}{a} + \frac{1}{b} = \frac{1}{2}$.
+  2. Multiply by 2: $\frac{2}{a} + \frac{2}{b} = 1$.
+  3. This says that x = 2, y = 2 satisfies $\frac{x}{a} + \frac{y}{b} = 1$ for every allowed a, b. So the man's path always passes through (2, 2).
+  4. Test the other stones:
+     - (1, 1) gives $\frac{1}{a} + \frac{1}{b} = \frac{1}{2} \ne 1$, so it is not on the path;
+     - (4, 4) gives $4\left(\frac{1}{a} + \frac{1}{b}\right) = 2 \ne 1$, so it is not on the path.
+  5. Only stone B (2, 2) lies on the path.
+  Why others are wrong: A and C would need $\frac{1}{a} + \frac{1}{b}$ to equal 1 and 1/4 respectively, which contradicts the given mean.
+  Tip: whenever a family of lines satisfies a linear condition on 1/a and 1/b, look for the fixed point the family passes through.
   Answer: (A)
 M A 5: |-
-  Concept: A tautology is true for every truth assignment.
+  Concept: A tautology is a compound statement that is true for every assignment of truth values. Check each option, or recognise a standard valid argument form.
   Solution:
-  1. $[A \wedge (A \rightarrow B)] \rightarrow B$ is modus ponens. If the antecedent is true, A is true and A → B is true, so B is true; hence the implication is never false.
-  2. The others fail: $A \wedge (A \vee B)$ and $A \vee (A \wedge B)$ both equal A (false when A is false); $B \rightarrow [A \wedge (A \rightarrow B)]$ fails when B is true and A is false.
+  1. Option (D), [A ∧ (A → B)] → B, is modus ponens.
+     - If the antecedent is true, then A is true and A → B is true, which forces B to be true. So the implication cannot be T → F.
+     - If the antecedent is false, the implication is automatically true.
+     So (D) is always true: a tautology.
+  2. Option (A): A ∧ (A ∨ B) ≡ A (absorption law). It is false when A is false.
+  3. Option (C): A ∨ (A ∧ B) ≡ A (absorption law). It is false when A is false.
+  4. Option (B): B → [A ∧ (A → B)]. With B true and A false, the right side is F ∧ T = F, so the implication is T → F = F. Not a tautology.
+  Truth-table check for (D):
+  - A = T, B = F: A → B is F, the antecedent is F, so the implication is T.
+  - The other rows give T as well.
+  Tip: modus ponens [p ∧ (p → q)] → q and modus tollens [∼q ∧ (p → q)] → ∼p are both tautologies. Spotting them saves writing a truth table.
   Answer: (D)
 M A 6: |-
-  Concept: Compute the composite and test injectivity and surjectivity.
+  Concept: To classify a composite function, simplify it first. Then check one-one-ness (no value repeats) and onto-ness (the range equals the codomain).
+  Given: f(x) = 2x − 1 on ℝ, and $g(x) = \frac{x - 1/2}{x - 1}$ on ℝ − {1}.
   Solution:
-  1. $f(g(x)) = 2\cdot\frac{x - \frac{1}{2}}{x - 1} - 1 = \frac{2x - 1 - x + 1}{x - 1} = \frac{x}{x - 1}$, for x ≠ 1.
-  2. $\frac{x}{x - 1} = 1 + \frac{1}{x - 1}$ is strictly monotonic on each branch and never repeats a value, so it is one-one.
-  3. It never takes the value 1, but the codomain is ℝ, so it is not onto.
+  1. $f(g(x)) = 2\cdot\frac{x - \frac{1}{2}}{x - 1} - 1 = \frac{2x - 1 - (x - 1)}{x - 1} = \frac{x}{x - 1}$, for x ≠ 1.
+  2. Rewrite: $\frac{x}{x - 1} = 1 + \frac{1}{x - 1}$.
+  3. One-one: if $1 + \frac{1}{x_1 - 1} = 1 + \frac{1}{x_2 - 1}$, then $x_1 = x_2$. So the function is injective.
+  4. Onto: $\frac{1}{x - 1}$ is never 0, so f(g(x)) never equals 1. Since the codomain is ℝ, the value 1 is missed, and the function is not onto.
+  5. So fog is one-one but not onto.
+  Why others are wrong:
+  - (A) and (B) claim onto, which fails because 1 is not attained.
+  - (C) denies one-one, which holds because x ↦ 1/(x − 1) is injective.
+  Tip: a Möbius-type function $\frac{ax + b}{cx + d}$ (with ad ≠ bc) is always one-one, and it misses exactly the value a/c.
   Answer: (D)
 M A 7: |-
-  Concept: Continuity of a product where one factor jumps and the other vanishes at the jump points.
+  Concept: A product can be continuous at a point where one factor jumps, provided the other factor is 0 there. The jump is then multiplied by 0 and disappears.
+  Given: $f(x) = [x - 1]\cos\left(\frac{(2x - 1)\pi}{2}\right)$.
   Solution:
-  1. [x – 1] is discontinuous only at integers.
-  2. At any integer n: $\cos\left(\frac{(2n - 1)\pi}{2}\right) = 0$.
-  3. Near n, [x – 1] is bounded (n – 2 or n – 1) and the cosine factor tends to 0, so both one-sided limits are 0 = f(n).
-  4. So f is continuous at every real x.
+  1. [x − 1] is continuous everywhere except at integers, where it jumps by 1.
+  2. The cosine factor is continuous everywhere. At an integer x = n: $\cos\frac{(2n - 1)\pi}{2} = \cos\left(n\pi - \frac{\pi}{2}\right) = 0$.
+  3. Near x = n, [x − 1] takes only the bounded values n − 2 (left) and n − 1 (right), while the cosine factor → 0.
+  4. So both one-sided limits are 0, and f(n) = (n − 1) × 0 = 0. f is continuous at every integer.
+  5. Away from integers, f is a product of continuous functions.
+  6. So f is continuous for every real x.
+  Why others are wrong: options (A), (B) and (C) all assume a discontinuity survives at some integer. It does not, because the cosine zeros sit exactly at the jump points.
+  Tip: when you see [x] multiplied by a trig function, check whether the trig function vanishes at the integers.
   Answer: (D)
 M A 8: |-
-  Concept: Monotonicity from the sign of f'(x).
+  Concept: f is increasing where f′(x) ≥ 0 and decreasing where f′(x) ≤ 0. Factor f′ to find its sign.
+  Given: $f(x) = \frac{4x^3 - 3x^2}{6} - 2\sin x + (2x - 1)\cos x$.
   Solution:
-  1. $f'(x) = 2x^2 - x - 2\cos x + 2\cos x - (2x - 1)\sin x = (2x - 1)(x - \sin x)$.
-  2. $x - \sin x$ has the sign of x (it is > 0 for x > 0 and < 0 for x < 0).
-  3. For x ≥ 1/2 both factors are ≥ 0, so f is increasing on $\left[\frac{1}{2}, \infty\right)$.
-  4. On $\left(0, \frac{1}{2}\right)$, f' < 0, so options (B) and (C) are wrong on part of their intervals; (D) is the opposite of the truth.
+  1. Differentiate term by term:
+     - $\frac{d}{dx}\frac{4x^3 - 3x^2}{6} = 2x^2 - x$;
+     - $\frac{d}{dx}(-2\sin x) = -2\cos x$;
+     - $\frac{d}{dx}[(2x - 1)\cos x] = 2\cos x - (2x - 1)\sin x$.
+  2. Sum: $f'(x) = 2x^2 - x - (2x - 1)\sin x = x(2x - 1) - (2x - 1)\sin x = (2x - 1)(x - \sin x)$.
+  3. Sign of x − sin x: it is 0 at x = 0 and increasing (derivative 1 − cos x ≥ 0). So it is positive for x > 0 and negative for x < 0.
+  4. Sign of f′:
+     - for x ≥ ½, both factors are ≥ 0, so f′ ≥ 0;
+     - for 0 < x < ½, the factors have opposite signs, so f′ < 0;
+     - for x < 0, both factors are negative, so f′ > 0.
+  5. So f increases on [½, ∞).
+  Why others are wrong:
+  - (B) says decreasing on (−∞, ½], but f increases for x < 0.
+  - (C) says increasing on (−∞, ½], but f decreases on (0, ½).
+  - (D) is the opposite of the truth.
   Answer: (A)
 M A 9: |-
-  Concept: Find the point of intersection of a line and a plane by substituting the parametric form.
+  Concept: To intersect a line with a plane, write the line in parametric form and substitute into the plane equation to find the parameter.
+  Given: the line $\frac{x - 3}{1} = \frac{y - 4}{2} = \frac{z - 5}{2}$, the plane x + y + z = 17, and the point (1, 1, 9).
   Solution:
   1. A general point on the line: (3 + t, 4 + 2t, 5 + 2t).
-  2. In the plane: 12 + 5t = 17, so t = 1, giving the point (4, 6, 7).
-  3. Distance from (1, 1, 9): $\sqrt{3^2 + 5^2 + (-2)^2} = \sqrt{38}$.
+  2. Substituting in the plane: (3 + t) + (4 + 2t) + (5 + 2t) = 17, so 12 + 5t = 17 and t = 1.
+  3. Point of intersection: Q = (4, 6, 7). Check: 4 + 6 + 7 = 17 ✓.
+  4. Distance from (1, 1, 9) to Q: $\sqrt{(4 - 1)^2 + (6 - 1)^2 + (7 - 9)^2} = \sqrt{9 + 25 + 4}$.
+  5. The distance is √38.
+  Why others are wrong:
+  - (D) 38 forgets the square root.
+  - (C) 2√19 = √76 is double the squared distance under the root.
+  - (B) 19√2 = √722 is far too large.
+  Tip: always verify the intersection point in the plane equation before computing the distance. An arithmetic slip in t spoils everything that follows.
   Answer: (A)
 M A 10: |-
-  Concept: The limit has the form 0/0, so use L'Hospital's rule with the Leibniz rule.
+  Concept: A limit of the form $\frac{\int_0^{g(x)}h(t)dt}{x^n}$ is 0/0 at x = 0. Apply L'Hospital's rule, differentiating the integral with the Leibniz rule: $\frac{d}{dx}\int_0^{g(x)}h(t)dt = h(g(x))g'(x)$.
   Solution:
-  1. Derivative of the numerator: $\sin\sqrt{x^2}\cdot2x = 2x\sin|x|$; derivative of the denominator: $3x^2$.
-  2. As $x \to 0^+$: $\frac{2x\sin x}{3x^2} \to \frac{2}{3}$.
-  3. Note: as $x \to 0^-$ the ratio tends to $-\frac{2}{3}$, so strictly the two-sided limit does not exist. The official key takes $\sqrt{x^2} = x$ (the right-hand limit), giving $\frac{2}{3}$.
+  1. Numerator derivative: $\sin\sqrt{x^2}\cdot2x = 2x\sin|x|$.
+  2. Denominator derivative: 3x².
+  3. As x → 0⁺: $\frac{2x\sin x}{3x^2} = \frac{2}{3}\cdot\frac{\sin x}{x} \to \frac{2}{3}$.
+  4. As x → 0⁻: sin|x| = −sin x, so the ratio → $-\frac{2}{3}$.
+  5. Strictly, the two-sided limit does not exist, because the one-sided limits differ.
+  6. The official key takes $\sqrt{x^2} = x$, i.e. the right-hand limit, giving 2/3.
+  Series check (x > 0): sin√t ≈ √t near 0, so the integral ≈ $\int_0^{x^2}\sqrt{t}\,dt = \frac{2}{3}x^3$, and the ratio → 2/3 ✓.
+  Note: because the limit is one-sided, the question is technically flawed. We follow the official answer (A).
   Answer: (A)
 M A 11: |-
-  Concept: Complementary angles of elevation: tan α · tan(90° – α) = 1.
+  Concept: Two angles are complementary when they add to 90°. Then tan α · tan(90° − α) = tan α · cot α = 1.
+  Given: the poles are 150 m apart, with heights h and 3h. The observer stands at the midpoint, 75 m from each foot.
   Solution:
-  1. Heights h and 3h; the observer is 75 m from each foot.
-  2. $\tan\alpha = \frac{h}{75}$ and $\tan(90^\circ - \alpha) = \frac{3h}{75}$.
-  3. Product = 1: $\frac{3h^2}{75^2} = 1 \Rightarrow h = \frac{75}{\sqrt{3}} = 25\sqrt{3}$ m.
+  1. Angle to the shorter pole: $\tan\alpha = \frac{h}{75}$.
+  2. Angle to the taller pole: $\tan(90^\circ - \alpha) = \frac{3h}{75}$.
+  3. Their product is 1: $\frac{h}{75}\cdot\frac{3h}{75} = 1$, so $3h^2 = 5625$.
+  4. h² = 1875, so $h = \sqrt{1875} = 25\sqrt{3}$ m ≈ 43.3 m.
+  5. Taller pole: 75√3 m. Angles: tan α = √3/3, so α = 30°, and the other angle is 60°. They are complementary ✓.
+  Why others are wrong: (A) 25, (B) 20√3 and (C) 30 do not make the product of the tangents equal to 1. For example, h = 25 gives $\frac{25\cdot75}{75^2} = \frac{1}{3}$.
+  Tip: whenever angles of elevation are complementary, multiply the tangents. The product equals 1, which removes the angle completely.
   Answer: (D)
 M A 12: |-
-  Concept: Find the tangent, its second intersection with the curve, then use the section formula.
+  Concept: A tangent to a cubic at one point meets the curve again at a second point. Substituting the tangent line into the curve gives a cubic equation with a double root at the point of tangency.
+  Given: y = x³, P(t, t³).
   Solution:
-  1. Tangent at $(t, t^3)$: $y - t^3 = 3t^2(x - t)$.
-  2. With $y = x^3$: $x^3 - t^3 = 3t^2(x - t) \Rightarrow (x - t)^2(x + 2t) = 0$, so Q = $(-2t, -8t^3)$.
-  3. The point dividing PQ internally in 1 : 2 has ordinate $\frac{2(t^3) + 1(-8t^3)}{3} = -2t^3$.
+  1. Slope at P: y′ = 3t². Tangent: y − t³ = 3t²(x − t).
+  2. Intersect with y = x³: x³ − t³ = 3t²(x − t).
+  3. Factor: (x − t)(x² + xt + t²) − 3t²(x − t) = (x − t)(x² + xt − 2t²) = (x − t)²(x + 2t) = 0.
+  4. The double root x = t is the tangency; the new root is x = −2t, so Q = (−2t, −8t³).
+  5. The point dividing PQ internally in the ratio 1 : 2 (from P) has ordinate $\frac{2\cdot y_P + 1\cdot y_Q}{1 + 2} = \frac{2t^3 - 8t^3}{3} = -2t^3$.
+  Why others are wrong:
+  - (B) −t³ and (D) 2t³ use the wrong weights in the section formula.
+  - (C) 0 would be the ordinate of an internal point in the ratio 1 : 8, not 1 : 2.
+  Tip: for y = x³, the tangent at x = t always meets the curve again at x = −2t. This is a standard result worth remembering.
   Answer: (A)
 M A 13: |-
-  Concept: Required area = area of the circle – area common to the circle and the parabola.
+  Concept: The area of the circle outside the parabola is the total circle area minus the area common to both. Compute the common area with integrals, using the symmetry about the x-axis.
+  Given: circle x² + y² = 36 (radius 6, area 36π) and parabola y² = 9x.
   Solution:
-  1. Intersection: $x^2 + 9x = 36 \Rightarrow x = 3$, $y = \pm3\sqrt{3}$.
-  2. Common area $= 2\left[\int_0^3 3\sqrt{x}\,dx + \int_3^6\sqrt{36 - x^2}\,dx\right]$.
-  3. $\int_0^3 3\sqrt{x}\,dx = 2(3)^{3/2} = 6\sqrt{3}$; $\int_3^6\sqrt{36 - x^2}\,dx = 9\pi - \left(\frac{9\sqrt{3}}{2} + 3\pi\right) = 6\pi - \frac{9\sqrt{3}}{2}$.
-  4. Common area $= 2\left(6\pi + \frac{3\sqrt{3}}{2}\right) = 12\pi + 3\sqrt{3}$.
-  5. Outside the parabola: $36\pi - (12\pi + 3\sqrt{3}) = 24\pi - 3\sqrt{3}$.
+  1. Intersection: x² + 9x = 36, i.e. (x + 12)(x − 3) = 0, so x = 3 and y = ±3√3.
+  2. The common region (upper half) lies:
+     - under the parabola from x = 0 to 3;
+     - under the circle from x = 3 to 6.
+  3. $\int_0^3 3\sqrt{x}\,dx = 2x^{3/2}\big|_0^3 = 6\sqrt3$.
+  4. $\int_3^6\sqrt{36 - x^2}\,dx = \left[\frac{x}{2}\sqrt{36 - x^2} + 18\sin^{-1}\frac{x}{6}\right]_3^6 = 9\pi - \left(\frac{9\sqrt3}{2} + 3\pi\right) = 6\pi - \frac{9\sqrt3}{2}$.
+  5. Common area $= 2\left(6\sqrt3 + 6\pi - \frac{9\sqrt3}{2}\right) = 12\pi + 3\sqrt3$.
+  6. Required area $= 36\pi - (12\pi + 3\sqrt3) = 24\pi - 3\sqrt3$.
+  Why others are wrong: (B) 12π + 3√3 is the common area itself. (A) and (C) have sign errors.
   Answer: (D)
 M A 14: |-
-  Concept: Substitute $u = \sin x + \cos x$, since $du = (\cos x - \sin x)dx$ and $u^2 = 1 + \sin2x$.
+  Concept: When the numerator is the derivative of an expression that also appears inside the square root, substitute that expression. Here (sin x + cos x)′ = cos x − sin x, and (sin x + cos x)² = 1 + sin 2x.
   Solution:
-  1. $8 - \sin2x = 8 - (u^2 - 1) = 9 - u^2$.
-  2. $\int\frac{du}{\sqrt{9 - u^2}} = \sin^{-1}\frac{u}{3} + c = \sin^{-1}\left(\frac{\sin x + \cos x}{3}\right) + c$.
-  3. So a = 1, b = 3.
+  1. Let u = sin x + cos x. Then du = (cos x − sin x) dx and u² = 1 + sin 2x.
+  2. So sin 2x = u² − 1, and 8 − sin 2x = 9 − u².
+  3. The integral becomes $\int\frac{du}{\sqrt{9 - u^2}} = \sin^{-1}\frac{u}{3} + c$.
+  4. Substitute back: $\sin^{-1}\left(\frac{\sin x + \cos x}{3}\right) + c$.
+  5. Comparing with $a\sin^{-1}\left(\frac{\sin x + \cos x}{b}\right)$: a = 1 and b = 3.
+  Why others are wrong:
+  - (A) and (C) have sign errors: the numerator is exactly du, so a = +1, and b is the positive radius 3.
+  - (D) swaps a and b.
+  Tip: pair cos x − sin x with u = sin x + cos x (then sin 2x = u² − 1), and cos x + sin x with u = sin x − cos x (then sin 2x = 1 − u²).
   Answer: (B)
 M A 15: |-
-  Concept: Linear differential equation, solved by separating variables.
+  Concept: $\frac{dP}{dt} = kP - c$ is a linear (separable) differential equation. Shift to the equilibrium value $P^* = \frac{c}{k}$: then $P - P^*$ grows or decays exponentially.
+  Given: $\frac{dP}{dt} = 0.5P - 450$ and P(0) = 850.
   Solution:
-  1. $\frac{dP}{dt} = 0.5(P - 900) \Rightarrow P - 900 = (P_0 - 900)e^{t/2} = -50e^{t/2}$.
-  2. P = 0 when $50e^{t/2} = 900$, i.e. $e^{t/2} = 18$.
-  3. $t = 2\log_e18$.
+  1. Rewrite: $\frac{dP}{dt} = 0.5(P - 900)$. The equilibrium population is 900.
+  2. Separate the variables: $\frac{dP}{P - 900} = 0.5\,dt$, so ln|P − 900| = 0.5t + C.
+  3. $P - 900 = (P_0 - 900)e^{t/2} = (850 - 900)e^{t/2} = -50e^{t/2}$.
+  4. P starts below equilibrium, so it decreases and eventually reaches 0.
+  5. P = 0 when $-900 = -50e^{t/2}$, i.e. $e^{t/2} = 18$.
+  6. $t = 2\ln18$.
+  Why others are wrong:
+  - (A) ½ ln 18 inverts the factor.
+  - (C) ln 9 and (D) ln 18 drop the factor 2 that comes from the rate 0.5.
+  Tip: for $\frac{dP}{dt} = k(P - P^*)$, always write the solution as $P - P^* = (P_0 - P^*)e^{kt}$.
   Answer: (B)
 M A 16: |-
-  Concept: $\sum r\,{}^nC_r x^{r-1} = n(1 + x)^{n-1}$, and the odd-index binomial coefficients add to $2^{n-1}$.
+  Concept: Two standard identities:
+  - $\sum_{r=1}^{n} r\,{}^nC_r x^{r-1} = n(1 + x)^{n-1}$ (differentiate the binomial expansion);
+  - the sum of the odd-index binomial coefficients of $(1 + x)^n$ is $2^{n-1}$.
   Solution:
-  1. $\sum_{r=1}^{15}(-1)^r r\,{}^{15}C_r = -15(1 - 1)^{14} = 0$.
-  2. $^{14}C_1 + {}^{14}C_3 + \ldots + {}^{14}C_{13} = 2^{13}$; the given sum stops at $^{14}C_{11}$, so subtract $^{14}C_{13} = 14$.
-  3. Value $= 0 + 2^{13} - 14$.
+  1. First part: $-{}^{15}C_1 + 2\cdot{}^{15}C_2 - \ldots - 15\cdot{}^{15}C_{15} = \sum_{r=1}^{15}(-1)^r r\,{}^{15}C_r$.
+  2. Differentiate $(1 + x)^{15}$ and put x = −1: $\sum r\,{}^{15}C_r(-1)^{r-1} = 15(1 - 1)^{14} = 0$. So the first part is 0.
+  3. Second part: $^{14}C_1 + {}^{14}C_3 + \ldots + {}^{14}C_{13} = 2^{13}$ (all odd indices).
+  4. The given sum stops at $^{14}C_{11}$, so it omits $^{14}C_{13} = 14$.
+  5. Value $= 0 + 2^{13} - 14$.
+  Why others are wrong:
+  - (A) 2¹⁴ is the full sum of all binomial coefficients of (1 + x)¹⁴.
+  - (B) 2¹³ − 13 subtracts the wrong term.
+  - (C) 2¹⁶ − 1 is unrelated.
+  Tip: always check where an "odd terms" sum actually ends. A missing final term is a common trap.
   Answer: (D)
 M A 17: |-
-  Concept: Binomial distribution with p = q = 1/2 for odd/even outcomes on a die.
+  Concept: On a fair die, an odd outcome and an even outcome each have probability ½. The number of odd outcomes in n rolls follows a binomial distribution, B(n, ½).
   Solution:
-  1. $^nC_2\left(\frac{1}{2}\right)^n = {}^nC_3\left(\frac{1}{2}\right)^n \Rightarrow {}^nC_2 = {}^nC_3 \Rightarrow n = 5$.
-  2. P(odd number of odd outcomes) $= \frac{{}^5C_1 + {}^5C_3 + {}^5C_5}{2^5} = \frac{16}{32} = \frac{1}{2}$.
+  1. P(odd exactly 2 times) = $^nC_2(½)^n$.
+  2. P(even exactly 3 times) = $^nC_3(½)^n$.
+  3. Setting these equal: $^nC_2 = {}^nC_3$, so 2 + 3 = n, giving n = 5.
+  4. P(an odd number of odd outcomes) = $\frac{{}^5C_1 + {}^5C_3 + {}^5C_5}{2^5} = \frac{5 + 10 + 1}{32} = \frac{16}{32} = \frac{1}{2}$.
+  General fact: for p = ½, the sum of the odd-index binomial coefficients is $2^{n-1}$. So the probability of an odd count is always exactly ½, for any n ≥ 1.
+  Why others are wrong:
+  - (C) 5/16 is only P(exactly 1 or exactly 3), or similar partial sums.
+  - (A) 3/16 and (D) 1/32 omit several terms.
+  Tip: $^nC_a = {}^nC_b$ with a ≠ b means a + b = n.
   Answer: (B)
 M A 18: |-
-  Concept: Express $p^4 + q^4$ in terms of s = pq and p + q.
+  Concept: Symmetric functions of the roots. With s = pq and p + q = 2:
+  - $p^2 + q^2 = (p + q)^2 - 2pq = 4 - 2s$;
+  - $p^4 + q^4 = (p^2 + q^2)^2 - 2p^2q^2$.
   Solution:
-  1. $p^2 + q^2 = 4 - 2s$ and $p^4 + q^4 = (p^2 + q^2)^2 - 2s^2 = 2s^2 - 16s + 16$.
-  2. $2s^2 - 16s + 16 = 272 \Rightarrow s^2 - 8s - 128 = 0 \Rightarrow s = 16$ or $s = -8$.
-  3. With s = pq = 16 (the positive value taken by the key), the equation is $x^2 - 2x + 16 = 0$.
-  Note: the data are inconsistent: no two positive reals can have sum 2 and $p^4 + q^4 = 272$ (s = 16 gives complex roots). The official key is (D).
+  1. $p^4 + q^4 = (4 - 2s)^2 - 2s^2 = 16 - 16s + 4s^2 - 2s^2 = 2s^2 - 16s + 16$.
+  2. Setting this equal to 272: 2s² − 16s − 256 = 0, i.e. s² − 8s − 128 = 0, so (s − 16)(s + 8) = 0.
+  3. s = 16 or s = −8. Taking pq = 16 (the key's choice, since p and q are called positive, pq > 0), the quadratic with roots p and q is x² − (p + q)x + pq = 0, i.e. x² − 2x + 16 = 0.
+  Note: the data are inconsistent. Positive reals with p + q = 2 satisfy pq ≤ 1, so p⁴ + q⁴ ≤ 16 and can never equal 272. With pq = 16, the roots 1 ± i√15 are complex, not positive. The official key accepts (D), and so do we.
+  Why others are wrong: (A), (B) and (C) have constant terms 2, 8 and 136, which do not satisfy s² − 8s − 128 = 0.
   Answer: (D)
 M A 19: |-
-  Concept: Sum of an infinite GP, then solve the exponential equation.
+  Concept:
+  - An infinite geometric series with ratio r (|r| < 1) sums to $\frac{a}{1 - r}$.
+  - $e^{k\ln2} = 2^k$.
   Solution:
-  1. $\cos^2x + \cos^4x + \ldots = \frac{\cos^2x}{1 - \cos^2x} = \cot^2x$, so the expression is $2^{\cot^2x}$.
-  2. The roots of $t^2 - 9t + 8 = 0$ are 1 and 8. For $0 < x < \frac{\pi}{2}$, $\cot^2x > 0$, so $2^{\cot^2x} = 8$ and $\cot^2x = 3$, i.e. $x = \frac{\pi}{6}$.
-  3. $\frac{2\sin x}{\sin x + \sqrt{3}\cos x} = \frac{2(1/2)}{1/2 + 3/2} = \frac{1}{2}$.
+  1. For 0 < x < π/2, 0 < cos²x < 1. So $\cos^2x + \cos^4x + \ldots = \frac{\cos^2x}{1 - \cos^2x} = \frac{\cos^2x}{\sin^2x} = \cot^2x$.
+  2. The given expression is $e^{\cot^2x\ln2} = 2^{\cot^2x}$.
+  3. The roots of t² − 9t + 8 = 0 are t = 1 and t = 8.
+  4. cot²x > 0 on this interval, so $2^{\cot^2x} > 1$. Hence $2^{\cot^2x} = 8$ and cot²x = 3.
+  5. So cot x = √3 and x = π/6.
+  6. $\frac{2\sin x}{\sin x + \sqrt3\cos x} = \frac{2\cdot\frac{1}{2}}{\frac{1}{2} + \sqrt3\cdot\frac{\sqrt3}{2}} = \frac{1}{2}$.
+  Why others are wrong: (A), (B) and (D) come from choosing t = 1 (cot²x = 0, which is impossible in the open interval) or from misreading x.
+  Tip: whenever a GP in cos²x (or sin²x) appears, expect cot²x (or tan²x) as the sum.
   Answer: (C)
 M A 20: |-
-  Concept: A linear system is inconsistent when the determinant is 0 and the equations contradict each other.
+  Concept: A system AX = B is inconsistent when det A = 0 and the equations contradict each other. To find the contradiction, express one equation as a combination of the others and compare the right-hand sides.
   Solution:
-  1. $\Delta = \begin{vmatrix} 3 & -2 & -k \\ 2 & -4 & -2 \\ 1 & 2 & -1 \end{vmatrix} = 24 - 8k$, which is 0 when k = 3.
-  2. With k = 3, the coefficients of equation 1 equal equation 2 + equation 3: (3, –2, –3) = (2, –4, –2) + (1, 2, –1).
-  3. The system is consistent only if 10 = 6 + 5m, i.e. $m = \frac{4}{5}$.
-  4. So it is inconsistent when k = 3 and $m \ne \frac{4}{5}$.
+  1. $\Delta = \begin{vmatrix} 3 & -2 & -k \\ 2 & -4 & -2 \\ 1 & 2 & -1 \end{vmatrix}$.
+  2. Expanding: 3(4 + 4) + 2(−2 + 2) − k(4 + 4) = 24 − 8k.
+  3. Δ = 0 gives k = 3. For k ≠ 3 there is a unique solution, which rules out (B) and (C).
+  4. With k = 3, row 1 = row 2 + row 3: (3, −2, −3) = (2, −4, −2) + (1, 2, −1) ✓.
+  5. Consistency needs the same relation for the constants: 10 = 6 + 5m, so m = 4/5.
+  6. So for k = 3:
+     - m = 4/5 gives infinitely many solutions;
+     - m ≠ 4/5 makes the system inconsistent.
+  Why others are wrong: (A) is the infinitely-many-solutions case, and (B) and (C) describe the unique-solution case.
   Answer: (D)
 M B 1: |-
-  Concept: $PQ = kI \Rightarrow Q = kP^{-1} = \frac{k}{|P|}\text{adj}P$ and $|Q| = \frac{k^3}{|P|}$.
+  Concept: If PQ = kI, then Q = kP⁻¹. Hence:
+  - $q_{ij} = \frac{k\,C_{ji}}{|P|}$, where $C_{ji}$ is the cofactor of $p_{ji}$;
+  - $|Q| = \frac{k^3}{|P|}$ (for a 3 × 3 matrix).
   Solution:
-  1. $|P| = 12\alpha + 20$.
-  2. $|Q| = \frac{k^3}{|P|} = \frac{k^2}{2} \Rightarrow |P| = 2k$.
-  3. $q_{23} = \frac{k\,C_{32}}{|P|}$ where the cofactor $C_{32} = -(3\alpha + 4)$: $\frac{-k(3\alpha + 4)}{2k} = -\frac{k}{8} \Rightarrow 3\alpha + 4 = \frac{k}{4}$.
-  4. From step 2: $12\alpha + 20 = 2k$. Solving: α = –1, k = 4.
-  5. $\alpha^2 + k^2 = 1 + 16 = 17$.
+  1. |P| = 3(0 + 5α) + 1(0 − 3α) − 2(−10) = 15α − 3α + 20 = 12α + 20.
+  2. $|Q| = \frac{k^3}{|P|} = \frac{k^2}{2}$, so |P| = 2k, i.e. 12α + 20 = 2k.
+  3. $q_{23} = \frac{k\,C_{32}}{|P|}$. The cofactor $C_{32} = -\begin{vmatrix}3 & -2\\ 2 & \alpha\end{vmatrix} = -(3\alpha + 4)$.
+  4. So $\frac{-k(3\alpha + 4)}{2k} = -\frac{k}{8}$, which gives 3α + 4 = k/4, i.e. k = 12α + 16.
+  5. Comparing with k = 6α + 10 from step 2: 12α + 16 = 6α + 10, so α = −1 and k = 4.
+  6. α² + k² = 1 + 16 = 17.
+  Check: |P| = −12 + 20 = 8 = 2k ✓.
   Answer: 17
 M B 2: |-
-  Concept: For independent events, use the odds $\frac{P(B_i)}{1 - P(B_i)}$.
+  Concept: For independent events with probabilities x, y and z, the probability that only B₁ occurs is α = x(1 − y)(1 − z), and the probability that none occurs is p = (1 − x)(1 − y)(1 − z). Dividing gives the odds ratio $\frac{\alpha}{p} = \frac{x}{1 - x}$, and similarly for β and γ.
   Solution:
-  1. Let $x = P(B_1)$, $y = P(B_2)$, $z = P(B_3)$. Then $\frac{\alpha}{p} = \frac{x}{1 - x}$, $\frac{\beta}{p} = \frac{y}{1 - y}$, $\frac{\gamma}{p} = \frac{z}{1 - z}$.
-  2. Dividing $(\alpha - 2\beta)p = \alpha\beta$ by $\alpha\beta$: $\frac{p}{\beta} - \frac{2p}{\alpha} = 1 \Rightarrow \left(\frac{1}{y} - 1\right) - 2\left(\frac{1}{x} - 1\right) = 1 \Rightarrow \frac{1}{y} = \frac{2}{x}$.
-  3. Similarly $(\beta - 3\gamma)p = 2\beta\gamma$ gives $\left(\frac{1}{z} - 1\right) - 3\left(\frac{1}{y} - 1\right) = 2 \Rightarrow \frac{1}{z} = \frac{3}{y} = \frac{6}{x}$.
-  4. $\frac{P(B_1)}{P(B_3)} = \frac{x}{z} = 6$.
+  1. $\frac{p}{\alpha} = \frac{1}{x} - 1$, $\frac{p}{\beta} = \frac{1}{y} - 1$ and $\frac{p}{\gamma} = \frac{1}{z} - 1$.
+  2. Divide (α − 2β)p = αβ by αβ: $\frac{p}{\beta} - \frac{2p}{\alpha} = 1$.
+  3. So $\left(\frac{1}{y} - 1\right) - 2\left(\frac{1}{x} - 1\right) = 1$, which gives $\frac{1}{y} = \frac{2}{x}$, i.e. x = 2y.
+  4. Divide (β − 3γ)p = 2βγ by βγ: $\frac{p}{\gamma} - \frac{3p}{\beta} = 2$.
+  5. So $\left(\frac{1}{z} - 1\right) - 3\left(\frac{1}{y} - 1\right) = 2$, which gives $\frac{1}{z} = \frac{3}{y}$, i.e. y = 3z.
+  6. Hence x = 2y = 6z, and $\frac{P(B_1)}{P(B_3)} = \frac{x}{z} = 6$.
+  Tip: in "only this event" problems with independent events, dividing by the "none" probability turns everything into simple odds.
   Answer: 6
 M B 3: |-
-  Concept: Minimise $f(s) = \frac{4}{s} + \frac{1}{1 - s}$ for s = sin x in (0, 1).
+  Concept: The equation f(x) = α has a solution exactly when α lies in the range of f. The least such α is the minimum value of f.
   Solution:
-  1. By the Cauchy–Schwarz (Titu) inequality: $\frac{2^2}{s} + \frac{1^2}{1 - s} \ge \frac{(2 + 1)^2}{s + (1 - s)} = 9$.
-  2. Equality when $\frac{2}{s} = \frac{1}{1 - s}$, i.e. $s = \frac{2}{3}$, which is possible in (0, 1).
-  3. The equation has a solution for α ≥ 9, so the minimum α is 9.
+  1. Let s = sin x. For x ∈ (0, π/2), s ranges over (0, 1). So we minimise $g(s) = \frac{4}{s} + \frac{1}{1 - s}$.
+  2. Titu's (Cauchy–Schwarz) inequality: $\frac{2^2}{s} + \frac{1^2}{1 - s} \ge \frac{(2 + 1)^2}{s + (1 - s)} = 9$.
+  3. Equality holds when $\frac{2}{s} = \frac{1}{1 - s}$, i.e. s = 2/3, which lies in (0, 1). So the minimum 9 is attained.
+  4. Calculus check: $g'(s) = -\frac{4}{s^2} + \frac{1}{(1 - s)^2} = 0$ gives 2(1 − s) = s, so s = 2/3, and g(2/3) = 6 + 3 = 9.
+  5. As s → 0⁺ or s → 1⁻, g → ∞. So the range is [9, ∞), and the minimum α is 9.
+  Tip: sums like a²/u + b²/v with u + v fixed are minimised by Titu's lemma, with minimum (a + b)²/(u + v).
   Answer: 9
 M B 4: |-
-  Concept: The perpendicular from a circle's centre to a chord bisects the chord.
+  Concept: The perpendicular from a circle's centre to any chord bisects that chord. So (half-chord)² + (distance from centre to chord)² = R².
+  Given: circle x² + y² − 2x − 6y + 6 = 0. One of its diameters is a chord of circle C, whose centre is (2, 1).
   Solution:
-  1. Given circle: centre (1, 3), radius $\sqrt{1 + 9 - 6} = 2$. Its diameter is a chord of C with midpoint (1, 3).
-  2. Distance from C's centre (2, 1) to (1, 3): $\sqrt{1 + 4} = \sqrt{5}$.
-  3. $R^2 = 2^2 + (\sqrt{5})^2 = 9$, so R = 3.
+  1. The given circle has centre (1, 3) and radius $\sqrt{1 + 9 - 6} = 2$.
+  2. Its diameter is a chord of C of length 4, whose midpoint is the given circle's centre (1, 3).
+  3. The segment joining C's centre (2, 1) to the chord's midpoint (1, 3) is perpendicular to the chord. Its length is $\sqrt{1 + 4} = \sqrt5$.
+  4. R² = 2² + (√5)² = 4 + 5 = 9, so R = 3.
+  Note: this works for whichever diameter is the chord, as long as that diameter is perpendicular to the line joining the two centres. That fixes which diameter is meant.
+  Tip: whenever a chord's midpoint is known, the right triangle (half-chord, centre distance, radius) gives the radius immediately.
   Answer: 3
 M B 5: |-
-  Concept: Telescoping inverse tangents: $\tan^{-1}\frac{1}{1 + r(r + 1)} = \tan^{-1}(r + 1) - \tan^{-1}r$.
+  Concept: Telescoping inverse tangents. Since 1 + r + r² = 1 + r(r + 1), we can write $\tan^{-1}\frac{1}{1 + r(r + 1)} = \tan^{-1}\frac{(r + 1) - r}{1 + (r + 1)r} = \tan^{-1}(r + 1) - \tan^{-1}r$.
   Solution:
-  1. $\sum_{r=1}^{n} = \tan^{-1}(n + 1) - \tan^{-1}1$.
-  2. As n → ∞: $\frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$.
-  3. $\tan\frac{\pi}{4} = 1$.
+  1. Sum from r = 1 to n: $[\tan^{-1}2 - \tan^{-1}1] + [\tan^{-1}3 - \tan^{-1}2] + \ldots + [\tan^{-1}(n + 1) - \tan^{-1}n]$.
+  2. Telescoping leaves $\tan^{-1}(n + 1) - \tan^{-1}1$.
+  3. As n → ∞, tan⁻¹(n + 1) → π/2. So the sum → π/2 − π/4 = π/4.
+  4. tan(π/4) = 1.
+  Check with small n: for n = 1 the sum is tan⁻¹(1/3), and tan⁻¹2 − tan⁻¹1 = tan⁻¹(1/3) ✓.
+  Tip: whenever you see $\tan^{-1}\frac{1}{1 + r(r + 1)}$ or $\tan^{-1}\frac{1}{r^2 + r + 1}$, rewrite the argument as $\frac{(r + 1) - r}{1 + r(r + 1)}$ and telescope.
   Answer: 1
 M B 6: |-
-  Concept: Use the given integral to find a, then integrate x + [x] piecewise.
+  Concept: First find a from the given integral by splitting |x − 2| at x = 2. Then integrate x + [x] over [−a, a], treating [x] as a step function.
   Solution:
-  1. $\int_{-a}^{a}|x|\,dx = a^2$; $\int_{-a}^{a}|x - 2|\,dx = \frac{(a + 2)^2 + (a - 2)^2}{2} = a^2 + 4$ (for a > 2).
-  2. $2a^2 + 4 = 22 \Rightarrow a = 3$.
-  3. $\int_{-3}^{3}x\,dx = 0$ and $\int_{-3}^{3}[x]\,dx = -3 - 2 - 1 + 0 + 1 + 2 = -3$.
-  4. $\int_{3}^{-3}(x + [x])\,dx = -(-3) = 3$.
+  1. $\int_{-a}^{a}|x|\,dx = a^2$.
+  2. $\int_{-a}^{a}|x - 2|\,dx = \frac{(a + 2)^2}{2} + \frac{(a - 2)^2}{2} = a^2 + 4$, for a > 2. These are the two triangle areas.
+  3. So 2a² + 4 = 22, giving a² = 9 and a = 3.
+  4. Now evaluate $\int_{3}^{-3}(x + [x])\,dx = -\int_{-3}^{3}(x + [x])\,dx$.
+  5. $\int_{-3}^{3}x\,dx = 0$, since x is odd.
+  6. $\int_{-3}^{3}[x]\,dx$ = sum of the step values over each unit interval: (−3) + (−2) + (−1) + 0 + 1 + 2 = −3.
+  7. So $\int_{-3}^{3}(x + [x])\,dx = -3$, and the required integral with reversed limits is 3.
+  Common mistakes:
+  - forgetting the reversed limits, which gives −3;
+  - treating [x] as odd, which gives 0. [x] is not odd: [−0.5] = −1, but −[0.5] = 0.
   Answer: 3
 M B 7: |-
-  Concept: A vector coplanar with $\vec{a}$ and $\vec{b}$ can be written as $\vec{c} = \lambda\vec{a} + \mu\vec{b}$.
+  Concept: A vector coplanar with $\vec a$ and $\vec b$ (not parallel) can be written as $\vec c = \lambda\vec a + \mu\vec b$. Then use the dot-product conditions to find λ and μ.
+  Given: $\vec a = (-1, 1, 1)$, $\vec b = (2, 0, 1)$, $\vec a\cdot\vec c = 7$, $\vec b\cdot\vec c = 0$.
   Solution:
-  1. $\vec{a}\cdot\vec{b} = -1$, $|\vec{a}|^2 = 3$, $|\vec{b}|^2 = 5$.
-  2. $\vec{b}\cdot\vec{c} = 0$: $-\lambda + 5\mu = 0 \Rightarrow \lambda = 5\mu$.
-  3. $\vec{a}\cdot\vec{c} = 7$: $3\lambda - \mu = 7 \Rightarrow 14\mu = 7$, so $\mu = \frac{1}{2}$, $\lambda = \frac{5}{2}$.
-  4. $\vec{c} = \left(-\frac{3}{2}, \frac{5}{2}, 3\right)$, and $\vec{a} + \vec{b} + \vec{c} = \left(-\frac{1}{2}, \frac{7}{2}, 5\right)$.
-  5. $|\vec{a} + \vec{b} + \vec{c}|^2 = \frac{1}{4} + \frac{49}{4} + 25 = \frac{75}{2}$, so twice it is 75.
+  1. $\vec a\cdot\vec b = -2 + 0 + 1 = -1$, $|\vec a|^2 = 3$ and $|\vec b|^2 = 5$.
+  2. $\vec b\cdot\vec c = \lambda(-1) + \mu(5) = 0$, so λ = 5μ.
+  3. $\vec a\cdot\vec c = 3\lambda + \mu(-1) = 7$, so 15μ − μ = 7, giving μ = ½ and λ = 5/2.
+  4. $\vec c = \frac{5}{2}(-1, 1, 1) + \frac{1}{2}(2, 0, 1) = \left(-\frac{3}{2}, \frac{5}{2}, 3\right)$.
+  5. Check: $\vec a\cdot\vec c = \frac{3}{2} + \frac{5}{2} + 3 = 7$ ✓ and $\vec b\cdot\vec c = -3 + 0 + 3 = 0$ ✓.
+  6. $\vec a + \vec b + \vec c = \left(-1 + 2 - \frac{3}{2},\ 1 + 0 + \frac{5}{2},\ 1 + 1 + 3\right) = \left(-\frac{1}{2}, \frac{7}{2}, 5\right)$.
+  7. $|\cdot|^2 = \frac{1}{4} + \frac{49}{4} + 25 = \frac{75}{2}$, so $2|\vec a + \vec b + \vec c|^2 = 75$.
   Answer: 75
 M B 8: |-
-  Concept: Sum of an arithmetic progression.
+  Concept: The numbers of the form 9k + ℓ within a range form an arithmetic progression. Use the AP sum formula $S = \frac{n}{2}(\text{first} + \text{last})$.
   Solution:
-  1. A ∩ B: 101, 110, ..., 992 → 100 terms, sum $= \frac{100(101 + 992)}{2} = 54650$.
-  2. Required sum $274\times400 = 109600$, so A ∩ C must add $109600 - 54650 = 54950$ (C is disjoint from B when ℓ ≠ 2).
-  3. For ℓ = 5: 104, 113, ..., 995 → 100 terms, sum $= \frac{100(104 + 995)}{2} = 54950$. ✓
-  4. So ℓ = 5.
+  1. A ∩ B = three-digit numbers ≡ 2 (mod 9): 101, 110, …, 992. Number of terms: $\frac{992 - 101}{9} + 1 = 100$. Sum: $\frac{100(101 + 992)}{2} = 54650$.
+  2. The target total is 274 × 400 = 109600.
+  3. For ℓ ≠ 2, the sets B and C are disjoint, so the sum over A ∩ C must be 109600 − 54650 = 54950.
+  4. A ∩ C (numbers ≡ ℓ mod 9) has 100 terms, running from 99 + ℓ to 990 + ℓ. Sum: $\frac{100(99 + \ell + 990 + \ell)}{2} = 50(1089 + 2\ell)$.
+  5. 50(1089 + 2ℓ) = 54950, so 1089 + 2ℓ = 1099 and ℓ = 5.
+  6. Check: 104, 113, …, 995 sums to 50 × 1099 = 54950 ✓.
+  Note: if ℓ = 2, then B ∪ C = B and the total would be only 54650, so ℓ ≠ 2 is consistent.
   Answer: 5
 M B 9: |-
-  Concept: Separate real and imaginary parts of the complex equation.
+  Concept: Split the complex equation into real and imaginary parts, then find the range of α for which a real solution exists.
   Solution:
-  1. With z = x + iy: the imaginary part gives y = –2; the real part gives $x + \alpha\sqrt{(x - 1)^2 + 4} = 0$.
-  2. Squaring: $\alpha^2[(x - 1)^2 + 4] = x^2 \Rightarrow (\alpha^2 - 1)x^2 - 2\alpha^2x + 5\alpha^2 = 0$.
-  3. Real x requires discriminant ≥ 0: $4\alpha^4 - 20\alpha^2(\alpha^2 - 1) \ge 0 \Rightarrow \alpha^2 \le \frac{5}{4}$.
-  4. Taking $p = -\frac{\sqrt{5}}{2}$ and $q = \frac{\sqrt{5}}{2}$: $4(p^2 + q^2) = 4\left(\frac{5}{4} + \frac{5}{4}\right) = 10$.
-  Note: squaring admits one extraneous value. Directly, $\alpha = \frac{-x}{\sqrt{(x - 1)^2 + 4}}$ ranges over $\left[-\frac{\sqrt{5}}{2}, 1\right)$, so strictly no largest value exists. The official answer uses the discriminant method above.
+  1. Let z = x + iy. The equation is x + iy + α√((x − 1)² + y²) + 2i = 0.
+  2. Imaginary part: y + 2 = 0, so y = −2.
+  3. Real part: x + α√((x − 1)² + 4) = 0.
+  4. Squaring: α²[(x − 1)² + 4] = x², i.e. (α² − 1)x² − 2α²x + 5α² = 0.
+  5. For real x, the discriminant must be ≥ 0: 4α⁴ − 20α²(α² − 1) ≥ 0, i.e. α²(5 − 4α²) ≥ 0, so α² ≤ 5/4.
+  6. The official solution takes p = −√5/2 and q = √5/2, giving 4(p² + q²) = 4 × 5/2 = 10.
+  Note: squaring introduces extraneous roots. Directly, $\alpha = \frac{-x}{\sqrt{(x - 1)^2 + 4}}$ takes values in [−√5/2, 1). The upper limit 1 is approached as x → −∞ but never reached, so strictly there is no largest value. The official answer 10 follows the discriminant method.
   Answer: 10
 M B 10: |-
-  Concept: The trace of $M^TM$ equals the sum of the squares of all entries of M.
+  Concept: The diagonal entries of MᵀM are the sums of the squares of the entries in each column of M. So tr(MᵀM) = the sum of the squares of all nine entries.
+  Given: entries from {0, 1, 2}, whose squares are 0, 1 and 4. We need the nine squares to add to 7.
   Solution:
-  1. Entries are 0, 1, 2 with squares 0, 1, 4; we need nine squares adding to 7.
-  2. Case 1: one entry 2 and three entries 1: $9\times{}^8C_3 = 9\times56 = 504$.
-  3. Case 2: seven entries 1 and two entries 0: $^9C_7 = 36$.
-  4. Total = 504 + 36 = 540.
+  1. Let a entries equal 2 and b entries equal 1. Then 4a + b = 7 with a + b ≤ 9.
+  2. a = 0: b = 7, so seven 1's and two 0's. The number of matrices is $^9C_7 = 36$.
+  3. a = 1: b = 3, so one 2, three 1's and five 0's. The number of matrices is $9\times{}^8C_3 = 9\times56 = 504$.
+  4. a ≥ 2 would need 4a ≥ 8 > 7, which is impossible.
+  5. Total = 36 + 504 = 540.
+  Tip: the identity tr(MᵀM) = Σ(all entries²) holds for any real matrix. It is the squared Frobenius norm.
   Answer: 540

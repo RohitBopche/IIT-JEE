@@ -1,212 +1,381 @@
 P A 1: |-
-  Concept: The net gravitational pull of the other three particles supplies the centripetal force for circular motion.
-  Given: m = 1 kg, R = 1 m; the four particles sit at the corners of a square inscribed in the circle.
+  Concept: Each particle moves in a circle because the combined gravitational pull of the other three particles acts towards the centre. This resultant supplies the centripetal force $\frac{mv^2}{R}$.
+  Given: m = 1 kg, R = 1 m. The four particles sit at the corners of a square inscribed in the circle.
   Solution:
-  1. Adjacent particles are at distance $\sqrt{2}R$. Each pulls with $F_1 = \frac{Gm^2}{2R^2}$; their components along the radius add: $2F_1\cos45^\circ = \frac{Gm^2}{\sqrt{2}R^2}$.
-  2. The opposite particle is at distance 2R: $F_2 = \frac{Gm^2}{4R^2}$, also towards the centre.
-  3. Net force $F = \frac{Gm^2}{R^2}\left(\frac{1}{\sqrt{2}} + \frac{1}{4}\right) = \frac{Gm^2}{R^2}\cdot\frac{2\sqrt{2} + 1}{4}$.
-  4. Set $\frac{mv^2}{R} = F$: $v^2 = \frac{Gm}{R}\cdot\frac{1 + 2\sqrt{2}}{4}$. With m = 1, R = 1: $v = \frac{\sqrt{(1 + 2\sqrt{2})G}}{2}$.
+  1. Adjacent particles are a side of the square apart: $d_1 = \sqrt{2}R$. Each pulls with $F_1 = \frac{Gm^2}{2R^2}$.
+  2. The two adjacent pulls make 45° with the radius. Their radial components add: $2F_1\cos45^\circ = \frac{Gm^2}{\sqrt{2}R^2}$. Their tangential components cancel.
+  3. The opposite particle is a diameter away, $d_2 = 2R$, and pulls straight towards the centre: $F_2 = \frac{Gm^2}{4R^2}$.
+  4. Net inward force: $F = \frac{Gm^2}{R^2}\left(\frac{1}{\sqrt{2}} + \frac{1}{4}\right) = \frac{Gm^2}{R^2}\cdot\frac{2\sqrt{2} + 1}{4}$.
+  5. Set $\frac{mv^2}{R} = F$: $v^2 = \frac{Gm}{R}\cdot\frac{1 + 2\sqrt{2}}{4}$.
+  6. With m = 1 kg and R = 1 m: $v = \frac{\sqrt{(1 + 2\sqrt{2})G}}{2}$.
+  Common mistake: using R instead of the actual separations ($\sqrt2R$ and 2R), or adding the full magnitudes of the adjacent forces instead of only their radial components.
   Answer: (A)
 P A 2: |-
-  Concept: Angular velocity of uniform circular motion is $\omega = \frac{2\pi}{T}$, so $\omega \propto \frac{1}{T}$.
+  Concept: For uniform circular motion the angular velocity is $\omega = \frac{2\pi}{T}$. So ω is inversely proportional to the period, whatever the orbit radius.
+  Given: $T_1$ = 1 hr and $T_2$ = 8 hr, for satellites of the same planet.
   Solution:
-  1. $\frac{\omega_1}{\omega_2} = \frac{T_2}{T_1} = \frac{8\ \text{hr}}{1\ \text{hr}} = 8$.
-  2. So $\omega_1 : \omega_2 = 8 : 1$. (Kepler's law is not needed because the periods are already given.)
+  1. $\omega_1 = \frac{2\pi}{T_1}$ and $\omega_2 = \frac{2\pi}{T_2}$.
+  2. Dividing: $\frac{\omega_1}{\omega_2} = \frac{T_2}{T_1} = \frac{8}{1}$.
+  3. So $\omega_1 : \omega_2 = 8 : 1$. The satellite with the shorter period turns faster.
+  4. Kepler's third law ($T^2 \propto r^3$) is not needed here, because the periods are given directly. It would only be needed to compare orbital radii ($r_2 = 4r_1$) or linear speeds ($v_1 = 2v_2$).
+  Why others are wrong:
+  - (B) 1 : 8 inverts the ratio; it treats ω as proportional to T.
+  - (C) 2 : 1 is the ratio of the linear speeds ($v \propto r^{-1/2}$), not the angular velocities.
+  - (D) 1 : 4 is the ratio of the radii ($r_1 : r_2$), not the angular velocities.
+  Tip: whenever periods are given, compare angular quantities directly with $\omega = 2\pi/T$ before reaching for Kepler's law.
   Answer: (A)
 P A 3: |-
-  Concept: Net work in a cycle = sum of the work in each step; W = 0 for an isochoric step.
+  Concept: The net work in a cycle is the sum of the work done in each step. For an ideal gas:
+  - isothermal step: $W = nRT\ln\frac{V_f}{V_i}$
+  - isobaric step: $W = P\Delta V$
+  - isochoric step: W = 0
+  Given: A→B is isothermal at T with $V_2 = 2V_1$. B→C is isobaric at $P_2$ back to $V_1$. C→A is isochoric.
   Solution:
-  1. A→B (isothermal, V doubles): $W_{AB} = nRT\ln\frac{V_2}{V_1} = nRT\ln2$.
-  2. At B: $P_2(2V_1) = nRT$, so $P_2V_1 = \frac{nRT}{2}$.
-  3. B→C (isobaric compression from $2V_1$ to $V_1$): $W_{BC} = P_2(V_1 - 2V_1) = -P_2V_1 = -\frac{nRT}{2}$.
-  4. C→A (isochoric): $W_{CA} = 0$.
-  5. Total $W = nRT\ln2 - \frac{nRT}{2} = nRT\left(\ln2 - \frac{1}{2}\right)$.
+  1. A→B (isothermal expansion): $W_{AB} = nRT\ln\frac{2V_1}{V_1} = nRT\ln2$. This is positive, since the gas does work.
+  2. At B the gas is still at temperature T: $P_2(2V_1) = nRT$, so $P_2V_1 = \frac{nRT}{2}$.
+  3. B→C (isobaric compression from $2V_1$ to $V_1$): $W_{BC} = P_2(V_1 - 2V_1) = -P_2V_1 = -\frac{nRT}{2}$. This is negative, since work is done on the gas.
+  4. C→A (isochoric): the volume does not change, so $W_{CA} = 0$.
+  5. Total: $W = nRT\ln2 - \frac{nRT}{2} = nRT\left(\ln2 - \frac{1}{2}\right)$.
+  6. Check: ln 2 ≈ 0.693 > 0.5, so the net work is positive. That fits a cycle traced clockwise on the P–V diagram.
+  Common mistake: taking the isobaric work as $+\frac{nRT}{2}$, which gives option (B). In a compression the work done by the gas is negative.
   Answer: (D)
 P A 4: |-
-  Concept: Series: $\frac{1}{C_s} = \sum\frac{1}{C_i}$; parallel: $C_p = \sum C_i$.
+  Concept: Capacitors add in the opposite way to resistors:
+  - series: $\frac{1}{C_s} = \frac{1}{C_1} + \frac{1}{C_2}$
+  - parallel: $C_p = C_1 + C_2$
+  Given: two equal capacitors, each of capacitance C.
   Solution:
-  1. Two equal capacitors C in series: $C_s = \frac{C}{2}$.
-  2. In parallel: $C_p = 2C$.
-  3. $C_s : C_p = \frac{C}{2} : 2C = 1 : 4$.
+  1. In series: $\frac{1}{C_s} = \frac{1}{C} + \frac{1}{C} = \frac{2}{C}$, so $C_s = \frac{C}{2}$.
+  2. In parallel: $C_p = C + C = 2C$.
+  3. Ratio: $\frac{C_s}{C_p} = \frac{C/2}{2C} = \frac{1}{4}$, so $C_s : C_p = 1 : 4$.
+  Physical picture: in series the plate separations effectively add, which lowers the capacitance. In parallel the plate areas effectively add, which raises it.
+  Why others are wrong:
+  - (C) 4 : 1 is the parallel-to-series ratio, the question's order reversed.
+  - (A) 2 : 1 and (D) 1 : 2 compare only one of the combinations with a single capacitor (C/2 : C or C : 2C).
+  General result: for n equal capacitors, $C_s : C_p = 1 : n^2$. Here n = 2, giving 1 : 4.
   Answer: (B)
 P A 5: |-
-  Concept: Two cells connected in opposition in a closed loop: net emf = difference of emfs; the terminal voltage of a cell being charged is $V = E + Ir$.
-  Given: $E_1$ = 6 V, $r_1$ = 2 Ω; $E_2$ = 4 V, $r_2$ = 8 Ω; the wire PY closes the loop with the cells opposing each other (figure).
+  Concept: When two cells in a closed loop oppose each other, the net emf is the difference of their emfs. The stronger cell drives current through the weaker one, charging it. The terminal voltage of a cell is $V = E + Ir$ while it is being charged and $V = E - Ir$ while it is discharging.
+  Given: $E_1$ = 6 V with $r_1$ = 2 Ω, and $E_2$ = 4 V with $r_2$ = 8 Ω. The figure shows the cells joined in opposition, with X and Y across the cells.
   Solution:
-  1. Current $I = \frac{E_1 - E_2}{r_1 + r_2} = \frac{6 - 4}{2 + 8} = 0.2$ A.
-  2. This current is driven by $E_1$ and flows through $E_2$ against its emf, so $E_2$ is being charged.
-  3. Potential difference across $E_2$ (points X and Y): $V_{XY} = E_2 + Ir_2 = 4 + 0.2\times8 = 5.6$ V.
-  4. Check with $E_1$: $V = E_1 - Ir_1 = 6 - 0.4 = 5.6$ V (same, because P and Y are joined).
+  1. Loop current: $I = \frac{E_1 - E_2}{r_1 + r_2} = \frac{6 - 4}{2 + 8} = 0.2$ A.
+  2. The current is driven by the 6 V cell and enters $E_2$ against its emf, so $E_2$ is being charged.
+  3. Voltage across $E_2$ (X to Y): $V_{XY} = E_2 + Ir_2 = 4 + 0.2\times8 = 5.6$ V.
+  4. Check with $E_1$, which is discharging: $V = E_1 - Ir_1 = 6 - 0.2\times2 = 5.6$ V. Both cells share the same pair of terminals, so the two values must agree, and they do.
+  Why others are wrong:
+  - 10 V assumes the cells aid each other (6 + 4).
+  - 2 V is only the net emf.
+  - 3.6 V wrongly uses E − Ir for the cell that is being charged.
   Answer: (C)
 P A 6: |-
-  Concept: Relation between the elastic moduli: $Y = \frac{9K\eta}{3K + \eta}$.
+  Concept: For an isotropic material the three elastic moduli are linked through Poisson's ratio σ:
+  - $Y = 3K(1 - 2\sigma)$
+  - $Y = 2\eta(1 + \sigma)$
+  Eliminating σ gives $\frac{9}{Y} = \frac{1}{\eta} + \frac{3}{K}$, i.e. $Y = \frac{9K\eta}{3K + \eta}$.
   Solution:
-  1. Rearrange: $Y(3K + \eta) = 9K\eta \Rightarrow 3KY + \eta Y = 9K\eta$.
-  2. Collect K: $K(9\eta - 3Y) = Y\eta \Rightarrow K = \frac{Y\eta}{9\eta - 3Y}$.
-  3. This matches option (A). Options (C) and (D) have wrong denominators ($3K - \eta$, $2\eta + 3K$), and (B) is not a rearrangement of the correct formula.
+  1. Start from $Y = \frac{9K\eta}{3K + \eta}$ and cross-multiply: $3KY + \eta Y = 9K\eta$.
+  2. Collect the K terms on one side: $9K\eta - 3KY = \eta Y$, so $K(9\eta - 3Y) = Y\eta$.
+  3. Therefore $K = \frac{Y\eta}{9\eta - 3Y}$, which is option (A).
+  4. Sanity check: K must be positive, so $9\eta > 3Y$, i.e. $Y < 3\eta$. This agrees with $Y = 2\eta(1 + \sigma)$ for σ < 0.5.
+  Why others are wrong:
+  - (C) and (D) have the wrong denominators ($3K - \eta$ and $2\eta + 3K$).
+  - (B): solving the correct formula for η gives $\eta = \frac{3YK}{9K - Y}$, not $\frac{3YK}{9K + Y}$.
   Answer: (A)
 P A 7: |-
-  Concept: In a binary system both bodies revolve about the common centre of mass with the same period; $T^2 = \frac{4\pi^2d^3}{G(m_1 + m_2)}$.
+  Concept: In a binary star system both stars revolve about their common centre of mass with the same angular velocity ω. For each star, mutual gravitation provides the centripetal force.
+  Given: masses m and 2m, a distance d apart.
   Solution:
-  1. For mass m: its orbit radius is $r_1 = \frac{2m}{3m}d = \frac{2d}{3}$.
-  2. Gravity gives the centripetal force: $\frac{G(m)(2m)}{d^2} = m\omega^2\cdot\frac{2d}{3} \Rightarrow \omega^2 = \frac{3Gm}{d^3}$.
-  3. $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{d^3}{3Gm}}$.
+  1. Centre of mass: the lighter star is farther from it. Its orbit radius is $r_1 = \frac{2m}{m + 2m}d = \frac{2d}{3}$, and the heavier star's is $r_2 = \frac{d}{3}$.
+  2. For the star of mass m: $\frac{G(m)(2m)}{d^2} = m\omega^2r_1 = m\omega^2\cdot\frac{2d}{3}$.
+  3. Simplify: $\frac{2Gm}{d^2} = \frac{2d\omega^2}{3}$, so $\omega^2 = \frac{3Gm}{d^3}$.
+  4. Period: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{d^3}{3Gm}}$.
+  5. Check with the general binary result $T^2 = \frac{4\pi^2d^3}{G(m_1 + m_2)}$ with $m_1 + m_2 = 3m$: this gives the same answer.
+  Why others are wrong: (B) and (C) have the reciprocal form $\frac{1}{2\pi}\sqrt{\ldots}$, which is a frequency. (D) has the square root inverted and does not even have the dimensions of time.
   Answer: (A)
 P A 8: |-
-  Concept: Acceleration is the slope of the velocity–time graph.
+  Concept: Acceleration is the slope of the velocity–time graph. A straight-line segment of the v–t graph has constant slope, so it corresponds to a horizontal segment of the a–t graph.
+  Given: the v–t graph AMB is two straight lines. From A to M the velocity falls; from M to B it rises again.
   Solution:
-  1. From A to M the graph is a straight line going down: constant negative slope, so a is a constant negative value.
-  2. From M to B the graph is a straight line going up with the same magnitude of slope: a is a constant positive value.
-  3. So the a–t graph is a negative constant that jumps to a positive constant at M: a single step, option (A).
-  4. The square wave (B) would need repeated reversals; the sinusoid and triangle need curved v–t graphs.
+  1. A to M: a straight line sloping downward means a constant negative slope, so a is a negative constant throughout AM.
+  2. M to B: a straight line sloping upward means a constant positive slope, so a is a positive constant throughout MB.
+  3. At M the slope changes suddenly, so the acceleration jumps from the negative value to the positive value there.
+  4. The a–t graph is therefore a horizontal line below the t-axis, followed by a horizontal line above it: a single step, as in option (A).
+  Why others are wrong:
+  - (B) is a square wave with repeated reversals. That would need a zig-zag v–t graph with many segments.
+  - (C) is a sinusoid and (D) is a triangle. Both need a curved v–t graph, where the slope changes continuously.
+  Tip: convert a v–t graph to an a–t graph piece by piece. Every straight segment of the v–t graph becomes a flat segment of the a–t graph.
   Answer: (A)
 P A 9: |-
-  Concept: Photon momentum $p = \frac{h}{\lambda}$ and energy $E = \frac{hc}{\lambda}$.
+  Concept: A photon of wavelength λ has momentum $p = \frac{h}{\lambda}$ and energy $E = \frac{hc}{\lambda} = pc$. Both are inversely proportional to λ.
   Solution:
-  1. Statement I: equal momenta give $\lambda = \frac{h}{p}$ equal, so it is true.
-  2. Statement II: if λ decreases, both p and E increase (inverse relation). It says they decrease, so it is false.
+  1. Statement I: if two photons have equal momenta p, then $\lambda = \frac{h}{p}$ is the same for both. Equal momentum means equal wavelength, so Statement I is true.
+  2. Statement II: if λ decreases, then $p = \frac{h}{\lambda}$ increases and $E = \frac{hc}{\lambda}$ also increases. Blue light has more energetic photons than red light, for example.
+  3. Statement II claims both quantities decrease, which is the opposite of the truth. Statement II is false.
+  Why others are wrong:
+  - (A) and (C) wrongly reject Statement I, which follows directly from de Broglie's relation.
+  - (B) accepts Statement II, which reverses the inverse relation.
+  Tip: whenever momentum, energy or frequency is compared with wavelength for a photon, remember they all move opposite to λ. Halving λ doubles both p and E.
   Answer: (D)
 P A 10: |-
-  Concept: Current is the rate of flow of charge, so $q = \int i\,dt$.
+  Concept: Current is the rate of flow of charge, $i = \frac{dq}{dt}$. When i varies with time, the charge passing a cross-section is the area under the i–t curve: $q = \int i\,dt$.
+  Given: $i = 20t + 8t^2$ (in amperes, with t in seconds), over the interval 0 to 15 s.
   Solution:
-  1. $q = \int_0^{15}(20t + 8t^2)dt = \left[10t^2 + \frac{8t^3}{3}\right]_0^{15}$.
-  2. $= 10(225) + \frac{8(3375)}{3} = 2250 + 9000 = 11250$ C.
+  1. $q = \int_0^{15}(20t + 8t^2)\,dt$.
+  2. Integrate term by term: $\int20t\,dt = 10t^2$ and $\int8t^2\,dt = \frac{8t^3}{3}$.
+  3. $q = \left[10t^2 + \frac{8t^3}{3}\right]_0^{15} = 10(225) + \frac{8(3375)}{3}$.
+  4. $q = 2250 + 9000 = 11250$ C.
+  Why others are wrong:
+  - (C) 2250 C keeps only the linear term and drops the $\beta t^2$ contribution.
+  - (A) 2100 C and (B) 260 C come from using $q = i\times t$ with an instantaneous current, which is invalid when i changes with time.
+  Common mistake: multiplying the final current by the time. That is valid only for a steady current. For a varying current you must integrate, or use the average current (here 750 A over 15 s).
   Answer: (D)
 P A 11: |-
-  Concept: Each thermodynamic process keeps one quantity fixed.
+  Concept: Each basic thermodynamic process is named after the quantity it keeps fixed:
+  - iso-thermal: temperature
+  - iso-choric: volume
+  - iso-baric: pressure
+  - adiabatic: no heat exchange
   Solution:
-  1. Isothermal: temperature constant, (a)–(ii).
-  2. Isochoric: volume constant, (b)–(iii).
-  3. Adiabatic: no heat exchange, so the heat content stays constant, (c)–(iv).
-  4. Isobaric: pressure constant, (d)–(i).
+  1. (a) Isothermal: the temperature stays constant (for an ideal gas PV = constant), so (a)–(ii).
+  2. (b) Isochoric: the volume stays constant, so no P–V work is done, (b)–(iii).
+  3. (c) Adiabatic: Q = 0, so the heat content of the system does not change through heat transfer, (c)–(iv).
+  4. (d) Isobaric: the pressure stays constant, (d)–(i).
+  5. Matching: a–ii, b–iii, c–iv, d–i, which is option (B).
+  Why others are wrong:
+  - (A) swaps isochoric and adiabatic.
+  - (C) makes isothermal constant-pressure and adiabatic constant-temperature.
+  - (D) pairs isothermal with constant volume and isobaric with constant heat.
+  Memory aid: "thermo" means heat/temperature, "choric" comes from chora, space (volume), and "baric" comes from baros, weight (pressure). "A-diabatic" means "not passing through", i.e. no heat flow.
   Answer: (B)
 P A 12: |-
-  Concept: Lyman series ends on n = 1, Balmer on n = 2, Paschen on n = 3. The first member of a series comes from the nearest upper level; a jump from the continuum (n = ∞) is the series limit.
+  Concept: The spectral series of hydrogen are named after the lower level of the transition:
+  - Lyman: ends on n = 1
+  - Balmer: ends on n = 2
+  - Paschen: ends on n = 3
+  The first member of a series comes from the next level up. A transition from n = ∞ (the continuum) to the lower level is the series limit.
   Solution:
-  1. A: continuum → n = 1, the series limit of the Lyman series.
-  2. B: n = 5 → n = 2. Balmer members: 3→2 (first), 4→2 (second), 5→2 (third), so B is the third member of the Balmer series.
-  3. C: n = 5 → n = 3. Paschen members: 4→3 (first), 5→3 (second), so C is the second member of the Paschen series.
+  1. Transition A goes from the continuum (n = ∞) down to n = 1. It is the shortest-wavelength Lyman line, i.e. the series limit of the Lyman series.
+  2. Transition B goes from n = 5 to n = 2. The Balmer members are 3→2 (first, Hα), 4→2 (second, Hβ) and 5→2 (third, Hγ), so B is the third member of the Balmer series.
+  3. Transition C goes from n = 5 to n = 3. The Paschen members are 4→3 (first) and 5→3 (second), so C is the second member of the Paschen series.
+  4. This combination matches option (A).
+  Why others are wrong:
+  - (B) calls A the first Lyman line (2→1).
+  - (C) mislabels B and C.
+  - (D) calls 5→2 the second Balmer member, but that is 4→2.
   Answer: (A)
 P A 13: |-
-  Concept: For a spherical mirror (paraxial rays) the focus lies midway between the pole and the centre of curvature: $f = \frac{r}{2}$.
+  Concept: For a spherical mirror, paraxial rays parallel to the axis meet (or appear to diverge from) the focus F. F lies midway between the pole P and the centre of curvature C, so the magnitude of the focal length is half the radius of curvature: $|f| = \frac{|r|}{2}$.
   Solution:
-  1. For a convex mirror both F and C lie behind the mirror, so f and r have the same sign in the Cartesian convention.
-  2. Hence $f = +\frac{1}{2}r$.
+  1. Geometry: a ray parallel to the axis, striking the mirror at a small height, reflects so that the triangle it forms with C is isosceles. For small angles this puts F at the midpoint of PC.
+  2. For a convex mirror, both F and C lie behind the mirror, on the same side as each other.
+  3. So in any sign convention, f and r carry the same sign. In the Cartesian convention both are positive for a convex mirror.
+  4. Therefore $f = +\frac{r}{2}$.
+  Why others are wrong:
+  - (A) f = r and (D) f = −r ignore the factor ½.
+  - (B) $f = -\frac{r}{2}$ gives f and r opposite signs, which never happens for a mirror, because F and C always lie on the same side.
+  Note: the relation $f = \frac{r}{2}$ is exact only for paraxial rays. For wide-aperture mirrors, spherical aberration spreads out the focus.
   Answer: (C)
 P A 14: |-
-  Concept: Standard moments of inertia for mass M and radius R.
+  Concept: Use the standard moments of inertia for a body of mass M and radius R, together with the perpendicular-axis theorem where needed.
   Solution:
-  1. $I_1$ (ring about a diameter) $= \frac{1}{2}MR^2$.
-  2. $I_2$ (disc about its central perpendicular axis) $= \frac{1}{2}MR^2$.
-  3. $I_3$ (solid cylinder about its axis) $= \frac{1}{2}MR^2$.
-  4. $I_4$ (solid sphere about a diameter) $= \frac{2}{5}MR^2$.
-  5. Since $\frac{1}{2} > \frac{2}{5}$: $I_1 = I_2 = I_3 > I_4$.
+  1. $I_1$, ring about a diameter: about its central perpendicular axis the ring has $MR^2$. By the perpendicular-axis theorem, the two equal diameter values add to this, so $I_1 = \frac{1}{2}MR^2$.
+  2. $I_2$, disc about the axis through its centre perpendicular to its plane: $I_2 = \frac{1}{2}MR^2$.
+  3. $I_3$, solid cylinder about its own axis: this is a stack of discs, so $I_3 = \frac{1}{2}MR^2$.
+  4. $I_4$, solid sphere about a diameter: $I_4 = \frac{2}{5}MR^2$.
+  5. Compare: $\frac{1}{2} = 0.5 > \frac{2}{5} = 0.4$, so $I_1 = I_2 = I_3 > I_4$.
+  Why others are wrong:
+  - (A) reverses the inequality.
+  - (B): the left side is $MR^2$, but the right side is $\frac{1}{2}MR^2 + MR^2 = 1.5MR^2$.
+  - (C): the left side is $MR^2$ and the right side is $0.9MR^2$, so "<" is false.
+  Tip: the sphere's mass sits closer to the axis on average, which is why its moment of inertia is the smallest.
   Answer: (D)
 P A 15: |-
-  Concept: The argument of an exponential must be dimensionless.
+  Concept: The argument of an exponential (or log or trig) function must be dimensionless. This fixes the dimensions of α; W = work then fixes β.
+  Given: $W = \alpha\beta^2e^{-x^2/(\alpha kT)}$, where x is a length and kT is an energy.
   Solution:
-  1. $\frac{x^2}{\alpha kT}$ is dimensionless, and kT has dimensions of energy $[ML^2T^{-2}]$.
-  2. $[\alpha] = \frac{[L^2]}{[ML^2T^{-2}]} = [M^{-1}T^2]$.
-  3. $W = \alpha\beta^2$ (times a dimensionless factor), so $[\beta^2] = \frac{[ML^2T^{-2}]}{[M^{-1}T^2]} = [M^2L^2T^{-4}]$.
-  4. $[\beta] = [MLT^{-2}]$.
+  1. kT has the dimensions of energy, $[ML^2T^{-2}]$, and $x^2$ has dimensions $[L^2]$.
+  2. For $\frac{x^2}{\alpha kT}$ to be dimensionless: $[\alpha] = \frac{[L^2]}{[ML^2T^{-2}]} = [M^{-1}T^2]$.
+  3. The exponential factor is dimensionless, so $[W] = [\alpha][\beta^2]$.
+  4. $[\beta^2] = \frac{[ML^2T^{-2}]}{[M^{-1}T^2]} = [M^2L^2T^{-4}]$.
+  5. Taking the square root: $[\beta] = [MLT^{-2}]$, the dimensions of force.
+  Why others are wrong:
+  - (A) is just length.
+  - (B) has the wrong power of time.
+  - (D) is energy. It comes from forgetting that α carries dimensions, or from not taking the square root of β².
+  Tip: always start with the exponent. It usually pins down one constant at once.
   Answer: (C)
 P A 16: |-
-  Concept: Current gain of a transistor in CE mode: $\beta = \frac{\Delta I_C}{\Delta I_B}$, with $I_E = I_B + I_C$.
+  Concept: In a transistor the emitter current splits into base and collector currents, $I_E = I_B + I_C$. Two gains are defined:
+  - common-base gain: $\alpha = \frac{\Delta I_C}{\Delta I_E}$
+  - common-emitter gain: $\beta = \frac{\Delta I_C}{\Delta I_B}$
+  Given: $\Delta I_E$ = 4 mA and $\Delta I_C$ = 3.5 mA.
   Solution:
-  1. $\Delta I_B = \Delta I_E - \Delta I_C = 4 - 3.5 = 0.5$ mA.
-  2. $\beta = \frac{3.5}{0.5} = 7$.
-  3. The value 0.875 is $\alpha = \frac{\Delta I_C}{\Delta I_E}$, not β.
+  1. Change in base current: $\Delta I_B = \Delta I_E - \Delta I_C = 4 - 3.5 = 0.5$ mA.
+  2. $\beta = \frac{\Delta I_C}{\Delta I_B} = \frac{3.5}{0.5} = 7$.
+  3. Check using $\alpha = \frac{3.5}{4} = 0.875$ and $\beta = \frac{\alpha}{1 - \alpha} = \frac{0.875}{0.125} = 7$.
+  Why others are wrong:
+  - (B) 0.875 is α, not β.
+  - (C) 0.5 is $\Delta I_B$ in mA.
+  - (D) 3.5 is $\Delta I_C$ in mA.
+  Tip: β is always larger than 1 (usually 20 to 500), while α is always slightly below 1. If your β comes out below 1, you have probably computed α.
   Answer: (A)
 P A 17: |-
-  Concept: $I_{max} = (a_1 + a_2)^2$, $I_{min} = (a_1 - a_2)^2$ for amplitudes $a_1$, $a_2$.
+  Concept: In interference, intensity ∝ (amplitude)². Maxima occur where the amplitudes add, $I_{max} \propto (a_1 + a_2)^2$, and minima where they subtract, $I_{min} \propto (a_1 - a_2)^2$.
+  Given: one slit is three times as wide as the other, and amplitude ∝ slit width, so $a_1 : a_2 = 3 : 1$.
   Solution:
-  1. Amplitude is proportional to slit width, so $a_1 : a_2 = 3 : 1$.
-  2. $\frac{I_{max}}{I_{min}} = \frac{(3 + 1)^2}{(3 - 1)^2} = \frac{16}{4} = 4$.
+  1. Let $a_1 = 3a$ and $a_2 = a$.
+  2. $I_{max} \propto (3a + a)^2 = 16a^2$.
+  3. $I_{min} \propto (3a - a)^2 = 4a^2$.
+  4. $\frac{I_{max}}{I_{min}} = \frac{16}{4} = 4$, so the ratio is 4 : 1.
+  Why others are wrong:
+  - (C) 3 : 1 is just the amplitude ratio.
+  - (D) 1 : 4 is the inverted ratio.
+  - (B) 2 : 1 is $\sqrt{4}$, the ratio of the amplitudes at maxima and minima.
+  Common mistake: taking intensity ∝ slit width, so that $I_1 : I_2 = 3 : 1$. That gives $\frac{(\sqrt3 + 1)^2}{(\sqrt3 - 1)^2} \approx 13.9$. The question states that the amplitude, not the intensity, is proportional to the width.
   Answer: (A)
 P A 18: |-
-  Concept: When a mass is placed gently at the mean position, horizontal momentum is conserved; the new amplitude comes from the new speed and new angular frequency.
+  Concept: When a mass is placed gently on an oscillating block at its mean position, there is no horizontal impulse from outside. So horizontal momentum is conserved during the sudden sticking, while the angular frequency changes because the mass changes.
+  Given: spring constant k, original mass M, amplitude A. The extra mass m is added at the equilibrium position.
   Solution:
-  1. Before: speed at the mean position $v = A\omega$, where $\omega = \sqrt{\frac{k}{M}}$.
-  2. Momentum conservation: $Mv = (M + m)v'$, so $v' = \frac{MA\omega}{M + m}$.
-  3. New angular frequency $\omega' = \sqrt{\frac{k}{M + m}}$.
-  4. New amplitude $A' = \frac{v'}{\omega'} = \frac{MA}{M + m}\sqrt{\frac{k}{M}}\sqrt{\frac{M + m}{k}} = A\sqrt{\frac{M}{M + m}}$.
+  1. Just before: the speed at the mean position is the maximum speed, $v = A\omega$ with $\omega = \sqrt{\frac{k}{M}}$.
+  2. Sticking (a perfectly inelastic process): $Mv = (M + m)v'$, so $v' = \frac{M}{M + m}A\omega$.
+  3. New angular frequency: $\omega' = \sqrt{\frac{k}{M + m}}$.
+  4. This point is still the mean position, so v′ is the new maximum speed: $A' = \frac{v'}{\omega'}$.
+  5. $A' = \frac{MA}{M + m}\sqrt{\frac{k}{M}}\cdot\sqrt{\frac{M + m}{k}} = A\sqrt{\frac{M}{M + m}}$.
+  6. The amplitude decreases, as expected, because kinetic energy is lost in the sticking.
+  Contrast: if m were added at an extreme position (where v = 0), the amplitude would stay A and only the period would change.
   Answer: (A)
 P A 19: |-
-  Concept: Superposition. Eight equal charges +Q at the corners of a cube give zero field at the centre by symmetry.
+  Concept: Use superposition. Eight equal charges at the corners of a cube produce zero field at the centre by symmetry, since the fields from diagonally opposite corners cancel in pairs.
+  Given: +Q at seven corners and −Q at the origin corner. The cube has side a.
   Solution:
-  1. Write the charge at the origin as $-Q = +Q + (-2Q)$. The eight +Q charges give zero field; only the extra −2Q at the origin remains.
-  2. Distance from a corner to the centre: $r = \frac{\sqrt{3}a}{2}$, so $r^2 = \frac{3a^2}{4}$.
-  3. Magnitude: $E = \frac{1}{4\pi\varepsilon_0}\cdot\frac{2Q}{3a^2/4} = \frac{2Q}{3\pi\varepsilon_0a^2}$.
-  4. The field of a negative charge points towards it (towards the origin), along $-\frac{(\hat{x} + \hat{y} + \hat{z})}{\sqrt{3}}$.
-  5. $\vec{E} = \frac{-2Q}{3\sqrt{3}\pi\varepsilon_0a^2}(\hat{x} + \hat{y} + \hat{z})$.
+  1. Rewrite the charge at the origin as $-Q = (+Q) + (-2Q)$. The configuration is then "+Q at all eight corners" plus "an extra −2Q at the origin".
+  2. The eight +Q charges give zero field at the centre, so only the −2Q charge contributes.
+  3. Corner-to-centre distance: half the body diagonal, $r = \frac{\sqrt3a}{2}$, so $r^2 = \frac{3a^2}{4}$.
+  4. Magnitude: $E = \frac{1}{4\pi\varepsilon_0}\cdot\frac{2Q}{3a^2/4} = \frac{2Q}{3\pi\varepsilon_0a^2}$.
+  5. Direction: the field of a negative charge points towards it, i.e. from the centre towards the origin, along $-\frac{\hat{x} + \hat{y} + \hat{z}}{\sqrt3}$.
+  6. $\vec{E} = -\frac{2Q}{3\sqrt3\pi\varepsilon_0a^2}(\hat{x} + \hat{y} + \hat{z})$.
+  Why others are wrong:
+  - (A) has the right magnitude but the wrong direction.
+  - (B) and (D) use Q instead of 2Q, forgetting that the −Q replaced a +Q.
   Answer: (C)
 P A 20: |-
-  Concept: Volume expansion coefficient $\gamma = 3\alpha$, so $\Delta V = 3\alpha V\Delta T$.
+  Concept: A hollow body expands exactly as if it were solid material of the same shape: the enclosed cavity grows as though it were filled with the metal. For small ΔT the volume coefficient is γ = 3α, so ΔV = 3αVΔT.
+  Given: a cubical box of side a, linear expansion coefficient α, heated by a small ΔT.
   Solution:
-  1. The box encloses volume $V = a^3$, and it expands like a solid cube of the same material.
-  2. $\Delta V = 3\alpha a^3\Delta T$.
+  1. Each edge becomes $a' = a(1 + \alpha\Delta T)$.
+  2. New volume: $V' = a^3(1 + \alpha\Delta T)^3 \approx a^3(1 + 3\alpha\Delta T)$. The terms in $(\alpha\Delta T)^2$ and higher are negligible for small ΔT.
+  3. Increase in volume: $\Delta V = V' - V = 3a^3\alpha\Delta T$.
+  Why others are wrong:
+  - (A) and (B) contain π, which belongs to a sphere, not a cube.
+  - (D) uses a factor of 4 instead of 3. The factor 3 comes from the three dimensions of expansion.
+  Common mistake: thinking a hollow box expands less than a solid block, or that its cavity shrinks. In fact every linear dimension, including the size of the cavity, scales by the same factor $(1 + \alpha\Delta T)$.
   Answer: (C)
 P B 1: |-
-  Concept: Quality factor of a series LR resonator: $Q = \frac{\omega L}{R} = \frac{2\pi fL}{R}$.
+  Concept: The quality factor of a series resonant circuit measures how sharp the resonance is. $Q = \frac{\omega_0L}{R} = \frac{2\pi f_0L}{R}$ is the ratio of the inductive reactance at resonance to the resistance, which is also the voltage magnification.
+  Given: L = 2 × 10⁻⁴ H, R = 6.28 Ω, $f_0$ = 10 MHz = 10⁷ Hz, π = 3.14.
   Solution:
-  1. $Q = \frac{2\times3.14\times10^7\times2\times10^{-4}}{6.28}$.
-  2. $= \frac{6.28\times2\times10^3}{6.28} = 2000$.
+  1. Angular resonance frequency: $\omega_0 = 2\pi f_0 = 2\times3.14\times10^7 = 6.28\times10^7$ rad/s.
+  2. Inductive reactance at resonance: $X_L = \omega_0L = 6.28\times10^7\times2\times10^{-4} = 1.256\times10^4$ Ω.
+  3. $Q = \frac{X_L}{R} = \frac{6.28\times2\times10^3}{6.28} = 2000$.
+  Interpretation: at resonance, the voltage across the inductor (or capacitor) is 2000 times the source voltage. The bandwidth is $\Delta f = \frac{f_0}{Q} = 5$ kHz, so this is a very selective circuit.
+  Common mistake: using f instead of 2πf, which gives Q ≈ 318. The data are chosen so that 2π × (stated numbers) cancels the 6.28 Ω neatly.
   Answer: 2000
 P B 2: |-
-  Concept: Conservation of linear momentum in the direction perpendicular to the initial motion.
+  Concept: In any collision the total linear momentum is conserved along every direction. Before the collision there is no momentum perpendicular to the initial direction, so after the collision the perpendicular components must cancel.
+  Given: identical balls (equal mass m), one initially at rest. After the collision both move at 30° to the original direction, on opposite sides.
   Solution:
-  1. Initially there is no momentum perpendicular to the original direction.
-  2. The balls move at 30° on opposite sides: $mv_1\sin30^\circ = mv_2\sin30^\circ$.
-  3. So $v_1 = v_2$ and the ratio is 1 : 1, x = 1.
+  1. Perpendicular direction: $0 = mv_1\sin30^\circ - mv_2\sin30^\circ$.
+  2. So $v_1 = v_2$, and the ratio of speeds is 1 : 1. Hence x = 1.
+  3. (Optional) Along the original direction: $m(9) = mv_1\cos30^\circ + mv_2\cos30^\circ$, giving $v_1 = v_2 = \frac{9}{\sqrt3} = 3\sqrt3$ m/s.
+  4. Energy check: KE before ∝ 81; KE after ∝ 2 × 27 = 54. So the collision is inelastic, which is allowed. An elastic collision of equal masses would have needed a 90° separation between the balls.
+  Tip: symmetric deflection angles with equal masses always give equal speeds, whatever the initial speed.
   Answer: 1
 P B 3: |-
-  Concept: Modulation index $\mu = \frac{A_m}{A_c}$; percent modulation = $\mu\times100$.
+  Concept: In amplitude modulation the modulation index is the ratio of the message amplitude to the carrier amplitude, $\mu = \frac{A_m}{A_c}$. Percent modulation is μ × 100.
+  Given: message $\upsilon_m = 20\sin2\pi(1500t)$, so $A_m$ = 20 at 1.5 kHz. Carrier $\upsilon_c = 80\sin2\pi(10^5t)$, so $A_c$ = 80 at 100 kHz.
   Solution:
-  1. Message amplitude $A_m$ = 20, carrier amplitude $A_c$ = 80.
-  2. $\mu = \frac{20}{80} = 0.25$, i.e. 25%.
+  1. $\mu = \frac{20}{80} = 0.25$.
+  2. Percent modulation = 0.25 × 100 = 25%.
+  3. The envelope swings between $A_c + A_m = 100$ and $A_c - A_m = 60$. Check: $\mu = \frac{100 - 60}{100 + 60} = 0.25$, the same result.
+  4. The sidebands lie at 100 ± 1.5 kHz, i.e. 98.5 kHz and 101.5 kHz, so the bandwidth is 3 kHz. The frequencies are not needed for μ.
+  Note: μ must stay ≤ 1 (100%). Otherwise the envelope distorts (over-modulation), and a simple envelope detector cannot recover the signal.
   Answer: 25
 P B 4: |-
-  Concept: The horizontal push gives the normal reaction; static friction $f \le \mu N$ must balance the weight.
+  Concept: A block pressed against a vertical wall is held by static friction. The horizontal push F creates the normal reaction N = F, and friction (at most μN) acts upward, against gravity.
+  Given: m = 0.5 kg, μ = 0.2, g = 10 m/s².
   Solution:
-  1. For the block not to slide: $\mu N \ge mg$.
-  2. Minimum force: $N = \frac{mg}{\mu} = \frac{0.5\times10}{0.2} = 25$ N.
+  1. Horizontal balance: the wall's normal reaction equals the applied force, N = F.
+  2. Vertical balance: the needed friction is f = mg = 5 N, and it must satisfy f ≤ μN.
+  3. Condition: $mg \le \mu F$, so $F \ge \frac{mg}{\mu}$.
+  4. Minimum force: $F = \frac{0.5\times10}{0.2} = 25$ N.
+  5. Any larger push also works. Friction then stays at 5 N; it does not grow to μN, because static friction adjusts to the need.
+  Common mistake: writing F = μmg (= 1 N), as if the block were on a horizontal floor. Here the weight is balanced by friction, and the normal force comes from the push.
   Answer: 25
 P B 5: |-
-  Concept: A block rests on an incline without slipping if $\tan\theta \le \mu$.
+  Concept: A block rests on a rough slope without slipping as long as tan θ ≤ μ (the angle of repose). On a curved surface the local slope is tan θ = dy/dx, so the block can stay at rest wherever this condition holds.
+  Given: the profile $y = \frac{x^2}{4}$ and μ = 0.5.
   Solution:
-  1. Slope of the curve: $\tan\theta = \frac{dy}{dx} = \frac{x}{2}$.
-  2. Limiting case: $\frac{x}{2} = 0.5 \Rightarrow x = 1$ m.
-  3. Height $y = \frac{x^2}{4} = \frac{1}{4}$ m = 25 cm.
+  1. Local slope: $\tan\theta = \frac{dy}{dx} = \frac{x}{2}$. The slope increases as the block goes higher.
+  2. Limiting condition: $\frac{x}{2} = \mu = 0.5$, so x = 1 m.
+  3. Height at that point: $y = \frac{1^2}{4} = 0.25$ m = 25 cm.
+  4. Above this height, tan θ > μ and the block would slide down. Below it, friction is enough to hold it.
+  Why this works: on the slope the forces along the surface are mg sin θ (down) and friction ≤ μmg cos θ (up). Equilibrium needs sin θ ≤ μ cos θ, i.e. tan θ ≤ μ.
   Answer: 25
 P B 6: |-
-  Concept: Speed of an EM wave in a medium: $v = \frac{c}{\sqrt{\mu_r\varepsilon_r}}$ (frequency is not needed).
+  Concept: An electromagnetic wave travels in a medium at $v = \frac{1}{\sqrt{\mu\varepsilon}} = \frac{c}{\sqrt{\mu_r\varepsilon_r}}$. In a non-dispersive medium the speed does not depend on the frequency, so the 5 GHz value is extra information.
+  Given: $\mu_r = 2$, $\varepsilon_r = 2$, c = 3 × 10⁸ m/s.
   Solution:
-  1. $v = \frac{3\times10^8}{\sqrt{2\times2}} = 1.5\times10^8$ m/s.
-  2. $= 15\times10^7$ m/s.
+  1. Refractive index: $n = \sqrt{\mu_r\varepsilon_r} = \sqrt{4} = 2$.
+  2. $v = \frac{c}{n} = \frac{3\times10^8}{2} = 1.5\times10^8$ m/s.
+  3. In the requested form: $v = 15\times10^7$ m/s.
+  4. The frequency stays 5 GHz in the medium. The wavelength is $\lambda = \frac{v}{f} = \frac{1.5\times10^8}{5\times10^9} = 3$ cm, half its vacuum value of 6 cm.
+  Common mistakes:
+  - using $\sqrt{\varepsilon_r}$ alone and forgetting $\mu_r$, which gives $2.12\times10^8$ m/s;
+  - multiplying by n instead of dividing.
   Answer: 15
 P B 7: |-
-  Concept: Pascal's law: equal pressure on both pistons, $\frac{F_1}{A_1} = \frac{F_2}{A_2}$, and $A \propto d^2$.
+  Concept: Pascal's law: the pressure applied on the small piston is transmitted undiminished to the large piston, so $\frac{F_1}{A_1} = \frac{F_2}{A_2}$. The load that can be lifted is proportional to the area ratio, i.e. to the square of the diameter ratio.
+  Given: with mass m on the small piston, the press lifts 100 kg. The large-piston diameter is multiplied by 4, and the small-piston diameter is divided by 4.
   Solution:
-  1. Load lifted $\propto \frac{A_{large}}{A_{small}} = \left(\frac{d_{large}}{d_{small}}\right)^2$.
-  2. New ratio $= \frac{(4d_L)^2}{(d_s/4)^2} = 16\times16 = 256$ times the old ratio.
-  3. New load = 100 × 256 = 25600 kg.
+  1. Load lifted: $M = m\frac{A_{large}}{A_{small}} = m\left(\frac{D}{d}\right)^2$.
+  2. New diameter ratio: $\frac{4D}{d/4} = 16\frac{D}{d}$.
+  3. The new area ratio is $16^2 = 256$ times the old one.
+  4. New load = 100 × 256 = 25600 kg.
+  Common mistakes:
+  - using the diameters linearly (a factor of 16), which gives 1600 kg;
+  - changing only one piston, which gives a factor of 16, i.e. 1600 kg.
+  Energy note: the larger force comes at the cost of a much smaller movement of the large piston, so the work in equals the work out for an ideal press.
   Answer: 25600
 P B 8: |-
-  Concept: Ideal transformer: $\frac{N_p}{N_s} = \frac{V_p}{V_s}$.
+  Concept: For an ideal transformer the voltage per turn is the same in both coils: $\frac{V_p}{N_p} = \frac{V_s}{N_s}$, i.e. $\frac{N_p}{N_s} = \frac{V_p}{V_s}$.
+  Given: $V_p$ = 220 V (mains), $V_s$ = 12 V (taken as the AC output feeding the rectifier), $N_s$ = 24.
   Solution:
-  1. $V_p$ = 220 V, $V_s$ = 12 V, $N_s$ = 24.
-  2. $N_p = 24\times\frac{220}{12} = 440$.
+  1. $N_p = N_s\frac{V_p}{V_s} = 24\times\frac{220}{12}$.
+  2. $N_p = 24\times18.33 = 440$ turns.
+  3. Voltage per turn = 12/24 = 0.5 V. Check: 440 × 0.5 = 220 V ✓.
+  4. This is a step-down transformer with a turns ratio of 440 : 24 ≈ 18.3 : 1.
+  Note: in practice the rectifier and filter alter the DC level slightly (the peak of 12 V rms is about 17 V). The question intends the simple turns-ratio calculation with 12 V as the secondary voltage.
+  Common mistake: inverting the ratio, which gives about 1.3 turns and is clearly unphysical.
   Answer: 440
 P B 9: |-
-  Concept: Malus' law, $I = I_0\cos^2\theta$ for light passing through the analyser.
+  Concept: Unpolarized light emerges from the polariser polarized along the polariser's axis. The analyser then transmits $I = I_0\cos^2\theta$ (Malus' law), where θ is the angle between the two transmission axes.
+  Given: the initial analyser reading is 100 lumen. The analyser is then turned by 30°.
   Solution:
-  1. Taking the initial setting as the one of maximum transmission (polariser and analyser axes parallel), 100 lumen is the maximum intensity.
-  2. After rotating the analyser by 30°: $I = 100\cos^230^\circ = 100\times\frac{3}{4} = 75$ lumen.
+  1. The problem intends the initial setting to have parallel axes (θ = 0), so 100 lumen is $I_0$, the intensity leaving the polariser.
+  2. After turning the analyser by 30°: $I = 100\cos^230^\circ$.
+  3. $\cos^230^\circ = \frac{3}{4}$, so I = 75 lumen.
+  4. Turning clockwise or anticlockwise does not matter, because cos² is even.
+  Note: if the initial angle were not zero, the answer would need that angle. The data make sense only with parallel axes at the start.
+  Common mistake: using cos 30° instead of cos² 30°, which gives about 86.6 lumen. Intensity varies with the square of the amplitude, and the amplitude varies as cos θ.
   Answer: 75
 P B 10: |-
-  Concept: A reverse-biased Zener diode in breakdown holds the voltage across it (and anything in parallel with it) at $V_Z$.
+  Concept: A Zener diode in reverse breakdown keeps a constant voltage $V_Z$ across itself. Any resistor connected in parallel with it therefore has $V_Z$ across it.
+  Given (from the figure): a 10 V source, a 1 kΩ series resistor, and a 5 V Zener in parallel with a 2 kΩ load.
   Solution:
-  1. Check breakdown: without the Zener, the voltage across 2 kΩ would be $10\times\frac{2}{3} \approx 6.67$ V > 5 V, so the Zener conducts.
-  2. The 2 kΩ resistor is in parallel with the Zener, so its voltage is 5 V.
-  3. $I = \frac{5}{2000} = 2.5\times10^{-3}$ A $= 25\times10^{-4}$ A.
+  1. Check whether the Zener breaks down. Without it, the divider would put $10\times\frac{2}{1 + 2} = 6.67$ V across the load. This exceeds 5 V, so the Zener conducts and clamps the voltage at 5 V.
+  2. Voltage across the 2 kΩ resistor = 5 V.
+  3. $I_{2k} = \frac{5}{2000} = 2.5\times10^{-3}$ A = 25 × 10⁻⁴ A.
+  4. For completeness: the series current is (10 − 5)/1000 = 5 mA, so the Zener carries 5 − 2.5 = 2.5 mA.
+  Common mistake: skipping the breakdown check. If the open-circuit voltage were below $V_Z$, the Zener would be off and the ordinary divider result would apply.
   Answer: 25
