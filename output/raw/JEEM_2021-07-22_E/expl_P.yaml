@@ -135,6 +135,8 @@ P A 11: |-
   - (C) $4T_0$ corresponds to a length 16 times larger, not smaller.
   - (B) $8\pi T_0$ has no physical basis — it mixes the $2\pi$ factor into the ratio.
   Common trap: using $T \propto l$ instead of $\sqrt l$, which would give $\frac{T_0}{16}$ (not an option).
+  Physical sense: A shorter pendulum swings faster. Reducing the length 16 times cuts the period only 4 times, because of the square root.
+  Common mistake: Using T ∝ l (giving T₀/16) or inverting the ratio (giving 4T₀).
   Answer: (D)
 P A 12: |-
   Concept: Ferromagnetism arises from domains in which atomic moments are aligned by strong exchange interaction. Thermal agitation disrupts this alignment. Above the Curie temperature $T_C$, the domain structure disappears and the material behaves as a paramagnet.
@@ -248,6 +250,8 @@ P B 1: |-
   3. By symmetry $x_{cm} = 0$.
   4. Comparing with $\left(0, \frac{xR}{\pi}\right)$: $|x| = 2$.
   Note: a semicircular disc (lamina) would give $\frac{4R}{3\pi}$ instead — do not confuse wire and plate.
+  Result: y_cm = (1/πR)∫₀^π R sin θ · R dθ = (R/π)[−cos θ]₀^π = 2R/π, so |x| = 2.
+  Common mistake: Using the semicircular disc result 4R/(3π); a wire (arc) has its mass on the rim, farther from the centre.
   Answer: 2
 P B 2: |-
   Concept: Gauss's law in differential (point) form: $\nabla\cdot\vec D = \rho_v$, the free volume charge density. For a very small volume, the enclosed charge is $Q \approx \rho_v\,\Delta V$.
@@ -257,6 +261,8 @@ P B 2: |-
   3. $D_z = 2z$, so $\frac{\partial D_z}{\partial z} = 2$.
   4. $\nabla\cdot\vec D = -e^{-x}\sin y + e^{-x}\sin y + 2 = 2$ C/m³ (constant everywhere, including the origin).
   5. $Q = \rho_v\,\Delta V = 2\times2\times10^{-9} = 4\times10^{-9}$ C = 4 nC.
+  Result: ∂D_y/∂y = e^{−x} sin y and ∂D_z/∂z = 2, so ∇·D = −e^{−x} sin y + e^{−x} sin y + 2 = 2 C/m³. Then Q = 2 × 2 × 10⁻⁹ = 4 × 10⁻⁹ C = 4 nC.
+  Common mistake: Evaluating D itself at the origin instead of its divergence.
   Answer: 4
 P B 3: |-
   Concept: At minimum deviation the ray passes symmetrically through the prism: the refraction angles at both faces are equal, $r_1 = r_2 = r = \frac{A}{2}$, and the refractive index is $\mu = \frac{\sin i}{\sin r}$.
@@ -308,6 +314,8 @@ P B 7: |-
   4. Volume per metre of track $= A\times1 = 0.01$ m³.
   5. Energy per metre $= 500\times0.01 = 5$ J/m.
   Alternative: energy per metre $= \frac{1}{2}YA(\alpha\Delta T)^2 = \frac{1}{2}\times10^{11}\times0.01\times10^{-8} = 5$ J/m ✓.
+  Result: Stress = Yα ΔT = 10¹¹ × 10⁻⁴ = 10⁷ N/m². Energy per unit volume = ½ × 10⁷ × 10⁻⁴ = 500 J/m³; times the area 0.01 m² gives 5 J per metre of track.
+  Common mistake: Forgetting the factor ½ in the elastic energy density, which gives 10 J/m.
   Answer: 5
 P B 8: |-
   Concept: A real cell has emf E and internal resistance r. The terminal voltage across a load R is $V = E - Ir$, with $I = \frac{V}{R}$.

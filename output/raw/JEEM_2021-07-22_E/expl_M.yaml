@@ -307,6 +307,8 @@ M B 6: |-
   2. Equating: $b_{11} = b_{22}$, $b_{12} = b_{21}$, $b_{13} = b_{23}$, $b_{31} = b_{32}$; $b_{33}$ is free.
   3. Independent entries: $b_{11}, b_{12}, b_{13}, b_{31}, b_{33}$ — five of them.
   4. Each has 5 choices from {1, 2, 3, 4, 5}: $5^5 = 3125$.
+  Result: AB = BA forces b₁₁ = b₂₂, b₁₂ = b₂₁, b₁₃ = b₂₃ and b₃₁ = b₃₂. The free entries are b₁₁, b₁₂, b₁₃, b₃₁ and b₃₃: five choices of 5 values each, so 5⁵ = 3125.
+  Common mistake: Counting 5⁹ (all matrices) or forgetting b₃₃ is free.
   Answer: 3125
 M B 7: |-
   Concept: With five digits and no repetition, a number has at most 5 digits. Every 4-digit number is below 10,000, so only 5-digit numbers (using all five digits) qualify — and every 5-digit number is ≥ 20,000 > 10,000.
@@ -335,6 +337,8 @@ M B 9: |-
   2. Try values: k = 8: $45\times4 = 180$ ✓. (k = 7: $120\times8 = 960$; k = 9: $10\times2 = 20$; k = 10: 1.)
   3. The power of x must vanish for k = 8: $r(10 - 8) - 16 = 0 \Rightarrow 2r = 16 \Rightarrow r = 8$.
   4. Check: $T_9 = \binom{10}{8}(2x^8)^2x^{-16} = 45\times4 = 180$ ✓.
+  Result: For k = 8, the power of x is r(2) − 16 = 0, so r = 8.
+  Common mistake: Taking k = 2 (because C(10, 2) = 45 as well), but then 2⁸ × 45 ≠ 180; the power of 2 decides which k works.
   Answer: 8
 M B 10: |-
   Concept: For grouped data, Median $= l + \frac{\frac{N}{2} - cf}{f}\times h$ and Mean $= \frac{\sum f_ix_i}{N}$ (using class mid-points).
