@@ -1,170 +1,320 @@
 P A 1: |-
-  Concept: Kepler's third law: $M = \frac{4\pi^2r^3}{GT^2}$.
+  Concept: A moon in a circular orbit is held by the planet's gravity: $\frac{GMm}{r^2} = m\omega^2r = m\frac{4\pi^2}{T^2}r$. This gives Kepler's third law, $T^2 = \frac{4\pi^2}{GM}r^3$, so the planet's mass is $M = \frac{4\pi^2}{G}\cdot\frac{r^3}{T^2}$.
   Solution:
-  1. $T = 7.5$ h $= 27000$ s and $r = 9\times10^6$ m.
-  2. $M = 6\times10^{11}\times\frac{(9\times10^6)^3}{(2.7\times10^4)^2} = 6\times10^{11}\times10^{12} = 6.0\times10^{23}$ kg.
+  1. T = 7 h 30 min = 7.5 × 3600 = 27000 s = $2.7\times10^4$ s.
+  2. r = $9.0\times10^3$ km = $9\times10^6$ m, so $r^3 = 729\times10^{18}$ m³.
+  3. $T^2 = 7.29\times10^8$ s².
+  4. $\frac{r^3}{T^2} = \frac{7.29\times10^{20}}{7.29\times10^8} = 10^{12}$.
+  5. $M = 6\times10^{11}\times10^{12} = 6.0\times10^{23}$ kg.
+  Why others are wrong:
+  - (A), (C) and (D) come from unit slips — for example leaving r in km or T in hours changes the answer by many powers of ten.
+  Key takeaway: the moon's own mass cancels, so the orbit of any satellite measures the mass of the body it circles — this is how planetary masses are found.
   Answer: (B)
 P A 2: |-
-  Concept: Terminal speed (Stokes' law, buoyancy neglected): $v = \frac{2r^2\rho g}{9\eta}$.
+  Concept: A small sphere falling through a viscous fluid reaches terminal velocity when the viscous drag (Stokes' law, $6\pi\eta rv$) balances its weight. Neglecting buoyancy: $\frac{4}{3}\pi r^3\rho g = 6\pi\eta rv \Rightarrow v = \frac{2r^2\rho g}{9\eta}$.
   Solution:
-  1. $v = \frac{2\times(2\times10^{-4})^2\times1000\times10}{9\times1.8\times10^{-5}} = \frac{8\times10^{-4}}{1.62\times10^{-4}} \approx 4.94$ m/s.
+  1. r = 0.2 mm = $2\times10^{-4}$ m, so $r^2 = 4\times10^{-8}$ m².
+  2. Numerator: $2\times4\times10^{-8}\times1000\times10 = 8\times10^{-4}$.
+  3. Denominator: $9\times1.8\times10^{-5} = 1.62\times10^{-4}$.
+  4. $v = \frac{8\times10^{-4}}{1.62\times10^{-4}} \approx 4.94$ m/s.
+  5. The height of 2000 m is irrelevant: the drop reaches terminal speed quickly and then falls at constant speed.
+  Why others are wrong:
+  - (B), (C) and (D) are much larger, e.g. from using r instead of r² or ignoring viscosity (free fall from 2000 m would give 200 m/s).
+  Key takeaway: terminal velocity ∝ r², which is why fine droplets (mist) hang in the air while large drops fall fast.
   Answer: (A)
 P A 3: |-
-  Concept: Ampère's law: inside, $B = \frac{\mu_0Ir}{2\pi R^2}$ (linear); outside, $B = \frac{\mu_0I}{2\pi r}$.
+  Concept: For a long straight wire of radius R carrying current I uniformly, Ampère's law gives: inside (r < R), $B = \frac{\mu_0Ir}{2\pi R^2}$ (rises linearly); outside (r > R), $B = \frac{\mu_0I}{2\pi r}$ (falls as 1/r). The maximum is at the surface: $B_{max} = \frac{\mu_0I}{2\pi R}$.
   Solution:
-  1. B peaks at the surface: $B_{max} = \frac{\mu_0I}{2\pi R}$, which is larger for the thinner wire.
-  2. The thinner wire (a) peaks higher and at smaller r; outside, both follow the same $\frac{1}{r}$ curve.
+  1. Both wires carry the same I, so outside they follow the same $\frac{1}{r}$ curve.
+  2. The thinner wire (radius a < b) has a steeper linear rise inside ($\propto \frac{1}{a^2}$).
+  3. Its peak occurs at r = a (smaller r) and is higher ($\frac{\mu_0I}{2\pi a} > \frac{\mu_0I}{2\pi b}$).
+  4. Graph (A) shows exactly this: linear rise, 1/r fall, with wire a peaking higher and earlier.
+  Why others are wrong:
+  - (B) places both peaks at the same r — the peaks must be at the respective radii a and b.
+  - (C) shows b's peak higher, which is wrong since $B_{max} \propto \frac{1}{R}$.
+  - (D) puts a's peak at larger r, but a < b.
+  Key takeaway: outside the wire, B depends only on the current, not on the wire's thickness.
   Answer: (A)
 P A 4: |-
-  Concept: $R_T = R_0(1 + \alpha T)$.
+  Concept: The resistance of a metallic conductor varies with temperature as $R_T = R_0(1 + \alpha T)$, where $R_0$ is the resistance at 0 °C and α is the temperature coefficient of resistance.
   Solution:
-  1. $\frac{20}{16} = \frac{1 + 100\alpha}{1 + 15\alpha} \Rightarrow 0.25 = 81.25\alpha \Rightarrow \alpha \approx 0.003$ °C⁻¹.
+  1. $16 = R_0(1 + 15\alpha)$ and $20 = R_0(1 + 100\alpha)$.
+  2. Divide: $\frac{20}{16} = \frac{1 + 100\alpha}{1 + 15\alpha} \Rightarrow 20 + 300\alpha = 16 + 1600\alpha$.
+  3. $4 = 1300\alpha \Rightarrow \alpha = 3.08\times10^{-3}$ °C⁻¹ ≈ 0.003 °C⁻¹.
+  4. A quick approximation $\alpha \approx \frac{R_2 - R_1}{R_1(T_2 - T_1)} = \frac{4}{16\times85} = 0.0029$ gives the same option.
+  Why others are wrong:
+  - (B) 0.042 and (C) 0.033 come from forgetting to divide by the resistance (e.g. $\frac{4}{85}$ or $\frac{4}{120}$).
+  - (D) 0.010 has no basis in the data.
+  Key takeaway: typical metals have α of a few × 10⁻³ per °C, so a value near 0.003–0.004 is physically sensible.
   Answer: (A)
 P A 5: |-
-  Concept: Mutual gravity (separation 2R) provides the centripetal force.
+  Concept: Two equal masses revolving on the same circle under mutual gravity must stay diametrically opposite, so their separation is 2R. The gravitational force between them provides each one's centripetal force.
   Solution:
-  1. $\frac{G(1)(1)}{(2R)^2} = (1)\omega^2R \Rightarrow \omega = \frac{1}{2}\sqrt{\frac{G}{R^3}}$.
+  1. Gravitational force: $F = \frac{G(1)(1)}{(2R)^2} = \frac{G}{4R^2}$.
+  2. Centripetal requirement for each particle: $m\omega^2R = \omega^2R$ (m = 1 kg).
+  3. $\omega^2R = \frac{G}{4R^2} \Rightarrow \omega^2 = \frac{G}{4R^3} \Rightarrow \omega = \frac{1}{2}\sqrt{\frac{G}{R^3}}$.
+  Why others are wrong:
+  - (D) $\sqrt{\frac{2G}{R^3}}$ and (B) $\sqrt{\frac{G}{2R^3}}$ use the wrong separation (R or $\sqrt2R$) in the force.
+  - (C) is dimensionally incorrect (G in the denominator).
+  Key takeaway: in binary-orbit problems, distinguish the separation (2R, used in the force) from the orbital radius (R, used in the centripetal term).
   Answer: (A)
 P A 6: |-
-  Concept: Atomic and nuclear facts.
+  Concept: Check each statement against basic atomic and nuclear physics.
   Solution:
-  1. (A), (B) and (E) are true.
-  2. (C) is false: nuclear density is the same for all nuclei.
-  3. (D) is false: a free neutron decays (t½ ≈ 10 min), while a free proton is stable.
+  1. (A) Each element emits a characteristic line spectrum — TRUE (basis of spectroscopy).
+  2. (B) Bohr's postulate: the electron revolves in certain stationary (non-radiating) orbits — TRUE.
+  3. (C) Nuclear density does NOT depend on size: since $R = R_0A^{1/3}$, volume ∝ A and density ∝ $\frac{A}{A}$ is constant (≈ $2.3\times10^{17}$ kg/m³). FALSE.
+  4. (D) Reversed: a free neutron is unstable (β-decays with half-life ≈ 10 min: n → p + e⁻ + ν̄), while a free proton is stable. FALSE.
+  5. (E) Radioactivity arises from unstable nuclei — TRUE.
+  6. Correct set: A, B and E.
+  Why others are wrong:
+  - (A) includes the false D and misses A, E.
+  - (B) includes the false C.
+  - (C) includes both false statements.
+  Key takeaway: constant nuclear density is a direct consequence of $R \propto A^{1/3}$.
   Answer: (D)
 P A 7: |-
-  Concept: Dimensional analysis.
+  Concept: Derive dimensions from defining equations, using [A] for current.
   Solution:
-  1. $C = \frac{Q}{V}$: $[M^{-1}L^{-2}T^4A^2]$ (iii).
-  2. $\varepsilon_0$: $[M^{-1}L^{-3}T^4A^2]$ (ii).
-  3. $\mu_0$: $[MLT^{-2}A^{-2}]$ (iv).
-  4. E: $[MLT^{-3}A^{-1}]$ (i).
+  1. (a) Capacitance $C = \frac{Q}{V}$; [Q] = [AT], [V] = [ML²T⁻³A⁻¹]. So [C] = [M⁻¹L⁻²T⁴A²] → (iii).
+  2. (b) $\varepsilon_0$ from $F = \frac{q^2}{4\pi\varepsilon_0r^2}$: $[\varepsilon_0] = \frac{[A^2T^2]}{[MLT^{-2}][L^2]} = [M^{-1}L^{-3}T^4A^2]$ → (ii).
+  3. (c) $\mu_0$ from $F = \frac{\mu_0I_1I_2l}{2\pi d}$: $[\mu_0] = \frac{[MLT^{-2}]}{[A^2]} = [MLT^{-2}A^{-2}]$ → (iv).
+  4. (d) Electric field $E = \frac{F}{q} = \frac{[MLT^{-2}]}{[AT]} = [MLT^{-3}A^{-1}]$ → (i).
+  Correct: (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i).
+  Why others are wrong:
+  - (B) swaps ε₀ and μ₀.
+  - (C) and (D) give capacitance the dimensions of μ₀.
+  Key takeaway: check with $\mu_0\varepsilon_0 = \frac{1}{c^2}$: [MLT⁻²A⁻²][M⁻¹L⁻³T⁴A²] = [L⁻²T²] ✓.
   Answer: (A)
 P A 8: |-
-  Concept: Adiabatic: $W_{on} = \Delta U = nC_V\Delta T$.
+  Concept: In an adiabatic process, Q = 0, so the first law gives $W_{on} = \Delta U = nC_V\Delta T$. For a molecule with f degrees of freedom, $C_V = \frac{f}{2}R$.
   Solution:
-  1. f = 3 + 3 + 2 × 4 = 14, so $C_V = 7R$.
-  2. $\Delta U = 7\times8.314\times10 \approx 582$ J; the temperature rises, so this work is done on the gas.
+  1. Non-linear polyatomic molecule: 3 translational + 3 rotational degrees of freedom; each vibrational mode contributes 2 (kinetic + potential). With 4 modes: f = 3 + 3 + 8 = 14.
+  2. $C_V = 7R$.
+  3. $\Delta U = 1\times7\times8.314\times10 \approx 582$ J (ΔT = 10 K).
+  4. The temperature rises in an adiabatic process only if work is done ON the gas (compression). So work done on the gas ≈ 582 J.
+  Why others are wrong:
+  - (A) says work is done BY the gas — that would lower the temperature.
+  - (C) and (D) with 332 J use $C_V = 4R$ (ignoring vibrational energy or counting modes as 1 each).
+  Key takeaway: in an adiabatic process, the sign of ΔT tells you the direction of work.
   Answer: (B)
 P A 9: |-
-  Concept: Carnot: $W = Q_{in}\left(1 - \frac{T_c}{T_h}\right)$ and $Q_2 = Q_1\frac{T}{T_1}$.
+  Concept: For a Carnot engine between $T_h$ and $T_c$: $\frac{Q_{out}}{Q_{in}} = \frac{T_c}{T_h}$ and $W = Q_{in}\left(1 - \frac{T_c}{T_h}\right)$.
   Solution:
-  1. $W_A = Q_1\frac{T_1 - T}{T_1}$ and $W_B = \frac{Q_1T}{2T_1}\cdot\frac{T - T_3}{T} = \frac{Q_1(T - T_3)}{2T_1}$.
-  2. $2(T_1 - T) = T - T_3 \Rightarrow T = \frac{2}{3}T_1 + \frac{1}{3}T_3$.
+  1. Engine A takes $Q_1$ at $T_1$, rejects $Q_2 = Q_1\frac{T}{T_1}$ at T. Work: $W_A = Q_1\frac{T_1 - T}{T_1}$.
+  2. Engine B takes half of $Q_2$: $\frac{Q_1T}{2T_1}$, and works between T and $T_3$: $W_B = \frac{Q_1T}{2T_1}\cdot\frac{T - T_3}{T} = \frac{Q_1(T - T_3)}{2T_1}$.
+  3. $W_A = W_B$: $2(T_1 - T) = T - T_3 \Rightarrow 3T = 2T_1 + T_3$.
+  4. $T = \frac{2}{3}T_1 + \frac{1}{3}T_3$.
+  Why others are wrong:
+  - (D) swaps the weights — it would apply if B received all of A's rejected heat and A's work were halved.
+  - (A) and (B) have weights that don't add to 1, so T would not lie between $T_3$ and $T_1$.
+  Key takeaway: if B received all the rejected heat, equal work would give the simple average $\frac{T_1 + T_3}{2}$.
   Answer: (C)
 P A 10: |-
-  Concept: Photon energy = KE of electron + binding energy of the level (n = 3).
+  Concept: When a free electron with kinetic energy K is captured into level n of hydrogen, the emitted photon carries K plus the binding energy of that level, $\frac{13.6}{n^2}$ eV. The second excited state is n = 3.
   Solution:
-  1. $E = 3 + \frac{13.6}{9} = 4.51$ eV.
-  2. $\phi = \frac{12400}{4000} = 3.1$ eV, so $K_{max} = 1.41$ eV.
+  1. Photon energy: $E = 3 + \frac{13.6}{9} = 3 + 1.51 = 4.51$ eV.
+  2. Work function from the threshold wavelength: $\phi = \frac{12400}{4000} = 3.1$ eV.
+  3. $K_{max} = E - \phi = 4.51 - 3.1 = 1.41$ eV.
+  Why others are wrong:
+  - (C) 3.3 eV ignores the work function or uses the wrong level energy.
+  - (B) 7.61 eV adds φ instead of subtracting.
+  - (D) Photoemission does occur because 4.51 eV > 3.1 eV.
+  Key takeaway: "second excited state" means n = 3 (ground state n = 1, first excited n = 2) — a frequent trap.
   Answer: (A)
 P A 11: |-
-  Concept: At $t = \frac{T}{4}$ from the mean position, $x = A$, so $PE = \frac{1}{2}m\omega^2A^2$.
+  Concept: $x = A\sin\omega t$ (zero initial phase, starting at the mean position). At $t = \frac{T}{4}$, $\omega t = \frac{\pi}{2}$, so x = A: the object is at the extreme, where all energy is potential: $U = \frac{1}{2}m\omega^2A^2$.
   Solution:
-  1. $\omega = \frac{2\pi}{0.2} = 10\pi$ rad/s.
-  2. $PE = \frac{1}{2}\times0.5\times100\pi^2\times0.05^2 \approx 0.62$ J.
+  1. $\omega = \frac{2\pi}{T} = \frac{2\pi}{0.2} = 10\pi$ rad/s, so $\omega^2 = 100\pi^2 \approx 987$.
+  2. A = 5 cm = 0.05 m, $A^2 = 2.5\times10^{-3}$.
+  3. $U = \frac{1}{2}\times0.5\times987\times2.5\times10^{-3} \approx 0.62$ J.
+  Why others are wrong:
+  - (A) $6.2\times10^{-3}$ J uses A in cm-based units incorrectly (factor 100 off).
+  - (C) and (D) are thousands of joules — absurd for a 0.5 kg mass oscillating 5 cm.
+  Key takeaway: a quarter period after passing the mean position, the particle is at maximum displacement, with PE = total energy.
   Answer: (B)
 P A 12: |-
-  Concept: Vector superposition of point-charge fields.
+  Concept: The net field at O is the vector sum of the Coulomb fields of all eight charges, $\vec E = \sum\frac{kq_i}{r_i^2}\hat r_i$. Symmetry lets many contributions cancel in pairs.
   Solution:
-  1. In the pinwheel arrangement, pairs of equal charges at equal distances cancel.
-  2. The uncancelled charges at distances l and $\sqrt2l$ (combining the $(2l)^2$ scale) leave $E = \frac{1}{4\pi\varepsilon_0}\frac{q}{(2l)^2}(2\sqrt2 - 1)$, per the key.
+  1. In the pinwheel figure, charges of equal magnitude placed symmetrically at equal distances on opposite arms produce equal and opposite fields at O, so they cancel.
+  2. The contributions left over come from the charges whose partners differ in sign or magnitude; combining them (one set at distance l and one along the diagonal, $\sqrt2$ times as far, with the figure's $(2l)^2$ scale) gives a net field proportional to $2\sqrt2 - 1$.
+  3. Per the official key: $E = \frac{1}{4\pi\varepsilon_0}\frac{q}{(2l)^2}(2\sqrt2 - 1)$.
+  Why others are wrong:
+  - (B) and (C) keep only one uncancelled charge.
+  - (D) keeps only the diagonal contribution.
+  Key takeaway: for many-charge arrangements, first cancel symmetric pairs, then add the few remaining vectors carefully with their directions.
+  Note: the answer depends on the exact figure; the stored answer follows the official key.
   Answer: (A)
 P A 13: |-
-  Concept: Resonance: $L = \frac{1}{4\pi^2f^2C}$.
+  Concept: A series LCR circuit resonates when $X_L = X_C$, i.e. $f = \frac{1}{2\pi\sqrt{LC}}$, so $L = \frac{1}{4\pi^2f^2C}$. The resistance and supply voltage do not affect the resonant frequency.
   Solution:
-  1. $L = \frac{1}{4\pi^2\times3600\times10^{-7}} \approx 70.3$ H.
+  1. f = 60 Hz, C = 0.1 μF = $10^{-7}$ F.
+  2. $4\pi^2f^2C = 39.48\times3600\times10^{-7} = 1.421\times10^{-2}$.
+  3. $L = \frac{1}{1.421\times10^{-2}} \approx 70.3$ H.
+  Why others are wrong:
+  - (C) 70.3 mH and (A) $7.03\times10^{-5}$ H are off by powers of 1000 (unit slips with μF).
+  - (D) 0.70 H is off by a factor of 100.
+  Key takeaway: such a large inductance is needed because both f (60 Hz) and C (0.1 μF) are small; $L \propto \frac{1}{f^2C}$.
   Answer: (B)
 P A 14: |-
-  Concept: Constant power: $\frac{1}{2}mv^2 = Pt$.
+  Concept: With constant power P and starting from rest, the work–energy theorem gives $\frac{1}{2}mv^2 = Pt$ (all engine work becomes kinetic energy).
   Solution:
-  1. $v = \sqrt{\frac{2Pt}{m}}$, so $x = \int v\,dt = \frac{2}{3}\sqrt{\frac{2P}{m}}t^{3/2} = \left(\frac{8P}{9m}\right)^{1/2}t^{3/2}$.
+  1. $v = \sqrt{\frac{2P}{m}}\,t^{1/2}$.
+  2. $x = \int_0^tv\,dt = \sqrt{\frac{2P}{m}}\cdot\frac{2}{3}t^{3/2}$.
+  3. $\frac{2}{3}\sqrt{\frac{2P}{m}} = \sqrt{\frac{4}{9}\cdot\frac{2P}{m}} = \sqrt{\frac{8P}{9m}}$.
+  4. $x = \left(\frac{8P}{9m}\right)^{1/2}t^{3/2}$.
+  Why others are wrong:
+  - (B) has the fraction inverted ($\frac{9}{8}$).
+  - (C) has m and P swapped — dimensionally wrong.
+  - (D) has $t^{2/3}$ instead of $t^{3/2}$.
+  Key takeaway: under constant power, $v \propto t^{1/2}$ and $x \propto t^{3/2}$ (compare constant force: $v \propto t$, $x \propto t^2$).
   Answer: (A)
 P A 15: |-
-  Concept: $Y = AB + \bar B$.
+  Concept: Read the logic diagram: A and B go into an AND gate; B also passes through a NOT gate; both results feed an OR gate. So $Y = AB + \bar B$.
   Solution:
-  1. (0,0): 1; (0,1): 0; (1,0): 1; (1,1): 1.
-  2. This matches table (B).
+  1. (A, B) = (0, 0): AB = 0, $\bar B$ = 1 → Y = 1.
+  2. (0, 1): AB = 0, $\bar B$ = 0 → Y = 0.
+  3. (1, 0): AB = 0, $\bar B$ = 1 → Y = 1.
+  4. (1, 1): AB = 1 → Y = 1.
+  5. Truth table: 1, 0, 1, 1 — table (B).
+  6. Simplification: $AB + \bar B = A + \bar B$ (Y is 0 only when A = 0 and B = 1).
+  Why others are wrong:
+  - (A) is the OR table (A + B).
+  - (C) is $\bar AB$.
+  - (D) is the AND table.
+  Key takeaway: use the absorption identity $X\bar Y + Y = X + Y$ to simplify such expressions quickly.
   Answer: (B)
 P A 16: |-
-  Concept: The air gap and the dielectric slab form capacitors in series across $V_1 + V_2$.
+  Concept: A dielectric slab of thickness t fills part of the gap next to one plate. The air gap (thickness d − t, capacitance $C_1$) and the dielectric part ($C_2$) act as capacitors in series across the total potential difference $V_1 + V_2$ (plates at +V₂ and −V₁).
   Solution:
-  1. Voltage across the air gap $= (V_1 + V_2)\frac{C_2}{C_1 + C_2}$ (C₁ = air part, C₂ = dielectric part).
-  2. $E = \frac{C_2(V_1 + V_2)}{(C_1 + C_2)(d - t)}$ and $\tan\theta = \frac{qE}{mg}$.
+  1. Series capacitors share the same charge, so voltage divides inversely with capacitance: $V_{air} = (V_1 + V_2)\frac{C_2}{C_1 + C_2}$.
+  2. Field in the air gap (where the pendulum hangs): $E = \frac{V_{air}}{d - t} = \frac{C_2(V_1 + V_2)}{(C_1 + C_2)(d - t)}$.
+  3. Equilibrium of the bob: $\tan\theta = \frac{qE}{mg}$.
+  4. $\theta = \tan^{-1}\left[\frac{q}{mg}\cdot\frac{C_2(V_1 + V_2)}{(C_1 + C_2)(d - t)}\right]$.
+  Why others are wrong:
+  - (A) and (C) use $V_2 - V_1$, but with plates at +V₂ and −V₁ the total difference is V₁ + V₂.
+  - (B) uses $C_1$ in the numerator and "d − 1" (a misprint), giving the voltage across the wrong part.
+  Key takeaway: in series, the smaller capacitance takes the larger share of the voltage.
   Answer: (D)
 P A 17: |-
-  Concept: $K = E_{mech} - U$.
+  Concept: For a conservative force, $E_{mech} = K + U$ is constant, so $K(x) = E_{mech} - U(x)$. The particle can only be where U ≤ E.
   Solution:
-  1. For $x < x_1$, $U = 8$ J = E, so K = 0: the particle is at rest there (a turning region), not "moving at the slowest speed". (C) is the incorrect statement.
-  2. (A) K = 8 − 4 = 4 J at x₃; (B) U is constant beyond x₄; (D) U = 0 at x₂ gives maximum K.
+  1. For $x < x_1$: U = 8 J = E, so K = 0. The particle would be at rest there (a turning point region); it is not "moving at the slowest speed". Statement (C) is INCORRECT.
+  2. (A) At $x_3$: U = 4 J, so K = 8 − 4 = 4 J — correct.
+  3. (B) For $x > x_4$: U is constant (6 J), so K = 2 J throughout — correct.
+  4. (D) At $x_2$: U = 0 (the minimum), so K = 8 J is the greatest and the speed is highest — correct.
+  Key takeaway: on a U(x) graph, draw a horizontal line at E; the vertical gap between E and U is the kinetic energy at each point.
   Answer: (C)
 P A 18: |-
-  Concept: The deviation first decreases, reaches a minimum ($i = e$), then increases.
+  Concept: For a prism, the deviation is δ = i + e − A. As i increases from small values, δ first decreases, reaches a minimum $\delta_m$ when the ray passes symmetrically (i = e), and then increases again.
   Solution:
-  1. The δ–i graph is U-shaped with a minimum.
+  1. So the δ–i graph is a U-shaped curve with a single minimum (at $i = e$).
+  2. By the principle of reversibility, the same δ occurs for two values of i (i and e), except at the minimum — consistent with a U shape.
+  Why others are wrong:
+  - (A) and (C) straight lines would mean δ changes monotonically, with no minimum deviation.
+  - (D) an inverted U would give a maximum deviation, which does not occur.
+  Key takeaway: the minimum deviation position is used to measure refractive index: $\mu = \frac{\sin\frac{A + \delta_m}{2}}{\sin\frac{A}{2}}$.
   Answer: (B)
 P A 19: |-
-  Concept: Percentage errors add with the powers as weights.
+  Concept: For $y = m^ar^bg^xl^c$, the maximum percentage error is $\frac{\Delta y}{y}\% = |a|\frac{\Delta m}{m}\% + |b|\frac{\Delta r}{r}\% + |x|\frac{\Delta g}{g}\% + |c|\frac{\Delta l}{l}\%$ — errors always add, whatever the sign of the power.
   Solution:
-  1. $18 = 2(1) + 4(0.5) + xp + \frac{3}{2}(4) \Rightarrow xp = 8$.
-  2. $x = \frac{16}{3}$ and $p = \frac{3}{2}$ fit.
+  1. $18 = 2(1) + 4(0.5) + x\,p + \frac{3}{2}(4)$.
+  2. $18 = 2 + 2 + xp + 6 \Rightarrow xp = 8$.
+  3. Check options: (A) 5 × 2 = 10; (B) $\frac{16}{3}\times\frac{3}{2} = 8$ ✓; (C) 8 × 2 = 16; (D) 4 × 3 = 12.
+  4. So x = $\frac{16}{3}$, p = ±$\frac{3}{2}$.
+  Why others are wrong:
+  - (A), (C) and (D) do not give xp = 8.
+  Key takeaway: negative powers (like $r^{-4}$ and $l^{-3/2}$) still add errors, never subtract them.
   Answer: (B)
 P A 20: |-
-  Concept: Impulse = change in momentum.
+  Concept: Impulse–momentum theorem: $\int F\,dt = \Delta p = Mv$ (the particle starts at rest).
   Solution:
-  1. $\int_0^{2T}F_0\left[1 - \frac{(t - T)^2}{T^2}\right]dt = F_0\left(2T - \frac{2T}{3}\right) = \frac{4F_0T}{3}$.
-  2. $v = \frac{4F_0T}{3M}$.
+  1. Substitute u = t − T; as t goes from 0 to 2T, u goes from −T to T.
+  2. $\int_{-T}^{T}F_0\left(1 - \frac{u^2}{T^2}\right)du = F_0\left[2T - \frac{1}{T^2}\cdot\frac{2T^3}{3}\right] = F_0\left(2T - \frac{2T}{3}\right) = \frac{4F_0T}{3}$.
+  3. $v = \frac{4F_0T}{3M}$.
+  Why others are wrong:
+  - (B) $\frac{2F_0T}{M}$ assumes the force stays at its peak $F_0$ for 2T.
+  - (A) and (D) mis-evaluate the integral of the quadratic term.
+  Key takeaway: the force is a parabola peaking at t = T; its area is $\frac{2}{3}$ of the enclosing rectangle ($F_0\times2T$), giving $\frac{4}{3}F_0T$.
   Answer: (C)
 P B 1: |-
-  Concept: The resultant must lie along AB, so the components perpendicular to AB must cancel.
+  Concept: The swimmer reaches B only if the resultant velocity (swimmer relative to water + river velocity) points along AB. So the components perpendicular to AB must cancel.
   Solution:
-  1. $u\sin\theta = u\sin30° \Rightarrow \theta = 30°$ (on the other side of AB).
+  1. River velocity u makes 30° with AB; its component perpendicular to AB is $u\sin30°$.
+  2. The swimmer (speed also u) heads at angle θ with AB on the other side; its perpendicular component is $u\sin\theta$.
+  3. Cancellation: $u\sin\theta = u\sin30° \Rightarrow \theta = 30°$.
+  4. Along AB, both components add: resultant $= 2u\cos30° = \sqrt3u$.
+  Key takeaway: with equal speeds, the swimmer's heading must mirror the river's direction about AB.
   Answer: 30
 P B 2: |-
-  Concept: Net emf = V(t) − 5 V across R = 1 Ω.
+  Concept: In the circuit, the source V(t) drives current through R = 1 Ω against an opposing 5 V battery, so $I = \frac{V(t) - 5}{R}$.
   Solution:
-  1. Between 3 s and 4 s, V rises from 5 V to 10 V, so $V(3.2) = 6$ V.
-  2. $I = \frac{6 - 5}{1} = 1$ A.
+  1. From the graph, between t = 3 s and 4 s, V rises linearly from 5 V to 10 V: slope 5 V/s.
+  2. At t = 3.2 s: V = 5 + 5 × 0.2 = 6 V.
+  3. $I = \frac{6 - 5}{1} = 1$ A.
+  Key takeaway: always read the time-dependent source value from the correct segment of the graph before applying Ohm's law to the net emf.
   Answer: 1
 P B 3: |-
-  Concept: Number of waves in thickness t is $\frac{\mu t}{\lambda}$.
+  Concept: The number of wavelengths fitting in a thickness t of a medium with refractive index μ is $\frac{t}{\lambda/\mu} = \frac{\mu t}{\lambda}$ (λ = vacuum wavelength).
   Solution:
-  1. $\frac{t(\mu - 1)}{\lambda} = 1 \Rightarrow t = \frac{6\times10^{-7}}{0.0003} = 2\times10^{-3}$ m $= 2$ mm.
+  1. Difference between air and vacuum: $\frac{\mu t}{\lambda} - \frac{t}{\lambda} = \frac{(\mu - 1)t}{\lambda} = 1$.
+  2. $t = \frac{\lambda}{\mu - 1} = \frac{6000\times10^{-10}}{0.0003} = \frac{6\times10^{-7}}{3\times10^{-4}} = 2\times10^{-3}$ m.
+  3. t = 2 mm.
+  Key takeaway: $(\mu - 1)t$ is the extra optical path; one extra wavelength means $(\mu - 1)t = \lambda$.
   Answer: 2
 P B 4: |-
-  Concept: $\varepsilon = \frac{d\phi}{dt}$ and $I = \frac{\varepsilon}{R}$.
+  Concept: Faraday's law: induced emf $\varepsilon = \left|\frac{d\phi_B}{dt}\right|$; current $I = \frac{\varepsilon}{R}$.
   Solution:
-  1. $\varepsilon = 20t + 20 = 120$ mV at t = 5 s.
-  2. $I = \frac{120}{2} = 60$ mA.
+  1. $\phi_B = 10t^2 + 20t$ mWb, so $\frac{d\phi_B}{dt} = 20t + 20$ mV.
+  2. At t = 5 s: ε = 100 + 20 = 120 mV.
+  3. $I = \frac{120\text{ mV}}{2\ \Omega} = 60$ mA.
+  Key takeaway: since the flux increases, Lenz's law makes the induced current oppose the increase, but only the magnitude is asked here.
   Answer: 60
 P B 5: |-
-  Concept: Range $= 2\sqrt{h(H - h)}$ is maximum at $h = \frac{H}{2}$.
+  Concept: Water leaves a hole at depth h below the surface with speed $v = \sqrt{2gh}$ (Torricelli). The hole is at height (H − h) above the ground, so the fall time is $\sqrt{\frac{2(H - h)}{g}}$ and the horizontal range is $x = v\,t = 2\sqrt{h(H - h)}$.
   Solution:
-  1. $h = \frac{12}{2} = 6$ m.
+  1. $x^2 = 4h(H - h)$ is maximum when $h = \frac{H}{2}$ (product of two numbers with fixed sum is largest when they are equal).
+  2. H = 12 m → h = 6 m.
+  3. Maximum range = H = 12 m.
+  Key takeaway: holes at depths h and H − h give the same range; the maximum occurs exactly halfway.
   Answer: 6
 P B 6: |-
-  Concept: The Kα photon energy equals the energy difference between the K-vacancy and L-vacancy states.
+  Concept: A Kα X-ray is emitted when an L-shell electron fills a K-shell vacancy. The photon energy equals the difference between the energy of the atom with a K vacancy and the atom with an L vacancy.
   Solution:
-  1. $E_{K\alpha} = \frac{hc}{\lambda} = \frac{4.14\times10^{-15}\times3\times10^8}{0.071\times10^{-9}} \approx 17.5$ keV.
-  2. $E_L = 27.5 - 17.5 = 10$ keV.
+  1. $E_{K\alpha} = \frac{hc}{\lambda} = \frac{4.14\times10^{-15}\times3\times10^8}{0.071\times10^{-9}} = \frac{1.242\times10^{-6}}{7.1\times10^{-11}} \approx 1.75\times10^4$ eV = 17.5 keV.
+  2. Energy with an L vacancy = 27.5 − 17.5 = 10 keV.
+  Key takeaway: X-ray lines measure differences between inner-shell vacancy energies, just as optical lines measure differences between outer levels.
   Answer: 10
 P B 7: |-
-  Concept: $\mu = \frac{A_{max} - A_{min}}{A_{max} + A_{min}}$.
+  Concept: For an AM wave with carrier amplitude $A_c$ and modulation index μ, the envelope swings between $A_{max} = A_c(1 + \mu)$ and $A_{min} = A_c(1 - \mu)$. So $\mu = \frac{A_{max} - A_{min}}{A_{max} + A_{min}}$.
   Solution:
-  1. $\mu = \frac{9}{15} = 0.6$, so $x = 1$.
+  1. $\mu = \frac{12 - 3}{12 + 3} = \frac{9}{15} = 0.6$.
+  2. 0.6x = 0.6 → x = 1.
+  3. (Carrier amplitude $A_c = \frac{12 + 3}{2} = 7.5$ V; message amplitude $\frac{12 - 3}{2} = 4.5$ V.)
+  Key takeaway: μ can be read directly from an oscilloscope trace using the maximum and minimum envelope amplitudes.
   Answer: 1
 P B 8: |-
-  Concept: Contact is lost when N = 0: $mg\cos\theta = \frac{mv^2}{R}$, with $v^2 = 2gR(1 - \cos\theta)$.
+  Concept: The block moves on the sphere until the normal force becomes zero. Radial equation: $mg\cos\theta - N = \frac{mv^2}{R}$. Energy conservation from the top: $v^2 = 2gR(1 - \cos\theta)$.
   Solution:
-  1. $\cos\theta = \frac{2}{3}$, so $h = R\cos\theta = 2$ m.
+  1. Set N = 0: $g\cos\theta = \frac{v^2}{R} = 2g(1 - \cos\theta)$.
+  2. $3\cos\theta = 2 \Rightarrow \cos\theta = \frac{2}{3}$.
+  3. Height above the centre (base of the hemisphere): $h = R\cos\theta = 3\times\frac{2}{3} = 2$ m.
+  4. The block has dropped R − h = 1 m = $\frac{R}{3}$ before leaving the surface.
+  Key takeaway: a particle sliding from rest at the top of a smooth sphere always leaves at $h = \frac{2R}{3}$.
   Answer: 2
 P B 9: |-
-  Concept: A belt drive gives equal rim speeds: $\omega_P(3R) = \omega_QR$.
+  Concept: A belt that does not slip gives both wheels the same rim speed: $\omega_Pr_P = \omega_Qr_Q$. Rotational KE is $\frac{1}{2}I\omega^2$.
   Solution:
-  1. $\omega_Q = 3\omega_P$; equal KE: $I_1\omega_P^2 = I_2(3\omega_P)^2 \Rightarrow \frac{I_1}{I_2} = 9$.
+  1. $r_P = 3r_Q \Rightarrow \omega_Q = 3\omega_P$.
+  2. Equal KE: $\frac{1}{2}I_1\omega_P^2 = \frac{1}{2}I_2\omega_Q^2 = \frac{1}{2}I_2(9\omega_P^2)$.
+  3. $\frac{I_1}{I_2} = 9$, so x = 9.
+  Key takeaway: the larger, slower wheel must have 9 times the moment of inertia to store the same energy, because KE depends on ω².
   Answer: 9
 P B 10: |-
-  Concept: $A^2 = x_0^2 + \left(\frac{v_0}{\omega}\right)^2$.
+  Concept: For $x = A\sin(\omega t + \phi)$: $x_0 = A\sin\phi$ and $v_0 = A\omega\cos\phi$. Squaring and adding: $A^2 = x_0^2 + \left(\frac{v_0}{\omega}\right)^2$.
   Solution:
-  1. $A^2 = 4 + 4 = 8 \Rightarrow A = 2\sqrt2$ cm, so $x = 2$.
+  1. $x_0 = 2$ cm, $\frac{v_0}{\omega} = \frac{2\omega}{\omega} = 2$ cm.
+  2. $A^2 = 4 + 4 = 8 \Rightarrow A = 2\sqrt2$ cm.
+  3. So x = 2. (Also tan φ = 1, φ = 45°.)
+  Key takeaway: this formula follows from energy conservation: $\frac{1}{2}kA^2 = \frac{1}{2}kx_0^2 + \frac{1}{2}mv_0^2$.
   Answer: 2

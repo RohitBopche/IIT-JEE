@@ -1,190 +1,335 @@
 M A 1: |-
-  Concept: $\vec b\times(\vec b\times\vec c) = (\vec b\cdot\vec c)\vec b - |\vec b|^2\vec c$.
+  Concept: Vector triple product: $\vec b\times(\vec b\times\vec c) = (\vec b\cdot\vec c)\vec b - (\vec b\cdot\vec b)\vec c$.
   Solution:
-  1. $|\vec a|^2 = (\vec b\cdot\vec c)^2 - 2(\vec b\cdot\vec c)^2 + 4 = 4 - (\vec b\cdot\vec c)^2 = 2$, so $\vec b\cdot\vec c = \sqrt2$.
-  2. $2\cos\theta = \sqrt2 \Rightarrow \theta = 45°$, so $1 + \tan\theta = 2$.
+  1. With $|\vec b| = 1$: $\vec a = (\vec b\cdot\vec c)\vec b - \vec c$. Let $p = \vec b\cdot\vec c$.
+  2. $|\vec a|^2 = p^2|\vec b|^2 - 2p(\vec b\cdot\vec c) + |\vec c|^2 = p^2 - 2p^2 + 4 = 4 - p^2$.
+  3. $|\vec a|^2 = 2 \Rightarrow p^2 = 2 \Rightarrow p = \sqrt2$ (θ acute, so p > 0).
+  4. $p = |\vec b||\vec c|\cos\theta = 2\cos\theta = \sqrt2 \Rightarrow \cos\theta = \frac{1}{\sqrt2} \Rightarrow \theta = \frac{\pi}{4}$.
+  5. $1 + \tan\theta = 1 + 1 = 2$.
+  Why others are wrong:
+  - (A) $\sqrt3 + 1$ corresponds to θ = 60°, and (B) to θ = 30°.
+  - (D) 1 would need tan θ = 0, i.e. θ = 0, excluded.
+  Key takeaway: alternatively, $|\vec b\times(\vec b\times\vec c)| = |\vec b|\,|\vec b\times\vec c| = 2\sin\theta = \sqrt2$ directly (since $\vec b \perp \vec b\times\vec c$).
   Answer: (C)
 M A 2: |-
-  Concept: Factorise: $x^3 - 3x^2y - xy^2 + 3y^3 = (x - 3y)(x - y)(x + y)$.
+  Concept: Factorise the defining expression: $x^3 - 3x^2y - xy^2 + 3y^3 = x^2(x - 3y) - y^2(x - 3y) = (x - 3y)(x - y)(x + y)$.
   Solution:
-  1. In ℕ, xRy iff $x = y$ or $x = 3y$.
-  2. It is reflexive; not symmetric ((3, 1) ∈ R but (1, 3) ∉ R); not transitive ((9, 3), (3, 1) ∈ R but (9, 1) ∉ R).
+  1. For natural numbers, x + y > 0, so xRy iff x = y or x = 3y.
+  2. Reflexive: x = x always → (x, x) ∈ R. ✓
+  3. Symmetric? (3, 1) ∈ R (3 = 3·1), but (1, 3): 1 ≠ 3 and 1 ≠ 9, so (1, 3) ∉ R. ✗
+  4. Transitive? (9, 3) ∈ R and (3, 1) ∈ R, but (9, 1): 9 ≠ 1 and 9 ≠ 3, so (9, 1) ∉ R. ✗
+  5. So R is reflexive but neither symmetric nor transitive.
+  Why others are wrong:
+  - (B) and (D) claim symmetry, disproved by (3, 1).
+  - (C) denies reflexivity, but every (x, x) satisfies the equation.
+  Key takeaway: factorising a polynomial relation usually reveals its structure immediately.
   Answer: (A)
 M A 3: |-
-  Concept: Linear DE: $y' - \frac{1 + x^2}{x(1 - x^2)}y = \frac{-3x^3}{1 - x^2}$.
+  Concept: Rewrite as a linear first-order equation $y' + P(x)y = Q(x)$ and use an integrating factor.
   Solution:
-  1. Solving with $y(3) = 3$ gives $y = \frac{x(x^3 - 19)}{x^2 - 1}$.
-  2. $y(4) = \frac{4\times45}{15} = 12$.
+  1. $x(1 - x^2)y' = (1 + x^2)y - 3x^4 \Rightarrow y' - \frac{1 + x^2}{x(1 - x^2)}y = \frac{-3x^3}{1 - x^2}$.
+  2. Partial fractions: $\frac{1 + x^2}{x(1 - x^2)} = \frac{1}{x} + \frac{2x}{1 - x^2}$, whose integral is $\ln x - \ln|1 - x^2|$.
+  3. Integrating factor (x > 2): $\frac{x^2 - 1}{x}$.
+  4. $\frac{d}{dx}\left[y\cdot\frac{x^2 - 1}{x}\right] = \frac{-3x^3}{1 - x^2}\cdot\frac{x^2 - 1}{x} = 3x^2 \Rightarrow y\frac{x^2 - 1}{x} = x^3 + C$.
+  5. y(3) = 3: $3\cdot\frac{8}{3} = 27 + C \Rightarrow C = -19$.
+  6. $y = \frac{x(x^3 - 19)}{x^2 - 1}$, so $y(4) = \frac{4\times45}{15} = 12$.
+  Why others are wrong:
+  - (B) 4, (C) 8, (D) 16 come from errors in the integrating factor or the constant.
+  Key takeaway: always check the solution against the initial condition — here y(3) = 3·8/8 = 3 ✓.
   Answer: (A)
 M A 4: |-
-  Concept: Check the joins at $\frac{\pi}{2}$ and π.
+  Concept: The running maximum of sin t follows sin x while it increases (up to $\frac{\pi}{2}$) and then stays at 1. Check continuity and matching slopes at each junction.
   Solution:
-  1. $f = \sin x$ on $[0, \frac{\pi}{2}]$, $f = 1$ on $[\frac{\pi}{2}, \pi]$, $f = 2 + \cos x$ for $x > \pi$.
-  2. At $\frac{\pi}{2}$ the slopes are $\cos\frac{\pi}{2} = 0$ and 0; at π the values are 1 and 1, with slopes 0 and $-\sin\pi = 0$.
-  3. f is differentiable everywhere in (0, ∞).
+  1. $0 \le x \le \frac{\pi}{2}$: f(x) = sin x. $\frac{\pi}{2} \le x \le \pi$: f(x) = 1. x > π: f(x) = 2 + cos x.
+  2. At $\frac{\pi}{2}$: values 1 and 1 ✓; slopes $\cos\frac{\pi}{2} = 0$ and 0 ✓ → differentiable.
+  3. At π: values 1 and $2 + \cos\pi = 1$ ✓; slopes 0 (constant) and $-\sin\pi = 0$ ✓ → differentiable.
+  4. Elsewhere f is a smooth function, so f is differentiable everywhere in (0, ∞).
+  Why others are wrong:
+  - (B) f has no discontinuities.
+  - (C) and (D) claim corners, but all one-sided slopes match (both are 0).
+  Key takeaway: the pieces join where each has a horizontal tangent, making the joins smooth.
   Answer: (A)
 M A 5: |-
-  Concept: Identity: $\tan70° = \tan20° + 2\tan50°$ (since $\tan70° - \tan20° = \frac{\sin50°}{\cos70°\cos20°} = 2\tan50°$).
+  Concept: In degrees: $\frac{\pi}{9} = 20°$, $\frac{7\pi}{18} = 70°$, $\frac{5\pi}{18} = 50°$. The identity $\tan70° - \tan20° = 2\tan50°$ holds because $\tan A - \tan B = \frac{\sin(A - B)}{\cos A\cos B}$.
   Solution:
-  1. $x = \frac{\tan20° + \tan70°}{2}$ and $2y = \tan20° + \tan50°$.
-  2. $x - 2y = \frac{\tan70° - \tan20°}{2} - \tan50° = 0$.
+  1. $\tan70° - \tan20° = \frac{\sin50°}{\cos70°\cos20°} = \frac{\sin50°}{\sin20°\cos20°} = \frac{2\sin50°}{\sin40°} = \frac{2\sin50°}{\cos50°} = 2\tan50°$.
+  2. AP conditions: $x = \frac{\tan20° + \tan70°}{2}$ and $2y = \tan20° + \tan50°$.
+  3. $x - 2y = \frac{\tan70° - \tan20°}{2} - \tan50° = \tan50° - \tan50° = 0$.
+  4. |x − 2y| = 0.
+  Why others are wrong:
+  - (A) 1, (C) 4, (D) 3 would require the identity to fail.
+  Key takeaway: the relation $\tan3\theta$-type identities with 20°, 40°, 50°, 70° often simplify sums like this.
   Answer: (B)
 M A 6: |-
-  Concept: Area between a line and a parabola.
+  Concept: The area between the line y = x + 2 (above) and the parabola y = x² (below), between their intersection points.
   Solution:
-  1. $x^2 = x + 2 \Rightarrow x = -1, 2$.
-  2. Area $= \int_{-1}^{2}(x + 2 - x^2)dx = \frac{9}{2}$.
+  1. Intersections: $x^2 = x + 2 \Rightarrow (x - 2)(x + 1) = 0 \Rightarrow x = -1, 2$.
+  2. Area $= \int_{-1}^2(x + 2 - x^2)\,dx = \left[\frac{x^2}{2} + 2x - \frac{x^3}{3}\right]_{-1}^2$.
+  3. At 2: $2 + 4 - \frac{8}{3} = \frac{10}{3}$. At −1: $\frac{1}{2} - 2 + \frac{1}{3} = -\frac{7}{6}$.
+  4. Area $= \frac{10}{3} + \frac{7}{6} = \frac{27}{6} = \frac{9}{2}$.
+  Shortcut: area between y = x² and a chord with roots differing by d is $\frac{d^3}{6}$; here d = 3, so $\frac{27}{6} = \frac{9}{2}$ ✓.
+  Why others are wrong:
+  - (A), (C), (D) come from wrong limits or dropping a term.
+  Key takeaway: the $\frac{d^3}{6}$ formula is a fast check for parabola–line areas.
   Answer: (B)
 M A 7: |-
-  Concept: $f(x) = \cos(2\pi x)$ satisfies the equation with $f\left(\frac{1}{2}\right) = -1$, so $f(k) = 1$ for integer k.
+  Concept: The functional equation f(x + y) + f(x − y) = 2f(x)f(y) is d'Alembert's equation, satisfied by f(x) = cos(λx). The condition $f\left(\frac{1}{2}\right) = -1$ gives λ = 2π, so $f(k) = \cos2\pi k = 1$ for every integer k.
   Solution:
-  1. $\frac{1}{\sin k\sin(k + 1)} = \frac{\cot k - \cot(k + 1)}{\sin1}$.
-  2. Sum $= \frac{\cot1 - \cot21}{\sin1} = \frac{\sin20}{\sin^21\sin21} = \text{cosec}^2(1)\,\text{cosec}(21)\sin(20)$.
+  1. The sum becomes $\sum_{k=1}^{20}\frac{1}{\sin k\sin(k + 1)}$.
+  2. Telescoping: $\frac{1}{\sin k\sin(k + 1)} = \frac{\sin[(k + 1) - k]}{\sin1\,\sin k\sin(k + 1)} = \frac{\cot k - \cot(k + 1)}{\sin1}$.
+  3. Sum $= \frac{\cot1 - \cot21}{\sin1} = \frac{\sin(21 - 1)}{\sin1\cdot\sin1\sin21} = \frac{\sin20}{\sin^21\,\sin21}$.
+  4. $= \text{cosec}^2(1)\,\text{cosec}(21)\sin(20)$.
+  Why others are wrong:
+  - (A), (B), (C) use cos or sec, which arise from the wrong telescoping identity (e.g. with tan).
+  Key takeaway: $\frac{1}{\sin k\sin(k + d)}$ telescopes after multiplying by $\frac{\sin d}{\sin d}$.
   Answer: (D)
 M A 8: |-
-  Concept: Solve for α and β from the mean and variance.
+  Concept: Use the mean and variance equations to find the unknown frequencies, then recompute the mean.
   Solution:
-  1. Mean 6: $2\alpha + 3\beta = 16$. Variance: $64 + 4\alpha + 9\beta = 6.8(8 + \alpha + \beta)$.
-  2. $\alpha = 5$, $\beta = 2$, N = 15, sum = 90.
-  3. Changing 8 to 7 lowers the sum by 5: new mean $= \frac{85}{15} = \frac{17}{3}$.
+  1. N = 8 + α + β; Σfx = 8 + 24 + 8α + 9β = 32 + 8α + 9β.
+  2. Mean 6: $32 + 8\alpha + 9\beta = 6(8 + \alpha + \beta) \Rightarrow 2\alpha + 3\beta = 16$.
+  3. Variance: $\sum fx^2 = 16 + 144 + 64\alpha + 81\beta = N(6.8 + 36) = 42.8N$.
+  4. Trying integer solutions of $2\alpha + 3\beta = 16$: α = 5, β = 2 gives N = 15, $\sum fx^2 = 160 + 320 + 162 = 642 = 42.8\times15$ ✓.
+  5. Sum = 90. Changing $x_3$ from 8 to 7 (frequency 5) reduces the sum by 5: new sum 85.
+  6. New mean $= \frac{85}{15} = \frac{17}{3}$.
+  Why others are wrong:
+  - (A) 4, (B) 5, (D) $\frac{16}{3}$ come from wrong α, β or from changing the sum by the wrong amount.
+  Key takeaway: changing one value by Δ changes the sum by (frequency × Δ).
   Answer: (C)
 M A 9: |-
-  Concept: Apply the transformations in order.
+  Concept: Apply the three transformations in order: reflection in y = x swaps coordinates; translation adds to x; anticlockwise rotation by 45° maps (X, Y) to $\left(\frac{X - Y}{\sqrt2}, \frac{X + Y}{\sqrt2}\right)$.
   Solution:
-  1. Reflect: (b, a). Translate: (b + 2, a).
-  2. Rotate by 45°: $\left(\frac{b + 2 - a}{\sqrt2}, \frac{b + 2 + a}{\sqrt2}\right) = \left(-\frac{1}{\sqrt2}, \frac{7}{\sqrt2}\right)$.
-  3. $a = 4$, $b = 1$, so $2a + b = 9$.
+  1. Reflect (a, b) in y = x: (b, a).
+  2. Translate 2 units in +x: (b + 2, a).
+  3. Rotate by $\frac{\pi}{4}$: $\left(\frac{b + 2 - a}{\sqrt2}, \frac{b + 2 + a}{\sqrt2}\right)$.
+  4. Match with $\left(-\frac{1}{\sqrt2}, \frac{7}{\sqrt2}\right)$: b + 2 − a = −1 and b + 2 + a = 7.
+  5. Adding: 2(b + 2) = 6 ⇒ b = 1; then a = 4.
+  6. 2a + b = 9.
+  Why others are wrong:
+  - (A), (B), (C) result from swapping a and b or rotating clockwise.
+  Key takeaway: the order of transformations matters — do them exactly as listed.
   Answer: (D)
 M A 10: |-
-  Concept: Touching the y-axis at (0, 6) puts the centre at (r, 6).
+  Concept: A circle touching the y-axis at (0, 6) has its centre at (r, 6) (or (−r, 6)) with radius r. The chord cut on the x-axis has length $2\sqrt{r^2 - k^2}$, where k = 6 is the distance from the centre to the x-axis.
   Solution:
-  1. x-intercept $= 2\sqrt{r^2 - 36} = 6\sqrt5 \Rightarrow r^2 = 81$, so r = 9.
+  1. $2\sqrt{r^2 - 36} = 6\sqrt5 \Rightarrow r^2 - 36 = 45 \Rightarrow r^2 = 81$.
+  2. r = 9.
+  Check: circle $(x - 9)^2 + (y - 6)^2 = 81$ meets y = 0 at $(x - 9)^2 = 45$, giving chord length $2\sqrt{45} = 6\sqrt5$ ✓.
+  Why others are wrong:
+  - (B) $\sqrt{82}$, (C) 8, (D) $\sqrt{53}$ give intercepts $2\sqrt{46}$, $2\sqrt{28}$, $2\sqrt{17}$, not $6\sqrt5$.
+  Key takeaway: intercept on an axis = 2√(r² − distance of centre from that axis²).
   Answer: (A)
 M A 11: |-
-  Concept: Use the given relations to show $(A^3 + B^3)(A^2 - B^2) = O$.
+  Concept: If PQ = O and Q is invertible, then P = O. Try to form the product $(A^3 + B^3)(A^2 - B^2)$ and simplify it with the given relations.
   Solution:
-  1. $(A^3 + B^3)(A^2 - B^2) = A^5 - A^3B^2 + B^3A^2 - B^5$, which is O using $A^5 = B^5$ and $A^3B^2 = A^2B^3$ (the key's intended reading).
-  2. Since $A^2 - B^2$ is invertible, $A^3 + B^3 = O$, so its determinant is 0.
+  1. $(A^3 + B^3)(A^2 - B^2) = A^5 - A^3B^2 + B^3A^2 - B^5$.
+  2. With $A^5 = B^5$ and (as the official solution assumes) $A^3B^2 = B^3A^2 = A^2B^3$, the terms cancel: the product is O.
+  3. Since $A^2 - B^2$ is invertible, multiply on the right by its inverse: $A^3 + B^3 = O$.
+  4. $\det(A^3 + B^3) = 0$.
+  Why others are wrong:
+  - (A) 2, (B) 1, (D) 4 would require $A^3 + B^3$ to be invertible, contradicting the result.
+  Key takeaway: when a product with an invertible factor vanishes, the other factor must vanish.
   Answer: (C)
 M A 12: |-
-  Concept: The expression is $2^{6\sin3x + 8\cos3x}$, and the exponent ranges over $[-10, 10]$.
+  Concept: Write everything as powers of 2: $8^{2\sin3x}\cdot4^{4\cos3x} = 2^{6\sin3x + 8\cos3x}$. The exponent $6\sin\theta + 8\cos\theta$ ranges over $[-\sqrt{36 + 64}, \sqrt{36 + 64}] = [-10, 10]$.
   Solution:
-  1. $\alpha = 2^{10}$ and $\beta = 2^{-10}$, so the roots are 4 and $\frac{1}{4}$.
-  2. $-\frac{b}{8} = \frac{17}{4} \Rightarrow b = -34$; $\frac{c}{8} = 1 \Rightarrow c = 8$.
-  3. $c - b = 42$.
+  1. α = 2¹⁰, β = 2⁻¹⁰.
+  2. Roots: $\alpha^{1/5} = 2^2 = 4$ and $\beta^{1/5} = 2^{-2} = \frac{1}{4}$.
+  3. For $8x^2 + bx + c = 0$: sum $= -\frac{b}{8} = 4 + \frac{1}{4} = \frac{17}{4} \Rightarrow b = -34$; product $= \frac{c}{8} = 1 \Rightarrow c = 8$.
+  4. c − b = 8 + 34 = 42.
+  Why others are wrong:
+  - (B) 43, (C) 47, (D) 50 come from using the wrong range (e.g. 14 instead of 10) or sign errors in b.
+  Key takeaway: $a\sin\theta + b\cos\theta$ always has range $[-\sqrt{a^2 + b^2}, \sqrt{a^2 + b^2}]$.
   Answer: (A)
 M A 13: |-
-  Concept: $S_1$ is the unit disc about 2; $S_2$ is $2(x - y) \ge 4$, i.e. the half-plane $x - y \ge 2$ through the centre.
+  Concept: Convert both sets to geometry. $S_1$: the disc |z − 2| ≤ 1. $S_2$: with z = x + iy, $z(1 + i) + \bar z(1 - i) = 2\text{Re}[z(1 + i)] = 2(x - y) \ge 4$, i.e. the half-plane x − y ≥ 2, whose boundary passes through the disc's centre (2, 0).
   Solution:
-  1. On the circle $z = 2 + e^{i\varphi}$, the allowed arc is $\cos\varphi \ge \sin\varphi$, i.e. $\varphi \in \left[-\frac{3\pi}{4}, \frac{\pi}{4}\right]$.
-  2. $\left|z - \frac{5}{2}\right|^2 = \frac{5}{4} - \cos\varphi$, maximum at $\cos\varphi = -\frac{1}{\sqrt2}$: $\frac{5}{4} + \frac{\sqrt2}{2} = \frac{5 + 2\sqrt2}{4}$.
+  1. The farthest point of the region from $\frac{5}{2}$ lies on the circle. Parametrise $z = 2 + e^{i\varphi}$: the half-plane condition becomes $\cos\varphi - \sin\varphi \ge 0$, i.e. $\varphi \in \left[-\frac{3\pi}{4}, \frac{\pi}{4}\right]$.
+  2. $\left|z - \frac{5}{2}\right|^2 = \left|e^{i\varphi} - \frac{1}{2}\right|^2 = 1 - \cos\varphi + \frac{1}{4} = \frac{5}{4} - \cos\varphi$.
+  3. On the allowed arc, cos φ is smallest at $\varphi = -\frac{3\pi}{4}$: $\cos\varphi = -\frac{1}{\sqrt2}$.
+  4. Maximum $= \frac{5}{4} + \frac{1}{\sqrt2} = \frac{5 + 2\sqrt2}{4}$.
   Note: The key page lists (B), but the printed solution itself obtains $\frac{5 + 2\sqrt2}{4}$, which is option (A).
+  Why others are wrong:
+  - (B) is double the correct value.
+  - (C) and (D) use 3 instead of 5 (wrong distance from $\frac{5}{2}$ to the centre).
   Answer: (A)
 M A 14: |-
-  Concept: Simplify the bases: first term $= \sqrt{25^{x-1} + 7}$, second $= (5^{x-1} + 1)^{-1/8}$.
+  Concept: Use $3^{\log_3u} = u$ to simplify the terms, then apply the binomial general term.
   Solution:
-  1. $T_9 = \binom{10}{8}(25^{x-1} + 7)(5^{x-1} + 1)^{-1} = 180 \Rightarrow \frac{t^2 + 7}{t + 1} = 4$ with $t = 5^{x-1}$.
-  2. $t^2 - 4t + 3 = 0 \Rightarrow t = 1$ or 3; t = 1 gives x = 1.
+  1. First term: $3^{\log_3\sqrt{25^{x-1} + 7}} = (25^{x-1} + 7)^{1/2}$.
+  2. Second term: $3^{-\frac{1}{8}\log_3(5^{x-1} + 1)} = (5^{x-1} + 1)^{-1/8}$.
+  3. Ninth term in increasing powers of the second term (r = 8): $T_9 = \binom{10}{8}(25^{x-1} + 7)^{1}(5^{x-1} + 1)^{-1}$.
+  4. $45\cdot\frac{25^{x-1} + 7}{5^{x-1} + 1} = 180 \Rightarrow \frac{t^2 + 7}{t + 1} = 4$ with $t = 5^{x-1}$.
+  5. $t^2 - 4t + 3 = 0 \Rightarrow t = 1$ or 3. t = 1 gives x = 1 (in the options); t = 3 gives x = 1 + log₅3.
+  Why others are wrong:
+  - (B) x = 2 gives t = 5: $\frac{32}{6} \ne 4$.
+  - (C) x = 0 gives t = $\frac{1}{5}$ and (D) x = −1 gives t = $\frac{1}{25}$; neither satisfies the equation.
+  Key takeaway: "increasing powers of the second term" fixes which exponent is r.
   Answer: (A)
 M A 15: |-
-  Concept: $(1 \pm u)^{1/8} \approx 1 \pm \frac{u}{8}$.
+  Concept: For small u, $(1 + u)^{1/8} \approx 1 + \frac{u}{8}$. So the denominator behaves like a difference of two nearly equal quantities.
   Solution:
-  1. Denominator $\approx -\frac{2\sin x}{8} = -\frac{\sin x}{4}$.
-  2. Limit $= \frac{x}{-\sin x/4} \to -4$.
+  1. $\sqrt[8]{1 - \sin x} \approx 1 - \frac{\sin x}{8}$ and $\sqrt[8]{1 + \sin x} \approx 1 + \frac{\sin x}{8}$.
+  2. Denominator $\approx -\frac{2\sin x}{8} = -\frac{\sin x}{4}$.
+  3. Limit $= \lim\frac{x}{-\sin x/4} = -4\lim\frac{x}{\sin x} = -4$.
+  Why others are wrong:
+  - (A) 4 misses the negative sign (the first root is smaller than the second for x > 0).
+  - (B) 0 and (D) −1 mis-handle the $\frac{1}{8}$ factor.
+  Key takeaway: L'Hôpital gives the same result: derivative of the denominator at 0 is $-\frac{1}{8} - \frac{1}{8} = -\frac{1}{4}$.
   Answer: (C)
 M A 16: |-
-  Concept: Intersect the lines, then use the plane.
+  Concept: Parametrise both lines, equate coordinates to find the intersection, then use the plane condition.
   Solution:
-  1. Matching y and z: $1 + 2t = 6 + 3s$ and $1 + 3t = 7 + 3s$, so $t = 1$ and $s = -1$.
-  2. The point is (α + 1, 3, 4); on the plane: $\alpha + 1 + 6 - 4 = 8 \Rightarrow \alpha = 5$.
-  3. From line 2, $x = 4 - \beta = 6 \Rightarrow \beta = -2$, so $\alpha - \beta = 7$.
+  1. Line 1: (α + t, 1 + 2t, 1 + 3t). Line 2: (4 + βs, 6 + 3s, 7 + 3s).
+  2. y: 1 + 2t = 6 + 3s; z: 1 + 3t = 7 + 3s. Subtracting: t = 1, then s = −1.
+  3. Intersection point: (α + 1, 3, 4).
+  4. On the plane x + 2y − z = 8: α + 1 + 6 − 4 = 8 ⇒ α = 5.
+  5. x from line 2: 4 − β = α + 1 = 6 ⇒ β = −2.
+  6. α − β = 5 + 2 = 7.
+  Why others are wrong:
+  - (A) 3 = α + β; (B) and (D) come from sign errors in β.
+  Key takeaway: use the coordinates that don't involve the unknown parameters (y and z here) to find t and s first.
   Answer: (C)
 M A 17: |-
-  Concept: The diagonals of a parallelogram bisect each other.
+  Concept: Both side lines pass through the origin O, so O is a vertex. The given diagonal (not through O) joins the two vertices on the side lines. Diagonals of a parallelogram bisect each other, so the fourth vertex is the sum of the two adjacent vertices (vector addition from O).
   Solution:
-  1. The sides meet at O. The given diagonal meets them at $\left(\frac{5}{3}, -\frac{4}{3}\right)$ and $\left(-\frac{2}{3}, \frac{7}{3}\right)$.
-  2. The fourth vertex is (1, 1), so the other diagonal is $y = x$, which passes through (2, 2).
+  1. 11x + 7y = 9 with 4x + 5y = 0: $x = \frac{5}{3}$, $y = -\frac{4}{3}$.
+  2. 11x + 7y = 9 with 7x + 2y = 0: $x = -\frac{2}{3}$, $y = \frac{7}{3}$.
+  3. Fourth vertex $= \left(\frac{5}{3} - \frac{2}{3}, -\frac{4}{3} + \frac{7}{3}\right) = (1, 1)$.
+  4. The other diagonal joins O(0, 0) and (1, 1): the line y = x, which passes through (2, 2).
+  Why others are wrong:
+  - (A) (2, 1), (C) (1, 3), (D) (1, 2) do not lie on y = x.
+  Key takeaway: when two sides meet at the origin, the opposite vertex is simply the vector sum of the two adjacent vertices.
   Answer: (B)
 M A 18: |-
-  Concept: $\sim(\forall M\,\exists x: x \ge M) \equiv \exists M\,\forall x: x < M$.
+  Concept: Negation of quantified statements: $\sim(\forall M\ P(M)) \equiv \exists M\ \sim P(M)$ and $\sim(\exists x\ Q(x)) \equiv \forall x\ \sim Q(x)$.
   Solution:
-  1. The negation is "there exists M > 0 such that x < M for all x ∈ S".
-  Note: The printed key says (A), but (A) is not the logical negation; (D) is.
+  1. Statement: ∀M > 0, ∃x ∈ S such that x ≥ M (S is unbounded above).
+  2. Negation: ∃M > 0 such that ∀x ∈ S, x < M (S is bounded above).
+  3. This is option (D).
+  Note: The printed key says (A), but (A) "∃M ∃x with x < M" is not the logical negation (it is true for many sets that also satisfy the original statement); (D) is the correct negation.
+  Why others are wrong:
+  - (A) keeps "there exists x" instead of switching to "for all x".
+  - (B) says every x ≥ M — not a negation.
+  - (C) only changes the first quantifier.
   Answer: (D)
 M A 19: |-
-  Concept: Binomial with n = 8, p = ½.
+  Concept: The number of correct guesses X ~ Binomial(8, ½): $P(X = k) = \frac{\binom{8}{k}}{256}$.
   Solution:
-  1. $P(X \ge 4) = \frac{70 + 56 + 28 + 8 + 1}{256} = \frac{163}{256} > \frac{1}{2}$.
-  2. $P(X \ge 5) = \frac{93}{256} < \frac{1}{2}$, so n = 5.
+  1. Binomial coefficients for n = 8: 1, 8, 28, 56, 70, 56, 28, 8, 1.
+  2. $P(X \ge 4) = \frac{70 + 56 + 28 + 8 + 1}{256} = \frac{163}{256} > \frac{1}{2}$.
+  3. $P(X \ge 5) = \frac{56 + 28 + 8 + 1}{256} = \frac{93}{256} < \frac{1}{2}$.
+  4. Smallest n with $P(X \ge n) < \frac{1}{2}$: n = 5.
+  Why others are wrong:
+  - (D) 4 gives probability $\frac{163}{256} > \frac{1}{2}$.
+  - (C) 3 is even larger.
+  - (B) 6 also works but is not the smallest.
+  Key takeaway: by symmetry, P(X ≥ 5) = P(X ≤ 3) = $\frac{1}{2}(1 - P(X = 4)) = \frac{1}{2}\left(1 - \frac{70}{256}\right)$.
   Answer: (A)
 M A 20: |-
-  Concept: Rolle's theorem: $f' = g$.
+  Concept: Rolle's theorem: between two zeros of a differentiable function there is at least one zero of its derivative. Here f′ = g (fundamental theorem of calculus).
   Solution:
-  1. Five roots of f give at least 4 roots of g between them.
-  2. These give at least 3 roots of g′.
-  3. So gg′ = 0 has at least 7 roots in (a, b).
+  1. f has 5 distinct roots in (a, b) → g = f′ has at least 4 roots (one between each consecutive pair).
+  2. g has at least 4 roots → g′ has at least 3 roots between them.
+  3. The roots of g′ lie strictly between roots of g, so they are distinct from them.
+  4. $g(x)g'(x) = 0$ has at least 4 + 3 = 7 roots.
+  Why others are wrong:
+  - (D) 3 counts only g′; (C) 5 miscounts; (B) 12 adds the roots of f, which are not roots of gg′.
+  Key takeaway: each differentiation can lose at most one root in counting via Rolle's theorem.
   Answer: (A)
 M B 1: |-
-  Concept: Put $t = e^x > 0$.
+  Concept: Put t = eˣ > 0. The quartic is palindromic (coefficients 1, −1, −4, −1, 1), so divide by t² and set $u = t + \frac{1}{t}$.
   Solution:
-  1. $t^4 - t^3 - 4t^2 - t + 1 = 0$; dividing by $t^2$ with $u = t + \frac{1}{t}$: $u^2 - u - 6 = 0 \Rightarrow u = 3$ ($u = -2$ gives t = −1).
-  2. $t + \frac{1}{t} = 3$ gives two positive t, so 2 real roots.
+  1. $t^4 - t^3 - 4t^2 - t + 1 = 0 \Rightarrow t^2 + \frac{1}{t^2} - \left(t + \frac{1}{t}\right) - 4 = 0$.
+  2. With $t^2 + \frac{1}{t^2} = u^2 - 2$: $u^2 - u - 6 = 0 \Rightarrow u = 3$ or u = −2.
+  3. For t > 0, u ≥ 2, so u = −2 is rejected (it gives t = −1).
+  4. $t + \frac{1}{t} = 3 \Rightarrow t^2 - 3t + 1 = 0 \Rightarrow t = \frac{3 \pm \sqrt5}{2}$, both positive.
+  5. Two positive t → two real x.
+  Key takeaway: reciprocal (palindromic) polynomials reduce to lower degree via u = t + 1/t.
   Answer: 2
 M B 2: |-
-  Concept: Re z = 0 when the real part of the numerator times the conjugate of the denominator is 0.
+  Concept: $z = \frac{3 + 2ic}{1 - 3ic}$ (c = cos θ). Multiply numerator and denominator by the conjugate $1 + 3ic$; Re z = 0 means the real part of the new numerator is 0.
   Solution:
-  1. $\text{Re}[(3 + 2ic)(1 + 3ic)] = 3 - 6c^2 = 0 \Rightarrow \cos^2\theta = \frac{1}{2}$, so $\theta = \frac{\pi}{4}$.
-  2. $\sin^2\frac{3\pi}{4} + \cos^2\frac{\pi}{4} = 1$.
+  1. $(3 + 2ic)(1 + 3ic) = 3 + 9ic + 2ic - 6c^2 = (3 - 6c^2) + 11ic$.
+  2. Re z = 0 ⇒ $3 - 6c^2 = 0 \Rightarrow \cos^2\theta = \frac{1}{2}$ ⇒ θ = $\frac{\pi}{4}$ in $(0, \frac{\pi}{2})$.
+  3. $\sin^23\theta + \cos^2\theta = \sin^2\frac{3\pi}{4} + \cos^2\frac{\pi}{4} = \frac{1}{2} + \frac{1}{2} = 1$.
+  Key takeaway: for $\frac{p}{q}$ to be purely imaginary, $p\bar q$ must be purely imaginary.
   Answer: 1
 M B 3: |-
-  Concept: Divisors ≡ 1 (mod 4) must be odd: $5^a11^b13^c$, with 5 ≡ 13 ≡ 1 and 11 ≡ −1 (mod 4).
+  Concept: $10^{10}\cdot11^{10}\cdot13^{13} = 2^{10}5^{10}11^{10}13^{13}$. A divisor of the form 4n + 1 is odd, so it has no factor 2: $d = 5^a11^b13^c$. Modulo 4: 5 ≡ 1, 13 ≡ 1, 11 ≡ −1, so $d \equiv (-1)^b$.
   Solution:
-  1. We need b even: b ∈ {0, 2, …, 10} (6 choices); a: 0–10 (11); c: 0–13 (14).
-  2. Count $= 11\times6\times14 = 924$.
-  Note: The key's 792 uses 12 choices for c; $13^0, \dots, 13^{13}$ give 14.
+  1. d ≡ 1 (mod 4) iff b is even: b ∈ {0, 2, 4, 6, 8, 10} → 6 choices.
+  2. a ∈ {0, …, 10} → 11 choices; c ∈ {0, …, 13} → 14 choices.
+  3. Count $= 11\times6\times14 = 924$.
+  Note: The key's 792 uses 12 choices for c; the exponents $13^0, \dots, 13^{13}$ give 14 choices, so 924 is stored.
+  Key takeaway: reduce each prime modulo 4 first; only primes ≡ 3 (mod 4) need an even exponent.
   Answer: 924
 M B 4: |-
-  Concept: Line QR meets the plane.
+  Concept: Parametrise line QR, substitute into the plane to find the intersection, then compute the distance to P.
   Solution:
-  1. QR: $(3 - k, -4 + k, -5 + 6k)$; in the plane: $6 - 2k - 4 + k - 5 + 6k = 7 \Rightarrow k = 2$, point (1, −2, 7).
-  2. Distance from P(3, 4, 4) $= \sqrt{4 + 36 + 9} = 7$.
+  1. Direction $\vec{QR} = (2 - 3, -3 + 4, 1 + 5) = (-1, 1, 6)$. Point: (3 − k, −4 + k, −5 + 6k).
+  2. Plane 2x + y + z = 7: $2(3 - k) + (-4 + k) + (-5 + 6k) = 7 \Rightarrow -3 + 5k = 7 \Rightarrow k = 2$.
+  3. Intersection: (1, −2, 7).
+  4. Distance from P(3, 4, 4): $\sqrt{(3 - 1)^2 + (4 + 2)^2 + (4 - 7)^2} = \sqrt{4 + 36 + 9} = 7$.
+  Key takeaway: a 2–3–6 vector always has length 7 — a common "nice number" in JEE problems.
   Answer: 7
 M B 5: |-
-  Concept: $A = \{1, \dots, 100\}$ (since $n^2 - n \le 10000$); $B - C$ = odd numbers of the form 3k + 1.
+  Concept: A: $n^2 - n \le 10000$; since 100·99 = 9900 ≤ 10000 and 101·100 = 10100 > 10000, A = {1, …, 100}. B = {4, 7, 10, 13, …} (3k + 1, k ∈ ℕ). B − C removes the even numbers.
   Solution:
-  1. Elements: 7, 13, 19, …, 97 (16 terms).
-  2. Sum $= \frac{16}{2}(7 + 97) = 832$.
+  1. Odd numbers of the form 3k + 1 up to 100: 7, 13, 19, …, 97 (they are ≡ 1 mod 6).
+  2. Number of terms: $\frac{97 - 7}{6} + 1 = 16$.
+  3. Sum $= \frac{16}{2}(7 + 97) = 8\times104 = 832$.
+  Note: The printed key 16 is the number of terms; the required sum is 832 (the NTA answer), which is stored.
+  Key takeaway: 1 is excluded because k starts from 1 (k ∈ ℕ), so B starts at 4.
   Answer: 832
 M B 6: |-
-  Concept: Substitute $u = \cos x$, then integrate by parts.
+  Concept: Substitute u = cos x to turn the integral into one in u, then integrate by parts and convert to the form $\int\sqrt te^tdt$ via t = u².
   Solution:
-  1. $I = 2\int_0^1(1 - u^2)e^{u^2 - 1}du = \frac{2}{e}\left[\frac{3}{2}\int_0^1e^{u^2}du - \frac{e}{2}\right]$.
-  2. With $t = u^2$: $\int_0^1e^{u^2}du = e - \int_0^1\sqrt t\,e^tdt$.
-  3. $I = 2 - \frac{3}{e}\int_0^1\sqrt t\,e^tdt$, so $\alpha + \beta = 5$.
+  1. $du = -\sin x\,dx$, $\sin^2x = 1 - u^2$: $I = \int_{-1}^1(1 - u^2)e^{u^2 - 1}du = \frac{2}{e}\int_0^1(1 - u^2)e^{u^2}du$.
+  2. By parts: $\int_0^1u^2e^{u^2}du = \frac{e}{2} - \frac{1}{2}\int_0^1e^{u^2}du$. So $\int_0^1(1 - u^2)e^{u^2}du = \frac{3}{2}\int_0^1e^{u^2}du - \frac{e}{2}$.
+  3. With t = u²: $\int_0^1e^{u^2}du = \int_0^1\frac{e^t}{2\sqrt t}dt = [\sqrt te^t]_0^1 - \int_0^1\sqrt te^tdt = e - J$.
+  4. $I = \frac{2}{e}\left[\frac{3}{2}(e - J) - \frac{e}{2}\right] = 2 - \frac{3}{e}J$.
+  5. α = 2, β = 3, α + β = 5.
+  Key takeaway: $\int_0^1e^{u^2}du$ has no elementary form, so the answer must be expressed through another integral — the question is designed around that.
   Answer: 5
 M B 7: |-
-  Concept: $A^n = \begin{bmatrix}1&n&\frac{n(n+1)}{2}\\0&1&n\\0&0&1\end{bmatrix}$.
+  Concept: A = I + N where N is strictly upper triangular ($N^3 = O$). Then $A^n = I + nN + \binom{n}{2}N^2$, giving $A^n = \begin{bmatrix}1&n&\frac{n(n+1)}{2}\\0&1&n\\0&0&1\end{bmatrix}$.
   Solution:
-  1. Element sum of $A^n$ $= 3 + 2n + \frac{n(n+1)}{2}$.
-  2. $\sum_{n=1}^{20} = 60 + 420 + 1540 = 2020$.
+  1. Sum of entries of $A^n$: $3 + 2n + \frac{n(n + 1)}{2}$.
+  2. Sum over n = 1 to 20:
+     - $\sum3 = 60$.
+     - $\sum2n = 2\times210 = 420$.
+     - $\sum\frac{n(n + 1)}{2} = \frac{1}{2}(2870 + 210) = 1540$.
+  3. Total = 60 + 420 + 1540 = 2020.
+  Check: $A^2 = \begin{bmatrix}1&2&3\\0&1&2\\0&0&1\end{bmatrix}$ matches the formula (n = 2: $\frac{2\cdot3}{2} = 3$) ✓.
+  Key takeaway: the top-right entries are triangular numbers, so their sum over n is a tetrahedral number ($\binom{22}{3} = 1540$).
   Answer: 2020
 M B 8: |-
-  Concept: Shifted ellipse with a = 2, c = 1, $b^2 = 3$; tangency condition $c'^2 = a^2m^2 + b^2$.
+  Concept: Shift the origin to the centre (3, −4). A tangent y′ = mx′ + c′ to $\frac{x'^2}{a^2} + \frac{y'^2}{b^2} = 1$ satisfies $c'^2 = a^2m^2 + b^2$.
   Solution:
-  1. $y = mx - 4 \Rightarrow y + 4 = m(x - 3) + 3m$, so $c' = 3m$.
-  2. $9m^2 = 4m^2 + 3 \Rightarrow 5m^2 = 3$.
-  Note: The key page prints 9, but its own solution derives $5m^2 = 3$.
+  1. Centre (3, −4), focus (4, −4) → c = 1; vertex (5, −4) → a = 2; $b^2 = a^2 - c^2 = 3$.
+  2. Line mx − y = 4 ⇒ y = mx − 4. In shifted coordinates (x = x′ + 3, y = y′ − 4): y′ − 4 = m(x′ + 3) − 4 ⇒ y′ = mx′ + 3m, so c′ = 3m.
+  3. Tangency: $9m^2 = 4m^2 + 3 \Rightarrow 5m^2 = 3$.
+  Note: The key page prints 9, but its own solution derives $5m^2 = 3$, which is stored.
+  Key takeaway: always shift to the ellipse's centre before using the standard tangency condition.
   Answer: 3
 M B 9: |-
-  Concept: Separable: $e^{-y}dy = e^{\alpha x}dx$.
+  Concept: Separable equation: $dy = e^{\alpha x}e^ydx \Rightarrow e^{-y}dy = e^{\alpha x}dx$.
   Solution:
-  1. $-e^{-y} = \frac{e^{\alpha x}}{\alpha} + c$; $y(0) = -\ln2 \Rightarrow c = -2 - \frac{1}{\alpha}$.
-  2. $y(\ln2) = \ln2$: $-\frac{1}{2} = \frac{2^\alpha - 1}{\alpha} - 2 \Rightarrow \frac{2^\alpha - 1}{\alpha} = \frac{3}{2} \Rightarrow \alpha = 2$.
+  1. Integrate: $-e^{-y} = \frac{e^{\alpha x}}{\alpha} + c$.
+  2. y(0) = ln ½ ⇒ $e^{-y} = 2$: $-2 = \frac{1}{\alpha} + c \Rightarrow c = -2 - \frac{1}{\alpha}$.
+  3. y(ln 2) = ln 2 ⇒ $e^{-y} = \frac{1}{2}$: $-\frac{1}{2} = \frac{2^\alpha}{\alpha} - 2 - \frac{1}{\alpha} \Rightarrow \frac{2^\alpha - 1}{\alpha} = \frac{3}{2}$.
+  4. Test natural numbers: α = 1 → 1; α = 2 → $\frac{3}{2}$ ✓; α = 3 → $\frac{7}{3}$.
+  5. α = 2.
+  Key takeaway: when the unknown appears both in an exponent and outside, test small natural numbers.
   Answer: 2
 M B 10: |-
-  Concept: Solve for α and β (reading $\vec c = -\alpha\hat i - 2\hat j + \hat k$), then compute the triple product.
+  Concept: Reading $\vec c = -\alpha\hat i - 2\hat j + \hat k$ (the printed "$-\alpha\hat j$" is a typo), use the two dot-product conditions to find integers α, β, then evaluate the scalar triple product as a determinant.
   Solution:
-  1. $\vec a\cdot\vec b = 3 - 2\alpha\beta = -1 \Rightarrow \alpha\beta = 2$; $\vec b\cdot\vec c = -4\alpha - 2\beta = 10$.
-  2. $\alpha = -2$, $\beta = -1$: $\vec a = (1, 2, -1)$, $\vec b = (3, -1, 2)$, $\vec c = (2, -2, 1)$.
-  3. $[\vec a\,\vec b\,\vec c] = 3 + 2 + 4 = 9$.
+  1. $\vec a\cdot\vec b = 3 - \alpha\beta - \alpha\beta = 3 - 2\alpha\beta = -1 \Rightarrow \alpha\beta = 2$.
+  2. $\vec b\cdot\vec c = -3\alpha - 2\beta - \alpha = -4\alpha - 2\beta = 10 \Rightarrow 2\alpha + \beta = -5$.
+  3. Integer solution: α = −2, β = −1 (check αβ = 2 ✓).
+  4. $\vec a = (1, 2, -1)$, $\vec b = (3, -1, 2)$, $\vec c = (2, -2, 1)$.
+  5. $(\vec a\times\vec b)\cdot\vec c = \begin{vmatrix}1&2&-1\\3&-1&2\\2&-2&1\end{vmatrix} = 1(-1 + 4) - 2(3 - 4) - 1(-6 + 2) = 3 + 2 + 4 = 9$.
+  Key takeaway: the other root of the system (α = −½, β = −4) is not an integer, so the integer condition picks a unique answer.
   Answer: 9
