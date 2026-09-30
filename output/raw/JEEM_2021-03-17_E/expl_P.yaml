@@ -1,185 +1,388 @@
 P A 1: |-
-  Concept: Coefficient of restitution $e = \sqrt{h'/h}$; average speed = total distance ÷ total time (geometric series).
+  Concept: If the ball rises to a fraction e² of the height it falls from, its speed after each bounce is e times its speed before it (coefficient of restitution e). Total distance and total time are both geometric series, and average speed = total distance ÷ total time.
   Solution:
-  1. $e = \sqrt{0.81} = 0.9$.
-  2. Distance $= h\frac{1 + e^2}{1 - e^2} = 5\times\frac{1.81}{0.19} = 47.6$ m.
-  3. Time $= \sqrt{\frac{2h}{g}}\cdot\frac{1 + e}{1 - e} = 1\times\frac{1.9}{0.1} = 19$ s.
-  4. Average speed $= \frac{47.6}{19} \approx 2.5$ m/s.
+  1. $e^2 = \frac{81}{100}$, so e = 0.9.
+  2. Distance: the first fall is h = 5 m. Then each bounce contributes an up-and-down trip of $2e^2h, 2e^4h, \dots$
+     Total $= h + 2e^2h(1 + e^2 + e^4 + \dots) = h\left(1 + \frac{2e^2}{1 - e^2}\right) = h\frac{1 + e^2}{1 - e^2} = 5\times\frac{1.81}{0.19} = 47.6$ m.
+  3. Time: the first fall takes $t_0 = \sqrt{\frac{2h}{g}} = \sqrt{\frac{10}{10}} = 1$ s. Each rise-and-fall after a bounce takes $2et_0, 2e^2t_0, \dots$ (time scales with speed).
+     Total $= t_0\left(1 + \frac{2e}{1 - e}\right) = t_0\frac{1 + e}{1 - e} = 1\times\frac{1.9}{0.1} = 19$ s.
+  4. Average speed $= \frac{47.6}{19} = 2.51$ m/s ≈ 2.5 m/s.
+  Note: in theory the ball bounces infinitely many times, but both series converge, so the ball comes to rest after a finite time (19 s) and distance (47.6 m).
+  Why others are wrong: (A) 3.0, (B) 3.5 and (C) 2.0 m/s come from using e = 0.81 instead of 0.9, or from summing only the distance or only the time correctly.
   Answer: (D)
 P A 2: |-
-  Concept: $\gamma = 1 + \frac{2}{f}$; each vibrational mode adds 2 degrees of freedom.
+  Concept: For an ideal gas with f degrees of freedom, $C_V = \frac{f}{2}R$, $C_P = C_V + R$ and $\gamma = \frac{C_P}{C_V} = 1 + \frac{2}{f}$. Each active vibrational mode contributes 2 degrees of freedom (one for kinetic and one for potential energy).
   Solution:
-  1. Non-linear polyatomic: $f = 3 + 3 + 2\times2 = 10$.
-  2. $\beta = 1 + \frac{2}{10} = 1.2$.
+  1. A non-linear polyatomic molecule has 3 translational and 3 rotational degrees of freedom.
+  2. Two vibrational modes add 2 × 2 = 4.
+  3. Total: f = 3 + 3 + 4 = 10.
+  4. $C_V = 5R$ and $C_P = 6R$.
+  5. $\beta = \frac{C_P}{C_V} = \frac{6R}{5R} = 1.2$.
+  Comparison:
+  - Monatomic (f = 3): γ = 1.67.
+  - Diatomic, rigid (f = 5): γ = 1.40.
+  - Polyatomic, rigid (f = 6): γ = 1.33.
+  - Polyatomic with 2 vibrational modes (f = 10): γ = 1.20.
+  Each vibrational mode that becomes active lowers γ, because more energy goes into internal motion for each degree of temperature rise.
+  Why others are wrong:
+  - (A) 1.02 would need f = 100.
+  - (C) 1.25 corresponds to f = 8 (counting each vibrational mode as only 1).
+  - (D) 1.35 is close to the rigid polyatomic value, ignoring the vibrations.
   Answer: (B)
 P A 3: |-
-  Concept: Damped amplitude $A = A_0e^{-bt/2m}$.
+  Concept: In damped oscillation with damping force −bv, the amplitude decays as $A(t) = A_0e^{-bt/2m}$.
   Solution:
-  1. $\frac{bt}{2m} = \ln2 \Rightarrow b = \frac{2\times1\times0.693}{120} = 1.16\times10^{-2}$ kg s⁻¹.
-  2. None of the options gives this value (option C has $10^{2}$ instead of $10^{-2}$), so NTA dropped the question.
+  1. The amplitude halves (12 cm to 6 cm) in t = 2 min = 120 s.
+  2. $e^{-bt/2m} = \frac{1}{2}$, so $\frac{bt}{2m} = \ln2 = 0.693$.
+  3. $b = \frac{2m\ln2}{t} = \frac{2\times1\times0.693}{120} = \frac{1.386}{120} = 0.01155$ kg/s.
+  4. $b = 1.16\times10^{-2}$ kg s⁻¹.
+  5. Compare with the options: (C) gives $1.16\times10^{2}$, with the wrong power of ten (+2 instead of −2). None of the options is exactly correct.
+  Physical check: b = 0.0116 kg/s is very light damping for a 1 kg mass. The time constant $\frac{2m}{b} \approx 173$ s is long compared with a typical oscillation period, consistent with a slow decay over 2 minutes.
+  Why each option fails:
+  - (A) $0.69\times10^2$ and (B) $3.3\times10^2$ have no consistent derivation.
+  - (C) has the right digits but is 10⁴ times too large.
+  - (D) $5.7\times10^{-3}$ is half the correct value (it omits the factor 2 in 2m).
+  NTA dropped this question, so it is marked Bonus. ALLEN also gives Bonus, noting the correct value is 1.16 × 10⁻² kg/s.
   Answer: Bonus
 P A 4: |-
-  Concept: $Y = (A + B)\cdot\overline{AB}$ is the XOR function.
+  Concept: The XOR (exclusive OR) function gives output 1 when exactly one input is 1. It can be written as $Y = A\bar B + \bar AB = (A + B)\cdot\overline{AB}$.
   Solution:
-  1. The upper branch is AND followed by NOT: $\overline{AB}$. The lower branch is OR: $A + B$.
-  2. The final AND gives $(A + B)\overline{AB} = A\bar B + \bar AB$, which is XOR.
+  1. From the figure, the circuit has two branches fed by A and B:
+     - Upper branch: an AND gate followed by a NOT gate, giving $\overline{AB}$ (a NAND).
+     - Lower branch: an OR gate, giving A + B.
+  2. These feed a final AND gate: $Y = (A + B)\cdot\overline{AB}$.
+  3. Expand: $(A + B)(\bar A + \bar B) = A\bar A + A\bar B + B\bar A + B\bar B = A\bar B + \bar AB$ (since $A\bar A = B\bar B = 0$).
+  4. This is the XOR function.
+  Truth table:
+  - A = 0, B = 0: A + B = 0, so Y = 0.
+  - A = 0, B = 1: A + B = 1 and $\overline{AB} = 1$, so Y = 1.
+  - A = 1, B = 0: Y = 1.
+  - A = 1, B = 1: $\overline{AB} = 0$, so Y = 0.
+  Output 1 only when the inputs differ: XOR ✓.
+  Why others are wrong:
+  - (A) NOR gives 1 only for 0, 0.
+  - (B) NAND gives 1 for 0, 0 as well.
+  - (C) AND gives 1 only for 1, 1.
   Answer: (D)
 P A 5: |-
-  Concept: Bulk modulus $B = \frac{\Delta P}{\Delta V/V}$, with $\Delta P = \rho gh$.
+  Concept: The bulk modulus is the ratio of hydraulic stress (pressure change) to hydraulic strain (fractional volume change): $B = \frac{\Delta P}{\Delta V/V}$ (in magnitude).
   Solution:
-  1. $\Delta P = 1000\times9.8\times2000 = 1.96\times10^7$ Pa.
-  2. $B = \frac{1.96\times10^7}{0.0136} = 1.44\times10^9$ N m⁻².
+  1. The hydraulic stress at depth h is the extra pressure from the water above: $\Delta P = \rho gh = 1000\times9.8\times2000 = 1.96\times10^7$ Pa.
+  2. Hydraulic strain: $\frac{\Delta V}{V} = 1.36\% = 0.0136$.
+  3. $B = \frac{1.96\times10^7}{0.0136} = 1.441\times10^9$ N m⁻².
+  4. So the ratio is $1.44\times10^9$ N m⁻².
+  Note: this value is close to the bulk modulus of the object's material. It is also comparable to the bulk modulus of water itself (about 2.2 × 10⁹ Pa), meaning the object is a little more compressible than water.
+  Why atmospheric pressure is ignored: the object is compressed by the change in pressure relative to the surface. The stress that causes the compression is ρgh; the atmospheric pressure acts equally before and after immersion.
+  Why others are wrong:
+  - (A) $1.96\times10^7$ is the stress alone, not the ratio.
+  - (B) $1.44\times10^7$ is 100 times too small (using 1.36 instead of 0.0136).
+  - (C) $2.26\times10^9$ is close to water's bulk modulus but does not follow from the data.
   Answer: (D)
 P A 6: |-
-  Concept: Kepler's third law $T \propto r^{3/2}$ (r measured from the planet's centre).
+  Concept: Kepler's third law: for satellites of the same planet, $T^2 \propto r^3$, where r is the orbital radius measured from the planet's centre (not the height above the surface).
   Solution:
-  1. $r_1 = 12R$ ($T = 24$ h) and $r_2 = 3R$.
-  2. $T_2 = 24\left(\frac{3}{12}\right)^{3/2} = 24\times\frac{1}{8} = 3$ h.
+  1. Geostationary satellite: height 11R, so its orbital radius is r₁ = R + 11R = 12R. Its period equals the planet's rotation period, T₁ = 24 h.
+  2. Second satellite: height 2R, so r₂ = R + 2R = 3R.
+  3. $\frac{T_2}{T_1} = \left(\frac{r_2}{r_1}\right)^{3/2} = \left(\frac{3R}{12R}\right)^{3/2} = \left(\frac{1}{4}\right)^{3/2} = \frac{1}{8}$.
+  4. $T_2 = \frac{24}{8} = 3$ hours.
+  Common error: using the heights (11R and 2R) instead of the radii. That gives $T_2 = 24\left(\frac{2}{11}\right)^{3/2} = 1.86$ h, which is wrong.
+  Physical sense: the lower satellite moves faster and has a shorter path, so its period is much shorter. For the Earth (radius 6400 km), the geostationary orbit is at about 6.6R from the centre (height 36,000 km); this planet is different, with the geostationary orbit at 12R.
+  Why others are wrong:
+  - (A) $6\sqrt2 \approx 8.5$ h uses $T \propto r$.
+  - (B) $\frac{6}{\sqrt2} \approx 4.2$ h and (D) 5 h come from other wrong ratios.
   Answer: (C)
 P A 7: |-
-  Concept: $y = A\sin(kx - \omega t)$, with $k = \frac{2\pi f}{v}$ and $\omega = 2\pi f$.
+  Concept: A sinusoidal wave travelling along +x is $y = A\sin(kx - \omega t)$, where A is the amplitude, $k = \frac{2\pi}{\lambda} = \frac{\omega}{v}$ and ω = 2πf.
   Solution:
-  1. Total to-and-fro distance 6 cm, so $A = 3$ cm $= 0.03$ m.
-  2. $k = \frac{2\pi\times245}{300} = 5.1$ m⁻¹; $\omega = 2\pi\times245 \approx 1.5\times10^3$ s⁻¹.
+  1. Amplitude: each point moves to and fro through a total distance of 6 cm, which is 2A. So A = 3 cm = 0.03 m.
+  2. Angular frequency: ω = 2π × 245 = 1539 rad/s ≈ 1.5 × 10³ s⁻¹.
+  3. Wave number: $k = \frac{\omega}{v} = \frac{1539}{300} = 5.13$ m⁻¹ ≈ 5.1 m⁻¹.
+  4. Wavelength (for reference): $\lambda = \frac{v}{f} = \frac{300}{245} = 1.22$ m.
+  5. So y(x, t) = 0.03 sin(5.1x − 1.5 × 10³t), option (D).
+  (The options write the expression as "0.03[sin 5.1x − (1.5 × 10³)t]", meaning 0.03 sin(5.1x − 1.5 × 10³ t).)
+  Why others are wrong:
+  - (A) has the correct A and k but ω = 0.2 × 10³, which would give f ≈ 32 Hz.
+  - (B) uses A = 0.06 m (the total to-and-fro distance instead of the amplitude).
+  - (C) uses A = 0.06 m and wrong values of k and ω.
+  Note: the minus sign between kx and ωt indicates travel along +x. A plus sign would mean travel along −x.
   Answer: (D)
 P A 8: |-
-  Concept: Isothermal: T is constant. Adiabatic: $TV^{\gamma-1}$ = const and $P \propto T^{\gamma/(\gamma-1)}$.
+  Concept: In an isothermal process T is constant, so on any graph with T on one axis it appears as a line perpendicular to that axis. In an adiabatic process, $TV^{\gamma - 1}$ = constant (V falls as T rises), and $P^{1-\gamma}T^\gamma$ = constant, i.e. $P \propto T^{\gamma/(\gamma - 1)}$ (P rises with T).
   Solution:
-  1. (c) V–T: the isothermal process is a vertical line (T fixed), and in the adiabatic process V falls as T rises. Correct.
-  2. (d) P–T: the isothermal process is a vertical line, and in the adiabatic process P rises with T. Correct.
-  3. (a) shows an adiabatic process as a vertical line on P–V (wrong); (b) shows an isothermal process as a horizontal line on P–T (wrong).
+  1. (a) P–V diagram: the isothermal curve is a hyperbola (PV = const), which is fine. But the adiabatic is drawn as a vertical line (constant V). A vertical line on a P–V diagram is an isochoric process, not adiabatic. So (a) is wrong.
+  2. (b) P–T diagram: the isothermal is drawn as a horizontal line (constant P). An isothermal process has constant T, which would be a vertical line on a P–T graph. So (b) is wrong.
+  3. (c) V–T diagram: the isothermal is a vertical line (T constant) ✓. The adiabatic shows V decreasing as T increases, consistent with $TV^{\gamma - 1}$ = const ✓. So (c) is correct.
+  4. (d) P–T diagram: the isothermal is a vertical line (T constant) ✓. The adiabatic shows P increasing with T, consistent with $P \propto T^{\gamma/(\gamma-1)}$ ✓. So (d) is correct.
+  5. The correct option is (c) and (d).
   Answer: (B)
 P A 9: |-
-  Concept: Displacement $= \int_0^1v\,dt$.
+  Concept: Displacement is the integral of velocity over time: $x(t) - x(0) = \int_0^tv\,dt$.
   Solution:
-  1. $x = \left[v_0t + \frac{gt^2}{2} + \frac{Ft^3}{3}\right]_0^1 = v_0 + \frac{g}{2} + \frac{F}{3}$.
+  1. $v(t) = v_0 + gt + Ft^2$.
+  2. $x(t) = \int_0^t(v_0 + gt' + Ft'^2)dt' = v_0t + \frac{gt^2}{2} + \frac{Ft^3}{3}$ (using x(0) = 0).
+  3. At t = 1: $x = v_0 + \frac{g}{2} + \frac{F}{3}$.
+  Check by differentiating: $\frac{d}{dt}\left(v_0t + \frac{gt^2}{2} + \frac{Ft^3}{3}\right) = v_0 + gt + Ft^2 = v$ ✓.
+  Interpretation: the term $\frac{Ft^3}{3}$ shows that this is not uniformly accelerated motion. The acceleration a = g + 2Ft changes with time, so the standard equation $s = ut + \frac{1}{2}at^2$ does not apply directly. Integration is required.
+  Why others are wrong:
+  - (A) $v_0 + g + F$ is the velocity at t = 1, not the displacement.
+  - (C) treats the Ft² term as if its integral were Ft.
+  - (D) $v_0 + 2g + 3F$ looks like a derivative, not an integral.
   Answer: (B)
 P A 10: |-
-  Concept: AM bandwidth $= 2f_m$.
+  Concept: In amplitude modulation, the modulated wave contains the carrier frequency f_c and two sidebands at f_c ± f_m. The bandwidth is the spread from the lower to the upper sideband: BW = 2f_m.
   Solution:
-  1. $f_m = \frac{1.57\times10^8}{2\pi} = 25$ MHz.
-  2. Bandwidth $= 50$ MHz.
+  1. Message signal: $m(t) = 5\sin(1.57\times10^8t)$, so ω_m = 1.57 × 10⁸ rad/s.
+  2. $f_m = \frac{\omega_m}{2\pi} = \frac{1.57\times10^8}{6.28} = 2.5\times10^7$ Hz = 25 MHz.
+  3. Bandwidth = 2f_m = 50 MHz.
+  For reference:
+  - Carrier: $f_c = \frac{2.512\times10^{10}}{2\pi} = 4\times10^9$ Hz = 4 GHz.
+  - Sidebands: 4000 ± 25 MHz, i.e. 3975 MHz and 4025 MHz. Their difference is 50 MHz ✓.
+  - Modulation index: $\mu = \frac{A_m}{A_c} = \frac{5}{25} = 0.2$.
+  Note: the bandwidth depends only on the message frequency, not on the carrier frequency or the amplitudes.
+  Why others are wrong:
+  - (A) 8 GHz is twice the carrier frequency.
+  - (B) 2.01 GHz and (C) 1987.5 MHz mix up carrier and message frequencies (e.g. half the lower sideband frequency).
   Answer: (D)
 P A 11: |-
-  Concept: Terminal voltage of the first cell: $V = 2E - ir_1 = 0$.
+  Concept: The terminal voltage of a cell delivering current i is V = ε − ir. It becomes zero when the internal voltage drop equals the EMF.
   Solution:
-  1. $i = \frac{3E}{R + r_1 + r_2}$.
-  2. $2E = \frac{3Er_1}{R + r_1 + r_2} \Rightarrow 2R + 2r_1 + 2r_2 = 3r_1 \Rightarrow R = \frac{r_1}{2} - r_2$.
+  1. From the figure, the cells (2E, r₁) and (E, r₂) are in series, aiding each other, with the external resistor R.
+  2. Total EMF = 3E, and total resistance = R + r₁ + r₂. So $i = \frac{3E}{R + r_1 + r_2}$.
+  3. Terminal voltage of the first cell: $V_1 = 2E - ir_1 = 0$, so $i = \frac{2E}{r_1}$.
+  4. Equate: $\frac{3E}{R + r_1 + r_2} = \frac{2E}{r_1}$, so $3r_1 = 2R + 2r_1 + 2r_2$.
+  5. $2R = r_1 - 2r_2$, so $R = \frac{r_1}{2} - r_2$.
+  6. This requires r₁ > 2r₂ for R to be positive.
+  Physical meaning: the current is large enough that the first cell's entire EMF is used up driving current through its own internal resistance. The first cell then acts like a short circuit between its terminals.
+  Check: with r₁ = 4 Ω, r₂ = 1 Ω: R = 1 Ω, i = $\frac{3E}{6} = \frac{E}{2}$, and V₁ = 2E − $\frac{E}{2}\times4$ = 0 ✓.
+  Why others are wrong: (A), (C) and (D) do not satisfy $2E = ir_1$ in the check above.
   Answer: (B)
 P A 12: |-
-  Concept: Superpose two semi-infinite straight wires and a semicircular arc.
+  Concept: Use the Biot–Savart results. A straight wire segment gives $B = \frac{\mu_0I}{4\pi d}(\sin\phi_1 + \sin\phi_2)$. For a semi-infinite wire ending level with the point (at the foot of the perpendicular), this is $\frac{\mu_0I}{4\pi d}$. A semicircular arc of radius r gives $\frac{\mu_0I}{4r}$ at its centre.
   Solution:
-  1. Each straight wire ends level with P: $B = \frac{\mu_0I}{4\pi r}$ each.
-  2. Semicircle: $B = \frac{\mu_0I}{4r}$.
-  3. All three are in the same direction: $B = \frac{\mu_0I}{4\pi r}(2 + \pi)$.
+  1. The hairpin consists of two long parallel straight wires joined by a semicircle of radius r. P is at the centre of the semicircle.
+  2. Each straight wire is a semi-infinite wire at perpendicular distance r from P, starting at the point level with P. Each gives $B = \frac{\mu_0I}{4\pi r}$.
+  3. The semicircle gives $B = \frac{\mu_0I}{4r} = \frac{\mu_0I\pi}{4\pi r}$.
+  4. Directions: the current goes out along one wire, round the semicircle and back along the other. By the right-hand rule, all three contributions at P point the same way (into or out of the page).
+  5. Total: $B = \frac{\mu_0I}{4\pi r}(1 + 1 + \pi) = \frac{\mu_0I}{4\pi r}(2 + \pi)$.
+  Why others are wrong:
+  - (A) and (D) subtract the contributions, but they add.
+  - (C) and (D) have $2\pi$ instead of $4\pi$, which doubles the value.
   Answer: (B)
 P A 13: |-
-  Concept: Nodal analysis for an unbalanced Wheatstone bridge.
+  Concept: When a Wheatstone bridge is unbalanced, a current flows through the galvanometer. It can be found by nodal analysis (Kirchhoff's current law at the two middle nodes).
   Solution:
-  1. Take $V_A = 10$ V, $V_C = 0$, with unknowns $V_B = x$ and $V_D = y$ (arms 100 Ω, 10 Ω, 60 Ω, 5 Ω; galvanometer 15 Ω).
-  2. At B: $\frac{x - 10}{100} + \frac{x - y}{15} + \frac{x}{10} = 0$. At D: $\frac{y - 10}{60} + \frac{y - x}{15} + \frac{y}{5} = 0$.
-  3. Solving: $x = 0.865$ V, $y = 0.792$ V.
-  4. $I_G = \frac{0.073}{15} = 4.87$ mA.
+  1. From the figure: arm AB = 100 Ω, BC = 10 Ω, AD = 60 Ω, DC = 5 Ω, and the galvanometer across BD has 15 Ω. A is at 10 V and C at 0 V.
+  2. Balance check: $\frac{100}{10} = 10$ but $\frac{60}{5} = 12$. The ratios differ, so the bridge is unbalanced.
+  3. Let V_B = x and V_D = y.
+     Node B: $\frac{x - 10}{100} + \frac{x - y}{15} + \frac{x}{10} = 0$. Multiply by 300: 53x − 20y = 30.
+     Node D: $\frac{y - 10}{60} + \frac{y - x}{15} + \frac{y}{5} = 0$. Multiply by 60: −4x + 17y = 10.
+  4. From the second: $y = \frac{10 + 4x}{17}$. Substituting: 53x − $\frac{20(10 + 4x)}{17}$ = 30, so 901x − 200 − 80x = 510 and x = $\frac{710}{821}$ = 0.865 V.
+  5. Then y = $\frac{10 + 3.459}{17}$ = 0.792 V.
+  6. Galvanometer current: $I_G = \frac{x - y}{15} = \frac{0.073}{15} = 4.87\times10^{-3}$ A = 4.87 mA, flowing from B to D.
+  Why others are wrong:
+  - (A) and (B) are half the correct value.
+  - (D) has the right digits but the wrong unit (μA instead of mA).
   Answer: (C)
 P A 14: |-
-  Concept: $v_{max} = A\omega = A\sqrt{\frac{K}{m}}$.
+  Concept: In SHM, the maximum speed (at the mean position) is $v_{max} = A\omega$, with $\omega = \sqrt{\frac{K}{m}}$ for a mass on a spring.
   Solution:
-  1. $A_1\sqrt{K_1} = A_2\sqrt{K_2} \Rightarrow \frac{A_1}{A_2} = \sqrt{\frac{K_2}{K_1}}$.
+  1. Particle A: $v_1 = A_1\sqrt{\frac{K_1}{m}}$. Particle B: $v_2 = A_2\sqrt{\frac{K_2}{m}}$.
+  2. Equal maximum speeds: $A_1\sqrt{K_1} = A_2\sqrt{K_2}$ (the equal masses cancel).
+  3. $\frac{A_1}{A_2} = \sqrt{\frac{K_2}{K_1}}$.
+  Energy view: the maximum kinetic energy equals the total energy, $\frac{1}{2}KA^2$. Equal masses and equal maximum speeds mean equal energies: $K_1A_1^2 = K_2A_2^2$. This gives the same result ✓.
+  Interpretation: the stiffer spring needs a smaller amplitude to give the same maximum speed, because it oscillates faster (higher ω).
+  Note on vertical springs: the masses are suspended, so gravity shifts the equilibrium position. But the oscillation about that equilibrium is still SHM with $\omega = \sqrt{\frac{K}{m}}$, so the result is unchanged.
+  Why others are wrong:
+  - (A) and (B) have no square root; they would follow from $v \propto AK$.
+  - (C) is the reciprocal of the correct ratio.
   Answer: (D)
 P A 15: |-
-  Concept: Phase relations in AC circuits.
+  Concept: Phase relationships between current and voltage in AC circuits.
   Solution:
-  1. (a) Resistive: zero (ii).
-  2. (b) Inductive: current lags by $\frac{\pi}{2}$ (iii).
-  3. (c) Capacitive: current leads by $\frac{\pi}{2}$ (i).
-  4. (d) LCR: $\tan^{-1}\frac{X_C - X_L}{R}$ (iv).
+  1. (a) Purely resistive circuit: V = IR at every instant, so current and voltage are in phase. Phase difference: zero → (ii).
+  2. (b) Purely inductive circuit: $V = L\frac{dI}{dt}$. With I = I₀ sin ωt, V = ωLI₀ cos ωt. The voltage leads the current by $\frac{\pi}{2}$, i.e. the current lags the voltage by $\frac{\pi}{2}$ → (iii).
+  3. (c) Purely capacitive circuit: $I = C\frac{dV}{dt}$. With V = V₀ sin ωt, I = ωCV₀ cos ωt. The current leads the voltage by $\frac{\pi}{2}$ → (i).
+  4. (d) Series LCR circuit: the phase difference is $\phi = \tan^{-1}\frac{X_C - X_L}{R}$ (defined here as the angle by which the current leads) → (iv). If X_L > X_C, the circuit is inductive and the current lags; if X_C > X_L, it is capacitive and the current leads; at resonance φ = 0.
+  5. Matching: (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv).
+  Memory aid: "CIVIL": in a Capacitor, I leads V; V leads I in an inductor (L).
+  Why others are wrong:
+  - (A) makes the resistive circuit have current leading by $\frac{\pi}{2}$.
+  - (B) and (C) swap the capacitive and LCR entries.
   Answer: (D)
 P A 16: |-
-  Concept: An elastic collision between equal masses exchanges velocities; maximum compression occurs at the common velocity.
+  Concept: In an elastic head-on collision between equal masses, the velocities are exchanged. The spring between A and B is maximally compressed when A and B move with the same velocity. Momentum and energy are both conserved.
   Solution:
-  1. C stops and A moves with v; then A and B (joined by the spring) share momentum: common velocity $\frac{v}{2}$.
-  2. $\frac{1}{2}mv^2 = \frac{1}{2}(2m)\frac{v^2}{4} + \frac{1}{2}Kx^2 \Rightarrow x = v\sqrt{\frac{m}{2K}}$ (option A, with M = m).
+  1. C (mass m, speed v) hits A (mass m, at rest) elastically. The velocities exchange: C stops and A moves off with v. (The collision is taken to be instantaneous, before the spring has had time to compress.)
+  2. Now A (speed v) pushes the spring against B (at rest). At maximum compression, A and B move together with common speed u.
+  3. Momentum: mv = 2mu, so $u = \frac{v}{2}$.
+  4. Energy: $\frac{1}{2}mv^2 = \frac{1}{2}(2m)u^2 + \frac{1}{2}Kx^2 = \frac{1}{4}mv^2 + \frac{1}{2}Kx^2$.
+  5. $\frac{1}{2}Kx^2 = \frac{1}{4}mv^2$, so $x^2 = \frac{mv^2}{2K}$ and $x = v\sqrt{\frac{m}{2K}}$.
+  6. Option (A) is written with M; with M = m (the block mass), it is this expression.
+  Why the energy is not all stored: at maximum compression, the pair still moves, carrying half the kinetic energy. Only the kinetic energy relative to the centre of mass (half the total here) can be stored in the spring.
+  Why others are wrong:
+  - (B) and (C) have v under the square root, so they are dimensionally wrong for a length.
+  - (D) is missing v altogether.
   Answer: (A)
 P A 17: |-
-  Concept: Hydrogen spectral series.
+  Concept: Hydrogen spectral series are named by the lower level n₁ of the transition: $\frac{1}{\lambda} = R\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$.
   Solution:
-  1. The Balmer series (transitions to n = 2) lies in the visible region.
-  2. Lyman is UV; Paschen and Brackett are IR.
+  1. Lyman series (n₁ = 1): wavelengths 91–122 nm, ultraviolet.
+  2. Balmer series (n₁ = 2): wavelengths 365–656 nm. Its first lines are Hα 656 nm (red), Hβ 486 nm (blue-green), Hγ 434 nm (violet) and Hδ 410 nm (violet). These are in the visible region.
+  3. Paschen series (n₁ = 3): 820–1875 nm, infrared.
+  4. Brackett series (n₁ = 4): 1.46–4.05 μm, infrared.
+  5. Pfund series (n₁ = 5): further infrared.
+  6. So the Balmer series lies in the visible region. (Its series limit, 365 nm, is in the near ultraviolet, but the prominent lines are visible.)
+  Why energy decides the region: the gaps between levels shrink as n increases ($E_n \propto \frac{1}{n^2}$). Transitions ending on n = 1 release large energies (UV). Those ending on n = 2 release energies of 1.9–3.4 eV, which are in the visible range (1.8–3.1 eV). Those ending on higher levels release less energy (IR).
   Answer: (D)
 P A 18: |-
-  Concept: $\frac{1}{2}mv^2 = hf - \phi$.
+  Concept: Einstein's photoelectric equation: $\frac{1}{2}mv_{max}^2 = hf - \phi$, where φ is the work function of the cathode material.
   Solution:
-  1. Subtracting for the two frequencies: $\frac{1}{2}m(v_1^2 - v_2^2) = h(f_1 - f_2)$.
-  2. $v_1^2 - v_2^2 = \frac{2h}{m}(f_1 - f_2)$.
+  1. Both photocathodes are identical, so they have the same work function φ.
+  2. For frequency f₁: $\frac{1}{2}mv_1^2 = hf_1 - \phi$.
+  3. For frequency f₂: $\frac{1}{2}mv_2^2 = hf_2 - \phi$.
+  4. Subtract (φ cancels): $\frac{1}{2}m(v_1^2 - v_2^2) = h(f_1 - f_2)$.
+  5. $v_1^2 - v_2^2 = \frac{2h}{m}(f_1 - f_2)$.
+  (Here v₁ and v₂ refer to the maximum speeds of the emitted electrons.)
+  Why subtraction works: the work function is unknown but the same for both, so subtracting the two equations eliminates it. This is also how Planck's constant is found experimentally from the slope of the stopping potential against frequency.
+  Why others are wrong:
+  - (B) adds the equations, which gives $v_1^2 + v_2^2 = \frac{2h}{m}(f_1 + f_2) - \frac{4\phi}{m}$. The φ terms do not cancel.
+  - (C) and (D) take square roots of sums or differences, which is not algebraically valid ($\sqrt{a - b} \ne \sqrt a - \sqrt b$).
   Answer: (A)
 P A 19: |-
-  Concept: $X_L = 2\pi fL$ and $I = \frac{V}{X_L}$.
+  Concept: The inductive reactance is $X_L = \omega L = 2\pi fL$, directly proportional to frequency. In a purely inductive circuit, the rms current is $I = \frac{V}{X_L}$.
   Solution:
-  1. Halving f halves $X_L$, so the current doubles.
+  1. Halving the frequency: $X_L' = 2\pi\frac{f}{2}L = \frac{X_L}{2}$. The reactance is halved.
+  2. With the same supply voltage: $I' = \frac{V}{X_L/2} = 2I$. The current doubles.
+  Physical reason: an inductor opposes changes in current. At a lower frequency the current changes more slowly, so the back EMF ($L\frac{dI}{dt}$) is smaller for a given current amplitude. The same voltage can therefore drive a larger current.
+  Extreme cases:
+  - f → 0 (DC): X_L → 0. An ideal inductor acts like a short circuit, and the current is limited only by resistance.
+  - f → ∞: X_L → ∞, and the inductor blocks the current.
+  This is why inductors are used as chokes to block high-frequency signals while passing low-frequency ones.
+  For a capacitor, the opposite holds: $X_C = \frac{1}{2\pi fC}$, so halving f doubles X_C and halves the current.
+  Why others are wrong:
+  - (A) halves both.
+  - (C) reverses the effect (that is the capacitor's behaviour).
+  - (D) doubles both.
   Answer: (B)
 P A 20: |-
-  Concept: A rolling sphere on an incline has $a = \frac{g\sin\theta}{1 + 2/5}$, uniform in both directions.
+  Concept: A body rolling without slipping on an incline has constant acceleration $a = \frac{g\sin\theta}{1 + \frac{K^2}{R^2}}$ along the incline, directed down the slope both going up and coming down. (Static friction reverses direction but keeps the same magnitude, so the motion is symmetric.)
   Solution:
-  1. $a = \frac{5}{7}\times10\times\frac{1}{2} = \frac{25}{7}$ m/s².
-  2. Up and back: $t = \frac{2v_0}{a} = \frac{2\times7}{25} = 0.56$ s ≈ 0.57 s.
+  1. Solid sphere: $\frac{K^2}{R^2} = \frac{2}{5}$.
+  2. $a = \frac{g\sin30°}{1 + \frac{2}{5}} = \frac{10\times0.5}{1.4} = \frac{5}{1.4} = \frac{25}{7} \approx 3.57$ m/s².
+  3. Going up with initial speed u = 1 m/s and deceleration a: time to stop $= \frac{u}{a} = \frac{7}{25} = 0.28$ s.
+  4. Coming back down takes the same time (uniform acceleration, starting from rest, over the same distance).
+  5. Total time: $t = \frac{2u}{a} = \frac{2\times7}{25} = 0.56$ s. The closest option is 0.57 s.
+  Distance up the slope: $s = \frac{u^2}{2a} = \frac{1}{2\times3.57} = 0.14$ m.
+  Note: the mass (2 kg) and radius (0.5 m) do not affect the answer. Only the shape factor $\frac{K^2}{R^2}$ matters.
+  Why others are wrong:
+  - (A) 0.60 s and (D) 0.80 s correspond to smaller accelerations (e.g. using a ring's $\frac{K^2}{R^2} = 1$ gives 0.8 s).
+  - (B) 0.52 s corresponds to a larger acceleration.
   Answer: (C)
 P B 1: |-
-  Concept: Intensity $\frac{P}{4\pi r^2} = \frac{1}{2}c\varepsilon_0E^2$, so $E^2 \propto P$.
+  Concept: A bulb radiating power P uniformly in all directions produces intensity $I = \frac{P}{4\pi r^2}$ at distance r. The intensity of an EM wave is related to the peak electric field by $I = \frac{1}{2}c\varepsilon_0E_0^2$. So at a fixed distance, $E^2 \propto P$.
   Solution:
-  1. $\frac{E'^2}{E^2} = \frac{60}{100} = \frac{3}{5}$, so $x = 3$.
+  1. At the same distance (3 m): $\frac{E'^2}{E^2} = \frac{P'}{P} = \frac{60}{100} = \frac{3}{5}$.
+  2. $E' = \sqrt{\frac{3}{5}}E$.
+  3. Comparing with $\sqrt{\frac{x}{5}}E$: x = 3.
+  For reference, the actual field of the 100 W bulb (assuming all power is radiated): $I = \frac{100}{4\pi\times9} = 0.884$ W/m². Then $E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} = \sqrt{\frac{2\times0.884}{3\times10^8\times8.85\times10^{-12}}} \approx 25.8$ V/m.
+  Common error: assuming $E \propto P$ (not $\sqrt P$) gives $E' = 0.6E$, which cannot be written in the given form.
   Answer: 3
 P B 2: |-
-  Concept: The minimum pulling force acts at the angle of friction: $F_{min} = \frac{\mu mg}{\sqrt{1 + \mu^2}}$.
+  Concept: The force needed to start moving a block is smallest when it is applied at an angle above the horizontal equal to the angle of friction, θ = tan⁻¹μ. The vertical component of the pull reduces the normal reaction and hence the friction. The minimum is $F_{min} = \frac{\mu mg}{\sqrt{1 + \mu^2}} = mg\sin\lambda$, where tan λ = μ.
   Solution:
-  1. $F = \frac{\frac{1}{\sqrt3}\times10}{\frac{2}{\sqrt3}} = 5$ N.
+  1. With F at angle θ above the horizontal: N = mg − F sin θ.
+  2. Condition to move: F cos θ = μ(mg − F sin θ), so $F = \frac{\mu mg}{\cos\theta + \mu\sin\theta}$.
+  3. The denominator is greatest when tan θ = μ, with maximum value $\sqrt{1 + \mu^2}$.
+  4. $\mu = \frac{1}{\sqrt3}$: $\sqrt{1 + \frac{1}{3}} = \frac{2}{\sqrt3}$. So θ = 30°.
+  5. $F_{min} = \frac{\frac{1}{\sqrt3}\times1\times10}{\frac{2}{\sqrt3}} = \frac{10}{2} = 5$ N.
+  Equivalent: $F_{min} = mg\sin\lambda = 10\sin30° = 5$ N ✓.
+  Comparison: a purely horizontal pull would need μmg = $\frac{10}{\sqrt3}$ ≈ 5.77 N, which is more.
   Answer: 5
 P B 3: |-
-  Concept: Treat boy + wood as one system: the rope pulls the system up with T, reducing the normal force.
+  Concept: Treat the boy and the wood together as one system. Internal forces between them cancel. Only external forces matter: gravity, the normal reaction from the floor, friction from the floor, and the rope tension where it acts on the system.
   Solution:
-  1. $N + T = (4 + 5)\times10 = 90$ N.
-  2. The horizontal pull T must not exceed friction: $T = \mu N = 0.5(90 - T)$.
-  3. $1.5T = 45 \Rightarrow T = 30$ N.
+  1. From the figure: the rope passes over a fixed pulley. The boy pulls down on one end, so the rope pulls the boy up with tension T. The other end is tied to the wood and pulls it horizontally with tension T.
+  2. Vertical balance for the system (boy + wood, total 9 kg): N + T = 9 × 10 = 90 N, so N = 90 − T.
+  3. Horizontal: the rope pulls the wood with T, and static friction opposes it. The wood stays at rest as long as T ≤ μN.
+  4. At the limit: T = 0.5(90 − T), so 1.5T = 45 and T = 30 N.
+  5. The maximum force the boy can exert on the rope is 30 N.
+  Check: N = 60 N and the maximum friction is 0.5 × 60 = 30 N, which just balances the horizontal pull of 30 N ✓.
+  Note: pulling harder lifts more of the weight (reducing N and friction) while increasing the horizontal pull. That is why the limit is lower than a simple μ(M + m)g = 45 N.
   Answer: 30
 P B 4: |-
-  Concept: Volume of oleic acid = film area × thickness.
+  Concept: In the oil-film experiment, a known volume of oleic acid spreads into a layer one molecule thick. Its thickness = volume of oleic acid ÷ area of film. This estimates the size of a molecule.
   Solution:
-  1. Solution volume $= 100\times\frac{4}{3}\pi r^3 = 100\times\frac{4\pi}{3}\times\frac{3}{40\pi}\times10^{-9} = 10^{-8}$ cm³.
-  2. Oleic acid $= 0.01\times10^{-8} = 10^{-10}$ cm³.
-  3. $t = \frac{10^{-10}}{4}$ cm $= 25\times10^{-12}$ cm $= 25\times10^{-14}$ m.
+  1. Volume of one drop: $\frac{4}{3}\pi r^3$ with $r^3 = \frac{3}{40\pi}\times10^{-9}$ cm³. So the volume is $\frac{4}{3}\pi\times\frac{3}{40\pi}\times10^{-9} = \frac{1}{10}\times10^{-9} = 10^{-10}$ cm³.
+  2. 100 drops: $100\times10^{-10} = 10^{-8}$ cm³ of solution.
+  3. Oleic acid in it: concentration 0.01 cm³ per cm³, so $0.01\times10^{-8} = 10^{-10}$ cm³.
+  4. Thickness: $t = \frac{10^{-10}\text{ cm}^3}{4\text{ cm}^2} = 2.5\times10^{-11}$ cm.
+  5. Convert: 1 cm = 10⁻² m, so $t = 2.5\times10^{-13}$ m = 25 × 10⁻¹⁴ m.
+  6. So x = 25.
+  Note: the alcohol in the solution evaporates, leaving only the oleic acid in the film. The resulting "molecular size" here is unrealistically small (real oleic acid films are about 10⁻⁹ m thick), but the numbers are chosen to give a clean answer.
   Answer: 25
 P B 5: |-
-  Concept: Central force $F = -\frac{dU}{dr}$ plus Bohr's condition $mvr = \frac{nh}{2\pi}$.
+  Concept: Combine the force balance for circular motion with Bohr's quantisation of angular momentum ($mvr = \frac{nh}{2\pi}$) to find how r depends on n for a given potential.
   Solution:
-  1. $4U_0r^3 = \frac{mv^2}{r} \Rightarrow v \propto r^2$.
-  2. $mvr \propto r^3 \propto n \Rightarrow r \propto n^{1/3}$, so $\alpha = 3$.
+  1. Force from the potential: $F = -\frac{dU}{dr} = -4U_0r^3$. Its magnitude, $4U_0r^3$, points toward the centre and provides the centripetal force.
+  2. $\frac{mv^2}{r} = 4U_0r^3$, so $v^2 = \frac{4U_0r^4}{m}$ and $v \propto r^2$.
+  3. Quantisation: mvr ∝ n. With v ∝ r²: mvr ∝ r³ ∝ n.
+  4. So $r \propto n^{1/3}$, and α = 3.
+  Explicitly: $v = r^2\sqrt{\frac{4U_0}{m}}$, so $mr^3\sqrt{\frac{4U_0}{m}} = \frac{nh}{2\pi}$, giving $r_n = \left(\frac{nh}{4\pi\sqrt{mU_0}}\right)^{1/3}$.
+  General rule: for a potential U ∝ r^k, the force gives v² ∝ r^k, and quantisation gives $r \propto n^{2/(k + 2)}$. For the Coulomb potential (k = −1), r ∝ n² ✓ (the hydrogen atom). For a harmonic potential (k = 2), r ∝ n^{1/2}. For k = 4, $r \propto n^{1/3}$ ✓.
   Answer: 3
 P B 6: |-
-  Concept: A surface parallel to the Y–Z plane has its normal along x: $\phi = E_xA$.
+  Concept: The electric flux through a flat surface is $\phi = \vec E\cdot\vec A = EA\cos\theta$, where $\vec A$ points along the normal to the surface. Only the component of E perpendicular to the surface contributes.
   Solution:
-  1. $\phi = \frac{2}{5}\times4000\times0.4 = 640$ N m² C⁻¹.
+  1. A surface parallel to the Y–Z plane has its normal along the x-axis: $\vec A = 0.4\hat i$ m².
+  2. $\vec E = \frac{2}{5}E_0\hat i + \frac{3}{5}E_0\hat j$. The y-component is parallel to the surface and contributes nothing.
+  3. $\phi = E_xA = \frac{2}{5}\times4.0\times10^3\times0.4 = 1600\times0.4 = 640$ N m² C⁻¹.
+  Note: the sign of the flux depends on which side of the surface the normal is chosen to point. With the normal along +x, the flux is +640 N m² C⁻¹.
+  Common error: using the full magnitude |E| = $\frac{\sqrt{13}}{5}E_0 \approx 2884$ N/C gives about 1154 N m² C⁻¹, which is wrong because the y-component does not cross the surface.
   Answer: 640
 P B 7: |-
-  Concept: Centre of mass of a quarter disc of radius a: $\left(\frac{4a}{3\pi}, \frac{4a}{3\pi}\right)$.
+  Concept: For a uniform quarter disc of radius a in the first quadrant (with its corner at the origin), the centre of mass lies on the bisecting line y = x, at $\left(\frac{4a}{3\pi}, \frac{4a}{3\pi}\right)$.
   Solution:
-  1. Comparing with $\frac{x}{3}\frac{a}{\pi}$ gives $x = 4$.
+  1. Derivation of the x-coordinate using polar coordinates: $\bar x = \frac{\int x\,dA}{\int dA}$.
+  2. Area: $\frac{\pi a^2}{4}$.
+  3. $\int x\,dA = \int_0^{\pi/2}\int_0^a(r\cos\theta)r\,dr\,d\theta = \frac{a^3}{3}\int_0^{\pi/2}\cos\theta\,d\theta = \frac{a^3}{3}$.
+  4. $\bar x = \frac{a^3/3}{\pi a^2/4} = \frac{4a}{3\pi}$.
+  5. By symmetry, $\bar y = \frac{4a}{3\pi}$.
+  6. Comparing with $\frac{x}{3}\cdot\frac{a}{\pi}$: $\frac{4a}{3\pi} = \frac{4}{3}\cdot\frac{a}{\pi}$, so x = 4.
+  Related results:
+  - A semicircular disc has its centre of mass at $\frac{4a}{3\pi}$ from the diameter.
+  - A semicircular ring (wire) has it at $\frac{2a}{\pi}$.
+  - A quarter ring has it at $\left(\frac{2a}{\pi}, \frac{2a}{\pi}\right)$.
+  (In the question, "a" is the radius of the disc, as shown in the figure.)
   Answer: 4
 P B 8: |-
-  Concept: Refraction at a spherical surface: $\frac{\mu}{v} - \frac{1}{u} = \frac{\mu - 1}{R}$.
+  Concept: Refraction at a single spherical surface: $\frac{\mu_2}{v} - \frac{\mu_1}{u} = \frac{\mu_2 - \mu_1}{R}$, with distances measured from the pole using the sign convention (light travelling in the +x direction).
   Solution:
-  1. $\mu = \frac{\lambda_a}{\lambda_m} = \frac{3}{2}$; $v = +10$ m and $u = -15$ m.
-  2. $\frac{1.5}{10} + \frac{1}{15} = \frac{13}{60} = \frac{0.5}{R} \Rightarrow R = \frac{30}{13}$ m.
-  3. $x = 30$.
+  1. Refractive index: when light enters a medium, its wavelength becomes $\frac{\lambda}{\mu}$. Here the wavelength inside is $\frac{2}{3}$ of that in air, so μ₂ = 1.5 (μ₁ = 1 for air).
+  2. The image is real, 10 m behind the surface: v = +10 m.
+  3. The image distance is $\frac{2}{3}$ of the object distance, so the object is 15 m from the surface: u = −15 m.
+  4. $\frac{1.5}{10} - \frac{1}{-15} = \frac{1.5 - 1}{R}$, so $0.15 + 0.0667 = \frac{0.5}{R}$.
+  5. $\frac{0.5}{R} = \frac{3}{20} + \frac{1}{15} = \frac{9 + 4}{60} = \frac{13}{60}$, so $R = \frac{0.5\times60}{13} = \frac{30}{13}$ m ≈ 2.31 m.
+  6. So x = 30.
+  Check: R is positive, meaning the centre of curvature is on the refracting side, which fits a convex surface as seen from the air side ✓.
   Answer: 30
 P B 9: |-
-  Concept: Charge is conserved when the capacitors share charge.
+  Concept: When a charged capacitor is connected across an uncharged one (battery removed), the total charge is conserved. Charge flows until both have the same potential difference, like two capacitors in parallel.
   Solution:
-  1. $Q = 2\times10 = 20\ \mu$C; common $V = \frac{20}{2 + 8} = 2$ V.
-  2. $Q_2 = 8\times2 = 16\ \mu$C.
+  1. Initial charge on C₁: Q = C₁V = 2 μF × 10 V = 20 μC.
+  2. After connection, the capacitors are in parallel with total capacitance 2 + 8 = 10 μF.
+  3. Common potential: $V = \frac{Q}{C_1 + C_2} = \frac{20}{10} = 2$ V.
+  4. Charge on C₂: Q₂ = C₂V = 8 × 2 = 16 μC.
+  5. Charge on C₁: Q₁ = 2 × 2 = 4 μC. Total 20 μC ✓.
+  Energy loss (a classic follow-up): initial energy $= \frac{1}{2}\times2\times100 = 100$ μJ. Final energy $= \frac{1}{2}\times10\times4 = 20$ μJ. So 80 μJ is lost as heat in the connecting wires and as radiation. This loss is $\frac{C_1C_2}{2(C_1 + C_2)}V^2 = \frac{16}{20}\times100 = 80$ μJ ✓, and it does not depend on the resistance of the wires.
   Answer: 16
 P B 10: |-
-  Concept: $J_c = \frac{E}{\rho}$ and $J_d = \varepsilon\frac{dE}{dt}$, so $\frac{J_c}{J_d} = \frac{\tan\omega t}{\rho\varepsilon\omega}$.
+  Concept: In a conducting dielectric such as seawater, the conduction current density is $J_c = \sigma E = \frac{E}{\rho}$ and the displacement current density is $J_d = \varepsilon\frac{\partial E}{\partial t}$. For a sinusoidal field, their ratio involves $\rho\varepsilon\omega$ and the phase.
   Solution:
-  1. At $t = \frac{1}{800}$ s: $\omega t = 2\pi\times\frac{900}{800} = \frac{9\pi}{4}$, so $\tan\omega t = 1$.
-  2. $\rho\varepsilon\omega = 0.25\times\frac{80}{4\pi\times9\times10^9}\times2\pi\times900 = 10^{-6}$.
-  3. Ratio $= 10^6$, so $x = 6$.
+  1. In the capacitor, E ∝ V = V₀ sin ωt, so E = E₀ sin ωt.
+  2. $J_c = \frac{E_0\sin\omega t}{\rho}$ and $J_d = \varepsilon\omega E_0\cos\omega t$.
+  3. Ratio: $\frac{J_c}{J_d} = \frac{\tan\omega t}{\rho\varepsilon\omega}$.
+  4. At $t = \frac{1}{800}$ s: $\omega t = 2\pi\times900\times\frac{1}{800} = \frac{9\pi}{4}$, and $\tan\frac{9\pi}{4} = \tan\frac{\pi}{4} = 1$.
+  5. $\varepsilon = 80\varepsilon_0 = \frac{80}{4\pi\times9\times10^9}$. Then $\rho\varepsilon\omega = 0.25\times\frac{80}{36\pi\times10^9}\times2\pi\times900 = \frac{0.25\times80\times1800}{36\times10^9} = \frac{36000}{36\times10^9} = 10^{-6}$.
+  6. $\frac{J_c}{J_d} = \frac{1}{10^{-6}} = 10^6$, so x = 6.
+  Physical meaning: at this low frequency, seawater behaves as a good conductor. The conduction current dominates the displacement current by a factor of a million. This is why radio waves are strongly absorbed in seawater, and why submarines communicate with very low frequency signals.
   Answer: 6
