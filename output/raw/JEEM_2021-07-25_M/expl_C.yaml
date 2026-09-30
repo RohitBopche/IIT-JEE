@@ -1,177 +1,312 @@
 C A 1: |-
-  Concept: Phenol is highly activated; without moderation, bromine water gives 2,4,6-tribromophenol.
+  Concept: The –OH group strongly activates the benzene ring (o/p-directing) by donating its lone pair. In polar water, phenol partly ionises to the even more reactive phenoxide, and Br₂ is polarised, so substitution cannot be stopped at one bromine.
   Solution:
-  1. Monobromination (p-bromophenol) needs milder conditions: Br₂ in a non-polar solvent (CS₂ or CHCl₃) at low temperature.
-  2. The key also counts Br₂/FeBr₃ as giving the p-product.
-  3. Bromine water gives the tribromo product, so (a) is excluded.
+  1. (a) Bromine water: gives the white precipitate of 2,4,6-tribromophenol, not p-bromophenol. Excluded.
+  2. (b) Br₂ in CS₂ at 273 K and (d) Br₂ in CHCl₃ at 273 K: non-polar solvents and low temperature moderate the reaction, so monobromination occurs, with p-bromophenol as the major product (the para position is less hindered than ortho).
+  3. (c) Br₂/FeBr₃: the official key also counts this as giving the p-product (the Lewis acid generates Br⁺ for ordinary aromatic bromination; for phenol it is not needed, but it is accepted here).
+  4. So (b), (c) and (d).
+  Why others are wrong:
+  - (A) and (D) include bromine water (a), which gives the tribromo product.
+  - (C) omits (c), which the key includes.
   Answer: (B)
 C A 2: |-
-  Concept: Cross-aldol at the only enolisable α-carbon, then the iodoform reaction on a CH₃CH(OH)– group.
+  Concept: (1) In a crossed aldol reaction, the ketone enolate forms only at an α-carbon bearing H. (2) The iodoform reaction (I₂/NaOH) converts a CH₃CH(OH)– or CH₃CO– group into CHI₃ plus a carboxylate with one carbon fewer.
   Solution:
-  1. The ketone enolate (at C-5, since C-2 has no H) adds to CH₃CHO, giving P = 5-(1-hydroxyethyl)-2,2-dimethylcyclopentanone.
-  2. I₂/NaOH oxidises CH₃CH(OH)R to CH₃COR and then cleaves off CHI₃ (filtered off), leaving RCOO⁻.
-  3. Acidifying the filtrate gives X = 3,3-dimethyl-2-oxocyclopentane-1-carboxylic acid.
+  1. 2,2-Dimethylcyclopentanone: C-2 has no α-H, so the enolate forms at C-5.
+  2. The enolate attacks CH₃CHO: P = 5-(1-hydroxyethyl)-2,2-dimethylcyclopentanone (β-hydroxy ketone, the aldol).
+  3. I₂/NaOH oxidises the CH₃CH(OH)– group to CH₃CO– and then cleaves it: CHI₃ (yellow precipitate) is filtered off, and the ring carbon becomes –COO⁻Na⁺.
+  4. Acidifying the filtrate with HCl gives X = 3,3-dimethyl-2-oxocyclopentane-1-carboxylic acid (a β-keto acid).
+  Why others are wrong:
+  - (A) places the new group on the carbonyl carbon, which is not how an aldol works.
+  - (B) is the aldol P, not the final product X.
+  - (D) is the oxidised intermediate before iodoform cleavage.
   Answer: (C)
 C A 3: |-
-  Concept: Gabriel synthesis is SN2 by the phthalimide anion.
+  Concept: Gabriel phthalimide synthesis: phthalimide + KOH → potassium phthalimide; its N⁻ attacks an alkyl halide by SN2; hydrolysis (or hydrazinolysis) then releases the primary amine.
   Solution:
-  1. Aryl halides do not undergo SN2 with the phthalimide anion, so aromatic 1° amines cannot be made this way.
-  2. Both A and R are true, and R is the reason.
+  1. Assertion: aromatic primary amines (e.g. aniline) would need the phthalimide anion to displace a halide from an aryl halide. This does not happen, so Gabriel synthesis cannot make ArNH₂. TRUE.
+  2. Reason: aryl halides do not undergo ordinary nucleophilic substitution, because the C–X bond has partial double-bond character (resonance with the ring), the carbon is sp², and back-side attack is blocked by the ring. TRUE (under normal conditions).
+  3. R directly explains A: the key step of Gabriel synthesis is a nucleophilic substitution, which aryl halides resist.
+  Why others are wrong:
+  - (B) and (C) mark one statement false, but both are true.
+  - (D) denies the causal link, which is exactly the textbook explanation.
   Answer: (A)
 C A 4: |-
-  Concept: Zero-point energy is lower for the heavier isotope, so the D–D bond is slightly stronger.
+  Concept: A molecule's bond dissociation energy is measured from its lowest vibrational level (zero-point energy, ZPE). ZPE $= \frac{1}{2}h\nu$ with $\nu \propto \frac{1}{\sqrt\mu}$; the heavier D₂ has a lower ZPE, so it sits deeper in the potential well and needs more energy to dissociate.
   Solution:
-  1. $E_{H-H} = 435.9$ kJ/mol and $E_{D-D} = 443.4$ kJ/mol, so $E_H \approx E_D - 7.5$.
+  1. Bond dissociation enthalpies at 298 K: H–H = 435.88 kJ/mol; D–D = 443.35 kJ/mol.
+  2. Difference ≈ 7.5 kJ/mol, with D₂ higher.
+  3. So $E_H \simeq E_D - 7.5$.
+  Why others are wrong:
+  - (A) $E_H = E_D$ ignores the isotope (zero-point energy) effect; the electronic potential is the same, but the ZPE differs.
+  - (B) $E_H = \frac{1}{2}E_D$ and (C) $E_H = 2E_D$ imply huge differences; isotopes differ only slightly in bond energy.
   Answer: (D)
 C A 5: |-
-  Concept: Oxidative cleavage of alkenes.
+  Concept: KMnO₄/H⁺ cleaves C=C: a =CR₂ end gives a ketone, =CHR gives a carboxylic acid, and =CH₂ gives CO₂. Reductive ozonolysis gives ketones/aldehydes (=CH₂ → HCHO).
   Solution:
-  1. 2-Methylpropene, (CH₃)₂C=CH₂: KMnO₄/H⁺ gives acetone (C₃H₆O) + CO₂; ozonolysis gives acetone + HCHO.
-  2. B = acetone in both cases.
+  1. A = C₄H₈ (one degree of unsaturation). B = C₃H₆O with the same formula from both reactions — acetone, (CH₃)₂C=O.
+  2. 2-Methylpropene, (CH₃)₂C=CH₂:
+     - KMnO₄/H⁺ → (CH₃)₂C=O + CO₂ + H₂O.
+     - O₃ then Zn/H₂O → (CH₃)₂C=O + HCHO.
+  3. Both give acetone (B) ✓.
+  Why others are wrong:
+  - (D) But-2-ene gives acetic acid (KMnO₄) or acetaldehyde (ozonolysis) — C₂ products, not C₃H₆O.
+  - (B) Methylcyclopropane and (C) cyclobutane have no C=C; they do not undergo ozonolysis or KMnO₄ cleavage to C₃H₆O.
   Answer: (A)
 C A 6: |-
-  Concept: Si is too small to accommodate six large Cl atoms.
+  Concept: Group-14 elements can expand their coordination to 6 when (i) d orbitals are available and (ii) the ligands are small enough to fit around the central atom.
   Solution:
-  1. [SiCl₆]²⁻ is not known, while [SiF₆]²⁻, [GeCl₆]²⁻ and [Sn(OH)₆]²⁻ exist.
+  1. [SiF₆]²⁻ exists: F is small, and six F atoms fit around Si.
+  2. [SiCl₆]²⁻ does NOT exist: six large Cl atoms cannot be accommodated around the small Si atom (steric crowding), and the interaction between Cl lone pairs and Si is weak.
+  3. [GeCl₆]²⁻ exists: Ge is larger than Si, so it can hold six Cl atoms.
+  4. [Sn(OH)₆]²⁻ exists (stannate ion, formed when SnO₂ dissolves in alkali).
+  Why others are wrong:
+  - (A), (B) and (C) are all known species, as explained above.
+  Key idea: the NCERT reason — "six large chloride ions cannot be accommodated around Si⁴⁺ due to limitation of its size".
   Answer: (D)
 C A 7: |-
-  Concept: Grignard 1,2-addition to an enone, then acid work-up.
+  Concept: Grignard reagents add 1,2 to the carbonyl group of α,β-unsaturated ketones (hard nucleophile, direct attack at C=O). Acidic work-up with HCl can then add HCl across the remaining C=C.
   Solution:
-  1. C₂H₅MgBr adds to C=O, giving CH₂=CH–C(OH)(CH₃)C₂H₅ after hydrolysis.
-  2. In aqueous HCl, H–Cl adds across the vinyl group (Markovnikov), giving CH₃–CHCl–C(OH)(CH₃)–CH₂CH₃, which is structure (A) per the official key.
+  1. Methyl vinyl ketone: CH₂=CH–CO–CH₃.
+  2. C₂H₅MgBr adds to C=O → CH₂=CH–C(OMgBr)(CH₃)C₂H₅.
+  3. Hydrolysis gives the tertiary allylic alcohol CH₂=CH–C(OH)(CH₃)–CH₂CH₃ (3-methylpent-1-en-3-ol).
+  4. With aqueous HCl, H⁺ adds to the terminal CH₂ (Markovnikov), and Cl⁻ attaches to the internal carbon adjacent to the carbinol carbon: CH₃–CHCl–C(OH)(CH₃)–CH₂CH₃, which is structure (A) per the official key.
+  Why others are wrong:
+  - (D) is the alcohol before HCl addition; the key takes HCl as also adding across C=C.
+  - (C) puts Cl on the terminal carbon (anti-Markovnikov), which HCl does not do.
+  - (B) implies conjugate (1,4) addition, which Grignard reagents do not favour.
+  Note: options were structures, reconstructed in words.
   Answer: (A)
 C A 8: |-
-  Concept: Leaching of bauxite (Baeyer's process) with conc. NaOH.
+  Concept: In Baeyer's process, bauxite is digested with concentrated NaOH at 473–523 K and high pressure. Amphoteric Al₂O₃ dissolves as sodium aluminate. Acidic impurities also react with the base.
   Solution:
-  1. Al₂O₃ dissolves as sodium aluminate, and the acidic silica impurity also reacts with NaOH (forming sodium silicate).
-  2. Fe₂O₃ and TiO₂ are left as insoluble residues.
+  1. Al₂O₃ + 2NaOH + 3H₂O → 2Na[Al(OH)₄].
+  2. Silica, the acidic impurity, also dissolves: SiO₂ + 2NaOH → Na₂SiO₃ + H₂O.
+  3. So SiO₂ is the ore constituent that leaches out along with alumina.
+  4. Basic Fe₂O₃ and TiO₂ remain undissolved and are filtered off as "red mud".
+  Why others are wrong:
+  - (B) Fe₂O₃ is basic and does not react with NaOH — it stays in the residue.
+  - (D) TiO₂ also stays in the residue under these conditions.
+  - (A) ZnO is not a typical bauxite constituent; although amphoteric, it is not the expected answer here.
   Answer: (C)
 C A 9: |-
-  Concept: Phenol–formaldehyde polymers.
+  Concept: Phenol–formaldehyde resins form by condensation. In acid (or base) catalysis, formaldehyde links phenol rings through –CH₂– bridges at the ortho and para positions. A linear, mainly ortho-linked polymer is called novolac; further heating with more HCHO cross-links it to Bakelite.
   Solution:
-  1. The repeat unit, phenol rings linked by –CH₂– at the ortho positions, is novolac (the linear precursor of Bakelite).
+  1. The repeat unit shows phenol rings (with –OH) joined by –CH₂– bridges at positions ortho to –OH.
+  2. This linear chain is novolac, used in paints.
+  Why others are wrong:
+  - (A) Neoprene is poly(chloroprene), –[CH₂–C(Cl)=CH–CH₂]ₙ– — no aromatic rings.
+  - (C) Buna-N is a copolymer of buta-1,3-diene and acrylonitrile.
+  - (D) Acrilan is poly(acrylonitrile), –[CH₂–CH(CN)]ₙ–.
   Answer: (B)
 C A 10: |-
-  Concept: Isoelectronic ions shrink with increasing charge; K⁺ has an extra shell.
+  Concept: For isoelectronic ions, radius decreases as nuclear charge (Z) increases, because the same electrons are held more tightly. An ion with an extra electron shell is larger than ions of the previous period.
   Solution:
-  1. Al³⁺ < Mg²⁺ < Na⁺ (all 10 e⁻), and K⁺ is the largest.
+  1. Na⁺, Mg²⁺, Al³⁺ are isoelectronic (10 electrons each, [Ne]).
+  2. Z: Na 11 < Mg 12 < Al 13, so the radii order is Al³⁺ (54 pm) < Mg²⁺ (72 pm) < Na⁺ (102 pm).
+  3. K⁺ has 18 electrons ([Ar]) with an extra shell → largest (138 pm).
+  4. Order: Al³⁺ < Mg²⁺ < Na⁺ < K⁺.
+  Why others are wrong:
+  - (A) puts K⁺ as the smallest, ignoring its extra shell.
+  - (B) places K⁺ below Na⁺.
+  - (D) reverses the isoelectronic trend.
   Answer: (C)
 C A 11: |-
-  Concept: Globular versus fibrous proteins.
+  Concept: Proteins are classified by shape. Fibrous proteins have long parallel polypeptide chains held by H-bonds and disulphide links; they are generally insoluble in water. Globular proteins are folded into compact spheres with polar groups on the surface, so they are water-soluble.
   Solution:
-  1. Albumin is globular and water-soluble.
-  2. Myosin, collagen and fibrin are fibrous and insoluble.
+  1. Albumin (e.g. egg albumin, serum albumin) is a globular protein → water-soluble.
+  2. It is also the main soluble protein of blood plasma.
+  Why others are wrong:
+  - (A) Myosin: fibrous muscle protein, insoluble.
+  - (B) Collagen: fibrous protein of tendons and skin, insoluble.
+  - (C) Fibrin: insoluble fibrous protein forming blood clots (made from soluble fibrinogen).
   Answer: (D)
 C A 12: |-
-  Concept: A paramagnetic species (with unpaired electrons) responds to a magnetic field.
+  Concept: A species "responds to" (is attracted by) an external magnetic field if it is paramagnetic — i.e. it has unpaired electrons. Use the oxidation state, d-electron count and ligand field strength.
   Solution:
-  1. [Fe(H₂O)₆]³⁺: Fe³⁺ d⁵ high spin, 5 unpaired electrons.
-  2. [Co(CN)₆]³⁻ (low-spin d⁶), [Ni(CN)₄]²⁻ (square planar d⁸) and Ni(CO)₄ (d¹⁰) are diamagnetic.
+  1. [Fe(H₂O)₆]³⁺: Fe³⁺ is d⁵; H₂O is weak-field, so high spin $t_{2g}^3e_g^2$ with 5 unpaired electrons → strongly paramagnetic ($\mu \approx 5.9$ BM).
+  Why others are wrong (diamagnetic):
+  - (A) [Co(CN)₆]³⁻: Co³⁺ d⁶ with strong-field CN⁻ → low spin $t_{2g}^6$, 0 unpaired.
+  - (B) [Ni(CN)₄]²⁻: Ni²⁺ d⁸, square planar (dsp²) → all paired.
+  - (C) [Ni(CO)₄]: Ni(0) d¹⁰ (sp³ tetrahedral) → all paired.
+  Note: diamagnetic substances are weakly repelled; the question refers to the (much stronger) paramagnetic attraction.
   Answer: (D)
 C A 13: |-
-  Concept: Only acids stronger than H₂CO₃ liberate CO₂ from NaHCO₃.
+  Concept: NaHCO₃ releases CO₂ only with acids stronger than carbonic acid (pKa ≈ 6.4). Ammonium salts of weak bases with strong acids are acidic, because the cation can donate H⁺.
   Solution:
-  1. (CH₃)₃NH⁺Cl⁻ (the salt of a weak base with HCl) is acidic, so it liberates CO₂.
-  2. The others are basic or neutral.
+  1. (CH₃)₃N⁺H Cl⁻ (trimethylammonium chloride): the N–H proton is acidic (pKa ≈ 9.8). With excess NaHCO₃, the salt of a strong acid (HCl) reacts: R₃NH⁺Cl⁻ + NaHCO₃ → R₃N + NaCl + H₂O + CO₂↑ — as intended by the key.
+  2. So (C) liberates CO₂.
+  Why others are wrong:
+  - (A) (CH₃)₄N⁺OH⁻ is a strong base; it has no acidic H.
+  - (B) CH₃NH₂ is a base.
+  - (D) CH₃CONH₂ (acetamide) is nearly neutral; its N–H is far too weakly acidic.
   Answer: (C)
 C A 14: |-
-  Concept: Valid resonance structures come from moving π/lone-pair electrons through a conjugated system without moving atoms.
+  Concept: Rules for valid resonance structures:
+  - Only π electrons and lone pairs move; atoms (nuclei) do not move.
+  - Delocalisation can occur only through a continuous conjugated system (adjacent p orbitals).
+  - The number of paired/unpaired electrons stays the same.
   Solution:
-  1. In (B), the charge separation is placed on a carbon that is not conjugated with the nitro group (an sp³ link intervenes), so it cannot arise by electron delocalisation.
-  2. So (B) is not a correct resonating structure.
+  1. Structures (A), (C) and (D) show electron movement from the C=C through the conjugated system into the nitro group (or within –NO₂ itself), keeping connectivity — valid.
+  2. Structure (B) places a charge on a carbon that is separated from the nitro group by an sp³ carbon. Electrons cannot delocalise across an sp³ centre, so this structure cannot be reached by moving π electrons.
+  3. Hence (B) is not a correct resonating structure.
+  Tip: always trace a continuous path of p orbitals before accepting a resonance form.
+  Note: options were figures; the key identifies (B).
   Answer: (B)
 C A 15: |-
-  Concept: Oxidation numbers of the metals.
+  Concept: Calculate the metal's oxidation number in each oxide (O = −2).
   Solution:
-  1. CrO₃ +6 > V₂O₅ +5 > MnO₂ +4 > Fe₂O₃ +3 > Cu₂O +1.
+  1. (a) CrO₃: Cr + 3(−2) = 0 → +6.
+  2. (d) V₂O₅: 2V = +10 → +5.
+  3. (c) MnO₂: Mn = +4.
+  4. (b) Fe₂O₃: 2Fe = +6 → +3.
+  5. (e) Cu₂O: 2Cu = +2 → +1.
+  6. Order: (a) +6 > (d) +5 > (c) +4 > (b) +3 > (e) +1.
+  Why others are wrong:
+  - (B) starts with MnO₂ (+4) above CrO₃ (+6).
+  - (C) places V₂O₅ above CrO₃ and Fe₂O₃ above MnO₂.
+  - (D) places MnO₂ (+4) above V₂O₅ (+5).
   Answer: (A)
 C A 16: |-
-  Concept: Micelle structure: hydrophobic tails cluster together, and the ionic heads face the polar medium.
+  Concept: Surfactant molecules have a hydrophobic hydrocarbon tail and a hydrophilic ionic head. Above the critical micelle concentration they aggregate into micelles so that each part is in its preferred environment.
   Solution:
-  1. The key takes the normal (aqueous) micelle: spherical, with the CH₃(CH₂)₁₆– tails pointing towards the centre and –COO⁻ on the surface.
-  2. (Strictly, in oil a reverse micelle forms with tails outward; the key answer corresponds to the usual NCERT picture.)
+  1. In water (the NCERT picture of soap action), sodium stearate forms spherical micelles: the CH₃(CH₂)₁₆– tails point towards the centre, away from water, and the –COO⁻ heads form the outer surface, surrounded by Na⁺ ions.
+  2. The official key selects this description: spherical micelle with tails pointing towards the centre.
+  Why others are wrong:
+  - (A) puts the hydrophobic tails on the surface — that is a reverse micelle (tails outwards), which the key does not select.
+  - (B) and (D) call the micelles non-spherical; the standard model is spherical.
+  Note: the question says "micelles in oil", where strictly a reverse micelle (tails outward) would form; the key follows the usual aqueous micelle picture.
   Answer: (C)
 C A 17: |-
-  Concept: Graphical signatures of reaction order.
+  Concept: Graphical signatures:
+  - Zero order: rate = k (constant, independent of [A] and time); [A] falls linearly; $t_{1/2} = \frac{[A]_0}{2k} \propto [A]_0$.
+  - First order: rate = k[A] (straight line through origin vs [A]); [A] decays exponentially; $t_{1/2}$ is constant.
   Solution:
-  1. Zero order: constant rate (a) and $t_{1/2} \propto [A]_0$ (b).
-  2. First order: exponential decay of concentration (c) and rate ∝ [A] (e).
+  1. (a) Rate vs time horizontal → rate constant over time → zero order.
+  2. (b) $t_{1/2}$ vs $[A]_0$, straight line through origin → zero order.
+  3. (c) Concentration decaying as a curve (exponential) → first order.
+  4. (d) Concentration constant with time → no reaction; not a signature of either order.
+  5. (e) Rate vs concentration, straight line through origin → first order.
+  6. So (a), (b) zero order; (c), (e) first order.
+  Why others are wrong:
+  - (A) and (D) omit (c) or (a).
+  - (B) calls (d) zero order; a zero-order reaction has linearly decreasing concentration, not constant.
   Answer: (C)
 C A 18: |-
-  Concept: Green chemistry in dry cleaning (NCERT).
+  Concept: Green chemistry (NCERT, Environmental Chemistry): dry cleaning traditionally used chlorinated solvents; these are being replaced by safer alternatives.
   Solution:
-  1. Tetrachloroethene (Cl₂C=CCl₂), the traditional solvent, is being replaced because it is a suspected carcinogen and pollutes groundwater, so it is "not being used" (official key).
-  2. Liquid CO₂ with a detergent is used for dry cleaning, and H₂O₂ is used for bleaching.
+  1. Tetrachloroethene, Cl₂C=CCl₂ (perchloroethylene, "perc"), was the standard dry-cleaning solvent. It is a suspected carcinogen and contaminates groundwater, so per NCERT it is being replaced — the official key treats it as the agent "not being used".
+  2. Current green alternatives:
+     - Liquid CO₂ with a suitable detergent (non-toxic, recyclable).
+     - H₂O₂ is used for bleaching clothes in laundry, with suitable catalysts.
+  Why others are wrong:
+  - (C) Liquid CO₂ and (D) H₂O₂ are the NCERT-cited green replacements now in use.
+  - (A) CCl₄: the key does not select it (it is also no longer common, but the question targets the NCERT statement about Cl₂C=CCl₂).
+  Note: the answer follows the official key's reading of the NCERT passage.
   Answer: (B)
 C A 19: |-
-  Concept: Hinsberg's reagent reacts with 1° and 2° amines.
+  Concept: Hinsberg's reagent (benzenesulphonyl chloride, C₆H₅SO₂Cl) reacts with primary and secondary amines to form sulphonamides; tertiary amines and non-amines do not react.
   Solution:
-  1. (A) H₂/Ni, (B) LiAlH₄ and (C) Na(Hg)/C₂H₅OH (Mendius) reduce –CN to –CH₂NH₂ (1° amines), which form sulphonamides.
-  2. (D) SnCl₂/HCl (Stephen reduction) gives benzaldehyde, not an amine, so there is no reaction.
+  1. (A) 3-Methylbenzonitrile + H₂/Ni → 3-methylbenzylamine, ArCH₂NH₂ (1° amine) → forms a sulphonamide.
+  2. (B) 4-Formylbenzonitrile + LiAlH₄, then H₃O⁺ → both –CHO and –CN reduced: 4-(aminomethyl)benzyl alcohol, a 1° amine → reacts.
+  3. (C) 4-Nitrobenzonitrile + Na(Hg)/C₂H₅OH (Mendius reduction) → –CN becomes –CH₂NH₂ (1° amine) → reacts.
+  4. (D) Benzonitrile + SnCl₂/HCl (Stephen reduction) → imine salt → on hydrolysis benzaldehyde, C₆H₅CHO. No amine is formed, so there is no reaction with Hinsberg's reagent.
   Answer: (D)
 C A 20: |-
-  Concept: Properties of alkaline-earth hydroxides.
+  Concept: Group-2 hydroxides: Be(OH)₂ is amphoteric, while Mg(OH)₂ to Ba(OH)₂ are basic. Solubility in water increases down the group because lattice enthalpy falls faster than hydration enthalpy.
   Solution:
-  1. Be(OH)₂ is amphoteric and dissolves in NaOH ([Be(OH)₄]²⁻), so I is incorrect.
-  2. Solubility of the hydroxides increases down the group, so II is correct.
+  1. Statement I: "None dissolves in alkali" — FALSE. Be(OH)₂ dissolves in excess NaOH: Be(OH)₂ + 2OH⁻ → [Be(OH)₄]²⁻ (beryllate).
+  2. Statement II: Solubility increases down the group, Be(OH)₂ < Mg(OH)₂ < Ca(OH)₂ < Sr(OH)₂ < Ba(OH)₂ — TRUE.
+  3. So Statement I is incorrect and Statement II is correct.
+  Why others are wrong:
+  - (A) marks II incorrect.
+  - (C) marks I correct, ignoring amphoteric Be(OH)₂.
+  - (D) marks both correct.
+  Contrast: group-2 sulphates show the opposite trend — their solubility decreases down the group.
   Answer: (B)
 C B 1: |-
-  Concept: Every single bond is σ; each multiple bond contains one σ.
+  Concept: Every single bond is a σ bond; a double bond has 1 σ + 1 π; a triple bond has 1 σ + 2 π. So count every bonded atom pair once.
   Solution:
-  1. C–H: 3 + 1 + 1 + 1 = 6. C–C links: 4 (single, double, single, triple), each with one σ.
-  2. Total $= 10$.
+  1. Structure: H₃C–CH=CH–C≡C–H.
+  2. C–H bonds: CH₃ (3) + CH (1) + CH (1) + ≡C–H (1) = 6 σ.
+  3. C–C links: C1–C2 single, C2=C3 double, C3–C4 single, C4≡C5 triple → 4 links, each with exactly one σ bond = 4 σ.
+  4. Total σ bonds $= 6 + 4 = 10$.
+  5. (π bonds: 1 in C=C and 2 in C≡C = 3.)
   Answer: 10
 C B 2: |-
-  Concept: Hess's law: $\Delta_{sub}H = \Delta_{fus}H + \Delta_{vap}H$.
+  Concept: Enthalpy is a state function, so by Hess's law the direct path solid → vapour (sublimation) equals the two-step path solid → liquid → vapour.
   Solution:
-  1. $2.8 + 98.2 = 101$ kJ mol⁻¹.
+  1. $\Delta_{sub}H = \Delta_{fus}H + \Delta_{vap}H$ (all at the same temperature).
+  2. $\Delta_{sub}H = 2.8 + 98.2 = 101.0$ kJ mol⁻¹.
+  3. Nearest integer: 101.
+  Note: this is exact only when all three enthalpies refer to the same temperature (here 298 K).
   Answer: 101
 C B 3: |-
-  Concept: $C_4H_{10} + \frac{13}{2}O_2 \to 4CO_2 + 5H_2O$.
+  Concept: Use the balanced combustion equation to relate moles of water to moles of butane.
   Solution:
-  1. 72 g H₂O = 4 mol, so butane $= \frac{4}{5} = 0.8$ mol.
-  2. Mass $= 0.8\times58 = 46.4$ g $= 464\times10^{-1}$ g.
+  1. $2C_4H_{10} + 13O_2 \to 8CO_2 + 10H_2O$, i.e. 1 mol C₄H₁₀ → 5 mol H₂O.
+  2. Moles of water: $\frac{72.0}{18} = 4.0$ mol.
+  3. Moles of butane: $\frac{4.0}{5} = 0.8$ mol.
+  4. Molar mass of C₄H₁₀ $= 4(12) + 10(1) = 58$ g mol⁻¹.
+  5. Mass of butane $= 0.8\times58 = 46.4$ g $= 464\times10^{-1}$ g.
   Answer: 464
 C B 4: |-
-  Concept: Henry's law: $x = \frac{p}{K_H}$.
+  Concept: Henry's law: $p = K_H\,x$, where x is the mole fraction of the dissolved gas. For a dilute solution, $x \approx \frac{n_{gas}}{n_{water}}$.
   Solution:
-  1. $x = \frac{0.835}{1670} = 5\times10^{-4}$.
-  2. 0.9 L water = 50 mol, so CO₂ $= 5\times10^{-4}\times50 = 0.025$ mol = 25 mmol.
+  1. $x_{CO_2} = \frac{p}{K_H} = \frac{0.835}{1.67\times10^3} = 5.0\times10^{-4}$.
+  2. Moles of water in 0.9 L (900 g): $\frac{900}{18} = 50$ mol.
+  3. $n_{CO_2} \approx x\cdot n_{water} = 5.0\times10^{-4}\times50 = 2.5\times10^{-2}$ mol = 25 mmol.
+  4. x = 25.
   Answer: 25
 C B 5: |-
-  Concept: $Cr_2O_7^{2-}$ accepts 6 e⁻; Fe²⁺ gives 1 e⁻.
+  Concept: In acidic medium, $Cr_2O_7^{2-} + 14H^+ + 6e^- \to 2Cr^{3+} + 7H_2O$ (n-factor 6), and $Fe^{2+} \to Fe^{3+} + e^-$ (n-factor 1). At the end point, milliequivalents are equal.
   Solution:
-  1. $15\times0.02\times6 = 1.8$ mmol of Fe²⁺.
-  2. $M = \frac{1.8}{10} = 0.18$ M $= 18\times10^{-2}$ M.
+  1. Balanced: $Cr_2O_7^{2-} + 6Fe^{2+} + 14H^+ \to 2Cr^{3+} + 6Fe^{3+} + 7H_2O$.
+  2. mmol of dichromate $= 15\times0.02 = 0.30$ mmol.
+  3. mmol of Fe²⁺ $= 6\times0.30 = 1.80$ mmol.
+  4. Molarity of Fe²⁺ $= \frac{1.80}{10} = 0.18$ M $= 18\times10^{-2}$ M.
+  (Diphenylamine is the redox indicator used for this titration.)
   Answer: 18
 C B 6: |-
-  Concept: Nernst equation for $Zn + 2Fe^{3+} \to Zn^{2+} + 2Fe^{2+}$.
+  Concept: Nernst equation for the overall cell reaction $Zn + 2Fe^{3+} \to Zn^{2+} + 2Fe^{2+}$ (n = 2).
   Solution:
-  1. $E^\circ = 0.77 + 0.76 = 1.53$ V; $E = 1.53 - 0.059\log\frac{[Fe^{2+}]}{[Fe^{3+}]} = 1.500$.
-  2. $\log\frac{[Fe^{2+}]}{[Fe^{3+}]} = 0.508 \Rightarrow$ ratio $= 3.22$.
-  3. Fraction of Fe³⁺ $= \frac{1}{4.22} = 0.237 \approx 24\times10^{-2}$.
+  1. $E^\circ_{cell} = E^\circ_{cathode} - E^\circ_{anode} = 0.77 - (-0.76) = 1.53$ V.
+  2. $E = E^\circ - \frac{0.059}{2}\log\frac{[Zn^{2+}][Fe^{2+}]^2}{[Fe^{3+}]^2} = 1.53 - 0.059\log\frac{[Fe^{2+}]}{[Fe^{3+}]}$ (with $[Zn^{2+}] = 1$).
+  3. $1.500 = 1.53 - 0.059\log r \Rightarrow \log r = \frac{0.030}{0.059} = 0.508 \Rightarrow r = \frac{[Fe^{2+}]}{[Fe^{3+}]} \approx 3.22$.
+  4. Fraction of iron as Fe³⁺ $= \frac{[Fe^{3+}]}{[Fe^{2+}] + [Fe^{3+}]} = \frac{1}{1 + 3.22} = 0.237$.
+  5. $x\times10^{-2} = 0.237 \Rightarrow x \approx 24$.
   Answer: 24
 C B 7: |-
-  Concept: Q = 1 < K, so the reaction moves forward.
+  Concept: Compare the reaction quotient Q with K to find the direction, then use an ICE table.
   Solution:
-  1. $\frac{(1 + 2x)^2}{(1 - x)^2} = 100 \Rightarrow \frac{1 + 2x}{1 - x} = 10 \Rightarrow x = 0.75$.
-  2. $[C] = 2.5$ M $= 25\times10^{-1}$ M.
+  1. Initially Q = $\frac{1^2}{1\times1} = 1 < K = 100$, so the reaction proceeds forward.
+  2. Let x mol/L of A react: [A] = [B] = 1 − x, [C] = 1 + 2x.
+  3. $K = \frac{(1 + 2x)^2}{(1 - x)^2} = 100 \Rightarrow \frac{1 + 2x}{1 - x} = 10$ (positive root).
+  4. $1 + 2x = 10 - 10x \Rightarrow 12x = 9 \Rightarrow x = 0.75$.
+  5. [C] = 1 + 1.5 = 2.5 M $= 25\times10^{-1}$ M.
+  Check: [A] = [B] = 0.25; $\frac{2.5^2}{0.25^2} = 100$ ✓.
   Answer: 25
 C B 8: |-
-  Concept: Photons per second = power ÷ photon energy (one electron per photon).
+  Concept: Each photon (above threshold) ejects one electron. Number of photons per second = power ÷ energy per photon, with $E = \frac{hc}{\lambda}$.
   Solution:
-  1. $E_{photon} = \frac{6.626\times10^{-34}\times3\times10^8}{400\times10^{-9}} = 4.97\times10^{-19}$ J; power = 100 W.
-  2. Electrons per second $= \frac{100}{4.97\times10^{-19}} = 2.0\times10^{20}$.
+  1. Power = $\frac{1000\text{ J}}{10\text{ s}} = 100$ W.
+  2. Photon energy: $E = \frac{6.626\times10^{-34}\times3\times10^8}{400\times10^{-9}} = 4.97\times10^{-19}$ J.
+  3. Photons per second $= \frac{100}{4.97\times10^{-19}} = 2.01\times10^{20}$.
+  4. Electrons ejected per second (one per photon) $\approx 2\times10^{20}$, so x = 2.
   Answer: 2
 C B 9: |-
-  Concept: $n = \frac{PV}{RT}$.
+  Concept: Ideal gas equation $PV = nRT$, then mass = moles × molar mass. Convert m³ to L (1 m³ = 1000 L) to match R in L atm K⁻¹ mol⁻¹.
   Solution:
-  1. $n = \frac{1\times4\times10^6\text{ L}}{0.083\times300} = 1.61\times10^5$ mol.
-  2. Mass $= 1.61\times10^5\times16 = 25.7\times10^5$ g ≈ $26\times10^5$ g.
+  1. $V = 4.00\times10^3$ m³ $= 4.00\times10^6$ L.
+  2. $n = \frac{PV}{RT} = \frac{1.0\times4.00\times10^6}{0.083\times300} = \frac{4.00\times10^6}{24.9} = 1.606\times10^5$ mol.
+  3. Mass $= 1.606\times10^5\times16 = 2.57\times10^6$ g $= 25.7\times10^5$ g.
+  4. Nearest integer: x = 26.
   Answer: 26
 C B 10: |-
-  Concept: Ionisable chlorides precipitate as AgCl; coordinated ones do not.
+  Concept: In a coordination compound, chloride ions outside the coordination sphere (primary valency, ionisable) precipitate as AgCl with AgNO₃. Chlorides bound to the metal (secondary valency, coordination sphere) do not.
   Solution:
-  1. All 3 Cl⁻ precipitate, so the complex is [Cr(NH₃)₃(H₂O)₃]Cl₃.
-  2. No chloride is in the coordination sphere: 0.
+  1. CrCl₃·3NH₃·3H₂O: Cr³⁺, octahedral, coordination number 6.
+  2. 1 mol of complex gives 3 mol AgCl, so all 3 Cl⁻ are ionisable.
+  3. The six coordination sites are filled by 3 NH₃ and 3 H₂O: [Cr(NH₃)₃(H₂O)₃]Cl₃.
+  4. Number of chlorides satisfying secondary valency = 0.
   Answer: 0
