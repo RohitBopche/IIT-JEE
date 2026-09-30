@@ -161,6 +161,8 @@ P A 14: |-
   Why others are wrong:
   - (B) reverses the order.
   - (C) and (D) claim equal speeds; only the average kinetic energies are equal at the same temperature.
+  What is equal: At the same temperature, all three gases have the same average translational kinetic energy per molecule, (3/2)kT. Equal KE with different masses forces different speeds.
+  Common mistake: Confusing "same temperature" with "same speed" (option D).
   Key takeaway: equal temperatures mean equal average KE per molecule, so lighter molecules must move faster.
   Answer: (A)
 P A 15: |-
@@ -206,6 +208,8 @@ P A 18: |-
   5. So P is dimensionless: [M⁰L⁰T⁰].
   Why others are wrong:
   - (A), (B), (C) each leave non-zero exponents from arithmetic slips.
+  Physical meaning: EL²/(M⁵G²) is a pure number; such dimensionless groups appear in orbital mechanics (for example, it is related to the eccentricity of a Kepler orbit, e² = 1 + 2EL²/(G²M²m³)).
+  Common mistake: Using [L] for length instead of angular momentum.
   Key takeaway: this combination $\frac{EL^2}{G^2M^5}$ is a known dimensionless group in orbital mechanics (related to eccentricity).
   Answer: (D)
 P A 19: |-
@@ -226,6 +230,8 @@ P A 20: |-
   Why others are wrong:
   - (B) and (C) accept Statement II.
   - (D) rejects Statement I.
+  Why the crystal stays neutral: Every donor atom that gives up an electron becomes a positive ion fixed in the lattice. The mobile electrons and the fixed positive ions exactly balance.
+  Common mistake: Reading "negative-type" as "negatively charged"; the n refers to the sign of the majority carriers, not the net charge.
   Key takeaway: "n-type" refers to the majority carriers (electrons), not to a net charge.
   Answer: (A)
 P B 1: |-
@@ -243,6 +249,8 @@ P B 2: |-
   2. $P = \varepsilon_0E_0^2 = 8.85\times10^{-12}\times4\times10^4 = 3.54\times10^{-7}$ N/m².
   3. $= \frac{354}{10^9}$ N/m², so x = 354.
   Note: the area (100 cm²) and exposure time (10 min) would be needed for force or momentum transferred, but not for pressure.
+  Why 2I/c: A perfect reflector reverses the photon momentum, so the momentum change per unit time is twice that for an absorber (I/c).
+  Common mistake: Using I/c (perfect absorber), which gives 177.
   Key takeaway: a perfect reflector feels twice the pressure of a perfect absorber.
   Answer: 354
 P B 3: |-
@@ -251,6 +259,8 @@ P B 3: |-
   1. v = 340 m/s, $v_o = v_s = 20$ m/s (moving away).
   2. $1800 = f\times\frac{340 - 20}{340 + 20} = f\times\frac{320}{360} = f\times\frac{8}{9}$.
   3. $f = 1800\times\frac{9}{8} = 2025$ Hz.
+  Sign convention: The observer moving away subtracts its speed in the numerator (fewer wavefronts met per second); the source moving away adds its speed in the denominator (wavefronts spread out).
+  Check: 2025 × 320/360 = 1800 ✓.
   Key takeaway: receding motion lowers the pitch, so the source frequency must be higher than the detected 1800 Hz.
   Answer: 2025
 P B 4: |-
@@ -268,6 +278,8 @@ P B 5: |-
   1. Excess pressure inside the small bubble relative to the atmosphere: $\frac{4S}{3} + \frac{4S}{6}$.
   2. Equivalent single bubble: $\frac{4S}{R} = \frac{4S}{3} + \frac{4S}{6}$.
   3. $\frac{1}{R} = \frac{1}{3} + \frac{1}{6} = \frac{1}{2} \Rightarrow R = 2$ cm.
+  Final step: 1/R = 1/3 + 1/6 = 1/2, so R = 2 cm.
+  Why the pressures add: Air inside the small bubble is above the pressure inside the big bubble by 4S/3, and that is above atmospheric by 4S/6.
   Key takeaway: nested bubbles combine like resistors in parallel: $\frac{1}{R} = \frac{1}{r_1} + \frac{1}{r_2}$.
   Answer: 2
 P B 6: |-
@@ -276,6 +288,8 @@ P B 6: |-
   1. $\omega_m = 12560$ rad/s.
   2. $f_m = \frac{12560}{2\times3.14} = 2000$ Hz = 2 kHz.
   3. (Carrier: $\omega_c = 1.11\times10^6$ rad/s, $f_c \approx 177$ kHz; modulation index 0.2.)
+  Reading the equation: The factor (1 + 0.2 cos 12560t) is the envelope; its angular frequency is the modulating (message) frequency, while sin(1.11 × 10⁶ t) is the carrier.
+  Common mistake: Reporting ω_m (12560) directly without dividing by 2π.
   Key takeaway: 12560 = 2π × 2000 when π = 3.14 — a number chosen for easy division.
   Answer: 2
 P B 7: |-
@@ -284,6 +298,8 @@ P B 7: |-
   1. $B = 10^{-7}\times\frac{1}{1^3} = 10^{-7}$ T.
   2. $\tau = m_2B = 1\times10^{-7}$ N m.
   3. So the value is 1 (×10⁻⁷ N m).
+  Why sin θ = 1: The torque τ = m × B is largest when the dipole is perpendicular to the field at its location.
+  Common mistake: Using the axial field formula 2μ₀m/(4πr³), which gives twice the answer.
   Key takeaway: the axial field is twice the equatorial field ($\frac{2\mu_0m}{4\pi r^3}$) — identify the position carefully from the figure.
   Answer: 1
 P B 8: |-
@@ -292,6 +308,8 @@ P B 8: |-
   1. k = 1.57 cm⁻¹ ≈ $\frac{\pi}{2}$ cm⁻¹.
   2. First node for x > 0: $kx = \frac{\pi}{2} \Rightarrow x = \frac{\pi/2}{1.57} = 1$ cm.
   3. (The origin is an antinode, since cos 0 = 1.)
+  Why cos kx locates the nodes: The displacement is always zero where cos kx = 0, regardless of time, which defines a node.
+  Common mistake: Solving sin(78.5t) = 0, which gives times, not positions.
   Key takeaway: nodes are $\frac{\lambda}{2}$ apart; here λ = $\frac{2\pi}{k}$ = 4 cm, so nodes are at 1, 3, 5, … cm.
   Answer: 1
 P B 9: |-
@@ -300,6 +318,8 @@ P B 9: |-
   1. Δy = 3.5 − 2.0 = 1.5 mm = $1.5\times10^{-3}$ m.
   2. $\Delta\lambda = \frac{0.3\times10^{-3}\times1.5\times10^{-3}}{1.5} = 3\times10^{-7}$ m = 300 nm.
   3. Individually: violet λ = 400 nm, red λ = 700 nm ✓ (consistent with the visible range).
+  Why the first fringe: The nth bright fringe is at nλD/d; for n = 1 the position is directly proportional to λ, so the separation of the violet and red first fringes gives Δλ.
+  Common mistake: Forgetting to convert mm to m in both y and d.
   Key takeaway: red light, having the longer wavelength, forms fringes farther from the centre; white-light fringes are coloured beyond the central white fringe.
   Answer: 300
 P B 10: |-

@@ -554,7 +554,7 @@
     5
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: $v_{rms} = \\sqrt{\\frac{3RT}{M}}$. At the same temperature, $v_{rms} \\propto \\frac{1}{\\sqrt M}$.\nSolution:\n1. Molar masses: H₂ = 2, O₂ = 32, CO₂ = 44 g/mol.\n2. Lightest moves fastest: $V_H > V_O > V_C$.\n3. Ratios: $V_H : V_O : V_C = \\frac{1}{\\sqrt2} : \\frac{1}{\\sqrt{32}} : \\frac{1}{\\sqrt{44}}$, e.g. $V_H = 4V_O$.\nWhy others are wrong:\n- (B) reverses the order.\n- (C) and (D) claim equal speeds; only the average kinetic energies are equal at the same temperature.\nKey takeaway: equal temperatures mean equal average KE per molecule, so lighter molecules must move faster.\nAnswer: (A)",
+   "explanation": "Concept: $v_{rms} = \\sqrt{\\frac{3RT}{M}}$. At the same temperature, $v_{rms} \\propto \\frac{1}{\\sqrt M}$.\nSolution:\n1. Molar masses: H₂ = 2, O₂ = 32, CO₂ = 44 g/mol.\n2. Lightest moves fastest: $V_H > V_O > V_C$.\n3. Ratios: $V_H : V_O : V_C = \\frac{1}{\\sqrt2} : \\frac{1}{\\sqrt{32}} : \\frac{1}{\\sqrt{44}}$, e.g. $V_H = 4V_O$.\nWhy others are wrong:\n- (B) reverses the order.\n- (C) and (D) claim equal speeds; only the average kinetic energies are equal at the same temperature.\nWhat is equal: At the same temperature, all three gases have the same average translational kinetic energy per molecule, (3/2)kT. Equal KE with different masses forces different speeds.\nCommon mistake: Confusing \"same temperature\" with \"same speed\" (option D).\nKey takeaway: equal temperatures mean equal average KE per molecule, so lighter molecules must move faster.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_A14",
@@ -694,7 +694,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Substitute dimensions: [E] = [ML²T⁻²], angular momentum [L] = [ML²T⁻¹], [G] = [M⁻¹L³T⁻²].\nSolution:\n1. $[L^2] = [M^2L^4T^{-2}]$.\n2. $[G^{-2}] = [M^2L^{-6}T^4]$.\n3. $[P] = [ML^2T^{-2}][M^2L^4T^{-2}][M^{-5}][M^2L^{-6}T^4]$.\n4. M: 1 + 2 − 5 + 2 = 0; L: 2 + 4 − 6 = 0; T: −2 − 2 + 4 = 0.\n5. So P is dimensionless: [M⁰L⁰T⁰].\nWhy others are wrong:\n- (A), (B), (C) each leave non-zero exponents from arithmetic slips.\nKey takeaway: this combination $\\frac{EL^2}{G^2M^5}$ is a known dimensionless group in orbital mechanics (related to eccentricity).\nAnswer: (D)",
+   "explanation": "Concept: Substitute dimensions: [E] = [ML²T⁻²], angular momentum [L] = [ML²T⁻¹], [G] = [M⁻¹L³T⁻²].\nSolution:\n1. $[L^2] = [M^2L^4T^{-2}]$.\n2. $[G^{-2}] = [M^2L^{-6}T^4]$.\n3. $[P] = [ML^2T^{-2}][M^2L^4T^{-2}][M^{-5}][M^2L^{-6}T^4]$.\n4. M: 1 + 2 − 5 + 2 = 0; L: 2 + 4 − 6 = 0; T: −2 − 2 + 4 = 0.\n5. So P is dimensionless: [M⁰L⁰T⁰].\nWhy others are wrong:\n- (A), (B), (C) each leave non-zero exponents from arithmetic slips.\nPhysical meaning: EL²/(M⁵G²) is a pure number; such dimensionless groups appear in orbital mechanics (for example, it is related to the eccentricity of a Kepler orbit, e² = 1 + 2EL²/(G²M²m³)).\nCommon mistake: Using [L] for length instead of angular momentum.\nKey takeaway: this combination $\\frac{EL^2}{G^2M^5}$ is a known dimensionless group in orbital mechanics (related to eccentricity).\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_A18",
@@ -764,7 +764,7 @@
     6
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Doping adds impurity atoms that are themselves electrically neutral. A pentavalent atom (P, As) donates one free electron and becomes a fixed positive ion.\nSolution:\n1. Statement I: pentavalent doping increases the free-electron density (n-type) — TRUE.\n2. Statement II: the n-type semiconductor is electrically neutral overall; each free electron is balanced by a positive donor ion — FALSE.\nWhy others are wrong:\n- (B) and (C) accept Statement II.\n- (D) rejects Statement I.\nKey takeaway: \"n-type\" refers to the majority carriers (electrons), not to a net charge.\nAnswer: (A)",
+   "explanation": "Concept: Doping adds impurity atoms that are themselves electrically neutral. A pentavalent atom (P, As) donates one free electron and becomes a fixed positive ion.\nSolution:\n1. Statement I: pentavalent doping increases the free-electron density (n-type) — TRUE.\n2. Statement II: the n-type semiconductor is electrically neutral overall; each free electron is balanced by a positive donor ion — FALSE.\nWhy others are wrong:\n- (B) and (C) accept Statement II.\n- (D) rejects Statement I.\nWhy the crystal stays neutral: Every donor atom that gives up an electron becomes a positive ion fixed in the lattice. The mobile electrons and the fixed positive ions exactly balance.\nCommon mistake: Reading \"negative-type\" as \"negatively charged\"; the n refers to the sign of the majority carriers, not the net charge.\nKey takeaway: \"n-type\" refers to the majority carriers (electrons), not to a net charge.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_A20",
@@ -824,7 +824,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For a plane EM wave, average intensity $I = \\frac{1}{2}c\\varepsilon_0E_0^2$. For a perfectly reflecting surface at normal incidence, radiation pressure is $\\frac{2I}{c} = \\varepsilon_0E_0^2$.\nSolution:\n1. $E_0 = 200$ V/m.\n2. $P = \\varepsilon_0E_0^2 = 8.85\\times10^{-12}\\times4\\times10^4 = 3.54\\times10^{-7}$ N/m².\n3. $= \\frac{354}{10^9}$ N/m², so x = 354.\nNote: the area (100 cm²) and exposure time (10 min) would be needed for force or momentum transferred, but not for pressure.\nKey takeaway: a perfect reflector feels twice the pressure of a perfect absorber.\nAnswer: 354",
+   "explanation": "Concept: For a plane EM wave, average intensity $I = \\frac{1}{2}c\\varepsilon_0E_0^2$. For a perfectly reflecting surface at normal incidence, radiation pressure is $\\frac{2I}{c} = \\varepsilon_0E_0^2$.\nSolution:\n1. $E_0 = 200$ V/m.\n2. $P = \\varepsilon_0E_0^2 = 8.85\\times10^{-12}\\times4\\times10^4 = 3.54\\times10^{-7}$ N/m².\n3. $= \\frac{354}{10^9}$ N/m², so x = 354.\nNote: the area (100 cm²) and exposure time (10 min) would be needed for force or momentum transferred, but not for pressure.\nWhy 2I/c: A perfect reflector reverses the photon momentum, so the momentum change per unit time is twice that for an absorber (I/c).\nCommon mistake: Using I/c (perfect absorber), which gives 177.\nKey takeaway: a perfect reflector feels twice the pressure of a perfect absorber.\nAnswer: 354",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B02",
@@ -854,7 +854,7 @@
     7
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Doppler effect: $f' = f\\cdot\\frac{v \\pm v_o}{v \\mp v_s}$. When source and observer move apart, the observed frequency decreases: $f' = f\\frac{v - v_o}{v + v_s}$.\nSolution:\n1. v = 340 m/s, $v_o = v_s = 20$ m/s (moving away).\n2. $1800 = f\\times\\frac{340 - 20}{340 + 20} = f\\times\\frac{320}{360} = f\\times\\frac{8}{9}$.\n3. $f = 1800\\times\\frac{9}{8} = 2025$ Hz.\nKey takeaway: receding motion lowers the pitch, so the source frequency must be higher than the detected 1800 Hz.\nAnswer: 2025",
+   "explanation": "Concept: Doppler effect: $f' = f\\cdot\\frac{v \\pm v_o}{v \\mp v_s}$. When source and observer move apart, the observed frequency decreases: $f' = f\\frac{v - v_o}{v + v_s}$.\nSolution:\n1. v = 340 m/s, $v_o = v_s = 20$ m/s (moving away).\n2. $1800 = f\\times\\frac{340 - 20}{340 + 20} = f\\times\\frac{320}{360} = f\\times\\frac{8}{9}$.\n3. $f = 1800\\times\\frac{9}{8} = 2025$ Hz.\nSign convention: The observer moving away subtracts its speed in the numerator (fewer wavefronts met per second); the source moving away adds its speed in the denominator (wavefronts spread out).\nCheck: 2025 × 320/360 = 1800 ✓.\nKey takeaway: receding motion lowers the pitch, so the source frequency must be higher than the detected 1800 Hz.\nAnswer: 2025",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B03",
@@ -914,7 +914,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A soap bubble (two surfaces) has excess pressure $\\frac{4S}{r}$. For a bubble inside another, the pressure inside the inner bubble exceeds atmospheric pressure by the sum of both excess pressures.\nSolution:\n1. Excess pressure inside the small bubble relative to the atmosphere: $\\frac{4S}{3} + \\frac{4S}{6}$.\n2. Equivalent single bubble: $\\frac{4S}{R} = \\frac{4S}{3} + \\frac{4S}{6}$.\n3. $\\frac{1}{R} = \\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2} \\Rightarrow R = 2$ cm.\nKey takeaway: nested bubbles combine like resistors in parallel: $\\frac{1}{R} = \\frac{1}{r_1} + \\frac{1}{r_2}$.\nAnswer: 2",
+   "explanation": "Concept: A soap bubble (two surfaces) has excess pressure $\\frac{4S}{r}$. For a bubble inside another, the pressure inside the inner bubble exceeds atmospheric pressure by the sum of both excess pressures.\nSolution:\n1. Excess pressure inside the small bubble relative to the atmosphere: $\\frac{4S}{3} + \\frac{4S}{6}$.\n2. Equivalent single bubble: $\\frac{4S}{R} = \\frac{4S}{3} + \\frac{4S}{6}$.\n3. $\\frac{1}{R} = \\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2} \\Rightarrow R = 2$ cm.\nFinal step: 1/R = 1/3 + 1/6 = 1/2, so R = 2 cm.\nWhy the pressures add: Air inside the small bubble is above the pressure inside the big bubble by 4S/3, and that is above atmospheric by 4S/6.\nKey takeaway: nested bubbles combine like resistors in parallel: $\\frac{1}{R} = \\frac{1}{r_1} + \\frac{1}{r_2}$.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B05",
@@ -944,7 +944,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In $C_m(t) = A_c(1 + \\mu\\cos\\omega_mt)\\sin\\omega_ct$, the modulating angular frequency is $\\omega_m$, and $f_m = \\frac{\\omega_m}{2\\pi}$.\nSolution:\n1. $\\omega_m = 12560$ rad/s.\n2. $f_m = \\frac{12560}{2\\times3.14} = 2000$ Hz = 2 kHz.\n3. (Carrier: $\\omega_c = 1.11\\times10^6$ rad/s, $f_c \\approx 177$ kHz; modulation index 0.2.)\nKey takeaway: 12560 = 2π × 2000 when π = 3.14 — a number chosen for easy division.\nAnswer: 2",
+   "explanation": "Concept: In $C_m(t) = A_c(1 + \\mu\\cos\\omega_mt)\\sin\\omega_ct$, the modulating angular frequency is $\\omega_m$, and $f_m = \\frac{\\omega_m}{2\\pi}$.\nSolution:\n1. $\\omega_m = 12560$ rad/s.\n2. $f_m = \\frac{12560}{2\\times3.14} = 2000$ Hz = 2 kHz.\n3. (Carrier: $\\omega_c = 1.11\\times10^6$ rad/s, $f_c \\approx 177$ kHz; modulation index 0.2.)\nReading the equation: The factor (1 + 0.2 cos 12560t) is the envelope; its angular frequency is the modulating (message) frequency, while sin(1.11 × 10⁶ t) is the carrier.\nCommon mistake: Reporting ω_m (12560) directly without dividing by 2π.\nKey takeaway: 12560 = 2π × 2000 when π = 3.14 — a number chosen for easy division.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B06",
@@ -984,7 +984,7 @@
      ]
     }
    ],
-   "explanation": "Concept: From the figure, P lies on the equatorial (broadside-on) line of $m_1$, and $m_2$ is oriented perpendicular to the field there. The equatorial field of a short dipole is $B = \\frac{\\mu_0}{4\\pi}\\frac{m_1}{r^3}$, and torque $\\tau = m_2B\\sin\\theta$ with θ = 90°.\nSolution:\n1. $B = 10^{-7}\\times\\frac{1}{1^3} = 10^{-7}$ T.\n2. $\\tau = m_2B = 1\\times10^{-7}$ N m.\n3. So the value is 1 (×10⁻⁷ N m).\nKey takeaway: the axial field is twice the equatorial field ($\\frac{2\\mu_0m}{4\\pi r^3}$) — identify the position carefully from the figure.\nAnswer: 1",
+   "explanation": "Concept: From the figure, P lies on the equatorial (broadside-on) line of $m_1$, and $m_2$ is oriented perpendicular to the field there. The equatorial field of a short dipole is $B = \\frac{\\mu_0}{4\\pi}\\frac{m_1}{r^3}$, and torque $\\tau = m_2B\\sin\\theta$ with θ = 90°.\nSolution:\n1. $B = 10^{-7}\\times\\frac{1}{1^3} = 10^{-7}$ T.\n2. $\\tau = m_2B = 1\\times10^{-7}$ N m.\n3. So the value is 1 (×10⁻⁷ N m).\nWhy sin θ = 1: The torque τ = m × B is largest when the dipole is perpendicular to the field at its location.\nCommon mistake: Using the axial field formula 2μ₀m/(4πr³), which gives twice the answer.\nKey takeaway: the axial field is twice the equatorial field ($\\frac{2\\mu_0m}{4\\pi r^3}$) — identify the position carefully from the figure.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B07",
@@ -1016,7 +1016,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: A standing wave $y = A\\cos(kx)\\sin(\\omega t)$ has nodes where $\\cos kx = 0$: $kx = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\dots$\nSolution:\n1. k = 1.57 cm⁻¹ ≈ $\\frac{\\pi}{2}$ cm⁻¹.\n2. First node for x > 0: $kx = \\frac{\\pi}{2} \\Rightarrow x = \\frac{\\pi/2}{1.57} = 1$ cm.\n3. (The origin is an antinode, since cos 0 = 1.)\nKey takeaway: nodes are $\\frac{\\lambda}{2}$ apart; here λ = $\\frac{2\\pi}{k}$ = 4 cm, so nodes are at 1, 3, 5, … cm.\nAnswer: 1",
+   "explanation": "Concept: A standing wave $y = A\\cos(kx)\\sin(\\omega t)$ has nodes where $\\cos kx = 0$: $kx = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\dots$\nSolution:\n1. k = 1.57 cm⁻¹ ≈ $\\frac{\\pi}{2}$ cm⁻¹.\n2. First node for x > 0: $kx = \\frac{\\pi}{2} \\Rightarrow x = \\frac{\\pi/2}{1.57} = 1$ cm.\n3. (The origin is an antinode, since cos 0 = 1.)\nWhy cos kx locates the nodes: The displacement is always zero where cos kx = 0, regardless of time, which defines a node.\nCommon mistake: Solving sin(78.5t) = 0, which gives times, not positions.\nKey takeaway: nodes are $\\frac{\\lambda}{2}$ apart; here λ = $\\frac{2\\pi}{k}$ = 4 cm, so nodes are at 1, 3, 5, … cm.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B08",
@@ -1046,7 +1046,7 @@
     8
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In YDSE, the first bright fringe is at $y_1 = \\frac{\\lambda D}{d}$. So $\\Delta\\lambda = \\frac{d\\,\\Delta y}{D}$.\nSolution:\n1. Δy = 3.5 − 2.0 = 1.5 mm = $1.5\\times10^{-3}$ m.\n2. $\\Delta\\lambda = \\frac{0.3\\times10^{-3}\\times1.5\\times10^{-3}}{1.5} = 3\\times10^{-7}$ m = 300 nm.\n3. Individually: violet λ = 400 nm, red λ = 700 nm ✓ (consistent with the visible range).\nKey takeaway: red light, having the longer wavelength, forms fringes farther from the centre; white-light fringes are coloured beyond the central white fringe.\nAnswer: 300",
+   "explanation": "Concept: In YDSE, the first bright fringe is at $y_1 = \\frac{\\lambda D}{d}$. So $\\Delta\\lambda = \\frac{d\\,\\Delta y}{D}$.\nSolution:\n1. Δy = 3.5 − 2.0 = 1.5 mm = $1.5\\times10^{-3}$ m.\n2. $\\Delta\\lambda = \\frac{0.3\\times10^{-3}\\times1.5\\times10^{-3}}{1.5} = 3\\times10^{-7}$ m = 300 nm.\n3. Individually: violet λ = 400 nm, red λ = 700 nm ✓ (consistent with the visible range).\nWhy the first fringe: The nth bright fringe is at nλD/d; for n = 1 the position is directly proportional to λ, so the separation of the violet and red first fringes gives Δλ.\nCommon mistake: Forgetting to convert mm to m in both y and d.\nKey takeaway: red light, having the longer wavelength, forms fringes farther from the centre; white-light fringes are coloured beyond the central white fringe.\nAnswer: 300",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_PHY_B09",
@@ -1486,7 +1486,7 @@
     12
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Tooth enamel is mainly hydroxyapatite, [3Ca₃(PO₄)₂·Ca(OH)₂]. Fluoride ions in drinking water replace OH⁻, converting it into the harder, more acid-resistant fluorapatite, [3Ca₃(PO₄)₂·CaF₂].\nSolution:\n1. Correct formula of hydroxyapatite: [3Ca₃(PO₄)₂·Ca(OH)₂] (option A).\nWhy others are wrong:\n- (D) [3Ca₃(PO₄)₂·CaF₂] is fluorapatite — the product, not hydroxyapatite.\n- (B) and (C) have incorrect compositions.\nKey takeaway (NCERT): about 1 ppm F⁻ is beneficial for teeth, but above about 2 ppm it causes brown mottling of teeth, and very high levels harm bones.\nAnswer: (A)",
+   "explanation": "Concept: Tooth enamel is mainly hydroxyapatite, [3Ca₃(PO₄)₂·Ca(OH)₂]. Fluoride ions in drinking water replace OH⁻, converting it into the harder, more acid-resistant fluorapatite, [3Ca₃(PO₄)₂·CaF₂].\nSolution:\n1. Correct formula of hydroxyapatite: [3Ca₃(PO₄)₂·Ca(OH)₂] (option A).\nWhy others are wrong:\n- (D) [3Ca₃(PO₄)₂·CaF₂] is fluorapatite — the product, not hydroxyapatite.\n- (B) and (C) have incorrect compositions.\nWhy fluoride helps: F⁻ replaces OH⁻ in the apatite lattice, giving fluorapatite, which is less soluble in the acids produced by mouth bacteria. Too much fluoride (above about 10 ppm) causes mottling of teeth, so the safe level is about 1 ppm.\nCommon mistake: Choosing the fluorapatite formula (D), which is the product of the conversion.\nKey takeaway (NCERT): about 1 ppm F⁻ is beneficial for teeth, but above about 2 ppm it causes brown mottling of teeth, and very high levels harm bones.\nAnswer: (A)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_A10",
@@ -1673,7 +1673,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Slaked lime, Ca(OH)₂, reacts with CO₂ in two stages.\nSolution:\n1. First: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — the solution turns milky (the lime-water test).\n2. With excess CO₂: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ — soluble, so the milkiness disappears.\n3. Sequence: CaCO₃, then Ca(HCO₃)₂.\nWhy others are wrong:\n- (A) reverses the order.\n- (C) and (D) include CaO, which is quicklime, not formed by passing CO₂.\nKey takeaway: this reversible chemistry explains temporary hardness and the formation of stalactites and stalagmites in caves.\nAnswer: (B)",
+   "explanation": "Concept: Slaked lime, Ca(OH)₂, reacts with CO₂ in two stages.\nSolution:\n1. First: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — the solution turns milky (the lime-water test).\n2. With excess CO₂: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ — soluble, so the milkiness disappears.\n3. Sequence: CaCO₃, then Ca(HCO₃)₂.\nWhy others are wrong:\n- (A) reverses the order.\n- (C) and (D) include CaO, which is quicklime, not formed by passing CO₂.\nWhy the milkiness disappears: Calcium hydrogencarbonate is soluble in water, unlike calcium carbonate. The same chemistry creates temporary hardness in natural water and forms limestone caves.\nCommon mistake: Including CaO; slaked lime is already Ca(OH)₂, and CaO would form only on strong heating.\nKey takeaway: this reversible chemistry explains temporary hardness and the formation of stalactites and stalagmites in caves.\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_A15",
@@ -1708,7 +1708,7 @@
     13
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: In Bohr's model, the orbital speed is $v = \\frac{2\\pi kZe^2}{nh} \\approx 2.18\\times10^6\\frac{Z}{n}$ m/s, i.e. $v \\propto \\frac{Z}{n}$.\nSolution:\n1. Statement I: speed increases as nuclear charge decreases — FALSE. Speed is proportional to Z; a smaller Z (weaker attraction) gives a smaller speed.\n2. Statement II: speed increases as the principal quantum number n decreases — TRUE ($v \\propto \\frac{1}{n}$).\nWhy others are wrong:\n- (A) rejects II; (B) and (D) accept I.\nKey takeaway: electrons in inner orbits (small n) and in highly charged nuclei (large Z) move fastest.\nAnswer: (C)",
+   "explanation": "Concept: In Bohr's model, the orbital speed is $v = \\frac{2\\pi kZe^2}{nh} \\approx 2.18\\times10^6\\frac{Z}{n}$ m/s, i.e. $v \\propto \\frac{Z}{n}$.\nSolution:\n1. Statement I: speed increases as nuclear charge decreases — FALSE. Speed is proportional to Z; a smaller Z (weaker attraction) gives a smaller speed.\n2. Statement II: speed increases as the principal quantum number n decreases — TRUE ($v \\propto \\frac{1}{n}$).\nWhy others are wrong:\n- (A) rejects II; (B) and (D) accept I.\nPhysical picture: A larger nuclear charge pulls the electron harder, so it must move faster to stay in orbit; a higher orbit (larger n) is farther out and slower.\nCommon mistake: Accepting Statement I because the \"weaker hold\" argument sounds plausible; weaker attraction means lower, not higher, orbital speed.\nKey takeaway: electrons in inner orbits (small n) and in highly charged nuclei (large Z) move fastest.\nAnswer: (C)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_A16",
@@ -1878,7 +1878,7 @@
     14
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: VSEPR: a central atom with 5 electron pairs (steric number 5) adopts a trigonal bipyramidal arrangement. With 3 bond pairs and 2 lone pairs, the lone pairs occupy equatorial positions, giving a T-shaped molecule.\nSolution:\n1. Example: ClF₃. Cl has 7 valence electrons; 3 are used in bonds with F, leaving 4 electrons = 2 lone pairs.\n2. So A has 2 lone pairs (and sp³d hybridisation).\nKey takeaway: other T-shaped molecules: BrF₃, ICl₃ (in the gas phase) — all AB₃ with two lone pairs on A.\nAnswer: 2",
+   "explanation": "Concept: VSEPR: a central atom with 5 electron pairs (steric number 5) adopts a trigonal bipyramidal arrangement. With 3 bond pairs and 2 lone pairs, the lone pairs occupy equatorial positions, giving a T-shaped molecule.\nSolution:\n1. Example: ClF₃. Cl has 7 valence electrons; 3 are used in bonds with F, leaving 4 electrons = 2 lone pairs.\n2. So A has 2 lone pairs (and sp³d hybridisation).\nWhy the lone pairs are equatorial: In a trigonal bipyramid, equatorial positions have more room (120° to two neighbours), so lone pairs go there to minimise repulsion. The three bonds then form a T.\nCommon mistake: Counting the fluorine lone pairs; the question asks only about the central atom A.\nKey takeaway: other T-shaped molecules: BrF₃, ICl₃ (in the gas phase) — all AB₃ with two lone pairs on A.\nAnswer: 2",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B01",
@@ -1968,7 +1968,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: NH₃ + NH₄Cl is a basic buffer. Henderson equation: $[OH^-] = K_b\\frac{[NH_3]}{[NH_4^+]}$; the ratio can use millimoles because both are in the same total volume.\nSolution:\n1. NH₄⁺: 5.0 mL × 0.0504 M = 0.252 mmol.\n2. NH₃: 2 mL × 0.0210 M = 0.042 mmol.\n3. $[OH^-] = 1.8\\times10^{-5}\\times\\frac{0.042}{0.252} = 1.8\\times10^{-5}\\times\\frac{1}{6} = 3.0\\times10^{-6}$ M.\n4. x = 3.\nKey takeaway: in a buffer, dilution does not change the ratio, so volumes need not be summed.\nAnswer: 3",
+   "explanation": "Concept: NH₃ + NH₄Cl is a basic buffer. Henderson equation: $[OH^-] = K_b\\frac{[NH_3]}{[NH_4^+]}$; the ratio can use millimoles because both are in the same total volume.\nSolution:\n1. NH₄⁺: 5.0 mL × 0.0504 M = 0.252 mmol.\n2. NH₃: 2 mL × 0.0210 M = 0.042 mmol.\n3. $[OH^-] = 1.8\\times10^{-5}\\times\\frac{0.042}{0.252} = 1.8\\times10^{-5}\\times\\frac{1}{6} = 3.0\\times10^{-6}$ M.\n4. x = 3.\nWhy moles work for the ratio: Both species are diluted into the same 7 mL, so the volume cancels in [NH₃]/[NH₄⁺].\nCommon mistake: Inverting the ratio ([NH₄⁺]/[NH₃]), which gives 1.08 × 10⁻⁴ M.\nKey takeaway: in a buffer, dilution does not change the ratio, so volumes need not be summed.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B04",
@@ -1998,7 +1998,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Gadolinium (Z = 64) has the configuration [Xe]4f⁷5d¹6s² — the half-filled 4f⁷ is extra stable, so one electron goes into 5d.\nSolution:\n1. Gd: [Xe]4f⁷5d¹6s².\n2. Gd²⁺: remove the two 6s electrons → [Xe]4f⁷5d¹.\n3. Number of 4f electrons = 7.\nKey takeaway: similar exceptions: La ([Xe]5d¹6s²), Ce ([Xe]4f¹5d¹6s²), Lu ([Xe]4f¹⁴5d¹6s²).\nAnswer: 7",
+   "explanation": "Concept: Gadolinium (Z = 64) has the configuration [Xe]4f⁷5d¹6s² — the half-filled 4f⁷ is extra stable, so one electron goes into 5d.\nSolution:\n1. Gd: [Xe]4f⁷5d¹6s².\n2. Gd²⁺: remove the two 6s electrons → [Xe]4f⁷5d¹.\n3. Number of 4f electrons = 7.\nWhy the 5d electron stays: In lanthanides, the 6s electrons are removed first. Gd²⁺ keeps the stable half-filled 4f⁷ plus one 5d electron; Gd³⁺ would lose the 5d electron too.\nCommon mistake: Writing Gd as [Xe]4f⁸6s² and giving 8 as the answer.\nKey takeaway: similar exceptions: La ([Xe]5d¹6s²), Ce ([Xe]4f¹5d¹6s²), Lu ([Xe]4f¹⁴5d¹6s²).\nAnswer: 7",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B05",
@@ -2028,7 +2028,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Recall the formulas of the two double salts.\nSolution:\n1. Mohr's salt: ferrous ammonium sulphate, FeSO₄·(NH₄)₂SO₄·6H₂O → 6 water molecules.\n2. Potash alum: K₂SO₄·Al₂(SO₄)₃·24H₂O, i.e. KAl(SO₄)₂·12H₂O per formula unit → 12 water molecules.\n3. Ratio $= \\frac{6}{12} = 0.5 = 5\\times10^{-1}$.\nKey takeaway: the key uses the simplest formula of alum (12 H₂O); with the doubled formula (24 H₂O) the ratio would be 0.25.\nAnswer: 5",
+   "explanation": "Concept: Recall the formulas of the two double salts.\nSolution:\n1. Mohr's salt: ferrous ammonium sulphate, FeSO₄·(NH₄)₂SO₄·6H₂O → 6 water molecules.\n2. Potash alum: K₂SO₄·Al₂(SO₄)₃·24H₂O, i.e. KAl(SO₄)₂·12H₂O per formula unit → 12 water molecules.\n3. Ratio $= \\frac{6}{12} = 0.5 = 5\\times10^{-1}$.\nCommon mistake: Using the doubled alum formula with 24 H₂O, which gives a ratio of 6/24 = 0.25 (2.5 × 10⁻¹). The official key uses the simplest formula KAl(SO₄)₂·12H₂O.\nBoth are double salts: they dissociate completely into their simple ions in water.\nKey takeaway: the key uses the simplest formula of alum (12 H₂O); with the doubled formula (24 H₂O) the ratio would be 0.25.\nAnswer: 5",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B06",
@@ -2058,7 +2058,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Method of initial rates: rate = k[NO]^x[H₂]^y. Compare experiments in which only one concentration changes.\nSolution:\n1. Experiments A → B: [H₂] fixed at 8 × 10⁻⁵; [NO] triples (8 → 24 × 10⁻⁵).\n2. Rate: 7 × 10⁻⁹ → 2.1 × 10⁻⁸, i.e. also triples.\n3. $3^x = 3 \\Rightarrow x = 1$: first order in NO.\n4. (B → C: [H₂] quadruples, rate quadruples → first order in H₂ as well.)\nKey takeaway: the order is not given by the stoichiometric coefficients (2 for NO) — it must be found experimentally.\nAnswer: 1",
+   "explanation": "Concept: Method of initial rates: rate = k[NO]^x[H₂]^y. Compare experiments in which only one concentration changes.\nSolution:\n1. Experiments A → B: [H₂] fixed at 8 × 10⁻⁵; [NO] triples (8 → 24 × 10⁻⁵).\n2. Rate: 7 × 10⁻⁹ → 2.1 × 10⁻⁸, i.e. also triples.\n3. $3^x = 3 \\Rightarrow x = 1$: first order in NO.\n4. (B → C: [H₂] quadruples, rate quadruples → first order in H₂ as well.)\nOverall rate law: rate = k[NO][H₂], so the total order is 2.\nCommon mistake: Taking the order from the stoichiometric coefficient of NO (2); orders are found experimentally, not from the balanced equation.\nKey takeaway: the order is not given by the stoichiometric coefficients (2 for NO) — it must be found experimentally.\nAnswer: 1",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B07",
@@ -2088,7 +2088,7 @@
     15
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Born–Haber cycle for K(s) + ½Cl₂(g) → KCl(s): $\\Delta_fH = \\Delta_{sub}H + IE + \\frac{1}{2}\\Delta_{bond}H + \\Delta_{eg}H - U_{lattice}$, where $U_{lattice}$ is the energy needed to break KCl(s) into gaseous ions.\nSolution:\n1. $-436.7 = 89.2 + 419.0 + \\frac{243.0}{2} + (-348.6) - U$.\n2. Sum of steps: 89.2 + 419.0 + 121.5 − 348.6 = 281.1.\n3. $U = 281.1 + 436.7 = 717.8 \\approx 718$ kJ mol⁻¹.\nKey takeaway: the large lattice enthalpy is what makes the formation of ionic KCl strongly exothermic, despite the endothermic steps.\nAnswer: 718",
+   "explanation": "Concept: Born–Haber cycle for K(s) + ½Cl₂(g) → KCl(s): $\\Delta_fH = \\Delta_{sub}H + IE + \\frac{1}{2}\\Delta_{bond}H + \\Delta_{eg}H - U_{lattice}$, where $U_{lattice}$ is the energy needed to break KCl(s) into gaseous ions.\nSolution:\n1. $-436.7 = 89.2 + 419.0 + \\frac{243.0}{2} + (-348.6) - U$.\n2. Sum of steps: 89.2 + 419.0 + 121.5 − 348.6 = 281.1.\n3. $U = 281.1 + 436.7 = 717.8 \\approx 718$ kJ mol⁻¹.\nWhy ½ bond enthalpy: Only one Cl atom is needed per KCl, so half a mole of Cl₂ is dissociated.\nCommon mistake: Using the full 243.0 kJ/mol bond enthalpy, which gives 839 kJ/mol.\nKey takeaway: the large lattice enthalpy is what makes the formation of ionic KCl strongly exothermic, despite the endothermic steps.\nAnswer: 718",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B08",
@@ -2118,7 +2118,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: At pH 12.5 (strongly basic), all acidic groups with pKa below ~12 are deprotonated, and amino groups are neutral (–NH₂).\nSolution:\n1. Gly-Glu-Asp-Tyr acidic groups:\n   - C-terminal –COOH (on Tyr) → –COO⁻: −1.\n   - Glu side-chain –COOH → –COO⁻: −1.\n   - Asp side-chain –COOH → –COO⁻: −1.\n   - Tyr phenolic –OH (pKa ≈ 10.1) → –O⁻: −1.\n2. N-terminal –NH₃⁺ (pKa ≈ 9–10) → –NH₂ (neutral).\n3. Total negative charges = 4.\nKey takeaway: always check side chains — Glu and Asp are acidic, Tyr is weakly acidic, Lys/Arg/His are basic.\nAnswer: 4",
+   "explanation": "Concept: At pH 12.5 (strongly basic), all acidic groups with pKa below ~12 are deprotonated, and amino groups are neutral (–NH₂).\nSolution:\n1. Gly-Glu-Asp-Tyr acidic groups:\n   - C-terminal –COOH (on Tyr) → –COO⁻: −1.\n   - Glu side-chain –COOH → –COO⁻: −1.\n   - Asp side-chain –COOH → –COO⁻: −1.\n   - Tyr phenolic –OH (pKa ≈ 10.1) → –O⁻: −1.\n2. N-terminal –NH₃⁺ (pKa ≈ 9–10) → –NH₂ (neutral).\n3. Total negative charges = 4.\nWhy the N-terminus is neutral: The –NH₃⁺ group (pKa about 9) loses its proton at pH 12.5, becoming –NH₂ with no charge.\nCommon mistake: Forgetting the tyrosine phenolic group (pKa about 10), which is also ionised at pH 12.5, and answering 3.\nKey takeaway: always check side chains — Glu and Asp are acidic, Tyr is weakly acidic, Lys/Arg/His are basic.\nAnswer: 4",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B09",
@@ -2148,7 +2148,7 @@
     16
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Molality is moles per kg of solvent; molarity is moles per litre of solution. Density links solution mass and volume.\nSolution:\n1. Take 1000 g of water: 3.30 mol KCl = 3.30 × 74.5 = 245.9 g.\n2. Solution mass = 1245.9 g; volume $= \\frac{1245.9}{1.20} = 1038$ mL = 1.038 L.\n3. Molarity $= \\frac{3.30}{1.038} = 3.18 \\approx 3$ mol L⁻¹.\nKey takeaway: formula: $M = \\frac{m\\times d\\times1000}{1000 + m\\times M_{solute}}$ = $\\frac{3.30\\times1.2\\times1000}{1000 + 245.9}$ = 3.18.\nAnswer: 3",
+   "explanation": "Concept: Molality is moles per kg of solvent; molarity is moles per litre of solution. Density links solution mass and volume.\nSolution:\n1. Take 1000 g of water: 3.30 mol KCl = 3.30 × 74.5 = 245.9 g.\n2. Solution mass = 1245.9 g; volume $= \\frac{1245.9}{1.20} = 1038$ mL = 1.038 L.\n3. Molarity $= \\frac{3.30}{1.038} = 3.18 \\approx 3$ mol L⁻¹.\nGeneral formula: M = 1000 × m × d / (1000 + m × M_solute) = 1000 × 3.30 × 1.20 / (1000 + 245.9) ≈ 3.18.\nCommon mistake: Taking the molarity equal to the molality (3.30), ignoring the mass of the solute and the density.\nKey takeaway: formula: $M = \\frac{m\\times d\\times1000}{1000 + m\\times M_{solute}}$ = $\\frac{3.30\\times1.2\\times1000}{1000 + 245.9}$ = 3.18.\nAnswer: 3",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_CHE_B10",
@@ -2465,7 +2465,7 @@
     19
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Standard sums: $\\sum r\\binom{n}{r} = n2^{n-1}$ and $\\sum r(r - 1)\\binom{n}{r} = n(n - 1)2^{n-2}$. So $\\sum r^2\\binom{n}{r} = n(n - 1)2^{n-2} + n2^{n-1} = n(n + 1)2^{n-2}$.\nSolution:\n1. n = 20: $\\sum r^2\\binom{20}{r} = 20\\times21\\times2^{18} = 420\\times2^{18}$.\nWhy others are wrong:\n- (A) $420\\times2^{19}$ doubles the answer.\n- (B) and (C) use 380 = 20 × 19, i.e. only the $r(r - 1)$ part.\nKey takeaway: write r² = r(r − 1) + r to use the two standard sums.\nAnswer: (D)",
+   "explanation": "Concept: Standard sums: $\\sum r\\binom{n}{r} = n2^{n-1}$ and $\\sum r(r - 1)\\binom{n}{r} = n(n - 1)2^{n-2}$. So $\\sum r^2\\binom{n}{r} = n(n - 1)2^{n-2} + n2^{n-1} = n(n + 1)2^{n-2}$.\nSolution:\n1. n = 20: $\\sum r^2\\binom{20}{r} = 20\\times21\\times2^{18} = 420\\times2^{18}$.\nWhy others are wrong:\n- (A) $420\\times2^{19}$ doubles the answer.\n- (B) and (C) use 380 = 20 × 19, i.e. only the $r(r - 1)$ part.\nWhy split r² = r(r − 1) + r: The sums Σr(r − 1)C(n, r) and Σr C(n, r) come from differentiating (1 + x)ⁿ twice and once and putting x = 1.\nCheck for n = 2: 0 + 1·2 + 4·1 = 6 = 2 × 3 × 2⁰ ✓.\nKey takeaway: write r² = r(r − 1) + r to use the two standard sums.\nAnswer: (D)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_MAT_A09",
@@ -2780,7 +2780,7 @@
     22
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Riemann sum: $\\lim\\frac{1}{n}\\sum_{r=0}^{kn - 1}f\\left(\\frac{r}{n}\\right) = \\int_0^kf(x)\\,dx$.\nSolution:\n1. Term: $\\frac{n^2}{n^2 + 4r^2} = \\frac{1}{1 + 4(r/n)^2}$.\n2. r runs from 0 to 2n − 1, so x = r/n runs over [0, 2].\n3. Limit $= \\int_0^2\\frac{dx}{1 + 4x^2} = \\frac{1}{2}[\\tan^{-1}2x]_0^2 = \\frac{1}{2}\\tan^{-1}4$.\nWhy others are wrong:\n- (A) uses the upper limit 1 instead of 2.\n- (C) forgets the factor ½ from the substitution 2x.\n- (D) halves again incorrectly.\nKey takeaway: the upper limit of r (here 2n) sets the upper limit of integration (here 2).\nAnswer: (B)",
+   "explanation": "Concept: Riemann sum: $\\lim\\frac{1}{n}\\sum_{r=0}^{kn - 1}f\\left(\\frac{r}{n}\\right) = \\int_0^kf(x)\\,dx$.\nSolution:\n1. Term: $\\frac{n^2}{n^2 + 4r^2} = \\frac{1}{1 + 4(r/n)^2}$.\n2. r runs from 0 to 2n − 1, so x = r/n runs over [0, 2].\n3. Limit $= \\int_0^2\\frac{dx}{1 + 4x^2} = \\frac{1}{2}[\\tan^{-1}2x]_0^2 = \\frac{1}{2}\\tan^{-1}4$.\nWhy others are wrong:\n- (A) uses the upper limit 1 instead of 2.\n- (C) forgets the factor ½ from the substitution 2x.\n- (D) halves again incorrectly.\nWhy the interval is [0, 2]: r/n goes from 0 to (2n − 1)/n → 2 as n → ∞, with step 1/n, so the sum approximates the area under f from 0 to 2.\nIntegration step: ∫ dx/(1 + 4x²) = ½ tan⁻¹(2x), so the result is ½ tan⁻¹ 4.\nKey takeaway: the upper limit of r (here 2n) sets the upper limit of integration (here 2).\nAnswer: (B)",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_MAT_A18",
@@ -2970,7 +2970,7 @@
     23
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: ${}^kP_k = k!$ and $k\\cdot k! = (k + 1)! - k!$, which telescopes.\nSolution:\n1. $\\sum_{k=1}^{15}k\\cdot k! = \\sum[(k + 1)! - k!] = 16! - 1! = 16! - 1$.\n2. $16! - 1 = {}^{16}P_{16} - 1$, so q = 16, r = 16, s = 1 (0 ≤ s ≤ 1 ✓).\n3. ${}^{q+s}C_{r-s} = {}^{17}C_{15} = {}^{17}C_2 = \\frac{17\\times16}{2} = 136$.\nKey takeaway: k · k! = (k+1)! − k! is the standard telescoping trick for such sums.\nAnswer: 136",
+   "explanation": "Concept: ${}^kP_k = k!$ and $k\\cdot k! = (k + 1)! - k!$, which telescopes.\nSolution:\n1. $\\sum_{k=1}^{15}k\\cdot k! = \\sum[(k + 1)! - k!] = 16! - 1! = 16! - 1$.\n2. $16! - 1 = {}^{16}P_{16} - 1$, so q = 16, r = 16, s = 1 (0 ≤ s ≤ 1 ✓).\n3. ${}^{q+s}C_{r-s} = {}^{17}C_{15} = {}^{17}C_2 = \\frac{17\\times16}{2} = 136$.\nCheck with small n: 1·1! + 2·2! = 5 = 3! − 1 ✓.\nCommon mistake: Taking s = 0 and writing 16! − 1 as another permutation, which does not fit the form.\nKey takeaway: k · k! = (k+1)! − k! is the standard telescoping trick for such sums.\nAnswer: 136",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_MAT_B04",
@@ -3000,7 +3000,7 @@
     24
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: Express the total area as a function of the circle's circumference k and minimise.\nSolution:\n1. Circle: circumference k → radius $\\frac{k}{2\\pi}$ → area $\\frac{k^2}{4\\pi}$.\n2. Square: perimeter 36 − k → side $\\frac{36 - k}{4}$ → area $\\frac{(36 - k)^2}{16}$.\n3. $A'(k) = -\\frac{36 - k}{8} + \\frac{k}{2\\pi} = 0 \\Rightarrow 8k = 2\\pi(36 - k) \\Rightarrow k = \\frac{36\\pi}{\\pi + 4}$.\n4. $\\left(\\frac{4}{\\pi} + 1\\right)k = \\frac{4 + \\pi}{\\pi}\\cdot\\frac{36\\pi}{\\pi + 4} = 36$.\nKey takeaway: at the minimum, the square's side equals the circle's diameter — a classic result.\nAnswer: 36",
+   "explanation": "Concept: Express the total area as a function of the circle's circumference k and minimise.\nSolution:\n1. Circle: circumference k → radius $\\frac{k}{2\\pi}$ → area $\\frac{k^2}{4\\pi}$.\n2. Square: perimeter 36 − k → side $\\frac{36 - k}{4}$ → area $\\frac{(36 - k)^2}{16}$.\n3. $A'(k) = -\\frac{36 - k}{8} + \\frac{k}{2\\pi} = 0 \\Rightarrow 8k = 2\\pi(36 - k) \\Rightarrow k = \\frac{36\\pi}{\\pi + 4}$.\n4. $\\left(\\frac{4}{\\pi} + 1\\right)k = \\frac{4 + \\pi}{\\pi}\\cdot\\frac{36\\pi}{\\pi + 4} = 36$.\nFinal step: (4/π + 1)k = ((4 + π)/π) × 36π/(π + 4) = 36.\nGeometric fact: At the minimum, the circle's diameter equals the square's side (k/π = (36 − k)/4), a classic result.\nKey takeaway: at the minimum, the square's side equals the circle's diameter — a classic result.\nAnswer: 36",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_MAT_B05",
@@ -3150,7 +3150,7 @@
     25
    ],
    "diagram_boxes": [],
-   "explanation": "Concept: For continuity at 0, LHL = RHL = f(0). Use $\\tan u - \\sin u = \\tan u(1 - \\cos u) \\approx u\\cdot\\frac{u^2}{2} = \\frac{u^3}{2}$.\nSolution:\n1. RHL: u = 2x: $\\frac{(2x)^3/2}{bx^3} = \\frac{4}{b}$.\n2. LHL = f(0) $= a\\sin\\left(-\\frac{\\pi}{2}\\right) = -a$.\n3. $-a = \\frac{4}{b} \\Rightarrow ab = -4$.\n4. 10 − ab = 14.\nKey takeaway: tan u − sin u is third-order small, so it must be divided by x³ for a finite limit.\nAnswer: 14",
+   "explanation": "Concept: For continuity at 0, LHL = RHL = f(0). Use $\\tan u - \\sin u = \\tan u(1 - \\cos u) \\approx u\\cdot\\frac{u^2}{2} = \\frac{u^3}{2}$.\nSolution:\n1. RHL: u = 2x: $\\frac{(2x)^3/2}{bx^3} = \\frac{4}{b}$.\n2. LHL = f(0) $= a\\sin\\left(-\\frac{\\pi}{2}\\right) = -a$.\n3. $-a = \\frac{4}{b} \\Rightarrow ab = -4$.\n4. 10 − ab = 14.\nWhy the left side gives −a: sin(π/2 (0 − 1)) = sin(−π/2) = −1, so f(0) = −a.\nCommon mistake: Using tan u − sin u ≈ u³/6, which gives 8/(6b) and a different ab.\nKey takeaway: tan u − sin u is third-order small, so it must be divided by x³ for a finite limit.\nAnswer: 14",
    "answer_source": "printed with question",
    "model_confidence": "high",
    "q_id": "JEEM_2021-08-26_M_MAT_B10",
