@@ -1,189 +1,320 @@
 M A 1: |-
-  Concept: An implication is false only when a true premise leads to a false conclusion.
+  Concept: An implication X ⇒ Y is false only when X is true and Y is false. For a tautology, every case where the premise is true must make the conclusion true.
   Solution:
-  1. With * = ∧: whenever p ∧ ∼q is true, p is true, so p ∨ q is true. The statement is a tautology when □ = ∨.
-  2. Other choices fail. For example, with * = ∨ and p = F, q = F, the premise p ∨ ∼q is T but p ∨ q is F.
+  1. Take * = ∧: the premise p ∧ ∼q is true only when p = T, q = F. Then p ∨ q = T, so with □ = ∨ the implication is always true — a tautology ✓.
+  2. Check the others:
+     - (A) * = ∨, □ = ∨: p = F, q = F → premise p ∨ ∼q = T, conclusion p ∨ q = F → false.
+     - (B) * = ∧, □ = ∧: p = T, q = F → premise T, conclusion p ∧ q = F → false.
+     - (D) * = ∨, □ = ∧: p = F, q = F → premise T, conclusion F → false.
+  Key takeaway: to test for a tautology, look for one falsifying assignment; if none exists, it is a tautology.
   Answer: (C)
 M A 2: |-
-  Concept: Put t = eˣ > 0 and count the positive roots.
+  Concept: Put t = eˣ > 0; the number of real x equals the number of positive roots t. Use the behaviour of g(t) and its derivative.
   Solution:
-  1. g(t) = t⁴ + 2t³ − t − 6, with g(0) = −6, g(1) = −4 and g(2) = 24.
-  2. g′(t) = 4t³ + 6t² − 1 has only one positive zero, so g dips once and then rises.
-  3. There is exactly one positive root, so the equation has 1 real root.
+  1. g(t) = t⁴ + 2t³ − t − 6.
+  2. g(0) = −6, g(1) = −4, g(2) = 16 + 16 − 2 − 6 = 24.
+  3. g′(t) = 4t³ + 6t² − 1 is increasing for t > 0 (its derivative 12t² + 12t > 0) and starts at −1, so it has exactly one positive zero: g first decreases, then increases.
+  4. Since g(0) < 0, g crosses zero exactly once for t > 0 (between 1 and 2).
+  5. So the equation has exactly 1 real root.
+  Why others are wrong:
+  - (A) 2 and (B) 4 count negative or complex roots of the polynomial, which give no real x.
+  - (D) 0 ignores the sign change between t = 1 and t = 2.
+  Key takeaway: Descartes' rule (signs +, +, −, −: one change) also confirms exactly one positive root.
   Answer: (C)
 M A 3: |-
-  Concept: Telescoping: $\frac{2n + 1}{n^2(n + 1)^2} = \frac{1}{n^2} - \frac{1}{(n + 1)^2}$.
+  Concept: The nth term $\frac{2n + 1}{n^2(n + 1)^2}$ telescopes, since $(n + 1)^2 - n^2 = 2n + 1$.
   Solution:
-  1. $S_{10} = 1 - \frac{1}{121} = \frac{120}{121}$.
+  1. $\frac{2n + 1}{n^2(n + 1)^2} = \frac{(n + 1)^2 - n^2}{n^2(n + 1)^2} = \frac{1}{n^2} - \frac{1}{(n + 1)^2}$.
+  2. Sum of 10 terms: $1 - \frac{1}{11^2} = 1 - \frac{1}{121} = \frac{120}{121}$.
+  Why others are wrong:
+  - (A) 1 is the infinite sum.
+  - (C) $\frac{99}{100}$ stops at n = 9 (1 − 1/10²).
+  - (D) $\frac{143}{144}$ goes to n = 11.
+  Key takeaway: when the numerator equals the difference of the denominator's factors, expect telescoping.
   Answer: (B)
 M A 4: |-
-  Concept: $P_1 + \lambda P_2 = 0$ through the given point.
+  Concept: Any plane containing the line of intersection is $P_1 + \lambda P_2 = 0$; fix λ with the given point.
   Solution:
-  1. At (1, 4, −3): −24 + 36λ = 0, so λ = 2/3.
-  2. 3P₁ + 2P₂: 11x + 4y + 8z − 3 = 0, or equivalently −11x − 4y − 8z + 3 = 0.
-  3. α + β + γ = −23.
+  1. At (1, 4, −3): P₁ = 3 − 8 − 12 − 7 = −24; P₂ = 1 + 20 + 6 + 9 = 36.
+  2. −24 + 36λ = 0 ⇒ λ = $\frac{2}{3}$.
+  3. Multiply by 3: 3P₁ + 2P₂ = 11x + 4y + 8z − 3 = 0.
+  4. To match the form αx + βy + γz + 3 = 0, multiply by −1: −11x − 4y − 8z + 3 = 0.
+  5. α + β + γ = −23.
+  Why others are wrong:
+  - (C) 23 keeps the wrong sign of the constant.
+  - (B) and (D) come from arithmetic slips in λ.
+  Key takeaway: match the given constant term before reading off coefficients.
   Answer: (A)
 M A 5: |-
-  Concept: Differentiate the integral equation.
+  Concept: Differentiate both sides of the integral identity (fundamental theorem of calculus), solve the resulting differential equation, then evaluate the limit.
   Solution:
-  1. $\sqrt{1 - f'^2} = f$, so $f' = \sqrt{1 - f^2}$ (with f ≥ 0 and f(0) = 0), which gives f = sin x.
-  2. $\frac{1}{x^2}\int_0^x\sin t\,dt = \frac{1 - \cos x}{x^2} \to \frac{1}{2}$.
+  1. $\sqrt{1 - f'(x)^2} = f(x)$ ⇒ $f'^2 = 1 - f^2$.
+  2. With f ≥ 0 and f(0) = 0 (f increasing from 0): $f' = \sqrt{1 - f^2}$ ⇒ $\sin^{-1}f = x$ ⇒ f(x) = sin x.
+  3. $\frac{1}{x^2}\int_0^x\sin t\,dt = \frac{1 - \cos x}{x^2} \to \frac{1}{2}$.
+  Why others are wrong:
+  - (A) 0 and (B) 1 misjudge the order of 1 − cos x (which is x²/2).
+  - (C) The limit exists and is finite.
+  Key takeaway: alternatively, by L'Hôpital: $\lim\frac{f(x)}{2x} = \frac{f'(0)}{2} = \frac{1}{2}$.
   Answer: (D)
 M A 6: |-
-  Concept: Square both magnitudes; |a| = 8 and a·b = 4|b|.
+  Concept: Square the magnitudes and use $\vec a\cdot\vec b = |\vec a||\vec b|\cos60°$. Since $\frac{1}{8}\vec a$ is a unit vector, |a| = 8.
   Solution:
-  1. 256 + 48|b| + 9|b|² = 576 + 24|b| + |b|².
-  2. So 8|b|² + 24|b| − 320 = 0, that is, |b|² + 3|b| − 40 = 0, giving |b| = 5.
+  1. $\vec a\cdot\vec b = 8|\vec b|\times\frac{1}{2} = 4|\vec b|$.
+  2. $|2\vec a + 3\vec b|^2 = 4(64) + 12(4|\vec b|) + 9|\vec b|^2 = 256 + 48|\vec b| + 9|\vec b|^2$.
+  3. $|3\vec a + \vec b|^2 = 9(64) + 6(4|\vec b|) + |\vec b|^2 = 576 + 24|\vec b| + |\vec b|^2$.
+  4. Equate: $8|\vec b|^2 + 24|\vec b| - 320 = 0 \Rightarrow |\vec b|^2 + 3|\vec b| - 40 = 0 \Rightarrow |\vec b| = 5$.
+  Why others are wrong:
+  - (A) 4, (B) 6, (D) 8 do not satisfy the quadratic.
   Answer: (C)
 M A 7: |-
-  Concept: |g(x)| is non-differentiable at simple roots of g; the exponential factor is smooth.
+  Concept: |g(x)| is non-differentiable at simple zeros of g (where g changes sign). Multiplying by a smooth, non-zero function does not remove these corners.
   Solution:
-  1. |9x² − 12x + 4| = (3x − 2)², so $e^{(3x - 2)^2}$ is smooth and positive.
-  2. |(x − 3)(x + 1)| has corners at x = 3 and x = −1, so there are 2 points.
+  1. |9x² − 12x + 4| = |(3x − 2)²| = (3x − 2)² — smooth, so $e^{(3x - 2)^2}$ is differentiable and positive.
+  2. |x² − 2x − 3| = |(x − 3)(x + 1)| has corners at x = 3 and x = −1.
+  3. So f is not differentiable at exactly 2 points.
+  Why others are wrong:
+  - (B) counts x = ⅔, where the inner quadratic has a double root (no corner, since it is a perfect square).
+  - (A) and (D) miscount.
+  Key takeaway: a double root inside an absolute value does not create a corner.
   Answer: (C)
 M A 8: |-
-  Concept: GP a, ar, ar²; then a, 2ar, ar² form an AP.
+  Concept: Take the GP as a, ar, ar². After doubling the middle term, a, 2ar, ar² are in AP, so 2(2ar) = a + ar².
   Solution:
-  1. 4ar = a + ar², so r² − 4r + 1 = 0 and r = 2 + √3 (increasing).
-  2. ar³ = 3r², so a = 3/r and $d = a(2r - 1) = 6 - \frac{3}{r} = 6 - 3(2 - \sqrt3) = 3\sqrt3$.
-  3. r² − d = 7 + 4√3 − 3√3 = 7 + √3.
+  1. 4r = 1 + r² ⇒ r² − 4r + 1 = 0 ⇒ r = 2 ± √3; increasing GP ⇒ r = 2 + √3 (with a > 0).
+  2. Fourth term: ar³ = 3r² ⇒ a = $\frac{3}{r}$ = 3(2 − √3).
+  3. d = 2ar − a = a(2r − 1) = 6 − $\frac{3}{r}$ = 6 − 3(2 − √3) = 3√3.
+  4. r² = (2 + √3)² = 7 + 4√3.
+  5. r² − d = 7 + 4√3 − 3√3 = 7 + √3.
+  Why others are wrong:
+  - (A), (C), (D) arise from choosing r = 2 − √3 or sign slips.
+  Key takeaway: $\frac{1}{2 + \sqrt3} = 2 - \sqrt3$ simplifies the arithmetic.
   Answer: (B)
 M A 9: |-
-  Concept: Test the properties directly.
+  Concept: Test reflexive, symmetric and transitive properties directly, using counter-examples where they fail.
   Solution:
-  1. For 0 < |x − y| ≤ 1: (0, 1) and (1, 2) are in R, but (0, 2) is not (|0 − 2| = 2). So R is not transitive, and statement (B) is false.
-  2. The other statements are correct.
+  1. (B) R: 0 < |x − y| ≤ 1. Symmetric ✓ (|x − y| = |y − x|). Transitive? (0, 1) ∈ R and (1, 2) ∈ R, but (0, 2): |0 − 2| = 2 > 1 ∉ R. Not transitive → statement (B) is NOT correct.
+  Why others are correct statements:
+  - (A) 0 < |x| − |y| ≤ 1: not symmetric (if |x| − |y| > 0 then |y| − |x| < 0); not transitive (e.g. (2, 1.2), (1.2, 0.5) ∈ R but 2 − 0.5 = 1.5 > 1).
+  - (C) |x| − |y| ≤ 1: reflexive (0 ≤ 1) but not symmetric (x = 0, y = 5).
+  - (D) |x − y| ≤ 1: reflexive and symmetric (not transitive, but that is not claimed).
+  Key takeaway: "closeness" relations like |x − y| ≤ 1 are almost never transitive.
   Answer: (B)
 M A 10: |-
-  Concept: Substitute $t = \frac{x - 1}{x + 2}$, so $dt = \frac{3\,dx}{(x + 2)^2}$.
+  Concept: For integrands of the form $(x - a)^m(x - b)^n$ with m + n = −2, substitute $t = \frac{x - a}{x - b}$.
   Solution:
-  1. The integrand is $t^{-3/4}(x + 2)^{-2}$, so $I = \frac{1}{3}\int t^{-3/4}dt = \frac{4}{3}t^{1/4} + C$.
+  1. $\frac{1}{(x - 1)^{3/4}(x + 2)^{5/4}} = \left(\frac{x - 1}{x + 2}\right)^{-3/4}\cdot\frac{1}{(x + 2)^2}$.
+  2. $t = \frac{x - 1}{x + 2}$ ⇒ $dt = \frac{3}{(x + 2)^2}dx$.
+  3. $I = \frac{1}{3}\int t^{-3/4}dt = \frac{1}{3}\cdot4t^{1/4} + C = \frac{4}{3}\left(\frac{x - 1}{x + 2}\right)^{1/4} + C$.
+  Why others are wrong:
+  - (A) and (B) invert the fraction and use ¾.
+  - (D) has the wrong power.
+  Key takeaway: the condition "exponents sum to −2" signals this substitution.
   Answer: (C)
 M A 11: |-
-  Concept: Distance from the origin to ax + by = c is $\frac{|c|}{\sqrt{a^2 + b^2}}$.
+  Concept: Distance from the origin to ax + by = c is $\frac{|c|}{\sqrt{a^2 + b^2}}$. Normalise each line.
   Solution:
-  1. Line 1 × sin α cos α gives x cos α − y sin α = ½k cos 2α, so p = ½|k cos 2α|.
-  2. Line 2 gives q = |k sin 2α|.
-  3. 4p² + q² = k².
+  1. Line 1 × sin α cos α: x cos α − y sin α = k cot 2α · sin α cos α = $\frac{k}{2}\cos2\alpha$. Normal is a unit vector, so p = $\frac{|k\cos2\alpha|}{2}$.
+  2. Line 2: x sin α + y cos α = k sin 2α, already normalised: q = |k sin 2α|.
+  3. 4p² + q² = k²cos²2α + k²sin²2α = k².
+  Why others are wrong:
+  - (B), (C), (D) use wrong coefficients that don't eliminate α.
+  Key takeaway: combine p and q so that sin² + cos² = 1 removes the parameter.
   Answer: (A)
 M A 12: |-
-  Concept: $\sin18° = \frac{\sqrt5 - 1}{4}$.
+  Concept: $\sin18° = \frac{\sqrt5 - 1}{4}$, so cosec 18° = $\frac{4}{\sqrt5 - 1} = \sqrt5 + 1$.
   Solution:
-  1. cosec 18° = √5 + 1.
-  2. (1 + √5)² − 2(1 + √5) − 4 = 6 + 2√5 − 2 − 2√5 − 4 = 0.
+  1. x = 1 + √5 ⇒ x − 1 = √5 ⇒ (x − 1)² = 5 ⇒ x² − 2x − 4 = 0.
+  2. So cosec 18° is a root of x² − 2x − 4 = 0.
+  Why others are wrong:
+  - (A) x² + 2x − 4 = 0 has roots −1 ± √5 (sign flipped).
+  - (B) has roots related to sin 18° ... actually $\frac{-1 \pm\sqrt5}{4}$ (sin 18° is a root of B, not cosec 18°).
+  - (C) has no real roots.
+  Key takeaway: sin 18° satisfies 4x² + 2x − 1 = 0, and its reciprocal satisfies x² − 2x − 4 = 0.
   Answer: (D)
 M A 13: |-
-  Concept: No solution needs D = 0 and an inconsistent system.
+  Concept: No solution requires D = 0 together with inconsistency.
   Solution:
-  1. D = 1 − 3a = 0, so a = 1/3.
-  2. eq3 = ⅔ eq1 − ⅓ eq2 on the left side, and the right side would be 10/3 − 1 = 7/3.
-  3. No solution when b ≠ 7/3.
+  1. D = $\begin{vmatrix}2&1&1\\1&-1&1\\1&1&a\end{vmatrix} = 2(-a - 1) - (a - 1) + 2 = 1 - 3a$ ⇒ a = $\frac{1}{3}$.
+  2. Express row 3 as p·row 1 + q·row 2: 2p + q = 1, p − q = 1 ⇒ p = $\frac{2}{3}$, q = $-\frac{1}{3}$; z-coefficient: p + q = $\frac{1}{3}$ = a ✓.
+  3. Consistency would need b = $\frac{2}{3}(5) - \frac{1}{3}(3) = \frac{7}{3}$.
+  4. No solution: a = $\frac{1}{3}$, b ≠ $\frac{7}{3}$.
+  Why others are wrong:
+  - (A) has a = −⅓.
+  - (B) and (C) give a ≠ ⅓ (unique solution).
   Answer: (D)
 M A 14: |-
-  Concept: Latus rectum = 4 × (vertex-to-focus distance).
+  Concept: For a parabola, the latus rectum length is 4a, where a is the distance from the vertex to the focus.
   Solution:
-  1. The vertex-to-focus distance is S − R, so the latus rectum is 4(S − R).
+  1. Vertex at (R, 0), focus at (S, 0) with S > R ⇒ a = S − R.
+  2. Latus rectum = 4(S − R).
+  Why others are wrong:
+  - (A) and (D) use S + R.
+  - (B) 2(S − R) is half the latus rectum.
+  Setup: With the axis along the x-axis and the parabola opening towards +x, its equation is y² = 4(S − R)(x − R). The latus rectum is the focal chord perpendicular to the axis, of length 4a.
+  Common mistake: Using the distance of the focus from the origin (S) as a; a is measured from the vertex, not the origin.
+  Key takeaway: the latus rectum depends only on the vertex–focus distance, not on the position of the parabola.
   Answer: (C)
 M A 15: |-
-  Concept: Match the left limit, the right limit and k.
+  Concept: Continuity at 0 requires LHL = RHL = f(0) = k.
   Solution:
-  1. x → 0⁻: $\frac{1}{x}\left[\ln\left(1 + \frac{x}{a}\right) - \ln\left(1 - \frac{x}{b}\right)\right] \to \frac{1}{a} + \frac{1}{b}$.
-  2. x → 0⁺: $\frac{\cos2x - 1}{\sqrt{x^2 + 1} - 1} \approx \frac{-2x^2}{x^2/2} = -4$.
-  3. k = −4 and 1/a + 1/b = −4, so the sum is −4 − 1 = −5.
+  1. Left: $\frac{1}{x}\left[\ln\left(1 + \frac{x}{a}\right) - \ln\left(1 - \frac{x}{b}\right)\right] \to \frac{1}{a} + \frac{1}{b}$ (using ln(1 + u) ≈ u).
+  2. Right: numerator cos²x − sin²x − 1 = cos 2x − 1 ≈ −2x²; denominator $\sqrt{x^2 + 1} - 1 \approx \frac{x^2}{2}$ ⇒ limit −4.
+  3. So k = −4 and $\frac{1}{a} + \frac{1}{b} = -4$.
+  4. $\frac{1}{a} + \frac{1}{b} + \frac{4}{k} = -4 + (-1) = -5$.
+  Why others are wrong:
+  - (B) and (D) have sign errors; (C) omits the 4/k term.
+  Standard limits used: ln(1 + u)/u → 1 as u → 0, (1 − cos 2x)/x² → 2, and (√(1 + x²) − 1)/x² → ½.
+  Common mistake: Writing the left limit as 1/a − 1/b; the minus sign inside ln(1 − x/b) makes the second term positive after subtraction.
   Answer: (A)
 M A 16: |-
-  Concept: Separate the variables.
+  Concept: Factor the right side and separate variables.
   Solution:
-  1. $\frac{2^y\,dy}{2^y - 1} = 2^x\,dx$, so $\ln(2^y - 1) = 2^x + C$.
-  2. y(0) = 1 gives 0 = 1 + C, so C = −1.
-  3. At x = 1: $\ln(2^y - 1) = 1$, so $2^y = 1 + e$ and $y = \log_2(1 + e)$.
+  1. $\frac{dy}{dx} = \frac{2^x(2^y - 1)}{2^y}$ ⇒ $\frac{2^y}{2^y - 1}dy = 2^x\,dx$.
+  2. Integrate: $\frac{\ln(2^y - 1)}{\ln2} = \frac{2^x}{\ln2} + C'$ ⇒ $\ln(2^y - 1) = 2^x + C$.
+  3. y(0) = 1: ln 1 = 1 + C ⇒ C = −1.
+  4. At x = 1: ln(2^y − 1) = 2 − 1 = 1 ⇒ 2^y = 1 + e ⇒ y = log₂(1 + e).
+  Why others are wrong:
+  - (A), (C), (D) come from errors in C or in the integration of 2^x.
+  Integration detail: With u = 2^y − 1, du = 2^y ln 2 dy, so ∫ 2^y/(2^y − 1) dy = ln(2^y − 1)/ln 2. Likewise ∫ 2^x dx = 2^x/ln 2, and the two ln 2 factors cancel.
+  Check: At x = 0, 2^y − 1 = e^{1 − 1} = 1, so y = 1 ✓.
   Answer: (B)
 M A 17: |-
-  Concept: sin(π cos⁴x) = sin(π(1 − cos⁴x)), and 1 − cos⁴x ≈ 2x².
+  Concept: Use sin(π − θ) = sin θ to turn the argument into a small angle: sin(π cos⁴x) = sin(π(1 − cos⁴x)).
   Solution:
-  1. sin²(π cos⁴x) ≈ π²(2x²)² = 4π²x⁴.
-  2. The limit is 4π².
+  1. 1 − cos⁴x = (1 − cos²x)(1 + cos²x) = sin²x(1 + cos²x) ≈ 2x².
+  2. sin(π(1 − cos⁴x)) ≈ π·2x².
+  3. sin²(...) ≈ 4π²x⁴ ⇒ limit = 4π².
+  Why others are wrong:
+  - (A) π² and (B) 2π² use 1 − cos⁴x ≈ x² or forget to square.
+  - (D) 4π is not squared.
+  Why the shift is needed: As x → 0, cos⁴x → 1, so π cos⁴x → π and sin(π cos⁴x) → 0, but not through small arguments. Rewriting sin(π − θ) = sin θ turns it into a small angle where sin θ ≈ θ applies.
+  Common mistake: Replacing sin(π cos⁴x) by π cos⁴x directly, which is invalid because the argument is not small.
   Answer: (C)
 M A 18: |-
-  Concept: The lower part subtends α and the whole pole subtends 2α.
+  Concept: The lower part (0.3h) subtends angle α; the upper part (0.7h) also subtends α, so the whole pole subtends 2α at the point 18 m away.
   Solution:
-  1. $\tan\alpha = \frac{0.3h}{18} = \frac{h}{60}$ and $\tan2\alpha = \frac{h}{18}$.
-  2. $\frac{2h/60}{1 - h^2/3600} = \frac{h}{18}$, so $1 - \frac{h^2}{3600} = 0.6$ and h² = 1440.
-  3. h = 12√10 m.
+  1. tan α = $\frac{0.3h}{18} = \frac{h}{60}$; tan 2α = $\frac{h}{18}$.
+  2. $\frac{2(h/60)}{1 - h^2/3600} = \frac{h}{18}$ ⇒ $\frac{1}{30} = \frac{1}{18}\left(1 - \frac{h^2}{3600}\right)$ ⇒ $1 - \frac{h^2}{3600} = 0.6$.
+  3. h² = 1440 ⇒ h = 12√10 m (≈ 37.9 m).
+  Why others are wrong:
+  - (A), (C), (D) give h² = 2160, 640, 360, which don't satisfy the angle condition.
+  Double-angle step: tan 2α = 2tan α/(1 − tan²α). With tan α = h/60, 2 tan α = h/30.
+  Check: h = 12√10 ≈ 37.95 m, so tan α ≈ 0.632 and tan 2α ≈ 2.108 = h/18 ✓.
   Answer: (B)
 M A 19: |-
-  Concept: $a_r = \omega^r$ with $\omega = e^{2\pi i/9}$, so row 2 = ω³ × row 1 and the determinant is 0.
+  Concept: $a_r = \omega^r$ where $\omega = e^{2\pi i/9}$. Each row is a geometric progression, and rows are multiples of each other.
   Solution:
-  1. The determinant is 0.
-  2. Among the options, a₁a₉ − a₃a₇ = ω¹⁰ − ω¹⁰ = 0.
+  1. Row 2 = (ω⁴, ω⁵, ω⁶) = ω³·(ω, ω², ω³) = ω³ × Row 1.
+  2. Proportional rows ⇒ determinant = 0.
+  3. Among the options, a₁a₉ − a₃a₇ = ω¹⁰ − ω¹⁰ = 0 ✓.
+  Why others are wrong:
+  - (A) a₂a₆ − a₄a₈ = ω⁸ − ω¹² ≠ 0.
+  - (B) a₉ = ω⁹ = 1 ≠ 0; (D) a₅ ≠ 0.
+  Why rows are proportional: a_r = ω^r, so each row (ω^{3k+1}, ω^{3k+2}, ω^{3k+3}) equals ω^{3k} times the first row. Any matrix with proportional rows has zero determinant.
+  Common mistake: Picking (B) because a₉ = ω⁹ = 1 looks "nice"; the determinant is 0, not 1.
+  Key takeaway: proportional rows always give a zero determinant.
   Answer: (C)
 M A 20: |-
-  Concept: $\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$ is tangent to $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+  Concept: For the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$, the tangent at (a cos θ, b sin θ) is $\frac{x\cos\theta}{a} + \frac{y\sin\theta}{b} = 1$.
   Solution:
-  1. Dividing by 60: $\frac{x\cos\theta}{5} + \frac{y\sin\theta}{12} = 1$, so a = 5 and b = 12.
-  2. The curve is x²/25 + y²/144 = 1, that is, 144x² + 25y² = 3600.
+  1. Divide the line by 60: $\frac{x\cos\theta}{5} + \frac{y\sin\theta}{12} = 1$ ⇒ a = 5, b = 12.
+  2. Ellipse: $\frac{x^2}{25} + \frac{y^2}{144} = 1$ ⇒ 144x² + 25y² = 3600.
+  Why others are wrong:
+  - (A) and (D) are circles; the line is not tangent to them for all θ.
+  - (C) swaps the coefficients.
+  Check with a point: At θ = 0 the line is 12x = 60, that is, x = 5, which touches the ellipse at its vertex (5, 0) ✓. At θ = π/2 it is y = 12, touching at (0, 12) ✓.
+  Common mistake: Matching coefficients directly to x²/144 + y²/25 = 1 (swapping a and b), which gives option (C).
   Answer: (B)
 M B 1: |-
-  Concept: Split at the points where [2x] jumps.
+  Concept: Split the interval where [2x] changes value (at x = 0 and x = ½) and integrate |x| separately.
   Solution:
-  1. ∫[2x]dx: over [−½, 0) the value is −1, giving −½; over [0, ½) it is 0; over [½, 1) it is 1, giving ½. Total 0.
-  2. ∫|x|dx = 1/8 + 1/2 = 5/8.
-  3. 8 × 5/8 = 5.
+  1. [2x]: on [−½, 0), [2x] = −1 → contributes −½; on [0, ½), 0; on [½, 1), 1 → contributes ½. Total 0.
+  2. $\int_{-1/2}^1|x|\,dx = \frac{1}{8} + \frac{1}{2} = \frac{5}{8}$.
+  3. 8 × $\frac{5}{8}$ = 5.
+  Common mistake: Taking [2x] = 0 on the whole of [−½, 0); for x slightly negative, 2x ∈ [−1, 0), so [2x] = −1.
+  Check the |x| part: ∫_{−1/2}^{0}(−x)dx = 1/8 and ∫_0^1 x dx = 1/2, total 5/8.
   Answer: 5
 M B 2: |-
-  Concept: arg((z − 2)/(z + 2)) = π/4 is an arc of the circle through ±2 whose chord subtends π/4.
+  Concept: $\arg\frac{z - 2}{z + 2} = \frac{\pi}{4}$ is an arc of a circle through −2 and 2 on which the chord subtends $\frac{\pi}{4}$ (so $\frac{\pi}{2}$ at the centre).
   Solution:
-  1. The radius is $\frac{4}{2\sin45°} = 2\sqrt2$, with centre (0, 2).
-  2. The point P(9√2, 2) is 9√2 from the centre; the nearest arc point is (2√2, 2).
-  3. The minimum |z − P| is 7√2, so its square is 98.
+  1. Radius: chord 4 = 2r sin 45° ⇒ r = 2√2; centre on the y-axis at distance $\sqrt{r^2 - 4} = 2$: C = (0, 2) (upper arc).
+  2. Point P = (9√2, 2) is at distance 9√2 from C along the horizontal line y = 2.
+  3. Nearest point of the circle: (2√2, 2), which lies on the relevant (upper) arc.
+  4. Minimum distance = 9√2 − 2√2 = 7√2 ⇒ square = 98.
   Answer: 98
 M B 3: |-
-  Concept: Parametrise the line and substitute into the plane.
+  Concept: Parametrise the line, substitute into the plane to find the intersection, then compute the distance.
   Solution:
-  1. (1 + 2t, 2 + 3t, −1 + 6t) gives 7t − 1 = 6, so t = 1 and the point is (3, 5, 5).
-  2. Distance² from (−1, −1, 2) = 16 + 36 + 9 = 61.
+  1. Point: (1 + 2t, 2 + 3t, −1 + 6t).
+  2. Plane 2x − y + z = 6: 2 + 4t − 2 − 3t − 1 + 6t = 7t − 1 = 6 ⇒ t = 1.
+  3. Intersection: (3, 5, 5).
+  4. Distance² from (−1, −1, 2): 4² + 6² + 3² = 16 + 36 + 9 = 61.
+  Verification: (3, 5, 5) satisfies both the line ((3 − 1)/2 = (5 − 2)/3 = (5 + 1)/6 = 1) and the plane (6 − 5 + 5 = 6) ✓.
+  Common mistake: Computing the distance itself (√61) instead of its square, as the question asks.
   Answer: 61
 M B 4: |-
-  Concept: Increasing means f′ = 2x + a ≥ 0 on [1, 2]; decreasing means ≤ 0.
+  Concept: f′(x) = 2x + a. Increasing on [1, 2] needs f′ ≥ 0 throughout; decreasing needs f′ ≤ 0 throughout.
   Solution:
-  1. Increasing: a ≥ −2, so R = −2. Decreasing: a ≤ −4, so S = −4.
-  2. |R − S| = 2.
+  1. Increasing: min of 2x + a on [1, 2] is 2 + a ≥ 0 ⇒ a ≥ −2 ⇒ R = −2.
+  2. Decreasing: max of 2x + a is 4 + a ≤ 0 ⇒ a ≤ −4 ⇒ S = −4.
+  3. |R − S| = 2.
+  Why check the endpoints: f′(x) = 2x + a increases with x, so its minimum on [1, 2] is at x = 1 and its maximum at x = 2. The whole of f′ must stay on one side of zero.
+  Common mistake: Using only the vertex condition (−a/2 ≤ 1) without checking the full interval.
   Answer: 2
 M B 5: |-
-  Concept: The r-th term is (3r + 4)(2r + 6) = 6r² + 26r + 24.
+  Concept: The rth factors form APs: 7, 10, 13, … = 3r + 4 and 8, 10, 12, … = 2r + 6. Expand the product and use standard sums.
   Solution:
-  1. Sum over r = 1 to 10: 6(385) + 26(55) + 240 = 3980.
-  2. Mean = 398.
+  1. rth term = (3r + 4)(2r + 6) = 6r² + 26r + 24.
+  2. Sum for r = 1 to 10: 6(385) + 26(55) + 24(10) = 2310 + 1430 + 240 = 3980.
+  3. Mean = $\frac{3980}{10} = 398$.
+  Sums used: Σr² (1 to 10) = 10·11·21/6 = 385 and Σr = 55.
+  Common mistake: Multiplying the mean of the first factors (20.5) by the mean of the second (17), giving 348.5; the mean of a product is not the product of the means.
   Answer: 398
 M B 6: |-
-  Concept: The line separates the circles and is at least a radius from each centre.
+  Concept: A line lies between two circles without cutting them if it separates their centres and is at least a radius away from each.
   Solution:
-  1. Distance from (1, 1): |7 − α|/5 ≥ 1. Distance from (9, 1): |31 − α|/5 ≥ 2. For the line to lie between them, 7 < α < 31.
-  2. So 12 ≤ α ≤ 21, and the integers sum to 165.
+  1. At centre (1, 1): 3 + 4 = 7; at (9, 1): 27 + 4 = 31. The line separates them if 7 < α < 31.
+  2. Distance from (1, 1) ≥ 1: $\frac{|\alpha - 7|}{5} \ge 1$ ⇒ α ≥ 12.
+  3. Distance from (9, 1) ≥ 2: $\frac{|31 - \alpha|}{5} \ge 2$ ⇒ α ≤ 21.
+  4. Integers 12 to 21: sum = $\frac{10(12 + 21)}{2} = 165$.
+  Why α must lie between 7 and 31: The values 3x + 4y at the two centres are 7 and 31; the line 3x + 4y = α separates them only if α is strictly between these values.
+  Common mistake: Allowing α outside (7, 31), where the line is not between the circles.
   Answer: 165
 M B 7: |-
-  Concept: Total arrangements minus those with all consonants together.
+  Concept: "Consonants never all together" = total arrangements − arrangements with all consonants in one block.
   Solution:
-  1. Total = 6! = 720. With V, W, L, S as one block: 3! × 4! = 144.
-  2. 720 − 144 = 576.
+  1. VOWELS: 6 distinct letters; vowels O, E; consonants V, W, L, S.
+  2. Total: 6! = 720.
+  3. All four consonants together: treat them as one block → 3 units (block, O, E): 3! × 4! = 144.
+  4. Required: 720 − 144 = 576.
+  Interpretation: "All the consonants never come together" means we exclude only the arrangements in which all four consonants form one block. Arrangements with two or three consonants adjacent are allowed.
+  Common mistake: Reading it as "no two consonants adjacent"; with only 2 vowels there are 3 gaps for 4 consonants, so that would give 0 arrangements.
   Answer: 576
 M B 8: |-
-  Concept: Differentiate: φ + xφ′ = 3x² − 2φ′.
+  Concept: Differentiate the integral equation (Leibniz rule) and recognise a product derivative.
   Solution:
-  1. (x + 2)φ′ + φ = 3x², that is, ((x + 2)φ)′ = 3x², so (x + 2)φ = x³ + C.
-  2. φ(0) = 4 gives C = 8.
-  3. φ(2) = (8 + 8)/4 = 4.
+  1. d/dx: φ + xφ′ = 3x² − 2φ′ ⇒ (x + 2)φ′ + φ = 3x² ⇒ $\frac{d}{dx}[(x + 2)\varphi] = 3x^2$.
+  2. (x + 2)φ = x³ + C; φ(0) = 4 ⇒ 2(4) = C ⇒ C = 8.
+  3. φ(2) = $\frac{8 + 8}{4} = 4$.
+  Why the product rule: (x + 2)φ′ + φ is exactly d/dx[(x + 2)φ], because the derivative of (x + 2) is 1.
+  Common mistake: Forgetting the −2φ′(t) term's contribution when differentiating; the Leibniz rule gives 3x² − 2φ′(x).
   Answer: 4
 M B 9: |-
-  Concept: General term $\binom{12}{r}\left(\frac{x}{4}\right)^{12-r}\left(-\frac{12}{x^2}\right)^r$, with power of x = 12 − 3r.
+  Concept: General term $T_{r+1} = \binom{12}{r}\left(\frac{x}{4}\right)^{12 - r}\left(-\frac{12}{x^2}\right)^r$; power of x = 12 − 3r.
   Solution:
-  1. r = 4: the term is $\binom{12}{4}\frac{12^4}{4^8} = 495\cdot\frac{3^4}{4^4}$.
-  2. $k\cdot\frac{3^6}{4^4} = 495\cdot\frac{3^4}{4^4}$, so k = 495/9 = 55.
+  1. Independent of x: r = 4.
+  2. $T_5 = \binom{12}{4}\frac{12^4}{4^8} = 495\cdot\frac{3^4\cdot4^4}{4^8} = 495\cdot\frac{3^4}{4^4}$.
+  3. $k\cdot\frac{3^6}{4^4} = 495\cdot\frac{3^4}{4^4}$ ⇒ k = $\frac{495}{9} = 55$.
+  Sign check: T₅ has (−1)⁴ = +1, so the term is positive, consistent with k > 0.
+  Common mistake: Taking the power of x as 12 − 2r (forgetting that x² sits in the denominator), which gives r = 6 and a wrong coefficient.
   Answer: 55
 M B 10: |-
-  Concept: Bayes' theorem, conditioning on failure.
+  Concept: Bayes' theorem: P(A | F) = $\frac{P(A \cap F)}{P(F)}$, where F = "instrument fails".
   Solution:
-  1. P(fails) = 1 − 0.9 × 0.8 = 0.28.
-  2. P(only the first unit fails) = 0.1 × 0.8 = 0.08, so p = 0.08/0.28 = 2/7.
-  3. 98p = 28.
+  1. The instrument works only if both units work: P(works) = 0.9 × 0.8 = 0.72 ⇒ P(F) = 0.28.
+  2. Only the first unit fails (second works): 0.1 × 0.8 = 0.08 (this causes failure).
+  3. p = $\frac{0.08}{0.28} = \frac{2}{7}$.
+  4. 98p = 28.
+  Failure cases: (first fails, second works) 0.08; (first works, second fails) 0.9 × 0.2 = 0.18; (both fail) 0.1 × 0.2 = 0.02. Total 0.28 ✓.
+  Common mistake: Answering 0.08 (the unconditional probability) without dividing by P(failure).
   Answer: 28

@@ -1,209 +1,398 @@
 M A 1: |-
-  Concept: The direction of the line of intersection is $\vec n_1\times\vec n_2$; the foot of the perpendicular satisfies $(\vec P - \vec Q)\cdot\vec d = 0$.
+  Concept: The line of intersection of two planes is parallel to $\vec d = \vec n_1\times\vec n_2$. The foot P of the perpendicular from a point Q to a line is the point of the line where $\vec{QP}\cdot\vec d = 0$.
   Solution:
-  1. $\vec d = (1, 2, 1)\times(0, 1, 2) = (3, -2, 1)$.
-  2. Put $z = 0$: $y = 4$, $x = -2$. So L: $(-2 + 3s,\ 4 - 2s,\ s)$.
-  3. $[(-5 + 3s) \cdot 3 + (2 - 2s)(-2) + (s - 1)\cdot1] = 0 \Rightarrow 14s - 20 = 0 \Rightarrow s = \frac{10}{7}$.
-  4. $P = \left(\frac{16}{7}, \frac{8}{7}, \frac{10}{7}\right)$, so $21(\alpha + \beta + \gamma) = 21\cdot\frac{34}{7} = 102$.
+  1. Normals: $\vec n_1 = (1, 2, 1)$ and $\vec n_2 = (0, 1, 2)$.
+  2. $\vec d = \vec n_1\times\vec n_2 = (2\cdot2 - 1\cdot1,\ 1\cdot0 - 1\cdot2,\ 1\cdot1 - 2\cdot0) = (3, -2, 1)$.
+  3. A point on L: put $z = 0$. Then $y = 4$ from the second plane, and $x = 6 - 8 = -2$ from the first. So L is $(-2 + 3s,\ 4 - 2s,\ s)$.
+  4. With $Q = (3, 2, 1)$: $\vec{QP} = (-5 + 3s,\ 2 - 2s,\ s - 1)$.
+  5. $\vec{QP}\cdot\vec d = 3(-5 + 3s) - 2(2 - 2s) + (s - 1) = 14s - 20 = 0$, so $s = \frac{10}{7}$.
+  6. $P = \left(-2 + \frac{30}{7},\ 4 - \frac{20}{7},\ \frac{10}{7}\right) = \left(\frac{16}{7}, \frac{8}{7}, \frac{10}{7}\right)$.
+  7. Check: P satisfies both planes: $\frac{16 + 16 + 10}{7} = 6$ and $\frac{8 + 20}{7} = 4$.
+  8. $\alpha + \beta + \gamma = \frac{34}{7}$, so $21(\alpha + \beta + \gamma) = 3\times34 = 102$.
   Answer: (D)
 M A 2: |-
-  Concept: Write the numerator in powers of $(2n + 1)$ and use the series for $\sinh 1$ and $\cosh 1$.
+  Concept: For series with a factorial of an odd number in the denominator, rewrite the numerator in powers of $(2n + 1)$ so that each piece cancels with the factorial. Then use $\sinh1 = \sum\frac{1}{(2k+1)!}$ and $\cosh1 = \sum\frac{1}{(2k)!}$ (both from k = 0).
   Solution:
-  1. $4(n^2 + 6n + 10) = (2n+1)^2 + 10(2n+1) + 29$.
-  2. $\frac{(2n+1)^2}{(2n+1)!} = \frac{2n+1}{(2n)!} = \frac{1}{(2n-1)!} + \frac{1}{(2n)!}$, so the term is $\frac{1}{4}\left[\frac{1}{(2n-1)!} + \frac{11}{(2n)!} + \frac{29}{(2n+1)!}\right]$.
-  3. Summing over $n \ge 1$: $\sum\frac{1}{(2n-1)!} = \sinh1$, $\sum\frac{1}{(2n)!} = \cosh1 - 1$, $\sum\frac{1}{(2n+1)!} = \sinh1 - 1$.
-  4. $S = \frac{1}{4}[30\sinh1 + 11\cosh1 - 40] = \frac{1}{4}\left[\frac{41}{2}e - \frac{19}{2}e^{-1} - 40\right] = \frac{41}{8}e - \frac{19}{8}e^{-1} - 10$.
+  1. Multiply by 4: $4(n^2 + 6n + 10) = 4n^2 + 24n + 40 = (2n+1)^2 + 10(2n+1) + 29$.
+  2. $\frac{(2n+1)^2}{(2n+1)!} = \frac{2n+1}{(2n)!} = \frac{1}{(2n-1)!} + \frac{1}{(2n)!}$, and $\frac{10(2n+1)}{(2n+1)!} = \frac{10}{(2n)!}$.
+  3. So the general term is $\frac{1}{4}\left[\frac{1}{(2n-1)!} + \frac{11}{(2n)!} + \frac{29}{(2n+1)!}\right]$.
+  4. Sum over $n \ge 1$: $\sum\frac{1}{(2n-1)!} = \sinh1$; $\sum\frac{1}{(2n)!} = \cosh1 - 1$; $\sum\frac{1}{(2n+1)!} = \sinh1 - 1$.
+  5. $S = \frac{1}{4}[\sinh1 + 11\cosh1 - 11 + 29\sinh1 - 29] = \frac{1}{4}[30\sinh1 + 11\cosh1 - 40]$.
+  6. Using $\sinh1 = \frac{e - e^{-1}}{2}$ and $\cosh1 = \frac{e + e^{-1}}{2}$: $30\sinh1 + 11\cosh1 = \frac{41}{2}e - \frac{19}{2}e^{-1}$.
+  7. $S = \frac{41}{8}e - \frac{19}{8}e^{-1} - 10$.
+  Check: this is about 13.93 − 0.87 − 10 = 3.06, while the first terms are $\frac{17}{6} + \frac{26}{120} + \dots \approx 3.06$.
   Answer: (C)
 M A 3: |-
-  Concept: Add and subtract $af(a)$ to create the derivative quotient.
+  Concept: A limit of the form $\frac{0}{0}$ that contains $f(x) - f(a)$ can be turned into the derivative $f'(a) = \lim_{x\to a}\frac{f(x) - f(a)}{x - a}$ by adding and subtracting a suitable term.
   Solution:
-  1. $xf(a) - af(x) = f(a)(x - a) - a[f(x) - f(a)]$.
-  2. Limit $= f(a) - af'(a) = 4 - 2a$.
+  1. Numerator: $xf(a) - af(x)$. Add and subtract $af(a)$:
+     $xf(a) - af(a) + af(a) - af(x) = f(a)(x - a) - a[f(x) - f(a)]$.
+  2. Divide by $x - a$: $\frac{xf(a) - af(x)}{x - a} = f(a) - a\cdot\frac{f(x) - f(a)}{x - a}$.
+  3. Take the limit as $x \to a$. Since f is differentiable at a, the quotient tends to $f'(a)$.
+  4. Limit $= f(a) - af'(a) = 4 - 2a$.
+  Alternative (L'Hôpital): at $x = a$ the numerator is $af(a) - af(a) = 0$ and the denominator is 0. Differentiating with respect to x gives $\frac{f(a) - af'(x)}{1}$, which at $x = a$ is again $4 - 2a$. (L'Hôpital strictly needs f′ continuous near a, so the first method is cleaner when only differentiability at a is given.)
+  Why others are wrong:
+  - (A) and (B) have the terms with the wrong signs or roles, e.g. $af'(a) + f(a)$.
+  - (D) uses $a + f(a)$, dropping the factor $f'(a) = 2$.
   Answer: (C)
 M A 4: |-
-  Concept: $PA^2 + PB^2 = 2PM^2 + \frac{AB^2}{2}$, where M is the midpoint of AB (Apollonius).
+  Concept: For a fixed segment AB with midpoint M, Apollonius' theorem gives $PA^2 + PB^2 = 2PM^2 + \frac{AB^2}{2}$. So maximising $PA^2 + PB^2$ is the same as maximising the distance PM.
   Solution:
-  1. $M = \left(1, -\frac{1}{2}\right)$; maximise $PM$ for P on the circle with centre $(1, 1)$.
-  2. The farthest point lies on the line through M and the centre, i.e. $x = 1$: $P = (1, 2)$.
-  3. A, B and P all have $x = 1$, so they lie on a straight line.
+  1. $A = (1, 4)$ and $B = (1, -5)$, so $M = \left(1, -\frac{1}{2}\right)$ and $AB = 9$.
+  2. The circle $(x - 1)^2 + (y - 1)^2 = 1$ has centre $C = (1, 1)$ and radius 1.
+  3. For a point P on a circle, the distance to an external point M is greatest at the end of the diameter through M, on the far side of the centre from M. So P lies on the line MC.
+  4. MC is the vertical line $x = 1$. Moving from M upward through C by one more unit gives $P = (1, 2)$.
+  5. Maximum: $PM = \frac{5}{2}$, so $PA^2 + PB^2 = 2\cdot\frac{25}{4} + \frac{81}{2} = 53$. Check directly: $PA^2 = 4$, $PB^2 = 49$, total 53.
+  6. P, A and B all have x-coordinate 1, so they lie on the straight line $x = 1$.
+  Why others are wrong:
+  - Three points always lie on some parabola, ellipse or hyperbola, but here the special feature is that they are collinear, which is exactly what the question tests.
   Answer: (B)
 M A 5: |-
-  Concept: Parametrise the circle point as $(\cos\theta, \sin\theta)$.
+  Concept: For a locus, write a general point of the moving curve in parametric form, express the midpoint, then eliminate the parameter.
   Solution:
-  1. Midpoint: $h = \frac{3 + \cos\theta}{2}$, $k = \frac{2 + \sin\theta}{2}$.
-  2. $\left(h - \frac{3}{2}\right)^2 + (k - 1)^2 = \frac{1}{4}$, a circle of radius $\frac{1}{2}$.
+  1. A general point on $x^2 + y^2 = 1$ is $Q = (\cos\theta, \sin\theta)$.
+  2. The fixed point is $A = (3, 2)$. Let the midpoint of AQ be $(h, k)$:
+     $h = \frac{3 + \cos\theta}{2}$ and $k = \frac{2 + \sin\theta}{2}$.
+  3. So $\cos\theta = 2h - 3$ and $\sin\theta = 2k - 2$.
+  4. Eliminate θ using $\cos^2\theta + \sin^2\theta = 1$: $(2h - 3)^2 + (2k - 2)^2 = 1$.
+  5. Divide by 4: $\left(h - \frac{3}{2}\right)^2 + (k - 1)^2 = \frac{1}{4}$.
+  6. The locus is a circle with centre $\left(\frac{3}{2}, 1\right)$ and radius $r = \frac{1}{2}$.
+  Geometric view: the midpoint map is a homothety (scaling) with centre A and ratio $\frac{1}{2}$. It sends the circle of radius 1 and centre O to a circle of radius $\frac{1}{2}$, centred at the midpoint of AO, $\left(\frac{3}{2}, 1\right)$. This gives the result without any algebra.
+  Why others are wrong:
+  - (A) $\frac{1}{4}$ would come from squaring the ratio.
+  - (C) forgets to halve the radius.
+  - (D) uses the wrong ratio (a trisection point, not the midpoint).
   Answer: (B)
 M A 6: |-
-  Concept: Bernoulli equation $y' - \frac{y}{x} = y^2$; substitute $v = \frac{1}{y}$.
+  Concept: $\frac{dy}{dx} = \frac{xy^2 + y}{x} = y^2 + \frac{y}{x}$ is a Bernoulli equation. The substitution $v = \frac{1}{y}$ makes it linear.
   Solution:
-  1. $v' + \frac{v}{x} = -1 \Rightarrow (xv)' = -x \Rightarrow xv = -\frac{x^2}{2} + \frac{C}{2}$, i.e. $y = \frac{2x}{C - x^2}$.
-  2. At $x = -2$ on $x + 2y = 4$: $y = 3$. So $3 = \frac{-4}{C - 4} \Rightarrow C = \frac{8}{3}$.
-  3. At $x = 3$: $y = \frac{6}{8/3 - 9} = -\frac{18}{19}$.
+  1. Rewrite: $y' - \frac{y}{x} = y^2$. Divide by $y^2$: $\frac{y'}{y^2} - \frac{1}{xy} = 1$.
+  2. With $v = \frac{1}{y}$, $v' = -\frac{y'}{y^2}$, so $-v' - \frac{v}{x} = 1$, i.e. $v' + \frac{v}{x} = -1$.
+  3. Integrating factor x: $(xv)' = -x$, so $xv = -\frac{x^2}{2} + \frac{C}{2}$.
+  4. Then $\frac{x}{y} = \frac{C - x^2}{2}$, giving $y = \frac{2x}{C - x^2}$.
+  5. The curve meets $x + 2y = 4$ at $x = -2$, so the point is $(-2, 3)$.
+  6. $3 = \frac{-4}{C - 4}$, so $C - 4 = -\frac{4}{3}$ and $C = \frac{8}{3}$.
+  7. At $x = 3$: $y = \frac{6}{\frac{8}{3} - 9} = \frac{6}{-\frac{19}{3}} = -\frac{18}{19}$.
+  Quick alternative: $\frac{x\,dy - y\,dx}{y^2} = x\,dx$ is $-d\left(\frac{x}{y}\right) = d\left(\frac{x^2}{2}\right)$, which gives the same solution directly.
+  Why others are wrong: (A), (C) and (D) come from sign or constant slips, e.g. using $(2, 1)$ instead of $(-2, 3)$ as the known point.
   Answer: (B)
 M A 7: |-
-  Concept: The curves $\sin x$ and $\cos x$ meet at $x = \frac{\pi}{4}$.
+  Concept: Area between curves is $\int(\text{upper} - \text{lower})dx$. Split the region where the curves cross; $\sin x = \cos x$ at $x = \frac{\pi}{4}$ in the first quadrant.
   Solution:
-  1. $A_1 = \int_0^{\pi/4}(\cos x - \sin x)dx = \sqrt2 - 1$.
-  2. $A_2 = \int_0^{\pi/4}\sin x\,dx + \int_{\pi/4}^{\pi/2}\cos x\,dx = 2\left(1 - \frac{1}{\sqrt2}\right) = 2 - \sqrt2 = \sqrt2(\sqrt2 - 1)$.
-  3. $A_1 : A_2 = 1 : \sqrt2$ and $A_1 + A_2 = 1$.
+  1. $A_1$ is bounded by the y-axis, $y = \cos x$ (above) and $y = \sin x$ (below), for $0 \le x \le \frac{\pi}{4}$.
+     $A_1 = \int_0^{\pi/4}(\cos x - \sin x)dx = [\sin x + \cos x]_0^{\pi/4} = \sqrt2 - 1$.
+  2. $A_2$ is bounded by the x-axis, the two curves and $x = \frac{\pi}{2}$. Its upper boundary is the lower of the two curves: $\sin x$ on $\left[0, \frac{\pi}{4}\right]$ and $\cos x$ on $\left[\frac{\pi}{4}, \frac{\pi}{2}\right]$.
+     $A_2 = \int_0^{\pi/4}\sin x\,dx + \int_{\pi/4}^{\pi/2}\cos x\,dx = \left(1 - \frac{1}{\sqrt2}\right) + \left(1 - \frac{1}{\sqrt2}\right) = 2 - \sqrt2$.
+  3. Ratio: $\frac{A_1}{A_2} = \frac{\sqrt2 - 1}{\sqrt2(\sqrt2 - 1)} = \frac{1}{\sqrt2}$, so $A_1 : A_2 = 1 : \sqrt2$.
+  4. Sum: $A_1 + A_2 = \sqrt2 - 1 + 2 - \sqrt2 = 1$. (This is also the area under $\cos x$ from 0 to $\frac{\pi}{2}$, which the two regions together make up.)
+  Why others are wrong:
+  - (A) The areas are not equal, and their sum is 1, not $\sqrt2$.
+  - (B) The ratio is $1 : \sqrt2$, not $1 : 2$.
+  - (C) $2A_1 = 2\sqrt2 - 2 \ne A_2$.
   Answer: (D)
 M A 8: |-
-  Concept: $\ln(1 + a) = a - \frac{a^2}{2} + \frac{a^3}{3} - \dots$ for $|a| < 1$.
+  Concept: For $|x| < 1$, $\ln(1 + x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \dots$. The inverse-tangent condition gives a relation between a and b.
   Solution:
-  1. $\frac{a + b}{1 - ab} = 1 \Rightarrow a + b + ab = 1 \Rightarrow (1 + a)(1 + b) = 2$.
-  2. The series $= \ln(1 + a) + \ln(1 + b) = \ln 2$.
+  1. Since $0 < a, b < 1$, we have $ab < 1$, so $\tan^{-1}a + \tan^{-1}b = \tan^{-1}\frac{a + b}{1 - ab}$.
+  2. This equals $\frac{\pi}{4}$, so $\frac{a + b}{1 - ab} = 1$, i.e. $a + b + ab = 1$.
+  3. Add 1 to both sides: $1 + a + b + ab = 2$, i.e. $(1 + a)(1 + b) = 2$.
+  4. Split the series by a and b:
+     $\left(a - \frac{a^2}{2} + \frac{a^3}{3} - \dots\right) + \left(b - \frac{b^2}{2} + \frac{b^3}{3} - \dots\right) = \ln(1 + a) + \ln(1 + b)$.
+     Both series converge because $0 < a, b < 1$, so they can be added term by term.
+  5. The sum is $\ln[(1 + a)(1 + b)] = \ln2 = \log_e2$.
+  Example: $a = b = \sqrt2 - 1$ (so each angle is $\frac{\pi}{8}$) gives $(1 + a)^2 = (\sqrt2)^2 = 2$, which checks.
+  Why others are wrong:
+  - (B) $\log_e\frac{e}{2} = 1 - \ln2$ would need a different sign pattern.
+  - (C) and (D) come from confusing the log series with the exponential series.
   Answer: (A)
 M A 9: |-
-  Concept: A tautology is true for every truth assignment; look for a falsifying assignment.
+  Concept: A tautology is a statement that is true for every truth assignment. To disprove it, one falsifying assignment is enough. Use $p \to q \equiv \sim p \vee q$.
   Solution:
-  1. $F_2 = (A\vee B)\vee(\sim B\vee\sim A)$ contains $A\vee\sim A$, so it is a tautology.
-  2. For $F_1$ to be false: $\sim A$ false ($A = T$), $A\wedge\sim B$ false ($B = T$), and $\sim C\wedge(A\vee B)$ false ($C = T$).
-  3. $A = B = C = T$ makes $F_1$ false, so $F_1$ is not a tautology.
+  1. $F_2 = (A \vee B) \vee (B \to \sim A) = (A \vee B) \vee (\sim B \vee \sim A)$.
+  2. By associativity and commutativity this contains $A \vee \sim A$, which is always true. So $F_2$ is a tautology.
+  3. $F_1$ is a disjunction of three parts: $(A \wedge \sim B)$, $[\sim C \wedge (A \vee B)]$ and $\sim A$. It is false only if all three are false.
+  4. $\sim A$ false requires $A = T$.
+  5. With $A = T$, $A \wedge \sim B$ false requires $\sim B = F$, i.e. $B = T$.
+  6. Then $A \vee B = T$, so $\sim C \wedge T$ false requires $\sim C = F$, i.e. $C = T$.
+  7. For $A = B = C = T$, all three parts are false and $F_1 = F$. So $F_1$ is not a tautology.
+  8. (For every other assignment $F_1$ is true, but one counterexample is enough.)
+  Why others are wrong:
+  - (B) and (C) claim $F_1$ is a tautology, but the assignment T, T, T disproves this.
+  - (D) claims $F_2$ is not a tautology, but it contains $A \vee \sim A$.
   Answer: (A)
 M A 10: |-
-  Concept: When $\Delta = 0$, the system is consistent (with infinitely many solutions) only if the same linear relation holds for the constants.
+  Concept: For a 3×3 linear system: if $\Delta \ne 0$ the solution is unique. If $\Delta = 0$, the system has either no solution or infinitely many. It is consistent exactly when the constants satisfy the same linear dependence as the rows of the coefficient matrix.
   Solution:
-  1. $\Delta = 1(42 - 22) - 2(14 + 11) - 3(-4 - 6) = 0$.
-  2. The rows satisfy $2R_2 + R_3 = (5, 10, -15) = 5R_1$.
-  3. The system is consistent iff $2b + c = 5a$, and then it has infinitely many solutions (otherwise none).
-  Why others are wrong: $\Delta = 0$ rules out a unique solution (A, D), and solutions do exist when $5a = 2b + c$ (C).
+  1. $\Delta = \begin{vmatrix}1&2&-3\\2&6&-11\\1&-2&7\end{vmatrix} = 1(42 - 22) - 2(14 + 11) - 3(-4 - 6) = 20 - 50 + 30 = 0$.
+  2. So a unique solution is impossible for any a, b, c.
+  3. Find the row dependence: $2R_2 + R_3 = (4 + 1,\ 12 - 2,\ -22 + 7) = (5, 10, -15) = 5R_1$.
+  4. So $2(\text{eq. }2) + (\text{eq. }3) - 5(\text{eq. }1)$ gives $0 = 2b + c - 5a$.
+  5. If $5a \ne 2b + c$, the equations contradict each other: no solution.
+  6. If $5a = 2b + c$, the third equation follows from the first two. The first two are independent (rows 1 and 2 are not proportional), so the rank is 2 and there is a one-parameter family: infinitely many solutions.
+  Why others are wrong:
+  - (A) and (D) Since $\Delta = 0$, a unique solution never occurs.
+  - (C) There are solutions whenever $5a = 2b + c$ (e.g. $a = b = c = 0$).
   Answer: (B)
 M A 11: |-
-  Concept: A number is even iff its last digit is even; count arrangements of repeated digits.
+  Concept: A number is divisible by 2 exactly when its last digit is even. With repeated digits, the number of distinct arrangements is $\frac{n!}{p!\,q!\,r!\dots}$.
   Solution:
-  1. Total: $\frac{7!}{2!\,3!\,2!} = 210$.
-  2. Last digit 4: arrange 3, 3, 4, 4, 5, 5 in $\frac{6!}{2!\,2!\,2!} = 90$ ways.
-  3. $P = \frac{90}{210} = \frac{3}{7}$.
+  1. Digits: 3, 3, 4, 4, 4, 5, 5. That is two 3s, three 4s and two 5s, seven digits in all.
+  2. Total seven-digit numbers: $\frac{7!}{2!\,3!\,2!} = \frac{5040}{24} = 210$. (There is no 0, so every arrangement is a valid seven-digit number.)
+  3. Favourable: the only even digit is 4, so the last digit must be 4.
+  4. Fix one 4 at the end. The remaining digits 3, 3, 4, 4, 5, 5 fill six places in $\frac{6!}{2!\,2!\,2!} = \frac{720}{8} = 90$ ways.
+  5. $P = \frac{90}{210} = \frac{3}{7}$.
+  Shortcut: by symmetry, the last digit is equally likely to be any of the 7 digit "copies". Three of the seven copies are 4s, so $P = \frac{3}{7}$ directly.
+  Why others are wrong:
+  - (A) $\frac{6}{7}$ and (B) $\frac{4}{7}$ count the odd endings or other complements.
+  - (D) $\frac{1}{7}$ treats the three 4s as a single choice.
   Answer: (C)
 M A 12: |-
-  Concept: Collinear vectors have proportional components.
+  Concept: Two non-zero vectors are collinear when their components are proportional: $\vec a_1 = \lambda\vec a_2$.
   Solution:
-  1. $\frac{x}{1} = \frac{-1}{y} = \frac{1}{z} \Rightarrow y = -\frac{1}{x}$, $z = \frac{1}{x}$.
-  2. $x\hat i + y\hat j + z\hat k = \left(x, -\frac{1}{x}, \frac{1}{x}\right)$; with $x = 1$ this is $(1, -1, 1)$.
-  3. Unit vector: $\frac{1}{\sqrt3}(\hat i - \hat j + \hat k)$.
+  1. $\vec a_1 = (x, -1, 1)$ and $\vec a_2 = (1, y, z)$.
+  2. Collinear: $\frac{x}{1} = \frac{-1}{y} = \frac{1}{z} = \lambda$.
+  3. So $x = \lambda$, $y = -\frac{1}{\lambda}$ and $z = \frac{1}{\lambda}$. In terms of x: $y = -\frac{1}{x}$ and $z = \frac{1}{x}$.
+  4. The required vector is $x\hat i + y\hat j + z\hat k = \left(x, -\frac{1}{x}, \frac{1}{x}\right)$.
+  5. The question asks for a possible unit vector, so pick a convenient value. With $x = 1$: $(1, -1, 1)$, with magnitude $\sqrt3$.
+  6. Unit vector: $\frac{1}{\sqrt3}(\hat i - \hat j + \hat k)$, which is option (C).
+  7. With $x = -1$ we would get $(-1, 1, -1)$, i.e. $-\frac{1}{\sqrt3}(\hat i - \hat j + \hat k)$, which is still parallel.
+  Why others are wrong:
+  - (A) needs $x = 0$, but then $y = -\frac{1}{x}$ is undefined.
+  - (B) needs $z = 0$, impossible since $z = \frac{1}{x}$.
+  - (D) needs $y = +1$ with $x = 1$, but $y = -\frac{1}{x} = -1$. The signs of y and z must be opposite.
   Answer: (C)
 M A 13: |-
-  Concept: Substitute $t \to \frac{1}{t}$ in $f\left(\frac{1}{x}\right)$.
+  Concept: For integrals with limits x and $\frac{1}{x}$, substitute $t = \frac{1}{u}$ to bring $f\left(\frac{1}{x}\right)$ onto the same interval as $f(x)$, then add the two.
   Solution:
-  1. $f\left(\frac{1}{x}\right) = \int_1^{1/x}\frac{\ln t}{1+t}dt$; with $t = \frac{1}{u}$ this becomes $\int_1^x\frac{\ln u}{u(1+u)}du$.
-  2. $f(x) + f\left(\frac{1}{x}\right) = \int_1^x\ln u\left[\frac{1}{1+u} + \frac{1}{u(1+u)}\right]du = \int_1^x\frac{\ln u}{u}du = \frac{(\ln x)^2}{2}$.
-  3. At $x = e$: $\frac{1}{2}$.
+  1. $f\left(\frac{1}{x}\right) = \int_1^{1/x}\frac{\ln t}{1 + t}dt$.
+  2. Put $t = \frac{1}{u}$, so $dt = -\frac{du}{u^2}$ and $\ln t = -\ln u$. The limits become $u = 1$ to $u = x$:
+     $f\left(\frac{1}{x}\right) = \int_1^x\frac{-\ln u}{1 + \frac{1}{u}}\cdot\left(-\frac{1}{u^2}\right)du = \int_1^x\frac{\ln u}{u(u + 1)}du$.
+  3. Add: $f(x) + f\left(\frac{1}{x}\right) = \int_1^x\ln u\left[\frac{1}{1 + u} + \frac{1}{u(1 + u)}\right]du$.
+  4. The bracket is $\frac{u + 1}{u(1 + u)} = \frac{1}{u}$.
+  5. So $f(x) + f\left(\frac{1}{x}\right) = \int_1^x\frac{\ln u}{u}du = \frac{(\ln x)^2}{2}$.
+  6. At $x = e$: $\frac{(\ln e)^2}{2} = \frac{1}{2}$.
+  Note: neither $f(e)$ nor $f\left(\frac{1}{e}\right)$ has a closed form (they involve dilogarithms), but their sum does. This is the point of the question.
+  Why others are wrong: (B), (C) and (D) come from sign errors in the substitution, e.g. forgetting that $\ln\frac{1}{u} = -\ln u$.
   Answer: (A)
 M A 14: |-
-  Concept: Continuity at $x = -1$ and $x = 1$.
+  Concept: A piecewise function is continuous everywhere if each piece is continuous and the pieces agree at the joining points. Here the pieces meet at $x = -1$ and $x = 1$.
   Solution:
-  1. At $x = 1$: $\sin\pi = 0$, so $|a + 1 + b| = 0 \Rightarrow a + b = -1$.
-  2. At $x = -1$: $2\sin\frac{\pi}{2} = 2$, so $|a - 1 + b| = 2$, consistent with $a + b = -1$.
-  3. $a + b = -1$.
+  1. At $x = 1$: the right-hand limit is $\lim_{x\to1^+}\sin(\pi x) = \sin\pi = 0$.
+     The middle piece gives $f(1) = |a + 1 + b|$.
+     Continuity: $|a + b + 1| = 0$, so $a + b = -1$.
+  2. At $x = -1$: the left-hand limit is $\lim_{x\to-1^-}2\sin\left(-\frac{\pi x}{2}\right) = 2\sin\frac{\pi}{2} = 2$.
+     The middle piece gives $f(-1) = |a - 1 + b|$.
+     Continuity: $|a + b - 1| = 2$.
+  3. Check consistency: with $a + b = -1$, $|a + b - 1| = |-2| = 2$. Both conditions hold.
+  4. So $a + b = -1$. (The individual values of a and b are not fixed; only their sum is.)
+  Note: the other root of $|a + b - 1| = 2$ is $a + b = 3$, but that fails the condition at $x = 1$. The condition at $x = 1$, with 0 inside a modulus, is the decisive one.
+  Why others are wrong:
+  - (A) $a + b = 3$ satisfies only the condition at $x = -1$.
+  - (C) $a + b = -3$ and (D) $a + b = 1$ satisfy neither condition.
   Answer: (B)
 M A 15: |-
-  Concept: $g\circ f = f$ forces $g$ to fix every value in the range of $f$.
+  Concept: The condition $g\circ f = f$ means $g(f(k)) = f(k)$ for every k. So g must fix each value in the range of f, and is free elsewhere.
   Solution:
-  1. Range of $f$ $= \{2, 4, 6, 8, 10\}$, so $g(k) = k$ for these.
-  2. $g(1), g(3), g(5), g(7), g(9)$ are unrestricted: $10$ choices each.
-  3. Number of $g$ $= 10^5$.
+  1. f sends odd k to $k + 1$ and even k to itself: $1\to2$, $2\to2$, $3\to4$, $4\to4$, …, $9\to10$, $10\to10$.
+  2. Range of f $= \{2, 4, 6, 8, 10\}$.
+  3. For each y in the range, $g(y) = y$. So $g(2) = 2$, $g(4) = 4$, …, $g(10) = 10$: these five values are forced.
+  4. The odd numbers 1, 3, 5, 7, 9 are not in the range of f, so the condition $g\circ f = f$ never involves $g$ at these points.
+  5. Each of $g(1), g(3), g(5), g(7), g(9)$ can be any of the 10 elements of A.
+  6. Number of functions $g = 10^5$.
+  General principle: if $f: A \to A$ has range R, the number of g with $g\circ f = f$ is $|A|^{|A| - |R|}$.
+  Why others are wrong:
+  - (B) $^{10}C_5$ counts subsets, not functions.
+  - (C) $5^5$ wrongly restricts the free values to the range of f.
+  - (D) $5!$ counts bijections of five elements, but g need not be injective.
   Answer: (A)
 M A 16: |-
-  Concept: Odd divisors of $2^x3^y5^z$ are the divisors of $3^y5^z$.
+  Concept: The divisors of $2^x3^y5^z$ are $2^i3^j5^k$ with $0 \le i \le x$, and so on. A divisor is odd exactly when $i = 0$. So the number of odd divisors is $(y + 1)(z + 1)$, independent of x.
   Solution:
-  1. $\frac{y + z}{yz} = \frac{5}{6}$ with $y + z = 5$ gives $yz = 6$, so $y = 3$, $z = 2$.
-  2. Number of odd divisors $= (3 + 1)(2 + 1) = 12$.
+  1. Given $y + z = 5$ and $\frac{1}{y} + \frac{1}{z} = \frac{5}{6}$.
+  2. $\frac{1}{y} + \frac{1}{z} = \frac{y + z}{yz} = \frac{5}{yz}$, so $\frac{5}{yz} = \frac{5}{6}$ and $yz = 6$.
+  3. y and z are the roots of $t^2 - 5t + 6 = 0$, i.e. $t = 2, 3$. Since $y > z$: $y = 3$ and $z = 2$.
+  4. Odd divisors are the divisors of $3^3\cdot5^2$: $(3 + 1)(2 + 1) = 4\times3 = 12$.
+  5. The list includes 1 ($3^05^0$) and runs up to $3^3\cdot5^2 = 675$.
+  Check the list: powers of 3 are $\{1, 3, 9, 27\}$ and powers of 5 are $\{1, 5, 25\}$; their pairwise products give 12 distinct odd numbers.
+  Why others are wrong:
+  - (A) 11 excludes 1, but the question says "including 1".
+  - (B) $6x$ wrongly brings in the power of 2, which cannot appear in an odd divisor.
+  - (D) 6 is $yz$, not the divisor count.
   Answer: (C)
 M A 17: |-
-  Concept: $\sin^{-1}(g(x))$ needs $|g(x)| \le 1$.
+  Concept: $\sin^{-1}u$ is defined only for $-1 \le u \le 1$. So the domain of $f\circ g$ is the set of x where g is defined and $|g(x)| \le 1$.
   Solution:
-  1. $g(x) = \frac{(x-2)(x+1)}{(x-2)(2x+3)} = \frac{x+1}{2x+3}$ (and $g(2) = \frac{3}{7}$ by the given definition).
-  2. $|x + 1| \le |2x + 3| \Rightarrow (2x+3)^2 - (x+1)^2 \ge 0 \Rightarrow (3x + 4)(x + 2) \ge 0$.
-  3. $x \le -2$ or $x \ge -\frac{4}{3}$ (the point $x = -\frac{3}{2}$ lies outside this set).
+  1. Factorise: $g(x) = \frac{x^2 - x - 2}{2x^2 - x - 6} = \frac{(x - 2)(x + 1)}{(x - 2)(2x + 3)}$.
+  2. For $x \ne 2$: $g(x) = \frac{x + 1}{2x + 3}$. At $x = 2$, g is defined as the limit, $g(2) = \frac{3}{7}$, so the simplified form holds there too. g is undefined only at $x = -\frac{3}{2}$.
+  3. Condition: $\left|\frac{x + 1}{2x + 3}\right| \le 1 \iff |x + 1| \le |2x + 3|$.
+  4. Square both sides (both are non-negative): $(2x + 3)^2 - (x + 1)^2 \ge 0$.
+  5. Difference of squares: $(2x + 3 - x - 1)(2x + 3 + x + 1) = (x + 2)(3x + 4) \ge 0$.
+  6. So $x \le -2$ or $x \ge -\frac{4}{3}$.
+  7. The excluded point $x = -\frac{3}{2}$ lies in $(-2, -\frac{4}{3})$, which is already outside the set.
+  8. Domain: $(-\infty, -2] \cup \left[-\frac{4}{3}, \infty\right)$.
+  Why others are wrong:
+  - (B) and (C) use the wrong critical values.
+  - (D) takes $-\frac{3}{2}$, where g is undefined, as an endpoint.
   Answer: (A)
 M A 18: |-
-  Concept: Image of a point in a plane: $\frac{x - x_1}{a} = \dots = \frac{-2(ax_1 + by_1 + cz_1 + d)}{a^2 + b^2 + c^2}$.
+  Concept: The image $(\alpha, \beta, \gamma)$ of a point $(x_1, y_1, z_1)$ in the plane $ax + by + cz + d = 0$ is given by
+  $\frac{\alpha - x_1}{a} = \frac{\beta - y_1}{b} = \frac{\gamma - z_1}{c} = \frac{-2(ax_1 + by_1 + cz_1 + d)}{a^2 + b^2 + c^2}$.
   Solution:
-  1. $4 - 15 + 10 - 8 = -9$ and $a^2 + b^2 + c^2 = 45$, so the multiplier is $\frac{18}{45} = \frac{2}{5}$.
-  2. Image $= \left(1 + \frac{8}{5},\ 3 - 2,\ 5 + \frac{4}{5}\right) = \left(\frac{13}{5}, 1, \frac{29}{5}\right)$.
-  3. $5(\alpha + \beta + \gamma) = 13 + 5 + 29 = 47$.
+  1. Plane: $4x - 5y + 2z - 8 = 0$, so $a = 4$, $b = -5$, $c = 2$, $d = -8$. Point: $(1, 3, 5)$.
+  2. $ax_1 + by_1 + cz_1 + d = 4 - 15 + 10 - 8 = -9$.
+  3. $a^2 + b^2 + c^2 = 16 + 25 + 4 = 45$.
+  4. Common ratio $= \frac{-2(-9)}{45} = \frac{18}{45} = \frac{2}{5}$.
+  5. $\alpha = 1 + 4\cdot\frac{2}{5} = \frac{13}{5}$; $\beta = 3 - 5\cdot\frac{2}{5} = 1$; $\gamma = 5 + 2\cdot\frac{2}{5} = \frac{29}{5}$.
+  6. $5(\alpha + \beta + \gamma) = 13 + 5 + 29 = 47$.
+  Check: the midpoint of the point and its image is $\left(\frac{9}{5}, 2, \frac{27}{5}\right)$. It satisfies the plane: $\frac{36}{5} - 10 + \frac{54}{5} = 18 - 10 = 8$. ✓
+  Why others are wrong:
+  - (D) 41 and the other values come from using the foot of the perpendicular (ratio $\frac{1}{5}$) instead of the image, or from a sign slip in d.
   Answer: (A)
 M A 19: |-
-  Concept: Differentiate the integral equation to get a separable DE.
+  Concept: An equation where f appears inside its own integral (a Volterra integral equation) is solved by differentiating it. The Fundamental Theorem of Calculus gives $\frac{d}{dx}\int_0^x h(t)dt = h(x)$. The initial condition comes from putting $x = 0$ in the original equation.
   Solution:
-  1. $f'(x) = e^xf(x) + e^x = e^x(f + 1)$, with $f(0) = 1$.
-  2. $\ln(f + 1) = e^x + C$; at $x = 0$: $\ln2 = 1 + C$.
-  3. $f(x) = 2e^{e^x - 1} - 1$.
+  1. At $x = 0$: $f(0) = \int_0^0(\dots) + e^0 = 1$.
+  2. Differentiate: $f'(x) = e^xf(x) + e^x = e^x(f(x) + 1)$.
+  3. Separate the variables: $\frac{df}{f + 1} = e^x\,dx$.
+  4. Integrate: $\ln|f + 1| = e^x + C$.
+  5. At $x = 0$: $\ln2 = 1 + C$, so $C = \ln2 - 1$.
+  6. $f + 1 = e^{e^x + \ln2 - 1} = 2e^{e^x - 1}$.
+  7. $f(x) = 2e^{e^x - 1} - 1$.
+  Verification: $f(0) = 2e^0 - 1 = 1$ ✓. And $f' = 2e^{e^x - 1}e^x = e^x(f + 1)$ ✓.
+  Why others are wrong:
+  - (B) $f(0) = 1$, but $f' = e^xf$ is missing the extra $e^x$ term.
+  - (C) gives $f(0) = 2e - 1 \ne 1$.
+  - (D) gives $f(0) = e - 1 \ne 1$.
+  Checking $f(0) = 1$ is the fastest way to eliminate options.
   Answer: (A)
 M A 20: |-
-  Concept: Among triangles inscribed in a circle, the equilateral one has maximum area.
+  Concept: For a triangle inscribed in a circle of radius r, the sine rule gives $a = 2r\sin A$, and so on. The area is $\frac{1}{2}bc\sin A = 2r^2\sin A\sin B\sin C$.
   Solution:
-  1. Area $= 2r^2\sin A\sin B\sin C$ is maximised when $A = B = C = 60°$.
-  2. Side $= 2r\sin60° = \sqrt3r$; height $= \frac{3r}{2}$.
-  Why others are wrong: (B) gives the wrong height ($\frac{3r}{2}$, not $\frac{2r}{3}$), and (A) and (C) are not maximal.
+  1. Maximise $\sin A\sin B\sin C$ subject to $A + B + C = \pi$.
+  2. Fix C. Then $\sin A\sin B = \frac{1}{2}[\cos(A - B) - \cos(A + B)]$, which is greatest when $A = B$. By symmetry the maximum is at $A = B = C = \frac{\pi}{3}$. (Or use Jensen's inequality, since $\ln\sin x$ is concave.)
+  3. The maximal triangle is equilateral.
+  4. Side: $a = 2r\sin60° = 2r\cdot\frac{\sqrt3}{2} = \sqrt3r$.
+  5. Height: $\frac{\sqrt3}{2}a = \frac{3r}{2}$ (the circumcentre is also the centroid, at $\frac{2}{3}$ of the height, and $\frac{2}{3}\cdot\frac{3r}{2} = r$ ✓).
+  6. Maximum area $= \frac{\sqrt3}{4}(\sqrt3r)^2 = \frac{3\sqrt3}{4}r^2$.
+  Why others are wrong:
+  - (A) A right triangle in a circle has the diameter 2r as its hypotenuse. Sides 2r and r give area $\frac{\sqrt3}{2}r^2 \approx 0.87r^2$, less than $1.30r^2$.
+  - (B) The equilateral triangle is right, but its height is $\frac{3r}{2}$, not $\frac{2r}{3}$.
+  - (C) An isosceles triangle on a base of 2r (a diameter) has area at most $r^2$.
   Answer: (D)
 M B 1: |-
-  Concept: $\gcd(n, 18) = 3$ means $3 \mid n$, $n$ odd, and $9 \nmid n$.
+  Concept: $18 = 2\cdot3^2$. So $\gcd(n, 18) = 3$ exactly when 3 divides n, 9 does not divide n, and 2 does not divide n (n is odd).
   Solution:
-  1. 4-digit multiples of 3: $3333 - 333 = 3000$, of which 1500 are odd.
-  2. 4-digit multiples of 9: $1111 - 111 = 1000$, of which 500 are odd.
-  3. Count $= 1500 - 500 = 1000$.
+  1. Four-digit numbers run from 1000 to 9999.
+  2. Multiples of 3 among them: $\left\lfloor\frac{9999}{3}\right\rfloor - \left\lfloor\frac{999}{3}\right\rfloor = 3333 - 333 = 3000$.
+  3. Multiples of 3 alternate between even and odd (1002 is even, 1005 is odd, …, 9999 is odd). With 3000 of them, exactly 1500 are odd.
+  4. Multiples of 9: $\left\lfloor\frac{9999}{9}\right\rfloor - \left\lfloor\frac{999}{9}\right\rfloor = 1111 - 111 = 1000$. These also alternate in parity (1008 even, 1017 odd, …, 9999 odd), so 500 are odd.
+  5. Required count = odd multiples of 3 − odd multiples of 9 = $1500 - 500 = 1000$.
+  Check with a residue argument: among any 18 consecutive integers, exactly 2 have gcd 3 with 18 (those ≡ 3 or 15 mod 18). There are 9000 four-digit numbers, which is exactly 500 complete blocks of 18, so the count is $500\times2 = 1000$. ✓
   Answer: 1000
 M B 2: |-
-  Concept: $\alpha$ and $\beta$ satisfy $t^2 = t + 1$, so $P_{n+1} = P_n + P_{n-1}$.
+  Concept: If α and β are roots of $t^2 = pt + q$, then the power sums $P_n = \alpha^n + \beta^n$ satisfy the linear recurrence $P_{n+1} = pP_n + qP_{n-1}$.
   Solution:
-  1. $29 = P_n + 11 \Rightarrow P_n = 18$.
-  2. $P_n^2 = 324$.
+  1. $\alpha + \beta = 1$ and $\alpha\beta = -1$, so α and β are the roots of $t^2 - t - 1 = 0$, i.e. $t^2 = t + 1$.
+  2. Multiply by $t^{n-1}$: $\alpha^{n+1} = \alpha^n + \alpha^{n-1}$, and the same for β.
+  3. Adding: $P_{n+1} = P_n + P_{n-1}$ (the Fibonacci-type recurrence).
+  4. With $P_{n-1} = 11$ and $P_{n+1} = 29$: $29 = P_n + 11$, so $P_n = 18$.
+  5. $P_n^2 = 18^2 = 324$.
+  Check: α and β are $\frac{1 \pm \sqrt5}{2}$ (the golden ratio and its conjugate). The $P_n$ are the Lucas numbers: $P_0 = 2$, $P_1 = 1$, $P_2 = 3$, $P_3 = 4$, $P_4 = 7$, $P_5 = 11$, $P_6 = 18$, $P_7 = 29$. So $n = 6$, and $P_5 = 11$, $P_6 = 18$, $P_7 = 29$ match the given data. ✓
   Answer: 324
 M B 3: |-
-  Concept: $\sum(X_i - \beta)^2 = \sum(X_i - \bar X)^2 + N(\bar X - \beta)^2$.
+  Concept: For any constant β, $\sum(X_i - \beta)^2 = \sum(X_i - \bar X)^2 + N(\bar X - \beta)^2$ (the cross term vanishes because $\sum(X_i - \bar X) = 0$). Also, $\sum(X_i - \bar X)^2 = N\sigma^2$.
   Solution:
-  1. $\sum(X_i - \alpha) = 36 \Rightarrow \bar X = \alpha + 2$.
-  2. $90 = 18\cdot1 + 18(\bar X - \beta)^2 \Rightarrow (\bar X - \beta)^2 = 4$, so $\bar X - \beta = \pm2$.
-  3. $\alpha - \beta = \bar X - \beta - 2 = 0$ or $-4$; since $\alpha \ne \beta$, $|\alpha - \beta| = 4$.
+  1. $N = 18$. From $\sum(X_i - \alpha) = 36$: $\sum X_i - 18\alpha = 36$, so $\bar X = \alpha + 2$.
+  2. Standard deviation 1 gives $\sum(X_i - \bar X)^2 = 18\sigma^2 = 18$.
+  3. $\sum(X_i - \beta)^2 = 18 + 18(\bar X - \beta)^2 = 90$, so $(\bar X - \beta)^2 = 4$ and $\bar X - \beta = \pm2$.
+  4. $\alpha - \beta = (\bar X - 2) - \beta = (\bar X - \beta) - 2$.
+  5. If $\bar X - \beta = 2$, then $\alpha - \beta = 0$. This is rejected because α and β are distinct.
+  6. If $\bar X - \beta = -2$, then $\alpha - \beta = -4$.
+  7. $|\alpha - \beta| = 4$.
+  Interpretation: $\bar X = \alpha + 2$ and $\beta = \bar X + 2$. So α lies 2 below the mean and β lies 2 above it. The "distinct" condition is what rules out the case where they coincide.
   Answer: 4
 M B 4: |-
-  Concept: Beta function $I_{m,n} = \int_0^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt$ (via $x = \frac{t}{1+t}$).
+  Concept: $I_{m,n} = \int_0^1x^{m-1}(1 - x)^{n-1}dx$ is the Beta function $B(m, n)$. The substitution $x = \frac{t}{1 + t}$ gives its other standard form, $B(m, n) = \int_0^\infty\frac{t^{m-1}}{(1 + t)^{m+n}}dt$.
   Solution:
-  1. Split $\int_0^\infty = \int_0^1 + \int_1^\infty$ and put $t = \frac{1}{u}$ in the second part: $\int_1^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt = \int_0^1\frac{u^{n-1}}{(1+u)^{m+n}}du$.
-  2. So $\int_0^1\frac{x^{m-1} + x^{n-1}}{(1+x)^{m+n}}dx = I_{m,n}$, i.e. $\alpha = 1$.
+  1. With $x = \frac{t}{1 + t}$: $1 - x = \frac{1}{1 + t}$ and $dx = \frac{dt}{(1 + t)^2}$. The limits 0 to 1 become 0 to ∞.
+     $I_{m,n} = \int_0^\infty\frac{t^{m-1}}{(1+t)^{m-1}}\cdot\frac{1}{(1+t)^{n-1}}\cdot\frac{dt}{(1+t)^2} = \int_0^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt$.
+  2. Split: $\int_0^\infty = \int_0^1 + \int_1^\infty$.
+  3. In $\int_1^\infty$, put $t = \frac{1}{u}$, so $dt = -\frac{du}{u^2}$:
+     $\int_1^\infty\frac{t^{m-1}}{(1+t)^{m+n}}dt = \int_0^1\frac{u^{1-m}}{\left(\frac{1+u}{u}\right)^{m+n}}\cdot\frac{du}{u^2} = \int_0^1\frac{u^{n-1}}{(1+u)^{m+n}}du$.
+  4. So $I_{m,n} = \int_0^1\frac{x^{m-1}}{(1+x)^{m+n}}dx + \int_0^1\frac{x^{n-1}}{(1+x)^{m+n}}dx = \int_0^1\frac{x^{m-1} + x^{n-1}}{(1+x)^{m+n}}dx$.
+  5. Comparing with $\alpha I_{m,n}$ gives $\alpha = 1$.
+  Check with $m = n = 1$: $I_{1,1} = 1$, and $\int_0^1\frac{2}{(1+x)^2}dx = 2\left[1 - \frac{1}{2}\right] = 1$. ✓
   Answer: 1
 M B 5: |-
-  Concept: Tangency conditions $c^2 = a^2m^2 + b^2$ (ellipse) and $c^2 = r^2(1 + m^2)$ (circle).
+  Concept: The line $y = mx + c$ touches the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$ iff $c^2 = a^2m^2 + b^2$, and the circle $x^2 + y^2 = r^2$ iff $c^2 = r^2(1 + m^2)$. For a common tangent, equate the two expressions for $c^2$.
   Solution:
-  1. Ellipse $\frac{x^2}{9} + \frac{y^2}{4} = 1$: $c^2 = 9m^2 + 4$.
-  2. Circle $x^2 + y^2 = \frac{31}{4}$: $c^2 = \frac{31}{4}(1 + m^2)$.
-  3. $36m^2 + 16 = 31 + 31m^2 \Rightarrow m^2 = 3$.
+  1. Ellipse: $4x^2 + 9y^2 = 36$, i.e. $\frac{x^2}{9} + \frac{y^2}{4} = 1$, so $a^2 = 9$ and $b^2 = 4$. Tangency: $c^2 = 9m^2 + 4$.
+  2. Circle: $(2x)^2 + (2y)^2 = 31$, i.e. $x^2 + y^2 = \frac{31}{4}$, so $r^2 = \frac{31}{4}$. Tangency: $c^2 = \frac{31}{4}(1 + m^2)$.
+  3. Equate: $9m^2 + 4 = \frac{31}{4}(1 + m^2)$. Multiply by 4: $36m^2 + 16 = 31 + 31m^2$.
+  4. $5m^2 = 15$, so $m^2 = 3$.
+  5. Then $c^2 = 27 + 4 = 31$, giving four common tangents $y = \pm\sqrt3x \pm\sqrt{31}$.
+  Sanity check: the circle's radius $\sqrt{7.75} \approx 2.78$ lies between the ellipse's semi-axes 2 and 3. So the circle crosses the ellipse, and common tangents with finite slope exist. Vertical tangents are not common (x = ±3 for the ellipse, x = ±2.78 for the circle), so none are missed.
   Answer: 3
 M B 6: |-
-  Concept: Compute small powers to find a pattern.
+  Concept: For high powers of a matrix, compute $A^2$ first. It often simplifies (here to a diagonal matrix), which gives all higher powers.
   Solution:
-  1. $A^2 = \operatorname{diag}(1, 4, 1)$, so $A^{20} = \operatorname{diag}(1, 2^{20}, 1)$ and $A^{19} = A^{18}A = \begin{bmatrix}1&0&0\\0&2^{19}&0\\3&0&-1\end{bmatrix}$.
-  2. Entry (1,1): $1 + \alpha + \beta = 1 \Rightarrow \beta = -\alpha$ (entries (3,1) and (3,3) agree).
-  3. Entry (2,2): $2^{20} + 2^{19}\alpha + 2\beta = 4 \Rightarrow \alpha(2^{19} - 2) = -2(2^{19} - 2) \Rightarrow \alpha = -2$, $\beta = 2$.
-  4. $\beta - \alpha = 4$.
+  1. $A = \begin{bmatrix}1&0&0\\0&2&0\\3&0&-1\end{bmatrix}$. Row 3 of $A^2$: $(3\cdot1 + (-1)\cdot3,\ 0,\ (-1)(-1)) = (0, 0, 1)$. So $A^2 = \operatorname{diag}(1, 4, 1)$.
+  2. Then $A^{20} = (A^2)^{10} = \operatorname{diag}(1, 2^{20}, 1)$ and $A^{18} = \operatorname{diag}(1, 2^{18}, 1)$.
+  3. $A^{19} = A^{18}A = \begin{bmatrix}1&0&0\\0&2^{19}&0\\3&0&-1\end{bmatrix}$ (row 2 is scaled by $2^{18}$; rows 1 and 3 are unchanged).
+  4. Compare the entries of $A^{20} + \alpha A^{19} + \beta A$ with $\operatorname{diag}(1, 4, 1)$:
+     (1,1): $1 + \alpha + \beta = 1$, so $\beta = -\alpha$.
+     (3,1): $3\alpha + 3\beta = 0$ and (3,3): $1 - \alpha - \beta = 1$. Both agree.
+     (2,2): $2^{20} + 2^{19}\alpha + 2\beta = 4$.
+  5. Substitute $\beta = -\alpha$: $\alpha(2^{19} - 2) = 4 - 2^{20} = -2(2^{19} - 2)$, so $\alpha = -2$.
+  6. $\beta = 2$, and $\beta - \alpha = 2 - (-2) = 4$.
   Answer: 4
 M B 7: |-
-  Concept: AM ≥ GM; GP with $a = -16$, $r = -\frac{1}{2}$.
+  Concept: For two positive numbers, AM ≥ GM. If the AM and GM are the roots of a quadratic, the larger root is the AM. For a GP, $T_pT_q = a^2r^{p+q-2}$.
   Solution:
-  1. The roots of $4x^2 - 9x + 5 = 0$ are $1$ and $\frac{5}{4}$, so AM $= \frac{5}{4}$ and GM $= 1$.
-  2. $T_pT_q = 1$: $256\left(-\frac{1}{2}\right)^{p+q-2} = 1 \Rightarrow \left(-\frac{1}{2}\right)^{p+q-2} = \frac{1}{2^8}$.
-  3. $p + q - 2 = 8 \Rightarrow p + q = 10$.
+  1. The sequence −16, 8, −4, 2, … is a GP with $a = -16$ and $r = -\frac{1}{2}$.
+  2. Roots of $4x^2 - 9x + 5 = 0$: $(4x - 5)(x - 1) = 0$, so $x = 1$ or $\frac{5}{4}$.
+  3. Since AM ≥ GM (and they are unequal), AM $= \frac{5}{4}$ and GM $= 1$.
+  4. GM $= \sqrt{T_pT_q} = 1$, so $T_pT_q = 1$.
+  5. $T_pT_q = a^2r^{p+q-2} = 256\left(-\frac{1}{2}\right)^{p+q-2} = 1$, so $\left(-\frac{1}{2}\right)^{p+q-2} = \frac{1}{2^8}$.
+  6. The product is positive, so the exponent must be even: $p + q - 2 = 8$, giving $p + q = 10$.
+  Check with the AM: we need $T_p + T_q = \frac{5}{2}$ and $T_pT_q = 1$, so $T_p$ and $T_q$ are the roots of $t^2 - \frac{5}{2}t + 1 = 0$, namely 2 and $\frac{1}{2}$. In the sequence, $T_4 = 2$ and $T_6 = \frac{1}{2}$, so $p + q = 4 + 6 = 10$. ✓ (Both terms are positive, so AM–GM applies.)
   Answer: 10
 M B 8: |-
-  Concept: If every normal passes through a fixed point, the curve is a circle centred at that point.
+  Concept: If every normal to a curve passes through a fixed point, the curve is a circle (or an arc of one) centred at that point. The differential equation $(x - a) + (y - b)y' = 0$ integrates to $(x - a)^2 + (y - b)^2 = \text{const}$.
   Solution:
-  1. Equal distances: $(3 - a)^2 + (3 + b)^2 = (4 - a)^2 + (2\sqrt2 + b)^2 \Rightarrow 2a + (6 - 4\sqrt2)b = 6$.
-  2. With $a = 3 + 2\sqrt2b$: $6 + 6b = 6 \Rightarrow b = 0$, $a = 3$.
-  3. $a^2 + b^2 + ab = 9$.
+  1. So the curve is a circle with centre $(a, b)$, and the two given points are equidistant from $(a, b)$.
+  2. $(3 - a)^2 + (-3 - b)^2 = (4 - a)^2 + (-2\sqrt2 - b)^2$.
+  3. Expand: LHS $= 18 - 6a + 6b + a^2 + b^2$. RHS $= 24 - 8a + 4\sqrt2b + a^2 + b^2$.
+  4. Simplify: $2a + (6 - 4\sqrt2)b = 6$.
+  5. The given condition $a - 2\sqrt2b = 3$ gives $a = 3 + 2\sqrt2b$. Substitute:
+     $6 + 4\sqrt2b + 6b - 4\sqrt2b = 6$, so $6b = 0$ and $b = 0$.
+  6. Then $a = 3$.
+  7. $a^2 + b^2 + ab = 9 + 0 + 0 = 9$.
+  Check: the centre is $(3, 0)$. The distance to $(3, -3)$ is 3. The distance to $(4, -2\sqrt2)$ is $\sqrt{1 + 8} = 3$. ✓ The curve is $(x - 3)^2 + y^2 = 9$.
   Answer: 9
 M B 9: |-
-  Concept: Interpret both conditions geometrically.
+  Concept: Turn each condition into a region of the plane, then maximise the squared distance $|z + 1|^2$ from the point $(-1, 0)$. The maximum of a distance over a region like this is attained on its boundary.
   Solution:
-  1. $|z + 5| \le 4$ is the disc with centre $(-5, 0)$ and radius 4. The second condition is $2(x - y) \ge -10$, i.e. $y \le x + 5$, the half-plane below the line through the centre with slope 1.
-  2. $(-1, 0)$ is on the circle at angle 0. For the circle point at angle $\varphi$, $|z + 1|^2 = 32(1 - \cos\varphi)$.
-  3. The allowed arc is $\varphi \in \left[-\frac{3\pi}{4}, \frac{\pi}{4}\right]$; the maximum is at $\varphi = -\frac{3\pi}{4}$: $32\left(1 + \frac{1}{\sqrt2}\right) = 32 + 16\sqrt2$.
-  4. $\alpha + \beta = 48$.
+  1. $|z + 5| \le 4$: the disc with centre $(-5, 0)$ and radius 4.
+  2. With $z = x + iy$: $z(1 + i) + \bar z(1 - i) = 2\text{Re}[z(1 + i)] = 2(x - y)$. So $2(x - y) \ge -10$, i.e. $y \le x + 5$. This half-plane is bounded by a line of slope 1 through the centre $(-5, 0)$.
+  3. So the region is a half-disc. The point $(-1, 0)$ is on its boundary circle (the rightmost point).
+  4. Parametrise the circle: $(-5 + 4\cos\varphi, 4\sin\varphi)$. The half-plane condition is $\sin\varphi \le \cos\varphi$, i.e. $\varphi \in \left[-\frac{3\pi}{4}, \frac{\pi}{4}\right]$.
+  5. $|z + 1|^2 = (4\cos\varphi - 4)^2 + 16\sin^2\varphi = 32(1 - \cos\varphi)$.
+  6. This is largest when $\cos\varphi$ is smallest in the allowed range, at $\varphi = -\frac{3\pi}{4}$ with $\cos\varphi = -\frac{1}{\sqrt2}$. The point is $(-5 - 2\sqrt2, -2\sqrt2)$.
+  7. Maximum $= 32 + \frac{32}{\sqrt2} = 32 + 16\sqrt2$, so $\alpha = 32$ and $\beta = 16$.
+  8. $\alpha + \beta = 48$.
+  (The diametrically opposite point $(-9, 0)$ at $\varphi = \pi$ would give 64, but it lies outside the half-plane: $0 > -9 + 5$.)
   Answer: 48
 M B 10: |-
-  Concept: Monotonicity and the intermediate value theorem.
+  Concept: If $p'(x) > 0$ for all x (except isolated points), then p is strictly increasing and has exactly one real root. Locate the root with the intermediate value theorem.
   Solution:
-  1. $p'(x) = 10(x^4 + 2x^3 + 3x^2 + 2x + 1) = 10(x^2 + x + 1)^2 > 0$, so there is exactly one real root.
-  2. $p(-1) = 3 > 0$ and $p(-2) = -34 < 0$, so the root lies in $(-2, -1)$.
-  3. $a = -2$, $|a| = 2$.
+  1. $p(x) = 2x^5 + 5x^4 + 10x^3 + 10x^2 + 10x + 10$.
+  2. $p'(x) = 10x^4 + 20x^3 + 30x^2 + 20x + 10 = 10(x^4 + 2x^3 + 3x^2 + 2x + 1)$.
+  3. Recognise the square: $(x^2 + x + 1)^2 = x^4 + 2x^3 + 3x^2 + 2x + 1$. So $p'(x) = 10(x^2 + x + 1)^2$.
+  4. $x^2 + x + 1$ has discriminant $-3 < 0$, so it is always positive and $p'(x) > 0$. Hence p is strictly increasing and has exactly one real root.
+  5. Evaluate: $p(-1) = -2 + 5 - 10 + 10 - 10 + 10 = 3 > 0$.
+     $p(-2) = -64 + 80 - 80 + 40 - 20 + 10 = -34 < 0$.
+  6. The sign changes between −2 and −1, so the root lies in $(-2, -1)$.
+  7. The interval is $(a, a + 1)$ with $a = -2$, so $|a| = 2$.
+  Check: $p(0) = 10 > 0$, confirming the root is negative. Since p is increasing, no other interval can contain a root.
   Answer: 2

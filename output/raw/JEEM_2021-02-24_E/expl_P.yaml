@@ -1,205 +1,399 @@
 P A 1: |-
-  Concept: Zener breakdown happens when a very strong electric field across a thin depletion layer pulls electrons directly out of covalent bonds.
+  Concept: A reverse-biased p-n junction can break down in two ways:
+  - Zener breakdown: a very strong electric field across a very thin depletion layer pulls electrons straight out of covalent bonds (field emission or tunnelling).
+  - Avalanche breakdown: carriers accelerated through a wide depletion layer knock out further carriers by collision.
   Solution:
-  1. A very high field needs a very narrow depletion region, and a narrow depletion region needs heavy doping on both sides.
-  2. Lightly doped junctions have wide depletion layers and break down by avalanche multiplication instead.
+  1. The field across the depletion layer is roughly E ≈ V/W. To reach the enormous fields needed (about 10⁶ V/cm) at only a few volts, the width W must be very small.
+  2. A narrow depletion layer requires heavy doping on both the p and n sides, because the more charge per unit volume there is, the less distance is needed to uncover enough charge.
+  3. So Zener breakdown occurs in heavily doped junctions with a narrow depletion layer. This is typical for breakdown voltages below about 6 V.
+  Why others are wrong:
+  - (A) Light doping with a wide depletion layer leads to avalanche breakdown, not Zener breakdown.
+  - (C) Heavy doping cannot produce a wide depletion layer; the two conditions contradict each other.
+  - (D) Light doping cannot produce a narrow depletion layer.
+  Tip: Zener breakdown is favoured by heavy doping, a thin depletion layer and a low breakdown voltage. Avalanche breakdown is favoured by light doping, a wide depletion layer and a high breakdown voltage.
   Answer: (B)
 P A 2: |-
-  Concept: Photon frequency $\nu \propto \left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ for a transition $n_2 \rightarrow n_1$.
+  Concept: In the Bohr model, the photon emitted when an electron drops from level $n_2$ to $n_1$ has energy $h\nu = 13.6Z^2\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ eV. So the frequency is proportional to the bracket.
   Solution:
-  1. 2→1: $1 - \frac{1}{4} = 0.75$.
-  2. 3→2: $\frac{1}{4} - \frac{1}{9} = 0.139$; 4→3: $\frac{1}{9} - \frac{1}{16} = 0.049$; 5→4: $\frac{1}{16} - \frac{1}{25} = 0.023$.
-  3. The largest energy gap, and so the highest frequency, is for n = 2 → n = 1.
+  1. For 2 → 1: $1 - \frac{1}{4} = 0.750$.
+  2. For 3 → 2: $\frac{1}{4} - \frac{1}{9} = 0.139$.
+  3. For 4 → 3: $\frac{1}{9} - \frac{1}{16} = 0.049$.
+  4. For 5 → 4: $\frac{1}{16} - \frac{1}{25} = 0.023$.
+  5. The largest value is for 2 → 1, so that transition emits the highest-frequency photon. It is the Lyman-α line at 10.2 eV, in the ultraviolet.
+  Physical reason: the energy levels crowd together as n increases ($E_n \propto -\frac{1}{n^2}$). The gaps between low-lying levels are therefore much larger than those between high levels.
+  Why others are wrong: (B), (C) and (D) are transitions between higher levels, where the spacing is smaller. They give infrared or visible photons of lower frequency.
+  Tip: for adjacent levels, the gap between n and n + 1 decreases roughly as 1/n³. The lowest transition always has the largest energy.
   Answer: (A)
 P A 3: |-
-  Concept: Duane–Hunt law: the cut-off wavelength of X-rays is $\lambda_{min} = \frac{hc}{eV}$.
+  Concept: Duane–Hunt law. The shortest X-ray wavelength (the cut-off) is produced when an electron accelerated through V loses all of its kinetic energy eV in a single photon: $\frac{hc}{\lambda_{min}} = eV$.
+  Given: V = 1.24 × 10⁶ V. A handy constant: hc = 1240 eV nm.
   Solution:
-  1. hc = 1240 eV·nm and eV = $1.24\times10^6$ eV.
-  2. $\lambda_{min} = \frac{1240}{1.24\times10^6}$ nm = $10^{-3}$ nm.
+  1. The electron's kinetic energy is eV = 1.24 × 10⁶ eV.
+  2. $\lambda_{min} = \frac{hc}{eV} = \frac{1240\ \text{eV nm}}{1.24\times10^6\ \text{eV}}$.
+  3. $\lambda_{min} = 10^{-3}$ nm = 10⁻¹² m = 1 pm.
+  4. The cut-off depends only on the tube voltage, not on the target material. The characteristic lines do depend on the target.
+  Why others are wrong: options (A), (C) and (D) are off by factors of 10. Such errors usually come from using hc in the wrong units (for example 12400 eV Å) without converting Å to nm.
+  Tip: remember λ(nm) ≈ 1240/E(eV), or λ(Å) ≈ 12400/V(volts).
   Answer: (B)
 P A 4: |-
-  Concept: Kinetic theory: pressure is the average force per unit area from molecular collisions with the walls.
+  Concept: Kinetic theory explains gas pressure as the result of molecular collisions with the walls. Each collision transfers momentum, and force is the rate of momentum transfer.
   Solution:
-  1. Each molecule hitting a wall elastically reverses its normal velocity, a momentum change of $2mv_x$.
-  2. The rate of this momentum change over all molecules is the force on the wall, hence the pressure.
-  3. Molecules do not stick to the walls, are not attracted by them (ideal gas), and do not lose energy on the way.
+  1. A molecule with velocity component $v_x$ hits a wall and bounces back elastically. Its x-momentum changes by 2m$v_x$.
+  2. Enormous numbers of such collisions occur every second. The total momentum delivered per unit time is the force on the wall.
+  3. Force per unit area is the pressure. Working this out gives $P = \frac{1}{3}\rho\overline{v^2}$.
+  4. So pressure arises because the molecules suffer a change in momentum when they strike the walls.
+  Why others are wrong:
+  - (B) If molecules stuck to the walls, they would transfer only m$v_x$ once and then leave the gas. Kinetic theory assumes elastic rebounds.
+  - (C) In the ideal-gas model, molecules move freely between collisions and do not lose energy on the way.
+  - (D) An ideal gas has no intermolecular or wall attractions. Attraction would, if anything, reduce the pressure, which is the correction in van der Waals theory.
+  Tip: pressure ∝ (number density) × (momentum per hit) × (hit rate), and both the momentum and the hit rate scale with v. That is why P ∝ v² ∝ T.
   Answer: (A)
 P A 5: |-
-  Concept: The centre of mass of a body with a hole = (whole body) – (removed part), with mass ∝ area.
-  Given: disc of radius a centred at x = a (touching O); hole of radius a/2 centred at x = 3a/2 (figure).
+  Concept: Negative-mass method. The remaining lamina = (full disc) − (removed disc). For uniform thickness, mass ∝ area, so treat the hole as a negative mass at its own centre.
+  Given (figure): a disc of radius a, centred at x = a, whose edge touches O. A hole of radius a/2 is cut, centred at x = 3a/2, so the hole touches the far edge of the disc.
   Solution:
-  1. Masses ∝ areas: whole disc $\pi a^2$ at x = a; hole $\frac{\pi a^2}{4}$ at $x = \frac{3a}{2}$.
-  2. $x_{cm} = \frac{\pi a^2(a) - \frac{\pi a^2}{4}\left(\frac{3a}{2}\right)}{\pi a^2 - \frac{\pi a^2}{4}} = \frac{a - \frac{3a}{8}}{\frac{3}{4}} = \frac{5a}{8}\cdot\frac{4}{3} = \frac{5a}{6}$.
+  1. Full disc: area πa² at x = a.
+  2. Hole: area π(a/2)² = πa²/4 at x = 3a/2.
+  3. $x_{cm} = \frac{\pi a^2(a) - \frac{\pi a^2}{4}\cdot\frac{3a}{2}}{\pi a^2 - \frac{\pi a^2}{4}}$.
+  4. Numerator: $\pi a^3\left(1 - \frac{3}{8}\right) = \frac{5\pi a^3}{8}$. Denominator: $\frac{3\pi a^2}{4}$.
+  5. $x_{cm} = \frac{5a}{8}\cdot\frac{4}{3} = \frac{5a}{6}$ from O.
+  6. This is less than a (the disc's centre), as it should be: removing material on the right shifts the centre of mass left.
+  Why others are wrong:
+  - (B) 2a/3 and (C) a/6 measure from the wrong reference point.
+  - (A) 10a/11 comes from adding the hole's contribution instead of subtracting it.
+  Tip: for cut-outs, always subtract both the mass and its moment.
   Answer: (D)
 P A 6: |-
-  Concept: Transistor action needs a very thin, lightly doped base shared between two junctions.
+  Concept: A transistor is not just two diodes. Transistor action needs a single crystal with a very thin, lightly doped base. Carriers injected from the emitter must diffuse across the base to the collector before they recombine.
   Solution:
-  1. Statement I: two separate diodes connected back to back have a thick "base" (two separate crystals and wires), so carriers cannot cross it and there is no transistor action. It is false.
-  2. Statement II: $\beta = \frac{I_C}{I_B}$ is the current amplification factor in CE mode. It is true.
+  1. Statement I: two separate diodes joined back to back form a "base" made of two thick pieces of semiconductor and a metal wire.
+     - Injected carriers recombine long before they could reach the second junction.
+     - So no collector current is controlled by the base, and there is no amplification.
+     Statement I is false.
+  2. Statement II: in common-emitter mode, the current amplification factor is β = I_C/I_B, the ratio of collector current to base current. Statement II is true.
+  3. So Statement I is false and Statement II is true.
+  Why others are wrong:
+  - (B) and (C) accept Statement I, which ignores the essential thin-base requirement.
+  - (D) rejects Statement II, which is the standard definition of β.
+  Tip: the base must be much thinner than the minority-carrier diffusion length, and lightly doped so that recombination is small. This is why about 95–99% of the emitter current reaches the collector.
   Answer: (A)
 P A 7: |-
-  Concept: In SHM, $v = \omega\sqrt{A^2 - x^2}$.
+  Concept: In SHM, x = A sin ωt and v = Aω cos ωt. Eliminating t gives the relation between velocity and displacement.
   Solution:
-  1. Squaring: $v^2 = \omega^2(A^2 - x^2) \Rightarrow \frac{x^2}{A^2} + \frac{v^2}{\omega^2A^2} = 1$.
-  2. This is an ellipse with semi-axes A and ωA (a circle only in the special case ω = 1).
+  1. From the two expressions: $\frac{x^2}{A^2} + \frac{v^2}{A^2\omega^2} = \sin^2\omega t + \cos^2\omega t = 1$.
+  2. This is the equation of an ellipse in the x–v plane, with semi-axes A (along x) and Aω (along v).
+  3. Equivalently, $v = \pm\omega\sqrt{A^2 - x^2}$.
+  4. The curve is a circle only in the special case Aω = A, i.e. ω = 1 in the chosen units. In general it is an ellipse.
+  Why others are wrong:
+  - (B) Parabolic: v² is linear in x², not in x.
+  - (C) Straight line: that describes a–x in SHM (a = −ω²x), not v–x.
+  - (D) Circular: only in the special case ω = 1, or when the axes are scaled (plotting v/ω against x).
+  Tip: in SHM, the phase-space plot (x, v) is an ellipse, the acceleration–displacement plot is a straight line through the origin with slope −ω², and energy versus x is a parabola for PE and an inverted parabola for KE.
   Answer: (A)
 P A 8: |-
-  Concept: Sources of the parts of the electromagnetic spectrum.
+  Concept: Each band of the electromagnetic spectrum is produced by a characteristic physical process.
   Solution:
-  1. Microwaves: magnetron / klystron valves, (a)–(ii).
-  2. Infrared: vibrations of atoms and molecules (hot bodies), (b)–(iv).
-  3. Gamma rays: radioactive decay of nuclei, (c)–(i).
-  4. X-rays: transitions of inner-shell electrons (and deceleration of electrons), (d)–(iii).
+  1. (a) Microwaves: generated by special vacuum tubes such as magnetrons, klystrons and Gunn diodes. The magnetron is used in microwave ovens and radar. So (a)–(ii).
+  2. (b) Infrared: emitted by hot bodies through vibrations of atoms and molecules. So (b)–(iv).
+  3. (c) Gamma rays: emitted in the radioactive decay of nuclei, when an excited nucleus drops to a lower state. So (c)–(i).
+  4. (d) X-rays: produced when inner-shell electrons make transitions (characteristic X-rays), and when fast electrons decelerate (bremsstrahlung). So (d)–(iii).
+  5. The matching (a)–(ii), (b)–(iv), (c)–(i), (d)–(iii) is option (A).
+  Why others are wrong:
+  - (B) and (D) assign microwaves to an RC circuit (vi). RC or LC oscillators produce radio waves, not microwaves.
+  - (D) also links X-rays to molecular vibration.
+  - (C) links gamma rays to an RC circuit.
+  - LASER (v) is a light source (visible or near-IR), not X-rays.
+  Tip: frequency rises with the energy of the process: electronic circuits give radio waves, molecular motions give IR, outer electrons give visible and UV light, inner electrons give X-rays, and nuclei give gamma rays.
   Answer: (A)
 P A 9: |-
-  Concept: De Morgan's theorem: $\overline{X + Y} = \bar{X}\cdot\bar{Y}$.
+  Concept: Simplify the circuit with Boolean algebra, especially De Morgan's theorem: $\overline{X + Y} = \bar X\cdot\bar Y$ and $\overline{X\cdot Y} = \bar X + \bar Y$.
+  Given (figure): A and B̄ feed an OR gate, and its output passes through a NOT gate to give C.
   Solution:
-  1. The circuit gives $C = \overline{A + \bar{B}}$.
-  2. By De Morgan: $C = \bar{A}\cdot\bar{\bar{B}} = \bar{A}\cdot B$.
-  3. This is an AND gate with inputs $\bar{A}$ and B, option (B).
+  1. OR output: A + B̄.
+  2. After the NOT gate: $C = \overline{A + \bar B}$.
+  3. De Morgan: $C = \bar A\cdot\overline{\bar B} = \bar A\cdot B$.
+  4. So the circuit is equivalent to an AND gate fed with Ā and B, which is option (B).
+  5. Truth-table check:
+     - A = 0, B = 1: C = $\overline{0 + 0}$ = 1, and Ā·B = 1·1 = 1 ✓.
+     - A = 1, B = 1: C = $\overline{1 + 0}$ = 0, and Ā·B = 0 ✓.
+  Why others are wrong:
+  - (A) and (C) use NAND gates, whose outputs are the complements of what is needed.
+  - (D) A NOR of A and B gives Ā·B̄, not Ā·B.
+  Tip: to break a bar over an OR, change the OR to AND and complement each input. Double bars cancel.
   Answer: (B)
 P A 10: |-
-  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Concept: In Young's double-slit experiment, the fringe width is $\beta = \frac{\lambda D}{d}$. It depends on the wavelength, the screen distance and the slit separation.
   Solution:
-  1. Violet light has a shorter wavelength than red, so β decreases and consecutive fringes come closer.
-  2. Brightness of maxima, intensity of minima and the central bright fringe do not change because of wavelength alone.
+  1. Changing from red (λ ≈ 700 nm) to violet (λ ≈ 400 nm) reduces λ.
+  2. With D and d unchanged, β ∝ λ decreases, so consecutive bright (and dark) fringes come closer together.
+  3. The central fringe is still bright, because the path difference there is zero for every wavelength.
+  4. With identical slits, the minima remain completely dark, whatever the wavelength.
+  Why others are wrong:
+  - (A) The brightness of the fringes depends on the source intensity, not on its colour.
+  - (C) The central fringe always has zero path difference, so it stays bright.
+  - (D) The intensity at the minima depends on whether the slit intensities are equal, not on λ.
+  Tip: in white light, the central fringe is white and the higher orders show colour fringes, violet inner and red outer, because β ∝ λ.
   Answer: (B)
 P A 11: |-
-  Concept: Because of the earth's rotation, apparent weight at the equator is $W = mg - m\omega^2R$; at the pole it is mg.
+  Concept: A spring balance reads the normal (apparent) weight. At the poles there is no rotational effect, so the reading is mg. At the equator the body moves in a circle of radius R, and part of gravity supplies the centripetal force: W = mg − mω²R.
+  Given: the reading at the pole is 49 N, g = 9.8 m/s², R = 6.4 × 10⁶ m, and one rotation takes 24 h = 86400 s.
   Solution:
-  1. m = 49/9.8 = 5 kg.
-  2. $\omega = \frac{2\pi}{86400} = 7.27\times10^{-5}$ rad/s, so $\omega^2R = (7.27\times10^{-5})^2\times6.4\times10^6 \approx 0.0338$ m/s².
-  3. $W = 49 - 5\times0.0338 \approx 49 - 0.17 = 48.83$ N.
+  1. Mass: m = 49/9.8 = 5 kg.
+  2. Angular speed of the Earth: ω = 2π/86400 = 7.27 × 10⁻⁵ rad/s.
+  3. Centripetal acceleration: ω²R = (7.27 × 10⁻⁵)² × 6.4 × 10⁶ ≈ 0.0338 m/s².
+  4. Reduction in weight: 5 × 0.0338 ≈ 0.17 N.
+  5. Reading at the equator: 49 − 0.17 = 48.83 N.
+  Why others are wrong:
+  - (A) 49 N ignores the Earth's rotation.
+  - (B) and (C) add instead of subtract, or use the wrong magnitude.
+  Tip: the rotational correction at the equator is about 0.34% of g. If the Earth spun about 17 times faster, objects at the equator would become weightless.
   Answer: (D)
 P A 12: |-
-  Concept: Net work = sum of the work in each process; W = 0 for an isochoric process; adiabatic work by the gas $= \frac{P_iV_i - P_fV_f}{\gamma - 1}$.
+  Concept: The net work done by a gas over a cycle is the sum of the work in each step:
+  - isothermal: W = nRT ln(V_f/V_i);
+  - isochoric: W = 0;
+  - adiabatic (by the gas): $W = \frac{P_iV_i - P_fV_f}{\gamma - 1}$.
+  Given: 1 mole. A→B is isothermal with P halved; B→C is isochoric with P falling to P₁/4; C→A is adiabatic.
   Solution:
-  1. A→B isothermal, P halves so V doubles: $W_{AB} = RT\ln2$.
-  2. B→C isochoric: $W_{BC} = 0$.
-  3. At C: $P = \frac{P_1}{4}$, $V = 2V_1$, so $P_CV_C = \frac{P_1V_1}{2} = \frac{RT}{2}$.
-  4. C→A adiabatic compression: $W_{CA} = \frac{P_CV_C - P_AV_A}{\gamma - 1} = \frac{\frac{RT}{2} - RT}{\gamma - 1} = -\frac{RT}{2(\gamma - 1)}$.
-  5. Net $W = RT\left[\ln2 - \frac{1}{2(\gamma - 1)}\right]$.
+  1. A→B: P halves at constant T, so V doubles (V_B = 2V₁). $W_{AB} = RT\ln2$.
+  2. B→C: the volume is constant, so $W_{BC} = 0$.
+  3. State C: P = P₁/4 and V = 2V₁, so $P_CV_C = \frac{P_1V_1}{2} = \frac{RT}{2}$.
+  4. C→A (adiabatic compression back to P₁V₁ = RT): $W_{CA} = \frac{P_CV_C - P_AV_A}{\gamma - 1} = \frac{\frac{RT}{2} - RT}{\gamma - 1} = -\frac{RT}{2(\gamma - 1)}$.
+  5. Net work: $W = RT\ln2 - \frac{RT}{2(\gamma - 1)} = RT\left[\ln2 - \frac{1}{2(\gamma - 1)}\right]$.
+  Why others are wrong:
+  - (D) RT ln 2 is only the isothermal step.
+  - (B) is only the adiabatic step.
+  - (A) zero would describe a cycle enclosing no area.
   Answer: (C)
 P A 13: |-
-  Concept: $g = \frac{4\pi^2L}{T^2}$, so $\frac{\Delta g}{g} = \frac{\Delta L}{L} + 2\frac{\Delta T}{T}$.
+  Concept: When a quantity is a product of powers, $g = \frac{4\pi^2L}{T^2}$, the maximum fractional error is the sum of the fractional errors, each multiplied by its power: $\frac{\Delta g}{g} = \frac{\Delta L}{L} + 2\frac{\Delta T}{T}$.
+  Given: L = 1.0 m with ΔL = 1 mm (the scale's least count); T = 1.95 s with ΔT = 0.01 s (the stopwatch resolution).
   Solution:
-  1. $\frac{\Delta L}{L} = \frac{0.001}{1.0} = 0.001$.
-  2. $2\frac{\Delta T}{T} = 2\times\frac{0.01}{1.95} = 0.01026$.
-  3. Total = 0.01126, i.e. about 1.13%.
+  1. $\frac{\Delta L}{L} = \frac{0.001}{1.0} = 0.001$, i.e. 0.1%.
+  2. $\frac{\Delta T}{T} = \frac{0.01}{1.95} = 0.00513$; doubled, this is 0.01026, i.e. 1.026%.
+  3. Total: 0.001 + 0.01026 = 0.01126, i.e. about 1.13%.
+  4. The timing error dominates, because T appears squared and the stopwatch resolution is relatively coarse.
+  Why others are wrong:
+  - (D) 1.03% omits the length error.
+  - (A) 1.33% and (B) 1.30% miscount or mis-weight the timing term.
+  Tip: to reduce the error in g, time many oscillations (for example 20) and divide. ΔT per oscillation then drops by a factor of 20.
   Answer: (C)
 P A 14: |-
-  Concept: A constant force (the gravity component along the incline) only shifts the equilibrium position; it does not change the period.
+  Concept: A constant force (here the gravity component Mg sin α along the incline) only shifts the equilibrium position of a spring system. It does not change the stiffness, so it does not change the frequency.
+  Given (figure): the block of mass M sits between two springs, each of constant k, on a smooth incline, with the free ends fixed.
   Solution:
-  1. When the block is displaced by x, one spring is stretched and the other compressed, each exerting kx back towards equilibrium: the springs act in parallel, $k_{eq} = 2k$.
-  2. $Mg\sin\alpha$ is constant, so it cancels out of the equation of motion about the new equilibrium.
-  3. $f = \frac{1}{2\pi}\sqrt{\frac{2k}{M}}$.
-  Note: the printed key shows (1), but its own solution derives this expression, which is option (C).
+  1. Displace the block by x from equilibrium. One spring is stretched by an extra x and the other is compressed by an extra x.
+  2. Both springs push the block back towards equilibrium, each with an extra force kx. The net restoring force is 2kx, so the springs act in parallel: $k_{eq} = 2k$.
+  3. Mg sin α is balanced at the equilibrium position and does not appear in the equation of motion about it: $M\ddot{x} = -2kx$.
+  4. $\omega = \sqrt{\frac{2k}{M}}$, so $f = \frac{1}{2\pi}\sqrt{\frac{2k}{M}}$.
+  Note: the printed key shows (A), but the printed solution itself derives $\frac{1}{2\pi}\sqrt{\frac{2k}{M}}$, which is option (C). Options (A) and (B) are not even dimensionally correct, since k/(Mg sin α) has units of 1/length. We use (C).
   Answer: (C)
 P A 15: |-
-  Concept: Just after a switch is closed, an inductor opposes any sudden change in current, so it behaves like an open circuit.
+  Concept: At the instant a switch is closed, the current through an inductor cannot change suddenly. An inductor with zero initial current therefore acts as an open circuit at t = 0⁺. In steady state it acts as a plain wire.
+  Given (figure): four resistors R = 2 Ω, two inductors of 2 mH each, and an ideal battery of 9 V.
   Solution:
-  1. At t = 0 the two branches containing inductors carry no current (L–R and R–L branches are open).
-  2. The circuit is then the battery, the series resistor R and the single parallel resistor R: total 2R = 4 Ω.
-  3. $i = \frac{9}{4} = 2.25$ A.
+  1. At t = 0⁺, both branches that contain an inductor carry zero current, so they are effectively removed from the circuit.
+  2. What remains is the battery driving current through two resistors in series, 2R = 4 Ω.
+  3. Current just after closing: $i = \frac{9}{4} = 2.25$ A.
+  4. For comparison, in steady state the inductors become wires and more resistors carry current, so the long-time current would differ (larger).
+  Why others are wrong:
+  - (A) 9 A treats the circuit as a single 1 Ω path.
+  - (B) and (D) come from including the inductor branches at t = 0.
+  Tip: remember the two limits. At t = 0⁺ an inductor is an open circuit and a capacitor is a short circuit. At t = ∞ an inductor is a short circuit and a capacitor is an open circuit.
   Answer: (C)
 P A 16: |-
-  Concept: de Broglie wavelength $\lambda = \frac{h}{mv}$.
+  Concept: The de Broglie wavelength is λ = h/p = h/(mv). Equal wavelengths mean equal momenta.
+  Given: a proton (mass m) and an α-particle (mass 4m, i.e. 2 protons and 2 neutrons).
   Solution:
-  1. Equal λ means equal momentum: $m_pv_p = m_\alpha v_\alpha$.
-  2. $\frac{v_p}{v_\alpha} = \frac{m_\alpha}{m_p} = 4$, so the ratio is 4 : 1.
+  1. λ_p = λ_α, so $m_pv_p = m_\alpha v_\alpha$.
+  2. $\frac{v_p}{v_\alpha} = \frac{m_\alpha}{m_p} = \frac{4m}{m} = 4$.
+  3. So v_p : v_α = 4 : 1. The lighter proton must move four times faster to have the same momentum.
+  4. Kinetic energies, for comparison: K = p²/2m, so K_p : K_α = 4 : 1 as well.
+  Why others are wrong:
+  - (C) 1 : 4 inverts the ratio.
+  - (A) 4 : 2 uses the charge ratio (2e for α) instead of the mass ratio.
+  - (D) 4 : 3 has no physical basis.
+  Common mistake: when particles are accelerated through the same voltage, λ ∝ 1/√(mq) and the charge matters. Here the wavelengths are simply given as equal, so only the masses enter.
   Answer: (B)
 P A 17: |-
-  Concept: For small displacements the net attraction is proportional to the displacement, giving SHM with $\omega^2 = \frac{k_{eff}}{m}$.
+  Concept: SHM requires a restoring force proportional to the displacement, F = −kx, giving ω = √(k/m). For a small displacement perpendicular to the line of the two charges, the attractive forces have perpendicular components proportional to x.
+  Given: two electrons (charge −q each) a distance 2d apart. A proton (charge +q, mass m) sits at the midpoint and is displaced by x ≪ d perpendicular to the line.
   Solution:
-  1. Each electron (charge –q, at distance d along the axis) attracts the proton with $F = \frac{1}{4\pi\varepsilon_0}\frac{q^2}{d^2 + x^2}$.
-  2. The components along the axis cancel; the perpendicular components add, pulling the proton back: $F_{net} = 2F\frac{x}{\sqrt{d^2 + x^2}} \approx \frac{2q^2x}{4\pi\varepsilon_0d^3}$ for x << d.
-  3. $\omega^2 = \frac{2q^2}{4\pi\varepsilon_0md^3} = \frac{q^2}{2\pi\varepsilon_0md^3}$.
-  4. $\omega = \left(\frac{q^2}{2\pi\varepsilon_0md^3}\right)^{1/2}$.
+  1. Distance from the proton to each electron: $\sqrt{d^2 + x^2}$.
+  2. Attraction from each: $F = \frac{q^2}{4\pi\varepsilon_0(d^2 + x^2)}$, directed towards that electron.
+  3. The components along the line cancel. The components along −x add: $F_{net} = 2F\cdot\frac{x}{\sqrt{d^2 + x^2}}$.
+  4. For x ≪ d: $F_{net} \approx \frac{2q^2x}{4\pi\varepsilon_0d^3} = \frac{q^2x}{2\pi\varepsilon_0d^3}$, directed back towards the midpoint.
+  5. So $k = \frac{q^2}{2\pi\varepsilon_0d^3}$ and $\omega = \sqrt{\frac{k}{m}} = \left(\frac{q^2}{2\pi\varepsilon_0md^3}\right)^{1/2}$.
+  Why others are wrong:
+  - (B) and (C) are inverted, so they have the units of time rather than 1/time.
+  - (D) is off by a factor of 4 inside the root.
+  Note: a displacement along the line would be unstable here, because the nearer electron attracts more strongly.
   Answer: (A)
 P A 18: |-
-  Concept: Ferromagnetic domains respond to an external field by domain-wall motion and rotation.
+  Concept: A ferromagnet is divided into domains, regions in which the atomic moments are aligned. An external field magnetises the material in two ways:
+  - domain-wall motion: domains aligned with the field grow at the expense of the others;
+  - domain rotation: the magnetisation direction inside a domain turns towards the field.
   Solution:
-  1. Domains aligned with the field grow at the expense of the others, and unfavourably aligned domains shrink.
-  2. Domains also rotate their magnetisation towards the field direction.
-  3. So domains may increase or decrease in size and change orientation.
+  1. Domains whose magnetisation is roughly parallel to B are energetically favoured, so they grow. Their walls move outward.
+  2. Domains aligned against the field shrink and may disappear.
+  3. At stronger fields, the remaining domains rotate their magnetisation towards the field direction.
+  4. So domains may increase or decrease in size and also change their orientation. Soft ferromagnets such as soft iron do this easily, with low coercivity.
+  Why others are wrong:
+  - (A) says all domains decrease, but the favoured ones grow.
+  - (C) says there is no change in orientation, but rotation does occur.
+  - (D) says there is no relation to the field, which contradicts the whole mechanism of magnetisation.
+  Tip: in hard ferromagnets (permanent magnets), domain walls are pinned, which is why they retain magnetisation.
   Answer: (B)
 P A 19: |-
-  Concept: A travelling wave has the form f(x ± vt), i.e. a function of (kx ± ωt) together.
+  Concept: A travelling (progressive) wave has the form y = f(x − vt) or f(x + vt). The position and time appear only in the combination kx ± ωt, so the shape moves without change.
   Solution:
-  1. $y = A\sin(15x - 2t)$ is a function of (15x – 2t), a wave moving in +x with speed $\frac{2}{15}$ units.
-  2. $A\sin x\cos\omega t$ is a standing wave, and the other two do not have the form f(x ± vt).
+  1. (B) y = A sin(15x − 2t) = A sin[15(x − (2/15)t)]. This is a function of (x − vt) with v = 2/15, so it is a sinusoidal wave moving in the +x direction.
+  2. (D) y = A sin x cos ωt: the x and t parts are separated into a product. This is a standing wave with fixed nodes at x = nπ.
+  3. (A) $y = Ae^{-x^2}(vt + \theta)$: the amplitude is fixed in x and grows linearly with t, which is not f(x ± vt).
+  4. (C) y = Aeˣ cos(ωt − θ): every point oscillates in phase with an amplitude that depends on x. No shape travels, so this is not f(x ± vt).
+  Why others are wrong: none of (A), (C) and (D) can be written as a single function of (x ± vt).
+  Tip: test by checking whether the argument is linear in x and t together, kx ± ωt. If x and t are in separate factors, the wave is standing or non-propagating.
   Answer: (B)
 P A 20: |-
-  Concept: Use $a = v\frac{dv}{dx}$ and integrate.
+  Concept: When a force depends on position, use a = v dv/dx and integrate from the start to the stopping point.
+  Given: ma = −αx², with the particle starting at the origin with speed v₀.
   Solution:
-  1. $mv\frac{dv}{dx} = -\alpha x^2 \Rightarrow \int_{v_0}^{0}mv\,dv = -\alpha\int_0^{x}x^2\,dx$.
-  2. $\frac{mv_0^2}{2} = \frac{\alpha x^3}{3} \Rightarrow x = \left(\frac{3mv_0^2}{2\alpha}\right)^{1/3}$.
-  3. The mass m is missing from every option (option (C) matches only if m = 1), so the question was declared a bonus.
+  1. $mv\frac{dv}{dx} = -\alpha x^2$.
+  2. Separate and integrate: $\int_{v_0}^{0}mv\,dv = -\alpha\int_0^{x}x^2\,dx$.
+  3. $-\frac{mv_0^2}{2} = -\frac{\alpha x^3}{3}$.
+  4. Stopping distance: $x = \left(\frac{3mv_0^2}{2\alpha}\right)^{1/3}$.
+  5. Every option omits the mass m. Option (C), $\left(\frac{3v_0^2}{2\alpha}\right)^{1/3}$, matches only if m = 1 or if α is read as α/m.
+  6. Because no option is correct as stated, the question was declared a bonus in the official key.
+  Tip: the work–energy view gives the same result directly. The work done by the damping force, $-\int_0^x\alpha x^2dx = -\frac{\alpha x^3}{3}$, equals the change in KE, $-\frac{mv_0^2}{2}$.
   Answer: Bonus
 P B 1: |-
-  Concept: Elongation $\Delta L = \frac{FL}{AY}$, with $A = \frac{\pi d^2}{4}$.
+  Concept: Hooke's law for a wire: $Y = \frac{F/A}{\Delta L/L}$, so $\Delta L = \frac{FL}{AY}$ with $A = \frac{\pi d^2}{4}$.
+  Given: the original elongation is 0.04 m. The length and diameter are both doubled, with the same force and material.
   Solution:
-  1. $\Delta L \propto \frac{L}{d^2}$ for the same F and material.
-  2. Doubling L and d: factor $\frac{2}{4} = \frac{1}{2}$.
+  1. For the same F and Y: $\Delta L \propto \frac{L}{d^2}$.
+  2. New/old ratio: $\frac{2L/(2d)^2}{L/d^2} = \frac{2}{4} = \frac{1}{2}$.
   3. New elongation = 0.04 × ½ = 0.02 m = 2 cm.
+  4. Physically: doubling the length doubles the stretch, but doubling the diameter quadruples the area and cuts the stress by a factor of 4. The net effect is a factor of ½.
+  Common mistakes:
+  - taking A ∝ d instead of d², which gives no change (4 cm);
+  - forgetting the unit conversion (the answer is asked in cm).
+  Tip: the stored elastic energy is ½FΔL, so it halves too for the same force.
   Answer: 2
 P B 2: |-
-  Concept: Ohm's law in microscopic form, $J = \sigma E$, so $I = \sigma EA$.
+  Concept: Ohm's law in microscopic form: the current density is J = σE, and the current is I = JA = σEA.
+  Given: radius r = 0.5 mm = 5 × 10⁻⁴ m, σ = 5 × 10⁷ S/m, E = 10 mV/m = 10⁻² V/m.
   Solution:
-  1. $A = \pi(0.5\times10^{-3})^2 = 0.25\pi\times10^{-6}$ m².
-  2. $I = 5\times10^7\times10\times10^{-3}\times0.25\pi\times10^{-6} = 0.125\pi$ A = 125π mA.
-  3. $125 = x^3$, so x = 5.
+  1. Cross-sectional area: A = πr² = π(5 × 10⁻⁴)² = 25π × 10⁻⁸ = 0.25π × 10⁻⁶ m².
+  2. Current density: J = σE = 5 × 10⁷ × 10⁻² = 5 × 10⁵ A/m².
+  3. Current: I = JA = 5 × 10⁵ × 0.25π × 10⁻⁶ = 0.125π A = 125π mA.
+  4. Comparing with x³π mA: x³ = 125, so x = 5.
+  Common mistakes:
+  - using the diameter instead of the radius, which makes the area 4 times too large;
+  - forgetting that mV means 10⁻³ V.
+  Tip: σ = 5 × 10⁷ S/m is close to copper's conductivity, so even a tiny field of 10 mV/m drives a substantial current.
   Answer: 5
 P B 3: |-
-  Concept: Doppler effect with both source and observer moving towards each other: $f' = f\frac{v + v_o}{v - v_s}$.
+  Concept: Doppler effect when source and observer approach each other: $f' = f\frac{v + v_o}{v - v_s}$. Each driver hears the other car's horn at a higher frequency and beats it against their own horn.
+  Given: each car moves at 7.2 km/h = 2 m/s; f = 676 Hz; v = 340 m/s.
   Solution:
-  1. Speed of each car: 7.2 km/h = 2 m/s.
-  2. Frequency of the other car's horn heard by each driver: $f' = 676\times\frac{340 + 2}{340 - 2} = 676\times\frac{342}{338} = 684$ Hz.
-  3. Beats with the driver's own horn: 684 – 676 = 8 Hz.
+  1. For driver 1 (the observer, moving at 2 m/s) hearing car 2 (the source, moving at 2 m/s towards driver 1): $f' = 676\times\frac{340 + 2}{340 - 2} = 676\times\frac{342}{338}$.
+  2. 676/338 = 2, so f′ = 2 × 342 = 684 Hz.
+  3. The driver's own horn is heard at 676 Hz. The observer moves with it, so there is no shift.
+  4. Beat frequency = 684 − 676 = 8 Hz. By symmetry, the other driver hears the same.
+  Common mistakes:
+  - including only the source motion or only the observer motion, which gives about 4 Hz;
+  - putting the signs the wrong way round, which makes f′ lower than f.
+  Tip: for approach, the numerator increases (v + v_o) and the denominator decreases (v − v_s). Both effects raise the frequency.
   Answer: 8
 P B 4: |-
-  Concept: Parallel-axis theorem applied to each of the six rods.
+  Concept: Treat the hexagon as six identical thin rods. For each rod, use its own moment about its centre ($\frac{ml^2}{12}$) and the parallel-axis theorem to shift to the hexagon's centre.
+  Given: total mass 6 kg and total length 2.4 m, so each side has m = 1 kg and l = 0.4 m.
   Solution:
-  1. Each side: mass 1 kg, length l = 0.4 m.
-  2. Distance from the centre to the midpoint of a side: $\frac{\sqrt{3}}{2}l = 0.2\sqrt{3}$ m, so $d^2 = 0.12$ m².
-  3. For one side: $I = \frac{ml^2}{12} + md^2 = \frac{0.16}{12} + 0.12 = 0.1333$ kg m².
-  4. Total for six sides: $6\times0.1333 = 0.8$ kg m² = $8\times10^{-1}$ kg m².
+  1. Distance from the hexagon's centre to the midpoint of a side (the apothem): $\frac{\sqrt3}{2}l = 0.2\sqrt3$ m, so d² = 0.12 m².
+  2. One rod about the axis through the hexagon's centre, perpendicular to its plane: $I_1 = \frac{ml^2}{12} + md^2 = \frac{1\times0.16}{12} + 1\times0.12 = 0.01333 + 0.12 = 0.1333$ kg m².
+  3. All six rods: I = 6 × 0.1333 = 0.8 kg m².
+  4. In the requested form: 8 × 10⁻¹ kg m², so the answer is 8.
+  Common mistakes:
+  - using the circumradius (l) instead of the apothem for d;
+  - forgetting the rod's own term ml²/12.
+  Tip: for a regular n-gon made of rods, $I = n\left(\frac{ml^2}{12} + m a^2\right)$, where a is the apothem.
   Answer: 8
 P B 5: |-
-  Concept: Gauss's law with symmetry: a charge at the centre of a cube sends $\frac{1}{6}$ of its flux through each face.
+  Concept: Gauss's law with symmetry. A charge at the centre of a cube sends equal flux through all six faces, so each face receives $\frac{q}{6\varepsilon_0}$.
+  Given: q = +12 μC, 6 cm above the centre of a square of side 12 cm.
   Solution:
-  1. The charge is 6 cm above the centre of a 12 cm square, so the square is one face of a 12 cm cube centred on the charge.
-  2. $\phi = \frac{q}{6\varepsilon_0} = \frac{12\times10^{-6}}{6\times8.85\times10^{-12}} \approx 2.26\times10^5$ N m²/C.
-  3. $= 226\times10^3$ N m²/C.
+  1. The charge is at half the side length (6 cm) above the square's centre.
+  2. So the square is exactly one face of a cube of side 12 cm whose centre is at the charge.
+  3. Flux through this face: $\phi = \frac{q}{6\varepsilon_0} = \frac{12\times10^{-6}}{6\times8.85\times10^{-12}}$.
+  4. $\phi = \frac{2\times10^{-6}}{8.85\times10^{-12}} = 2.26\times10^5$ N m²/C = 226 × 10³ N m²/C.
+  Common mistakes:
+  - using q/ε₀, the total flux, instead of one-sixth of it;
+  - using q/2ε₀, which applies to an infinite plane, not to a finite square.
+  Tip: whenever a charge sits at distance a/2 above the centre of a square of side a, think "one face of a cube". Other geometries need integration or a solid-angle calculation.
   Answer: 226
 P B 6: |-
-  Concept: $K = \frac{p^2}{2m}$, so for equal momentum $K \propto \frac{1}{m}$.
+  Concept: Kinetic energy in terms of momentum: $K = \frac{p^2}{2m}$. For equal momentum, K ∝ 1/m, so the lighter body has more kinetic energy.
+  Given: m_A = 1 kg and m_B = 2 kg, with equal linear momentum p.
   Solution:
-  1. $\frac{K_A}{K_B} = \frac{m_B}{m_A} = \frac{2}{1}$.
-  2. So A = 2.
+  1. $K_A = \frac{p^2}{2\times1}$ and $K_B = \frac{p^2}{2\times2}$.
+  2. $\frac{K_A}{K_B} = \frac{m_B}{m_A} = \frac{2}{1}$.
+  3. So A = 2.
+  4. Physically, the lighter body must move faster (twice as fast) to have the same momentum, and KE grows with the square of the speed.
+  Common mistake: assuming K ∝ m (true only at equal speeds), which gives 1 : 2.
+  Related results:
+  - equal kinetic energy: p ∝ √m, so p_A : p_B = 1 : √2;
+  - equal speed: K ∝ m.
+  Tip: use K = p²/2m or p = √(2mK) to switch quickly between momentum and energy comparisons.
   Answer: 2
 P B 7: |-
-  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$ depends only on temperature for a given gas, not on pressure.
+  Concept: The rms speed of a gas is $v_{rms} = \sqrt{\frac{3RT}{M}}$. For a given gas it depends only on the absolute temperature. The pressure matters only through T, so at fixed T it cancels (P/ρ = RT/M).
+  Given: 200 m/s at 27°C (300 K); the new state is 127°C (400 K) at 2 atm.
   Solution:
-  1. $\frac{v_2}{v_1} = \sqrt{\frac{400}{300}} = \frac{2}{\sqrt{3}}$.
-  2. $v_2 = 200\times\frac{2}{\sqrt{3}} = \frac{400}{\sqrt{3}}$ m/s, so x = 400.
+  1. $\frac{v_2}{v_1} = \sqrt{\frac{T_2}{T_1}} = \sqrt{\frac{400}{300}} = \frac{2}{\sqrt3}$.
+  2. $v_2 = 200\times\frac{2}{\sqrt3} = \frac{400}{\sqrt3}$ m/s ≈ 231 m/s.
+  3. Comparing with x/√3: x = 400.
+  4. Doubling the pressure is irrelevant. It changes the density, but $v_{rms} = \sqrt{3P/\rho}$ stays the same at a given T.
+  Common mistakes:
+  - using Celsius temperatures (127/27);
+  - including the pressure ratio (√2).
+  Tip: rms, average and most probable speeds all scale as √(T/M) with fixed numerical factors (√3, √(8/π) and √2 respectively).
   Answer: 400
 P B 8: |-
-  Concept: At resonance the impedance equals R, so $P = \frac{V_{rms}^2}{R}$.
+  Concept: At resonance in a series LCR circuit, X_L = X_C. The impedance equals R, the current is in phase with the voltage (power factor 1), and the average power is $P = \frac{V_{rms}^2}{R}$.
+  Given: P = 16 W at resonance, with a 120 V (rms) source.
   Solution:
   1. $R = \frac{V^2}{P} = \frac{120^2}{16} = \frac{14400}{16} = 900$ Ω.
-  2. The resonant frequency is not needed.
+  2. Check: the current is 120/900 = 0.133 A, and I²R = 0.0178 × 900 = 16 W ✓.
+  3. The resonant frequency ω₀ = 10⁵ rad/s would be needed only to find L and C individually (via ω₀ = 1/√(LC)). It is not needed for R.
+  Common mistakes:
+  - using the peak voltage, which gives R twice as large;
+  - including a power factor less than 1. At resonance it is exactly 1.
+  Tip: at resonance, all the power is dissipated in R, and the circuit behaves as a pure resistor.
   Answer: 900
 P B 9: |-
-  Concept: Frequency stays the same in a new medium; the speed becomes $v = \frac{c}{\sqrt{\varepsilon_r}}$ (taking $\mu_r$ = 1).
+  Concept: When a wave passes from one medium into another, its frequency stays the same (it is set by the source). Its speed changes to $v = \frac{c}{\sqrt{\varepsilon_r\mu_r}}$, so the wavelength changes in proportion.
+  Given: f = 3 GHz, ε_r = 2.25, μ_r = 1 (non-magnetic dielectric).
   Solution:
-  1. $v = \frac{3\times10^8}{\sqrt{2.25}} = 2\times10^8$ m/s.
-  2. $\lambda = \frac{v}{f} = \frac{2\times10^8}{3\times10^9} = 0.0667$ m = 6.67 cm = $667\times10^{-2}$ cm.
+  1. Refractive index: $n = \sqrt{2.25} = 1.5$.
+  2. $v = \frac{3\times10^8}{1.5} = 2\times10^8$ m/s.
+  3. $\lambda = \frac{v}{f} = \frac{2\times10^8}{3\times10^9} = 0.0667$ m = 6.67 cm.
+  4. In the requested form: 667 × 10⁻² cm.
+  5. Check: in vacuum λ₀ = 10 cm, and λ = λ₀/n = 10/1.5 = 6.67 cm ✓.
+  Common mistakes:
+  - dividing by ε_r (2.25) instead of √ε_r, which gives 4.44 cm;
+  - changing the frequency.
+  Tip: n = √(ε_r μ_r) for EM waves. In ordinary optical media μ_r ≈ 1, so n ≈ √ε_r at the relevant frequency.
   Answer: 667
 P B 10: |-
-  Concept: Total attenuation in dB adds along the length of the cable.
+  Concept: The decibel scale is logarithmic, so attenuations in dB add along a cable. Gain (dB) = 10 log₁₀(P_out/P_in); a loss is a negative gain.
+  Given: P_in = 0.1 kW = 100 W; the attenuation is −5 dB/km over 20 km.
   Solution:
-  1. Loss = 5 dB/km × 20 km = 100 dB.
-  2. $-100 = 10\log_{10}\frac{P_o}{P_i} \Rightarrow \frac{P_o}{P_i} = 10^{-10}$.
-  3. $P_o = 100\times10^{-10} = 10^{-8}$ W, so x = 8.
+  1. Total attenuation: 5 dB/km × 20 km = 100 dB, so the gain is −100 dB.
+  2. $-100 = 10\log_{10}\frac{P_o}{P_i}$, so $\frac{P_o}{P_i} = 10^{-10}$.
+  3. $P_o = 100\times10^{-10} = 10^{-8}$ W.
+  4. Comparing with 10⁻ˣ W: x = 8.
+  Common mistakes:
+  - using 20 log₁₀ (the voltage-ratio formula) instead of 10 log₁₀ for power;
+  - taking P_in as 0.1 W instead of 100 W.
+  Tip: every 10 dB of loss divides the power by 10, so 100 dB means a factor of 10¹⁰. This is why long cables need repeaters or amplifiers every few kilometres.
   Answer: 8

@@ -1,175 +1,399 @@
 P A 1: |-
-  Concept: A NAND gate with its inputs tied is a NOT gate; by De Morgan, $\overline{\bar A\cdot\bar B} = A + B$.
+  Concept: NAND is a universal gate. A NAND with both inputs tied together is a NOT gate ($\overline{A\cdot A} = \bar A$). De Morgan's theorem: $\overline{\bar A\cdot\bar B} = A + B$.
   Solution:
-  1. The first two NANDs invert the inputs: $\bar A$ and $\bar B$.
-  2. The middle NAND gives $\overline{\bar A\bar B} = A + B$ (OR).
-  3. The last NAND with tied inputs inverts: $Y = \overline{A + B}$, a NOR gate.
+  1. From the figure: input A goes to a NAND with tied inputs, giving $\bar A$. Input B does the same, giving $\bar B$.
+  2. These feed a third NAND: $\overline{\bar A\cdot\bar B} = \bar{\bar A} + \bar{\bar B} = A + B$ (by De Morgan). Three NANDs arranged this way make an OR gate.
+  3. The output goes through a fourth NAND with tied inputs, which inverts it: $Y = \overline{A + B}$.
+  4. $\overline{A + B}$ is the NOR function.
+  Truth table check:
+  - A = 0, B = 0: $\bar A = \bar B = 1$, the middle NAND gives 0, the final NOT gives Y = 1.
+  - A = 1, B = 0: $\bar A = 0$, the middle NAND gives 1, so Y = 0.
+  - A = 0, B = 1: similarly Y = 0.
+  - A = 1, B = 1: Y = 0.
+  Output 1 only when both inputs are 0: NOR ✓.
+  Why others are wrong:
+  - (B) OR is the output before the last inverting NAND.
+  - (C) AND would need NAND followed by NOT without the input inverters.
+  - (D) NAND is a single gate; this combination is not equivalent to it.
   Answer: (A)
 P A 2: |-
-  Concept: Momentum is conserved in the collision; mechanical energy is conserved in the swing.
+  Concept: This is a ballistic pendulum. Treat it in two stages. The bullet embeds almost instantly, so linear momentum is conserved (kinetic energy is not; the collision is perfectly inelastic). During the swing, mechanical energy is conserved.
   Solution:
-  1. After the collision: $v_1 = \sqrt{2gh} = \sqrt{2\times9.8\times0.098} = 1.386$ m/s.
-  2. $mv = (M + m)v_1 \Rightarrow v = \frac{6}{0.01}\times1.386 \approx 831.5$ m/s.
+  1. Swing stage: the combined mass rises by h = 9.8 cm = 0.098 m. $\frac{1}{2}(M + m)V^2 = (M + m)gh$, so $V = \sqrt{2gh} = \sqrt{2\times9.8\times0.098} = \sqrt{1.9208} = 1.386$ m/s.
+  2. Collision stage: $mv = (M + m)V$.
+  3. $M + m = 5.99 + 0.01 = 6.00$ kg and m = 0.010 kg.
+  4. $v = \frac{(M + m)V}{m} = \frac{6.00\times1.386}{0.010} = 600\times1.386 = 831.5$ m/s.
+  5. The nearest option is 831.4 m/s.
+  Why energy is not conserved in the collision: the initial kinetic energy is $\frac{1}{2}(0.01)(831.4)^2 \approx 3456$ J. After the collision it is only $\frac{1}{2}(6)(1.386)^2 \approx 5.8$ J. More than 99.8% of the energy goes into heat, sound and deformation as the bullet embeds. So equating the bullet's kinetic energy to mgh directly would be a serious error.
+  Why others are wrong: (A), (B) and (D) differ by about 10 m/s, from rounding $\sqrt{2gh}$ or using M instead of M + m.
   Answer: (C)
 P A 3: |-
-  Concept: The magnetic force $q\vec v\times\vec B$ is always perpendicular to the velocity.
+  Concept: The magnetic force on a moving charge is the Lorentz force $\vec F = q\vec v\times\vec B$. By the property of the cross product, it is always perpendicular to the velocity.
   Solution:
-  1. $dW = \vec F\cdot d\vec l = 0$ since $\vec F \perp d\vec l$.
-  2. The work done by $\vec B$ is zero.
+  1. The displacement in time dt is $d\vec l = \vec v\,dt$, which is parallel to $\vec v$.
+  2. Work done by the magnetic force: $dW = \vec F\cdot d\vec l = q(\vec v\times\vec B)\cdot\vec v\,dt$.
+  3. The scalar triple product $(\vec v\times\vec B)\cdot\vec v$ is zero, since a vector perpendicular to v has no component along v.
+  4. So dW = 0 for every displacement, and the total work done by a magnetic field on a moving charge is zero.
+  Consequences:
+  - A static magnetic field cannot change the speed or kinetic energy of a charged particle. It only changes the direction of motion. This is why charges move in circles or helices in uniform magnetic fields at constant speed.
+  - To accelerate particles, cyclotrons use an electric field across the gap between the dees; the magnetic field only bends the path.
+  - In a current-carrying wire moved by a magnetic force, the work comes from the source maintaining the current, not from the field itself.
+  Why others are wrong:
+  - (A) 1, (B) infinite and (D) −1 are not physically meaningful here (work also has units, so pure numbers such as ±1 cannot be right).
   Answer: (C)
 P A 4: |-
-  Concept: Reynolds number $Re = \frac{\rho vD}{\eta}$, with $v = \frac{Q}{\pi r^2}$. Flow is steady for Re < 1000 and unsteady for 1000–2000 (NCERT).
+  Concept: The nature of flow is decided by the Reynolds number $Re = \frac{\rho vD}{\eta}$, where D is the pipe diameter and v is the mean speed ($v = \frac{Q}{\pi r^2}$). NCERT gives: Re < 1000 is steady (streamline), 1000 < Re < 2000 is unsteady, and Re > 2000 is turbulent.
   Solution:
-  1. $0.18$ L/min $= 3\times10^{-6}$ m³/s, so $v = \frac{3\times10^{-6}}{\pi(0.005)^2} = 0.038$ m/s and $Re = \frac{10^3\times0.038\times0.01}{10^{-3}} \approx 382$ (steady).
-  2. $0.48$ L/min $= 8\times10^{-6}$ m³/s, so $v = 0.102$ m/s and $Re \approx 1019$ (unsteady).
-  3. The flow changes from steady to unsteady.
+  1. Tap radius r = 0.5 cm = 0.005 m, so D = 0.01 m and area $\pi r^2 = 7.85\times10^{-5}$ m².
+  2. Initial flow: $Q_1 = 0.18$ L/min $= \frac{0.18\times10^{-3}}{60} = 3\times10^{-6}$ m³/s.
+     $v_1 = \frac{3\times10^{-6}}{7.85\times10^{-5}} = 0.038$ m/s.
+     $Re_1 = \frac{10^3\times0.038\times0.01}{10^{-3}} = 382$. Steady flow.
+  3. Final flow: $Q_2 = 0.48$ L/min $= 8\times10^{-6}$ m³/s.
+     $v_2 = \frac{8\times10^{-6}}{7.85\times10^{-5}} = 0.102$ m/s.
+     $Re_2 = \frac{10^3\times0.102\times0.01}{10^{-3}} = 1019$. Just above 1000, so unsteady.
+  4. The flow changes from steady to unsteady.
+  Shortcut: Re is proportional to Q for a given pipe. The ratio $\frac{0.48}{0.18} = 2.67$ takes Re from 382 to about 1019, across the 1000 threshold.
+  Why others are wrong:
+  - (A) reverses the direction of change.
+  - (B) misses that Re crosses 1000.
+  - (C) The flow never reaches turbulence (Re > 2000).
   Answer: (D)
 P A 5: |-
-  Concept: Direction of the velocity vector at $t = 2$ s.
+  Concept: The direction of motion at any instant is the direction of the velocity vector. Substitute the time, then find the angles the vector makes with the axes (its direction cosines).
   Solution:
-  1. $\vec v(2) = 2\hat i + 6\hat j + 9\hat k$, $|\vec v| = 11$ m/s.
-  2. Its direction cosines are $\frac{2}{11}, \frac{6}{11}, \frac{9}{11}$; none of the listed angles describes this vector exactly.
-  3. The official key takes (B), $\tan^{-1}\frac{2}{3}$ from the y-axis.
-  Note: The question is flawed; ALLEN marks it Bonus because no option matches.
+  1. $\vec v(t) = 0.5t^2\hat i + 3t\hat j + 9\hat k$.
+  2. At t = 2 s: $\vec v = 0.5(4)\hat i + 3(2)\hat j + 9\hat k = 2\hat i + 6\hat j + 9\hat k$ m/s.
+  3. $|\vec v| = \sqrt{4 + 36 + 81} = \sqrt{121} = 11$ m/s.
+  4. Direction cosines: $\cos\alpha = \frac{2}{11}$ (x-axis), $\cos\beta = \frac{6}{11}$ (y-axis), $\cos\gamma = \frac{9}{11}$ (z-axis).
+  5. None of the options is exactly one of these angles. For example, the angle from the y-axis is $\cos^{-1}\frac{6}{11}$, which is $\tan^{-1}\frac{\sqrt{85}}{6}$, not $\tan^{-1}\frac{2}{3}$.
+  6. The ratio $\frac{2}{3}$ in the options equals 6 : 9, the ratio of the y and z components, so the options appear to use only part of the vector.
+  7. The official key gives (B), $\tan^{-1}\frac{2}{3}$ from the y-axis.
+  Note: The question is flawed; ALLEN marks it Bonus because no option matches the actual direction of $2\hat i + 6\hat j + 9\hat k$. The official answer is kept here.
   Answer: (B)
 P A 6: |-
-  Concept: For a line charge, $E = \frac{\lambda}{2\pi\varepsilon_0r}$; the equivalent surface charge density is $\sigma = \varepsilon_0E = \frac{\lambda}{2\pi r}$.
+  Concept: An infinite line charge λ produces a radial field $E = \frac{\lambda}{2\pi\varepsilon_0r}$ at distance r. The "surface charge density" at a point is interpreted, as in the official solution, as the flux density $D = \varepsilon_0E$ there, which in SI units equals $\frac{\lambda}{2\pi r}$ C/m².
   Solution:
-  1. $\sigma = \frac{8\times10^{-9}}{2\pi\times3} = 0.424\times10^{-9}$ C/m² $= 0.424$ nC m⁻².
+  1. The line charge lies along the z-axis. The plane x = 3 m meets the x-axis at the point (3, 0, 0), at distance r = 3 m from the line.
+  2. $D = \varepsilon_0E = \frac{\lambda}{2\pi r} = \frac{8\times10^{-9}}{2\pi\times3} = \frac{8\times10^{-9}}{18.85}$.
+  3. $D = 0.424\times10^{-9}$ C/m² $= 0.424$ nC m⁻².
+  Physical meaning: if a conducting sheet were placed at that position, it would acquire an induced surface charge density equal to D, since $\sigma = \varepsilon_0E$ at a conductor's surface. So the flux density is sometimes loosely called the surface charge density.
+  Check with Gauss's law: a cylinder of radius r and length L around the line carries flux density D over area 2πrL. So $D\cdot2\pi rL = \lambda L$, giving $D = \frac{\lambda}{2\pi r}$ ✓.
+  Why others are wrong:
+  - (B) 47.88 C/m is the field in V/m (E ≈ 47.9 V/m), with the wrong units.
+  - (C) and (D) use $4\pi$ or omit π.
   Answer: (A)
 P A 7: |-
-  Concept: $\lambda = \frac{h}{\sqrt{2mqV}}$; with the same $q$ and $V$, $\lambda \propto \frac{1}{\sqrt m}$.
+  Concept: A charge q accelerated through potential V gains kinetic energy qV. Its momentum is $p = \sqrt{2mqV}$, and its de Broglie wavelength is $\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mqV}}$.
   Solution:
-  1. $\frac{\lambda_e}{\lambda_p} = \sqrt{\frac{m_p}{m_e}} = \sqrt{\frac{1.00727}{0.00055}} = \sqrt{1831} \approx 43$.
+  1. The electron and proton have the same magnitude of charge (e) and are accelerated through the same V = 100 V. So they gain the same kinetic energy, 100 eV.
+  2. With equal q and V: $\lambda \propto \frac{1}{\sqrt m}$.
+  3. $\frac{\lambda_e}{\lambda_p} = \sqrt{\frac{m_p}{m_e}} = \sqrt{\frac{1.00727}{0.00055}} = \sqrt{1831.4} = 42.8 \approx 43$.
+  4. So the ratio is about 43 : 1, with the electron having the longer wavelength.
+  Actual values: $\lambda_e = \frac{12.27}{\sqrt{100}} = 1.227$ Å, and $\lambda_p = \frac{0.286}{\sqrt{100}} = 0.0286$ Å. The ratio is 42.9 ✓.
+  Physical point: the lighter electron has much less momentum for the same kinetic energy, so its wavelength is longer. This is why electron diffraction is easy to observe with crystals (atomic spacing about 1 Å), whereas proton wavelengths at the same energy are far smaller.
+  Why others are wrong:
+  - (A) 1860 : 1 is the mass ratio itself (the given masses give about 1831), without the square root.
+  - (B) squares the mass ratio.
+  - (C) 41.4 comes from an arithmetic slip in the square root.
   Answer: (D)
 P A 8: |-
-  Concept: Compare the secondary voltage with the primary voltage.
+  Concept: A transformer is step-up if the secondary voltage is greater than the primary voltage ($V_s > V_p$, $N_s > N_p$), and step-down if it is less. The secondary voltage can be found from the load's power and current.
   Solution:
-  1. $V_s = \frac{P}{i_L} = \frac{60}{0.11} \approx 545$ V.
-  2. $V_s > V_p = 220$ V, so it is a step-up transformer.
+  1. Primary: 220 V AC.
+  2. Secondary: the load draws 60 W at a current of 0.11 A.
+  3. Secondary voltage: $V_s = \frac{P}{I} = \frac{60}{0.11} = 545$ V.
+  4. $V_s = 545$ V > $V_p = 220$ V, so the transformer steps the voltage up. It is a step-up transformer.
+  5. Turns ratio: $\frac{N_s}{N_p} = \frac{V_s}{V_p} = \frac{545}{220} \approx 2.5$.
+  6. For an ideal transformer, $V_pI_p = V_sI_s$, so the primary current is $I_p = \frac{60}{220} = 0.27$ A, larger than the secondary current. A step-up transformer raises voltage but lowers current.
+  Why others are wrong:
+  - (A) "Auxiliary transformer" is a role in a power station, not a type defined by the voltage ratio.
+  - (B) An auto-transformer has a single winding shared by primary and secondary. The figure shows separate primary (P) and secondary (S) coils.
+  - (D) A step-down transformer would give a secondary voltage below 220 V, which would need a current above $\frac{60}{220} = 0.27$ A for 60 W.
   Answer: (C)
 P A 9: |-
-  Concept: Activity $A = \lambda N$ with $\lambda = \frac{0.693}{T_{1/2}}$; 1 Ci $= 3.7\times10^{10}$ Bq.
+  Concept: The activity of a radioactive sample is $A = \lambda N$, with decay constant $\lambda = \frac{\ln2}{T_{1/2}}$. The curie is 1 Ci = 3.7 × 10¹⁰ decays per second.
   Solution:
-  1. $N = \frac{1.5\times10^{-3}}{198}\times6\times10^{23} = 4.55\times10^{18}$.
-  2. $\lambda = \frac{0.693}{2.7\times86400} = 2.97\times10^{-6}$ s⁻¹.
-  3. $A = 1.35\times10^{13}$ Bq $\approx 3.6\times10^2$ Ci; the nearest option is 357 Ci.
+  1. Number of nuclei: $N = \frac{1.50\times10^{-3}}{198}\times6\times10^{23} = 7.58\times10^{-6}\times6\times10^{23} = 4.55\times10^{18}$.
+  2. Half-life in seconds: $2.7\times24\times3600 = 2.33\times10^5$ s.
+  3. $\lambda = \frac{0.693}{2.33\times10^5} = 2.97\times10^{-6}$ s⁻¹.
+  4. $A = \lambda N = 2.97\times10^{-6}\times4.55\times10^{18} = 1.35\times10^{13}$ Bq.
+  5. In curies: $\frac{1.35\times10^{13}}{3.7\times10^{10}} = 365$ Ci.
+  6. The closest option is 357 Ci. (The small gap comes from rounding in the official calculation.)
+  Sense check: gold-198 is a strong source because its half-life is short (days). Just 1.5 mg gives hundreds of curies, far more than the same mass of radium (1 g of Ra-226 is about 1 Ci).
+  Why others are wrong:
+  - (A) 240 Ci and (D) 252 Ci use a wrong λ (e.g. without ln 2 or with the wrong day length).
+  - (C) 535 Ci corresponds to a half-life about 1.5 times shorter.
   Answer: (B)
 P A 10: |-
-  Concept: $\lambda = \frac{kT}{\sqrt2\pi d^2P}$.
+  Concept: The mean free path is the average distance a molecule travels between collisions: $\lambda = \frac{1}{\sqrt2\pi d^2n}$, with number density $n = \frac{P}{kT}$ (ideal gas). Combined: $\lambda = \frac{kT}{\sqrt2\pi d^2P}$.
   Solution:
-  1. $\lambda = \frac{1.38\times10^{-23}\times300}{1.414\times3.14\times(0.3\times10^{-9})^2\times1.01\times10^5} = \frac{4.14\times10^{-21}}{4.04\times10^{-14}}$.
-  2. $\lambda \approx 1.02\times10^{-7}$ m $= 102$ nm.
+  1. T = 27 °C = 300 K; P = 1.01 × 10⁵ Pa; d = 0.3 nm = 3 × 10⁻¹⁰ m.
+  2. Numerator: $kT = 1.38\times10^{-23}\times300 = 4.14\times10^{-21}$ J.
+  3. Denominator: $\sqrt2\pi d^2P = 1.414\times3.1416\times9\times10^{-20}\times1.01\times10^5$.
+     $1.414\times3.1416 = 4.443$; $4.443\times9\times10^{-20} = 4.0\times10^{-19}$; $\times1.01\times10^5 = 4.04\times10^{-14}$.
+  4. $\lambda = \frac{4.14\times10^{-21}}{4.04\times10^{-14}} = 1.02\times10^{-7}$ m = 102 nm.
+  Interpretation: the mean free path (about 100 nm) is roughly 300 times the molecular diameter (0.3 nm). The average spacing between molecules, $n^{-1/3} = \left(\frac{kT}{P}\right)^{1/3} \approx 3.4$ nm, lies in between. This shows that a gas is mostly empty space.
+  The $\sqrt2$ accounts for the relative motion of all molecules (not just one moving through stationary ones).
+  Why others are wrong:
+  - (A), (B) and (C) come from arithmetic slips, such as mishandling the powers of ten in $d^2$ or dropping the $\sqrt2\pi$ factor.
   Answer: (D)
 P A 11: |-
-  Concept: Lens maker's formula in a medium: $\frac{1}{f} = \left(\frac{\mu_l}{\mu_m} - 1\right)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$.
+  Concept: The lens maker's formula in a medium: $\frac{1}{f} = \left(\frac{\mu_{lens}}{\mu_{medium}} - 1\right)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$. A lens bends light only because of the difference in refractive index at its surfaces.
   Solution:
-  1. $\mu_l = \mu_m = 1.4$, so $\frac{1}{f} = 0$ and $f$ is infinite (the lens behaves like a plane sheet).
+  1. $\mu_{lens} = 1.4$ and $\mu_{medium} = 1.4$.
+  2. $\frac{\mu_{lens}}{\mu_{medium}} - 1 = 1 - 1 = 0$.
+  3. So $\frac{1}{f} = 0\times\left(\frac{1}{R_1} - \frac{1}{R_2}\right) = 0$, and f is infinite.
+  4. The lens has zero power: light passes straight through without bending at either surface, as if through a flat sheet. The lens becomes practically invisible in the liquid, which is why a glass rod "disappears" in a liquid of matching refractive index.
+  Related cases:
+  - $\mu_{medium} < \mu_{lens}$ (e.g. air): a converging lens stays converging, but its focal length increases as the medium's index approaches the lens's.
+  - $\mu_{medium} > \mu_{lens}$: the factor becomes negative, so a convex (converging) lens becomes diverging. An air bubble in water behaves as a diverging lens for this reason.
+  Why others are wrong:
+  - (A) 1 is not a length with meaning here.
+  - (C) $\frac{R_1R_2}{R_1 - R_2}$ is the focal length when the factor $(\mu - 1)$ equals 1, e.g. $\mu = 2$ in air.
+  - (D) zero focal length would mean infinite power.
   Answer: (B)
 P A 12: |-
-  Concept: $Y = \frac{MgL}{\pi r^2l}$, so $\frac{\Delta Y}{Y} = \frac{\Delta M}{M} + \frac{\Delta L}{L} + 2\frac{\Delta r}{r} + \frac{\Delta l}{l}$.
+  Concept: For $Y = \frac{\text{stress}}{\text{strain}} = \frac{MgL}{\pi r^2l}$, the maximum fractional error is the sum of the fractional errors of each measured quantity, each multiplied by the magnitude of its power.
   Solution:
-  1. $\frac{1}{1000} + \frac{1}{1000} + 2\times\frac{0.001}{0.2} + \frac{0.001}{0.5} = 0.001 + 0.001 + 0.010 + 0.002 = 0.014$.
-  2. Fractional error $= 1.4\%$.
+  1. $\frac{\Delta Y}{Y} = \frac{\Delta M}{M} + \frac{\Delta L}{L} + 2\frac{\Delta r}{r} + \frac{\Delta l}{l}$ (g and π are exact constants).
+  2. The error in each measurement is taken as the least count of its instrument:
+     - Mass: $\frac{1\text{ g}}{1000\text{ g}} = 0.001$.
+     - Length of wire: $\frac{1\text{ mm}}{1000\text{ mm}} = 0.001$.
+     - Radius: $\frac{0.001\text{ cm}}{0.2\text{ cm}} = 0.005$; doubled because r is squared: 0.010.
+     - Elongation: $\frac{0.001\text{ cm}}{0.5\text{ cm}} = 0.002$.
+  3. Sum: $0.001 + 0.001 + 0.010 + 0.002 = 0.014$.
+  4. As a percentage: 1.4%.
+  Lesson for experiment design: the largest contribution (0.010 of 0.014) comes from the radius, because r is small and appears squared. To improve the experiment, measure the radius more precisely, e.g. with a screw gauge of smaller least count, or at several points along the wire.
+  Why others are wrong:
+  - (A) 0.14% is off by a factor of 10.
+  - (B) 0.9% and (C) 9% do not match the sum of the individual errors.
   Answer: (D)
 P A 13: |-
-  Concept: On cooling, the metal with the larger expansion coefficient contracts more and ends up on the concave side.
+  Concept: A bimetallic strip bends because its two metals change length by different amounts with temperature. The metal that ends up longer lies on the outside (convex side) of the curve, and the shorter one on the inside (concave side).
   Solution:
-  1. A (left) contracts more than B (right).
-  2. The strip bends towards A, i.e. to the left.
+  1. Metal A has the larger coefficient of expansion, so it also contracts more when cooled.
+  2. In the cold bath, both metals shrink, but A shrinks more, so A becomes shorter than B.
+  3. The shorter metal, A, is on the inner (concave) side of the bend. The strip curves towards A.
+  4. From the figure, A is on the left and B on the right, with the strip fixed at its lower end. So the strip bends towards the left.
+  5. On heating, the reverse would happen: A expands more and would be on the outside, so the strip would bend to the right, towards B.
+  Applications: this principle is used in thermostats (e.g. electric irons and fire alarms), where the bending strip makes or breaks an electrical contact at a set temperature, and in bimetallic thermometers.
+  Why others are wrong:
+  - (A) Bending to the right would occur on heating, not cooling.
+  - (B) and (C) The two metals are bonded and cannot change length independently. Different contractions force the strip to bend.
   Answer: (D)
 P A 14: |-
-  Concept: Joule heating $H = I^2Rt$.
+  Concept: Joule's law of heating: the heat developed in a resistor is $H = I^2Rt$. For a fixed resistance and fixed time, H is proportional to the square of the current.
   Solution:
-  1. Doubling the current multiplies H by 4: $4\times500 = 2000$ J.
+  1. Initial: $H_1 = I_1^2Rt = (1.5)^2R(20) = 500$ J. So $R = \frac{500}{2.25\times20} = 11.1$ Ω.
+  2. The current doubles from 1.5 A to 3 A. With the same R and t, $H_2 = H_1\left(\frac{I_2}{I_1}\right)^2 = 500\times2^2 = 2000$ J.
+  3. Direct check: $H_2 = 3^2\times11.1\times20 = 9\times222 = 2000$ J ✓.
+  Key idea: heat depends on I², not I. Doubling the current quadruples the heating. This is why:
+  - fuses melt quickly when the current rises above the rated value;
+  - power is transmitted at high voltage and low current, reducing the I²R losses in the lines;
+  - the equivalent formula $H = \frac{V^2t}{R}$ is used when voltage, rather than current, is fixed.
+  Why others are wrong:
+  - (A) 1500 J assumes H ∝ I (three times 500 would need a ratio of 3).
+  - (B) 1000 J doubles H, i.e. assumes H is proportional to I.
+  - (C) 500 J assumes H is independent of the current.
   Answer: (D)
 P A 15: |-
-  Concept: Unbanked road: $v_{max} = \sqrt{\mu Rg}$. Banked road: $v_{max} = \sqrt{Rg\frac{\tan\theta + \mu}{1 - \mu\tan\theta}}$.
+  Concept: On an unbanked curve, friction alone provides the centripetal force, so the maximum safe speed is $v_{max} = \sqrt{\mu Rg}$. On a curve banked at angle θ, friction and the normal reaction together allow $v_{max} = \sqrt{Rg\frac{\tan\theta + \mu}{1 - \mu\tan\theta}}$.
   Solution:
-  1. I: $v_{max} = \sqrt{0.2\times2\times9.8} = 1.98$ m/s; 7 km/h $= 1.94$ m/s < $v_{max}$, so there is no slipping. True.
-  2. II: $v_{max} = \sqrt{2\times9.8\times\frac{1.2}{0.8}} = 5.42$ m/s; 18.5 km/h $= 5.14$ m/s < $v_{max}$. True.
+  1. Statement I: $v_{max} = \sqrt{0.2\times2\times9.8} = \sqrt{3.92} = 1.98$ m/s.
+     Cyclist's speed: $7\text{ km/h} = \frac{7\times1000}{3600} = 1.94$ m/s.
+     Since 1.94 < 1.98 m/s, friction can supply the required centripetal force and the cyclist does not slip. True.
+  2. Statement II: θ = 45°, so tan θ = 1, and μ = 0.2.
+     $v_{max} = \sqrt{2\times9.8\times\frac{1 + 0.2}{1 - 0.2}} = \sqrt{19.6\times1.5} = \sqrt{29.4} = 5.42$ m/s.
+     Cyclist's speed: $18.5\text{ km/h} = 5.14$ m/s.
+     Since 5.14 < 5.42 m/s, the cyclist can take the curve without slipping. True.
+  3. Both statements are true.
+  Note: the numbers are close to the limits in both cases (1.94 vs 1.98, 5.14 vs 5.42), so careful unit conversion (1 km/h = $\frac{5}{18}$ m/s) is essential. Also, even without friction, the banked curve allows $\sqrt{Rg\tan45°} = 4.43$ m/s. Friction raises the limit to 5.42 m/s.
   Answer: (D)
 P A 16: |-
-  Concept: LOS range for two antennas of height h: $D = 2\sqrt{2Rh}$.
+  Concept: Line-of-sight (LOS) communication is limited by the curvature of the Earth. An antenna of height h can reach a radio horizon at distance $d = \sqrt{2Rh}$. The maximum LOS distance between two antennas is the sum of their horizons: $d_M = \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
   Solution:
-  1. $h = \frac{D^2}{8R} = \frac{45^2}{8\times6400}$ km $= 0.03955$ km ≈ 39.55 m.
+  1. The towers are identical, so $h_T = h_R = h$ and $d_M = 2\sqrt{2Rh}$.
+  2. $45 = 2\sqrt{2\times6400\times h}$ (in km), so $\sqrt{12800h} = 22.5$.
+  3. $12800h = 506.25$, so $h = \frac{506.25}{12800} = 0.03955$ km.
+  4. $h = 39.55$ m.
+  5. Equivalent formula: $h = \frac{d_M^2}{8R} = \frac{45^2}{8\times6400} = \frac{2025}{51200}$ km $= 39.55$ m ✓.
+  Interpretation: each antenna's horizon is 22.5 km. The signal path from the transmitter just grazes the Earth's surface at the midpoint and reaches the receiver.
+  Why others are wrong:
+  - (A) 19.77 m is half the answer; it would give a separation of only about 31.8 km.
+  - (C) 79.1 m would be needed if only one antenna were elevated (with the other at ground level), since then $45 = \sqrt{2Rh}$.
+  - (D) 158.2 m is four times the answer.
   Answer: (B)
 P A 17: |-
-  Concept: Motional emf in the two sides parallel to y; the field differs between them.
+  Concept: For a loop moving through a non-uniform field, the EMF can be found as the sum of the motional EMFs of its sides ($\varepsilon = Blv$ for each side moving across the field), or as the rate of change of flux. Only the sides perpendicular to the velocity contribute.
   Solution:
-  1. Side at $x + d$: $\varepsilon_1 = B_0\frac{x + d}{a}v_0d$; side at $x$: $\varepsilon_2 = B_0\frac{x}{a}v_0d$.
-  2. They oppose each other around the loop: $\varepsilon = \varepsilon_1 - \varepsilon_2 = \frac{B_0v_0d^2}{a}$.
+  1. The loop moves along x with speed $v_0$, and $\vec B = B_0\frac{x}{a}\hat k$ increases with x.
+  2. At some instant, let the left side be at x and the right side at x + d. Each has length d along y.
+  3. The sides parallel to x (top and bottom) move along their own length, so they have no motional EMF ($\vec v\parallel d\vec l$).
+  4. Right side: $\varepsilon_R = B(x + d)v_0d = B_0\frac{x + d}{a}v_0d$. Left side: $\varepsilon_L = B_0\frac{x}{a}v_0d$.
+  5. Around the loop, these EMFs point in opposite senses (both drive current in the same absolute direction, +y or −y, in their own side). The net EMF is the difference: $\varepsilon = \varepsilon_R - \varepsilon_L = B_0\frac{d}{a}v_0d = \frac{B_0v_0d^2}{a}$.
+  6. Flux check: $\Phi = \int_x^{x+d}B_0\frac{x'}{a}d\,dx' = \frac{B_0d}{2a}[(x + d)^2 - x^2]$. Then $\frac{d\Phi}{dt} = \frac{B_0d}{2a}\cdot2d\cdot v_0 = \frac{B_0v_0d^2}{a}$ ✓.
+  Why others are wrong:
+  - (A) has $v_0^2$, which is dimensionally wrong for an EMF.
+  - (B) has d instead of d².
+  - (D) has an extra factor $\frac{1}{2}$, from using the average field instead of the difference.
   Answer: (C)
 P A 18: |-
-  Concept: Damped amplitude $A = A_0e^{-bt/2m}$.
+  Concept: In damped oscillation, the damping force is $-bv$, and the amplitude decays exponentially: $A(t) = A_0e^{-bt/2m}$. The factor 2 in the exponent is important; energy decays at twice the rate, $E \propto e^{-bt/m}$.
   Solution:
-  1. $\frac{bt}{2m} = \ln2 \Rightarrow t = \frac{2m\ln2}{b} = \frac{2\times500\times0.693}{20} = 34.65$ s.
+  1. Given m = 500 g and b = 20 g/s. Units must match, and since b and m are both in grams here, their ratio has units s⁻¹: $\frac{b}{2m} = \frac{20}{1000} = 0.02$ s⁻¹.
+  2. For the amplitude to halve: $e^{-bt/2m} = \frac{1}{2}$, so $\frac{bt}{2m} = \ln2$.
+  3. $t = \frac{2m\ln2}{b} = \frac{2\times500\times0.693}{20} = \frac{693}{20} = 34.65$ s.
+  Related quantities:
+  - Time for the energy to halve: $t_E = \frac{m\ln2}{b} = 17.33$ s, which is option (B). It is half the amplitude time, because energy ∝ A².
+  - The time constant for the amplitude is $\tau = \frac{2m}{b} = 50$ s.
+  This is the NCERT example: a damped oscillator with m = 250 g and b = 70 g/s gives 3.47 s for the amplitude to halve, by the same method.
+  Why others are wrong:
+  - (B) 17.32 s is the time for the energy (not the amplitude) to halve.
+  - (C) 0.034 s comes from converting only one of m and b to SI units.
+  - (D) 15.01 s has no direct basis.
   Answer: (A)
 P A 19: |-
-  Concept: $N = N_0e^{-\lambda t}$.
+  Concept: In radioactive decay, $N = N_0e^{-\lambda t}$. The time taken for N to fall from $N_1$ to $N_2$ is $t = \frac{1}{\lambda}\ln\frac{N_1}{N_2}$, which depends only on the ratio. Each halving takes one half-life.
   Solution:
-  1. After 33% decay, 67% remains; after 67% decay, 33% remains.
-  2. $\frac{0.67}{0.33} \approx 2$, so the interval is one half-life: 20 min.
+  1. After 33% decay, 67% remains: $N_1 = 0.67N_0$.
+  2. After 67% decay, 33% remains: $N_2 = 0.33N_0$.
+  3. Ratio: $\frac{N_1}{N_2} = \frac{0.67}{0.33} = 2.03 \approx 2$.
+  4. The number of remaining nuclei halves between the two moments, which takes one half-life.
+  5. Time interval ≈ 20 minutes.
+  Precisely: $t = \frac{T_{1/2}}{\ln2}\ln\frac{0.67}{0.33} = \frac{20}{0.693}\times0.708 = 20.4$ min ≈ 20 min.
+  Common error: subtracting the percentages (67% − 33% = 34%) and treating decay as linear. Radioactive decay is exponential, so equal fractional changes take equal times; the absolute amounts do not decrease uniformly.
+  Why others are wrong:
+  - (A) 60 min is three half-lives (the remaining fraction would fall to $\frac{1}{8}$).
+  - (C) 40 min is two half-lives (a ratio of 4).
+  - (D) 13 min treats the decay as roughly linear over 34% of the sample.
   Answer: (B)
 P A 20: |-
-  Concept: Colour is set by frequency; in a given medium $\lambda = \frac{v}{f}$.
+  Concept: The colour of light is determined by its frequency, which is set by the source and does not change when light passes from one medium to another. The wavelength depends on the speed of light in the medium: $\lambda = \frac{v}{f}$.
   Solution:
-  1. Red and blue light have different frequencies and hence different wavelengths.
+  1. Red light has a lower frequency (about 4.3 × 10¹⁴ Hz) than blue light (about 6.5 × 10¹⁴ Hz).
+  2. In vacuum, both travel at c, so $\lambda = \frac{c}{f}$. Different frequencies therefore give different wavelengths: red about 700 nm and blue about 450 nm.
+  3. In any other single medium (e.g. glass or water), the frequencies are still different, and the wavelengths differ too. (In fact, the speeds also differ slightly because of dispersion.)
+  4. So red and blue light differ in both frequency and wavelength.
+  Also: the photon energy is $E = hf$, so blue photons carry more energy than red photons (about 2.8 eV vs 1.8 eV).
+  Why others are wrong:
+  - (B) In vacuum all light travels at c, so different frequencies must give different wavelengths.
+  - (C) If both were the same, the light would be the same colour.
+  - (D) Frequency determines colour, so red and blue cannot have the same frequency.
   Answer: (A)
 P B 1: |-
-  Concept: $H = I^2Rt$.
+  Concept: Joule heating: the energy dissipated in a resistor is $H = I^2Rt$ (equivalently, power $P = I^2R$).
   Solution:
-  1. $R = \frac{10\times10^{-3}}{(2\times10^{-3})^2\times1} = 2500\,\Omega$.
+  1. Given: H = 10 mJ = 10 × 10⁻³ J, I = 2 mA = 2 × 10⁻³ A, t = 1 s.
+  2. $R = \frac{H}{I^2t} = \frac{10\times10^{-3}}{(2\times10^{-3})^2\times1} = \frac{10^{-2}}{4\times10^{-6}}$.
+  3. $R = 0.25\times10^4 = 2500$ Ω.
+  Checks:
+  - Power: $P = \frac{H}{t} = 10$ mW. Then $P = I^2R = 4\times10^{-6}\times2500 = 10^{-2}$ W ✓.
+  - Voltage across the resistor: V = IR = 2 × 10⁻³ × 2500 = 5 V, and P = VI = 5 × 2 × 10⁻³ = 10 mW ✓.
+  Common error: forgetting to square the current. That would give $R = \frac{10^{-2}}{2\times10^{-3}} = 5$ Ω, which is wrong by a factor of 500. Another error is to forget converting mA to A (which gives 0.0025 Ω). Always convert to SI units before substituting.
   Answer: 2500
 P B 2: |-
-  Concept: A slab of thickness t in a gap d gives $C = \frac{\varepsilon_0A}{d - t + t/K}$.
+  Concept: A dielectric slab of thickness t and dielectric constant K, filling the full plate area in a gap d, is equivalent to an air gap of reduced effective thickness. $C = \frac{\varepsilon_0A}{d - t + \frac{t}{K}}$. (It is the series combination of an air capacitor and a dielectric capacitor.)
   Solution:
-  1. $C = \frac{2\varepsilon_0}{0.5 + 0.5/3.2} = \frac{2\varepsilon_0}{0.656} = 3.05\varepsilon_0 \approx 3\varepsilon_0$.
+  1. A = 2 m², d = 1 m, t = 0.5 m, K = 3.2.
+  2. Effective gap: $d - t + \frac{t}{K} = 1 - 0.5 + \frac{0.5}{3.2} = 0.5 + 0.15625 = 0.65625$ m.
+  3. $C = \frac{\varepsilon_0\times2}{0.65625} = 3.05\varepsilon_0$.
+  4. To the nearest integer: 3.
+  Series check: dielectric part $C_1 = \frac{K\varepsilon_0A}{t} = \frac{3.2\times2}{0.5}\varepsilon_0 = 12.8\varepsilon_0$; air part $C_2 = \frac{\varepsilon_0A}{d - t} = 4\varepsilon_0$. In series: $\frac{12.8\times4}{16.8}\varepsilon_0 = 3.05\varepsilon_0$ ✓.
+  Comparison: without the slab, $C_0 = \frac{\varepsilon_0\times2}{1} = 2\varepsilon_0$. The slab raises the capacitance by about 52%, but less than the factor K = 3.2 that a slab filling the whole gap would give ($6.4\varepsilon_0$).
   Answer: 3
 P B 3: |-
-  Concept: $\vec\tau = (\vec r - \vec r_0)\times\vec F$.
+  Concept: The torque of a force about a point O is $\vec\tau = \vec r\times\vec F$, where $\vec r$ is the vector from O to the point where the force is applied.
   Solution:
-  1. Point of application $(2, 0, 0)$; $\vec r - \vec r_0 = (0, -3, -4)$.
-  2. $\vec\tau = (0, -3, -4)\times(4, 3, 4) = (0, -16, 12)$.
-  3. $|\vec\tau| = 20$.
+  1. The plane x = 2 meets the x-axis at the point of application, P = (2, 0, 0).
+  2. The reference point is O = (2, 3, 4). So $\vec r = \vec{OP} = (2 - 2, 0 - 3, 0 - 4) = (0, -3, -4)$.
+  3. $\vec F = (4, 3, 4)$.
+  4. $\vec\tau = \vec r\times\vec F = \begin{vmatrix}\hat i & \hat j & \hat k\\ 0 & -3 & -4\\ 4 & 3 & 4\end{vmatrix}$.
+     $\hat i$: $(-3)(4) - (-4)(3) = -12 + 12 = 0$.
+     $\hat j$: $-[0\cdot4 - (-4)\cdot4] = -16$.
+     $\hat k$: $0\cdot3 - (-3)\cdot4 = 12$.
+  5. $\vec\tau = 0\hat i - 16\hat j + 12\hat k$, and $|\vec\tau| = \sqrt{256 + 144} = \sqrt{400} = 20$.
+  6. The magnitude of the torque is 20 (N m).
+  Check: $\vec\tau\cdot\vec F = 0 - 48 + 48 = 0$ and $\vec\tau\cdot\vec r = 0 + 48 - 48 = 0$. The torque is perpendicular to both vectors, as it must be ✓.
+  Common error: using the position vector of P from the origin, (2, 0, 0), which gives the torque about the origin instead of about (2, 3, 4).
   Answer: 20
 P B 4: |-
-  Concept: The gravitational self-energy of a uniform sphere is $-\frac{3GM^2}{5R}$.
+  Concept: The energy needed to disperse a body completely to infinity equals the magnitude of its gravitational self-energy (binding energy). For a uniform solid sphere of mass M and radius R, $U = -\frac{3}{5}\frac{GM^2}{R}$.
   Solution:
-  1. Energy needed to disperse it $= \frac{3}{5}\frac{GM^2}{R}$, so $x = 3$.
+  1. Derivation: build the sphere shell by shell. When the radius is r, the mass inside is $m(r) = M\frac{r^3}{R^3}$. Adding a shell of mass $dm = 4\pi r^2\rho\,dr$ from infinity releases energy $\frac{Gm(r)dm}{r}$.
+  2. $U = -\int_0^R\frac{G}{r}\cdot\frac{4}{3}\pi r^3\rho\cdot4\pi r^2\rho\,dr = -\frac{16\pi^2G\rho^2}{3}\cdot\frac{R^5}{5}$.
+  3. Using $M = \frac{4}{3}\pi R^3\rho$: $U = -\frac{3}{5}\frac{GM^2}{R}$.
+  4. The energy that must be supplied to remove all the mass to infinity is $|U| = \frac{3}{5}\frac{GM^2}{R}$.
+  5. Comparing with $\frac{x}{5}\frac{GM^2}{R}$: x = 3.
+  For the Earth: $\frac{3}{5}\times\frac{6.67\times10^{-11}\times(6\times10^{24})^2}{6.4\times10^6} \approx 2.2\times10^{32}$ J. (The real Earth is denser at the centre, so the actual value is somewhat higher.)
+  Note: for a thin spherical shell, the self-energy is $-\frac{1}{2}\frac{GM^2}{R}$, which would give x = 2.5.
   Answer: 3
 P B 5: |-
-  Concept: Achromatism: $\omega_1\delta_1 = \omega_2\delta_2$ (opposite prisms); net deviation $\delta_1 - \delta_2 = 2°$.
+  Concept: For thin prisms, the deviation is $\delta = (\mu - 1)A$ and the angular dispersion is $\omega\delta$, where ω is the dispersive power. An achromatic combination (no net dispersion) places the prisms opposite to each other with $\omega_1\delta_1 = \omega_2\delta_2$. The net deviation of the mean (yellow) ray is $\delta_1 - \delta_2$.
   Solution:
-  1. $\delta_1 = 0.5A_1$ and $\delta_2 = 0.6A_2$; $0.02\times0.5A_1 = 0.03\times0.6A_2 \Rightarrow A_2 = \frac{5}{9}A_1$.
-  2. $0.5A_1 - 0.6\cdot\frac{5}{9}A_1 = \frac{A_1}{6} = 2 \Rightarrow A_1 = 12°$.
+  1. Crown glass: $\mu_1 = 1.5$, $\omega_1 = 0.02$, so $\delta_1 = 0.5A_1$.
+  2. Flint glass: $\mu_2 = 1.6$, $\omega_2 = 0.03$, so $\delta_2 = 0.6A_2$.
+  3. No dispersion: $0.02\times0.5A_1 = 0.03\times0.6A_2$, i.e. $0.01A_1 = 0.018A_2$, so $A_2 = \frac{5}{9}A_1$.
+  4. Net deviation: $\delta_1 - \delta_2 = 0.5A_1 - 0.6\times\frac{5}{9}A_1 = 0.5A_1 - \frac{1}{3}A_1 = \frac{1}{6}A_1$.
+  5. $\frac{A_1}{6} = 2°$, so $A_1 = 12°$.
+  6. Flint prism angle: $A_2 = \frac{5}{9}\times12 = 6.67°$.
+  Check: $\delta_1 = 6°$ and $\delta_2 = 4°$, net 2° ✓. Dispersions: $0.02\times6 = 0.12°$ and $0.03\times4 = 0.12°$, which cancel ✓.
+  Principle: flint glass has higher dispersive power, so a thinner flint prism can cancel the dispersion of the crown prism, while leaving a net deviation. This is how achromatic lenses (doublets) are designed.
   Answer: 12
 P B 6: |-
-  Concept: Starting from rest, $\vec s = \frac{1}{2}\vec at^2$.
+  Concept: A constant force gives constant acceleration $\vec a = \frac{\vec F}{m}$. Starting from rest at the origin, the position after time t is $\vec s = \frac{1}{2}\vec at^2$. Each component can be treated separately.
   Solution:
-  1. $\vec a = \frac{\vec F}{m} = (1, 1.5, 2.5)$ m/s².
-  2. $\vec s = 8\vec a = (8, 12, 20)$, so $b = 12$.
+  1. $\vec a = \frac{2\hat i + 3\hat j + 5\hat k}{2} = (1, 1.5, 2.5)$ m/s².
+  2. $\frac{1}{2}t^2 = \frac{1}{2}\times16 = 8$ s².
+  3. $\vec s = 8\vec a = (8, 12, 20)$ m.
+  4. The x and z coordinates (8 and 20) match the given (8, b, 20), which confirms the data.
+  5. So b = 12.
+  Shortcut: the displacement is parallel to the force (starting from rest), so its components are in the ratio 2 : 3 : 5. With x = 8 (scale factor 4), y = 3 × 4 = 12 and z = 5 × 4 = 20 ✓.
+  Kinematic check: final velocity $\vec v = \vec at = (4, 6, 10)$ m/s. Work done $= \vec F\cdot\vec s = 16 + 36 + 100 = 152$ J. Kinetic energy $= \frac{1}{2}\times2\times(16 + 36 + 100) = 152$ J ✓ (work–energy theorem).
   Answer: 12
 P B 7: |-
-  Concept: To reach the directly opposite point, the swimmer's velocity component along the flow must cancel the river's.
+  Concept: To land directly opposite the starting point, the swimmer's resultant velocity (relative to the ground) must point straight across the river. So the component of the swimmer's velocity (relative to water) along the flow must cancel the river's velocity.
   Solution:
-  1. $12\cos\theta + 6 = 0 \Rightarrow \cos\theta = -\frac{1}{2} \Rightarrow \theta = 120°$ with the flow.
+  1. Let θ be the angle between the swimmer's direction (relative to water) and the direction of flow.
+  2. Along the flow: $12\cos\theta + 6 = 0$ (the resultant along the flow must be zero).
+  3. $\cos\theta = -\frac{6}{12} = -\frac{1}{2}$, so θ = 120°.
+  4. So the swimmer heads at 120° to the flow, i.e. 30° upstream from the perpendicular to the bank.
+  5. The resultant speed straight across is $12\sin120° = 12\times\frac{\sqrt3}{2} = 6\sqrt3 \approx 10.4$ km/h.
+  Condition: this is possible only if the swimmer's speed exceeds the river's (12 > 6 here). If the river were faster, no heading could cancel the drift, and the swimmer would always be carried downstream.
+  Compare with the shortest-time crossing: heading straight across (θ = 90°) gives the fastest crossing, but the swimmer drifts downstream by $6\times\frac{w}{12}$, where w is the river's width.
   Answer: 120
 P B 8: |-
-  Concept: $v = \sqrt{\frac{B}{\rho}}$. First overtone: closed pipe $\frac{3v}{4L}$, open pipe $\frac{v}{L'}$.
+  Concept: The speed of sound in a gas is $v = \sqrt{\frac{B}{\rho}}$, where B is the bulk modulus (the reciprocal of compressibility). A closed pipe has frequencies $\frac{(2n - 1)v}{4L}$ (odd harmonics), and an open pipe $\frac{nv}{2L}$.
   Solution:
-  1. $\frac{3v_1}{4L} = \frac{v_2}{L'} \Rightarrow L' = \frac{4L}{3}\frac{v_2}{v_1} = \frac{4}{3}L\sqrt{\frac{\rho_1}{\rho_2}}$.
-  2. $x = 4$.
+  1. Equal compressibility means equal B, so $v_1 = \sqrt{\frac{B}{\rho_1}}$ and $v_2 = \sqrt{\frac{B}{\rho_2}}$. So $\frac{v_2}{v_1} = \sqrt{\frac{\rho_1}{\rho_2}}$.
+  2. Closed pipe (length L), first overtone = third harmonic: $f_c = \frac{3v_1}{4L}$.
+  3. Open pipe (length L′), first overtone = second harmonic: $f_o = \frac{2v_2}{2L'} = \frac{v_2}{L'}$.
+  4. Equal frequencies: $\frac{3v_1}{4L} = \frac{v_2}{L'}$, so $L' = \frac{4L}{3}\cdot\frac{v_2}{v_1} = \frac{4}{3}L\sqrt{\frac{\rho_1}{\rho_2}}$.
+  5. Compare with $\frac{x}{3}L\sqrt{\frac{\rho_1}{\rho_2}}$: x = 4.
+  Check with equal densities: the open pipe would be $\frac{4}{3}L$. The closed pipe's first overtone is $\frac{3v}{4L}$, and the open pipe's is $\frac{v}{L'} = \frac{3v}{4L}$ ✓.
+  Common slip: taking the first overtone of the closed pipe as the second harmonic $\frac{2v}{4L}$. Closed pipes have only odd harmonics, so the first overtone is the third harmonic.
   Answer: 4
 P B 9: |-
-  Concept: Rolling acceleration $a = \frac{g\sin\theta}{1 + K^2/R^2}$.
+  Concept: For a body rolling without slipping down an incline, energy conservation or torque analysis gives $a = \frac{g\sin\theta}{1 + \frac{K^2}{R^2}}$, where K is the radius of gyration about the centre of mass. Static friction supplies the torque but does no work.
   Solution:
-  1. Disc: $\frac{K^2}{R^2} = \frac{1}{2}$, so $a = \frac{2}{3}g\sin\theta$ and $b = 3$.
+  1. Solid disc about its axis: $I = \frac{1}{2}ma^2$, so $\frac{K^2}{R^2} = \frac{1}{2}$ (here R = a, the disc's radius).
+  2. $a_{cm} = \frac{g\sin\theta}{1 + \frac{1}{2}} = \frac{2}{3}g\sin\theta$.
+  3. Comparing with $\frac{2}{b}g\sin\theta$: b = 3.
+  Derivation via forces: along the incline, $mg\sin\theta - f = ma_{cm}$. Torque: $fR = I\alpha = \frac{1}{2}mR^2\frac{a_{cm}}{R}$, so $f = \frac{1}{2}ma_{cm}$. Substituting: $mg\sin\theta = \frac{3}{2}ma_{cm}$, giving $a_{cm} = \frac{2}{3}g\sin\theta$ ✓.
+  Comparison of rolling bodies (larger $\frac{K^2}{R^2}$ means slower):
+  - Solid sphere: $\frac{5}{7}g\sin\theta$.
+  - Solid disc/cylinder: $\frac{2}{3}g\sin\theta$.
+  - Ring/hollow cylinder: $\frac{1}{2}g\sin\theta$.
+  A solid sphere would reach the bottom first in a race.
   Answer: 3
 P B 10: |-
-  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ (kelvin).
+  Concept: For an ideal (Carnot) engine, $\eta = 1 - \frac{T_2}{T_1}$, with the source temperature T₁ and sink temperature T₂ in kelvin.
   Solution:
-  1. $T_1 = 400$ K; $T_2 = 0.4\times400 = 160$ K $= -113$ °C.
-  2. The sink is at −113 °C; the official key records the magnitude, 113.
-  Note: ALLEN gives −113, which is the physically correct value.
+  1. Source: $T_1 = 127 + 273 = 400$ K.
+  2. η = 60% = 0.6, so $\frac{T_2}{T_1} = 1 - 0.6 = 0.4$.
+  3. $T_2 = 0.4\times400 = 160$ K.
+  4. Convert to Celsius: $160 - 273 = -113$ °C.
+  5. So the sink must be at −113 °C, well below room temperature.
+  6. The answer box expects a non-negative integer, and the official key records the magnitude, 113.
+  Common error: substituting Celsius temperatures directly, $\eta = 1 - \frac{T_2}{127}$, gives $T_2 = 50.8$ °C, which is wrong. Carnot's formula needs absolute temperatures.
+  Note: ALLEN gives −113, which is the physically correct value; the official NTA answer, 113, is kept here.
   Answer: 113

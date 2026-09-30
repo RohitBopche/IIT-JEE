@@ -1,180 +1,330 @@
 P A 1: |-
-  Concept: Lens-maker's formula for lenses in contact: $\frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2}$.
+  Concept: Lens-maker's formula $\frac{1}{f} = (\mu - 1)\left(\frac{1}{R_1} - \frac{1}{R_2}\right)$. For thin lenses in contact, powers add: $\frac{1}{f} = \frac{1}{f_1} + \frac{1}{f_2}$.
   Solution:
-  1. Plano-convex: $\frac{1}{f_1} = \frac{\mu_1 - 1}{R}$. Plano-concave: $\frac{1}{f_2} = -\frac{\mu_2 - 1}{R}$.
-  2. $\frac{1}{f} = \frac{\mu_1 - \mu_2}{R}$, so $\frac{R}{f} = \mu_1 - \mu_2$.
+  1. Plano-convex (index μ₁, curved radius R): $\frac{1}{f_1} = \frac{\mu_1 - 1}{R}$.
+  2. Plano-concave (index μ₂, same radius): $\frac{1}{f_2} = -\frac{\mu_2 - 1}{R}$.
+  3. Combined: $\frac{1}{f} = \frac{(\mu_1 - 1) - (\mu_2 - 1)}{R} = \frac{\mu_1 - \mu_2}{R}$.
+  4. $\frac{R}{f} = \mu_1 - \mu_2$.
+  Why others are wrong:
+  - (D) has the sign reversed.
+  - (A) and (C) give $\frac{f}{R}$ rather than $\frac{R}{f}$.
+  Key takeaway: if μ₁ = μ₂, the combination is a parallel glass slab with zero power ✓.
   Answer: (B)
 P A 2: |-
-  Concept: Pulley constraint: the 8 kg block hangs from a movable pulley, so the 2 kg block's acceleration is twice the 8 kg block's.
+  Concept: From the figure, the 8 kg box hangs from a movable pulley supported by two string segments, while the 2 kg box hangs on the single string end. The string constraint gives $a_2 = 2a_8$ (the 2 kg box moves twice as far).
   Solution:
-  1. 8g − 2T = 8a and T − 2g = 2(2a).
-  2. Eliminating T: 8g − 4g = 16a, so a = g/4 = 2.5 m/s².
-  3. $0.2 = \frac{1}{2}(2.5)t^2$, so t = 0.4 s.
+  1. 8 kg (moving down with a): 8g − 2T = 8a.
+  2. 2 kg (moving up with 2a): T − 2g = 2(2a) = 4a ⇒ T = 2g + 4a.
+  3. Substitute: 8g − 4g − 8a = 8a ⇒ 4g = 16a ⇒ a = $\frac{g}{4}$ = 2.5 m/s².
+  4. From the figure, the 8 kg box is 0.2 m above the ground: $0.2 = \frac{1}{2}(2.5)t^2 \Rightarrow t^2 = 0.16 \Rightarrow t = 0.4$ s.
+  Why others are wrong:
+  - (B) 0.2 s and (C) 0.25 s use a larger acceleration (e.g. ignoring the pulley constraint).
+  - (A) 0.34 s uses the simple Atwood result a = 0.6g.
+  Key takeaway: always write the string-length constraint for movable pulleys before applying Newton's laws.
   Answer: (D)
 P A 3: |-
-  Concept: $I_E = I_B + I_C$.
+  Concept: Transistor currents: $I_E = I_B + I_C$. Current gains: α = $\frac{I_C}{I_E}$ (common base), β = $\frac{I_C}{I_B}$ (common emitter).
   Solution:
-  1. $\beta = \frac{I_C}{I_E - I_C} = \frac{I_C/I_E}{1 - I_C/I_E} = \frac{\alpha}{1 - \alpha}$.
+  1. $\beta = \frac{I_C}{I_B} = \frac{I_C}{I_E - I_C}$.
+  2. Divide numerator and denominator by $I_E$: $\beta = \frac{\alpha}{1 - \alpha}$.
+  3. Equivalently, $\alpha = \frac{\beta}{1 + \beta}$.
+  Why others are wrong:
+  - (D) has 1 − β in the denominator (should be 1 + β).
+  - (A) and (C) have no basis.
+  Check with numbers: If α = 0.98, β = 0.98/0.02 = 49; and 49/(1 + 49) = 0.98 ✓.
+  Common mistake: Writing I_E = I_C − I_B; the emitter current is the largest, the sum of the base and collector currents.
+  Key takeaway: α is slightly less than 1 (e.g. 0.98), making β large (e.g. 49).
   Answer: (B)
 P A 4: |-
-  Concept: Drops leave at equal intervals τ, and each falls freely.
+  Concept: Drops leave at equal time intervals τ and fall freely from rest. Distance fallen ∝ (time)².
   Solution:
-  1. When the third drop starts, the first has fallen for 2τ, covering 9.8 m.
-  2. The second has fallen for τ, which is ¼ of that distance: 2.45 m.
-  3. Its height above the floor is 9.8 − 2.45 = 7.35 m.
+  1. When the 1st drop hits the floor, the 3rd is just leaving: the 1st has fallen for 2τ, the 2nd for τ.
+  2. Distance fallen by the 2nd = $\left(\frac{\tau}{2\tau}\right)^2$ × 9.8 m = $\frac{9.8}{4}$ = 2.45 m below the nozzle.
+  3. Height of the 2nd drop above the floor = 9.8 − 2.45 = 7.35 m.
+  Why others are wrong:
+  - (C) 2.45 m is the distance below the nozzle, not above the floor.
+  - (A) and (B) come from linear (not quadratic) scaling.
+  Key takeaway: in free fall from rest, distances in equal successive intervals are in the ratio 1 : 3 : 5 …
   Answer: (D)
 P A 5: |-
-  Concept: Angular momentum is conserved; kinetic energy is lost (a perfectly inelastic rotational collision).
+  Concept: When two coaxial discs are pressed together, friction makes them rotate with a common ω. No external torque acts, so angular momentum is conserved, but kinetic energy is lost (like a perfectly inelastic collision).
   Solution:
-  1. $\omega = \frac{I_1\omega_1 + I_2\omega_2}{I_1 + I_2}$.
-  2. $\Delta K = \frac{1}{2}(I_1\omega_1^2 + I_2\omega_2^2) - \frac{1}{2}(I_1 + I_2)\omega^2 = \frac{I_1I_2}{2(I_1 + I_2)}(\omega_1 - \omega_2)^2$.
+  1. Common ω: $\omega = \frac{I_1\omega_1 + I_2\omega_2}{I_1 + I_2}$.
+  2. Energy loss: $\Delta K = \frac{1}{2}I_1\omega_1^2 + \frac{1}{2}I_2\omega_2^2 - \frac{1}{2}(I_1 + I_2)\omega^2$.
+  3. Simplifying: $\Delta K = \frac{I_1I_2}{2(I_1 + I_2)}(\omega_1 - \omega_2)^2$.
+  Why others are wrong:
+  - (A) misses the factor ½.
+  - (B) and (D) are dimensionally or structurally incorrect.
+  Key takeaway: this has the same form as the KE loss in a 1-D perfectly inelastic collision, $\frac{m_1m_2}{2(m_1 + m_2)}(u_1 - u_2)^2$, with I replacing m.
   Answer: (C)
 P A 6: |-
-  Concept: From the figure, C₂ and C₃ are in series between A and B, and C₁ is directly across the battery V.
+  Concept: Capacitors in series carry equal charge; capacitors in parallel share the same voltage. From the figure, C₁ is connected directly across the battery, and C₂ and C₃ are in series across the same battery.
   Solution:
-  1. q₁ = 2V (μC).
-  2. C₂ and C₃ in series: $\frac{6\times12}{18} = 4$ μF, so q₂ = q₃ = 4V.
-  3. Ratio = 2 : 4 : 4 = 1 : 2 : 2.
+  1. C₁ = 2 μF across V: q₁ = 2V.
+  2. C₂ (6 μF) and C₃ (12 μF) in series: $C_{23} = \frac{6\times12}{18} = 4$ μF, so q₂ = q₃ = 4V.
+  3. Ratio q₁ : q₂ : q₃ = 2 : 4 : 4 = 1 : 2 : 2.
+  Why others are wrong:
+  - (A) makes C₁ carry the largest charge.
+  - (B) and (D) assign unequal charges to C₂ and C₃, which are in series.
+  Key takeaway: in series, the smaller capacitor takes the larger voltage, but both have the same charge.
   Answer: (C)
 P A 7: |-
-  Concept: Colour code: violet = 7, green = 5, red = ×10², gold = ±5%.
+  Concept: Resistor colour code (BB ROY of Great Britain has Very Good Wife): Black 0, Brown 1, Red 2, Orange 3, Yellow 4, Green 5, Blue 6, Violet 7, Grey 8, White 9. The third band is the multiplier (power of 10); the fourth gives tolerance (gold ±5%, silver ±10%).
   Solution:
-  1. R = 75 × 10² = 7500 Ω.
-  2. Tolerance = 5% of 7500 = 375 Ω.
+  1. Violet (7), Green (5) → 75.
+  2. Red multiplier → ×10² → 7500 Ω.
+  3. Gold → ±5% → ±375 Ω.
+  4. R = (7500 ± 375) Ω.
+  Why others are wrong:
+  - (A) and (C) read the digits in the wrong order (57).
+  - (B) uses ±10% (silver) instead of ±5%.
+  Key takeaway: the first band is nearest to one end of the resistor.
   Answer: (D)
 P A 8: |-
-  Concept: For effective radiation, the antenna size should be comparable to the wavelength.
+  Concept: For effective radiation, the antenna size should be comparable to the signal wavelength (typically λ/4 or larger antenna).
   Solution:
   1. The official solution requires the wavelength to exceed the antenna height (λ > 400 m).
-  2. Of the options, only 605 m satisfies this.
+  2. Of the options, only 605 m satisfies this, so the key gives (B).
   Note: The question is ill-posed. The 44 km range plays no role (a 400 m tower gives LoS ≈ √(2Rh) ≈ 71.6 km anyway), and the criterion λ > h is not standard. The official key is kept.
+  Why others are wrong (by the official criterion):
+  - (A) 37.8 m, (C) 75.6 m and (D) 302 m are all shorter than the 400 m antenna height.
+  Key takeaway: in standard theory, an antenna of length l radiates efficiently at λ ≈ 4l (quarter-wave antenna).
   Answer: (B)
 P A 9: |-
-  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$, so $v \propto \frac{1}{\sqrt M}$ at the same T.
+  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$. At the same temperature, $v_{rms} \propto \frac{1}{\sqrt M}$.
   Solution:
-  1. $\frac{v_{H_2}}{v_{O_2}} = \sqrt{\frac{32}{2}} = 4$, so v = 4 × 160 = 640 m/s.
+  1. $\frac{v_{H_2}}{v_{O_2}} = \sqrt{\frac{M_{O_2}}{M_{H_2}}} = \sqrt{\frac{32}{2}} = 4$.
+  2. $v_{H_2} = 4\times160 = 640$ m/s.
+  Why others are wrong:
+  - (B) 40 m/s divides instead of multiplying (heavier gas would be faster).
+  - (C) 80 m/s uses a factor of ½; (D) 332 m/s is the speed of sound in air.
+  Physical reason: At the same temperature, all ideal gases have the same average translational KE (3/2 kT per molecule). A lighter molecule must therefore move faster.
+  Common mistake: Using the ratio 32/2 = 16 without the square root, which gives 2560 m/s.
+  Key takeaway: the lighter molecule moves faster at the same temperature.
   Answer: (A)
 P A 10: |-
-  Concept: Motional emf of a ring partly inside a field: ε = B × (chord length at the boundary) × v.
+  Concept: When a conducting ring moves into a field region, the induced emf equals B × v × (length of the chord where the ring crosses the field boundary). The part of the ring inside the field acts like a rod of length equal to that chord.
   Solution:
-  1. At t = 1 s the centre is at x = 0, so half the ring is in the field.
-  2. The effective length is the diameter, 2R = 2 m, so ε = 1 × 2 × 1 = 2 V.
+  1. At t = 1 s, the centre moves from x = −1 to x = 0 (v = 1 m/s).
+  2. The field boundary x = 0 now passes through the centre, so the chord is the diameter, 2R = 2 m.
+  3. ε = B × l × v = 1 × 2 × 1 = 2 V.
+  Alternative: rate of change of flux = B × (rate of area entering) = B × (2R) × v = 2 V ✓.
+  Why others are wrong:
+  - (D) 0 V would apply if the ring were entirely inside or outside the field.
+  - (A) 1 V uses the radius; (B) 2π V uses the circumference.
+  Key takeaway: the emf is maximum when the boundary passes through the centre.
   Answer: (C)
 P A 11: |-
-  Concept: Inside a shell, its potential is constant ($-\frac{GM}{R}$); add the point mass's potential.
+  Concept: Gravitational potentials add as scalars. Inside a uniform shell, the shell's potential is constant, $-\frac{GM}{R}$. A point mass gives $-\frac{Gm}{r}$.
   Solution:
-  1. $V = -\frac{G\times50}{25} - \frac{G\times100}{50} = -2G - 2G = -4G$.
+  1. Shell (100 kg, R = 50 m) at any interior point: $-\frac{100G}{50} = -2G$.
+  2. Point mass (50 kg) at distance 25 m: $-\frac{50G}{25} = -2G$.
+  3. Total V = −4G.
+  Why others are wrong:
+  - (B) +2G is positive; gravitational potential is always negative.
+  - (A) −60G and (C) −20G use wrong distances.
+  Why the shell's potential is constant inside: The field inside a uniform shell is zero, so no work is needed to move a test mass around inside it; the potential stays at its surface value −GM/R.
+  Common mistake: Using −GM/r with r = 25 m for the shell, which gives −4G for the shell alone and −6G in total.
+  Key takeaway: inside a shell, the shell's field is zero but its potential is not.
   Answer: (D)
 P A 12: |-
-  Concept: Current sensitivity = divisions per unit current.
+  Concept: Current sensitivity = divisions per unit current. Full-scale current $I_g = \frac{\text{total divisions}}{\text{current sensitivity}}$; galvanometer resistance $R = \frac{V_{fs}}{I_g}$.
   Solution:
-  1. $I_{fs} = \frac{50}{2} = 25$ mA.
-  2. $R = \frac{50\ \text{mV}}{25\ \text{mA}} = 2$ Ω.
+  1. $I_g = \frac{50\text{ div}}{2\text{ div/mA}} = 25$ mA.
+  2. $R = \frac{50\text{ mV}}{25\text{ mA}} = 2\ \Omega$.
+  Why others are wrong:
+  - (A) 1 Ω and (C) 4 Ω halve or double the correct current.
+  - (B) 5 Ω has no basis.
+  Unit check: 50 mV / 25 mA = 50 × 10⁻³ / 25 × 10⁻³ = 2 Ω.
+  Common mistake: Multiplying instead of dividing, I_g = 50 × 2 = 100 mA, which gives 0.5 Ω.
+  Key takeaway: voltage sensitivity = current sensitivity / resistance = 1 div/mV here.
   Answer: (D)
 P A 13: |-
-  Concept: $eV_0 = \frac{hc}{\lambda} - \phi$, so $\Delta V_0 = 1240\left(\frac{1}{\lambda_2} - \frac{1}{\lambda_1}\right)$ (with λ in nm).
+  Concept: Photoelectric equation: $eV_0 = \frac{hc}{\lambda} - \phi$. The work function cancels when comparing two wavelengths: $\Delta V_0 = hc\left(\frac{1}{\lambda_2} - \frac{1}{\lambda_1}\right)$ (with hc ≈ 1240 eV nm).
   Solution:
-  1. $\Delta V_0 = 1240\left(\frac{1}{474.6} - \frac{1}{670.5}\right) = 2.613 - 1.849 = 0.76$ V.
-  2. V₀ = 0.48 + 0.76 = 1.24 ≈ 1.25 V.
+  1. $\frac{1240}{474.6} = 2.613$ eV; $\frac{1240}{670.5} = 1.849$ eV.
+  2. ΔV₀ = 2.613 − 1.849 = 0.764 V.
+  3. New V₀ = 0.48 + 0.76 ≈ 1.24 V ≈ 1.25 V.
+  Why others are wrong:
+  - (A) 0.96 V doubles the old value (V₀ is not proportional to frequency).
+  - (C) 0.24 V decreases the stopping voltage, but shorter λ means more energetic photons.
+  - (D) 1.5 V overestimates the change.
+  Key takeaway: work function φ ≈ 1.849 − 0.48 = 1.37 eV here; it drops out of the difference.
   Answer: (B)
 P A 14: |-
-  Concept: SI units.
+  Concept: Derive SI units from defining relations.
   Solution:
-  1. R_H is in m⁻¹, which is (iii). h is in J s = kg m² s⁻¹, which is (ii).
-  2. Energy density is in J/m³ = kg m⁻¹ s⁻², which is (iv). η is in Pa s = kg m⁻¹ s⁻¹, which is (i).
-  3. Only option (B) gives a–iii, b–ii, c–iv, d–i.
+  1. (a) Rydberg constant: $\frac{1}{\lambda} = R_H\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ → m⁻¹ → (iii).
+  2. (b) Planck's constant: E = hν → J s = kg m² s⁻¹ → (ii).
+  3. (c) Magnetic field energy density $\frac{B^2}{2\mu_0}$: J/m³ = kg m⁻¹ s⁻² → (iv).
+  4. (d) Coefficient of viscosity: F = ηA$\frac{dv}{dx}$ → Pa s = kg m⁻¹ s⁻¹ → (i).
+  Correct: (a)-(iii), (b)-(ii), (c)-(iv), (d)-(i).
+  Why others are wrong:
+  - (A) swaps R_H and h.
+  - (C) and (D) swap energy density and viscosity.
+  Key takeaway: energy density has the same units as pressure (J/m³ = N/m²).
   Answer: (B)
 P A 15: |-
-  Concept: Express mass in terms of F, L and T: M = F T² L⁻¹.
+  Concept: With F, L, T as fundamental quantities, express mass using F = ma: $[M] = \frac{[F]}{[LT^{-2}]} = [FL^{-1}T^2]$.
   Solution:
-  1. Density $= \frac{M}{L^3} = FL^{-4}T^2$.
+  1. Density = mass/volume: $\frac{[FL^{-1}T^2]}{[L^3]} = [FL^{-4}T^2]$.
+  Why others are wrong:
+  - (B) $[FL^{-3}T^2]$ forgets that mass itself contains L⁻¹.
+  - (C) and (D) have wrong powers of L or T.
+  Check with SI units: FL⁻⁴T² = (kg m s⁻²) m⁻⁴ s² = kg m⁻³, which is density ✓.
+  Common mistake: Keeping M as a fundamental quantity and writing ML⁻³; the question removes M from the base set.
+  Key takeaway: change of fundamental units — first write each old base quantity in terms of the new ones.
   Answer: (A)
 P A 16: |-
-  Concept: Ampère's law for the coaxial cable.
+  Concept: Ampère's law: B·2πx = μ₀I_enclosed. Inside the inner wire (uniform current), only the fraction $\frac{x^2}{a^2}$ of i₀ is enclosed.
   Solution:
-  1. x < a: $B_1 = \frac{\mu_0i_0x}{2\pi a^2}$ (only the enclosed fraction x²/a² of the current counts).
-  2. a < x < b: $B_2 = \frac{\mu_0i_0}{2\pi x}$.
-  3. $\frac{B_1}{B_2} = \frac{x^2}{a^2}$.
+  1. x < a: $I_{enc} = i_0\frac{x^2}{a^2}$ ⇒ $B_1 = \frac{\mu_0i_0x}{2\pi a^2}$.
+  2. a < x < b (between wire and shell): $I_{enc} = i_0$ ⇒ $B_2 = \frac{\mu_0i_0}{2\pi x}$.
+  3. $\frac{B_1}{B_2} = \frac{x/a^2}{1/x} = \frac{x^2}{a^2}$.
+  Why others are wrong:
+  - (B) is the inverse ratio.
+  - (C) and (D) involve b, but the outer shell's current does not affect the field for x < b.
+  Key takeaway: outside the whole cable (x > c), the net enclosed current is zero, so B = 0 — the shielding advantage of coaxial cables.
   Answer: (A)
 P A 17: |-
-  Concept: All the potential energy is converted to heat: gh = sΔT.
+  Concept: If all the potential energy of falling water becomes heat in the water itself: mgh = msΔT ⇒ ΔT = $\frac{gh}{s}$ (s in J kg⁻¹ K⁻¹).
   Solution:
-  1. $\Delta T = \frac{9.8\times63}{4200} = 0.147$°C.
+  1. s = 1 cal g⁻¹ °C⁻¹ = 4200 J kg⁻¹ °C⁻¹.
+  2. $\Delta T = \frac{9.8\times63}{4200} = \frac{617.4}{4200} = 0.147$ °C.
+  Why others are wrong:
+  - (B) and (C) are 100 or 10 times too large (unit slip with calories/grams).
+  - (D) is 10 times too small.
+  Why mass cancels: Both the potential energy lost (mgh) and the heat needed (msΔT) are proportional to the mass of water, so ΔT is independent of how much water falls.
+  Common mistake: Using s = 1 cal g⁻¹ °C⁻¹ = 4.2 J kg⁻¹ °C⁻¹ (forgetting the factor 1000 for kg), which gives an absurdly large ΔT.
+  Key takeaway: this is the idea behind Joule's experiment — mechanical energy produces a measurable (small) temperature rise.
   Answer: (A)
 P A 18: |-
-  Concept: $H = \frac{u^2\sin^2\theta}{2g}$ and $t = \frac{u\sin\theta}{g}$.
+  Concept: Projectile formulas: time to highest point $t = \frac{u\sin\theta}{g}$; maximum height $H = \frac{u^2\sin^2\theta}{2g}$.
   Solution:
-  1. $H = \frac{625\times\frac{1}{2}}{20} = 15.625$ m.
-  2. $t = \frac{25\times0.707}{10} = 1.77$ s.
+  1. u = 25 m/s, θ = 45°: $u\sin\theta = \frac{25}{\sqrt2} = 17.68$ m/s.
+  2. $t = \frac{17.68}{10} = 1.77$ s.
+  3. $H = \frac{(17.68)^2}{20} = \frac{312.5}{20} = 15.625$ m.
+  Why others are wrong:
+  - (B) 3.54 s is the total time of flight (2t).
+  - (A) and (D) use wrong formulas.
+  Check: At 45°, H = u²/(4g) = 625/40 = 15.625 m, and t = u/(√2 g) = 25/14.14 ≈ 1.77 s ✓.
+  Common mistake: Using u instead of u sin θ in the height formula, which gives 31.25 m.
+  Key takeaway: the time to reach the top is half the total flight time.
   Answer: (C)
 P A 19: |-
-  Concept: $I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$.
+  Concept: For two coherent sources, $I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$ and $I_{min} = (\sqrt{I_1} - \sqrt{I_2})^2$.
   Solution:
-  1. Minima are zero because I₁ = I₂ = I₀, so $I_{max} = (2\sqrt{I_0})^2 = 4I_0$.
+  1. I₁ = I₂ = I₀ gives $I_{min} = 0$ ✓ (consistent with the question).
+  2. $I_{max} = (2\sqrt{I_0})^2 = 4I_0$.
+  Why others are wrong:
+  - (B) 2I₀ is the average intensity (simple sum of intensities).
+  - (A) I₀ and (C) 5I₀ have no basis.
+  Derivation: I = I₁ + I₂ + 2√(I₁I₂)cos φ. At maxima cos φ = 1, so I = I₀ + I₀ + 2I₀ = 4I₀.
+  Energy is conserved: the pattern averages to 2I₀, the same as two incoherent sources.
+  Key takeaway: interference redistributes energy — maxima get 4I₀, minima 0, averaging 2I₀.
   Answer: (D)
 P A 20: |-
-  Concept: Field at the centre of an arc of angle θ: $E = \frac{2k\lambda}{R}\sin\frac{\theta}{2}$, along the axis of symmetry.
+  Concept: For a uniformly charged circular arc of angle θ and radius R, the field at the centre is $E = \frac{2k\lambda}{R}\sin\frac{\theta}{2}$, directed along the arc's axis of symmetry (away from a positive arc, toward a negative one).
   Solution:
-  1. $\lambda = \frac{Q}{R(2\pi/3)} = \frac{3Q}{2\pi R}$ and θ = 120°.
-  2. $E = \frac{2}{4\pi\varepsilon_0}\cdot\frac{3Q}{2\pi R^2}\cdot\frac{\sqrt3}{2} = \frac{3\sqrt3Q}{8\pi^2\varepsilon_0R^2}$.
-  3. The arc is symmetric about +x and the charge is negative, so the field points toward the arc: $+\hat i$.
+  1. Arc length $R\cdot\frac{2\pi}{3}$ ⇒ $\lambda = \frac{Q}{2\pi R/3} = \frac{3Q}{2\pi R}$.
+  2. $E = \frac{2}{4\pi\varepsilon_0}\cdot\frac{3Q}{2\pi R}\cdot\frac{1}{R}\cdot\sin60° = \frac{3\sqrt3Q}{8\pi^2\varepsilon_0R^2}$.
+  3. From the figure, the arc is symmetric about the +x axis; the charge is negative, so the field at O points toward the arc: +î.
+  Why others are wrong:
+  - (A) lacks one factor of π.
+  - (C) has an extra factor ½.
+  - (D) has the right magnitude but the wrong direction.
+  Key takeaway: for a full ring (θ = 2π), sin π = 0, so E = 0 at the centre ✓.
   Answer: (B)
 P B 1: |-
-  Concept: Real efficiency ≤ Carnot efficiency.
+  Concept: No engine can be more efficient than a Carnot engine between the same reservoirs: $\eta \le 1 - \frac{T_2}{T_1}$.
   Solution:
-  1. $\eta = \frac{300 - 240}{300} = \frac{1}{5}$.
-  2. $1 - \frac{400}{T_1} \ge \frac{1}{5}$, so $T_1 \ge 500$ K.
+  1. Actual efficiency: $\eta = \frac{W}{Q_1} = \frac{300 - 240}{300} = 0.2$.
+  2. $0.2 \le 1 - \frac{400}{T_1} \Rightarrow \frac{400}{T_1} \le 0.8 \Rightarrow T_1 \ge 500$ K.
+  3. Minimum hot-reservoir temperature = 500 K.
+  Why "minimum": A real engine's efficiency cannot exceed the Carnot limit. For a given cold reservoir, a higher T₁ raises the limit, so 500 K is the lowest T₁ compatible with 20% efficiency.
+  Note: Setting Q₂/Q₁ = T₂/T₁ (240/300 = 0.8) gives the same 500 K; that equality holds only for the reversible (Carnot) limit.
+  Key takeaway: equality (T₁ = 500 K) corresponds to a reversible (Carnot) engine.
   Answer: 500
 P B 2: |-
-  Concept: $a\sin x + b\cos x = \sqrt{a^2 + b^2}\sin(x + \phi)$.
+  Concept: $a\sin\theta + b\cos\theta = \sqrt{a^2 + b^2}\sin(\theta + \phi)$ with tan φ = b/a.
   Solution:
-  1. $y_2 = 5\cdot2\sin\left(3\pi t + \frac{\pi}{3}\right) = 10\sin\left(3\pi t + \frac{\pi}{3}\right)$.
-  2. Both amplitudes are 10, so x = 1.
+  1. $y_2 = 5(\sin3\pi t + \sqrt3\cos3\pi t) = 5\times2\left(\frac{1}{2}\sin3\pi t + \frac{\sqrt3}{2}\cos3\pi t\right) = 10\sin\left(3\pi t + \frac{\pi}{3}\right)$.
+  2. Amplitude of y₂ = 10, same as y₁ (and even the same phase).
+  3. Ratio = 1 : 1, so x = 1.
+  Using the compound-angle identity: sin(3πt + π/3) = sin 3πt cos(π/3) + cos 3πt sin(π/3) = ½ sin 3πt + (√3/2) cos 3πt, so 10 sin(3πt + π/3) = 5 sin 3πt + 5√3 cos 3πt ✓.
+  Common mistake: Taking the amplitude of y₂ as 5 (the outside factor) instead of 5 × √(1 + 3) = 10.
+  Key takeaway: y₁ and y₂ are in fact identical motions.
   Answer: 1
 P B 3: |-
-  Concept: The number of spectral lines from level n is $\frac{n(n - 1)}{2}$.
+  Concept: An electron in level n can return to the ground state by many routes; every pair of levels (i, j) with i > j gives a distinct line. Number of lines = $\binom{n}{2} = \frac{n(n - 1)}{2}$.
   Solution:
-  1. $\frac{6\times5}{2} = 15$.
+  1. n = 6: $\frac{6\times5}{2} = 15$ possible transitions.
+  2. X = 15.
+  Listing them: From n = 6 there are lines to 5, 4, 3, 2 and 1 (5 lines); from 5 to lower levels 4 lines; then 3, 2 and 1. Total 5 + 4 + 3 + 2 + 1 = 15.
+  Common mistake: Counting only the n − 1 = 5 lines of a single cascade.
+  Key takeaway: a single atom can emit at most n − 1 photons, but a sample of many atoms shows all $\frac{n(n - 1)}{2}$ lines.
   Answer: 15
 P B 4: |-
-  Concept: The worst case is at the maximum input, when the Zener current is largest.
+  Concept: The series resistor must limit the Zener current to its maximum rating, $I_{max} = \frac{P}{V_Z}$. The worst case is the highest input voltage (and no load).
   Solution:
-  1. $I_{max} = \frac{P}{V_Z} = \frac{2}{10} = 0.2$ A.
-  2. At 14 V: $R_s = \frac{14 - 10}{0.2} = 20$ Ω.
+  1. $I_{max} = \frac{2\text{ W}}{10\text{ V}} = 0.2$ A.
+  2. At the maximum input (14 V): $R_s = \frac{14 - 10}{0.2} = 20\ \Omega$.
+  3. At 6 V (below V_Z), the Zener would not conduct — regulation fails at that end, but safety is set by the 14 V case.
+  Why no load is the worst case: With no load, all the current through R_s goes into the Zener. Any load current would reduce the Zener current, so the no-load case sets the safety limit.
+  Common mistake: Using the lower input voltage (6 V), which is below the breakdown voltage.
+  Key takeaway: size R_s for the worst-case (highest) input voltage.
   Answer: 20
 P B 5: |-
-  Concept: Check each wire's breaking tension, T = stress × area.
+  Concept: Each wire can withstand a maximum tension T = breaking stress × area. From the figure, W₁ (upper) supports the 20 kg mass, the lower system and the pan; W₂ (lower) supports the 10 kg mass and the pan.
   Solution:
-  1. W₁: T ≤ 1.25 × 10⁹ × 8 × 10⁻⁷ = 1000 N, and it supports (20 + 10 + m)g, so m ≤ 70 kg.
-  2. W₂: T ≤ 500 N, and it supports (10 + m)g, so m ≤ 40 kg.
-  3. The maximum is 40 kg.
+  1. W₁: T_max = 1.25 × 10⁹ × 8 × 10⁻⁷ = 1000 N ⇒ (20 + 10 + m) × 10 ≤ 1000 ⇒ m ≤ 70 kg.
+  2. W₂: T_max = 1.25 × 10⁹ × 4 × 10⁻⁷ = 500 N ⇒ (10 + m) × 10 ≤ 500 ⇒ m ≤ 40 kg.
+  3. Both must hold ⇒ m_max = 40 kg.
+  Key takeaway: the weakest link (W₂) sets the limit.
   Answer: 40
 P B 6: |-
-  Concept: To complete a vertical circle on a string, the bob needs $v \ge \sqrt{5gL}$ at the bottom.
+  Concept: For a bob on a string to complete a vertical circle, its speed at the bottom must be at least $\sqrt{5gL}$. The bullet–bob collision conserves momentum.
   Solution:
-  1. $v_{bob} = \sqrt{5\times10\times0.5} = 5$ m/s.
-  2. Momentum, with the bullet recoiling at 100 m/s: 0.01v = 1 × 5 − 0.01 × 100 = 4, so v = 400 m/s.
+  1. Required bob speed: $\sqrt{5\times10\times0.5} = 5$ m/s.
+  2. Momentum: 0.01v = 1 × 5 + 0.01 × (−100) (the bullet recoils backward).
+  3. 0.01v = 5 − 1 = 4 ⇒ v = 400 m/s.
+  Why √(5gL): At the top of the circle the tension can be zero at minimum, so mg = mv_top²/L, which gives v_top² = gL. Energy conservation adds 2g(2L) = 4gL, so v_bottom² = 5gL.
+  Common mistake: Taking the recoil velocity as +100 m/s (same direction), which gives v = 600 m/s.
+  Key takeaway: a recoiling bullet transfers more momentum than one that stops or sticks.
   Answer: 400
 P B 7: |-
-  Concept: Power factor $= \frac{R}{Z}$.
+  Concept: Power factor cos φ = $\frac{R}{Z}$, with $Z = \sqrt{R^2 + (X_L - X_C)^2}$.
   Solution:
-  1. Old: $\frac{R}{\sqrt{R^2 + 9R^2}} = \frac{1}{\sqrt{10}}$. New: $\frac{R}{\sqrt{R^2 + R^2}} = \frac{1}{\sqrt2}$.
-  2. The ratio is $\sqrt5 : 1$, so x = 1.
+  1. Old (R–L): $Z = \sqrt{R^2 + 9R^2} = \sqrt{10}R$ ⇒ cos φ₁ = $\frac{1}{\sqrt{10}}$.
+  2. New (R–L–C): $X_L - X_C = R$ ⇒ $Z = \sqrt2R$ ⇒ cos φ₂ = $\frac{1}{\sqrt2}$.
+  3. Ratio $\frac{\cos\phi_2}{\cos\phi_1} = \frac{\sqrt{10}}{\sqrt2} = \sqrt5$ ⇒ √5 : 1, so x = 1.
+  Phase angles: Old circuit tan φ = 3 (φ ≈ 71.6°); new circuit tan φ = 1 (φ = 45°). The smaller phase angle means a larger power factor.
+  Common mistake: Taking the ratio old/new (1 : √5) instead of new/old.
+  Key takeaway: adding capacitance partly cancels inductive reactance and improves the power factor.
   Answer: 1
 P B 8: |-
-  Concept: Series and parallel reduction; the switch joins the middle nodes.
+  Concept: Reduce the network using series/parallel rules. From the figure, two branches (R + 2R and 2R + R) run between a and b, and the switch connects their midpoints.
   Solution:
-  1. Open: (R + 2R) ∥ (2R + R) = 1.5R.
-  2. Closed: (R ∥ 2R) + (2R ∥ R) = $\frac{2R}{3} + \frac{2R}{3} = \frac{4R}{3}$.
-  3. The ratio is $1.5 : \frac{4}{3} = 9 : 8$, so x = 9.
+  1. Switch open: (R + 2R) ∥ (2R + R) = 3R ∥ 3R = 1.5R.
+  2. Switch closed: the midpoints join, giving (R ∥ 2R) in series with (2R ∥ R) = $\frac{2R}{3} + \frac{2R}{3} = \frac{4R}{3}$.
+  3. Ratio: $1.5R : \frac{4R}{3} = \frac{3}{2} : \frac{4}{3} = 9 : 8$ ⇒ x = 9.
+  Key takeaway: closing the switch can only lower (or keep) the equivalent resistance.
   Answer: 9
 P B 9: |-
-  Concept: $B = \frac{E}{c}$.
+  Concept: In a plane EM wave in free space, the instantaneous fields are related by E = cB.
   Solution:
-  1. $B = \frac{6}{3\times10^8} = 2\times10^{-8}$ T, so x = 2.
+  1. $B = \frac{E}{c} = \frac{6}{3\times10^8} = 2\times10^{-8}$ T.
+  2. x = 2. (The frequency, 30 MHz, is not needed.)
+  Direction: B is perpendicular to both E and the direction of propagation, and E × B points along the propagation.
+  Common mistake: Multiplying by c instead of dividing (B = E/c, not Ec), or trying to use the frequency.
+  Key takeaway: this relation holds at every point and instant, not just for amplitudes.
   Answer: 2
 P B 10: |-
-  Concept: The shortest closed pipe resonates at its fundamental: $L = \frac{\lambda}{4}$.
+  Concept: A pipe closed at one end resonates at odd harmonics; its fundamental has $L = \frac{\lambda}{4}$. The shortest resonating pipe corresponds to the fundamental.
   Solution:
-  1. $L = \frac{340}{4\times250} = 0.34$ m = 34 cm.
+  1. λ = $\frac{v}{f} = \frac{340}{250} = 1.36$ m.
+  2. $L = \frac{\lambda}{4} = 0.34$ m = 34 cm.
+  End correction: In practice the effective length is L + 0.3d (d = pipe diameter), so the real pipe is slightly shorter; the question ignores this.
+  Common mistake: Using the open-pipe relation L = λ/2 = 68 cm.
+  Key takeaway: next resonant lengths are $\frac{3\lambda}{4}$ = 102 cm, $\frac{5\lambda}{4}$ = 170 cm, … (end correction ignored).
   Answer: 34

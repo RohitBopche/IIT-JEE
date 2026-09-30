@@ -1,179 +1,336 @@
 P A 1: |-
-  Concept: $K = \sqrt{I/M}$; for a disc, $I_z = \frac{MR^2}{2}$ and $I_x = I_y = \frac{MR^2}{4}$ (perpendicular axis theorem).
+  Concept: Radius of gyration $K = \sqrt{\frac{I}{M}}$ depends on how mass is distributed about the chosen axis. For a uniform disc: $I_z = \frac{MR^2}{2}$ (axis through centre, perpendicular to the plane); by the perpendicular axis theorem $I_x + I_y = I_z$ and by symmetry $I_x = I_y = \frac{MR^2}{4}$.
   Solution:
-  1. $K_x = K_y = \frac{R}{2}$ but $K_z = \frac{R}{\sqrt2}$, so the radii of gyration are not all equal: A is false.
-  2. R (a rigid body has fixed mass and shape) is a true statement.
+  1. $K_x = K_y = \sqrt{\frac{R^2}{4}} = \frac{R}{2}$.
+  2. $K_z = \sqrt{\frac{R^2}{2}} = \frac{R}{\sqrt2}$.
+  3. Since $\frac{R}{2} \ne \frac{R}{\sqrt2}$, the three radii of gyration are NOT the same. Assertion A is false.
+  4. Reason R: a rigid body, by definition, keeps its mass and shape fixed during rotation (distances between particles do not change). This is a true statement.
+  5. So A is false and R is true.
+  Why others are wrong:
+  - (A) says A is correct — contradicted by $K_z \ne K_x$.
+  - (B) and (C) both treat A as correct.
+  Key idea: K depends on the axis even though the mass and shape are fixed — so R, although true, cannot support A.
   Answer: (D)
 P A 2: |-
-  Concept: Triangle law: $\vec P = \vec Q + \vec R$ means Q and R are drawn head-to-tail and P closes the triangle from the tail of Q to the head of R.
+  Concept: Triangle law of vector addition: if $\vec P = \vec Q + \vec R$, draw $\vec Q$ and then $\vec R$ head-to-tail; $\vec P$ runs from the tail of $\vec Q$ to the head of $\vec R$ (the closing side). If three vectors sum to zero, they form a closed head-to-tail cycle.
   Solution:
-  1. (a) $\vec C = \vec A + \vec B$: C is the closing side (iv).
-  2. (b) $\vec A = \vec B + \vec C$: A is the closing side (iii).
-  3. (c) $\vec B = \vec A + \vec C$: B is the closing side (i).
-  4. (d) $\vec A + \vec B + \vec C = 0$: the three vectors form a closed cycle (ii).
+  1. (a) $\vec C - \vec A - \vec B = 0 \Rightarrow \vec C = \vec A + \vec B$: $\vec A$, $\vec B$ head-to-tail with $\vec C$ as the resultant → figure (iv).
+  2. (b) $\vec A - \vec C - \vec B = 0 \Rightarrow \vec A = \vec B + \vec C$: $\vec A$ is the closing side → figure (iii).
+  3. (c) $\vec B - \vec A - \vec C = 0 \Rightarrow \vec B = \vec A + \vec C$: $\vec B$ is the closing side → figure (i).
+  4. (d) $\vec A + \vec B = -\vec C \Rightarrow \vec A + \vec B + \vec C = 0$: all three arrows chase each other round the triangle → figure (ii).
+  Correct: (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii).
+  Why others are wrong:
+  - (A) swaps (b) and (c): it makes $\vec B$ the resultant in (b) and $\vec A$ in (c).
+  - (C) and (D) misplace the closed-cycle figure (ii), which can only match the "sum = 0" relation (d).
   Answer: (B)
 P A 3: |-
-  Concept: $\beta = \frac{\lambda D}{d}$ is largest for the smallest d.
+  Concept: In YDSE the fringe width is $\beta = \frac{\lambda D}{d}$, inversely proportional to the slit separation. With d varying sinusoidally, the extreme fringe widths occur at the extreme values of d.
   Solution:
-  1. $d_{min} = d_0 - a_0$ and $d_{max} = d_0 + a_0$.
-  2. $\Delta\beta = \lambda D\left(\frac{1}{d_0 - a_0} - \frac{1}{d_0 + a_0}\right) = \frac{2\lambda Da_0}{d_0^2 - a_0^2}$.
+  1. $d(t) = d_0 + a_0\sin\omega t$ ranges from $d_{min} = d_0 - a_0$ to $d_{max} = d_0 + a_0$.
+  2. Largest fringe width (smallest d): $\beta_{max} = \frac{\lambda D}{d_0 - a_0}$.
+  3. Smallest fringe width (largest d): $\beta_{min} = \frac{\lambda D}{d_0 + a_0}$.
+  4. Difference: $\lambda D\left[\frac{1}{d_0 - a_0} - \frac{1}{d_0 + a_0}\right] = \lambda D\frac{(d_0 + a_0) - (d_0 - a_0)}{d_0^2 - a_0^2} = \frac{2\lambda Da_0}{d_0^2 - a_0^2}$.
+  Why others are wrong:
+  - (A) is just $\beta_{min}$, not a difference.
+  - (B) $\frac{\lambda Da_0}{d_0^2}$ is a small-$a_0$ approximation for half the swing ($\beta$ change from $d_0$ to $d_0 + a_0$); it misses the factor 2 and the exact denominator.
+  - (D) has $d_0$ in the numerator instead of $a_0$ — that is the sum $\beta_{max} + \beta_{min}$, not the difference.
   Answer: (C)
 P A 4: |-
-  Concept: Angular momentum conservation at the apsides: $v_{max}x_1 = v_{min}x_2$.
+  Concept: Gravity is a central force, so the planet's angular momentum about the Sun is conserved. At perihelion (nearest, $x_1$) and aphelion (farthest, $x_2$) the velocity is perpendicular to the radius, so $L = mvr$ there.
   Solution:
-  1. $v_{max} = \frac{v_0x_2}{x_1}$.
+  1. Speed is maximum at the nearest point and minimum at the farthest point (Kepler's second law).
+  2. $mv_{max}x_1 = mv_{min}x_2$.
+  3. With $v_{min} = v_0$: $v_{max} = \frac{v_0x_2}{x_1}$.
+  4. Since $x_2 > x_1$, $v_{max} > v_0$ ✓.
+  Why others are wrong:
+  - (D) $\frac{v_0x_1}{x_2}$ is smaller than $v_0$, so it cannot be the maximum speed.
+  - (A) and (B) use squared ratios; that would follow from conserving $vr^2$, which has no physical basis here (it resembles an areal-velocity confusion).
   Answer: (C)
 P A 5: |-
-  Concept: $N = N_0e^{-\lambda t}$.
+  Concept: Radioactive decay: undecayed nuclei $N = N_0e^{-\lambda t}$. "A quarter decayed" means $\frac{3}{4}$ remain; "half decayed" means $\frac{1}{2}$ remain.
   Solution:
-  1. Quarter decayed: $\frac{3}{4} = e^{-\lambda t_1} \Rightarrow t_1 = \frac{\ln(4/3)}{\lambda}$. Half decayed: $t_2 = \frac{\ln2}{\lambda}$.
-  2. $t_2 - t_1 = \frac{1}{\lambda}\ln\frac{2\times3}{4} = \frac{\ln(3/2)}{\lambda}$.
+  1. Quarter decayed at $t_1$: $\frac{3}{4} = e^{-\lambda t_1} \Rightarrow t_1 = \frac{1}{\lambda}\ln\frac{4}{3}$.
+  2. Half decayed at $t_2$: $\frac{1}{2} = e^{-\lambda t_2} \Rightarrow t_2 = \frac{1}{\lambda}\ln2$.
+  3. Gap: $t_2 - t_1 = \frac{1}{\lambda}\left(\ln2 - \ln\frac{4}{3}\right) = \frac{1}{\lambda}\ln\frac{2\times3}{4} = \frac{\ln\frac{3}{2}}{\lambda}$.
+  Why others are wrong:
+  - (B) $\frac{\ln2}{\lambda}$ is the full half-life (time from start to half decayed).
+  - (D) $\frac{\ln2}{2\lambda}$ wrongly assumes a quarter decays in half a half-life (decay is exponential, not linear).
+  - (C) $\frac{2\ln2}{\lambda}$ is two half-lives (75% decayed).
+  Common trap: reading "a quarter of the nuclei have decayed" as "a quarter remain", which would give $\frac{\ln4}{\lambda}$ for $t_1$.
   Answer: (A)
 P A 6: |-
-  Concept: Total internal reflection when the angle of incidence exceeds the critical angle.
+  Concept: When light travels from a denser to a rarer medium, refraction is possible only if the angle of incidence is less than the critical angle C, where $\sin C = \frac{\mu_{rarer}}{\mu_{denser}}$. Otherwise total internal reflection (TIR) occurs.
   Solution:
   1. $\sin C = \frac{1}{2.42} = 0.413 \Rightarrow C \approx 24.4°$.
-  2. $30° > C$, so the ray is totally reflected and refraction is not possible.
+  2. Angle of incidence = 30° > 24.4°.
+  3. Snell's law would require $\sin r = 2.42\sin30° = 1.21 > 1$ — impossible.
+  4. So the ray undergoes total internal reflection; refraction is not possible. (This small critical angle is why diamonds sparkle.)
+  Why others are wrong:
+  - (A) 53.4° and (B) 30° assume refraction happens.
+  - (C) 24.41° is the critical angle itself, not an angle of refraction.
+  Note: the wavelength (630 nm) is extra information; it does not affect the conclusion.
   Answer: (D)
 P A 7: |-
-  Concept: $\lambda = \frac{h}{\sqrt{2mK}} \propto \frac{1}{\sqrt m}$ at the same K.
+  Concept: De Broglie wavelength $\lambda = \frac{h}{p}$, and at kinetic energy K the momentum is $p = \sqrt{2mK}$. So $\lambda = \frac{h}{\sqrt{2mK}}$, and at the same K, $\lambda \propto \frac{1}{\sqrt m}$.
   Solution:
-  1. $m_e < m_p < m_\alpha \Rightarrow \lambda_e > \lambda_p > \lambda_\alpha$.
+  1. Masses: $m_e \approx \frac{m_p}{1836}$, $m_\alpha \approx 4m_p$.
+  2. So $m_e < m_p < m_\alpha$.
+  3. Larger mass → larger momentum at equal K → smaller wavelength.
+  4. Order: $\lambda_e > \lambda_p > \lambda_\alpha$ (numerically $\lambda_e : \lambda_p : \lambda_\alpha \approx 42.8 : 1 : 0.5$).
+  Why others are wrong:
+  - (A) equal wavelengths would need equal momenta, not equal energies.
+  - (B) reverses the order.
+  - (C) $\lambda_e = \lambda_p$ ignores the huge electron–proton mass difference.
+  Note: charge does not matter here because the energy is given directly (it would matter if they were accelerated through the same voltage).
   Answer: (D)
 P A 8: |-
-  Concept: Free fall of successive drops separated by a time interval τ.
+  Concept: Drops leave the tap at regular intervals τ and fall freely from rest. A drop that has fallen for t seconds is $\frac{1}{2}gt^2$ below the tap; the next drop has fallen for $(t - \tau)$ seconds.
   Solution:
-  1. After 4 s, the drop has fallen $\frac{1}{2}(9.8)(16) = 78.4$ m.
-  2. The next drop has fallen $78.4 - 34.3 = 44.1$ m $= \frac{1}{2}(9.8)(4 - \tau)^2 \Rightarrow 4 - \tau = 3$.
-  3. $\tau = 1$ s, i.e. 1 drop per second.
+  1. The observed drop, 4 s after release: $s_1 = \frac{1}{2}(9.8)(4)^2 = 78.4$ m.
+  2. The next drop is 34.3 m above it: $s_2 = 78.4 - 34.3 = 44.1$ m.
+  3. $44.1 = \frac{1}{2}(9.8)(4 - \tau)^2 \Rightarrow (4 - \tau)^2 = 9 \Rightarrow 4 - \tau = 3$.
+  4. $\tau = 1$ s: one drop leaves every second.
+  Check: separation $= \frac{1}{2}g(4^2 - 3^2) = 4.9\times7 = 34.3$ m ✓.
+  Why others are wrong:
+  - (A) 1 drop per 7 s: the next drop would not even have left the tap within 4 s (spacing would be 78.4 m).
+  - (B) 3 drops per 2 s (τ ≈ 0.67 s) and (D) 2 drops per second (τ = 0.5 s) give spacings of about 24 m and 18 m.
   Answer: (C)
 P A 9: |-
-  Concept: Impulse along x = change in the normal component of momentum.
+  Concept: A rigid, smooth wall exerts force only along its normal (X direction). Impulse = change in momentum, and only the normal component of velocity reverses on elastic reflection.
   Solution:
-  1. Ball (a) (normal incidence): $2mv$. Ball (b) (at 45°): $2mv\cos45°$.
-  2. Ratio $= 1 : \frac{1}{\sqrt2} = \sqrt2 : 1$.
+  1. Speed: 108 km/h = 30 m/s; m = 0.03 kg. (The actual numbers cancel in the ratio.)
+  2. Ball (a) hits normally: velocity x-component changes from $+v$ to $-v$, impulse $= 2mv$.
+  3. Ball (b) hits at 45° to the normal: x-component $v\cos45°$ reverses; the parallel component is unchanged. Impulse $= 2mv\cos45° = \sqrt2\,mv$.
+  4. Ratio $\frac{J_a}{J_b} = \frac{2mv}{\sqrt2\,mv} = \sqrt2 : 1$.
+  (Numerically $J_a = 1.8$ N s, $J_b \approx 1.27$ N s.)
+  Why others are wrong:
+  - (B) inverts the ratio.
+  - (C) 1 : 1 ignores the angle of incidence.
+  - (D) 2 : 1 would need $\cos\theta = \frac{1}{2}$ (60°), not 45°.
   Answer: (A)
 P A 10: |-
-  Concept: Same heating rate and mass: $c \propto \frac{1}{dT/dt}$.
+  Concept: Heat supplied at a uniform rate P: $P = mc\frac{dT}{dt}$. With equal mass and equal heating rate, $c \propto \frac{1}{dT/dt}$ — the steeper the temperature–time graph, the smaller the specific heat.
   Solution:
-  1. Slopes: A = $\frac{120}{3} = 40$ °C/s; B = $\frac{90}{6} = 15$ °C/s.
-  2. $\frac{c_A}{c_B} = \frac{15}{40} = \frac{3}{8}$.
+  1. From the graph: A rises to 120 °C in 3 s → slope 40 °C/s.
+  2. B rises to 90 °C in 6 s → slope 15 °C/s.
+  3. $\frac{c_A}{c_B} = \frac{(dT/dt)_B}{(dT/dt)_A} = \frac{15}{40} = \frac{3}{8}$.
+  Why others are wrong:
+  - (B) $\frac{8}{3}$ is the ratio of slopes (A to B), i.e. the inverse of the specific heat ratio.
+  - (C) $\frac{4}{3}$ compares only the final temperatures (120 : 90).
+  - (D) $\frac{3}{4}$ compares temperatures inversely without accounting for the different times.
+  Key idea: A heats faster, so it has the smaller specific heat.
   Answer: (A)
 P A 11: |-
-  Concept: Reflection from a perfect reflector reverses the propagation direction; no wave is transmitted.
+  Concept: A wave $E_0\cos(kz - \omega t)$ travels along +z with $f = \frac{\omega}{2\pi}$ and $\lambda = \frac{2\pi}{k}$. A perfect reflector transmits nothing; it reflects the wave back along −z, i.e. $kz - \omega t \to kz + \omega t$ (with a possible phase shift for E).
   Solution:
-  1. The reflected wave travels along −z: $3.1\cos[1.8z + 5.4\times10^6t]\hat i$ (up to phase).
-  2. $f = \frac{5.4\times10^6}{2\pi} \approx 8.6\times10^5$ Hz and $\lambda = \frac{2\pi}{1.8} \approx 3.5$ m, so (A) and (D) are wrong.
+  1. k = 1.8 m⁻¹, ω = 5.4 × 10⁶ rad/s.
+  2. Reflected wave: $3.1\cos[(1.8)z + (5.4\times10^6)t]\hat i$ N/C — same amplitude (perfect reflection), same frequency, reversed direction. This matches (C) (up to the phase of reflection, which does not change the functional form chosen here).
+  Why others are wrong:
+  - (A) $f = \frac{5.4\times10^6}{2\pi} \approx 8.6\times10^5$ Hz, not $5.4\times10^5$ Hz (that confuses ω with f).
+  - (B) A perfectly reflecting wall transmits no wave.
+  - (D) $\lambda = \frac{2\pi}{1.8} \approx 3.49$ m, not 5.4 m.
+  Note: the given ω/k ≈ 3 × 10⁶ m/s is not c; the numbers are illustrative, and the qualitative choice (C) is unaffected.
   Answer: (C)
 P A 12: |-
-  Concept: The maximum measurable emf equals the potential drop across the whole wire.
+  Concept: A potentiometer can measure an emf only up to the total potential drop across its wire, $V_{AB} = I\,R_{wire}$, where I is set by the driver cell.
   Solution:
-  1. Wire resistance $= 1000\text{ cm}\times0.1\ \Omega/\text{cm} = 100\ \Omega$.
-  2. $I = \frac{6}{100 + 20} = 0.05$ A, so $V_{AB} = 0.05\times100 = 5$ V.
+  1. Wire length 10 m = 1000 cm; resistance $= 1000\times0.1 = 100\ \Omega$.
+  2. Driver cell: 6 V with 20 Ω in the circuit (from the figure).
+  3. Current: $I = \frac{6}{100 + 20} = 0.05$ A.
+  4. Maximum measurable emf $= V_{AB} = 0.05\times100 = 5$ V.
+  Why others are wrong:
+  - (B) 6 V is the driver emf; part of it is lost across the 20 Ω.
+  - (A) 2.75 V is the drop across 550 cm (the jockey position shown), not the maximum.
+  - (D) 2.25 V is the drop across the remaining 450 cm.
   Answer: (C)
 P A 13: |-
-  Concept: Adiabatic: $TV^{\gamma - 1}$ = constant, with $V \propto l$ and $\gamma = \frac{5}{3}$.
+  Concept: For a reversible adiabatic process, $TV^{\gamma - 1}$ = constant. In a cylinder of fixed cross-section, $V \propto l$. For a monoatomic gas, $\gamma = \frac{5}{3}$, so $\gamma - 1 = \frac{2}{3}$.
   Solution:
-  1. $\frac{T_1}{T_2} = \left(\frac{l_2}{l_1}\right)^{2/3}$.
+  1. $T_1l_1^{2/3} = T_2l_2^{2/3}$.
+  2. $\frac{T_1}{T_2} = \left(\frac{l_2}{l_1}\right)^{2/3}$.
+  3. Since the gas expands ($l_2 > l_1$), $T_1 > T_2$ — adiabatic expansion cools the gas ✓.
+  Why others are wrong:
+  - (B) inverts the ratio, which would make the gas heat up on expansion.
+  - (A) and (C) have exponent 1, corresponding to $\gamma = 2$, not a monoatomic gas.
+  Note: strictly, a sudden (free) release is irreversible; the question intends the standard reversible adiabatic relation.
   Answer: (D)
 P A 14: |-
-  Concept: $C_P - C_V = R$ holds for ideal behaviour, which real gases approach at higher temperature.
+  Concept: Mayer's relation $C_P - C_V = R$ holds exactly for an ideal gas. Real gases deviate (for a van der Waals gas $C_P - C_V > R$), and the deviation shrinks as temperature rises, because intermolecular attraction matters less at high T.
   Solution:
-  1. State P obeys the ideal relation, while Q deviates, so P is at the higher temperature: $T_P > T_Q$.
+  1. In state P, $C_P - C_V = R$: the gas behaves ideally.
+  2. In state Q, $C_P - C_V = 1.10R$: noticeable deviation from ideal behaviour.
+  3. Gases behave more ideally at higher temperatures (and lower pressures).
+  4. So state P is at the higher temperature: $T_P > T_Q$.
+  Why others are wrong:
+  - (A) reverses the conclusion.
+  - (D) Equal temperatures would give the same value of $C_P - C_V$ (at similar pressure).
+  - (B) $T_P = 0.9T_Q$ is a fabricated proportionality; $C_P - C_V$ is not inversely proportional to T.
   Answer: (C)
 P A 15: |-
-  Concept: AM bandwidth $= 2f_m$.
+  Concept: In amplitude modulation, a carrier $f_c$ modulated by a message $f_m$ produces the carrier plus two side bands at $f_c - f_m$ (LSB) and $f_c + f_m$ (USB). Bandwidth $= (f_c + f_m) - (f_c - f_m) = 2f_m$.
   Solution:
-  1. $f_m = 10^5$ Hz, so the bandwidth is $2\times10^5$ Hz = 200 kHz.
+  1. Message: $\sin(2\pi\times10^5t)$ → $f_m = 10^5$ Hz = 100 kHz.
+  2. Carrier: $f_c = 10^7$ Hz = 10 MHz.
+  3. Side bands: 9.9 MHz and 10.1 MHz.
+  4. Bandwidth $= 2\times100$ kHz $= 200$ kHz.
+  (Modulation index $\mu = \frac{10}{20} = 0.5$ — not needed for bandwidth.)
+  Why others are wrong:
+  - (B) 100 kHz is $f_m$ alone (one side band's offset).
+  - (D) 50 kHz confuses the modulation index with frequency.
+  - (C) 0 ignores the side bands entirely.
   Answer: (A)
 P A 16: |-
-  Concept: In series, the same stress acts on both wires and the extensions add.
+  Concept: Wires joined end to end carry the same tension. With equal cross-section, they have the same stress, and their extensions add (like springs in series). Young's modulus $Y = \frac{FL}{A\Delta L}$.
   Solution:
-  1. $\frac{2L}{Y} = \frac{L}{Y_1} + \frac{L}{Y_2} \Rightarrow Y = \frac{2Y_1Y_2}{Y_1 + Y_2}$.
+  1. Extension of wire 1: $\Delta L_1 = \frac{FL}{AY_1}$; of wire 2: $\Delta L_2 = \frac{FL}{AY_2}$.
+  2. The combination has length 2L and extension $\Delta L_1 + \Delta L_2$.
+  3. Treating it as one wire: $\frac{F(2L)}{AY} = \frac{FL}{AY_1} + \frac{FL}{AY_2}$.
+  4. $\frac{2}{Y} = \frac{1}{Y_1} + \frac{1}{Y_2} \Rightarrow Y = \frac{2Y_1Y_2}{Y_1 + Y_2}$ (the harmonic mean).
+  Check: if $Y_1 = Y_2 = Y_0$, then $Y = Y_0$ ✓.
+  Why others are wrong:
+  - (C) $\frac{Y_1Y_2}{Y_1 + Y_2}$ gives $\frac{Y_0}{2}$ for identical wires — it forgets the doubled length.
+  - (A) and (B) also fail the identical-wire check ($\frac{Y_0}{4}$ and $\frac{Y_0}{3}$).
   Answer: (D)
 P A 17: |-
-  Concept: Series layers: $\frac{1}{C} = \int\frac{dx}{\varepsilon(x)A}$.
+  Concept: When permittivity varies with distance x between the plates, treat the dielectric as many thin slabs in series: $\frac{1}{C} = \int_0^d\frac{dx}{\varepsilon(x)A}$.
   Solution:
-  1. By symmetry, $\frac{1}{C} = \frac{2}{A}\int_0^{d/2}\frac{dx}{\varepsilon_0 + kx} = \frac{2}{kA}\ln\frac{2\varepsilon_0 + kd}{2\varepsilon_0}$.
-  2. $C = \frac{kA}{2\ln\left(\frac{2\varepsilon_0 + kd}{2\varepsilon_0}\right)}$.
+  1. ε(x) is symmetric about $x = \frac{d}{2}$, so the two halves contribute equally:
+     $\frac{1}{C} = \frac{2}{A}\int_0^{d/2}\frac{dx}{\varepsilon_0 + kx}$.
+  2. $\int_0^{d/2}\frac{dx}{\varepsilon_0 + kx} = \frac{1}{k}\ln\frac{\varepsilon_0 + \frac{kd}{2}}{\varepsilon_0} = \frac{1}{k}\ln\frac{2\varepsilon_0 + kd}{2\varepsilon_0}$.
+  3. $\frac{1}{C} = \frac{2}{kA}\ln\frac{2\varepsilon_0 + kd}{2\varepsilon_0}$.
+  4. $C = \frac{kA}{2\ln\left(\frac{2\varepsilon_0 + kd}{2\varepsilon_0}\right)}$.
+  Check: as k → 0, $\ln\left(1 + \frac{kd}{2\varepsilon_0}\right) \approx \frac{kd}{2\varepsilon_0}$, so $C \to \frac{\varepsilon_0A}{d}$ ✓.
+  Why others are wrong:
+  - (A) 0 is unphysical.
+  - (B) has the logarithm in the numerator (parallel-type integration) and a wrong sign inside.
+  - (D) is dimensionally meaningless.
   Answer: (C)
 P A 18: |-
-  Concept: $A = \lambda N$ with $\lambda = \frac{0.693}{T_{1/2}}$.
+  Concept: Activity $A = \lambda N$, where $\lambda = \frac{\ln2}{T_{1/2}}$ (in s⁻¹ for disintegrations per second) and N is the number of nuclei.
   Solution:
-  1. $N = \frac{2\times10^{-3}}{198}\times6.02\times10^{23} = 6.08\times10^{18}$.
-  2. $\lambda = \frac{0.693}{3\times86400} = 2.67\times10^{-6}$ s⁻¹.
-  3. $A \approx 1.62\times10^{13} = 16.2\times10^{12}$ s⁻¹.
+  1. Number of nuclei: $N = \frac{2\times10^{-3}\text{ g}}{198\text{ g/mol}}\times6.022\times10^{23} = 6.08\times10^{18}$.
+  2. $T_{1/2} = 3$ days $= 3\times86400 = 2.592\times10^5$ s.
+  3. $\lambda = \frac{0.693}{2.592\times10^5} = 2.67\times10^{-6}$ s⁻¹.
+  4. $A = 2.67\times10^{-6}\times6.08\times10^{18} \approx 1.62\times10^{13}$ s⁻¹ $= 16.2\times10^{12}$ dis/s.
+  Why others are wrong:
+  - (A) $6.06\times10^{18}$ is essentially the number of nuclei N, not the activity.
+  - (B) $2.67\times10^{12}$ mixes the value of λ with the wrong power of ten.
+  - (D) $32.36\times10^{12}$ is exactly double the correct value (e.g. using 4 mg, or dropping a factor of 2 in λ).
   Answer: (C)
 P A 19: |-
-  Concept: Momentum conservation gives the fragments equal and opposite momenta, and $\lambda = \frac{h}{p}$.
+  Concept: When a particle at rest breaks into two, linear momentum conservation requires the fragments to have equal and opposite momenta. The de Broglie wavelength $\lambda = \frac{h}{p}$ depends only on momentum.
   Solution:
-  1. Equal |p| means equal wavelengths: 1 : 1.
+  1. Initial momentum = 0, so $\vec p_M + \vec p_{3M} = 0 \Rightarrow |\vec p_M| = |\vec p_{3M}|$.
+  2. $\lambda_M = \frac{h}{p}$ and $\lambda_{3M} = \frac{h}{p}$.
+  3. Ratio $= 1 : 1$.
+  4. (Their speeds are in ratio 3 : 1 and their kinetic energies in ratio 3 : 1, but momenta are equal.)
+  Why others are wrong:
+  - (A) 3 : 1 and (C) 1 : 3 treat wavelength as depending on velocity or mass alone.
+  - (D) $1 : \sqrt3$ would apply for equal kinetic energies ($\lambda \propto \frac{1}{\sqrt m}$), which is not the case here.
   Answer: (B)
 P A 20: |-
-  Concept: NAND with tied inputs = NOT; De Morgan: $\overline{\bar A + \bar B} = AB$.
+  Concept: A NAND gate with both inputs tied together acts as a NOT gate: $\overline{A\cdot A} = \bar A$. De Morgan's theorem: $\overline{\bar A + \bar B} = A\cdot B$.
   Solution:
-  1. Inverted inputs fed to a NOR give $Y = \overline{\bar A + \bar B} = A\cdot B$, an AND gate.
+  1. Input A passes through a tied-input NAND → $\bar A$.
+  2. Input B passes through a tied-input NAND → $\bar B$.
+  3. $\bar A$ and $\bar B$ feed a NOR gate: $Y = \overline{\bar A + \bar B}$.
+  4. By De Morgan: $Y = \bar{\bar A}\cdot\bar{\bar B} = A\cdot B$.
+  5. Truth table check: Y = 1 only when A = B = 1 ✓ — this is AND.
+  Why others are wrong:
+  - (A) OR would need inverted inputs into a NAND: $\overline{\bar A\cdot\bar B} = A + B$.
+  - (B) NOR would be a plain NOR without the input inverters.
+  - (D) NAND would be $\overline{AB}$, the complement of the result.
   Answer: (C)
 P B 1: |-
-  Concept: $L_z = m(xv_y - yv_x)$.
+  Concept: Angular momentum about the origin for planar motion: $\vec L = m(\vec r\times\vec v)$, with $L_z = m(xv_y - yv_x)$.
   Solution:
-  1. $x = 10\alpha t^2$, $v_x = 20\alpha t$; $y = 5\beta(t - 5)$, $v_y = 5\beta$.
-  2. $L_z = 50m\alpha\beta(t^2 - 2t^2 + 10t) = 50m\alpha\beta(10t - t^2)$.
-  3. $L(0) = 0$; it is zero again at $t = 10$ s.
+  1. $x = 10\alpha t^2 \Rightarrow v_x = 20\alpha t$.
+  2. $y = 5\beta(t - 5) \Rightarrow v_y = 5\beta$.
+  3. $L_z = m[10\alpha t^2\cdot5\beta - 5\beta(t - 5)\cdot20\alpha t] = 50m\alpha\beta[t^2 - 2t(t - 5)]$.
+  4. $L_z = 50m\alpha\beta(10t - t^2) = 50m\alpha\beta\,t(10 - t)$.
+  5. At t = 0: $L = 0$ (the particle is at (0, −25β), moving along ±y, so $\vec r\parallel\vec v$).
+  6. L is zero again when $10 - t = 0 \Rightarrow t = 10$ s.
   Answer: 10
 P B 2: |-
-  Concept: Two-body oscillator: $\omega = \sqrt{\frac{k_{eq}}{\mu}}$.
+  Concept: Two masses connected by springs on a frictionless floor oscillate about their common centre of mass. The system behaves as a single oscillator with reduced mass $\mu = \frac{m_1m_2}{m_1 + m_2}$ and the effective spring constant of the connecting springs: $\omega = \sqrt{\frac{k_{eq}}{\mu}}$.
   Solution:
-  1. Springs in series: $k_{eq} = \frac{k\cdot4k}{5k} = \frac{4k}{5} = 16$ N/m.
-  2. $\mu = \frac{0.2\times0.8}{1.0} = 0.16$ kg.
-  3. $\omega = \sqrt{\frac{16}{0.16}} = 10$ rad/s.
+  1. Springs k and 4k are in series between A and B: $k_{eq} = \frac{k\cdot4k}{k + 4k} = \frac{4k}{5} = \frac{4\times20}{5} = 16$ N/m.
+  2. Reduced mass: $\mu = \frac{0.2\times0.8}{0.2 + 0.8} = 0.16$ kg.
+  3. $\omega = \sqrt{\frac{16}{0.16}} = \sqrt{100} = 10$ rad/s.
+  Why reduced mass: no external horizontal force acts, so the centre of mass stays at rest and both bodies oscillate with the same ω in opposite directions.
   Answer: 10
 P B 3: |-
-  Concept: Linearise the net Coulomb force for small x.
+  Concept: A charge q placed midway between two equal like charges is in equilibrium. For a small displacement x along the line joining them, the net force is restoring and proportional to x, giving SHM with $\omega = \sqrt{\frac{k_{eff}}{m}}$.
   Solution:
-  1. $F = kq^2\left[\frac{1}{(1 - x)^2} - \frac{1}{(1 + x)^2}\right] \approx 4kq^2x$ (with half-separation 1 m).
-  2. $\omega = \sqrt{\frac{4kq^2}{m}} = \sqrt{\frac{4\times9\times10^9\times10}{10^{-6}}} = 6\times10^8 = 6000\times10^5$ rad/s.
+  1. Each fixed charge is 1 m from the midpoint. After displacement x toward one charge, the distances are $(1 - x)$ and $(1 + x)$.
+  2. Net force (toward the centre): $F = kq^2\left[\frac{1}{(1 - x)^2} - \frac{1}{(1 + x)^2}\right] \approx kq^2[(1 + 2x) - (1 - 2x)] = 4kq^2x$.
+  3. $k_{eff} = 4kq^2 = 4\times9\times10^9\times10 = 3.6\times10^{11}$ N/m.
+  4. m = 1 mg = $10^{-6}$ kg.
+  5. $\omega = \sqrt{\frac{3.6\times10^{11}}{10^{-6}}} = \sqrt{3.6\times10^{17}} = 6\times10^8$ rad/s $= 6000\times10^5$ rad/s.
   Answer: 6000
 P B 4: |-
-  Concept: Current decay in LR: $i = i_0e^{-t/\tau}$ with $\tau = \frac{L}{R}$.
+  Concept: When the battery is removed from an LR circuit (and the loop stays closed through R), the current decays exponentially: $i = i_0e^{-t/\tau}$ with time constant $\tau = \frac{L}{R}$.
   Solution:
-  1. $i_0 = \frac{20}{10^4} = 2$ mA and $\tau = \frac{10^{-2}}{10^4} = 10^{-6}$ s.
-  2. After 1 μs: $i = 2\times0.37 = 0.74$ mA $= \frac{74}{100}$ mA.
+  1. Steady current: $i_0 = \frac{E}{R} = \frac{20}{10\times10^3} = 2\times10^{-3}$ A = 2 mA.
+  2. $\tau = \frac{L}{R} = \frac{10\times10^{-3}}{10^4} = 10^{-6}$ s = 1 μs.
+  3. At t = 1 μs = τ: $i = 2e^{-1} = 2\times0.37 = 0.74$ mA.
+  4. $\frac{x}{100} = 0.74 \Rightarrow x = 74$.
+  Result: τ = 10⁻²/10⁴ = 10⁻⁶ s = 1 μs, so after 1 μs, i = 2 × e⁻¹ = 2 × 0.37 = 0.74 mA = 74/100 mA.
+  Common mistake: Using the growth formula i₀(1 − e^{−t/τ}), which gives 1.26 mA; after switching off, the current decays.
   Answer: 74
 P B 5: |-
-  Concept: Energy conservation for a pendulum.
+  Concept: Only gravity does work on the bob (tension is perpendicular to the motion), so mechanical energy is conserved. At angle θ from the vertical, the bob is $l(1 - \cos\theta)$ above the lowest point.
   Solution:
-  1. $v^2 = u^2 - 2gl(1 - \cos60°) = 9 - 2\times10\times0.5\times0.5 = 4$.
-  2. $v = 2$ m/s.
+  1. Height gained at 60°: $h = 0.5(1 - \cos60°) = 0.5\times0.5 = 0.25$ m.
+  2. $v^2 = u^2 - 2gh = 9 - 2\times10\times0.25 = 9 - 5 = 4$.
+  3. $v = 2$ m/s.
+  Check: the bob can reach 60° because $u^2 = 9 > 2gh = 5$; it would rise up to $h = 0.45$ m, below the pivot level (0.5 m), so the string stays taut.
   Answer: 2
 P B 6: |-
-  Concept: 1D elastic collision: $v_1 = \frac{m_1 - m_2}{m_1 + m_2}u$.
+  Concept: In a 1-D elastic collision with the second body at rest, $v_1 = \frac{m_1 - m_2}{m_1 + m_2}u$. The centre of mass velocity is unchanged by the collision: $v_{cm} = \frac{m_1u}{m_1 + m_2}$.
   Solution:
-  1. $\frac{2 - m_2}{2 + m_2} = \frac{1}{4} \Rightarrow m_2 = 1.2$ kg.
-  2. $v_{cm} = \frac{2\times4}{3.2} = 2.5$ m/s, so $x = 25$.
+  1. $v_1 = \frac{u}{4}$ (same direction): $\frac{2 - m_2}{2 + m_2} = \frac{1}{4} \Rightarrow 8 - 4m_2 = 2 + m_2 \Rightarrow m_2 = 1.2$ kg.
+  2. $v_{cm} = \frac{2\times4 + 1.2\times0}{2 + 1.2} = \frac{8}{3.2} = 2.5$ m/s.
+  3. $\frac{x}{10} = 2.5 \Rightarrow x = 25$.
+  Check: after collision $v_2 = \frac{2m_1}{m_1 + m_2}u = 5$ m/s; momentum $2(1) + 1.2(5) = 8$ ✓; KE $1 + 15 = 16 = \frac{1}{2}(2)(16)$ ✓.
   Answer: 25
 P B 7: |-
-  Concept: The bulb must get its rated current.
+  Concept: For the bulb to deliver its rated power, it must get its rated voltage (100 V) and rated current. The series resistor must drop the extra voltage.
   Solution:
-  1. $R_b = \frac{100^2}{200} = 50\ \Omega$ and $I = 2$ A.
-  2. The series R must drop 100 V: $R = \frac{100}{2} = 50\ \Omega$.
+  1. Bulb resistance: $R_b = \frac{V^2}{P} = \frac{100^2}{200} = 50\ \Omega$.
+  2. Rated current: $I = \frac{P}{V} = \frac{200}{100} = 2$ A.
+  3. Supply 200 V: the series resistor must drop $200 - 100 = 100$ V.
+  4. $R = \frac{100}{2} = 50\ \Omega$.
+  Check: total resistance 100 Ω, current $\frac{200}{100} = 2$ A, bulb power $2^2\times50 = 200$ W ✓.
+  Result: The resistor must drop 200 − 100 = 100 V at 2 A, so R = 100/2 = 50 Ω.
+  Common mistake: Using the bulb's resistance alone and ignoring the rated current; the series resistor carries the same 2 A as the bulb.
   Answer: 50
 P B 8: |-
-  Concept: Observed reading = true value + zero error; least count 0.001 cm.
+  Concept: Screw gauge least count $= \frac{\text{pitch}}{\text{no. of circular divisions}} = \frac{0.1}{100} = 0.001$ cm. Observed reading = true value + zero error. A positive zero error means the circular-scale zero lies below the reference line when the jaws are closed; a negative error, above.
   Solution:
-  1. Gauge A: +5 divisions (+0.005 cm), so it reads 0.327 cm, i.e. circular scale 27.
-  2. Gauge B: reference at 92, a −8 division error (−0.008 cm), so it reads 0.314 cm, i.e. circular scale 14.
-  3. Difference $= 27 - 14 = 13$.
+  1. True radius = 0.322 cm: main scale 0.3 cm plus 22 circular divisions (on an error-free gauge).
+  2. Gauge A: zero error +5 divisions (+0.005 cm). Observed = 0.322 + 0.005 = 0.327 cm → circular scale reading 27.
+  3. Gauge B: reference at the 92nd division, i.e. zero error −8 divisions (−0.008 cm). Observed = 0.322 − 0.008 = 0.314 cm → circular scale reading 14.
+  4. |27 − 14| = 13.
   Answer: 13
 P B 9: |-
-  Concept: $B = \mu_0(1 + \chi)nI$, so the fractional increase is χ.
+  Concept: Inside a toroid, $B_0 = \mu_0nI$ in vacuum. Filling the core with a material of susceptibility χ gives $B = \mu_0(1 + \chi)nI$. So the fractional increase is χ.
   Solution:
-  1. Percentage increase $= 2.2\times10^{-5}\times100 = 2.2\times10^{-3}\% = \frac{22}{10^4}$.
+  1. Fractional increase: $\frac{B - B_0}{B_0} = \chi = 2.2\times10^{-5}$.
+  2. Percentage increase: $2.2\times10^{-5}\times100 = 2.2\times10^{-3}\%$.
+  3. Write as $\frac{x}{10^4}$: $2.2\times10^{-3} = \frac{22}{10^4}$, so x = 22.
+  Note: aluminium is paramagnetic (small positive χ), so the field increases slightly.
+  Result: Percentage increase = 2.2 × 10⁻³ % = 22/10⁴, so x = 22.
+  Why so small: Aluminium is paramagnetic with a tiny χ; only ferromagnets change the field inside a toroid substantially.
   Answer: 22
 P B 10: |-
-  Concept: Faraday's law with $P = \frac{\varepsilon^2}{R}$.
+  Concept: A changing flux induces emf $\varepsilon = \left|\frac{d\phi}{dt}\right|$ (Faraday's law). The heating power is $P = \frac{\varepsilon^2}{R}$, and energy $E = Pt$ if ε is constant.
   Solution:
-  1. $\phi = B\pi r^2 = 4\times10^{-3}\left(1 - \frac{t}{100}\right)$, so $\varepsilon = 4\times10^{-5}$ V (constant).
-  2. $P = \frac{(4\times10^{-5})^2}{2\times10^{-6}} = 8\times10^{-4}$ W for 100 s.
-  3. $E = 0.08$ J $= 80$ mJ.
+  1. Flux: $\phi = B\pi r^2 = \frac{4}{\pi}\times10^{-3}\left(1 - \frac{t}{100}\right)\times\pi(1)^2 = 4\times10^{-3}\left(1 - \frac{t}{100}\right)$ Wb.
+  2. $\varepsilon = \left|\frac{d\phi}{dt}\right| = \frac{4\times10^{-3}}{100} = 4\times10^{-5}$ V (constant).
+  3. $P = \frac{(4\times10^{-5})^2}{2\times10^{-6}} = \frac{16\times10^{-10}}{2\times10^{-6}} = 8\times10^{-4}$ W.
+  4. The field reaches zero at t = 100 s.
+  5. $E = 8\times10^{-4}\times100 = 0.08$ J $= 80$ mJ.
+  Result: ε = (4 × 10⁻³)/100 = 4 × 10⁻⁵ V (constant), so P = ε²/R = 16 × 10⁻¹⁰/(2 × 10⁻⁶) = 8 × 10⁻⁴ W. Over the 100 s during which the field falls to zero, E = 8 × 10⁻⁴ × 100 = 0.08 J = 80 mJ.
+  Common mistake: Forgetting that the field takes 100 s to vanish, and using t = 1 s.
   Answer: 80

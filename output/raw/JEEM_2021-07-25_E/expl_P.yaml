@@ -1,169 +1,342 @@
 P A 1: |-
-  Concept: Refraction at the top face, then TIR at the side face needs $\theta'' \ge C$ with $\sin C = \frac{3}{4}$.
+  Concept: The ray refracts into the block at the top face and then strikes the adjacent (perpendicular) side face. Total internal reflection (TIR) there needs the angle of incidence θ'' to be at least the critical angle C, where $\sin C = \frac{1}{\mu} = \frac{3}{4}$. Since the faces are perpendicular, $\theta'' = 90° - \theta'$.
   Solution:
-  1. $\theta'' = 90° - \theta'$. At the limit, $\cos\theta' = \frac{3}{4}$, so $\sin\theta' = \frac{\sqrt7}{4}$.
-  2. $\sin\theta = \frac{4}{3}\sin\theta' = \frac{\sqrt7}{3}$, so $\theta_{max} = \sin^{-1}\frac{\sqrt7}{3}$.
+  1. Snell's law at the top face: $\sin\theta = \mu\sin\theta' = \frac{4}{3}\sin\theta'$.
+  2. TIR at the side face: $\sin\theta'' \ge \frac{3}{4} \Rightarrow \cos\theta' \ge \frac{3}{4}$.
+  3. Larger θ gives larger θ′ and hence smaller θ″. So the limit is $\cos\theta' = \frac{3}{4}$, i.e. $\sin\theta' = \sqrt{1 - \frac{9}{16}} = \frac{\sqrt7}{4}$.
+  4. $\sin\theta_{max} = \frac{4}{3}\times\frac{\sqrt7}{4} = \frac{\sqrt7}{3} \approx 0.882$, so $\theta_{max} = \sin^{-1}\frac{\sqrt7}{3} \approx 61.9°$.
+  Why others are wrong:
+  - (C) $\sin^{-1}\frac{\sqrt7}{4}$ is θ′ (inside the medium), not the incidence angle in air.
+  - (A) and (D) with $\sqrt5$ come from using $\sin C = \frac{2}{3}$ or mixing up sin and cos of the refracted angle.
+  Key idea: beyond $\theta_{max}$, the ray meets the side face at less than the critical angle and escapes.
   Answer: (B)
 P A 2: |-
-  Concept: Balancing length ∝ emf.
+  Concept: In a potentiometer, the balancing length is proportional to the emf balanced: $\varepsilon = kl$, where k is the potential gradient of the wire (fixed as long as the driver circuit is unchanged).
   Solution:
-  1. Point 1 balances $\varepsilon_1$ alone: $\varepsilon_1 \propto 250$. Point 2 balances $\varepsilon_1 + \varepsilon_2 \propto 400$.
-  2. $\varepsilon_2 \propto 150$, so $\frac{\varepsilon_1}{\varepsilon_2} = \frac{250}{150} = \frac{5}{3}$.
+  1. With the galvanometer at point (1), only cell $\varepsilon_1$ is in the galvanometer loop: $\varepsilon_1 = k\times250$.
+  2. At point (2), both cells (in series, aiding) are in the loop: $\varepsilon_1 + \varepsilon_2 = k\times400$.
+  3. Subtract: $\varepsilon_2 = k\times150$.
+  4. $\frac{\varepsilon_1}{\varepsilon_2} = \frac{250}{150} = \frac{5}{3}$.
+  Why others are wrong:
+  - (B) $\frac{8}{5} = \frac{400}{250}$ compares the combined emf with $\varepsilon_1$, not $\varepsilon_1$ with $\varepsilon_2$.
+  - (C) $\frac{3}{2}$ and (A) $\frac{4}{3}$ come from treating the cells as opposing or mis-assigning the lengths.
+  Tip: this "sum and single" method is a standard way to compare two emfs with one potentiometer — the difference of balancing lengths gives the second cell.
   Answer: (D)
 P A 3: |-
-  Concept: The dropped object starts with the balloon's upward velocity.
+  Concept: An object released from a moving balloon has the balloon's velocity at the moment of release (10 m/s upward). After release it moves under gravity alone, while the balloon continues upward at constant speed.
   Solution:
-  1. $-75 = 10t - 5t^2 \Rightarrow t^2 - 2t - 15 = 0 \Rightarrow t = 5$ s.
-  2. Balloon height $= 75 + 10\times5 = 125$ m.
+  1. Take upward as positive and the release point as origin. The object hits the ground at displacement −75 m:
+     $-75 = 10t - \frac{1}{2}(10)t^2 \Rightarrow 5t^2 - 10t - 75 = 0 \Rightarrow t^2 - 2t - 15 = 0$.
+  2. $(t - 5)(t + 3) = 0 \Rightarrow t = 5$ s (reject the negative root).
+  3. In 5 s the balloon rises $10\times5 = 50$ m.
+  4. Height of balloon when the object lands $= 75 + 50 = 125$ m.
+  Check: the object first rises 5 m (for 1 s), then falls 80 m in 4 s: $\frac{1}{2}(10)(16) = 80$ ✓.
+  Why others are wrong:
+  - (C) 200 m, (B) 300 m, (A) 250 m would require the object to take 12.5 s, 22.5 s or 17.5 s to fall — far too long; they typically come from ignoring the initial upward velocity or double-counting heights.
   Answer: (D)
 P A 4: |-
-  Concept: Same λ means the same momentum p.
+  Concept: Equal de Broglie wavelengths mean equal momenta, since $\lambda = \frac{h}{p}$ for both matter and light. Then compare the energy–momentum relations: non-relativistic electron $K = \frac{p^2}{2m} = \frac{pv}{2}$; photon $E = pc$.
   Solution:
-  1. Electron: $K = \frac{p^2}{2m} = \frac{pv}{2}$. Photon: $E = pc$.
-  2. Ratio $= \frac{v}{2c}$.
+  1. Same λ → same p.
+  2. Electron: $K_e = \frac{p^2}{2m} = \frac{(mv)v}{2} = \frac{pv}{2}$.
+  3. Photon: $E_{ph} = pc$.
+  4. Ratio: $\frac{K_e}{E_{ph}} = \frac{pv/2}{pc} = \frac{v}{2c}$.
+  5. Since v ≪ c, the electron carries much less energy than the photon of the same wavelength.
+  Why others are wrong:
+  - (B) $\frac{2c}{v}$ is the inverse ratio (photon to electron).
+  - (C) $\frac{v}{3c}$ and (D) $\frac{3c}{v}$ have no basis; the factor 2 comes from the $\frac{1}{2}$ in kinetic energy.
   Answer: (A)
 P A 5: |-
-  Concept: For equal magnitudes, $|X \mp Y|^2 = 2X^2(1 \mp \cos\theta)$.
+  Concept: For vectors of equal magnitude X at angle θ: $|\vec X + \vec Y|^2 = 2X^2(1 + \cos\theta)$ and $|\vec X - \vec Y|^2 = 2X^2(1 - \cos\theta)$.
   Solution:
-  1. $\frac{1 - \cos\theta}{1 + \cos\theta} = n^2 \Rightarrow \cos\theta = \frac{1 - n^2}{1 + n^2} = \frac{n^2 - 1}{-n^2 - 1}$.
+  1. Given $|\vec X - \vec Y| = n|\vec X + \vec Y|$, square: $2X^2(1 - \cos\theta) = n^2\cdot2X^2(1 + \cos\theta)$.
+  2. $1 - \cos\theta = n^2 + n^2\cos\theta \Rightarrow \cos\theta(1 + n^2) = 1 - n^2$.
+  3. $\cos\theta = \frac{1 - n^2}{1 + n^2} = \frac{n^2 - 1}{-n^2 - 1}$.
+  4. So $\theta = \cos^{-1}\left(\frac{n^2 - 1}{-n^2 - 1}\right)$.
+  Check: n = 1 gives cos θ = 0 (θ = 90°, when sum and difference have equal lengths) ✓; n → 0 gives θ → 0 ✓.
+  Why others are wrong:
+  - (A) $\frac{n^2 + 1}{n^2 - 1}$ has magnitude > 1 — not a valid cosine.
+  - (B) and (D) simplify to $-\frac{n^2 + 1}{n^2 - 1}$ and −1, which are either invalid or give θ = 180° for every n.
   Answer: (C)
 P A 6: |-
-  Concept: At C, dipole A gives an axial field $\frac{2kp_1}{r^3}$ and dipole B an equatorial field $\frac{kp_2}{r^3}$ (perpendicular).
+  Concept: For a short dipole at distance r: on its axis, $E = \frac{2kp}{r^3}$ (along p); on its equatorial line, $E = \frac{kp}{r^3}$ (opposite to p). Here C lies on the axis of A and hence on the equatorial line of B (which is perpendicular to A), at the same distance r from O.
   Solution:
-  1. $\tan37° = \frac{kp_2/r^3}{2kp_1/r^3} = \frac{p_2}{2p_1} = \frac{3}{4}$.
-  2. $\frac{p_1}{p_2} = \frac{2}{3}$.
+  1. Field of A at C: $E_A = \frac{2kp_1}{r^3}$ along the axis.
+  2. Field of B at C: $E_B = \frac{kp_2}{r^3}$, perpendicular to the axis.
+  3. The resultant makes 37° with the axis: $\tan37° = \frac{E_B}{E_A} = \frac{p_2}{2p_1}$.
+  4. $\tan37° = \frac{3}{4}$, so $\frac{p_2}{2p_1} = \frac{3}{4} \Rightarrow \frac{p_1}{p_2} = \frac{4}{6} = \frac{2}{3}$.
+  Why others are wrong:
+  - (B) $\frac{3}{2}$ inverts the ratio.
+  - (C) $\frac{4}{3}$ forgets the factor 2 in the axial field.
+  - (A) $\frac{3}{8}$ uses sin 37° instead of tan 37° and inverts.
   Answer: (D)
 P A 7: |-
-  Concept: $i = i_0\cos\omega t$ falls to $\frac{i_0}{\sqrt2}$ at $\omega t = \frac{\pi}{4}$, i.e. $t = \frac{T}{8}$.
+  Concept: In a purely resistive AC circuit the current is sinusoidal and in phase with the voltage: $i = i_0\cos\omega t$ if we start at the maximum. The rms value is $\frac{i_0}{\sqrt2}$.
   Solution:
-  1. $t = \frac{1}{8\times50} = 2.5$ ms.
+  1. $i_0\cos\omega t = \frac{i_0}{\sqrt2} \Rightarrow \cos\omega t = \frac{1}{\sqrt2} \Rightarrow \omega t = \frac{\pi}{4}$.
+  2. $t = \frac{\pi/4}{2\pi f} = \frac{1}{8f}$, i.e. one-eighth of a period.
+  3. f = 50 Hz → T = 20 ms → $t = \frac{20}{8} = 2.5$ ms.
+  4. The resistance (10 Ω) and voltage (220 V) do not affect the timing; they only set the current amplitude ($i_0 = \frac{220\sqrt2}{10} \approx 31$ A).
+  Why others are wrong:
+  - (C) 3.0 ms, (B) 4.5 ms, (D) 1.5 ms do not correspond to a phase change of $\frac{\pi}{4}$ at 50 Hz (e.g. 5 ms would be T/4, max to zero).
   Answer: (A)
 P A 8: |-
-  Concept: $v = \frac{dx}{dt} = \frac{1}{2mx + n}$ and $a = v\frac{dv}{dx}$.
+  Concept: When t is given as a function of x, find $v = \frac{dx}{dt} = \frac{1}{dt/dx}$, then acceleration $a = \frac{dv}{dt} = v\frac{dv}{dx}$.
   Solution:
-  1. $\frac{dv}{dx} = -\frac{2m}{(2mx + n)^2} = -2mv^2$.
-  2. $a = -2mv^3$, so the retardation is $2mv^3$.
+  1. $\frac{dt}{dx} = 2mx + n \Rightarrow v = \frac{1}{2mx + n}$.
+  2. $\frac{dv}{dx} = -\frac{2m}{(2mx + n)^2} = -2mv^2$.
+  3. $a = v\frac{dv}{dx} = -2mv^3$.
+  4. The negative sign means the body is slowing down; the retardation (magnitude) is $2mv^3$.
+  Why others are wrong:
+  - (D) $2nv^3$ uses the wrong constant — n disappears on differentiating $\frac{dt}{dx}$ again.
+  - (B) $2mnv^3$ and (A) $2n^2v^2$ are dimensionally inconsistent with the derivation.
+  Check: if m = 0, t = nx is uniform motion, so the retardation should vanish — only (C) does ✓.
   Answer: (C)
 P A 9: |-
-  Concept: $\mu = \frac{\sin\frac{A + \delta_m}{2}}{\sin\frac{A}{2}}$ with $\delta_m = A$.
+  Concept: For a prism at minimum deviation, $\mu = \frac{\sin\left(\frac{A + \delta_m}{2}\right)}{\sin\frac{A}{2}}$.
   Solution:
-  1. $\mu = \frac{\sin A}{\sin(A/2)} = 2\cos\frac{A}{2}$.
-  2. $A = 2\cos^{-1}\frac{\mu}{2}$.
+  1. With $\delta_m = A$: $\mu = \frac{\sin A}{\sin\frac{A}{2}}$.
+  2. Using $\sin A = 2\sin\frac{A}{2}\cos\frac{A}{2}$: $\mu = 2\cos\frac{A}{2}$.
+  3. $\cos\frac{A}{2} = \frac{\mu}{2} \Rightarrow A = 2\cos^{-1}\left(\frac{\mu}{2}\right)$.
+  Check: for $\mu = \sqrt3$, $A = 2\times30° = 60°$ and $\delta_m = 60°$ — the familiar equilateral glass-like prism case ✓.
+  Why others are wrong:
+  - (B) $\cos^{-1}\frac{\mu}{2}$ is only $\frac{A}{2}$ (missing the factor 2).
+  - (C) uses sin instead of cos.
+  - (D) has no basis in the prism formula.
+  Physical constraint: Since cos(A/2) ≤ 1, this situation needs μ ≤ 2; for μ = √3 the prism angle is 60°, as in an equilateral glass prism.
+  Common mistake: Dropping the factor 2 when inverting, which gives option (B).
   Answer: (A)
 P A 10: |-
-  Concept: $g = \frac{GM}{R^2}$; the same density gives $R \propto M^{1/3}$.
+  Concept: Weight W = mg with $g = \frac{GM}{R^2}$. With equal density ρ, $M = \frac{4}{3}\pi R^3\rho$, so $R \propto M^{1/3}$ and hence $g = \frac{4}{3}\pi G\rho R \propto R \propto M^{1/3}$.
   Solution:
-  1. $R' = 2^{1/3}R$, so $g' = g\frac{2}{2^{2/3}} = 2^{1/3}g$.
-  2. Weight $= 2^{1/3}W$.
+  1. Planet mass M′ = 2M with the same density → $R' = 2^{1/3}R$.
+  2. $g' = \frac{G(2M)}{(2^{1/3}R)^2} = \frac{2}{2^{2/3}}g = 2^{1/3}g$.
+  3. Weight on the planet: $W' = mg' = 2^{1/3}W \approx 1.26W$.
+  Why others are wrong:
+  - (A) 2W assumes the radius is unchanged (only mass doubled).
+  - (B) W assumes g is unchanged.
+  - (C) $\sqrt2W$ uses $R \propto M^{1/2}$ (wrong scaling for equal density).
   Answer: (D)
 P A 11: |-
-  Concept: Starting from rest, $\vec r = \frac{1}{2}\vec at^2$.
+  Concept: A constant force gives constant acceleration $\vec a = \frac{\vec F}{m}$. Starting from rest at the origin, $\vec r = \frac{1}{2}\vec at^2$ (component-wise).
   Solution:
-  1. $\vec a = \frac{(40, 10)}{5} = (8, 2)$ m/s².
-  2. $\vec r = 50(8, 2) = (400\hat i + 100\hat j)$ m.
+  1. $\vec a = \frac{40\hat i + 10\hat j}{5} = 8\hat i + 2\hat j$ m/s².
+  2. $\vec r = \frac{1}{2}(8\hat i + 2\hat j)(10)^2 = 50(8\hat i + 2\hat j) = 400\hat i + 100\hat j$ m.
+  3. The motion is along a straight line in the direction of the force (since it starts from rest).
+  Why others are wrong:
+  - (A) $(100, 100)$ and (C) $(400, 400)$ treat the two components as if the forces were equal.
+  - (D) swaps the x and y components.
+  Check: the ratio x : y = 4 : 1 must equal $F_x : F_y = 40 : 10$ ✓ — only (B) satisfies this.
   Answer: (B)
 P A 12: |-
-  Concept: $r = \frac{mv}{qB}$.
+  Concept: A charged particle moving perpendicular to a uniform magnetic field moves in a circle: $qvB = \frac{mv^2}{r} \Rightarrow r = \frac{mv}{qB}$.
   Solution:
-  1. $\frac{r_1}{r_2} = \frac{v_1}{v_2}\cdot\frac{q_2}{q_1} = \frac{2}{3}\times2 = \frac{4}{3}$.
+  1. Same mass and same B, so $r \propto \frac{v}{q}$.
+  2. $\frac{r_1}{r_2} = \frac{v_1}{v_2}\times\frac{q_2}{q_1} = \frac{2}{3}\times\frac{2}{1} = \frac{4}{3}$.
+  3. So the ratio of radii is 4 : 3.
+  Why others are wrong:
+  - (B) 2 : 3 is the speed ratio alone, ignoring charge.
+  - (D) 1 : 4 multiplies the charge ratio instead of dividing.
+  - (A) 3 : 1 has no basis.
+  Why r ∝ v/q: A faster ion needs a bigger circle to be turned by the same force, while a larger charge feels a stronger force and curves more tightly.
+  Common mistake: Multiplying the speed ratio by q₁/q₂ instead of q₂/q₁, which gives 1 : 3.
   Answer: (C)
 P A 13: |-
-  Concept: The dielectric reduces the net field by k: $q_f - q_b = \frac{q_f}{k}$.
+  Concept: A dielectric slab polarises in the field of the free charges, creating bound surface charges of opposite sign on its faces. These reduce the field inside the dielectric by the factor k: $E = \frac{E_0}{k}$.
   Solution:
-  1. $q_b = q_f\left(1 - \frac{1}{k}\right)$.
+  1. Field due to free charge: $E_0 = \frac{q_f}{\varepsilon_0A}$.
+  2. Net field inside the dielectric: $\frac{q_f - q_b}{\varepsilon_0A} = \frac{E_0}{k} = \frac{q_f}{k\varepsilon_0A}$.
+  3. So $q_f - q_b = \frac{q_f}{k} \Rightarrow q_b = q_f\left(1 - \frac{1}{k}\right)$.
+  Checks: k = 1 (vacuum) gives $q_b = 0$ ✓; k → ∞ (conductor-like) gives $q_b \to q_f$ ✓.
+  Why others are wrong:
+  - (A) and (D) give $q_b > q_f$, which would reverse the field inside — impossible.
+  - (B) uses $\sqrt k$, which has no basis in the polarisation relation.
   Answer: (C)
 P A 14: |-
-  Concept: In vacuum, bubble pressure $= \frac{4T}{r}$; isothermal means $\sum PV$ is conserved.
+  Concept: A soap bubble has two surfaces, so its excess pressure is $\frac{4T}{r}$. In vacuum there is no outside pressure, so the gas pressure inside equals $\frac{4T}{r}$. Isothermal combination conserves the total amount of gas: $P_1V_1 + P_2V_2 = PV$.
   Solution:
-  1. $\frac{4T}{r_1}r_1^3 + \frac{4T}{r_2}r_2^3 = \frac{4T}{r}r^3 \Rightarrow r^2 = r_1^2 + r_2^2$.
+  1. $\frac{4T}{r_1}\cdot\frac{4}{3}\pi r_1^3 + \frac{4T}{r_2}\cdot\frac{4}{3}\pi r_2^3 = \frac{4T}{r}\cdot\frac{4}{3}\pi r^3$.
+  2. Cancel common factors: $r_1^2 + r_2^2 = r^2$.
+  3. $r = \sqrt{r_1^2 + r_2^2}$.
+  Interpretation: the total surface area is conserved in this case.
+  Why others are wrong:
+  - (A) $\sqrt{r_1r_2}$ is a geometric mean; it would make the new bubble smaller than the larger one.
+  - (C) $\frac{r_1r_2}{r_1 + r_2}$ is the formula for the radius of the common interface of two bubbles in contact.
+  - (D) the arithmetic mean has no physical basis here.
   Answer: (B)
 P A 15: |-
-  Concept: $\eta = 1 - \frac{T_2}{T_1}$ (kelvin).
+  Concept: Carnot efficiency $\eta = 1 - \frac{T_2}{T_1}$ with temperatures in kelvin; a temperature change of 62 °C equals a change of 62 K.
   Solution:
-  1. $\frac{T_2}{T_1} = \frac{5}{6}$ and $\frac{T_2 - 62}{T_1} = \frac{2}{3}$.
-  2. $\frac{62}{T_1} = \frac{1}{6} \Rightarrow T_1 = 372$ K $= 99$ °C.
+  1. Initially $\eta = \frac{1}{6} \Rightarrow \frac{T_2}{T_1} = \frac{5}{6}$.
+  2. After lowering the sink by 62 K, $\eta = \frac{1}{3} \Rightarrow \frac{T_2 - 62}{T_1} = \frac{2}{3}$.
+  3. Subtract: $\frac{62}{T_1} = \frac{5}{6} - \frac{2}{3} = \frac{1}{6} \Rightarrow T_1 = 372$ K.
+  4. In Celsius: $372 - 273 = 99$ °C. (The sink is at 310 K = 37 °C.)
+  Why others are wrong:
+  - (C) 37 °C is the sink temperature, not the source.
+  - (A) 124 °C and (D) 62 °C come from working in Celsius instead of kelvin or misusing the 62-degree change.
   Answer: (B)
 P A 16: |-
-  Concept: With v > 0, distance $= \int v\,dt$.
+  Concept: Distance travelled $= \int|v|\,dt$. If v does not change sign in the interval, distance equals displacement $\int v\,dt$.
   Solution:
-  1. $\int_1^2(\alpha t + \beta t^2)dt = \frac{3\alpha}{2} + \frac{7\beta}{3}$.
+  1. Assuming α, β > 0 (as intended), $v = \alpha t + \beta t^2 > 0$ for t in [1, 2].
+  2. $s = \int_1^2(\alpha t + \beta t^2)\,dt = \left[\frac{\alpha t^2}{2} + \frac{\beta t^3}{3}\right]_1^2$.
+  3. $= \frac{\alpha}{2}(4 - 1) + \frac{\beta}{3}(8 - 1) = \frac{3\alpha}{2} + \frac{7\beta}{3}$.
+  Why others are wrong:
+  - (A) $\frac{\alpha}{2} + \frac{\beta}{3}$ integrates from 0 to 1 instead of 1 to 2.
+  - (C) $\frac{7\beta}{2}$ uses the wrong power-rule factor for $t^2$.
+  - (D) $3\alpha + 7\beta$ forgets the $\frac{1}{2}$ and $\frac{1}{3}$ factors.
   Answer: (B)
 P A 17: |-
-  Concept: Arguments of trigonometric functions are dimensionless.
+  Concept: The argument of a sine or cosine must be dimensionless, and each term in a sum must have the same dimensions as the whole (here, force).
   Solution:
-  1. $[A] = [MLT^{-2}]$, $[B] = [L^{-1}]$, $[D] = [T^{-1}]$.
-  2. $\left[\frac{AD}{B}\right] = [MLT^{-2}][T^{-1}][L] = [ML^2T^{-3}]$.
+  1. $A\cos Bx$ is a force, and cos is dimensionless: $[A] = [MLT^{-2}]$.
+  2. Bx is dimensionless: $[B] = [L^{-1}]$.
+  3. Dt is dimensionless: $[D] = [T^{-1}]$.
+  4. $\left[\frac{AD}{B}\right] = \frac{[MLT^{-2}][T^{-1}]}{[L^{-1}]} = [ML^2T^{-3}]$.
+  5. This is the dimension of power (energy per time).
+  Why others are wrong:
+  - (B) $[MLT^{-2}]$ is just [A] (force).
+  - (A) has an extra M and L.
+  - (D) $[LT^{-1}]$ is velocity, i.e. $\frac{D}{B}$ alone.
   Answer: (C)
 P A 18: |-
-  Concept: $eV = \frac{hc}{\lambda} - \phi$.
+  Concept: Einstein's photoelectric equation: $eV_0 = \frac{hc}{\lambda} - \phi$, and the threshold wavelength satisfies $\phi = \frac{hc}{\lambda_0}$.
   Solution:
-  1. $\frac{hc}{\lambda} = \phi + 4.8e$ and $\frac{hc}{2\lambda} = \phi + 1.6e$, so $\frac{hc}{2\lambda} = 3.2e$.
-  2. $\phi = \frac{hc}{4\lambda} \Rightarrow \lambda_0 = 4\lambda$.
+  1. For λ: $\frac{hc}{\lambda} = \phi + 4.8e$ … (i)
+  2. For 2λ: $\frac{hc}{2\lambda} = \phi + 1.6e$ … (ii)
+  3. (i) − (ii): $\frac{hc}{2\lambda} = 3.2e$, so $\frac{hc}{\lambda} = 6.4e$.
+  4. From (i): $\phi = 6.4e - 4.8e = 1.6e = \frac{1}{4}\cdot\frac{hc}{\lambda}$.
+  5. $\frac{hc}{\lambda_0} = \frac{hc}{4\lambda} \Rightarrow \lambda_0 = 4\lambda$.
+  Check: at 2λ the photon energy is 3.2 eV-units, still above φ = 1.6 ✓.
+  Why others are wrong:
+  - (C) 2λ: at 2λ electrons are still emitted (V₀ = 1.6 V), so it cannot be the threshold.
+  - (A) 6λ and (B) 8λ make φ too small; they come from algebra slips.
   Answer: (D)
 P A 19: |-
-  Concept: The 2 Ω resistor is in parallel with the lower half (5 Ω) of the wire.
+  Concept: With the slider at the middle, the 2 Ω resistor (connected between A and the slider) is in parallel with the lower half of the wire (5 Ω). That combination is in series with the upper half (5 Ω) across the 20 V source.
   Solution:
-  1. $2\parallel5 = \frac{10}{7}\ \Omega$; total $= 5 + \frac{10}{7} = \frac{45}{7}\ \Omega$.
-  2. $I = \frac{20\times7}{45} = \frac{28}{9}$ A, so $V = \frac{28}{9}\times\frac{10}{7} = \frac{40}{9}$ V.
+  1. $R_{parallel} = \frac{2\times5}{2 + 5} = \frac{10}{7}\ \Omega$.
+  2. Total resistance $= 5 + \frac{10}{7} = \frac{45}{7}\ \Omega$.
+  3. Current from the source: $I = \frac{20}{45/7} = \frac{28}{9}$ A.
+  4. Voltage across the parallel part (and hence the 2 Ω resistor): $V = \frac{28}{9}\times\frac{10}{7} = \frac{40}{9}$ V ≈ 4.44 V.
+  Check: drop across the upper half $= \frac{28}{9}\times5 = \frac{140}{9}$ V; total $\frac{40 + 140}{9} = 20$ V ✓.
+  Why others are wrong:
+  - (D) 5 V is half of 10 V; (B) 10 V is half the supply — both ignore the loading effect of the 2 Ω resistor.
+  - (A) $\frac{40}{11}$ V uses an incorrect combination.
   Answer: (C)
 P A 20: |-
-  Concept: $KE = \frac{1}{2}k(A^2 - x^2)$.
+  Concept: In SHM with amplitude A, total energy $E = \frac{1}{2}kA^2$ is constant; potential energy $U = \frac{1}{2}kx^2$ and kinetic energy $K = \frac{1}{2}k(A^2 - x^2)$.
   Solution:
-  1. At $x = \frac{A}{2}$: $KE = \frac{3}{4}\cdot\frac{1}{2}kA^2$, i.e. $\frac{3}{4}$ of the total.
+  1. Midway between mean and extreme: $x = \frac{A}{2}$.
+  2. $U = \frac{1}{2}k\frac{A^2}{4} = \frac{1}{4}E$.
+  3. $K = E - U = \frac{3}{4}E$.
+  4. So $\frac{3}{4}$ of the total energy is kinetic.
+  Why others are wrong:
+  - (D) $\frac{1}{4}$ is the potential energy fraction at this point.
+  - (A) $\frac{1}{2}$ assumes energy varies linearly with x; the equal-sharing point is actually $x = \frac{A}{\sqrt2}$.
+  - (C) $\frac{1}{3}$ has no basis.
+  Why not ½: KE depends on (A² − x²), not on x linearly. At x = A/2, x² is only A²/4, so the PE is just a quarter of the total.
+  Common mistake: Assuming energy is shared equally at the midpoint; KE = PE only at x = A/√2 ≈ 0.707A.
   Answer: (B)
 P B 1: |-
-  Concept: Binding energy = mass defect × energy per u.
+  Concept: The energy needed to break a nucleus into its nucleons equals its binding energy, $E = \Delta m\times(\text{energy per u})$, where the mass defect Δm is (mass of separate nucleons − mass of nucleus).
   Solution:
-  1. Constituents: $13(1.00726) + 14(1.00866) = 27.21562$ u.
-  2. Mass defect $= 27.21562 - 27.18846 = 0.02716$ u, so the energy $= 27.16\times10^{-3}x$ J ≈ $27\times10^{-3}x$ J.
+  1. ²⁷₁₃Al has 13 protons and 27 − 13 = 14 neutrons.
+  2. Mass of nucleons: $13\times1.00726 + 14\times1.00866 = 13.09438 + 14.12124 = 27.21562$ u.
+  3. Mass defect: $27.21562 - 27.18846 = 0.02716$ u.
+  4. Energy: $0.02716\,x$ J $= 27.16\times10^{-3}x$ J.
+  5. Nearest integer: 27.
+  (Using 1 u = 931.5 MeV, this is about 25.3 MeV.)
+  Common mistake: Using the atomic mass of aluminium (including electrons) with proton masses, which mixes nuclear and atomic data; here all masses are nuclear, so the calculation is consistent.
+  The binding energy per nucleon is BE/27, a measure of nuclear stability.
   Answer: 27
 P B 2: |-
-  Concept: $W = \int F\,dy$.
+  Concept: For a variable force along one axis, work $W = \int F\,dy$ (the area under the F–y graph).
   Solution:
-  1. $\int_0^{10}(5y + 20)dy = 250 + 200 = 450$ J.
+  1. $W = \int_0^{10}(5y + 20)\,dy = \left[\frac{5y^2}{2} + 20y\right]_0^{10}$.
+  2. $= \frac{5\times100}{2} + 200 = 250 + 200 = 450$ J.
+  Graphical check: F rises linearly from 20 N (y = 0) to 70 N (y = 10). Area of the trapezium $= \frac{(20 + 70)}{2}\times10 = 450$ J ✓.
+  Why integrate: The force changes with position (from 20 N to 70 N), so W = F × d cannot be used with a single value of F; the average force (45 N) times 10 m gives the same 450 J only because F is linear.
+  Common mistake: Using the final force, 70 × 10 = 700 J.
   Answer: 450
 P B 3: |-
-  Concept: $\tau = I\alpha$.
+  Concept: Rotational analogue of Newton's second law: $\tau = I\alpha$. A uniform deceleration from ω to 0 in time t needs $\alpha = \frac{\omega}{t}$.
   Solution:
-  1. $I = \frac{1}{2}\times10\times0.2^2 = 0.2$ kg m²; $\omega = 600$ rpm $= 20\pi$ rad/s, so $\alpha = 2\pi$ rad/s².
-  2. $\tau = 0.4\pi = 4\pi\times10^{-1}$ N m.
+  1. Moment of inertia of a solid disc about its axis: $I = \frac{1}{2}MR^2 = \frac{1}{2}\times10\times(0.2)^2 = 0.2$ kg m².
+  2. $\omega = 600$ rpm $= \frac{600\times2\pi}{60} = 20\pi$ rad/s.
+  3. $\alpha = \frac{20\pi}{10} = 2\pi$ rad/s².
+  4. $\tau = I\alpha = 0.2\times2\pi = 0.4\pi$ N m $= 4\pi\times10^{-1}$ N m.
+  5. So the required value is 4.
+  Final step: τ = Iα = 0.2 × 2π = 0.4π N m = 4π × 10⁻¹ N m, so the answer is 4.
+  Common mistake: Forgetting to convert rpm to rad/s (multiply by 2π/60).
   Answer: 4
 P B 4: |-
-  Concept: One side (4 Ω) is in parallel with the other three (12 Ω).
+  Concept: A uniform 16 Ω wire bent into a square has 4 Ω per side. A source connected across one side sees that side (4 Ω) in parallel with the other three sides in series (12 Ω).
   Solution:
-  1. $R = 3\ \Omega$ plus the internal 1 Ω: $I = \frac{9}{4}$ A; terminal voltage $= \frac{27}{4}$ V.
-  2. Current through the 12 Ω path $= \frac{27/4}{12} = \frac{9}{16}$ A.
-  3. Each diagonal spans two sides (8 Ω) of that path: $V = \frac{9}{16}\times8 = 4.5$ V $= 45\times10^{-1}$ V.
+  1. External resistance: $\frac{4\times12}{4 + 12} = 3\ \Omega$; with internal resistance 1 Ω, total 4 Ω.
+  2. Current from the supply: $I = \frac{9}{4}$ A; terminal voltage $= \frac{9}{4}\times3 = \frac{27}{4}$ V.
+  3. Current in the 12 Ω path: $\frac{27/4}{12} = \frac{9}{16}$ A.
+  4. Label the square ABCD with the supply across AB. Diagonal AC spans sides AD and DC of the 12 Ω path (8 Ω): $V_{AC} = \frac{9}{16}\times8 = 4.5$ V. Diagonal BD likewise spans BC and CD: 4.5 V.
+  5. $4.5$ V $= 45\times10^{-1}$ V.
   Answer: 45
 P B 5: |-
-  Concept: Average power $\frac{V^2R}{Z^2}$ equals $\frac{V^2}{R}$ only at resonance (Z = R).
+  Concept: Average power in an AC circuit is $P = I_{rms}^2R = \frac{V_{rms}^2R}{Z^2}$. For circuit (a) (pure 5 Ω resistor), $P = \frac{V^2}{R}$. For circuit (b) (series LCR with the same R), the powers match only when Z = R, i.e. at resonance ($X_L = X_C$).
   Solution:
-  1. $\omega = \frac{1}{\sqrt{LC}} = \frac{1}{\sqrt{0.1\times40\times10^{-6}}} = 500$ rad/s.
+  1. Resonance: $\omega = \frac{1}{\sqrt{LC}}$.
+  2. $LC = 0.1\times40\times10^{-6} = 4\times10^{-6}$ s².
+  3. $\omega = \frac{1}{2\times10^{-3}} = 500$ rad/s.
+  4. At this frequency, $X_L = 500\times0.1 = 50\ \Omega$ and $X_C = \frac{1}{500\times40\times10^{-6}} = 50\ \Omega$ — they cancel ✓.
+  Final step: ω = 1/√(4 × 10⁻⁶) = 1/(2 × 10⁻³) = 500 rad/s.
+  Why resonance: At resonance X_L = X_C, so Z = R and the LCR circuit draws exactly the same current and power as the resistor alone.
   Answer: 500
 P B 6: |-
-  Concept: $K_{max} = \frac{hc}{\lambda} - \phi$ and $r = \frac{mv}{eB}$.
+  Concept: Photoelectric effect gives the maximum kinetic energy $K = \frac{hc}{\lambda} - \phi$. An electron moving perpendicular to B follows a circle with $r = \frac{mv}{eB}$, so $B = \frac{mv}{er}$.
   Solution:
-  1. $\frac{hc}{\lambda} = \frac{20\times10^{-26}}{5\times10^{-7}} = 4\times10^{-19}$ J = 2.5 eV, so $K = 1.25$ eV $= 2\times10^{-19}$ J.
-  2. $v = \sqrt{\frac{2K}{m}} = 6.67\times10^5$ m/s.
-  3. $B = \frac{mv}{er} = \frac{9\times10^{-31}\times6.67\times10^5}{1.6\times10^{-19}\times0.3} = 1.25\times10^{-5}$ T $= 125\times10^{-7}$ T.
+  1. Photon energy: $\frac{hc}{\lambda} = \frac{20\times10^{-26}}{500\times10^{-9}} = 4\times10^{-19}$ J = 2.5 eV.
+  2. $K_{max} = 2.5 - 1.25 = 1.25$ eV $= 2\times10^{-19}$ J.
+  3. $v = \sqrt{\frac{2K}{m}} = \sqrt{\frac{4\times10^{-19}}{9\times10^{-31}}} = \frac{2}{3}\times10^6 \approx 6.67\times10^5$ m/s.
+  4. $B = \frac{mv}{er} = \frac{9\times10^{-31}\times6.67\times10^5}{1.6\times10^{-19}\times0.3} = \frac{6\times10^{-25}}{4.8\times10^{-20}} = 1.25\times10^{-5}$ T.
+  5. $= 125\times10^{-7}$ T.
+  Why perpendicular matters: Only the velocity component perpendicular to B produces circular motion with r = mv/(eB); the question states the electrons move perpendicular to B.
+  Common mistake: Using the photon energy (2.5 eV) instead of the maximum kinetic energy (1.25 eV).
   Answer: 125
 P B 7: |-
-  Concept: $\mu = \frac{A_m}{A_c}$.
+  Concept: In amplitude modulation, the modulation index is the ratio of the message amplitude to the carrier amplitude: $\mu = \frac{A_m}{A_c}$.
   Solution:
-  1. $\mu = \frac{20}{20} = 1$.
+  1. $A_m = 20$ V and $A_c = 20$ V.
+  2. $\mu = \frac{20}{20} = 1$ (100% modulation).
+  3. The frequencies (20 kHz and 1 MHz) do not affect μ; they set the side-band positions (0.98 MHz and 1.02 MHz).
+  Note: μ ≤ 1 is needed to avoid over-modulation and distortion; μ = 1 is the limiting case.
+  Consequence of μ = 1: The envelope just touches zero at its minimum, which is the limit of undistorted AM.
+  Common mistake: Taking the ratio of frequencies (20 kHz/1 MHz = 0.02) as the modulation index.
   Answer: 1
 P B 8: |-
-  Concept: Mean free path $\lambda = \frac{1}{\sqrt2\pi d^2n}$.
+  Concept: Mean free path $\lambda = \frac{1}{\sqrt2\,\pi d^2n}$, where d is the molecular diameter and n the number density. (As in the intended solution, each species' own diameter and the common n are used.)
   Solution:
-  1. Same n: $\frac{\lambda_A}{\lambda_B} = \left(\frac{d_B}{d_A}\right)^2 = \frac{1}{4} = 25\times10^{-2}$.
+  1. Same n for both, so $\lambda \propto \frac{1}{d^2}$.
+  2. $\frac{\lambda_A}{\lambda_B} = \frac{d_B^2}{d_A^2} = \left(\frac{5}{10}\right)^2 = \frac{1}{4} = 0.25$.
+  3. $0.25 = 25\times10^{-2}$.
+  Interpretation: the larger molecule A presents a bigger collision cross-section, so it travels a shorter distance between collisions.
+  Why larger molecules travel less: A molecule sweeps out a collision cylinder of cross-section πd²; doubling d quadruples the target area, so collisions come four times as often.
+  Common mistake: Using λ ∝ 1/d (instead of 1/d²), which gives 50 × 10⁻².
   Answer: 25
 P B 9: |-
-  Concept: Mass action law $n_en_h = n_i^2$.
+  Concept: In thermal equilibrium, a semiconductor obeys the mass action law $n_en_h = n_i^2$, whether intrinsic or doped.
   Solution:
-  1. $n_e = \frac{(1.5\times10^{16})^2}{4.5\times10^{22}} = 5\times10^9$ m⁻³.
+  1. $n_i = 1.5\times10^{16}$ m⁻³, so $n_i^2 = 2.25\times10^{32}$.
+  2. Doped (p-type): $n_h = 4.5\times10^{22}$ m⁻³.
+  3. $n_e = \frac{2.25\times10^{32}}{4.5\times10^{22}} = 5\times10^9$ m⁻³.
+  Interpretation: adding acceptors hugely increases holes and correspondingly suppresses electrons (by recombination), keeping the product fixed.
+  Why electrons fall: Doping with acceptors adds so many holes that the rate of electron–hole recombination rises, pushing the electron density far below the intrinsic value.
+  Common mistake: Adding the carrier densities or subtracting n_i instead of using the product law n_e n_h = n_i².
   Answer: 5
 P B 10: |-
-  Concept: $\frac{1}{8} = \left(\frac{1}{2}\right)^3$ means 3 half-lives.
+  Concept: Activity decays like the number of nuclei: $A = A_0\left(\frac{1}{2}\right)^{t/T_{1/2}}$.
   Solution:
-  1. $T_{1/2} = \frac{30}{3} = 10$ years.
+  1. $\frac{1}{8} = \left(\frac{1}{2}\right)^3$, so 3 half-lives have elapsed.
+  2. $3T_{1/2} = 30$ years $\Rightarrow T_{1/2} = 10$ years.
+  Check: after 10 y → ½, 20 y → ¼, 30 y → ⅛ ✓.
+  Alternative: $\lambda = \frac{\ln8}{30} = \frac{3\ln2}{30}$, so $T_{1/2} = \frac{\ln2}{\lambda} = 10$ years.
+  Why activity follows N: A = λN and λ is constant for a given nuclide, so activity falls by the same fraction as the number of undecayed nuclei.
+  Common mistake: Dividing 30 by 8 (3.75 years), treating the decay as linear.
   Answer: 10

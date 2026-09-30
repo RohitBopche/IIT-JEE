@@ -1,200 +1,372 @@
 M A 1: |-
-  Concept: 0/0 form, so use L'Hôpital's rule with the Leibniz rule for the integral.
+  Concept: As x → π/4, sec²x → 2, so the integral from 2 to sec²x tends to 0, and the denominator x² − π²/16 also tends to 0. For this 0/0 form, use L'Hôpital's rule, differentiating the integral with the Leibniz rule: $\frac{d}{dx}\int_2^{g(x)}f(t)dt = f(g(x))g'(x)$.
   Solution:
-  1. The numerator's derivative is $\frac{\pi}{4}f(\sec^2x)\cdot2\sec^2x\tan x$; the denominator's is 2x.
-  2. At x = π/4: $\frac{\frac{\pi}{4}\cdot f(2)\cdot2\cdot2\cdot1}{\pi/2} = 2f(2)$.
+  1. Derivative of the numerator: $\frac{\pi}{4}f(\sec^2x)\cdot2\sec^2x\tan x$.
+  2. Derivative of the denominator: 2x.
+  3. At x = π/4: sec²x = 2 and tan x = 1, so the numerator becomes $\frac{\pi}{4}\cdot f(2)\cdot2\cdot2\cdot1 = \pi f(2)$.
+  4. The denominator becomes 2 · π/4 = π/2.
+  5. Limit = πf(2)/(π/2) = 2f(2).
+  Why others are wrong:
+  - (A) f(2) drops the chain-rule factor from sec²x.
+  - (C) evaluates f at √2 (sec x) instead of 2 (sec²x).
+  - (D) 4f(2) forgets the derivative of the denominator.
+  Key takeaway: Integral limits with variable bounds: L'Hôpital + Leibniz; watch the chain rule on the upper limit.
   Answer: (B)
 M A 2: |-
-  Concept: Bring each angle into the principal range.
+  Concept: The principal ranges are cos⁻¹: [0, π], sin⁻¹: [−π/2, π/2], tan⁻¹: (−π/2, π/2). To simplify f⁻¹(f(θ)), shift θ by multiples of 2π (or π for tan), or reflect it, into the principal range. Use π ≈ 3.1416.
   Solution:
-  1. cos⁻¹(cos(−5)) = cos⁻¹(cos 5) = 2π − 5 (5 lies in (π, 2π)).
-  2. sin⁻¹(sin 6) = 6 − 2π.
-  3. tan⁻¹(tan 12) = 12 − 4π.
+  1. cos⁻¹(cos(−5)) = cos⁻¹(cos 5). Since 5 ∈ (π, 2π), cos 5 = cos(2π − 5), and 2π − 5 ≈ 1.28 ∈ [0, π]. Result: 2π − 5.
+  2. sin⁻¹(sin 6): 6 − 2π ≈ −0.28 ∈ [−π/2, π/2], and sin 6 = sin(6 − 2π). Result: 6 − 2π.
+  3. tan⁻¹(tan 12): 12 − 4π ≈ −0.566 ∈ (−π/2, π/2). Result: 12 − 4π.
   4. Total: (2π − 5) + (6 − 2π) − (12 − 4π) = 4π − 11.
+  Why others are wrong:
+  - (A) 3π − 11 uses 12 − 3π (the wrong multiple of π) for tan.
+  - (B) and (D) come from mishandling the cos term (for example, taking 5 − 2π, which is negative).
+  Key takeaway: Shift each angle into its principal range; check numerically with π ≈ 3.14.
   Answer: (C)
 M A 3: |-
-  Concept: Examine D and the ranks.
+  Concept: For a 3 × 3 system, D ≠ 0 gives a unique solution. When D = 0, compare ranks: if rank(A) < rank([A|B]), the system is inconsistent; if the ranks are equal but less than 3, there are infinitely many solutions.
   Solution:
-  1. D = −(a − 3)(a − 4), so there is a unique solution unless a = 3 or 4.
-  2. For a = 3 and a = 4, the rank of the coefficient matrix is 2 but the augmented rank is 3, so the system is inconsistent.
-  3. n(S₁) = 2 and n(S₂) = 0.
+  1. Coefficient matrix [[−1, 1, 2], [3, −a, 5], [2, −2, −a]].
+  2. D = −1(a² + 10) − 1(−3a − 10) + 2(−6 + 2a) = −a² + 7a − 12 = −(a − 3)(a − 4).
+  3. So D = 0 only for a = 3 or a = 4.
+  4. For each of these, rank(A) = 2, since two rows are independent. Replacing a column by the constants (0, 1, 7) gives a non-zero determinant (for example D_x ≠ 0), so the augmented rank is 3 and the system is inconsistent.
+  5. S₁ = {3, 4} and S₂ = ∅, so n(S₁) = 2 and n(S₂) = 0.
+  Why others are wrong:
+  - (A) and (D) claim infinite solutions, which would need every D_i = 0 as well.
+  - (B) finds only one bad value of a, but the quadratic has two roots.
+  Key takeaway: D = 0 alone does not decide the case; check D_x, D_y, D_z (or the ranks) to separate inconsistent from infinite.
   Answer: (C)
 M A 4: |-
-  Concept: With both constants positive, the acute bisector takes the sign opposite to that of n₁·n₂ (here n₁·n₂ > 0).
+  Concept: The bisectors of two planes are $\frac{a_1x + b_1y + c_1z + d_1}{|n_1|} = \pm\frac{a_2x + b_2y + c_2z + d_2}{|n_2|}$. With both constants d₁, d₂ positive, if n₁·n₂ > 0 the "+" sign gives the obtuse bisector, so the acute bisector takes the "−" sign.
   Solution:
-  1. $\frac{x - 2y - 2z + 1}{3} = -\frac{2x - 3y - 6z + 1}{7}$ gives 13x − 23y − 32z + 10 = 0.
-  2. (−2, 0, −½): −26 + 16 + 10 = 0 ✓.
+  1. n₁ = (1, −2, −2) with |n₁| = 3, and n₂ = (2, −3, −6) with |n₂| = 7. The constants are both +1.
+  2. n₁·n₂ = 2 + 6 + 12 = 20 > 0, so the acute bisector uses "−".
+  3. 7(x − 2y − 2z + 1) = −3(2x − 3y − 6z + 1) gives 7x − 14y − 14z + 7 + 6x − 9y − 18z + 3 = 0.
+  4. P: 13x − 23y − 32z + 10 = 0.
+  5. Test (−2, 0, −½): −26 − 0 + 16 + 10 = 0 ✓.
+  Why others are wrong:
+  - (A) (3, 1, −½): 39 − 23 + 16 + 10 = 42 ≠ 0.
+  - (C) (0, 2, −4): −46 + 128 + 10 ≠ 0.
+  - (D) (4, 0, −2): 52 + 64 + 10 ≠ 0.
+  Key takeaway: Make the constants the same sign, then n₁·n₂ > 0 means the "−" sign gives the acute bisector.
   Answer: (B)
 M A 5: |-
-  Concept: p → q ≡ ∼p ∨ q.
+  Concept: An implication p → q is false only when p is true and q is false. So p → q ≡ ∼p ∨ q, and its negation is ∼(p → q) ≡ p ∧ ∼q.
   Solution:
-  1. ∼(p → q) ≡ p ∧ ∼q.
+  1. ∼(p → q) ≡ ∼(∼p ∨ q) ≡ p ∧ ∼q by De Morgan's law.
+  2. This matches the given expression exactly.
+  Check the others:
+  - ∼(q → p) ≡ q ∧ ∼p, which is different.
+  - ∼p → ∼q is the inverse, ≡ p ∨ ∼q, which is true whenever p is true, not equivalent.
+  - ∼(p → ∼q) ≡ p ∧ q, which is different.
+  Why others are wrong:
+  - (A) reverses the roles of p and q.
+  - (B) is the inverse, a disjunction, not a conjunction.
+  - (C) negates the wrong inner statement and gives p ∧ q.
+  Key takeaway: ∼(p → q) ≡ p ∧ ∼q: "the premise holds but the conclusion fails".
   Answer: (D)
 M A 6: |-
-  Concept: Count the adjacent (side-sharing) pairs.
+  Concept: Two distinct squares chosen at random from 64 give C(64, 2) equally likely pairs. Count the favourable pairs that share a side, row by row and column by column.
   Solution:
-  1. Horizontal pairs: 8 × 7 = 56; vertical pairs: 56; total 112.
-  2. Total pairs = C(64, 2) = 2016, so p = 112/2016 = 1/18.
+  1. Horizontal neighbours: each row of 8 squares has 7 adjacent pairs, so 8 rows give 56.
+  2. Vertical neighbours: similarly 8 columns × 7 = 56.
+  3. Total adjacent pairs = 112.
+  4. Total pairs = C(64, 2) = 64 × 63/2 = 2016.
+  5. P = 112/2016 = 1/18.
+  Why others are wrong:
+  - (C) 1/7 and (A) 2/7 use ordered or per-square reasoning incorrectly.
+  - (D) 1/9 double-counts the adjacent pairs (224/2016).
+  Key takeaway: An m × n grid has m(n − 1) + n(m − 1) side-sharing pairs.
   Answer: (B)
 M A 7: |-
-  Concept: Linear equation $y' + \frac{y}{x^2} = \frac{1}{x^3}$ with integrating factor $e^{-1/x}$.
+  Concept: Rearrange into the linear form $\frac{dy}{dx} + P(x)y = Q(x)$. The integrating factor $e^{\int P\,dx}$ turns the left side into an exact derivative.
   Solution:
-  1. $ye^{-1/x} = \int\frac{e^{-1/x}}{x^3}dx = \left(\frac{1}{x} + 1\right)e^{-1/x} + C$, so $y = \frac{1}{x} + 1 + Ce^{1/x}$.
-  2. y(1) = 1 gives C = −1/e.
-  3. y(½) = 2 + 1 − e²/e = 3 − e.
+  1. x²dy = −(y − 1/x)dx gives $\frac{dy}{dx} + \frac{y}{x^2} = \frac{1}{x^3}$.
+  2. IF = $e^{\int x^{-2}dx} = e^{-1/x}$.
+  3. $\frac{d}{dx}(ye^{-1/x}) = \frac{e^{-1/x}}{x^3}$. Put t = −1/x, so dt = dx/x² and 1/x = −t: $\int -te^t dt = (1 - t)e^t = \left(1 + \frac1x\right)e^{-1/x}$.
+  4. $y = 1 + \frac1x + Ce^{1/x}$.
+  5. y(1) = 1: 2 + Ce = 1, so C = −1/e.
+  6. y(½) = 1 + 2 − e²/e = 3 − e.
+  Why others are wrong:
+  - (C) 3 + e has the wrong sign of C.
+  - (A) and (B) contain 1/√e, from e^{x} or e^{−1/(2x)}-type slips in the integrating factor.
+  Key takeaway: For a 1/x² coefficient, IF = e^{−1/x}; the substitution t = −1/x makes the integral easy.
   Answer: (D)
 M A 8: |-
-  Concept: $4\sin\left(\frac{\pi}{4} + x\right)\sin\left(\frac{\pi}{4} - x\right) = 2\cos2x$.
+  Concept: The product-to-sum identity gives $2\sin A\sin B = \cos(A - B) - \cos(A + B)$, and the triple-angle identity is $\cos3x = 4\cos^3x - 3\cos x$.
   Solution:
-  1. 2cos x(2cos 2x − 1) = 2(4cos³x − 3cos x) = 2cos 3x = 1, so cos 3x = ½.
-  2. With 3x ∈ [0, 3π]: 3x = π/3, 5π/3, 7π/3, so x = π/9, 5π/9, 7π/9.
-  3. n = 3 and S = 13π/9.
+  1. $4\sin\left(\frac{\pi}{4} + x\right)\sin\left(\frac{\pi}{4} - x\right) = 2[\cos2x - \cos\frac{\pi}{2}] = 2\cos2x$.
+  2. The equation becomes 2cos x(2cos 2x − 1) = 1.
+  3. 2cos 2x − 1 = 4cos²x − 3, so 2cos x(4cos²x − 3) = 2(4cos³x − 3cos x) = 2cos 3x.
+  4. 2cos 3x = 1, so cos 3x = ½.
+  5. For x ∈ [0, π], 3x ∈ [0, 3π]: 3x = π/3, 5π/3, 7π/3, giving x = π/9, 5π/9, 7π/9.
+  6. n = 3 and S = 13π/9.
+  Why others are wrong:
+  - (B) and (C) find only 2 solutions, missing 7π/3 in [0, 3π].
+  - (D) includes a wrong third solution (for example 11π/9, which is outside [0, π]).
+  Key takeaway: Spot hidden triple-angle forms; when the argument is 3x, stretch the interval by 3.
   Answer: (A)
 M A 9: |-
-  Concept: Find f, then use the intermediate value property of f′.
+  Concept: f(2) = f(4) = 0 fixes a and b. Then study f′, a quadratic, on (2, 4) using continuity (the intermediate value theorem) and monotonicity.
   Solution:
-  1. f(2) = f(4) = 0 gives a = 8, b = 0, so f = x(x − 2)(x − 4) and f′ = 3x² − 12x + 8.
-  2. f′ rises from −4 to 8 on (2, 4), so it takes −1 and then 0: (S1) is true.
-  3. $x_4 = 2 + \frac{2}{\sqrt3}$ (the minimum of f), with $f(x_4) = -\frac{16}{3\sqrt3}$.
-  4. $2f'(x_3) = -\frac{16}{3}$ needs f′(x₃) = −8/3, which lies in (−4, 0), so such x₃ < x₄ exists: (S2) is true.
+  1. f(2) = 8 − 24 + 2a + b = 0 and f(4) = 64 − 96 + 4a + b = 0. Subtracting: 2a = 16, so a = 8 and b = 0. So f = x(x − 2)(x − 4).
+  2. f′ = 3x² − 12x + 8, with f″ = 6x − 12 > 0 on (2, 4), so f′ increases from f′(2) = −4 to f′(4) = 8.
+  3. (S1): f′ passes through −1 and then 0 in order, so x₁ < x₂ exist. True.
+  4. (S2): f′ = 0 at x₄ = 2 + 2/√3 ∈ (2, 4), so f decreases on (2, x₄) and increases on (x₄, 4). With u = 2/√3, f(x₄) = u(u² − 4) = −16/(3√3), so √3f(x₄) = −16/3.
+  5. We need f′(x₃) = −8/3. Since −8/3 ∈ (−4, 0) = f′((2, x₄)), such an x₃ < x₄ exists. True.
+  Why others are wrong:
+  - (B), (C) and (D) reject a statement that follows from the continuity and monotonicity of f′.
+  Key takeaway: An increasing continuous f′ takes every value between its endpoint values, in order.
   Answer: (A)
 M A 10: |-
-  Concept: $J_{n+3,3} - J_{n,3} = \int_0^{1/2}\frac{x^n(x^3 - 1)}{x^3 - 1}dx = \frac{(1/2)^{n+1}}{n + 1}$.
+  Concept: The key step is $J_{n+3,3} - J_{n,3} = \int_0^{1/2}\frac{x^{n+3} - x^n}{x^3 - 1}dx = \int_0^{1/2}x^n dx = \frac{(1/2)^{n+1}}{n + 1}$. For a triangular matrix, the determinant is the product of the diagonal entries, and for 3 × 3 matrices $|\text{adj}B| = |B|^2$.
   Solution:
-  1. The diagonal entries (i = 1, 2, 3, with n = i + 3) are 1/160, 1/384, 1/896; A is upper triangular.
-  2. |A| = 1/(160 × 384 × 896) = 1/(2¹⁹ × 105).
-  3. |adj A⁻¹| = |A⁻¹|² = (105)² × 2³⁸.
+  1. $a_{ij} = J_{i+6,3} - J_{i+3,3}$ uses n = i + 3, so $a_{ij} = \frac{(1/2)^{i+4}}{i + 4}$ for i ≤ j, and 0 below the diagonal: A is upper triangular.
+  2. Diagonal: i = 1 gives $\frac{1}{2^5\cdot5} = \frac{1}{160}$; i = 2 gives $\frac{1}{2^6\cdot6} = \frac{1}{384}$; i = 3 gives $\frac{1}{2^7\cdot7} = \frac{1}{896}$.
+  3. |A| = 1/(160 × 384 × 896) = 1/(2⁵·5 · 2⁷·3 · 2⁷·7) = 1/(2¹⁹ × 105).
+  4. |A⁻¹| = 2¹⁹ × 105, so |adj A⁻¹| = |A⁻¹|² = (105)² × 2³⁸.
+  Why others are wrong:
+  - (A) and (B) use 15 instead of 105 (missing the factor 7).
+  - (D) has the wrong power of 2 (2³⁶).
+  Key takeaway: Telescoping integrals like J_{n+3} − J_n simplify when the denominator divides the numerator difference; |adj B| = |B|^{n−1}.
   Answer: (C)
 M A 11: |-
-  Concept: The upper curve is sin x + cos x throughout; split at π/4 for the absolute value.
+  Concept: The area between curves is ∫(upper − lower)dx. Here sin x + cos x ≥ |cos x − sin x| on [0, π/2], since both sin x and cos x are non-negative. The absolute value changes form at x = π/4, where cos x = sin x.
   Solution:
-  1. On [0, π/4]: difference = 2 sin x; on [π/4, π/2]: difference = 2 cos x.
-  2. Area = 2(1 − 1/√2) + 2(1 − 1/√2) = 4 − 2√2 = 2√2(√2 − 1).
+  1. On [0, π/4], cos x ≥ sin x, so the lower curve is cos x − sin x and the difference is 2 sin x.
+  2. $\int_0^{\pi/4}2\sin x\,dx = 2(1 - \cos\frac{\pi}{4}) = 2 - \sqrt2$.
+  3. On [π/4, π/2], the lower curve is sin x − cos x and the difference is 2 cos x.
+  4. $\int_{\pi/4}^{\pi/2}2\cos x\,dx = 2(1 - \sin\frac{\pi}{4}) = 2 - \sqrt2$.
+  5. Total = 4 − 2√2 = 2√2(√2 − 1).
+  Why others are wrong:
+  - (B) and (D) have (√2 + 1), which adds the areas under the curves instead of subtracting.
+  - (C) 4(√2 − 1) = 4√2 − 4 ≈ 1.66, but the correct value is ≈ 1.17.
+  Key takeaway: Split at the points where the expression inside the absolute value changes sign.
   Answer: (A)
 M A 12: |-
-  Concept: Parametrise the line, then use |AP × d|/|d|.
+  Concept: A line given as the intersection of two planes is best parametrised first, to get a point and a direction. The distance from an external point P is $\frac{|\vec{AP}\times\vec d|}{|\vec d|}$.
   Solution:
-  1. With z = t: x = (t − 4)/3 and y = (2t + 1)/3, so the direction is (1, 2, 3); t = 4 gives the point (0, 3, 4).
-  2. AP = (2, −4, 2), and AP × d = (−16, −4, 8), whose |·|² is 336.
-  3. Distance = √(336/14) = √24 = 2√6.
+  1. Let z = t. From 3x − z + 4 = 0: x = (t − 4)/3. From 3y − 2z − 1 = 0: y = (2t + 1)/3.
+  2. Direction (per unit t): (1/3, 2/3, 1), proportional to (1, 2, 3).
+  3. At t = 4: A = (0, 3, 4).
+  4. $\vec{AP}$ = (2, −1, 6) − (0, 3, 4) = (2, −4, 2).
+  5. $\vec{AP}\times(1, 2, 3)$ = (−12 − 4, 2 − 6, 4 + 4) = (−16, −4, 8), with magnitude² 256 + 16 + 64 = 336.
+  6. Distance = √(336/14) = √24 = 2√6.
+  Why others are wrong:
+  - (A) √26, (B) 2√5 and (D) 4√2 come from a wrong direction vector or wrong base point.
+  Key takeaway: Parametrise one variable, read off the direction, then use the cross-product distance formula.
   Answer: (C)
 M A 13: |-
-  Concept: Vertex (½, ¾) with directrix y = ½ gives a = ¼: $(x - \frac{1}{2})^2 = y - \frac{3}{4}$, that is, y = x² − x + 1.
+  Concept: The vertex lies halfway between the focus and the directrix. With the vertex at y = 3/4 and the directrix y = 1/2, a = 1/4 and the parabola opens upward: (x − h)² = 4a(y − k).
   Solution:
-  1. P = (−½, 7/4). The slope there is −2, so the normal has slope ½: y = ½x + 2.
-  2. x² − x + 1 = ½x + 2 gives x = −½ or x = 2, so Q = (2, 3).
-  3. PQ² = 2.5² + 1.25² = 125/16.
+  1. $(x - \frac12)^2 = y - \frac34$, that is, y = x² − x + 1.
+  2. P: at x = −½, y = ¼ + ½ + 1 = 7/4, so P = (−½, 7/4).
+  3. Slope at P: y′ = 2x − 1 = −2, so the normal's slope is ½. Normal: y − 7/4 = ½(x + ½), that is, y = x/2 + 2.
+  4. Intersect with the parabola: x² − x + 1 = x/2 + 2 gives 2x² − 3x − 2 = 0, so (2x + 1)(x − 2) = 0 and x = 2. Q = (2, 3).
+  5. PQ² = (2.5)² + (1.25)² = 6.25 + 1.5625 = 125/16.
+  Why others are wrong:
+  - (A), (C) and (D) come from a wrong parabola (for example using a = ½) or a slip in the normal's slope.
+  Key takeaway: The distance from vertex to directrix is a; the normal slope is −1/y′.
   Answer: (B)
 M A 14: |-
-  Concept: The map t ↦ t² − 2 must send the root set into itself.
+  Concept: The root set {α, β} of a real quadratic must be closed under the map T(t) = t² − 2. The roots can be real (distinct or equal) or complex. Complex roots fail: if α is non-real, α² − 2 would also have to be a root, and it cannot equal ᾱ consistently.
   Solution:
-  1. Fixed points: t² − 2 = t gives t = 2 or −1. The roots {2,2}, {−1,−1} and {2,−1} give (a, b) = (−4, 4), (2, 1), (−1, −2).
-  2. A 2-cycle (s + t = −1, st = −1) gives x² + x − 1: (1, −1).
-  3. One root mapping to a fixed root: {−2, 2} gives (0, −4), and {1, −1} gives (0, −1).
-  4. Non-real roots are impossible, so there are 6 pairs.
+  1. Both roots fixed (t² − 2 = t gives t = 2 or −1): {2, 2} gives (a, b) = (−4, 4); {−1, −1} gives (2, 1); {2, −1} gives (−1, −2).
+  2. A 2-cycle (α ↦ β ↦ α, α ≠ β): subtracting α² − 2 = β and β² − 2 = α gives α + β = −1, and then αβ = −1. Equation x² + x − 1 = 0, so (1, −1).
+  3. One root maps onto the other, which is fixed: α = −2 ↦ 2 ↦ 2 gives {−2, 2}, so (0, −4). α = 1 ↦ −1 ↦ −1 gives {1, −1}, so (0, −1).
+  4. Total = 3 + 1 + 2 = 6.
+  Why others are wrong:
+  - (B) 2 and (C) 4 miss the chain cases or the repeated-root cases.
+  - (D) 8 overcounts, for example by including complex cycles.
+  Key takeaway: Enumerate fixed points, 2-cycles and pre-images of fixed points; this covers every closed root set.
   Answer: (A)
 M A 15: |-
-  Concept: $S_n = \sum_{k=1}^{n-1}k(n - k) = \frac{n(n^2 - 1)}{6}$.
+  Concept: S_n is a convolution sum: $S_n = \sum_{k=1}^{n-1}k(n - k)$. Evaluate it with the standard sums, then simplify the general term until it matches the series for e.
   Solution:
-  1. $\frac{2S_n}{n!} = \frac{(n - 1)n(n + 1)}{3\cdot n!} = \frac{n + 1}{3(n - 2)!}$.
-  2. The term is $\frac{n + 1 - 3}{3(n - 2)!} = \frac{n - 2}{3(n - 2)!} = \frac{1}{3(n - 3)!}$.
-  3. $\sum_{n\ge4}\frac{1}{3(n - 3)!} = \frac{1}{3}\left(\frac{1}{1!} + \frac{1}{2!} + \ldots\right) = \frac{e - 1}{3}$.
+  1. $S_n = n\sum k - \sum k^2 = n\cdot\frac{(n - 1)n}{2} - \frac{(n - 1)n(2n - 1)}{6} = \frac{n(n - 1)(n + 1)}{6}$.
+  2. $\frac{2S_n}{n!} = \frac{(n - 1)n(n + 1)}{3\,n!} = \frac{n + 1}{3(n - 2)!}$.
+  3. Term: $\frac{n + 1}{3(n - 2)!} - \frac{3}{3(n - 2)!} = \frac{n - 2}{3(n - 2)!} = \frac{1}{3(n - 3)!}$.
+  4. Sum over n ≥ 4: $\frac13\left(\frac{1}{1!} + \frac{1}{2!} + \frac{1}{3!} + \ldots\right) = \frac{e - 1}{3}$.
+  Why others are wrong:
+  - (C) e/3 includes the 1/0! term, but n starts at 4, so the first term is 1/1!.
+  - (B) and (D) have the wrong factor (6 instead of 3).
+  Key takeaway: Reduce the general term to 1/(k!) and match it with e = Σ1/k!; watch the starting index.
   Answer: (A)
 M A 16: |-
-  Concept: Complement counting.
+  Concept: Any 3 of 15 points on a circle form a triangle (no three are collinear). Use complement counting: all triangles minus those whose indices sum to exactly 15.
   Solution:
   1. Total = C(15, 3) = 455.
-  2. Triples of distinct indices with i + j + k = 15: {1,2,12}, {1,3,11}, {1,4,10}, {1,5,9}, {1,6,8}, {2,3,10}, {2,4,9}, {2,5,8}, {2,6,7}, {3,4,8}, {3,5,7}, {4,5,6}. That is 12.
-  3. 455 − 12 = 443.
+  2. Unordered triples of distinct indices with i + j + k = 15 (smallest first):
+   - 1: {1,2,12}, {1,3,11}, {1,4,10}, {1,5,9}, {1,6,8}: 5
+   - 2: {2,3,10}, {2,4,9}, {2,5,8}, {2,6,7}: 4
+   - 3: {3,4,8}, {3,5,7}: 2
+   - 4: {4,5,6}: 1
+   Total 12.
+  3. Required = 455 − 12 = 443.
+  Why others are wrong:
+  - (A) 12 is the excluded count itself.
+  - (D) 455 excludes nothing.
+  - (B) 419 subtracts ordered or with-repetition counts (36).
+  Key takeaway: Count partitions of 15 into 3 distinct positive parts systematically, fixing the smallest part.
   Answer: (C)
 M A 17: |-
-  Concept: Sum-to-product.
+  Concept: Simplify the argument with the sum-to-product identities: cos(A + B) + cos(A − B) = 2cos A cos B and cos(A + B) − cos(A − B) = −2 sin A sin B. The range of the log then follows from the range of its argument.
   Solution:
-  1. cos(π/4 + x) + cos(π/4 − x) = √2 cos x, and cos(3π/4 + x) − cos(3π/4 − x) = −√2 sin x.
-  2. The argument is 3 + √2(cos x − sin x) = 3 + 2cos(x + π/4), which lies in [1, 5].
-  3. $\log_{\sqrt5}$ of [1, 5] is [0, 2].
+  1. cos(π/4 + x) + cos(π/4 − x) = 2cos(π/4)cos x = √2 cos x.
+  2. cos(3π/4 + x) − cos(3π/4 − x) = −2sin(3π/4)sin x = −√2 sin x.
+  3. The argument is 3 + √2(cos x − sin x) = 3 + 2cos(x + π/4).
+  4. cos ranges over [−1, 1], so the argument ranges over [1, 5], which is always positive, so the log is defined.
+  5. $\log_{\sqrt5}1 = 0$ and $\log_{\sqrt5}5 = 2$, and the log is increasing, so the range is [0, 2].
+  Why others are wrong:
+  - (A) (0, √5) and (C) [1/√5, √5] take the log values as powers of √5 incorrectly.
+  - (B) [−2, 2] assumes the argument can go down to 1/5.
+  Key takeaway: a cos x + b sin x has amplitude √(a² + b²); then map through the monotonic log.
   Answer: (D)
 M A 18: |-
-  Concept: $\sum\frac{1}{a_na_{n+1}} = \frac{1}{d}\left(\frac{1}{a_1} - \frac{1}{a_{21}}\right) = \frac{20}{a_1a_{21}}$.
+  Concept: The telescoping sum is $\frac{1}{a_na_{n+1}} = \frac{1}{d}\left(\frac{1}{a_n} - \frac{1}{a_{n+1}}\right)$. Over n = 1 to 20 it collapses to $\frac{1}{d}\left(\frac{1}{a_1} - \frac{1}{a_{21}}\right) = \frac{a_{21} - a_1}{d\,a_1a_{21}} = \frac{20}{a_1a_{21}}$.
   Solution:
-  1. a₁a₂₁ = 45, and 21(a₁ + a₂₁)/2 = 189 gives a₁ + a₂₁ = 18. So {a₁, a₂₁} = {3, 15} and d = ±0.6.
-  2. a₆ and a₁₆ are 6 and 12 (in some order), so the product is 72.
+  1. 20/(a₁a₂₁) = 4/9, so a₁a₂₁ = 45.
+  2. Sum of 21 terms: 21(a₁ + a₂₁)/2 = 189, so a₁ + a₂₁ = 18.
+  3. a₁ and a₂₁ are the roots of t² − 18t + 45 = 0, that is, 3 and 15. d = ±12/20 = ±0.6.
+  4. With a₁ = 3 and d = 0.6: a₆ = 3 + 3 = 6 and a₁₆ = 3 + 9 = 12. (The reverse order gives 12 and 6.)
+  5. a₆a₁₆ = 72.
+  Why others are wrong:
+  - (A) 57, (C) 48 and (D) 36 come from a wrong d or an index slip (e.g. a₆ = a₁ + 6d).
+  Key takeaway: Σ1/(aₙaₙ₊₁) = (number of terms)/(a_first·a_last) for an AP.
   Answer: (B)
 M A 19: |-
-  Concept: f(x) = x + k sin x, where k = ∫₀^{π/2} cos y f(y) dy.
+  Concept: In the integral equation, sin x factors out of the integral over y. So f(x) = x + k sin x, where k = ∫₀^{π/2} cos y · f(y) dy is a constant. Substitute this form back to find k.
   Solution:
-  1. $k = \int_0^{\pi/2}y\cos y\,dy + k\int_0^{\pi/2}\sin y\cos y\,dy = \left(\frac{\pi}{2} - 1\right) + \frac{k}{2}$.
-  2. k = π − 2.
+  1. $k = \int_0^{\pi/2}\cos y(y + k\sin y)dy = \int_0^{\pi/2}y\cos y\,dy + k\int_0^{\pi/2}\sin y\cos y\,dy$.
+  2. $\int_0^{\pi/2}y\cos y\,dy = [y\sin y + \cos y]_0^{\pi/2} = \frac{\pi}{2} - 1$.
+  3. $\int_0^{\pi/2}\sin y\cos y\,dy = \frac12$.
+  4. k = π/2 − 1 + k/2, so k/2 = π/2 − 1 and k = π − 2.
+  5. f(x) = x + (π − 2)sin x.
+  Why others are wrong:
+  - (A) has an extra factor of ⅔.
+  - (B) has π + 2, a sign error in the parts integral.
+  - (C) π/2 ignores the self-referential k/2 term.
+  Key takeaway: Separable kernels (g(x)h(y)) reduce Fredholm-type equations to finding one constant.
   Answer: (D)
 M A 20: |-
-  Concept: Slopes of both tangents at the intersection point.
+  Concept: The angle between curves at an intersection point is the angle between their tangents: $\tan\theta = \left|\frac{m_1 - m_2}{1 + m_1m_2}\right|$. The slopes come from implicit differentiation.
   Solution:
-  1. x²(1 − 1/9) = 2 gives P = (3/2, √3/2).
-  2. Ellipse slope: −x/(9y) = −1/(3√3). Circle slope: −x/y = −√3.
-  3. $\tan\theta = \frac{\sqrt3 - \frac{1}{3\sqrt3}}{1 + \frac{1}{3}} = \frac{8}{3\sqrt3}\cdot\frac{3}{4} = \frac{2}{\sqrt3}$.
+  1. Intersection: substituting y² = 3 − x² into x²/9 + y² = 1 gives x²/9 + 3 − x² = 1, so (8/9)x² = 2, x² = 9/4 and x = 3/2. Then y² = 3/4, so y = √3/2. P = (3/2, √3/2).
+  2. Ellipse slope: m₁ = −x/(9y) = −(3/2)/(9√3/2) = −1/(3√3).
+  3. Circle slope: m₂ = −x/y = −√3.
+  4. m₁ − m₂ = √3 − 1/(3√3) = 8/(3√3), and 1 + m₁m₂ = 1 + 1/3 = 4/3.
+  5. tan θ = (8/(3√3))/(4/3) = 2/√3.
+  Why others are wrong:
+  - (A), (C) and (D) come from wrong slopes (for example using −x/y for the ellipse) or arithmetic slips.
+  Key takeaway: For an ellipse, slope = −b²x/(a²y); for a circle, −x/y.
   Answer: (B)
 M B 1: |-
-  Concept: The probabilities sum to 1, and the mean is given.
+  Concept: For a discrete random variable, ΣP = 1, E[X] = ΣxP, and Var(X) = E[X²] − (E[X])². Two conditions fix the two unknown probabilities.
   Solution:
-  1. a + b = 4/15 and −a + 6b = 0.9 give b = 1/6 and a = 1/10.
-  2. E[X²] = 0.8 + 0.1 + 3 + 3.2 + 6 = 13.1, so σ² = 13.1 − 2.3² = 7.81.
-  3. 100σ² = 781.
+  1. ΣP = 1: 1/5 + a + 1/3 + 1/5 + b = 1, so a + b = 4/15.
+  2. Mean: −2/5 − a + 1 + 4/5 + 6b = 2.3, so −a + 6b = 0.9.
+  3. Adding: 7b = 4/15 + 0.9 = 7/6, so b = 1/6 and a = 4/15 − 1/6 = 1/10.
+  4. E[X²] = 4(1/5) + 1(1/10) + 9(1/3) + 16(1/5) + 36(1/6) = 0.8 + 0.1 + 3 + 3.2 + 6 = 13.1.
+  5. σ² = 13.1 − (2.3)² = 13.1 − 5.29 = 7.81, so 100σ² = 781.
+  Common mistake: Forgetting to subtract the square of the mean, or using ΣxP² instead of Σx²P.
+  Key takeaway: Var = E[X²] − μ²; find the unknown probabilities from the normalisation and the mean.
   Answer: 781
 M B 2: |-
-  Concept: L'Hôpital: the limit is nf(1) − f′(1).
+  Concept: At x = 1, the numerator is 1·f(1) − f(1) = 0, so the limit is 0/0. By L'Hôpital's rule, it equals the derivative of the numerator at x = 1: nx^{n−1}f(1) − f′(x) → nf(1) − f′(1).
   Solution:
-  1. f(1) = 9 and f′(1) = 6 + 8 + 3 + 2 = 19.
-  2. 9n − 19 = 44, so n = 7.
+  1. f(1) = 1 + 2 + 1 + 2 + 3 = 9.
+  2. f′(x) = 6x⁵ + 8x³ + 3x² + 2, so f′(1) = 6 + 8 + 3 + 2 = 19.
+  3. Limit = 9n − 19 = 44, so 9n = 63 and n = 7.
+  Common mistake: Differentiating x^n f(1) as if f(1) varied with x; f(1) is a constant.
+  Key takeaway: A 0/0 limit at a point is the derivative of the numerator there (when the denominator is x − a).
   Answer: 7
 M B 3: |-
-  Concept: |3iz + 6| = 3|z − 2i|.
+  Concept: Rewrite the expression as a distance: |3iz + 6| = |3i| · |z + 6/(3i)| = 3|z − 2i|. It measures three times the distance from z to the point (0, 2). Maximising a distance from a fixed point over a disc gives the far end of the line through the centre.
   Solution:
-  1. We want the farthest point from (0, 2) in the disc with centre (2, 2) and radius 1, which is (3, 2).
-  2. a + b = 5.
+  1. The disc |z − (2 + 2i)| ≤ 1 has centre C = (2, 2) and radius 1.
+  2. Fixed point Q = (0, 2). The line QC is horizontal (y = 2).
+  3. The farthest point of the disc from Q lies on the ray from Q through C, one radius beyond C: (3, 2).
+  4. The maximum is 3 × 3 = 9, attained at z = 3 + 2i.
+  5. a + b = 3 + 2 = 5.
+  Common mistake: Forgetting that 6/(3i) = −2i (not +2i), which puts Q at (0, −2).
+  Key takeaway: max |z − Q| over a disc = |QC| + r, attained along the line QC.
   Answer: 5
 M B 4: |-
-  Concept: The midpoints form the medial triangle, whose area is ¼ of ABC.
+  Concept: The midpoints of the sides of a triangle form its medial triangle, whose area is exactly ¼ of the original. So find the three vertices where the lines meet, compute that area, and multiply by 4.
   Solution:
-  1. The pairwise intersections are (1, 2), (2, 3) and (7, 5), enclosing an area of ½|−2 + 6 − 7| = 3/2.
-  2. Area of ABC = 4 × 3/2 = 6.
+  1. x − y + 1 = 0 and x − 2y + 3 = 0 meet at (1, 2).
+  2. x − y + 1 = 0 and 2x − 5y + 11 = 0 meet at (2, 3).
+  3. x − 2y + 3 = 0 and 2x − 5y + 11 = 0 meet at (7, 5).
+  4. Area = ½|1(3 − 5) + 2(5 − 2) + 7(2 − 3)| = ½|−2 + 6 − 7| = 3/2.
+  5. Area of ABC = 4 × 3/2 = 6.
+  Common mistake: Multiplying by 2 instead of 4; the medial triangle's sides are half as long, so its area is a quarter.
+  Key takeaway: Medial triangle area = ¼ × the original area.
   Answer: 6
 M B 5: |-
-  Concept: g(x) = xf(x) + 2 is a quartic with roots 2, 3, 4, 5.
+  Concept: The condition f(k) = −2/k means kf(k) + 2 = 0 for k = 2, 3, 4, 5. So g(x) = xf(x) + 2 is a degree-4 polynomial with these four roots, which fixes it up to a constant, and g(0) = 2 fixes the constant.
   Solution:
-  1. g(x) = c(x − 2)(x − 3)(x − 4)(x − 5); g(0) = 2 gives 120c = 2, so c = 1/60.
-  2. 10f(10) = g(10) − 2 = 1680/60 − 2 = 26.
-  3. 52 − 26 = 26.
+  1. g(x) = c(x − 2)(x − 3)(x − 4)(x − 5).
+  2. g(0) = 0·f(0) + 2 = 2, and g(0) = c(−2)(−3)(−4)(−5) = 120c, so c = 1/60.
+  3. g(10) = (8 × 7 × 6 × 5)/60 = 1680/60 = 28.
+  4. 10f(10) = g(10) − 2 = 26.
+  5. 52 − 10f(10) = 52 − 26 = 26.
+  Common mistake: Trying to find the cubic's four coefficients directly; the auxiliary polynomial is far quicker.
+  Key takeaway: When f(k) = h(k) at many points, build a polynomial that vanishes there.
   Answer: 26
 M B 6: |-
-  Concept: Dictionary rank, counting only arrangements without "RR".
+  Concept: Dictionary rank: count the valid words that come before the target, letter by letter. Here the valid words are arrangements of F, A, R, M, E, R without the two R's adjacent. For each block, count = (all arrangements) − (arrangements with RR glued together).
   Solution:
-  1. Words starting with A or E: each leaves 5 letters with R, R, giving 5!/2 − 4! = 36 without RR. That makes 72.
-  2. Starting with F, in order: FAERMR (73), FAMRER (74), FAREMR (75), FARERM (76), then FARMER (77). The other arrangements of FAE…/FAM… contain RR.
+  1. Alphabetical letters: A, E, F, M, R, R.
+  2. Words starting with A: the remaining E, F, M, R, R give 5!/2 − 4! = 60 − 24 = 36 valid words. Starting with E: also 36. Running total 72.
+  3. Starting FA, the remaining letters are E, M, R, R:
+   - FAE + {M, R, R}: only FAERMR avoids RR, so it is 73rd.
+   - FAM + {E, R, R}: only FAMRER is valid, so it is 74th.
+   - FAR + {E, M, R}: FAREMR (75), FARERM (76), FARMER (77). FARREM and FARRME have RR.
+  4. FARMER is 77th.
+  Common mistake: Counting all arrangements, including RR words, gives a larger rank.
+  Key takeaway: For restricted ranks, subtract the forbidden patterns inside each prefix block.
   Answer: 77
 M B 7: |-
-  Concept: The sum of the coefficients is 2ⁿ.
+  Concept: Putting x = y = 1 in (x + y)ⁿ gives the sum of all the binomial coefficients: 2ⁿ. The largest coefficient is the middle one, C(n, n/2) for even n.
   Solution:
-  1. 2ⁿ = 4096, so n = 12.
-  2. The greatest coefficient is C(12, 6) = 924.
+  1. 2ⁿ = 4096 = 2¹², so n = 12.
+  2. n is even, so the greatest coefficient is C(12, 6).
+  3. C(12, 6) = 12!/(6!·6!) = 924.
+  Common mistake: Taking C(12, 5) or C(12, 7) = 792; for even n there is a single middle term.
+  Key takeaway: Sum of coefficients = (value at x = y = 1); greatest coefficient = middle binomial.
   Answer: 924
 M B 8: |-
-  Concept: Write v = λa + μb.
+  Concept: A vector in the plane of a and b can be written as v = λa + μb. The perpendicularity and projection conditions give two linear equations for λ and μ.
   Solution:
-  1. v ⊥ (3, 2, −1): 2λ + 8μ = 0. Projection on a: v·a/3 = 19, so 9λ − 2μ = 57.
-  2. μ = −3/2 and λ = 6, so v = (21/2, −9, 27/2) and |v|² = 373.5.
-  3. |2v|² = 1494.
+  1. v = (2λ + μ, −λ + 2μ, 2λ − μ).
+  2. v ⊥ (3, 2, −1): 3(2λ + μ) + 2(−λ + 2μ) − (2λ − μ) = 2λ + 8μ = 0, so λ = −4μ.
+  3. Projection on a: v·a/|a| = 19 with |a| = 3. v·a = 9λ − 2μ (a·a = 9, b·a = 0) = 57.
+  4. −36μ − 2μ = 57, so μ = −3/2 and λ = 6.
+  5. v = (12 − 1.5, −6 − 3, 12 + 1.5) = (10.5, −9, 13.5), and |v|² = 110.25 + 81 + 182.25 = 373.5.
+  6. |2v|² = 4 × 373.5 = 1494.
+  Common mistake: Using v·a = 19 (forgetting to divide by |a|), which gives a different λ.
+  Key takeaway: "In the plane of a, b" means v = λa + μb; the projection is v·â, not v·a.
   Answer: 1494
 M B 9: |-
-  Concept: Check continuity only at the integer points −1, 0, 1.
+  Concept: f involves [x] and [x + 1], which jump only at integers. In (−2, 2), check only x = −1, 0 and 1, comparing the left limit, right limit and value. Every other piece (|x² − 1| and sin) is continuous.
   Solution:
-  1. x = −1: both sides equal 1, so f is continuous there.
-  2. x = 0: the left value is 0 and the right value is √3/2 − 1, so f is discontinuous.
-  3. x = 1: the left value is √3/2 − 1 and the right value is 1/√2 − 2, so f is discontinuous.
-  4. There are 2 points of discontinuity.
+  1. x = −1: left ([x] = −2): −2·0 + sin(π/1) − (−1) = 0 + 0 + 1 = 1. Right ([x] = −1): −1·0 + sin(π/2) − 0 = 1. Continuous.
+  2. x = 0: left ([x] = −1): −|0 − 1| + sin(π/2) − 0 = −1 + 1 = 0. Right ([x] = 0): 0 + sin(π/3) − 1 = √3/2 − 1 ≈ −0.13. Discontinuous.
+  3. x = 1: left ([x] = 0): 0 + sin(π/3) − 1 = √3/2 − 1. Right ([x] = 1): 1·0 + sin(π/4) − 2 = 1/√2 − 2. Discontinuous.
+  4. Number of discontinuities = 2.
+  Common mistake: Assuming every integer is a discontinuity; at x = −1 the factor |x² − 1| = 0 and the jumps cancel.
+  Key takeaway: At integer points, compute both one-sided limits; zero factors can absorb the jumps.
   Answer: 2
 M B 10: |-
-  Concept: Shortest path via reflection: reflect P in the x-axis to P′(−3, −4).
+  Concept: At constant speed, minimum time means minimum path length. For a path P → (x-axis) → Q with P and Q on the same side, reflect P in the x-axis. The straight line from the reflection P′ to Q crosses the axis at the optimal R (angle of incidence = angle of reflection).
   Solution:
-  1. The line P′Q is y = 2x + 2, which meets the x-axis at R(−1, 0).
-  2. PR² = 4 + 16 = 20 and RQ² = 1 + 4 = 5, so 50 × 25 = 1250.
+  1. Reflect P(−3, 4) to P′(−3, −4).
+  2. Line P′Q through (−3, −4) and (0, 2): slope = 6/3 = 2, so y = 2x + 2.
+  3. At y = 0: x = −1, so R = (−1, 0).
+  4. PR² = (−3 + 1)² + (4 − 0)² = 4 + 16 = 20.
+  5. RQ² = (0 + 1)² + (2 − 0)² = 1 + 4 = 5.
+  6. 50(PR² + RQ²) = 50 × 25 = 1250.
+  Common mistake: Placing R directly below the midpoint of P and Q (x = −1.5); the optimal R divides the horizontal gap in the ratio of the heights, 4 : 2.
+  Key takeaway: Shortest path via a mirror line: reflect one endpoint and join with a straight line.
   Answer: 1250

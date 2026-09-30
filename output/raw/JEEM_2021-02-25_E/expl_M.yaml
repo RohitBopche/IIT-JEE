@@ -1,212 +1,412 @@
 M A 1: |-
-  Concept: Length of the projection of a vector on a plane $= \sqrt{|\vec{v}|^2 - (\vec{v}\cdot\hat{n})^2}$.
+  Concept: A vector v splits into a part along the plane's normal n̂ and a part lying in the plane. The in-plane part is the projection onto the plane: $|\text{proj}| = \sqrt{|\vec v|^2 - (\vec v\cdot\hat n)^2}$.
   Solution:
-  1. $\vec{AB} = (1, 1, -2)$, $\vec{AC} = (1, 2, -1)$, so $\vec{n} = \vec{AB}\times\vec{AC} = (3, -1, 1)$ and $|\vec{n}| = \sqrt{11}$.
-  2. $\vec{OP}\cdot\hat{n} = \frac{6 + 1 + 1}{\sqrt{11}} = \frac{8}{\sqrt{11}}$, and $|\vec{OP}|^2 = 6$.
-  3. Projection length $= \sqrt{6 - \frac{64}{11}} = \sqrt{\frac{2}{11}}$.
+  1. Vectors in the plane: $\vec{AB} = (1, 1, -2)$ and $\vec{AC} = (1, 2, -1)$.
+  2. Normal: $\vec{AB}\times\vec{AC} = (1\cdot(-1) - (-2)\cdot2,\ (-2)\cdot1 - 1\cdot(-1),\ 1\cdot2 - 1\cdot1) = (3, -1, 1)$, with |n| = √11.
+  3. $\vec{OP} = (2, -1, 1)$, so |OP|² = 6.
+  4. Component along the normal: $\vec{OP}\cdot\hat n = \frac{6 + 1 + 1}{\sqrt{11}} = \frac{8}{\sqrt{11}}$.
+  5. Projection on the plane: $\sqrt{6 - \frac{64}{11}} = \sqrt{\frac{66 - 64}{11}} = \sqrt{\frac{2}{11}}$.
+  Why others are wrong: (A), (B) and (D) come from a wrong normal vector or a wrong |n|.
+  Check: the normal must be perpendicular to both AB and AC. (3, −1, 1)·(1, 1, −2) = 3 − 1 − 2 = 0 ✓ and (3, −1, 1)·(1, 2, −1) = 3 − 2 − 1 = 0 ✓.
+  Tip: the projection of a vector onto a line is |v·û|, and onto a plane it is |v × n̂|. The two parts satisfy Pythagoras.
   Answer: (C)
 M A 2: |-
-  Concept: The contrapositive of p → q is ~q → ~p.
+  Concept: For an implication p → q:
+  - converse: q → p;
+  - inverse: ∼p → ∼q;
+  - contrapositive: ∼q → ∼p.
+  Only the contrapositive is logically equivalent to the original statement.
   Solution:
-  1. p: you will work; q: you will earn money.
-  2. ~q → ~p: "If you will not earn money, you will not work."
+  1. p: "you will work". q: "you will earn money". The statement is p → q.
+  2. Contrapositive: ∼q → ∼p, i.e. "If you will not earn money, you will not work."
+  3. This matches option (A).
+  Why others are wrong:
+  - (C) "If you will earn money, you will work" is the converse, q → p.
+  - (B) "You will earn money if you will not work" is ∼p → q, unrelated.
+  - (D) "To earn money, you need to work" is q → p again, the converse (a necessary-condition phrasing).
+  Tip: to form the contrapositive, swap the two parts and negate both. The truth value never changes.
   Answer: (A)
 M A 3: |-
-  Concept: Non-real roots of a real quadratic come in conjugate pairs.
+  Concept: A quadratic with real coefficients has its non-real roots in conjugate pairs. If 1 − 2i is a root, so is 1 + 2i. Then use Vieta's formulas.
+  Given: z² + αz + β = 0 with α, β real.
   Solution:
-  1. The roots are 1 – 2i and 1 + 2i.
-  2. Sum = 2 = –α, so α = –2; product = 1 + 4 = 5 = β.
-  3. α – β = –2 – 5 = –7.
+  1. The roots are 1 − 2i and 1 + 2i.
+  2. Sum = 2 = −α, so α = −2.
+  3. Product = (1 − 2i)(1 + 2i) = 1 + 4 = 5 = β.
+  4. α − β = −2 − 5 = −7.
+  5. Check: z² − 2z + 5 = 0 gives z = (2 ± √(4 − 20))/2 = 1 ± 2i ✓.
+  Why others are wrong:
+  - (A) 7 has the wrong sign.
+  - (B) and (C) come from α = 2 or β = −5, i.e. sign errors in Vieta's formulas.
+  Tip: for a monic quadratic, z² − (sum)z + (product) = 0. So α = −(sum) and β = product.
   Answer: (D)
 M A 4: |-
-  Concept: Reduction formula: $I_n + I_{n+2} = \int\cot^nx\,\csc^2x\,dx$.
+  Concept: For $I_n = \int\cot^nx\,dx$, split off cot²x = cosec²x − 1. This gives the reduction relation $I_n + I_{n+2} = \int\cot^nx\,\csc^2x\,dx$, which integrates directly.
   Solution:
-  1. $I_n + I_{n+2} = \left[-\frac{\cot^{n+1}x}{n + 1}\right]_{\pi/4}^{\pi/2} = \frac{1}{n + 1}$.
-  2. $\frac{1}{I_2 + I_4} = 3$, $\frac{1}{I_3 + I_5} = 4$, $\frac{1}{I_4 + I_6} = 5$: an A.P.
+  1. $I_n + I_{n+2} = \int_{\pi/4}^{\pi/2}\cot^nx\,\csc^2x\,dx$. With u = cot x, du = −cosec²x dx: $= \left[-\frac{\cot^{n+1}x}{n + 1}\right]_{\pi/4}^{\pi/2}$.
+  2. At π/2, cot = 0. At π/4, cot = 1. So I_n + I_{n+2} = 1/(n + 1).
+  3. I₂ + I₄ = 1/3, I₃ + I₅ = 1/4 and I₄ + I₆ = 1/5.
+  4. Their reciprocals are 3, 4 and 5, which form an AP with common difference 1.
+  5. So option (B) holds.
+  Why others are wrong:
+  - (A) 3, 4, 5 are not in GP.
+  - (C) 1/3, 1/4, 1/5 are in HP, not AP.
+  - (D) (1/4)² is not the geometric mean of 1/3 and 1/5.
+  Tip: this reduction works for tanⁿx too, with sec²x. The limits π/4 to π/2 (or 0 to π/4) make one end vanish.
   Answer: (B)
 M A 5: |-
-  Concept: $AA^T = I$ (orthogonal matrix): compare the entries.
+  Concept: AAᵀ = I means A is orthogonal. Compute AAᵀ entry by entry and equate it to the identity.
+  Given: $A = \begin{bmatrix}1 & -\alpha\\ \alpha & \beta\end{bmatrix}$, so $A^T = \begin{bmatrix}1 & \alpha\\ -\alpha & \beta\end{bmatrix}$.
   Solution:
-  1. $AA^T = \begin{bmatrix} 1 + \alpha^2 & \alpha - \alpha\beta \\ \alpha - \alpha\beta & \alpha^2 + \beta^2 \end{bmatrix} = I$.
-  2. $1 + \alpha^2 = 1 \Rightarrow \alpha = 0$; then $\beta^2 = 1$.
-  3. $\alpha^4 + \beta^4 = 0 + 1 = 1$.
+  1. $AA^T = \begin{bmatrix}1 + \alpha^2 & \alpha - \alpha\beta\\ \alpha - \alpha\beta & \alpha^2 + \beta^2\end{bmatrix}$.
+  2. Set it equal to I:
+     - (1,1): 1 + α² = 1, so α = 0;
+     - (2,2): α² + β² = 1, so β² = 1;
+     - the off-diagonal entries α(1 − β) = 0 are then automatically satisfied.
+  3. α⁴ + β⁴ = 0 + 1 = 1.
+  4. So A = I or A = diag(1, −1), both orthogonal ✓.
+  Why others are wrong:
+  - (C) 2 assumes α² = β² = 1.
+  - (B) and (D) have no basis.
+  Tip: every row of an orthogonal matrix is a unit vector. The first row (1, −α) has length 1 only if α = 0, which gives the answer immediately.
   Answer: (A)
 M A 6: |-
-  Concept: Number of one-one functions from an m-set to an n-set $= {}^nP_m$.
+  Concept: The number of one-one (injective) functions from an m-element set to an n-element set (m ≤ n) is ⁿPₘ = n!/(n − m)!.
+  Given: |A| = 3, |B| = 5, so |A × B| = 15.
   Solution:
-  1. $x = {}^5P_3 = 60$.
-  2. |A × B| = 15, so $y = {}^{15}P_3 = 15\times14\times13 = 2730$.
-  3. $\frac{y}{x} = 45.5 = \frac{91}{2}$, so 2y = 91x.
+  1. x = ⁵P₃ = 5 × 4 × 3 = 60.
+  2. y = ¹⁵P₃ = 15 × 14 × 13 = 2730.
+  3. y/x = 2730/60 = 45.5 = 91/2.
+  4. So 2y = 91x. Check: 2 × 2730 = 5460 and 91 × 60 = 5460 ✓.
+  Why others are wrong:
+  - (C) y = 91x is off by the factor 2.
+  - (A) and (D) use 273, which comes from 15 × 14 × 13/10 or a similar slip.
+  Tip: think of an injective function as filling 3 ordered slots (the images of a₁, a₂, a₃) with distinct values. That is exactly a permutation count.
   Answer: (B)
 M A 7: |-
-  Concept: Homogenise the curve with the line to get the pair of lines OP and OQ.
+  Concept: To find the angle that chord PQ subtends at the origin, homogenise. Use the line to make the curve's equation homogeneous of degree 2; the result is the pair of lines OP and OQ.
+  Given: the curve x² + 2y² = 2 and the line x + y = 1.
   Solution:
-  1. $x^2 + 2y^2 = 2(x + y)^2 \Rightarrow x^2 + 4xy = 0$, i.e. OP: x = 0 and OQ: x + 4y = 0.
-  2. The intersection points are P = (0, 1) and $Q = \left(\frac{4}{3}, -\frac{1}{3}\right)$.
-  3. $\cos\angle POQ = \frac{\vec{OP}\cdot\vec{OQ}}{|OP||OQ|} = \frac{-1/3}{1\cdot\sqrt{17}/3} = -\frac{1}{\sqrt{17}} < 0$, so the angle is obtuse.
-  4. Its supplement has tan = 4, so $\angle POQ = \pi - \tan^{-1}4 = \frac{\pi}{2} + \tan^{-1}\frac{1}{4}$.
+  1. Replace the constant 2 by 2(x + y)²: x² + 2y² = 2(x + y)² gives −x² − 4xy = 0, i.e. x(x + 4y) = 0.
+  2. So OP is x = 0 and OQ is x + 4y = 0.
+  3. The actual points: P = (0, 1) and Q = (4/3, −1/3), from x + y = 1 with x = −4y.
+  4. $\cos\angle POQ = \frac{\vec{OP}\cdot\vec{OQ}}{|OP||OQ|} = \frac{-1/3}{1\cdot\sqrt{17}/3} = -\frac{1}{\sqrt{17}}$. It is negative, so the angle is obtuse.
+  5. The acute angle between the lines has tan = 4, so ∠POQ = π − tan⁻¹4 = π/2 + tan⁻¹(1/4).
+  Why others are wrong: (B), (C) and (D) give an acute angle or use the wrong tangent value.
+  Tip: the angle formula for a pair of lines gives only the acute angle. Use the actual points to decide whether the subtended angle is obtuse.
   Answer: (A)
 M A 8: |-
-  Concept: Simplify with $e^{k\ln u} = u^k$.
+  Concept: Simplify the exponentials first, using $e^{k\ln u} = u^k$. The integrand then becomes f′/f, whose integral is ln|f|.
   Solution:
-  1. Numerator $= (2x)^3 + 5(2x)^2 = 8x^3 + 20x^2$; denominator $= x^4 + 5x^3 - 7x^2$.
-  2. Integrand $= \frac{4x^2(2x + 5)}{x^2(x^2 + 5x - 7)} = \frac{4(2x + 5)}{x^2 + 5x - 7}$.
-  3. Integral $= 4\log_e|x^2 + 5x - 7| + c$.
+  1. Numerator: $e^{3\ln2x} + 5e^{2\ln2x} = (2x)^3 + 5(2x)^2 = 8x^3 + 20x^2 = 4x^2(2x + 5)$.
+  2. Denominator: $e^{4\ln x} + 5e^{3\ln x} - 7e^{2\ln x} = x^4 + 5x^3 - 7x^2 = x^2(x^2 + 5x - 7)$.
+  3. Integrand: $\frac{4(2x + 5)}{x^2 + 5x - 7}$.
+  4. The numerator is 4 times the derivative of the denominator, since (x² + 5x − 7)′ = 2x + 5.
+  5. So the integral is 4 ln|x² + 5x − 7| + c.
+  Why others are wrong:
+  - (A) misses the factor 4.
+  - (B) has 1/4 instead of 4.
+  - (D) has ½ (the square root).
+  Common mistake: writing $e^{3\ln2x} = 2x^3$ instead of (2x)³ = 8x³.
+  Tip: always compare the numerator with the derivative of the denominator before trying partial fractions.
   Answer: (C)
 M A 9: |-
-  Concept: Eccentricity relations for an ellipse and a hyperbola.
+  Concept:
+  - Ellipse: $e^2 = 1 - \frac{b^2}{a^2}$, with foci at (±ae, 0).
+  - Hyperbola: $e^2 = 1 + \frac{b^2}{a^2}$, with its vertices on the transverse axis at (±a, 0).
+  Given: ellipse x²/25 + y²/16 = 1. The hyperbola passes through the ellipse's foci, the axes coincide, and e₁e₂ = 1.
   Solution:
-  1. Ellipse: $e = \sqrt{1 - \frac{16}{25}} = \frac{3}{5}$, foci (±3, 0).
-  2. The hyperbola passes through (±3, 0) with transverse axis along x, so a = 3. Its eccentricity is $\frac{5}{3}$.
-  3. $b^2 = a^2(e^2 - 1) = 9\left(\frac{25}{9} - 1\right) = 16$, so $\frac{x^2}{9} - \frac{y^2}{16} = 1$.
+  1. Ellipse: $e_1 = \sqrt{1 - \frac{16}{25}} = \frac{3}{5}$, so its foci are (±3, 0).
+  2. The hyperbola's transverse axis is along x, and it passes through (±3, 0), which are its vertices. So a = 3.
+  3. e₁e₂ = 1 gives e₂ = 5/3.
+  4. b² = a²(e₂² − 1) = 9(25/9 − 1) = 16.
+  5. The hyperbola is x²/9 − y²/16 = 1.
+  Check: its foci are at (±ae, 0) = (±5, 0), the ends of the ellipse's major axis, a nice reciprocal relationship.
+  Why others are wrong: (A), (C) and (D) have b² = 4, 9 or 25, which do not give e₂ = 5/3.
   Answer: (B)
 M A 10: |-
-  Concept: Limit of a sum as a definite integral.
+  Concept: A limit of a sum can be converted into a definite integral: $\lim_{n\to\infty}\frac{1}{n}\sum f\left(\frac{r}{n}\right) = \int_0^1f(x)dx$.
   Solution:
-  1. The sum is $\sum_{r=0}^{n-1}\frac{n}{(n + r)^2} = \frac{1}{n}\sum_{r=0}^{n-1}\frac{1}{(1 + r/n)^2}$ (the first term 1/n is the r = 0 term).
-  2. Limit $= \int_0^1\frac{dx}{(1 + x)^2} = 1 - \frac{1}{2} = \frac{1}{2}$.
+  1. The first term 1/n equals n/(n + 0)², so the sum is $\sum_{r=0}^{n-1}\frac{n}{(n + r)^2}$.
+  2. Rewrite: $\frac{n}{(n + r)^2} = \frac{1}{n}\cdot\frac{1}{(1 + r/n)^2}$.
+  3. As n → ∞, the sum becomes $\int_0^1\frac{dx}{(1 + x)^2} = \left[-\frac{1}{1 + x}\right]_0^1 = -\frac{1}{2} + 1 = \frac{1}{2}$.
+  4. The limit is ½.
+  Note: the question writes x → ∞, but the variable is n. It is clearly meant to be n → ∞.
+  Why others are wrong:
+  - (A) 1 treats every term as 1/n.
+  - (B) 1/3 and (D) 1/4 come from integrating the wrong function, for example 1/(1 + x)³ or x/(1 + x)².
+  Tip: identify r/n → x and 1/n → dx. The range of r (0 to n − 1) gives the limits 0 to 1.
   Answer: (C)
 M A 11: |-
-  Concept: Bayes' theorem.
+  Concept: Bayes' theorem. $P(E_i|D) = \frac{P(E_i)P(D|E_i)}{\sum_j P(E_j)P(D|E_j)}$.
+  Given: 400 people.
+  - E₁ = smoker and non-vegetarian: 160 people, disorder chance 35%.
+  - E₂ = smoker and vegetarian: 100 people, 20%.
+  - E₃ = non-smoker and vegetarian: 140 people, 10%.
   Solution:
-  1. Weighted chances: smokers & non-veg $\frac{160}{400}\times0.35$, smokers & veg $\frac{100}{400}\times0.20$, non-smokers & veg $\frac{140}{400}\times0.10$. Proportional to 56 : 20 : 14.
-  2. Required probability $= \frac{56}{56 + 20 + 14} = \frac{56}{90} = \frac{28}{45}$.
+  1. Joint terms (number × chance):
+     - E₁: 160 × 0.35 = 56;
+     - E₂: 100 × 0.20 = 20;
+     - E₃: 140 × 0.10 = 14.
+  2. Total expected sufferers: 56 + 20 + 14 = 90 (out of 400).
+  3. P(E₁ | disorder) = 56/90 = 28/45.
+  Why others are wrong:
+  - (A) 7/45 and (C) 14/45 use the wrong numerators.
+  - (B) 8/45 is P(E₁) × 0.35 without normalising.
+  Tip: in Bayes problems with population counts, simply multiply each group size by its rate, then divide the group of interest by the total. The 400 cancels.
   Answer: (D)
 M A 12: |-
-  Concept: A linear system has a unique solution when the coefficient determinant is non-zero.
+  Concept: A square linear system has a unique solution exactly when its coefficient determinant Δ ≠ 0.
   Solution:
-  1. $\Delta = \begin{vmatrix} 3 & 3 & 2 \\ 3 & 2 & 2 \\ 1 & -1 & 4 \end{vmatrix} = 3(10) - 3(10) + 2(-5) = -10 \ne 0$, so the solution is unique.
-  2. Solving: subtracting the first two equations gives y = 0; then 3x + 2z = 9 and x + 4z = 8 give x = 2, z = 1.5.
-  3. Check (C): $2 + 0 + 1.5^3 = 5.375 \ne 12$, so (C) is false.
+  1. $\Delta = \begin{vmatrix}3 & 3 & 2\\ 3 & 2 & 2\\ 1 & -1 & 4\end{vmatrix}$.
+  2. Expand: 3(8 + 2) − 3(12 − 2) + 2(−3 − 2) = 30 − 30 − 10 = −10 ≠ 0.
+  3. So the system has a unique solution.
+  4. Find it:
+     - equation 1 minus equation 2 gives y = 0;
+     - then 3x + 2z = 9 and x + 4z = 8. From the second, x = 8 − 4z, so 24 − 12z + 2z = 9, i.e. z = 1.5 and x = 2.
+  5. Solution: (2, 0, 1.5).
+  6. Check option (C): 2 + 0 + 1.5³ = 2 + 3.375 = 5.375 ≠ 12. So (C) is false.
+  Why others are wrong:
+  - (A) and (D) would need Δ = 0.
+  - (C) fails the numerical check.
   Answer: (B)
 M A 13: |-
-  Concept: AM–GM inequality.
+  Concept: AM–GM inequality: for positive u and v, u + v ≥ 2√(uv), with equality when u = v.
   Solution:
-  1. Let $t = a^{a^x} > 0$. Then $f = t + \frac{a}{t} \ge 2\sqrt{a}$.
-  2. Equality when $t = \sqrt{a}$, which is attainable. Minimum = $2\sqrt{a}$.
+  1. Let t = a^{aˣ} > 0. Then a^{1−aˣ} = a/a^{aˣ} = a/t.
+  2. So f = t + a/t.
+  3. By AM–GM: t + a/t ≥ 2√(t × a/t) = 2√a.
+  4. Equality needs t = √a, i.e. a^{aˣ} = a^{1/2}, i.e. aˣ = ½ (for a ≠ 1). This is attainable for a suitable x, since aˣ takes every positive value when a ≠ 1.
+  5. So the minimum is 2√a.
+  Why others are wrong:
+  - (A) a + 1/a and (B) a + 1 are values of f at particular x, not the minimum.
+  - (C) 2a would need t = a, which gives t + 1, not 2a.
+  Note: for a = 1, f = 1 + 1 = 2 = 2√1 ✓.
+  Tip: whenever an expression looks like t + k/t with t > 0, its minimum is 2√k.
   Answer: (D)
 M A 14: |-
-  Concept: Pair terms using f(x) + f(2 – x) = 1.
+  Concept: Look for a complementary pairing: f(x) + f(c − x) = constant. Then the terms of a symmetric sum pair up.
+  Given: f(x) = 5ˣ/(5ˣ + 5). The sum runs over x = 1/20, 2/20, …, 39/20.
   Solution:
-  1. $f(2 - x) = \frac{5^{2-x}}{5^{2-x} + 5} = \frac{5}{5 + 5^x}$, so $f(x) + f(2 - x) = 1$.
-  2. Pair $\frac{k}{20}$ with $\frac{40 - k}{20}$ for k = 1 to 19: 19 pairs, sum 19; the middle term $f(1) = \frac{1}{2}$.
-  3. Total $= 19 + \frac{1}{2} = \frac{39}{2}$.
+  1. $f(2 - x) = \frac{5^{2-x}}{5^{2-x} + 5}$. Multiply the numerator and denominator by 5ˣ: $\frac{25}{25 + 5^{x+1}} = \frac{5}{5 + 5^x}$.
+  2. f(x) + f(2 − x) = (5ˣ + 5)/(5ˣ + 5) = 1.
+  3. Pair k/20 with (40 − k)/20 for k = 1 to 19. These pairs sum to 2, and there are 19 of them, contributing 19.
+  4. The middle term, k = 20, is f(1) = 5/(5 + 5) = ½.
+  5. Total = 19 + ½ = 39/2.
+  Why others are wrong:
+  - (A) and (D) use the wrong number of pairs.
+  - (B) 49/2 overcounts.
+  Tip: for f(x) = aˣ/(aˣ + √a·c)-type functions, test f(x) + f(k − x) for a suitable k. Such problems are designed so that the pairs sum to 1.
   Answer: (C)
 M A 15: |-
-  Concept: Since α, β satisfy $x^2 = 6x + 2$, $a_{n+2} = 6a_{n+1} + 2a_n$.
+  Concept: If α and β are the roots of x² = px + q, then any sequence aₙ = Aαⁿ + Bβⁿ satisfies the recurrence aₙ₊₂ = paₙ₊₁ + qaₙ.
+  Given: x² − 6x − 2 = 0, so α² = 6α + 2 and β² = 6β + 2.
   Solution:
-  1. $a_{10} = 6a_9 + 2a_8 \Rightarrow a_{10} - 2a_8 = 6a_9$.
-  2. $\frac{6a_9}{3a_9} = 2$.
+  1. Multiply α² = 6α + 2 by α⁸: α¹⁰ = 6α⁹ + 2α⁸. Similarly for β.
+  2. Subtract: a₁₀ = 6a₉ + 2a₈.
+  3. So a₁₀ − 2a₈ = 6a₉.
+  4. $\frac{a_{10} - 2a_8}{3a_9} = \frac{6a_9}{3a_9} = 2$.
+  Why others are wrong:
+  - (D) 3 and (A) 4 misuse the coefficients 6 and 2.
+  - (B) 1 halves the answer.
+  Tip: this trick appears often. Whenever a ratio involves aₙ₊₂, aₙ₊₁ and aₙ, use the characteristic equation to relate them. No need to compute α or β.
   Answer: (C)
 M A 16: |-
-  Concept: Properties of determinants.
+  Concept: Properties of determinants for an n × n matrix:
+  - det(kA) = kⁿ det A;
+  - multiplying one row by c multiplies the determinant by c;
+  - adding a multiple of another row leaves it unchanged.
+  Given: det A = 4, 3 × 3.
   Solution:
-  1. $|2A| = 2^3|A| = 32$.
-  2. $R_2 \rightarrow 2R_2 + 5R_3$ multiplies the determinant by 2 (adding a multiple of another row changes nothing).
-  3. det(B) = 64.
+  1. det(2A) = 2³ × 4 = 32.
+  2. The operation R₂ → 2R₂ + 5R₃ on 2A has two parts:
+     - scaling R₂ by 2 doubles the determinant;
+     - adding 5R₃ changes nothing.
+  3. det B = 2 × 32 = 64.
+  Why others are wrong:
+  - (B) 16 forgets that det(2A) = 8 det A.
+  - (C) 80 wrongly adds a contribution from the 5R₃ term.
+  - (D) 128 doubles twice.
+  Tip: only the coefficient of the row being replaced matters. In Rᵢ → aRᵢ + bRⱼ, the factor is a.
   Answer: (A)
 M A 17: |-
-  Concept: The shortest distance from a line to a curve is along the common normal, at the point where the tangent is parallel to the line.
+  Concept: The shortest distance from a line to a curve that does not meet it is along the common normal. It occurs at the point of the curve where the tangent is parallel to the line.
+  Given: the line x − y = 1 (slope 1) and the parabola x² = 2y, i.e. y = x²/2.
   Solution:
-  1. $y = \frac{x^2}{2}$, slope x = 1 (the slope of x – y = 1), so the point is $\left(1, \frac{1}{2}\right)$.
-  2. Distance to x – y – 1 = 0: $\frac{|1 - \frac{1}{2} - 1|}{\sqrt{2}} = \frac{1}{2\sqrt{2}}$.
+  1. Check that they do not meet: x² = 2(x − 1) gives x² − 2x + 2 = 0, with discriminant < 0. No intersection.
+  2. Slope of the parabola: dy/dx = x. Set x = 1, so the point is (1, ½).
+  3. Distance to x − y − 1 = 0: $\frac{|1 - \frac{1}{2} - 1|}{\sqrt2} = \frac{1/2}{\sqrt2} = \frac{1}{2\sqrt2}$.
+  4. So the shortest distance is 1/(2√2) ≈ 0.354.
+  Why others are wrong:
+  - (B) 0 would require an intersection.
+  - (A) ½ forgets to divide by √2.
+  - (D) 1/√2 uses the vertex (0, 0), which is not the nearest point.
+  Tip: this "parallel tangent" method works for any convex curve and a line that does not cut it.
   Answer: (C)
 M A 18: |-
-  Concept: Counting with exactly one digit 7.
+  Concept: Count carefully with position constraints. The first digit cannot be 0, and a remainder of 2 on division by 5 means the last digit is 2 or 7.
   Solution:
-  1. |A|: 7 in the thousands place: $9^3 = 729$; 7 in one of the other 3 places: $3\times8\times9^2 = 1944$. Total = 2673.
-  2. Remainder 2 mod 5 means the last digit is 2 or 7.
-     Last digit 7: the other digits have no 7: $8\times9\times9 = 648$.
-     Last digit 2: exactly one 7 among the first three digits: 7 first gives 81; 7 in 2nd or 3rd gives $2\times8\times9 = 144$. Total 225.
-  3. Favourable = 873, so $P = \frac{873}{2673} = \frac{97}{297}$.
+  1. |A| = number of four-digit numbers with exactly one 7.
+     - 7 in the thousands place: the other three digits avoid 7, so 9³ = 729.
+     - 7 in the hundreds, tens or units place: the first digit has 8 choices (1–9 except 7), the other two have 9 each. 3 × 8 × 81 = 1944.
+     - Total |A| = 2673.
+  2. Favourable, last digit 7: the other three digits avoid 7, with the first digit non-zero. 8 × 9 × 9 = 648.
+  3. Favourable, last digit 2: exactly one 7 among the first three digits.
+     - 7 first: 9 × 9 = 81.
+     - 7 second or third: the first digit has 8 choices and the remaining position 9, so 2 × 8 × 9 = 144.
+     - Subtotal 225.
+  4. Favourable = 648 + 225 = 873.
+  5. P = 873/2673 = 97/297.
+  Tip: break the count by the position of the special digit (7). Handle the leading-digit restriction separately in each case.
   Answer: (C)
 M A 19: |-
-  Concept: Convert to sine/cosine of known angles.
+  Concept: Convert the inverse trigonometric expressions to sines and cosines, then use sin(A + B) = sin A cos B + cos A sin B.
   Solution:
-  1. Let $\theta = \cot^{-1}5$: $\sin2\theta = \frac{2\cdot5}{26} = \frac{5}{13}$, $\cos2\theta = \frac{24}{26} = \frac{12}{13}$.
-  2. Let $\phi = \cos^{-1}\frac{4}{5}$: $\sin\phi = \frac{3}{5}$.
-  3. $\sin(2\theta + \phi) = \frac{5}{13}\cdot\frac{4}{5} + \frac{12}{13}\cdot\frac{3}{5} = \frac{56}{65}$.
-  4. cosec $= \frac{65}{56}$.
+  1. θ = cot⁻¹5 gives tan θ = 1/5. Double angle:
+     - sin 2θ = 2tanθ/(1 + tan²θ) = (2/5)/(26/25) = 5/13;
+     - cos 2θ = (1 − tan²θ)/(1 + tan²θ) = (24/25)/(26/25) = 12/13.
+  2. φ = cos⁻¹(4/5) gives sin φ = 3/5.
+  3. sin(2θ + φ) = sin 2θ cos φ + cos 2θ sin φ = (5/13)(4/5) + (12/13)(3/5) = 20/65 + 36/65 = 56/65.
+  4. cosec(2θ + φ) = 65/56.
+  Why others are wrong:
+  - (A) 75/56 has a wrong numerator.
+  - (C) and (D) use 33 = 65 − 32, which comes from cos(2θ + φ)-type errors.
+  Tip: tan⁻¹(1/5) and cos⁻¹(4/5) are standard angles that lead to Pythagorean triples (5, 12, 13) and (3, 4, 5).
   Answer: (B)
 M A 20: |-
-  Concept: $\cos x + \cos y - \cos(x + y) \le \frac{3}{2}$, with equality only when $x = y = \frac{\pi}{3}$.
+  Concept: For angles in (0, π), cos x + cos y − cos(x + y) ≤ 3/2, with equality only when x = y = π/3. (This is the same fact as cos A + cos B + cos C ≤ 3/2 in a triangle.) Use a discriminant argument.
   Solution:
-  1. Write $2\cos\frac{x + y}{2}\cos\frac{x - y}{2} - 2\cos^2\frac{x + y}{2} + 1 = \frac{3}{2}$. As a quadratic in $c = \cos\frac{x + y}{2}$, its discriminant is ≥ 0 only if $\cos^2\frac{x - y}{2} \ge 1$.
-  2. So x = y and $\cos\frac{x + y}{2} = \frac{1}{2}$, giving $x = y = \frac{\pi}{3}$.
-  3. $\sin x + \cos y = \frac{\sqrt{3}}{2} + \frac{1}{2} = \frac{1 + \sqrt{3}}{2}$.
+  1. Let s = (x + y)/2 and d = (x − y)/2. Then cos x + cos y = 2 cos s cos d and cos(x + y) = 2cos²s − 1.
+  2. The equation becomes 2 cos s cos d − 2cos²s + 1 = 3/2, i.e. 2cos²s − 2 cos d · cos s + ½ = 0.
+  3. For real cos s, the discriminant must be ≥ 0: 4cos²d − 4 ≥ 0, so cos²d ≥ 1. Hence cos d = ±1, and since x, y ∈ (0, π), d = 0, i.e. x = y.
+  4. Then 2cos²s − 2cos s + ½ = 0, i.e. (2cos s − 1)² = 0, so cos s = ½ and s = π/3.
+  5. So x = y = π/3, and sin x + cos y = √3/2 + ½ = (1 + √3)/2.
+  Tip: problems with an unusual numerical right-hand side often hide an extremum condition. Look for a quadratic with a discriminant.
   Answer: (A)
 M B 1: |-
-  Concept: For the limit to be finite, the 1/x term must vanish; use series expansion.
+  Concept: For the limit to be finite, the numerator must vanish to the same order as the denominator. Expand $e^{4x} - 1 = 4x + 8x^2 + \frac{32}{3}x^3 + \ldots$
   Solution:
-  1. $e^{4x} - 1 = 4x + 8x^2 + \ldots$. Numerator $= (a - 4)x - 8x^2 - \ldots$; denominator $= 4ax^2 + \ldots$.
-  2. Finite limit requires a = 4. Then limit $= \frac{-8x^2}{16x^2} = -\frac{1}{2} = b$.
-  3. a – 2b = 4 + 1 = 5.
+  1. Numerator: ax − (4x + 8x² + …) = (a − 4)x − 8x² − ….
+  2. Denominator: ax(4x + 8x² + …) = 4ax² + ….
+  3. If a ≠ 4, the ratio behaves like (a − 4)/(4ax), which is infinite. So a = 4.
+  4. With a = 4: limit = −8x²/(16x²) = −½, so b = −½.
+  5. a − 2b = 4 − 2(−½) = 4 + 1 = 5.
+  Check with L'Hôpital's rule: the form 0/0 appears twice. Differentiating gives the same value −½.
+  Common mistake: stopping at the first-order terms and concluding b = 0.
+  Tip: when you need a limit to exist, match the orders of vanishing. Series expansion is the cleanest tool.
   Answer: 5
 M B 2: |-
-  Concept: Tangent to $y^2 = 4x$: $y = mx + \frac{1}{m}$; it touches the circle when the distance from the centre equals the radius.
+  Concept: The tangent to y² = 4x with slope m is y = mx + 1/m. It touches the circle when its distance from the centre equals the radius.
+  Given: the circle has centre (3, 0) and radius 3.
   Solution:
-  1. $\frac{|3m + 1/m|}{\sqrt{1 + m^2}} = 3 \Rightarrow (3m^2 + 1)^2 = 9m^2(1 + m^2) \Rightarrow m^2 = \frac{1}{3}$. Take $m = \frac{1}{\sqrt{3}}$ for first-quadrant contacts.
-  2. Contact with the parabola: $\left(\frac{1}{m^2}, \frac{2}{m}\right) = (3, 2\sqrt{3})$.
-  3. Contact with the circle: foot of the perpendicular from (3, 0) to $x - \sqrt{3}y + 3 = 0$, which is $\left(\frac{3}{2}, \frac{3\sqrt{3}}{2}\right)$.
-  4. $2(a + c) = 2\left(3 + \frac{3}{2}\right) = 9$.
+  1. Write the line as mx − y + 1/m = 0. Distance from (3, 0): $\frac{|3m + 1/m|}{\sqrt{1 + m^2}} = 3$.
+  2. Square: (3m + 1/m)² = 9(1 + m²), i.e. 9m² + 6 + 1/m² = 9 + 9m², so 1/m² = 3 and m² = 1/3.
+  3. For contacts in the first quadrant, take m = 1/√3. The line is y = x/√3 + √3, i.e. x − √3y + 3 = 0.
+  4. Contact with the parabola: (1/m², 2/m) = (3, 2√3), so a = 3.
+  5. Contact with the circle is the foot of the perpendicular from (3, 0) to the line: (3, 0) − (6/4)(1, −√3) = (3/2, 3√3/2), so c = 3/2.
+  6. 2(a + c) = 2(3 + 3/2) = 9.
   Answer: 9
 M B 3: |-
-  Concept: Split the integral where the expression inside the modulus changes sign.
+  Concept: To integrate |f(x)|, find where f changes sign and integrate each piece with the right sign.
+  Given: f(x) = 3x² − 3x − 6 = 3(x − 2)(x + 1), on [−2, 2].
   Solution:
-  1. $3x^2 - 3x - 6 = 3(x - 2)(x + 1)$: positive on (–2, –1) and negative on (–1, 2).
-  2. Let $F(x) = x^3 - \frac{3}{2}x^2 - 6x$. F(–2) = –2, F(–1) = 3.5, F(2) = –10.
-  3. $\int_{-2}^{-1} = F(-1) - F(-2) = 5.5$ and $\int_{-1}^{2}|\ldots| = -(F(2) - F(-1)) = 13.5$.
-  4. Total = 5.5 + 13.5 = 19.
+  1. f > 0 on (−2, −1) and f < 0 on (−1, 2).
+  2. Antiderivative: F(x) = x³ − 3x²/2 − 6x.
+  3. F(−2) = −8 − 6 + 12 = −2. F(−1) = −1 − 1.5 + 6 = 3.5. F(2) = 8 − 6 − 12 = −10.
+  4. $\int_{-2}^{-1}f\,dx = F(-1) - F(-2) = 5.5$.
+  5. $\int_{-1}^{2}|f|\,dx = -[F(2) - F(-1)] = -(-13.5) = 13.5$.
+  6. Total = 5.5 + 13.5 = 19.
+  Check: without the modulus, the integral would be F(2) − F(−2) = −8. With the modulus, the negative part flips sign, giving 5.5 + 13.5 = 19 ✓.
+  Common mistake: integrating without splitting, which gives |−8| = 8.
   Answer: 19
 M B 4: |-
-  Concept: Work modulo 8; every odd square is ≡ 1 (mod 8).
+  Concept: Modular arithmetic. The square of any odd integer is ≡ 1 (mod 8), because (2k + 1)² = 4k(k + 1) + 1 and k(k + 1) is even.
+  Given: x ≡ 3 (mod 4).
   Solution:
-  1. x = 4k + 3, so 2020 + x = 4(505 + k) + 3, an odd number.
-  2. $(2020 + x)^{2022} = \left[(2020 + x)^2\right]^{1011}$, and the square of any odd number is ≡ 1 (mod 8).
-  3. So the remainder is $1^{1011} = 1$.
+  1. 2020 = 4 × 505, so 2020 + x ≡ 3 (mod 4). In particular, 2020 + x is odd.
+  2. (2020 + x)²⁰²² = [(2020 + x)²]¹⁰¹¹.
+  3. (2020 + x)² ≡ 1 (mod 8), since it is an odd square.
+  4. So (2020 + x)²⁰²² ≡ 1¹⁰¹¹ = 1 (mod 8).
+  5. The remainder is 1.
+  Check with small numbers: x = 3 gives 2023; 2023 = 8 × 252 + 7, so 2023 ≡ 7 ≡ −1 (mod 8). Then (−1)²⁰²² = 1 ✓.
+  Tip: for large powers modulo 8, reduce the base modulo 8 first, then use the fact that odd squares are 1 (mod 8).
   Answer: 1
 M B 5: |-
-  Concept: A line through the origin perpendicular to two lines has direction along the cross product of their directions.
+  Concept: A line through the origin perpendicular to two given lines has direction d₁ × d₂. Find where it meets ℓ₁, then find the point on ℓ₂ at the required distance.
+  Given: ℓ₁ passes through (3, −1, 4) with direction (1, 2, 2); ℓ₂ passes through (3, 3, 2) with direction (2, 2, 1).
   Solution:
-  1. $\vec{d} = (1, 2, 2)\times(2, 2, 1) = (-2, 3, -2)$.
-  2. Intersection with $\ell_1$: (3 + t, –1 + 2t, 4 + 2t) = k(–2, 3, –2) gives t = –1, so the point is Q = (2, –3, 2).
-  3. A point on $\ell_2$: (3 + 2s, 3 + 2s, 2 + s), at distance $\sqrt{17}$ from Q: $(1 + 2s)^2 + (6 + 2s)^2 + s^2 = 17 \Rightarrow 9s^2 + 28s + 20 = 0$, so s = –2 or $-\frac{10}{9}$.
-  4. First octant: $s = -\frac{10}{9}$ gives $\left(\frac{7}{9}, \frac{7}{9}, \frac{8}{9}\right)$.
-  5. $18(a + b + c) = 18\times\frac{22}{9} = 44$.
+  1. d = (1, 2, 2) × (2, 2, 1) = (2 − 4, 4 − 1, 2 − 4) = (−2, 3, −2).
+  2. ℓ meets ℓ₁: (3 + t, −1 + 2t, 4 + 2t) = k(−2, 3, −2).
+     - From the first and third: 3 + t = 4 + 2t, so t = −1.
+     - The point is Q = (2, −3, 2) (k = −1) ✓.
+  3. A point on ℓ₂: (3 + 2s, 3 + 2s, 2 + s). Its distance² from Q: (1 + 2s)² + (6 + 2s)² + s² = 17.
+  4. Expand: 1 + 4s + 4s² + 36 + 24s + 4s² + s² = 17, i.e. 9s² + 28s + 20 = 0, so s = −2 or −10/9.
+  5. s = −2 gives (−1, −1, 0), not in the first octant. s = −10/9 gives (7/9, 7/9, 8/9) ✓.
+  6. 18(a + b + c) = 18 × 22/9 = 44.
   Answer: 44
 M B 6: |-
-  Concept: Non-differentiability at corners of min{} and at jumps of [·].
+  Concept: A function fails to be differentiable at:
+  - corners, where two pieces meet with different slopes (for example in min{}, or at |x|);
+  - points of discontinuity.
   Solution:
-  1. On [–2, 2]: |x| and 2 – x² meet at x = ±1. For |x| < 1, f = |x| (corner at x = 0); for 1 < |x| ≤ 2, f = 2 – x².
-  2. Corners at x = –1, 0, 1.
-  3. At x = ±2: f(±2) = 2 – 4 = –2, while for 2 < |x| < 3, f = [|x|] = 2, so f is discontinuous there, hence not differentiable.
-  4. Total in (–3, 3): 5 points.
+  1. On [−2, 2]: |x| and 2 − x² meet where |x| = 2 − x², i.e. |x| = 1, so x = ±1.
+     - For |x| ≤ 1, f = |x|, since |x| ≤ 2 − x² there.
+     - For 1 ≤ |x| ≤ 2, f = 2 − x².
+  2. Corners in (−2, 2):
+     - x = 0, the corner of |x|;
+     - x = ±1, where the pieces switch with different slopes (±1 versus ∓2).
+     That makes 3 points.
+  3. At x = ±2: f(±2) = 2 − 4 = −2, but for 2 < |x| < 3, f = [|x|] = 2. So f jumps from −2 to 2, and it is discontinuous (hence not differentiable) at ±2. That makes 2 more points.
+  4. For 2 < |x| < 3, f = 2 is constant, so it is differentiable there.
+  5. Total in (−3, 3): 3 + 2 = 5.
+  Tip: always check the junctions between the pieces of a piecewise definition for continuity first.
   Answer: 5
 M B 7: |-
-  Concept: Curves cut orthogonally when the product of their slopes at the intersection is –1.
+  Concept: Two curves cut at right angles when the product of their slopes at the intersection is −1.
+  Given: x = y⁴ and xy = k.
   Solution:
-  1. $x = y^4$: $\frac{dy}{dx} = \frac{1}{4y^3}$. $xy = k$: $\frac{dy}{dx} = -\frac{y}{x}$.
-  2. $\frac{1}{4y^3}\cdot\left(-\frac{y}{x}\right) = -1 \Rightarrow 4xy^2 = 1 \Rightarrow 4y^6 = 1$ (using $x = y^4$).
-  3. $k = xy = y^5$, so $(4k)^6 = 4^6y^{30} = 4^6\left(\frac{1}{4}\right)^5 = 4$.
+  1. For x = y⁴: dx/dy = 4y³, so dy/dx = 1/(4y³).
+  2. For xy = k: y + x y′ = 0, so dy/dx = −y/x.
+  3. Orthogonality: $\frac{1}{4y^3}\cdot\left(-\frac{y}{x}\right) = -1$, so 4xy² = 1.
+  4. At the intersection x = y⁴, so 4y⁶ = 1 and y⁶ = ¼.
+  5. k = xy = y⁵. Then (4k)⁶ = 4⁶ y³⁰ = 4⁶ (y⁶)⁵ = 4⁶ (¼)⁵ = 4.
+  6. So (4k)⁶ = 4.
+  Tip: when an expression like (4k)⁶ is requested, raise to powers that convert everything into a known quantity (here y⁶). This avoids taking awkward roots.
   Answer: 4
 M B 8: |-
-  Concept: Last digits of powers of 3 and 7 repeat with period 4.
+  Concept: The last digits of powers repeat periodically. For 3ⁿ: 3, 9, 7, 1 (period 4). For 7ⁿ: 7, 9, 3, 1 (period 4). 3ⁿ + 7ⁿ is a multiple of 10 when the last digits add to 10 (or 0).
   Solution:
-  1. Last digits: $3^n$: 3, 9, 7, 1; $7^n$: 7, 9, 3, 1 (for n ≡ 1, 2, 3, 0 mod 4).
-  2. The sums end in 0 when n ≡ 1 or 3 (mod 4), i.e. n is odd.
-  3. Two-digit odd numbers: 11, 13, ..., 99, which is 45 numbers.
+  1. Cases for n mod 4:
+     - n ≡ 1: 3 + 7 = 10 ✓;
+     - n ≡ 2: 9 + 9 = 18 ✗;
+     - n ≡ 3: 7 + 3 = 10 ✓;
+     - n ≡ 0: 1 + 1 = 2 ✗.
+  2. So 3ⁿ + 7ⁿ is divisible by 10 exactly when n is odd.
+  3. Two-digit odd numbers run from 11 to 99. Count: (99 − 11)/2 + 1 = 45.
+  Alternative: for odd n, aⁿ + bⁿ is divisible by a + b = 10, which confirms the result.
+  Tip: remember that aⁿ + bⁿ is divisible by (a + b) whenever n is odd.
   Answer: 45
 M B 9: |-
-  Concept: Area of a parallelogram $= |\vec{a}\times\vec{b}|$.
+  Concept: The area of a parallelogram with adjacent sides a and b is |a × b|.
+  Given: a = (1, α, 3), b = (3, −α, 1), area 8√3.
   Solution:
-  1. $\vec{a}\times\vec{b} = (4\alpha, 8, -4\alpha)$, so $|\vec{a}\times\vec{b}|^2 = 32\alpha^2 + 64 = 192 \Rightarrow \alpha^2 = 4$.
-  2. $\vec{a}\cdot\vec{b} = 3 - \alpha^2 + 3 = 2$.
+  1. a × b = (α·1 − 3·(−α), 3·3 − 1·1, 1·(−α) − α·3) = (4α, 8, −4α).
+  2. |a × b|² = 16α² + 64 + 16α² = 32α² + 64.
+  3. Setting this to (8√3)² = 192: 32α² = 128, so α² = 4.
+  4. a · b = 1·3 + α·(−α) + 3·1 = 6 − α² = 6 − 4 = 2.
+  5. The sign of α does not matter, because only α² appears.
+  Check with Lagrange's identity, |a × b|² + (a·b)² = |a|²|b|²: 192 + 4 = 196, and |a|² = |b|² = 10 + α² = 14, so 14 × 14 = 196 ✓.
+  Tip: Lagrange's identity lets you find a·b from |a × b| directly, if the magnitudes are known.
   Answer: 2
 M B 10: |-
-  Concept: Rearrange the equation into an exact derivative.
+  Concept: Look for an exact-differential pattern. The combination x dy − y dx is the numerator of d(y/x) = (x dy − y dx)/x², and of d(x/y) = (y dx − x dy)/y².
   Solution:
-  1. $x\,dy - y\,dx = -2xy^2\,dx \Rightarrow \frac{x\,dy - y\,dx}{y^2} = -2x\,dx \Rightarrow -d\left(\frac{x}{y}\right) = -d(x^2)$.
-  2. $\frac{x}{y} = x^2 + C$.
-  3. The lines meet at (2, 1): 2 = 4 + C, so C = –2.
-  4. At x = 1: $\frac{1}{y} = 1 - 2 = -1$, so y(1) = –1 and |y(1)| = 1.
+  1. Rearrange: x dy − y dx = −2xy² dx.
+  2. Divide by y²: (x dy − y dx)/y² = −2x dx. The left side is −d(x/y), so −d(x/y) = −d(x²).
+  3. Integrate: x/y = x² + C.
+  4. The lines 2x − 3y = 1 and 3x + 2y = 8 intersect at (2, 1). Substituting: 2/1 = 4 + C, so C = −2.
+  5. At x = 1: 1/y = 1 − 2 = −1, so y(1) = −1 and |y(1)| = 1.
+  6. So the curve is y = x/(x² − 2).
+  Check: it passes through (2, 1) ✓, and y(1) = 1/(−1) = −1 ✓.
+  Tip: the patterns x dy − y dx and x dy + y dx = d(xy) are the most common integrating-factor shortcuts in JEE problems.
   Answer: 1

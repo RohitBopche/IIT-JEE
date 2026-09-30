@@ -1,178 +1,340 @@
 C A 1: |-
-  Concept: Esters react with two equivalents of Grignard reagent to give tertiary alcohols.
+  Concept: Esters react with two equivalents of a Grignard reagent. The first equivalent adds to C=O and expels the alkoxide/phenoxide, giving a ketone; the ketone is more reactive than the ester and immediately takes a second equivalent, giving a tertiary alkoxide. Hydrolysis then gives a 3° alcohol.
   Solution:
-  1. Phenyl acetate: CH₃MgBr adds twice to the acyl carbon (ketone intermediate), giving (CH₃)₃C–OH after hydrolysis, plus phenol.
-  2. Among the given structures, this is the intended source of a 3° alcohol.
+  1. Phenyl acetate, CH₃COOC₆H₅ + CH₃MgBr → (CH₃)₂C=O (acetone) + C₆H₅OMgBr.
+  2. Acetone + CH₃MgBr → (CH₃)₃C–OMgBr.
+  3. Hydrolysis (H₃O⁺) → (CH₃)₃C–OH (tert-butyl alcohol, a 3° alcohol) + phenol.
+  Why others are wrong:
+  - (B) The nitrile reacts with CH₃MgBr to give an imine salt that hydrolyses to a ketone, not an alcohol; the terminal alkyne's acidic ≡C–H simply destroys one equivalent of Grignard (giving CH₄); the ether is inert.
+  - (A) and (D) contain ketone groups; in (D) the free –OH first consumes Grignard reagent. These are not the intended "double addition" route to a 3° alcohol.
+  Note: the options were structures and are reconstructed in words; ketone groups can in principle also give 3° alcohols with CH₃MgBr, but the official key selects the ester (C), the textbook case of a 3° alcohol from an acid derivative with excess Grignard.
   Answer: (C)
 C A 2: |-
-  Concept: A sol adsorbs the ion present in excess (common ion).
+  Concept: When a sol is formed by a precipitation reaction, the colloidal particles preferentially adsorb the ion that is common to the precipitate and present in excess. This adsorbed ion gives the sol its charge.
   Solution:
-  1. AgNO₃ added to KI means I⁻ is in excess, giving a negative sol AgI/I⁻.
+  1. AgNO₃ is being added to KI solution, so initially KI (and hence I⁻) is in excess.
+  2. AgI particles form and adsorb the excess I⁻ ions (common ion with AgI).
+  3. The sol is negatively charged: AgI/I⁻.
+  4. Conversely, adding KI to excess AgNO₃ would give a positive sol, AgI/Ag⁺.
+  Why others are wrong:
+  - (D) AgI/Ag⁺ forms only when Ag⁺ is in excess, i.e. KI added to AgNO₃ — the reverse order.
+  - (B) AgNO₃/NO₃⁻ and (C) KI/NO₃⁻: AgNO₃ and KI are soluble salts, they do not form the colloidal particles; NO₃⁻ is not a common ion with AgI.
   Answer: (A)
 C A 3: |-
-  Concept: Hydrogen isotopes.
+  Concept: Hydrogen has three isotopes: protium ¹H, deuterium ²H (D) and tritium ³H (T). Only tritium has an unstable nucleus (one proton, two neutrons).
   Solution:
-  1. Tritium is radioactive, emitting low-energy β⁻ with $t_{1/2} \approx 12.3$ years.
+  1. Tritium decays by β⁻ emission: ³H → ³He + e⁻ + ν̄.
+  2. The emitted β⁻ particles have very low energy (maximum ≈ 18.6 keV).
+  3. Its half-life is ≈ 12.3 years, i.e. greater than 12 years, as required.
+  Why others are wrong:
+  - (A) Protium is stable — it is the most abundant isotope (≈ 99.98%).
+  - (C) Deuterium is stable (natural abundance ≈ 0.016%), used in heavy water.
+  - (D) includes deuterium, which is not radioactive.
   Answer: (B)
 C A 4: |-
-  Concept: $\Delta T_f = iK_fm$: largest i gives the lowest freezing point.
+  Concept: Depression in freezing point is a colligative property: $\Delta T_f = iK_fm$. At equal concentration, the solute producing the most particles (largest van't Hoff factor i) lowers the freezing point the most.
   Solution:
-  1. i: KI 2, glucose 1, K₂SO₄ 3, Al₂(SO₄)₃ 5.
-  2. Al₂(SO₄)₃ has the lowest freezing point.
+  1. Assuming complete dissociation of the electrolytes:
+     - KI → K⁺ + I⁻: i = 2
+     - C₆H₁₂O₆ (glucose, non-electrolyte): i = 1
+     - K₂SO₄ → 2K⁺ + SO₄²⁻: i = 3
+     - Al₂(SO₄)₃ → 2Al³⁺ + 3SO₄²⁻: i = 5
+  2. Largest i gives the largest $\Delta T_f$, i.e. the lowest freezing point.
+  3. Al₂(SO₄)₃ (i = 5) has the lowest freezing point.
+  Why others are wrong:
+  - (A) KI and (C) K₂SO₄ produce fewer ions (2 and 3).
+  - (B) glucose does not ionise at all, so it gives the smallest depression (highest freezing point of the four).
   Answer: (D)
 C A 5: |-
-  Concept: Steric number gives the hybridisation.
+  Concept: The hybridisation of the central atom follows from its steric number (bond pairs + lone pairs): 2 → sp, 4 → sp³, 5 → sp³d, 6 → sp³d². The notation d²sp³ is reserved for inner-orbital octahedral complexes.
   Solution:
-  1. SF₄: 4 bp + 1 lp, sp³d (iii).
-  2. IF₅: 5 bp + 1 lp, sp³d² (i).
-  3. NO₂⁺: linear, sp (v).
-  4. NH₄⁺: sp³ (iv).
+  1. SF₄: S has 6 valence electrons; 4 bonds + 1 lone pair = 5 → sp³d (see-saw) → (iii).
+  2. IF₅: I has 7 valence electrons; 5 bonds + 1 lone pair = 6 → sp³d² (square pyramidal) → (i).
+  3. NO₂⁺: O=N⁺=O, 2 σ-bonds and no lone pair on N → sp (linear) → (v).
+  4. NH₄⁺: 4 bonds, no lone pair → sp³ (tetrahedral) → (iv).
+  Correct: (a)-(iii), (b)-(i), (c)-(v), (d)-(iv).
+  Why others are wrong:
+  - (B) gives SF₄ d²sp³ and NH₄⁺ sp — both wrong.
+  - (C) gives SF₄ sp³d² (it has only 5 electron pairs).
+  - (D) gives NO₂⁺ d²sp³, but it is linear.
   Answer: (A)
 C A 6: |-
-  Concept: Resonance needs a lone pair or π bond conjugated with another π system.
+  Concept: Resonance requires delocalisation: a π bond or lone pair must be directly attached to (conjugated with) another π system or a p orbital. An sp³ carbon between them blocks conjugation.
   Solution:
-  1. CH₃CH₂CH=CHCH₂NH₂: the NH₂ is on an sp³ CH₂, not attached to the C=C, so there is no conjugation.
-  2. Amides, vinyl ethers and the benzene ring of benzyl alcohol all show resonance.
+  1. CH₃CH₂CH=CHCH₂NH₂: the NH₂ is on a CH₂ (sp³) group, one carbon away from the C=C. The nitrogen lone pair is not adjacent to the π bond, so no resonance structure can be drawn.
+  2. This compound therefore does not exhibit resonance.
+  Why others are wrong:
+  - (A) CH₃CH₂CH₂CONH₂ (amide): the N lone pair delocalises into C=O (O⁻–C=N⁺H₂).
+  - (C) CH₃CH₂O–CH=CH₂ (vinyl ether): the O lone pair is conjugated with C=C (CH₂⁻–CH=O⁺Et).
+  - (D) Benzyl alcohol: the benzene ring itself shows resonance (Kekulé structures), even though the OH is not conjugated.
   Answer: (B)
 C A 7: |-
-  Concept: Colour and paramagnetism need unpaired d electrons.
+  Concept: Transition metal ions are coloured (d–d transitions) and paramagnetic only when they have partially filled d orbitals with unpaired electrons. d⁰ and d¹⁰ ions are colourless and diamagnetic.
   Solution:
-  1. Cu²⁺ (d⁹), Cr³⁺ (d³) and Sc⁺ (3d¹4s¹) all have unpaired electrons.
-  2. The other sets contain d⁰ or d¹⁰ ions (Mn⁷⁺, Hg²⁺, Cu⁺, Zn²⁺, Sc³⁺, V⁵⁺, Ti⁴⁺).
+  1. Cu²⁺: [Ar]3d⁹ — 1 unpaired electron, blue in water.
+  2. Cr³⁺: [Ar]3d³ — 3 unpaired electrons, green/violet.
+  3. Sc⁺: [Ar]3d¹4s¹ — 2 unpaired electrons, paramagnetic and coloured.
+  4. All three are coloured and paramagnetic.
+  Why others are wrong:
+  - (A) Mn⁷⁺ is d⁰ (MnO₄⁻ is coloured by charge transfer, but it is diamagnetic) and Hg²⁺ is d¹⁰.
+  - (B) Cu⁺ and Zn²⁺ are d¹⁰ — colourless and diamagnetic.
+  - (C) Sc³⁺, V⁵⁺ and Ti⁴⁺ are all d⁰ — colourless and diamagnetic.
   Answer: (D)
 C A 8: |-
-  Concept: Phenol test (FeCl₃), Reimer–Tiemann reaction, and PCC oxidation of 1° alcohols.
+  Concept: Combine three tests: (1) FeCl₃ gives a coloured complex with phenols; (2) the Reimer–Tiemann reaction (CHCl₃/KOH, then H⁺) introduces –CHO ortho to the phenolic OH; (3) PCC oxidises a primary alcohol only as far as the aldehyde.
   Solution:
-  1. A = phenol (C₆H₆O, coloured complex with FeCl₃).
-  2. CHCl₃/KOH then H⁺ gives B = salicylaldehyde.
-  3. PCC oxidises C = 2-hydroxybenzyl alcohol to salicylaldehyde.
+  1. A = C₆H₆O giving colour with FeCl₃ must be phenol, C₆H₅OH.
+  2. Reimer–Tiemann: phenol + CHCl₃ + KOH (via dichlorocarbene), then acidification → B = salicylaldehyde (2-hydroxybenzaldehyde).
+  3. B can also be made by PCC oxidation of C: C must be the corresponding primary alcohol, 2-hydroxybenzyl alcohol (salicyl alcohol).
+  4. So A = phenol, B = salicylaldehyde, C = 2-hydroxybenzyl alcohol.
+  Why others are wrong:
+  - (A) makes B the alcohol — Reimer–Tiemann gives an aldehyde, and PCC oxidises alcohols, not aldehydes to alcohols.
+  - (B) and (C) make A a compound other than phenol, but only phenol fits C₆H₆O.
   Answer: (D)
 C A 9: |-
-  Concept: Structure of diborane.
+  Concept: Diborane, B₂H₆, is electron-deficient: it has 4 terminal B–H bonds (2c–2e) and 2 bridging B–H–B bonds (3c–2e, "banana bonds").
   Solution:
-  1. (a) True: $2NaBH_4 + I_2 \to B_2H_6 + 2NaI + H_2$.
-  2. (b) False: B is sp³. (c) False: there are two 3c–2e bridge bonds. (d) False: the bridging H atoms lie above and below the plane.
+  1. (a) Laboratory preparation by oxidation of NaBH₄ with iodine: $2NaBH_4 + I_2 \to B_2H_6 + 2NaI + H_2$. TRUE.
+  2. (b) Each boron uses four orbitals (2 terminal + 2 bridging bonds) — it is sp³ hybridised, not sp². FALSE.
+  3. (c) There are TWO 3-centre–2-electron bridge bonds, not one. FALSE.
+  4. (d) The four terminal H atoms and two B atoms are in one plane, but the two bridging H atoms lie above and below it, so the molecule is non-planar. FALSE.
+  5. Only (a) is correct.
+  Why others are wrong:
+  - (B) and (D) accept (c), which undercounts the bridges.
+  - (C) accepts sp² boron, and (D) also accepts planarity.
   Answer: (A)
 C A 10: |-
-  Concept: Monomers and polymers.
+  Concept: Rubbers are polymers of conjugated dienes. Natural rubber is poly-isoprene; neoprene is poly-chloroprene. Know the monomer names and the repeat unit.
   Solution:
-  1. Chloroprene: 2-chlorobuta-1,3-diene (ii).
-  2. Neoprene: –[CH₂–C(Cl)=CH–CH₂]ₙ– (iii).
-  3. Acrylonitrile: CH₂=CH–CN (iv).
-  4. Isoprene: 2-methylbuta-1,3-diene (i).
+  1. (a) Chloroprene = 2-chlorobuta-1,3-diene, CH₂=C(Cl)–CH=CH₂ → (ii).
+  2. (b) Neoprene = polychloroprene, repeat unit –[CH₂–C(Cl)=CH–CH₂]ₙ– (1,4-addition) → (iii).
+  3. (c) Acrylonitrile = CH₂=CH–CN (monomer for orlon/acrilan and Buna-N) → (iv).
+  4. (d) Isoprene = 2-methylbuta-1,3-diene (monomer of natural rubber) → (i).
+  Correct: (a)-(ii), (b)-(iii), (c)-(iv), (d)-(i).
+  Why others are wrong:
+  - (A) and (B) give the polymer structure (iii) to chloroprene, which is the monomer.
+  - (C) gives neoprene the isoprene name and isoprene the polymer — both swapped.
   Answer: (D)
 C A 11: |-
-  Concept: Stereoisomerism needs different groups on each alkene carbon, or a chiral centre.
+  Concept: A molecule shows stereoisomerism if it has (i) a C=C with two different groups on each doubly bonded carbon (geometrical isomerism), or (ii) a chiral carbon (optical isomerism).
   Solution:
-  1. 3-Ethylhex-3-ene: C3 carries two ethyl groups, so there is no cis/trans isomerism and no chiral carbon.
-  2. 3-Methylhex-1-ene and 4-methylhex-1-ene are chiral; 3,4-dimethylhex-3-ene shows cis/trans isomerism.
+  1. 3-Ethylhex-3-ene: CH₃CH₂–C(CH₂CH₃)=CH–CH₂CH₃. C3 carries two identical ethyl groups, so cis/trans isomers are impossible. There is no sp³ carbon with four different groups. → No stereoisomerism.
+  Why others are wrong:
+  - (B) 3-Methylhex-1-ene: CH₂=CH–C*H(CH₃)–CH₂CH₂CH₃. C3 has H, CH₃, vinyl and propyl — chiral, so optical isomers exist.
+  - (C) 3,4-Dimethylhex-3-ene: CH₃CH₂(CH₃)C=C(CH₃)CH₂CH₃. Each alkene carbon has CH₃ and C₂H₅ — cis/trans isomers exist.
+  - (D) 4-Methylhex-1-ene: CH₂=CH–CH₂–C*H(CH₃)–CH₂CH₃. C4 has H, CH₃, ethyl and allyl — chiral.
   Answer: (A)
 C A 12: |-
-  Concept: HSAB: soft S²⁻ pairs with soft metal ions.
+  Concept: Pearson's HSAB principle: soft bases (like S²⁻, large and polarisable) bind strongly to soft acids (large, polarisable, low-charge metal ions), while hard bases (O²⁻, CO₃²⁻, silicates) bind hard acids (small, highly charged ions).
   Solution:
-  1. Pb (galena, PbS) and Ag (argentite, Ag₂S) occur as sulphides.
-  2. Al and Mg (hard) occur as oxides, silicates and carbonates.
+  1. Pb²⁺ and Ag⁺ are soft/borderline-soft acids, so they occur as sulphide ores:
+     - Pb: galena, PbS.
+     - Ag: argentite (silver glance), Ag₂S.
+  2. Al³⁺ and Mg²⁺ are hard acids, so they occur as oxides, carbonates and silicates:
+     - Al: bauxite Al₂O₃·xH₂O, cryolite.
+     - Mg: magnesite MgCO₃, dolomite, carnallite.
+  3. Correct pair: (a) Pb and (c) Ag.
+  Why others are wrong:
+  - (A), (C) and (D) each include Mg or Al, which have no important sulphide ores.
   Answer: (B)
 C A 13: |-
-  Concept: Deamination of diazonium salts, then Friedel–Crafts alkylation.
+  Concept: A diazonium group can be replaced by H (deamination) using hypophosphorous acid, H₃PO₂. An alkyl group is then introduced onto benzene by Friedel–Crafts alkylation with an alkyl halide and anhydrous AlCl₃.
   Solution:
-  1. A = H₃PO₂ reduces ArN₂⁺ to benzene.
-  2. B = CH₃CH₂Cl/AlCl₃ gives ethylbenzene.
+  1. Step 1: C₆H₅N₂⁺Cl⁻ + H₃PO₂ + H₂O → C₆H₆ + N₂ + H₃PO₃ + HCl. So A = H₃PO₂.
+  2. Step 2: C₆H₆ + CH₃CH₂Cl → (anhyd. AlCl₃) → C₆H₅CH₂CH₃ + HCl. So B = CH₃CH₂Cl.
+  Why others are wrong:
+  - (A) and (B) make B = H₃PO₂, a reducing agent that cannot alkylate benzene, so ethylbenzene could not form. (Warm ethanol can also reduce ArN₂⁺, but (A) still fails at step 2.)
+  - (C) uses ethanol as B: Friedel–Crafts alkylation with AlCl₃ needs an alkyl halide (an alcohol deactivates/complexes AlCl₃ and does not give ethylbenzene here).
   Answer: (D)
 C A 14: |-
-  Concept: Group 1/2 properties.
+  Concept: Recall characteristic properties of the s-block elements.
   Solution:
-  1. Ba: 6s² (ii).
-  2. Ca: insoluble oxalate (iii).
-  3. Li: covalent compounds soluble in organic solvents (i).
-  4. Na: NaOH, a very strong monoacidic base (iv).
+  1. (a) Ba (Z = 56) is in period 6, group 2: outer configuration 6s² → (ii).
+  2. (b) Ca: calcium oxalate is insoluble in water (basis of the Ca²⁺ test with ammonium oxalate; kidney stones) → (iii).
+  3. (c) Li: small, highly polarising Li⁺ forms compounds with covalent character; LiCl, for example, is soluble in organic solvents such as ethanol and pyridine → (i).
+  4. (d) Na: NaOH is a very strong base that gives one OH⁻ per formula unit, i.e. monoacidic → (iv).
+  Correct: (a)-(ii), (b)-(iii), (c)-(i), (d)-(iv).
+  Why others are wrong:
+  - (B) gives Ba the strong monoacidic base; Ba(OH)₂ is diacidic.
+  - (C) gives Ca a monoacidic base; Ca(OH)₂ is diacidic.
+  - (D) gives Ca the 6s² configuration (Ca is 4s²) and Li the "very strong" base (LiOH is the weakest alkali hydroxide).
   Answer: (A)
 C A 15: |-
-  Concept: Down group 15, the E–H bond weakens.
+  Concept: The reducing power of group-15 hydrides EH₃ depends on how easily they release hydrogen. Down the group, the central atom grows larger, E–H overlap weakens, and bond dissociation enthalpy falls.
   Solution:
-  1. BiH₃ is the strongest reducing agent.
+  1. Order of E–H bond strength: NH₃ > PH₃ > AsH₃ > SbH₃ > BiH₃.
+  2. Thermal stability decreases in the same order.
+  3. The weaker the E–H bond, the more readily the hydride donates H/electrons, so reducing character increases: NH₃ < PH₃ < AsH₃ < SbH₃ < BiH₃.
+  4. BiH₃ is the strongest reducing agent (and least stable).
+  Why others are wrong:
+  - (D) PH₃ has the strongest E–H bond of the options, so it is the weakest reducer here.
+  - (A) AsH₃ and (B) SbH₃ are stronger than PH₃ but weaker than BiH₃.
   Answer: (C)
 C A 16: |-
-  Concept: Vitamin nomenclature.
+  Concept: Water-soluble B-complex vitamins have both numbers and chemical names.
   Solution:
-  1. Thiamine is B₁ and pyridoxine is B₆.
+  1. Thiamine = vitamin B₁. Deficiency: beri-beri.
+  2. Pyridoxine = vitamin B₆. Deficiency: convulsions.
+  3. So the pair is B₁ and B₆.
+  Other names for reference:
+  - Riboflavin = B₂ (deficiency: cheilosis, digestive disorders).
+  - Cyanocobalamin = B₁₂ (pernicious anaemia).
+  - Tocopherols = vitamin E (fat-soluble; deficiency: increased fragility of RBCs, muscular weakness).
+  Why others are wrong:
+  - (B) and (D) involve vitamin E, which is tocopherol, not thiamine or pyridoxine.
+  - (C) swaps: B₆ is pyridoxine, not thiamine; B₂ is riboflavin.
+  Memory aid: B₁ (thiamine) has sulphur ("thio"), B₆ is pyridoxine (a pyridine derivative), and B₂ is riboflavin.
+  Common mistake: Taking vitamin E (tocopherol) as a B vitamin; E is fat-soluble, while the B vitamins are water-soluble.
   Answer: (A)
 C A 17: |-
-  Concept: Aniline does not undergo Friedel–Crafts reactions.
+  Concept: Aniline's –NH₂ is a Lewis base. With AlCl₃ (a Lewis acid) it forms a salt-like complex C₆H₅NH₂⁺–AlCl₃⁻, in which nitrogen carries a positive charge and strongly deactivates the ring. So aniline does not undergo Friedel–Crafts alkylation or acylation.
   Solution:
-  1. The Lewis base NH₂ binds AlCl₃, forming a deactivating complex, so the alkylation does not occur.
-  2. Nitration, acetylation and sulphonation of aniline do occur (with the products shown).
+  1. (A) aniline + CH₃Cl/AlCl₃ → p-toluidine: does NOT occur.
+  Why others are wrong (these reactions do occur):
+  - (B) Nitration with HNO₃/H₂SO₄: in strong acid, much of the aniline becomes anilinium (meta-directing), so a mixture forms — p-nitroaniline (~51%), m-nitroaniline (~47%) and a little ortho. The reaction occurs.
+  - (C) Acetylation with acetic anhydride gives acetanilide — a standard reaction used to protect –NH₂.
+  - (D) Sulphonation: aniline + conc. H₂SO₄ forms anilinium hydrogen sulphate, which on heating at 453–473 K gives sulphanilic acid (a zwitterion).
   Answer: (A)
 C A 18: |-
-  Concept: History of the periodic table.
+  Concept: Mendeleev published his periodic law and table in 1869, classifying elements by atomic mass. The electron (1897), nucleus (1911) and atomic number (Moseley, 1913) were discovered later.
   Solution:
-  1. In 1869 atomic structure was not known, so statement (A) is incorrect.
-  2. Md (Z = 101) is named after him; he designed a barometer and wrote "Principles of Chemistry".
+  1. (A) claims atomic structure was known when he proposed the table — INCORRECT: he worked only with atomic masses and chemical properties.
+  2. This lack of knowledge is exactly why some anomalies (e.g. Te/I order) existed in his table.
+  Why others are wrong (these are correct statements):
+  - (B) Element 101 is mendelevium (Md), named in his honour.
+  - (C) Mendeleev did work on the design of an accurate (differential) barometer/altimeter.
+  - (D) He wrote the textbook "Principles of Chemistry" (Osnovy Khimii), in which the periodic system was developed.
   Answer: (A)
 C A 19: |-
-  Concept: Gas solubility falls with rising temperature and with pollution (oxygen demand).
+  Concept: The solubility of a gas in water decreases as temperature increases (dissolution of gases is exothermic; Henry's constant $K_H$ increases with T). Pollution (organic matter, microbes) consumes dissolved oxygen, raising biochemical oxygen demand (BOD).
   Solution:
-  1. Cold, clean water at 4 °C holds the most dissolved O₂.
+  1. Water at 4 °C is the coldest of the options, so it holds the most dissolved O₂ (about 13 mg/L near 4 °C, compared with ≈ 9 mg/L at 20 °C).
+  2. Unpolluted cold water therefore has the maximum dissolved oxygen.
+  Why others are wrong:
+  - (A) Water at 80 °C holds far less O₂ — dissolved gases escape on heating.
+  - (B) Boiling water expels almost all dissolved gases (that is why boiled water tastes flat).
+  - (C) Polluted water has a high BOD; microbes decomposing waste consume dissolved O₂.
   Answer: (D)
 C A 20: |-
-  Concept: Liquids that decompose below their normal boiling point.
+  Concept: A liquid boils when its vapour pressure equals the external pressure. Lowering the external pressure lowers the boiling point, so the liquid can be distilled below its decomposition temperature.
   Solution:
-  1. Reducing the pressure lowers the boiling point, so vacuum distillation is used (e.g. glycerol).
+  1. The compound has a high boiling point and decomposes near it, so it cannot be heated to its normal boiling point.
+  2. Reduced-pressure (vacuum) distillation lets it boil at a much lower temperature without decomposing.
+  3. Example: glycerol is distilled under reduced pressure; in industry, spent lye from soap making is concentrated this way to recover glycerol.
+  Why others are wrong:
+  - (A) Fractional distillation separates liquids with close boiling points, but still heats them to their normal boiling points.
+  - (C) Simple distillation also requires reaching the normal boiling point — decomposition would occur.
+  - (B) Steam distillation works for steam-volatile, water-immiscible compounds (e.g. aniline); it is not the general method for high-boiling, heat-sensitive liquids.
   Answer: (D)
 C B 1: |-
-  Concept: NH₃ acts as a strong-field ligand here (as in the official solution).
+  Concept: Count unpaired electrons from the d-electron configuration and the ligand field. The official solution treats NH₃ as a strong-field ligand for both cobalt complexes (low spin).
   Solution:
-  1. [Co(NH₃)₆]²⁺: Co²⁺ d⁷ low spin ($t_{2g}^6e_g^1$), 1 unpaired electron.
-  2. [Co(NH₃)₆]³⁺: Co³⁺ d⁶ low spin, 0 unpaired.
-  3. Total $= 1$.
+  1. [Co(NH₃)₆]Cl₂: cobalt is Co²⁺, 3d⁷. Low spin octahedral: $t_{2g}^6e_g^1$ → 1 unpaired electron.
+  2. [Co(NH₃)₆]Cl₃: cobalt is Co³⁺, 3d⁶. Low spin octahedral: $t_{2g}^6e_g^0$ → 0 unpaired electrons (diamagnetic; d²sp³).
+  3. Total = 1 + 0 = 1.
+  Note: experimentally, [Co(NH₃)₆]²⁺ is actually high spin ($t_{2g}^5e_g^2$, 3 unpaired, total 3), because Co²⁺ has a smaller Δo than Co³⁺. The official key assumes low spin for both and gives 1, which is the stored answer.
   Answer: 1
 C B 2: |-
-  Concept: First order: $k = \frac{2.303}{t}\log\frac{[A]_0}{[A]}$.
+  Concept: For a first-order reaction, $k = \frac{2.303}{t}\log\frac{[A]_0}{[A]_t}$. Use minutes since the answer is in min⁻¹.
   Solution:
-  1. $k = \frac{2.303}{60}\log\frac{3}{2} = \frac{2.303\times0.176}{60} = 6.76\times10^{-3}$ min⁻¹ ≈ 7.
+  1. $[A]_0 = 2.40\times10^{-2}$ M and $[A]_t = 1.60\times10^{-2}$ M, so $\frac{[A]_0}{[A]_t} = \frac{3}{2}$.
+  2. $\log\frac{3}{2} = \log3 - \log2 = 0.477 - 0.301 = 0.176$ (with $\log2 = 1 - \log5 = 0.301$).
+  3. t = 1 h = 60 min.
+  4. $k = \frac{2.303\times0.176}{60} = \frac{0.4053}{60} = 6.76\times10^{-3}$ min⁻¹.
+  5. Nearest integer: 7.
+  Check: the half-life would be $\frac{0.693}{6.76\times10^{-3}} \approx 103$ min; after 60 min less than half has reacted (2.40 → 1.60) ✓.
+  Result: k = (2.303 × 0.176)/60 min⁻¹ ≈ 6.76 × 10⁻³ min⁻¹ ≈ 7 × 10⁻³.
+  Common mistake: Using t = 1 (hour) when the answer is required in min⁻¹.
   Answer: 7
 C B 3: |-
-  Concept: Electronic configuration of V: 1s²2s²2p⁶3s²3p⁶3d³4s².
+  Concept: Write the full electronic configuration using the Aufbau order and count electrons in all p subshells.
   Solution:
-  1. p electrons $= 6 + 6 = 12$.
+  1. V (Z = 23): 1s² 2s² 2p⁶ 3s² 3p⁶ 3d³ 4s².
+  2. p-orbital electrons: 2p⁶ + 3p⁶ = 12.
+  3. The 3d³ and 4s² electrons are not in p orbitals.
+  Check: 2 + 2 + 6 + 2 + 6 + 3 + 2 = 23 ✓.
+  Common trap: counting only the valence shell (which has no p electrons for V), or adding the d electrons.
+  Why 4s electrons are not counted: They occupy an s orbital; only the 2p and 3p subshells contain p electrons.
+  Common mistake: Counting 3d electrons as p electrons, or including a 4p subshell that is empty in vanadium.
   Answer: 12
 C B 4: |-
-  Concept: Heat per gram = |ΔcH|/M.
+  Concept: The standard molar enthalpy of combustion refers to 1 mol of substance. The heat released by a given mass is $|\Delta_cH|\times\frac{m}{M}$.
   Solution:
-  1. $\frac{248}{12} = 20.67 \approx 21$ kJ.
+  1. C(graphite) + O₂ → CO₂, $\Delta_cH = -2.48\times10^2$ kJ mol⁻¹, i.e. 248 kJ released per mole.
+  2. Moles in 1 g of graphite: $\frac{1}{12}$ mol.
+  3. Heat generated: $\frac{248}{12} = 20.67$ kJ.
+  4. Nearest integer: 21 kJ.
+  Note: the negative sign means heat is released; the question asks for the amount of heat generated, so the positive magnitude is reported.
+  Result: 248 × 1/12 = 20.7 kJ ≈ 21 kJ.
+  Common mistake: Reporting the molar value (248 kJ) instead of the heat for 1 g.
   Answer: 21
 C B 5: |-
-  Concept: $K_p = K_c(RT)^{\Delta n}$ with $\Delta n = 1$.
+  Concept: $K_p = K_c(RT)^{\Delta n_g}$, where $\Delta n_g$ = moles of gaseous products − moles of gaseous reactants. With R in L bar K⁻¹ mol⁻¹, $K_p$ is in bar units and $K_c$ in mol L⁻¹ units.
   Solution:
-  1. $K_c = \frac{47.9}{0.083\times288} = 2.0$.
+  1. N₂O₄(g) ⇌ 2NO₂(g): $\Delta n_g = 2 - 1 = 1$.
+  2. $K_c = \frac{K_p}{RT} = \frac{47.9}{0.083\times288}$.
+  3. $RT = 0.083\times288 = 23.9$.
+  4. $K_c = \frac{47.9}{23.9} \approx 2.0$.
+  5. Nearest integer: 2.
+  Common trap: multiplying by RT instead of dividing (would give ~1145).
+  Result: K_c = 47.9/(0.083 × 288) = 47.9/23.9 ≈ 2.
+  Common mistake: Multiplying by RT instead of dividing (for Δn_g = +1, K_p = K_c RT), which gives about 1145.
   Answer: 2
 C B 6: |-
-  Concept: $\rho = \frac{ZM}{N_Aa^3}$ with Z = 4 (ccp).
+  Concept: Density of a cubic crystal: $\rho = \frac{Z\,M}{N_A\,a^3}$, so $M = \frac{\rho\,N_A\,a^3}{Z}$. A ccp (fcc) lattice has Z = 4.
   Solution:
-  1. The official solution uses $\rho = 7.62$ g cm⁻³ (the printed 7.26 is a typo).
-  2. $M = \frac{7.62\times(0.4518\times10^{-7})^3\times6.022\times10^{23}}{4} = 105.8 \approx 106$ g mol⁻¹.
-  3. (With 7.26, the result would be about 101.)
+  1. $a = 0.4518$ nm $= 4.518\times10^{-8}$ cm, so $a^3 = 92.22\times10^{-24}$ cm³.
+  2. The official solution uses $\rho = 7.62$ g cm⁻³ (the printed 7.26 is a typo).
+  3. $M = \frac{7.62\times6.022\times10^{23}\times92.22\times10^{-24}}{4} = \frac{7.62\times55.53}{4} = \frac{423.2}{4} = 105.8$ g mol⁻¹.
+  4. Nearest integer: 106.
+  Note: with the printed density 7.26 g cm⁻³, the result would be $\frac{7.26\times55.53}{4} \approx 101$; the key value 106 corresponds to 7.62.
+  Result: M = (7.62 × 6.022 × 10²³ × 92.22 × 10⁻²⁴)/4 ≈ 105.8 ≈ 106 g/mol.
+  Note: The stored answer follows the official key, which uses the corrected density 7.62 g cm⁻³.
   Answer: 106
 C B 7: |-
-  Concept: Enumerate the C₅H₁₀ alkenes.
+  Concept: Pentene is C₅H₁₀. Count every open-chain alkene skeleton and position of the double bond, then add cis/trans pairs where each alkene carbon carries two different groups.
   Solution:
-  1. Pent-1-ene, cis- and trans-pent-2-ene, 2-methylbut-1-ene, 2-methylbut-2-ene and 3-methylbut-1-ene.
-  2. Total $= 6$.
+  1. Straight chain (C–C–C–C–C):
+     - Pent-1-ene: CH₂=CH–CH₂CH₂CH₃ (no geometrical isomers).
+     - Pent-2-ene: CH₃CH=CHCH₂CH₃ → cis and trans (2 isomers).
+  2. Branched chain (2-methylbutane skeleton):
+     - 2-Methylbut-1-ene: CH₂=C(CH₃)CH₂CH₃.
+     - 2-Methylbut-2-ene: (CH₃)₂C=CHCH₃ (no cis/trans: C2 has two CH₃).
+     - 3-Methylbut-1-ene: CH₂=CH–CH(CH₃)₂.
+  3. Neopentane skeleton: the central C already has 4 C atoms, so no C=C possible.
+  4. Total = 1 + 2 + 3 = 6.
+  Full list: pent-1-ene, cis-pent-2-ene, trans-pent-2-ene, 2-methylbut-1-ene, 3-methylbut-1-ene and 2-methylbut-2-ene: 6 in total.
+  Common mistake: Counting pent-2-ene once (ignoring cis/trans), which gives 5.
   Answer: 6
 C B 8: |-
-  Concept: Nernst equation, $E = E^\circ - \frac{0.059}{n}\log Q$.
+  Concept: Nernst equation at 298 K: $E_{cell} = E^\circ_{cell} - \frac{0.059}{n}\log Q$, where Q uses the concentrations of the dissolved species (solids are omitted).
   Solution:
-  1. $Q = \frac{0.25}{(10^{-3})^2} = 2.5\times10^5$, $\log Q = 5.398$.
-  2. $E = 2.97 - 0.0295\times5.398 = 2.81$ V ≈ 3.
+  1. Cu + 2Ag⁺ → Cu²⁺ + 2Ag, so n = 2.
+  2. $Q = \frac{[Cu^{2+}]}{[Ag^+]^2} = \frac{0.250}{(1\times10^{-3})^2} = 2.5\times10^5$.
+  3. $\log Q = \log2.5 + 5 = 0.3979 + 5 = 5.398$.
+  4. $E_{cell} = 2.97 - \frac{0.059}{2}\times5.398 = 2.97 - 0.159 = 2.81$ V.
+  5. Nearest integer: 3.
+  Note: the given $E^\circ$ (2.97 V) is simply used as provided; the calculation shows the cell potential drops by ≈ 0.16 V because the Ag⁺ concentration is small.
   Answer: 3
 C B 9: |-
-  Concept: Percentage yield.
+  Concept: Percentage yield $= \frac{\text{actual yield}}{\text{theoretical yield}}\times100$. The theoretical yield comes from the 1:1 stoichiometry C₆H₆ → C₆H₅CH₃.
   Solution:
-  1. $\frac{10}{78} = 0.128$ mol benzene, so theoretical toluene $= 0.128\times92 = 11.8$ g.
-  2. Yield $= \frac{9.2}{11.8}\times100 = 78\%$.
+  1. Molar masses: benzene C₆H₆ = 78 g mol⁻¹, toluene C₇H₈ = 92 g mol⁻¹.
+  2. Moles of benzene: $\frac{10}{78} = 0.1282$ mol.
+  3. Theoretical toluene: $0.1282\times92 = 11.79$ g.
+  4. Percentage yield: $\frac{9.2}{11.79}\times100 = 78.0\%$.
+  5. Nearest integer: 78.
+  Shortcut: yield $= \frac{9.2/92}{10/78}\times100 = \frac{0.1}{0.1282}\times100 = 78\%$.
+  Result: Theoretical toluene = 0.1282 × 92 = 11.8 g, so the percentage yield = 9.2/11.8 × 100 ≈ 78%.
+  Common mistake: Dividing the masses directly (9.2/10 = 92%), ignoring the change in molar mass.
   Answer: 78
 C B 10: |-
-  Concept: Molarity = (g/L) ÷ M.
+  Concept: Molarity (mol L⁻¹) = concentration in g L⁻¹ ÷ molar mass.
   Solution:
-  1. $\frac{0.72}{180} = 4\times10^{-3}$ M.
+  1. Molar mass of glucose, C₆H₁₂O₆: $6(12) + 12(1) + 6(16) = 72 + 12 + 96 = 180$ g mol⁻¹.
+  2. Molarity $= \frac{0.72}{180} = 0.004$ M $= 4\times10^{-3}$ M.
+  3. Nearest integer in units of $10^{-3}$ M: 4.
+  Context: 0.72 g L⁻¹ (72 mg/dL) is in the normal fasting blood-sugar range, i.e. about 4 mM.
+  Context: 0.72 g/L (72 mg/dL) is close to normal fasting blood glucose, about 4 mM.
+  Common mistake: Using the empirical formula mass CH₂O (30), which gives 24 × 10⁻³ M.
   Answer: 4

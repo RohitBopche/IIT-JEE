@@ -1,174 +1,380 @@
 P A 1: |-
-  Concept: Balance of forces: $neE = mg$.
+  Concept: In Millikan's experiment, a charged drop is held stationary when the upward electric force balances its weight: qE = mg. The charge is an integer multiple of the electron charge, q = ne.
   Solution:
-  1. $m = \rho\cdot\frac{4}{3}\pi r^3 = 3000\times\frac{4}{3}\pi(2\times10^{-3})^3 = 1.005\times10^{-4}$ kg.
-  2. $n = \frac{mg}{eE} = \frac{1.005\times10^{-4}\times9.81}{1.6\times10^{-19}\times3.55\times10^5} = 1.73\times10^{10}$.
+  1. Radius r = 2 mm = 2 × 10⁻³ m. Density ρ = 3 g/cm³ = 3000 kg/m³.
+  2. Volume: $\frac{4}{3}\pi r^3 = \frac{4}{3}\pi(8\times10^{-9}) = 3.351\times10^{-8}$ m³.
+  3. Mass: m = 3000 × 3.351 × 10⁻⁸ = 1.005 × 10⁻⁴ kg.
+  4. Weight: mg = 1.005 × 10⁻⁴ × 9.81 = 9.86 × 10⁻⁴ N.
+  5. $n = \frac{mg}{eE} = \frac{9.86\times10^{-4}}{1.6\times10^{-19}\times3.55\times10^5} = \frac{9.86\times10^{-4}}{5.68\times10^{-14}} = 1.73\times10^{10}$.
+  Note: real Millikan drops are about a micrometre across and carry only a few electrons. This 2 mm "drop" is enormous by comparison, which is why it needs about 10¹⁰ excess electrons to float. (Buoyancy from the air is neglected.)
+  Why others are wrong:
+  - (A) $48.8\times10^{11}$ and (D) $1.73\times10^{12}$ are powers-of-ten errors (e.g. radius in cm instead of mm).
+  - (C) $17.3\times10^{10}$ is ten times too large.
   Answer: (B)
 P A 2: |-
-  Concept: Atmospheric layers as tabulated in NCERT (communication systems chapter).
+  Concept: The Earth's atmosphere is divided into layers by height. The NCERT table (communication systems chapter) lists the layers and the ionospheric sub-layers relevant to radio propagation, with their approximate heights.
   Solution:
-  1. 10 km: troposphere (iv).
-  2. 70 km: D-layer, part of the stratosphere in the NCERT table (iii).
-  3. 180 km: F₁-layer, part of the mesosphere (ii).
-  4. 270 km: F₂-layer, thermosphere (i).
+  1. (a) 10 km: the troposphere extends up to about 10–12 km. It contains most weather phenomena → (iv).
+  2. (b) 70 km: in the NCERT table, the D-layer of the ionosphere (about 65–75 km) is listed under the stratosphere → (iii).
+  3. (c) 180 km: the F₁-layer (about 170–190 km) is listed under the mesosphere → (ii).
+  4. (d) 270 km: the F₂-layer (about 250–400 km) lies in the thermosphere → (i).
+  5. Matching: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i).
+  Note: standard meteorology places the stratosphere at about 12–50 km, the mesosphere at about 50–85 km and the thermosphere above that. The NCERT table (and this key) uses its own grouping of ionospheric layers, so the answer follows that table.
+  Radio relevance: the D and E layers absorb or reflect medium-frequency waves, and the F₂ layer reflects high-frequency (short-wave) signals during the day, allowing long-distance sky-wave communication.
+  Why others are wrong: (B), (C) and (D) mis-assign the lowest layer, which must be the troposphere for 10 km.
   Answer: (A)
 P A 3: |-
-  Concept: Bohr energy is proportional to the orbiting particle's mass: $E \propto m$.
+  Concept: In Bohr's model, the energy levels of a hydrogen-like system are $E_n = -\frac{mk^2Z^2e^4}{2n^2\hbar^2}$. They are proportional to the mass of the orbiting particle, while the radius is inversely proportional to it.
   Solution:
-  1. Ionisation potential $= 13.6\times207 = 2815.2$ eV (ignoring the reduced-mass correction).
+  1. For ordinary hydrogen (electron mass mₑ), the ionisation energy is 13.6 eV.
+  2. The muon has the same charge as the electron but 207 times the mass.
+  3. The ionisation energy scales with the mass: 13.6 × 207 = 2815.2 eV ≈ 2.8 keV.
+  4. So the ionisation potential is 2815.2 V (2815.2 eV).
+  5. The orbit radius shrinks by the same factor: $r_1 = \frac{0.529}{207}$ Å ≈ 2.56 × 10⁻¹³ m, about 200 times smaller than ordinary hydrogen.
+  Refinement: strictly, the reduced mass should be used: $\mu = \frac{m_\mu m_p}{m_\mu + m_p}$. With $m_p \approx 1836m_e$, this gives about 186mₑ, so the ionisation energy is about 2.53 keV. The question ignores this correction (assuming an infinitely heavy nucleus).
+  Why others are wrong:
+  - (A) 13.6 eV is ordinary hydrogen.
+  - (C) 331.2 eV and (D) 27.2 eV do not scale correctly with the mass (e.g. using a square root or a factor of 2).
   Answer: (B)
 P A 4: |-
-  Concept: $|E| = c|B|$, and $\vec E\times\vec B$ is along the direction of propagation.
+  Concept: For a plane EM wave in vacuum: E = cB in magnitude; $\vec E$ and $\vec B$ are perpendicular to each other and to the direction of propagation; and $\vec E\times\vec B$ points along the direction of propagation.
   Solution:
-  1. $E = 3\times10^8\times2\times10^{-8} = 6$ V/m.
-  2. Propagation is along $\hat i$ and $\hat j\times\hat k = \hat i$, so $\vec E = 6\hat j$ V/m.
+  1. Magnitude: $E = cB = 3\times10^8\times2.0\times10^{-8} = 6.0$ V/m.
+  2. Direction: the wave travels along +x ($\hat i$) and $\vec B$ is along +z ($\hat k$). $\vec E$ must be along ±y.
+  3. Test $+\hat j$: $\hat j\times\hat k = \hat i$ ✓ (the propagation direction).
+  4. So $\vec E = 6.0\hat j$ V/m.
+  5. The frequency (100 MHz) does not affect this instantaneous relation. It gives λ = 3 m (FM radio band).
+  Cyclic rule: $\hat i\times\hat j = \hat k$, $\hat j\times\hat k = \hat i$, $\hat k\times\hat i = \hat j$.
+  Why others are wrong:
+  - (A) 0.6 V/m has the wrong magnitude (a factor of 10 error).
+  - (B) and (D) put $\vec E$ along $\hat k$, parallel to $\vec B$. That is impossible, since E and B must be perpendicular.
   Answer: (C)
 P A 5: |-
-  Concept: Conservation of angular momentum.
+  Concept: When particles are attached to a rotating ring with no external torque about the axis, angular momentum is conserved: I₁ω₁ = I₂ω₂. Adding mass away from the axis increases the moment of inertia, so the angular speed falls.
   Solution:
-  1. $Mr^2\omega = (Mr^2 + 2mr^2)\omega'$.
-  2. $\omega' = \frac{M\omega}{M + 2m}$.
+  1. Initial moment of inertia of the ring about its axis: I₁ = Mr².
+  2. Each particle of mass m is attached at distance r from the axis (on the ring), adding mr² each. Final: I₂ = Mr² + 2mr² = (M + 2m)r².
+  3. Conservation: Mr²ω = (M + 2m)r²ω′.
+  4. $\omega' = \frac{M}{M + 2m}\omega$.
+  Energy check: kinetic energy is not conserved. The initial KE is ½Mr²ω², and the final KE is $\frac{1}{2}(M + 2m)r^2\omega'^2 = \frac{1}{2}\frac{M^2r^2\omega^2}{M + 2m}$, which is smaller. Energy is lost as the particles are brought up to speed (like an inelastic collision).
+  Why others are wrong:
+  - (A) $\frac{M}{M + m}$ counts only one particle.
+  - (B) $\frac{M + 2m}{M}$ would increase ω, which is impossible when mass is added at the rim.
+  - (D) $\frac{M - 2m}{M + 2m}$ has no physical basis.
   Answer: (C)
 P A 6: |-
-  Concept: Inside a long solenoid, $B = \mu_0nI \propto I$.
+  Concept: The magnetic field inside a long solenoid is B = μ₀nI. For identical solenoids (same n), the field is proportional to the current. When identical solenoids are connected in parallel, the current divides equally among them.
   Solution:
-  1. The current i through A splits equally among the three identical parallel solenoids B, C and D: $\frac{i}{3}$ each.
-  2. $B_C = \frac{3}{3} = 1$ T.
+  1. From the figure: solenoid A carries the full current i. It then splits into three identical solenoids B, C and D connected in parallel.
+  2. Since B, C and D have identical resistance, the current divides equally: each carries $\frac{i}{3}$.
+  3. $B_A = \mu_0ni = 3$ T.
+  4. $B_C = \mu_0n\frac{i}{3} = \frac{3}{3} = 1$ T.
+  Why others are wrong:
+  - (A) 12 T and (C) 9 T would require C to carry more current than A.
+  - (B) 6 T would require twice the current.
+  Note: the question states that each field is confined within its own solenoid, so there is no interference between neighbouring solenoids. This makes the field in each depend only on its own current.
   Answer: (D)
 P A 7: |-
-  Concept: $g = \frac{4\pi^2l}{T^2}$, so $\frac{\Delta g}{g} = \frac{\Delta l}{l} + 2\frac{\Delta T}{T}$.
+  Concept: From $T = 2\pi\sqrt{\frac{l}{g}}$, $g = \frac{4\pi^2l}{T^2}$. The maximum relative error is $\frac{\Delta g}{g} = \frac{\Delta l}{l} + 2\frac{\Delta T}{T}$ (the power 2 on T doubles its relative error).
   Solution:
-  1. $\frac{\Delta l}{l} = \frac{0.1}{10} = 1\%$.
-  2. $\frac{\Delta T}{T} = \frac{1}{100} = 1\%$ (1 s in 100 s for 200 oscillations), so $2\frac{\Delta T}{T} = 2\%$.
-  3. Total $= 3\%$.
+  1. Length: l = 10 cm with Δl = 1 mm = 0.1 cm, so $\frac{\Delta l}{l} = \frac{0.1}{10} = 0.01 = 1\%$.
+  2. Time: 200 oscillations take 100 s, measured with a clock of resolution 1 s. The relative error in the total time is $\frac{1}{100} = 1\%$. Since T = $\frac{t}{200}$, the relative error in T is also 1% (dividing by an exact number does not change the relative error).
+  3. $2\frac{\Delta T}{T} = 2\%$.
+  4. $\frac{\Delta g}{g} = 1\% + 2\% = 3\%$.
+  5. x = 3.
+  Lesson: timing many oscillations reduces the relative error in T (a 1 s error over 100 s is 1%, whereas over one 0.5 s period it would be 200%). Here the length error and the doubled time error are both significant; to improve the experiment, use a longer pendulum and time more oscillations.
+  Why others are wrong:
+  - (A) 2% forgets to double the time error or omits the length error.
+  - (C) and (D) overcount the errors.
   Answer: (B)
 P A 8: |-
-  Concept: Constant power: $P = Fv = mv\frac{dv}{dt}$.
+  Concept: A machine delivering constant power P satisfies P = Fv. With F = ma = $m\frac{dv}{dt}$, this gives a differential equation for v(t).
   Solution:
-  1. $v\,dv \propto dt \Rightarrow v \propto t^{1/2}$.
-  2. $x = \int v\,dt \propto t^{3/2}$.
+  1. $P = mv\frac{dv}{dt}$, so $v\,dv = \frac{P}{m}dt$.
+  2. Integrate from rest: $\frac{v^2}{2} = \frac{P}{m}t$, so $v = \sqrt{\frac{2Pt}{m}} \propto t^{1/2}$.
+  3. Distance: $x = \int_0^tv\,dt = \sqrt{\frac{2P}{m}}\cdot\frac{2}{3}t^{3/2} \propto t^{3/2}$.
+  Energy check: work done = Pt = kinetic energy = $\frac{1}{2}mv^2$, so $v \propto \sqrt t$ ✓.
+  Further consequences:
+  - Force: $F = \frac{P}{v} \propto t^{-1/2}$ (large at first, then decreasing).
+  - Acceleration: $a \propto t^{-1/2}$.
+  Comparison with constant force: then v ∝ t and x ∝ t². With constant power, the growth is slower (t^{3/2}), because the force decreases as the speed rises.
+  Why others are wrong:
+  - (A) $t^{2/3}$ inverts the exponent.
+  - (C) t would mean constant velocity.
+  - (D) $t^{1/2}$ is the dependence of the velocity, not the distance.
   Answer: (B)
 P A 9: |-
-  Concept: Equipartition of energy.
+  Concept: The law of equipartition of energy: in thermal equilibrium at temperature T, each degree of freedom that appears quadratically in the energy (translational, rotational, or each of the kinetic and potential parts of a vibration) has an average energy of $\frac{1}{2}k_BT$ per molecule.
   Solution:
-  1. Each degree of freedom carries $\frac{1}{2}k_BT$ per molecule on average.
+  1. The average energy along one degree of freedom is $\frac{1}{2}k_BT$ per molecule.
+  2. Per mole, this is $\frac{1}{2}RT$.
+  Consequences:
+  - Monatomic gas (3 translational degrees of freedom): average energy per molecule $\frac{3}{2}k_BT$, and $C_V = \frac{3}{2}R$.
+  - Diatomic gas (3 translational + 2 rotational): $\frac{5}{2}k_BT$, and $C_V = \frac{5}{2}R$ (at moderate temperatures, before vibrations become active).
+  - A vibrational mode contributes $k_BT$ (½k_BT each for its kinetic and potential energy).
+  Example: at room temperature (300 K), $\frac{1}{2}k_BT = \frac{1}{2}\times1.38\times10^{-23}\times300 = 2.07\times10^{-21}$ J ≈ 0.013 eV per degree of freedom.
+  Why others are wrong:
+  - (B) $\frac{2}{3}k_BT$ is not a standard result (it inverts $\frac{3}{2}$).
+  - (C) $\frac{3}{2}k_BT$ is the total translational energy (three degrees of freedom).
+  - (D) $k_BT$ is the energy of one vibrational mode (two quadratic terms).
   Answer: (A)
 P A 10: |-
-  Concept: Decay constants of independent parallel decays add: $\lambda = \lambda_1 + \lambda_2$.
+  Concept: When a nucleus can decay by two independent routes, the probabilities per unit time add, so the decay constants add: λ = λ₁ + λ₂. The number remaining is then $N = N_0e^{-(\lambda_1 + \lambda_2)t}$.
   Solution:
-  1. $\frac{1}{T} = \frac{1}{T_1} + \frac{1}{T_2}$.
-  2. $T_{1/2} = \frac{T_1T_2}{T_1 + T_2}$.
+  1. $\lambda = \frac{\ln2}{T}$ for each process, so $\frac{\ln2}{T} = \frac{\ln2}{T_1} + \frac{\ln2}{T_2}$.
+  2. $\frac{1}{T} = \frac{1}{T_1} + \frac{1}{T_2} = \frac{T_1 + T_2}{T_1T_2}$.
+  3. $T_{1/2} = \frac{T_1T_2}{T_1 + T_2}$.
+  Interpretation: the effective half-life is shorter than either individual half-life, since the nuclei have two ways to decay. The formula resembles resistors in parallel.
+  Examples:
+  - Equal half-lives T₁ = T₂ = T₀: effective half-life $\frac{T_0}{2}$.
+  - If T₁ ≪ T₂, the effective half-life ≈ T₁ (the faster process dominates).
+  Real example: ⁶⁴Cu decays by β⁻ (to ⁶⁴Zn) and by β⁺/electron capture (to ⁶⁴Ni), with a combined half-life of 12.7 h.
+  Why others are wrong:
+  - (A) "None of the above" is wrong, since (C) is correct.
+  - (B) adding the half-lives would make decay slower with two channels, which is backwards.
+  - (D) has no physical basis (and becomes infinite if T₁ = T₂).
   Answer: (C)
 P A 11: |-
-  Concept: Adiabatic work $W = \frac{P_fV_f - P_iV_i}{1 - \gamma}$.
+  Concept: For an adiabatic process (Q = 0), the work done by the gas is $W = \frac{P_iV_i - P_fV_f}{\gamma - 1} = \frac{P_fV_f - P_iV_i}{1 - \gamma}$.
   Solution:
-  1. From the graph, C = (4 m³, 100 N/m²) and D = (3 m³, 200 N/m²).
-  2. $W_{CD} = \frac{200\times3 - 100\times4}{1 - 1.4} = \frac{200}{-0.4} = -500$ J.
+  1. From the P–V diagram: C is at (V = 4 m³, P = 100 N/m²) and D is at (V = 3 m³, P = 200 N/m²).
+  2. P_iV_i = 100 × 4 = 400 J and P_fV_f = 200 × 3 = 600 J.
+  3. $W_{CD} = \frac{600 - 400}{1 - 1.4} = \frac{200}{-0.4} = -500$ J.
+  4. The negative sign means work is done on the gas (it is compressed from 4 m³ to 3 m³).
+  Check with the first law: Q = 0, so ΔU = −W = +500 J. The internal energy increases (the gas heats up), consistent with ΔU = $\frac{P_fV_f - P_iV_i}{\gamma - 1} = \frac{200}{0.4} = 500$ J for an ideal gas.
+  Sign convention: here W is the work done by the gas (as in NCERT). In compression, the gas does negative work.
+  Why others are wrong:
+  - (B) −400 J and (D) 200 J use only one of the PV products, or omit the γ − 1 factor.
+  - (C) +400 J has the wrong sign for a compression.
   Answer: (A)
 P A 12: |-
-  Concept: Fringe width $\beta = \frac{\lambda D}{d}$.
+  Concept: In Young's double-slit experiment, bright fringes are equally spaced with fringe width $\beta = \frac{\lambda D}{d}$. The distance between the nth and mth bright fringes is |m − n|β.
   Solution:
-  1. $\beta = \frac{5890\times10^{-10}\times0.5}{0.5\times10^{-3}} = 589\times10^{-6}$ m.
-  2. First to third bright fringe $= 2\beta = 1178\times10^{-6}$ m.
+  1. λ = 5890 Å = 5890 × 10⁻¹⁰ m, D = 0.5 m, d = 0.5 mm = 0.5 × 10⁻³ m.
+  2. $\beta = \frac{5890\times10^{-10}\times0.5}{0.5\times10^{-3}} = 5890\times10^{-7}$ m = 589 × 10⁻⁶ m = 0.589 mm.
+  3. From the first to the third bright fringe there are 3 − 1 = 2 fringe widths.
+  4. Distance = 2β = 1178 × 10⁻⁶ m = 1.178 mm.
+  Why D = d gives a neat result: here $\frac{D}{d} = 1000$, so β = 1000λ.
+  Why others are wrong:
+  - (A) 1178 × 10⁻⁹ m and (C) 1178 × 10⁻¹² m are powers-of-ten errors (e.g. treating Å as nm).
+  - (D) 5890 × 10⁻⁷ m is one fringe width (β), not two.
+  Note: 5890 Å is the wavelength of the sodium D line (yellow light), commonly used in interference experiments.
   Answer: (B)
 P A 13: |-
-  Concept: $\lambda = \frac{h}{mv}$.
+  Concept: The de Broglie wavelength is $\lambda = \frac{h}{p} = \frac{h}{mv}$. For two particles, the ratio of wavelengths is the inverse ratio of their momenta.
   Solution:
-  1. $\frac{\lambda_p}{\lambda_e} = \frac{m_ev_e}{m_p(4v_e)} = 2 \Rightarrow m_p = \frac{m_e}{8}$.
+  1. $\frac{\lambda_p}{\lambda_e} = \frac{m_ev_e}{m_pv_p}$.
+  2. Given: v_p = 4v_e and $\frac{\lambda_p}{\lambda_e} = 2$.
+  3. $2 = \frac{m_ev_e}{m_p\cdot4v_e} = \frac{m_e}{4m_p}$.
+  4. $m_p = \frac{m_e}{8}$.
+  5. So the particle's mass is $\frac{1}{8}$ of the electron's mass.
+  Check: momentum of the particle $= \frac{m_e}{8}\times4v_e = \frac{m_ev_e}{2}$, which is half the electron's momentum. So its wavelength is twice as long ✓.
+  Note: this is a hypothetical particle (no known particle has a mass of $\frac{m_e}{8}$). The question simply tests the relation λ = h/mv.
+  Why others are wrong:
+  - (A) $\frac{1}{16}$ would give a wavelength ratio of 4.
+  - (B) 8 and (C) 16 times the mass would give shorter wavelengths than the electron's.
   Answer: (D)
 P A 14: |-
-  Concept: With constant a, v is linear in t and x is quadratic in t.
+  Concept: For motion with constant acceleration a: v = u + at (linear in t) and x = x₀ + ut + ½at² (quadratic in t). So a–t is a horizontal line, v–t is a straight line with slope a, and x–t is a parabola.
   Solution:
-  1. The graphs should show a(t) constant, v(t) a straight line, and x(t) a parabola.
-  2. Option (B) shows exactly this, with increasing v.
+  1. a(t): constant, a horizontal line.
+  2. v(t): linear in t. With a > 0, v increases steadily (straight line with positive slope).
+  3. x(t): a parabola. With a > 0, it curves upward (concave up), since the slope of x–t (the velocity) increases.
+  4. Option (B) shows exactly this combination: x(t) concave-up parabola, v(t) increasing straight line, a(t) constant.
+  Consistency checks between graphs:
+  - The slope of x–t at any time equals v at that time.
+  - The slope of v–t equals a.
+  - If v increases linearly, x–t must steepen steadily, i.e. be a parabola.
+  Why others are wrong:
+  - (A) x(t) linear means constant velocity, contradicting the curved v(t).
+  - (C) x(t) linear with v(t) linear increasing is inconsistent (a linear x has a constant slope).
+  - (D) v(t) decreasing (a < 0) together with x(t) concave up (a > 0) is inconsistent.
   Answer: (B)
 P A 15: |-
-  Concept: $\rho = \frac{V\pi d^2}{4Il}$, so $\frac{\Delta\rho}{\rho} = \frac{\Delta V}{V} + \frac{\Delta I}{I} + 2\frac{\Delta d}{d} + \frac{\Delta l}{l}$.
+  Concept: From R = $\frac{V}{I}$ and R = $\frac{\rho l}{A}$ with $A = \frac{\pi d^2}{4}$: $\rho = \frac{V\pi d^2}{4Il}$. The maximum relative error is $\frac{\Delta\rho}{\rho} = \frac{\Delta V}{V} + \frac{\Delta I}{I} + 2\frac{\Delta d}{d} + \frac{\Delta l}{l}$.
   Solution:
-  1. $\frac{0.1}{5.0} + \frac{0.01}{2.00} + 2\times\frac{0.01}{5.00} + \frac{0.1}{10.0} = 0.02 + 0.005 + 0.004 + 0.01 = 0.039$.
-  2. Maximum error $= 3.9\%$.
+  1. The error in each measurement is taken as one unit of its last significant digit:
+     - V = 5.0 V: ΔV = 0.1 V, $\frac{0.1}{5.0} = 0.020$.
+     - I = 2.00 A: ΔI = 0.01 A, $\frac{0.01}{2.00} = 0.005$.
+     - d = 5.00 mm: Δd = 0.01 mm, $\frac{0.01}{5.00} = 0.002$; doubled (d is squared): 0.004.
+     - l = 10.0 cm: Δl = 0.1 cm, $\frac{0.1}{10.0} = 0.010$.
+  2. Sum: 0.020 + 0.005 + 0.004 + 0.010 = 0.039.
+  3. Maximum permissible percentage error: 3.9%.
+  Lesson: the number of significant figures tells you the precision. "5.0 V" means ±0.1 V, whereas "5.00 V" would mean ±0.01 V. The largest contribution here comes from the voltage (2%), so a more precise voltmeter would improve the result most.
+  Why others are wrong:
+  - (B) 8.4 and (C) 7.5 overestimate the errors (e.g. using ±0.5 of the last digit twice, or ±1 mm for the diameter).
+  - (D) 3.0 omits some contributions.
   Answer: (A)
 P A 16: |-
-  Concept: $\omega_0 = \frac{1}{\sqrt{LC}}$, $\Delta\omega = \frac{R}{L}$, $Q = \frac{\omega_0L}{R}$.
+  Concept: In a series LCR circuit: resonant frequency $\omega_0 = \frac{1}{\sqrt{LC}}$ (independent of R); bandwidth $\Delta\omega = \frac{R}{L}$; quality factor $Q = \frac{\omega_0}{\Delta\omega} = \frac{\omega_0L}{R} = \frac{1}{R}\sqrt{\frac{L}{C}}$.
   Solution:
-  1. Increasing R leaves $\omega_0$ unchanged, increases the bandwidth, and decreases Q.
+  1. Resonant frequency: depends only on L and C, so it does not change when R changes.
+  2. Bandwidth: Δω = $\frac{R}{L}$ increases as R increases. The resonance curve becomes broader and flatter.
+  3. Quality factor: Q = $\frac{\omega_0L}{R}$ decreases as R increases (the resonance is less sharp).
+  4. Peak current at resonance: $I_{max} = \frac{V}{R}$ also decreases.
+  5. So the correct statement is that the bandwidth increases.
+  Application: radio tuning circuits need a high Q (low R) for sharp selectivity, to pick one station without interference from neighbouring frequencies. A larger R broadens the response.
+  Why others are wrong:
+  - (B) The resonant frequency does not depend on R.
+  - (C) The quality factor decreases, not increases.
+  - (D) Q does not stay constant; it changes as 1/R.
   Answer: (A)
 P A 17: |-
-  Concept: $i = i_0\cos\omega t$ reaches $\frac{i_0}{\sqrt2}$ when $\omega t = \frac{\pi}{4}$.
+  Concept: In a purely resistive circuit, the current is in phase with the voltage and varies sinusoidally: $i = i_0\sin\omega t$. The rms value is $\frac{i_0}{\sqrt2}$.
   Solution:
-  1. $t = \frac{\pi/4}{2\pi\times50} = \frac{1}{400}$ s $= 2.5$ ms.
+  1. ω = 2π × 50 = 100π rad/s, and the period is T = 20 ms.
+  2. Measure time from the moment of maximum current: $i = i_0\cos\omega t$.
+  3. The current falls to the rms value when $\cos\omega t = \frac{1}{\sqrt2}$, i.e. $\omega t = \frac{\pi}{4}$.
+  4. $t = \frac{\pi/4}{100\pi} = \frac{1}{400}$ s = 2.5 ms.
+  5. Equivalently, t = $\frac{T}{8} = \frac{20}{8}$ = 2.5 ms.
+  Phase reasoning: the maximum is at phase $\frac{\pi}{2}$ (for sin), and the rms value $\frac{i_0}{\sqrt2}$ occurs at phase $\frac{3\pi}{4}$ (after the peak). The phase difference is $\frac{\pi}{4}$, which is $\frac{1}{8}$ of a full cycle.
+  Note: the 220 V rating and the resistor value do not matter. The answer depends only on the frequency.
+  Why others are wrong: (B) 25 ms is longer than a whole period (20 ms); (C) 2.5 s and (D) 0.25 ms are powers-of-ten errors.
   Answer: (A)
 P A 18: |-
-  Concept: Distant objects blurred means myopia; lines appearing distorted and non-uniform means astigmatism.
+  Concept: Common defects of vision:
+  - Myopia (near-sightedness): distant objects appear blurred because the image forms in front of the retina. Corrected with a concave lens.
+  - Hypermetropia (far-sightedness): nearby objects appear blurred. Corrected with a convex lens.
+  - Presbyopia: loss of accommodation with age, making near vision difficult.
+  - Astigmatism: the cornea has different curvatures in different directions, so lines in some directions are focused while others are not. A uniform grid appears distorted, with some lines sharper than others. Corrected with a cylindrical lens.
   Solution:
-  1. The patient has both: myopia with astigmatism.
+  1. She cannot see a distant object (the window mesh) clearly: this indicates myopia.
+  2. The mesh (horizontal and vertical lines) appears non-uniform and distorted: this indicates astigmatism, since lines in different orientations are focused differently.
+  3. So the diagnosis is myopia with astigmatism.
+  4. Correction: a spectacle lens combining a concave spherical component (for myopia) with a cylindrical component (for astigmatism).
+  Why others are wrong:
+  - (A) Astigmatism alone does not explain the difficulty with distant objects specifically.
+  - (C) Presbyopia affects near vision, not distant vision.
+  - (D) Myopia and hypermetropia together do not explain the distortion of the grid lines.
   Answer: (B)
 P A 19: |-
-  Concept: Force on each element $Id\vec l\times\vec B$ pulls the loop outward, and the loop maximises its enclosed flux.
+  Concept: The force on a current element is $d\vec F = I\,d\vec l\times\vec B$. A current loop in a magnetic field experiences forces that tend to maximise the magnetic flux through it (it behaves like a magnetic dipole seeking its lowest-energy state).
   Solution:
-  1. The flexible loop becomes circular (maximum area).
-  2. It settles with its plane normal to the field (stable equilibrium, magnetic moment parallel to B).
+  1. Shape: for a loop with its plane perpendicular to $\vec B$, the forces on all elements lie in the plane and point either outward or inward, depending on the current direction relative to B. When the dipole moment is parallel to B (the stable case), the forces point outward, stretching the loop. A flexible loop pulled outward uniformly takes a circular shape, since a circle encloses the maximum area for a given perimeter.
+  2. Orientation: a current loop has magnetic moment $\vec m = I\vec A$ and potential energy $U = -\vec m\cdot\vec B$. The stable equilibrium is with $\vec m$ parallel to $\vec B$, i.e. the plane of the loop normal to the field.
+  3. So the loop becomes circular with its plane normal to the field.
+  Flux viewpoint: the flux linked with the loop, BA cos θ, is maximum when the area is greatest (a circle) and the plane is perpendicular to B (θ = 0). A current loop tends to maximise the flux of an external field through it when the flux from its own current is in the same direction.
+  Why others are wrong:
+  - (B) A plane parallel to the field is an unstable (or zero-flux) orientation.
+  - (C) The forces do not stretch the wire straight; they push it outward into a circle.
+  - (D) A flexible loop cannot resist these forces, so its shape changes.
   Answer: (A)
 P A 20: |-
-  Concept: Kepler's law $T^2 \propto R^3$.
+  Concept: Kepler's third law: for satellites orbiting the same planet, $T^2 \propto R^3$ (R is the orbital radius, measured from the planet's centre).
   Solution:
-  1. $T' = T(9)^{3/2} = 27T$.
+  1. $\frac{T'}{T} = \left(\frac{R'}{R}\right)^{3/2} = 9^{3/2}$.
+  2. $9^{3/2} = (\sqrt9)^3 = 3^3 = 27$.
+  3. T′ = 27T.
+  Derivation: gravity provides the centripetal force, $\frac{GMm}{R^2} = m\omega^2R = m\frac{4\pi^2}{T^2}R$. So $T^2 = \frac{4\pi^2}{GM}R^3$.
+  Related results for circular orbits:
+  - Orbital speed: $v = \sqrt{\frac{GM}{R}} \propto R^{-1/2}$. At 9R, the speed is ⅓ of the original.
+  - The satellite at 9R travels 9 times the distance at ⅓ the speed, so it takes 9 × 3 = 27 times as long ✓.
+  Why others are wrong:
+  - (A) 9T assumes T ∝ R.
+  - (C) 12T has no basis.
+  - (D) 3T assumes T ∝ √R.
   Answer: (B)
 P B 1: |-
-  Concept: $x = A\sin\omega t$.
+  Concept: In SHM starting from the mean position, $x = A\sin\omega t$ with $\omega = \frac{2\pi}{T}$.
   Solution:
-  1. $\frac{A}{2} = A\sin\frac{2\pi t}{T} \Rightarrow t = \frac{T}{12} = \frac{2}{12} = \frac{1}{6}$ s.
-  2. $a = 6$.
+  1. T = 2 s, so ω = π rad/s.
+  2. Condition: $x = \frac{A}{2}$, so $\sin\omega t = \frac{1}{2}$ and $\omega t = \frac{\pi}{6}$.
+  3. $t = \frac{\pi/6}{\pi} = \frac{1}{6}$ s.
+  4. Equivalently, t = $\frac{T}{12} = \frac{2}{12} = \frac{1}{6}$ s.
+  5. So a = 6.
+  Comparison: the particle takes $\frac{T}{12}$ to cover the first half of the amplitude (from 0 to $\frac{A}{2}$), but $\frac{T}{4} - \frac{T}{12} = \frac{T}{6}$ to cover the second half (from $\frac{A}{2}$ to A). It moves fastest near the mean position and slows down near the extreme.
+  Common error: assuming uniform motion, which gives $\frac{T}{8}$ (a quarter period for the full amplitude, half of that for half the amplitude). That would give a = 4, which is wrong.
   Answer: 6
 P B 2: |-
-  Concept: At $t = 0$, the capacitor voltage drives the initial current $i_0 = \frac{V}{R}$.
+  Concept: When a charged capacitor is connected across a resistor, it discharges exponentially: $i = i_0e^{-t/RC}$. At the instant the key is closed (t = 0), the capacitor still has its full voltage, so the initial current is $i_0 = \frac{V_0}{R}$.
   Solution:
-  1. $V = \frac{q}{C} = \frac{30}{3} = 10$ V.
-  2. $i_0 = \frac{10}{5\times10^6} = 2\ \mu$A.
+  1. Initial voltage: $V_0 = \frac{q}{C} = \frac{30\ \mu\text{C}}{3\ \mu\text{F}} = 10$ V.
+  2. From the figure, the 5 MΩ resistor carries the discharge current at t = 0: $i_0 = \frac{V_0}{R} = \frac{10}{5\times10^6} = 2\times10^{-6}$ A = 2 μA.
+  3. So x = 2.
+  Time constant: τ = RC = 5 × 10⁶ × 3 × 10⁻⁶ = 15 s. The current falls to $\frac{2}{e} \approx 0.74$ μA after 15 s.
+  Key idea: a capacitor's voltage cannot change instantly. At t = 0 it behaves like a battery of voltage $\frac{q}{C}$, and at t → ∞ it is fully discharged (current zero).
   Answer: 2
 P B 3: |-
-  Concept: Series–parallel reduction and voltage division.
+  Concept: Reduce the network to a single equivalent resistance, find the total current from Ohm's law, then find the voltage across the required resistor.
   Solution:
-  1. 50 Ω ∥ 20 Ω $= \frac{100}{7}$ Ω, in series with 10 Ω: $R_{eq} = \frac{170}{7}$ Ω.
-  2. $I = \frac{170}{170/7} = 7$ A, so $V_{10} = 70$ V.
+  1. From the figure: a 170 V source drives a 10 Ω resistor in series with a parallel combination of 50 Ω and 20 Ω.
+  2. Parallel: $\frac{50\times20}{50 + 20} = \frac{1000}{70} = \frac{100}{7}$ Ω ≈ 14.29 Ω.
+  3. Total: $R_{eq} = 10 + \frac{100}{7} = \frac{170}{7}$ Ω.
+  4. Total current: $I = \frac{170}{170/7} = 7$ A.
+  5. The 10 Ω resistor carries the full current: V = 7 × 10 = 70 V.
+  Check: the voltage across the parallel pair is 7 × $\frac{100}{7}$ = 100 V. Total: 70 + 100 = 170 V ✓. Branch currents: $\frac{100}{50} = 2$ A and $\frac{100}{20} = 5$ A, total 7 A ✓.
   Answer: 70
 P B 4: |-
-  Concept: $Y = \frac{Fl}{A\Delta l}$, so for the same F and Y, $l \propto A\Delta l$.
+  Concept: Young's modulus is $Y = \frac{F/A}{\Delta l/l} = \frac{Fl}{A\Delta l}$. For the same material (same Y) and the same force, $\frac{l}{A\Delta l}$ is the same for both wires, so $l \propto A\Delta l \propto r^2\Delta l$.
   Solution:
-  1. $\frac{a}{b} = \frac{r^2\times2}{(4r)^2\times4} = \frac{2}{64} = \frac{1}{32}$.
-  2. $x = 32$.
+  1. Wire A: radius r, extension 2 mm. Wire B: radius 4r, extension 4 mm.
+  2. $\frac{l_A}{l_B} = \frac{r_A^2\Delta l_A}{r_B^2\Delta l_B} = \frac{r^2\times2}{16r^2\times4} = \frac{2}{64} = \frac{1}{32}$.
+  3. So a : b = 1 : 32, and x = 32.
+  Physical sense: wire B is 16 times thicker in cross-section, which makes it 16 times stiffer per unit length. To extend twice as much under the same force, it must be 16 × 2 = 32 times longer.
   Answer: 32
 P B 5: |-
-  Concept: To reach the directly opposite point, the net velocity along the flow must be zero.
+  Concept: To reach the point directly opposite, the swimmer's resultant velocity (relative to the ground) must point straight across the river. So the component of the swimmer's velocity (relative to water) along the flow must exactly cancel the river's speed.
   Solution:
-  1. $10\cos120° + x = 0 \Rightarrow x = 5$ m/s.
+  1. The swimmer swims at 10 m/s relative to water, at 120° to the direction of flow.
+  2. Component along the flow: 10 cos 120° = 10 × (−½) = −5 m/s (i.e. 5 m/s upstream).
+  3. Net velocity along the flow: −5 + x = 0, so x = 5 m/s.
+  4. The speed of the flow is 5 m/s.
+  The crossing speed is 10 sin 120° = 5√3 ≈ 8.66 m/s, straight across the river.
+  Check: this is the same geometry as the classic case in which a swimmer with speed twice the river's speed must head at 120° to the flow (30° upstream of the perpendicular). Here 10 = 2 × 5 ✓.
   Answer: 5
 P B 6: |-
-  Concept: A dielectric slab of thickness t in gap d: dielectric and air capacitors in series.
+  Concept: A dielectric slab of thickness t and dielectric constant K, covering the full plate area, forms two capacitors in series: one filled with dielectric (thickness t) and one with air (thickness d − t).
   Solution:
-  1. $C_1 = \frac{10\varepsilon_0\times100}{5} = 200\varepsilon_0$ and $C_2 = \frac{\varepsilon_0\times100}{5} = 20\varepsilon_0$.
-  2. $C = \frac{200\times20}{220}\varepsilon_0 = 18.18\times8.85\times10^{-12} = 160.9$ pF ≈ 161 pF.
+  1. A = 100 m², d = 10 m, t = 5 m, K = 10.
+  2. Dielectric part: $C_1 = \frac{K\varepsilon_0A}{t} = \frac{10\times100}{5}\varepsilon_0 = 200\varepsilon_0$.
+  3. Air part: $C_2 = \frac{\varepsilon_0A}{d - t} = \frac{100}{5}\varepsilon_0 = 20\varepsilon_0$.
+  4. In series: $C = \frac{C_1C_2}{C_1 + C_2} = \frac{200\times20}{220}\varepsilon_0 = 18.18\varepsilon_0$.
+  5. $C = 18.18\times8.85\times10^{-12} = 160.9\times10^{-12}$ F ≈ 161 pF.
+  Formula check: $C = \frac{\varepsilon_0A}{d - t + \frac{t}{K}} = \frac{100\varepsilon_0}{5 + 0.5} = \frac{100}{5.5}\varepsilon_0 = 18.18\varepsilon_0$ ✓.
+  Comparison: without the dielectric, $C_0 = \frac{100}{10}\varepsilon_0 = 10\varepsilon_0 = 88.5$ pF. Filling half the gap with K = 10 raises it by a factor of 1.82 (not 10).
   Answer: 161
 P B 7: |-
-  Concept: Conservation of linear momentum (vector).
+  Concept: In a collision or disintegration with no external forces, the total momentum is conserved as a vector. Apply it in components.
   Solution:
-  1. $10(10\sqrt3)\hat i = 10(10)\hat j + 10\vec v \Rightarrow \vec v = 10\sqrt3\hat i - 10\hat j$.
-  2. $|\vec v| = \sqrt{300 + 100} = 20$ m/s (at 30° below the x-axis).
+  1. Initial momentum: 10 kg × 10√3 m/s along +x = 100√3 kg m/s along x. The 20 kg ball is at rest.
+  2. After: the first ball is at rest. The 20 kg ball splits into two 10 kg pieces. One piece moves along +y at 10 m/s (momentum 100 along y). The other moves with velocity $\vec v$.
+  3. Momentum conservation: $100\sqrt3\hat i = 100\hat j + 10\vec v$.
+  4. $\vec v = 10\sqrt3\hat i - 10\hat j$.
+  5. $|\vec v| = \sqrt{300 + 100} = \sqrt{400} = 20$ m/s.
+  6. Direction: $\tan\theta = \frac{10}{10\sqrt3} = \frac{1}{\sqrt3}$, so θ = 30° below the x-axis, matching the figure ✓.
+  Energy (not conserved): initial KE = ½ × 10 × 300 = 1500 J. Final KE = ½ × 10 × 100 + ½ × 10 × 400 = 500 + 2000 = 2500 J. The disintegration released 1000 J, like an explosion.
   Answer: 20
 P B 8: |-
-  Concept: Energy conservation on a smooth track.
+  Concept: On a smooth (frictionless) track, only gravity does work, so mechanical energy is conserved. The speed at any point depends only on the height dropped: $v = \sqrt{2g\Delta h}$.
   Solution:
-  1. A is at 10 m and B is at 5 m, so the drop is 5 m.
-  2. $v = \sqrt{2\times10\times5} = 10$ m/s.
+  1. From the figure: A is at a height of 10 m and B at a height of 5 m.
+  2. The particle starts from (essentially) rest at A, being only slightly displaced.
+  3. Energy conservation: $mgh_A = mgh_B + \frac{1}{2}mv_B^2$.
+  4. $v_B = \sqrt{2g(h_A - h_B)} = \sqrt{2\times10\times5} = \sqrt{100} = 10$ m/s.
+  5. So x = 10.
+  Notes:
+  - The mass (10 kg) cancels; it does not affect the speed.
+  - The shape of the track between A and B does not matter, provided the track is smooth and the particle stays on it. Only the height difference counts.
+  - The particle passes through lower points on the way, where it moves faster, but its speed at B is determined solely by B's height.
   Answer: 10
 P B 9: |-
-  Concept: CE power gain $= \beta^2\frac{R_o}{R_i}$.
+  Concept: For a common-emitter amplifier: current gain β = $\frac{I_C}{I_B}$; voltage gain $A_V = \beta\frac{R_o}{R_i}$; power gain = current gain × voltage gain = $\beta^2\frac{R_o}{R_i}$.
   Solution:
-  1. $10^6 = \beta^2\times\frac{10^4}{10^2} \Rightarrow \beta^2 = 10^4 \Rightarrow \beta = 100$.
+  1. Power gain = 10⁶, R_i = 100 Ω and R_o = 10 kΩ = 10⁴ Ω.
+  2. $10^6 = \beta^2\times\frac{10^4}{10^2} = 100\beta^2$.
+  3. $\beta^2 = 10^4$, so β = 100.
+  Resulting gains:
+  - Voltage gain: $A_V = 100\times\frac{10^4}{10^2} = 10^4$.
+  - Power gain: $\beta\times A_V = 100\times10^4 = 10^6$ ✓.
+  Note: the power gain is large because both the current and the voltage are amplified. The extra power comes from the DC supply (V_CC), not from the transistor itself.
   Answer: 100
 P B 10: |-
-  Concept: $v^2 = u^2 - 2as$ and $F = ma$.
+  Concept: For uniform deceleration: v² = u² − 2as. Newton's second law then gives the retarding force: F = ma.
   Solution:
-  1. $0 = 100 - 2a(0.5) \Rightarrow a = 100$ m/s².
-  2. $F = 0.1\times100 = 10$ N.
+  1. u = 10 m/s, v = 0, s = 50 cm = 0.5 m.
+  2. 0 = 10² − 2a(0.5), so a = 100 m/s².
+  3. F = ma = 0.1 × 100 = 10 N.
+  Work–energy check: initial kinetic energy = ½ × 0.1 × 100 = 5 J. The work done by the retarding force over 0.5 m is F × 0.5 = 5 J, so F = 10 N ✓.
+  Time to stop: $t = \frac{u}{a} = \frac{10}{100} = 0.1$ s.
+  Note: the question says "effective" retarding force because the actual force in wood is not uniform. The constant value found here is the average force that produces the same stopping distance.
   Answer: 10

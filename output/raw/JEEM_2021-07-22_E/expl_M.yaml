@@ -1,194 +1,354 @@
 M A 1: |-
-  Concept: A circle avoids an axis iff its radius is less than the distance from the centre to that axis; a point is inside iff its distance from the centre is less than r.
+  Concept: A circle with centre (h, k) and radius r neither meets nor touches the x-axis iff $r < |k|$, and the y-axis iff $r < |h|$. A point P is inside iff its distance from the centre is less than r.
   Solution:
-  1. $x^2 + y^2 - 3x + \frac{10}{3}y + \frac{C}{36} = 0$: centre $\left(\frac{3}{2}, -\frac{5}{3}\right)$, $r^2 = \frac{181 - C}{36}$.
-  2. $r < \frac{3}{2} \Rightarrow 181 - C < 81 \Rightarrow C > 100$.
-  3. The lines meet at (2, −1): $\frac{1}{4} + \frac{4}{9} = \frac{25}{36} < r^2 \Rightarrow C < 156$.
+  1. Divide by 36: $x^2 + y^2 - 3x + \frac{10}{3}y + \frac{C}{36} = 0$.
+  2. Centre $\left(\frac{3}{2}, -\frac{5}{3}\right)$; $r^2 = \frac{9}{4} + \frac{25}{9} - \frac{C}{36} = \frac{181 - C}{36}$.
+  3. Distances to the axes: $\frac{3}{2}$ (y-axis) and $\frac{5}{3}$ (x-axis). The stricter condition is $r < \frac{3}{2}$: $\frac{181 - C}{36} < \frac{9}{4} \Rightarrow 181 - C < 81 \Rightarrow C > 100$.
+  4. The lines $x - 2y = 4$ and $2x - y = 5$ meet at (2, −1).
+  5. Inside: $\left(2 - \frac{3}{2}\right)^2 + \left(-1 + \frac{5}{3}\right)^2 = \frac{1}{4} + \frac{4}{9} = \frac{25}{36} < \frac{181 - C}{36} \Rightarrow C < 156$.
+  6. So $100 < C < 156$.
+  Why others are wrong:
+  - (A) allows 81 < C ≤ 100, where the circle reaches the y-axis.
+  - (B) allows C up to 165, where (2, −1) falls outside.
+  - (D) forgets to multiply by 36 (works with the reduced constant).
   Answer: (C)
 M A 2: |-
-  Concept: $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
+  Concept: The shortest distance between skew lines $\vec r = \vec a_1 + t\vec b_1$ and $\vec r = \vec a_2 + s\vec b_2$ is $\frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$. First convert each line to symmetric form.
   Solution:
-  1. L₁: point (1, 2, 1), direction (2, 1, 3). L₂: point (2, λ, 3), direction (1, 2, 4).
-  2. $\vec b_1\times\vec b_2 = (-2, -5, 3)$, with magnitude $\sqrt{38}$.
-  3. $|(1, \lambda - 2, 2)\cdot(-2, -5, 3)| = |14 - 5\lambda| = 1 \Rightarrow \lambda = 3$ or $\frac{13}{5}$; the integer value is 3.
+  1. $3(x - 1) = 6(y - 2) = 2(z - 1)$: divide by 6 → $\frac{x - 1}{2} = \frac{y - 2}{1} = \frac{z - 1}{3}$. Point (1, 2, 1), direction (2, 1, 3).
+  2. $4(x - 2) = 2(y - \lambda) = z - 3$: divide by 4 → $\frac{x - 2}{1} = \frac{y - \lambda}{2} = \frac{z - 3}{4}$. Point (2, λ, 3), direction (1, 2, 4).
+  3. $\vec b_1\times\vec b_2 = (1\cdot4 - 3\cdot2,\ 3\cdot1 - 2\cdot4,\ 2\cdot2 - 1\cdot1) = (-2, -5, 3)$, magnitude $\sqrt{38}$.
+  4. $\vec a_2 - \vec a_1 = (1, \lambda - 2, 2)$; dot product $= -2 - 5\lambda + 10 + 6 = 14 - 5\lambda$.
+  5. $\frac{|14 - 5\lambda|}{\sqrt{38}} = \frac{1}{\sqrt{38}} \Rightarrow 14 - 5\lambda = \pm1 \Rightarrow \lambda = \frac{13}{5}$ or $3$.
+  6. The integral value is 3.
+  Why others are wrong:
+  - (B) 2, (C) −1, (D) 5 give $|14 - 5\lambda| = 4, 19, 11$ respectively, not 1.
   Answer: (A)
 M A 3: |-
-  Concept: Put $z = x + iy$ and separate real and imaginary parts.
+  Concept: Write $z = x + iy$, $\bar z = x - iy$, and equate real and imaginary parts to zero. Then use the infinite GP sum $\sum_{k\ge0}r^k = \frac{1}{1 - r}$ for $|r| < 1$.
   Solution:
-  1. Imaginary part: $2xy - 3y = 0 \Rightarrow y = 0$ or $x = \frac{3}{2}$.
-  2. $y = 0$: $x^2 + 3x = 0 \Rightarrow z = 0, -3$. $x = \frac{3}{2}$: $y^2 = \frac{27}{4}$, giving two more roots.
-  3. $n = 4$, so $\sum\frac{1}{4^k} = \frac{1}{1 - 1/4} = \frac{4}{3}$.
+  1. $z^2 + 3\bar z = (x^2 - y^2 + 3x) + i(2xy - 3y) = 0$.
+  2. Imaginary part: $y(2x - 3) = 0 \Rightarrow y = 0$ or $x = \frac{3}{2}$.
+  3. Case y = 0: $x^2 + 3x = 0 \Rightarrow x = 0$ or $-3$ → z = 0, −3.
+  4. Case $x = \frac{3}{2}$: $\frac{9}{4} - y^2 + \frac{9}{2} = 0 \Rightarrow y^2 = \frac{27}{4} \Rightarrow y = \pm\frac{3\sqrt3}{2}$ → two more roots.
+  5. So n = 4.
+  6. $\sum_{k=0}^\infty\frac{1}{4^k} = \frac{1}{1 - \frac{1}{4}} = \frac{4}{3}$.
+  Why others are wrong:
+  - (C) $\frac{3}{2}$ corresponds to n = 3 (missing z = 0 or one of the conjugate pair).
+  - (B) 2 corresponds to n = 2 (only the real roots).
+  - (A) 1 would need n → ∞.
   Answer: (D)
 M A 4: |-
-  Concept: The integrand has period π.
+  Concept: $\frac{x}{\pi} - \left[\frac{x}{\pi}\right]$ is the fractional part of $\frac{x}{\pi}$, which has period π; $\sin^2x$ also has period π. So the integrand is π-periodic and $\int_0^{100\pi} = 100\int_0^\pi$.
   Solution:
-  1. $I = 100\int_0^\pi\sin^2x\,e^{-x/\pi}dx = 50\int_0^\pi(1 - \cos2x)e^{-x/\pi}dx$.
-  2. This evaluates to $\frac{200(1 - e^{-1})\pi^3}{1 + 4\pi^2}$, so $\alpha = 200(1 - e^{-1})$.
+  1. On $[0, \pi)$, the fractional part is $\frac{x}{\pi}$: $I = 100\int_0^\pi\sin^2x\,e^{-x/\pi}dx = 50\int_0^\pi(1 - \cos2x)e^{-x/\pi}dx$.
+  2. $\int_0^\pi e^{-x/\pi}dx = \pi(1 - e^{-1})$.
+  3. Using $\int e^{ax}\cos bx\,dx = \frac{e^{ax}(a\cos bx + b\sin bx)}{a^2 + b^2}$ with $a = -\frac{1}{\pi}$, b = 2:
+     $\int_0^\pi e^{-x/\pi}\cos2x\,dx = \frac{-\frac{1}{\pi}(e^{-1} - 1)}{\frac{1}{\pi^2} + 4} = \frac{\pi(1 - e^{-1})}{1 + 4\pi^2}$.
+  4. $I = 50\pi(1 - e^{-1})\left[1 - \frac{1}{1 + 4\pi^2}\right] = 50\pi(1 - e^{-1})\cdot\frac{4\pi^2}{1 + 4\pi^2} = \frac{200(1 - e^{-1})\pi^3}{1 + 4\pi^2}$.
+  5. $\alpha = 200(1 - e^{-1})$.
+  Why others are wrong:
+  - (A) and (B) are negative, but the integrand is non-negative, so α > 0.
+  - (D) $50(e - 1)$ uses $e^{+x/\pi}$ and misses the factor 4.
   Answer: (C)
 M A 5: |-
-  Concept: $[e^x + 1] = [e^x] + 1$; put $t = [e^x]$.
+  Concept: For any integer n, $[y + n] = [y] + n$. So $[e^x + 1] = [e^x] + 1$, and the equation becomes a quadratic in $t = [e^x]$.
   Solution:
-  1. $t^2 + t - 2 = 0 \Rightarrow t = 1$ ($t \ge 0$).
-  2. $1 \le e^x < 2 \Rightarrow x \in [0, \ln2)$.
+  1. Let $t = [e^x]$; since $e^x > 0$, t is a non-negative integer.
+  2. $t^2 + (t + 1) - 3 = 0 \Rightarrow t^2 + t - 2 = 0 \Rightarrow (t + 2)(t - 1) = 0$.
+  3. $t = -2$ is rejected (t ≥ 0), so $t = 1$.
+  4. $[e^x] = 1 \Rightarrow 1 \le e^x < 2 \Rightarrow 0 \le x < \ln2$.
+  5. Solution set: $[0, \log_e2)$.
+  Why others are wrong:
+  - (B) $[\ln2, \ln3)$ gives $[e^x] = 2$: $4 + 3 - 3 = 4 \ne 0$.
+  - (A) $[1, e)$ gives $e^x \in [e, e^e)$, so $[e^x] \ge 2$.
+  - (D) $[0, \frac{1}{e})$ is only part of the solution set, and it uses a wrong upper limit.
   Answer: (C)
 M A 6: |-
-  Concept: $\sim p \Rightarrow q \equiv p\vee q$.
+  Concept: Use $p \Rightarrow q \equiv \sim p \vee q$. A disjunction is a tautology if it contains some statement X together with $\sim X$.
   Solution:
-  1. (A) $= (p\vee q)\vee(q\vee p) = p\vee q$, which is false when both p and q are false. Not a tautology.
-  2. The others each contain some $X\vee\sim X$.
+  1. (A): $\sim p \Rightarrow q \equiv p \vee q$ and $\sim q \Rightarrow p \equiv q \vee p$. So (A) $\equiv p \vee q$, which is FALSE when p and q are both false. Not a tautology.
+  Why others are wrong (they are tautologies):
+  - (B): $(q \Rightarrow p) \vee (\sim q \Rightarrow p) \equiv (\sim q \vee p) \vee (q \vee p)$, which contains $\sim q \vee q$ → always true.
+  - (C): $(p \Rightarrow \sim q) \vee (\sim q \Rightarrow p) \equiv (\sim p \vee \sim q) \vee (q \vee p)$, which contains $\sim p \vee p$ → always true.
+  - (D): $(p \Rightarrow q) \vee (\sim q \Rightarrow p) \equiv (\sim p \vee q) \vee (q \vee p)$, which contains $\sim p \vee p$ → always true.
+  Check with p = F, q = F: (A) gives F ∨ F = F, while (B), (C), (D) each give T.
   Answer: (A)
 M A 7: |-
-  Concept: Tangency conditions: $c^2 = a^2m^2 - b^2$ (hyperbola) and $c = \frac{A}{m}$ for $y^2 = 4Ax$.
+  Concept: Condition for $y = mx + c$ to touch the hyperbola $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$: $c^2 = a^2m^2 - b^2$. For the parabola $y^2 = 4Ax$: $c = \frac{A}{m}$.
   Solution:
-  1. $y = -2x + k$: $k^2 = 3(4) - 3 = 9 \Rightarrow k = 3$.
-  2. For $y^2 = \alpha x$ ($A = \frac{\alpha}{4}$): $3 = \frac{\alpha/4}{-2} \Rightarrow \alpha = -24$.
+  1. L: $y = -2x + k$, so $m = -2$, $c = k$.
+  2. $x^2 - y^2 = 3$ has $a^2 = b^2 = 3$: $k^2 = 3(4) - 3 = 9 \Rightarrow k = 3$ (k > 0).
+  3. Parabola $y^2 = \alpha x$ means $4A = \alpha$, i.e. $A = \frac{\alpha}{4}$.
+  4. Tangency: $3 = \frac{\alpha/4}{-2} \Rightarrow \alpha = -24$.
+  5. Check: $y^2 = -24x$ with $y = 3 - 2x$ gives $4x^2 - 12x + 9 + 24x = 4x^2 + 12x + 9 = (2x + 3)^2 = 0$, a double root ✓.
+  Why others are wrong:
+  - (A) 24 ignores the negative slope in $c = \frac{A}{m}$.
+  - (C) −12 and (D) 12 use $A = \frac{\alpha}{2}$ or forget the factor 4.
   Answer: (B)
 M A 8: |-
-  Concept: Divide by cosec²x: $dy = \cos2x(1 + y)dx$.
+  Concept: Divide by $\text{cosec}^2x$ to simplify, then separate variables.
   Solution:
-  1. $\ln(1 + y) = \frac{1}{2}\sin2x + C$; $y(\frac{\pi}{4}) = 0 \Rightarrow C = -\frac{1}{2}$.
-  2. At $x = 0$: $\ln(1 + y) = -\frac{1}{2} \Rightarrow (1 + y)^2 = e^{-1}$.
+  1. Divide through by $\text{cosec}^2x$ (i.e. multiply by $\sin^2x$):
+     $dy + 2\sin^2x\,dx = (1 + y\cos2x)dx$.
+  2. $dy = (1 - 2\sin^2x + y\cos2x)dx = \cos2x(1 + y)\,dx$.
+  3. Separate: $\frac{dy}{1 + y} = \cos2x\,dx \Rightarrow \ln|1 + y| = \frac{1}{2}\sin2x + C$.
+  4. $y\left(\frac{\pi}{4}\right) = 0$: $0 = \frac{1}{2} + C \Rightarrow C = -\frac{1}{2}$.
+  5. At x = 0: $\ln(1 + y(0)) = -\frac{1}{2} \Rightarrow 1 + y(0) = e^{-1/2}$.
+  6. $(y(0) + 1)^2 = e^{-1}$.
+  Why others are wrong:
+  - (B) $e^{-1/2}$ is $y(0) + 1$ itself, not its square.
+  - (A) and (D) have the wrong sign in the exponent (sign slip in C).
   Answer: (C)
 M A 9: |-
-  Concept: Sign of f′ on each piece.
+  Concept: f is increasing where $f'(x) > 0$. Find f′ on each piece and check that the pieces join smoothly at x = 0.
   Solution:
-  1. $x \le 0$: $f' = 3e^x(1 + x) > 0$ for $x > -1$.
-  2. $x > 0$: $f' = -4x^2 + 4x + 3 = -(2x - 3)(2x + 1) > 0$ for $x < \frac{3}{2}$.
-  3. f is increasing on $\left(-1, \frac{3}{2}\right)$.
+  1. For $x \le 0$: $f'(x) = 3e^x + 3xe^x = 3e^x(1 + x)$, positive for $x > -1$.
+  2. For $x > 0$: $f'(x) = -4x^2 + 4x + 3 = -(2x - 3)(2x + 1)$, positive for $-\frac{1}{2} < x < \frac{3}{2}$; on x > 0 that is $0 < x < \frac{3}{2}$.
+  3. At x = 0: both pieces give f(0) = 0 (continuous) and f′(0) = 3 from both sides, so there is no break.
+  4. Hence f is increasing on $\left(-1, \frac{3}{2}\right)$.
+  Why others are wrong:
+  - (A) $\left(-\frac{1}{2}, 2\right)$ includes $\left(\frac{3}{2}, 2\right)$, where $f' < 0$.
+  - (C) $(-3, -1)$: here $1 + x < 0$, so f is decreasing.
+  - (D) $(0, 2)$ also includes the decreasing part $\left(\frac{3}{2}, 2\right)$.
   Answer: (B)
 M A 10: |-
-  Concept: $\vec a = \lambda\vec b + \mu\vec c$, so $[\vec a\,\vec b\,\vec c] = 0$.
+  Concept: A vector coplanar with $\vec b$ and $\vec c$ can be written as $\vec a = \lambda\vec b + \mu\vec c$, and then $[\vec a\,\vec b\,\vec c] = 0$.
   Solution:
-  1. $\vec a\cdot\vec d = 0$ and $|\vec a| = \sqrt{10}$ give $\vec a = \pm(0, -3, 1)$.
-  2. For $\vec a = (0, 3, -1)$: $[\vec a\,\vec b\,\vec d] + [\vec a\,\vec c\,\vec d] = -42$.
+  1. $\vec a = (2\lambda + \mu,\ \lambda - \mu,\ \lambda + \mu)$.
+  2. $\vec a\cdot\vec d = 0$: $3(2\lambda + \mu) + 2(\lambda - \mu) + 6(\lambda + \mu) = 14\lambda + 7\mu = 0 \Rightarrow \mu = -2\lambda$.
+  3. $\vec a = (0, 3\lambda, -\lambda)$; $|\vec a|^2 = 10\lambda^2 = 10 \Rightarrow \lambda = \pm1$.
+  4. Take $\vec a = (0, 3, -1)$:
+     - $[\vec a\,\vec b\,\vec d] = \begin{vmatrix}0&3&-1\\2&1&1\\3&2&6\end{vmatrix} = -3(12 - 3) - 1(4 - 3) = -28$.
+     - $[\vec a\,\vec c\,\vec d] = \begin{vmatrix}0&3&-1\\1&-1&1\\3&2&6\end{vmatrix} = -3(6 - 3) - 1(2 + 3) = -14$.
+  5. Sum $= 0 - 28 - 14 = -42$. (The other choice $\vec a = (0, -3, 1)$ gives +42.)
+  Why others are wrong:
+  - (A) −40, (B) −38 and (D) −29 do not arise for either possible $\vec a$; they come from arithmetic slips in the determinants.
   Answer: (C)
 M A 11: |-
-  Concept: $S_n = \frac{n}{2}(2a + (n - 1)d)$.
+  Concept: For an AP, $S_n = \frac{n}{2}[2a + (n - 1)d]$. Two given sums give two linear equations in a and d.
   Solution:
-  1. $2a + 9d = 106$ and $2a + 4d = 56 \Rightarrow d = 10$, $a = 8$.
-  2. $S_{20} = 10(16 + 190) = 2060$ and $S_6 = 3(16 + 50) = 198$; difference $= 1862$.
+  1. $S_{10} = 5(2a + 9d) = 530 \Rightarrow 2a + 9d = 106$.
+  2. $S_5 = \frac{5}{2}(2a + 4d) = 140 \Rightarrow 2a + 4d = 56$.
+  3. Subtract: $5d = 50 \Rightarrow d = 10$, and $2a = 16 \Rightarrow a = 8$.
+  4. $S_{20} = 10(16 + 190) = 2060$.
+  5. $S_6 = 3(16 + 50) = 198$.
+  6. $S_{20} - S_6 = 2060 - 198 = 1862$.
+  Check: the AP is 8, 18, 28, …; $S_5 = 8 + 18 + 28 + 38 + 48 = 140$ ✓.
+  Why others are wrong:
+  - (A) 1852, (B) 1842, (C) 1872 differ by 10–20, typical of using $S_5$ or $S_7$ instead of $S_6$ or an off-by-one error.
   Answer: (D)
 M A 12: |-
-  Concept: Series expansions near 0.
+  Concept: For continuity at 0, α must equal $\lim_{x\to0}f(x)$. Use small-x approximations: $1 - \cos2x = 2\sin^2x \approx 2x^2$ and $\ln(1 + u) \approx u$.
   Solution:
-  1. $(1 - \cos2x)^2 \approx 4x^4$.
-  2. $\ln(1 + 2xe^{-2x}) - 2\ln(1 - xe^{-x}) \approx (2x - 4x^2 - 2x^2) + (2x - 2x^2 + x^2) = 4x + O(x^2)$.
-  3. $f \to \frac{x^3\cdot4x}{4x^4} = 1$, so $\alpha = 1$.
+  1. Denominator: $(1 - \cos2x)^2 \approx (2x^2)^2 = 4x^4$.
+  2. Split the logarithm: $\ln(1 + 2xe^{-2x}) - 2\ln(1 - xe^{-x})$.
+  3. Leading terms: $\ln(1 + 2xe^{-2x}) \approx 2x$ and $-2\ln(1 - xe^{-x}) \approx 2x$, so the log $\approx 4x + O(x^2)$.
+  4. $f(x) \approx \frac{x^3\cdot4x}{4x^4} = 1$.
+  5. So $\alpha = 1$.
+  Why others are wrong:
+  - (A) 0 would need the log to vanish faster than x.
+  - (C) 2 counts only one of the two logarithm contributions twice or misses the factor 4 in the denominator.
+  - (D) 3 has no basis in the expansion.
   Answer: (B)
 M A 13: |-
-  Concept: $\sin^7x \le \sin^2x$ and $\cos^7x \le \cos^2x$, with equality only at 0 or ±1 values.
+  Concept: For $|t| \le 1$, $t^7 \le t^2$, with equality only when t = 0 or t = 1. So $\sin^7x + \cos^7x \le \sin^2x + \cos^2x = 1$, and equality requires both $\sin^7x = \sin^2x$ and $\cos^7x = \cos^2x$.
   Solution:
-  1. We need $(\sin x, \cos x) = (1, 0)$ or $(0, 1)$.
-  2. In $[0, 4\pi]$: $x = 0, \frac{\pi}{2}, 2\pi, \frac{5\pi}{2}, 4\pi$, i.e. 5 solutions.
+  1. Each of sin x and cos x must be 0 or 1.
+  2. Since $\sin^2x + \cos^2x = 1$, the only possibilities are (sin x, cos x) = (1, 0) or (0, 1).
+  3. (1, 0): $x = \frac{\pi}{2}, \frac{5\pi}{2}$ in [0, 4π].
+  4. (0, 1): $x = 0, 2\pi, 4\pi$.
+  5. Total: 5 solutions.
+  Why others are wrong:
+  - (D) 9 or (B) 11 include points where sin x = −1 or cos x = −1, but then $(-1)^7 = -1$ and the sum is −1, not 1.
+  - (A) 7 double-counts or includes endpoints incorrectly.
   Answer: (C)
 M A 14: |-
-  Concept: $\vec a$, $\vec b$, $\vec c$ are mutually perpendicular with $|\vec b| = 1$ and $|\vec c| = |\vec a| = 2$.
+  Concept: $\vec a\times\vec b = \vec c$ makes $\vec c$ perpendicular to both $\vec a$ and $\vec b$; $\vec b\times\vec c = \vec a$ makes $\vec a$ perpendicular to $\vec b$ and $\vec c$. So the three vectors are mutually perpendicular, and magnitudes satisfy $|\vec c| = |\vec a||\vec b|$ and $|\vec a| = |\vec b||\vec c|$.
   Solution:
-  1. (A) $\vec b\times\vec c = \vec a$, so the projection is $|\vec a| = 2$ ✓. (B) $4 + 4 = 8$ ✓. (D) $(\vec b + \vec c)\times(\vec b - \vec c) = -2\vec a$, so the cross product with $\vec a$ is $\vec0$ ✓.
-  2. (C) $|3\vec a + \vec b - 2\vec c|^2 = 36 + 1 + 16 = 53 \ne 51$, so it is not true.
+  1. $|\vec a| = |\vec b|\cdot|\vec a||\vec b| \Rightarrow |\vec b| = 1$, and then $|\vec c| = 2$.
+  2. (A) Projection of $\vec a$ on $\vec b\times\vec c = \vec a$ is $|\vec a| = 2$. True.
+  3. (B) $[\vec a\,\vec b\,\vec c] = \vec a\cdot(\vec b\times\vec c) = |\vec a|^2 = 4$; $[\vec c\,\vec a\,\vec b] = [\vec a\,\vec b\,\vec c] = 4$; sum 8. True.
+  4. (D) $(\vec b + \vec c)\times(\vec b - \vec c) = -2(\vec b\times\vec c) = -2\vec a$; $\vec a\times(-2\vec a) = \vec 0$. True.
+  5. (C) By perpendicularity: $|3\vec a + \vec b - 2\vec c|^2 = 9(4) + 1 + 4(4) = 53 \ne 51$. NOT true.
   Answer: (C)
 M A 15: |-
-  Concept: Foot of the perpendicular on a line.
+  Concept: The line of intersection of two planes has direction $\vec n_1\times\vec n_2$. The foot of the perpendicular P from a point Q on a line satisfies $\vec{QP}\cdot\vec d = 0$.
   Solution:
-  1. Direction $= (1, -1, 2)\times(2, 1, -1) = (-1, 5, 3)$; point $\left(\frac{4}{3}, -\frac{2}{3}, 0\right)$.
-  2. $P = \left(\frac{4}{3} - t, -\frac{2}{3} + 5t, 3t\right)$ with $(P - (1, 2, 0))\cdot(-1, 5, 3) = 35t - \frac{41}{3} = 0$.
-  3. $\alpha + \beta + \gamma = \frac{2}{3} + 7t = \frac{51}{15}$, so $35\times\frac{51}{15} = 119$.
+  1. $\vec d = (1, -1, 2)\times(2, 1, -1) = (1 - 2,\ 4 + 1,\ 1 + 2) = (-1, 5, 3)$.
+  2. A point on L (z = 0): $x - y = 2$, $2x + y = 2 \Rightarrow x = \frac{4}{3}$, $y = -\frac{2}{3}$.
+  3. General point: $P = \left(\frac{4}{3} - t,\ -\frac{2}{3} + 5t,\ 3t\right)$.
+  4. $\vec{QP} = P - (1, 2, 0) = \left(\frac{1}{3} - t,\ -\frac{8}{3} + 5t,\ 3t\right)$.
+  5. $\vec{QP}\cdot\vec d = -\frac{1}{3} + t - \frac{40}{3} + 25t + 9t = 35t - \frac{41}{3} = 0 \Rightarrow t = \frac{41}{105}$.
+  6. $\alpha + \beta + \gamma = \frac{2}{3} + 7t = \frac{70 + 287}{105} = \frac{357}{105} = \frac{17}{5}$.
+  7. $35\times\frac{17}{5} = 119$.
+  Why others are wrong:
+  - (A) 101, (B) 143, (C) 134 result from sign slips in the cross product or the dot product.
   Answer: (D)
 M A 16: |-
-  Concept: Row sums 1 means $A\mathbf{1} = \mathbf{1}$.
+  Concept: The condition "each row sums to 1" means $A\mathbf{u} = \mathbf{u}$, where $\mathbf{u} = (1, 1, 1)^T$. The sum of all entries of any matrix M is $\mathbf{u}^TM\mathbf{u}$.
   Solution:
-  1. $A^3\mathbf{1} = \mathbf{1}$, so each row of $A^3$ sums to 1.
-  2. The sum of all entries is 3.
+  1. $A\mathbf u = \mathbf u$ (row sums are 1).
+  2. Then $A^2\mathbf u = A(A\mathbf u) = A\mathbf u = \mathbf u$, and $A^3\mathbf u = \mathbf u$.
+  3. So every row of $A^3$ also sums to 1.
+  4. Sum of all entries of $A^3$ $= \mathbf u^T(A^3\mathbf u) = \mathbf u^T\mathbf u = 3$.
+  Check with A = I: $A^3 = I$, entry sum 3 ✓. With A having all entries $\frac{1}{3}$: $A^3 = A$, entry sum 3 ✓.
+  Why others are wrong:
+  - (A) 9 would be the entry sum of the all-ones matrix.
+  - (C) 1 is a single row sum.
+  - (D) 2 has no basis.
   Answer: (B)
 M A 17: |-
-  Concept: Domains of $\cos^{-1}$ and of a square root in a denominator.
+  Concept: $\cos^{-1}t$ needs $-1 \le t \le 1$. A square root in the denominator needs its argument strictly positive.
   Solution:
-  1. $\sqrt{x^2 - x + 1} \le 1 \Rightarrow 0 \le x \le 1$.
-  2. $\sin^{-1}\frac{2x - 1}{2} > 0 \Rightarrow x > \frac{1}{2}$.
-  3. Domain $\left(\frac{1}{2}, 1\right]$, so $\alpha + \beta = \frac{3}{2}$.
+  1. Numerator: $\sqrt{x^2 - x + 1}$ is always defined ($x^2 - x + 1 > 0$) and non-negative; need $\sqrt{x^2 - x + 1} \le 1 \Rightarrow x^2 - x \le 0 \Rightarrow 0 \le x \le 1$.
+  2. Denominator: $\sin^{-1}\left(\frac{2x - 1}{2}\right)$ is defined for $-1 \le \frac{2x - 1}{2} \le 1$, i.e. $-\frac{1}{2} \le x \le \frac{3}{2}$.
+  3. It must be > 0: $\frac{2x - 1}{2} > 0 \Rightarrow x > \frac{1}{2}$.
+  4. Intersection: $\left(\frac{1}{2}, 1\right]$.
+  5. $\alpha + \beta = \frac{1}{2} + 1 = \frac{3}{2}$.
+  Why others are wrong:
+  - (A) 1 takes the domain as [0, 1], ignoring the denominator.
+  - (B) $\frac{1}{2}$ and (C) 2 use wrong interval endpoints (e.g. $\frac{3}{2}$ from the $\sin^{-1}$ range alone).
   Answer: (D)
 M A 18: |-
-  Concept: No solution means $\Delta = 0$ with inconsistent equations.
+  Concept: A system has no solution when the coefficient determinant is zero and the equations are inconsistent.
   Solution:
-  1. $\Delta = 2\lambda - 4 = 0 \Rightarrow \lambda = 2$.
-  2. From the first two equations: $x = 2$ and $y + z = 4$, so $x + 2y + 2z = 10$.
-  3. No solution when $\mu \ne 10$.
+  1. $\Delta = \begin{vmatrix}1&1&1\\3&5&5\\1&2&\lambda\end{vmatrix} = (5\lambda - 10) - (3\lambda - 5) + (6 - 5) = 2\lambda - 4$.
+  2. $\Delta = 0 \Rightarrow \lambda = 2$.
+  3. From the first two equations: $3x + 5(y + z) = 26$ and $x + (y + z) = 6$ give $x = 2$, $y + z = 4$.
+  4. With $\lambda = 2$ the third equation is $x + 2(y + z) = \mu$, and the first two force its LHS $= 2 + 8 = 10$.
+  5. So the system is inconsistent (no solution) iff $\mu \ne 10$; $\mu = 10$ gives infinitely many solutions.
+  Why others are wrong:
+  - (B) and (C) with λ = 3 give $\Delta = 2 \ne 0$: a unique solution.
+  - (D) $\lambda \ne 2$ also gives $\Delta \ne 0$ — unique solution for any μ.
   Answer: (A)
 M A 19: |-
-  Concept: $E_2$ has semi-minor axis a, with foci at $(0, \pm b)$.
+  Concept: For an ellipse with semi-axes A > B, $e^2 = 1 - \frac{B^2}{A^2}$ and the foci lie on the major axis at distance $Ae$ from the centre.
   Solution:
-  1. $E_2$: $\frac{x^2}{a^2} + \frac{y^2}{B^2} = 1$ with $B^2 - a^2 = b^2$, so $e_2^2 = \frac{b^2}{a^2 + b^2}$.
-  2. With $k = \frac{b^2}{a^2}$: $1 - k = \frac{k}{1 + k} \Rightarrow k^2 + k - 1 = 0 \Rightarrow k = \frac{\sqrt5 - 1}{2}$.
-  3. $e^2 = 1 - k = \frac{3 - \sqrt5}{2} \Rightarrow e = \frac{\sqrt5 - 1}{2}$.
+  1. $E_1$: $e_1^2 = 1 - \frac{b^2}{a^2}$.
+  2. $E_2$ passes through $(\pm a, 0)$ and has foci $(0, \pm b)$, so its major axis is along the y-axis: $E_2: \frac{x^2}{a^2} + \frac{y^2}{B^2} = 1$ with $B > a$.
+  3. Foci: $B^2 - a^2 = b^2$, so $B^2 = a^2 + b^2$ and $e_2^2 = \frac{b^2}{a^2 + b^2}$.
+  4. Let $k = \frac{b^2}{a^2}$: $1 - k = \frac{k}{1 + k} \Rightarrow 1 - k^2 = k \Rightarrow k^2 + k - 1 = 0 \Rightarrow k = \frac{\sqrt5 - 1}{2}$.
+  5. $e^2 = 1 - k = \frac{3 - \sqrt5}{2} = \left(\frac{\sqrt5 - 1}{2}\right)^2$.
+  6. $e = \frac{\sqrt5 - 1}{2} \approx 0.618$ (the golden-ratio conjugate).
+  Why others are wrong:
+  - (B), (C), (D) with $\sqrt3$, $\sqrt8$, $\sqrt6$ do not satisfy $e^4 - 3e^2 + 1 = 0$; (C) even exceeds 0.9.
   Answer: (A)
 M A 20: |-
-  Concept: Count ordered 4-tuples of distinct faces with $ad \ne bc$.
+  Concept: Sample space: $6^4 = 1296$ ordered outcomes $\begin{pmatrix}a&b\\c&d\end{pmatrix}$. Favourable: all four entries different and $ad - bc \ne 0$.
   Solution:
-  1. Distinct entries: $6\cdot5\cdot4\cdot3 = 360$ tuples.
-  2. Subtract those with $ad = bc$ (e.g. $\{1, 6\}$ vs $\{2, 3\}$, $\{2, 6\}$ vs $\{3, 4\}$); 344 remain.
-  3. $P = \frac{344}{1296} = \frac{43}{162}$.
+  1. All entries different: $6\times5\times4\times3 = 360$.
+  2. Singular ones need $ad = bc$ with four distinct numbers from 1–6. A product must split into two different pairs:
+     - $6 = 1\times6 = 2\times3$
+     - $12 = 2\times6 = 3\times4$
+  3. For each product: choose which pair sits on the main diagonal (2 ways), order it (2), order the other pair (2): 8 matrices. Total singular $= 2\times8 = 16$.
+  4. Favourable $= 360 - 16 = 344$.
+  5. $P = \frac{344}{1296} = \frac{43}{162}$.
+  Why others are wrong:
+  - (B) $\frac{45}{162} = \frac{360}{1296}$ forgets to remove the singular matrices.
+  - (A) $\frac{22}{81} = \frac{352}{1296}$ removes only one product's 8 cases.
+  - (D) $\frac{23}{81} = \frac{368}{1296}$ exceeds the distinct-entry count.
   Answer: (C)
 M B 1: |-
-  Concept: $f(1) + f(2) + f(3) = 3$ with distinct values from A forces $\{0, 1, 2\}$.
+  Concept: A bijection on A assigns distinct values to 1, 2 and 3. The condition is $f(1) + f(2) + f(3) = 3$.
   Solution:
-  1. Assign {0, 1, 2} to 1, 2, 3 in $3!$ ways and the remaining 5 values in $5!$ ways.
-  2. Total $= 6\times120 = 720$.
+  1. Three distinct elements of {0, 1, …, 7} summing to 3: the smallest possible sum is $0 + 1 + 2 = 3$, so the set must be exactly {0, 1, 2}.
+  2. Assign {0, 1, 2} to the inputs 1, 2, 3 in any order: $3! = 6$ ways.
+  3. The remaining 5 inputs (0, 4, 5, 6, 7) map bijectively onto the remaining 5 values {3, 4, 5, 6, 7}: $5! = 120$ ways.
+  4. Total $= 6\times120 = 720$.
+  Check: any other triple, e.g. {0, 1, 3}, sums to at least 4, so it fails.
   Answer: 720
 M B 2: |-
-  Concept: g is the difference of two shifted triangles.
+  Concept: f is a "tent" of height 3 on [−2, 2] with slopes $\pm\frac{3}{2}$. So $f(x + 2)$ is a tent on [−4, 0] peaked at −2, and $f(x - 2)$ is a tent on [0, 4] peaked at 2. g is continuous everywhere; in the intended reading, n counts points of discontinuity (0) and m the points of non-differentiability.
   Solution:
-  1. $g$ = a triangle of height 3 on [−4, 0] minus a triangle on [0, 4]; it is continuous everywhere, so there are no discontinuities (n = 0 as intended).
-  2. Corners at $x = -4, -2, 2, 4$ (at 0 both sides have slope $-\frac{3}{2}$), so m = 4.
-  3. $n + m = 4$.
+  1. g = (tent on [−4, 0]) − (tent on [0, 4]).
+  2. Corners of g:
+     - x = −4: slope jumps 0 → $\frac{3}{2}$.
+     - x = −2: slope $\frac{3}{2}$ → $-\frac{3}{2}$.
+     - x = 2: slope $-\frac{3}{2}$ → $\frac{3}{2}$ (inverted tent).
+     - x = 4: slope $\frac{3}{2}$ → 0.
+  3. At x = 0: left slope $-\frac{3}{2}$ (descending first tent), right slope $-\frac{3}{2}$ (minus the rising second tent). Equal, so g is differentiable at 0.
+  4. m = 4 and n = 0, so n + m = 4.
+  Note: "continuous" in the question is read as "discontinuous" (as in the official solution); literally, g is continuous at infinitely many points.
   Answer: 4
 M B 3: |-
-  Concept: Homogeneous in $X = x + 2$, $Y = y + 1$: $Y' = e^{Y/X} + \frac{Y}{X}$.
+  Concept: Shift the origin: X = x + 2, Y = y + 1 makes the equation homogeneous, $\frac{dY}{dX} = e^{Y/X} + \frac{Y}{X}$. Substitute $Y = vX$.
   Solution:
-  1. $v = \frac{Y}{X}$: $e^{-v}dv = \frac{dX}{X} \Rightarrow e^{-v} = e^{-2/3} + \ln3 - \ln|x + 2| > 0$.
-  2. The official solution takes $0 < \frac{|x + 2|}{3} < e^{e^{-2/3}}$, i.e. an interval symmetric about $x = -2$, giving $\alpha + \beta = -4$.
-  Note: The solution through (1, 1) actually exists only for $x > -2$, which would give $|\alpha + \beta| \approx 1.01$; the key's 4 is recorded.
+  1. $v + X\frac{dv}{dX} = e^v + v \Rightarrow e^{-v}dv = \frac{dX}{X}$.
+  2. Integrate: $-e^{-v} = \ln|X| + C$.
+  3. At (1, 1): X = 3, Y = 2, $v = \frac{2}{3}$: $C = -e^{-2/3} - \ln3$.
+  4. So $e^{-v} = e^{-2/3} + \ln3 - \ln|x + 2|$, which must be positive: $\ln\frac{|x + 2|}{3} < e^{-2/3}$.
+  5. The official solution takes $0 < \frac{|x + 2|}{3} < e^{e^{-2/3}}$ on both sides of x = −2, an interval symmetric about −2, so $\alpha + \beta = -4$ and $|\alpha + \beta| = 4$.
+  Note: The solution through (1, 1) actually exists only for $x > -2$ (it cannot cross X = 0), which would give $|\alpha + \beta| \approx 1.01$; the key's 4 is recorded.
   Answer: 4
 M B 4: |-
-  Concept: Check small n; once $\left(\frac{10}{11}\right)^n + \left(\frac{9}{11}\right)^n < 1$ it stays so.
+  Concept: Divide by $11^n$: the condition is $\left(\frac{10}{11}\right)^n + \left(\frac{9}{11}\right)^n < 1$. The LHS is strictly decreasing in n, so once the inequality holds it holds for all larger n. Find the first n.
   Solution:
-  1. n = 4: 14641 < 16561 (fails). n = 5: 161051 > 159049 (holds).
-  2. So $n = 5$ to $100$: 96 values.
+  1. n = 1: 11 < 19 ✗. n = 2: 121 < 181 ✗. n = 3: 1331 < 1729 ✗.
+  2. n = 4: $11^4 = 14641$, $10^4 + 9^4 = 10000 + 6561 = 16561$ ✗.
+  3. n = 5: $11^5 = 161051$, $10^5 + 9^5 = 100000 + 59049 = 159049$ ✓.
+  4. So the inequality holds exactly for n = 5, 6, …, 100.
+  5. Count $= 100 - 5 + 1 = 96$.
+  Tip: a binomial view: $11^n = (10 + 1)^n > 10^n + n\cdot10^{n-1} + \dots$, and the extra terms first outweigh $9^n$ at n = 5.
   Answer: 96
 M B 5: |-
-  Concept: Region between the two sideways parabolas, above the downward parabola.
+  Concept: Sketch the curves. $y^2 = 4(1 - x)$ opens left from (1, 0); $y^2 = 4(1 + x)$ opens right from (−1, 0); they meet at (0, ±2). $x^2 = 1 - 2y$ is a downward parabola with vertex $(0, \frac{1}{2})$ through (±1, 0). The required region lies between the two sideways parabolas, above the downward parabola, in y ≥ 0.
   Solution:
-  1. $y^2 = 4(1 \pm x)$ meet at (0, 2); the area they enclose above the x-axis is $2\int_0^2\left(1 - \frac{y^2}{4}\right)dy = \frac{8}{3}$.
-  2. Subtract the area under $y = \frac{1 - x^2}{2}$ on [−1, 1]: $\frac{2}{3}$.
-  3. Area $= 2$.
+  1. Area enclosed by the sideways parabolas above the x-axis (horizontal strips): width $= \left(1 - \frac{y^2}{4}\right) - \left(\frac{y^2}{4} - 1\right) = 2 - \frac{y^2}{2}$.
+     $\int_0^2\left(2 - \frac{y^2}{2}\right)dy = 4 - \frac{4}{3} = \frac{8}{3}$.
+  2. Area under $y = \frac{1 - x^2}{2}$ over [−1, 1]: $\int_{-1}^1\frac{1 - x^2}{2}dx = \frac{1}{2}\left(2 - \frac{2}{3}\right) = \frac{2}{3}$.
+  3. This cap lies inside the first region (it passes through (±1, 0), the vertices of the sideways parabolas).
+  4. Required area $= \frac{8}{3} - \frac{2}{3} = 2$.
   Answer: 2
 M B 6: |-
-  Concept: A swaps the first two rows (on the left) or columns (on the right).
+  Concept: A is the permutation matrix swapping indices 1 and 2. AB swaps rows 1 and 2 of B; BA swaps columns 1 and 2 of B. AB = BA means B is unchanged when both swaps are applied.
   Solution:
-  1. AB = BA forces $b_{11} = b_{22}$, $b_{12} = b_{21}$, $b_{13} = b_{23}$, $b_{31} = b_{32}$.
-  2. Free entries: $b_{11}, b_{12}, b_{13}, b_{31}, b_{33}$: $5^5 = 3125$.
+  1. $AB = \begin{pmatrix}b_{21}&b_{22}&b_{23}\\b_{11}&b_{12}&b_{13}\\b_{31}&b_{32}&b_{33}\end{pmatrix}$ and $BA = \begin{pmatrix}b_{12}&b_{11}&b_{13}\\b_{22}&b_{21}&b_{23}\\b_{32}&b_{31}&b_{33}\end{pmatrix}$.
+  2. Equating: $b_{11} = b_{22}$, $b_{12} = b_{21}$, $b_{13} = b_{23}$, $b_{31} = b_{32}$; $b_{33}$ is free.
+  3. Independent entries: $b_{11}, b_{12}, b_{13}, b_{31}, b_{33}$ — five of them.
+  4. Each has 5 choices from {1, 2, 3, 4, 5}: $5^5 = 3125$.
+  Result: AB = BA forces b₁₁ = b₂₂, b₁₂ = b₂₁, b₁₃ = b₂₃ and b₃₁ = b₃₂. The free entries are b₁₁, b₁₂, b₁₃, b₃₁ and b₃₃: five choices of 5 values each, so 5⁵ = 3125.
+  Common mistake: Counting 5⁹ (all matrices) or forgetting b₃₃ is free.
   Answer: 3125
 M B 7: |-
-  Concept: Numbers above 10000 from five distinct digits must be 5-digit with a non-zero first digit.
+  Concept: With five digits and no repetition, a number has at most 5 digits. Every 4-digit number is below 10,000, so only 5-digit numbers (using all five digits) qualify — and every 5-digit number is ≥ 20,000 > 10,000.
   Solution:
-  1. $4\times4! = 96$.
+  1. The first digit cannot be 0: 4 choices (2, 4, 6, 8).
+  2. The remaining 4 digits (including 0) fill the other 4 places in $4! = 24$ ways.
+  3. Total $= 4\times24 = 96$.
+  Check: total arrangements of 5 digits $= 5! = 120$; those starting with 0 $= 4! = 24$; $120 - 24 = 96$ ✓.
   Answer: 96
 M B 8: |-
-  Concept: $2040 = 2^3\cdot3\cdot5\cdot17$, so we need n ≤ 100 coprime to 2, 3, 5 and 17 (inclusion–exclusion).
+  Concept: $2040 = 2^3\times3\times5\times17$. HCF(n, 2040) = 1 means n is divisible by none of 2, 3, 5, 17. Use inclusion–exclusion on sums.
   Solution:
-  1. Sum of n ≤ 100 coprime to 30: $5050 - (2550 + 1683 + 1050) + (816 + 550 + 315) - 180 = 1268$.
-  2. Multiples of 17 up to 100 that are coprime to 30: only 17 (34, 68 are even; 51 = 3·17; 85 = 5·17).
+  1. Sum of n ≤ 100 coprime to 30 (i.e. to 2, 3, 5):
+     - Total: 5050.
+     - Subtract multiples of 2, 3, 5: 2550 + 1683 + 1050 = 5283.
+     - Add back multiples of 6, 10, 15: 816 + 550 + 315 = 1681.
+     - Subtract multiples of 30: 30 + 60 + 90 = 180.
+     - Result: $5050 - 5283 + 1681 - 180 = 1268$.
+  2. Remove multiples of 17 that are coprime to 30: among 17, 34, 51, 68, 85 only 17 qualifies (34, 68 even; 51 = 3·17; 85 = 5·17).
   3. Sum $= 1268 - 17 = 1251$.
   Answer: 1251
 M B 9: |-
-  Concept: General term $\binom{10}{k}(2x^r)^{10-k}x^{-2k}$.
+  Concept: General term of $\left(2x^r + \frac{1}{x^2}\right)^{10}$: $T_{k+1} = \binom{10}{k}(2x^r)^{10-k}x^{-2k} = \binom{10}{k}2^{10-k}x^{r(10 - k) - 2k}$.
   Solution:
-  1. $\binom{10}{k}2^{10-k} = 180$ gives $k = 8$ ($45\times4$).
-  2. Constant term: $r(10 - 8) = 16 \Rightarrow r = 8$.
+  1. The coefficient of the constant term is $\binom{10}{k}2^{10-k} = 180$.
+  2. Try values: k = 8: $45\times4 = 180$ ✓. (k = 7: $120\times8 = 960$; k = 9: $10\times2 = 20$; k = 10: 1.)
+  3. The power of x must vanish for k = 8: $r(10 - 8) - 16 = 0 \Rightarrow 2r = 16 \Rightarrow r = 8$.
+  4. Check: $T_9 = \binom{10}{8}(2x^8)^2x^{-16} = 45\times4 = 180$ ✓.
+  Result: For k = 8, the power of x is r(2) − 16 = 0, so r = 8.
+  Common mistake: Taking k = 2 (because C(10, 2) = 45 as well), but then 2⁸ × 45 ≠ 180; the power of 2 decides which k works.
   Answer: 8
 M B 10: |-
-  Concept: Grouped median and mean formulas.
+  Concept: For grouped data, Median $= l + \frac{\frac{N}{2} - cf}{f}\times h$ and Mean $= \frac{\sum f_ix_i}{N}$ (using class mid-points).
   Solution:
-  1. Median 14 lies in 12–18: $14 = 12 + \frac{N/2 - (a + b)}{12}\times6$, with $N = a + b + 26$, giving $a + b = 18$ and $N = 44$.
-  2. Mean: $3a + 9b + 180 + 189 + 135 = \frac{309}{22}\times44 = 618 \Rightarrow a + 3b = 38$.
-  3. $b = 10$, $a = 8$, so $(a - b)^2 = 4$.
+  1. N = a + b + 12 + 9 + 5 = a + b + 26.
+  2. Median 14 lies in class 12–18: l = 12, f = 12, h = 6, cf = a + b.
+     $14 = 12 + \frac{\frac{N}{2} - (a + b)}{12}\times6 \Rightarrow \frac{N}{2} - (a + b) = 4$.
+  3. $\frac{a + b + 26}{2} - (a + b) = 4 \Rightarrow 13 - \frac{a + b}{2} = 4 \Rightarrow a + b = 18$, N = 44.
+  4. Mid-points 3, 9, 15, 21, 27: $\sum fx = 3a + 9b + 180 + 189 + 135 = 3a + 9b + 504$.
+  5. Mean: $3a + 9b + 504 = \frac{309}{22}\times44 = 618 \Rightarrow 3a + 9b = 114 \Rightarrow a + 3b = 38$.
+  6. With a + b = 18: 2b = 20 → b = 10, a = 8.
+  7. $(a - b)^2 = 4$.
   Answer: 4

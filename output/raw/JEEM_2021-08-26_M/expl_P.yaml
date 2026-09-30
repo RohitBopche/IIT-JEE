@@ -1,170 +1,332 @@
 P A 1: |-
-  Concept: Field on the axis of a coil: $B = \frac{\mu_0ia^2}{2(a^2 + r^2)^{3/2}}$; at the centre, $B_0 = \frac{\mu_0i}{2a}$.
+  Concept: For a circular coil of radius a carrying current i, the field on the axis at distance r from the centre is $B = \frac{\mu_0ia^2}{2(a^2 + r^2)^{3/2}}$; at the centre, $B_0 = \frac{\mu_0i}{2a}$.
   Solution:
-  1. $\frac{B_0 - B}{B_0} = 1 - \left(1 + \frac{r^2}{a^2}\right)^{-3/2} \approx \frac{3}{2}\frac{r^2}{a^2}$ (for $r \ll a$).
+  1. Ratio: $\frac{B}{B_0} = \frac{a^3}{(a^2 + r^2)^{3/2}} = \left(1 + \frac{r^2}{a^2}\right)^{-3/2}$.
+  2. For r ≪ a, binomial approximation: $\left(1 + \frac{r^2}{a^2}\right)^{-3/2} \approx 1 - \frac{3}{2}\frac{r^2}{a^2}$.
+  3. Fractional change: $\frac{B_0 - B}{B_0} \approx \frac{3}{2}\frac{r^2}{a^2}$.
+  Why others are wrong:
+  - (A) and (B) have $\frac{a^2}{r^2}$, which is huge for r < a — a fractional change cannot exceed 1 here.
+  - (C) has the wrong coefficient; the exponent $-\frac{3}{2}$ gives $\frac{3}{2}$, not $\frac{2}{3}$.
+  Key takeaway: the field near the centre of a coil falls off quadratically with axial distance, so it is almost uniform close to the centre.
   Answer: (D)
 P A 2: |-
-  Concept: Resolve each vector (equal magnitude λ) into components.
+  Concept: Resolve each vector (common magnitude λ) into x and y components using the angles shown in the figure, then add. The direction is $\tan^{-1}\frac{R_y}{R_x}$.
   Solution:
-  1. $\vec{OA} = \lambda\left(\frac{\sqrt3}{2}, \frac{1}{2}\right)$; $\vec{OB} = \lambda\left(\frac{1}{2}, -\frac{\sqrt3}{2}\right)$; $\vec{OC} = \lambda\left(-\frac{1}{\sqrt2}, \frac{1}{\sqrt2}\right)$.
-  2. $\vec{OA} + \vec{OB} - \vec{OC} = \lambda\left(\frac{\sqrt3 + 1}{2} + \frac{1}{\sqrt2},\ \frac{1 - \sqrt3}{2} - \frac{1}{\sqrt2}\right)$.
-  3. Angle $= \tan^{-1}\frac{1 - \sqrt3 - \sqrt2}{1 + \sqrt3 + \sqrt2}$.
+  1. From the figure: $\vec{OA} = \lambda\left(\frac{\sqrt3}{2}, \frac{1}{2}\right)$ (30° above x-axis), $\vec{OB} = \lambda\left(\frac{1}{2}, -\frac{\sqrt3}{2}\right)$ (60° below), $\vec{OC} = \lambda\left(-\frac{1}{\sqrt2}, \frac{1}{\sqrt2}\right)$ (135°).
+  2. $R_x = \lambda\left(\frac{\sqrt3}{2} + \frac{1}{2} + \frac{1}{\sqrt2}\right)$, $R_y = \lambda\left(\frac{1}{2} - \frac{\sqrt3}{2} - \frac{1}{\sqrt2}\right)$.
+  3. Multiply both by $\frac{2}{\lambda}$: $R_x \propto 1 + \sqrt3 + \sqrt2$, $R_y \propto 1 - \sqrt3 - \sqrt2$.
+  4. Angle $= \tan^{-1}\frac{1 - \sqrt3 - \sqrt2}{1 + \sqrt3 + \sqrt2}$ (below the x-axis, since $R_y < 0$).
+  Why others are wrong:
+  - (B), (C) and (D) have sign errors, typically from adding $\vec{OC}$ instead of subtracting it, or swapping x and y.
+  Key takeaway: subtracting a vector means adding its negative — reverse both components of $\vec{OC}$.
   Answer: (A)
 P A 3: |-
-  Concept: For a mirror, image speed $= m^2\times$ object speed, with $m = \frac{v}{u}$.
+  Concept: A car's rear-view mirror is convex. For a mirror, differentiating $\frac{1}{v} + \frac{1}{u} = \frac{1}{f}$ gives $v_{image} = -\left(\frac{v}{u}\right)^2v_{object} = -m^2v_{object}$.
   Solution:
-  1. Convex rear-view mirror, f = 10 cm, u = −190 cm: $v = \frac{uf}{u - f} = 9.5$ cm.
-  2. $m^2 = \left(\frac{9.5}{190}\right)^2 = \frac{1}{400}$, so the image speed is $\frac{40}{400} = 0.1$ m/s.
+  1. Convex mirror: f = +10 cm; object distance u = −190 cm.
+  2. $v = \frac{uf}{u - f} = \frac{(-190)(10)}{-190 - 10} = 9.5$ cm (behind the mirror).
+  3. $m^2 = \left(\frac{9.5}{190}\right)^2 = \left(\frac{1}{20}\right)^2 = \frac{1}{400}$.
+  4. Image speed $= \frac{40}{400} = 0.1$ m/s.
+  Why others are wrong:
+  - (C) 40 m/s treats the image as moving like the object (m = 1, a plane mirror).
+  - (A) 4 m/s and (B) 0.2 m/s use m instead of m², or a wrong image distance.
+  Key takeaway: images in convex mirrors appear to move much more slowly than the objects, because |m| < 1 and speed scales as m².
   Answer: (D)
 P A 4: |-
-  Concept: Inside a uniform shell, the field is zero and the potential is constant ($-\frac{GM}{R}$, not zero).
+  Concept: By the shell theorem, a uniform spherical shell exerts no net gravitational force on a mass inside it. Since the field is zero, the potential does not change inside — it is constant, equal to its value at the surface, $V = -\frac{GM}{R}$.
   Solution:
-  1. (a), (c) and (d) are true; (b) is false.
+  1. (a) Field inside is zero — TRUE.
+  2. (b) Potential inside is zero — FALSE; it is $-\frac{GM}{R}$ (non-zero).
+  3. (c) Field is the same (zero) everywhere inside — TRUE.
+  4. (d) Potential is the same everywhere inside — TRUE.
+  5. (e) "All of the above" — FALSE, because (b) is false.
+  6. Correct: (a), (c), (d).
+  Why others are wrong:
+  - (B) and (C) include the false statement (b).
+  - (D) omits (a) and includes (b).
+  Key takeaway: zero field means constant potential, not zero potential — the same idea as inside a charged conducting shell.
   Answer: (A)
 P A 5: |-
-  Concept: Capillary rise $h = \frac{2T}{r\rho g}$; the level difference comes from the two radii.
+  Concept: In a capillary tube of radius r, water rises by $h = \frac{2T\cos\theta}{r\rho g}$. In a U-tube with limbs of different radii, the narrower limb has the higher level; the difference is the difference of capillary rises.
   Solution:
-  1. $\Delta h = \frac{2T}{\rho g}\left(\frac{1}{r_1} - \frac{1}{r_2}\right) = \frac{2\times0.073}{10^4}(400 - 250) = 2.19\times10^{-3}$ m.
+  1. Radii: $r_1 = 2.5$ mm = $2.5\times10^{-3}$ m, $r_2 = 4.0$ mm = $4\times10^{-3}$ m.
+  2. $\Delta h = \frac{2T}{\rho g}\left(\frac{1}{r_1} - \frac{1}{r_2}\right) = \frac{2\times0.073}{1000\times10}(400 - 250)$.
+  3. $\Delta h = 1.46\times10^{-5}\times150 = 2.19\times10^{-3}$ m = 2.19 mm.
+  Why others are wrong:
+  - (A), (C) and (D) come from using the diameters instead of the radii or from adding instead of subtracting the two rises.
+  Key takeaway: always convert diameter to radius in capillarity formulas — a very common slip.
   Answer: (B)
 P A 6: |-
-  Concept: First law per unit time: $\frac{Q}{t} = \frac{\Delta U}{t} + P$.
+  Concept: First law of thermodynamics per unit time: heat supplied per second = rate of increase of internal energy + power delivered (work done by the system per second).
   Solution:
-  1. $100 = \frac{2500}{t} + 90 \Rightarrow t = 250$ s.
+  1. Heat supplied: 6000 J/min = 100 J/s.
+  2. Power delivered: 90 W.
+  3. Rate of increase of internal energy: 100 − 90 = 10 J/s.
+  4. Time to increase U by 2500 J: $t = \frac{2500}{10} = 250$ s $= 2.5\times10^2$ s.
+  Why others are wrong:
+  - (D) 25 s uses 100 J/s as the rate of increase of U (ignoring the work output).
+  - (B) 41 s and (C) 2400 s mix minutes and seconds.
+  Key takeaway: only the part of the heat not converted into work raises the internal energy.
   Answer: (A)
 P A 7: |-
-  Concept: $U = \frac{1}{2}Li^2$, $P = i^2R$, $\tau = \frac{L}{R}$.
+  Concept: An inductor with resistance: stored energy $U = \frac{1}{2}Li^2$, dissipated power $P = i^2R$, time constant $\tau = \frac{L}{R}$.
   Solution:
-  1. $L = \frac{2\times64}{64} = 2$ H and $R = \frac{640}{64} = 10\ \Omega$.
-  2. $\tau = 0.2$ s.
+  1. $64 = \frac{1}{2}L(8)^2 \Rightarrow L = \frac{128}{64} = 2$ H.
+  2. $640 = 8^2R \Rightarrow R = 10\ \Omega$.
+  3. $\tau = \frac{L}{R} = \frac{2}{10} = 0.2$ s.
+  Shortcut: $\tau = \frac{L}{R} = \frac{2U/i^2}{P/i^2} = \frac{2U}{P} = \frac{128}{640} = 0.2$ s.
+  Why others are wrong:
+  - (A) 0.4 s and (B) 0.8 s double or quadruple the answer (e.g. forgetting the ½ in U); (C) 0.125 s does not follow from L = 2 H and R = 10 Ω.
+  Key takeaway: τ = 2U/P is a neat relation linking stored energy and dissipation.
   Answer: (D)
 P A 8: |-
-  Concept: Average power is maximum at resonance: $X_C = X_L$.
+  Concept: In a series LCR circuit, the average power $P = I_{rms}^2R$ is maximum when the current is maximum, i.e. at resonance where $X_C = X_L$ (impedance = R).
   Solution:
-  1. $\frac{1}{2\pi(50)C} = 250\pi \Rightarrow C = \frac{1}{25000\pi^2} = 4\times10^{-6}$ F.
+  1. $X_C = X_L = 250\pi\ \Omega$.
+  2. $\frac{1}{2\pi fC} = 250\pi \Rightarrow C = \frac{1}{2\pi\times50\times250\pi} = \frac{1}{25000\pi^2}$.
+  3. With π² = 10: $C = \frac{1}{2.5\times10^5} = 4\times10^{-6}$ F = 4 μF.
+  Why others are wrong:
+  - (D) 40 μF, (B) 25 μF and (C) 400 μF come from power-of-ten slips or using ω = 50 instead of 2π × 50.
+  Key takeaway: the resistance value (3 kΩ) does not affect the resonance condition — it only sets the maximum current.
   Answer: (A)
 P A 9: |-
-  Concept: A NAND with tied inputs is a NOT gate.
+  Concept: A NAND gate with both inputs tied acts as a NOT gate. From the circuit: A and B are each inverted by tied-input NAND gates, and the results are combined by an AND stage (as in the official solution).
   Solution:
-  1. X = Ā and Y = B̄, so $Z = \bar A\cdot\bar B = \overline{A + B}$, which is NOR.
+  1. X = $\bar A$, Y = $\bar B$.
+  2. Z = X · Y = $\bar A\cdot\bar B$.
+  3. By De Morgan: $\bar A\cdot\bar B = \overline{A + B}$ — this is NOR.
+  4. Truth table: Z = 1 only when A = B = 0 ✓.
+  Why others are wrong:
+  - (A) OR is the complement of the result.
+  - (B) AND would need non-inverted inputs.
+  - (D) NAND = $\overline{AB} = \bar A + \bar B$, which uses OR, not AND, on inverted inputs.
+  Key takeaway: "AND of inverted inputs = NOR" and "OR of inverted inputs = NAND".
   Answer: (C)
 P A 10: |-
-  Concept: $\nu \propto \left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$ for a given ion.
+  Concept: For a hydrogen-like ion, the emitted frequency is $\nu = RcZ^2\left(\frac{1}{n_1^2} - \frac{1}{n_2^2}\right)$. For the same ion, only the bracket changes.
   Solution:
-  1. $\frac{\nu_{21}}{\nu_{31}} = \frac{3/4}{8/9} = \frac{27}{32}$.
-  2. $\nu_{21} = 2.92\times10^{15}\times\frac{27}{32} = 2.46\times10^{15}$ Hz.
+  1. 3 → 1: $1 - \frac{1}{9} = \frac{8}{9}$.
+  2. 2 → 1: $1 - \frac{1}{4} = \frac{3}{4}$.
+  3. $\frac{\nu_{21}}{\nu_{31}} = \frac{3/4}{8/9} = \frac{27}{32}$.
+  4. $\nu_{21} = 2.92\times10^{15}\times\frac{27}{32} = 2.46\times10^{15}$ Hz.
+  Why others are wrong:
+  - (C) $4.38\times10^{15}$ uses the ratio $\frac{3}{2}$; (B) $6.57\times10^{15}$ uses $\frac{9}{4}$.
+  - (A) $0.44\times10^{15}$ corresponds to the 3 → 2 transition ($\frac{5}{36}\div\frac{8}{9}$).
+  Key takeaway: the 2 → 1 photon must have lower frequency than 3 → 1, so only (A) or (D) are possible; (A) is 3 → 2.
   Answer: (D)
 P A 11: |-
-  Concept: $eV_s = \frac{hc}{\lambda} - \phi$.
+  Concept: Einstein's equation: $eV_s = \frac{hc}{\lambda} - \phi$. With hc ≈ 1240 eV nm, photon energy in eV = $\frac{1240}{\lambda(\text{nm})}$.
   Solution:
-  1. At 280 nm: $4.43 - 2.5 = 1.93$ V. At 400 nm: $3.1 - 2.5 = 0.6$ V.
-  2. Change $\approx 1.33$ V ≈ 1.3 V.
+  1. At 280 nm: $E = \frac{1240}{280} = 4.43$ eV → $V_s = 4.43 - 2.5 = 1.93$ V.
+  2. At 400 nm: $E = \frac{1240}{400} = 3.10$ eV → $V_s = 3.10 - 2.5 = 0.60$ V.
+  3. Change $= 1.93 - 0.60 = 1.33$ V ≈ 1.3 V.
+  Shortcut: $\Delta V = 1240\left(\frac{1}{280} - \frac{1}{400}\right) = 1.33$ V — the work function cancels.
+  Why others are wrong:
+  - (C) 1.9 V is the first stopping potential alone; (D) 0.6 V is the second alone.
+  - (B) 1.1 V comes from an arithmetic slip.
+  Key takeaway: a change in stopping potential depends only on the change in photon energy.
   Answer: (A)
 P A 12: |-
-  Concept: Redraw the network between A and B.
+  Concept: Simplify the resistor network by identifying nodes at the same potential; then add the internal resistance and use $P = \frac{E^2}{R_{total}}$.
   Solution:
-  1. It reduces to four parallel branches: 4 Ω, 8 Ω, 12 Ω and 6 Ω, so $\frac{1}{R} = \frac{15}{24}$ and $R = 1.6\ \Omega$.
-  2. Total with the internal resistance: 2.2 Ω.
-  3. $P = \frac{2.2^2}{2.2} = 2.2$ W.
+  1. Redrawing the network between A and B (per the figure) gives four branches in parallel: 4 Ω, 8 Ω, 12 Ω and 6 Ω.
+  2. $\frac{1}{R} = \frac{1}{4} + \frac{1}{8} + \frac{1}{12} + \frac{1}{6} = \frac{6 + 3 + 2 + 4}{24} = \frac{15}{24} \Rightarrow R = 1.6\ \Omega$.
+  3. Total with internal resistance: 1.6 + 0.6 = 2.2 Ω.
+  4. Power dissipated in the whole circuit: $P = \frac{E^2}{R_{total}} = \frac{2.2^2}{2.2} = 2.2$ W.
+  Why others are wrong:
+  - (A) 1.32 W and (B) 0.65 W give only part of the power (e.g. external only with wrong R).
+  - (D) 4.4 W ignores the internal resistance or doubles the current.
+  Key takeaway: "whole circuit" includes the internal resistance of the cell.
   Answer: (C)
 P A 13: |-
-  Concept: Gauss's law; the field is zero inside conductors.
+  Concept: Gauss's law with conductors: the field inside any conductor is zero. For a charge q on the inner sphere, the shell's inner surface carries −q and outer surface +q.
   Solution:
-  1. r < R: E = 0 (inside the metal). R < r < a: $E = \frac{kq}{r^2}$.
-  2. a < r < b: E = 0 (inside the conducting shell). r > b: $E = \frac{kq}{r^2}$ again.
-  Note: ALLEN also accepts (2) if the shell is treated as non-conducting; the official key is (1).
+  1. r < R (inside the metal sphere): E = 0.
+  2. R < r < a (gap): $E = \frac{kq}{r^2}$, decreasing.
+  3. a < r < b (inside the conducting shell): E = 0.
+  4. r > b: enclosed charge q again, so $E = \frac{kq}{r^2}$.
+  5. Graph (A) shows this: zero, decreasing, zero, decreasing.
+  Note: ALLEN also accepts (B) if the shell is treated as non-conducting; the official NTA key is (A).
+  Why others are wrong:
+  - (C) makes E zero all the way to b, ignoring the gap field.
+  - (D) shows E rising inside the solid metal sphere, which is impossible for a conductor.
+  Key takeaway: a conducting shell shields its interior material but not the region beyond its outer surface.
   Answer: (A)
 P A 14: |-
-  Concept: $v_{rms} \propto \frac{1}{\sqrt M}$ at the same T.
+  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$. At the same temperature, $v_{rms} \propto \frac{1}{\sqrt M}$.
   Solution:
-  1. M: H₂ 2 < O₂ 32 < CO₂ 44, so $V_H > V_O > V_C$.
+  1. Molar masses: H₂ = 2, O₂ = 32, CO₂ = 44 g/mol.
+  2. Lightest moves fastest: $V_H > V_O > V_C$.
+  3. Ratios: $V_H : V_O : V_C = \frac{1}{\sqrt2} : \frac{1}{\sqrt{32}} : \frac{1}{\sqrt{44}}$, e.g. $V_H = 4V_O$.
+  Why others are wrong:
+  - (B) reverses the order.
+  - (C) and (D) claim equal speeds; only the average kinetic energies are equal at the same temperature.
+  What is equal: At the same temperature, all three gases have the same average translational kinetic energy per molecule, (3/2)kT. Equal KE with different masses forces different speeds.
+  Common mistake: Confusing "same temperature" with "same speed" (option D).
+  Key takeaway: equal temperatures mean equal average KE per molecule, so lighter molecules must move faster.
   Answer: (A)
 P A 15: |-
-  Concept: True reading = observed − zero error.
+  Concept: Least count $= \frac{\text{pitch}}{\text{circular divisions}}$. If the circular scale's 5th division coincides with the reference line when the jaws are closed, the zero error is +5 divisions (positive). True reading = observed reading − zero error.
   Solution:
-  1. LC $= \frac{0.5}{50} = 0.01$ mm; zero error $= +5\times0.01 = +0.05$ mm.
-  2. Observed $= 5 + 20\times0.01 = 5.20$ mm, so the true reading is 5.15 mm.
+  1. LC $= \frac{0.5\text{ mm}}{50} = 0.01$ mm.
+  2. Zero error $= +5\times0.01 = +0.05$ mm.
+  3. Observed reading $= 5 + 20\times0.01 = 5.20$ mm.
+  4. True reading $= 5.20 - 0.05 = 5.15$ mm.
+  Why others are wrong:
+  - (D) 5.20 mm ignores the zero error.
+  - (B) 5.25 mm adds the zero error instead of subtracting it.
+  - (A) 5.00 mm ignores the circular scale reading.
+  Key takeaway: a positive zero error makes readings too large, so it is subtracted.
   Answer: (C)
 P A 16: |-
-  Concept: Parallel wires of equal l and A: $R = \frac{l}{A}\cdot\frac{\rho_1\rho_2}{\rho_1 + \rho_2}$.
+  Concept: $R = \frac{\rho l}{A}$. Two wires of equal length and area in parallel: $R_{eq} = \frac{l}{A}\cdot\frac{\rho_1\rho_2}{\rho_1 + \rho_2}$.
   Solution:
-  1. $\frac{\rho_1\rho_2}{\rho_1 + \rho_2} = \frac{12\times51}{63}\times10^{-8} = 9.71\times10^{-8}\ \Omega$ m; $A = \pi\times10^{-6}$ m².
-  2. $l = \frac{3\pi\times10^{-6}}{9.71\times10^{-8}} \approx 97$ m.
+  1. $\frac{\rho_1\rho_2}{\rho_1 + \rho_2} = \frac{12\times51}{63} = 9.71\ \mu\Omega$ cm $= 9.71\times10^{-8}\ \Omega$ m.
+  2. Area: radius 1 mm → $A = \pi(10^{-3})^2 = \pi\times10^{-6}$ m².
+  3. $l = \frac{R_{eq}A}{\rho_{eff}} = \frac{3\times\pi\times10^{-6}}{9.71\times10^{-8}} = \frac{9.42\times10^{-6}}{9.71\times10^{-8}} \approx 97$ m.
+  Why others are wrong:
+  - (A) 82 m, (C) 110 m, (D) 90 m come from using the diameter as radius, or adding resistivities (series) instead of combining in parallel.
+  Key takeaway: 1 μΩ cm = 10⁻⁸ Ω m — watch the unit conversion.
   Answer: (B)
 P A 17: |-
-  Concept: Thrust $u\frac{dm}{dt} = m(a + g)$.
+  Concept: For a rocket moving vertically, thrust $u\frac{dm}{dt}$ (u = exhaust speed relative to the rocket) must overcome gravity and provide the acceleration: $u\frac{dm}{dt} - mg = ma$.
   Solution:
-  1. $\frac{dm}{dt} = \frac{1000\times30}{500} = 60$ kg/s.
+  1. $u\frac{dm}{dt} = m(a + g) = 1000(20 + 10) = 30000$ N.
+  2. $\frac{dm}{dt} = \frac{30000}{500} = 60$ kg/s.
+  Why others are wrong:
+  - (B) 500 kg/s and (A) 600 kg/s are off by factors of 10 or use wrong combinations.
+  - (C) 10 kg/s ignores most of the required thrust.
+  Key takeaway: at lift-off, the thrust must exceed the weight; here thrust = 3 × weight, giving a net acceleration of 2g.
   Answer: (D)
 P A 18: |-
-  Concept: Substitute the dimensions.
+  Concept: Substitute dimensions: [E] = [ML²T⁻²], angular momentum [L] = [ML²T⁻¹], [G] = [M⁻¹L³T⁻²].
   Solution:
-  1. $[E] = ML^2T^{-2}$, $[L^2] = M^2L^4T^{-2}$, $[G^{-2}] = M^2L^{-6}T^4$.
-  2. Product with $M^{-5}$: $M^0L^0T^0$, so P is dimensionless.
+  1. $[L^2] = [M^2L^4T^{-2}]$.
+  2. $[G^{-2}] = [M^2L^{-6}T^4]$.
+  3. $[P] = [ML^2T^{-2}][M^2L^4T^{-2}][M^{-5}][M^2L^{-6}T^4]$.
+  4. M: 1 + 2 − 5 + 2 = 0; L: 2 + 4 − 6 = 0; T: −2 − 2 + 4 = 0.
+  5. So P is dimensionless: [M⁰L⁰T⁰].
+  Why others are wrong:
+  - (A), (B), (C) each leave non-zero exponents from arithmetic slips.
+  Physical meaning: EL²/(M⁵G²) is a pure number; such dimensionless groups appear in orbital mechanics (for example, it is related to the eccentricity of a Kepler orbit, e² = 1 + 2EL²/(G²M²m³)).
+  Common mistake: Using [L] for length instead of angular momentum.
+  Key takeaway: this combination $\frac{EL^2}{G^2M^5}$ is a known dimensionless group in orbital mechanics (related to eccentricity).
   Answer: (D)
 P A 19: |-
-  Concept: $RC = \rho\varepsilon_0K$ for a leaky capacitor.
+  Concept: For a capacitor filled with a slightly conducting dielectric, the leakage resistance and capacitance share the same geometry: $R = \frac{\rho d}{A}$ and $C = \frac{K\varepsilon_0A}{d}$, so $RC = \rho K\varepsilon_0$.
   Solution:
-  1. $R = \frac{\rho\varepsilon_0K}{C} = \frac{200\times8.85\times10^{-12}\times50}{2\times10^{-12}} = 4.4\times10^4\ \Omega$.
-  2. $I = \frac{40}{4.4\times10^4} \approx 0.9$ mA.
+  1. $R = \frac{\rho K\varepsilon_0}{C} = \frac{200\times50\times8.85\times10^{-12}}{2\times10^{-12}} = 4.4\times10^4\ \Omega$.
+  2. Leakage current: $I = \frac{V}{R} = \frac{40}{4.4\times10^4} \approx 0.9\times10^{-3}$ A = 0.9 mA.
+  Why others are wrong:
+  - (A) 9.0 μA and (D) 0.9 μA are too small by factors of 100 and 1000.
+  - (B) 9.0 mA is too large by a factor of 10.
+  Key takeaway: RC = ρKε₀ is independent of plate area and separation — a handy shortcut.
   Answer: (C)
 P A 20: |-
-  Concept: Doped semiconductors stay electrically neutral.
+  Concept: Doping adds impurity atoms that are themselves electrically neutral. A pentavalent atom (P, As) donates one free electron and becomes a fixed positive ion.
   Solution:
-  1. Pentavalent donors increase the electron density, so I is true.
-  2. An n-type semiconductor is neutral overall, so II is false.
+  1. Statement I: pentavalent doping increases the free-electron density (n-type) — TRUE.
+  2. Statement II: the n-type semiconductor is electrically neutral overall; each free electron is balanced by a positive donor ion — FALSE.
+  Why others are wrong:
+  - (B) and (C) accept Statement II.
+  - (D) rejects Statement I.
+  Why the crystal stays neutral: Every donor atom that gives up an electron becomes a positive ion fixed in the lattice. The mobile electrons and the fixed positive ions exactly balance.
+  Common mistake: Reading "negative-type" as "negatively charged"; the n refers to the sign of the majority carriers, not the net charge.
+  Key takeaway: "n-type" refers to the majority carriers (electrons), not to a net charge.
   Answer: (A)
 P B 1: |-
-  Concept: KE gained = loss of potential energy of the chain's centre of mass.
+  Concept: On a smooth table, the chain's kinetic energy comes only from the loss of gravitational potential energy. Use the centre of mass of each part (mass per metre = 1 kg/m).
   Solution:
-  1. Initially the 1 m (1 kg) hanging part has PE $= -1\times10\times0.5 = -5$ J.
-  2. Finally the 3 kg chain has PE $= -3\times10\times1.5 = -45$ J.
-  3. $K = 40$ J.
+  1. Initially: 1 m hangs (mass 1 kg), its centre 0.5 m below the table: $U_i = -1\times10\times0.5 = -5$ J (the 2 m on the table has U = 0).
+  2. Finally the whole 3 m (3 kg) hangs, centre 1.5 m below: $U_f = -3\times10\times1.5 = -45$ J.
+  3. $K = U_i - U_f = -5 + 45 = 40$ J.
+  Key takeaway: for chains and ropes, track the centre of mass of each segment rather than individual links.
   Answer: 40
 P B 2: |-
-  Concept: For a perfect reflector, pressure $= \frac{2I}{c} = \varepsilon_0E_0^2$.
+  Concept: For a plane EM wave, average intensity $I = \frac{1}{2}c\varepsilon_0E_0^2$. For a perfectly reflecting surface at normal incidence, radiation pressure is $\frac{2I}{c} = \varepsilon_0E_0^2$.
   Solution:
-  1. $P = 8.85\times10^{-12}\times200^2 = 3.54\times10^{-7} = \frac{354}{10^9}$ N/m².
+  1. $E_0 = 200$ V/m.
+  2. $P = \varepsilon_0E_0^2 = 8.85\times10^{-12}\times4\times10^4 = 3.54\times10^{-7}$ N/m².
+  3. $= \frac{354}{10^9}$ N/m², so x = 354.
+  Note: the area (100 cm²) and exposure time (10 min) would be needed for force or momentum transferred, but not for pressure.
+  Why 2I/c: A perfect reflector reverses the photon momentum, so the momentum change per unit time is twice that for an absorber (I/c).
+  Common mistake: Using I/c (perfect absorber), which gives 177.
+  Key takeaway: a perfect reflector feels twice the pressure of a perfect absorber.
   Answer: 354
 P B 3: |-
-  Concept: Doppler effect with source and observer receding: $f' = f\frac{v - v_o}{v + v_s}$.
+  Concept: Doppler effect: $f' = f\cdot\frac{v \pm v_o}{v \mp v_s}$. When source and observer move apart, the observed frequency decreases: $f' = f\frac{v - v_o}{v + v_s}$.
   Solution:
-  1. $1800 = f\frac{320}{360} \Rightarrow f = 2025$ Hz.
+  1. v = 340 m/s, $v_o = v_s = 20$ m/s (moving away).
+  2. $1800 = f\times\frac{340 - 20}{340 + 20} = f\times\frac{320}{360} = f\times\frac{8}{9}$.
+  3. $f = 1800\times\frac{9}{8} = 2025$ Hz.
+  Sign convention: The observer moving away subtracts its speed in the numerator (fewer wavefronts met per second); the source moving away adds its speed in the denominator (wavefronts spread out).
+  Check: 2025 × 320/360 = 1800 ✓.
+  Key takeaway: receding motion lowers the pitch, so the source frequency must be higher than the detected 1800 Hz.
   Answer: 2025
 P B 4: |-
-  Concept: Equate the heights of the two balls.
+  Concept: Both balls follow $y = ut - \frac{1}{2}gt^2$; the second starts 3 s later. They collide when their heights are equal (the ball size, 5 cm, is negligible here).
   Solution:
-  1. $35t - 5t^2 = 35(t - 3) - 5(t - 3)^2 \Rightarrow t = 5$ s.
-  2. $h = 175 - 125 = 50$ m.
+  1. Ball 1: $y_1 = 35t - 5t^2$. Ball 2: $y_2 = 35(t - 3) - 5(t - 3)^2$.
+  2. $y_1 = y_2$: $35t - 5t^2 = 35t - 105 - 5(t^2 - 6t + 9)$ ⇒ $0 = -105 + 30t - 45$ ⇒ t = 5 s.
+  3. Height: $y_1 = 35(5) - 5(25) = 175 - 125 = 50$ m.
+  Check: ball 1 reaches its peak (61.25 m) at 3.5 s and is falling at t = 5 s; ball 2 has been rising for 2 s: 70 − 20 = 50 m ✓.
+  Key takeaway: by symmetry, the balls meet at time 3.5 + 1.5 s, i.e. half the interval after the first ball's peak.
   Answer: 50
 P B 5: |-
-  Concept: Excess pressures add: $\frac{4S}{r_1} + \frac{4S}{r_2} = \frac{4S}{R}$.
+  Concept: A soap bubble (two surfaces) has excess pressure $\frac{4S}{r}$. For a bubble inside another, the pressure inside the inner bubble exceeds atmospheric pressure by the sum of both excess pressures.
   Solution:
-  1. $\frac{1}{R} = \frac{1}{6} + \frac{1}{3} = \frac{1}{2} \Rightarrow R = 2$ cm.
+  1. Excess pressure inside the small bubble relative to the atmosphere: $\frac{4S}{3} + \frac{4S}{6}$.
+  2. Equivalent single bubble: $\frac{4S}{R} = \frac{4S}{3} + \frac{4S}{6}$.
+  3. $\frac{1}{R} = \frac{1}{3} + \frac{1}{6} = \frac{1}{2} \Rightarrow R = 2$ cm.
+  Final step: 1/R = 1/3 + 1/6 = 1/2, so R = 2 cm.
+  Why the pressures add: Air inside the small bubble is above the pressure inside the big bubble by 4S/3, and that is above atmospheric by 4S/6.
+  Key takeaway: nested bubbles combine like resistors in parallel: $\frac{1}{R} = \frac{1}{r_1} + \frac{1}{r_2}$.
   Answer: 2
 P B 6: |-
-  Concept: $\omega_m = 2\pi f_m$.
+  Concept: In $C_m(t) = A_c(1 + \mu\cos\omega_mt)\sin\omega_ct$, the modulating angular frequency is $\omega_m$, and $f_m = \frac{\omega_m}{2\pi}$.
   Solution:
-  1. $f_m = \frac{12560}{2\pi} = 2000$ Hz = 2 kHz.
+  1. $\omega_m = 12560$ rad/s.
+  2. $f_m = \frac{12560}{2\times3.14} = 2000$ Hz = 2 kHz.
+  3. (Carrier: $\omega_c = 1.11\times10^6$ rad/s, $f_c \approx 177$ kHz; modulation index 0.2.)
+  Reading the equation: The factor (1 + 0.2 cos 12560t) is the envelope; its angular frequency is the modulating (message) frequency, while sin(1.11 × 10⁶ t) is the carrier.
+  Common mistake: Reporting ω_m (12560) directly without dividing by 2π.
+  Key takeaway: 12560 = 2π × 2000 when π = 3.14 — a number chosen for easy division.
   Answer: 2
 P B 7: |-
-  Concept: $m_2$ lies on the equatorial line of $m_1$: $B = \frac{\mu_0}{4\pi}\frac{m_1}{r^3}$, perpendicular to $m_2$.
+  Concept: From the figure, P lies on the equatorial (broadside-on) line of $m_1$, and $m_2$ is oriented perpendicular to the field there. The equatorial field of a short dipole is $B = \frac{\mu_0}{4\pi}\frac{m_1}{r^3}$, and torque $\tau = m_2B\sin\theta$ with θ = 90°.
   Solution:
-  1. $\tau = m_2B = 10^{-7}\times1\times1 = 1\times10^{-7}$ N m.
+  1. $B = 10^{-7}\times\frac{1}{1^3} = 10^{-7}$ T.
+  2. $\tau = m_2B = 1\times10^{-7}$ N m.
+  3. So the value is 1 (×10⁻⁷ N m).
+  Why sin θ = 1: The torque τ = m × B is largest when the dipole is perpendicular to the field at its location.
+  Common mistake: Using the axial field formula 2μ₀m/(4πr³), which gives twice the answer.
+  Key takeaway: the axial field is twice the equatorial field ($\frac{2\mu_0m}{4\pi r^3}$) — identify the position carefully from the figure.
   Answer: 1
 P B 8: |-
-  Concept: Nodes where $\cos kx = 0$.
+  Concept: A standing wave $y = A\cos(kx)\sin(\omega t)$ has nodes where $\cos kx = 0$: $kx = \frac{\pi}{2}, \frac{3\pi}{2}, \dots$
   Solution:
-  1. $1.57x = \frac{\pi}{2} \Rightarrow x = 1$ cm.
+  1. k = 1.57 cm⁻¹ ≈ $\frac{\pi}{2}$ cm⁻¹.
+  2. First node for x > 0: $kx = \frac{\pi}{2} \Rightarrow x = \frac{\pi/2}{1.57} = 1$ cm.
+  3. (The origin is an antinode, since cos 0 = 1.)
+  Why cos kx locates the nodes: The displacement is always zero where cos kx = 0, regardless of time, which defines a node.
+  Common mistake: Solving sin(78.5t) = 0, which gives times, not positions.
+  Key takeaway: nodes are $\frac{\lambda}{2}$ apart; here λ = $\frac{2\pi}{k}$ = 4 cm, so nodes are at 1, 3, 5, … cm.
   Answer: 1
 P B 9: |-
-  Concept: First bright fringe at $y = \frac{\lambda D}{d}$.
+  Concept: In YDSE, the first bright fringe is at $y_1 = \frac{\lambda D}{d}$. So $\Delta\lambda = \frac{d\,\Delta y}{D}$.
   Solution:
-  1. $\Delta\lambda = \frac{\Delta y\,d}{D} = \frac{1.5\times10^{-3}\times0.3\times10^{-3}}{1.5} = 3\times10^{-7}$ m = 300 nm.
+  1. Δy = 3.5 − 2.0 = 1.5 mm = $1.5\times10^{-3}$ m.
+  2. $\Delta\lambda = \frac{0.3\times10^{-3}\times1.5\times10^{-3}}{1.5} = 3\times10^{-7}$ m = 300 nm.
+  3. Individually: violet λ = 400 nm, red λ = 700 nm ✓ (consistent with the visible range).
+  Why the first fringe: The nth bright fringe is at nλD/d; for n = 1 the position is directly proportional to λ, so the separation of the violet and red first fringes gives Δλ.
+  Common mistake: Forgetting to convert mm to m in both y and d.
+  Key takeaway: red light, having the longer wavelength, forms fringes farther from the centre; white-light fringes are coloured beyond the central white fringe.
   Answer: 300
 P B 10: |-
-  Concept: Parallel-axis theorem for the rod and the ring.
+  Concept: Use the parallel-axis theorem $I = I_{cm} + Md^2$ for each part. From the figure, the handle (rod) has length 6r and the ring has radius r, with the ring's centre 7r from end A. The axis is at $\frac{r}{2}$ from A, perpendicular to the handle, in the plane of the ring.
   Solution:
-  1. Rod (6r): $\frac{M(6r)^2}{12} + M\left(\frac{5r}{2}\right)^2 = 3Mr^2 + \frac{25}{4}Mr^2$.
-  2. Ring (radius r, about a diameter-parallel axis): $\frac{Mr^2}{2} + M\left(\frac{13r}{2}\right)^2$.
-  3. Total $= 52Mr^2$.
+  1. Rod: $I_{cm} = \frac{M(6r)^2}{12} = 3Mr^2$; its centre is 3r from A, i.e. $\frac{5r}{2}$ from the axis. $I_{rod} = 3Mr^2 + \frac{25}{4}Mr^2 = 9.25Mr^2$.
+  2. Ring about a diameter (parallel to the axis): $\frac{Mr^2}{2}$; its centre is 7r from A, i.e. $\frac{13r}{2}$ from the axis. $I_{ring} = \frac{Mr^2}{2} + \frac{169}{4}Mr^2 = 42.75Mr^2$.
+  3. Total $= 9.25 + 42.75 = 52\,Mr^2$.
+  Key takeaway: for a ring, the moment about a diameter is half that about its central perpendicular axis.
   Answer: 52

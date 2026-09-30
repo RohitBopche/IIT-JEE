@@ -1,178 +1,340 @@
 C A 1: |-
-  Concept: Energies of the n-butane conformers: anti < gauche < eclipsed (H/CH₃) < fully eclipsed (CH₃/CH₃).
+  Concept: Rotating about the C2–C3 bond of n-butane gives conformers whose energies depend on torsional strain (eclipsing bonds) and steric strain (bulky CH₃ groups close together). Stability order: anti > gauche > eclipsed (CH₃/H) > fully eclipsed (CH₃/CH₃).
   Solution:
-  1. I (anti) is the most stable, then III (gauche, 60° CH₃–CH₃), then IV (CH₃ eclipsing H), and II (CH₃ eclipsing CH₃) is the highest.
-  2. So I < III < IV < II.
+  1. I (anti, CH₃ groups 180° apart): no torsional or steric strain, so it has the lowest energy.
+  2. III (gauche, CH₃ groups 60° apart): staggered, but with about 3.8 kJ/mol of steric strain between the CH₃ groups.
+  3. IV (eclipsed, CH₃ eclipsing H): torsional strain plus CH₃/H eclipsing, about 16 kJ/mol.
+  4. II (fully eclipsed, CH₃ eclipsing CH₃): the highest energy, about 19 kJ/mol.
+  5. Increasing energy: I < III < IV < II.
+  Why others are wrong:
+  - (A) and (C) put the fully eclipsed form lowest, which is backwards.
+  - (B) places the eclipsed IV below the staggered gauche III; any staggered form is lower than any eclipsed form.
+  Key takeaway: Staggered forms are always below eclipsed ones; within each type, the bigger groups closer together raise the energy.
   Answer: (D)
 C A 2: |-
-  Concept: Eu (Z = 63) is [Xe]4f⁷6s², so Eu²⁺ is [Xe]4f⁷.
+  Concept: Europium (Z = 63) has the configuration [Xe]4f⁷6s². Removing the two 6s electrons gives Eu²⁺ = [Xe]4f⁷, a half-filled f subshell that is extra stable. Even so, the characteristic and most stable oxidation state of the lanthanides in water is +3.
   Solution:
-  1. Eu²⁺ has a stable half-filled 4f⁷ configuration, yet it readily oxidises to Eu³⁺ (the common Ln oxidation state), so it is a strong reducing agent.
+  1. Eu: [Xe]4f⁷6s², so Eu²⁺: [Xe]4f⁷ (outermost 4f⁷).
+  2. Despite the stable half-filled 4f⁷ configuration, Eu²⁺ readily loses one more electron to form Eu³⁺ (4f⁶), the common Ln³⁺ state, which is strongly stabilised by its large hydration enthalpy.
+  3. This easy oxidation makes Eu²⁺ a strong reducing agent. "In spite of" refers to the 4f⁷ configuration.
+  Why others are wrong:
+  - (A) 4f⁷6s² is neutral Eu, not the ion.
+  - (B) 4f⁶ is Eu³⁺.
+  - (D) 4f⁶6s² is not a valid configuration for Eu²⁺; the 6s electrons are lost first.
+  Key takeaway: Lanthanide ions ionise the 6s electrons first; Eu²⁺ (4f⁷) and Yb²⁺ (4f¹⁴) are reductants, while Ce⁴⁺ is an oxidant.
   Answer: (C)
 C A 3: |-
-  Concept: Friedel–Crafts acylation with a cyclic anhydride, then Clemmensen reduction.
+  Concept: Friedel–Crafts acylation with a cyclic anhydride opens the ring. One carbonyl becomes an aryl ketone and the other becomes a free –COOH. Two equivalents of AlCl₃ are needed because the product complexes with the Lewis acid. The Clemmensen reduction (Zn–Hg/HCl) then reduces a ketone C=O to CH₂ but leaves carboxylic acids untouched.
   Solution:
-  1. Benzene + succinic anhydride/AlCl₃ gives A = Ph–CO–CH₂CH₂–COOH.
-  2. Zn(Hg)/HCl reduces the ketone C=O to CH₂ (the –COOH is unaffected): B = Ph–(CH₂)₃–COOH.
+  1. Benzene + succinic anhydride / AlCl₃ gives A = Ph–CO–CH₂CH₂–COOH (3-benzoylpropanoic acid).
+  2. Zn(Hg)/HCl converts the ketone C=O to CH₂: B = Ph–CH₂CH₂CH₂–COOH (4-phenylbutanoic acid).
+  3. This two-step sequence is the classic first step of the Haworth synthesis of naphthalene.
+  Why others are wrong:
+  - (B) and (D) show a propanoyl ketone, as if propanoyl chloride were used; the four-carbon chain of succinic anhydride is lost.
+  - (C) reduces the –COOH to an alcohol, which Clemmensen conditions cannot do.
+  Key takeaway: Clemmensen reduction removes C=O (ketones/aldehydes → CH₂) but does not touch COOH.
   Answer: (A)
 C A 4: |-
-  Concept: A species can disproportionate only if its element is in an intermediate oxidation state.
+  Concept: In disproportionation, one element is simultaneously oxidised and reduced. This is possible only if the element is in an intermediate oxidation state, with states available both above and below it.
   Solution:
-  1. ClO₂⁻ (+3), Cl₂ (0) and Mn³⁺ (+3) all disproportionate.
-  2. F₂, ClO₄⁻ (+7) and Cr₂O₇²⁻ (+6, max) cannot, which rules out options (A), (B) and (D).
-  3. The official key is (C).
-  Note: MnO₄⁻ (Mn +7, its highest state) cannot disproportionate either, so strictly no set is fully correct; ALLEN marks the question Bonus.
+  1. Cl₂ (0): Cl₂ + 2OH⁻ → Cl⁻ + ClO⁻ + H₂O, so it disproportionates.
+  2. ClO₂⁻ (Cl +3): gives ClO₃⁻ and Cl⁻, so it disproportionates.
+  3. Mn³⁺ (+3): 2Mn³⁺ + 2H₂O → Mn²⁺ + MnO₂ + 4H⁺, so it disproportionates.
+  4. F₂ cannot (F has no positive state), ClO₄⁻ (+7) and Cr₂O₇²⁻ (+6) are in their highest states, which eliminates (A), (B) and (D).
+  5. The official key is (C).
+  Note: MnO₄⁻ has Mn at +7, its maximum oxidation state, so strictly it cannot disproportionate either (it is MnO₄²⁻, Mn +6, that does). Strictly no set is fully correct; ALLEN marks the question Bonus. The stored answer follows the official NTA key.
+  Why others are wrong:
+  - (A) and (D) contain F₂; (B) contains Cr₂O₇²⁻; (D) also has ClO₄⁻.
+  Key takeaway: Species in their highest or lowest oxidation state (and F₂) can never disproportionate.
   Answer: (C)
 C A 5: |-
-  Concept: Units of conductance quantities.
+  Concept: The conductance quantities follow from R = ρl/A. Conductivity κ = 1/ρ, the cell constant G* = l/A, and molar conductivity Λm = κ/c. The degree of dissociation is a ratio, α = Λm/Λm°.
   Solution:
-  1. Cell constant l/A is in m⁻¹, (iii). Λm is in S cm² mol⁻¹, (i).
-  2. Conductivity κ is in Ω⁻¹ m⁻¹, (iv). The degree of dissociation α is dimensionless, (ii).
-  3. Only option (A) gives a–iii, b–i, c–iv, d–ii.
+  1. (a) Cell constant l/A: length/area gives m⁻¹, (iii).
+  2. (b) Molar conductivity κ/c: S cm⁻¹ ÷ mol cm⁻³ gives S cm² mol⁻¹, (i).
+  3. (c) Conductivity κ = G × (l/A): S × m⁻¹ = Ω⁻¹ m⁻¹, (iv).
+  4. (d) Degree of dissociation α is a ratio of two conductivities, so it is dimensionless, (ii).
+  5. The matching is a–iii, b–i, c–iv, d–ii.
+  Why others are wrong:
+  - (B) makes conductivity dimensionless and α have units, which is backwards.
+  - (C) gives the cell constant molar units.
+  - (D) makes the cell constant dimensionless; it has units of inverse length.
+  Key takeaway: κ = G·(l/A), Λm = κ/c, α = Λm/Λm°. Derive each unit from its definition.
   Answer: (A)
 C A 6: |-
-  Concept: Acetylation moderates –NH₂, and –NHCOCH₃ is an o/p director (mostly para because of its bulk).
+  Concept: The free –NH₂ group of aniline activates the ring so strongly that Br₂ gives 2,4,6-tribromoaniline at once. Acetylation turns it into –NHCOCH₃: the nitrogen lone pair is now partly delocalised into the C=O, which moderates the activation. It remains an ortho/para director, and its bulk favours para attack.
   Solution:
-  1. A = acetanilide.
-  2. Br₂/CH₃COOH gives monobromination, mainly para: B = 4-bromoacetanilide.
+  1. Aniline + (CH₃CO)₂O → A = acetanilide (C₆H₅NHCOCH₃).
+  2. Br₂ in CH₃COOH at room temperature gives monobromination, chiefly at the less hindered para position.
+  3. B = 4-bromoacetanilide (p-bromoacetanilide).
+  4. Acid or base hydrolysis would later give p-bromoaniline; this is the standard protection strategy.
+  Why others are wrong:
+  - (A) 3-bromo (meta) is wrong: an acetamido group is an o/p director.
+  - (C) and (D) show Friedel–Crafts acylation on the ring (acetophenones), but acetic anhydride without a Lewis acid N-acylates the amine instead.
+  Key takeaway: Acetylation protects –NH₂, cutting its activation to allow monosubstitution at the para position.
   Answer: (B)
 C A 7: |-
-  Concept: Fibrous versus globular proteins.
+  Concept: Proteins are classified by shape. Fibrous proteins have parallel polypeptide chains held by H-bonds and disulphide links, forming insoluble fibres with structural roles. Globular proteins are folded into compact spheres and are usually water-soluble, with functional roles (enzymes, transport, hormones).
   Solution:
-  1. Keratin, collagen and myosin are fibrous.
-  2. Albumin is a water-soluble globular protein.
+  1. Keratin (hair, nails, wool): fibrous.
+  2. Collagen (tendons, skin, bone matrix): fibrous; it is the most abundant protein in mammals.
+  3. Myosin (muscle filaments): fibrous.
+  4. Albumin (egg white, blood plasma): a globular, water-soluble transport protein.
+  5. So albumin is not fibrous.
+  Why others are wrong:
+  - (A), (C) and (D) are textbook examples of fibrous proteins with structural or mechanical roles.
+  Key takeaway: Fibrous proteins are keratin, collagen, myosin and fibroin; globular proteins are insulin, albumin, haemoglobin and enzymes.
   Answer: (B)
 C A 8: |-
-  Concept: Acid deposition.
+  Concept: Acidic and other pollutants reach the ground by two routes. Wet deposition happens when pollutants dissolve in rain, snow, fog or mist and fall with the precipitation. Dry deposition happens when gases and particles settle or are absorbed directly onto surfaces without precipitation.
   Solution:
-  1. Wet deposition: acids and salts (such as ammonium salts) come down dissolved in rain, fog and snow.
-  2. Dry deposition: gases (such as SO₂) and particles settle directly onto surfaces.
+  1. Ammonium salts (from NH₃ neutralising the acids formed from SO₂ and NOₓ) are soluble aerosols. They are washed out in rain droplets, so they reach the ground by wet deposition. X = ammonium salts.
+  2. SO₂ gas is taken up directly by soil, vegetation and building surfaces without dissolving in rain first. That is dry deposition. Y = SO₂.
+  3. This matches the NCERT description of acid deposition.
+  Why others are wrong:
+  - (B) swaps X and Y.
+  - (A) and (D) use CO₂, which is not the typical example of acid deposition in this context.
+  Key takeaway: Wet deposition comes with precipitation (dissolved salts and acids); dry deposition is gases and particles settling directly.
   Answer: (C)
 C A 9: |-
-  Concept: Cannizzaro reaction (the aldehyde has no α-H): one CHO is oxidised to COO⁻ and another is reduced to CH₂OH.
+  Concept: Aldehydes without α-hydrogens undergo the Cannizzaro reaction in concentrated alkali. One molecule is oxidised to a carboxylate and another is reduced to a primary alcohol. The substrate 4-(hydroxymethyl)benzaldehyde has one CHO group and no α-H.
   Solution:
-  1. The products are 4-(HOCH₂)C₆H₄COOH (an alcohol + monocarboxylic acid) and 1,4-C₆H₄(CH₂OH)₂ (a diol).
-  2. There is only one CHO per molecule, so no dicarboxylic acid can form.
+  1. Oxidised product: 4-HOCH₂–C₆H₄–COO⁻, which gives 4-(hydroxymethyl)benzoic acid on acidification. It is both an alcohol and a monocarboxylic acid, so (A) and (B) are formed.
+  2. Reduced product: 1,4-C₆H₄(CH₂OH)₂, a diol, so (D) is formed.
+  3. A dicarboxylic acid would need two CHO (or oxidisable) groups converted to COOH. The existing CH₂OH is not oxidised under Cannizzaro conditions, so no dicarboxylic acid forms.
+  Why others are wrong:
+  - (A), (B) and (D) all describe the actual products listed above.
+  Key takeaway: Cannizzaro changes only the CHO groups: half become COOH and half become CH₂OH. Other groups are untouched.
   Answer: (C)
 C A 10: |-
-  Concept: Oxidation state, then spin state with a strong-field ligand.
+  Concept: To find a spin-only magnetic moment, get the metal's oxidation state and d-count, then decide high or low spin from the ligand field strength. $\mu = \sqrt{n(n + 2)}$ BM, where n is the number of unpaired electrons.
   Solution:
-  1. x + 0 − 2 = +1, so Fe is +3 (d⁵).
-  2. CO is strong field, so the complex is low-spin t₂g⁵ with 1 unpaired electron.
-  3. μ = √3 = 1.73 BM.
+  1. Oxidation state: CO is neutral and C₂O₄²⁻ has charge −2. x + 0 − 2 = +1, so x = +3. Fe³⁺ is 3d⁵.
+  2. CO is a very strong-field π-acceptor ligand, so the complex is low-spin: t₂g⁵ eg⁰.
+  3. Unpaired electrons: t₂g⁵ has one unpaired electron, so n = 1.
+  4. $\mu = \sqrt{1\times3} = \sqrt3 = 1.73$ BM.
+  Why others are wrong:
+  - (A) 5.92 BM is high-spin d⁵ (n = 5), but CO forces pairing.
+  - (B) 0 would need an even d-count with full pairing.
+  - (C) 1 BM is n = 1 without the √(n(n + 2)) formula applied.
+  Key takeaway: With CO or CN⁻ assume low spin; d⁵ low spin has 1 unpaired electron, μ = 1.73 BM.
   Answer: (D)
 C A 11: |-
-  Concept: Hydration of Li⁺.
+  Concept: Whether salts crystallise as hydrates depends on the hydration enthalpy of the cation, which is large for small, highly charged ions. Polarising power, the ability to distort an anion's electron cloud, controls the covalent character of bonds instead.
   Solution:
-  1. The small Li⁺ ion has a very high charge density and hydration enthalpy, so its salts crystallise as hydrates (for example LiCl·2H₂O). A is true.
-  2. Li⁺ does have the highest polarising power (R is true), but that explains the covalent character of its compounds, not hydration.
+  1. Assertion: Li⁺ is the smallest alkali-metal ion, with the highest charge density and hydration enthalpy. Its salts therefore trap water in the crystal: LiCl·2H₂O, while NaCl and KCl are anhydrous. True.
+  2. Reason: Li⁺ does have the highest polarising power in Group 1. True.
+  3. The link: polarising power explains the covalent character of Li compounds (such as the solubility of LiCl in organic solvents). The hydration of salts is explained by hydration enthalpy, not polarising power. So R does not explain A, per the official key.
+  Why others are wrong:
+  - (B) and (C) reject one of two statements that are both factually true.
+  - (D) claims a causal link; the key treats polarisation and hydration as separate effects.
+  Key takeaway: Small size gives both properties, but hydration follows hydration enthalpy and covalency follows polarising power.
   Answer: (A)
 C A 12: |-
-  Concept: $\Delta G^\circ = -RT\ln K$.
+  Concept: The standard free energy change relates to the equilibrium constant by ΔG° = −RT ln K, with ΔG° = ΔH° − TΔS°. At constant T and P, ΔS_total = −ΔG_system/T.
   Solution:
-  1. $\ln K = -\frac{\Delta H^\circ - T\Delta S^\circ}{RT}$. Expression (B) is missing the minus sign, so it is incorrect.
-  2. (A) holds because ΔS_total = −ΔG/T; (C) and (D) are standard results.
+  1. (A) ΔS_total = −ΔG_sys/T, so $\frac{\Delta G_{sys}}{\Delta S_{total}} = -T$. Correct.
+  2. (B) From ΔG° = −RT ln K: $\ln K = -\frac{\Delta G^\circ}{RT} = -\frac{\Delta H^\circ - T\Delta S^\circ}{RT}$. The given expression is missing the minus sign, so it is incorrect.
+  3. (C) $K = e^{-\Delta G^\circ/RT}$ follows directly. Correct.
+  4. (D) Reversible isothermal work done on the gas: $w = -nRT\ln\frac{V_f}{V_i}$ (IUPAC sign convention). Correct.
+  Why others are wrong:
+  - (A), (C) and (D) are standard thermodynamic relations.
+  Key takeaway: A negative ΔG° means K > 1, so ln K and ΔG° always have opposite signs. Check the sign first.
   Answer: (B)
 C A 13: |-
-  Concept: Properties of dihydrogen.
+  Concept: The H–H bond is very strong (435.9 kJ/mol), so dihydrogen dissociates into atoms only slightly, even at high temperatures. This question checks the NCERT figures on hydrogen.
   Solution:
-  1. At about 2000 K, H₂ dissociates only to about 0.081%, not 8.1%, so (B) is incorrect.
-  2. The other statements are true: UV splits H₂; its bond enthalpy (435.9 kJ/mol) is the highest for a single bond; Zn + HCl or NaOH gives H₂.
+  1. (A) H₂ can be dissociated by UV irradiation (or an electric arc) at high temperatures. True.
+  2. (B) NCERT states that even at about 2000 K, the dissociation of H₂ is only about 0.081%. The value 8.1% is 100 times too high, so the statement is incorrect.
+  3. (C) The H–H bond enthalpy (435.9 kJ/mol) is the highest for any single bond between two atoms of an element. True.
+  4. (D) Zn + 2HCl → ZnCl₂ + H₂, and Zn + 2NaOH → Na₂ZnO₂ + H₂ (zinc is amphoteric). True.
+  Why others are wrong:
+  - (A), (C) and (D) are correct statements from the NCERT chapter on hydrogen.
+  Key takeaway: The H₂ dissociation at 2000 K is about 0.081%, which shows how strong the H–H bond is.
   Answer: (B)
 C A 14: |-
-  Concept: Classify each polymer.
+  Concept: A polyester has ester linkages (–CO–O–) in its main chain, formed by condensing diols (or hydroxy acids) with diacids.
   Solution:
-  1. Novolac is a phenol–formaldehyde resin (methylene links), not a polyester.
-  2. PHBV, Dacron (PET) and Glyptal are all polyesters.
+  1. Novolac: a linear phenol–formaldehyde resin in which phenol rings are joined by –CH₂– bridges. It contains no ester groups, so it is not a polyester.
+  2. PHBV (poly-β-hydroxybutyrate-co-β-hydroxyvalerate): a biodegradable copolyester of 3-hydroxybutanoic and 3-hydroxypentanoic acids.
+  3. Dacron (Terylene/PET): made from ethylene glycol and terephthalic acid, a polyester.
+  4. Glyptal: made from ethylene glycol (or glycerol) and phthalic acid, a polyester (alkyd resin).
+  Why others are wrong:
+  - (B), (C) and (D) are all polyesters (ester links in the backbone).
+  Key takeaway: Phenol–formaldehyde resins (novolac, Bakelite) use methylene bridges; polyesters use ester links.
   Answer: (A)
 C A 15: |-
-  Concept: Stability of halogen oxides.
+  Concept: Halogen–oxygen bonds are generally weak and halogen oxides are mostly unstable. The relative stabilities follow the NCERT order: iodine oxides are the most stable, then chlorine, and bromine oxides are the least stable.
   Solution:
-  1. Iodine oxides are the most stable (larger, more polarisable I bonds well with O), and bromine oxides are the least stable.
-  2. Order: I > Cl > Br.
+  1. Iodine: I–O bonds are stabilised by the large, polarisable iodine atom, which gains extra stability through bond polarity. I₂O₅ is a stable solid.
+  2. Chlorine: Cl–O bonds gain stability from multiple (pπ–dπ) bonding involving d orbitals, so Cl oxides are next.
+  3. Bromine: it lacks both advantages (middle size, weak multiple bonding), and its oxides are the least stable, existing only at low temperatures.
+  4. Order of stability: I > Cl > Br.
+  Why others are wrong:
+  - (A) and (B) put bromine first, but bromine oxides are the least stable.
+  - (C) ranks Br above I, which reverses the stable iodine oxides.
+  Key takeaway: The stability of halogen oxides is I > Cl > Br (NCERT); bromine sits at the bottom.
   Answer: (D)
 C A 16: |-
-  Concept: Groups in cation analysis.
+  Concept: In qualitative analysis, cations are grouped by the reagent that precipitates them. Group II uses H₂S in dilute HCl. It is split into IIA (sulphides insoluble in yellow ammonium sulphide: Cu, Pb, Bi, Cd, Hg) and IIB (sulphides soluble in it: As, Sb, Sn). Group III uses NH₄OH/NH₄Cl (Fe³⁺, Al³⁺, Cr³⁺). Group IV uses H₂S in basic medium (Zn, Mn, Ni, Co).
   Solution:
-  1. Mn²⁺ is Group IV (MnS in basic H₂S), (iii). As³⁺ is Group IIB (its sulphide is soluble in yellow ammonium sulphide), (iv).
-  2. Cu²⁺ is Group IIA, (ii). Al³⁺ is Group III (Al(OH)₃), (i).
-  3. Only option (B) gives a–iii, b–iv, c–ii, d–i.
+  1. (a) Mn²⁺: MnS precipitates in ammoniacal H₂S, Group IV, (iii).
+  2. (b) As³⁺: As₂S₃ dissolves in yellow ammonium sulphide, Group IIB, (iv).
+  3. (c) Cu²⁺: CuS precipitates in acidic H₂S and is insoluble in (NH₄)₂Sₓ, Group IIA, (ii).
+  4. (d) Al³⁺: precipitates as Al(OH)₃ with NH₄OH/NH₄Cl, Group III, (i).
+  5. The matching is a–iii, b–iv, c–ii, d–i.
+  Why others are wrong:
+  - (A), (C) and (D) misplace Mn (Group IV, not III) or Al (Group III), or swap IIA and IIB.
+  Key takeaway: As, Sb and Sn are Group IIB (thio-salts), Cu is IIA, Al is III and Mn is IV.
   Answer: (B)
 C A 17: |-
-  Concept: A tertiary allylic halide ionises easily (SN1), and OH⁻ traps the cation.
+  Concept: 3-Chloro-3-methylcyclopentene is a tertiary and allylic halide. It ionises very easily to a resonance-stabilised allylic carbocation, so SN1 substitution by OH⁻ or water is fast.
   Solution:
-  1. Loss of Cl⁻ gives a stabilised 3° allylic cation; attack at the tertiary carbon gives 1-methylcyclopent-2-en-1-ol.
-  Note: ALLEN argued that elimination to the conjugated diene (4) dominates with NaOH/ethanol. The official key is (3).
+  1. Loss of Cl⁻ gives an allylic cation delocalised over C1 and C3; the positive charge on the tertiary carbon (bearing CH₃) is especially stabilised.
+  2. Hydroxide attacks the tertiary carbon, giving 1-methylcyclopent-2-en-1-ol, option (3).
+  3. The official NTA key takes substitution as the major pathway.
+  Note: ALLEN argued that with NaOH in ethanol, E1/E2 elimination to the conjugated 1-methylcyclopenta-1,3-diene (option 4) should dominate. The official key is (3), and the stored answer follows NTA.
+  Why others are wrong:
+  - (A) the rearranged allylic alcohol puts OH on the less stabilised secondary carbon.
+  - (B) the saturated alcohol would need the C=C to be reduced, which does not happen.
+  Key takeaway: Tertiary allylic halides react by SN1 through a delocalised cation; the solvent and base decide substitution versus elimination.
   Answer: (C)
 C A 18: |-
-  Concept: A Grignard reagent is destroyed by a protic solvent.
+  Concept: Grignard reagents (RMgX) are very strong bases. Any compound with an acidic hydrogen (water, alcohols, acids, amines, terminal alkynes) protonates the carbanion carbon immediately, giving the hydrocarbon RH.
   Solution:
-  1. Benzene gives C₆H₅Br, then C₆H₅MgBr.
-  2. C₆H₅MgBr + CH₃OH gives C₆H₆ + Mg(OCH₃)Br.
+  1. Br₂/Fe (a Lewis acid): electrophilic bromination gives C₆H₅Br.
+  2. Mg/dry ether: Mg inserts into the C–Br bond, giving C₆H₅MgBr.
+  3. CH₃OH: the acidic O–H protonates the phenyl carbanion: C₆H₅MgBr + CH₃OH → C₆H₆ + Mg(OCH₃)Br.
+  4. The products are benzene and Mg(OCH₃)Br. The sequence simply returns benzene.
+  Why others are wrong:
+  - (A) anisole would need CH₃O⁻ to attach to the ring; Grignards abstract protons instead.
+  - (C) toluene would need a methylating agent such as CH₃I, not CH₃OH.
+  - (D) the Grignard reagent consumes the bromobenzene, and the Mg species is Mg(OCH₃)Br.
+  Key takeaway: A Grignard reagent plus any protic compound gives an alkane or arene (RH). This is why reactions use dry ether.
   Answer: (B)
 C A 19: |-
-  Concept: –NO₂ is a meta director.
+  Concept: The directing effect of the group already on the ring decides where the next electrophile enters. –NO₂ is strongly deactivating and meta-directing. Fe/HCl then reduces Ar–NO₂ to Ar–NH₂ without touching an aryl chloride.
   Solution:
-  1. A = nitrobenzene; B = 3-chloronitrobenzene (Cl enters meta); Fe/HCl then gives C = 3-chloroaniline.
+  1. Benzene + conc. HNO₃/H₂SO₄ (nitrating mixture) gives A = nitrobenzene.
+  2. Cl₂/anhydrous AlCl₃: electrophilic chlorination is directed meta by NO₂, giving B = 3-chloronitrobenzene (m-chloronitrobenzene).
+  3. Fe/HCl reduces NO₂ to NH₂, giving C = 3-chloroaniline (m-chloroaniline).
+  Why others are wrong:
+  - (B) and (D) put Cl para and then turn the NO₂ into phenol, which Fe/HCl cannot do.
+  - (C) puts Cl ortho to NO₂, but NO₂ is a meta director.
+  Key takeaway: The order matters. Nitrate first to get meta substitution; halogenate first to get ortho/para.
   Answer: (A)
 C A 20: |-
-  Concept: Structures of the sulphur oxoacids.
+  Concept: Count S=O double bonds from the standard structures of the sulphur oxoacids. Each S is tetrahedral; the O atoms that carry an H or bridge two atoms are single-bonded, and the rest are drawn as S=O.
   Solution:
-  1. H₂SO₃ is (HO)₂S=O, so it has 1 S=O.
-  2. H₂S₂O₈ is HO–SO₂–O–O–SO₂–OH, so it has 4 S=O.
-  3. H₂S₂O₇ is HO–SO₂–O–SO₂–OH, so it has 4 S=O.
+  1. Sulphurous acid, H₂SO₃: (HO)₂S=O, with one lone pair on S. S=O count = 1.
+  2. Peroxodisulphuric acid, H₂S₂O₈: HO–S(=O)₂–O–O–S(=O)₂–OH. Each S has two S=O, so the count = 4.
+  3. Pyrosulphuric acid (oleum), H₂S₂O₇: HO–S(=O)₂–O–S(=O)₂–OH. Each S has two S=O, so the count = 4.
+  4. Answer: 1, 4 and 4.
+  Why others are wrong:
+  - (A) and (C) give H₂SO₃ two S=O; it has only one (S is +4 with a lone pair).
+  - (B) and (C) give pyrosulphuric acid 3 S=O, but each of its two SO₂ units has two.
+  Key takeaway: Every S(VI) centre with two OH/bridging O has two S=O; S(IV) in H₂SO₃ has one.
   Answer: (D)
 C B 1: |-
-  Concept: Freundlich isotherm: $\log\frac{x}{m} = \log k + \frac{1}{n}\log P$.
+  Concept: The Freundlich adsorption isotherm is $\frac{x}{m} = kP^{1/n}$, or in log form $\log\frac{x}{m} = \log k + \frac{1}{n}\log P$. Two data points fix k and 1/n, and the equation then predicts the adsorption at any pressure.
   Solution:
-  1. $\frac{1}{n} = \frac{\log15 - \log10}{\log2} = \frac{0.1761}{0.3010} = 0.585$.
-  2. $\log V_{300} = \log10 + 0.585\log3 = 1 + 0.279 = 1.279$, so x ≈ 128 × 10⁻².
+  1. Divide the two data points: $\frac{15}{10} = \left(\frac{200}{100}\right)^{1/n}$, so $\frac{1}{n} = \frac{\log1.5}{\log2} = \frac{0.1761}{0.3010} = 0.585$.
+  2. From 100 to 300 mm: $V = 10\times3^{0.585}$.
+  3. $\log V = \log10 + 0.585\times\log3 = 1 + 0.585\times0.4771 = 1 + 0.279 = 1.279$.
+  4. So V = 10^{1.279} mL, and x = 1.279 ≈ 128 × 10⁻².
+  Common mistake: Assuming linear adsorption (V ∝ P) gives 30 mL; the Freundlich exponent 1/n < 1 makes it sublinear.
+  Key takeaway: Take the ratio of two Freundlich data points to get 1/n; k cancels.
   Answer: 128
 C B 2: |-
-  Concept: $\Delta T_b = iK_bm$; the acid dimerises in benzene (i = ½).
+  Concept: The elevation in boiling point is ΔT_b = i·K_b·m. In acetone, the acid stays a monomer (i = 1), which gives the molar mass. In benzene, carboxylic acids dimerise through H-bonds, so for complete dimerisation i = ½.
   Solution:
-  1. Acetone: 0.17 = 1.7 × (1.22/M)/0.1, so M = 122 and n = 0.01 mol.
-  2. Benzene: ΔT_b = ½ × 2.6 × 0.01/0.1 = 0.13°C = 13 × 10⁻².
+  1. Acetone: $0.17 = 1\times1.7\times\frac{1.22/M}{0.1}$, so $\frac{1.22}{M} = 0.01$ and M = 122 g/mol (benzoic acid, C₆H₅COOH).
+  2. Moles of acid = 0.01, so the molality in 100 g of benzene is 0.1 mol/kg.
+  3. Benzene: $\Delta T_b = \frac12\times2.6\times0.1 = 0.13$ °C.
+  4. 0.13 = 13 × 10⁻², so x = 13.
+  Common mistake: Forgetting the dimerisation (i = 1) gives 0.26 °C, which is x = 26.
+  Key takeaway: Carboxylic acids dimerise in non-polar solvents (i ≈ ½), halving the colligative effect.
   Answer: 13
 C B 3: |-
-  Concept: Zn⁺ is [Ar]3d¹⁰4s¹.
+  Concept: The magnetic quantum number m_l ranges from −l to +l. An s orbital (l = 0) allows only m_l = 0. So first find which orbital holds the outermost electron.
   Solution:
-  1. The outermost electron is in 4s (l = 0), so m_l = 0.
+  1. Zn (Z = 30): [Ar]3d¹⁰4s².
+  2. Zn⁺ loses one 4s electron (the 4s electrons are removed before 3d in ionisation): [Ar]3d¹⁰4s¹.
+  3. The outermost electron is in 4s: n = 4, l = 0.
+  4. So m_l = 0.
+  Common mistake: Taking the electron as removed from 3d, and so picking a d-orbital m_l value; transition metals lose ns electrons first.
+  Key takeaway: For any s electron, l = 0 and m_l = 0; ionisation removes ns electrons before (n − 1)d.
   Answer: 0
 C B 4: |-
-  Concept: In ccp there is 1 octahedral void per packing atom.
+  Concept: In a cubic close-packed (fcc) lattice of N atoms, there are N octahedral voids and 2N tetrahedral voids. The formula follows from the ratio of occupied sites.
   Solution:
-  1. Anions (B) = n and cations in all octahedral voids = n, so the formula is AB and x = 1.
+  1. Let the anions B form the ccp lattice: 4 per unit cell.
+  2. Octahedral voids per fcc unit cell: 1 at the body centre + 12 edge centres × ¼ = 4, the same as the number of anions.
+  3. The cations A fill all 4 octahedral voids, so A : B = 4 : 4 = 1 : 1.
+  4. The formula is AB (the rock-salt, NaCl-type structure), so x = 1.
+  Common mistake: Mixing up octahedral and tetrahedral voids; filling all tetrahedral voids gives A₂B (the antifluorite type).
+  Key takeaway: ccp has N octahedral and 2N tetrahedral voids: all octahedral → AB, all tetrahedral → A₂B, half tetrahedral → AB (zinc blende).
   Answer: 1
 C B 5: |-
-  Concept: Less electropositive impurities than Cu do not dissolve and fall as anode mud.
+  Concept: In electrolytic refining, impure (blister) copper is the anode and pure copper is the cathode, in CuSO₄ solution. Metals more reactive than copper dissolve and stay in solution. Less reactive (noble) metals and non-dissolving elements drop off below the anode as "anode mud".
   Solution:
-  1. Sb, Se, Te, Ag, Au and Pt collect as anode mud: 6 elements.
+  1. From the list, the main impurities that collect as anode mud in copper refining are antimony (Sb), selenium (Se), tellurium (Te), silver (Ag), gold (Au) and platinum (Pt).
+  2. This matches NCERT: "impurities from the blister copper deposit as anode mud which contains antimony, selenium, tellurium, silver, gold and platinum."
+  3. Pb and Ru are not among the main anode-mud impurities listed for copper.
+  4. Count = 6.
+  Common mistake: Counting all 8 listed elements; Pb and Ru are distractors.
+  Key takeaway: Anode mud from Cu refining (NCERT) contains Sb, Se, Te, Ag, Au and Pt, and it is recovered commercially.
   Answer: 6
 C B 6: |-
-  Concept: Neutralisation leaves excess H⁺.
+  Concept: When a strong acid is mixed with a strong base, neutralisation uses up equal moles of each. The excess reagent sets the pH, calculated from its concentration in the total volume.
   Solution:
-  1. Excess HCl = 50 − 30 = 20 mmol in 80 mL, so [H⁺] = 0.25 M.
-  2. pH = −log 0.25 = 0.6021 = 6021 × 10⁻⁴.
+  1. HCl: 50 mL × 1 M = 50 mmol. NaOH: 30 mL × 1 M = 30 mmol.
+  2. After neutralisation, excess H⁺ = 20 mmol.
+  3. Total volume = 80 mL, so [H⁺] = 20/80 = 0.25 M.
+  4. pH = −log(0.25) = −log(2.5 × 10⁻¹) = 1 − 0.3979 = 0.6021.
+  5. 0.6021 = 6021 × 10⁻⁴.
+  Common mistake: Using 50 mL instead of the total 80 mL for the volume gives [H⁺] = 0.4 M and pH ≈ 0.40.
+  Key takeaway: Excess moles divided by the total volume, then take −log.
   Answer: 6021
 C B 7: |-
-  Concept: $\log k = \log A - \frac{E_a}{2.303RT}$.
+  Concept: The Arrhenius equation in log form is $\log k = \log A - \frac{E_a}{2.303RT}$. Comparing it with the given expression, the coefficient of 1/T equals $\frac{E_a}{2.303R}$.
   Solution:
-  1. $\frac{E_a}{2.303R} = 2470$, so $E_a = 2.303\times8.314\times2470 = 47.3$ kJ/mol ≈ 47.
+  1. Given $\log_{10}k = 20.35 - \frac{2.47\times10^3}{T}$, so $\frac{E_a}{2.303R} = 2470$ K.
+  2. $E_a = 2470\times2.303\times8.314$ J/mol.
+  3. 2.303 × 8.314 = 19.147, and 2470 × 19.147 = 47,293 J/mol ≈ 47.3 kJ/mol.
+  4. To the nearest integer: 47.
+  Common mistake: Forgetting the factor 2.303 (natural log versus log₁₀) gives about 20.5 kJ/mol.
+  Pre-exponential factor: log A = 20.35, so A ≈ 2.2 × 10²⁰ s⁻¹; only the slope term is needed for Ea.
+  Key takeaway: In log₁₀ form, the slope of log k against 1/T is −Ea/(2.303R).
   Answer: 47
 C B 8: |-
-  Concept: Na₂O + H₂O → 2NaOH.
+  Concept: Sodium oxide is a basic oxide and reacts completely with water: Na₂O + H₂O → 2NaOH. Each mole of Na₂O gives two moles of NaOH. Molarity = moles/volume in litres.
   Solution:
-  1. n(Na₂O) = 20/62 = 0.3226 mol, so n(NaOH) = 0.645 mol.
-  2. [NaOH] = 0.645/0.5 = 1.29 M ≈ 13 × 10⁻¹ M.
+  1. Molar mass of Na₂O = 2(23) + 16 = 62 g/mol.
+  2. n(Na₂O) = 20.0/62 = 0.3226 mol.
+  3. n(NaOH) = 2 × 0.3226 = 0.6452 mol.
+  4. Volume = 500 mL = 0.5 L (change in volume neglected).
+  5. [NaOH] = 0.6452/0.5 = 1.29 M ≈ 13 × 10⁻¹ M.
+  Common mistake: Missing the 2:1 stoichiometry gives 0.645 M, which is 6 × 10⁻¹.
+  Key takeaway: Always apply the reaction stoichiometry before computing concentrations; Na₂O gives 2 NaOH.
   Answer: 13
 C B 9: |-
-  Concept: O₂²⁻ has 18 electrons; π*2p is completely filled.
+  Concept: Fill the molecular orbitals for O₂ and its ions in order: σ1s, σ*1s, σ2s, σ*2s, σ2p_z, (π2p_x = π2p_y), (π*2p_x = π*2p_y), σ*2p_z. Unpaired electrons are the singly occupied degenerate orbitals.
   Solution:
-  1. π*2p⁴ means all electrons are paired, so there are 0 unpaired electrons (bond order 1, diamagnetic).
+  1. O₂ has 16 electrons; the peroxide ion O₂²⁻ has 18.
+  2. Configuration: …σ2p_z² π2p⁴ π*2p⁴.
+  3. The two π* orbitals hold 4 electrons, completely filled with all spins paired.
+  4. Unpaired electrons = 0, so O₂²⁻ is diamagnetic. Bond order = (10 − 8)/2 = 1, a single O–O bond as in H₂O₂.
+  Common mistake: Stopping at O₂ (π*2p², 2 unpaired, paramagnetic) or at O₂⁻ (π*2p³, 1 unpaired).
+  Key takeaway: O₂ has 2 unpaired electrons, O₂⁻ has 1 and O₂²⁻ has 0; bond orders are 2, 1.5 and 1.
   Answer: 0
 C B 10: |-
-  Concept: Balance the H atoms of C₂H₇N.
+  Concept: In the Dumas method, the organic compound is heated with CuO. C becomes CO₂, H becomes H₂O, and N is released as N₂ gas, whose volume gives the nitrogen content. The general equation $C_xH_yN_z + (2x + \frac{y}{2})CuO \to xCO_2 + \frac{y}{2}H_2O + \frac{z}{2}N_2 + (2x + \frac{y}{2})Cu$ uses x, y and z as the atom counts.
   Solution:
-  1. H: 7 = 2 × (y/2), so y = 7 (and x = 2, z = 1).
+  1. Compare with C₂H₇N (for example ethylamine): x = 2, y = 7, z = 1.
+  2. Check the H balance: 7 H atoms give 7/2 H₂O, and y/2 = 3.5. Consistent.
+  3. Check the O balance: CuO supplies 2x + y/2 = 4 + 3.5 = 7.5 O; the products use 2x + y/2 = 7.5 O. Balanced.
+  4. y = 7.
+  Common mistake: Reading y as the number of H₂O molecules (3.5) instead of the H-atom count.
+  Key takeaway: In CₓHᵧN_z combustion equations, the coefficients are x CO₂, y/2 H₂O and z/2 N₂.
   Answer: 7

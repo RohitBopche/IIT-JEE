@@ -1,205 +1,351 @@
 M A 1: |-
-  Concept: $h(x) = \min(\{x\}, 1 - \{x\})$ is a continuous triangular wave with period 1.
+  Concept: f(x) = {x} (fractional part) and g(x) = 1 − {x}. Their minimum h(x) = min({x}, 1 − {x}) is the distance from x to the nearest integer — a continuous triangular wave of period 1.
   Solution:
-  1. f and g are each discontinuous at integers, but their minimum → 0 from both sides there, so h is continuous on [−2, 2].
-  2. h has corners at the integers (minima, value 0) and at the half-integers (maxima, value ½).
-  3. In (−2, 2), the corners are −1, 0, 1 and −1.5, −0.5, 0.5, 1.5: 7 points, which is more than four.
+  1. Continuity: f and g each jump at integers, but near an integer n, h → 0 from both sides (f → 0 from the right, g → 0 from the left), and h(n) = min(0, 1) = 0. So h is continuous on [−2, 2].
+  2. Non-differentiability: h has corners where its slope switches between +1 and −1:
+     - at integers (valleys, h = 0): −1, 0, 1 in (−2, 2);
+     - at half-integers (peaks, h = ½): −1.5, −0.5, 0.5, 1.5.
+  3. Total: 7 points, which is "more than four".
+  Why others are wrong:
+  - (B) and (D) claim discontinuities, but h is continuous.
+  - (C) counts only the three integer corners, missing the four peaks.
+  Key takeaway: a min/max of two functions has corners wherever the two graphs cross.
   Answer: (A)
 M A 2: |-
-  Concept: Find the pattern of $A^n$.
+  Concept: Compute a few powers to find the pattern, then prove it by induction.
   Solution:
-  1. $A^2 = \begin{pmatrix}1&0&0\\1&1&1\\1&0&0\end{pmatrix}$; by induction, $A^n$ has rows (1, 0, 0), (n − 1, 1, 1), (1, 0, 0).
-  2. $A^{2025} - A^{2020}$ has middle row (5, 0, 0) and zeros elsewhere.
-  3. $A^6 - A$ has the same middle row (5, 0, 0). ($A^5 - A$ gives (4, 0, 0), and $A^5$, $A^6$ alone are non-zero in other rows.)
+  1. A has rows R1 = (1, 0, 0), R2 = (0, 1, 1), R3 = (1, 0, 0).
+  2. $A^2$: row 1 = (1, 0, 0); row 2 = R2·A = (0, 1, 1)A = (1, 1, 1); row 3 = (1, 0, 0).
+  3. By induction, $A^n$ has rows (1, 0, 0), (n − 1, 1, 1), (1, 0, 0) for n ≥ 1.
+  4. $A^{2025} - A^{2020}$: only the middle row differs, giving (5, 0, 0); other rows are zero.
+  5. $A^6 - A$: middle row (5, 1, 1) − (0, 1, 1) = (5, 0, 0), others zero ✓.
+  Why others are wrong:
+  - (C) $A^5 - A$ gives middle row (4, 0, 0).
+  - (B) $A^5$ and (D) $A^6$ have non-zero first and third rows.
+  Key takeaway: $A^n - A^m$ depends only on n − m here, so $A^{2025} - A^{2020} = A^{6} - A^{1}$.
   Answer: (A)
 M A 3: |-
-  Concept: Differentiate ln f.
+  Concept: For $f(x) = u(x)^{v(x)}$, differentiate ln f. Set the derivative to zero and check the sign change.
   Solution:
-  1. $\ln f = x^2(\ln2 - \ln x)$, so $\frac{f'}{f} = 2x\ln\frac{2}{x} - x = 0$ gives $\ln\frac{2}{x} = \frac{1}{2}$, so $x = \frac{2}{\sqrt e}$.
-  2. The sign of f′ changes from + to −, so this is a maximum.
-  3. $f = (\sqrt e)^{4/e} = e^{2/e}$.
+  1. $\ln f = x^2(\ln2 - \ln x)$.
+  2. $\frac{f'}{f} = 2x(\ln2 - \ln x) - x = x\left(2\ln\frac{2}{x} - 1\right)$.
+  3. f′ = 0 ⇒ $\ln\frac{2}{x} = \frac{1}{2}$ ⇒ $x = \frac{2}{\sqrt e}$.
+  4. For smaller x, $\ln\frac{2}{x} > \frac{1}{2}$ (f′ > 0); for larger x, f′ < 0 → maximum.
+  5. $f\left(\frac{2}{\sqrt e}\right) = (\sqrt e)^{4/e} = e^{2/e}$.
+  Why others are wrong:
+  - (A) and (B) substitute the wrong x or mishandle the exponent $x^2 = \frac{4}{e}$.
+  - (D) 1 is the value at x = 2, not the maximum.
+  Key takeaway: logarithmic differentiation is the standard tool for variable-base, variable-exponent functions.
   Answer: (C)
 M A 4: |-
-  Concept: Split at integers: on [k, k + 1], put x = k + t.
+  Concept: On [k, k + 1), [x] = k and x − [x] = t (0 ≤ t < 1). Split the integral into unit intervals.
   Solution:
-  1. $\int_0^1(t + 2k)e^{-t}dt = \left(1 - \frac{2}{e}\right) + 2k\left(1 - \frac{1}{e}\right)$.
-  2. Summing over k = 0 to 4: $5 - \frac{10}{e} + 20\left(1 - \frac{1}{e}\right) = 25 - 30e^{-1}$.
-  3. α = −30 and β = 25 (check: 5α + 6β = 0), so $(\alpha + \beta)^2 = 25$.
+  1. On [k, k + 1): integrand $= (k + t + k)e^{-t} = (t + 2k)e^{-t}$.
+  2. $\int_0^1te^{-t}dt = 1 - \frac{2}{e}$ and $\int_0^1e^{-t}dt = 1 - \frac{1}{e}$.
+  3. Each interval contributes $\left(1 - \frac{2}{e}\right) + 2k\left(1 - \frac{1}{e}\right)$.
+  4. Sum over k = 0 to 4: $5\left(1 - \frac{2}{e}\right) + 20\left(1 - \frac{1}{e}\right) = 25 - \frac{30}{e}$.
+  5. α = −30, β = 25; check 5α + 6β = −150 + 150 = 0 ✓.
+  6. $(\alpha + \beta)^2 = (-5)^2 = 25$.
+  Why others are wrong:
+  - (A) 100, (C) 16, (D) 36 come from summing k incorrectly (e.g. 0 to 5) or sign errors.
+  Key takeaway: integrals with [x] are always handled by splitting at integer points.
   Answer: (B)
 M A 5: |-
-  Concept: $e^2 = 1 + \frac{b^2}{a^2}$; tangent $\frac{xx_1}{a^2} - \frac{yy_1}{b^2} = 1$; normal $\frac{a^2x}{x_1} + \frac{b^2y}{y_1} = a^2 + b^2$.
+  Concept: $e^2 = 1 + \frac{b^2}{a^2}$. Tangent at (x₁, y₁): $\frac{xx_1}{a^2} - \frac{yy_1}{b^2} = 1$. Normal: $\frac{a^2x}{x_1} + \frac{b^2y}{y_1} = a^2 + b^2$. The conjugate axis is x = 0.
   Solution:
-  1. $b^2 = \frac{a^2}{4}$ and $\frac{24}{a^2} - \frac{12}{a^2} = 1$ give $a^2 = 12$, $b^2 = 3$.
-  2. Tangent at x = 0: $-\frac{\sqrt3y}{3} = 1$, so Q = (0, −√3).
-  3. Normal at x = 0: $\sqrt3y = 15$, so R = (0, 5√3).
-  4. QR = 6√3.
+  1. $e^2 = \frac{5}{4} \Rightarrow b^2 = \frac{a^2}{4}$.
+  2. P on the curve: $\frac{24}{a^2} - \frac{3}{b^2} = \frac{24}{a^2} - \frac{12}{a^2} = 1 \Rightarrow a^2 = 12$, $b^2 = 3$.
+  3. Tangent at x = 0: $-\frac{\sqrt3y}{3} = 1 \Rightarrow y = -\sqrt3$. Q = (0, −√3).
+  4. Normal at x = 0: $\frac{3y}{\sqrt3} = 15 \Rightarrow y = 5\sqrt3$. R = (0, 5√3).
+  5. QR = 5√3 + √3 = 6√3.
+  Why others are wrong:
+  - (A) 4√3 subtracts instead of adding the intercepts.
+  - (B) 6 and (D) 3√6 use wrong a², b².
+  Key takeaway: the conjugate axis of $\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$ is the y-axis.
   Answer: (C)
 M A 6: |-
-  Concept: Substitute $u = e^{-y}$ to get a linear equation.
+  Concept: The term $e^y$ suggests the substitution $u = e^{-y}$, which turns the equation into a linear one.
   Solution:
-  1. $\frac{dy}{dx} = \frac{2x - e^y}{2x^2}$, so $\frac{du}{dx} = -u\frac{dy}{dx}$ gives $\frac{du}{dx} + \frac{u}{x} = \frac{1}{2x^2}$.
-  2. $(xu)' = \frac{1}{2x}$, so $xe^{-y} = \frac{1}{2}\ln x + C$.
-  3. y(e) = 1 gives 1 = ½ + C, so C = ½.
-  4. At x = 1: $e^{-y} = \frac{1}{2}$, so $y = \log_e2$.
+  1. $\frac{dy}{dx} = \frac{2x - e^y}{2x^2}$.
+  2. $u = e^{-y}$: $\frac{du}{dx} = -u\frac{dy}{dx} = -\frac{u}{x} + \frac{1}{2x^2}$ ⇒ $\frac{du}{dx} + \frac{u}{x} = \frac{1}{2x^2}$.
+  3. Integrating factor x: $(xu)' = \frac{1}{2x}$ ⇒ $xe^{-y} = \frac{1}{2}\ln x + C$.
+  4. y(e) = 1: $e\cdot e^{-1} = \frac{1}{2} + C \Rightarrow C = \frac{1}{2}$.
+  5. At x = 1: $e^{-y} = 0 + \frac{1}{2} \Rightarrow y = \ln2$.
+  Why others are wrong:
+  - (A) 0 would need $e^{-y} = 1$.
+  - (B) 2 and (D) ln(2e) come from errors in C.
+  Key takeaway: equations with $e^y$ often linearise with $u = e^{\pm y}$.
   Answer: (C)
 M A 7: |-
-  Concept: Simplify using $p \to q \equiv \sim p \vee q$.
+  Concept: Use $p \to q \equiv \sim p \vee q$. A tautology is always true; a fallacy (contradiction) is always false.
   Solution:
-  1. S1: $(\sim p \vee q) \vee (q \vee p)$ contains $p \vee \sim p$, so it is always true (a tautology).
-  2. S2: $\sim p \vee q = \sim(p \wedge \sim q)$, so the expression is $X \wedge \sim X$, which is always false (a fallacy).
+  1. S1: $(p \to q) \vee (\sim q \to p) \equiv (\sim p \vee q) \vee (q \vee p)$, which contains $p \vee \sim p$ → always true. S1 is TRUE (it is a tautology).
+  2. S2: $\sim p \vee q = \sim(p \wedge \sim q)$. So $(p \wedge \sim q) \wedge (\sim p \vee q) = X \wedge \sim X$ with $X = p \wedge \sim q$ → always false. S2 is TRUE (it is a fallacy).
   3. Both statements are true.
+  Why others are wrong:
+  - (A), (B), (D) reject at least one of the two correct claims.
+  Key takeaway: spotting $X \vee \sim X$ (tautology) or $X \wedge \sim X$ (fallacy) avoids a full truth table.
   Answer: (C)
 M A 8: |-
-  Concept: $\text{cosec}^{-1}t$ needs |t| ≥ 1.
+  Concept: $\text{cosec}^{-1}t$ is defined for |t| ≥ 1, i.e. t ∈ (−∞, −1] ∪ [1, ∞).
   Solution:
-  1. $\left|\frac{1 + x}{x}\right| \ge 1$ means $(1 + x)^2 \ge x^2$, so 2x + 1 ≥ 0 and x ≥ −½, with x ≠ 0.
-  2. The domain is $\left[-\frac{1}{2}, \infty\right) - \{0\}$.
+  1. Need $\left|\frac{1 + x}{x}\right| \ge 1$, x ≠ 0.
+  2. Squaring: $(1 + x)^2 \ge x^2 \Rightarrow 1 + 2x \ge 0 \Rightarrow x \ge -\frac{1}{2}$.
+  3. Excluding x = 0: domain $= \left[-\frac{1}{2}, \infty\right) - \{0\}$.
+  4. Check: x = −½ gives t = −1 ✓ (endpoint included); x = −1 gives t = 0 ✗.
+  Why others are wrong:
+  - (A) includes (−1, −½), where |t| < 1.
+  - (B) excludes (0, 1), but e.g. x = ½ gives t = 3 ✓.
+  - (C) excludes the valid endpoint −½.
+  Key takeaway: squaring both sides of |a| ≥ |b| is safe since both are non-negative.
   Answer: (D)
 M A 9: |-
-  Concept: Geometric distribution: $P(X > k) = \left(\frac{5}{6}\right)^k$.
+  Concept: The number of tosses until the first six is geometric with p = 1/6: $P(X > k) = \left(\frac{5}{6}\right)^k$ (first k tosses are not six). The geometric distribution is memoryless.
   Solution:
-  1. $P(X \ge 5 \mid X > 2) = \frac{P(X > 4)}{P(X > 2)} = \left(\frac{5}{6}\right)^2 = \frac{25}{36}$.
+  1. $P(X \ge 5 \mid X > 2) = \frac{P(X \ge 5)}{P(X > 2)} = \frac{P(X > 4)}{P(X > 2)}$.
+  2. $= \frac{(5/6)^4}{(5/6)^2} = \left(\frac{5}{6}\right)^2 = \frac{25}{36}$.
+  3. Interpretation: given the first two tosses failed, the next two must also fail.
+  Why others are wrong:
+  - (A) $\left(\frac{5}{6}\right)^3$ uses the wrong number of failures.
+  - (C) ⅚ requires only one more failure.
+  - (B) $\frac{11}{36}$ is the complement.
+  Key takeaway: memorylessness — past failures don't change future probabilities.
   Answer: (D)
 M A 10: |-
-  Concept: Telescoping: $\tan^{-1}\frac{2}{4r^2} = \tan^{-1}(2r + 1) - \tan^{-1}(2r - 1)$.
+  Concept: Telescoping inverse tangents: $\tan^{-1}a - \tan^{-1}b = \tan^{-1}\frac{a - b}{1 + ab}$. Write $\frac{1}{2r^2} = \frac{2}{4r^2} = \frac{(2r + 1) - (2r - 1)}{1 + (2r + 1)(2r - 1)}$.
   Solution:
-  1. $p = \tan^{-1}101 - \tan^{-1}1$.
-  2. $\tan p = \frac{101 - 1}{1 + 101} = \frac{50}{51}$.
+  1. $\tan^{-1}\frac{1}{2r^2} = \tan^{-1}(2r + 1) - \tan^{-1}(2r - 1)$.
+  2. Sum r = 1 to 50: $p = \tan^{-1}101 - \tan^{-1}1$.
+  3. $\tan p = \frac{101 - 1}{1 + 101} = \frac{100}{102} = \frac{50}{51}$.
+  Why others are wrong:
+  - (A) $\frac{101}{102}$ forgets to subtract 1 in the numerator.
+  - (C) 100 is only the numerator.
+  - (D) $\frac{51}{50}$ is the reciprocal.
+  Key takeaway: multiplying numerator and denominator by 2 exposes the (2r ± 1) telescoping pattern.
   Answer: (B)
 M A 11: |-
-  Concept: Unique solution iff det ≠ 0; otherwise check consistency.
+  Concept: A 3 × 3 system has a unique solution iff det ≠ 0. If det = 0, it has either infinitely many solutions (consistent) or none.
   Solution:
-  1. det = λ − 5, so a unique solution needs λ ≠ 5: p = 5/6.
-  2. For λ = 5: (eq3 − eq2) gives y + 2z = 1 − μ, and (eq2 − eq1) gives y + 2z = μ − 5. These are consistent only if μ = 3.
-  3. No solution: λ = 5 and μ ≠ 3, so q = 5/36.
+  1. det $= \begin{vmatrix}1&1&1\\1&2&3\\1&3&\lambda\end{vmatrix} = \lambda - 5$.
+  2. Unique solution iff λ ≠ 5: p = $\frac{5}{6}$ (λ is a die face).
+  3. λ = 5: eq2 − eq1: y + 2z = μ − 5; eq3 − eq2: y + 2z = 1 − μ. Consistent iff μ − 5 = 1 − μ ⇒ μ = 3.
+  4. No solution: λ = 5 and μ ≠ 3: q = $\frac{1}{6}\times\frac{5}{6} = \frac{5}{36}$.
+  Why others are wrong:
+  - (A) and (D) swap p with P(λ = 5).
+  - (C) gives q = $\frac{1}{36}$, which is P(infinitely many solutions).
+  Key takeaway: p + q + P(infinite) = $\frac{30 + 5 + 1}{36}$ = 1 ✓.
   Answer: (B)
 M A 12: |-
-  Concept: Chord with midpoint (h, k): T = S₁; tangency to y² = 4ax needs c = a/m.
+  Concept: The chord of a conic with midpoint (h, k) is T = S₁. For $y^2 = 4ax$, the line y = mx + c is a tangent iff $c = \frac{a}{m}$.
   Solution:
-  1. The chord is $hx - ky = h^2 - k^2$, so $y = \frac{h}{k}x - \frac{h^2 - k^2}{k}$.
-  2. Tangency to y² = 8x (a = 2): $-\frac{h^2 - k^2}{k} = \frac{2k}{h}$, so $k^2h - h^3 = 2k^2$.
-  3. Locus: $y^2(x - 2) = x^3$.
+  1. Hyperbola $x^2 - y^2 = 4$: chord with midpoint (h, k): $hx - ky = h^2 - k^2$.
+  2. Slope form: $y = \frac{h}{k}x - \frac{h^2 - k^2}{k}$, so m = $\frac{h}{k}$, c = $-\frac{h^2 - k^2}{k}$.
+  3. Tangent to $y^2 = 8x$ (a = 2): $-\frac{h^2 - k^2}{k} = \frac{2k}{h}$.
+  4. $-h^3 + hk^2 = 2k^2 \Rightarrow k^2(h - 2) = h^3$.
+  5. Locus: $y^2(x - 2) = x^3$.
+  Why others are wrong:
+  - (A), (B), (D) swap x and y or the powers.
+  Key takeaway: T = S₁ gives the chord directly from its midpoint — no need for the endpoints.
   Answer: (C)
 M A 13: |-
-  Concept: Use $\sin(\pi - \theta) = \sin\theta$ and $\sin\frac{3\pi}{8} = \cos\frac{\pi}{8}$.
+  Concept: Pair supplementary angles: $\sin(\pi - \theta) = \sin\theta$, and complementary: $\sin\frac{3\pi}{8} = \cos\frac{\pi}{8}$.
   Solution:
-  1. $\sin\frac{\pi}{8}\sin\frac{3\pi}{8}\sin\frac{5\pi}{8}\sin\frac{7\pi}{8} = \left(\sin\frac{\pi}{8}\cos\frac{\pi}{8}\right)^2 = \left(\frac{1}{2\sqrt2}\right)^2 = \frac{1}{8}$.
-  2. $\sin\frac{2\pi}{8}\sin\frac{6\pi}{8} = \frac{1}{2}$.
-  3. Value $= 2\times\frac{1}{8}\times\frac{1}{2} = \frac{1}{8}$.
+  1. $\sin\frac{5\pi}{8} = \sin\frac{3\pi}{8}$ and $\sin\frac{7\pi}{8} = \sin\frac{\pi}{8}$.
+  2. So $\sin\frac{\pi}{8}\sin\frac{3\pi}{8}\sin\frac{5\pi}{8}\sin\frac{7\pi}{8} = \left(\sin\frac{\pi}{8}\cos\frac{\pi}{8}\right)^2 = \left(\frac{1}{2}\sin\frac{\pi}{4}\right)^2 = \frac{1}{8}$.
+  3. $\sin\frac{2\pi}{8}\sin\frac{6\pi}{8} = \frac{1}{\sqrt2}\cdot\frac{1}{\sqrt2} = \frac{1}{2}$.
+  4. Value $= 2\times\frac{1}{8}\times\frac{1}{2} = \frac{1}{8}$.
+  Why others are wrong:
+  - (B) ¼ forgets the ½ from the $\frac{2\pi}{8}, \frac{6\pi}{8}$ pair.
+  - (A) and (D) leave a stray √2.
+  Why pair the angles: sin(π − θ) = sin θ lets every angle beyond π/2 be replaced by one below it, and sin(π/2 − θ) = cos θ turns sin(3π/8) into cos(π/8). The product then collapses using 2 sin θ cos θ = sin 2θ.
+  Common mistake: Forgetting the leading factor 2 or the middle factors sin(π/4) sin(3π/4) = ½.
+  Key takeaway: products of sines at equally spaced angles simplify by pairing θ with π − θ and π/2 − θ.
   Answer: (C)
 M A 14: |-
-  Concept: Polar form: $\sqrt3 + i = 2e^{i\pi/6}$.
+  Concept: Convert to polar form and use De Moivre's theorem.
   Solution:
-  1. $(\sqrt3 + i)^{100} = 2^{100}e^{i50\pi/3} = 2^{100}e^{i2\pi/3} = 2^{99}(-1 + i\sqrt3)$.
-  2. p = −1 and q = √3, so the sum is √3 − 1 and the product is −√3.
-  3. The equation is $x^2 - (\sqrt3 - 1)x - \sqrt3 = 0$.
+  1. $\sqrt3 + i = 2\left(\cos\frac{\pi}{6} + i\sin\frac{\pi}{6}\right)$.
+  2. $(\sqrt3 + i)^{100} = 2^{100}\left(\cos\frac{100\pi}{6} + i\sin\frac{100\pi}{6}\right)$; $\frac{50\pi}{3} = 16\pi + \frac{2\pi}{3}$.
+  3. $= 2^{100}\left(-\frac{1}{2} + i\frac{\sqrt3}{2}\right) = 2^{99}(-1 + i\sqrt3)$.
+  4. p = −1, q = √3: sum = √3 − 1, product = −√3.
+  5. Equation: $x^2 - (\sqrt3 - 1)x - \sqrt3 = 0$.
+  Why others are wrong:
+  - (C) has the wrong sign for the sum.
+  - (B) and (D) have product +√3 (sign error in p).
+  Key takeaway: reduce large angles modulo 2π before evaluating.
   Answer: (A)
 M A 15: |-
-  Concept: Angle between the space diagonals using coordinates.
+  Concept: Place the hall in coordinates and compute the angle between the two space diagonals using the dot product.
   Solution:
-  1. Take A(0, 0, 0), B(10, 0, 0), G(10, 10, h) and H(0, 10, h).
-  2. $\vec{AG} = (10, 10, h)$ and $\vec{BH} = (-10, 10, h)$, so $\cos\theta = \frac{h^2}{200 + h^2} = \frac{1}{5}$.
-  3. 4h² = 200, so h = 5√2 m.
+  1. Floor ABCD with A(0, 0, 0), B(10, 0, 0); the top corners above C and D are G(10, 10, h) and H(0, 10, h).
+  2. $\vec{AG} = (10, 10, h)$, $\vec{BH} = (-10, 10, h)$.
+  3. $\cos\theta = \frac{-100 + 100 + h^2}{200 + h^2} = \frac{h^2}{200 + h^2}$.
+  4. $\frac{h^2}{200 + h^2} = \frac{1}{5} \Rightarrow 4h^2 = 200 \Rightarrow h^2 = 50 \Rightarrow h = 5\sqrt2$ m.
+  Why others are wrong:
+  - (A) 5 gives cos θ = $\frac{25}{225} = \frac{1}{9}$.
+  - (B) 2√10 gives $\frac{40}{240} = \frac{1}{6}$; (C) 5√3 gives $\frac{75}{275} = \frac{3}{11}$.
+  Key takeaway: set up coordinates at a corner — space-geometry angles then become dot products.
   Answer: (D)
 M A 16: |-
-  Concept: Plane through the line of intersection: $P_1 + kP_2 = 0$.
+  Concept: Planes through the line of intersection of $P_1 = 0$ and $P_2 = 0$: $P_1 + kP_2 = 0$. Fix k using the given point.
   Solution:
-  1. (x + y + 4z − 16) + k(−x + y + z − 6) = 0; the point (1, 2, 3) gives −1 − 2k = 0, so k = −½.
-  2. The plane is 3x + y + 7z = 26.
-  3. (3, 3, 2), (6, −6, 2) and (−8, 8, 6) all give 26; (4, 2, 2) gives 28, so it does not lie on P.
+  1. $(x + y + 4z - 16) + k(-x + y + z - 6) = 0$.
+  2. Through (1, 2, 3): (1 + 2 + 12 − 16) + k(−1 + 2 + 3 − 6) = −1 − 2k = 0 ⇒ k = −½.
+  3. Plane: multiply by 2: $2(x + y + 4z - 16) - (-x + y + z - 6) = 3x + y + 7z - 26 = 0$.
+  4. Test: (3, 3, 2) → 26 ✓; (6, −6, 2) → 26 ✓; (−8, 8, 6) → 26 ✓; (4, 2, 2) → 28 ✗.
+  5. (4, 2, 2) does not lie on P.
+  Key takeaway: always verify the plane with the given point before testing options.
   Answer: (C)
 M A 17: |-
-  Concept: Perpendicular distance = PC·sin(angle between PC and the pencil).
+  Concept: The perpendicular distance from P to the line of the pencil through C is PC·sin(angle between CP and the pencil).
   Solution:
-  1. Now tan θ = 2, so sin θ = 2/√5 and the distance is √5 · 2/√5 = 2.
-  2. For a distance of 1: sin φ = 1/√5, so tan φ = ½.
-  3. The rotation is θ − φ: $\tan(\theta - \varphi) = \frac{2 - \frac{1}{2}}{1 + 1} = \frac{3}{4}$.
+  1. Initially tan(∠PCB) = 2 ⇒ sin = $\frac{2}{\sqrt5}$ ⇒ distance = √5 × $\frac{2}{\sqrt5}$ = 2 inches.
+  2. Target distance 1: $\sqrt5\sin\varphi = 1 \Rightarrow \sin\varphi = \frac{1}{\sqrt5}$, tan φ = ½.
+  3. The pencil must rotate (towards P) by θ − φ, where tan θ = 2:
+     $\tan(\theta - \varphi) = \frac{2 - \frac{1}{2}}{1 + 2\cdot\frac{1}{2}} = \frac{3/2}{2} = \frac{3}{4}$.
+  4. Rotation angle: $\tan^{-1}\frac{3}{4}$.
+  Why others are wrong:
+  - (D) tan⁻¹(½) is the final angle φ, not the rotation.
+  - (B) and (C) come from adding angles or using the wrong target.
+  Key takeaway: the pencil's length (10 in) is irrelevant — only P's position relative to C matters.
   Answer: (A)
 M A 18: |-
-  Concept: $\int_{-a}^{a}f(x)dx = \int_0^{a}[f(x) + f(-x)]dx$.
+  Concept: For symmetric limits, $\int_{-a}^af(x)\,dx = \int_0^a[f(x) + f(-x)]\,dx$. Here $\frac{1}{1 + \pi^{\sin x}} + \frac{1}{1 + \pi^{-\sin x}} = 1$.
   Solution:
-  1. $\frac{1}{1 + \pi^{\sin x}} + \frac{1}{1 + \pi^{-\sin x}} = 1$, so $I = \int_0^{\pi/2}(1 + \sin^2x)dx$.
-  2. $I = \frac{\pi}{2} + \frac{\pi}{4} = \frac{3\pi}{4}$.
+  1. f(x) + f(−x) = $(1 + \sin^2x)\left[\frac{1}{1 + \pi^{\sin x}} + \frac{\pi^{\sin x}}{\pi^{\sin x} + 1}\right] = 1 + \sin^2x$.
+  2. $I = \int_0^{\pi/2}(1 + \sin^2x)\,dx = \frac{\pi}{2} + \frac{\pi}{4} = \frac{3\pi}{4}$.
+  Why others are wrong:
+  - (D) $\frac{3\pi}{2}$ integrates over the full interval without halving.
+  - (A) $\frac{\pi}{2}$ drops the sin²x term; (B) $\frac{5\pi}{4}$ mis-evaluates $\int\sin^2x$.
+  Why the "king" trick works: 1/(1 + a^t) + 1/(1 + a^{−t}) = 1 for any a > 0, so the awkward denominators disappear when f(x) and f(−x) are added.
+  Common mistake: Integrating (1 + sin²x) over the full interval [−π/2, π/2], which gives 3π/2 (twice the answer).
+  Key takeaway: the pattern $\frac{1}{1 + a^{g(x)}}$ with g odd always pairs to 1.
   Answer: (C)
 M A 19: |-
-  Concept: Family of circles touching a line at a point: $(x - 2)^2 + (y - 1)^2 + \lambda(x - 2y) = 0$. PQ is a diameter of C₁, so the common chord passes through C₁'s centre (0, −1).
+  Concept: All circles touching the line x − 2y = 0 at (2, 1) form the family $(x - 2)^2 + (y - 1)^2 + \lambda(x - 2y) = 0$. If C cuts C₁ at the ends of a diameter of C₁, the common chord (radical axis) passes through C₁'s centre.
   Solution:
-  1. The common chord (C − C₁) is $(\lambda - 4)x - (2\lambda + 4)y + 10 = 0$; through (0, −1): 2λ + 14 = 0, so λ = −7.
-  2. C is $x^2 + y^2 - 11x + 12y + 5 = 0$, so $r^2 = \frac{121}{4} + 36 - 5 = \frac{245}{4}$.
-  3. r = 7√5/2, so the diameter is 7√5.
+  1. C: $x^2 + y^2 + (\lambda - 4)x - (2 + 2\lambda)y + 5 = 0$.
+  2. C₁: $x^2 + y^2 + 2y - 5 = 0$, centre (0, −1).
+  3. Common chord C − C₁: $(\lambda - 4)x - (2\lambda + 4)y + 10 = 0$. Through (0, −1): $2\lambda + 4 + 10 = 0 \Rightarrow \lambda = -7$.
+  4. C: $x^2 + y^2 - 11x + 12y + 5 = 0$; $r^2 = \frac{121}{4} + 36 - 5 = \frac{245}{4}$, r = $\frac{7\sqrt5}{2}$.
+  5. Diameter = 7√5.
+  Why others are wrong:
+  - (B), (C), (D) come from wrong λ or radius arithmetic.
+  Key takeaway: "PQ is a diameter of C₁" ⇔ the radical axis passes through C₁'s centre.
   Answer: (A)
 M A 20: |-
-  Concept: Substitute x = 2 (continuous) and telescope.
+  Concept: Each term is continuous at x = 2, so substitute directly; then factor the denominator and telescope.
   Solution:
-  1. The denominator is $4n(n + 1) + 4(2n + 1) + 4 = 4(n + 1)(n + 2)$.
-  2. The term is $\frac{1}{2}\left(\frac{1}{n + 1} - \frac{1}{n + 2}\right)$.
-  3. Sum $= \frac{1}{2}\left(\frac{1}{2} - \frac{1}{11}\right) = \frac{9}{44}$.
+  1. At x = 2: denominator $= 4n(n + 1) + 4(2n + 1) + 4 = 4(n^2 + 3n + 2) = 4(n + 1)(n + 2)$.
+  2. Term $= \frac{2}{4(n + 1)(n + 2)} = \frac{1}{2}\left(\frac{1}{n + 1} - \frac{1}{n + 2}\right)$.
+  3. Sum n = 1 to 9: $\frac{1}{2}\left(\frac{1}{2} - \frac{1}{11}\right) = \frac{1}{2}\cdot\frac{9}{22} = \frac{9}{44}$.
+  Why others are wrong:
+  - (B), (C), (D) arise from summing to the wrong upper limit or mis-factoring.
+  Key takeaway: the general denominator is $(n x + 2)((n + 1)x + 2)$; at x = 2 it becomes 4(n + 1)(n + 2).
   Answer: (A)
 M B 1: |-
-  Concept: List the multiples of 11 from 100 to 500 and drop those containing the digit 1.
+  Concept: List all multiples of 11 in [100, 500], then remove those containing the digit 1.
   Solution:
-  1. The multiples are 110, 121, …, 495 (36 numbers) and sum to 10890.
-  2. Those containing 1 are 110, 121, 132, 143, 154, 165, 176, 187, 198, 231, 319, 341, 418, 451, whose sum is 3146.
+  1. Multiples of 11 from 110 to 495: 36 numbers, sum $= \frac{36}{2}(110 + 495) = 10890$.
+  2. Those containing a "1":
+     - 110, 121, 132, 143, 154, 165, 176, 187, 198 (sum 1386);
+     - 231, 319, 341, 418, 451 (sum 1760).
+     Total to remove: 3146.
   3. Required sum = 10890 − 3146 = 7744.
+  Check the removed list: every multiple of 11 from 110 to 198 contains a 1 (hundreds digit 1). Above 200, the numbers with a digit 1 are 231, 319, 341, 418 and 451.
+  Common mistake: Missing numbers like 319 or 418, where the 1 is in the tens place.
+  Key takeaway: when excluding by a digit condition, subtracting from the full arithmetic-series sum is fastest.
   Answer: 7744
 M B 2: |-
-  Concept: $f'(x) = 6(x + 1)(x - 2)$, so the maximum is at a = −1 and the minimum at b = 2.
+  Concept: Find the critical points from f′, then integrate |f| between them, splitting at the root of f.
   Solution:
-  1. f > 0 on (−1, 0) and f < 0 on (0, 2).
-  2. $\int_{-1}^0f = \frac{9}{2}$ and $\int_0^2f = -24$, so A = 4.5 + 24 = 28.5.
-  3. 4A = 114.
+  1. f′(x) = 6x² − 6x − 12 = 6(x + 1)(x − 2): local max at a = −1, local min at b = 2.
+  2. f(x) = x(2x² − 3x − 12) has a root at 0 in (−1, 2): f > 0 on (−1, 0), f < 0 on (0, 2).
+  3. $\int_{-1}^0f\,dx = \left[\frac{x^4}{2} - x^3 - 6x^2\right]_{-1}^0 = 0 - \left(\frac{1}{2} + 1 - 6\right) = \frac{9}{2}$.
+  4. $\int_0^2f\,dx = 8 - 8 - 24 = -24$ → area 24.
+  5. A = 4.5 + 24 = 28.5; 4A = 114.
+  Key takeaway: "total area" means taking absolute values on each sign interval.
   Answer: 114
 M B 3: |-
-  Concept: Projection of $\vec a$ on $\vec b$ is $\frac{\vec a\cdot\vec b}{|\vec b|}$.
+  Concept: Scalar projection of $\vec a$ on $\vec b$ is $\frac{\vec a\cdot\vec b}{|\vec b|}$.
   Solution:
-  1. $\vec b = (2 - \lambda, 6, -2)$, and $\vec a\cdot\vec b = 12 - \lambda$.
-  2. $(12 - \lambda)^2 = (2 - \lambda)^2 + 40$, so 144 − 24λ = 44 − 4λ, and λ = 5.
+  1. $\vec b = (2 - \lambda)\hat i + 6\hat j - 2\hat k$; $\vec a = (1, 2, 1)$.
+  2. $\vec a\cdot\vec b = 2 - \lambda + 12 - 2 = 12 - \lambda$.
+  3. Projection 1: $(12 - \lambda)^2 = (2 - \lambda)^2 + 36 + 4$.
+  4. $144 - 24\lambda = 44 - 4\lambda \Rightarrow 20\lambda = 100 \Rightarrow \lambda = 5$.
+  5. Check: $\vec b = (-3, 6, -2)$, |b| = 7, $\vec a\cdot\vec b = 7$ ✓ (projection 1).
   Answer: 5
 M B 4: |-
-  Concept: Solve for a₁ and b₁ from c₂ and c₃.
+  Concept: Write $c_2$ and $c_3$ in terms of $a_1$ and $b_1$, solve, then sum the AP and GP separately.
   Solution:
-  1. $a_1 - 3 + 2b_1 = 12$ and $a_1 - 6 + 4b_1 = 13$ give b₁ = 2 and a₁ = 11.
-  2. $\sum a_k = 10(11) + 45(-3) = -25$ and $\sum b_k = 2(2^{10} - 1) = 2046$.
-  3. The total is 2021.
+  1. $c_2 = (a_1 - 3) + 2b_1 = 12$; $c_3 = (a_1 - 6) + 4b_1 = 13$.
+  2. Subtract: $-3 + 2b_1 = 1 \Rightarrow b_1 = 2$; then $a_1 = 11$.
+  3. $\sum a_k = \frac{10}{2}(2\times11 + 9\times(-3)) = 5(22 - 27) = -25$.
+  4. $\sum b_k = 2(2^{10} - 1) = 2046$.
+  5. Total = 2046 − 25 = 2021.
+  Check: c₂ = 8 + 4 = 12 ✓ and c₃ = 5 + 8 = 13 ✓ (a₂ = 8, a₃ = 5, b₂ = 4, b₃ = 8).
+  Common mistake: Using b₁(2¹⁰ − 1) with b₁ = 1, or dropping the negative AP sum.
   Answer: 2021
 M B 5: |-
-  Concept: The plane contains both lines, so its normal is $\vec d_1\times\vec d_2$.
+  Concept: A plane containing two (intersecting/coplanar) lines has normal $\vec d_1\times\vec d_2$. Then PQ² = (distance from P to the plane)².
   Solution:
-  1. (6, 7, 8) × (3, 5, 7) = (9, −18, 9), which is proportional to (1, −2, 1).
-  2. The plane through (−1, 1, 3) is x − 2y + z = 0.
-  3. $PQ^2 = \frac{(7 + 4 + 13)^2}{6} = \frac{576}{6} = 96$.
+  1. $(6, 7, 8)\times(3, 5, 7) = (49 - 40,\ 24 - 42,\ 30 - 21) = (9, -18, 9) \parallel (1, -2, 1)$.
+  2. Plane through (−1, 1, 3): $(x + 1) - 2(y - 1) + (z - 3) = 0 \Rightarrow x - 2y + z = 0$. (Check (1, 2, 3): 1 − 4 + 3 = 0 ✓.)
+  3. Distance² from P(7, −2, 13): $\frac{(7 + 4 + 13)^2}{1 + 4 + 1} = \frac{576}{6} = 96$.
+  Key takeaway: verify that the second line's point lies on the plane — that confirms the lines are coplanar.
   Answer: 96
 M B 6: |-
-  Concept: Vandermonde's identity $\sum\binom{m}{i}\binom{n}{k - i} = \binom{m + n}{k}$.
+  Concept: Vandermonde's identity: $\sum_i\binom{m}{i}\binom{n}{k - i} = \binom{m + n}{k}$. Also $\binom{n}{r} = \binom{n}{n - r}$.
   Solution:
-  1. $\binom{12}{12 - k + i} = \binom{12}{k - i}$, so the first sum is $\binom{21}{k}$; similarly the second is $\binom{21}{k}$.
-  2. $A_k = 2\binom{21}{k}$, so $A_4 - A_3 = 2(5985 - 1330) = 9310 = 190\times49$.
+  1. $\left[\begin{matrix}12\\12 - k + i\end{matrix}\right] = \binom{12}{k - i}$ (zero when out of range), so the first sum is $\sum\binom{9}{i}\binom{12}{k - i} = \binom{21}{k}$.
+  2. Similarly $\sum\binom{8}{i}\binom{13}{k - i} = \binom{21}{k}$.
+  3. $A_k = 2\binom{21}{k}$.
+  4. $A_4 - A_3 = 2(5985 - 1330) = 9310 = 190\times49$.
+  5. p = 49.
+  Final step: A₄ − A₃ = 2(C(21, 4) − C(21, 3)) = 2(5985 − 1330) = 9310 = 190 × 49, so p = 49.
+  Common mistake: Failing to rewrite the bracket symbol using C(n, r) = C(n, n − r), which hides the Vandermonde form.
+  Key takeaway: the bracket notation simply handles out-of-range terms as zero, which Vandermonde's identity already assumes.
   Answer: 49
 M B 7: |-
-  Concept: Common root.
+  Concept: α is a common root of both quadratics. Eliminate α² to get α linearly in λ.
   Solution:
-  1. 3(α² − α + 2λ) − (3α² − 10α + 27λ) = 0 gives 7α = 21λ, so α = 3λ.
-  2. 9λ² − 3λ + 2λ = 0 gives λ = 1/9 and α = 1/3.
-  3. β = 1 − α = 2/3 and γ = 10/3 − α = 3.
-  4. $\frac{\beta\gamma}{\lambda} = \frac{2}{1/9} = 18$.
+  1. α² − α + 2λ = 0 and 3α² − 10α + 27λ = 0.
+  2. 3 × (first) − (second): 7α − 21λ = 0 ⇒ α = 3λ.
+  3. Substitute: 9λ² − 3λ + 2λ = 0 ⇒ λ(9λ − 1) = 0 ⇒ λ = $\frac{1}{9}$ (λ ≠ 0), so α = $\frac{1}{3}$.
+  4. β = 1 − α = $\frac{2}{3}$ (sum of roots of the first); γ = $\frac{10}{3}$ − α = 3 (sum of roots of the second).
+  5. $\frac{\beta\gamma}{\lambda} = \frac{2/3\times3}{1/9} = 18$.
   Answer: 18
 M B 8: |-
-  Concept: Use the mean and variance to find x and y.
+  Concept: Use the mean and variance to get x + y and x² + y², then solve.
   Solution:
-  1. x + y = 10, and $\frac{9 + 49 + x^2 + y^2}{4} - 25 = 10$ gives x² + y² = 82.
-  2. Then xy = 9, so x = 9 and y = 1.
-  3. The new numbers are 21, 9, 10 and 8, with mean 48/4 = 12.
+  1. Mean 5: 3 + 7 + x + y = 20 ⇒ x + y = 10.
+  2. Variance 10: $\frac{9 + 49 + x^2 + y^2}{4} - 25 = 10 \Rightarrow x^2 + y^2 = 82$.
+  3. xy = $\frac{100 - 82}{2} = 9$ ⇒ x = 9, y = 1 (x > y).
+  4. New numbers: 3 + 18 = 21, 7 + 2 = 9, 10, 8; sum 48.
+  5. Mean = 12.
+  Check: 3, 7, 9, 1 have mean 5 and Σx² = 9 + 49 + 81 + 1 = 140, so variance = 35 − 25 = 10 ✓.
+  Common mistake: Taking x = 1, y = 9 (ignoring x > y), which gives a different set of new numbers.
   Answer: 12
 M B 9: |-
-  Concept: For 3 × 3 matrices: adj(kA) = k² adj A, adj(adj A) = |A|A, and |adj A| = |A|².
+  Concept: For n × n matrices (n = 3): adj(kA) = kⁿ⁻¹ adj A = k² adj A; adj(adj A) = |A|ⁿ⁻² A = |A| A; |adj A| = |A|²; |kA| = k³|A|.
   Solution:
-  1. adj(2A) = 4 adj A, and adj(4 adj A) = 16|A|A, so 2 adj(adj(2A)) = 32|A|A.
-  2. adj(32|A|A) = (32|A|)² adj A, and its determinant after doubling is $2^3(32|A|)^6|A|^2 = 2^{33}|A|^8$.
-  3. $2^{33}|A|^8 = 2^{41}$, so |A|⁸ = 2⁸ and det(A²) = |A|² = 4.
+  1. adj(2A) = 4 adj A.
+  2. adj(4 adj A) = 16 adj(adj A) = 16|A|A; doubling: 32|A|A.
+  3. adj(32|A|A) = (32|A|)² adj A; doubling: 2(32|A|)² adj A.
+  4. Determinant: $2^3(32|A|)^6|\text{adj}A| = 2^3\cdot2^{30}|A|^6\cdot|A|^2 = 2^{33}|A|^8$.
+  5. $2^{33}|A|^8 = 2^{41} \Rightarrow |A|^8 = 2^8 \Rightarrow |A|^2 = 4$.
+  6. det(A²) = |A|² = 4.
+  Final step: |A|⁸ = 2⁸, so |A| = ±2 and det(A²) = |A|² = 4.
+  Common mistake: Using |kA| = k|A| instead of k³|A| for a 3 × 3 matrix, which loses many powers of 2.
   Answer: 4
 M B 10: |-
-  Concept: $(1 - i)^2 = -2i$, so write the expression as a power.
+  Concept: Simplify using $(1 - i)^2 = -2i$ and $\frac{2i}{1 - i} = i(1 + i) = i - 1$.
   Solution:
   1. $\frac{(2i)^n}{(1 - i)^{n-2}} = (1 - i)^2\left(\frac{2i}{1 - i}\right)^n = -2i\,(i - 1)^n$.
-  2. Checking n = 1, 2, …: n = 2 gives −4, n = 4 gives 8i, and n = 6 gives 16 (the first positive integer).
+  2. $(i - 1)^2 = -2i$, so for even n = 2m: $(i - 1)^n = (-2i)^m$.
+  3. n = 2: −2i(−2i) = −4. n = 4: −2i(−4) = 8i. n = 6: −2i(8i) = 16 ✓ (positive integer).
+  4. Odd n give non-real values (e.g. n = 1: 2 + 2i).
+  5. Least n = 6.
+  Check for n = 6: (2i)⁶ = 64i⁶ = −64 and (1 − i)⁴ = (−2i)² = −4, so the ratio is (−64)/(−4) = 16 ✓.
+  Common mistake: Accepting n = 2, which gives −4, an integer but not positive.
   Answer: 6

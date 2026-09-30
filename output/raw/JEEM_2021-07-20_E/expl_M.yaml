@@ -1,189 +1,374 @@
 M A 1: |-
-  Concept: A point and its mirror image in L are symmetric about L, so the plane through Q perpendicular to L also passes through the original point.
+  Concept: If Q is the mirror image of a point P in a line L, then the midpoint of PQ lies on L and PQ is perpendicular to L. Hence P and Q lie in the same plane perpendicular to L. So the plane through Q perpendicular to L is simply the plane through P = (2, 3, −1) with normal along L — we never need to compute Q itself.
   Solution:
-  1. Plane ⊥ L (normal (2, 1, 1)) through (2, 3, −1): $2(x - 2) + (y - 3) + (z + 1) = 0$, i.e. $2x + y + z = 6$.
-  2. (1, 2, 2): $2 + 2 + 2 = 6$ ✓.
+  1. Direction ratios of L are (2, 1, 1); these are the normal ratios of plane P.
+  2. Plane through (2, 3, −1): $2(x - 2) + 1(y - 3) + 1(z + 1) = 0 \Rightarrow 2x + y + z = 6$.
+  3. Test the options by substituting into $2x + y + z$:
+     - (1, 2, 2): $2 + 2 + 2 = 6$ ✓
+  Why others are wrong:
+  - (B) (−1, 1, 2): $-2 + 1 + 2 = 1 \ne 6$.
+  - (C) (1, 1, 1): $2 + 1 + 1 = 4 \ne 6$.
+  - (D) (1, 1, 2): $2 + 1 + 2 = 5 \ne 6$.
+  Tip: whenever a reflection in a line and a perpendicular plane appear together, use the original point — it saves the foot-of-perpendicular calculation entirely.
   Answer: (A)
 M A 2: |-
-  Concept: $\text{Re}\frac{1}{z} = \frac{\text{Re}z}{|z|^2}$.
+  Concept: For a complex number $z = a + ib$, $\frac{1}{z} = \frac{a - ib}{a^2 + b^2}$, so $\text{Re}\left(\frac{1}{z}\right) = \frac{a}{a^2 + b^2}$.
   Solution:
-  1. $\frac{1 - \cos\theta}{(1 - \cos\theta)^2 + 4\sin^2\theta} = \frac{1}{5}$; dividing by $(1 - \cos\theta)$: $5 = (1 - c) + 4(1 + c) \Rightarrow c = 0$.
-  2. $\theta = \frac{\pi}{2}$, so $\int_0^{\pi/2}\sin x\,dx = 1$.
+  1. Here $a = 1 - \cos\theta$ and $b = 2\sin\theta$. Write $c = \cos\theta$.
+  2. $\frac{1 - c}{(1 - c)^2 + 4\sin^2\theta} = \frac{1}{5}$. Since $\sin^2\theta = (1 - c)(1 + c)$, the denominator is $(1 - c)[(1 - c) + 4(1 + c)]$.
+  3. For $\theta \in (0, \pi)$, $1 - c \ne 0$, so cancel it: $\frac{1}{(1 - c) + 4(1 + c)} = \frac{1}{5} \Rightarrow 5 + 3c = 5 \Rightarrow c = 0$.
+  4. Thus $\theta = \frac{\pi}{2}$.
+  5. $\int_0^{\pi/2}\sin x\,dx = [-\cos x]_0^{\pi/2} = 0 - (-1) = 1$.
+  Why others are wrong:
+  - (A) −1 would need $\cos\theta = 2$, impossible; the integral $1 - \cos\theta$ is always positive on (0, π).
+  - (B) 0 would require $\theta = 0$, which is excluded.
+  - (C) 2 corresponds to $\theta = \pi$, also excluded, and does not satisfy $\cos\theta = 0$.
   Answer: (D)
 M A 3: |-
-  Concept: Infinitely many solutions need $\Delta = 0$ and consistent equations.
+  Concept: A 3 × 3 non-homogeneous system has infinitely many solutions only when the coefficient determinant $\Delta = 0$ AND the equations are consistent (one equation is a combination of the others, including the right-hand sides).
   Solution:
-  1. $\Delta = 3(2k + 15) + (k + 18) + 4(5 - 12) = 7k + 35 = 0 \Rightarrow k = -5$.
-  2. Check: $R_3 = R_1 + 3R_2$ gives $(6, 5, -5)$ with RHS $3 - 6 = -3$ ✓.
+  1. $\Delta = \begin{vmatrix}3 & -1 & 4\\1 & 2 & -3\\6 & 5 & k\end{vmatrix}$.
+  2. Expanding along $R_1$: $3(2k + 15) + 1(k + 18) + 4(5 - 12) = 6k + 45 + k + 18 - 28 = 7k + 35$.
+  3. $\Delta = 0 \Rightarrow k = -5$.
+  4. Consistency check: $R_1 + 3R_2 = (3 + 3, -1 + 6, 4 - 9) = (6, 5, -5)$, exactly the third row with $k = -5$.
+  5. RHS: $3 + 3(-2) = -3$, which matches the third equation's RHS. So the third equation is redundant and the system has infinitely many solutions.
+  Why others are wrong:
+  - (A) 3, (B) −3, (D) 5 all give $\Delta = 7k + 35 \ne 0$, so the system has a unique solution, not infinitely many.
+  Note: had the RHS not matched, $k = -5$ would give no solution — always do the consistency check.
   Answer: (C)
 M A 4: |-
-  Concept: Read $a_1$ and $a_2$ from the product of the two expansions.
+  Concept: Multiply the two binomial expansions and read off the coefficients of $y$ and $y^2$.
   Solution:
-  1. $a_1 = n - m = 10$.
-  2. $a_2 = \binom{m}{2} + \binom{n}{2} - mn = \frac{(n - m)^2 - (m + n)}{2} = 10$.
-  3. $100 - (m + n) = 20 \Rightarrow m + n = 80$.
+  1. $(1 - y)^m = 1 - my + \binom{m}{2}y^2 - \dots$ and $(1 + y)^n = 1 + ny + \binom{n}{2}y^2 + \dots$
+  2. Coefficient of $y$: $a_1 = n - m = 10$.
+  3. Coefficient of $y^2$: $a_2 = \binom{m}{2} + \binom{n}{2} - mn = \frac{m^2 - m + n^2 - n - 2mn}{2} = \frac{(n - m)^2 - (m + n)}{2}$.
+  4. Setting $a_2 = 10$: $\frac{100 - (m + n)}{2} = 10 \Rightarrow m + n = 80$.
+  5. Check: $n - m = 10$, $n + m = 80$ give $n = 45$, $m = 35$, both natural numbers ✓.
+  Why others are wrong:
+  - (A) 64 would give $a_2 = \frac{100 - 64}{2} = 18$.
+  - (B) 88 would give $a_2 = 6$.
+  - (D) 100 would give $a_2 = 0$.
+  Tip: expressing $a_2$ through $(n - m)^2$ and $(m + n)$ avoids solving for m and n separately.
   Answer: (C)
 M A 5: |-
-  Concept: $\tan2A = \frac{2\tan A}{1 - \tan^2A}$ and the addition formula.
+  Concept: Use $\tan 2A = \frac{2\tan A}{1 - \tan^2A}$ and $\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}$. Convert $\sin^{-1}$ to a tangent using a right triangle.
   Solution:
-  1. $\tan\left(2\tan^{-1}\frac{3}{5}\right) = \frac{6/5}{16/25} = \frac{15}{8}$ and $\tan\left(\sin^{-1}\frac{5}{13}\right) = \frac{5}{12}$.
-  2. $\frac{15/8 + 5/12}{1 - 75/96} = \frac{55/24}{21/96} = \frac{220}{21}$.
+  1. Let $A = \tan^{-1}\frac{3}{5}$. Then $\tan 2A = \frac{6/5}{1 - 9/25} = \frac{6/5}{16/25} = \frac{15}{8}$.
+  2. Let $B = \sin^{-1}\frac{5}{13}$: opposite 5, hypotenuse 13, adjacent 12, so $\tan B = \frac{5}{12}$.
+  3. $\tan(2A + B) = \frac{\frac{15}{8} + \frac{5}{12}}{1 - \frac{15}{8}\cdot\frac{5}{12}} = \frac{\frac{45 + 10}{24}}{1 - \frac{75}{96}} = \frac{55/24}{21/96}$.
+  4. $= \frac{55}{24}\times\frac{96}{21} = \frac{55\times4}{21} = \frac{220}{21}$.
+  5. Sign check: both angles are acute and $2A < \frac{\pi}{2}$ (since $\tan 2A > 0$ with $A < \frac{\pi}{4}$), and $1 - \tan2A\tan B > 0$, so the sum is acute and the tangent is positive.
+  Why others are wrong:
+  - (B) and (D) are negative, but the sum of these angles is acute, so the tangent must be positive.
+  - (A) $\frac{151}{63}$ comes from arithmetic slips (e.g. mishandling $\tan2A$).
   Answer: (C)
 M A 6: |-
-  Concept: Riemann sum.
+  Concept: A limit of the form $\lim_{n\to\infty}\frac{1}{n}\sum_{r=0}^{n-1}g\left(\frac{r}{n}\right)$ equals $\int_0^1g(x)\,dx$ (Riemann sum).
   Solution:
-  1. The limit is $\int_0^1f(5x)dx = \int_0^1(5x + 1)dx = \frac{7}{2}$.
+  1. The general term is $f\left(\frac{5r}{n}\right)$ for $r = 0, 1, \dots, n - 1$.
+  2. So the limit is $\lim\frac{1}{n}\sum_{r=0}^{n-1}f\left(5\cdot\frac{r}{n}\right) = \int_0^1f(5x)\,dx$.
+  3. With $f(x) = x + 1$: $f(5x) = 5x + 1$.
+  4. $\int_0^1(5x + 1)\,dx = \left[\frac{5x^2}{2} + x\right]_0^1 = \frac{5}{2} + 1 = \frac{7}{2}$.
+  Alternative: substitute $t = 5x$ to get $\frac{1}{5}\int_0^5(t + 1)\,dt = \frac{1}{5}\left(\frac{25}{2} + 5\right) = \frac{7}{2}$ — the same result.
+  Why others are wrong:
+  - (A) $\frac{3}{2}$ is $\int_0^1(x + 1)dx$, forgetting the factor 5 inside f.
+  - (B) $\frac{1}{2}$ drops the constant term and the scaling.
+  - (D) $\frac{5}{2}$ is just $\int_0^1 5x\,dx$, missing the "+1".
   Answer: (C)
 M A 7: |-
-  Concept: Parametrise P as $(t, 4t^2 + 1)$; the foot on $y = x$ is $\left(\frac{t + 4t^2 + 1}{2}, \frac{t + 4t^2 + 1}{2}\right)$.
+  Concept: Parametrise the point on the parabola, find the foot of the perpendicular on $y = x$, take the midpoint, then eliminate the parameter.
   Solution:
-  1. Midpoint: $h = \frac{4t^2 + 3t + 1}{4}$, $k = \frac{12t^2 + t + 3}{4}$.
-  2. $3h - k = 2t$ and $h - 3k = -8t^2 - 2$.
-  3. Eliminating t: $2(3x - y)^2 + (x - 3y) + 2 = 0$.
+  1. Let $P = (t, 4t^2 + 1)$.
+  2. Foot of perpendicular from $(x_1, y_1)$ to $y = x$ is $\left(\frac{x_1 + y_1}{2}, \frac{x_1 + y_1}{2}\right) = \left(\frac{4t^2 + t + 1}{2}, \frac{4t^2 + t + 1}{2}\right)$.
+  3. Midpoint (h, k):
+     - $h = \frac{1}{2}\left(t + \frac{4t^2 + t + 1}{2}\right) = \frac{4t^2 + 3t + 1}{4}$
+     - $k = \frac{1}{2}\left(4t^2 + 1 + \frac{4t^2 + t + 1}{2}\right) = \frac{12t^2 + t + 3}{4}$
+  4. Combinations that isolate t: $3h - k = \frac{8t}{4} = 2t$, and $h - 3k = \frac{-32t^2 - 8}{4} = -8t^2 - 2$.
+  5. From the first, $t = \frac{3h - k}{2}$, so $8t^2 = 2(3h - k)^2$. Then $h - 3k = -2(3h - k)^2 - 2$.
+  6. Locus: $2(3x - y)^2 + (x - 3y) + 2 = 0$.
+  Why others are wrong:
+  - (A) swaps the roles of $(x - 3y)$ and $(3x - y)$.
+  - (B) misses the factor 2 on the square.
+  - (D) puts the 2 on the linear term instead of the square.
   Answer: (C)
 M A 8: |-
-  Concept: Find $f''$ first, then the critical points.
+  Concept: The function contains $f''(2)$ and $f''(1)$ as constants. Since $f''$ of a cubic depends only on its $x^3$ and $x^2$ terms, compute $f''$ first, then find the local extrema.
   Solution:
-  1. $f''(x) = 6x - 6$: $f''(2) = 6$ and $f''(1) = 0$, so $f = x^3 - 3x^2 - 9x$.
-  2. $f' = 3(x - 3)(x + 1)$: local minimum at $x = 3$, $f(3) = -27$.
+  1. $f'(x) = 3x^2 - 6x - \frac{3f''(2)}{2}$ and $f''(x) = 6x - 6$.
+  2. $f''(2) = 6$ and $f''(1) = 0$.
+  3. So $f(x) = x^3 - 3x^2 - 9x$.
+  4. $f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1)$; critical points $x = -1, 3$.
+  5. $f''(3) = 12 > 0$ → local minimum; $f''(-1) = -12 < 0$ → local maximum.
+  6. Local minimum value: $f(3) = 27 - 27 - 27 = -27$. It is the only local minimum, so the sum is −27.
+  Why others are wrong:
+  - (B) 5 is $f(-1) = -1 - 3 + 9$, the local maximum value, not a minimum.
+  - (A) −22 is the sum of the max and min values ($5 - 27$).
+  - (C) 0 is $f''(1)$ / $f(0)$, not an extremum value.
   Answer: (D)
 M A 9: |-
-  Concept: The distance from a fixed point to points on a circle ranges over $[d - r, d + r]$.
+  Concept: Every circle in the family passes through the fixed point A(−4, 1) and has its centre C on a given circle S. Its radius is the distance AC. As C moves around S, AC ranges from $d - r$ to $d + r$, where d is the distance from A to the centre of S (A lies outside S).
   Solution:
-  1. Centre (−1, −2), $r = 3$; distance to (−4, 1) is $3\sqrt2$.
-  2. $\frac{r_1}{r_2} = \frac{3\sqrt2 + 3}{3\sqrt2 - 3} = (\sqrt2 + 1)^2 = 3 + 2\sqrt2$.
-  3. $a + b = 5$.
+  1. $S: x^2 + y^2 + 2x + 4y - 4 = 0$ has centre (−1, −2) and radius $\sqrt{1 + 4 + 4} = 3$.
+  2. Distance from A(−4, 1) to (−1, −2): $\sqrt{9 + 9} = 3\sqrt2 > 3$, so A is outside.
+  3. $r_1 = 3\sqrt2 + 3$ (largest), $r_2 = 3\sqrt2 - 3$ (smallest).
+  4. $\frac{r_1}{r_2} = \frac{\sqrt2 + 1}{\sqrt2 - 1} = (\sqrt2 + 1)^2 = 3 + 2\sqrt2$.
+  5. So $a = 3$, $b = 2$, and $a + b = 5$.
+  Why others are wrong:
+  - (C) 7 and (B) 11 come from not rationalising correctly (e.g. using $\sqrt2 + 1$ or squaring twice).
+  - (D) 3 reports only a.
   Answer: (A)
 M A 10: |-
-  Concept: Use the sum and sum of squares.
+  Concept: For n observations, mean $\bar x = \frac{\sum x}{n}$ and variance $\sigma^2 = \frac{\sum x^2}{n} - \bar x^2$. Use these to get $a + b$ and $a^2 + b^2$.
   Solution:
-  1. $a + b = 60 - 43 = 17$; $\sum x^2 = 6\left(\frac{20}{3} + 100\right) = 640$, so $a^2 + b^2 = 145$.
-  2. $(a - b)^2 = 2(145) - 289 = 1$, so $|a - b| = 1$.
+  1. Sum: $7 + 10 + 11 + 15 + a + b = 6 \times 10 = 60 \Rightarrow a + b = 17$.
+  2. $\sum x^2 = n(\sigma^2 + \bar x^2) = 6\left(\frac{20}{3} + 100\right) = 40 + 600 = 640$.
+  3. Known squares: $49 + 100 + 121 + 225 = 495$, so $a^2 + b^2 = 145$.
+  4. $(a - b)^2 = 2(a^2 + b^2) - (a + b)^2 = 290 - 289 = 1$.
+  5. $|a - b| = 1$ (indeed a, b are 8 and 9: $64 + 81 = 145$ ✓).
+  Why others are wrong:
+  - (A) 9, (B) 7, (C) 11 are inconsistent with $a + b = 17$ and $a^2 + b^2 = 145$; e.g. $|a - b| = 7$ gives $\{5, 12\}$ with squares summing to 169.
   Answer: (D)
 M A 11: |-
-  Concept: Linear DE after expanding the determinant.
+  Concept: Expand the determinant to obtain a linear first-order differential equation, then use the integrating factor.
   Solution:
-  1. $|A| = -\frac{y}{x} + 2\sin x + 2$, so $y' + \frac{y}{x} = 2\sin x + 2$.
-  2. $(xy)' = 2x\sin x + 2x \Rightarrow xy = -2x\cos x + 2\sin x + x^2 + C$; $y(\pi) = \pi + 2$ gives $C = 0$.
-  3. At $x = \frac{\pi}{2}$: $\frac{\pi}{2}y = 2 + \frac{\pi^2}{4} \Rightarrow y = \frac{\pi}{2} + \frac{4}{\pi}$.
+  1. Expand |A| along the first row:
+     - $y\left(-\frac{1}{x} - 0\right) - \sin x\left(0 - 2\right) + 1(0 + 2) = -\frac{y}{x} + 2\sin x + 2$.
+  2. The equation $\frac{dy}{dx} = |A|$ becomes $\frac{dy}{dx} + \frac{y}{x} = 2\sin x + 2$.
+  3. Integrating factor $= x$: $\frac{d}{dx}(xy) = 2x\sin x + 2x$.
+  4. Integrate: $xy = -2x\cos x + 2\sin x + x^2 + C$ (by parts, $\int x\sin x\,dx = -x\cos x + \sin x$).
+  5. $y(\pi) = \pi + 2$: $\pi^2 + 2\pi = 2\pi + 0 + \pi^2 + C \Rightarrow C = 0$.
+  6. At $x = \frac{\pi}{2}$: $\frac{\pi}{2}y = 0 + 2 + \frac{\pi^2}{4} \Rightarrow y = \frac{4}{\pi} + \frac{\pi}{2}$.
+  Why others are wrong:
+  - (C) has the wrong sign on $\frac{4}{\pi}$ (sign slip in integration by parts).
+  - (B) and (D) with $\frac{1}{\pi}$ come from forgetting to divide properly by $\frac{\pi}{2}$.
   Answer: (A)
 M A 12: |-
-  Concept: $f(x) = \frac{ax + b}{cx + d}$ is its own inverse iff $a + d = 0$.
+  Concept: $(f\circ f)(x) = x$ means f is its own inverse. For a Möbius function $f(x) = \frac{ax + b}{cx + d}$ (with $ad - bc \ne 0$ and f not the identity), this happens exactly when $a + d = 0$.
   Solution:
-  1. $5 + (-\alpha) = 0 \Rightarrow \alpha = 5$.
+  1. Here $a = 5$, $b = 3$, $c = 6$, $d = -\alpha$.
+  2. Condition $a + d = 0 \Rightarrow 5 - \alpha = 0 \Rightarrow \alpha = 5$.
+  3. Verification: with $\alpha = 5$, $f(f(x)) = \frac{5\frac{5x + 3}{6x - 5} + 3}{6\frac{5x + 3}{6x - 5} - 5} = \frac{25x + 15 + 18x - 15}{30x + 18 - 30x + 25} = \frac{43x}{43} = x$ ✓.
+  4. Also $ad - bc = -25 - 18 \ne 0$, so f is a genuine (non-constant) function.
+  Why others are wrong:
+  - (A) 6 and (B) 8 give $a + d \ne 0$; then $f\circ f$ is another Möbius map, not the identity.
+  - (C) is false because α = 5 works, as verified.
   Answer: (D)
 M A 13: |-
-  Concept: Coplanar lines: $(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2) = 0$.
+  Concept: Two lines through points $\vec a_1$, $\vec a_2$ with directions $\vec b_1$, $\vec b_2$ are coplanar iff $(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2) = 0$.
   Solution:
-  1. L₁: point $(0, \frac{1}{a}, 2)$, direction $(1, \frac{1}{a}, 1)$. L₂: point $(0, \frac{2}{3}, \frac{2}{b})$, direction $(1, \frac{1}{3}, \frac{1}{b})$.
-  2. The determinant simplifies to $-\frac{1}{a}\left(\frac{1}{b} - 1\right) = 0 \Rightarrow b = 1$ (any $a \ne 0$).
+  1. L₁: $x = ay - 1 = z - 2 = \lambda$ gives $x = \lambda$, $y = \frac{\lambda + 1}{a}$, $z = \lambda + 2$: point $(0, \frac{1}{a}, 2)$, direction $(1, \frac{1}{a}, 1)$.
+  2. L₂: $x = 3y - 2 = bz - 2 = \mu$ gives point $(0, \frac{2}{3}, \frac{2}{b})$, direction $(1, \frac{1}{3}, \frac{1}{b})$.
+  3. Determinant with rows $\left(0, \frac{2}{3} - \frac{1}{a}, \frac{2}{b} - 2\right)$, $\left(1, \frac{1}{a}, 1\right)$, $\left(1, \frac{1}{3}, \frac{1}{b}\right)$:
+     - $= -\left(\frac{2}{3} - \frac{1}{a}\right)\left(\frac{1}{b} - 1\right) + 2\left(\frac{1}{b} - 1\right)\left(\frac{1}{3} - \frac{1}{a}\right)$
+     - $= \left(\frac{1}{b} - 1\right)\left(-\frac{1}{a}\right)$.
+  4. Since $a \ne 0$, this vanishes iff $b = 1$; a can be any non-zero real.
+  Why others are wrong:
+  - (A) b = 2 and (C) b = 3 make the determinant non-zero.
+  - (D) a = 1 alone does not help; b must be 1 regardless of a.
   Answer: (B)
 M A 14: |-
-  Concept: Projection of $\vec{BA}$ on $\vec{BC}$ $= c\cos B = \frac{a^2 + c^2 - b^2}{2a}$.
+  Concept: The projection of $\vec{BA}$ on $\vec{BC}$ is $|\vec{BA}|\cos B$, where B is the angle between them. Get $\cos B$ from the cosine rule.
   Solution:
-  1. $a = 3$, $b = 5$, $c = 7$: $\frac{9 + 49 - 25}{6} = \frac{11}{2}$.
+  1. Standard notation: $a = BC = 3$, $b = CA = 5$, $c = AB = 7$.
+  2. Cosine rule: $\cos B = \frac{a^2 + c^2 - b^2}{2ac} = \frac{9 + 49 - 25}{2\cdot3\cdot7} = \frac{33}{42}$.
+  3. Projection $= c\cos B = 7\times\frac{33}{42} = \frac{33}{6} = \frac{11}{2}$.
+  4. Equivalently, projection $= \frac{a^2 + c^2 - b^2}{2a} = \frac{33}{6}$.
+  Why others are wrong:
+  - (C) $\frac{15}{2}$ uses $a^2 + b^2 - c^2$ or mixes the sides.
+  - (B) $\frac{13}{2}$ and (A) $\frac{19}{2}$ come from assigning the lengths to the wrong sides; also a projection of $\vec{BA}$ (length 7) cannot exceed 7, which rules out (A) and (C) immediately.
   Answer: (D)
 M A 15: |-
-  Concept: $f(x) = \ln(x + \sqrt{x^2 + 1})$ is odd, so $\int\sin f = 0$ on a symmetric interval.
+  Concept: $f(x) = \ln(x + \sqrt{x^2 + 1}) = \sinh^{-1}x$ is an odd function. Then $\sin f(x)$ is odd and $\cos f(x)$ is even, so over a symmetric interval $\int\sin f = 0$.
   Solution:
-  1. $g(t) = \cos\frac{\pi t}{4}\int\cos f\,dx - \sin\frac{\pi t}{4}\int\sin f\,dx = K\cos\frac{\pi t}{4}$.
-  2. $g(1) = \frac{K}{\sqrt2}$ and $g(0) = K$, so $\sqrt2g(1) = g(0)$.
+  1. Expand: $\cos\left(\frac{\pi t}{4} + f(x)\right) = \cos\frac{\pi t}{4}\cos f(x) - \sin\frac{\pi t}{4}\sin f(x)$.
+  2. $g(t) = \cos\frac{\pi t}{4}\int_{-\pi/2}^{\pi/2}\cos f(x)\,dx - \sin\frac{\pi t}{4}\int_{-\pi/2}^{\pi/2}\sin f(x)\,dx$.
+  3. The second integral is 0 (odd integrand). Let $K = \int_{-\pi/2}^{\pi/2}\cos f(x)\,dx > 0$.
+  4. So $g(t) = K\cos\frac{\pi t}{4}$.
+  5. $g(0) = K$ and $g(1) = K\cos\frac{\pi}{4} = \frac{K}{\sqrt2}$.
+  6. Hence $\sqrt2\,g(1) = g(0)$.
+  Why others are wrong:
+  - (A) g(1) = g(0) would need $\cos\frac{\pi}{4} = 1$.
+  - (B) reverses the relation: it would need $g(1) = \sqrt2K$.
+  - (C) g(1) + g(0) = 0 requires K = 0, but K > 0 since cos f(x) is positive near 0.
   Answer: (D)
 M A 16: |-
-  Concept: $p \to q$ is false only when p is true and q is false.
+  Concept: An implication $p \to q$ is false only when p is true and q is false; in every other case (including a false hypothesis) it is true.
   Solution:
-  1. (A) F → F: true. (B) T → F: false.
-  2. (C) "(A) and (B) true" is false, so the implication is true.
+  1. (A) "If 3 + 3 = 7 then 4 + 3 = 8": hypothesis false (3 + 3 = 6), conclusion false. F → F is TRUE.
+  2. (B) "If 5 + 3 = 8 then earth is flat": hypothesis true, conclusion false. T → F is FALSE.
+  3. (C) "If both (A) and (B) are true then 5 + 6 = 17": the hypothesis "(A) and (B) are true" is false, because (B) is false. A false hypothesis makes the implication TRUE, even though 5 + 6 = 17 is false.
+  4. Result: (A) true, (B) false, (C) true.
+  Why others are wrong:
+  - (B) says (A) is false — but a false hypothesis makes (A) vacuously true.
+  - (C) says (C) is false — same mistake: its hypothesis is false.
+  - (D) says (B) is true — T → F is the one false case.
   Answer: (A)
 M A 17: |-
-  Concept: $\log_{9^{1/k}}x = k\log_9x$.
+  Concept: Change of base: $\log_{b^{1/k}}x = \frac{\log x}{\frac{1}{k}\log b} = k\log_bx$.
   Solution:
-  1. $k = 2$ to $22$: $\sum k = 252$.
-  2. $252\log_9x = 504 \Rightarrow \log_9x = 2 \Rightarrow x = 81$.
+  1. The terms are $\log_{9^{1/2}}x, \log_{9^{1/3}}x, \dots$ — the k-th term has base $9^{1/(k+1)}$.
+  2. So the terms are $2\log_9x, 3\log_9x, 4\log_9x, \dots$; the 21st term is $22\log_9x$.
+  3. Sum of first 21 terms $= (2 + 3 + \dots + 22)\log_9x$.
+  4. $2 + 3 + \dots + 22 = \frac{22\cdot23}{2} - 1 = 253 - 1 = 252$.
+  5. $252\log_9x = 504 \Rightarrow \log_9x = 2 \Rightarrow x = 81$.
+  Why others are wrong:
+  - (B) 9 gives $\log_9x = 1$, sum 252.
+  - (C) 243 gives $\log_9x = 2.5$, sum 630.
+  - (A) 7 is not a power of 9 giving the required integer multiple; its sum is not 504.
+  Common trap: starting the coefficients at 1 instead of 2 (sum 1 + … + 21 = 231), which gives no option.
   Answer: (D)
 M A 18: |-
-  Concept: $[[x] - \sin x] = [x] + [-\sin x]$ (since [x] is an integer).
+  Concept: For an integer n, $[n + y] = n + [y]$. Since [x] is an integer, $[[x] - \sin x] = [x] + [-\sin x]$. Split the interval where [x] or $[-\sin x]$ changes.
   Solution:
-  1. $(-\frac{\pi}{2}, -1)$: $-2 + 0$. $(-1, 0)$: $-1 + 0$. $(0, 1)$: $0 - 1$. $(1, \frac{\pi}{2})$: $1 - 1 = 0$.
-  2. Integral $= -2\left(\frac{\pi}{2} - 1\right) - 1 - 1 + 0 = -\pi$.
+  1. On $(-\frac{\pi}{2}, -1)$: $[x] = -2$; $-\sin x \in (\sin1, 1)$, so $[-\sin x] = 0$. Value −2.
+  2. On $(-1, 0)$: $[x] = -1$; $-\sin x \in (0, \sin1)$, so $[-\sin x] = 0$. Value −1.
+  3. On $(0, 1)$: $[x] = 0$; $-\sin x \in (-\sin1, 0)$, so $[-\sin x] = -1$. Value −1.
+  4. On $(1, \frac{\pi}{2})$: $[x] = 1$; $-\sin x \in (-1, -\sin1)$, so $[-\sin x] = -1$. Value 0.
+  5. Integral $= -2\left(\frac{\pi}{2} - 1\right) + (-1)(1) + (-1)(1) + 0\cdot\left(\frac{\pi}{2} - 1\right)$
+     $= -\pi + 2 - 2 = -\pi$.
+  Why others are wrong:
+  - (B) 0 assumes the integrand is odd; it is not (greatest integer breaks symmetry).
+  - (D) π has the wrong sign — the integrand is never positive.
+  - (C) 1 ignores the long −2 segment.
   Answer: (A)
 M A 19: |-
-  Concept: Sides $c\sin\theta < c\cos\theta < c$; the reciprocal triangle has hypotenuse $\frac{1}{c\sin\theta}$.
+  Concept: In a right triangle with hypotenuse c and smallest angle θ, the sides are $c\sin\theta < c\cos\theta < c$. The reciprocals reverse the order, so in the reciprocal triangle the largest side (hypotenuse) is $\frac{1}{c\sin\theta}$.
   Solution:
-  1. $\frac{1}{\sin^2\theta} = \frac{1}{\cos^2\theta} + 1$. With $s = \sin^2\theta$: $s^2 - 3s + 1 = 0 \Rightarrow s = \frac{3 - \sqrt5}{2}$.
-  2. $\sin\theta = \sqrt{\frac{3 - \sqrt5}{2}} = \frac{\sqrt5 - 1}{2}$.
+  1. Pythagoras for the reciprocal triangle: $\frac{1}{c^2\sin^2\theta} = \frac{1}{c^2\cos^2\theta} + \frac{1}{c^2}$.
+  2. Cancel $c^2$ and let $s = \sin^2\theta$: $\frac{1}{s} = \frac{1}{1 - s} + 1$.
+  3. Multiply by $s(1 - s)$: $1 - s = s + s(1 - s) \Rightarrow s^2 - 3s + 1 = 0$.
+  4. $s = \frac{3 \pm \sqrt5}{2}$; since $s < 1$, $s = \frac{3 - \sqrt5}{2}$.
+  5. Note $\left(\frac{\sqrt5 - 1}{2}\right)^2 = \frac{6 - 2\sqrt5}{4} = \frac{3 - \sqrt5}{2}$, so $\sin\theta = \frac{\sqrt5 - 1}{2} \approx 0.618$ (and θ < 45° since $\sin\theta < \frac{1}{\sqrt2}$ ✓).
+  Why others are wrong:
+  - (D) $\frac{\sqrt5 - 1}{4} = \sin18°$ — a familiar value, but it does not satisfy the equation.
+  - (B) $\frac{\sqrt5 + 1}{4} = \cos36°$, also a distractor.
+  - (A) does not satisfy $s^2 - 3s + 1 = 0$.
   Answer: (C)
 M A 20: |-
-  Concept: $P(\text{exactly one of }X, Y) = P(X) + P(Y) - 2P(XY)$.
+  Concept: P(exactly one of X, Y) $= P(X) + P(Y) - 2P(X\cap Y)$. Adding the three given conditions yields exactly the combination needed in the inclusion–exclusion formula.
   Solution:
-  1. Adding the three: $2\sum P(A) - 2\sum P(AB) = 3 - 4k$.
-  2. $P(A\cup B\cup C) = \frac{3 - 4k}{2} + k^2 = (k - 1)^2 + \frac{1}{2} > \frac{1}{2}$.
+  1. $P(A) + P(B) - 2P(AB) = 1 - k$
+     $P(B) + P(C) - 2P(BC) = 1 - 2k$
+     $P(C) + P(A) - 2P(CA) = 1 - k$
+  2. Add: $2[P(A) + P(B) + P(C)] - 2[P(AB) + P(BC) + P(CA)] = 3 - 4k$.
+  3. So $\sum P(A) - \sum P(AB) = \frac{3 - 4k}{2}$.
+  4. $P(A\cup B\cup C) = \sum P(A) - \sum P(AB) + P(ABC) = \frac{3 - 4k}{2} + k^2 = k^2 - 2k + \frac{3}{2} = (k - 1)^2 + \frac{1}{2}$.
+  5. Since $0 < k < 1$, $(k - 1)^2 > 0$, so the probability is strictly greater than $\frac{1}{2}$.
+  Why others are wrong:
+  - (C) exactly $\frac{1}{2}$ would need $k = 1$, which is excluded.
+  - (B) and (D) give values below $\frac{1}{2}$, impossible since $(k - 1)^2 + \frac{1}{2} > \frac{1}{2}$.
   Answer: (A)
 M B 1: |-
-  Concept: Generating function of the recurrence.
+  Concept: For a linear recurrence, the generating function $S = \sum a_nr^n$ satisfies an algebraic equation obtained by multiplying the recurrence by $r^{n+2}$ and summing.
   Solution:
-  1. With $r = \frac{1}{8}$, $S = \sum a_nr^n$ satisfies $S(1 - 2r - r^2) = r - r^2$.
-  2. $S = \frac{7/64}{47/64} = \frac{7}{47}$, so $47S = 7$.
+  1. Here $\frac{a_n}{2^{3n}} = a_nr^n$ with $r = \frac{1}{8}$. Let $S = \sum_{n\ge1}a_nr^n$.
+  2. Sum $a_{n+2}r^{n+2} = 2a_{n+1}r^{n+2} + a_nr^{n+2}$ over $n \ge 1$:
+     - LHS $= S - a_1r - a_2r^2 = S - r - r^2$.
+     - RHS $= 2r(S - a_1r) + r^2S = 2rS - 2r^2 + r^2S$.
+  3. $S(1 - 2r - r^2) = r + r^2 - 2r^2 = r - r^2$.
+  4. With $r = \frac{1}{8}$: $r - r^2 = \frac{7}{64}$ and $1 - \frac{1}{4} - \frac{1}{64} = \frac{47}{64}$.
+  5. $S = \frac{7}{47}$, so $47S = 7$.
+  Convergence: the terms grow like $(1 + \sqrt2)^n \approx 2.414^n < 8^n$, so the series converges and the manipulation is valid.
   Answer: 7
 M B 2: |-
-  Concept: Match Maclaurin coefficients up to $x^3$ (denominator ≈ $x^3$).
+  Concept: The denominator $x\sin^2x \sim x^3$. For a finite non-zero limit, the numerator's Maclaurin coefficients of $x$ and $x^2$ must vanish, and the limit equals the $x^3$ coefficient. (The "a" in the numerator is α.)
   Solution:
-  1. Numerator $= (\alpha - \beta)x + \left(\alpha + \frac{\beta}{2} + \gamma\right)x^2 + \left(\frac{\alpha}{2} - \frac{\beta}{3} - \gamma\right)x^3 + \dots$
-  2. $\alpha = \beta$ and $\gamma = -\frac{3\alpha}{2}$; the $x^3$ coefficient $= \frac{5\alpha}{3} = 10 \Rightarrow \alpha = 6$.
-  3. $\alpha + \beta + \gamma = 6 + 6 - 9 = 3$.
+  1. Expansions up to $x^3$:
+     - $\alpha xe^x = \alpha x + \alpha x^2 + \frac{\alpha}{2}x^3$
+     - $-\beta\ln(1 + x) = -\beta x + \frac{\beta}{2}x^2 - \frac{\beta}{3}x^3$
+     - $\gamma x^2e^{-x} = \gamma x^2 - \gamma x^3$
+  2. Coefficient of x: $\alpha - \beta = 0 \Rightarrow \beta = \alpha$.
+  3. Coefficient of $x^2$: $\alpha + \frac{\beta}{2} + \gamma = 0 \Rightarrow \gamma = -\frac{3\alpha}{2}$.
+  4. Coefficient of $x^3$: $\frac{\alpha}{2} - \frac{\alpha}{3} + \frac{3\alpha}{2} = \frac{3 - 2 + 9}{6}\alpha = \frac{5\alpha}{3}$.
+  5. Limit $= \frac{5\alpha}{3} = 10 \Rightarrow \alpha = 6$, $\beta = 6$, $\gamma = -9$.
+  6. $\alpha + \beta + \gamma = 6 + 6 - 9 = 3$.
   Answer: 3
 M B 3: |-
-  Concept: The line through the circumcentre and the midpoint of BC is the perpendicular bisector of BC.
+  Concept: The circumcentre lies on the perpendicular bisector of every side. A line through the circumcentre that also passes through the midpoint of BC is therefore the perpendicular bisector of BC (as long as the circumcentre is not that midpoint).
   Solution:
-  1. Midpoint of BC is (2, 8.5); BC has slope $-\frac{1}{2}$, so the bisector is $y = 2x + 4.5$.
-  2. y-intercept $\frac{9}{2} = \frac{\alpha}{2} \Rightarrow \alpha = 9$.
+  1. Midpoint of BC: $\left(\frac{1 + 3}{2}, \frac{9 + 8}{2}\right) = \left(2, \frac{17}{2}\right)$.
+  2. Slope of BC $= \frac{8 - 9}{3 - 1} = -\frac{1}{2}$, so the perpendicular slope is 2.
+  3. Line L: $y - \frac{17}{2} = 2(x - 2) \Rightarrow y = 2x + \frac{9}{2}$.
+  4. y-intercept: $\left(0, \frac{9}{2}\right) = \left(0, \frac{\alpha}{2}\right) \Rightarrow \alpha = 9$.
+  5. Check: the circumcentre coincides with the midpoint of BC only if ∠A = 90°. $\vec{AB}\cdot\vec{AC} = (3, 6)\cdot(5, 5) = 45 \ne 0$, so ∠A is not a right angle and L is uniquely the perpendicular bisector.
+  Tip: no need to compute the circumcentre itself.
   Answer: 9
 M B 4: |-
-  Concept: The nearest point lies on a normal through the given point.
+  Concept: The shortest distance from an external point to a smooth curve is along the normal to the curve. So the nearest point is the foot of a normal passing through the given point.
   Solution:
-  1. $y^2 = 6x$: point $(1.5t^2, 3t)$, normal $y = -tx + 3t + 1.5t^3$.
-  2. Through $(3, \frac{3}{2})$: $1.5t^3 = 1.5 \Rightarrow t = 1$, point (1.5, 3).
-  3. $2(\alpha + \beta) = 9$.
+  1. $y^2 = 6x$ is $y^2 = 4ax$ with $a = \frac{3}{2}$; parametric point $(at^2, 2at) = \left(\frac{3}{2}t^2, 3t\right)$.
+  2. Normal at t: $y = -tx + 2at + at^3 = -tx + 3t + \frac{3}{2}t^3$.
+  3. Passes through $\left(3, \frac{3}{2}\right)$: $\frac{3}{2} = -3t + 3t + \frac{3}{2}t^3 \Rightarrow t^3 = 1 \Rightarrow t = 1$ (only real root, so only one normal).
+  4. Nearest point: $(\alpha, \beta) = \left(\frac{3}{2}, 3\right)$.
+  5. $2(\alpha + \beta) = 2\times\frac{9}{2} = 9$.
+  Check: distance² $= \left(\frac{3}{2}\right)^2 + \left(\frac{3}{2}\right)^2 = 4.5$; e.g. the vertex (0, 0) gives $9 + 2.25 = 11.25$, larger ✓.
   Answer: 9
 M B 5: |-
-  Concept: $\det(\text{adj}M) = (\det M)^{n-1}$ and $\det(kM) = k^n\det M$.
+  Concept: For an n × n matrix M: $\det(kM) = k^n\det M$, $\det(M^{-1}) = \frac{1}{\det M}$, and $\det(\text{adj}\,M) = (\det M)^{n-1}$.
   Solution:
-  1. $A = \begin{bmatrix}2&-1&1\\-1&2&-1\\1&-1&2\end{bmatrix}$, $\det A = 4$.
-  2. $\det(2A^{-1}) = \frac{8}{4} = 2$; $\det\text{adj}(2A^{-1}) = 2^2 = 4$.
-  3. $\det(3\,\text{adj}) = 27\times4 = 108$.
+  1. Build A:
+     - Diagonal entries 2.
+     - $i < j$: $(-1)^{j-i}$ gives $a_{12} = -1$, $a_{13} = 1$, $a_{23} = -1$.
+     - $i > j$: $(-1)^{i+j}$ gives $a_{21} = -1$, $a_{31} = 1$, $a_{32} = -1$.
+     - $A = \begin{bmatrix}2 & -1 & 1\\-1 & 2 & -1\\1 & -1 & 2\end{bmatrix}$.
+  2. $\det A = 2(4 - 1) + 1(-2 + 1) + 1(1 - 2) = 6 - 1 - 1 = 4$.
+  3. $\det(2A^{-1}) = 2^3\cdot\frac{1}{4} = 2$.
+  4. $\det\left(\text{adj}(2A^{-1})\right) = 2^{3-1} = 4$.
+  5. $\det\left(3\,\text{adj}(2A^{-1})\right) = 3^3\times4 = 108$.
+  Common trap: using $\det(2A^{-1}) = \frac{2}{4}$ (forgetting the power n = 3).
   Answer: 108
 M B 6: |-
-  Concept: Rotation preserves length.
+  Concept: A rotation about the origin preserves length, so $|\vec v_1| = |\vec v_2|$. The rotation angle is the difference of the two vectors' polar angles: $\tan\theta = \frac{\tan\phi_2 - \tan\phi_1}{1 + \tan\phi_1\tan\phi_2}$.
   Solution:
-  1. $3p^2 + 1 = 4 + (p + 1)^2 \Rightarrow p = 2$: $\vec v_1 = (2\sqrt3, 1)$, $\vec v_2 = (2, 3)$.
-  2. $\tan\theta = \frac{\frac{3}{2} - \frac{1}{2\sqrt3}}{1 + \frac{3}{4\sqrt3}} = \frac{6\sqrt3 - 2}{4\sqrt3 + 3}$.
-  3. $\alpha = 6$.
+  1. $|\vec v_1|^2 = 3p^2 + 1$ and $|\vec v_2|^2 = 4 + (p + 1)^2$.
+  2. Equate: $3p^2 + 1 = p^2 + 2p + 5 \Rightarrow p^2 - p - 2 = 0 \Rightarrow p = 2$ (since p > 0).
+  3. $\vec v_1 = (2\sqrt3, 1)$ with $\tan\phi_1 = \frac{1}{2\sqrt3}$; $\vec v_2 = (2, 3)$ with $\tan\phi_2 = \frac{3}{2}$.
+  4. $\tan\theta = \frac{\frac{3}{2} - \frac{1}{2\sqrt3}}{1 + \frac{3}{4\sqrt3}}$.
+  5. Multiply numerator and denominator by $4\sqrt3$: $\tan\theta = \frac{6\sqrt3 - 2}{4\sqrt3 + 3}$.
+  6. Compare with $\frac{\alpha\sqrt3 - 2}{4\sqrt3 + 3}$: $\alpha = 6$.
+  Check: both vectors lie in the first quadrant and $\phi_2 > \phi_1$, consistent with a counter-clockwise rotation.
   Answer: 6
 M B 7: |-
-  Concept: $\cos\left(\frac{1}{2}\cos^{-1}u\right) = \sqrt{\frac{1 + u}{2}}$.
+  Concept: Half-angle identity: $\cos\left(\frac{1}{2}\cos^{-1}u\right) = \sqrt{\frac{1 + u}{2}}$ for $u \in [-1, 1]$. The equation then becomes variables-separable.
   Solution:
-  1. $dy = \frac{dx}{\sqrt2e^{x/2}\sqrt{e^x - 1}}$; with $e^x = \sec^2\theta$ this integrates to $y = \sqrt{2(1 - e^{-x})} + C$.
-  2. $y(0) = -1 \Rightarrow C = -1$.
-  3. $y = 0$: $2(1 - e^{-\alpha}) = 1 \Rightarrow e^\alpha = 2$.
+  1. With $u = e^{-x}$: $\sqrt{\frac{1 + e^{-x}}{2}} = \frac{\sqrt{e^x + 1}}{\sqrt2e^{x/2}}$.
+  2. $\sqrt{e^{2x} - 1} = \sqrt{e^x - 1}\sqrt{e^x + 1}$, so
+     $dy = \frac{dx}{\sqrt2\,e^{x/2}\sqrt{e^x - 1}}$.
+  3. Integrate: $y = \sqrt{2(1 - e^{-x})} + C$. (Check by differentiating: $\frac{d}{dx}\sqrt2(1 - e^{-x})^{1/2} = \frac{e^{-x}}{\sqrt2\sqrt{1 - e^{-x}}} = \frac{1}{\sqrt2e^{x/2}\sqrt{e^x - 1}}$ ✓.)
+  4. Curve meets the y-axis at y = −1: $y(0) = 0 + C = -1 \Rightarrow C = -1$.
+  5. x-intercept: $\sqrt{2(1 - e^{-\alpha})} = 1 \Rightarrow 1 - e^{-\alpha} = \frac{1}{2} \Rightarrow e^{-\alpha} = \frac{1}{2}$.
+  6. $e^\alpha = 2$.
   Answer: 2
 M B 8: |-
-  Concept: $2x^2 + 7x + 5 = (x + 1)(2x + 5)$; put $t = \log_{x+1}(2x + 5)$.
+  Concept: Factor $2x^2 + 7x + 5 = (x + 1)(2x + 5)$, which links both logarithms to the single quantity $t = \log_{x+1}(2x + 5)$.
   Solution:
-  1. The equation becomes $1 + t + \frac{2}{t} - 4 = 0 \Rightarrow t^2 - 3t + 2 = 0 \Rightarrow t = 1, 2$.
-  2. $t = 1$: $x = -4$ (rejected). $t = 2$: $(x + 1)^2 = 2x + 5 \Rightarrow x = 2$.
-  3. One solution.
+  1. $\log_{x+1}[(x + 1)(2x + 5)] = 1 + t$.
+  2. $\log_{2x+5}(x + 1)^2 = 2\log_{2x+5}(x + 1) = \frac{2}{t}$.
+  3. Equation: $1 + t + \frac{2}{t} - 4 = 0 \Rightarrow t^2 - 3t + 2 = 0 \Rightarrow t = 1$ or $t = 2$.
+  4. $t = 1$: $2x + 5 = x + 1 \Rightarrow x = -4$, rejected (x > 0).
+  5. $t = 2$: $2x + 5 = (x + 1)^2 \Rightarrow x^2 = 4 \Rightarrow x = 2$ (x > 0).
+  6. Validity for x = 2: bases 3 and 9 are positive and ≠ 1; check $\log_3 27 + \log_9 9 - 4 = 3 + 1 - 4 = 0$ ✓.
+  7. Exactly one solution.
   Note: The key page prints 8; the printed solution itself concludes "only one solution", so 1 is stored.
   Answer: 1
 M B 9: |-
-  Concept: Partial fractions: $A_k = \frac{(-1)^k}{k!(20 - k)!}$.
+  Concept: Partial fractions of $\frac{1}{\alpha(\alpha + 1)\cdots(\alpha + 20)}$ by the cover-up rule: $A_k = \prod_{j\ne k}\frac{1}{j - k}$, which equals $\frac{(-1)^k}{k!\,(20 - k)!}$. (The "a" in the denominator of the sum is α.)
   Solution:
-  1. $\frac{A_{14}}{A_{13}} = -\frac{7}{14} = -\frac{1}{2}$ and $\frac{A_{15}}{A_{13}} = \frac{7\cdot6}{14\cdot15} = \frac{1}{5}$.
-  2. Ratio $= -\frac{3}{10}$, so $100\times\frac{9}{100} = 9$.
+  1. For $j < k$ the factors $(j - k)$ are negative: their product is $(-1)^kk!$; for $j > k$ the product is $(20 - k)!$.
+  2. $\frac{A_{14}}{A_{13}} = -\frac{13!\,7!}{14!\,6!} = -\frac{7}{14} = -\frac{1}{2}$.
+  3. $\frac{A_{15}}{A_{13}} = +\frac{13!\,7!}{15!\,5!} = \frac{7\cdot6}{15\cdot14} = \frac{1}{5}$.
+  4. $\frac{A_{14} + A_{15}}{A_{13}} = -\frac{1}{2} + \frac{1}{5} = -\frac{3}{10}$.
+  5. $100\left(-\frac{3}{10}\right)^2 = 100\times\frac{9}{100} = 9$.
+  Common trap: forgetting the alternating sign, which gives $\left(\frac{7}{10}\right)^2\times100 = 49$.
   Answer: 9
 M B 10: |-
-  Concept: Running maximum of $f(t) = t^3 - 6t^2 + 9t - 3$.
+  Concept: $g(x) = \max_{0\le t\le x}f(t)$ is the running maximum of f. It follows f while f is increasing and stays constant once f starts decreasing below its previous peak. Check differentiability at every joining point.
   Solution:
-  1. f rises to $f(1) = 1$, then falls to $f(3) = -3$; so $g = f$ on [0, 1] and $g = 1$ on [1, 3].
-  2. At $x = 1$: $f'(1) = 0$ matches the slope of the constant, so g is differentiable.
-  3. At $x = 3$: the left derivative is 0 and the right derivative is −1, so g is not differentiable. Count = 1.
+  1. $f(t) = t^3 - 6t^2 + 9t - 3$, $f'(t) = 3(t - 1)(t - 3)$.
+  2. f increases on [0, 1] to $f(1) = 1$, then decreases to $f(3) = -3$.
+  3. So $g(x) = f(x)$ on [0, 1] and $g(x) = 1$ on [1, 3]; for $3 < x \le 4$, $g(x) = 4 - x$.
+  4. At x = 1: left derivative $f'(1) = 0$, right derivative 0 (constant). Differentiable.
+  5. At x = 3: continuity holds ($g(3) = 1 = 4 - 3$). Left derivative 0, right derivative −1. NOT differentiable.
+  6. Inside each piece g is a polynomial, so there are no other problem points in (0, 4).
+  7. Number of points = 1.
   Answer: 1

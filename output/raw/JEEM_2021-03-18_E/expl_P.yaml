@@ -1,176 +1,358 @@
 P A 1: |-
-  Concept: Basic facts about magnetic field lines and magnetic materials.
+  Concept: Basic facts about magnetic field lines, monopoles and magnetic materials (NCERT, "Magnetism and Matter").
   Solution:
-  1. (A) False: magnetic monopoles have not been observed, whereas electric charges (monopoles) exist.
-  2. (C) True: an ideal toroid confines its field lines completely inside.
-  3. (E) True: $\chi = -1$ ($\mu_r = 0$) describes a perfect diamagnet (superconductor).
-  4. The official key takes (C) and (E) as the correct pair.
+  1. (A) False: isolated electric charges (monopoles) exist, but magnetic monopoles have never been observed. Magnetic field lines always form closed loops (Gauss's law for magnetism, ∮B·dA = 0). The statement reverses the facts.
+  2. (B) The field of a finite solenoid spreads out near its ends, and outside it the lines curve round to close. So the lines cannot be completely straight and confined. The official key does not include (B) among the correct statements.
+  3. (C) True: in an ideal toroid, the field exists only inside the windings, where the lines form circles. The field outside is zero, so the lines are completely confined.
+  4. (D) Inside a bar magnet, the field lines run from the S pole to the N pole. The official key treats this statement as incorrect.
+  5. (E) True: magnetic susceptibility χ = μ_r − 1. For a perfect diamagnet (such as a superconductor, which expels all magnetic flux by the Meissner effect), B = 0 inside, so μ_r = 0 and χ = −1.
+  6. The official key gives (C) and (E) only.
+  Note: statement (B) is arguably also correct as worded (the field lines at the ends of a finite solenoid are neither straight nor confined), but the official answer (C and E) is kept here.
   Answer: (A)
 P A 2: |-
-  Concept: Elastic head-on collision with the second body initially at rest.
+  Concept: In a one-dimensional elastic collision with the second body at rest, the final velocities are $v_1 = \frac{m_1 - m_2}{m_1 + m_2}u$ and $v_2 = \frac{2m_1}{m_1 + m_2}u$.
   Solution:
-  1. $v_1 = \frac{m_1 - m_2}{m_1 + m_2}u$ and $v_2 = \frac{2m_1}{m_1 + m_2}u$.
-  2. Equal speeds in opposite directions: $m_2 - m_1 = 2m_1 \Rightarrow m_2 = 3m_1$.
-  3. $m_2 : m_1 = 3 : 1$.
+  1. "Equal speeds in opposite directions" means v₂ = −v₁ (v₂ is forward, so v₁ is backward).
+  2. $\frac{2m_1}{m_1 + m_2}u = -\frac{m_1 - m_2}{m_1 + m_2}u$, so 2m₁ = m₂ − m₁ and m₂ = 3m₁.
+  3. m₂ : m₁ = 3 : 1.
+  Check: with m₁ = 1 and m₂ = 3, u = 4: v₁ = $\frac{1 - 3}{4}\times4 = -2$ and v₂ = $\frac{2}{4}\times4 = 2$. Equal and opposite ✓. Momentum: 1 × 4 = 1 × (−2) + 3 × 2 = 4 ✓. Kinetic energy: 8 = 2 + 6 ✓.
+  Note: the collision is taken to be elastic (the standard assumption when only the speeds after the collision are given). This is also consistent with the relative speed of separation (4) equalling the relative speed of approach (4), i.e. e = 1.
+  Why others are wrong:
+  - (B) 2 : 1 gives v₁ = $-\frac{u}{3}$ and v₂ = $\frac{2u}{3}$, not equal speeds.
+  - (C) 1 : 2 means the first ball continues forward.
+  - (D) 1 : 1 exchanges velocities (the first stops).
   Answer: (A)
 P A 3: |-
-  Concept: Adiabatic process: $PV^\gamma$ = constant.
+  Concept: For a reversible adiabatic process of an ideal gas, $PV^\gamma$ = constant. Differentiating gives the relation between small changes in P and V.
   Solution:
-  1. Taking logs and differentiating: $\frac{dP}{P} + \gamma\frac{dV}{V} = 0$.
-  2. $\frac{dP}{P} = -\gamma\frac{dV}{V}$.
+  1. Take natural logs: ln P + γ ln V = constant.
+  2. Differentiate: $\frac{dP}{P} + \gamma\frac{dV}{V} = 0$.
+  3. Fractional change in pressure: $\frac{dP}{P} = -\gamma\frac{dV}{V}$.
+  4. In an expansion (dV > 0), the pressure falls (dP < 0) by γ times the fractional increase in volume.
+  Comparison with an isothermal process (PV = constant): $\frac{dP}{P} = -\frac{dV}{V}$. Since γ > 1, pressure falls faster in an adiabatic expansion than in an isothermal one. This is why the adiabatic curve is steeper on a P–V diagram.
+  Related result: the adiabatic bulk modulus is $B = -V\frac{dP}{dV} = \gamma P$, which Laplace used to correct Newton's formula for the speed of sound, $v = \sqrt{\frac{\gamma P}{\rho}}$.
+  Why others are wrong:
+  - (B) has the ratio inverted, $\frac{V}{dV}$.
+  - (C) divides by γ instead of multiplying.
+  - (D) has no γ and the wrong sign.
   Answer: (A)
 P A 4: |-
-  Concept: $r = \frac{p}{qB}$ and $K = \frac{p^2}{2m}$.
+  Concept: A charged particle moving perpendicular to a uniform magnetic field follows a circle of radius $r = \frac{mv}{qB} = \frac{p}{qB}$. Its kinetic energy is $K = \frac{p^2}{2m}$.
   Solution:
-  1. $\frac{r_p}{r_\alpha} = \frac{p_p}{p_\alpha}\cdot\frac{q_\alpha}{q_p} = 2 \Rightarrow \frac{p_p}{p_\alpha} = 1$.
-  2. $\frac{K_p}{K_\alpha} = \frac{m_\alpha}{m_p} = 4$.
+  1. Proton: charge e, mass m. Alpha particle: charge 2e, mass 4m.
+  2. $\frac{r_p}{r_\alpha} = \frac{p_p/(eB)}{p_\alpha/(2eB)} = \frac{2p_p}{p_\alpha} = 2$, so $p_p = p_\alpha$ (equal momenta).
+  3. $\frac{K_p}{K_\alpha} = \frac{p_p^2/(2m)}{p_\alpha^2/(2\cdot4m)} = \frac{4m}{m} = 4$.
+  4. K_p : K_α = 4 : 1.
+  Alternative using $r = \frac{\sqrt{2mK}}{qB}$: $K = \frac{r^2q^2B^2}{2m}$. So $\frac{K_p}{K_\alpha} = \frac{r_p^2}{r_\alpha^2}\cdot\frac{q_p^2}{q_\alpha^2}\cdot\frac{m_\alpha}{m_p} = 4\times\frac{1}{4}\times4 = 4$ ✓.
+  Useful fact: for the same kinetic energy, the proton and the alpha particle have the same radius ($\frac{\sqrt{m}}{q}$ is the same: $\frac{\sqrt1}{1} = \frac{\sqrt4}{2}$).
+  Why others are wrong:
+  - (A) and (B) 1 : 8 and 8 : 1 come from using m in place of √m or mishandling the charge.
+  - (C) 1 : 4 is the inverse ratio.
   Answer: (D)
 P A 5: |-
-  Concept: In an EM wave, $\vec E$, $\vec B$ and the propagation direction are mutually perpendicular, with $\vec E\times\vec B$ along the propagation.
+  Concept: An electromagnetic wave is transverse: $\vec E$ and $\vec B$ are both perpendicular to the direction of propagation and to each other, and $\vec E\times\vec B$ points along the direction of propagation.
   Solution:
-  1. For propagation along y, E and B must lie in the x–z plane and be perpendicular to each other.
-  2. Possible pairs: $(E_x, B_z)$ or $(E_z, B_x)$.
+  1. Propagation along y, so E and B have no y-components: E_y = B_y = 0.
+  2. E and B must lie in the x–z plane and be perpendicular to each other. So the allowed pairs are (E_x, B_z) or (E_z, B_x).
+  3. Direction check: for propagation along +y, $\hat z\times\hat x = \hat y$, so (E_z, B_x) with positive components works, and $\hat x\times\hat z = -\hat y$, so (E_x, B_z) needs opposite signs of the components (E_x > 0 with B_z < 0). Both pairs of components are possible.
+  4. So the answer is E_x, B_z or E_z, B_x.
+  Why others are wrong:
+  - (A) E_y, B_y and E_z, B_z have components along the propagation direction (y), or have E parallel to B.
+  - (B) and (D) include E_y or B_y, which are longitudinal components, impossible for an EM wave in free space.
   Answer: (C)
 P A 6: |-
-  Concept: Every element of a circular arc is at distance r from the centre: $I = Mr^2$.
+  Concept: For a thin wire bent into a circular arc (of any angle), every element is at the same distance r from the centre. So the moment of inertia about the axis through the centre, perpendicular to the plane, is simply I = Mr².
   Solution:
-  1. $\pi r = L \Rightarrow r = \frac{L}{\pi}$.
-  2. $I = \frac{ML^2}{\pi^2}$.
+  1. The semicircle has length L = πr, so $r = \frac{L}{\pi}$.
+  2. $I = Mr^2 = M\left(\frac{L}{\pi}\right)^2 = \frac{ML^2}{\pi^2}$.
+  Why the arc angle doesn't matter: I = Σmᵢrᵢ², and every element has rᵢ = r. So I = r²Σmᵢ = Mr², whether the wire forms a full circle, a semicircle or any arc.
+  Comparison: a full ring of the same wire (length L = 2πr) would have $r = \frac{L}{2\pi}$ and $I = \frac{ML^2}{4\pi^2}$, option (A). The semicircle has a larger radius for the same length, so its I is four times as large.
+  Why others are wrong:
+  - (A) uses the full-circle radius $\frac{L}{2\pi}$.
+  - (B) $\frac{2}{5}$ is the factor for a solid sphere, irrelevant here.
+  - (D) ½ is the factor for a disc, irrelevant for a thin wire.
   Answer: (C)
 P A 7: |-
-  Concept: $a = v\frac{dv}{dx}$.
+  Concept: When velocity is given as a function of displacement, the acceleration is $a = \frac{dv}{dt} = v\frac{dv}{dx}$.
   Solution:
-  1. From the graph, $v = v_0\left(1 - \frac{x}{x_0}\right)$, so $\frac{dv}{dx} = -\frac{v_0}{x_0}$.
-  2. $a = -\frac{v_0^2}{x_0}\left(1 - \frac{x}{x_0}\right)$: negative at $x = 0$, rising linearly to 0 at $x_0$.
+  1. From the graph: v decreases linearly from v₀ at x = 0 to 0 at x = x₀. So $v = v_0\left(1 - \frac{x}{x_0}\right)$ and $\frac{dv}{dx} = -\frac{v_0}{x_0}$ (constant).
+  2. $a = v\frac{dv}{dx} = v_0\left(1 - \frac{x}{x_0}\right)\left(-\frac{v_0}{x_0}\right) = -\frac{v_0^2}{x_0}\left(1 - \frac{x}{x_0}\right) = -\frac{v_0^2}{x_0} + \frac{v_0^2}{x_0^2}x$.
+  3. This is a straight line in x with positive slope:
+     - At x = 0: $a = -\frac{v_0^2}{x_0}$ (most negative).
+     - At x = x₀: a = 0.
+  4. So the a–x graph rises linearly from a negative value to zero at x₀. This matches option (C).
+  Physical interpretation: the particle decelerates. The deceleration is greatest when the particle is fastest (at x = 0) and vanishes as it comes to rest. The motion is like an exponential approach: x₀ is reached only as t → ∞.
+  Why others are wrong:
+  - (A) and (D) show constant acceleration, but a depends on x.
+  - (B) shows positive acceleration, but the particle slows down.
   Answer: (C)
 P A 8: |-
-  Concept: $I_E = I_B + I_C$.
+  Concept: In a transistor, the emitter current divides between base and collector: I_E = I_B + I_C. Definitions: α = $\frac{I_C}{I_E}$ (common-base current gain) and β = $\frac{I_C}{I_B}$ (common-emitter current gain).
   Solution:
-  1. $\alpha = \frac{I_C}{I_B + I_C} = \frac{1}{1/\beta + 1} = \frac{\beta}{1 + \beta}$.
+  1. $\alpha = \frac{I_C}{I_E} = \frac{I_C}{I_B + I_C}$.
+  2. Divide the numerator and denominator by I_B: $\alpha = \frac{\beta}{1 + \beta}$.
+  3. Inverse: $\beta = \frac{\alpha}{1 - \alpha}$.
+  Typical values: β = 100 gives α = $\frac{100}{101}$ = 0.990. α is always slightly less than 1, and β is large.
+  Why this matters: a small change in α near 1 produces a big change in β. For example, α = 0.99 gives β = 99, while α = 0.995 gives β = 199.
+  Why others are wrong:
+  - (A) $\beta = \frac{\alpha}{1 + \alpha}$ would make β less than ½.
+  - (B) $\alpha = \frac{\beta}{1 - \alpha}$ mixes the variables (it would give α > β).
+  - (C) $\beta = \frac{1}{1 - \alpha}$ is 1 + β, not β.
   Answer: (D)
 P A 9: |-
-  Concept: Total internal reflection occurs at face PR if the angle of incidence (45°) exceeds the critical angle.
+  Concept: Light inside a denser medium is totally internally reflected at a surface if its angle of incidence exceeds the critical angle, $\theta_c = \sin^{-1}\frac{1}{\mu}$. Since μ depends on colour (dispersion), different colours have different critical angles.
   Solution:
-  1. The rays enter PQ normally and meet PR at 45° (isosceles right prism).
-  2. Critical angles: red $\sin^{-1}\frac{1}{1.27} = 51.9°$; green 44.8°; blue 42.2°.
-  3. Only red has $\theta_c > 45°$, so only red emerges from PR.
+  1. From the figure, the rays enter face PQ normally, so they are not deviated. They reach face PR at an angle of incidence of 45° (a right-angled isosceles prism).
+  2. Critical angles:
+     - Red, μ = 1.27: θ_c = sin⁻¹(0.787) ≈ 51.9°.
+     - Green, μ = 1.42: θ_c = sin⁻¹(0.704) ≈ 44.8°.
+     - Blue, μ = 1.49: θ_c = sin⁻¹(0.671) ≈ 42.2°.
+  3. Compare with 45°:
+     - Red: 45° < 51.9°, so it is not totally reflected. It refracts out through PR.
+     - Green: 45° > 44.8°, so it is totally reflected.
+     - Blue: 45° > 42.2°, so it is totally reflected.
+  4. Only the red ray emerges from face PR.
+  Condition for TIR at 45°: $\mu > \frac{1}{\sin45°} = \sqrt2 = 1.414$. Green (1.42) and blue (1.49) exceed this, while red (1.27) does not.
+  Application: this principle is used in prisms that separate colours, and it explains why optical fibres need a core of higher refractive index.
   Answer: (B)
 P A 10: |-
-  Concept: Bodies float at the equator when $\omega^2R = g$.
+  Concept: At the equator, a body rotates with the Earth in a circle of radius R. It needs a centripetal force mω²R, supplied by the difference between gravity and the normal reaction. The body starts to float (normal reaction zero) when ω²R = g.
   Solution:
-  1. $T = 2\pi\sqrt{\frac{R}{g}} = 2\times3.14\times\sqrt{\frac{6.4\times10^6}{10}} = 6.28\times800 = 5024$ s.
-  2. $T \approx 84$ min.
+  1. Condition: ω²R = g, so $\omega = \sqrt{\frac{g}{R}}$.
+  2. Length of day: $T = \frac{2\pi}{\omega} = 2\pi\sqrt{\frac{R}{g}}$.
+  3. $\sqrt{\frac{6.4\times10^6}{10}} = \sqrt{6.4\times10^5} = 800$ s.
+  4. T = 2 × 3.14 × 800 = 5024 s ≈ 83.7 min ≈ 84 minutes.
+  Interpretation: this is the same as the period of a satellite orbiting just above the Earth's surface (about 84 min). At that spin rate, objects at the equator would effectively be in orbit.
+  Current situation: the Earth rotates once in 24 h, with ω = 7.27 × 10⁻⁵ rad/s. Then ω²R = 0.034 m/s², only 0.3% of g. The Earth would have to spin about 17 times faster for objects to float at the equator.
+  Why others are wrong:
+  - (A) 60 min and (C) 1200 min come from arithmetic slips.
+  - (B) Floating would certainly require a change in the rotation rate.
   Answer: (D)
 P A 11: |-
-  Concept: A free proton is lighter than a neutron.
+  Concept: A neutron is heavier than a proton (m_n − m_p ≈ 1.29 MeV/c²). So a free proton cannot decay into a neutron; energy conservation forbids it. Inside a nucleus, the change in nuclear binding energy can supply the extra energy, allowing β⁺ decay.
   Solution:
-  1. $p \to n + e^+ + \nu$ needs energy, so a free proton cannot decay.
-  2. Inside a nucleus, the binding energy difference can supply it (β⁺ decay), so it is possible only inside the nucleus.
+  1. Free proton: p → n + e⁺ + ν would need about 1.8 MeV of energy (the mass difference plus the positron mass). A free proton is stable; its lifetime is greater than 10³⁴ years.
+  2. Inside a nucleus: β⁺ decay, $^A_ZX \to\ ^A_{Z-1}Y + e^+ + \nu$, is possible when the parent nucleus has more mass than the daughter nucleus plus two electron masses (for the positron). Example: $^{22}_{11}Na \to\ ^{22}_{10}Ne + e^+ + \nu$.
+  3. So proton-to-neutron conversion is possible only inside the nucleus. (Electron capture is another route: p + e⁻ → n + ν.)
+  Why others are wrong:
+  - (A) "not possible" is too strong; it does occur inside nuclei.
+  - (C) is half right: a free neutron does decay to a proton (half-life about 10 minutes), but the statement wrongly rules out p → n entirely.
+  - (D) It is not always possible; a free proton cannot do it.
   Answer: (B)
 P A 12: |-
-  Concept: Power factor $\cos\phi = \frac{R}{Z}$.
+  Concept: In a series LCR circuit, the impedance is $Z = \sqrt{R^2 + (X_L - X_C)^2}$ and the power factor is $\cos\phi = \frac{R}{Z}$.
   Solution:
-  1. $Z = \sqrt{6^2 + (10 - 4)^2} = 6\sqrt2$.
-  2. $\cos\phi = \frac{6}{6\sqrt2} = \frac{1}{\sqrt2}$.
+  1. Net reactance: X_L − X_C = 10 − 4 = 6 Ω.
+  2. $Z = \sqrt{6^2 + 6^2} = 6\sqrt2$ Ω.
+  3. Power factor: $\cos\phi = \frac{6}{6\sqrt2} = \frac{1}{\sqrt2} \approx 0.707$.
+  4. Phase angle: φ = 45°. The circuit is inductive (X_L > X_C), so the current lags the voltage by 45°.
+  Interpretation: when the resistance equals the net reactance, the phase angle is exactly 45°. The average power is P = V_rms I_rms cos φ, so only 70.7% of the apparent power is actually consumed.
+  Why others are wrong:
+  - (A) ½ corresponds to φ = 60°.
+  - (B) $\frac{1}{2\sqrt2}$ has no physical basis here.
+  - (D) $\frac{\sqrt3}{2}$ corresponds to φ = 30°.
   Answer: (C)
 P A 13: |-
-  Concept: Areal velocity $\frac{dA}{dt} = \frac{1}{2}|\vec r\times\vec v| = \frac{L}{2M}$.
+  Concept: Kepler's second law: the line from the Sun to the planet sweeps out equal areas in equal times. The areal velocity is constant and equals $\frac{L}{2M}$, because angular momentum is conserved under a central force.
   Solution:
-  1. $dA = \frac{1}{2}r\,ds\sin\theta$, so $\frac{dA}{dt} = \frac{1}{2}rv\sin\theta = \frac{L}{2M}$.
+  1. In time dt, the planet moves a displacement $\vec v\,dt$. The area swept (a thin triangle with the Sun) is $dA = \frac{1}{2}|\vec r\times\vec v\,dt|$.
+  2. $\frac{dA}{dt} = \frac{1}{2}|\vec r\times\vec v|$.
+  3. Angular momentum: $\vec L = M\vec r\times\vec v$, so $|\vec r\times\vec v| = \frac{L}{M}$.
+  4. $\frac{dA}{dt} = \frac{L}{2M}$.
+  5. Since gravity is a central force, L is constant, so the areal velocity is constant (Kepler's second law).
+  Check with a circular orbit: $\frac{dA}{dt} = \frac{\pi r^2}{T}$, and L = Mvr = $M\frac{2\pi r}{T}r$. So $\frac{L}{2M} = \frac{\pi r^2}{T}$ ✓.
+  Why others are wrong:
+  - (A) $\frac{4L}{M}$ and (C) $\frac{2L}{M}$ have wrong factors.
+  - (B) $\frac{L}{M}$ forgets the ½ in the area of a triangle.
   Answer: (D)
 P A 14: |-
-  Concept: SHM with period $\frac{\pi}{\omega}$ has angular frequency $2\omega$ and is a single sinusoid.
+  Concept: A simple harmonic motion is a single sinusoid of the form A sin(Ωt + φ) (or A cos). Its period is $\frac{2\pi}{\Omega}$. A period of $\frac{\pi}{\omega}$ requires Ω = 2ω.
   Solution:
-  1. $3\cos\left(\frac{\pi}{4} - 2\omega t\right)$ is a pure sinusoid with angular frequency $2\omega$.
-  2. (A) has period $\frac{2\pi}{\omega}$; (B) is not SHM; (C) $\sin^2\omega t = \frac{1 - \cos2\omega t}{2}$ is SHM only about a shifted mean, so (D) is the direct answer.
+  1. (D) $3\cos\left(\frac{\pi}{4} - 2\omega t\right) = 3\cos\left(2\omega t - \frac{\pi}{4}\right)$: a single sinusoid with amplitude 3 and angular frequency 2ω. Period: $\frac{2\pi}{2\omega} = \frac{\pi}{\omega}$ ✓. It is SHM about zero.
+  2. (A) sin ωt + cos ωt = √2 sin(ωt + $\frac{\pi}{4}$): SHM, but its period is $\frac{2\pi}{\omega}$, not $\frac{\pi}{\omega}$.
+  3. (B) cos ωt + cos 2ωt + cos 3ωt: a sum of three different frequencies. It is periodic (period $\frac{2\pi}{\omega}$) but not simple harmonic, since it is not a single sinusoid.
+  4. (C) sin²ωt = $\frac{1 - \cos2\omega t}{2}$: it oscillates with period $\frac{\pi}{\omega}$, but about a mean of ½ rather than zero. It can be regarded as SHM about the shifted position ½, but the standard answer is (D), a pure sinusoid about zero.
+  5. The answer is (D).
+  Why others are wrong:
+  - (A) has the wrong period.
+  - (B) is not SHM.
+  - (C) is SHM only about a shifted mean; the key selects (D) as the clean single-sinusoid form.
   Answer: (D)
 P A 15: |-
-  Concept: Static friction cannot exceed $\mu_sN$.
+  Concept: Static friction adjusts to whatever value is needed for equilibrium, up to a maximum of μ_sN. If the required friction exceeds this limit, the body slips, and friction takes its limiting value.
   Solution:
-  1. For equilibrium with the string along the incline, torque balance gives $T = f$ and force balance gives $T + f = mg\sin60°$, so $f = \frac{\sqrt3}{4}mg \approx 0.43mg$.
-  2. Limiting friction $= \mu_smg\cos60° = 0.4\times\frac{mg}{2} = \frac{mg}{5}$, which is less than required.
-  3. So friction takes its limiting value, $\frac{mg}{5}$.
+  1. From the figure: the incline is at 60°, and the string is wound round the cylinder and fixed so that it pulls up the slope, parallel to it, from the top of the cylinder.
+  2. Forces along the incline: the string tension T (up the slope), friction f and the weight component mg sin 60° (down the slope).
+  3. For equilibrium, torques about the centre must balance: the tension at the rim and the friction at the contact point both have lever arm R, so T = f (friction acts up the slope, at the bottom, opposite in rotational sense to T).
+  4. Force balance: T + f = mg sin 60°, so 2f = $\frac{\sqrt3}{2}mg$ and f = $\frac{\sqrt3}{4}mg \approx 0.433mg$.
+  5. Maximum static friction: μ_sN = 0.4 × mg cos 60° = 0.4 × $\frac{mg}{2}$ = 0.2mg = $\frac{mg}{5}$.
+  6. The required friction (0.433mg) exceeds the maximum (0.2mg), so equilibrium is impossible. The cylinder slips, and friction takes its limiting (kinetic, taken equal) value, $\frac{mg}{5}$.
+  Why others are wrong:
+  - (A) $\frac{7}{2}mg$ and (B) 5mg exceed the weight itself.
+  - (D) zero friction would require no tendency to slide.
   Answer: (C)
 P A 16: |-
-  Concept: $U = \frac{1}{2}Li^2$ and $i = i_0(1 - e^{-Rt/L})$.
+  Concept: When an inductor of inductance L and resistance R is connected to a battery, the current grows as $i = i_0(1 - e^{-Rt/L})$, with $i_0 = \frac{V}{R}$. The stored magnetic energy is $U = \frac{1}{2}Li^2$, so it depends on i².
   Solution:
-  1. $U = 25\%\,U_{max} \Rightarrow i = \frac{i_0}{2}$.
-  2. $e^{-Rt/L} = \frac{1}{2} \Rightarrow t = \frac{L}{R}\ln2$.
+  1. Maximum energy: $U_{max} = \frac{1}{2}Li_0^2$.
+  2. U = 25% of U_max means $i^2 = \frac{i_0^2}{4}$, so $i = \frac{i_0}{2}$.
+  3. $1 - e^{-Rt/L} = \frac{1}{2}$, so $e^{-Rt/L} = \frac{1}{2}$.
+  4. $t = \frac{L}{R}\ln2$ (about 0.69 time constants).
+  Common error: setting i = 0.25i₀ (confusing energy with current) gives $t = \frac{L}{R}\ln\frac{4}{3}$, which is wrong.
+  Comparison: the current reaches 50% of its final value in time τ ln 2, and the energy reaches 25% at the same moment. The energy reaches 50% when i = $\frac{i_0}{\sqrt2}$, at $t = \tau\ln\frac{\sqrt2}{\sqrt2 - 1} \approx 1.23\tau$.
+  Why others are wrong:
+  - (A) ln 5 and (D) ln 10 would correspond to other fractions (i = 0.8i₀ and 0.9i₀).
+  - (B) Infinite time is needed only to reach 100%.
   Answer: (C)
 P A 17: |-
-  Concept: $F = -\frac{dU}{dr} = -\frac{C}{r^2}$ provides the centripetal force.
+  Concept: For a central potential U(r), the force is $F = -\frac{dU}{dr}$. In a circular orbit, the attractive force provides the centripetal force, which links the radius and the speed.
   Solution:
-  1. $\frac{mv^2}{r} = \frac{C}{r^2} \Rightarrow r = \frac{C}{mv^2}$.
-  2. r decreases as $\frac{1}{v^2}$, which is the hyperbola-like curve.
+  1. $U = -\frac{C}{r}$, so $F = -\frac{dU}{dr} = -\frac{C}{r^2}$ (attractive, towards the centre, magnitude $\frac{C}{r^2}$).
+  2. Circular motion: $\frac{mv^2}{r} = \frac{C}{r^2}$, so $mv^2 = \frac{C}{r}$.
+  3. $r = \frac{C}{mv^2}$, i.e. r ∝ $\frac{1}{v^2}$.
+  4. The r–v graph is a decreasing curve: r → ∞ as v → 0 and r → 0 as v → ∞. It has the hyperbola-like shape of option (A) (strictly, r ∝ v⁻²).
+  Physical meaning: this is the gravitational (Kepler) case. Satellites in lower orbits must move faster. For example, $v = \sqrt{\frac{GM}{r}}$ for planets and satellites.
+  Why others are wrong:
+  - (B) and (C) show r increasing with v, the opposite of the correct relation.
+  - (D) shows a concave-down curve that reaches v = 0 at finite r, inconsistent with r ∝ $\frac{1}{v^2}$.
   Answer: (A)
 P A 18: |-
-  Concept: Entropy is an extensive (additive) state function.
+  Concept: Entropy is an extensive state function: for a system made of separate parts, the total entropy is the sum of the entropies of the parts.
   Solution:
-  1. Removing the piston (same gas, same state) gives $S = S_1 + S_2$.
+  1. Before removing the piston, the total entropy is S₁ + S₂.
+  2. Following the official key, removing the piston does not change the total: S = S₁ + S₂.
+  3. This is exactly true if both parts contain the same gas at the same temperature and pressure (only the partition is removed, and nothing else changes).
+  4. If the two parts were at different temperatures or pressures, or contained different gases, removing the piston would start an irreversible mixing or equalisation process, and the entropy would increase further (the final entropy would exceed S₁ + S₂). The question intends the simple case.
+  Why others are wrong:
+  - (A) S₁ × S₂ has the wrong units (J²/K²) and is not how extensive quantities combine.
+  - (B) S₁ − S₂: entropy does not subtract when systems combine.
+  - (C) $\frac{S_1}{S_2}$ is dimensionless, so it cannot be an entropy.
   Answer: (D)
 P A 19: |-
-  Concept: $v_{rms} = \sqrt{\frac{3RT}{M}}$ and $v_{avg} = \sqrt{\frac{8RT}{\pi M}}$.
+  Concept: From the Maxwell–Boltzmann distribution of molecular speeds:
+  - rms speed: $v_{rms} = \sqrt{\frac{3RT}{M}}$;
+  - average (mean) speed: $v_{avg} = \sqrt{\frac{8RT}{\pi M}}$;
+  - most probable speed: $v_{mp} = \sqrt{\frac{2RT}{M}}$.
   Solution:
-  1. $\frac{v_{rms}}{v_{avg}} = \sqrt{\frac{3\pi}{8}}$.
+  1. $\frac{v_{rms}}{v_{avg}} = \sqrt{\frac{3RT/M}{8RT/(\pi M)}} = \sqrt{\frac{3\pi}{8}} \approx 1.085$.
+  2. The ratio is independent of T and M. The data (oxygen, 300 K) are not needed.
+  Numerical values for oxygen at 300 K: $v_{rms} = \sqrt{\frac{3\times8.3\times300}{0.032}} = 483$ m/s, and $v_{avg} = \sqrt{\frac{8\times8.3\times300}{3.14\times0.032}} = 445$ m/s. Ratio 1.085 ✓.
+  Order of speeds: $v_{rms} > v_{avg} > v_{mp}$, in the ratio $\sqrt3 : \sqrt{\frac{8}{\pi}} : \sqrt2 \approx 1.73 : 1.60 : 1.41$.
+  Why others are wrong:
+  - (A) $\sqrt{\frac{3}{3}} = 1$ would mean equal speeds.
+  - (B) $\sqrt{\frac{8}{3}}$ omits π.
+  - (D) $\sqrt{\frac{8\pi}{3}}$ is not the ratio of any pair of these speeds.
   Answer: (C)
 P A 20: |-
-  Concept: Resolving power $\propto \frac{1}{\lambda} = \frac{mv}{h}$.
+  Concept: The resolving power of a microscope is inversely proportional to the wavelength of the radiation used: RP ∝ $\frac{1}{\lambda}$ (smaller wavelength, finer detail). For particles, $\lambda = \frac{h}{mv}$ (de Broglie).
   Solution:
-  1. At the same speed, RP ∝ m.
-  2. Protons are 1837 times heavier, so RP increases by a factor of 1837.
+  1. At the same speed, λ ∝ $\frac{1}{m}$, so RP ∝ $\frac{1}{\lambda}$ ∝ m.
+  2. A proton's mass is about 1837 times the electron's mass.
+  3. So the proton's wavelength is 1837 times shorter, and the resolving power increases by a factor of 1837.
+  Wavelengths at 10⁷ m/s:
+  - Electron: $\lambda = \frac{6.63\times10^{-34}}{9.1\times10^{-31}\times10^7} = 7.3\times10^{-11}$ m (0.73 Å).
+  - Proton: $\lambda = \frac{6.63\times10^{-34}}{1.67\times10^{-27}\times10^7} = 4.0\times10^{-14}$ m.
+  Note: at the same speed, a proton has much more kinetic energy than an electron. If the comparison were made at the same accelerating voltage (same kinetic energy), the factor would be $\sqrt{1837} \approx 43$ instead.
+  Why others are wrong:
+  - (B) $\frac{1}{1837}$ reverses the effect.
+  - (C) $\sqrt{1837}$ applies to equal kinetic energies, not equal speeds.
+  - (D) reverses the square-root version.
   Answer: (A)
 P B 1: |-
-  Concept: In projectile motion only the vertical momentum changes; at the same level it reverses.
+  Concept: In projectile motion without air resistance, the only force is gravity, which is vertical. So the horizontal momentum is constant, and only the vertical momentum changes. Points A and B are at the same level (launch and landing), where the vertical velocity reverses.
   Solution:
-  1. $\Delta p = 2mu\sin45° = 2\times5\times10^{-3}\times5\sqrt2\times\frac{1}{\sqrt2} = 5\times10^{-2}$ kg m s⁻¹.
+  1. From the figure, the projectile is launched at 45° (the standard setup, consistent with the answer). u = 5√2 m/s, so u_x = u_y = 5√2 × $\frac{1}{\sqrt2}$ = 5 m/s.
+  2. At A: vertical velocity +5 m/s. At B (same level): −5 m/s.
+  3. Change in vertical momentum: $\Delta p = m(\Delta v_y) = 5\times10^{-3}\times(5 - (-5)) = 5\times10^{-3}\times10 = 5\times10^{-2}$ kg m/s.
+  4. The horizontal momentum does not change. So |Δp| = 5 × 10⁻² kg m/s and x = 5.
+  Check by impulse: the time of flight is $T = \frac{2u_y}{g} = \frac{10}{10} = 1$ s. The impulse of gravity is mgT = 5 × 10⁻³ × 10 × 1 = 5 × 10⁻² N s ✓.
   Answer: 5
 P B 2: |-
-  Concept: KE converts into spring energy: $\frac{1}{2}mv^2 = \frac{1}{2}ky^2$.
+  Concept: When a moving ball compresses a spring (with no friction), its kinetic energy is converted into elastic potential energy. At maximum compression, the ball momentarily stops: $\frac{1}{2}mv^2 = \frac{1}{2}ky^2$.
   Solution:
-  1. $y = v\sqrt{\frac{m}{k}} = 10\sqrt{\frac{4}{100}} = 2$ m.
-  2. Compressed length $= 8 - 2 = 6$ m.
+  1. $y = v\sqrt{\frac{m}{k}} = 10\times\sqrt{\frac{4}{100}} = 10\times0.2 = 2$ m.
+  2. The spring's natural length is 8 m, so its compressed length is 8 − 2 = 6 m.
+  3. So x = 6.
+  Energy check: kinetic energy = ½ × 4 × 100 = 200 J. Spring energy = ½ × 100 × 2² = 200 J ✓.
+  Assumption: the other end of the spring is fixed (to a wall), so the ball comes to rest at maximum compression. If the spring were attached to another free mass, the calculation would involve the reduced mass.
   Answer: 6
 P B 3: |-
-  Concept: $\beta = \frac{\Delta I_C}{\Delta I_B}$ from the output characteristics.
+  Concept: The output characteristics of a transistor in the common-emitter configuration show I_C against V_CE for several fixed values of the base current I_B. In the active region, the curves are nearly flat and equally spaced. The current gain is $\beta = \frac{\Delta I_C}{\Delta I_B}$ at constant V_CE.
   Solution:
-  1. Between adjacent curves, $\Delta I_C = 2$ mA for $\Delta I_B = 10\ \mu$A.
-  2. $\beta = \frac{2\times10^{-3}}{10\times10^{-6}} = 200$.
+  1. From the figure: adjacent curves differ in I_B by 10 μA, and at a fixed V_CE, the corresponding collector currents differ by 2 mA.
+  2. $\beta = \frac{\Delta I_C}{\Delta I_B} = \frac{2\times10^{-3}}{10\times10^{-6}} = 200$.
+  Interpretation: a base current change of just 10 μA controls a collector current change of 2 mA. This current amplification is what makes the transistor useful as an amplifier.
+  Also: α = $\frac{\beta}{1 + \beta} = \frac{200}{201} = 0.995$.
+  Note: β measured this way (from changes) is the AC or small-signal current gain. The DC gain, $\frac{I_C}{I_B}$ at a single point, is usually similar.
   Answer: 200
 P B 4: |-
-  Concept: Bernoulli's equation with the added load pressure $\frac{mg}{A}$.
+  Concept: Torricelli's theorem, extended by Bernoulli's equation. A load placed on the water surface adds pressure $\frac{mg}{A}$ to the atmospheric pressure. At the outlet, the pressure is atmospheric.
   Solution:
-  1. $P_0 + \frac{mg}{A} + \rho gH = P_0 + \frac{1}{2}\rho v^2$ (top speed negligible).
-  2. $v = \sqrt{2gH + \frac{2mg}{A\rho}} = \sqrt{8 + \frac{2\times240}{0.4\times1000}} = \sqrt{9.2} \approx 3$ m/s.
+  1. Extra pressure from the load: $\frac{mg}{A} = \frac{24\times10}{0.4} = 600$ Pa.
+  2. Bernoulli from the top surface (speed ≈ 0, since the tank area 0.4 m² is much larger than the outlet area 1 cm²) to the outlet B:
+     $P_0 + 600 + \rho gH = P_0 + \frac{1}{2}\rho v^2$.
+  3. $v^2 = 2gH + \frac{2\times600}{\rho} = 2\times10\times0.4 + \frac{1200}{1000} = 8 + 1.2 = 9.2$.
+  4. v = √9.2 ≈ 3.03 m/s ≈ 3 m/s.
+  Comparison: without the load, $v = \sqrt{2gH} = \sqrt8 \approx 2.83$ m/s. The load acts like an extra head of $\frac{600}{\rho g} = 6$ cm of water.
+  Note: the load acts on the whole surface (like a piston), which is why its pressure is spread over 0.4 m².
   Answer: 3
 P B 5: |-
-  Concept: Range $= \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
+  Concept: The maximum line-of-sight range between a transmitting antenna of height h_T and a receiving antenna of height h_R is $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
   Solution:
-  1. The increase is $\sqrt{2Rh_R}$ relative to $\sqrt{2Rh_T}$: $\sqrt{\frac{5}{20}} = 0.5$.
-  2. $n = 50\%$.
+  1. Case (i), receiver at ground level: $d_1 = \sqrt{2Rh_T}$.
+  2. Case (ii), receiver at 5 m: $d_2 = \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
+  3. Increase: $d_2 - d_1 = \sqrt{2Rh_R}$.
+  4. Percentage increase: $\frac{\sqrt{2Rh_R}}{\sqrt{2Rh_T}}\times100 = \sqrt{\frac{h_R}{h_T}}\times100 = \sqrt{\frac{5}{20}}\times100 = 50\%$.
+  5. n = 50.
+  Actual distances (R = 6400 km): $d_1 = \sqrt{2\times6.4\times10^6\times20} = 16$ km. The receiver adds $\sqrt{2\times6.4\times10^6\times5} = 8$ km. So d₂ = 24 km, which is 50% more ✓.
+  Note: raising the receiver from ground level to only 5 m increases the range by half, because the range depends on √h, which increases steeply at small heights.
   Answer: 50
 P B 6: |-
-  Concept: $V \propto r^3 \Rightarrow \frac{\Delta V}{V} = 3\frac{\Delta r}{r}$.
+  Concept: For a quantity V = krⁿ, the relative error is $\frac{\Delta V}{V} = n\frac{\Delta r}{r}$. For the volume of a sphere, $V = \frac{4}{3}\pi r^3$, so n = 3.
   Solution:
-  1. $3\times\frac{0.85}{7.50}\times100 = 34\%$.
+  1. Relative error in r: $\frac{0.85}{7.50} = 0.1133$ (11.33%).
+  2. Relative error in V: 3 × 0.1133 = 0.34 = 34%.
+  3. So x = 34.
+  Note: 0.85 cm is a large uncertainty for a 7.5 cm radius (over 11%). Cubing the radius triples the relative error, making the volume uncertain by about a third. This is why precise radius measurements are critical when calculating volumes or densities of spheres.
+  (The question's phrase "to the nearest x" means to the nearest integer.)
   Answer: 34
 P B 7: |-
-  Concept: Coulomb forces along the same line add; here they form a geometric series.
+  Concept: Coulomb's law: $F = k\frac{q_1q_2}{r^2}$. All the charges lie along the same line (the y-axis) on the same side of the origin, so their forces on the test charge point in the same direction and add as numbers. The distances double each time, so the forces form a geometric series.
   Solution:
-  1. $F = 9\times10^9\times10^{-6}\left(1 + \frac{1}{4} + \frac{1}{16} + \dots\right) = 9\times10^3\times\frac{4}{3} = 12\times10^3$ N.
+  1. Charges of 1 μC at y = 1, 2, 4, 8, … m. The test charge is 1 C at the origin.
+  2. Each force (repulsive, along −y) has magnitude $kq\cdot Q\cdot\frac{1}{y^2}$, with kqQ = 9 × 10⁹ × 10⁻⁶ × 1 = 9 × 10³ N m².
+  3. Total: $F = 9\times10^3\left(\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{4^2} + \frac{1}{8^2} + \dots\right) = 9\times10^3\left(1 + \frac{1}{4} + \frac{1}{16} + \dots\right)$.
+  4. Geometric series with ratio ¼: sum $= \frac{1}{1 - 1/4} = \frac{4}{3}$.
+  5. F = 9 × 10³ × $\frac{4}{3}$ = 12 × 10³ N. So x = 12.
+  Note: the force is enormous because the test charge is 1 C, a huge charge. The first charge alone contributes 9000 N, three-quarters of the total.
   Answer: 12
 P B 8: |-
-  Concept: Balanced metre bridge: $\frac{R_1}{R_2} = \frac{l_1}{l_2}$.
+  Concept: In a metre bridge (a slide-wire Wheatstone bridge), at the balance point the ratio of the two resistors equals the ratio of the wire lengths on either side of the jockey: $\frac{R_1}{R_2} = \frac{l_1}{l_2}$.
   Solution:
-  1. $\frac{12}{6} = \frac{x}{72 - x} \Rightarrow x = 48$ cm.
+  1. From the figure: the resistors are 12 Ω (on the side of A) and 6 Ω (on the side of B). The wire AB is 72 cm long, and the jockey is at P, x cm from A.
+  2. Balance: $\frac{12}{6} = \frac{x}{72 - x}$.
+  3. 2(72 − x) = x, so 144 = 3x and x = 48 cm.
+  Check: the segments are 48 cm and 24 cm, in the ratio 2 : 1, which equals 12 : 6 ✓.
+  Why it works: at balance, no current flows through the galvanometer, so the potential at P equals the potential at the junction of the two resistors. The wire is uniform, so its resistance is proportional to length, and the bridge condition becomes a length ratio.
+  Note: using a 72 cm wire instead of the usual 100 cm does not change the principle.
   Answer: 48
 P B 9: |-
-  Concept: Two identical-geometry wires in parallel act like one wire of double the area.
+  Concept: Two identical-geometry wires (same length l and area A) connected in parallel are equivalent to one wire of length l and area 2A. The effective resistivity is found from $R_{eq} = \rho_{eff}\frac{l}{2A}$.
   Solution:
-  1. $R_{eq} = \frac{\rho_1\rho_2}{\rho_1 + \rho_2}\cdot\frac{l}{A}$ and $\rho_{eff} = R_{eq}\frac{2A}{l} = \frac{2\rho_1\rho_2}{\rho_1 + \rho_2}$.
-  2. $\rho = \frac{2\times6\times3}{9} = 4\ \Omega$ cm.
+  1. Individual resistances: $R_1 = \frac{\rho_1l}{A}$ and $R_2 = \frac{\rho_2l}{A}$.
+  2. In parallel: $R_{eq} = \frac{R_1R_2}{R_1 + R_2} = \frac{\rho_1\rho_2}{\rho_1 + \rho_2}\cdot\frac{l}{A}$.
+  3. As a single wire of area 2A: $R_{eq} = \rho_{eff}\frac{l}{2A}$.
+  4. $\rho_{eff} = \frac{2\rho_1\rho_2}{\rho_1 + \rho_2} = \frac{2\times6\times3}{6 + 3} = \frac{36}{9} = 4$ Ω cm.
+  Interpretation: the effective resistivity is the harmonic mean of the two resistivities. It lies between 3 and 6, closer to the lower value because the better conductor carries more of the current.
+  Compare with series: two identical-geometry wires in series act like one wire of length 2l and area A, giving $\rho_{eff} = \frac{\rho_1 + \rho_2}{2} = 4.5$ Ω cm (the arithmetic mean).
   Answer: 4
 P B 10: |-
-  Concept: Doppler shift for $v \ll c$: $\Delta\lambda = \lambda\frac{v}{c}$.
+  Concept: The Doppler effect for light: for a source moving away at speed v ≪ c, the wavelength increases (redshift) by $\Delta\lambda = \lambda\frac{v}{c}$.
   Solution:
-  1. $\Delta\lambda = 630\times10^{-9}\times\frac{286\times10^3}{3\times10^8} = 6.0\times10^{-10}$ m.
+  1. λ = 630 nm = 630 × 10⁻⁹ m, v = 286 km/s = 2.86 × 10⁵ m/s, and c = 3 × 10⁸ m/s.
+  2. $\frac{v}{c} = \frac{2.86\times10^5}{3\times10^8} = 9.53\times10^{-4}$.
+  3. $\Delta\lambda = 630\times10^{-9}\times9.53\times10^{-4} = 6.0\times10^{-10}$ m = 0.6 nm.
+  4. So x = 6.
+  Direction: the galaxy is receding, so the wavelength increases (shifts toward red): the observed line is at about 630.6 nm.
+  Significance: Hubble used such redshifts to show that distant galaxies are receding, with speeds proportional to their distances (Hubble's law, v = H₀d), the evidence for the expanding universe. With H₀ ≈ 70 km/s/Mpc, a speed of 286 km/s corresponds to about 4 Mpc.
   Answer: 6

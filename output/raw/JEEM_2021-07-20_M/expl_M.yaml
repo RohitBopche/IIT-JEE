@@ -1,199 +1,368 @@
 M A 1: |-
-  Concept: The vertex of a downward parabola is its maximum.
+  Concept: A quadratic ax² + bx + c with a < 0 is a downward parabola: it increases up to its vertex and decreases after it. The vertex, at $x = -\frac{b}{2a}$, is a maximum.
   Solution:
-  1. $f'(x) = 2ax + 6 = 0$ at $x = \frac{3}{4}$ gives $a = -4$.
-  2. $g(x) = -4x^2 - 6x + 15$: $g' = -8x - 6 = 0$ at $x = -\frac{3}{4}$, and $g'' < 0$.
-  3. So g has a local maximum at $x = -\frac{3}{4}$.
+  1. f(x) = ax² + 6x − 15 increases on (−∞, ¾) and decreases on (¾, ∞), so its vertex is at x = ¾ and a < 0.
+  2. f′(x) = 2ax + 6 = 0 at x = ¾: $\frac{3a}{2} + 6 = 0$, so a = −4.
+  3. g(x) = −4x² − 6x + 15.
+  4. g′(x) = −8x − 6 = 0 at $x = -\frac{3}{4}$.
+  5. g″(x) = −8 < 0, so this is a local maximum.
+  6. g has a local maximum at $x = -\frac{3}{4}$. (Its maximum value is $g(-\frac{3}{4}) = -\frac{9}{4} + \frac{9}{2} + 15 = 17.25$.)
+  Observation: g(x) = f(−x) + 30, so the graph of g is the graph of f reflected in the y-axis and shifted up. The vertex moves from x = ¾ to x = −¾, and the parabola still opens downward.
+  Why others are wrong:
+  - (A) and (C) claim a minimum, but a = −4 < 0 gives a maximum.
+  - (B) has the vertex at +¾, which is f's vertex, not g's.
   Answer: (D)
 M A 2: |-
-  Concept: Expand the determinant and find the local extrema of the cubic.
+  Concept: Build the matrix from the rule, expand the determinant to get a cubic f(x), then find its critical points. A cubic is unbounded on ℝ, so "maximum and minimum values" here means the local maximum and local minimum.
   Solution:
-  1. $f(x) = \begin{vmatrix}1&-x&2x+1\\-x&1&-x\\2x+1&-x&1\end{vmatrix} = 4x^3 - 4x^2 - 4x$.
-  2. $f'(x) = 12x^2 - 8x - 4 = 0 \Rightarrow x = 1$ or $-\frac{1}{3}$.
-  3. $f(-\frac{1}{3}) = \frac{20}{27}$ (local max) and $f(1) = -4$ (local min); sum $= -\frac{88}{27}$.
+  1. Diagonal entries are 1; entries with |i − j| = 1 are −x; the corner entries (1,3) and (3,1) are 2x + 1.
+     $A = \begin{bmatrix}1 & -x & 2x + 1\\ -x & 1 & -x\\ 2x + 1 & -x & 1\end{bmatrix}$.
+  2. Expand along row 1:
+     - $1\cdot(1 - x^2)$;
+     - $-(-x)\cdot[(-x)(1) - (-x)(2x + 1)] = x(-x + 2x^2 + x) = 2x^3$;
+     - $(2x + 1)[(-x)(-x) - 1\cdot(2x + 1)] = (2x + 1)(x^2 - 2x - 1) = 2x^3 - 3x^2 - 4x - 1$.
+  3. f(x) = 1 − x² + 2x³ + 2x³ − 3x² − 4x − 1 = 4x³ − 4x² − 4x.
+  4. f′(x) = 12x² − 8x − 4 = 4(3x + 1)(x − 1) = 0, so $x = -\frac{1}{3}$ or x = 1.
+  5. $f\left(-\frac{1}{3}\right) = -\frac{4}{27} - \frac{4}{9} + \frac{4}{3} = \frac{-4 - 12 + 36}{27} = \frac{20}{27}$ (local maximum, since f″ = 24x − 8 < 0 there).
+  6. f(1) = 4 − 4 − 4 = −4 (local minimum, f″ > 0).
+  7. Sum: $\frac{20}{27} - 4 = \frac{20 - 108}{27} = -\frac{88}{27}$.
   Answer: (A)
 M A 3: |-
-  Concept: $|\bar z\omega| = 1$ and $\arg(\bar z\omega) = \arg\omega - \arg z$.
+  Concept: For complex numbers, |z̄ω| = |z||ω| and arg(z̄ω) = arg ω − arg z (since arg z̄ = −arg z). Knowing both the modulus and argument of z̄ω fixes it completely.
   Solution:
-  1. $\arg(\bar z\omega) = -\frac{3\pi}{2}$, so $\bar z\omega = i$.
-  2. $\frac{1 - 2i}{1 + 3i} = \frac{(1 - 2i)(1 - 3i)}{10} = \frac{-5 - 5i}{10}$.
-  3. This lies in the third quadrant with argument $-\frac{3\pi}{4}$.
+  1. |z̄ω| = |zω| = 1.
+  2. arg(z̄ω) = arg ω − arg z = $-\frac{3\pi}{2}$, which is the same direction as $\frac{\pi}{2}$.
+  3. So z̄ω = cos $\frac{\pi}{2}$ + i sin $\frac{\pi}{2}$ = i.
+  4. $\frac{1 - 2i}{1 + 3i} = \frac{(1 - 2i)(1 - 3i)}{(1 + 3i)(1 - 3i)} = \frac{1 - 3i - 2i + 6i^2}{10} = \frac{-5 - 5i}{10} = -\frac{1}{2} - \frac{i}{2}$.
+  5. This lies in the third quadrant (both parts negative), on the line y = x.
+  6. Principal argument (in (−π, π]): $-\frac{3\pi}{4}$.
+  Why others are wrong:
+  - (A) $\frac{\pi}{4}$ is in the first quadrant.
+  - (C) $-\frac{\pi}{4}$ is in the fourth quadrant.
+  - (D) $\frac{3\pi}{4}$ is in the second quadrant. (The point −½ − ½i is in the third quadrant.)
   Answer: (B)
 M A 4: |-
-  Concept: Sine rule $\frac{a}{\sin A} = 2R$.
+  Concept: The extended sine rule, $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$, links each side to the opposite angle and the circumradius.
   Solution:
-  1. $c = 5 = 2R\sin C \Rightarrow \sin C = \frac{1}{2}$, so $C = 30°$ (150° is impossible with $\cos B = \frac{3}{5}$).
-  2. $\sin A = \sin(B + C) = \frac{4}{5}\cdot\frac{\sqrt3}{2} + \frac{3}{5}\cdot\frac{1}{2} = \frac{4\sqrt3 + 3}{10}$, so $a = 10\sin A = 4\sqrt3 + 3$.
-  3. Area $= \frac{1}{2}ac\sin B = \frac{1}{2}(4\sqrt3 + 3)(5)\left(\frac{4}{5}\right) = 6 + 8\sqrt3$.
+  1. AB = c = 5 and R = 5, so $\sin C = \frac{c}{2R} = \frac{5}{10} = \frac{1}{2}$. So C = 30° or 150°.
+  2. cos B = ⅗, so B ≈ 53.1°. If C were 150°, then B + C > 180°, which is impossible. So C = 30°.
+  3. sin B = ⅘. sin A = sin(B + C) = sin B cos C + cos B sin C = $\frac{4}{5}\cdot\frac{\sqrt3}{2} + \frac{3}{5}\cdot\frac{1}{2} = \frac{4\sqrt3 + 3}{10}$.
+  4. a = BC = 2R sin A = 10 × $\frac{4\sqrt3 + 3}{10}$ = 4√3 + 3.
+  5. Area = ½ × a × c × sin B = ½ × (4√3 + 3) × 5 × ⅘ = 2(4√3 + 3) = 8√3 + 6.
+  Check with another formula: area = 2R² sin A sin B sin C = 2 × 25 × $\frac{4\sqrt3 + 3}{10}\times\frac{4}{5}\times\frac{1}{2}$ = 2(4√3 + 3) ✓.
+  Why others are wrong: (B), (C) and (D) come from using C = 150°, or using the wrong sides in the area formula.
   Answer: (A)
 M A 5: |-
-  Concept: In a random arrangement, each position is equally likely to hold a given letter.
+  Concept: In a random arrangement of letters, each letter is equally likely to end up in any given position. So the probability that a particular letter that occurs once is in a particular position is $\frac{1}{n}$, where n is the number of letters.
   Solution:
-  1. EXAMINATION has 11 letters with exactly one M.
-  2. P(M in 4th place) $= \frac{1}{11}$.
+  1. EXAMINATION has 11 letters: E, X, A, M, I, N, A, T, I, O, N. The repeats are A ×2, I ×2 and N ×2, and M appears once.
+  2. By symmetry, M is equally likely to be in any of the 11 positions, so P(M in 4th place) = $\frac{1}{11}$.
+  Counting check:
+  - Total arrangements: $\frac{11!}{2!\,2!\,2!}$.
+  - With M fixed in position 4, the other 10 letters (with A, I and N each repeated twice) are arranged in $\frac{10!}{2!\,2!\,2!}$ ways.
+  - Ratio: $\frac{10!}{11!} = \frac{1}{11}$ ✓.
+  Why the repeated letters don't matter: dividing by 2!2!2! applies equally to the total count and the favourable count, so it cancels.
+  Why others are wrong:
+  - (A) $\frac{1}{9}$ does not match the 11 letters of the word.
+  - (C) $\frac{2}{11}$ would apply to a letter occurring twice (such as A).
+  - (D) $\frac{1}{66}$ has no basis.
   Answer: (B)
 M A 6: |-
-  Concept: $(1 - x)(1 + x + x^2) = 1 - x^3$.
+  Concept: Look for a factorisation that simplifies the product: (1 − x)(1 + x + x²) = 1 − x³.
   Solution:
-  1. The expression is $(1 - x)(1 - x^3)^{100}$.
-  2. $x^{256} = x\cdot x^{255}$, and $x^{255} = (x^3)^{85}$. The coefficient is $-1\times\binom{100}{85}(-1)^{85} = \binom{100}{85} = \binom{100}{15}$.
-  3. (The $x^{256}$ term from the "1" part needs $3 \mid 256$, which fails.)
+  1. (1 − x)¹⁰¹(x² + x + 1)¹⁰⁰ = (1 − x) × [(1 − x)(1 + x + x²)]¹⁰⁰ = (1 − x)(1 − x³)¹⁰⁰.
+  2. (1 − x³)¹⁰⁰ contains only powers of x that are multiples of 3: $\sum_k\binom{100}{k}(-1)^kx^{3k}$.
+  3. The coefficient of x²⁵⁶ in (1 − x)(1 − x³)¹⁰⁰ is [coefficient of x²⁵⁶ in (1 − x³)¹⁰⁰] − [coefficient of x²⁵⁵ in (1 − x³)¹⁰⁰].
+  4. 256 is not a multiple of 3, so the first coefficient is 0.
+  5. 255 = 3 × 85, so the second coefficient is $\binom{100}{85}(-1)^{85} = -\binom{100}{85}$.
+  6. Coefficient of x²⁵⁶ = 0 − $\left(-\binom{100}{85}\right) = \binom{100}{85} = \binom{100}{15}$.
+  Why others are wrong:
+  - (A) and (C) have a minus sign (forgetting that two minus signs cancel).
+  - (B) and (C) have ¹⁰⁰C₁₆ instead of ¹⁰⁰C₁₅ (an off-by-one error in k).
   Answer: (D)
 M A 7: |-
-  Concept: A quadratic is positive for all x iff its discriminant is negative.
+  Concept: A quadratic with a positive leading coefficient is positive for all real x iff its discriminant is negative (so it never touches or crosses the x-axis).
   Solution:
-  1. $4(a + 4)^2 - 4(64 - 5a) < 0 \Rightarrow a^2 + 13a - 48 < 0 \Rightarrow -16 < a < 3$.
-  2. Integers in $[-5, 30]$: 36 in total, of which 8 ($-5$ to $2$) are favourable.
-  3. $P = \frac{8}{36} = \frac{2}{9}$.
+  1. Discriminant of x² + 2(a + 4)x + (64 − 5a): D = 4(a + 4)² − 4(64 − 5a).
+  2. D < 0: (a + 4)² − 64 + 5a < 0, so a² + 8a + 16 − 64 + 5a < 0, i.e. a² + 13a − 48 < 0.
+  3. Factorise: (a + 16)(a − 3) < 0, so −16 < a < 3.
+  4. Integers in [−5, 30]: 30 − (−5) + 1 = 36 in total.
+  5. Favourable integers (in [−5, 30] and in (−16, 3)): −5, −4, −3, −2, −1, 0, 1, 2. That is 8 values.
+  6. P = $\frac{8}{36} = \frac{2}{9}$.
+  Check a = 3 (excluded): x² + 14x + 49 = (x + 7)², which is zero at x = −7, not strictly positive ✓. Check a = 2: x² + 12x + 54; D = 144 − 216 < 0 ✓.
+  Why others are wrong:
+  - (B) $\frac{1}{6}$ = 6/36 and (C) $\frac{7}{36}$ miss some values.
+  - (D) ¼ = 9/36 includes a = 3, where the quadratic touches zero.
   Answer: (A)
 M A 8: |-
-  Concept: $X \Rightarrow Y \equiv \sim X\vee Y$.
+  Concept: Rewrite the implication using X ⇒ Y ≡ ∼X ∨ Y, then simplify with De Morgan's law and idempotence (p ∨ p ≡ p).
   Solution:
-  1. $\sim(p\wedge\sim q)\vee(q\vee\sim p) = (\sim p\vee q)\vee(q\vee\sim p) = \sim p\vee q$.
-  2. This is $p \Rightarrow q$.
+  1. $(p \wedge \sim q) \Rightarrow (q \vee \sim p) \equiv \sim(p \wedge \sim q) \vee (q \vee \sim p)$.
+  2. De Morgan: ∼(p ∧ ∼q) ≡ ∼p ∨ q.
+  3. So the expression is (∼p ∨ q) ∨ (q ∨ ∼p) ≡ ∼p ∨ q (the same disjunction repeated).
+  4. ∼p ∨ q ≡ p ⇒ q.
+  Check by truth table:
+  - p = T, q = T: (T ∧ F) ⇒ (T ∨ F), i.e. F ⇒ T = T. And p ⇒ q = T ✓.
+  - p = T, q = F: (T ∧ T) ⇒ (F ∨ F), i.e. T ⇒ F = F. And p ⇒ q = F ✓.
+  - p = F, q = T: F ⇒ T = T. p ⇒ q = T ✓.
+  - p = F, q = F: F ⇒ T = T. p ⇒ q = T ✓.
+  Interesting observation: (p ∧ ∼q) is exactly the negation of (p ⇒ q), and (q ∨ ∼p) is (p ⇒ q). So the statement is (∼X) ⇒ X, which is equivalent to X.
   Answer: (C)
 M A 9: |-
-  Concept: $e^{x - [x]}$ has period 1, and each unit contributes $e - 1$.
+  Concept: The function $e^{x - [x]} = e^{\{x\}}$ is periodic with period 1. Its integral over each full unit interval is $\int_0^1e^t\,dt = e - 1$.
   Solution:
-  1. With $a = 10 + t$: $10(e - 1) + (e^t - 1) = 10e - 9 \Rightarrow e^t = 2$.
-  2. $a = 10 + \ln2$.
+  1. Let a = n + t, with n an integer and 0 ≤ t < 1.
+  2. $\int_0^ae^{\{x\}}dx = n(e - 1) + \int_0^te^u\,du = n(e - 1) + (e^t - 1)$.
+  3. Set equal to 10e − 9 = 10(e − 1) + 1.
+  4. Try n = 10: 10(e − 1) + e^t − 1 = 10(e − 1) + 1, so e^t = 2 and t = ln 2 ≈ 0.693 (in [0, 1) ✓).
+  5. a = 10 + ln 2.
+  Check uniqueness: with n = 9, we would need 9(e − 1) + e^t − 1 = 10e − 9, i.e. e^t = e + 1 ≈ 3.72, so t = ln(e + 1) > 1, not allowed. With n = 11, e^t = 2 − e < 1, so t < 0, not allowed. So n = 10 is the only choice ✓.
+  Why others are wrong:
+  - (B) and (C) involve ln(1 + e), which comes from the invalid choice n = 9.
+  - (D) 10 + ln 3 would give 10(e − 1) + 2 = 10e − 8, not 10e − 9.
   Answer: (A)
 M A 10: |-
-  Concept: $P = \frac{A + A^T}{2}$ and $Q = \frac{A - A^T}{2}$.
+  Concept: Every square matrix can be written uniquely as the sum of a symmetric part $P = \frac{A + A^T}{2}$ and a skew-symmetric part $Q = \frac{A - A^T}{2}$.
   Solution:
-  1. $\det Q = \left(\frac{3 - a}{2}\right)^2 = 9 \Rightarrow a = -3$ or $9$.
-  2. $\det P = -\left(\frac{3 + a}{2}\right)^2$: 0 for $a = -3$ and $-36$ for $a = 9$.
-  3. The modulus of the sum is 36.
+  1. $A = \begin{bmatrix}2 & 3\\ a & 0\end{bmatrix}$, $A^T = \begin{bmatrix}2 & a\\ 3 & 0\end{bmatrix}$.
+  2. $P = \frac{1}{2}\begin{bmatrix}4 & 3 + a\\ 3 + a & 0\end{bmatrix} = \begin{bmatrix}2 & \frac{3 + a}{2}\\ \frac{3 + a}{2} & 0\end{bmatrix}$.
+  3. $Q = \frac{1}{2}\begin{bmatrix}0 & 3 - a\\ a - 3 & 0\end{bmatrix}$.
+  4. det Q = 0 − $\frac{(3 - a)(a - 3)}{4} = \frac{(3 - a)^2}{4} = 9$, so (3 − a)² = 36 and a = −3 or a = 9.
+  5. det P = 0 − $\left(\frac{3 + a}{2}\right)^2 = -\frac{(3 + a)^2}{4}$.
+     - a = −3: det P = 0.
+     - a = 9: det P = $-\frac{144}{4} = -36$.
+  6. Sum of the possible values: 0 + (−36) = −36. Modulus: 36.
   Answer: (B)
 M A 11: |-
-  Concept: Substitute $x = 3^{1/4}t$ to get $t^2 + t + 1 = 0$.
+  Concept: Substitute x = 3^{1/4}t to scale the equation into the form t² + t + 1 = 0, whose roots are the complex cube roots of unity ω and ω².
   Solution:
-  1. $\alpha = 3^{1/4}\omega$ and $\beta = 3^{1/4}\omega^2$.
-  2. $\alpha^{96} = 3^{24}$ and $\alpha^{12} = 27$ (similarly for β).
-  3. The sum is $2\times3^{24}\times26 = 52\times3^{24}$.
+  1. With x = 3^{1/4}t: $3^{1/2}t^2 + 3^{1/4}\cdot3^{1/4}t + 3^{1/2} = 0$, i.e. $3^{1/2}(t^2 + t + 1) = 0$.
+  2. So t = ω or ω², and α = 3^{1/4}ω, β = 3^{1/4}ω².
+  3. α⁹⁶ = 3²⁴ω⁹⁶ = 3²⁴ (since 96 is a multiple of 3, ω⁹⁶ = 1). Similarly β⁹⁶ = 3²⁴.
+  4. α¹² = 3³ω¹² = 27 and β¹² = 27.
+  5. α⁹⁶(α¹² − 1) + β⁹⁶(β¹² − 1) = 3²⁴(27 − 1) + 3²⁴(27 − 1) = 2 × 26 × 3²⁴ = 52 × 3²⁴.
+  Check that the roots are distinct: discriminant = 3^{1/2} − 4 × 3^{1/2} = −3√3 < 0, so the roots are distinct complex conjugates ✓.
+  Why others are wrong:
+  - (A) 56 × 3²⁵ and (B) 28 × 3²⁵ have the wrong power of 3 (e.g. using α⁹⁶ = 3²⁵).
+  - (D) 56 × 3²⁴ uses 28 in place of 26 (i.e. 27 + 1 instead of 27 − 1).
   Answer: (C)
 M A 12: |-
-  Concept: Domain restrictions.
+  Concept: Before solving an equation involving inverse trigonometric functions and square roots, find the domain. Here the domain turns out to be just two points.
   Solution:
-  1. $\sqrt{x(x+1)}$ needs $x(x + 1) \ge 0$, and $\sin^{-1}\sqrt{x^2 + x + 1}$ needs $x^2 + x + 1 \le 1$, i.e. $x(x+1) \le 0$.
-  2. So $x = 0$ or $-1$, giving LHS $= 0 + \frac{\pi}{2} \ne \frac{\pi}{4}$.
-  3. No real roots.
+  1. $\sqrt{x(x + 1)}$ is real only if x(x + 1) ≥ 0.
+  2. $\sin^{-1}\sqrt{x^2 + x + 1}$ requires $\sqrt{x^2 + x + 1} \le 1$, i.e. x² + x + 1 ≤ 1, so x(x + 1) ≤ 0.
+  3. Both conditions together: x(x + 1) = 0, so x = 0 or x = −1.
+  4. At x = 0 or x = −1: $\tan^{-1}\sqrt0 = 0$ and $\sin^{-1}\sqrt1 = \frac{\pi}{2}$. LHS = $\frac{\pi}{2}$.
+  5. $\frac{\pi}{2} \ne \frac{\pi}{4}$, so neither point satisfies the equation.
+  6. Number of real roots: 0.
+  Lesson: domain restrictions can reduce the possible solutions to just a few points; always check them before manipulating the equation. Taking sin or tan of both sides without this check might produce spurious "solutions".
+  Why others are wrong: (A) 4, (B) 1 and (D) 2 assume solutions exist. In particular, (D) counts the two domain points without checking whether they satisfy the equation.
   Answer: (C)
 M A 13: |-
-  Concept: Integration by parts, then simplify the derivative.
+  Concept: Integration by parts, with u = ln(…) and dv = dx, turns a log integral into an algebraic one. The algebra simplifies neatly after multiplying by the conjugate.
   Solution:
-  1. $I = [x\ln(\sqrt{1-x} + \sqrt{1+x})]_{-1}^{1} - \int x\,d(\ldots) = \ln2 + \int_{-1}^{1}\frac{1 - \sqrt{1 - x^2}}{2\sqrt{1 - x^2}}dx$.
-  2. $= \ln2 + \frac{1}{2}(\pi - 2) = \ln2 + \frac{\pi}{2} - 1$.
+  1. Let f(x) = ln(√(1 − x) + √(1 + x)). Integrate by parts: $I = [x f(x)]_{-1}^{1} - \int_{-1}^{1}xf'(x)\,dx$.
+  2. Boundary term: at x = 1, f = ln √2 = ½ ln 2. At x = −1, f = ln √2 = ½ ln 2. So [xf] = ½ ln 2 − (−½ ln 2) = ln 2.
+  3. $f'(x) = \frac{-\frac{1}{2\sqrt{1 - x}} + \frac{1}{2\sqrt{1 + x}}}{\sqrt{1 - x} + \sqrt{1 + x}}$. Simplifying (multiply numerator and denominator by the conjugate), $xf'(x) = -\frac{1 - \sqrt{1 - x^2}}{2\sqrt{1 - x^2}}$.
+  4. So $-\int_{-1}^{1}xf'(x)\,dx = \int_{-1}^{1}\frac{1 - \sqrt{1 - x^2}}{2\sqrt{1 - x^2}}dx = \frac{1}{2}\int_{-1}^{1}\left(\frac{1}{\sqrt{1 - x^2}} - 1\right)dx = \frac{1}{2}(\pi - 2)$.
+  5. $I = \ln2 + \frac{\pi}{2} - 1$.
+  Numerical check: ln 2 + π/2 − 1 ≈ 0.693 + 1.571 − 1 = 1.264. The integrand ranges from ½ ln 2 ≈ 0.35 at the ends to ln 2 ≈ 0.69 at x = 0, so the integral over length 2 should be between 0.7 and 1.4 ✓.
   Answer: (B)
 M A 14: |-
-  Concept: Use the sum and sum of squares.
+  Concept: Use the sum (from the mean) and the sum of squares (from the variance): Σx = n·x̄ and Σx² = n(σ² + x̄²).
   Solution:
-  1. Sum $= 39$, so $a + b = 21$. $\sum x^2 = 6(10.25 + 42.25) = 315$, so $a^2 + b^2 = 315 - 94 = 221$.
-  2. $ab = 110$, so the values are 10 and 11.
+  1. n = 6, mean 6.5: Σx = 39. The four known values sum to 2 + 4 + 5 + 7 = 18, so a + b = 21.
+  2. Variance 10.25: Σx² = 6(10.25 + 6.5²) = 6(10.25 + 42.25) = 6 × 52.5 = 315.
+  3. Known squares: 4 + 16 + 25 + 49 = 94, so a² + b² = 315 − 94 = 221.
+  4. (a + b)² = 441 = a² + b² + 2ab = 221 + 2ab, so ab = 110.
+  5. a and b are the roots of t² − 21t + 110 = 0, i.e. (t − 10)(t − 11) = 0. So a, b = 10 and 11.
+  Check: data 2, 4, 5, 7, 10, 11. Mean = $\frac{39}{6}$ = 6.5 ✓. Deviations squared: 20.25, 6.25, 2.25, 0.25, 12.25, 20.25. Sum = 61.5, divided by 6 = 10.25 ✓.
+  Why others are wrong:
+  - (B) 3, 18 and (C) 1, 20 have the right sum (21) but the wrong sum of squares (333 and 401).
+  - (D) 8, 13 has sum 21 and squares 233, also wrong.
   Answer: (A)
 M A 15: |-
-  Concept: Tangent and normal to $y^2 = 2x$.
+  Concept: For the parabola y² = 4ax, the tangent at (x₁, y₁) is yy₁ = 2a(x + x₁). The normal is perpendicular to the tangent at that point and meets the parabola again at another point.
   Solution:
-  1. Tangent at (2, 2): $2y = x + 2$, so $Q = (-2, 0)$.
-  2. Normal (slope −2): $y = -2x + 6$; with $y^2 = 2x$: $y^2 + y - 6 = 0$, so $R = \left(\frac{9}{2}, -3\right)$.
-  3. Area $= \frac{1}{2}|2(3) + (-2)(-5) + 4.5(2)| = \frac{25}{2}$.
+  1. y² = 2x means 4a = 2, so a = ½. Check P(2, 2): 4 = 4 ✓.
+  2. Tangent at P: 2y = 1·(x + 2), i.e. x − 2y + 2 = 0 (slope ½). It meets the x-axis (y = 0) at Q = (−2, 0).
+  3. Normal at P: slope −2, through (2, 2): y − 2 = −2(x − 2), i.e. y = −2x + 6.
+  4. Intersect with y² = 2x: x = $\frac{6 - y}{2}$, so y² = 6 − y, i.e. y² + y − 6 = 0 and (y + 3)(y − 2) = 0. y = 2 is P; y = −3 gives x = $\frac{9}{2}$. So R = ($\frac{9}{2}$, −3).
+  5. Area of triangle PQR with P(2, 2), Q(−2, 0), R(4.5, −3):
+     $\frac{1}{2}|x_P(y_Q - y_R) + x_Q(y_R - y_P) + x_R(y_P - y_Q)| = \frac{1}{2}|2(3) + (-2)(-5) + 4.5(2)| = \frac{1}{2}|6 + 10 + 9| = \frac{25}{2}$.
+  Right-angle check: PQ is along the tangent and PR is along the normal, so the angle at P is 90°. PQ = √(16 + 4) = 2√5 and PR = √(6.25 + 25) = $\frac{5\sqrt5}{2}$. Area = ½ × 2√5 × $\frac{5\sqrt5}{2}$ = $\frac{25}{2}$ ✓.
   Answer: (D)
 M A 16: |-
-  Concept: Continuity at 0 and at 1.
+  Concept: For a piecewise function to be continuous, the pieces must agree at each join. [−x] (greatest integer of −x) is constant, equal to −1, for 0 < x < 1.
   Solution:
-  1. $f(0) = -1$; for $0 < x < 1$, $[-x] = -1$, so $a - 1 = -1 \Rightarrow a = 0$.
-  2. At $x = 1$: $2 - b = -1 \Rightarrow b = 3$.
-  3. $a + b = 3$.
+  1. At x = 0: f(0) = sin 0 − e⁰ = −1. The left limit is also −1.
+  2. For 0 < x < 1: −x ∈ (−1, 0), so [−x] = −1 and f(x) = a − 1. The right limit at 0 is a − 1.
+  3. Continuity at 0: a − 1 = −1, so a = 0.
+  4. At x = 1: the left limit is a − 1 = −1 (from the middle piece). f(1) = 2(1) − b = 2 − b.
+  5. Continuity at 1: 2 − b = −1, so b = 3.
+  6. a + b = 0 + 3 = 3.
+  Check: f(x) = −1 on (0, 1), which joins smoothly to sin x − eˣ at 0 (value −1) and to 2x − 3 at 1 (value −1) ✓.
+  Common slip: [−x] ≠ −[x] for non-integer x. For 0 < x < 1, [x] = 0 but [−x] = −1.
   Answer: (C)
 M A 17: |-
-  Concept: $|\vec u\times\vec c| = |\vec u||\vec c|\sin\theta$.
+  Concept: For any vectors, $|\vec u\times\vec c| = |\vec u||\vec c|\sin\theta$. The conditions on $\vec c$ determine |c|, and the cross product gives |a × b|.
   Solution:
-  1. $|\vec c - \vec a|^2 = |\vec c|^2 - 2|\vec c| + 9 = 8 \Rightarrow |\vec c| = 1$.
-  2. $\vec a\times\vec b = (2, -2, 1)$ with magnitude 3.
-  3. $|(\vec a\times\vec b)\times\vec c| = 3\times1\times\frac{1}{2} = \frac{3}{2}$.
+  1. |a|² = 4 + 1 + 4 = 9, so |a| = 3.
+  2. $|\vec c - \vec a|^2 = |\vec c|^2 - 2\vec a\cdot\vec c + |\vec a|^2 = |\vec c|^2 - 2|\vec c| + 9$ (using a·c = |c|).
+  3. This equals (2√2)² = 8: |c|² − 2|c| + 1 = 0, i.e. (|c| − 1)² = 0, so |c| = 1.
+  4. $\vec a\times\vec b = \begin{vmatrix}\hat i & \hat j & \hat k\\ 2 & 1 & -2\\ 1 & 1 & 0\end{vmatrix} = \hat i(0 + 2) - \hat j(0 + 2) + \hat k(2 - 1) = (2, -2, 1)$, with magnitude 3.
+  5. $|(\vec a\times\vec b)\times\vec c| = 3\times1\times\sin\frac{\pi}{6} = 3\times\frac{1}{2} = \frac{3}{2}$.
+  Why others are wrong:
+  - (A) 3 omits the sin 30° factor.
+  - (B) ⅔ inverts the result.
+  - (D) 4 uses wrong magnitudes.
   Answer: (C)
 M A 18: |-
-  Concept: Separate the variables: $xe^xdx = -\frac{y\,dy}{\sqrt{1 - y^2}}$.
+  Concept: The equation is separable: collect the x terms on one side and the y terms on the other, then integrate.
   Solution:
-  1. $(x - 1)e^x = \sqrt{1 - y^2} + C$; $y(1) = -1 \Rightarrow C = 0$.
-  2. At $x = 3$: $\sqrt{1 - y^2} = 2e^3 \Rightarrow y^2 = 1 - 4e^6$.
-  3. (This is negative, so the question is inconsistent, but the key follows this working.)
+  1. $e^x\sqrt{1 - y^2}\,dx = -\frac{y}{x}dy$, so $xe^x\,dx = -\frac{y\,dy}{\sqrt{1 - y^2}}$.
+  2. Integrate: $\int xe^x\,dx = (x - 1)e^x$, and $-\int\frac{y\,dy}{\sqrt{1 - y^2}} = \sqrt{1 - y^2}$.
+  3. So (x − 1)eˣ = √(1 − y²) + C.
+  4. y(1) = −1: (0)e = √0 + C, so C = 0.
+  5. At x = 3: 2e³ = √(1 − y²), so 1 − y² = 4e⁶ and y² = 1 − 4e⁶.
+  6. So (y(3))² = 1 − 4e⁶.
+  Note: 1 − 4e⁶ is negative, which is impossible for a real y. So the question is inconsistent (the solution does not extend to x = 3 as a real function, since √(1 − y²) ≤ 1 requires (x − 1)eˣ ≤ 1). The key follows the formal working above and gives (D).
+  Why others are wrong: (A), (B) and (C) come from sign errors or using e³ instead of e⁶.
   Answer: (D)
 M A 19: |-
-  Concept: $\frac{n - 2}{n - 3} \ge 0$ with $n = |[x]|$ gives $n \le 2$ or $n \ge 4$.
+  Concept: Let n = |[x]|, a non-negative integer. The expression under the square root, $\frac{n - 2}{n - 3}$, must be ≥ 0 and the denominator must be non-zero.
   Solution:
-  1. $|[x]| \le 2 \Rightarrow x \in [-2, 3)$; $|[x]| \ge 4 \Rightarrow x < -3$ or $x \ge 4$.
-  2. Domain $= (-\infty, -3)\cup[-2, 3)\cup[4, \infty)$, so $a + b + c = -3 - 2 + 3 = -2$.
+  1. $\frac{n - 2}{n - 3} \ge 0$ with n ≠ 3: either n ≤ 2 or n > 3. Since n is an integer, n ≤ 2 or n ≥ 4.
+  2. n = |[x]| ≤ 2: −2 ≤ [x] ≤ 2, so x ∈ [−2, 3).
+  3. n = |[x]| ≥ 4: [x] ≥ 4 (x ≥ 4) or [x] ≤ −4 (x < −3).
+  4. Domain: (−∞, −3) ∪ [−2, 3) ∪ [4, ∞).
+  5. Matching (−∞, a) ∪ [b, c) ∪ [4, ∞): a = −3, b = −2, c = 3.
+  6. a + b + c = −3 − 2 + 3 = −2.
+  Check the excluded region [−3, −2): [x] = −3, so n = 3 and the denominator is 0 ✓ (excluded). And [3, 4): [x] = 3, n = 3, excluded ✓.
   Answer: (C)
 M A 20: |-
-  Concept: Homogeneous DE: put $y = vx$.
+  Concept: A homogeneous differential equation (the coefficients depend only on $\frac{y}{x}$) is solved with the substitution y = vx.
   Solution:
-  1. The DE reduces to $\tan v\,dv = -\frac{dx}{x}$, so $\cos\frac{y}{x} = kx$; $y(\frac{1}{2}) = \frac{\pi}{6}$ gives $k = 1$, i.e. $y = x\cos^{-1}x$.
-  2. Area $= \int_0^{1/\sqrt2}x\cos^{-1}x\,dx = \frac{\pi}{16} + \frac{1}{2}\left(\frac{\pi}{8} - \frac{1}{4}\right) = \frac{\pi - 1}{8}$.
+  1. Rewrite: $\frac{dy}{dx} = \frac{y\tan(y/x) - x}{x\tan(y/x)} = \frac{y}{x} - \frac{1}{\tan(y/x)}$.
+  2. With y = vx, dy/dx = v + x dv/dx: $v + x\frac{dv}{dx} = v - \cot v$, so $x\frac{dv}{dx} = -\cot v$ and $\tan v\,dv = -\frac{dx}{x}$.
+  3. Integrate: −ln |cos v| = −ln |x| + C, so cos v = kx, i.e. $\cos\frac{y}{x} = kx$.
+  4. y(½) = $\frac{\pi}{6}$: $\frac{y}{x} = \frac{\pi}{3}$, so cos $\frac{\pi}{3}$ = ½ = k × ½, giving k = 1.
+  5. Solution: $\cos\frac{y}{x} = x$, i.e. y = x cos⁻¹x.
+  6. Area from x = 0 to $\frac{1}{\sqrt2}$ (y ≥ 0 there): $\int_0^{1/\sqrt2}x\cos^{-1}x\,dx$.
+  7. By parts: $\left[\frac{x^2}{2}\cos^{-1}x\right]_0^{1/\sqrt2} + \frac{1}{2}\int_0^{1/\sqrt2}\frac{x^2}{\sqrt{1 - x^2}}dx = \frac{1}{4}\cdot\frac{\pi}{4} + \frac{1}{2}\left(\frac{\pi}{8} - \frac{1}{4}\right)$ (using x = sin θ, $\int_0^{\pi/4}\sin^2\theta\,d\theta = \frac{\pi}{8} - \frac{1}{4}$).
+  8. Area = $\frac{\pi}{16} + \frac{\pi}{16} - \frac{1}{8} = \frac{\pi - 1}{8}$.
   Answer: (B)
 M B 1: |-
-  Concept: $A = I + N$ with N nilpotent ($N^3 = 0$), so $A^n = I + nN + \binom{n}{2}N^2$.
+  Concept: A is upper triangular with 1s on the diagonal, so A = I + N with N nilpotent (N³ = 0). By the binomial theorem (I and N commute), $A^n = I + nN + \binom{n}{2}N^2$.
   Solution:
-  1. $N^2$ has a single entry $(1, 3) = 1$, and N has 0 there.
-  2. $b_{13} = 7\binom{20}{2} - 20\binom{7}{2} = 7\times190 - 20\times21 = 1330 - 420 = 910$.
+  1. $N = A - I = \begin{bmatrix}0 & -1 & 0\\ 0 & 0 & -1\\ 0 & 0 & 0\end{bmatrix}$.
+  2. $N^2 = \begin{bmatrix}0 & 0 & 1\\ 0 & 0 & 0\\ 0 & 0 & 0\end{bmatrix}$ (only the (1,3) entry, (−1)(−1) = 1). N³ = 0.
+  3. (1,3) entry of Aⁿ: from I it is 0, from nN it is 0 (N₁₃ = 0), and from $\binom{n}{2}N^2$ it is $\binom{n}{2}$. So $(A^n)_{13} = \binom{n}{2}$.
+  4. $b_{13} = 7\binom{20}{2} - 20\binom{7}{2} + 2\times0 = 7\times190 - 20\times21 = 1330 - 420 = 910$.
+  Check with n = 2: A² has (1,3) entry = row 1 of A · column 3 of A = (1)(0) + (−1)(−1) + (0)(1) = 1 = $\binom{2}{2}$ ✓.
   Answer: 910
 M B 2: |-
-  Concept: A focal chord passes through the focus (−16, 0) of $y^2 = -64x$.
+  Concept: A focal chord passes through the focus. The line is tangent to a circle iff its distance from the circle's centre equals the radius.
   Solution:
-  1. $y = m(x + 16)$, so $c = 16m$.
-  2. Tangent to the circle with centre (−10, 0), r = 2: $\frac{6m}{\sqrt{1 + m^2}} = 2 \Rightarrow m^2 = \frac{1}{8}$, $m = \frac{1}{2\sqrt2}$, $c = 4\sqrt2$.
-  3. $4\sqrt2(m + c) = 2 + 32 = 34$.
+  1. y² = −64x is y² = −4ax with a = 16, so the focus is (−16, 0).
+  2. The line y = mx + c passes through (−16, 0): c = 16m. So the line is y = m(x + 16), or mx − y + 16m = 0.
+  3. Circle (x + 10)² + y² = 4: centre (−10, 0), radius 2.
+  4. Distance from (−10, 0): $\frac{|-10m + 16m|}{\sqrt{m^2 + 1}} = \frac{6m}{\sqrt{m^2 + 1}} = 2$ (m > 0).
+  5. 36m² = 4(m² + 1), so 32m² = 4, m² = ⅛ and m = $\frac{1}{2\sqrt2}$.
+  6. c = 16m = $\frac{16}{2\sqrt2} = 4\sqrt2$.
+  7. $4\sqrt2(m + c) = 4\sqrt2\cdot\frac{1}{2\sqrt2} + 4\sqrt2\cdot4\sqrt2 = 2 + 32 = 34$.
   Answer: 34
 M B 3: |-
-  Concept: Write $b = a + \lambda$, $c = a + 2\lambda$, $d = a + 3\lambda$ and simplify by row/column operations.
+  Concept: In an AP with common difference λ: b = a + λ, c = a + 2λ, d = a + 3λ. A row operation that exploits the AP (R₁ + R₃ − 2R₂) collapses the determinant.
   Solution:
-  1. The determinant simplifies to $2\lambda^2$ (independent of x and a).
-  2. $2\lambda^2 = 2 \Rightarrow \lambda^2 = 1$.
+  1. Substitute. With y = x + a:
+     R₁ = (x + a − c, x + b, x + a) = (x − 2λ, y + λ, y).
+     R₂ = (x − 1, x + c, x + b) = (x − 1, y + 2λ, y + λ).
+     R₃ = (x − b + d, x + d, x + c) = (x + 2λ, y + 3λ, y + 2λ).
+  2. R₁ → R₁ + R₃ − 2R₂ (this doesn't change the determinant):
+     - First entry: (x − 2λ) + (x + 2λ) − 2(x − 1) = 2.
+     - Second: (y + λ) + (y + 3λ) − 2(y + 2λ) = 0.
+     - Third: y + (y + 2λ) − 2(y + λ) = 0.
+  3. New R₁ = (2, 0, 0). Expand along it: $\Delta = 2\begin{vmatrix}y + 2\lambda & y + \lambda\\ y + 3\lambda & y + 2\lambda\end{vmatrix} = 2[(y + 2\lambda)^2 - (y + \lambda)(y + 3\lambda)]$.
+  4. (y + 2λ)² − (y + λ)(y + 3λ) = y² + 4λy + 4λ² − y² − 4λy − 3λ² = λ².
+  5. Δ = 2λ² = 2, so λ² = 1.
+  Note: the determinant is independent of x and a, which is why the equation determines λ² alone.
   Answer: 1
 M B 4: |-
-  Concept: For mutually perpendicular vectors of equal length k, $|\vec a + \vec b + \vec c| = \sqrt3k$.
+  Concept: For three mutually perpendicular vectors of equal length k, the sum has length √3 k, and each vector makes the same angle with the sum, like the edges of a cube with its body diagonal.
   Solution:
-  1. $\cos\theta = \frac{k^2}{k\cdot\sqrt3k} = \frac{1}{\sqrt3}$.
-  2. $\cos2\theta = \frac{2}{3} - 1 = -\frac{1}{3}$, so $36\cos^22\theta = 4$.
+  1. |a| = |b| = |c| = k and a·b = b·c = c·a = 0.
+  2. |a + b + c|² = 3k², so |a + b + c| = √3 k.
+  3. a · (a + b + c) = k² (the other dot products are zero).
+  4. $\cos\theta = \frac{k^2}{k\cdot\sqrt3k} = \frac{1}{\sqrt3}$.
+  5. cos 2θ = 2cos²θ − 1 = $\frac{2}{3} - 1 = -\frac{1}{3}$.
+  6. 36 cos² 2θ = 36 × $\frac{1}{9}$ = 4.
+  Geometric check: θ ≈ 54.7°, the angle between an edge and the body diagonal of a cube. Then 2θ ≈ 109.5°, the tetrahedral angle, whose cosine is −⅓ ✓.
   Answer: 4
 M B 5: |-
-  Concept: Area between the tangent line (above) and the ellipse arc (below).
+  Concept: The area between two curves is the integral of (upper − lower). Here the region lies between the tangent line (above) and the ellipse's upper arc (below), between x = 1 and x = √5.
   Solution:
-  1. Tangent at (1, 1): $x + 4y = 5$. Ellipse (upper part): $y = \frac{1}{2}\sqrt{5 - x^2}$.
-  2. $\int_1^{\sqrt5}\frac{5 - x}{4}dx = \frac{5\sqrt5 - 7}{4}$; $\int_1^{\sqrt5}\frac{1}{2}\sqrt{5 - x^2}dx = -\frac{1}{2} + \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$.
-  3. Area $= \frac{5}{4}\sqrt5 - \frac{5}{4} - \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$, so $|\alpha + \beta + \gamma| = \frac{5}{4} = 1.25$.
+  1. Ellipse x² + 4y² = 5. Tangent at P(1, 1): x·1 + 4y·1 = 5, i.e. $y = \frac{5 - x}{4}$.
+  2. Upper arc of the ellipse: $y = \frac{1}{2}\sqrt{5 - x^2}$, from x = 1 to x = √5 (where the ellipse meets the x-axis).
+  3. Area under the tangent: $\int_1^{\sqrt5}\frac{5 - x}{4}dx = \frac{1}{4}\left[5x - \frac{x^2}{2}\right]_1^{\sqrt5} = \frac{1}{4}\left(5\sqrt5 - \frac{5}{2} - 5 + \frac{1}{2}\right) = \frac{5\sqrt5 - 7}{4}$.
+  4. Area under the ellipse arc: $\frac{1}{2}\int_1^{\sqrt5}\sqrt{5 - x^2}dx = \frac{1}{2}\left[\frac{x}{2}\sqrt{5 - x^2} + \frac{5}{2}\sin^{-1}\frac{x}{\sqrt5}\right]_1^{\sqrt5} = \frac{1}{2}\left[\frac{5\pi}{4} - 1 - \frac{5}{2}\sin^{-1}\frac{1}{\sqrt5}\right]$. Using $\frac{\pi}{2} - \sin^{-1}\frac{1}{\sqrt5} = \cos^{-1}\frac{1}{\sqrt5}$, this equals $-\frac{1}{2} + \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$.
+  5. Region area $= \frac{5\sqrt5 - 7}{4} + \frac{1}{2} - \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5} = \frac{5}{4}\sqrt5 - \frac{5}{4} - \frac{5}{4}\cos^{-1}\frac{1}{\sqrt5}$.
+  6. α = $\frac{5}{4}$, β = $-\frac{5}{4}$, γ = $-\frac{5}{4}$. So |α + β + γ| = $\frac{5}{4}$ = 1.25.
   Note: NTA gave 1; the exact value 1.25 (as in the printed key) is stored.
   Answer: 1.25
 M B 6: |-
-  Concept: Case-wise selection with the minimum requirements.
+  Concept: "At least" conditions with a fixed team size are handled by listing all the cases that meet the minimum requirements and add up to the total, then adding the counts.
   Solution:
-  1. (4 bowlers, 5 batsmen, 2 WK): $15\times21\times1 = 315$.
-  2. (4, 6, 1): $15\times7\times2 = 210$.
-  3. (5, 5, 1): $6\times21\times2 = 252$.
-  4. Total $= 777$.
+  1. The minimums are 4 bowlers, 5 batsmen and 1 wicketkeeper, a total of 10. One more player is needed to make 11. That extra player can be a bowler, a batsman or a wicketkeeper.
+  2. Cases:
+     - (5 bowlers, 5 batsmen, 1 WK): $\binom{6}{5}\binom{7}{5}\binom{2}{1} = 6\times21\times2 = 252$.
+     - (4 bowlers, 6 batsmen, 1 WK): $\binom{6}{4}\binom{7}{6}\binom{2}{1} = 15\times7\times2 = 210$.
+     - (4 bowlers, 5 batsmen, 2 WK): $\binom{6}{4}\binom{7}{5}\binom{2}{2} = 15\times21\times1 = 315$.
+  3. Total: 252 + 210 + 315 = 777.
+  Why listing the cases avoids overcounting: a tempting shortcut, "choose the minimum players first, then any 1 from the remaining 5", gives $\binom{6}{4}\binom{7}{5}\binom{2}{1}\times5$ = 3150, which overcounts. For example, a team with 5 bowlers would be counted 5 times (once for each choice of which bowler is the "extra"). Listing disjoint cases avoids this.
   Answer: 777
 M B 7: |-
-  Concept: $4^{1/4} = 2^{1/2}$; the general term is $\binom{120}{r}2^{\frac{120 - r}{2}}5^{\frac{r}{6}}$.
+  Concept: In $(a^{1/p} + b^{1/q})^N$ with a, b prime, the general term $\binom{N}{r}a^{(N - r)/p}b^{r/q}$ is rational iff both exponents are integers.
   Solution:
-  1. The term is rational iff $r$ is even and a multiple of 6, i.e. $r = 0, 6, \dots, 120$.
-  2. That gives 21 rational terms.
+  1. 4^{1/4} = (2²)^{1/4} = 2^{1/2}. So the expression is $(2^{1/2} + 5^{1/6})^{120}$.
+  2. General term: $T_{r+1} = \binom{120}{r}2^{\frac{120 - r}{2}}5^{\frac{r}{6}}$.
+  3. Conditions: $\frac{120 - r}{2}$ is an integer, so r is even; $\frac{r}{6}$ is an integer, so r is a multiple of 6. Both hold iff r is a multiple of 6.
+  4. r = 0, 6, 12, …, 120: that is $\frac{120}{6} + 1 = 21$ values.
+  5. So there are 21 rational terms.
+  Common slip: treating 4^{1/4} as needing (120 − r) divisible by 4 (as if 4 were prime). Since 4 = 2², the condition is only that (120 − r) is even. Using the wrong condition (r multiple of 12, since lcm(4, 6) = 12) would give 11.
   Answer: 21
 M B 8: |-
-  Concept: $\vec a$ is perpendicular to the plane's normal and to $(1, 2, 3)$.
+  Concept: A vector parallel to a plane is perpendicular to the plane's normal. Together with the other two conditions, this gives three linear equations for α, β and γ.
   Solution:
-  1. Normal $= (0, -2, 0)\times(-1, 1, -3) = (6, 0, -2)$.
-  2. Solve $6\alpha - 2\gamma = 0$, $\alpha + 2\beta + 3\gamma = 0$, $\alpha + \beta + 2\gamma = 2$: $(\alpha, \beta, \gamma) = (1, -5, 3)$.
-  3. $(\alpha - \beta + \gamma)^2 = 9^2 = 81$.
+  1. Points A(1, 0, 1), B(1, −2, 1) and C(0, 1, −2). $\vec{AB} = (0, -2, 0)$ and $\vec{AC} = (-1, 1, -3)$.
+  2. Normal: $\vec{AB}\times\vec{AC} = ((-2)(-3) - 0\cdot1,\ 0\cdot(-1) - 0\cdot(-3),\ 0\cdot1 - (-2)(-1)) = (6, 0, -2)$, i.e. (3, 0, −1).
+  3. Conditions:
+     - Parallel to the plane: 3α − γ = 0, so γ = 3α.
+     - Perpendicular to (1, 2, 3): α + 2β + 3γ = 0, so α + 2β + 9α = 0 and β = −5α.
+     - a·(1, 1, 2) = 2: α + β + 2γ = α − 5α + 6α = 2α = 2, so α = 1.
+  4. α = 1, β = −5, γ = 3.
+  5. (α − β + γ)² = (1 + 5 + 3)² = 81.
+  Checks: 3(1) − 3 = 0 ✓; 1 − 10 + 9 = 0 ✓; 1 − 5 + 6 = 2 ✓.
   Answer: 81
 M B 9: |-
-  Concept: A $1^\infty$ limit equals $e^{\lim(f - 1)g}$.
+  Concept: A limit of the form 1^∞: if f → 1 and g → ∞, then lim f^g = $e^{\lim(f - 1)g}$. Expand f − 1 using series for small x.
   Solution:
-  1. $1 - \cos x\sqrt{\cos2x} \approx \frac{x^2}{2} + x^2 = \frac{3x^2}{2}$.
-  2. Exponent: $\frac{3x^2}{2}\cdot\frac{x + 2}{x^2} \to 3$, so $a = 3$.
+  1. As x → 0: cos x → 1 and cos 2x → 1, so the base 2 − cos x√(cos 2x) → 1. The exponent $\frac{x + 2}{x^2}$ → ∞. So it is a 1^∞ form.
+  2. f − 1 = 1 − cos x√(cos 2x).
+  3. Expansions: $\cos x \approx 1 - \frac{x^2}{2}$ and $\sqrt{\cos2x} \approx \sqrt{1 - 2x^2} \approx 1 - x^2$.
+  4. cos x √(cos 2x) ≈ (1 − ½x²)(1 − x²) ≈ 1 − $\frac{3}{2}$x².
+  5. f − 1 ≈ $\frac{3}{2}x^2$.
+  6. $(f - 1)g \approx \frac{3}{2}x^2\cdot\frac{x + 2}{x^2} = \frac{3}{2}(x + 2) \to 3$.
+  7. Limit = e³, so a = 3.
   Answer: 3
 M B 10: |-
-  Concept: $SD = \frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
+  Concept: The shortest distance between skew lines $\vec r = \vec a_1 + \lambda\vec b_1$ and $\vec r = \vec a_2 + \mu\vec b_2$ is $\frac{|(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2)|}{|\vec b_1\times\vec b_2|}$.
   Solution:
-  1. $\vec b_1\times\vec b_2 = (8, 8, 4)$, magnitude 12; $\vec a_1 - \vec a_2 = (\alpha + 4, 2, 3)$.
-  2. $\frac{|8\alpha + 60|}{12} = 9 \Rightarrow 8\alpha + 60 = 108 \Rightarrow \alpha = 6$ ($\alpha > 0$).
+  1. $\vec b_1 = (1, -2, 2)$ and $\vec b_2 = (3, -2, -2)$.
+  2. $\vec b_1\times\vec b_2 = ((-2)(-2) - 2(-2),\ 2\cdot3 - 1(-2),\ 1(-2) - (-2)(3)) = (4 + 4, 6 + 2, -2 + 6) = (8, 8, 4)$. Magnitude: √(64 + 64 + 16) = 12.
+  3. $\vec a_1 - \vec a_2 = (\alpha + 4, 2, 3)$.
+  4. $(\vec a_1 - \vec a_2)\cdot(8, 8, 4) = 8\alpha + 32 + 16 + 12 = 8\alpha + 60$.
+  5. $\frac{|8\alpha + 60|}{12} = 9$, so |8α + 60| = 108.
+  6. 8α + 60 = 108 gives α = 6. (8α + 60 = −108 gives α = −21, rejected since α > 0.)
+  7. α = 6.
   Answer: 6

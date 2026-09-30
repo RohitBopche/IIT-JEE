@@ -1,174 +1,328 @@
 C A 1: |-
-  Concept: Ozone depletion chemistry.
+  Concept: Stratospheric ozone depletion. CFCs (e.g. CF₂Cl₂) are very stable in the lower atmosphere; they reach the stratosphere, where high-energy UV radiation breaks C–Cl bonds and releases chlorine free radicals (Cl•), which destroy ozone catalytically.
   Solution:
-  1. CFCs are broken down by UV radiation (not visible light), giving Cl• radicals rather than Cl₂ gas. Statement I is false.
-  2. $O_3 + NO \to NO_2 + O_2$, not N₂ + O₂. Statement II is false.
+  1. Statement I: CFCs are broken down by UV radiation, not visible light, and they release Cl• radicals, not Cl₂ gas:
+     CF₂Cl₂ + hν(UV) → •CF₂Cl + Cl•; Cl• + O₃ → ClO• + O₂. So Statement I is FALSE.
+  2. Statement II: ozone reacts with nitric oxide as NO + O₃ → NO₂ + O₂. The products are NO₂ and O₂, not N₂ and O₂. So Statement II is FALSE.
+  3. Both statements are false.
+  Why others are wrong:
+  - (A) and (D) each accept one of the statements.
+  - (B) accepts both.
+  Related fact: NO released by supersonic jets and N₂O from fertilisers also contribute to ozone depletion via the NO/NO₂ cycle.
   Answer: (C)
 C A 2: |-
-  Concept: Cyclic anhydrides form on heating when the two COOH groups are cis.
+  Concept: A cyclic anhydride forms by intramolecular loss of water between two –COOH groups. This is only possible when the two carboxyl groups are on the same side of the rigid C=C (cis), close enough to react.
   Solution:
-  1. Maleic acid (cis-but-2-enedioic acid) loses H₂O on heating to give maleic anhydride.
-  2. Fumaric acid (trans) cannot cyclise directly; acid/alcohol gives esters.
+  1. Maleic acid = cis-but-2-enedioic acid. On heating (~150 °C) it loses H₂O intramolecularly to form the five-membered ring maleic anhydride.
+  2. Fumaric acid = trans-but-2-enedioic acid. Its –COOH groups point in opposite directions, so it cannot form the cyclic anhydride directly (it must first isomerise to the cis form at much higher temperature).
+  Why others are wrong:
+  - (B) and (D): an alcohol with an acid catalyst performs Fischer esterification, giving diethyl maleate/fumarate (esters), not an anhydride.
+  - (C) heating the trans acid does not directly cyclise.
+  Key idea: this difference is a classic test distinguishing geometrical isomers.
   Answer: (A)
 C A 3: |-
-  Concept: In an isoelectronic series, radius increases as nuclear charge decreases.
+  Concept: N³⁻, O²⁻ and F⁻ are isoelectronic (10 electrons each, [Ne] configuration). In an isoelectronic series the ion with the smallest nuclear charge holds its electrons least tightly and is the largest. Anions are also much larger than the covalent radius of the neutral atom.
   Solution:
-  1. N³⁻, O²⁻ and F⁻ all have 10 e⁻; N (Z = 7) has the least nuclear charge, so N³⁻ is largest (~1.71 Å).
-  2. It is bigger than O²⁻ and F⁻ (and far bigger than covalent N).
+  1. Nuclear charges: N (7) < O (8) < F (9).
+  2. So radii: N³⁻ > O²⁻ > F⁻. N³⁻ ≈ 1.71 Å, larger than O²⁻ (1.40 Å) and F⁻ (1.33 Å).
+  3. N³⁻ is also far larger than the covalent radius of N (0.74 Å), since adding three electrons increases repulsion and reduces effective nuclear charge per electron.
+  4. Hence N³⁻ is bigger than both O²⁻ and F⁻.
+  Why others are wrong:
+  - (A) and (C) say N³⁻ is smaller than F⁻/O²⁻ — reverses the isoelectronic trend.
+  - (B) says N³⁻ is smaller than O²⁻ — same error.
   Answer: (D)
 C A 4: |-
-  Concept: $\mu = \sqrt{n(n+2)}$ BM.
+  Concept: Spin-only magnetic moment $\mu = \sqrt{n(n + 2)}$ BM, where n is the number of unpaired electrons. For free (gaseous) ions all d electrons are unpaired (Hund's rule) as long as there are ≤ 5.
   Solution:
-  1. Ti³⁺ d¹: 1.73. V²⁺ d³: 3.87. Sc³⁺ d⁰: 0.
+  1. Ti (22): [Ar]3d²4s². Ti³⁺: 3d¹ → n = 1 → $\mu = \sqrt3 = 1.73$ BM.
+  2. V (23): [Ar]3d³4s². V²⁺: 3d³ → n = 3 → $\mu = \sqrt{15} = 3.87$ BM.
+  3. Sc (21): [Ar]3d¹4s². Sc³⁺: 3d⁰ → n = 0 → μ = 0.
+  4. Order Ti³⁺, V²⁺, Sc³⁺: 1.73, 3.87, 0.
+  Why others are wrong:
+  - (A) swaps V²⁺ and Sc³⁺.
+  - (B) and (C) rotate the values; e.g. (B) gives Ti³⁺ zero, but d¹ has one unpaired electron.
+  Remember: when forming cations, 4s electrons are removed before 3d.
   Answer: (D)
 C A 5: |-
-  Concept: Chelate effect: more chelate rings give greater stability.
+  Concept: The chelate effect: polydentate ligands that form rings with the metal (like ethylenediamine, en, a bidentate ligand forming a five-membered ring) give much more stable complexes than equivalent monodentate ligands (like NH₃). Stability increases with the number of chelate rings, largely because of a favourable entropy change (more free molecules released).
   Solution:
-  1. [Co(en)₃]²⁺ has three chelate rings, the most of the options.
+  1. Count chelate rings:
+     - (C) [Co(en)₃]²⁺: 3 en → 3 chelate rings.
+     - (A) [Co(en)₂(NH₃)₂]²⁺: 2 rings.
+     - (D) [Co(en)(NH₃)₄]²⁺: 1 ring.
+     - (B) [Co(NH₃)₆]²⁺: 0 rings.
+  2. All have the same metal ion (Co²⁺) and the same donor atom type (N), so the chelate effect decides: [Co(en)₃]Cl₂ is the most stable.
+  Why others are wrong:
+  - (A), (D) and (B) have progressively fewer chelate rings; (B) is the least stable.
   Answer: (C)
 C A 6: |-
-  Concept: Properties of alkali metal compounds.
+  Concept: Characteristic compounds and roles of the alkali metals.
   Solution:
-  1. Li: Li₂CO₃ decomposes easily on heating (iv).
-  2. Na: NaHCO₃ is used in fire extinguishers (iii).
-  3. K: K⁺ is the most abundant cation in cell fluid (ii).
-  4. Cs: its iodide salt has poor water solubility, per the key (i).
+  1. (a) Li: Li₂CO₃ is the least stable alkali-metal carbonate; the small, polarising Li⁺ destabilises the carbonate ion, so it decomposes easily on heating (Li₂CO₃ → Li₂O + CO₂) → (iv).
+  2. (b) Na: NaHCO₃ (baking soda) is used in fire extinguishers (releases CO₂) → (iii).
+  3. (c) K: K⁺ is the most abundant cation inside cells (intracellular fluid), while Na⁺ dominates outside → (ii).
+  4. (d) Cs: per the official key, its iodide salt shows poor water solubility (large cation + large anion, low hydration energy) → (i).
+  Correct: (a)-(iv), (b)-(iii), (c)-(ii), (d)-(i).
+  Why others are wrong:
+  - (A) swaps Na and K (gives Na the "cell fluid" role).
+  - (B) and (C) give Li the poorly soluble iodide; LiI is actually very soluble.
   Answer: (D)
 C A 7: |-
-  Concept: MO bond order $= \frac{N_b - N_a}{2}$.
+  Concept: Molecular orbital theory: bond order $= \frac{N_b - N_a}{2}$. For O₂ (16 electrons), the highest occupied orbitals are the antibonding π* orbitals. Removing electrons from π* raises the bond order; adding electrons to π* lowers it.
   Solution:
-  1. O₂⁺ 2.5 > O₂ 2 > O₂⁻ 1.5 > O₂²⁻ 1.
+  1. O₂: 16 e⁻, bond order $= \frac{10 - 6}{2} = 2$.
+  2. O₂⁺: 15 e⁻ (one fewer π*): $\frac{10 - 5}{2} = 2.5$.
+  3. O₂⁻ (superoxide): 17 e⁻: $\frac{10 - 7}{2} = 1.5$.
+  4. O₂²⁻ (peroxide): 18 e⁻: $\frac{10 - 8}{2} = 1$.
+  5. Order: O₂⁺ (2.5) > O₂ (2) > O₂⁻ (1.5) > O₂²⁻ (1).
+  Why others are wrong:
+  - (A) puts O₂⁺ last, but it has the highest bond order.
+  - (C) and (D) place peroxide or superoxide above O₂, which is impossible since they have extra antibonding electrons.
+  Corollary: bond length follows the reverse order, and O₂⁺ has the shortest O–O bond.
   Answer: (B)
 C A 8: |-
-  Concept: Types of colloids (dispersed phase in medium).
+  Concept: Colloids are classified by (dispersed phase, dispersion medium):
+  - liquid in solid → gel; gas in solid → solid foam; liquid in liquid → emulsion; liquid in gas → aerosol.
   Solution:
-  1. Cheese: liquid in solid (gel) (iv).
-  2. Pumice: gas in solid (solid foam) (iii).
-  3. Hair cream: liquid in liquid (emulsion) (i).
-  4. Cloud: liquid in gas (aerosol) (ii).
+  1. (a) Cheese: fat/water droplets dispersed in a solid protein network → liquid in solid (gel) → (iv).
+  2. (b) Pumice stone: gas bubbles trapped in solid volcanic rock → gas in solid (solid foam) → (iii).
+  3. (c) Hair cream: oil and water emulsified → liquid in liquid (emulsion) → (i).
+  4. (d) Cloud: water droplets suspended in air → liquid in gas (aerosol) → (ii).
+  Correct: (a)-(iv), (b)-(iii), (c)-(i), (d)-(ii).
+  Why others are wrong:
+  - (A) calls cheese a solid foam and pumice a gel — swapped.
+  - (B) calls hair cream an aerosol and cloud an emulsion — swapped.
+  - (D) calls pumice an emulsion and hair cream a solid foam.
   Answer: (C)
 C A 9: |-
-  Concept: Acetal formation, then base-induced E2 elimination.
+  Concept: (1) Aldehydes react with excess alcohol in the presence of dry HCl to form acetals, which are stable to base. (2) A bulky strong base like t-BuO⁻K⁺ favours E2 elimination over SN2 substitution.
   Solution:
-  1. Excess EtOH with dry HCl converts CHO into the diethyl acetal: A = BrCH₂CH(OEt)₂.
-  2. The bulky base t-BuO⁻ eliminates HBr: B = CH₂=C(OEt)₂ (ketene acetal).
+  1. BrCH₂CHO + 2 EtOH (dry HCl) → A = BrCH₂CH(OEt)₂ (bromoacetaldehyde diethyl acetal) + H₂O. The C–Br bond is untouched.
+  2. A + t-BuO⁻K⁺: the base removes the H on the acetal carbon (β to Br), and Br⁻ leaves → B = CH₂=C(OEt)₂ (1,1-diethoxyethene, a ketene acetal).
+  3. SN2 by the bulky t-BuO⁻ is disfavoured, so elimination dominates.
+  Why others are wrong:
+  - (A) and (D) replace Br by OEt in step 1; dry HCl/EtOH forms the acetal, not an ether at C–Br.
+  - (B) proposes SN2 substitution by t-BuO⁻, which the bulky base does not favour.
   Answer: (C)
 C A 10: |-
-  Concept: Acidity depends on the stability of the conjugate base.
+  Concept: A C–H acid's strength depends on how stable its conjugate base (carbanion) is. Aromatic stabilisation of the anion makes a hydrocarbon unusually acidic.
   Solution:
-  1. Cyclopenta-1,3-diene loses H⁺ to form the aromatic cyclopentadienyl anion (6π), so it is the most acidic (pKa ≈ 16).
+  1. Cyclopenta-1,3-diene loses the CH₂ proton to give the cyclopentadienyl anion: planar, cyclic, fully conjugated, with 6 π electrons (Hückel 4n + 2, n = 1) → aromatic.
+  2. This huge stabilisation makes cyclopentadiene very acidic for a hydrocarbon (pKa ≈ 16, comparable to water/alcohols).
+  Why others are wrong:
+  - (A) Butane: its carbanion has no stabilisation (pKa ≈ 50).
+  - (B) Cyclopropene: removing the sp³ CH₂ proton gives the cyclopropenyl anion with 4 π electrons — antiaromatic, highly destabilised.
+  - (D) Toluene: the benzyl anion is resonance-stabilised (pKa ≈ 41) but not aromatic in its own ring; far weaker than cyclopentadiene.
   Answer: (C)
 C A 11: |-
-  Concept: Interstitial (metallic) hydrides and the "hydride gap".
+  Concept: d- and f-block metals form interstitial (metallic, non-stoichiometric) hydrides, with H atoms occupying holes in the metal lattice. However, metals of groups 7, 8 and 9 do not form hydrides — this is called the "hydride gap". In group 6, only chromium forms a hydride (CrH).
   Solution:
-  1. Metals of groups 7–9 (Mn, Fe, Co) do not form hydrides (hydride gap).
-  2. Cr (group 6) forms the hydride CrH.
+  1. Mn (group 7), Fe (group 8) and Co (group 9) lie in the hydride gap → no hydrides.
+  2. Cr (group 6) forms CrH → it is the one that forms an interstitial hydride.
+  Why others are wrong:
+  - (A) Fe, (C) Mn, (D) Co: all in the hydride gap (groups 7–9).
+  Extra: metals like Pd and Pt can absorb large volumes of hydrogen (occlusion), which is used in hydrogen storage and purification — note Pd (group 10) is outside the gap.
   Answer: (B)
 C A 12: |-
-  Concept: Pyrimidine bases.
+  Concept: Nucleic acid bases: purines (adenine, guanine) have fused two-ring systems; pyrimidines (cytosine, thymine, uracil) have a single six-membered ring with N at positions 1 and 3.
   Solution:
-  1. Cytosine is 4-amino-2-oxopyrimidine (4-aminopyrimidin-2(1H)-one).
-  2. Thymine is 5-methyluracil.
+  1. Cytosine: pyrimidine ring with C=O at C-2 and –NH₂ at C-4 → 4-aminopyrimidin-2(1H)-one (4-amino-2-oxopyrimidine).
+  2. This matches option (D).
+  Why others are wrong:
+  - (C) is thymine (5-methyluracil: C=O at C-2 and C-4, CH₃ at C-5), found in DNA only.
+  - (A) (CH₃ at C-6) and (B) (NH₂ at C-5) are not natural nucleobases — the substituent positions are wrong.
+  Reminder: cytosine is present in both DNA and RNA and pairs with guanine through three hydrogen bonds.
   Answer: (D)
 C A 13: |-
-  Concept: Count π bonds per structure and equivalent resonance forms.
+  Concept: Draw Lewis/resonance structures: count π bonds in a single canonical form and the number of equivalent canonical forms.
   Solution:
-  1. CO₃²⁻: each structure has one C=O π bond, and there are 3 equivalent canonical forms (the maximum here).
-  2. SO₂ has 2 forms; O₂ has no resonance; SO₃ is drawn with more π bonds.
+  1. CO₃²⁻: each canonical form has one C=O (1 π bond) and two C–O⁻ bonds. The double bond can be placed on any of the three O atoms → 3 equivalent canonical forms (the most among the options). Bond order of each C–O is 1⅓.
+  Why others are wrong:
+  - (A) SO₂: 2 canonical forms (O=S–O⁻ ↔ ⁻O–S=O in the octet picture); fewer forms.
+  - (C) O₂: a single O=O structure, no resonance forms.
+  - (D) SO₃: usually drawn with expanded octet (three S=O, i.e. 3 π bonds); in the octet form with one S=O there are also 3 forms, but the "one π-bond with maximum forms" answer intended by the key is CO₃²⁻.
   Answer: (B)
 C A 14: |-
-  Concept: Nylon-2–nylon-6 is a biodegradable polyamide.
+  Concept: Biodegradable polymers contain linkages that microorganisms can hydrolyse. Nylon-2–nylon-6 is an alternating polyamide copolymer of glycine (H₂N–CH₂–COOH) and ε-aminocaproic acid (H₂N–(CH₂)₅–COOH), and is biodegradable.
   Solution:
-  1. It is made from glycine and ε-aminocaproic acid.
-  2. Nylon-6,6 (hexamethylenediamine + adipic acid) is not biodegradable.
+  1. Glycine + aminocaproic acid → –[NH–CH₂–CO–NH–(CH₂)₅–CO]ₙ– (nylon-2–nylon-6), linked by amide (peptide-like) bonds → biodegradable polyamide.
+  Why others are wrong:
+  - (B) Hexamethylenediamine + adipic acid gives nylon-6,6 — a polyamide, but not biodegradable.
+  - (C) Glycine and isoprene cannot form a polyamide (isoprene has no amine/acid group).
+  - (D) Styrene and caproic acid do not give a polyamide either.
+  Other biodegradable polymer: PHBV (poly-β-hydroxybutyrate-co-β-hydroxyvalerate), a polyester.
+  Why nylon-6,6 is not the answer: Hexamethylenediamine + adipic acid gives nylon-6,6, a polyamide that is not biodegradable. Glycine and isoprene cannot form a polyamide together, and styrene gives polystyrene.
+  Other biodegradable polymers: PHBV (a polyester) and nylon-2–nylon-6.
   Answer: (A)
 C A 15: |-
-  Concept: Metallurgy.
+  Concept: Match each metallurgical step with its method or product.
   Solution:
-  1. Ag ore: leaching with dilute NaCN (iii).
-  2. Blast furnace: pig iron (ii).
-  3. Blister copper: reverberatory furnace (i).
-  4. Froth flotation: sulphide ores (iv).
+  1. (a) Concentration of silver ore: leaching with dilute NaCN (MacArthur–Forrest cyanide process), forming soluble [Ag(CN)₂]⁻ → (iii).
+  2. (b) Blast furnace: reduction of iron oxides by coke/CO gives pig iron (≈ 4% C) → (ii).
+  3. (c) Blister copper: produced when Cu₂S/Cu₂O self-reduce in the converter/reverberatory furnace; escaping SO₂ gives the blistered look → (i).
+  4. (d) Froth flotation: used to concentrate sulphide ores (they are preferentially wetted by oil) → (iv).
+  Correct: (a)-(iii), (b)-(ii), (c)-(i), (d)-(iv).
+  Why others are wrong:
+  - (B) matches blast furnace with sulphide ores and froth flotation with pig iron — swapped.
+  - (C) and (D) give silver concentration as "sulphide ores" and mismatch the rest.
   Answer: (A)
 C A 16: |-
-  Concept: Reduction to aniline, then coupling with a diazonium salt in acid.
+  Concept: (1) Sn/HCl reduces aromatic nitro groups to amines. (2) Arenediazonium ions are weak electrophiles that couple with activated rings (amines, phenols) mainly at the para position, forming coloured azo compounds.
   Solution:
-  1. Sn/HCl reduces nitrobenzene to A = aniline.
-  2. In acid, coupling at the para position of aniline gives P = p-aminoazobenzene (yellow).
+  1. C₆H₅NO₂ + Sn/HCl → A = aniline, C₆H₅NH₂.
+  2. Aniline + C₆H₅N₂⁺Cl⁻ in mildly acidic medium → coupling at the para position of aniline (least hindered, activated by –NH₂).
+  3. P = p-aminoazobenzene, C₆H₅–N=N–C₆H₄–NH₂(p), a yellow dye ("aniline yellow").
+  Why others are wrong:
+  - (A) ortho-coupling is minor; para is strongly preferred.
+  - (C) Diphenylamine is not formed by diazo coupling.
+  - (D) 1,3-Diphenyltriazene (N-coupling) forms under neutral/weakly basic conditions; in acidic medium, C-coupling at para dominates (triazenes also rearrange to p-aminoazobenzene in acid).
   Answer: (B)
 C A 17: |-
-  Concept: Density rises with heavier substituents.
+  Concept: For similar aromatic structures, density increases with molar mass contributed by heavy halogen atoms (Br > Cl > H), since molecular volume grows much less than mass.
   Solution:
-  1. Bromochlorobenzene (D) > dichlorobenzene (C) > chlorobenzene (B) > benzene (A).
+  1. Approximate densities (g/mL):
+     - (D) 1-bromo-3-chlorobenzene ≈ 1.63 (Br + Cl).
+     - (C) 1,3-dichlorobenzene ≈ 1.29 (two Cl).
+     - (B) chlorobenzene ≈ 1.11 (one Cl).
+     - (A) benzene ≈ 0.88 (no halogen).
+  2. Order: (D) > (C) > (B) > (A).
+  Why others are wrong:
+  - (A) and (D) put 1,3-dichlorobenzene above the bromo compound — but Br (80) is much heavier than Cl (35.5).
+  - (B) is the reverse (increasing) order.
+  Tip: bromo- and iodo-arenes are denser than water, while benzene floats on water.
   Answer: (C)
 C A 18: |-
-  Concept: HNO₂ converts aliphatic 1° amines to diazonium ions, which lose N₂; water then gives an alcohol.
+  Concept: Primary aliphatic amines react with nitrous acid (NaNO₂ + HCl, 0–5 °C) to form unstable alkyl diazonium ions, which lose N₂ to give carbocations; water captures the cation to give an alcohol.
   Solution:
-  1. –CH₂NH₂ becomes –CH₂N₂⁺ and then –CH₂OH (N₂ is evolved).
-  2. The key takes the direct substitution product (1-methylcycloheptyl)methanol, D, ignoring carbocation rearrangement.
+  1. R–CH₂NH₂ → (HNO₂) → R–CH₂–N₂⁺ → loses N₂ → carbocation → + H₂O → alcohol.
+  2. The official key takes the direct replacement product, in which –CH₂NH₂ becomes –CH₂OH: (1-methylcycloheptyl)methanol, option (D).
+  3. N₂ gas is evolved (the basis of the test for aliphatic 1° amines).
+  Why others are wrong:
+  - (A) 1-ethyl-1-methylcycloheptane has no oxygen; it is not a product of hydrolysis.
+  - (B) The chloride could form a little (Cl⁻ capture), but with water as the reagent the alcohol is the major product.
+  - (C) Aliphatic diazonium salts are not isolable; they decompose immediately.
+  Note: in reality, the primary carbocation beside a quaternary carbon tends to rearrange (ring expansion or methyl/alkyl shift); the key ignores rearrangement.
   Answer: (D)
 C A 19: |-
-  Concept: Oxidation-state change per metal atom.
+  Concept: Compute the oxidation state of the central element before and after, per atom.
   Solution:
-  1. MnO₄⁻ → Mn²⁺: +7 → +2, a change of 5.
-  2. Cr: +6 → +3 (3); C in oxalate: +3 → +4 (1).
+  1. (B) MnO₄⁻ → Mn²⁺: Mn goes from +7 to +2, a change of 5 (5 electrons gained per Mn) — the familiar permanganate half-reaction in acid: MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O.
+  Why others are wrong:
+  - (A) CrO₄²⁻ → Cr³⁺: +6 → +3, change 3.
+  - (C) Cr₂O₇²⁻ → 2Cr³⁺: +6 → +3 per Cr, change 3 per atom (6 electrons per dichromate ion).
+  - (D) C₂O₄²⁻ → 2CO₂: +3 → +4 per C, change 1 per atom (2 electrons per oxalate ion).
   Answer: (B)
 C A 20: |-
-  Concept: Grignard addition to a nitrile gives a ketone after hydrolysis.
+  Concept: A Grignard reagent adds once to a nitrile C≡N, giving an imine magnesium salt; hydrolysis converts it to a ketone.
   Solution:
-  1. C₆H₅CN + CH₃MgBr, then H₃O⁺, gives P = acetophenone, C₆H₅COCH₃.
-  2. As a methyl ketone, it gives a positive iodoform test.
+  1. C₆H₅C≡N + CH₃MgBr → C₆H₅C(CH₃)=N–MgBr.
+  2. H₃O⁺ → C₆H₅COCH₃ (acetophenone), P, a pale-yellow liquid.
+  3. Acetophenone is a methyl ketone (CH₃CO– group), so with I₂/NaOH it gives a yellow precipitate of iodoform (CHI₃) → positive iodoform test.
+  Why others are wrong:
+  - (B) Schiff's test and (D) Tollens' test detect aldehydes; ketones like acetophenone do not respond.
+  - (C) Ninhydrin test detects α-amino acids and proteins (purple colour).
+  Why the other tests fail: Schiff's and Tollens' tests detect aldehydes (acetophenone is a ketone); ninhydrin detects α-amino acids and amines.
+  Common mistake: Thinking the Grignard reagent adds twice, as it does with esters; the imine salt formed from a nitrile does not react further until hydrolysis.
   Answer: (A)
 C B 1: |-
-  Concept: Leading zeros are not significant; trailing zeros after the decimal point are.
+  Concept: Rules for significant figures:
+  - Leading zeros (before the first non-zero digit) are NOT significant; they only locate the decimal point.
+  - Trailing zeros to the right of the decimal point ARE significant.
   Solution:
-  1. 0.00340 has 3 significant figures (3, 4, 0).
+  1. 0.00340: the zeros in "0.00" are leading → not significant.
+  2. The digits 3, 4 and the final 0 are significant.
+  3. Number of significant figures = 3.
+  4. In scientific notation: $3.40\times10^{-3}$ — clearly 3 significant figures.
+  Scientific notation check: 0.00340 = 3.40 × 10⁻³, which shows three significant figures directly.
+  Common mistake: Ignoring the trailing zero and answering 2; a trailing zero after a decimal point records the precision of the measurement.
   Answer: 3
 C B 2: |-
-  Concept: At constant volume, $\frac{P}{T}$ is constant.
+  Concept: A gas in a rigid cylinder has constant volume, so Gay-Lussac's law applies: $\frac{P_1}{T_1} = \frac{P_2}{T_2}$ (temperatures in kelvin).
   Solution:
-  1. $T_2 = 300\times\frac{1.2\times10^6}{3\times10^5} = 1200$ K $= 927$ °C.
+  1. $P_1 = 300$ kPa $= 3\times10^5$ Pa, $T_1 = 27 + 273 = 300$ K.
+  2. Bursting pressure $P_2 = 1.2\times10^6$ Pa.
+  3. $T_2 = T_1\times\frac{P_2}{P_1} = 300\times\frac{1.2\times10^6}{3\times10^5} = 300\times4 = 1200$ K.
+  4. In Celsius: $1200 - 273 = 927$ °C.
+  Note: in reality LPG is partly liquid and its vapour pressure would rise faster; the question treats it as an ideal gas.
+  Conversion: T₂ = 1200 K, so in Celsius 1200 − 273 = 927 °C.
+  Common mistake: Using Celsius temperatures in the ratio (27 × 4 = 108 °C); gas-law ratios require absolute temperature.
   Answer: 927
 C B 3: |-
-  Concept: $\Delta x\cdot m\Delta v \ge \frac{h}{4\pi}$.
+  Concept: Heisenberg's uncertainty principle: $\Delta x\cdot\Delta p \ge \frac{h}{4\pi}$, with $\Delta p = m\Delta v$.
   Solution:
-  1. $\Delta v = 5\times10^6\times2\times10^{-4} = 10^3$ m/s.
-  2. $\Delta x = \frac{6.63\times10^{-34}}{4\times3.14\times9.1\times10^{-31}\times10^3} = 5.8\times10^{-8}$ m $= 58\times10^{-9}$ m.
+  1. $\Delta v = 0.02\%$ of $5\times10^6 = 5\times10^6\times2\times10^{-4} = 1\times10^3$ m/s.
+  2. $\Delta x = \frac{h}{4\pi m\Delta v} = \frac{6.63\times10^{-34}}{4\times3.14\times9.1\times10^{-31}\times10^3}$.
+  3. Denominator: $4\times3.14\times9.1\times10^{-28} = 1.143\times10^{-26}$.
+  4. $\Delta x = \frac{6.63\times10^{-34}}{1.143\times10^{-26}} = 5.8\times10^{-8}$ m $= 58\times10^{-9}$ m.
+  5. x = 58.
+  Result: Δx ≈ 5.8 × 10⁻⁸ m = 58 × 10⁻⁹ m.
+  Common mistake: Using the full speed (5 × 10⁶ m/s) instead of the uncertainty in speed; only Δv enters the principle.
   Answer: 58
 C B 4: |-
-  Concept: Ho is [Xe]4f¹¹6s².
+  Concept: Lanthanides (after La) fill the 4f subshell. Their common +3 ions lose the two 6s electrons and one 4f electron (or 5d if present).
   Solution:
-  1. Ho³⁺ loses 6s² and one 4f electron: 4f¹⁰, i.e. 10 electrons.
+  1. Ho (Z = 67): [Xe]4f¹¹6s² (Xe = 54; 54 + 11 + 2 = 67 ✓).
+  2. Ho³⁺: remove 6s² and one 4f electron → [Xe]4f¹⁰.
+  3. Number of 4f electrons = 10.
+  Check: for Ln³⁺ ions, 4f electrons = Z − 57 (for Ce onwards): 67 − 57 = 10 ✓.
+  Magnetic consequence: Ho³⁺ (4f¹⁰) has 4 unpaired electrons, making holmium compounds strongly paramagnetic.
+  Common mistake: Removing all three electrons from 4f (giving 4f⁸) or removing none (4f¹¹).
   Answer: 10
 C B 5: |-
-  Concept: Br₂ adds anti across C=C.
+  Concept: Bromine adds to alkenes by anti addition through a cyclic bromonium ion. The stereochemistry of the product depends on the alkene geometry.
   Solution:
-  1. Anti addition to cis-but-2-ene gives the racemic (2R,3R) and (2S,3S) 2,3-dibromobutanes.
-  2. So there are 2 stereoisomers.
+  1. cis-But-2-ene + Br₂ (CCl₄): anti addition gives 2,3-dibromobutane.
+  2. Anti addition to the cis alkene produces the (2R,3R) and (2S,3S) enantiomers in equal amounts (a racemic mixture), because the bromonium ion can be opened at either carbon.
+  3. Stereoisomers present in product P: 2 (a pair of enantiomers).
+  Contrast: trans-but-2-ene + Br₂ gives the meso (2R,3S) compound — only 1 stereoisomer.
+  Note: 2,3-dibromobutane has 3 stereoisomers in total (RR, SS, meso), but the question asks for those formed from the cis alkene.
   Answer: 2
 C B 6: |-
-  Concept: $[OH^-] = 2\times$ base concentration; $K_w = 10^{-14}$.
+  Concept: Ba(OH)₂ is a strong base giving 2 OH⁻ per formula unit. At 298 K, $K_w = [H_3O^+][OH^-] = 1.0\times10^{-14}$.
   Solution:
-  1. $[OH^-] = 0.01$ M, so $[H_3O^+] = 10^{-12}$ M.
+  1. $[OH^-] = 2\times0.005 = 0.01$ M $= 10^{-2}$ M.
+  2. $[H_3O^+] = \frac{10^{-14}}{10^{-2}} = 10^{-12}$ M.
+  3. $= 1\times10^{-12}$ mol L⁻¹, so the answer is 1.
+  (pOH = 2, pH = 12.)
+  Common trap: forgetting the factor 2 would give $[OH^-] = 0.005$ and $[H_3O^+] = 2\times10^{-12}$.
+  Why complete ionisation matters: Ba(OH)₂ is a strong base, so each formula unit gives two OH⁻ ions immediately and [OH⁻] = 2C.
+  Common mistake: Writing [OH⁻] = 0.005 M, which gives [H₃O⁺] = 2 × 10⁻¹² M and the answer 2.
   Answer: 1
 C B 7: |-
-  Concept: Average rate = Δ[B]/Δt.
+  Concept: Average rate of reaction for A → B is the change in product concentration per unit time: $r_{avg} = \frac{\Delta[B]}{\Delta t}$.
   Solution:
-  1. $\frac{0.2}{0.5\text{ h}} = 0.4 = 4\times10^{-1}$ mol L⁻¹ h⁻¹.
+  1. $\Delta[B] = 0.2$ mol L⁻¹.
+  2. $\Delta t = 30$ min $= 0.5$ h (the answer is required per hour).
+  3. $r_{avg} = \frac{0.2}{0.5} = 0.4$ mol L⁻¹ h⁻¹ $= 4\times10^{-1}$ mol L⁻¹ h⁻¹.
+  Common trap: using minutes gives $6.67\times10^{-3}$ mol L⁻¹ min⁻¹, which does not match the required unit.
+  Why rate uses [B] directly: For A → B with 1 : 1 stoichiometry, the rate of appearance of B equals the rate of disappearance of A.
+  Common mistake: Leaving time in minutes (0.2/30 = 6.7 × 10⁻³ mol L⁻¹ min⁻¹) when the answer is asked per hour.
   Answer: 4
 C B 8: |-
-  Concept: $\Delta T_b = K_b\frac{w\times1000}{M\times W}$.
+  Concept: Elevation in boiling point: $\Delta T_b = K_b\,m$, with molality $m = \frac{w_2\times1000}{M_2\times w_1}$ (w₁ = mass of solvent in g).
   Solution:
-  1. $M = \frac{5.0\times3.00\times1000}{0.60\times100} = 250$ g mol⁻¹.
+  1. $M_2 = \frac{K_b\times w_2\times1000}{\Delta T_b\times w_1}$.
+  2. $M_2 = \frac{5.0\times3.00\times1000}{0.60\times100} = \frac{15000}{60} = 250$ g mol⁻¹.
+  Check: moles of X = $\frac{3}{250} = 0.012$ mol in 0.1 kg → m = 0.12 mol/kg; $\Delta T_b = 5\times0.12 = 0.60$ K ✓.
+  Why molality: Colligative properties depend on the number of solute particles per kilogram of solvent, which is independent of temperature (unlike molarity).
+  Common mistake: Using 100 g instead of 0.1 kg without the factor 1000, which gives 0.25 g mol⁻¹.
   Answer: 250
 C B 9: |-
-  Concept: First law: ΔU = q + w (work done by the system is negative).
+  Concept: First law of thermodynamics (IUPAC sign convention): ΔU = q + w, where q is heat absorbed by the system and w is work done on the system. Work done by the system counts as negative w.
   Solution:
-  1. $\Delta U = 150 - 200 = -50$ J, magnitude 50.
+  1. Heat absorbed: q = +150 J.
+  2. Work done by the system: 200 J, so w = −200 J.
+  3. ΔU = 150 + (−200) = −50 J.
+  4. Magnitude of change = 50 J (internal energy decreases, since the system does more work than the heat it takes in).
+  Physical meaning: The system gives out more energy as work (200 J) than it takes in as heat (150 J), so its internal energy drops by 50 J.
+  Common mistake: Adding the two values (350 J) because both "involve" the system; the signs depend on the direction of energy flow.
   Answer: 50
 C B 10: |-
-  Concept: Kjeldahl: moles of NH₃ = moles of N, and 2NH₃ neutralise 1 H₂SO₄.
+  Concept: In Kjeldahl's method, all nitrogen in the compound is converted to (NH₄)₂SO₄ and then released as NH₃, which is absorbed in standard H₂SO₄. Since 2NH₃ + H₂SO₄ → (NH₄)₂SO₄, moles of H₂SO₄ neutralised = ½ × moles of NH₃.
   Solution:
-  1. N $= 0.42\times0.8 = 0.336$ g $= 0.024$ mol NH₃.
-  2. H₂SO₄ $= 0.012$ mol, i.e. 12 mL of 1 M.
+  1. Mass of N $= 0.42\times0.8 = 0.336$ g.
+  2. Moles of N (= moles of NH₃) $= \frac{0.336}{14} = 0.024$ mol.
+  3. Moles of H₂SO₄ neutralised $= \frac{0.024}{2} = 0.012$ mol.
+  4. Volume of 1 M H₂SO₄ $= 0.012$ L $= 12$ mL.
+  Check with the formula: %N $= \frac{1.4\times M\times2\times V}{w} = \frac{1.4\times1\times2\times12}{0.8} = 42\%$ ✓ (factor 2 for dibasic H₂SO₄).
   Answer: 12

@@ -1,173 +1,347 @@
 P A 1: |-
-  Concept: At escape speed, $v = \sqrt{\frac{2GM}{r}} = R_e\sqrt{\frac{2g}{r}}$ at every distance r.
+  Concept: A body launched with exactly the escape speed has zero total energy, so at every distance r from the Earth's centre its speed is the local escape speed: $\frac{1}{2}v^2 = \frac{GM}{r} \Rightarrow v = \sqrt{\frac{2GM}{r}} = R_e\sqrt{\frac{2g}{r}}$ (using $GM = gR_e^2$).
   Solution:
-  1. $dt = \frac{dr}{v} = \frac{\sqrt r\,dr}{R_e\sqrt{2g}}$.
-  2. $t = \frac{2}{3}\cdot\frac{(R_e + h)^{3/2} - R_e^{3/2}}{R_e\sqrt{2g}} = \frac{1}{3}\sqrt{\frac{2R_e}{g}}\left[\left(1 + \frac{h}{R_e}\right)^{3/2} - 1\right]$.
+  1. $v = \frac{dr}{dt} = R_e\sqrt{2g}\,r^{-1/2}$, so $dt = \frac{\sqrt r\,dr}{R_e\sqrt{2g}}$.
+  2. Integrate from $r = R_e$ to $r = R_e + h$:
+     $t = \frac{1}{R_e\sqrt{2g}}\cdot\frac{2}{3}\left[(R_e + h)^{3/2} - R_e^{3/2}\right]$.
+  3. Factor out $R_e^{3/2}$: $t = \frac{2R_e^{1/2}}{3\sqrt{2g}}\left[\left(1 + \frac{h}{R_e}\right)^{3/2} - 1\right]$.
+  4. $\frac{2\sqrt{R_e}}{3\sqrt{2g}} = \frac{1}{3}\sqrt{\frac{4R_e}{2g}} = \frac{1}{3}\sqrt{\frac{2R_e}{g}}$.
+  Why others are wrong:
+  - (A) drops the factor $\frac{1}{3}$ coming from $\int\sqrt r\,dr = \frac{2}{3}r^{3/2}$.
+  - (C) and (D) have $\sqrt{\frac{R_e}{2g}}$, which is half the correct prefactor — they misplace the 2 from the escape-speed formula.
+  Check: for small h, $t \approx \frac{1}{3}\sqrt{\frac{2R_e}{g}}\cdot\frac{3h}{2R_e} = \frac{h}{\sqrt{2gR_e}} = \frac{h}{v_{esc}}$ ✓.
   Answer: (B)
 P A 2: |-
-  Concept: $\lambda = \frac{h}{\sqrt{2meV}} \propto \frac{1}{\sqrt m}$ (same charge and voltage).
+  Concept: A charge q accelerated through potential V gains kinetic energy $qV$, so its momentum is $p = \sqrt{2mqV}$ and its de Broglie wavelength is $\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mqV}}$.
   Solution:
-  1. $\frac{\lambda_e}{\lambda_p} = \sqrt{\frac{m_p}{m_e}}$.
+  1. Electron and proton carry the same magnitude of charge e and see the same V.
+  2. So $\lambda \propto \frac{1}{\sqrt m}$.
+  3. $\frac{\lambda_e}{\lambda_p} = \sqrt{\frac{m_p}{m_e}}$.
+  4. Numerically $\sqrt{1836} \approx 43$: the lighter electron has the much longer wavelength.
+  Why others are wrong:
+  - (A) $\frac{m_p}{m_e}$ would hold if both had the same speed ($\lambda = \frac{h}{mv}$), not the same energy.
+  - (B) 1 would need equal momenta.
+  - (C) $\frac{m_e}{m_p}$ inverts the ratio and would make the electron's wavelength smaller, which is wrong.
+  Key idea: same accelerating voltage → same kinetic energy (for equal charge) → $\lambda \propto m^{-1/2}$.
   Answer: (D)
 P A 3: |-
-  Concept: Vector projection $= \frac{\vec A\cdot\vec B}{|\vec B|^2}\vec B$.
+  Concept: The vector projection of $\vec A$ on $\vec B$ is $\left(\frac{\vec A\cdot\vec B}{|\vec B|^2}\right)\vec B$; the scalar projection is $\frac{\vec A\cdot\vec B}{|\vec B|}$.
   Solution:
-  1. $\vec A\cdot\vec B = 2$ and $|\vec B|^2 = 2$, so the projection is $\hat i + \hat j$.
+  1. $\vec A\cdot\vec B = (1)(1) + (1)(1) + (1)(0) = 2$.
+  2. $|\vec B|^2 = 1 + 1 = 2$.
+  3. Vector projection $= \frac{2}{2}(\hat i + \hat j) = \hat i + \hat j$.
+  4. (Its magnitude is $\sqrt2$, the scalar projection $\frac{2}{\sqrt2}$.)
+  Why others are wrong:
+  - (A) and (D) point along $\vec A$ ($\hat i + \hat j + \hat k$), but a projection on $\vec B$ must be parallel to $\vec B$, which has no $\hat k$ component.
+  - (B) $\sqrt2(\hat i + \hat j)$ multiplies the scalar projection $\sqrt2$ by $\vec B$ itself instead of by the unit vector $\frac{\vec B}{\sqrt2}$; its magnitude would be 2, larger than allowed.
+  Tip: the projection's length can never exceed $|\vec A| = \sqrt3$, and here equals $\sqrt2$.
   Answer: (C)
 P A 4: |-
-  Concept: Snell's law with the reflected and refracted rays perpendicular: $r + r' = 90°$.
+  Concept: The law of reflection gives angle of reflection r = angle of incidence i. If the reflected and refracted rays are perpendicular, then $r + 90° + r' = 180°$, i.e. $r' = 90° - r$. The critical angle for denser → rarer is $\sin C = \frac{\mu_{rarer}}{\mu_{denser}}$.
   Solution:
-  1. $\mu_d\sin r = \mu_r\sin r' = \mu_r\cos r$ (with $i = r$), so $\frac{\mu_r}{\mu_d} = \tan r$.
-  2. Critical angle: $\sin C = \frac{\mu_r}{\mu_d} = \tan r \Rightarrow C = \sin^{-1}(\tan r)$.
+  1. Snell's law: $\mu_d\sin i = \mu_r\sin r'$.
+  2. With $i = r$ and $r' = 90° - r$: $\mu_d\sin r = \mu_r\cos r$.
+  3. So $\frac{\mu_r}{\mu_d} = \tan r$.
+  4. $\sin C = \frac{\mu_r}{\mu_d} = \tan r \Rightarrow C = \sin^{-1}(\tan r)$.
+  (This is the Brewster condition for light going from denser to rarer.)
+  Why others are wrong:
+  - (A) $\sin^{-1}(\cot r)$ inverts the ratio: $\cot r = \frac{\mu_d}{\mu_r} > 1$, so it is not even a valid sine.
+  - (C) $\sin^{-1}(\tan r')$ uses the refraction angle: $\tan r' = \cot r > 1$, again impossible.
+  - (B) $\tan^{-1}(\sin i)$ has no basis in Snell's law.
   Answer: (D)
 P A 5: |-
-  Concept: Momentum conservation shares Q between the α and the daughter: $K_\alpha = Q\frac{A - 4}{A}$.
+  Concept: In α-decay of a nucleus at rest, linear momentum is conserved: the α particle and the daughter move apart with equal and opposite momenta. Since $K = \frac{p^2}{2m}$, the kinetic energy is shared inversely to mass: $K_\alpha = Q\frac{m_d}{m_d + m_\alpha} \approx Q\frac{A - 4}{A}$.
   Solution:
-  1. $K_\alpha = 5.5\times\frac{180}{184} = 5.38$ MeV.
+  1. Parent A = 184, so the daughter has A − 4 = 180.
+  2. $K_\alpha = 5.5\times\frac{180}{184} = 5.5\times0.9783 = 5.38$ MeV.
+  3. The daughter's recoil energy is $5.5 - 5.38 = 0.12$ MeV.
+  Why others are wrong:
+  - (A) 5.5 MeV assumes the α takes all of Q, ignoring the daughter's recoil.
+  - (D) 0.12 MeV is the daughter's recoil energy, not the α's.
+  - (C) 5.0 MeV has no physical basis here (would need a much lighter parent nucleus).
+  Key idea: the lighter particle carries almost all the kinetic energy, but not quite all of it.
   Answer: (B)
 P A 6: |-
-  Concept: $I = \frac{cB_0^2}{2\mu_0}$.
+  Concept: For a plane electromagnetic wave, the average intensity is $I = \frac{1}{2}c\varepsilon_0E_0^2 = \frac{cB_0^2}{2\mu_0}$, where $E_0 = cB_0$ are peak values.
   Solution:
-  1. $B_0 = \sqrt{\frac{2\mu_0I}{c}} = \sqrt{\frac{2\times4\pi\times10^{-7}\times0.092}{3\times10^8}} = 2.77\times10^{-8}$ T.
+  1. $B_0 = \sqrt{\frac{2\mu_0I}{c}}$.
+  2. $2\mu_0I = 2\times4\pi\times10^{-7}\times0.092 = 2.31\times10^{-7}$.
+  3. Divide by $c = 3\times10^8$: $7.71\times10^{-16}$.
+  4. $B_0 = \sqrt{7.71\times10^{-16}} \approx 2.77\times10^{-8}$ T.
+  (Equivalently, $E_0 = \sqrt{\frac{2I}{c\varepsilon_0}} \approx 8.33$ V/m, and $B_0 = \frac{E_0}{c}$.)
+  Why others are wrong:
+  - (B) $1.96\times10^{-8}$ T is the rms value $\frac{B_0}{\sqrt2}$, not the peak.
+  - (C) 8.31 T is essentially the peak electric field value (≈ 8.3 V/m) written with the wrong unit.
+  - (A) 5.88 T is absurdly large for sunlight of such low intensity.
   Answer: (D)
 P A 7: |-
-  Concept: In a purely capacitive circuit, current leads voltage by 90°.
+  Concept: For a pure capacitor, $q = CV$ and $I = \frac{dq}{dt}$, so the current depends on the rate of change of voltage. This makes the current lead the voltage by 90° ($\frac{\pi}{2}$).
   Solution:
-  1. $V_C = E_{g0}\sin\omega t$ and $I_C = CE_{g0}\omega\cos\omega t$, so $I_C$ is 90° ahead of $V_C$.
+  1. $V_C = E_{g0}\sin\omega t$.
+  2. $I_C = C\frac{dV_C}{dt} = \omega CE_{g0}\cos\omega t = \omega CE_{g0}\sin\left(\omega t + \frac{\pi}{2}\right)$.
+  3. In a phasor diagram rotating counter-clockwise, the $I_C$ phasor is 90° ahead of the $V_C$ phasor.
+  4. The amplitude ratio is $\frac{E_{g0}}{I_0} = \frac{1}{\omega C} = X_C$.
+  Why others are wrong:
+  - (A) same direction (in phase) holds for a pure resistor.
+  - (C) opposite phasors (180°) would mean negative power at every instant, which does not occur for any passive element.
+  - (D) current lagging by 90° is the behaviour of a pure inductor.
+  Memory aid: "ICE" — in a capacitor (C), current (I) comes before emf (E).
   Answer: (B)
 P A 8: |-
-  Concept: Pair generation needs $\frac{hc}{\lambda} \ge E_g$.
+  Concept: A photon can create an electron–hole pair in a semiconductor only if its energy is at least the band gap: $\frac{hc}{\lambda} \ge E_g$. The longest wavelength that works (the threshold) corresponds to $E = E_g$.
   Solution:
-  1. $E_g = \frac{1240}{621} \approx 2$ eV.
+  1. The reverse current increases for $\lambda \le 621$ nm, so 621 nm is the threshold wavelength.
+  2. Use $hc \approx 1240$ eV·nm.
+  3. $E_g = \frac{1240}{621} \approx 2.0$ eV.
+  4. This is how a photodiode works: under reverse bias, the photo-generated minority carriers add to the reverse current.
+  Why others are wrong:
+  - (A) 1 eV corresponds to λ ≈ 1240 nm (infra-red).
+  - (B) 4 eV corresponds to λ ≈ 310 nm (ultraviolet).
+  - (C) 0.5 eV corresponds to λ ≈ 2480 nm.
+  Each would give a threshold very different from 621 nm.
   Answer: (D)
 P A 9: |-
-  Concept: At constant velocity, the porter's force equals mg upward while the displacement is downward.
+  Concept: Work done by a force $W = \vec F\cdot\vec s$. When the suitcase moves at constant velocity, the net force is zero, so the porter's force balances gravity: F = mg upward.
   Solution:
-  1. $W = -mgh = -80\times9.8\times0.8 = -627.2$ J.
+  1. Porter's force: $F = mg = 80\times9.8 = 784$ N, directed upward.
+  2. Displacement: 0.8 m downward (the suitcase is lowered).
+  3. Angle between F and s is 180°, so $W = -Fs = -784\times0.8 = -627.2$ J.
+  4. Gravity does +627.2 J; the total work is zero, consistent with no change in kinetic energy.
+  Why others are wrong:
+  - (C) +627.2 J has the wrong sign: the porter's force opposes the motion.
+  - (B) −62720 J uses 80 cm instead of 0.8 m.
+  - (D) 784 J is the force value in newtons, not work.
   Answer: (A)
 P A 10: |-
-  Concept: Phase in LCR circuits.
+  Concept: In a series LCR circuit, the phase of current relative to emf depends on which reactance dominates: $\tan\phi = \frac{X_L - X_C}{R}$ (φ = angle by which current lags the emf).
   Solution:
-  1. (a) $X_L > X_C$: inductive, current lags (ii).
-  2. (b) $X_L = X_C$: in phase (i).
-  3. (c) $X_C > X_L$: capacitive, current leads (iv).
-  4. (d) Resonance: maximum current (iii).
+  1. (a) $\omega L > \frac{1}{\omega C}$: $X_L > X_C$, the circuit is inductive, so the current lags the emf → (ii).
+  2. (b) $\omega L = \frac{1}{\omega C}$: reactances cancel, φ = 0, current is in phase with the emf → (i).
+  3. (c) $\omega L < \frac{1}{\omega C}$: capacitive, current leads the emf → (iv).
+  4. (d) Resonant frequency: impedance is minimum (Z = R), so the current is maximum → (iii).
+  Correct matching: (a)-(ii), (b)-(i), (c)-(iv), (d)-(iii).
+  Why others are wrong:
+  - (A) swaps lag and lead for (a) and (c).
+  - (C) says maximum current for (a); that happens only at resonance.
+  - (D) gives (c) maximum current and (d) "current leads" — both wrong.
   Answer: (B)
 P A 11: |-
-  Concept: $T \propto \sqrt l$.
+  Concept: For a simple pendulum, $T = 2\pi\sqrt{\frac{l}{g}}$, so at a fixed place $T \propto \sqrt l$.
   Solution:
-  1. $T = T_0\sqrt{\frac{1}{16}} = \frac{T_0}{4}$.
+  1. $\frac{T}{T_0} = \sqrt{\frac{l/16}{l}} = \sqrt{\frac{1}{16}} = \frac{1}{4}$.
+  2. $T = \frac{T_0}{4}$.
+  Why others are wrong:
+  - (A) $T_0$ would mean length does not matter.
+  - (C) $4T_0$ corresponds to a length 16 times larger, not smaller.
+  - (B) $8\pi T_0$ has no physical basis — it mixes the $2\pi$ factor into the ratio.
+  Common trap: using $T \propto l$ instead of $\sqrt l$, which would give $\frac{T_0}{16}$ (not an option).
+  Physical sense: A shorter pendulum swings faster. Reducing the length 16 times cuts the period only 4 times, because of the square root.
+  Common mistake: Using T ∝ l (giving T₀/16) or inverting the ratio (giving 4T₀).
   Answer: (D)
 P A 12: |-
-  Concept: Curie temperature.
+  Concept: Ferromagnetism arises from domains in which atomic moments are aligned by strong exchange interaction. Thermal agitation disrupts this alignment. Above the Curie temperature $T_C$, the domain structure disappears and the material behaves as a paramagnet.
   Solution:
-  1. Above the Curie temperature a ferromagnet becomes paramagnetic, so I is true.
-  2. Heating destroys domain alignment; it does not increase domain wall area. II is false.
+  1. Statement I: ferromagnetic properties do depend on temperature, and above $T_C$ a ferromagnet becomes paramagnetic. TRUE.
+  2. Statement II: heating does not increase domain wall area. As temperature rises, alignment inside domains weakens and at $T_C$ the domains vanish altogether — so there is no growth of domain walls. FALSE.
+  Why others are wrong:
+  - (A) says Statement I is false — but the Curie transition is a standard fact.
+  - (C) and (D) accept Statement II, which describes a mechanism that does not occur.
+  Extra: above $T_C$, susceptibility follows the Curie–Weiss law $\chi = \frac{C}{T - T_C}$.
   Answer: (B)
 P A 13: |-
-  Concept: Momentum conservation.
+  Concept: The bullet–gun system starts at rest and no external horizontal force acts during firing, so total momentum stays zero. The impulse on the gun equals its change in momentum, which is equal and opposite to the bullet's momentum.
   Solution:
-  1. Impulse on the gun $= mv = 0.004\times50 = 0.2$ kg m s⁻¹.
-  2. Recoil speed $= \frac{0.2}{4} = 0.05$ m/s.
+  1. Bullet momentum: $p = mv = 0.004\times50 = 0.2$ kg m s⁻¹.
+  2. Impulse on the gun: 0.2 kg m s⁻¹ (backward).
+  3. Recoil velocity: $V = \frac{p}{M} = \frac{0.2}{4} = 0.05$ m s⁻¹.
+  Why others are wrong:
+  - (A) 0.4 and 0.1 double both values (e.g. using 8 g).
+  - (C) 0.4 impulse is inconsistent with 0.05 m/s: 4 kg × 0.05 = 0.2.
+  - (D) 0.1 m/s recoil is inconsistent with 0.2 impulse on a 4 kg gun.
+  Check: impulse = M × V must hold, which only (B) satisfies.
   Answer: (B)
 P A 14: |-
-  Concept: Range $d = \sqrt{2Rh}$.
+  Concept: For a transmitting antenna of height h on a spherical Earth, the line-of-sight coverage radius is $d = \sqrt{2Rh}$. The population covered is area × density.
   Solution:
-  1. $h = \frac{d^2}{2R} = \frac{(1.5\times10^5)^2}{2\times6.5\times10^6} \approx 1731$ m.
-  2. Population $= \pi(150)^2\times200 \approx 1.41\times10^7$ (the option's $1413\times10^5$ has a power-of-10 slip; the height identifies option D).
+  1. $h = \frac{d^2}{2R} = \frac{(1.5\times10^5)^2}{2\times6.5\times10^6} = \frac{2.25\times10^{10}}{1.3\times10^7} \approx 1731$ m.
+  2. Area $= \pi d^2 = \pi\times(150)^2 \approx 7.07\times10^4$ km².
+  3. Population $= 7.07\times10^4\times200 \approx 1.41\times10^7$.
+  4. The option prints $1413\times10^5$, which has a power-of-ten slip (should be $1413\times10^4$); the height 1731 m identifies option D uniquely.
+  Why others are wrong:
+  - (A) 1800 m and (C) 1600 m do not satisfy $d = \sqrt{2Rh}$ for d = 150 km.
+  - (B) 1241 m is too small (its range would be ≈ 127 km), and $7\times10^5$ people is far too few.
   Answer: (D)
 P A 15: |-
-  Concept: Apparent dip: $\tan\delta' = \frac{\tan\delta}{\cos\beta} \ge \tan\delta$.
+  Concept: The true dip δ is measured in the magnetic meridian. In a vertical plane at angle β to the meridian, only the horizontal component $B_H\cos\beta$ is effective, while the vertical component $B_V$ is unchanged. So the apparent dip δ' satisfies $\tan\delta' = \frac{B_V}{B_H\cos\beta} = \frac{\tan\delta}{\cos\beta}$.
   Solution:
-  1. The true dip is less than (or at most equal to) the apparent dip.
+  1. Since $\cos\beta \le 1$, $\tan\delta' \ge \tan\delta$, hence $\delta' \ge \delta$.
+  2. So the true dip is less than the apparent dip (equal only when β = 0, i.e. in the meridian itself).
+  3. Also, for two perpendicular planes: $\cot^2\delta = \cot^2\delta_1 + \cot^2\delta_2$ — a definite mathematical relation.
+  Why others are wrong:
+  - (A) is false: the relations above link true and apparent dip.
+  - (B) reverses the inequality.
+  - (C) holds only in the special case of the magnetic meridian, not always.
   Answer: (D)
 P A 16: |-
-  Concept: Expand $C\cos(\omega t - \phi)$ and match initial conditions.
+  Concept: Any SHM $x = A\sin\omega t + B\cos\omega t$ can be written as a single cosine $C\cos(\omega t - \phi)$. Expand and match with the initial position and velocity.
   Solution:
-  1. $x(0) = C\cos\phi$ and $v(0) = C\omega\sin\phi$.
-  2. $C = \sqrt{x(0)^2 + \frac{v(0)^2}{\omega^2}}$ and $\phi = \tan^{-1}\frac{v(0)}{x(0)\omega}$.
+  1. $C\cos(\omega t - \phi) = C\cos\phi\cos\omega t + C\sin\phi\sin\omega t$.
+  2. At t = 0: $x(0) = C\cos\phi$.
+  3. Velocity: $v = -C\omega\sin(\omega t - \phi)$, so $v(0) = C\omega\sin\phi$.
+  4. Square and add: $C^2 = x(0)^2 + \frac{v(0)^2}{\omega^2}$, so $C = \sqrt{\frac{v(0)^2}{\omega^2} + x(0)^2}$.
+  5. Divide: $\tan\phi = \frac{v(0)/\omega}{x(0)} = \frac{v(0)}{x(0)\omega}$.
+  Why others are wrong:
+  - (A) inverts the tangent: $\frac{x(0)\omega}{v(0)}$ would be $\cot\phi$.
+  - (B) and (D) have a spurious factor 2 in the amplitude, which does not come from any energy or kinematics relation.
+  Check (energy): $\frac{1}{2}KC^2 = \frac{1}{2}Kx(0)^2 + \frac{1}{2}mv(0)^2$ gives the same C ✓.
   Answer: (C)
 P A 17: |-
-  Concept: Equipartition: 3 translational degrees of freedom.
+  Concept: By the law of equipartition of energy, each quadratic degree of freedom contributes $\frac{1}{2}k_BT$ to the average energy of a molecule in thermal equilibrium.
   Solution:
-  1. Average energy per molecule $= \frac{3}{2}k_BT$.
+  1. A monoatomic gas molecule has only 3 translational degrees of freedom (no rotation or vibration of significance).
+  2. Average energy per molecule $= 3\times\frac{1}{2}k_BT = \frac{3}{2}k_BT$.
+  3. Per mole this gives $U = \frac{3}{2}RT$ and $C_V = \frac{3}{2}R$.
+  Why others are wrong:
+  - (B) $\frac{1}{2}k_BT$ is the energy per degree of freedom, not per molecule.
+  - (C) $k_BT$ corresponds to 2 degrees of freedom (or one vibrational mode).
+  - (D) $\frac{2}{3}k_BT$ inverts the correct coefficient.
   Answer: (A)
 P A 18: |-
-  Concept: $v^2 = \frac{2gh}{1 + K^2/R^2}$.
+  Concept: For rolling without slipping from rest through height h, energy conservation gives $mgh = \frac{1}{2}mv^2\left(1 + \frac{K^2}{R^2}\right)$, so $v = \sqrt{\frac{2gh}{1 + K^2/R^2}}$. The smaller the ratio $\frac{K^2}{R^2}$ (less rotational inertia), the larger the speed.
   Solution:
-  1. $\frac{K^2}{R^2}$: sphere $\frac{2}{5}$ < cylinder $\frac{1}{2}$ < ring 1.
-  2. The sphere is fastest and the ring slowest.
+  1. $\frac{K^2}{R^2}$ values: solid sphere $\frac{2}{5}$, solid cylinder $\frac{1}{2}$, ring 1.
+  2. $v^2$ values: sphere $\frac{10}{7}gh$, cylinder $\frac{4}{3}gh$, ring $gh$.
+  3. Order: $v_{sphere} > v_{cylinder} > v_{ring}$.
+  4. The result is independent of mass and radius — only the shape matters.
+  Why others are wrong:
+  - (A) reverses the trend: the ring has the most rotational inertia, so it is slowest.
+  - (C) puts the sphere last, but the sphere has the smallest $\frac{K^2}{R^2}$.
+  - (D) would be true only for frictionless sliding (no rotation).
   Answer: (B)
 P A 19: |-
-  Concept: The rods are in parallel; $R = \frac{\rho l}{A}$.
+  Concept: From the figure, the Cu and Al rods are joined side by side between A and B, i.e. in parallel. Each resistance is $R = \frac{\rho l}{A}$, and parallel combination gives $R = \frac{R_1R_2}{R_1 + R_2}$.
   Solution:
-  1. $R_{Cu} = \frac{1.7\times10^{-8}\times0.25}{3\times10^{-6}} = 1.417$ mΩ and $R_{Al} = 2.167$ mΩ.
-  2. $R = \frac{1.417\times2.167}{3.583} = 0.857$ mΩ ≈ 0.858 mΩ.
+  1. $R_{Cu} = \frac{1.7\times10^{-8}\times0.25}{3\times10^{-6}} = 1.417\times10^{-3}\ \Omega = 1.417$ mΩ.
+  2. $R_{Al} = \frac{2.6\times10^{-8}\times0.25}{3\times10^{-6}} = 2.167$ mΩ.
+  3. $R = \frac{1.417\times2.167}{1.417 + 2.167} = \frac{3.070}{3.583} \approx 0.857$ mΩ ≈ 0.858 mΩ.
+  Why others are wrong:
+  - (C) 1.420 mΩ is $R_{Cu}$ alone.
+  - (D) 2.170 mΩ is $R_{Al}$ alone.
+  - (B) 0.0858 mΩ is off by a factor of 10 (unit slip with mm² → m²).
+  Check: a parallel combination must be smaller than the smaller resistor (1.417 mΩ) ✓. In series the total would be 3.58 mΩ, not an option.
   Answer: (A)
 P A 20: |-
-  Concept: Line-charge field $E = \frac{2k\lambda}{r}$; net force on the dipole charges.
+  Concept: An infinite line charge produces a radial field $E = \frac{\lambda}{2\pi\varepsilon_0r} = \frac{2k\lambda}{r}$. The dipole's two charges sit at different distances, so the forces on them do not cancel.
   Solution:
-  1. $2k\lambda = 2\times9\times10^9\times3\times10^{-6} = 5.4\times10^4$.
-  2. $F = q\times5.4\times10^4\left(\frac{1}{0.010} - \frac{1}{0.012}\right) = q\times9\times10^5 = 4$ N.
-  3. $q = 4.44\ \mu$C.
+  1. $2k\lambda = 2\times9\times10^9\times3\times10^{-6} = 5.4\times10^4$ N m C⁻¹.
+  2. Force on +q at 10 mm (away from the line): $F_+ = \frac{5.4\times10^4q}{0.010}$.
+  3. Force on −q at 12 mm (toward the line): $F_- = \frac{5.4\times10^4q}{0.012}$.
+  4. Net: $F = 5.4\times10^4q\left(\frac{1}{0.010} - \frac{1}{0.012}\right) = 5.4\times10^4q\times16.67 = 9\times10^5q$.
+  5. $9\times10^5q = 4 \Rightarrow q = 4.44\times10^{-6}$ C = 4.44 μC.
+  Why others are wrong:
+  - (B) 8.8 μC roughly doubles the answer (e.g. using $k\lambda/r$).
+  - (C) 815.1 nC and (A) 0.485 mC come from using only one charge or wrong distances.
   Answer: (D)
 P B 1: |-
-  Concept: The centre of mass of a semicircular wire is at $\frac{2R}{\pi}$ from the centre.
+  Concept: For a uniform semicircular wire (an arc of angle π) of radius R centred at the origin and symmetric about the y-axis, the centre of mass lies on the axis of symmetry at a distance $\frac{2R}{\pi}$ from the centre.
   Solution:
-  1. $|x| = 2$.
+  1. Take an element $dl = R\,d\theta$ at angle θ; its y-coordinate is $R\sin\theta$.
+  2. $y_{cm} = \frac{\int_0^\pi R\sin\theta\cdot R\,d\theta}{\pi R} = \frac{R^2[-\cos\theta]_0^\pi}{\pi R} = \frac{2R}{\pi}$.
+  3. By symmetry $x_{cm} = 0$.
+  4. Comparing with $\left(0, \frac{xR}{\pi}\right)$: $|x| = 2$.
+  Note: a semicircular disc (lamina) would give $\frac{4R}{3\pi}$ instead — do not confuse wire and plate.
+  Result: y_cm = (1/πR)∫₀^π R sin θ · R dθ = (R/π)[−cos θ]₀^π = 2R/π, so |x| = 2.
+  Common mistake: Using the semicircular disc result 4R/(3π); a wire (arc) has its mass on the rim, farther from the centre.
   Answer: 2
 P B 2: |-
-  Concept: Gauss's law in point form: $\rho = \nabla\cdot\vec D$.
+  Concept: Gauss's law in differential (point) form: $\nabla\cdot\vec D = \rho_v$, the free volume charge density. For a very small volume, the enclosed charge is $Q \approx \rho_v\,\Delta V$.
   Solution:
-  1. $\nabla\cdot\vec D = -e^{-x}\sin y + e^{-x}\sin y + 2 = 2$ C/m³.
-  2. $Q = 2\times2\times10^{-9} = 4$ nC.
+  1. $D_x = e^{-x}\sin y$, so $\frac{\partial D_x}{\partial x} = -e^{-x}\sin y$.
+  2. $D_y = -e^{-x}\cos y$, so $\frac{\partial D_y}{\partial y} = e^{-x}\sin y$.
+  3. $D_z = 2z$, so $\frac{\partial D_z}{\partial z} = 2$.
+  4. $\nabla\cdot\vec D = -e^{-x}\sin y + e^{-x}\sin y + 2 = 2$ C/m³ (constant everywhere, including the origin).
+  5. $Q = \rho_v\,\Delta V = 2\times2\times10^{-9} = 4\times10^{-9}$ C = 4 nC.
+  Result: ∂D_y/∂y = e^{−x} sin y and ∂D_z/∂z = 2, so ∇·D = −e^{−x} sin y + e^{−x} sin y + 2 = 2 C/m³. Then Q = 2 × 2 × 10⁻⁹ = 4 × 10⁻⁹ C = 4 nC.
+  Common mistake: Evaluating D itself at the origin instead of its divergence.
   Answer: 4
 P B 3: |-
-  Concept: At minimum deviation, $r = \frac{A}{2}$ and $\mu = \frac{\sin i}{\sin r}$.
+  Concept: At minimum deviation the ray passes symmetrically through the prism: the refraction angles at both faces are equal, $r_1 = r_2 = r = \frac{A}{2}$, and the refractive index is $\mu = \frac{\sin i}{\sin r}$.
   Solution:
-  1. $i = 2r$: $\mu = \frac{\sin2r}{\sin r} = 2\cos r = \sqrt3 \Rightarrow r = 30°$.
-  2. $A = 2r = 60°$.
+  1. Given $i = 2r$.
+  2. $\mu = \frac{\sin2r}{\sin r} = \frac{2\sin r\cos r}{\sin r} = 2\cos r$.
+  3. $2\cos r = \sqrt3 \Rightarrow \cos r = \frac{\sqrt3}{2} \Rightarrow r = 30°$.
+  4. Prism angle: $A = r_1 + r_2 = 2r = 60°$.
+  5. Check: $i = 60°$, and minimum deviation $\delta_m = 2i - A = 60°$; $\mu = \frac{\sin60°}{\sin30°} = \sqrt3$ ✓.
   Answer: 60
 P B 4: |-
-  Concept: Rolling: velocity = $\vec v_0$ + rotational velocity $\omega R$ (perpendicular for a point level with the centre).
+  Concept: In rolling without slipping, each point's velocity is the vector sum of the translational velocity $\vec v_0$ of the centre and the rotational velocity $\vec\omega\times\vec r$ about the centre, with $\omega R = v_0$.
   Solution:
-  1. $v = \sqrt{v_0^2 + v_0^2} = \sqrt2v_0$, so $x = 2$.
+  1. For a point on the rim at the same level as the centre, the radius vector is horizontal.
+  2. Its rotational velocity has magnitude $\omega R = v_0$ and is vertical (perpendicular to the radius).
+  3. The translational velocity $v_0$ is horizontal.
+  4. Resultant speed: $v = \sqrt{v_0^2 + v_0^2} = \sqrt2\,v_0$, directed at 45° to the horizontal.
+  5. Comparing with $\sqrt x\,v_0$: $x = 2$.
+  Cross-check: using the contact point as the instantaneous axis, the distance to this point is $\sqrt2R$, so $v = \omega\sqrt2R = \sqrt2v_0$ ✓. (Top point: $2v_0$; contact point: 0.)
   Answer: 2
 P B 5: |-
-  Concept: $\frac{\Delta g}{g} = \frac{\Delta l}{l} + 2\frac{\Delta t}{t}$ (total time measured).
+  Concept: $g = \frac{4\pi^2l}{T^2}$ with $T = \frac{t}{n}$. The maximum fractional error is $\frac{\Delta g}{g} = \frac{\Delta l}{l} + 2\frac{\Delta t}{t}$, where t is the total time actually measured with a stopwatch (least count 0.1 s).
   Solution:
-  1. S1: $\frac{0.1}{64} + 2\cdot\frac{0.1}{128} = 0.31\%$.
-  2. S2: $\frac{0.1}{64} + 2\cdot\frac{0.1}{64} = 0.47\%$.
-  3. S3: $\frac{0.1}{20} + 2\cdot\frac{0.1}{36} = 1.06\%$.
-  4. The minimum is for student 1.
+  1. Student 1: l = 64.0 cm, t = 128.0 s.
+     $E_1 = \left(\frac{0.1}{64} + 2\times\frac{0.1}{128}\right)\times100 = 0.156 + 0.156 = 0.31\%$.
+  2. Student 2: l = 64.0 cm, t = 64.0 s.
+     $E_2 = 0.156 + 0.3125 = 0.47\%$.
+  3. Student 3: l = 20.0 cm, t = 36.0 s.
+     $E_3 = 0.5 + 0.556 = 1.06\%$.
+  4. Minimum error: student 1.
+  Insight: a longer pendulum and timing more oscillations both reduce the percentage error, because the fixed least counts become a smaller fraction of the measured values.
   Answer: 1
 P B 6: |-
-  Concept: Newton's law of cooling (average form): $\frac{\Delta T}{t} = k(\bar T - T_0)$.
+  Concept: Newton's law of cooling in its average (approximate) form: $\frac{T_1 - T_2}{t} = k\left(\frac{T_1 + T_2}{2} - T_0\right)$, where $T_0$ is the surroundings temperature.
   Solution:
-  1. $\frac{10}{5} = k(70 - 25) \Rightarrow 5k = \frac{2}{9}$.
-  2. $65 - T = \frac{2}{9}\left(\frac{65 + T}{2} - 25\right) \Rightarrow 10T = 570 \Rightarrow T = 57$ °C.
+  1. First 5 minutes (75 → 65 °C): $\frac{10}{5} = k(70 - 25) \Rightarrow k = \frac{2}{45}$ per minute, so $5k = \frac{2}{9}$.
+  2. Next 5 minutes (65 → T): $\frac{65 - T}{5} = k\left(\frac{65 + T}{2} - 25\right)$.
+  3. $65 - T = \frac{2}{9}\cdot\frac{T + 15}{2} = \frac{T + 15}{9}$.
+  4. $585 - 9T = T + 15 \Rightarrow 10T = 570 \Rightarrow T = 57$ °C.
+  Check: the drop in the second interval (8 °C) is smaller than in the first (10 °C), as expected since the body is closer to room temperature.
+  (The exact exponential law gives ≈ 57.2 °C, also rounding to 57.)
   Answer: 57
 P B 7: |-
-  Concept: Thermal stress $= Y\alpha\Delta T$; energy density $= \frac{1}{2}\text{stress}\times\text{strain}$.
+  Concept: When a rail is prevented from expanding, heating produces a thermal strain $\alpha\Delta T$ that is fully converted into compressive stress $Y\alpha\Delta T$. The elastic energy stored per unit volume is $\frac{1}{2}\times\text{stress}\times\text{strain}$.
   Solution:
-  1. Strain $= 10^{-5}\times10 = 10^{-4}$; stress $= 10^{11}\times10^{-4} = 10^7$ Pa.
-  2. Energy per volume $= \frac{1}{2}\times10^7\times10^{-4} = 500$ J/m³.
-  3. Per metre $= 500\times0.01 = 5$ J/m.
+  1. Strain $= \alpha\Delta T = 10^{-5}\times10 = 10^{-4}$.
+  2. Stress $= Y\times\text{strain} = 10^{11}\times10^{-4} = 10^7$ N/m².
+  3. Energy density $= \frac{1}{2}\times10^7\times10^{-4} = 500$ J/m³.
+  4. Volume per metre of track $= A\times1 = 0.01$ m³.
+  5. Energy per metre $= 500\times0.01 = 5$ J/m.
+  Alternative: energy per metre $= \frac{1}{2}YA(\alpha\Delta T)^2 = \frac{1}{2}\times10^{11}\times0.01\times10^{-8} = 5$ J/m ✓.
+  Result: Stress = Yα ΔT = 10¹¹ × 10⁻⁴ = 10⁷ N/m². Energy per unit volume = ½ × 10⁷ × 10⁻⁴ = 500 J/m³; times the area 0.01 m² gives 5 J per metre of track.
+  Common mistake: Forgetting the factor ½ in the elastic energy density, which gives 10 J/m.
   Answer: 5
 P B 8: |-
-  Concept: $E = V + Ir$.
+  Concept: A real cell has emf E and internal resistance r. The terminal voltage across a load R is $V = E - Ir$, with $I = \frac{V}{R}$.
   Solution:
-  1. $E = 1.25 + 0.25r$ and $E = 1 + 0.5r \Rightarrow r = 1\ \Omega$, $E = 1.5$ V.
-  2. $x = 15$.
+  1. Case 1: V = 1.25 V across 5 Ω, so $I_1 = 0.25$ A: $E = 1.25 + 0.25r$.
+  2. Case 2: V = 1 V across 2 Ω, so $I_2 = 0.5$ A: $E = 1 + 0.5r$.
+  3. Subtract: $0.25 = 0.25r \Rightarrow r = 1\ \Omega$.
+  4. $E = 1.25 + 0.25 = 1.5$ V.
+  5. $\frac{x}{10} = 1.5 \Rightarrow x = 15$.
+  Check: with 2 Ω load, $I = \frac{1.5}{3} = 0.5$ A and $V = 1$ V ✓.
   Answer: 15
 P B 9: |-
-  Concept: The series resistor limits the zener current (worst case: all current through the zener).
+  Concept: A zener diode in breakdown holds its voltage fixed at $V_Z$. The series resistor R drops the rest of the supply voltage and limits the current. The zener current is largest when the load draws the least current — in the worst case (load open), all the current through R flows through the zener.
   Solution:
-  1. $R_{min} = \frac{50 - 5}{0.090} = 500\ \Omega$.
+  1. Voltage across R: $50 - 5 = 45$ V.
+  2. Current through R must not exceed the zener's maximum rating: $I \le 90$ mA.
+  3. $R_{min} = \frac{45}{0.090} = 500\ \Omega$.
+  4. Any smaller resistance would let more than 90 mA flow through the zener when the load is disconnected, damaging it.
   Answer: 500
 P B 10: |-
-  Concept: The normal to a plane containing two vectors is their cross product.
+  Concept: The normal to a plane containing two vectors is along their cross product. The angle between two directions follows from the dot product: $\cos\theta = \frac{\vec n_1\cdot\vec n_2}{|\vec n_1||\vec n_2|}$.
   Solution:
-  1. $\vec A\times\vec B = (1, -1, 1)$ and $\vec A\times\vec C = (0, 0, 2)$.
-  2. $\cos\theta = \frac{2}{\sqrt3\times2} = \frac{1}{\sqrt3}$, so $x = 3$.
+  1. $\vec A\times\vec B = (\hat i + \hat j)\times(\hat j + \hat k) = \hat i(1 - 0) - \hat j(1 - 0) + \hat k(1 - 0) = \hat i - \hat j + \hat k$.
+  2. $\vec A\times\vec C = (\hat i + \hat j)\times(-\hat i + \hat j) = \hat k(1 + 1) = 2\hat k$.
+  3. Dot product: $(1, -1, 1)\cdot(0, 0, 2) = 2$.
+  4. Magnitudes: $\sqrt3$ and 2.
+  5. $\cos\theta = \frac{2}{2\sqrt3} = \frac{1}{\sqrt3}$.
+  6. Comparing with $\cos^{-1}\frac{1}{\sqrt x}$: $x = 3$.
   Answer: 3

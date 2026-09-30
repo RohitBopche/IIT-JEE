@@ -1,220 +1,386 @@
 M A 1: |-
-  Concept: Equal roots require discriminant $b^2 = 4ac$; count favourable outcomes out of $6^3 = 216$.
+  Concept: A quadratic has equal roots exactly when its discriminant is zero, b² − 4ac = 0, i.e. b² = 4ac. Each of a, b, c is a die throw from 1 to 6, so there are 6³ = 216 equally likely outcomes.
   Solution:
-  1. b = 2: ac = 1 → (1, 1): 1 way.
-  2. b = 4: ac = 4 → (1, 4), (4, 1), (2, 2): 3 ways.
-  3. b = 6: ac = 9 → (3, 3): 1 way.
-  4. Odd b is impossible ($b^2$ must be even), and b = 2, 4, 6 give 5 ways in total.
-  5. Probability = $\frac{5}{216}$.
+  1. b² = 4ac means b² must be even, so b is even: b ∈ {2, 4, 6}.
+  2. b = 2: ac = 1, so (a, c) = (1, 1). 1 way.
+  3. b = 4: ac = 4, so (a, c) = (1, 4), (4, 1) or (2, 2). 3 ways.
+  4. b = 6: ac = 9, so (a, c) = (3, 3). 1 way. (9 cannot be split any other way with both factors ≤ 6.)
+  5. Favourable outcomes = 1 + 3 + 1 = 5.
+  6. Probability = 5/216.
+  Why others are wrong:
+  - (A) 1/54 = 4/216 misses one case.
+  - (B) 1/72 = 3/216 and (C) 1/36 = 6/216 miscount the ordered pairs (a, c). Remember that (1, 4) and (4, 1) are different throws.
+  Tip: in dice-coefficient problems, loop over the variable that appears squared. Then count ordered factor pairs within 1 to 6.
   Answer: (D)
 M A 2: |-
-  Concept: Solve the two direction-cosine equations simultaneously.
+  Concept: Direction cosines (l, m, n) satisfying one linear and one quadratic equation give exactly two lines. Solve the equations simultaneously, then find the angle from cos α = l₁l₂ + m₁m₂ + n₁n₂.
   Solution:
-  1. n = l + m, so $l^2 + m^2 = (l + m)^2 \Rightarrow lm = 0$.
-  2. l = 0: m = n, giving direction $\frac{1}{\sqrt{2}}(0, 1, 1)$. m = 0: l = n, giving $\frac{1}{\sqrt{2}}(1, 0, 1)$.
-  3. $\cos\alpha = \frac{1}{2}$, so α = 60°.
-  4. $\sin^4\alpha + \cos^4\alpha = \frac{9}{16} + \frac{1}{16} = \frac{5}{8}$.
+  1. From l + m − n = 0: n = l + m.
+  2. Substitute into l² + m² − n² = 0: l² + m² − (l + m)² = −2lm = 0, so lm = 0.
+  3. Case l = 0: then n = m, and the direction is (0, 1, 1)/√2.
+  4. Case m = 0: then n = l, and the direction is (1, 0, 1)/√2.
+  5. cos α = (0·1 + 1·0 + 1·1)/2 = 1/2, so α = 60°.
+  6. sin⁴α + cos⁴α = (√3/2)⁴ + (1/2)⁴ = 9/16 + 1/16 = 10/16 = 5/8.
+  Shortcut: sin⁴α + cos⁴α = 1 − 2sin²α cos²α = 1 − ½ sin²2α = 1 − ½(3/4) = 5/8 ✓.
+  Why others are wrong:
+  - (A) 3/4 and (D) 3/8 correspond to other angles (for example sin²2α = ½ or 5/4).
+  - (B) ½ corresponds to α = 45°.
   Answer: (C)
 M A 3: |-
-  Concept: Simplify the trigonometric factors, then substitute $t = 2\sin^6\theta + 3\sin^4\theta + 6\sin^2\theta$.
+  Concept: Simplify the trigonometric factor first. Then move a factor inside the square root so that the remaining factor is exactly the derivative of the expression under the root. This is a "reverse chain rule" substitution.
   Solution:
-  1. $\frac{\sin\theta\cdot\sin2\theta}{1 - \cos2\theta} = \frac{\sin\theta\cdot2\sin\theta\cos\theta}{2\sin^2\theta} = \cos\theta$. With s = sin θ, the integrand is $\cos\theta\,(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6}$.
-  2. Move one factor s inside the root: $(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6} = (s^5 + s^3 + s)\sqrt{2s^6 + 3s^4 + 6s^2}$.
-  3. Let $t = 2s^6 + 3s^4 + 6s^2$; then $dt = 12(s^5 + s^3 + s)\cos\theta\,d\theta$.
-  4. Integral $= \frac{1}{12}\int\sqrt{t}\,dt = \frac{1}{18}t^{3/2} + c$.
-  5. With $s^2 = 1 - \cos^2\theta$: $t = 11 - 18\cos^2\theta + 9\cos^4\theta - 2\cos^6\theta$.
+  1. $\frac{\sin\theta\cdot\sin2\theta}{1 - \cos2\theta} = \frac{\sin\theta\cdot2\sin\theta\cos\theta}{2\sin^2\theta} = \cos\theta$.
+  2. With s = sin θ, the integrand is $\cos\theta\,(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6}$.
+  3. Move one factor of s under the root: $(s^6 + s^4 + s^2)\sqrt{2s^4 + 3s^2 + 6} = (s^5 + s^3 + s)\sqrt{2s^6 + 3s^4 + 6s^2}$.
+  4. Let t = 2s⁶ + 3s⁴ + 6s². Then dt = 12(s⁵ + s³ + s) cos θ dθ.
+  5. So the integral is $\frac{1}{12}\int\sqrt t\,dt = \frac{1}{12}\cdot\frac{2}{3}t^{3/2} = \frac{1}{18}t^{3/2} + c$.
+  6. Write t in terms of cos θ, using s² = 1 − c² (c = cos θ): 2(1 − c²)³ + 3(1 − c²)² + 6(1 − c²) = 11 − 18c² + 9c⁴ − 2c⁶.
+  7. So the answer is $\frac{1}{18}[11 - 18\cos^2\theta + 9\cos^4\theta - 2\cos^6\theta]^{3/2} + c$.
+  Note: option (B) has the same coefficients but in sin θ, so it is not equal to t.
   Answer: (C)
 M A 4: |-
-  Concept: Heights and distances with a tower of height h.
+  Concept: Angle-of-depression problems use the same right-triangle trigonometry as angles of elevation: distance from the base = h cot θ. For a boat at uniform speed, time is proportional to distance.
+  Given: tower height h. At A the angle of depression is 30°; at B it is 45°. The boat takes 20 s from A to B.
   Solution:
-  1. At A (30°): distance from the base $= h\sqrt{3}$; at B (45°): distance = h.
-  2. The boat covers $h(\sqrt{3} - 1)$ in 20 s, so its speed is $\frac{h(\sqrt{3} - 1)}{20}$.
-  3. Time from B to the base $= \frac{h}{\text{speed}} = \frac{20}{\sqrt{3} - 1} = 10(\sqrt{3} + 1)$ s.
+  1. Distance of A from the base: h cot 30° = √3h. Distance of B: h cot 45° = h.
+  2. AB = √3h − h = h(√3 − 1), covered in 20 s. Speed v = h(√3 − 1)/20.
+  3. Time from B to the base: $t = \frac{h}{v} = \frac{20}{\sqrt3 - 1}$.
+  4. Rationalise: $t = \frac{20(\sqrt3 + 1)}{3 - 1} = 10(\sqrt3 + 1)$ s ≈ 27.3 s.
+  Check: the remaining distance h is larger than AB = 0.732h, so the remaining time should exceed 20 s, and 27.3 s fits ✓.
+  Why others are wrong:
+  - (A) 10(√3 − 1) ≈ 7.3 s is too short, from inverting the rationalisation.
+  - (B) 10√3 and (C) 10 come from arithmetic slips.
+  Tip: the ratio of the distances (h : √3h) does not depend on h, so the time ratio can be found without ever knowing the tower's height.
   Answer: (D)
 M A 5: |-
-  Concept: Infinite geometric series.
+  Concept: An infinite geometric series with ratio r (|r| < 1) sums to $\frac{1}{1 - r}$ when its first term is 1. Express each ratio in terms of the sums, then eliminate the angles.
   Solution:
-  1. $x = \frac{1}{1 - \cos^2\theta}$, $y = \frac{1}{1 - \sin^2\phi}$, $z = \frac{1}{1 - \cos^2\theta\sin^2\phi}$.
-  2. $\cos^2\theta = 1 - \frac{1}{x}$ and $\sin^2\phi = 1 - \frac{1}{y}$.
+  1. $x = \frac{1}{1 - \cos^2\theta}$, $y = \frac{1}{1 - \sin^2\phi}$ and $z = \frac{1}{1 - \cos^2\theta\sin^2\phi}$.
+  2. From these: cos²θ = 1 − 1/x and sin²φ = 1 − 1/y.
   3. $\frac{1}{z} = 1 - \left(1 - \frac{1}{x}\right)\left(1 - \frac{1}{y}\right) = \frac{1}{x} + \frac{1}{y} - \frac{1}{xy}$.
-  4. Multiply by xyz: $xy = z(x + y - 1) \Rightarrow xy + z = (x + y)z$.
+  4. Multiply by xyz: xy = yz + xz − z, i.e. xy + z = (x + y)z.
+  5. This matches option (D).
+  Numerical check: θ = φ = 45° gives x = 2, y = 2 and z = 1/(1 − 1/4) = 4/3. Then xy + z = 4 + 4/3 = 16/3 and (x + y)z = 4 × 4/3 = 16/3 ✓.
+  Why others are wrong: (A), (B) and (C) fail this same numerical test.
+  Tip: when a relation among sums of series is asked for, test with convenient angles such as 45° or 30° to eliminate options quickly.
   Answer: (D)
 M A 6: |-
-  Concept: Perpendicular lines have direction ratios with zero dot product.
+  Concept: Two lines are perpendicular when the dot product of their direction ratios is zero. The required line must also pass through (0, 1, 2).
+  Given: the line has direction (2, 3, −2).
   Solution:
-  1. The given direction is (2, 3, –2). Test the options: (–3, 4, 3): –6 + 12 – 6 = 0 ✓.
-  2. (3, 4, 3) gives 12, (3, –4, 3) gives –12, (3, 4, –3) gives 24, so none of those are perpendicular.
-  3. All options pass through (0, 1, 2), so the answer is $\frac{x}{-3} = \frac{y - 1}{4} = \frac{z - 2}{3}$.
+  1. All four options are written through (0, 1, 2), so only the direction needs checking.
+  2. (A) (−3, 4, 3): 2(−3) + 3(4) + (−2)(3) = −6 + 12 − 6 = 0 ✓.
+  3. (B) (3, 4, 3): 6 + 12 − 6 = 12 ✗.
+  4. (C) (3, −4, 3): 6 − 12 − 6 = −12 ✗.
+  5. (D) (3, 4, −3): 6 + 12 + 6 = 24 ✗.
+  6. So the line is $\frac{x}{-3} = \frac{y - 1}{4} = \frac{z - 2}{3}$.
+  Note: infinitely many lines through the point are perpendicular to the given line (they fill a plane). The question just asks which option is one of them.
+  Tip: when the options share the base point, check the directions by dot product. That is faster than constructing the answer.
   Answer: (A)
 M A 7: |-
-  Concept: Two statements are equivalent if they have the same truth table.
+  Concept: Two statements are logically equivalent if they have identical truth values in every case. Simplify each using p → q ≡ ∼p ∨ q.
   Solution:
-  1. $A \rightarrow (B \rightarrow A)$ is a tautology: if A is true, then B → A is true.
-  2. $A \rightarrow (A \vee B)$ is also a tautology (A true makes A ∨ B true), so they are equivalent.
-  3. The others fail for A true, B false.
+  1. A → (B → A) ≡ ∼A ∨ (∼B ∨ A) ≡ (∼A ∨ A) ∨ ∼B ≡ T. It is a tautology.
+  2. (B) A → (A ∨ B) ≡ ∼A ∨ A ∨ B ≡ T. Also a tautology, so the two are equivalent.
+  3. (A) A → (A ∧ B) ≡ ∼A ∨ B, which is false when A = T and B = F.
+  4. (C) A → (A → B) ≡ ∼A ∨ B, also false when A = T and B = F.
+  5. (D) A → (A ↔ B), false when A = T and B = F.
+  6. Only (B) is always true, matching the given statement.
+  Tip: A → (B → A) is one of the basic axioms of propositional logic, "a true statement is implied by anything". It is always a tautology.
   Answer: (B)
 M A 8: |-
-  Concept: A quadratic with positive leading coefficient is positive for all real x iff its discriminant is negative.
+  Concept: A quadratic ax² + bx + c with a > 0 is positive for every real x exactly when its discriminant is negative (no real roots, so the graph stays above the x-axis).
+  Given: x² − 2(3k − 1)x + 8k² − 7 > 0 for all x.
   Solution:
-  1. $D = 4(3k - 1)^2 - 4(8k^2 - 7) < 0 \Rightarrow k^2 - 6k + 8 < 0$.
-  2. (k – 2)(k – 4) < 0, so 2 < k < 4 and the integer is k = 3.
+  1. The leading coefficient is 1 > 0 ✓.
+  2. D = 4(3k − 1)² − 4(8k² − 7) < 0.
+  3. Divide by 4: 9k² − 6k + 1 − 8k² + 7 < 0, i.e. k² − 6k + 8 < 0.
+  4. Factor: (k − 2)(k − 4) < 0, so 2 < k < 4.
+  5. The only integer in this interval is k = 3.
+  Check k = 3: x² − 16x + 65 = (x − 8)² + 1 > 0 ✓.
+  Why others are wrong:
+  - (B) k = 2 and (C) k = 4 make D = 0, so the expression touches zero.
+  - (D) k = 0 gives x² + 2x − 7, which takes negative values.
+  Tip: for "≥ 0 for all x", the condition becomes D ≤ 0, and the endpoints are then allowed.
   Answer: (A)
 M A 9: |-
-  Concept: Tangent to $y^2 = 4ax$ with slope m: $y = mx + \frac{a}{m}$.
+  Concept: For the parabola y² = 4ax, the tangent with slope m is y = mx + a/m.
+  Given: y² = 6x, so 4a = 6 and a = 3/2. The tangent is perpendicular to 2x + y = 1, whose slope is −2.
   Solution:
-  1. Here 4a = 6, so $a = \frac{3}{2}$. Perpendicular to 2x + y = 1 (slope –2), so $m = \frac{1}{2}$.
-  2. Tangent: $y = \frac{x}{2} + 3$.
-  3. Check: (0, 3) ✓, (–6, 0) ✓, (4, 5) ✓, but (5, 4) gives 5.5 ≠ 4 ✗.
+  1. The slope of the tangent is m = 1/2, since (−2)(1/2) = −1.
+  2. Tangent: y = x/2 + (3/2)/(1/2) = x/2 + 3.
+  3. Check each point:
+     - (A) (0, 3): 0 + 3 = 3 ✓, on the tangent;
+     - (B) (−6, 0): −3 + 3 = 0 ✓, on it;
+     - (C) (4, 5): 2 + 3 = 5 ✓, on it;
+     - (D) (5, 4): 2.5 + 3 = 5.5 ≠ 4 ✗.
+  4. The point not on the tangent is (5, 4).
+  Point of contact: $(a/m^2, 2a/m) = (6, 6)$. Check: 6² = 36 = 6 × 6 ✓.
+  Tip: remember the slope form of the tangent for each conic:
+  - parabola: c = a/m;
+  - ellipse: c² = a²m² + b²;
+  - hyperbola: c² = a²m² − b².
   Answer: (D)
 M A 10: |-
-  Concept: Iterate the functional equation, then test each statement.
+  Concept: Repeatedly applying f(n + 1) = f(n) + f(1) gives f(n) = n·f(1), a linear function on ℕ. Then test each claim about one-one and onto.
   Solution:
-  1. f(n) = n·f(1), which is strictly increasing, so f is one-one: (A) is true.
-  2. If f∘g is one-one then g must be one-one: (B) is true.
-  3. If f is onto, 1 must be in the range, so f(1) = 1 and f(n) = n: (D) is true.
-  4. g onto does not make f∘g one-one; for example g(1) = g(2) = 1 with g onto on the rest. So (C) is NOT true.
+  1. f(n) = n·f(1) with f(1) ≥ 1. This is strictly increasing, so f is one-one. (A) is true.
+  2. (B): if f∘g is one-one, then g is one-one. If g(a) = g(b), then f(g(a)) = f(g(b)), which forces a = b. True.
+  3. (D): if f is onto ℕ, the value 1 must be attained. That needs f(1) = 1 (all values are multiples of f(1)), so f(n) = n. True.
+  4. (C): "if g is onto, then f∘g is one-one." Take g onto but not one-one, for example g(1) = g(2) = 1 and g(n) = n − 1 for n ≥ 3. Then f(g(1)) = f(g(2)), so f∘g is not one-one. The claim is false.
+  5. So (C) is NOT true.
+  Tip: for a composite f∘g to be one-one, g must be one-one. Surjectivity of g is irrelevant to injectivity.
   Answer: (C)
 M A 11: |-
-  Concept: Normals to a circle meet at its centre; the radius equals the distance from the centre to a tangent.
+  Concept: Every normal to a circle passes through its centre, so two normals meet at the centre. The radius equals the perpendicular distance from the centre to any tangent.
   Solution:
-  1. With z = x + iy: $(2 - i)z - (2 + i)\bar{z} = 0$ becomes x = 2y; the second line becomes x + 2y = 2.
-  2. Centre: (1, ½).
-  3. Tangent $iz + \bar{z} + 1 + i = 0$ gives $(x - y + 1)(1 + i) = 0$, i.e. x – y + 1 = 0.
-  4. $r = \frac{|1 - \frac{1}{2} + 1|}{\sqrt{2}} = \frac{3}{2\sqrt{2}}$.
+  1. Put z = x + iy.
+     - Line 1: (2 − i)z − (2 + i)z̄ = 0. Expanding: (2x + 2iy − ix + y) − (2x − 2iy + ix + y) = i(4y − 2x) = 0, so x = 2y.
+     - Line 2: (2 + i)z + (i − 2)z̄ − 4i = 0 simplifies to x + 2y = 2.
+  2. Centre: solving x = 2y and x + 2y = 2 gives 4y = 2, so y = ½ and x = 1. The centre is (1, ½).
+  3. Tangent: iz + z̄ + 1 + i = 0. With z = x + iy: ix − y + x − iy + 1 + i = 0. The real part gives x − y + 1 = 0, and the imaginary part gives the same line.
+  4. Radius = distance from (1, ½) to x − y + 1 = 0: $\frac{|1 - \frac{1}{2} + 1|}{\sqrt2} = \frac{3/2}{\sqrt2} = \frac{3}{2\sqrt2}$.
+  Tip: to convert a complex-form line $\bar\alpha z + \alpha\bar z + c = 0$ to Cartesian form, substitute z = x + iy and collect the real part. The imaginary part should vanish identically.
   Answer: (C)
 M A 12: |-
-  Concept: Factorise: $\sin2\theta + \tan2\theta = \tan2\theta(\cos2\theta + 1) = 2\cos^2\theta\tan2\theta$.
+  Concept: Factor the trigonometric expression so that its sign is easy to read:
+  - sin 2θ + tan 2θ = tan 2θ(cos 2θ + 1) = tan 2θ · 2cos²θ.
   Solution:
-  1. $2\cos^2\theta \ge 0$, so we need tan 2θ > 0 (with cos θ ≠ 0).
-  2. $2\theta \in (0, \frac{\pi}{2}) \cup (\pi, \frac{3\pi}{2}) \cup (2\pi, \frac{5\pi}{2}) \cup (3\pi, \frac{7\pi}{2})$.
-  3. $\theta \in (0, \frac{\pi}{4}) \cup (\frac{\pi}{2}, \frac{3\pi}{4}) \cup (\pi, \frac{5\pi}{4}) \cup (\frac{3\pi}{2}, \frac{7\pi}{4})$.
+  1. 2cos²θ ≥ 0, and it is zero only when θ = π/2 or 3π/2. At those points the expression is zero, so they are excluded.
+  2. So the inequality needs tan 2θ > 0.
+  3. For θ ∈ [0, 2π], 2θ ∈ [0, 4π]. tan 2θ > 0 in the first and third quadrants of each turn: 2θ ∈ (0, π/2) ∪ (π, 3π/2) ∪ (2π, 5π/2) ∪ (3π, 7π/2).
+  4. Divide by 2: θ ∈ (0, π/4) ∪ (π/2, 3π/4) ∪ (π, 5π/4) ∪ (3π/2, 7π/4).
+  5. None of these intervals contains π/2 or 3π/2, so the exclusion in step 1 is automatic.
+  Why others are wrong:
+  - (A) is the solution of tan θ > 0.
+  - (C) and (D) miss or distort some of the intervals.
+  Tip: whenever you see sin + tan or cos + cot, factor out tan or cot. The remaining factor usually has a fixed sign.
   Answer: (B)
 M A 13: |-
-  Concept: Image of $(x_1, y_1)$ in ax + by + c = 0: $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{-2(ax_1 + by_1 + c)}{a^2 + b^2}$.
+  Concept: The image of a point (x₁, y₁) in the line ax + by + c = 0 is given by $\frac{x - x_1}{a} = \frac{y - y_1}{b} = \frac{-2(ax_1 + by_1 + c)}{a^2 + b^2}$.
+  Given: the point (3, 5) and the line x − y + 1 = 0.
   Solution:
-  1. $\frac{x - 3}{1} = \frac{y - 5}{-1} = \frac{-2(3 - 5 + 1)}{2} = 1$, so the image is (4, 4).
-  2. Check (A): $(4 - 2)^2 + (4 - 4)^2 = 4$ ✓.
+  1. ax₁ + by₁ + c = 3 − 5 + 1 = −1.
+  2. The common ratio is −2(−1)/(1 + 1) = 1.
+  3. x − 3 = 1 × 1, so x = 4. y − 5 = (−1) × 1, so y = 4. The image is (4, 4).
+  4. Check the midpoint: (3.5, 4.5) satisfies 3.5 − 4.5 + 1 = 0 ✓.
+  5. Test the circles:
+     - (A) (4 − 2)² + (4 − 4)² = 4 ✓;
+     - (B) (0)² + (6)² = 36 ≠ 16;
+     - (C) 0 + 0 = 0 ≠ 8;
+     - (D) 4 + 4 = 8 ≠ 12.
+  6. So the image lies on (x − 2)² + (y − 4)² = 4.
+  Tip: reflecting in the line y = x + 1 swaps coordinates with a shift: (x, y) → (y − 1, x + 1). For (3, 5) this gives (4, 4) ✓.
   Answer: (A)
 M A 14: |-
-  Concept: Rolle's theorem requires f(1) = f(2) and f'(c) = 0.
+  Concept: Rolle's theorem on [a, b] needs f(a) = f(b) and then guarantees some c in (a, b) with f′(c) = 0. Here c = 4/3 is given, which gives two equations in a and b.
+  Given: f(x) = x³ − ax² + bx − 4 on [1, 2].
   Solution:
-  1. f(1) = f(2): $-3 - a + b = 4 - 4a + 2b \Rightarrow 3a - b = 7$.
-  2. $f'(\frac{4}{3}) = 0$: $\frac{16}{3} - \frac{8a}{3} + b = 0 \Rightarrow 8a - 3b = 16$.
-  3. Solving: a = 5, b = 8.
+  1. f(1) = 1 − a + b − 4 = −3 − a + b.
+  2. f(2) = 8 − 4a + 2b − 4 = 4 − 4a + 2b.
+  3. f(1) = f(2): −3 − a + b = 4 − 4a + 2b, so 3a − b = 7. (i)
+  4. f′(x) = 3x² − 2ax + b. f′(4/3) = 16/3 − 8a/3 + b = 0, so 8a − 3b = 16. (ii)
+  5. From (i), b = 3a − 7. Substituting in (ii): 8a − 9a + 21 = 16, so a = 5 and b = 8.
+  6. Check: f(1) = 1 − 5 + 8 − 4 = 0 and f(2) = 8 − 20 + 16 − 4 = 0 ✓. f′(4/3) = 16/3 − 40/3 + 8 = 0 ✓.
+  Why others are wrong: sign changes in a or b break either f(1) = f(2) or f′(4/3) = 0.
+  Tip: since f(1) = f(2) = 0, x = 1 and x = 2 are roots, so f(x) = (x − 1)(x − 2)(x − 2) = x³ − 5x² + 8x − 4 ✓.
   Answer: (B)
 M A 15: |-
-  Concept: Two central conics cut orthogonally when their product of slopes at the intersection is –1, which reduces to a confocal-type condition.
+  Concept: Two curves cut at right angles if the product of their slopes at the point of intersection is −1. For central conics, combining this with the intersection condition gives a simple relation between the parameters.
   Solution:
-  1. Subtracting the equations at an intersection: $x^2\left(\frac{1}{a} - \frac{1}{c}\right) + y^2\left(\frac{1}{b} - \frac{1}{d}\right) = 0$.
-  2. Slopes: $m_1 = -\frac{bx}{ay}$ and $m_2 = -\frac{dx}{cy}$; $m_1m_2 = -1 \Rightarrow \frac{bd\,x^2}{ac\,y^2} = -1$.
-  3. From step 1, $\frac{x^2}{y^2} = -\frac{(d - b)ac}{(c - a)bd}$. Substituting: $\frac{d - b}{c - a} = 1 \Rightarrow a - b = c - d$.
+  1. At an intersection point, subtracting the two equations gives $x^2\left(\frac{1}{a} - \frac{1}{c}\right) = y^2\left(\frac{1}{d} - \frac{1}{b}\right)$, i.e. $\frac{x^2(c - a)}{ac} = \frac{y^2(b - d)}{bd}$.
+  2. Slopes by implicit differentiation: $m_1 = -\frac{bx}{ay}$ and $m_2 = -\frac{dx}{cy}$.
+  3. Orthogonality: $m_1m_2 = \frac{bd\,x^2}{ac\,y^2} = -1$, so $\frac{x^2}{y^2} = -\frac{ac}{bd}$.
+  4. Substituting into step 1: $\frac{(c - a)}{ac}\cdot\left(-\frac{ac}{bd}\right) = \frac{b - d}{bd}$, which gives −(c − a) = b − d, i.e. a − b = c − d.
+  5. So the relation is a − b = c − d.
+  Interpretation: this is the confocal condition. Confocal conics always cut orthogonally, like an ellipse and a hyperbola sharing foci.
+  Tip: a − b = c − d means the two conics have the same focal distance squared, so check it directly instead of redoing the algebra.
   Answer: (B)
 M A 16: |-
-  Concept: $1^\infty$ form: $\lim(1 + f)^g = e^{\lim fg}$.
+  Concept: A limit of the form (1 + f)^g with f → 0 and g → ∞ is a 1^∞ indeterminate form. It equals $e^{\lim f\cdot g}$.
   Solution:
-  1. $H_n = 1 + \frac{1}{2} + \ldots + \frac{1}{n} \approx \ln n$.
-  2. $\lim n\cdot\frac{H_n}{n^2} = \lim\frac{H_n}{n} = 0$.
-  3. Limit $= e^0 = 1$.
+  1. Let H_n = 1 + ½ + … + 1/n (the harmonic number). H_n grows like ln n.
+  2. f = H_n/n² → 0 and g = n → ∞, so the form is 1^∞.
+  3. The exponent: f·g = H_n/n.
+  4. H_n/n → 0, since ln n grows more slowly than n. (For example, H₁₀₀₀ ≈ 7.5 gives 7.5/1000 ≈ 0.0075.)
+  5. So the limit is e⁰ = 1.
+  Why others are wrong:
+  - (B) 1/e would need f·g → −1.
+  - (A) ½ and (D) 0 are not of the form e^L with L finite and real, except L = −∞ for 0, which would need f·g → −∞.
+  Tip: for 1^∞ forms, compute lim g(f − 1) when the base is written as f instead of 1 + f. Any sublinear growth of H_n over n gives exponent 0.
   Answer: (C)
 M A 17: |-
-  Concept: Distribute the prime powers among the three factors (stars and bars).
+  Concept: To count ordered triples (x, y, z) of positive integers with xyz = N, factorise N into primes and distribute each prime power independently among the three factors (stars and bars).
+  Given: 24 = 2³ × 3.
   Solution:
-  1. $24 = 2^3\cdot3$.
-  2. Ways to split $2^3$ among x, y, z: $^{3+2}C_2 = 10$. Ways to place the 3: 3.
-  3. Total = 10 × 3 = 30.
+  1. Powers of 2: we need non-negative integers a₁ + a₂ + a₃ = 3. The number of ways is $\binom{3 + 2}{2} = 10$.
+  2. Power of 3: b₁ + b₂ + b₃ = 1, which has $\binom{1 + 2}{2} = 3$ ways.
+  3. The primes are independent, so the total is 10 × 3 = 30.
+  4. These are ordered triples. For example, (1, 1, 24), (1, 24, 1) and (24, 1, 1) are counted separately, which "integral solutions" intends.
+  Why others are wrong:
+  - (A) 36 and (B) 45 overcount.
+  - (C) 24 might come from a partial count, such as listing unordered triples and mis-multiplying.
+  Tip: in general, the number of ordered k-tuples with product $p_1^{e_1}\cdots p_r^{e_r}$ is $\prod\binom{e_i + k - 1}{k - 1}$.
   Answer: (D)
 M A 18: |-
-  Concept: Linear differential equation.
+  Concept: Rewrite the slope condition as a linear first-order differential equation y′ + P(x)y = Q(x), then use the integrating factor $e^{\int P dx}$.
   Solution:
-  1. $\frac{dy}{dx} - \frac{y}{x - 2} = \frac{x^2 - 4x + 8}{x - 2}$; integrating factor $\frac{1}{x - 2}$.
-  2. $\frac{y}{x - 2} = \int\frac{(x - 2)^2 + 4}{(x - 2)^2}dx = x - \frac{4}{x - 2} + C$, so $y = x(x - 2) - 4 + C(x - 2)$.
-  3. y(0) = 0: –4 – 2C = 0, so C = –2, giving $y = x^2 - 4x$.
-  4. Check (5, 5): 25 – 20 = 5 ✓.
+  1. $\frac{dy}{dx} = \frac{x^2 - 4x + 8}{x - 2} + \frac{y}{x - 2}$, so $\frac{dy}{dx} - \frac{y}{x - 2} = \frac{x^2 - 4x + 8}{x - 2}$.
+  2. Integrating factor: $e^{-\ln|x - 2|} = \frac{1}{x - 2}$.
+  3. $\frac{d}{dx}\left(\frac{y}{x - 2}\right) = \frac{x^2 - 4x + 8}{(x - 2)^2} = \frac{(x - 2)^2 + 4}{(x - 2)^2} = 1 + \frac{4}{(x - 2)^2}$.
+  4. Integrate: $\frac{y}{x - 2} = x - \frac{4}{x - 2} + C$, so y = x(x − 2) − 4 + C(x − 2).
+  5. Through the origin: 0 = 0 − 4 − 2C, so C = −2.
+  6. y = x² − 2x − 4 − 2x + 4 = x² − 4x.
+  7. Check: (5, 5) gives 25 − 20 = 5 ✓. (4, 5) gives 0 and (4, 4) gives 0, so they are not on it. (5, 4) gives 5 ≠ 4.
   Answer: (D)
 M A 19: |-
-  Concept: Break the integral where $[x^3]$ changes value.
+  Concept: The integrand contains [x³], a step function. Split the interval where x³ passes through an integer. Within [−1, 1], x³ lies in [−1, 1], so [x³] = −1 on [−1, 0), 0 on [0, 1), and 1 only at the single point x = 1.
   Solution:
-  1. On [–1, 0): $[x^3] = -1$; on [0, 1): $[x^3] = 0$.
-  2. $\int_{-1}^{0}x^2e^{-1}dx + \int_0^1x^2dx = \frac{1}{3e} + \frac{1}{3} = \frac{e + 1}{3e}$.
+  1. On [−1, 0): $e^{[x^3]} = e^{-1}$, so the integral is $e^{-1}\int_{-1}^{0}x^2dx = \frac{1}{e}\cdot\frac{1}{3} = \frac{1}{3e}$.
+  2. On [0, 1): $e^{[x^3]} = e^0 = 1$, so the integral is $\int_0^1x^2dx = \frac{1}{3}$.
+  3. The single point x = 1 contributes nothing to the integral.
+  4. Total: $\frac{1}{3e} + \frac{1}{3} = \frac{1 + e}{3e}$.
+  Why others are wrong:
+  - (A) $\frac{e + 1}{3}$ uses e instead of 1/e on the negative part.
+  - (B) has a minus sign.
+  - (D) keeps only the negative part.
+  Tip: in greatest-integer integrals, find where the inner expression crosses integers. Here x³ = 0 happens only at x = 0 inside the interval.
   Answer: (C)
 M A 20: |-
-  Concept: Multiplication rule for independent events.
+  Concept: Conditional probability combined with independence:
+  - P(hit) = P(not intercepted) × P(hit | not intercepted);
+  - independent missiles multiply.
+  Given: P(intercepted) = 1/3 and P(hit | not intercepted) = 3/4.
   Solution:
-  1. P(one missile hits) = P(not intercepted) × P(hit | not intercepted) $= \frac{2}{3}\times\frac{3}{4} = \frac{1}{2}$.
-  2. All three hit: $\left(\frac{1}{2}\right)^3 = \frac{1}{8}$.
+  1. P(not intercepted) = 1 − 1/3 = 2/3.
+  2. P(a single missile hits) = (2/3) × (3/4) = 1/2.
+  3. The three missiles are fired independently, so P(all three hit) = (1/2)³ = 1/8.
+  Why others are wrong:
+  - (B) 1/27 = (1/3)³ uses the interception probability.
+  - (C) 3/4 is the conditional hit probability of one missile.
+  - (D) 3/8 might be P(exactly one hit) or P(exactly two hits) for p = ½, i.e. ³C₁/8.
+  Tip: always combine the stages for a single trial first (intercept, then hit), and only then raise to the power for the number of independent trials.
   Answer: (A)
 M B 1: |-
-  Concept: The side of $A_{n+1}$ is $\frac{1}{\sqrt{2}}$ of the side of $A_n$, so areas halve each step.
+  Concept: If the side of Aₙ equals the diagonal of Aₙ₊₁, then side(Aₙ₊₁) = side(Aₙ)/√2. The areas therefore form a geometric progression with ratio ½.
+  Given: side(A₁) = 12 cm, so area(A₁) = 144 cm².
   Solution:
-  1. Area of $A_n = \frac{144}{2^{n-1}}$.
-  2. $\frac{144}{2^{n-1}} < 1 \Rightarrow 2^{n-1} > 144 \Rightarrow n - 1 \ge 8$.
-  3. Smallest n = 9.
+  1. area(Aₙ₊₁) = area(Aₙ)/2, so area(Aₙ) = 144/2ⁿ⁻¹.
+  2. We need 144/2ⁿ⁻¹ < 1, i.e. 2ⁿ⁻¹ > 144.
+  3. 2⁷ = 128 < 144 and 2⁸ = 256 > 144, so n − 1 ≥ 8 and n ≥ 9.
+  4. Check:
+     - area(A₈) = 144/128 = 1.125 > 1;
+     - area(A₉) = 144/256 = 0.5625 < 1 ✓.
+  5. The smallest n is 9.
+  Common mistake: writing area(Aₙ) = 144/2ⁿ, off by one index, which gives n = 8. Always check with n = 1, where the area must be 144.
+  Tip: nested squares built from a diagonal-to-side relation halve their area each step. Squares inscribed by joining the midpoints of the sides behave the same way.
   Answer: 9
 M B 2: |-
-  Concept: Area between sin x and cos x between consecutive intersections.
+  Concept: The curves y = sin x and y = cos x cross where tan x = 1, i.e. at x = π/4 + nπ. Between consecutive crossings, one curve lies above the other. The enclosed area is the same for every such region because both functions are periodic.
   Solution:
-  1. They intersect at $x = \frac{\pi}{4}$ and $\frac{5\pi}{4}$, with sin x above in between.
-  2. $A = \int_{\pi/4}^{5\pi/4}(\sin x - \cos x)dx = [-\cos x - \sin x]_{\pi/4}^{5\pi/4} = \sqrt{2} + \sqrt{2} = 2\sqrt{2}$.
-  3. $A^4 = 64$.
+  1. Take consecutive crossings x = π/4 and x = 5π/4. In between, sin x ≥ cos x.
+  2. $A = \int_{\pi/4}^{5\pi/4}(\sin x - \cos x)\,dx = [-\cos x - \sin x]_{\pi/4}^{5\pi/4}$.
+  3. At 5π/4: −(−1/√2) − (−1/√2) = √2. At π/4: −1/√2 − 1/√2 = −√2.
+  4. A = √2 − (−√2) = 2√2.
+  5. A⁴ = (2√2)⁴ = (8)² = 64.
+  Alternative view: sin x − cos x = √2 sin(x − π/4). Over one half-period (length π), the integral of √2 sin is √2 × 2 = 2√2 ✓.
+  Tip: writing a sin x + b cos x as R sin(x + φ) turns these areas into simple sine integrals.
   Answer: 64
 M B 3: |-
-  Concept: Eliminate the parameter k.
+  Concept: To find the locus of the intersection of two lines that depend on a parameter k, eliminate k. Here multiplying the two equations cancels k neatly.
   Solution:
-  1. $\sqrt{3}x + y = \frac{4\sqrt{3}}{k}$ and $\sqrt{3}x - y = 4\sqrt{3}k$.
-  2. Multiplying: $3x^2 - y^2 = 48 \Rightarrow \frac{x^2}{16} - \frac{y^2}{48} = 1$.
-  3. $e = \sqrt{1 + \frac{48}{16}} = 2$.
+  1. From the first line: √3x + y = 4√3/k.
+  2. From the second line: √3x − y = 4√3k.
+  3. Multiply: (√3x + y)(√3x − y) = (4√3/k)(4√3k) = 48.
+  4. So 3x² − y² = 48, i.e. $\frac{x^2}{16} - \frac{y^2}{48} = 1$.
+  5. This is a hyperbola with a² = 16 and b² = 48.
+  6. Eccentricity: $e = \sqrt{1 + \frac{b^2}{a^2}} = \sqrt{1 + 3} = 2$.
+  Check: the asymptotes are y = ±√3x, at angles of ±60°. Then e = sec 60° = 2 ✓.
+  Tip: when the two lines contain k and 1/k (or k and −1/k), multiplying the equations eliminates k in one step.
   Answer: 2
 M B 4: |-
-  Concept: Direct matrix multiplication with $t = \tan\frac{\theta}{2}$.
+  Concept: For a skew-symmetric A, the Cayley transform (I + A)(I − A)⁻¹ is an orthogonal matrix. With t = tan(θ/2) it becomes a rotation matrix.
   Solution:
-  1. $(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix} 1 & -t \\ t & 1 \end{bmatrix}$.
-  2. $(I + A)(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix} 1 - t^2 & -2t \\ 2t & 1 - t^2 \end{bmatrix} = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}$.
-  3. $a^2 + b^2 = 1$, so $13(a^2 + b^2) = 13$.
+  1. Let t = tan(θ/2). Then $I - A = \begin{bmatrix}1 & t\\ -t & 1\end{bmatrix}$ and $I + A = \begin{bmatrix}1 & -t\\ t & 1\end{bmatrix}$.
+  2. det(I − A) = 1 + t², so $(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix}1 & -t\\ t & 1\end{bmatrix}$.
+  3. $(I + A)(I - A)^{-1} = \frac{1}{1 + t^2}\begin{bmatrix}1 - t^2 & -2t\\ 2t & 1 - t^2\end{bmatrix}$.
+  4. Half-angle formulas: $\frac{1 - t^2}{1 + t^2} = \cos\theta$ and $\frac{2t}{1 + t^2} = \sin\theta$. So a = cos θ and b = sin θ.
+  5. a² + b² = cos²θ + sin²θ = 1.
+  6. 13(a² + b²) = 13.
+  Tip: the determinant of an orthogonal (rotation) matrix is 1, i.e. a² + b² = 1. So the answer follows without computing the individual entries.
   Answer: 13
 M B 5: |-
-  Concept: $\lim_{x\to0}\frac{f(x)}{x^3} = 1$ forces $f(x) = x^6 + ax^5 + bx^4 + x^3$.
+  Concept: The condition $\lim_{x\to0}\frac{f(x)}{x^3} = 1$ fixes the low-order terms of the polynomial. The extrema at x = ±1 then fix the remaining coefficients through f′(±1) = 0.
   Solution:
-  1. $f'(x) = 6x^5 + 5ax^4 + 4bx^3 + 3x^2$.
-  2. f'(1) = 0: 6 + 5a + 4b + 3 = 0; f'(–1) = 0: –6 + 5a – 4b + 3 = 0.
-  3. Adding: 10a + 6 = 0, so $a = -\frac{3}{5}$; then $b = -\frac{3}{2}$.
-  4. $f(2) = 64 - \frac{96}{5} - 24 + 8 = \frac{144}{5}$, so 5f(2) = 144.
+  1. For the limit to exist and equal 1, f can have no x⁰, x¹ or x² terms, and the x³ coefficient must be 1. So f(x) = x⁶ + ax⁵ + bx⁴ + x³.
+  2. f′(x) = 6x⁵ + 5ax⁴ + 4bx³ + 3x².
+  3. f′(1) = 0: 6 + 5a + 4b + 3 = 0, i.e. 5a + 4b = −9.
+  4. f′(−1) = 0: −6 + 5a − 4b + 3 = 0, i.e. 5a − 4b = 3.
+  5. Adding: 10a = −6, so a = −3/5. Subtracting: 8b = −12, so b = −3/2.
+  6. f(2) = 64 + (−3/5)(32) + (−3/2)(16) + 8 = 64 − 19.2 − 24 + 8 = 28.8 = 144/5.
+  7. 5f(2) = 144.
+  Tip: "lim f(x)/xⁿ = L" is a quick way of saying that the lowest power present in f is xⁿ, with coefficient L.
   Answer: 144
 M B 6: |-
-  Concept: |g(x)| can be non-differentiable only where g(x) = 0; check whether the kinks cancel.
+  Concept: |g(x)| can fail to be differentiable only where g(x) = 0 at a simple root. When several absolute-value terms kink at the same point, their kinks may cancel. Compare the one-sided slopes to check.
   Solution:
-  1. Critical points: $x = -\frac{1}{2}$, x = –2, and x = 1 (since $x^2 + x - 2 = (x + 2)(x - 1)$).
-  2. At x = –2: $-3|x + 2| + |x + 2||x - 1| \approx (-3 + 3)|x + 2| = 0$, so the kinks cancel and f is differentiable.
-  3. At $x = -\frac{1}{2}$ and x = 1 there is a single uncancelled kink.
-  4. Number of points = 2.
+  1. The candidate points are:
+     - x = −1/2, from |2x + 1|;
+     - x = −2, from |x + 2|;
+     - x = −2 and x = 1, from |x² + x − 2| = |x + 2||x − 1|.
+  2. At x = −2: near this point, |x − 1| ≈ 3. The terms involving |x + 2| combine as −3|x + 2| + 3|x + 2| = 0 to first order. The kinks cancel, so f is differentiable at −2.
+  3. At x = −1/2: only |2x + 1| kinks, with a jump of 4 in slope. f is not differentiable.
+  4. At x = 1: only |x − 1||x + 2| kinks, with a jump of 2 × 3 = 6. f is not differentiable.
+  5. So there are 2 points of non-differentiability.
+  Tip: whenever an absolute-value term shares a root with another term, compare the coefficients of the kinks. Equal and opposite coefficients cancel.
   Answer: 2
 M B 7: |-
-  Concept: For infinitely many solutions, Δ = 0 and the equations must be consistent.
+  Concept: A system has infinitely many solutions when its determinant is zero and the equations are consistent. Here y and z appear only in the combination y + 2z, which simplifies the analysis.
   Solution:
-  1. y and z always appear as y + 2z, so the coefficient determinant is 0 for every k. Put u = y + 2z.
-  2. The system becomes kx + u = 1, 3x – u = 2 and –2x – 2u = 3 (i.e. $x + u = -\frac{3}{2}$).
-  3. From the last two: 4x = ½, so $x = \frac{1}{8}$ and $u = -\frac{13}{8}$.
-  4. The first equation must agree: $\frac{k}{8} - \frac{13}{8} = 1 \Rightarrow k = 21$. Then u (and so y, z) has a one-parameter family of values, giving infinitely many solutions.
+  1. Put u = y + 2z. The system becomes kx + u = 1, 3x − u = 2 and −2x − 2u = 3.
+  2. The coefficient determinant in (x, y, z) is 0 for every k, because the y- and z-columns are proportional.
+  3. The last two equations determine x and u:
+     - from 3x − u = 2: u = 3x − 2;
+     - substituting in −2x − 2(3x − 2) = 3: −8x + 4 = 3, so x = 1/8 and u = −13/8.
+  4. Consistency with the first equation: k/8 − 13/8 = 1, so k = 21.
+  5. With k = 21, x is fixed and u = y + 2z = −13/8 has infinitely many (y, z) solutions (a one-parameter family).
+  6. For k ≠ 21 the system is inconsistent (no solution).
+  Tip: when some variables always appear in the same combination, replace them with a single variable. This exposes the true rank of the system.
   Answer: 21
 M B 8: |-
-  Concept: $\vec{r}\times\vec{a} = \vec{c}\times\vec{a} \Rightarrow (\vec{r} - \vec{c}) \parallel \vec{a}$.
+  Concept: $\vec r\times\vec a = \vec c\times\vec a$ means $(\vec r - \vec c)\times\vec a = 0$, so $\vec r - \vec c$ is parallel to $\vec a$: $\vec r = \vec c + \lambda\vec a$. The dot condition then fixes λ.
+  Given: $\vec a = (1, 2, -1)$, $\vec b = (1, -1, 0)$, $\vec c = (1, -1, -1)$.
   Solution:
-  1. $\vec{r} = \vec{c} + \lambda\vec{a}$.
-  2. $\vec{r}\cdot\vec{b} = 0$: $\vec{c}\cdot\vec{b} + \lambda\vec{a}\cdot\vec{b} = 2 - \lambda = 0$, so λ = 2.
-  3. $\vec{r}\cdot\vec{a} = \vec{c}\cdot\vec{a} + 2|\vec{a}|^2 = 0 + 12 = 12$.
+  1. $\vec r\cdot\vec b = 0$: $\vec c\cdot\vec b + \lambda\,\vec a\cdot\vec b = 0$.
+  2. $\vec c\cdot\vec b = 1 + 1 + 0 = 2$ and $\vec a\cdot\vec b = 1 - 2 + 0 = -1$. So 2 − λ = 0 and λ = 2.
+  3. $\vec r = (1, -1, -1) + 2(1, 2, -1) = (3, 3, -3)$.
+  4. $\vec r\cdot\vec a = 3 + 6 + 3 = 12$.
+  5. Check: $\vec r\cdot\vec b = 3 - 3 + 0 = 0$ ✓. $\vec c\cdot\vec a = 1 - 2 + 1 = 0$, so $\vec r\cdot\vec a = 0 + 2|\vec a|^2 = 2\times6 = 12$ ✓.
+  Tip: equal cross products with the same vector never mean the vectors are equal. They differ by a multiple of that vector.
   Answer: 12
 M B 9: |-
-  Concept: Compare the entries of $A^2$ with $I_3$.
+  Concept: For the circulant matrix A, compute A² and compare with I₃. Then use the identity x³ + y³ + z³ − 3xyz = (x + y + z)(x² + y² + z² − xy − yz − zx).
   Solution:
-  1. Diagonal of $A^2$: $x^2 + y^2 + z^2 = 1$; off-diagonal: xy + yz + zx = 0.
-  2. $(x + y + z)^2 = 1$, and x + y + z > 0, so x + y + z = 1.
-  3. $x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) = 1\times1 = 1$.
-  4. $x^3 + y^3 + z^3 = 1 + 3\times2 = 7$.
+  1. Diagonal entries of A²: x² + y² + z², which must equal 1.
+  2. Off-diagonal entries of A²: xy + yz + zx, which must equal 0.
+  3. (x + y + z)² = x² + y² + z² + 2(xy + yz + zx) = 1 + 0 = 1. Since x + y + z > 0, x + y + z = 1.
+  4. x³ + y³ + z³ − 3xyz = 1 × (1 − 0) = 1.
+  5. x³ + y³ + z³ = 1 + 3xyz = 1 + 3 × 2 = 7.
+  Note: x, y, z would be the roots of t³ − t² + 0·t − 2 = 0, which has only one real root, so real x, y, z cannot all satisfy the conditions. The data are idealised; the official answer uses the algebra above.
+  Tip: for circulant matrices, A² = I often reduces to conditions on the elementary symmetric functions of the entries.
   Answer: 7
 M B 10: |-
-  Concept: Count 3-digit numbers with distinct digits from {1, 2, 3, 4, 5}, using inclusion–exclusion.
+  Concept: Count three-digit numbers with distinct digits from {1, 2, 3, 4, 5}. A number is divisible by 3 if its digit sum is, and by 5 if its last digit is 5 (0 is not available). Use inclusion–exclusion: |A ∪ B| = |A| + |B| − |A ∩ B|.
   Solution:
-  1. Divisible by 5: last digit 5, then 4 × 3 = 12 numbers.
-  2. Divisible by 3: digit sum a multiple of 3. The sets {1,2,3}, {1,3,5}, {2,3,4}, {3,4,5} each give 3! = 6 numbers, so 24 numbers.
-  3. Divisible by 15: sets containing 5, i.e. {1,3,5} and {3,4,5}, with 5 last: 2 × 2 = 4 numbers.
-  4. Total = 12 + 24 – 4 = 32.
+  1. Divisible by 5: the last digit is 5, and the first two are chosen from the remaining 4 digits in order: 4 × 3 = 12.
+  2. Divisible by 3: we need 3-digit subsets with sum ≡ 0 (mod 3).
+     - {1,2,3}: 6 ✓
+     - {1,3,5}: 9 ✓
+     - {2,3,4}: 9 ✓
+     - {3,4,5}: 12 ✓
+     - {1,2,6} is not possible.
+     Four subsets, each giving 3! = 6 numbers: 24.
+  3. Divisible by both (by 15): a subset with sum divisible by 3 that contains 5 ({1,3,5} or {3,4,5}), with 5 last and the other two in 2 orders: 2 × 2 = 4.
+  4. Total = 12 + 24 − 4 = 32.
+  Tip: list the digit subsets for the divisibility-by-3 condition explicitly. There are only 10 ways to pick 3 digits from 5, so enumeration is safe.
   Answer: 32

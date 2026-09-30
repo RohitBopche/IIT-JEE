@@ -1,185 +1,330 @@
 C A 1: |-
-  Concept: Alkylation of an acetylide, then hydrogenation and oxidation.
+  Concept: A terminal alkyne is acidic enough (pKa ≈ 25) to be deprotonated by NaNH₂. The acetylide ion is a good nucleophile that displaces halide from a primary alkyl halide (SN2). Then H₂/Pd–C fully reduces C≡C, and CrO₃ oxidises a secondary alcohol to a ketone.
   Solution:
-  1. NaNH₂ gives A = CH₃C≡C⁻Na⁺, which displaces Br to give B = CH₃C≡C–CH₂CH₂CH(OH)CH₃.
-  2. H₂/Pd–C fully reduces the triple bond: C = CH₃(CH₂)₄CH(OH)CH₃ (heptan-2-ol).
-  3. CrO₃ oxidises the secondary alcohol to a ketone: D = CH₃(CH₂)₄COCH₃ (heptan-2-one).
+  1. CH₃C≡CH + NaNH₂ → A = CH₃C≡C⁻Na⁺ + NH₃.
+  2. A + BrCH₂CH₂CH(OH)CH₃ → B = CH₃C≡C–CH₂CH₂CH(OH)CH₃ (C–C bond formation).
+  3. H₂/Pd–C (not Lindlar) → C = CH₃CH₂CH₂CH₂CH₂CH(OH)CH₃ (heptan-2-ol).
+  4. CrO₃ → D = CH₃(CH₂)₄COCH₃ (heptan-2-one).
+  Why others are wrong:
+  - (A) is an aldehyde; a secondary alcohol gives a ketone, not an aldehyde.
+  - (B) keeps a C=C and has a COOH, which would need different reagents.
+  - (C) is only partially reduced and not oxidised.
+  Key takeaway: acetylide alkylation is a standard way to lengthen carbon chains.
   Answer: (D)
 C A 2: |-
-  Concept: Haloform reaction: NaOCl converts a methyl ketone R–CO–CH₃ to R–COOH plus CHCl₃.
+  Concept: The haloform reaction: NaOCl (or I₂/NaOH) converts a methyl ketone R–CO–CH₃ into R–COO⁻ (then R–COOH on acidification) and CHCl₃. The product acid has one carbon fewer than the ketone.
   Solution:
-  1. The product CH₃CH=CH–COOH has R = CH₃CH=CH–, so P = CH₃CH=CH–CO–CH₃ (pent-3-en-2-one).
-  2. The aldehyde, the cyclic ether and cyclopentanone are not methyl ketones.
+  1. Product: CH₃CH=CH–COOH, so R = CH₃CH=CH–.
+  2. P = R–CO–CH₃ = CH₃CH=CH–CO–CH₃ (pent-3-en-2-one).
+  3. The C=C is not affected by hypochlorite under these conditions.
+  Why others are wrong:
+  - (B) pent-2-enal is an aldehyde; NaOCl would not give but-2-enoic acid by a haloform pathway.
+  - (C) dihydropyran is a cyclic enol ether, not a methyl ketone.
+  - (D) cyclopentanone has no CH₃CO– group.
+  Key takeaway: only CH₃CO– (and CH₃CH(OH)–) compounds give the haloform reaction.
   Answer: (A)
 C A 3: |-
-  Concept: Lone pairs on Xe = (8 − electrons used in bonding)/2, where each F uses 1 and each O uses 2.
+  Concept: Xenon has 8 valence electrons. Each Xe–F single bond uses 1 Xe electron; each Xe=O bond uses 2. Remaining electrons form lone pairs: lone pairs = $\frac{8 - (\text{no. of F}) - 2(\text{no. of O})}{2}$.
   Solution:
-  1. XeF₂: (8 − 2)/2 = 3, which is (iv). XeO₂F₂: (8 − 6)/2 = 1, which is (ii).
-  2. XeO₃F₂: (8 − 8)/2 = 0, which is (i). XeF₄: (8 − 4)/2 = 2, which is (iii).
-  3. Only option (D) gives a–iv, b–ii, c–i, d–iii.
+  1. (a) XeF₂: $\frac{8 - 2}{2} = 3$ lone pairs (linear) → (iv).
+  2. (b) XeO₂F₂: $\frac{8 - 2 - 4}{2} = 1$ lone pair (see-saw) → (ii).
+  3. (c) XeO₃F₂: $\frac{8 - 2 - 6}{2} = 0$ lone pairs (trigonal bipyramidal) → (i).
+  4. (d) XeF₄: $\frac{8 - 4}{2} = 2$ lone pairs (square planar) → (iii).
+  Correct: (a)-(iv), (b)-(ii), (c)-(i), (d)-(iii).
+  Why others are wrong:
+  - (A) gives XeO₂F₂ zero lone pairs; (B) and (C) give XeF₂ two lone pairs.
+  Key takeaway: XeF₂ (3 lp) is linear and XeF₄ (2 lp) is square planar, both with lone pairs placed to minimise repulsion.
   Answer: (D)
 C A 4: |-
-  Concept: pπ–pπ back donation is most effective when the orbitals are of similar size.
+  Concept: In boron trihalides, a filled p orbital on the halogen donates electron density into boron's empty 2p orbital (pπ–pπ back bonding). The overlap is best when the orbitals are of similar size and energy.
   Solution:
-  1. In BF₃ the overlap is 2p(F)–2p(B), the best match, so back donation is strongest.
-  2. It weakens for Cl (3p), Br (4p) and I (5p), which is why the Lewis acidity order is BF₃ < BCl₃ < BBr₃.
+  1. BF₃: F 2p and B 2p are the same size → maximum overlap → strongest back donation.
+  2. For Cl (3p), Br (4p) and I (5p), the orbital size mismatch grows, so back donation weakens.
+  3. Consequence: Lewis acidity order BF₃ < BCl₃ < BBr₃ < BI₃ — opposite to what electronegativity alone predicts.
+  Why others are wrong:
+  - (A), (C), (D) have larger halogens with poorer 2p–np overlap.
+  Key takeaway: back bonding is why BF₃ is the weakest Lewis acid among the boron trihalides.
   Answer: (B)
 C A 5: |-
-  Concept: Isotope effect.
+  Concept: Isotopes have the same chemistry but different rates (kinetic isotope effect). D₂ has a lower zero-point energy than H₂, so its bond is effectively stronger (443 vs 436 kJ/mol).
   Solution:
-  1. D₂ has a higher bond dissociation energy (lower zero-point energy) than H₂, so it reacts more slowly.
-  2. Deuterium is stable and not radioactive, so it does not emit β⁺.
+  1. Reactions involving breaking of the D–D (or X–D) bond are slower than the corresponding H reactions.
+  2. So deuterium reacts more slowly than hydrogen.
+  Why others are wrong:
+  - (B) "more vigorously" is the opposite.
+  - (C) "just as hydrogen" ignores the isotope effect.
+  - (D) Deuterium is a stable isotope; it is not radioactive (tritium emits β⁻, not β⁺).
+  Key takeaway: this rate difference makes D₂O useful in studying reaction mechanisms.
   Answer: (A)
 C A 6: |-
-  Concept: Refining methods.
+  Concept: Liquation is used for metals with low melting points (tin, lead, bismuth). The impure metal is placed on a sloping hearth and heated just above its melting point; the pure metal melts and flows down, leaving higher-melting impurities behind.
   Solution:
-  1. Liquation: a low-melting metal (such as Sn or Pb) is melted on a sloping hearth and flows away from the higher-melting impurities.
-  2. Zone refining is for ultra-pure semiconductors, chromatography for trace elements, and electrolysis is a general method.
+  1. Low-melting metals → liquation.
+  Why others are wrong:
+  - (A) Chromatographic methods purify elements available in small amounts or with similar properties.
+  - (C) Electrolytic refining is general (e.g. Cu, Zn), not specific to low-melting metals.
+  - (D) Zone refining gives ultra-pure semiconductors (Si, Ge, Ga) based on impurities being more soluble in the melt.
+  Key takeaway: match the refining method to the property exploited — melting point (liquation), boiling point (distillation), solubility (zone refining), volatility of compounds (Mond, van Arkel).
   Answer: (B)
 C A 7: |-
-  Concept: Examples of magnetic types.
+  Concept: Magnetic behaviour depends on unpaired electrons and how their moments align:
+  - Diamagnetic: no unpaired electrons.
+  - Paramagnetic: unpaired electrons, randomly oriented.
+  - Ferrimagnetic: antiparallel but unequal moments (net moment).
+  - Antiferromagnetic: antiparallel, equal moments (zero net moment).
   Solution:
-  1. NaCl has all electrons paired: diamagnetic, (a)–(iii).
-  2. Fe₃O₄ has unequal antiparallel moments: ferrimagnetic, (b)–(iv).
-  3. O₂ has two unpaired electrons: paramagnetic, (c)–(ii).
-  4. MnO has equal antiparallel moments: antiferromagnetic, (d)–(i).
+  1. (a) Diamagnetism: NaCl (all electrons paired) → (iii).
+  2. (b) Ferrimagnetism: Fe₃O₄ (Fe²⁺/Fe³⁺ on different sites) → (iv).
+  3. (c) Paramagnetism: O₂ (two unpaired π* electrons) → (ii).
+  4. (d) Antiferromagnetism: MnO → (i).
+  Correct: (a)-(iii), (b)-(iv), (c)-(ii), (d)-(i).
+  Why others are wrong:
+  - (A), (B), (D) each mismatch these standard examples.
+  Key takeaway: ferrimagnets (Fe₃O₄, ferrites) become paramagnetic on heating, like ferromagnets.
   Answer: (C)
 C A 8: |-
-  Concept: Identify the structures.
+  Concept: Identify each structure: (A) morphine and (D) codeine are opium alkaloids — narcotic analgesics. (B) is a benzodiazepine (diazepam/chlordiazepoxide type) — a tranquilliser. (C) is serotonin-type (a mood-regulating amine), classed as a tranquilliser in the official key.
   Solution:
-  1. (A) morphine and (D) codeine are narcotic (opiate) analgesics.
-  2. (B) is a benzodiazepine (the diazepam type), a tranquillizer.
-  3. (C), a serotonin-type amine that acts on mood, is classed as a tranquillizer in the official answer.
-  4. Options (1), (2) and (3) all wrongly class a narcotic or a tranquillizer, which leaves (B) and (C).
+  1. Narcotic analgesics: (A) and (D).
+  2. Tranquillisers: (B) and (C).
+  3. The correct statement is (D): (B) and (C) are tranquillisers.
+  Why others are wrong:
+  - (A) includes the tranquillisers (B), (C) among narcotics.
+  - (B) includes codeine (D) among tranquillisers.
+  - (C) calls morphine and codeine tranquillisers.
+  Key takeaway (NCERT): tranquillisers act on the central nervous system to reduce anxiety; narcotic analgesics relieve severe pain and can cause addiction.
   Answer: (D)
 C A 9: |-
-  Concept: Acid chloride → amide → Hofmann bromamide (one carbon fewer) → amine → alcohol via the diazonium ion.
+  Concept: Sequence: acid chloride → amide (NH₃) → Hofmann bromamide degradation (one carbon fewer) → primary amine → HNO₂ gives alcohol (via diazonium ion, N₂ lost).
   Solution:
-  1. Alcoholic NH₃ gives (CH₃)₂CHCH₂CH₂CONH₂.
-  2. Br₂/NaOH gives (CH₃)₂CHCH₂CH₂NH₂.
-  3. NaNO₂/HCl then H₂O gives (CH₃)₂CHCH₂CH₂OH.
+  1. (CH₃)₂CHCH₂CH₂COCl + NH₃ → (CH₃)₂CHCH₂CH₂CONH₂.
+  2. Br₂/NaOH (Hofmann): → (CH₃)₂CHCH₂CH₂NH₂ (the C=O carbon is lost as CO₃²⁻).
+  3. NaNO₂/HCl, then H₂O: → (CH₃)₂CHCH₂CH₂OH (3-methylbutan-1-ol).
+  Why others are wrong:
+  - (B) keeps all the carbons — ignores the carbon lost in the Hofmann step.
+  - (A) introduces Br on the chain, which does not happen.
+  - (D) the chloride is not the major product with water present.
+  Key takeaway: Hofmann degradation shortens the chain by exactly one carbon.
   Answer: (C)
 C A 10: |-
-  Concept: Hydrogen bonding in amines.
+  Concept: Amines associate through N–H···N hydrogen bonds. Primary amines (RNH₂) have two N–H bonds, secondary amines (R₂NH) have one, tertiary amines have none.
   Solution:
-  1. A primary amine has two N–H bonds, so it associates more than a secondary amine (one N–H). Statement (A) is therefore incorrect.
-  2. The other statements are correct: (B) RNH₂ + HNO₂ gives ROH (methylamine gives other products); (C) 2° amines are more basic than 1°; (D) Gabriel synthesis gives 1° amines.
+  1. (A) "Intermolecular association in 1° amines is less than in 2° amines" — INCORRECT. 1° amines have more N–H bonds, so they associate more (e.g. higher boiling points for comparable molar mass).
+  2. (B) 1° amines + HNO₂ → alcohols (via diazonium) — correct (methylamine behaves differently, giving other products).
+  3. (C) 1° amines are less basic than 2° amines (in the gas phase and generally in water for simple alkyl groups) — correct.
+  4. (D) Gabriel phthalimide synthesis gives 1° amines — correct.
+  Key takeaway: boiling points: 1° > 2° > 3° amines of similar mass, reflecting the number of N–H bonds.
   Answer: (A)
 C A 11: |-
-  Concept: Prussian blue forms.
+  Concept: Fe³⁺ reacts with ferrocyanide [Fe(CN)₆]⁴⁻ to give Prussian blue. The composition depends on which reagent is in excess.
   Solution:
-  1. With excess K₄[Fe(CN)₆], Fe³⁺ forms the colloidal "soluble Prussian blue", KFe[Fe(CN)₆].
-  2. With excess Fe³⁺, insoluble Fe₄[Fe(CN)₆]₃ forms instead.
+  1. With excess K₄[Fe(CN)₆], the product is "soluble Prussian blue", KFe[Fe(CN)₆], which forms a colloidal dispersion (K⁺ ions keep the particles charged).
+  2. With excess Fe³⁺, the insoluble form Fe₄[Fe(CN)₆]₃ precipitates.
+  3. The question specifies excess ferrocyanide → KFe[Fe(CN)₆].
+  Why others are wrong:
+  - (A) is the insoluble form (excess Fe³⁺).
+  - (B) and (C) are not the standard products.
+  Why the colour: Prussian blue contains Fe(II) and Fe(III) linked by cyanide bridges; charge transfer between them absorbs orange-red light, so the compound looks deep blue.
+  Common mistake: Picking Fe₄[Fe(CN)₆]₃ automatically; that insoluble form needs excess Fe³⁺, not excess ferrocyanide.
+  Key takeaway: Prussian blue formation is the basis of the test for nitrogen in Lassaigne's extract.
   Answer: (D)
 C A 12: |-
-  Concept: CFCs (for example freon CF₂Cl₂) are inert, non-toxic and non-flammable, and are photolysed only in the stratosphere.
+  Concept: Chlorofluorocarbons (e.g. freon-12, CF₂Cl₂) are non-toxic, non-flammable and chemically inert, so they survive in the lower atmosphere and diffuse into the stratosphere. There, UV radiation breaks the weaker C–Cl bond.
   Solution:
-  1. $\mathrm{CF_2Cl_2 \xrightarrow{h\nu} \dot{C}l + \dot{C}F_2Cl}$.
-  2. The Cl· radical then destroys O₃, and ClO· forms later.
+  1. CF₂Cl₂ + hν → Cl• + •CF₂Cl (the initial radical intermediates).
+  2. Cl• then attacks ozone: Cl• + O₃ → ClO• + O₂; ClO• + O → Cl• + O₂ (chain reaction).
+  Why others are wrong:
+  - (A) ClO• forms only after Cl• reacts with O₃ — it is not an initial intermediate.
+  - (B) and (C) involve •CH₃, which is not present in CFCs.
+  Key takeaway: one Cl atom can destroy thousands of O₃ molecules before being removed.
   Answer: (D)
 C A 13: |-
-  Concept: Calcium sulphate hydrates.
+  Concept: Calcium sulphate forms hydrates that differ in water content.
   Solution:
-  1. Gypsum is CaSO₄·2H₂O, plaster of Paris is CaSO₄·½H₂O, and dead-burnt plaster is anhydrous CaSO₄.
-  2. So the numbers are 2, 0 and 0.5.
+  1. Gypsum: CaSO₄·2H₂O → 2 water molecules.
+  2. Dead-burnt plaster: anhydrous CaSO₄ (formed above ~473 K) → 0.
+  3. Plaster of Paris: CaSO₄·½H₂O (formed at 393 K) → 0.5.
+  4. Sequence: 2, 0, 0.5.
+  Why others are wrong:
+  - (A) gives plaster of Paris 1 H₂O.
+  - (B) and (C) misassign gypsum.
+  Temperatures: Heating gypsum at 393 K gives plaster of Paris (2CaSO₄·H₂O); heating above 473 K removes all the water, giving dead-burnt plaster.
+  Common mistake: Writing plaster of Paris as CaSO₄·H₂O (1 water); it is one water per two CaSO₄, that is, ½ per formula unit.
+  Key takeaway: plaster of Paris sets by rehydration to gypsum; dead-burnt plaster has lost the ability to set.
   Answer: (D)
 C A 14: |-
-  Concept: Oxides of a metal in lower oxidation states are basic.
+  Concept: For a given transition metal, oxides in low oxidation states are basic, intermediate states are amphoteric, and high oxidation states are acidic (the metal becomes more covalent/electronegative).
   Solution:
-  1. V₂O₃ (V +3) and CrO (Cr +2) are both basic.
-  2. By contrast, V₂O₅ and CrO₃ (higher oxidation states) are acidic, and Cr₂O₃ is amphoteric.
+  1. V₂O₃: V is +3 (low) → basic.
+  2. CrO: Cr is +2 (low) → basic.
+  3. So X = basic, Y = basic.
+  Comparison: V₂O₄ (+4) is amphoteric, V₂O₅ (+5) acidic; Cr₂O₃ (+3) amphoteric, CrO₃ (+6) acidic.
+  Why others are wrong:
+  - (A), (B), (C) assign amphoteric or acidic character to low-oxidation-state oxides.
+  Why low oxidation states are basic: A low-charge metal ion forms ionic M–O bonds, so the oxide releases O²⁻/OH⁻ and neutralises acids. A high-charge metal polarises the oxygen strongly, making the M–O bond covalent and the oxide acidic.
+  Common mistake: Assuming V₂O₃ is amphoteric like V₂O₄ or Cr₂O₃; its +3 state is still low for vanadium.
+  Key takeaway: acidity of oxides rises with the oxidation state of the metal.
   Answer: (D)
 C A 15: |-
-  Concept: Tautomers of nucleobases in nucleic acids.
+  Concept: Nucleobases can exist as keto (lactam) or enol (lactim) tautomers. In nucleic acids they exist predominantly in the keto form, which gives the correct hydrogen-bonding pattern for base pairing.
   Solution:
-  1. Uracil exists in RNA in the diketo (lactam) form, pyrimidine-2,4(1H,3H)-dione.
-  2. This form lets it pair with adenine (C=O and N–H donor/acceptor pattern).
+  1. Uracil in RNA: pyrimidine-2,4(1H,3H)-dione — both oxygens as C=O and both ring nitrogens bearing H (diketo form).
+  2. This form pairs with adenine via two hydrogen bonds.
+  Why others are wrong:
+  - (A) is the di-enol (2,4-dihydroxypyrimidine) form.
+  - (B) and (C) are mixed keto–enol tautomers, which would mispair.
+  Why the keto form matters: In the diketo form, N3–H acts as a hydrogen-bond donor and C4=O as an acceptor, which matches adenine's pattern exactly. An enol tautomer would present the wrong donor/acceptor pattern and could pair with guanine instead, causing mutations.
+  Key takeaway: rare tautomers can cause mutations by mispairing during replication.
   Answer: (D)
 C A 16: |-
-  Concept: Williamson synthesis is an SN2 reaction of an alkoxide or phenoxide with an alkyl halide.
+  Concept: Williamson ether synthesis: an alkoxide/phenoxide attacks an alkyl halide by SN2. The halide must be on an sp³ carbon (preferably primary).
   Solution:
-  1. C₆H₅O⁻Na⁺ + C₂H₅Br gives C₆H₅OC₂H₅, so A is correct.
-  2. Bromobenzene does not undergo SN2 (sp² C–Br with partial double-bond character), so R is incorrect.
+  1. Assertion: ethyl phenyl ether can be made by Williamson synthesis, e.g. C₆H₅O⁻Na⁺ + C₂H₅Br → C₆H₅OC₂H₅ + NaBr. CORRECT.
+  2. Reason: bromobenzene + sodium ethoxide does NOT give the ether — aryl halides do not undergo SN2 (sp² carbon, partial double-bond character of C–Br, ring blocks back-side attack). INCORRECT.
+  Why others are wrong:
+  - (A) and (D) accept the incorrect Reason.
+  - (C) rejects the correct Assertion.
+  Key takeaway: for aryl alkyl ethers, the aryl part must be the phenoxide nucleophile, and the alkyl part the halide.
   Answer: (B)
 C A 17: |-
-  Concept: Grignard reagents are strong bases and are protonated by acidic O–H.
+  Concept: A Grignard reagent (RMgX) is a very strong base. Any compound with an acidic hydrogen (water, alcohols, acids, terminal alkynes, amines) protonates it, giving the alkane R–H.
   Solution:
-  1. Cyclopentyl-MgCl + C₂H₅OH gives cyclopentane + Mg(OC₂H₅)Cl.
+  1. Chlorocyclopentane + Mg (dry ether) → A = cyclopentylmagnesium chloride.
+  2. A + C₂H₅OH → cyclopentane (P) + Mg(OC₂H₅)Cl.
+  Why others are wrong:
+  - (B) Ethoxycyclopentane would need an SN2 attack on an alkyl halide by ethoxide — not what a Grignard does with ethanol.
+  - (C) Ethylcyclopentane would need C–C bond formation with an ethyl electrophile.
+  - (D) Cyclopentene would need elimination.
+  Key takeaway: Grignard reactions must be carried out in dry, alcohol-free ether.
   Answer: (A)
 C A 18: |-
-  Concept: $\frac{an^2}{V^2}$ has the units of pressure.
+  Concept: In the van der Waals equation, every term added to P must have pressure units. So $\frac{an^2}{V^2}$ is a pressure.
   Solution:
-  1. $a = \frac{PV^2}{n^2}$, so its unit is atm dm⁶ mol⁻² (or Pa m⁶ mol⁻²).
+  1. $a = \frac{P\cdot V^2}{n^2}$.
+  2. Units: atm × (dm³)² / mol² = atm dm⁶ mol⁻² (or Pa m⁶ mol⁻² = N m⁴ mol⁻²).
+  Why others are wrong:
+  - (B) dm³ mol⁻¹ is the unit of b (excluded volume per mole).
+  - (A) kg m s⁻² is the unit of force.
+  - (C) kg m s⁻¹ is the unit of momentum.
+  SI units: a = Pa m⁶ mol⁻², equivalent to N m⁴ mol⁻² or kg m⁵ s⁻² mol⁻².
+  Common mistake: Picking dm³ mol⁻¹, which belongs to b, the volume correction term; a is the pressure correction.
+  Key takeaway: 'a' measures intermolecular attraction; 'b' measures molecular size.
   Answer: (D)
 C A 19: |-
-  Concept: Structure of polythionic acids: $\mathrm{HO_3S{-}(S)_{x-2}{-}SO_3H}$.
+  Concept: Polythionic acids H₂SₓO₆ have the structure HO₃S–(S)ₓ₋₂–SO₃H: two SO₃H groups joined by a chain of sulphur atoms.
   Solution:
-  1. The two terminal SO₃H sulphurs are +5.
-  2. The bridging S atoms (S–S chain) are 0.
+  1. Terminal S atoms in SO₃H groups: each bonded to three O (one OH) and to S → oxidation state +5.
+  2. Bridging S atoms (bonded only to S): oxidation state 0.
+  3. So S has oxidation states 0 and +5.
+  Check for H₂S₄O₆ (tetrathionic acid): average = $\frac{2(5) + 2(0)}{4} = 2.5$ = (12 − 2)/4 ✓.
+  Why others are wrong:
+  - (A) and (B) ignore the chain S atoms.
+  - (C) gives +3, which does not occur here.
+  Key takeaway: average oxidation states can be fractional, but individual atoms have integer values.
   Answer: (D)
 C A 20: |-
-  Concept: The Tyndall effect needs a large refractive-index difference between the particles and the medium.
+  Concept: The Tyndall effect (scattering of light by colloidal particles) is significant when (i) particle size is comparable to the wavelength and (ii) the refractive indices of the dispersed phase and the medium differ greatly.
   Solution:
-  1. In lyophobic sols, the dispersed phase differs strongly in refractive index from the medium, so the effect is pronounced.
-  2. Lyophilic sols are solvated, so the effect is weak; true solutions show none.
+  1. Lyophobic sols (e.g. metal sols, As₂S₃ sol): particles are not solvated, so their refractive index differs sharply from the medium → strong Tyndall effect.
+  2. Lyophilic sols (gum, starch, gelatin): particles are heavily solvated, reducing the refractive-index difference → weak Tyndall effect.
+  Why others are wrong:
+  - (A) True solutions have particles too small to scatter visibly.
+  - (D) Suspensions have large particles that settle and reflect rather than show a clear Tyndall cone.
+  Key takeaway: the Tyndall effect distinguishes colloids from true solutions.
   Answer: (C)
 C B 1: |-
-  Concept: %Br = $\frac{80}{188}\times\frac{w_{\mathrm{AgBr}}}{w}\times100$.
+  Concept: Carius method: all bromine forms AgBr (M = 188). %Br $= \frac{80}{188}\times\frac{m_{AgBr}}{m_{compound}}\times100$.
   Solution:
-  1. %Br $= \frac{80\times0.188\times100}{188\times0.2} = 40$.
+  1. $\frac{80}{188}\times\frac{0.188}{0.2}\times100 = \frac{80\times0.188\times100}{188\times0.2} = \frac{1504}{37.6} = 40\%$.
+  Method: The organic compound is heated with fuming HNO₃ and AgNO₃ in a sealed (Carius) tube, so the bromine is converted quantitatively to AgBr, which is filtered, dried and weighed.
+  Common mistake: Using the atomic mass of Ag (108) instead of the formula mass of AgBr (188) in the ratio.
+  Key takeaway: 0.188 g AgBr is exactly 1 mmol, containing 0.080 g Br — a quick mental check.
   Answer: 40
 C B 2: |-
-  Concept: Rate of reaction $= \frac{1}{2}\frac{d[\mathrm{Cr_2(SO_4)_3}]}{dt} = -\frac{1}{3}\frac{d[\mathrm{C_2H_6O}]}{dt}$.
+  Concept: For aA + bB → cC + dD, the rate is $-\frac{1}{a}\frac{d[A]}{dt} = \frac{1}{c}\frac{d[C]}{dt}$.
   Solution:
-  1. $-\frac{d[\mathrm{C_2H_6O}]}{dt} = \frac{3}{2}\times2.67 = 4.0$ mol/min.
+  1. Coefficients: Cr₂(SO₄)₃ = 2, C₂H₆O = 3.
+  2. $-\frac{1}{3}\frac{d[C_2H_6O]}{dt} = \frac{1}{2}\frac{d[Cr_2(SO_4)_3]}{dt}$.
+  3. $-\frac{d[C_2H_6O]}{dt} = \frac{3}{2}\times2.67 = 4.0$ mol min⁻¹.
+  Balance check: 2 K₂Cr₂O₇ give 2 Cr₂(SO₄)₃, oxidising 3 C₂H₅OH to 3 CH₃COOH, so ethanol disappears 3/2 times as fast as the chromium sulphate appears.
+  Common mistake: Using the inverse ratio 2/3, which gives 1.78 mol min⁻¹.
+  Key takeaway: in the breath analyser, orange Cr(VI) turns green Cr(III) as ethanol is oxidised to acetic acid.
   Answer: 4
 C B 3: |-
-  Concept: $KE = \frac{n^2h^2}{8\pi^2mr^2}$ with $r = n^2a_0$.
+  Concept: In Bohr's model, mvr = $\frac{nh}{2\pi}$, so $KE = \frac{1}{2}mv^2 = \frac{n^2h^2}{8\pi^2mr^2}$, with $r_n = n^2a_0$.
   Solution:
-  1. For n = 2, r = 4a₀: $KE = \frac{4h^2}{8\pi^2m(16a_0^2)} = \frac{h^2}{32\pi^2ma_0^2}$.
-  2. x = 32π² = 32 × 9.8596 = 315.5, so 10x ≈ 3155.
+  1. n = 2: r = 4a₀.
+  2. $KE = \frac{4h^2}{8\pi^2m(16a_0^2)} = \frac{h^2}{32\pi^2ma_0^2}$.
+  3. x = 32π² = 32 × 9.8596 = 315.5; 10x ≈ 3155.
+  Why the expression: From mvr = nh/2π, v = nh/(2πmr). Squaring and multiplying by m/2 gives KE = n²h²/(8π²mr²).
+  Common mistake: Taking r₂ = 2a₀ instead of 4a₀ (r ∝ n²), which gives x = 8π² and 10x ≈ 789.
+  Key takeaway: KE in the nth orbit scales as $\frac{1}{n^2}$ — here one quarter of the ground-state value.
   Answer: 3155
 C B 4: |-
-  Concept: When ice separates, the remaining solution becomes more concentrated until ΔT_f = 4 K.
+  Concept: When a solution is cooled below its freezing point, pure ice separates and the remaining solution becomes more concentrated until its freezing point equals the new temperature.
   Solution:
-  1. For 1 kg of water, 0.75 mol of sucrose is 256.5 g, so the solution mass is 1256.5 g. 1 kg of solution therefore holds 795.9 g of water and 0.597 mol of sucrose.
-  2. At −4°C: m = 4/1.86 = 2.151 mol/kg, so the water left is 0.597/2.151 = 277.6 g.
-  3. Ice separated = 795.9 − 277.6 ≈ 518 g.
+  1. 0.75 molal: 0.75 mol sucrose (256.5 g) per 1000 g water → 1256.5 g solution.
+  2. 1 kg of solution contains $\frac{1000}{1256.5}\times1000 = 795.9$ g water and 0.597 mol sucrose.
+  3. At −4 °C: required molality = $\frac{4}{1.86} = 2.151$ mol/kg.
+  4. Water remaining = $\frac{0.597}{2.151} = 0.2776$ kg = 277.6 g.
+  5. Ice separated = 795.9 − 277.6 ≈ 518 g.
+  Key takeaway: "1 kg of solution" ≠ "1 kg of solvent" — convert first.
   Answer: 518
 C B 5: |-
-  Concept: Only ionisable Cl⁻ precipitates as AgCl.
+  Concept: Only chloride ions outside the coordination sphere precipitate with AgNO₃. For an octahedral complex, coordination number = 6.
   Solution:
-  1. 1 AgCl means 1 Cl⁻ is outside the sphere, so the complex is [MCl₂(L)₂]Cl.
-  2. Coordination number 6 = 2 (Cl) + 2 × denticity, so the denticity is 2.
+  1. 1 mol AgCl per mol complex → 1 ionisable Cl⁻ → [MCl₂(L)₂]Cl.
+  2. Donor sites: 2 (from Cl) + 2 × (denticity of L) = 6.
+  3. Denticity of L = 2 (bidentate, e.g. ethylenediamine).
+  Why only one chloride: The two Cl⁻ bonded directly to M are inside the coordination sphere and do not ionise; only the counter-ion Cl⁻ precipitates as AgCl.
+  Common mistake: Assuming all 3 Cl are ionic, which would leave 6 donor sites for the two L ligands (tridentate), contradicting the AgCl data.
   Answer: 2
 C B 6: |-
-  Concept: In Dumas combustion, CuO supplies all the O for CO₂ and H₂O.
+  Concept: In Dumas's method, the compound is heated with CuO, which oxidises C to CO₂ and H to H₂O, and releases N as N₂ (Cu formed). Balance oxygen to find the moles of CuO.
   Solution:
-  1. C₇H₁₇N (M = 115): 57.5 g is 0.5 mol.
-  2. $\mathrm{C_7H_{17}N + \frac{45}{2}CuO \to 7CO_2 + \frac{17}{2}H_2O + \frac{1}{2}N_2 + \frac{45}{2}Cu}$.
-  3. CuO = 0.5 × 22.5 = 11.25 mol = 1125 × 10⁻².
+  1. N,N-dimethylaminopentane: C₅H₁₁N(CH₃)₂ = C₇H₁₇N, M = 84 + 17 + 14 = 115 g/mol; 57.5 g = 0.5 mol.
+  2. Per mole: 7 CO₂ needs 14 O; $\frac{17}{2}$ H₂O needs 8.5 O; total 22.5 O → 22.5 CuO.
+  3. For 0.5 mol: 0.5 × 22.5 = 11.25 mol = 1125 × 10⁻².
+  Key takeaway: count oxygen atoms needed in the products — each CuO supplies one O.
   Answer: 1125
 C B 7: |-
-  Concept: Np (93) is $[\mathrm{Rn}]5f^46d^17s^2$.
+  Concept: Neptunium (Z = 93), an actinide, has the ground-state configuration [Rn]5f⁴6d¹7s².
   Solution:
-  1. The valence-shell 5f electrons number 4, which is the official answer.
-  Note: If the filled 4f¹⁴ core is also counted, the total is 18 (ALLEN's answer). The official key of 4 counts only 5f.
+  1. The valence 5f subshell contains 4 electrons — the official answer.
+  Note: Official NTA answer is 4; ALLEN's answer is 18, which also counts the filled 4f¹⁴ core (14 + 4). The official key counts only the 5f electrons.
+  Why 6d¹: In the early actinides, the 5f and 6d orbitals are very close in energy, so one electron occupies 6d, as in U ([Rn]5f³6d¹7s²) and Np ([Rn]5f⁴6d¹7s²).
+  The stored answer follows the official NTA key (4 electrons in 5f).
+  Key takeaway: early actinides (Pa, U, Np) have 6d¹ configurations because 5f and 6d energies are very close.
   Answer: 4
 C B 8: |-
-  Concept: Heat released = moles neutralised × 57.1 kJ.
+  Concept: Heat released in neutralisation = (moles of water formed) × 57.1 kJ; the limiting reagent decides. Temperature rise ΔT = q/(mc).
   Solution:
-  1. HCl = 0.04 mol and NaOH = 0.03 mol, so 0.03 mol is neutralised, releasing 1713 J.
-  2. $\Delta T = \frac{1713}{500\times4.18} = 0.82$°C = 82 × 10⁻².
+  1. HCl: 0.2 L × 0.2 M = 0.04 mol; NaOH: 0.3 L × 0.1 M = 0.03 mol (limiting).
+  2. q = 0.03 × 57100 = 1713 J.
+  3. Total volume 500 mL → mass 500 g.
+  4. ΔT = $\frac{1713}{500\times4.18} = 0.82$ °C = 82 × 10⁻².
+  Why 500 g: The total solution volume is 500 mL, and with density 1 g/mL (dilute aqueous solutions) its mass is 500 g. The heat warms all of it.
+  Common mistake: Using 0.04 mol (the excess HCl) as the moles reacted, which gives 1.09 °C.
+  Key takeaway: compare the moles of H⁺ and OH⁻ first; only the smaller amount reacts.
   Answer: 82
 C B 9: |-
-  Concept: Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺ with a very large K, so almost all Ag⁺ is complexed.
+  Concept: Ag⁺ + 2NH₃ ⇌ [Ag(NH₃)₂]⁺, $K_f = \frac{[\text{complex}]}{[Ag^+][NH_3]^2} = 10^8$. Since Ag⁺ must fall to 5 × 10⁻⁸ M, essentially all silver (0.8 M) is complexed.
   Solution:
-  1. [complex] ≈ 0.8 M, so $[\mathrm{NH_3}]^2 = \frac{0.8}{5\times10^{-8}\times10^8} = 0.16$ and [NH₃] = 0.4 M.
-  2. Total NH₃ = 2 L × (2 × 0.8 + 0.4) = 4 mol.
+  1. [complex] ≈ 0.80 M.
+  2. $[NH_3]^2 = \frac{0.80}{5\times10^{-8}\times10^8} = \frac{0.80}{5} = 0.16$ → free [NH₃] = 0.4 M.
+  3. NH₃ used in the complex: 2 × 0.8 = 1.6 M.
+  4. Total NH₃ = (1.6 + 0.4) M × 2 L = 4 mol.
+  Check: [complex]/([Ag⁺][NH₃]²) = 0.8/(5 × 10⁻⁸ × 0.16) = 0.8/(8 × 10⁻⁹) = 10⁸ ✓.
+  Common mistake: Adding only the bound NH₃ (1.6 M × 2 L = 3.2 mol), which ignores the free ammonia needed to hold the equilibrium.
+  Key takeaway: remember to add the free ligand left in solution to the ligand bound in the complex.
   Answer: 4
 C B 10: |-
-  Concept: Equivalents: MnO₄⁻ has n = 5 and Fe²⁺ has n = 1.
+  Concept: In acidic medium, MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O (n-factor 5), Fe²⁺ → Fe³⁺ + e⁻ (n-factor 1). At equivalence: $n_1M_1V_1 = n_2M_2V_2$.
   Solution:
-  1. 5 × M × 10 = 1 × 0.1 × 10, so M = 0.02 M.
-  2. Strength = 0.02 × 158 = 3.16 g/L = 316 × 10⁻².
+  1. $5\times M\times10 = 1\times0.1\times10 \Rightarrow M = 0.02$ M.
+  2. Molar mass of KMnO₄ = 39 + 55 + 64 = 158 g/mol.
+  3. Strength = 0.02 × 158 = 3.16 g/L = 316 × 10⁻² g/L.
+  Why n = 5: In acid, Mn goes from +7 in MnO₄⁻ to +2 in Mn²⁺, a change of 5 electrons per ion. Fe goes from +2 to +3, 1 electron.
+  Common mistake: Using the neutral or basic n-factor (3, MnO₄⁻ → MnO₂), which gives 5.27 g/L.
+  Key takeaway: KMnO₄ is self-indicating — the end point is the first permanent pink colour.
   Answer: 316

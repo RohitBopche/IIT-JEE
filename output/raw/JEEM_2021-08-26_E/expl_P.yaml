@@ -1,192 +1,334 @@
 P A 1: |-
-  Concept: Calorimetry for equal masses: heat lost = heat gained, so $s_1(T - T_1) = s_2(T_2 - T)$.
+  Concept: In mixing (no heat loss), heat lost by the hotter liquid equals heat gained by the colder one: $ms_1(T - T_1) = ms_2(T_2 - T)$. With equal masses, only the specific heats matter.
   Solution:
-  1. x + y: $s_x(16 - 10) = s_y(20 - 16)$, so $s_x = \frac{2}{3}s_y$.
-  2. y + z: $s_y(26 - 20) = s_z(30 - 26)$, so $s_z = \frac{3}{2}s_y$.
-  3. x + z: $\frac{2}{3}(T - 10) = \frac{3}{2}(30 - T)$, so $4(T - 10) = 9(30 - T)$ and $T = \frac{310}{13} \approx 23.84$°C.
+  1. x (10 °C) + y (20 °C) → 16 °C: $s_x(16 - 10) = s_y(20 - 16) \Rightarrow s_x = \frac{2}{3}s_y$.
+  2. y (20 °C) + z (30 °C) → 26 °C: $s_y(26 - 20) = s_z(30 - 26) \Rightarrow s_z = \frac{3}{2}s_y$.
+  3. x + z → T: $s_x(T - 10) = s_z(30 - T) \Rightarrow \frac{2}{3}(T - 10) = \frac{3}{2}(30 - T)$.
+  4. $4(T - 10) = 9(30 - T) \Rightarrow 13T = 310 \Rightarrow T \approx 23.84$ °C.
+  Why others are wrong:
+  - (D) 20.28 °C would require x to have the larger specific heat.
+  - (A) and (B) put the mixture too close to z's temperature.
+  Key takeaway: the mixture temperature lies closer to the liquid with the larger specific heat — here z (s_z > s_x), so T is above the simple average of 20 °C.
   Answer: (C)
 P A 2: |-
-  Concept: $\lambda = \frac{h}{\sqrt{2mE}}$, so $E \propto \frac{1}{\lambda^2}$.
+  Concept: $\lambda = \frac{h}{p} = \frac{h}{\sqrt{2mE}}$, so $E \propto \frac{1}{\lambda^2}$ for a given particle.
   Solution:
-  1. With $\lambda' = 0.75\lambda$: $E' = \frac{E}{(3/4)^2} = \frac{16}{9}E$.
-  2. The extra energy is $E' - E = \frac{7}{9}E$.
+  1. New wavelength λ′ = 0.75λ = $\frac{3}{4}\lambda$.
+  2. $E' = E\left(\frac{\lambda}{\lambda'}\right)^2 = E\times\frac{16}{9}$.
+  3. Extra energy $= E' - E = \frac{16}{9}E - E = \frac{7}{9}E$.
+  Why others are wrong:
+  - (D) $\frac{16}{9}E$ is the new total energy, not the extra energy.
+  - (A) $\frac{1}{9}E$ and (C) E come from using λ ∝ 1/E instead of 1/√E.
+  Physical sense: A shorter wavelength needs more momentum, and because E = p²/2m, the energy rises with the square of the momentum. Cutting λ by 25% raises p by a factor 4/3 and E by 16/9.
+  Common mistake: Answering with the new total energy (16E/9) instead of the extra energy asked for.
+  Key takeaway: halving λ needs 4 times the energy — kinetic energy scales with the square of 1/λ.
   Answer: (B)
 P A 3: |-
-  Concept: Conical pendulum: $\tan\theta = \frac{v^2}{rg}$.
+  Concept: In a conical pendulum, the string makes angle θ with the vertical. Resolving tension: $T\cos\theta = mg$ and $T\sin\theta = \frac{mv^2}{r}$, so $\tan\theta = \frac{v^2}{rg}$.
   Solution:
-  1. $\sin\theta = \frac{r}{L} = \frac{1}{\sqrt2}$, so θ = 45° and $\tan\theta = 1$.
-  2. $v^2 = rg$, so $v = \sqrt{rg}$.
+  1. $\sin\theta = \frac{r}{L} = \frac{1}{\sqrt2} \Rightarrow \theta = 45°$, tan θ = 1.
+  2. $v^2 = rg\tan\theta = rg$.
+  3. $v = \sqrt{rg}$.
+  Why others are wrong:
+  - (B) $\sqrt{2rg}$ would need tan θ = 2.
+  - (C) $2\sqrt{rg}$ would need tan θ = 4.
+  - (D) $\sqrt{\frac{rg}{2}}$ would need tan θ = ½.
+  Key takeaway: the radius r (not L) is used in the centripetal term; L only fixes the angle.
   Answer: (A)
 P A 4: |-
-  Concept: For a mixture of ideal gases, $PV = (n_1 + n_2)RT$.
+  Concept: Dalton's law for ideal gas mixtures: total pressure $P = \frac{(n_1 + n_2)RT}{V}$ — the identity of the gases does not matter.
   Solution:
-  1. n = 1 + 2 = 3 mol.
-  2. $P = \frac{3\times8.3\times400}{4\times10^{-3}} = 2.49\times10^{6} = 24.9\times10^{5}$ Pa.
+  1. Total moles n = 1 (H₂) + 2 (CO₂) = 3 mol.
+  2. $P = \frac{3\times8.3\times400}{4.0\times10^{-3}} = \frac{9960}{4\times10^{-3}} = 2.49\times10^6$ Pa.
+  3. $= 24.9\times10^5$ Pa.
+  Why others are wrong:
+  - (A), (B), (D) are off by powers of ten (e.g. using V in litres).
+  Why the gas type does not matter: Ideal-gas pressure depends only on the number of moles, not on molecular mass; heavy CO₂ molecules move slower but hit harder, and the effects cancel.
+  Common mistake: Adding the masses (2 g + 88 g) instead of the moles.
+  Key takeaway: in SI units, keep V in m³ with R = 8.3 J mol⁻¹ K⁻¹ to get pressure in pascals.
   Answer: (C)
 P A 5: |-
-  Concept: The angle α of $\vec A + \vec C$ with $\vec A$ satisfies $\tan\alpha = \frac{C\sin\theta}{A + C\cos\theta}$.
+  Concept: The angle α between $\vec A$ and the resultant $\vec A + \vec C$ satisfies $\tan\alpha = \frac{C\sin\phi}{A + C\cos\phi}$, where φ is the angle between $\vec A$ and $\vec C$. Here $\vec C = -\vec B$.
   Solution:
-  1. From the figure, the angle between $\vec A$ and $\vec B$ is 60°, so $-\vec B$ makes 120° with $\vec A$.
-  2. $\tan\alpha = \frac{B\sin120°}{A + B\cos120°} = \frac{\frac{\sqrt3}{2}B}{A - \frac{B}{2}} = \frac{\sqrt3B}{2A - B}$ (magnitude of the angle).
+  1. From the figure, $\vec A$ and $\vec B$ are at 60°, so $-\vec B$ makes 120° with $\vec A$.
+  2. $\tan\alpha = \frac{B\sin120°}{A + B\cos120°} = \frac{\frac{\sqrt3}{2}B}{A - \frac{B}{2}} = \frac{\sqrt3B}{2A - B}$.
+  3. So the angle is $\tan^{-1}\left(\frac{\sqrt3B}{2A - B}\right)$ (its magnitude).
+  Why others are wrong:
+  - (A) uses the wrong angle (30°-type components).
+  - (B) is a numerical approximation with no basis.
+  - (D) keeps a general θ and swaps sin/cos.
+  Key takeaway: to find the direction of a difference, add the negative vector and use the usual resultant-angle formula.
   Answer: (C)
 P A 6: |-
-  Concept: $B_0 = \frac{E_0}{c}$; the maximum magnetic force is $F = evB_0$ (velocity perpendicular to B).
+  Concept: In an EM wave, the magnetic field amplitude is $B_0 = \frac{E_0}{c}$, perpendicular to both E and the propagation direction. A charge moving perpendicular to the beam can have its velocity perpendicular to B, giving the maximum force $F = evB_0$.
   Solution:
   1. $B_0 = \frac{800}{3\times10^8} = 2.67\times10^{-6}$ T.
-  2. $F = 1.6\times10^{-19}\times3\times10^7\times2.67\times10^{-6} = 1.28\times10^{-17} = 12.8\times10^{-18}$ N.
+  2. $F_{max} = evB_0 = 1.6\times10^{-19}\times3\times10^7\times2.67\times10^{-6}$.
+  3. $F_{max} = 1.28\times10^{-17}$ N $= 12.8\times10^{-18}$ N.
+  Why others are wrong:
+  - (A) $1.28\times10^{-18}$ N is ten times too small.
+  - (B) is 10⁴ times too small.
+  - (C) $12.8\times10^{-17}$ N is ten times too large.
+  Key takeaway: the electric force eE₀ is c/v = 10 times larger than the magnetic force here, which is why magnetic effects of light are usually negligible.
   Answer: (D)
 P A 7: |-
-  Concept: Potential on the axis of a ring: $V = \frac{kQ}{\sqrt{a^2 + x^2}}$.
+  Concept: On the axis of a ring of charge q and radius a, at distance x from its centre: $V = \frac{kq}{\sqrt{a^2 + x^2}}$ (k = $\frac{1}{4\pi\varepsilon_0}$). At the centre, x = 0.
   Solution:
-  1. At the centre of +Q: $V_1 = \frac{kQ}{a} - \frac{kQ}{\sqrt{a^2 + s^2}}$.
-  2. At the centre of −Q: $V_2 = -\frac{kQ}{a} + \frac{kQ}{\sqrt{a^2 + s^2}}$.
-  3. $V_1 - V_2 = 2kQ\left[\frac{1}{a} - \frac{1}{\sqrt{s^2 + a^2}}\right] = \frac{Q}{2\pi\varepsilon_0}\left[\frac{1}{a} - \frac{1}{\sqrt{s^2 + a^2}}\right]$.
+  1. Centre of the +Q ring: $V_1 = \frac{kQ}{a} - \frac{kQ}{\sqrt{a^2 + s^2}}$.
+  2. Centre of the −Q ring: $V_2 = -\frac{kQ}{a} + \frac{kQ}{\sqrt{a^2 + s^2}}$.
+  3. $V_1 - V_2 = 2kQ\left[\frac{1}{a} - \frac{1}{\sqrt{a^2 + s^2}}\right] = \frac{Q}{2\pi\varepsilon_0}\left[\frac{1}{a} - \frac{1}{\sqrt{s^2 + a^2}}\right]$.
+  Why others are wrong:
+  - (A) and (B) add the two terms; the far ring's contribution opposes the near ring's.
+  - (C) misses the factor 2 (it gives only V₁, not V₁ − V₂).
+  Key takeaway: the potential difference is twice the potential at one centre, by symmetry.
   Answer: (D)
 P A 8: |-
-  Concept: Series and parallel combination.
+  Concept: Series: $R = R_1 + R_2 + \dots$; parallel: $\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}$. The target $\frac{46}{3} = 15\frac{1}{3}$ Ω suggests a small parallel pair plus a large series sum.
   Solution:
-  1. 2 Ω ∥ 4 Ω = $\frac{8}{6} = \frac{4}{3}$ Ω.
-  2. In series with 6 Ω and 8 Ω: $\frac{4}{3} + 14 = \frac{46}{3}$ Ω.
-  3. Others: (A) gives 2.4 + 10 = 12.4 Ω; (B) gives 3.43 + 6 = 9.43 Ω; (C) gives 1.5 + 12 = 13.5 Ω.
+  1. (D): 2 Ω ∥ 4 Ω = $\frac{8}{6} = \frac{4}{3}$ Ω; plus 6 Ω + 8 Ω in series → $\frac{4}{3} + 14 = \frac{46}{3}$ Ω ✓.
+  Why others are wrong:
+  - (A) 4 ∥ 6 = 2.4 Ω, plus 2 + 8 → 12.4 Ω.
+  - (B) 6 ∥ 8 = $\frac{24}{7}$ ≈ 3.43 Ω, plus 2 + 4 → 9.43 Ω.
+  - (C) 2 ∥ 6 = 1.5 Ω, plus 4 + 8 → 13.5 Ω.
+  Key takeaway: the fractional part $\frac{1}{3}$ of $\frac{46}{3}$ can only come from a parallel pair such as 2 ∥ 4 = $\frac{4}{3}$.
   Answer: (D)
 P A 9: |-
-  Concept: Parallel-axis theorem; the cylinder's own axis AB is at L/2 = 0.4 m from CD (figure).
+  Concept: Parallel-axis theorem: $I = I_{cm} + Md^2$. For a solid cylinder about its own central axis AB, $I = \frac{MR^2}{2}$. From the figure, CD is parallel to AB at distance $\frac{L}{2}$ = 0.4 m.
   Solution:
-  1. $I = \frac{MR^2}{2} + M\left(\frac{L}{2}\right)^2 = M(0.02 + 0.16) = 0.18M = 2.7$, so M = 15 kg.
-  2. $\rho = \frac{M}{\pi R^2L} = \frac{15}{\pi\times0.04\times0.8} \approx 149\ \text{kg/m}^3 = 1.49\times10^{2}$ kg/m³.
+  1. $I_{CD} = \frac{MR^2}{2} + M(0.4)^2 = M(0.02 + 0.16) = 0.18M$.
+  2. $0.18M = 2.7 \Rightarrow M = 15$ kg.
+  3. Volume: $\pi R^2L = \pi(0.2)^2(0.8) = 0.1005$ m³.
+  4. Density: $\rho = \frac{15}{0.1005} \approx 149$ kg/m³ $= 1.49\times10^2$ kg/m³.
+  Why others are wrong:
+  - (A) 14.9 is ten times too small (volume slip).
+  - (B) and (C) with 7.5 come from using $\frac{MR^2}{4}$ or omitting the parallel-axis term.
+  Key takeaway: always identify both the axis in the figure and the distance d before using the parallel-axis theorem.
   Answer: (D)
 P A 10: |-
-  Concept: From the figure, half the plate area is air (full gap d), and the other half has K₁ and K₂ stacked (each d/2).
+  Concept: From the figure, half the plate area (A/2) is air across the full gap d; the other half has slab K₁ (thickness d/2) stacked on slab K₂ (thickness d/2). Stacked slabs are in series; side-by-side regions are in parallel.
   Solution:
-  1. Air half: $C_0 = \frac{\varepsilon_0(A/2)}{d} = \frac{\varepsilon_0A}{2d}$.
-  2. Each slab: $C_i = \frac{K_i\varepsilon_0(A/2)}{d/2} = \frac{K_i\varepsilon_0A}{d}$; in series these give $\frac{\varepsilon_0A}{d}\frac{K_1K_2}{K_1 + K_2}$.
-  3. In parallel: $C = \frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{K_1K_2}{K_1 + K_2}\right)$.
+  1. Air region: $C_0 = \frac{\varepsilon_0(A/2)}{d} = \frac{\varepsilon_0A}{2d}$.
+  2. Each slab: $C_i = \frac{K_i\varepsilon_0(A/2)}{d/2} = \frac{K_i\varepsilon_0A}{d}$.
+  3. Series: $C_{12} = \frac{\varepsilon_0A}{d}\cdot\frac{K_1K_2}{K_1 + K_2}$.
+  4. Total (parallel): $C = \frac{\varepsilon_0A}{d}\left(\frac{1}{2} + \frac{K_1K_2}{K_1 + K_2}\right)$.
+  Why others are wrong:
+  - (B) has an extra factor ½ on the series part.
+  - (C) and (D) invert the series expression ($\frac{K_1 + K_2}{K_1K_2}$), which would decrease as K increases.
+  Key takeaway: check limits — with K₁ = K₂ = 1 the answer must reduce to $\frac{\varepsilon_0A}{d}$: ½ + ½ = 1 ✓.
   Answer: (A)
 P A 11: |-
-  Concept: Relative motion.
+  Concept: Relative motion. When the bomb is released, it has the same horizontal velocity as the plane. The plane (flying at constant velocity) is an inertial frame.
   Solution:
-  1. The bomb keeps the plane's horizontal velocity $u_0$, so relative to the plane its velocity is $-gt\,\hat j$ only.
-  2. The plane observer sees it fall straight down; a ground observer would see a parabola.
+  1. Horizontal: bomb and plane both move at $u_0$ (air resistance ignored), so the relative horizontal velocity is zero.
+  2. Vertical: relative to the plane, the bomb has velocity −gt.
+  3. Therefore the plane observer sees the bomb fall vertically straight down, directly below the plane.
+  Why others are wrong:
+  - (B) and (D) describe parabolas; a parabola is what a ground observer sees.
+  - (A) a hyperbola does not arise in uniform gravitational motion.
+  Key takeaway: the shape of a trajectory depends on the frame of reference.
   Answer: (C)
 P A 12: |-
-  Concept: Chain decay A → B → C with equal λ: $\frac{dN_B}{dt} = \lambda N_A - \lambda N_B$.
+  Concept: For a decay chain A → B → C with equal decay constants λ, B is produced by A's decay and removed by its own decay: $\frac{dN_B}{dt} = \lambda N_A - \lambda N_B$.
   Solution:
-  1. With $N_A = 2N_0e^{-\lambda t}$ ($N_0 = N_B(0)$): $N_B = N_0e^{-\lambda t}(1 + 2\lambda t)$.
-  2. $\frac{d}{dt}\left[(1 + 2\lambda t)e^{-\lambda t}\right] = \lambda e^{-\lambda t}(1 - 2\lambda t) = 0$ at $t = \frac{1}{2\lambda}$.
-  3. So the ratio starts at 1, rises to a maximum at $t = \frac{1}{2\lambda}$, then decays to 0.
+  1. $N_A = 2N_0e^{-\lambda t}$ (with $N_0 = N_B(0)$).
+  2. Solution: $N_B = N_0e^{-\lambda t}(1 + 2\lambda t)$ (check: satisfies the equation and $N_B(0) = N_0$).
+  3. $\frac{d}{dt}\left[(1 + 2\lambda t)e^{-\lambda t}\right] = \lambda e^{-\lambda t}(2 - 1 - 2\lambda t) = \lambda e^{-\lambda t}(1 - 2\lambda t)$.
+  4. Maximum at $t = \frac{1}{2\lambda}$; the ratio starts at 1, rises to a peak, then decays to 0.
+  Why others are wrong:
+  - (A) and (D) show monotonic decrease; initially B is produced faster than it decays ($2\lambda N_0 > \lambda N_0$).
+  - (B) puts the peak at $\frac{1}{\lambda}$, which is wrong.
+  Key takeaway: at t = 0, $\frac{dN_B}{dt} = \lambda(2N_0 - N_0) > 0$, so the curve must start rising.
   Answer: (C)
 P A 13: |-
-  Concept: LoS range $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
+  Concept: For line-of-sight communication, the maximum distance is the sum of the radio horizons of the two antennas: $d = \sqrt{2Rh_T} + \sqrt{2Rh_R}$.
   Solution:
-  1. $\sqrt{2\times6.4\times10^6\times50} = 25.3$ km.
-  2. $\sqrt{2\times6.4\times10^6\times80} = 32.0$ km.
-  3. Total ≈ 57.3 km.
+  1. $\sqrt{2\times6.4\times10^6\times50} = \sqrt{6.4\times10^8} \approx 25.3$ km.
+  2. $\sqrt{2\times6.4\times10^6\times80} = \sqrt{1.024\times10^9} = 32.0$ km.
+  3. $d \approx 25.3 + 32.0 = 57.3$ km.
+  Why others are wrong:
+  - (A) 45.5 km and (B) 80.2 km use only one antenna or incorrect combinations.
+  - (C) 144.1 km doubles the heights or uses the sum of heights inside one root.
+  Why add the horizons: Each antenna can see the Earth's surface out to its own horizon distance √(2Rh); the signal reaches the receiver if the two horizons meet.
+  Common mistake: Using √(2R(h_T + h_R)) = √(2 × 6.4 × 10⁶ × 130) ≈ 40.8 km, which is not how LoS range works.
+  Key takeaway: the horizons add; do not combine the heights inside a single square root.
   Answer: (D)
 P A 14: |-
-  Concept: Ideal refrigerator: $\frac{Q_2}{W} = \frac{T_2}{T_1 - T_2}$.
+  Concept: For an ideal (Carnot) refrigerator, the coefficient of performance is $\beta = \frac{Q_2}{W} = \frac{T_2}{T_1 - T_2}$, where $Q_2$ is heat extracted from the cold reservoir at $T_2$.
   Solution:
-  1. $T_2$ = 263 K and $T_1$ = 298 K, so COP = $\frac{263}{35}$.
-  2. $Q_2 = \frac{263}{35}\times35 = 263$ J/s of heat extracted per second.
+  1. $T_2 = -10 + 273 = 263$ K; $T_1 = 25 + 273 = 298$ K.
+  2. $\beta = \frac{263}{35} = 7.51$.
+  3. Heat extracted per second: $Q_2 = \beta W = 7.51\times35 = 263$ J/s.
+  4. (Heat rejected to the room per second: 263 + 35 = 298 J/s.)
+  Why others are wrong:
+  - (B) 298 J/s is the heat released to the hot side, not the heat transferred from the cold side.
+  - (C) 350 J/s and (D) 35 J/s have no basis.
+  Key takeaway: a refrigerator moves several joules of heat for each joule of work — here about 7.5.
   Answer: (A)
 P A 15: |-
-  Concept: Rated values give the bulb's resistance; for rated power the bulb needs its rated current.
+  Concept: To deliver its rated power, the bulb must carry its rated current (and have rated voltage across it). The series resistor takes the extra supply voltage.
   Solution:
-  1. $R_b = \frac{100^2}{500} = 20$ Ω; the rated current is $\frac{500}{100} = 5$ A.
-  2. Total resistance $= \frac{200}{5} = 40$ Ω, so R = 40 − 20 = 20 Ω.
+  1. Bulb resistance: $R_b = \frac{V^2}{P} = \frac{100^2}{500} = 20\ \Omega$.
+  2. Rated current: $I = \frac{P}{V} = 5$ A.
+  3. Total resistance needed: $\frac{200}{5} = 40\ \Omega$, so R = 40 − 20 = 20 Ω.
+  Check: bulb power $5^2\times20 = 500$ W ✓.
+  Why others are wrong:
+  - (B) 30 Ω, (C) 5 Ω, (D) 10 Ω give currents of 4 A, 8 A and 6.67 A — not the rated 5 A.
+  Key takeaway: a series resistor equal to the bulb's resistance halves the voltage across the bulb.
   Answer: (A)
 P A 16: |-
-  Concept: Trace the circuit using NOR(x, y) = $\overline{x + y}$.
+  Concept: A NOR gate outputs $\overline{x + y}$ (1 only when both inputs are 0). Trace each gate in the four-NOR network.
   Solution:
-  1. $N = \overline{A + B}$; $P = \overline{A + N}$; $Q = \overline{B + N}$; $Y = \overline{P + Q}$.
-  2. 00: N = 1, P = 0, Q = 0, Y = 1. 01: N = 0, P = 1, Q = 0, Y = 0.
-  3. 10: P = 0, Q = 1, Y = 0. 11: N = 0, P = 0, Q = 0, Y = 1.
-  4. Y = 1, 0, 0, 1: this is XNOR.
+  1. Gate 1: $N = \overline{A + B}$. Gate 2: $P = \overline{A + N}$. Gate 3: $Q = \overline{B + N}$. Gate 4: $Y = \overline{P + Q}$.
+  2. (0, 0): N = 1, P = 0, Q = 0 → Y = 1.
+  3. (0, 1): N = 0, P = 1, Q = 0 → Y = 0.
+  4. (1, 0): N = 0, P = 0, Q = 1 → Y = 0.
+  5. (1, 1): N = 0, P = 0, Q = 0 → Y = 1.
+  6. Y = 1, 0, 0, 1 → XNOR, table (D).
+  Why others are wrong:
+  - (B) is XOR (the complement).
+  - (A) and (C) follow a single input rather than both.
+  Key takeaway: this 4-NOR arrangement is the standard XNOR construction (with NAND gates, the same layout gives XOR).
   Answer: (D)
 P A 17: |-
-  Concept: Dimensions from defining relations.
+  Concept: Derive each dimension from a defining equation, with A for current.
   Solution:
-  1. (a) B = F/(IL): $MT^{-2}A^{-1}$, which is (iii).
-  2. (b) Φ = BA: $ML^2T^{-2}A^{-1}$, which is (i).
-  3. (c) μ = B/H with H in A/m: $MLT^{-2}A^{-2}$, which is (iv).
-  4. (d) Magnetization is magnetic moment per volume: $L^{-1}A$, which is (ii).
-  5. Others fail at (a) or (b): (A) and (B) give (a)–(ii), and (C) gives (b)–(ii).
+  1. (a) Magnetic induction B from F = BIL: $[B] = \frac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]$ → (iii).
+  2. (b) Flux Φ = BA: $[MT^{-2}A^{-1}][L^2] = [ML^2T^{-2}A^{-1}]$ → (i).
+  3. (c) Permeability μ = B/H, with [H] = [AL⁻¹]: $[MT^{-2}A^{-1}]/[AL^{-1}] = [MLT^{-2}A^{-2}]$ → (iv).
+  4. (d) Magnetisation = magnetic moment/volume: $\frac{[AL^2]}{[L^3]} = [L^{-1}A]$ → (ii).
+  Correct: (a)-(iii), (b)-(i), (c)-(iv), (d)-(ii).
+  Why others are wrong:
+  - (A) and (B) give B the dimensions of magnetisation.
+  - (C) gives flux the dimensions of magnetisation.
+  Key takeaway: magnetisation M and magnetic intensity H have the same dimensions (A/m).
   Answer: (D)
 P A 18: |-
-  Concept: Parallel AC branches: the branch currents add as phasors.
+  Concept: For parallel AC branches, each branch current is V/Z with its own phase; the total current is the phasor (vector) sum.
   Solution:
-  1. RC branch: $X_C = \frac{1}{100\times10^{-4}} = 100$ Ω, so $Z_1 = 100\sqrt2$, $I_1 = \sqrt2$ A, leading by 45°.
-  2. RL branch: $X_L = 100\times0.5 = 50$ Ω, so $Z_2 = 50\sqrt2$, $I_2 = 2\sqrt2$ A, lagging by 45°.
-  3. The official (2) is the scalar sum: $I_1 + I_2 = 3\sqrt2 \approx 4.24$ A.
-  Note: The branch currents are 90° apart, so the true current is $\sqrt{I_1^2 + I_2^2} = \sqrt{10} \approx 3.16$ A. That is not among the options, and ALLEN marks the question Bonus. The official key is kept.
+  1. RC branch: $X_C = \frac{1}{\omega C} = \frac{1}{100\times10^{-4}} = 100\ \Omega$, $Z_1 = 100\sqrt2\ \Omega$, $I_1 = \frac{200}{100\sqrt2} = \sqrt2$ A, leading by 45°.
+  2. RL branch: $X_L = 100\times0.5 = 50\ \Omega$, $Z_2 = 50\sqrt2\ \Omega$, $I_2 = \frac{200}{50\sqrt2} = 2\sqrt2$ A, lagging by 45°.
+  3. The official answer takes the scalar sum: $I_1 + I_2 = 3\sqrt2 \approx 4.24$ A (option B).
+  Note: Official NTA answer (B); ALLEN marks it Bonus. The branch currents are 90° apart, so the true total current is $\sqrt{I_1^2 + I_2^2} = \sqrt{10} \approx 3.16$ A, which is not among the options. The official key is kept.
+  Key takeaway: AC branch currents must be added as phasors, not as plain numbers.
   Answer: (B)
 P A 19: |-
-  Concept: $T \propto \sqrt L$, so $\frac{\Delta T}{T} = \frac{1}{2}\frac{\Delta L}{L}$.
+  Concept: A pendulum clock's period $T = 2\pi\sqrt{\frac{L}{g}}$; for small changes, $\frac{\Delta T}{T} = \frac{1}{2}\frac{\Delta L}{L}$. A longer period makes the clock slow.
   Solution:
-  1. $\frac{\Delta T}{T} = 0.05\% = 5\times10^{-4}$; the clock runs slow.
-  2. Loss per day $= 86400\times5\times10^{-4} = 43.2$ s.
+  1. $\frac{\Delta L}{L} = 0.1\% \Rightarrow \frac{\Delta T}{T} = 0.05\% = 5\times10^{-4}$.
+  2. Time lost per day $= 86400\times5\times10^{-4} = 43.2$ s.
+  Why others are wrong:
+  - (A) 86.4 s forgets the factor ½.
+  - (B) 4.32 s and (D) 8.64 s are off by a factor of 10.
+  Why the clock loses time: The clock counts oscillations; a longer period means fewer oscillations per real day, so the clock shows less time than has actually passed (it runs slow).
+  Common mistake: Using ΔT/T = ΔL/L (no square root), which gives 86.4 s.
+  Key takeaway: a 0.1% increase in length makes the clock lose about 43 s every day.
   Answer: (C)
 P A 20: |-
-  Concept: Atwood machine tension $T = \frac{2m_1m_2g}{m_1 + m_2}$; breaking condition $\frac{T}{\pi r^2}$ = breaking stress.
+  Concept: In an Atwood machine, the string tension is $T = \frac{2m_1m_2g}{m_1 + m_2}$. The wire must withstand T: $\frac{T}{\pi r^2} \le$ breaking stress.
   Solution:
-  1. $T = \frac{2\times3\times5\times10}{8} = 37.5$ N.
-  2. $\pi r^2 = \frac{37.5\pi}{2400}$, so $r^2 = 0.015625$ and r = 0.125 m = 12.5 cm.
+  1. $T = \frac{2\times3\times5\times10}{3 + 5} = 37.5$ N.
+  2. Minimum area: $\pi r^2 = \frac{37.5}{(24/\pi)\times10^2} = \frac{37.5\pi}{2400}$.
+  3. $r^2 = \frac{37.5}{2400} = 0.015625 \Rightarrow r = 0.125$ m = 12.5 cm.
+  Why others are wrong:
+  - (A) 125 cm, (B) 1250 cm and (D) 1.25 cm are powers of ten off.
+  Note: the very low breaking stress makes the wire unrealistically thick; the question tests the method.
+  Key takeaway: use the tension (not the weight of the heavier block) — the tension is between the two weights.
   Answer: (C)
 P B 1: |-
-  Concept: Superposition of two waves with phase difference $\phi = kx_0$: $A = \sqrt{A_1^2 + A_2^2 + 2A_1A_2\cos\phi}$.
+  Concept: Two waves of the same frequency with phase difference φ combine to amplitude $A = \sqrt{A_1^2 + A_2^2 + 2A_1A_2\cos\phi}$. Here φ = kx₀.
   Solution:
-  1. $\phi = 6.28\times3.5 = 21.98$ rad = 7π, so cos φ = −1.
-  2. A = 12 − 5 = 7 mm.
+  1. φ = 6.28 cm⁻¹ × 3.5 cm = 21.98 rad = 7π (since 6.28 ≈ 2π).
+  2. cos 7π = −1: destructive interference.
+  3. A = |A₁ − A₂| = 12 − 5 = 7 mm.
+  Why 7π: k = 6.28 cm⁻¹ ≈ 2π cm⁻¹, so kx₀ = 2π × 3.5 = 7π, an odd multiple of π.
+  Common mistake: Adding the amplitudes (17 mm), which is correct only for a phase difference that is an even multiple of π.
+  Key takeaway: an odd multiple of π means the waves are exactly out of phase, so amplitudes subtract.
   Answer: 7
 P B 2: |-
-  Concept: Malus's law $I = I_0\cos^2\theta$.
+  Concept: Unpolarised light through a polariser loses half its intensity; subsequent polarisers follow Malus's law $I = I_0\cos^2\theta$.
   Solution:
-  1. With P₁ and P₂ aligned, the screen gets I/2.
-  2. Rotating P₂ by θ: $\frac{I}{2}\cos^2\theta = \frac{3I}{8}$, so $\cos^2\theta = \frac{3}{4}$ and θ = 30°.
+  1. With P₁ and P₂ aligned (θ = 0), the screen gets $\frac{I}{2}$.
+  2. Rotating P₂ by θ: $\frac{I}{2}\cos^2\theta = \frac{3I}{8} \Rightarrow \cos^2\theta = \frac{3}{4}$.
+  3. θ = 30°.
+  Why the first polaroid halves the intensity: Unpolarised light has all directions of vibration equally; averaging cos²θ over all angles gives ½.
+  Check: I/2 × cos²30° = I/2 × ¾ = 3I/8 ✓.
+  Key takeaway: the first polariser always halves unpolarised light, regardless of its orientation.
   Answer: 30
 P B 3: |-
-  Concept: In a cyclotron, the proton gains 2qV per revolution (two gap crossings).
+  Concept: In a cyclotron, the proton crosses the accelerating gap twice per revolution, gaining qV each time: 2qV per revolution.
   Solution:
-  1. $KE = \frac{1}{2}m\left(\frac{c}{6}\right)^2 = \frac{1}{2}\times1.67\times10^{-27}\times(5\times10^7)^2 = 2.09\times10^{-12}$ J.
-  2. Energy per revolution $= 2\times1.6\times10^{-19}\times12\times10^3 = 3.84\times10^{-15}$ J.
-  3. $N = \frac{2.09\times10^{-12}}{3.84\times10^{-15}} \approx 543.6$, so 543 complete revolutions.
+  1. Target speed: $\frac{c}{6} = 5\times10^7$ m/s.
+  2. KE $= \frac{1}{2}\times1.67\times10^{-27}\times(5\times10^7)^2 = 2.09\times10^{-12}$ J.
+  3. Energy per revolution: $2\times1.6\times10^{-19}\times12\times10^3 = 3.84\times10^{-15}$ J.
+  4. Revolutions $= \frac{2.09\times10^{-12}}{3.84\times10^{-15}} \approx 543.6$ → 543 complete revolutions.
+  Why "complete" revolutions: 543.6 means the proton finishes 543 full revolutions and part of the 544th; the key asks for the whole number completed.
+  Non-relativistic check: c/6 is about 17% of light speed, so the classical KE formula is a reasonable approximation.
+  Key takeaway: c/6 is still non-relativistic enough (≈17% of c) for the classical KE formula to be used.
   Answer: 543
 P B 4: |-
-  Concept: Pendulum energy $E = \frac{1}{2}mgL\theta_0^2$ with $L = \frac{gT^2}{4\pi^2}$, so $E \propto g^2T^2$.
+  Concept: The energy of a pendulum oscillating with angular amplitude θ₀ is $E = \frac{1}{2}mgL\theta_0^2$. Since $L = \frac{gT^2}{4\pi^2}$, $E = \frac{mg^2T^2\theta_0^2}{8\pi^2} \propto g^2T^2$ (m and θ₀ known).
   Solution:
-  1. $\frac{\Delta E}{E} = 2\frac{\Delta g}{g} + 2\frac{\Delta T}{T} = 2(4) + 2(3) = 14\%$.
+  1. $\frac{\Delta E}{E} = 2\frac{\Delta g}{g} + 2\frac{\Delta T}{T}$.
+  2. $= 2(4\%) + 2(3\%) = 14\%$.
+  Why E ∝ g²T²: With L = gT²/(4π²), the energy ½mgLθ₀² becomes proportional to g × gT² = g²T².
+  Common mistake: Using E ∝ gT² (forgetting that the energy formula already contains g), which gives 10%.
+  Key takeaway: percentage errors are multiplied by the powers and always added.
   Answer: 14
 P B 5: |-
-  Concept: Maximum emf of a rotating coil: $\varepsilon_0 = NBA\omega$.
+  Concept: A coil rotating in a uniform field has flux $\Phi = NBA\cos\omega t$, so the emf $\varepsilon = NBA\omega\sin\omega t$, with maximum $\varepsilon_0 = NBA\omega$.
   Solution:
-  1. $\varepsilon_0 = 20\times3\times10^{-2}\times\pi(0.08)^2\times50 = 0.6032$ V ≈ $60\times10^{-2}$ V.
+  1. A = π(0.08)² = 0.0201 m².
+  2. $\varepsilon_0 = 20\times3\times10^{-2}\times0.0201\times50 = 0.603$ V.
+  3. ≈ 60 × 10⁻² V.
+  Unit check: NBAω has units T m² s⁻¹ = Wb/s = V ✓.
+  Common mistake: Using the diameter (16 cm) in the area, which gives four times the correct emf.
+  Key takeaway: the maximum emf occurs when the plane of the coil is parallel to B (flux zero, but changing fastest).
   Answer: 60
 P B 6: |-
-  Concept: $\sin x + \cos x = \sqrt2\sin\left(x + \frac{\pi}{4}\right)$.
+  Concept: $\sin\theta + \cos\theta = \sqrt2\sin\left(\theta + \frac{\pi}{4}\right)$.
   Solution:
-  1. $x_2 = 5\sqrt2\cdot\sqrt2\sin\left(2\pi t + \frac{\pi}{4}\right) = 10\sin\left(2\pi t + \frac{\pi}{4}\right)$.
-  2. Ratio = 10/5 = 2.
+  1. $x_2 = 5\sqrt2(\sin2\pi t + \cos2\pi t) = 5\sqrt2\cdot\sqrt2\sin\left(2\pi t + \frac{\pi}{4}\right) = 10\sin\left(2\pi t + \frac{\pi}{4}\right)$.
+  2. Amplitudes: $x_1$ = 5, $x_2$ = 10.
+  3. Ratio = 2.
+  Phase check: Both motions have the same phase constant π/4, so they are in step; only their amplitudes differ.
+  Common mistake: Taking the amplitude of x₂ as 5√2 (the factor outside the bracket), which gives √2 instead of 2.
+  Key takeaway: $a\sin\theta + b\cos\theta$ has amplitude $\sqrt{a^2 + b^2}$.
   Answer: 2
 P B 7: |-
-  Concept: Torque on a loop, $\tau = NIAB\sin90°$ when its plane is parallel to B.
+  Concept: Torque on a current loop: $\tau = NIAB\sin\theta$, where θ is the angle between the area vector (normal) and B. When the plane is parallel to B, θ = 90° and the torque is maximum.
   Solution:
-  1. $A = \frac{\sqrt3}{4}(0.1)^2 = \frac{\sqrt3}{4}\times10^{-2}$ m².
-  2. $\tau = 0.2\times\frac{\sqrt3}{4}\times10^{-2}\times0.02 = \sqrt3\times10^{-5}$ N m, so x = 3.
+  1. Area of an equilateral triangle of side 0.1 m: $\frac{\sqrt3}{4}(0.1)^2 = \frac{\sqrt3}{4}\times10^{-2}$ m².
+  2. $\tau = 1\times0.2\times\frac{\sqrt3}{4}\times10^{-2}\times20\times10^{-3} = \sqrt3\times10^{-5}$ N m.
+  3. So x = 3.
+  Why θ = 90°: The torque formula uses the angle between B and the area vector (the normal to the loop). When the plane of the coil is parallel to B, its normal is perpendicular to B, so sin θ = 1.
+  Common mistake: Taking θ as the angle between the plane and B (0°), which gives zero torque.
+  Key takeaway: torque depends only on the loop's area, not its shape.
   Answer: 3
 P B 8: |-
-  Concept: A Zener diode in breakdown holds the load at $V_Z$.
+  Concept: A Zener diode in breakdown fixes the load voltage at $V_Z$. The series resistor current splits between the Zener and the load.
   Solution:
-  1. Series current $I = \frac{24 - 10}{1\ \text{k}\Omega} = 14$ mA; load current $= \frac{10}{5\ \text{k}\Omega} = 2$ mA.
-  2. $I_Z = 12$ mA, so $P = 10\times12 = 120$ mW.
+  1. From the circuit: supply 24 V, series 1 kΩ, Zener 10 V, load 5 kΩ.
+  2. Series current: $I = \frac{24 - 10}{1\text{ k}\Omega} = 14$ mA.
+  3. Load current: $\frac{10}{5\text{ k}\Omega} = 2$ mA.
+  4. Zener current: 14 − 2 = 12 mA.
+  5. Power: $P = V_ZI_Z = 10\times12 = 120$ mW.
+  Key takeaway: always check the Zener is actually in breakdown — without it the load voltage would be 24 × 5/6 = 20 V > 10 V, so it is.
   Answer: 120
 P B 9: |-
-  Concept: An image coincides with the object when the lens's image falls at the centre of curvature of the convex mirror, so the rays retrace.
+  Concept: Light retraces its path (and the final image coincides with the object) if the rays leaving the lens strike the convex mirror normally — i.e. the lens's image lies at the mirror's centre of curvature.
   Solution:
-  1. For the mirror, R = 2f = 30 cm; the lens image (with the mirror removed) is at 8 + 30 = 38 cm from the lens.
-  2. Distance from the object = 12 + 38 = 50 cm.
+  1. Convex mirror: f = 15 cm → R = 30 cm, centre of curvature 30 cm behind the mirror.
+  2. The mirror is 8 cm from the lens, so the lens's image (mirror removed) is 8 + 30 = 38 cm from the lens on the far side.
+  3. Distance between object and this real, inverted image: 12 + 38 = 50 cm.
+  Key takeaway: this arrangement is a standard method for measuring the focal length of a convex mirror.
   Answer: 50
 P B 10: |-
-  Concept: Force on the lower block: the upper block is driven by friction, so $a_{max} = \mu g$.
+  Concept: The force F acts on the lower 2 kg block; only static friction accelerates the upper 1 kg block. The maximum acceleration of the upper block is $a_{max} = \frac{\mu mg}{m} = \mu g$.
   Solution:
   1. $a_{max} = 0.5\times10 = 5$ m/s².
-  2. $F_{max} = (1 + 2)\times5 = 15$ N.
+  2. Both blocks move together with this acceleration: $F_{max} = (1 + 2)\times5 = 15$ N.
+  3. For F > 15 N, the lower block slides out from under the upper block.
+  Why check the top block: If F exceeds 15 N, the lower block needs an acceleration greater than friction can give the upper one, so they separate.
+  Common mistake: Using μ(m₁ + m₂)g = 15 N as the friction force; with a smooth table, friction acts only between the blocks and is limited to μm₁g = 5 N.
+  Key takeaway: if F were applied to the upper block instead, F_max would be μm₁g(1 + m₁/m₂) = 7.5 N.
   Answer: 15

@@ -1,200 +1,397 @@
 P A 1: |-
-  Concept: A silicon diode conducts only in forward bias and then drops about 0.7 V.
-  Given: +ve terminal at X (left node), –ve at Y (right node). $D_1$ (with 10 Ω) points from X towards Y; $D_2$ (with 5 Ω) points the other way.
+  Concept: An ideal silicon diode conducts only when forward biased, and then it drops about 0.7 V (the knee voltage). A reverse-biased diode acts as an open switch, so its branch carries no current.
+  Given (figure): the battery's +ve terminal is at X and −ve at Y.
+  - Branch 1: D₁ in series with 10 Ω, pointing from X towards Y.
+  - Branch 2: D₂ in series with 5 Ω, pointing the other way.
   Solution:
-  1. $D_1$ is forward biased and conducts; $D_2$ is reverse biased and carries no current.
-  2. $I = \frac{5 - 0.7}{10} = 0.43$ A.
+  1. With X at the higher potential, D₁'s anode is at X, so D₁ is forward biased and conducts.
+  2. D₂ is oriented the opposite way, so it is reverse biased and its branch is open.
+  3. Current through D₁'s branch: $I = \frac{E - V_D}{R} = \frac{5 - 0.7}{10} = 0.43$ A.
+  4. This is the total current supplied by the battery.
+  Why others are wrong:
+  - (B) 0.5 A ignores the 0.7 V drop (5/10).
+  - (A) 0.86 A uses the 5 Ω branch ((5 − 0.7)/5).
+  - (D) 1.5 A treats both branches as conducting.
+  Tip: if the battery were reversed, D₂ would conduct instead and give (5 − 0.7)/5 = 0.86 A. That is probably why option (A) is there.
   Answer: (C)
 P A 2: |-
-  Concept: Superposition: sphere with cavity = full sphere – the mass that would fill the cavity.
-  Given: the cavity of radius R/2 is centred at R/2 from O, on the line towards the particle at 3R.
+  Concept: Superposition for a sphere with a cavity: the sphere with the cavity = the full sphere − the small sphere that would fill the cavity. Outside a uniform sphere, its gravity acts as if all its mass were at its centre.
+  Given (figure): a solid sphere of mass M and radius R; a cavity of radius R/2 centred at R/2 from O, on the side facing the particle; the particle is at 3R from O.
   Solution:
-  1. Full sphere: $F_1 = \frac{GMm}{9R^2}$.
-  2. Cavity mass $= \frac{M}{8}$; its centre is $3R - \frac{R}{2} = \frac{5R}{2}$ from the particle: $F_c = \frac{G(M/8)m}{25R^2/4} = \frac{GMm}{50R^2}$.
-  3. $F_2 = F_1 - F_c = \frac{GMm}{R^2}\left(\frac{1}{9} - \frac{1}{50}\right) = \frac{41}{450}\frac{GMm}{R^2}$.
+  1. The full sphere's pull: $F_1 = \frac{GMm}{(3R)^2} = \frac{GMm}{9R^2}$.
+  2. The removed mass: $\frac{M}{8}$ (volume ratio (1/2)³). Its centre is 3R − R/2 = 5R/2 from the particle, so its pull is $F_c = \frac{G(M/8)m}{(5R/2)^2} = \frac{GMm}{50R^2}$.
+  3. $F_2 = F_1 - F_c = \frac{GMm}{R^2}\left(\frac{1}{9} - \frac{1}{50}\right) = \frac{41}{450}\cdot\frac{GMm}{R^2}$.
   4. $F_1 : F_2 = \frac{1}{9} : \frac{41}{450} = 50 : 41$.
-  Note: the printed key shows (1) = 41 : 50, but its own working gives 50 : 41 (option 3), which is also the NTA answer.
+  Note: the printed key shows (A), 41 : 50, but its own working gives 50 : 41 (option C), which is also the NTA answer. F₂ < F₁, as expected once mass is removed, so the ratio must exceed 1.
   Answer: (C)
 P A 3: |-
-  Concept: Resonance tube (closed at one end): first resonance at $l_1 + e = \frac{\lambda}{4}$, with end correction e = 0.3d.
+  Concept: A resonance tube is closed at the bottom by water and open at the top. At the first resonance the air column (plus the end correction e) is a quarter-wavelength: $l_1 + e = \frac{\lambda}{4}$. The end correction for an open end is about 0.3d, where d is the tube's diameter.
+  Given: d = 6 cm, f = 504 Hz, v = 336 m/s. The scale's zero is at the top of the tube.
   Solution:
-  1. $\lambda = \frac{336}{504} = 0.667$ m, so $\frac{\lambda}{4} = 16.67$ cm.
-  2. End correction e = 0.3 × 6 = 1.8 cm.
-  3. Water level reading $l_1 = 16.67 - 1.8 \approx 14.8$ cm.
+  1. $\lambda = \frac{v}{f} = \frac{336}{504} = 0.667$ m = 66.7 cm, so $\frac{\lambda}{4} = 16.67$ cm.
+  2. End correction: e = 0.3 × 6 = 1.8 cm.
+  3. Actual air column: $l_1 = 16.67 - 1.8 = 14.87 \approx 14.8$ cm.
+  4. The scale reads from the top of the tube, so the water level reading is about 14.8 cm.
+  Why others are wrong:
+  - (C) 16.6 cm ignores the end correction.
+  - (D) 18.4 cm adds it instead of subtracting.
+  - (A) 13 cm uses e = 0.6d, which applies to a flanged or doubled correction.
+  Tip: the second resonance occurs at $l_2 + e = \frac{3\lambda}{4}$, so $l_2 - l_1 = \frac{\lambda}{2}$. This difference is independent of e.
   Answer: (B)
 P A 4: |-
-  Concept: At constant pressure: $dQ = nC_pdT$, $dU = nC_vdT$, $dW = nR\,dT$.
+  Concept: First law of thermodynamics, dQ = dU + dW. At constant pressure, for n moles:
+  - $dQ = nC_pdT$;
+  - $dU = nC_vdT$;
+  - $dW = P\,dV = nR\,dT$.
+  Given: diatomic gas, $C_p = \frac{7}{2}R$ and $C_v = \frac{5}{2}R$.
   Solution:
-  1. dU : dQ : dW $= \frac{5}{2}R : \frac{7}{2}R : R = 5 : 7 : 2$.
+  1. $dU : dQ : dW = C_v : C_p : R = \frac{5}{2}R : \frac{7}{2}R : R$.
+  2. Multiply by 2: 5 : 7 : 2.
+  3. Check: dQ = dU + dW, and 7 = 5 + 2 ✓.
+  4. So 5/7 (about 71%) of the heat goes into internal energy, and 2/7 (about 29%) is done as work.
+  Why others are wrong:
+  - (A) 3 : 7 : 2 does not satisfy dQ = dU + dW (3 + 2 ≠ 7).
+  - (C) 5 : 7 : 3 also fails this check (5 + 3 ≠ 7).
+  - (D) 3 : 5 : 2 is the monoatomic gas ratio ($C_v = \frac{3}{2}R$, $C_p = \frac{5}{2}R$).
+  Tip: at constant pressure the fraction of heat converted to work is always $\frac{R}{C_p} = 1 - \frac{1}{\gamma}$.
   Answer: (B)
 P A 5: |-
-  Concept: Amplitude modulation: side bands at $f_c \pm f_m$ and bandwidth $2f_m$.
+  Concept: In amplitude modulation, a carrier $f_c$ modulated by a message $f_m$ produces sidebands at $f_c + f_m$ (upper) and $f_c - f_m$ (lower). The bandwidth is the gap between them, $2f_m$.
+  Given: $f_m$ = 2 kHz and $f_c$ = 1 MHz = 1000 kHz.
   Solution:
   1. Bandwidth = 2 × 2 kHz = 4 kHz, so Statement I is true.
-  2. Side bands: 1000 ± 2 kHz = 1002 kHz and 998 kHz, so Statement II is true.
+  2. Upper sideband: 1000 + 2 = 1002 kHz. Lower sideband: 1000 − 2 = 998 kHz. So Statement II is true.
+  3. Both statements are true.
+  Why others are wrong:
+  - (A), (B) and (C) reject at least one statement, but both follow directly from $f_c \pm f_m$.
+  Tip: AM needs twice the message bandwidth. Single-sideband (SSB) transmission halves this by suppressing one sideband. For speech (up to about 3.4 kHz), each AM channel needs about 7–10 kHz.
   Answer: (D)
 P A 6: |-
-  Concept: At t = 0 an inductor acts as an open circuit; at t = ∞ (steady state) as a short circuit.
+  Concept: At t = 0 (just after switching on), an inductor carries no current, so it acts as an open circuit. In steady state (t = ∞) the current is constant, so the inductor acts as a plain wire (short circuit).
+  Given (figure): battery E; a top pair of 5 Ω resistors; a bottom pair of 1 Ω and 4 Ω; the inductor L bridges the outer junctions.
   Solution:
-  1. t = 0 (L open): from the battery, the left path is 5 Ω + 1 Ω = 6 Ω and the right path is 5 Ω + 4 Ω = 9 Ω, in parallel: $R = \frac{6\times9}{15} = 3.6$ Ω, so $i = \frac{E}{3.6} = \frac{5E}{18}$.
-  2. t = ∞ (L short): the left and right outer nodes are joined, so the top resistors 5 ∥ 5 = 2.5 Ω are in series with the bottom 1 ∥ 4 = 0.8 Ω: R = 3.3 Ω, so $i = \frac{E}{3.3} = \frac{10E}{33}$.
+  1. At t = 0, with L open, the battery sees two paths in parallel:
+     - left path: 5 Ω + 1 Ω = 6 Ω;
+     - right path: 5 Ω + 4 Ω = 9 Ω.
+  2. $R_0 = \frac{6\times9}{6 + 9} = 3.6$ Ω, so $i_0 = \frac{E}{3.6} = \frac{5E}{18}$.
+  3. At t = ∞, with L a wire, the outer junctions are joined:
+     - the two 5 Ω resistors are in parallel, giving 2.5 Ω;
+     - the 1 Ω and 4 Ω resistors are in parallel, giving 0.8 Ω;
+     - these two combinations are in series, giving 3.3 Ω.
+  4. $i_\infty = \frac{E}{3.3} = \frac{10E}{33}$.
+  Why others are wrong:
+  - (B) and (D) swap the two times.
+  - (A) uses the wrong combinations entirely.
+  Tip: a capacitor behaves the opposite way. It is a short circuit at t = 0 and an open circuit at t = ∞.
   Answer: (C)
 P A 7: |-
-  Concept: Orbital period $T = 2\pi\sqrt{\frac{r^3}{GM}}$, independent of the satellite's mass.
+  Concept: For a circular orbit, gravity supplies the centripetal force, which gives $T = 2\pi\sqrt{\frac{r^3}{GM}}$. The period does not depend on the satellite's own mass.
+  Given: $r_A$ = 6400 + 600 = 7000 km and $r_B$ = 6400 + 1600 = 8000 km; M = 6 × 10²⁴ kg.
   Solution:
-  1. $r_A$ = 7000 km, $r_B$ = 8000 km, $GM = 6.67\times10^{-11}\times6\times10^{24} = 4.0\times10^{14}$ SI.
-  2. $T_A = 2\pi\sqrt{\frac{(7\times10^6)^3}{4\times10^{14}}} \approx 5.82\times10^3$ s; $T_B = 2\pi\sqrt{\frac{(8\times10^6)^3}{4\times10^{14}}} \approx 7.11\times10^3$ s.
-  3. $T_B - T_A \approx 1.3\times10^3$ s, closest to option (C), $1.33\times10^3$ s.
+  1. GM = 6.67 × 10⁻¹¹ × 6 × 10²⁴ ≈ 4.0 × 10¹⁴ m³/s².
+  2. $T_A = 2\pi\sqrt{\frac{(7\times10^6)^3}{4\times10^{14}}} = 2\pi\sqrt{8.575\times10^5} \approx 5.82\times10^3$ s.
+  3. $T_B = 2\pi\sqrt{\frac{(8\times10^6)^3}{4\times10^{14}}} = 2\pi\sqrt{1.28\times10^6} \approx 7.11\times10^3$ s.
+  4. $T_B - T_A \approx 1.29\times10^3$ s ≈ 1.33 × 10³ s, option (C). The small difference comes from rounding G and π.
+  Why others are wrong:
+  - (A) and (B) are an order of magnitude too small.
+  - (D) is roughly a single period, not the difference.
+  - The masses 200 kg and 400 kg are distractors.
+  Tip: a low Earth orbit takes about 90 minutes (about 5400 s). Periods of 5800–7100 s for these heights are reasonable.
   Answer: (C)
 P A 8: |-
-  Concept: Uniform acceleration: $v^2 = u^2 + 2as$.
+  Concept: Under uniform acceleration, v² = u² + 2as. Because a is the same throughout, the square of the speed changes linearly with distance.
+  Given: the engine passes the signal post at speed u and the last compartment passes it at speed v. Let the train's length be L. In the train's reference picture, the signal post "moves" along the train.
   Solution:
-  1. For the whole train length L: $v^2 = u^2 + 2aL$.
-  2. For the middle point: $v_m^2 = u^2 + 2a\frac{L}{2} = u^2 + \frac{v^2 - u^2}{2} = \frac{u^2 + v^2}{2}$.
-  3. $v_m = \sqrt{\frac{v^2 + u^2}{2}}$.
+  1. Over the full length L: v² = u² + 2aL.
+  2. When the middle of the train passes the post, the train has moved L/2 since the engine passed: $v_m^2 = u^2 + 2a\cdot\frac{L}{2} = u^2 + aL$.
+  3. From step 1, aL = (v² − u²)/2. So $v_m^2 = u^2 + \frac{v^2 - u^2}{2} = \frac{u^2 + v^2}{2}$.
+  4. $v_m = \sqrt{\frac{u^2 + v^2}{2}}$, the root-mean-square of u and v.
+  Why others are wrong:
+  - (D) (u + v)/2 is the speed at the midpoint in time, not in distance.
+  - (A) and (B) are differences, which would be the right form only for other kinds of quantities.
+  Tip: for uniform acceleration, the distance-midpoint speed (the rms of u and v) is always greater than the time-midpoint speed (the arithmetic mean).
   Answer: (C)
 P A 9: |-
-  Concept: Magnetic force F = qvB, with $v = \frac{p}{m}$.
+  Concept: The magnetic force on a charge moving perpendicular to B is F = qvB. For a given momentum p, the speed is v = p/m.
+  Given: proton, deuteron and α-particle with charges 1 : 1 : 2 (units of e) and masses 1 : 2 : 4 (units of $m_p$), all with the same momentum.
   Solution:
-  1. Proton, deuteron, α: q = 1 : 1 : 2 and m = 1 : 2 : 4.
-  2. Same p, so $v \propto \frac{1}{m}$: 1 : ½ : ¼ = 4 : 2 : 1.
-  3. $F \propto \frac{q}{m}$: 1 : ½ : ½ = 2 : 1 : 1.
+  1. Speeds: v ∝ 1/m gives 1 : ½ : ¼ = 4 : 2 : 1.
+  2. Forces: F = qvB ∝ q/m (since v = p/m and p is the same):
+     - proton: 1/1 = 1;
+     - deuteron: 1/2;
+     - α: 2/4 = 1/2.
+  3. So F ratio = 1 : ½ : ½ = 2 : 1 : 1, and speed ratio = 4 : 2 : 1.
+  Why others are wrong:
+  - (B) and (C) invert the relations (F ∝ m or v ∝ m).
+  - (D) swaps the force and speed ratios.
+  Related result: the radius r = p/(qB) ∝ 1/q, so the radii are 2 : 2 : 1.
+  Tip: first decide what is common (here p), then express everything as ratios of q and m.
   Answer: (A)
 P A 10: |-
-  Concept: Thermal stress arises only when thermal expansion is prevented.
+  Concept: Thermal stress arises only when a body is prevented from expanding or contracting. If it is free to change length, the strain is purely thermal and no stress develops.
   Solution:
-  1. A rod lying freely can expand without restraint, so no thermal stress is developed. A is true.
-  2. On heating the length does increase, so R is true, but mere expansion does not explain the absence of stress (the reason is that the expansion is unrestricted).
+  1. Assertion A: a rod lying freely can expand without any constraint. The expansion is unresisted, so no restoring force (stress) builds up. A is true.
+  2. Reason R: on heating, the rod's length increases (ΔL = LαΔT). R is true.
+  3. But R does not explain A. Expansion happens whether or not stress appears.
+     - Stress would arise if the rod were clamped, even though it still "tries" to expand.
+     - The real reason for zero stress is that the expansion is unrestricted.
+  4. So both are true, but R is not the correct explanation.
+  Why others are wrong:
+  - (B) accepts R as the explanation, which it is not.
+  - (A) and (D) mark a true statement as false.
+  Tip: when a rod is clamped between rigid walls, the thermal stress is YαΔT. It is independent of the rod's length.
   Answer: (C)
 P A 11: |-
-  Concept: For a regular polygon with centre O, the sum of the position vectors of all vertices from O is zero.
+  Concept: For a regular polygon with centre O, the position vectors of all vertices measured from O add to zero, by symmetry.
+  Given: a regular octagon ABCDEFGH with centre O, and $\vec{AO} = 2\hat i + 3\hat j - 4\hat k$.
   Solution:
-  1. $\vec{AX} = \vec{OX} - \vec{OA}$ for each vertex X; including $\vec{AA} = \vec{0}$ changes nothing.
-  2. Sum over all 8 vertices $= \sum\vec{OX} - 8\vec{OA} = 0 + 8\vec{AO}$.
-  3. $= 8(2\hat{i} + 3\hat{j} - 4\hat{k}) = 16\hat{i} + 24\hat{j} - 32\hat{k}$.
+  1. Write each vector from A through O: $\vec{AX} = \vec{AO} + \vec{OX}$.
+  2. The required sum runs over the 7 vertices other than A. Include A too, since $\vec{AA} = 0$ changes nothing: $\sum_{X}\vec{AX} = 8\vec{AO} + \sum_{X}\vec{OX}$, summed over all 8 vertices.
+  3. $\sum\vec{OX} = 0$ for a regular octagon.
+  4. So the sum = 8$\vec{AO}$ = 8(2î + 3ĵ − 4k̂) = 16î + 24ĵ − 32k̂.
+  Why others are wrong:
+  - (B), (C) and (D) flip the signs of some components.
+  - They would correspond to 8$\vec{OA}$ or to mixed errors.
+  Tip: this is a general result. For any regular n-gon, the sum of vectors from one vertex to all the others is n × (the vector from that vertex to the centre).
   Answer: (A)
 P A 12: |-
-  Concept: After n half-lives, $N = \frac{N_0}{2^n}$.
+  Concept: After n half-lives, a radioactive sample keeps $N = \frac{N_0}{2^n}$. If one substance has half the half-life of another, it goes through twice as many half-lives in the same time.
+  Given: $T_X = \frac{1}{2}T_Y$. The time elapsed is 3 half-lives of Y. The remaining numbers are then equal.
   Solution:
-  1. Time = 3 half-lives of Y = 6 half-lives of X.
-  2. $\frac{N_1}{2^6} = \frac{N_2}{2^3} \Rightarrow \frac{N_1}{N_2} = \frac{64}{8} = 8$.
+  1. Time t = 3T_Y = 6T_X. So X has gone through 6 half-lives and Y through 3.
+  2. Remaining: $N_X = \frac{N_1}{2^6} = \frac{N_1}{64}$ and $N_Y = \frac{N_2}{2^3} = \frac{N_2}{8}$.
+  3. Equal: $\frac{N_1}{64} = \frac{N_2}{8}$, so $\frac{N_1}{N_2} = \frac{64}{8} = 8$.
+  4. X decays faster, so it must start with more nuclei (8 times as many) to be level with Y after this time.
+  Why others are wrong:
+  - (B) 1/8 inverts the ratio.
+  - (C) and (D) use the numbers of half-lives (3 or 6) instead of powers of 2.
+  Tip: always convert the time into "number of half-lives" for each substance separately before comparing.
   Answer: (A)
 P A 13: |-
-  Concept: Dimensional formulas.
+  Concept: Build each dimensional formula from a defining equation.
   Solution:
-  1. $h = \frac{E}{\nu}$: $[ML^2T^{-1}]$, (a)–(ii).
-  2. Kinetic energy: $[ML^2T^{-2}]$, (b)–(iii).
-  3. Potential $V = \frac{W}{q} = \frac{[ML^2T^{-2}]}{[IT]} = [ML^2I^{-1}T^{-3}]$, (c)–(iv).
-  4. Momentum: $[MLT^{-1}]$, (d)–(i).
+  1. (a) Planck's constant: h = E/ν, so [h] = [ML²T⁻²]/[T⁻¹] = [ML²T⁻¹]. This is (ii). It is also the dimension of angular momentum.
+  2. (b) Kinetic energy: ½mv² gives [ML²T⁻²]. This is (iii).
+  3. (c) Electric potential: V = W/q, so [V] = [ML²T⁻²]/[IT] = [ML²I⁻¹T⁻³]. This is (iv).
+  4. (d) Linear momentum: p = mv gives [MLT⁻¹]. This is (i).
+  5. The matching (a)–(ii), (b)–(iii), (c)–(iv), (d)–(i) is option (A).
+  Why others are wrong:
+  - (B) gives h the dimensions of momentum.
+  - (C) and (D) give h the dimensions of energy, and (D) gives V the dimensions of h.
+  Tip: remember [h] = [energy × time] = [momentum × length] = [angular momentum]. For electrical quantities, go through charge = current × time, so [q] = [IT].
   Answer: (A)
 P A 14: |-
-  Concept: Screw gauge: least count = pitch / divisions; subtract the zero error.
+  Concept: Screw gauge.
+  - Least count (LC) = pitch / number of circular divisions.
+  - Reading = main scale reading + (circular scale reading × LC).
+  - Correct for the zero error: if the circular zero lies below the reference line when the jaws are closed, the zero error is positive and is subtracted.
+  Given: pitch 1 mm, 100 divisions; zero error 8 divisions below the line; the reading has 1 main-scale division visible and 72 on the circular scale.
   Solution:
-  1. Least count = 1 mm / 100 = 0.01 mm.
-  2. Zero error: with the jaws closed the circular zero is 8 divisions below the reference line, a positive error of +0.08 mm.
-  3. Reading = 1 mm + 72 × 0.01 = 1.72 mm; corrected diameter = 1.72 – 0.08 = 1.64 mm.
-  4. Radius = 0.82 mm.
+  1. LC = 1/100 = 0.01 mm.
+  2. Zero error = +8 × 0.01 = +0.08 mm.
+  3. Observed reading = 1 mm + 72 × 0.01 = 1.72 mm.
+  4. Corrected diameter = 1.72 − 0.08 = 1.64 mm.
+  5. Radius = 1.64/2 = 0.82 mm.
+  Why others are wrong:
+  - (A) 1.64 mm is the diameter, not the radius.
+  - (B) and (D) use 1.80 mm, adding the zero error instead of subtracting it.
+  Tip: "circular zero below the reference line" means the gauge already reads a positive amount with nothing in it, so subtract. If the zero is above the line, the error is negative, so add its magnitude.
   Answer: (C)
 P A 15: |-
-  Concept: $T = 2\pi\sqrt{\frac{L}{g}} \Rightarrow g = \frac{4\pi^2L}{T^2}$.
+  Concept: A simple pendulum has $T = 2\pi\sqrt{\frac{L}{g}}$, so $g = \frac{4\pi^2L}{T^2}$.
+  Given: L = 2 m and T = 2 s.
   Solution:
-  1. $g = \frac{4\pi^2\times2}{2^2} = 2\pi^2$ m/s².
+  1. $g = \frac{4\pi^2\times2}{2^2} = \frac{8\pi^2}{4} = 2\pi^2$ m/s².
+  2. Numerically, 2π² ≈ 19.7 m/s². This is about twice Earth's g, so the place is not on Earth, or the data are simply illustrative.
+  3. The answer is exactly 2π² m/s².
+  Why others are wrong:
+  - (C) 9.8 m/s² assumes Earth's g without checking the data. A 2 m pendulum on Earth would have T ≈ 2.84 s.
+  - (D) π² m/s² corresponds to L = 1 m (the "seconds pendulum" relation g ≈ π²).
+  - (B) 16 m/s² is not supported by the data.
+  Tip: on Earth a 1 m pendulum has T ≈ 2 s, because g ≈ π². Doubling L at the same T doubles the required g.
   Answer: (A)
 P A 16: |-
-  Concept: For a charge accelerated through V: $\lambda = \frac{h}{\sqrt{2mqV}}$.
+  Concept: A particle of charge q and mass m accelerated from rest through a potential V gains kinetic energy qV. Its momentum is $p = \sqrt{2mqV}$, so its de Broglie wavelength is $\lambda = \frac{h}{\sqrt{2mqV}}$.
+  Given: α-particle (m = 4mₚ, q = 2e) and proton (mₚ, e), both accelerated through V = 200 V.
   Solution:
-  1. $\frac{\lambda_p}{\lambda_\alpha} = \sqrt{\frac{m_\alpha q_\alpha}{m_pq_p}} = \sqrt{4\times2} = 2\sqrt{2} \approx 2.8$.
+  1. $\lambda \propto \frac{1}{\sqrt{mq}}$ at the same V.
+  2. $\frac{\lambda_p}{\lambda_\alpha} = \sqrt{\frac{m_\alpha q_\alpha}{m_pq_p}} = \sqrt{\frac{4\times2}{1\times1}} = \sqrt8 = 2\sqrt2 \approx 2.83$.
+  3. So the proton's wavelength is about 2.8 times the α-particle's.
+  Why others are wrong:
+  - (A) 8 forgets the square root.
+  - (C) 3.8 and (D) 7.8 come from arithmetic slips.
+  - Using only the mass ratio would give √4 = 2, which is also wrong.
+  Tip: for the same accelerating voltage, both mass and charge matter. For the same kinetic energy, only mass matters (λ ∝ 1/√m). For the same speed, λ ∝ 1/m.
   Answer: (B)
 P A 17: |-
-  Concept: Escape velocity $v_e = \sqrt{\frac{2GM}{R}}$.
+  Concept: The escape velocity from a planet's surface is $v_e = \sqrt{\frac{2GM}{R}}$. It depends on the ratio M/R.
   Solution:
-  1. Equal escape velocities need equal $\frac{M}{R}$, which is possible for unequal masses, so A is correct.
-  2. R claims $M_1R_1 = M_2R_2$, which is wrong; the condition is $\frac{M_1}{R_1} = \frac{M_2}{R_2}$.
+  1. Assertion A: equal escape velocities need $\frac{M_1}{R_1} = \frac{M_2}{R_2}$. Two planets of unequal mass satisfy this if their radii are in the same ratio as their masses. So A is correct.
+  2. Reason R: it claims M₁R₁ = M₂R₂, i.e. the product is equal. That is not the condition; the ratio M/R must be equal.
+     - Example: M₂ = 2M₁ and R₂ = 2R₁ gives equal v_e, but M₂R₂ = 4M₁R₁ ≠ M₁R₁.
+     So R is not correct.
+  3. A is correct and R is not.
+  Why others are wrong: (A), (C) and (D) all treat R as correct, but the product condition is dimensionally and physically wrong for v_e.
+  Tip: with a uniform density ρ, M ∝ ρR³, so $v_e \propto R\sqrt{\rho}$. Planets with the same density have v_e proportional to their radius.
   Answer: (B)
 P A 18: |-
-  Concept: In a series AC circuit the same rms current flows through each element: $V_R = IR$, $V_L = IX_L$, $V_C = IX_C$.
+  Concept: In a series AC circuit the same rms current flows through every element:
+  - $V_R = IR$;
+  - $V_L = IX_L$ with $X_L = \omega L$;
+  - $V_C = IX_C$ with $X_C = \frac{1}{\omega C}$.
+  Given (figure): ω = 100 rad/s; readings $V_C$ = 10 V, $V_R$ = 15 V (R = 60 Ω), $V_L$ = 20 V. The branch R′ = 40 Ω is shown but carries no current, since its key is open.
   Solution:
-  1. With the key open, the R' branch carries no current. From the resistor: $I = \frac{15}{60} = \frac{1}{4}$ A.
-  2. $X_L = \frac{20}{1/4} = 80$ Ω, so $L = \frac{80}{100} = 0.8$ H.
-  3. $X_C = \frac{10}{1/4} = 40$ Ω, so $C = \frac{1}{100\times40} = 250$ μF.
+  1. The current from the resistor: I = 15/60 = 0.25 A.
+  2. $X_L = \frac{20}{0.25} = 80$ Ω, so L = 80/100 = 0.8 H.
+  3. $X_C = \frac{10}{0.25} = 40$ Ω, so C = 1/(100 × 40) = 2.5 × 10⁻⁴ F = 250 μF.
+  4. For completeness, the source voltage is √(15² + (20 − 10)²) ≈ 18 V.
+  Why others are wrong:
+  - (B) and (D) use 150 μF, from X_C = 66.7 Ω.
+  - (C) and (D) use 1.33 H, from X_L = 133 Ω.
+  - These values would require a different current, for example using R + R′ = 100 Ω.
+  Tip: in series circuits, first find I from the resistor (its voltage and resistance are both known). Then each reactance is simply V/I.
   Answer: (A)
 P A 19: |-
-  Concept: $I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$ and $I_{min} = (\sqrt{I_1} - \sqrt{I_2})^2$.
+  Concept: For two coherent sources:
+  - $I_{max} = (\sqrt{I_1} + \sqrt{I_2})^2$;
+  - $I_{min} = (\sqrt{I_1} - \sqrt{I_2})^2$.
+  The fringe visibility (contrast) is $\frac{I_{max} - I_{min}}{I_{max} + I_{min}}$.
+  Given: $\frac{I_1}{I_2} = 2x$.
   Solution:
-  1. $\frac{I_{max} - I_{min}}{I_{max} + I_{min}} = \frac{4\sqrt{I_1I_2}}{2(I_1 + I_2)} = \frac{2\sqrt{I_1I_2}}{I_1 + I_2}$.
-  2. With $I_1 = 2xI_2$: $= \frac{2\sqrt{2x}}{2x + 1}$.
+  1. $I_{max} - I_{min} = 4\sqrt{I_1I_2}$.
+  2. $I_{max} + I_{min} = 2(I_1 + I_2)$.
+  3. Ratio = $\frac{2\sqrt{I_1I_2}}{I_1 + I_2}$.
+  4. Divide numerator and denominator by I₂: $\frac{2\sqrt{I_1/I_2}}{I_1/I_2 + 1} = \frac{2\sqrt{2x}}{2x + 1}$.
+  Check: equal intensities (2x = 1) give visibility 1, i.e. perfect fringes with dark minima ✓.
+  Why others are wrong:
+  - (A) and (D) use x + 1 in the denominator, i.e. treat the ratio as x.
+  - (B) drops the factor 2 in the numerator.
+  Tip: visibility is highest (= 1) when the two intensities are equal. Very unequal sources give washed-out fringes.
   Answer: (C)
 P A 20: |-
-  Concept: Field on the axis of a coil: $B = \frac{\mu_0NIR^2}{2(R^2 + x^2)^{3/2}}$.
+  Concept: The field on the axis of a circular coil is $B = \frac{\mu_0NIR^2}{2(R^2 + x^2)^{3/2}}$. The ratio at two axial points therefore depends only on $(R^2 + x^2)^{3/2}$.
+  Given: B(0.05 m) : B(0.2 m) = 8 : 1.
   Solution:
-  1. $\frac{B_1}{B_2} = \left(\frac{R^2 + 0.04}{R^2 + 0.0025}\right)^{3/2} = 8$, so $\frac{R^2 + 0.04}{R^2 + 0.0025} = 4$.
-  2. $R^2 + 0.04 = 4R^2 + 0.01 \Rightarrow 3R^2 = 0.03 \Rightarrow R = 0.1$ m.
+  1. $\frac{B_1}{B_2} = \left(\frac{R^2 + 0.2^2}{R^2 + 0.05^2}\right)^{3/2} = 8$.
+  2. Take the 2/3 power: $\frac{R^2 + 0.04}{R^2 + 0.0025} = 8^{2/3} = 4$.
+  3. R² + 0.04 = 4R² + 0.01, so 3R² = 0.03, R² = 0.01 and R = 0.1 m.
+  4. Check: (0.01 + 0.04)/(0.01 + 0.0025) = 0.05/0.0125 = 4, and 4^{3/2} = 8 ✓.
+  Why others are wrong:
+  - (A) 0.15 m gives a ratio of (0.0625/0.025)^{1.5} ≈ 3.95.
+  - (B) 0.2 m and (D) 1.0 m give even smaller ratios.
+  Tip: when a ratio involves a 3/2 power, raise both sides to the 2/3 power first. Integer ratios such as 8 → 4 usually make the algebra clean.
   Answer: (C)
 P B 1: |-
-  Concept: Two object positions giving images of the same size: one image is real (inverted) and one virtual (erect), so m₁ = –m₂. For a lens, $m = \frac{f}{f + u}$.
+  Concept: A convex lens can form images of the same size for two different object positions. One image is real and inverted, the other virtual and erect, so the magnifications are equal in size and opposite in sign: m₁ = −m₂. For a thin lens, $m = \frac{f}{f + u}$ (Cartesian convention, u negative).
   Solution:
-  1. u = –20: $m_1 = \frac{f}{f - 20}$; u = –10: $m_2 = \frac{f}{f - 10}$.
-  2. $\frac{f}{f - 20} = -\frac{f}{f - 10} \Rightarrow f - 10 = -(f - 20) \Rightarrow 2f = 30$.
-  3. f = 15 cm.
+  1. u₁ = −20 cm: $m_1 = \frac{f}{f - 20}$.
+  2. u₂ = −10 cm: $m_2 = \frac{f}{f - 10}$.
+  3. Set m₁ = −m₂: $\frac{f}{f - 20} = -\frac{f}{f - 10}$, so f − 10 = −(f − 20), giving 2f = 30.
+  4. f = 15 cm.
+  5. Check: at 20 cm (beyond f), m = 15/(−5) = −3, a real image magnified 3 times. At 10 cm (inside f), m = 15/5 = +3, a virtual image magnified 3 times ✓.
+  Tip: the two object distances are always equally spaced around f. Here (20 + 10)/2 = 15 = f, a quick shortcut.
   Answer: 15
 P B 2: |-
-  Concept: Flux through a flat surface $\phi = \vec{E}\cdot\vec{A}$.
+  Concept: The flux of a uniform field through a flat surface is Φ = $\vec E\cdot\vec A$. Only the component of E along the surface's normal contributes.
+  Given: $\vec E = E_0\left(\frac{3}{5}\hat i + \frac{4}{5}\hat j\right)$. Surface 1: area 0.2 m², parallel to the y–z plane, so its normal is along x̂. Surface 2: area 0.3 m², parallel to the x–z plane, so its normal is along ŷ.
   Solution:
-  1. Surface parallel to the y-z plane has area vector along $\hat{i}$: $\phi_a = \frac{3}{5}E_0\times0.2 = 0.12E_0$.
-  2. Surface parallel to the x-z plane has area vector along $\hat{j}$: $\phi_b = \frac{4}{5}E_0\times0.3 = 0.24E_0$.
-  3. a : b = 0.12 : 0.24 = 0.5 : 1, so a = 0.5 (with b = 1).
+  1. Φ₁ = E_x × A₁ = (3/5)E₀ × 0.2 = 0.12E₀.
+  2. Φ₂ = E_y × A₂ = (4/5)E₀ × 0.3 = 0.24E₀.
+  3. Φ₁ : Φ₂ = 0.12 : 0.24 = 1 : 2 = 0.5 : 1.
+  4. Writing the ratio as a : b with b = 1 gives a = 0.5, as in the official answer.
+  Common mistake: taking the full magnitude |E| = E₀ for both surfaces, which gives 0.2 : 0.3. Flux depends only on the normal component.
+  Tip: "a surface parallel to the y–z plane" has its area vector along x. The normal is perpendicular to the plane named.
   Answer: 0.5
 P B 3: |-
-  Concept: Charge is conserved and volume is conserved; the potential of a sphere is $V = \frac{kQ}{R}$.
+  Concept: When small charged drops coalesce, both the total charge and the total volume are conserved. The potential of a sphere is V = kQ/R.
+  Given: 512 identical drops, each at potential 2 V.
   Solution:
-  1. Volume: $\frac{4}{3}\pi R^3 = 512\times\frac{4}{3}\pi r^3 \Rightarrow R = 8r$.
+  1. Volume: $\frac{4}{3}\pi R^3 = 512\cdot\frac{4}{3}\pi r^3$, so R = 8r (since 512 = 8³).
   2. Charge: Q = 512q.
-  3. $V = \frac{k(512q)}{8r} = 64\frac{kq}{r} = 64\times2 = 128$ V.
+  3. $V = \frac{kQ}{R} = \frac{k(512q)}{8r} = 64\cdot\frac{kq}{r} = 64\times2 = 128$ V.
+  4. General rule: $V_{big} = n^{2/3}V_{small}$. Here 512^{2/3} = 64 ✓.
+  Related results:
+  - Charge: Q ∝ n.
+  - Capacitance: C ∝ R ∝ n^{1/3}.
+  - Energy: U = QV/2 ∝ n^{5/3}. The total energy increases, and the extra work is done against repulsion when the drops are brought together.
+  Common mistake: assuming V ∝ n (1024 V), which forgets that the radius also grows.
   Answer: 128
 P B 4: |-
-  Concept: Equilibrium where the force $F = -\frac{dU}{dr} = 0$.
+  Concept: The atoms are in equilibrium where the net force is zero, $F = -\frac{dU}{dr} = 0$. For a potential like this, it is the minimum of U, i.e. the bond length.
+  Given: $U = \frac{\alpha}{r^{10}} - \frac{\beta}{r^5} - 3$.
   Solution:
-  1. $\frac{dU}{dr} = -\frac{10\alpha}{r^{11}} + \frac{5\beta}{r^6} = 0 \Rightarrow r^5 = \frac{2\alpha}{\beta}$.
-  2. $r = \left(\frac{2\alpha}{\beta}\right)^{1/5}$, so $\frac{a}{b} = \frac{1}{5}$ and a = 1.
+  1. $\frac{dU}{dr} = -\frac{10\alpha}{r^{11}} + \frac{5\beta}{r^6}$.
+  2. Set it to zero: $\frac{5\beta}{r^6} = \frac{10\alpha}{r^{11}}$, so $r^5 = \frac{2\alpha}{\beta}$.
+  3. $r_0 = \left(\frac{2\alpha}{\beta}\right)^{1/5}$.
+  4. Comparing with $\left(\frac{2\alpha}{\beta}\right)^{a/b}$: a/b = 1/5, so a = 1 (with b = 5).
+  5. The constant −3 does not affect the force, because constants vanish on differentiation.
+  Tip: for the general form $U = \frac{A}{r^{2n}} - \frac{B}{r^n}$, equilibrium is at $r^n = \frac{2A}{B}$, like the Lennard-Jones-type 12–6 potential.
   Answer: 1
 P B 5: |-
-  Concept: Vertical circle: $T_{bottom} - T_{top} = 6mg$, and $T_{top} = \frac{mv_{top}^2}{l} - mg$.
+  Concept: For a bob on a string moving in a vertical circle:
+  - top: $T_{top} = \frac{mv_{top}^2}{l} - mg$;
+  - bottom: $T_{bot} = \frac{mv_{bot}^2}{l} + mg$;
+  - energy conservation: $v_{bot}^2 = v_{top}^2 + 4gl$.
+  Combining these gives $T_{bot} - T_{top} = 6mg$, independent of the speed.
+  Given: $T_{max} : T_{min}$ = 5 : 1, with l = 1 m and g = 10 m/s².
   Solution:
-  1. $T_{bottom} = 5T_{top}$, and $T_{bottom} - T_{top} = 6mg$, so $4T_{top} = 6mg$ and $T_{top} = 1.5mg$.
-  2. $\frac{mv^2}{l} - mg = 1.5mg \Rightarrow v^2 = 2.5gl = 2.5\times10\times1 = 25$.
-  3. v = 5 m/s.
+  1. The maximum tension is at the bottom and the minimum at the top: $T_{bot} = 5T_{top}$.
+  2. 5T_top − T_top = 6mg, so T_top = 1.5mg.
+  3. At the top: $\frac{mv^2}{l} = T_{top} + mg = 2.5mg$, so v² = 2.5gl = 25.
+  4. v_top = 5 m/s.
+  Check: the minimum speed needed at the top is √(gl) = √10 ≈ 3.16 m/s, and 5 exceeds it ✓.
+  Tip: the "6mg" difference is a key shortcut for vertical-circle tension problems.
   Answer: 5
 P B 6: |-
-  Concept: Polytropic process $PV^x$ = constant: $W = \frac{nR(T_1 - T_2)}{x - 1}$.
+  Concept: For a polytropic process PVˣ = constant, the work done by the gas is $W = \frac{P_1V_1 - P_2V_2}{x - 1} = \frac{nR(T_1 - T_2)}{x - 1}$.
+  Given: P = kV³, i.e. PV⁻³ = k, so the polytropic index x = −3. The temperature rises from 100 °C to 300 °C, so ΔT = 200 K.
   Solution:
-  1. $P = kV^3 \Rightarrow PV^{-3}$ = constant, so x = –3.
-  2. $W = \frac{nR(373 - 573)}{-3 - 1} = \frac{-200nR}{-4} = 50nR$.
+  1. $W = \frac{nR(T_1 - T_2)}{x - 1} = \frac{nR(-200)}{-3 - 1} = \frac{-200nR}{-4} = 50nR$.
+  2. Direct check: $W = \int P\,dV = \int kV^3dV = \frac{k(V_2^4 - V_1^4)}{4} = \frac{P_2V_2 - P_1V_1}{4} = \frac{nR\Delta T}{4} = 50nR$ ✓.
+  3. The work is positive, so the gas expands as it heats (P and V both increase).
+  Common mistakes:
+  - using x = 3 instead of −3, which gives W = −100nR;
+  - converting to kelvin unnecessarily. Only the difference ΔT = 200 matters.
   Answer: 50
 P B 7: |-
-  Concept: Potentiometer: emf is proportional to the balancing length, $\frac{E_1}{E_2} = \frac{l_1}{l_2}$.
+  Concept: In a potentiometer with a uniform wire, the balancing length is proportional to the emf being measured: $\frac{E_1}{E_2} = \frac{l_1}{l_2}$. The length must be measured along the wire from the common end A.
+  Given (figure): a 10 m wire folded into ten 1 m segments. J₁ is 20 cm along the 4th segment, measured from its far end; J₂ is 60 cm along the 8th segment.
   Solution:
-  1. The 10 m wire is folded into 1 m segments; measure lengths along the wire from A.
-  2. $J_1$: 3 full metres + (100 – 20) cm = 380 cm.
-  3. $J_2$: 7 full metres + 60 cm = 760 cm.
-  4. $\frac{E_1}{E_2} = \frac{380}{760} = \frac{1}{2}$, so a = 1.
+  1. The wire zig-zags, so alternate segments run in opposite directions.
+  2. J₁: 3 complete segments (3 m) plus the part of the 4th segment up to J₁. Reading the figure, this is 100 − 20 = 80 cm. So l₁ = 380 cm.
+  3. J₂: 7 complete segments (7 m) plus 60 cm. So l₂ = 760 cm.
+  4. $\frac{E_1}{E_2} = \frac{380}{760} = \frac{1}{2}$, so a = 1 (with b = 2).
+  Common mistake: ignoring the zig-zag and reading 320 cm for J₁. The direction of alternate segments matters.
+  Tip: when a folded wire is drawn, trace the path of current from A along each segment to find the true length to the jockey.
   Answer: 1
 P B 8: |-
-  Concept: When the container stops suddenly, the bulk kinetic energy of the gas becomes internal energy: $\frac{1}{2}Mv^2 = nC_v\Delta T$.
+  Concept: When a moving container is stopped suddenly, the ordered (bulk) kinetic energy of the gas becomes random molecular motion, i.e. internal energy. With an insulated container, no heat is lost: $\frac{1}{2}Mv^2 = nC_v\Delta T$.
+  Given: a monoatomic gas ($C_v = \frac{3}{2}R$) of molar mass 4; v = 30 m/s.
   Solution:
-  1. Per mole of a monoatomic gas: $\frac{1}{2}Mv^2 = \frac{3}{2}R\Delta T \Rightarrow \Delta T = \frac{Mv^2}{3R}$.
-  2. Taking M = 4 (as the official solution does): $\Delta T = \frac{4\times900}{3R} = \frac{1200}{R} = \frac{3600}{3R}$, so x = 3600.
-  Note: with M = 4 g/mol in SI units ($4\times10^{-3}$ kg), x would be 3.6; the official answer is 3600.
+  1. Per mole: $\frac{1}{2}Mv^2 = \frac{3}{2}R\Delta T$, so $\Delta T = \frac{Mv^2}{3R}$.
+  2. The official solution takes M = 4 (not converted to kg): $\Delta T = \frac{4\times900}{3R} = \frac{3600}{3R}$.
+  3. Comparing with x/(3R): x = 3600.
+  Note: in strict SI units, M = 4 × 10⁻³ kg/mol gives ΔT = 3.6/(3R), about 0.14 K, so x would be 3.6. The official answer 3600 corresponds to using M in grams. We follow the official key.
+  Tip: this "bulk KE turns into heat" idea also explains the temperature rise in a moving gas brought to rest, as in stagnation temperature.
   Answer: 3600
 P B 9: |-
-  Concept: For a pure inductor $V = L\frac{di}{dt}$ and stored energy $U = \frac{1}{2}Li^2$.
+  Concept: For an ideal inductor (no resistance), $V = L\frac{di}{dt}$. Integrate the applied voltage to get the current, then use $U = \frac{1}{2}Li^2$ for the stored energy.
+  Given: L = 2 H, V = 3t volts from t = 0, and i(0) = 0.
   Solution:
-  1. $2\frac{di}{dt} = 3t \Rightarrow i = \frac{3t^2}{4}$. At t = 4 s: i = 12 A.
-  2. $U = \frac{1}{2}\times2\times12^2 = 144$ J.
+  1. $2\frac{di}{dt} = 3t$, so $\frac{di}{dt} = 1.5t$.
+  2. Integrate from 0: $i = 0.75t^2$.
+  3. At t = 4 s: i = 0.75 × 16 = 12 A.
+  4. $U = \frac{1}{2}\times2\times12^2 = 144$ J.
+  5. Check: the energy delivered is $\int_0^4 Vi\,dt = \int_0^4 3t\times0.75t^2dt = 2.25\times\frac{4^4}{4} = 144$ J ✓. No energy is lost, since R = 0.
+  Common mistake: using i = V/L × t, i.e. treating V as constant, which gives the wrong current.
   Answer: 144
 P B 10: |-
-  Concept: LC resonance: $f = \frac{1}{2\pi\sqrt{LC}}$, with $f = \frac{c}{\lambda}$.
+  Concept: An LC circuit resonates at $f = \frac{1}{2\pi\sqrt{LC}}$. The transmitted wavelength fixes f = c/λ, and then $L = \frac{1}{4\pi^2f^2C}$.
+  Given: λ = 960 m. The printed capacitance is 256 μF.
   Solution:
-  1. $f = \frac{3\times10^8}{960} = 3.125\times10^5$ Hz.
-  2. $L = \frac{1}{4\pi^2f^2C}$. The official solution uses $C = 2.56\ \mu F$ and $\pi^2 \approx 10$: $L = \frac{960^2}{40\times9\times10^{16}\times2.56\times10^{-6}} = 10^{-7}$ H $= 10\times10^{-8}$ H.
-  Note: with C = 256 μF as printed, L ≈ $1.0\times10^{-9}$ H (0.1 × 10⁻⁸); the official answer 10 treats the capacitance as 2.56 μF.
+  1. f = 3 × 10⁸/960 = 3.125 × 10⁵ Hz.
+  2. $L = \frac{\lambda^2}{4\pi^2c^2C}$.
+  3. The official solution uses C = 2.56 μF and π² ≈ 10: $L = \frac{960^2}{40\times9\times10^{16}\times2.56\times10^{-6}} = \frac{921600}{9.216\times10^{12}} = 10^{-7}$ H = 10 × 10⁻⁸ H.
+  4. So the answer is 10.
+  Note: with C = 256 μF as printed, L comes out about 1.0 × 10⁻⁹ H (0.1 × 10⁻⁸ H). The official answer treats the capacitance as 2.56 μF, which is probably a misprint in the question.
   Answer: 10

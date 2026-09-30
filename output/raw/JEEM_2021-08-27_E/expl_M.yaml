@@ -1,197 +1,324 @@
 M A 1: |-
-  Concept: Eliminate n and factor the resulting quadratic in l and m.
+  Concept: Direction cosines (l, m, n) of each line satisfy both equations. Eliminate one variable using the linear equation, then factor the quadratic to get two direction ratios.
   Solution:
-  1. n = 2(l + m), so 2(l + m)² + lm = 0, which gives 2l² + 5lm + 2m² = 0, that is, (2l + m)(l + 2m) = 0.
-  2. m = −2l gives n = −2l, so direction (1, −2, −2).
-  3. l = −2m gives n = −2m, so direction (−2, 1, −2).
-  4. Dot product = −2 − 2 + 4 = 0, so the angle is π/2.
+  1. From 2l + 2m − n = 0: n = 2(l + m).
+  2. Substitute into mn + nl + lm = 0: 2(l + m)² + lm = 0 ⇒ 2l² + 5lm + 2m² = 0 ⇒ (2l + m)(l + 2m) = 0.
+  3. Case m = −2l: n = 2(l − 2l) = −2l → direction (1, −2, −2).
+  4. Case l = −2m: n = 2(−2m + m) = −2m → direction (−2, 1, −2).
+  5. Dot product: (1)(−2) + (−2)(1) + (−2)(−2) = −2 − 2 + 4 = 0 → the lines are perpendicular.
+  Why others are wrong:
+  - (B), (C), (D) would need a non-zero dot product.
+  Key takeaway: a homogeneous quadratic in l, m that factors gives two lines; test perpendicularity with the dot product.
   Answer: (A)
 M A 2: |-
-  Concept: Write [x + k] = [x] + k with n = [x], then expand.
+  Concept: For any integer k, [x + k] = [x] + k. Let n = [x]; the determinant becomes a polynomial in n.
   Solution:
-  1. $\det\begin{pmatrix}n + 1 & n + 2 & n + 3\\ n & n + 3 & n + 3\\ n & n + 2 & n + 4\end{pmatrix} = 3n + 6$ (after row operations).
-  2. 3n + 6 = 192 gives n = 62, so x ∈ [62, 63).
+  1. A = $\begin{pmatrix}n + 1&n + 2&n + 3\\n&n + 3&n + 3\\n&n + 2&n + 4\end{pmatrix}$.
+  2. R₁ − R₂ = (1, −1, 0) and R₃ − R₂ = (0, −1, 1).
+  3. det = $\begin{vmatrix}1&-1&0\\n&n + 3&n + 3\\0&-1&1\end{vmatrix} = 1[(n + 3) + (n + 3)] + 1[n] = 3n + 6$.
+  4. 3n + 6 = 192 ⇒ n = 62 ⇒ [x] = 62 ⇒ x ∈ [62, 63).
+  Why others are wrong:
+  - (A), (C), (D) correspond to [x] = 68, 65, 60, giving det = 210, 201, 186.
+  Key takeaway: row operations that create zeros keep determinants with parameters manageable.
   Answer: (B)
 M A 3: |-
-  Concept: $\sin x + \cos x = \sqrt2\sin\left(x + \frac{\pi}{4}\right) \in [1, \sqrt2]$ on $\left[0, \frac{\pi}{2}\right]$.
+  Concept: tan⁻¹ is increasing, so f is maximised/minimised where sin x + cos x is. On [0, π/2], $\sin x + \cos x = \sqrt2\sin\left(x + \frac{\pi}{4}\right)$ ranges from 1 (at the ends) to √2 (at π/4).
   Solution:
-  1. M = tan⁻¹√2 and m = tan⁻¹1 = π/4.
-  2. $\tan(M - m) = \frac{\sqrt2 - 1}{1 + \sqrt2} = (\sqrt2 - 1)^2 = 3 - 2\sqrt2$.
+  1. M = tan⁻¹√2, m = tan⁻¹1 = $\frac{\pi}{4}$.
+  2. $\tan(M - m) = \frac{\sqrt2 - 1}{1 + \sqrt2\times1} = \frac{\sqrt2 - 1}{\sqrt2 + 1}$.
+  3. Rationalise: $(\sqrt2 - 1)^2 = 3 - 2\sqrt2$.
+  Why others are wrong:
+  - (C) 3 + 2√2 is the reciprocal.
+  - (A) and (B) involve √3, which arises from 60°/30° angles, not present here.
+  Key takeaway: for monotonic outer functions, optimise the inner function first.
   Answer: (D)
 M A 4: |-
-  Concept: Sum over k of P(A gets k heads) × P(B gets k heads).
+  Concept: The number of heads in 3 fair tosses is Binomial(3, ½): P(k) = $\frac{\binom{3}{k}}{8}$. A and B are independent, so P(same) = Σ P(k)².
   Solution:
-  1. $\sum_{k=0}^{3}\left(\frac{\binom{3}{k}}{8}\right)^2 = \frac{1 + 9 + 9 + 1}{64} = \frac{5}{16}$.
+  1. P(0) = P(3) = $\frac{1}{8}$; P(1) = P(2) = $\frac{3}{8}$.
+  2. P(same) = $\frac{1^2 + 3^2 + 3^2 + 1^2}{64} = \frac{20}{64} = \frac{5}{16}$.
+  Why others are wrong:
+  - (A) ⅛ counts only one value of k.
+  - (B) ⅝ doubles the answer.
+  - (D) 1 is certainty.
+  Why square the probabilities: A's count and B's count are independent, so P(both get k heads) = P(k) × P(k). Summing over k = 0, 1, 2, 3 covers every way of matching.
+  Common mistake: Adding P(k) values instead of squaring them, which gives 1 (option D).
+  Key takeaway: $\sum\binom{n}{k}^2 = \binom{2n}{n}$, so P(same) = $\frac{\binom{6}{3}}{64} = \frac{20}{64}$ ✓.
   Answer: (C)
 M A 5: |-
-  Concept: Parabola $(x - h)^2 = L(y - k)$ with latus rectum L.
+  Concept: A parabola with axis parallel to the y-axis and latus rectum L is $(x - h)^2 = L(y - k)$ (two arbitrary constants h, k → second-order differential equation).
   Solution:
-  1. $L = \frac{|6 - 12 - 5|}{5} = \frac{11}{5}$.
-  2. Differentiating twice: $2(x - h) = \frac{11}{5}y'$, then $2 = \frac{11}{5}y''$, so $11\frac{d^2y}{dx^2} = 10$.
+  1. L = distance of (2, −3) from 3x + 4y − 5 = 0: $\frac{|6 - 12 - 5|}{5} = \frac{11}{5}$.
+  2. $(x - h)^2 = \frac{11}{5}(y - k)$.
+  3. Differentiate: $2(x - h) = \frac{11}{5}y'$.
+  4. Differentiate again: $2 = \frac{11}{5}y''$ ⇒ $11\frac{d^2y}{dx^2} = 10$.
+  Why others are wrong:
+  - (A) swaps 10 and 11.
+  - (B) and (C) use $\frac{d^2x}{dy^2}$, which suits parabolas with axis parallel to the x-axis.
+  Key takeaway: eliminating h and k requires two differentiations.
   Answer: (D)
 M A 6: |-
-  Concept: Perpendicular tangents to a parabola meet on its directrix.
+  Concept: For any parabola, the locus of the intersection of perpendicular tangents is its directrix (the director circle degenerates to the directrix).
   Solution:
-  1. $y^2 = 16(x - 3)$ has vertex (3, 0) and a = 4, so its directrix is x = 3 − 4 = −1.
-  2. The locus is x + 1 = 0.
+  1. $y^2 = 16(x - 3)$: vertex (3, 0), 4a = 16 ⇒ a = 4.
+  2. Directrix: x = 3 − 4 = −1, i.e. x + 1 = 0.
+  3. So P lies on x + 1 = 0.
+  Why others are wrong:
+  - (A) x = −3 uses the unshifted form's focus/directrix incorrectly.
+  - (C) and (D) use a wrong value of a.
+  Key takeaway: for $y^2 = 4a(x - h)$, the directrix is x = h − a.
   Answer: (B)
 M A 7: |-
-  Concept: $P_1 + \lambda P_2 = 0$; parallel to the x-axis means the x-coefficient is 0.
+  Concept: Planes through the line of intersection: P₁ + λP₂ = 0. A plane parallel to the x-axis has no x-term (its normal is perpendicular to î).
   Solution:
-  1. (x + y + z − 1) + λ(2x + 3y − z + 4) = 0 with 1 + 2λ = 0, so λ = −½.
-  2. Doubling: −y + 3z − 6 = 0, that is, $\vec r\cdot(\hat j - 3\hat k) + 6 = 0$.
+  1. (x + y + z − 1) + λ(2x + 3y − z + 4) = 0.
+  2. x-coefficient: 1 + 2λ = 0 ⇒ λ = −½.
+  3. Plane: (x + y + z − 1) − ½(2x + 3y − z + 4) = −½y + $\frac{3}{2}$z − 3 = 0 ⇒ y − 3z + 6 = 0.
+  4. Vector form: $\vec r\cdot(\hat j - 3\hat k) + 6 = 0$.
+  Why others are wrong:
+  - (B) and (C) contain an î component (not parallel to the x-axis).
+  - (D) has the wrong constant sign.
+  Key takeaway: "parallel to an axis" ⇔ the corresponding coefficient in the plane equation is zero.
   Answer: (A)
 M A 8: |-
-  Concept: Treat x as the dependent variable: $\frac{dx}{dy} + \frac{2}{y}x = 10y^2$.
+  Concept: The equation is linear in x (treating x as a function of y): $\frac{dx}{dy} + P(y)x = Q(y)$.
   Solution:
-  1. The integrating factor is y², so xy² = 2y⁵ + C; the point (0, 1) gives C = −2.
-  2. At (2, β): 2β² = 2β⁵ − 2, so β⁵ − β² − 1 = 0.
+  1. $(2x - 10y^3)dy + y\,dx = 0 \Rightarrow \frac{dx}{dy} = -\frac{2x}{y} + 10y^2$ ⇒ $\frac{dx}{dy} + \frac{2}{y}x = 10y^2$.
+  2. Integrating factor: y². $\frac{d}{dy}(xy^2) = 10y^4 \Rightarrow xy^2 = 2y^5 + C$.
+  3. Through (0, 1): 0 = 2 + C ⇒ C = −2.
+  4. Through (2, β): 2β² = 2β⁵ − 2 ⇒ β⁵ − β² − 1 = 0.
+  Why others are wrong:
+  - (A), (B), (C) come from errors in C or the integrating factor.
+  Key takeaway: if the equation is linear in x rather than y, swap the roles of the variables.
   Answer: (D)
 M A 9: |-
-  Concept: Area by the determinant formula.
+  Concept: Area of a triangle with vertices (x₁, y₁), … is $\frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|$.
   Solution:
-  1. Area $= \frac{1}{2}|a(b + 1) + b^2| = 1$, so a(b + 1) + b² = ±2.
-  2. $a = \frac{\pm2 - b^2}{b + 1}$, and the sum of both values is $\frac{-2b^2}{b + 1}$.
+  1. A(a, 0), B(b, 2b + 1), C(0, b):
+     Area $= \frac{1}{2}|a(2b + 1 - b) + b(b - 0) + 0| = \frac{1}{2}|a(b + 1) + b^2|$.
+  2. Area 1: a(b + 1) + b² = ±2 ⇒ $a = \frac{\pm2 - b^2}{b + 1}$.
+  3. Sum of the two values: $\frac{2 - b^2 - 2 - b^2}{b + 1} = \frac{-2b^2}{b + 1}$.
+  Why others are wrong:
+  - (A), (B), (C) have wrong signs or powers of b.
+  Key takeaway: the absolute value in the area formula gives two cases (±), hence two values of a.
   Answer: (D)
 M A 10: |-
-  Concept: Check D = 0 separately for consistency.
+  Concept: A linear system always has a solution if det ≠ 0. If det = 0, check whether the equations are consistent.
   Solution:
-  1. D = −9 − [λ], so there is a unique solution whenever [λ] ≠ −9.
-  2. For [λ] = −9: eq3 = −6·eq1 + 5·eq2 (z: −6 + 25 = 19 ✓; RHS: −24 + 15 = −9 ✓), so the system is consistent with infinitely many solutions.
-  3. It has a solution for all real λ.
+  1. det $= \begin{vmatrix}1&1&1\\3&2&5\\9&4&28 + [\lambda]\end{vmatrix} = -9 - [\lambda]$.
+  2. If [λ] ≠ −9: unique solution.
+  3. If [λ] = −9: the third row is (9, 4, 19) = −6(1, 1, 1) + 5(3, 2, 5) ✓, and the RHS: −6(4) + 5(3) = −9 = [λ] ✓ → consistent (infinitely many solutions).
+  4. So the system has a solution for every real λ.
+  Why others are wrong:
+  - (B) and (D) exclude λ ∈ [−9, −8), where the system is still consistent.
+  - (C) gives only the degenerate case.
+  Key takeaway: det = 0 does not automatically mean "no solution" — always check consistency.
   Answer: (A)
 M A 11: |-
-  Concept: With a = 3x² + 4x + 3 and b = 3x² + 4x + 2, the equation factors as (a − b)(a − kb) = 0.
+  Concept: With a = 3x² + 4x + 3 and b = 3x² + 4x + 2, the expression is a² − (k + 1)ab + kb² = (a − b)(a − kb).
   Solution:
-  1. a − b = 1 ≠ 0, so a = kb, that is, 3(1 − k)x² + 4(1 − k)x + (3 − 2k) = 0.
-  2. Discriminant ≥ 0 gives 4(1 − k)(2k − 5) ≥ 0, so 1 ≤ k ≤ 5/2.
-  3. k = 1 gives 1 = 0, which is impossible, so k ∈ (1, 5/2].
+  1. a − b = 1 ≠ 0, so the equation reduces to a = kb.
+  2. 3x² + 4x + 3 = k(3x² + 4x + 2) ⇒ 3(1 − k)x² + 4(1 − k)x + (3 − 2k) = 0.
+  3. If k = 1: the equation becomes 1 = 0 — no solution, so k ≠ 1.
+  4. Real roots: D = 16(1 − k)² − 12(1 − k)(3 − 2k) = 4(1 − k)(2k − 5) ≥ 0 ⇒ 1 ≤ k ≤ $\frac{5}{2}$.
+  5. Excluding k = 1: k ∈ (1, $\frac{5}{2}$].
+  Why others are wrong:
+  - (B), (C), (D) don't match the discriminant condition.
+  Key takeaway: spotting the factorisation reduces a quartic to a quadratic.
   Answer: (A)
 M A 12: |-
-  Concept: V = x(a − 2x)(b − 2x); set V′ = 0.
+  Concept: Cutting squares of side x from each corner gives a box of volume V = x(a − 2x)(b − 2x). Maximise with V′ = 0.
   Solution:
-  1. V′ = 12x² − 4(a + b)x + ab = 0, so $x = \frac{(a + b) \pm \sqrt{a^2 - ab + b^2}}{6}$.
-  2. The smaller root gives the maximum (and a feasible x < min(a, b)/2).
+  1. V = 4x³ − 2(a + b)x² + abx.
+  2. V′ = 12x² − 4(a + b)x + ab = 0 ⇒ $x = \frac{(a + b) \pm \sqrt{a^2 - ab + b^2}}{6}$.
+  3. The larger root exceeds min(a, b)/2 (infeasible); the smaller root gives the maximum (V″ < 0 there).
+  4. $x = \frac{a + b - \sqrt{a^2 + b^2 - ab}}{6}$.
+  Why others are wrong:
+  - (D) is the larger root (a minimum / infeasible).
+  - (A) has 12 in the denominator; (B) has +ab under the root.
+  Key takeaway: for a square sheet (a = b), this gives x = a/6, the classic answer.
   Answer: (C)
 M A 13: |-
-  Concept: When p ∧ q holds, the consequent reduces to r.
+  Concept: In an implication X ⇒ Y, when X is true we only need Y; parts of Y already implied by X can be dropped.
   Solution:
-  1. The given expression is equivalent to (p ∧ q) ⇒ r.
-  2. (p ∧ q) ⇒ (r ∧ q) is also equivalent to (p ∧ q) ⇒ r, since q is already true.
+  1. Given: (p ∧ q) ⇒ (r ∧ q ∧ p). When p ∧ q is true, q ∧ p is automatically true, so the consequent reduces to r: equivalent to (p ∧ q) ⇒ r.
+  2. Option (A): (p ∧ q) ⇒ (r ∧ q). Under p ∧ q, r ∧ q ≡ r, so it is also (p ∧ q) ⇒ r ✓.
+  Why others are wrong:
+  - (B) and (D) change the hypothesis.
+  - (C) (p ∧ q) ⇒ (r ∨ q) is always true (q is true), a tautology — not equivalent.
+  Key takeaway: check equivalence by comparing the cases where the hypothesis is true.
   Answer: (A)
 M A 14: |-
-  Concept: The number of relations from X to Y is $2^{|X||Y|}$.
+  Concept: The number of relations from X to Y equals the number of subsets of X × Y: $2^{|X||Y|}$. List lattice points in each intersection.
   Solution:
-  1. A ∩ B = {(0, 0), (1, 0), (2, 0), (1, 1), (1, −1)}, which has 5 points.
-  2. A ∩ C = {(2, 0), (4, 2), (2, 2), (1, 1), (3, 1)}, which has 5 points.
-  3. p = 5 × 5 = 25.
+  1. A ∩ B (both discs of radius 2, centres (2, 0) and (0, 0)): (0, 0), (1, 0), (1, 1), (1, −1), (2, 0) → 5 points.
+  2. A ∩ C (centres (2, 0) and (2, 2)): (1, 1), (2, 0), (2, 1), (2, 2), (3, 1) → 5 points.
+  3. |X × Y| = 25 ⇒ 2²⁵ relations ⇒ p = 25.
+  Why others are wrong:
+  - (A) 16 and (D) 9 miscount the lattice points (e.g. 4 × 4 or 3 × 3).
+  - (C) 49 counts 7 points in each.
+  Key takeaway: for small regions, list lattice points systematically column by column.
   Answer: (B)
 M A 15: |-
-  Concept: Integrate along y (the parabola opens along x).
+  Concept: The parabola (y − 2)² = x − 1 opens to the right, so integrate with respect to y (horizontal strips).
   Solution:
-  1. At y = 3, x = 2. The slope is dx/dy = 2(y − 2) = 2, so the tangent is x = 2y − 4, meeting the x-axis at (−4, 0).
-  2. Area $= \int_0^3[(y - 2)^2 + 1 - (2y - 4)]dy = \int_0^3(y - 3)^2dy = 9$.
+  1. At y = 3: x = 1 + 1 = 2 → point (2, 3).
+  2. Slope dx/dy = 2(y − 2) = 2; tangent: x − 2 = 2(y − 3) ⇒ x = 2y − 4, meeting the x-axis at (−4, 0).
+  3. For 0 ≤ y ≤ 3, the parabola is to the right of the tangent.
+  4. Area = $\int_0^3[(y - 2)^2 + 1 - (2y - 4)]dy = \int_0^3(y - 3)^2dy = \left[\frac{(y - 3)^3}{3}\right]_0^3 = 9$.
+  Why others are wrong:
+  - (B), (C), (D) come from using the wrong limits or integrating along x.
+  Key takeaway: the difference between a parabola and its tangent is a perfect square — $(y - y_0)^2$.
   Answer: (A)
 M A 16: |-
-  Concept: Half-angle forms; for x ∈ (π/2, π), sin(x/2) > cos(x/2) > 0.
+  Concept: Write $1 \pm \sin x$ as perfect squares using half-angles: $1 + \sin x = \left(\sin\frac{x}{2} + \cos\frac{x}{2}\right)^2$, $1 - \sin x = \left(\sin\frac{x}{2} - \cos\frac{x}{2}\right)^2$.
   Solution:
-  1. √(1 + sin x) = sin(x/2) + cos(x/2) and √(1 − sin x) = sin(x/2) − cos(x/2).
-  2. The ratio is 2sin(x/2)/2cos(x/2) = tan(x/2), so y = cot⁻¹(tan(x/2)) = π/2 − x/2.
-  3. dy/dx = −½.
+  1. For x ∈ (π/2, π), x/2 ∈ (π/4, π/2), so $\sin\frac{x}{2} > \cos\frac{x}{2} > 0$. Hence $\sqrt{1 - \sin x} = \sin\frac{x}{2} - \cos\frac{x}{2}$.
+  2. Numerator = 2 sin(x/2), denominator = 2 cos(x/2) ⇒ ratio = tan(x/2).
+  3. $y = \cot^{-1}\left(\tan\frac{x}{2}\right) = \frac{\pi}{2} - \frac{x}{2}$ (since x/2 ∈ (0, π/2) range matches).
+  4. $\frac{dy}{dx} = -\frac{1}{2}$ for every x in the interval, including 5π/6.
+  Why others are wrong:
+  - (C) ½ has the wrong sign; (B) and (D) mis-simplify.
+  Key takeaway: the sign of $\sin\frac{x}{2} - \cos\frac{x}{2}$ depends on the interval — always check it.
   Answer: (A)
 M A 17: |-
-  Concept: Coordinates: B(0, 0), A(0, a), D(x, 0), C(x, a + b); take the angle between CA and CB.
+  Concept: Place the poles in coordinates and use the angle-between-lines formula at C.
   Solution:
-  1. CA = (−x, −b) and CB = (−x, −(a + b)).
-  2. $\tan\angle ACB = \frac{|x(a + b) - xb|}{x^2 + b(a + b)} = \frac{ax}{x^2 + b(a + b)} = \frac{1}{2}$.
-  3. So x² − 2ax + b(a + b) = 0.
+  1. B(0, 0), A(0, a), D(x, 0), C(x, a + b).
+  2. Vectors from C: $\vec{CA} = (-x, -b)$, $\vec{CB} = (-x, -(a + b))$.
+  3. $\tan\angle ACB = \frac{|\vec{CA}\times\vec{CB}|}{\vec{CA}\cdot\vec{CB}} = \frac{|x(a + b) - xb|}{x^2 + b(a + b)} = \frac{ax}{x^2 + b(a + b)}$.
+  4. Set = ½: $2ax = x^2 + b(a + b)$ ⇒ $x^2 - 2ax + b(a + b) = 0$.
+  Why others are wrong:
+  - (A) and (B) have +2(a + 2b)x terms from wrong vectors.
+  - (D) has a(a + b) instead of b(a + b).
+  Key takeaway: tan of the angle between two vectors = |cross product| / dot product.
   Answer: (C)
 M A 18: |-
-  Concept: $\frac{n}{n + 1}x^{n+1} = x^{n+1} - \frac{x^{n+1}}{n + 1}$.
+  Concept: Split $\frac{n}{n + 1}x^{n+1} = x^{n+1} - \frac{x^{n+1}}{n + 1}$ and sum each part.
   Solution:
-  1. $y = \frac{x^2}{1 - x} + x + \ln(1 - x) = \frac{x}{1 - x} + \ln(1 - x)$.
-  2. At x = ½: y = 1 − ln 2, so $e^{1+y} = e^{2}\cdot\frac{1}{2}$.
+  1. $\sum_{n\ge1}x^{n+1} = \frac{x^2}{1 - x}$.
+  2. $\sum_{n\ge1}\frac{x^{n+1}}{n + 1} = -\ln(1 - x) - x$.
+  3. $y = \frac{x^2}{1 - x} + x + \ln(1 - x) = \frac{x}{1 - x} + \ln(1 - x)$.
+  4. At x = ½: y = 1 + ln ½ = 1 − ln 2.
+  5. $e^{1 + y} = e^{2 - \ln2} = \frac{e^2}{2}$.
+  Why others are wrong:
+  - (B) 2e and (D) 2e² have the ln 2 sign reversed or wrong exponent.
+  - (C) uses a half power.
+  Key takeaway: the log series $-\ln(1 - x) = \sum\frac{x^k}{k}$ is the key tool.
   Answer: (A)
 M A 19: |-
-  Concept: Put x = t², then use partial fractions in t².
+  Concept: Substituting x = t² removes the square root; then partial fractions in u = t².
   Solution:
-  1. $I = \int_0^1\frac{2t^2dt}{(1 + t^2)(1 + 3t^2)(3 + t^2)} = \int_0^1\left[\frac{1}{2(1 + t^2)} - \frac{3}{8(1 + 3t^2)} - \frac{3}{8(3 + t^2)}\right]dt$.
-  2. The three integrals are $\frac{\pi}{4}$, $\frac{\pi}{3\sqrt3}$ and $\frac{\pi}{6\sqrt3}$.
-  3. $I = \frac{\pi}{8} - \frac{3}{8}\cdot\frac{\pi}{2\sqrt3} = \frac{\pi}{8}\left(1 - \frac{\sqrt3}{2}\right)$.
+  1. x = t², dx = 2t dt: $I = \int_0^1\frac{2t^2dt}{(1 + t^2)(1 + 3t^2)(3 + t^2)}$.
+  2. Partial fractions: $\frac{2u}{(1 + u)(1 + 3u)(3 + u)} = \frac{1/2}{1 + u} - \frac{3/8}{1 + 3u} - \frac{3/8}{3 + u}$ (check by cover-up at u = −1, −⅓, −3).
+  3. $\int_0^1\frac{dt}{1 + t^2} = \frac{\pi}{4}$; $\int_0^1\frac{dt}{1 + 3t^2} = \frac{\pi}{3\sqrt3}$; $\int_0^1\frac{dt}{3 + t^2} = \frac{\pi}{6\sqrt3}$.
+  4. $I = \frac{\pi}{8} - \frac{3}{8}\cdot\frac{\pi}{2\sqrt3} = \frac{\pi}{8}\left(1 - \frac{\sqrt3}{2}\right)$.
+  Why others are wrong:
+  - (B), (C), (D) have the wrong prefactor or the wrong √3 coefficient.
+  Key takeaway: treat t² as a single variable u when all terms are even in t.
   Answer: (A)
 M A 20: |-
-  Concept: For a finite limit, a = 1; then rationalise.
+  Concept: For large x, $\sqrt{x^2 - x + 1} \approx x - \frac{1}{2}$. A finite limit forces a = 1; then rationalise to find b.
   Solution:
-  1. $\sqrt{x^2 - x + 1} - x = \frac{-x + 1}{\sqrt{x^2 - x + 1} + x} \to -\frac{1}{2}$.
-  2. (a, b) = (1, −½).
+  1. If a ≠ 1, the expression behaves like (1 − a)x → ±∞. So a = 1.
+  2. $\sqrt{x^2 - x + 1} - x = \frac{-x + 1}{\sqrt{x^2 - x + 1} + x}$.
+  3. Divide by x: $\frac{-1 + 1/x}{\sqrt{1 - 1/x + 1/x^2} + 1} \to -\frac{1}{2}$.
+  4. (a, b) = (1, −½).
+  Why others are wrong:
+  - (A) has the wrong sign of b.
+  - (C) and (D) use a = −1, which makes the expression → +∞.
+  Key takeaway: $\sqrt{x^2 + px + q} - x \to \frac{p}{2}$ as x → ∞.
   Answer: (B)
 M B 1: |-
-  Concept: $\sin^4 + \cos^4 = 1 - \frac{1}{2}\sin^22\theta$.
+  Concept: $\sin^4\theta + \cos^4\theta = 1 - 2\sin^2\theta\cos^2\theta = 1 - \frac{1}{2}\sin^22\theta$. Let s = sin 2θ.
   Solution:
-  1. With s = sin 2θ: 1 − s²/2 − s/2 = 0, so s² + s − 2 = 0 and s = 1.
-  2. θ = π/4 + kπ in [0, 4π]: π/4, 5π/4, 9π/4, 13π/4, with S = 7π.
-  3. 8S/π = 56.
+  1. $1 - \frac{s^2}{2} - \frac{s}{2} = 0 \Rightarrow s^2 + s - 2 = 0 \Rightarrow s = 1$ (s = −2 is impossible).
+  2. sin 2θ = 1 ⇒ θ = $\frac{\pi}{4} + k\pi$.
+  3. In [0, 4π]: $\frac{\pi}{4}, \frac{5\pi}{4}, \frac{9\pi}{4}, \frac{13\pi}{4}$; sum S = 7π.
+  4. $\frac{8S}{\pi} = 56$.
+  Why s = −2 is rejected: sin 2θ must lie in [−1, 1].
+  Check one root: θ = π/4 gives sin⁴ + cos⁴ = ¼ + ¼ = ½ and sin θ cos θ = ½, so ½ − ½ = 0 ✓.
+  Common mistake: Stopping at [0, 2π] (2 roots, sum 3π/2), forgetting that the interval runs to 4π.
   Answer: 56
 M B 2: |-
-  Concept: Mirror image in a plane: $S = Q - \frac{2(ax_0 + by_0 + cz_0 + d)}{a^2 + b^2 + c^2}(a, b, c)$.
+  Concept: The mirror image of Q(x₀, y₀, z₀) in ax + by + cz + d = 0 is $Q - \frac{2(ax_0 + by_0 + cz_0 + d)}{a^2 + b^2 + c^2}(a, b, c)$.
   Solution:
-  1. For Q: the value is 2 − 3 + 4 + 3 = 6, so S = (1, 3, 4) − 2(2, −1, 1) = (−3, 5, 2).
-  2. R is on the plane: 6 − 5 + γ + 3 = 0, so γ = −4.
-  3. SR² = 36 + 0 + 36 = 72.
+  1. For Q(1, 3, 4): 2 − 3 + 4 + 3 = 6; a² + b² + c² = 6. So S = (1, 3, 4) − 2(2, −1, 1) = (−3, 5, 2).
+  2. R(3, 5, γ) on the plane: 6 − 5 + γ + 3 = 0 ⇒ γ = −4.
+  3. SR² = (3 + 3)² + (5 − 5)² + (−4 − 2)² = 36 + 0 + 36 = 72.
   Answer: 72
 M B 3: |-
-  Concept: Normalise the probabilities, then apply the conditional probability.
+  Concept: Probabilities must sum to 1; then use conditional probability P(E | F) = $\frac{P(E \cap F)}{P(F)}$.
   Solution:
-  1. 9K = 1, so K = 1/9.
-  2. $p = \frac{P(X = 2)}{P(X < 3)} = \frac{2K}{3K} = \frac{2}{3}$.
-  3. 5p = 10/3 = λ/9, so λ = 30.
+  1. K + 2K + 2K + 3K + K = 9K = 1 ⇒ K = $\frac{1}{9}$.
+  2. E: 1 < X < 4 → X ∈ {2, 3}; F: X < 3 → X ∈ {1, 2}; E ∩ F = {2}.
+  3. p = $\frac{2K}{K + 2K} = \frac{2}{3}$.
+  4. 5p = $\frac{10}{3}$ = λK = $\frac{\lambda}{9}$ ⇒ λ = 30.
+  Common mistake: Including X = 3 in the numerator (P(1 < X < 4) = 4K) without intersecting with X < 3; the condition restricts the sample space to {1, 2}.
+  Note that K cancels in p, so p = 2/3 regardless of K; K reappears only in λK.
   Answer: 30
 M B 4: |-
-  Concept: |z − 3| = Re z is the parabola y² = 6x − 9.
+  Concept: |z − 3| = Re(z) means the distance from (3, 0) equals the x-coordinate: (x − 3)² + y² = x² ⇒ y² = 6x − 9, a parabola. The chord through two points on it has slope $\frac{6}{y_1 + y_2}$.
   Solution:
-  1. For points on it, $x = \frac{y^2 + 9}{6}$, so the chord slope is $\frac{6}{y_1 + y_2}$.
-  2. arg(z₁ − z₂) = π/4 means the slope is 1, so y₁ + y₂ = 6.
+  1. For points on the parabola, $x = \frac{y^2 + 9}{6}$, so $\frac{y_1 - y_2}{x_1 - x_2} = \frac{6}{y_1 + y_2}$.
+  2. arg(z₁ − z₂) = π/4 ⇒ slope = 1 ⇒ y₁ + y₂ = 6.
+  3. Im(z₁ + z₂) = y₁ + y₂ = 6.
+  Key takeaway: for y² = 4ax, the slope of a chord is $\frac{4a}{y_1 + y_2}$.
   Answer: 6
 M B 5: |-
-  Concept: Classify the elements mod 3: {3, 6, 9} ≡ 0, {1, 4} ≡ 1, {2, 5} ≡ 2.
+  Concept: Classify elements by residue mod 3 and count subsets with sum ≡ 0; subtract from the total.
   Solution:
-  1. Subsets of {1, 2, 4, 5} with sum ≡ 0 (mod 3): ∅, {1,2}, {1,5}, {4,2}, {4,5}, {1,4,2,5}, which is 6 subsets.
-  2. Subsets with sum a multiple of 3 = 6 × 2³ = 48 (including ∅). Non-empty multiples of 3: 47.
-  3. T has 127 − 47 = 80 elements.
+  1. Residues: 0 → {3, 6, 9}; 1 → {1, 4}; 2 → {2, 5}.
+  2. Subsets of {1, 4, 2, 5} with sum ≡ 0 (mod 3): choose i ones, j twos with i + 2j ≡ 0: (0, 0): 1; (1, 1): 2 × 2 = 4; (2, 2): 1 → 6 subsets.
+  3. Multiply by the 2³ = 8 choices from {3, 6, 9}: 48 subsets (including ∅) with sum a multiple of 3.
+  4. Non-empty subsets: 2⁷ − 1 = 127; with sum a multiple of 3 (excluding ∅): 47.
+  5. |T| = 127 − 47 = 80.
   Answer: 80
 M B 6: |-
-  Concept: Normal to 2x² − y² = 2 at (x₀, y₀): $y_0x + 2x_0y = 3x_0y_0$.
+  Concept: The normal to 2x² − y² = 2 at (x₀, y₀) (written as $\frac{x^2}{1} - \frac{y^2}{2} = 1$) is $y_0x + 2x_0y = 3x_0y_0$.
   Solution:
-  1. At A: x cos θ + y cot θ = 3. At B (φ = π/2 − θ): x sin θ + y tan θ = 3.
-  2. Eliminating x: y(cos θ − sin θ) = 3(sin θ − cos θ), so β = −3 and (2β)² = 36.
-  Note: The points (sec θ, 2tan θ) do not actually lie on 2x² − y² = 2 (its parametric form is (sec θ, √2 tan θ)), so ALLEN marks the question Bonus. The official answer applies the normal formula at the given points.
+  1. At A(sec θ, 2 tan θ): 2 tan θ·x + 2 sec θ·y = 6 sec θ tan θ ⇒ x cos θ + y cot θ = 3.
+  2. At B with φ = π/2 − θ: x sin θ + y tan θ = 3.
+  3. Eliminating x gives y(cos θ − sin θ) = 3(sin θ − cos θ) ⇒ β = −3.
+  4. (2β)² = 36.
+  Note: Official NTA answer is 36; ALLEN marks it Bonus, because the points (sec θ, 2 tan θ) do not actually lie on 2x² − y² = 2 (its parametric form is (sec θ, √2 tan θ)). The official answer applies the normal formula at the given points.
   Answer: 36
 M B 7: |-
-  Concept: The centres lie on the normal to the common tangent through (1, 2), at distance 5.
+  Concept: Two equal circles touching at a point have their centres on the common normal at that point, one on each side, each at distance r.
   Solution:
-  1. The unit normal is (4, 3)/5, so the centres are (1, 2) ± (4, 3): (5, 5) and (−3, −1).
-  2. |(5 + 5)(−3 − 1)| = 40.
+  1. Normal direction to 4x + 3y = 10: (4, 3), unit vector $\frac{1}{5}(4, 3)$.
+  2. Centres: (1, 2) ± 5 × $\frac{1}{5}$(4, 3) = (5, 5) and (−3, −1).
+  3. (α + β)(γ + δ) = (10)(−4) = −40 ⇒ absolute value 40.
+  Why the centres lie on the normal: The line joining the centre of a circle to the point of contact is perpendicular to the tangent. With two equal circles touching externally at (1, 2), the centres are on opposite sides at distance 5.
+  Check: (5, 5) is at distance √(16 + 9) = 5 from (1, 2) ✓.
+  Key takeaway: (1, 2) lies on the tangent (4 + 6 = 10 ✓), confirming it is the point of contact.
   Answer: 40
 M B 8: |-
-  Concept: Work mod 2 and mod 9, then combine.
+  Concept: 18 = 2 × 9. Find the remainder mod 9 and the parity, then combine (Chinese remainder idea).
   Solution:
-  1. 7³ ≡ 1 (mod 9), so 7²² ≡ 7 and 3 × 7 = 21 ≡ 3.
-  2. 10 ≡ 1 (mod 9), so 2 × 10²² ≡ 2; and 44 ≡ 8.
-  3. The total ≡ 3 + 2 − 8 = −3 ≡ 6 (mod 9).
-  4. The number is odd, since 3 × 7²² is odd and the rest is even.
-  5. The odd residue ≡ 6 (mod 9) below 18 is 15.
+  1. Mod 9: 7³ = 343 ≡ 1, so 7²² = (7³)⁷·7 ≡ 7; 3 × 7 = 21 ≡ 3.
+  2. 10 ≡ 1 (mod 9) ⇒ 2 × 10²² ≡ 2; 44 ≡ 8.
+  3. Total ≡ 3 + 2 − 8 = −3 ≡ 6 (mod 9).
+  4. Parity: 3 × 7²² is odd; 2 × 10²² and 44 are even ⇒ the number is odd.
+  5. Residues ≡ 6 (mod 9) in [0, 18): 6 and 15; the odd one is 15.
   Answer: 15
 M B 9: |-
-  Concept: Combine the groups using Σx and Σx².
+  Concept: Combine groups using totals: Σx = n·mean, Σx² = n(σ² + mean²).
   Solution:
-  1. Girls' mean: (750 − 240)/30 = 17, so μ = 17.
-  2. Σx² = 20(2 + 144) + 30(2 + 289) = 2920 + 8730 = 11650.
-  3. σ² = 11650/50 − 15² = 233 − 225 = 8, so μ + σ² = 25.
+  1. Total marks: 50 × 15 = 750; boys: 20 × 12 = 240; girls: 510 ⇒ μ = $\frac{510}{30} = 17$.
+  2. Σx²: boys 20(2 + 144) = 2920; girls 30(2 + 289) = 8730; total 11650.
+  3. σ² = $\frac{11650}{50} - 15^2 = 233 - 225 = 8$.
+  4. μ + σ² = 17 + 8 = 25.
+  Why add σ² + mean²: For each group, the average of x² equals σ² + (mean)², so Σx² = n(σ² + mean²). Adding the groups' Σx² gives the combined sum of squares.
+  Common mistake: Averaging the two variances (2) and ignoring the spread between the group means.
+  Key takeaway: combined variance = average within-group variance (2) + variance of group means (6) = 8 ✓.
   Answer: 25
 M B 10: |-
-  Concept: Write the numerator as A(denominator) + B(derivative of the denominator).
+  Concept: For $\int\frac{pe^x + qe^{-x}}{re^x + se^{-x}}dx$, write the numerator as A·(denominator) + B·(derivative of denominator); the integral is Ax + B ln|denominator|.
   Solution:
-  1. 2eˣ + 3e⁻ˣ = A(4eˣ + 7e⁻ˣ) + B(4eˣ − 7e⁻ˣ) gives A = 13/28 and B = 1/28.
-  2. $I = \frac{13}{28}x + \frac{1}{28}\ln(4e^x + 7e^{-x}) = \frac{1}{14}\left(\frac{13}{2}x + \frac{1}{2}\ln(\ldots)\right)$.
-  3. u + v = 13/2 + 1/2 = 7.
+  1. 2eˣ + 3e⁻ˣ = A(4eˣ + 7e⁻ˣ) + B(4eˣ − 7e⁻ˣ).
+  2. eˣ: 4A + 4B = 2; e⁻ˣ: 7A − 7B = 3 ⇒ A + B = ½, A − B = $\frac{3}{7}$ ⇒ A = $\frac{13}{28}$, B = $\frac{1}{28}$.
+  3. $I = \frac{13}{28}x + \frac{1}{28}\ln(4e^x + 7e^{-x}) + C = \frac{1}{14}\left(\frac{13}{2}x + \frac{1}{2}\ln(\dots)\right) + C$.
+  4. u = $\frac{13}{2}$, v = $\frac{1}{2}$ ⇒ u + v = 7.
+  Check by differentiating: d/dx[(13/28)x + (1/28)ln(4eˣ + 7e⁻ˣ)] = 13/28 + (1/28)(4eˣ − 7e⁻ˣ)/(4eˣ + 7e⁻ˣ). Combining over the common denominator gives (56eˣ + 84e⁻ˣ)/(28(4eˣ + 7e⁻ˣ)) = (2eˣ + 3e⁻ˣ)/(4eˣ + 7e⁻ˣ) ✓.
   Answer: 7

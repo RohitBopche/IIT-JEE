@@ -1,208 +1,385 @@
 M A 1: |-
-  Concept: $F'(x) = f(x)$ (FTC), so the integrand is $2f(x)e^x = 2\sin x$.
+  Concept: By the Fundamental Theorem of Calculus, if $F(x) = \int_0^xf(t)dt$ with f continuous, then F′(x) = f(x). This simplifies the integrand before integrating.
   Solution:
-  1. $\int_0^12\sin x\,dx = 2(1 - \cos1) = 0.9194$.
-  2. $0.9194\times360 = 330.98$, so the value lies in $\left[\frac{330}{360}, \frac{331}{360}\right]$.
+  1. F′(x) = f(x) = e⁻ˣ sin x.
+  2. Integrand: $(F'(x) + f(x))e^x = 2f(x)e^x = 2e^{-x}\sin x\cdot e^x = 2\sin x$.
+  3. $\int_0^12\sin x\,dx = 2[-\cos x]_0^1 = 2(1 - \cos1)$.
+  4. cos 1 (1 radian) ≈ 0.5403, so the value is 2(0.4597) = 0.9194.
+  5. To locate the interval, multiply by 360: 0.9194 × 360 = 330.98.
+  6. So the value lies between $\frac{330}{360}$ and $\frac{331}{360}$.
+  Using a series (without a calculator): $1 - \cos1 = \frac{1}{2} - \frac{1}{24} + \frac{1}{720} - \dots$, so $2(1 - \cos1) = 1 - \frac{1}{12} + \frac{1}{360} - \frac{1}{20160} + \dots$ In units of $\frac{1}{360}$: 360 − 30 + 1 − 0.018 = 330.98. This alternating series shows the value is just below 331/360 and above 330/360 ✓. (This is probably why the question uses 360ths.)
+  Why others are wrong: (A), (C) and (D) are intervals that do not contain 330.98/360.
   Answer: (B)
 M A 2: |-
-  Concept: On each unit interval, $[\sin2\pi x] = 0$ on the first half and $-1$ on the second half (up to measure zero).
+  Concept: Split the range into unit intervals. On each, the fractional part x − [x] = s runs from 0 to 1, and $[\sin2\pi x] = [\sin2\pi s]$ depends only on s, so every unit interval contributes the same amount.
   Solution:
-  1. Per unit: $\int_{1/2}^{1}(-1)e^{-s}ds = e^{-1} - e^{-1/2}$.
-  2. Over 10 units: $10e^{-1} - 10e^{-1/2}$, so $\alpha = 10$, $\beta = -10$, $\gamma = 0$.
-  3. $\alpha + \beta + \gamma = 0$.
+  1. For s ∈ (0, ½): sin 2πs ∈ (0, 1], so [sin 2πs] = 0 (except at s = ¼, where it is 1; a single point does not affect the integral).
+  2. For s ∈ (½, 1): sin 2πs ∈ [−1, 0), so [sin 2πs] = −1.
+  3. The denominator is $e^{x - [x]} = e^s$.
+  4. Contribution of one unit interval: $\int_{1/2}^1\frac{-1}{e^s}ds = -\int_{1/2}^1e^{-s}ds = -[-e^{-s}]_{1/2}^1 = -(e^{-1/2} - e^{-1}) = e^{-1} - e^{-1/2}$.
+  5. There are 10 unit intervals in [0, 10]: $I = 10e^{-1} - 10e^{-1/2}$.
+  6. Comparing with $\alpha e^{-1} + \beta e^{-1/2} + \gamma$: α = 10, β = −10, γ = 0.
+  7. α + β + γ = 0.
+  Sense check: the integrand is ≤ 0 everywhere, so I should be negative: $10(0.368 - 0.607) = -2.39$ ✓.
+  Why others are wrong: (B) 20, (C) 25 and (D) 10 come from sign errors (e.g. taking β = +10) or from counting only α.
   Answer: (A)
 M A 3: |-
-  Concept: Recognise the exact differential $d(y\cos x) = \cos x\,dy - y\sin x\,dx$.
+  Concept: Rearranging reveals an exact differential: $d(y\cos x) = \cos x\,dy - y\sin x\,dx$. Then use the half-angle substitution $t = \tan\frac{x}{2}$ to integrate a rational function of sin x and cos x.
   Solution:
-  1. With $P = 3\sin x + \cos x + 3$, the DE is $P\,d(y\cos x) = dx$.
-  2. $t = \tan\frac{x}{2}$: $\int\frac{dx}{P} = \int\frac{dt}{(t+1)(t+2)} = \ln\frac{t+1}{t+2} + C$; $y(0) = 0 \Rightarrow C = \ln2$.
-  3. At $x = \frac{\pi}{3}$ ($t = \frac{1}{\sqrt3}$): $\frac{y}{2} = \ln\frac{2(1+\sqrt3)}{1+2\sqrt3} = \ln\frac{10+2\sqrt3}{11}$.
-  4. $y = 2\ln\frac{2\sqrt3 + 10}{11}$.
+  1. Let P = 3 sin x + cos x + 3. The equation is $P\cos x\,dy = dx + Py\sin x\,dx$, i.e. $P(\cos x\,dy - y\sin x\,dx) = dx$.
+  2. So $d(y\cos x) = \frac{dx}{P}$.
+  3. With $t = \tan\frac{x}{2}$: sin x = $\frac{2t}{1 + t^2}$, cos x = $\frac{1 - t^2}{1 + t^2}$, dx = $\frac{2dt}{1 + t^2}$.
+     $P = \frac{6t + 1 - t^2 + 3 + 3t^2}{1 + t^2} = \frac{2(t^2 + 3t + 2)}{1 + t^2} = \frac{2(t + 1)(t + 2)}{1 + t^2}$.
+  4. $\frac{dx}{P} = \frac{dt}{(t + 1)(t + 2)} = \left(\frac{1}{t + 1} - \frac{1}{t + 2}\right)dt$, which integrates to $\ln\frac{t + 1}{t + 2}$.
+  5. $y\cos x = \ln\frac{t + 1}{t + 2} + C$. At x = 0 (t = 0, y = 0): $0 = \ln\frac{1}{2} + C$, so C = ln 2.
+  6. At $x = \frac{\pi}{3}$: cos x = ½ and $t = \frac{1}{\sqrt3}$. $\frac{y}{2} = \ln\frac{2(t + 1)}{t + 2} = \ln\frac{2(1 + \sqrt3)}{1 + 2\sqrt3}$.
+  7. Rationalise: $\frac{2(1 + \sqrt3)(2\sqrt3 - 1)}{12 - 1} = \frac{2(5 + \sqrt3)}{11} = \frac{10 + 2\sqrt3}{11}$.
+  8. $y\left(\frac{\pi}{3}\right) = 2\ln\frac{2\sqrt3 + 10}{11}$.
   Answer: (B)
 M A 4: |-
-  Concept: Vandermonde's identity: $\sum_r\binom{m}{r}\binom{n}{k-r} = \binom{m+n}{k}$.
+  Concept: Vandermonde's identity: $\sum_r\binom{m}{r}\binom{n}{k - r} = \binom{m + n}{k}$. Combinatorially, choosing k objects from m + n is the same as choosing r from the first group and k − r from the second, summed over r.
   Solution:
-  1. $\sum_{r=0}^{6}\binom{6}{r}\binom{6}{6-r} = \binom{12}{6} = 924$.
+  1. Here m = n = 6 and k = 6: $\sum_{r=0}^{6}\binom{6}{r}\binom{6}{6 - r} = \binom{12}{6}$.
+  2. $\binom{12}{6} = \frac{12!}{6!\,6!} = 924$.
+  Alternative: since $\binom{6}{6 - r} = \binom{6}{r}$, the sum is $\sum_{r=0}^{6}\binom{6}{r}^2$. This is the sum of the squares of the binomial coefficients, which equals $\binom{2n}{n}$ with n = 6.
+  Check by direct calculation: the coefficients are 1, 6, 15, 20, 15, 6, 1. Their squares are 1, 36, 225, 400, 225, 36, 1. Sum: 1 + 36 + 225 + 400 + 225 + 36 + 1 = 924 ✓.
+  Algebraic proof: compare the coefficient of x⁶ on both sides of $(1 + x)^6(1 + x)^6 = (1 + x)^{12}$.
+  Why others are wrong:
+  - (C) 1024 = 2¹⁰ is the sum of all coefficients of $(1 + x)^{10}$, not related here.
+  - (A) 1124 and (B) 1324 do not come from any standard identity.
   Answer: (D)
 M A 5: |-
-  Concept: Sandwich theorem with $kr - 1 < [kr] \le kr$.
+  Concept: The greatest integer function satisfies $t - 1 < [t] \le t$. Summing these bounds and dividing by n² gives two sequences with the same limit, so the sandwich (squeeze) theorem gives the answer.
   Solution:
-  1. $\frac{r\frac{n(n+1)}{2} - n}{n^2} < S \le \frac{r\frac{n(n+1)}{2}}{n^2}$.
-  2. Both bounds tend to $\frac{r}{2}$.
+  1. For each k: $kr - 1 < [kr] \le kr$.
+  2. Sum over k = 1 to n: $r\sum k - n < S_n \le r\sum k$, where $\sum_{k=1}^{n}k = \frac{n(n + 1)}{2}$.
+  3. So $\frac{r\frac{n(n + 1)}{2} - n}{n^2} < \frac{S_n}{n^2} \le \frac{r\frac{n(n + 1)}{2}}{n^2}$.
+  4. Upper bound: $\frac{r(n + 1)}{2n} \to \frac{r}{2}$.
+  5. Lower bound: $\frac{r(n + 1)}{2n} - \frac{1}{n} \to \frac{r}{2} - 0 = \frac{r}{2}$.
+  6. By the sandwich theorem, the limit is $\frac{r}{2}$.
+  Note: this holds for any real r ≠ 0, including negative r. The error from the floor function is at most 1 per term, so at most n in total, which is negligible compared with n².
+  Example: r = 1.5. [1.5] + [3] + [4.5] + [6] + … ≈ 1.5 × $\frac{n^2}{2}$, giving 0.75 ✓.
+  Why others are wrong:
+  - (B) r and (C) 2r miss the factor ½ from $\sum k \approx \frac{n^2}{2}$.
+  - (D) 0 would be true only if the sum grew more slowly than n².
   Answer: (A)
 M A 6: |-
-  Concept: Evaluate the greatest-integer brackets on $x^2 \in [0, 1]$.
+  Concept: For x ∈ [−1, 1], x² ∈ [0, 1]. The greatest-integer brackets take only a few values on this range, so evaluate the left side case by case and compare it with x².
   Solution:
-  1. $x^2 < \frac{2}{3}$: brackets are 0 and −1, so the LHS is $0 + \pi = \pi > 1 \ge x^2$.
-  2. $x^2 \ge \frac{2}{3}$: brackets are 1 and 0, so the LHS is $\frac{\pi}{2} + \frac{\pi}{2} = \pi > x^2$.
-  3. No solutions.
+  1. Let u = x² ∈ [0, 1].
+  2. Case u < ⅔:
+     - $u + \frac{1}{3} \in \left[\frac{1}{3}, 1\right)$, so $\left[u + \frac{1}{3}\right] = 0$ and $\sin^{-1}0 = 0$.
+     - $u - \frac{2}{3} \in \left[-\frac{2}{3}, 0\right)$, so $\left[u - \frac{2}{3}\right] = -1$ and $\cos^{-1}(-1) = \pi$.
+     - LHS = π ≈ 3.14, but RHS = u < 1. No solution.
+  3. Case ⅔ ≤ u ≤ 1:
+     - $u + \frac{1}{3} \in \left[1, \frac{4}{3}\right]$, so the bracket is 1 and $\sin^{-1}1 = \frac{\pi}{2}$.
+     - $u - \frac{2}{3} \in \left[0, \frac{1}{3}\right]$, so the bracket is 0 and $\cos^{-1}0 = \frac{\pi}{2}$.
+     - LHS = π, but RHS = u ≤ 1. No solution.
+  4. In every case the LHS equals π, which is greater than 1 ≥ x². So there are no solutions.
+  Observation: the LHS is always π on this range (the brackets always sum to a value giving $\sin^{-1}$ + $\cos^{-1}$ = π), while x² never exceeds 1. The equation can never hold.
+  Why others are wrong: (A) 2, (C) 4 and (D) infinite all claim that solutions exist.
   Answer: (B)
 M A 7: |-
-  Concept: Multiply independent position-wise probabilities over both parities of the starting place.
+  Concept: The digits at different positions are independent. P(0) is ½ at even places and ⅓ at odd places, so P(1) is ½ at even places and ⅔ at odd places. The probability of a specific pattern is the product of the position-wise probabilities, and it depends on whether the pattern starts at an odd or an even place.
   Solution:
-  1. "1001" starting at an odd place: $P(1)_{odd}P(0)_{even}P(0)_{odd}P(1)_{even} = \frac{2}{3}\cdot\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2} = \frac{1}{18}$.
-  2. Starting at an even place: $\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2}\cdot\frac{2}{3} = \frac{1}{18}$.
-  3. Total $= \frac{1}{9}$ (official interpretation).
+  1. "10 followed by 01" means the four-digit pattern 1, 0, 0, 1 in consecutive places.
+  2. If the pattern starts at an odd place (places odd, even, odd, even):
+     P = P(1 | odd) · P(0 | even) · P(0 | odd) · P(1 | even) = $\frac{2}{3}\cdot\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2} = \frac{1}{18}$.
+  3. If it starts at an even place (places even, odd, even, odd):
+     P = P(1 | even) · P(0 | odd) · P(0 | even) · P(1 | odd) = $\frac{1}{2}\cdot\frac{1}{3}\cdot\frac{1}{2}\cdot\frac{2}{3} = \frac{1}{18}$.
+  4. Following the official interpretation, the two cases are added: $\frac{1}{18} + \frac{1}{18} = \frac{1}{9}$.
+  Note: the wording of the question is ambiguous. For a given starting position, the probability is $\frac{1}{18}$ (option A). The official key combines both parities to give $\frac{1}{9}$, and that answer is kept here.
+  Why others are wrong:
+  - (B) $\frac{1}{3}$ and (C) $\frac{1}{6}$ do not correspond to any product of the given probabilities for a four-digit pattern.
   Answer: (D)
 M A 8: |-
-  Concept: Count intersections of $y = \tan x$ with the line $y = \frac{\pi/2 - x}{2}$.
+  Concept: Transcendental equations like x + 2 tan x = $\frac{\pi}{2}$ are solved graphically: the number of solutions equals the number of intersections of y = tan x with the line $y = \frac{\pi/2 - x}{2}$.
   Solution:
-  1. The line falls from $\frac{\pi}{4}$ at $x = 0$ to $-\frac{3\pi}{4}$ at $x = 2\pi$.
-  2. On $[0, \frac{\pi}{2})$, tan rises from 0 to ∞: one crossing.
-  3. On $(\frac{\pi}{2}, \frac{3\pi}{2})$, tan covers ℝ: one crossing.
-  4. On $(\frac{3\pi}{2}, 2\pi]$, tan rises from −∞ to 0, above the line at $2\pi$: one crossing. Total 3.
+  1. Rewrite: $\tan x = \frac{\pi}{4} - \frac{x}{2}$. The line falls from $\frac{\pi}{4}$ at x = 0 to $\frac{\pi}{4} - \pi = -\frac{3\pi}{4}$ at x = 2π.
+  2. tan x is increasing on each branch, and the line is decreasing, so each branch meets the line at most once.
+  3. Branch [0, π/2): tan goes from 0 to +∞. At x = 0, tan 0 = 0 < $\frac{\pi}{4}$ (line above). Near π/2, tan → ∞ (tan above). One intersection.
+  4. Branch (π/2, 3π/2): tan goes from −∞ to +∞, so it crosses the (bounded) line exactly once. One intersection.
+  5. Branch (3π/2, 2π]: tan goes from −∞ up to tan 2π = 0. At x = 2π, the line is at $-\frac{3\pi}{4}$, below tan 2π = 0. Near 3π/2⁺, tan → −∞, below the line. So they cross once. One intersection.
+  6. Total: 3 solutions.
+  Check of the first root: at x = 0.5, tan 0.5 = 0.546 and the line is 0.785 − 0.25 = 0.535. They are close, so the root is near x ≈ 0.49 ✓.
+  Why others are wrong: (B) 4, (C) 2 and (D) 5 miscount the branches, e.g. by missing the last partial branch or counting the asymptotes.
   Answer: (A)
 M A 9: |-
-  Concept: Interpret each set geometrically.
+  Concept: Translate each condition on z = x + iy into a region of the plane, then check whether their intersection is empty, finite or has positive area.
   Solution:
-  1. $S_1$: the disc with centre (1, 0) and radius $\sqrt2$.
-  2. $S_2$: $\text{Re}((1 - i)(x + iy)) = x + y \ge 1$, a half-plane.
-  3. $S_3$: $y \le 1$.
-  4. The three overlap in a region of positive area (e.g. near (2, 0)), so there are infinitely many points.
+  1. S₁: |z − 1| ≤ √2 is the closed disc with centre (1, 0) and radius √2 ≈ 1.414.
+  2. S₂: (1 − i)(x + iy) = x + iy − ix + y = (x + y) + i(y − x). So Re((1 − i)z) = x + y ≥ 1, the half-plane on or above the line x + y = 1.
+  3. S₃: Im z ≤ 1, i.e. y ≤ 1, the half-plane on or below the line y = 1.
+  4. Test a point: (2, 0). Disc: |2 − 1| = 1 ≤ 1.414 ✓. x + y = 2 ≥ 1 ✓. y = 0 ≤ 1 ✓. So (2, 0) is in all three sets.
+  5. (2, 0) is an interior point of each region (every condition holds strictly), so a small disc around it lies in the intersection. The intersection therefore contains infinitely many points.
+  6. The intersection is the part of the disc lying between the lines x + y = 1 and y = 1, a region with positive area.
+  Note: the centre (1, 0) lies on the line x + y = 1, so that half-plane cuts the disc in half. The line y = 1 is at distance 1 < √2 from the centre, so it cuts off a cap. The remaining region is clearly non-degenerate.
+  Why others are wrong: (A), (B) and (D) describe finite sets, which would require the regions to meet only at isolated points.
   Answer: (C)
 M A 10: |-
-  Concept: Factor out $(x^{3/4} + 1)$ to get a linear DE; integrating factor $x^{-1/2}$.
+  Concept: Rearrange into the linear form $\frac{dy}{dx} + P(x)y = Q(x)$. Here a common factor $(x^{3/4} + 1)$ appears, and the substitution $u = x^{1/4}$ handles the fractional powers.
   Solution:
-  1. $\frac{dy}{dx} - \frac{y}{2x} = \frac{x}{x^{3/4} + 1}$, so $(yx^{-1/2})' = \frac{x^{1/2}}{x^{3/4} + 1}$.
-  2. With $u = x^{1/4}$: $\int\frac{4u^5}{u^3 + 1}du = \frac{4}{3}\left[u^3 - \ln(1 + u^3)\right]$.
-  3. $\frac{y}{\sqrt x} = \frac{4}{3}\left(x^{3/4} - \ln(1 + x^{3/4})\right) + C$; at (1, $1 - \frac{4}{3}\ln2$): $C = -\frac{1}{3}$.
-  4. $x = 16$: $\frac{y}{4} = \frac{4}{3}(8 - \ln9) - \frac{1}{3} = \frac{31}{3} - \frac{8}{3}\ln3$.
+  1. $x^2 + x^{5/4} = x^{5/4}(x^{3/4} + 1)$ and $x + x^{1/4} = x^{1/4}(x^{3/4} + 1)$.
+  2. The equation becomes $2x^{5/4}(x^{3/4} + 1)dy - yx^{1/4}(x^{3/4} + 1)dx = 2x^{9/4}dx$.
+  3. Divide by $2x^{5/4}(x^{3/4} + 1)$: $\frac{dy}{dx} - \frac{y}{2x} = \frac{x}{x^{3/4} + 1}$.
+  4. Integrating factor: $e^{-\int\frac{dx}{2x}} = x^{-1/2}$. So $\frac{d}{dx}\left(\frac{y}{\sqrt x}\right) = \frac{x^{1/2}}{x^{3/4} + 1}$.
+  5. Integrate with $u = x^{1/4}$ (x = u⁴, dx = 4u³du): $\int\frac{u^2\cdot4u^3}{u^3 + 1}du = 4\int\frac{u^5}{u^3 + 1}du = 4\int\left(u^2 - \frac{u^2}{u^3 + 1}\right)du = \frac{4}{3}\left[u^3 - \ln(1 + u^3)\right]$.
+  6. $\frac{y}{\sqrt x} = \frac{4}{3}\left(x^{3/4} - \ln(1 + x^{3/4})\right) + C$.
+  7. At (1, $1 - \frac{4}{3}\ln2$): $1 - \frac{4}{3}\ln2 = \frac{4}{3}(1 - \ln2) + C$, so $C = -\frac{1}{3}$.
+  8. At x = 16: $x^{3/4} = 8$ and $\sqrt x = 4$. $\frac{y}{4} = \frac{4}{3}(8 - \ln9) - \frac{1}{3} = \frac{31}{3} - \frac{8}{3}\ln3$ (since ln 9 = 2 ln 3).
+  9. $y(16) = 4\left(\frac{31}{3} - \frac{8}{3}\ln3\right)$.
   Answer: (C)
 M A 11: |-
-  Concept: Choose 3 of the 14 points, minus collinear triples on the same side.
+  Concept: The number of triangles from a set of points = (number of ways to choose 3 points) − (number of collinear triples). Here the only collinear triples come from points on the same side of the triangle.
   Solution:
-  1. $\binom{14}{3} - \binom{3}{3} - \binom{5}{3} - \binom{6}{3} = 364 - 1 - 10 - 20 = 333$.
+  1. Total interior points: 3 + 5 + 6 = 14.
+  2. Ways to choose 3 points: $\binom{14}{3} = \frac{14\times13\times12}{6} = 364$.
+  3. Collinear triples (all three on the same side), which do not form triangles:
+     - Side AB (3 points): $\binom{3}{3} = 1$.
+     - Side BC (5 points): $\binom{5}{3} = 10$.
+     - Side CA (6 points): $\binom{6}{3} = 20$.
+     - Total: 31.
+  4. Triangles: 364 − 31 = 333.
+  Alternative count by cases:
+  - One point from each side: 3 × 5 × 6 = 90.
+  - Two points from one side and one from another: $\binom{3}{2}(11) + \binom{5}{2}(9) + \binom{6}{2}(8) = 33 + 90 + 120 = 243$.
+  - Total: 90 + 243 = 333 ✓.
+  Why others are wrong:
+  - (A) 364 forgets to remove the collinear triples.
+  - (B) 240 and (D) 360 come from partial counts.
+  Note: the vertices A, B and C themselves are not included, since the question refers only to the interior points.
   Answer: (C)
 M A 12: |-
-  Concept: Use $x + z = 2y$ through the row operation $R_1 + R_3 - 2R_2$.
+  Concept: Row operations that use a linear relation among the entries can make a row mostly zeros. Here x, y, z are in AP, so x + z − 2y = 0.
   Solution:
-  1. The new $R_1 = (0, k - 6\sqrt2, 0)$.
-  2. $\Delta = -(k - 6\sqrt2)(4z - 5y)$, and $4z - 5y = 3d - x \ne 0$.
-  3. So $k = 6\sqrt2$ and $k^2 = 72$.
+  1. Apply R₁ → R₁ + R₃ − 2R₂ (this does not change the determinant):
+     - Column 1: 3 + 5 − 8 = 0.
+     - Column 2: $4\sqrt2 + k - 10\sqrt2 = k - 6\sqrt2$.
+     - Column 3: x + z − 2y = 0 (AP).
+  2. New R₁ = (0, k − 6√2, 0).
+  3. Expand along R₁: $\Delta = -(k - 6\sqrt2)\begin{vmatrix}4 & y\\ 5 & z\end{vmatrix} = -(k - 6\sqrt2)(4z - 5y)$.
+  4. With y = x + d and z = x + 2d: 4z − 5y = 4x + 8d − 5x − 5d = 3d − x.
+  5. Given x ≠ 3d, the factor 3d − x ≠ 0. So Δ = 0 forces $k = 6\sqrt2$.
+  6. $k^2 = 72$.
+  Check: the second column of the matrix is then $(4\sqrt2, 5\sqrt2, 6\sqrt2)$, an AP with the same relation as columns 1 and 3 (3, 4, 5 and x, y, z are all APs). So R₁ + R₃ = 2R₂ holds exactly, and the rows are dependent ✓.
+  Why the condition x ≠ 3d matters: if x = 3d, the second factor vanishes and Δ = 0 for every k, so k would not be determined.
   Answer: (A)
 M A 13: |-
-  Concept: Perpendicularity, a length condition, then coplanarity (zero triple product).
+  Concept: Three conditions: perpendicularity (dot product zero), a length condition, and coplanarity of three vectors (scalar triple product zero).
   Solution:
-  1. $\vec{OP}\cdot\vec{OQ} = -4x + 2y = 0 \Rightarrow y = 2x$.
-  2. $|PQ|^2 = (1 + x)^2 + (2 - 2x)^2 + (3x + 1)^2 = 14x^2 + 6 = 20 \Rightarrow x = 1$, $y = 2$.
-  3. $\begin{vmatrix}1&2&-1\\-1&2&3\\3&z&-7\end{vmatrix} = -4 - 2z = 0 \Rightarrow z = -2$.
-  4. $x^2 + y^2 + z^2 = 9$.
+  1. $\vec{OP}\cdot\vec{OQ} = x(-1) + y(2) + (-1)(3x) = -4x + 2y = 0$, so y = 2x.
+  2. $\vec{PQ} = \vec{OQ} - \vec{OP} = (-1 - x,\ 2 - y,\ 3x + 1) = (-1 - x,\ 2 - 2x,\ 3x + 1)$.
+  3. $|PQ|^2 = (1 + x)^2 + (2 - 2x)^2 + (3x + 1)^2 = (1 + 2x + x^2) + (4 - 8x + 4x^2) + (9x^2 + 6x + 1) = 14x^2 + 6$.
+  4. $14x^2 + 6 = 20$, so x² = 1. With x > 0: x = 1 and y = 2.
+  5. So $\vec{OP} = (1, 2, -1)$ and $\vec{OQ} = (-1, 2, 3)$.
+  6. Coplanarity with $\vec{OR} = (3, z, -7)$:
+     $\begin{vmatrix}1 & 2 & -1\\ -1 & 2 & 3\\ 3 & z & -7\end{vmatrix} = 1(-14 - 3z) - 2(7 - 9) + (-1)(-z - 6) = -14 - 3z + 4 + z + 6 = -4 - 2z = 0$.
+  7. z = −2.
+  8. $x^2 + y^2 + z^2 = 1 + 4 + 4 = 9$.
+  Check: $\vec{OR} = (3, -2, -7) = a(1, 2, -1) + b(-1, 2, 3)$ gives a − b = 3 and 2a + 2b = −2, so a = 1, b = −2. Third component: −1 − 6 = −7 ✓.
   Answer: (B)
 M A 14: |-
-  Concept: $\triangle PAB$ and $\triangle CAB$ share base AB, so the area ratio is PM : CM (M = midpoint of AB).
+  Concept: If the angle between the two tangents from P is θ, then the angle ACB at the centre is π − θ (quadrilateral PACB has right angles at A and B). The length of each tangent is $PA = r\cot\frac{\theta}{2}$.
   Solution:
-  1. Circle: centre (1, 2), $r = 1$. $\tan\theta = \frac{12}{5} \Rightarrow \tan\frac{\theta}{2} = \frac{2}{3}$.
-  2. $PA = \frac{r}{\tan(\theta/2)} = \frac{3}{2}$; $PM = PA\cos\frac{\theta}{2}$; $CM = r\sin\frac{\theta}{2}$.
-  3. $\frac{PM}{CM} = \frac{3}{2}\cot\frac{\theta}{2} = \frac{3}{2}\cdot\frac{3}{2} = \frac{9}{4}$.
+  1. Circle: $x^2 + y^2 - 2x - 4y + 4 = 0$, centre C = (1, 2), radius $r = \sqrt{1 + 4 - 4} = 1$.
+  2. $\tan\theta = \frac{12}{5}$. With $t = \tan\frac{\theta}{2}$: $\frac{2t}{1 - t^2} = \frac{12}{5}$, so $6t^2 + 5t - 6 = 0$ and $t = \frac{2}{3}$ (positive root).
+  3. $PA = PB = r\cot\frac{\theta}{2} = \frac{3}{2}$.
+  4. Area of triangle PAB: $\frac{1}{2}PA\cdot PB\sin\theta = \frac{1}{2}PA^2\sin\theta$.
+  5. Area of triangle CAB: $\frac{1}{2}CA\cdot CB\sin(\pi - \theta) = \frac{1}{2}r^2\sin\theta$.
+  6. Ratio: $\frac{PA^2}{r^2} = \frac{9/4}{1} = \frac{9}{4}$.
+  7. So the ratio of the areas is 9 : 4.
+  Actual areas (for reference): sin θ = $\frac{12}{13}$. Area PAB = $\frac{1}{2}\cdot\frac{9}{4}\cdot\frac{12}{13} = \frac{27}{26}$, and area CAB = $\frac{1}{2}\cdot\frac{12}{13} = \frac{6}{13} = \frac{12}{26}$. Ratio 27 : 12 = 9 : 4 ✓.
+  Why others are wrong: (A), (C) and (D) come from using tan θ or other ratios in place of $\cot^2\frac{\theta}{2}$.
   Answer: (B)
 M A 15: |-
-  Concept: Check the sign of $f'$.
+  Concept: A differentiable function is monotonic on an interval only if its derivative does not change sign there. Terms like $\frac{1}{x}\cos\frac{1}{x}$ oscillate with unbounded amplitude as x → 0, forcing sign changes.
   Solution:
-  1. For $x > 0$: $f' = 2 - \sin\frac{1}{x} + \frac{1}{x}\cos\frac{1}{x}$.
-  2. The last term is unbounded and oscillates as $x \to 0^+$, so $f'$ changes sign infinitely often. Similarly for $x < 0$.
-  3. f is not monotonic on either interval.
+  1. For x > 0: $f(x) = \left(2 - \sin\frac{1}{x}\right)x$.
+     $f'(x) = 2 - \sin\frac{1}{x} + x\cdot\left(-\cos\frac{1}{x}\right)\cdot\left(-\frac{1}{x^2}\right) = 2 - \sin\frac{1}{x} + \frac{1}{x}\cos\frac{1}{x}$.
+  2. The first part, $2 - \sin\frac{1}{x}$, lies between 1 and 3. The term $\frac{1}{x}\cos\frac{1}{x}$ oscillates between about $-\frac{1}{x}$ and $+\frac{1}{x}$, which becomes arbitrarily large as x → 0⁺.
+  3. For example, at $\frac{1}{x} = (2n + 1)\pi$ (large n): sin = 0 and cos = −1, so f′ = 2 − (2n + 1)π < 0. At $\frac{1}{x} = 2n\pi$: f′ = 2 + 2nπ > 0.
+  4. So f′ changes sign infinitely often near 0⁺, and f is not monotonic on (0, ∞).
+  5. For x < 0: $f(x) = -\left(2 - \sin\frac{1}{x}\right)x$, and f′ is the negative of the same expression. It also changes sign infinitely often near 0⁻. So f is not monotonic on (−∞, 0).
+  Note: f is continuous at 0, since $|f(x)| \le 3|x| \to 0$. It has a minimum there (f ≥ 0 = f(0)), but it wiggles infinitely often on both sides.
+  Why others are wrong: (A), (C) and (D) claim monotonicity on at least one side, contradicted by the sign changes.
   Answer: (B)
 M A 16: |-
-  Concept: Tangent to $y^2 = 4(x - 5)$, then the ellipse tangency condition $c^2 = a^2m^2 + b$.
+  Concept: Find the tangent to the parabola at the given point using $T = 0$ (the "T" form). Then apply the tangency condition for a line $y = mx + c$ and the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$: $c^2 = a^2m^2 + b^2$ (here the denominator b plays the role of b²).
   Solution:
-  1. Tangent at (6, 2): $2y = 2(x + 6) - 20 \Rightarrow y = x - 4$.
-  2. For $\frac{x^2}{2} + \frac{y^2}{b} = 1$: $16 = 2(1) + b \Rightarrow b = 14$.
+  1. Parabola: $y^2 = 4x - 20$. Check (6, 2): 4 = 24 − 20 ✓.
+  2. Tangent at (x₁, y₁): $yy_1 = 2(x + x_1) - 20$. With (6, 2): 2y = 2(x + 6) − 20 = 2x − 8, so y = x − 4.
+  3. So m = 1 and c = −4.
+  4. Ellipse: $\frac{x^2}{2} + \frac{y^2}{b} = 1$, with a² = 2 and "b²" = b.
+  5. Tangency: c² = a²m² + b, so 16 = 2(1) + b and b = 14.
+  Check by substitution: put y = x − 4 into the ellipse: $\frac{x^2}{2} + \frac{(x - 4)^2}{14} = 1$. Multiply by 14: 7x² + x² − 8x + 16 = 14, i.e. 8x² − 8x + 2 = 0, i.e. $2(2x - 1)^2 = 0$. A double root at x = ½, so the line touches the ellipse ✓.
+  Why others are wrong:
+  - (A) 11, (C) 16 and (D) 20 give a quadratic with two distinct roots or none.
   Answer: (B)
 M A 17: |-
-  Concept: $\tan(\pi - u) = -\tan u$ and small-angle approximations.
+  Concept: Rewrite the numerator using cos²θ = 1 − sin²θ and the periodicity of tan: tan(π − u) = −tan u. Then use tan u ≈ u and sin u ≈ u for small u.
   Solution:
-  1. $\tan(\pi\cos^2\theta) = \tan(\pi - \pi\sin^2\theta) = -\tan(\pi\sin^2\theta) \approx -\pi\theta^2$.
-  2. $\sin(2\pi\sin^2\theta) \approx 2\pi\theta^2$.
-  3. Limit $= -\frac{1}{2}$.
+  1. $\pi\cos^2\theta = \pi - \pi\sin^2\theta$.
+  2. $\tan(\pi\cos^2\theta) = \tan(\pi - \pi\sin^2\theta) = -\tan(\pi\sin^2\theta)$.
+  3. As θ → 0, $\pi\sin^2\theta \to 0$, so $-\tan(\pi\sin^2\theta) \approx -\pi\sin^2\theta$.
+  4. Denominator: $\sin(2\pi\sin^2\theta) \approx 2\pi\sin^2\theta$.
+  5. Limit $= \frac{-\pi\sin^2\theta}{2\pi\sin^2\theta} = -\frac{1}{2}$.
+  More carefully: $\frac{-\tan(\pi s)}{\sin(2\pi s)}$ with s = sin²θ → 0. Write it as $-\frac{\tan(\pi s)}{\pi s}\cdot\frac{2\pi s}{\sin(2\pi s)}\cdot\frac{\pi s}{2\pi s}$. The first two factors tend to 1, so the limit is $-\frac{1}{2}$ ✓.
+  Common error: forgetting that tan(π cos²θ) → tan π = 0 from the negative side. Treating the numerator as tan(π − …) ≈ +π sin²θ gives +½, which is wrong.
+  Why others are wrong:
+  - (B) $-\frac{1}{4}$ and (D) $\frac{1}{4}$ have an extra factor ½.
+  - (C) 0 ignores that both numerator and denominator vanish at the same rate.
   Answer: (A)
 M A 18: |-
-  Concept: For a right triangle, the incentre is $(r_{in}, r_{in})$ with $r_{in} = \frac{a + b - c}{2}$.
+  Concept: The tangent to x² + y² = r² at (x₁, y₁) is xx₁ + yy₁ = r². For a right triangle with legs a and b and hypotenuse c, the inradius is $r_{in} = \frac{a + b - c}{2}$, and with the right angle at the origin, the incentre is (r_in, r_in).
   Solution:
-  1. Tangent: $3x + 4y = 25$, so $P = \left(\frac{25}{3}, 0\right)$, $Q = \left(0, \frac{25}{4}\right)$, $PQ = \frac{125}{12}$.
-  2. $r_{in} = \frac{1}{2}\left(\frac{100 + 75 - 125}{12}\right) = \frac{25}{12}$.
-  3. $r^2 = 2\left(\frac{25}{12}\right)^2 = \frac{625}{72}$.
+  1. Tangent at R(3, 4): 3x + 4y = 25.
+  2. It meets the x-axis at $P = \left(\frac{25}{3}, 0\right)$ and the y-axis at $Q = \left(0, \frac{25}{4}\right)$.
+  3. Triangle OPQ is right-angled at O with legs $\frac{25}{3}$ and $\frac{25}{4}$. Hypotenuse: $PQ = \sqrt{\frac{625}{9} + \frac{625}{16}} = 25\sqrt{\frac{25}{144}} = \frac{125}{12}$.
+  4. Inradius: $r_{in} = \frac{1}{2}\left(\frac{25}{3} + \frac{25}{4} - \frac{125}{12}\right) = \frac{1}{2}\cdot\frac{100 + 75 - 125}{12} = \frac{1}{2}\cdot\frac{50}{12} = \frac{25}{12}$.
+  5. Incentre: $I = \left(\frac{25}{12}, \frac{25}{12}\right)$.
+  6. The required circle has centre I and passes through the origin, so its radius is OI: $r^2 = \left(\frac{25}{12}\right)^2 + \left(\frac{25}{12}\right)^2 = 2\cdot\frac{625}{144} = \frac{625}{72}$.
+  Check with Δ/s: area = $\frac{1}{2}\cdot\frac{25}{3}\cdot\frac{25}{4} = \frac{625}{24}$. Semi-perimeter = $\frac{1}{2}\left(\frac{100 + 75 + 125}{12}\right) = \frac{25}{2}$. $r_{in} = \frac{625/24}{25/2} = \frac{25}{12}$ ✓.
   Answer: (C)
 M A 19: |-
-  Concept: Test each pair of connectives.
+  Concept: A tautology is true for every assignment of truth values. Test each candidate pair of connectives. An implication X → Y is a tautology whenever X logically implies Y.
   Solution:
-  1. $(p\wedge q) \to (p \to q)$: when $p\wedge q$ is true, $p \to q$ is also true, so it is a tautology.
-  2. The other choices fail for some assignment (e.g. $p\wedge q$ false makes the ∧ versions false).
+  1. (A) ⊛ = →, ⊗ = →: $(p \wedge q) \to (p \to q)$.
+     Whenever p ∧ q is true, both p and q are true, so p → q is true. The implication never has a true premise with a false conclusion. It is a tautology ✓.
+     Algebraically: $\sim(p \wedge q) \vee (\sim p \vee q) = \sim p \vee \sim q \vee \sim p \vee q = \sim p \vee (\sim q \vee q) = T$.
+  2. (B) ⊛ = ∧, ⊗ = ∨: $(p \wedge q) \wedge (p \vee q)$. False when p = F (since p ∧ q = F). Not a tautology.
+  3. (C) ⊛ = ∨, ⊗ = →: $(p \wedge q) \vee (p \to q)$. With p = T, q = F: p ∧ q = F and p → q = F, so it is false. Not a tautology.
+  4. (D) ⊛ = ∧, ⊗ = →: $(p \wedge q) \wedge (p \to q)$. False when p = F. Not a tautology.
+  5. So the answer is →, →.
+  General principle: a conjunction containing p ∧ q can never be a tautology (it fails whenever p or q is false). The first connective must therefore be → or ∨, and the pair must make the whole expression true in every row.
   Answer: (A)
 M A 20: |-
-  Concept: Image of a point in a line, then the plane through a point and a line.
+  Concept: Two steps. First find the image of a point in a line: find the foot F of the perpendicular, then image = 2F − P. Then find the plane through that image and containing a given line: its normal is perpendicular to the line's direction and to the vector from a point on the line to the image.
   Solution:
-  1. Foot on the line: $(-1 + 2t, 3 + t, -2 - t)$ with $(\text{foot} - P)\cdot(2, 1, -1) = 0 \Rightarrow t = \frac{1}{2}$, foot $= (0, 3.5, -2.5)$; image $= (-2, 4, -6)$.
-  2. Line through (2, 1, −1) with direction (3, −2, 1). Normal $= (3, -2, 1)\times(-4, 3, -5) = (7, 11, 1)$.
-  3. Plane: $7x + 11y + z = 24$, so $\alpha + \beta + \gamma = 19$.
+  1. Line L₁: $\frac{x + 1}{2} = \frac{y - 3}{1} = \frac{z + 2}{-1}$. General point: (−1 + 2t, 3 + t, −2 − t).
+  2. P = (2, 3, 1). Vector from P: (−3 + 2t, t, −3 − t). Perpendicular to (2, 1, −1): 2(−3 + 2t) + t − (−3 − t) = 6t − 3 = 0, so t = ½.
+  3. Foot F = (0, 3.5, −2.5). Image: $P' = 2F - P = (-2, 4, -6)$.
+  4. Line L₂: $\frac{x - 2}{3} = \frac{1 - y}{2} = \frac{z + 1}{1}$, i.e. through A = (2, 1, −1) with direction (3, −2, 1).
+  5. $\vec{AP'} = (-4, 3, -5)$.
+  6. Normal: $(3, -2, 1)\times(-4, 3, -5) = ((-2)(-5) - 1\cdot3,\ 1\cdot(-4) - 3(-5),\ 3\cdot3 - (-2)(-4)) = (7, 11, 1)$.
+  7. Plane through A: 7(x − 2) + 11(y − 1) + (z + 1) = 0, i.e. 7x + 11y + z = 24.
+  8. α + β + γ = 7 + 11 + 1 = 19.
+  Check with the image: 7(−2) + 11(4) + (−6) = −14 + 44 − 6 = 24 ✓.
   Answer: (B)
 M B 1: |-
-  Concept: AP condition, then evaluate the determinant.
+  Concept: Three numbers a, b, c are in AP iff 2b = a + c. Use the log laws to turn the condition into an equation in t = 4ˣ, then evaluate the determinant at the value of x found.
   Solution:
-  1. $2\log(4^x - 2) = 1 + \log\left(4^x + \frac{18}{5}\right) \Rightarrow (t - 2)^2 = 10t + 36$ with $t = 4^x$.
-  2. $t^2 - 14t - 32 = 0 \Rightarrow t = 16$, so $x = 2$.
-  3. $\begin{vmatrix}3&1&4\\1&0&2\\2&1&0\end{vmatrix} = -6 + 4 + 4 = 2$.
+  1. AP condition: $2\log_{10}(4^x - 2) = 1 + \log_{10}\left(4^x + \frac{18}{5}\right) = \log_{10}\left[10\left(4^x + \frac{18}{5}\right)\right]$.
+  2. With t = 4ˣ: $(t - 2)^2 = 10t + 36$, so $t^2 - 4t + 4 = 10t + 36$, i.e. $t^2 - 14t - 32 = 0$.
+  3. (t − 16)(t + 2) = 0. Since t = 4ˣ > 0, t = 16 and x = 2. (Check: 4ˣ − 2 = 14 > 0, so the log is defined.)
+  4. Check the AP: log 14 ≈ 1.146 and log 19.6 ≈ 1.292. Is 1, 1.146, 1.292 an AP? The differences are both 0.146 ✓.
+  5. Determinant with x = 2: $\begin{vmatrix}2\left(2 - \frac{1}{2}\right) & 2 - 1 & 4\\ 1 & 0 & 2\\ 2 & 1 & 0\end{vmatrix} = \begin{vmatrix}3 & 1 & 4\\ 1 & 0 & 2\\ 2 & 1 & 0\end{vmatrix}$.
+  6. Expand along row 1: 3(0 − 2) − 1(0 − 4) + 4(1 − 0) = −6 + 4 + 4 = 2.
   Answer: 2
 M B 2: |-
-  Concept: For a quadratic, $f'' = 2a$ is constant.
+  Concept: For a quadratic f(x) = ax² + bx + c, f″(x) = 2a is constant. So "the maximum value of f″" simply fixes a. The other conditions then fix b and c, and the least upper bound α is the maximum of f on [−1, 1].
   Solution:
-  1. $2a = \frac{1}{2} \Rightarrow a = \frac{1}{4}$; $f'(-1) = -\frac{1}{2} + b = 1 \Rightarrow b = \frac{3}{2}$; $f(-1) = 2 \Rightarrow c = \frac{13}{4}$.
-  2. The vertex is at $x = -3$, so f is increasing on $[-1, 1]$; max $f(1) = \frac{1}{4} + \frac{3}{2} + \frac{13}{4} = 5$.
-  3. Least $\alpha = 5$.
+  1. f″(x) = 2a = ½, so a = ¼.
+  2. f′(x) = 2ax + b = ½x + b. f′(−1) = −½ + b = 1, so b = $\frac{3}{2}$.
+  3. f(−1) = a − b + c = ¼ − $\frac{3}{2}$ + c = 2, so c = 2 + $\frac{5}{4}$ = $\frac{13}{4}$.
+  4. $f(x) = \frac{1}{4}x^2 + \frac{3}{2}x + \frac{13}{4}$.
+  5. Vertex at $x = -\frac{b}{2a} = -\frac{3/2}{1/2} = -3$, outside [−1, 1]. Since a > 0, f increases to the right of the vertex, so f is increasing on [−1, 1].
+  6. Maximum: $f(1) = \frac{1}{4} + \frac{3}{2} + \frac{13}{4} = \frac{1 + 6 + 13}{4} = 5$.
+  7. f(x) ≤ α for all x ∈ [−1, 1] requires α ≥ 5, so the least value of α is 5.
+  Check: f(−1) = ¼ − 1.5 + 3.25 = 2 ✓, and f′ = ½x + 1.5 > 0 on [−1, 1] ✓ (increasing).
   Answer: 5
 M B 3: |-
-  Concept: Identify which branch is the min/max on each part.
+  Concept: For piecewise definitions with min and max, find where the competing functions cross. On each sub-interval, identify which one is smaller (for min) or larger (for max), then integrate.
   Solution:
-  1. $[-3, -2]$: $x + 6 \le x^2$, area $\int_{-3}^{-2}(x + 6)dx = \frac{7}{2}$.
-  2. $[-2, 0]$: $x^2$, area $\frac{8}{3}$.
-  3. $[0, 1]$: $\sqrt x \ge x^2$, area $\frac{2}{3}$.
-  4. $A = \frac{7}{2} + \frac{10}{3} = \frac{41}{6}$, so $6A = 41$.
+  1. On [−3, 0], f = min{x + 6, x²}. The curves meet where x² = x + 6, i.e. (x − 3)(x + 2) = 0, so x = −2 (in range).
+     - On [−3, −2]: at x = −3, x + 6 = 3 and x² = 9, so the min is x + 6.
+     - On [−2, 0]: at x = −1, x + 6 = 5 and x² = 1, so the min is x².
+  2. On [0, 1], f = max{√x, x²}. For 0 ≤ x ≤ 1, √x ≥ x², so f = √x.
+  3. f ≥ 0 throughout, so the area is the integral of f.
+  4. $\int_{-3}^{-2}(x + 6)dx = \left[\frac{x^2}{2} + 6x\right]_{-3}^{-2} = (2 - 12) - (4.5 - 18) = -10 + 13.5 = \frac{7}{2}$.
+  5. $\int_{-2}^{0}x^2dx = \frac{8}{3}$.
+  6. $\int_0^1\sqrt x\,dx = \frac{2}{3}$.
+  7. $A = \frac{7}{2} + \frac{8}{3} + \frac{2}{3} = \frac{7}{2} + \frac{10}{3} = \frac{21 + 20}{6} = \frac{41}{6}$.
+  8. 6A = 41.
   Answer: 41
 M B 4: |-
-  Concept: With circumcentre O, the orthocentre is $\vec H = \vec A + \vec B + \vec C$.
+  Concept: If the circumcentre of a triangle is at the origin, the orthocentre is $\vec H = \vec A + \vec B + \vec C$ (Euler line relation, from $\vec H = 3\vec G - 2\vec O$). Also use the identity: if a + b + c = 0, then a³ + b³ + c³ = 3abc.
   Solution:
-  1. $A = R(\cos\alpha, \sin\alpha)$, etc. H on the y-axis means $\cos\alpha + \cos\beta + \cos\gamma = 0$.
-  2. Then $\sum\cos^3 = 3\prod\cos$, and $\sum\cos3\theta = 4\sum\cos^3 - 3\sum\cos = 12\prod\cos$.
-  3. The ratio is 12; squared, 144.
+  1. OA, OB and OC have slopes tan α, tan β and tan γ, and A, B, C lie on a circle of radius R centred at O. So A = R(cos α, sin α), B = R(cos β, sin β) and C = R(cos γ, sin γ).
+  2. The orthocentre is H = A + B + C = R(Σcos, Σsin).
+  3. H lies on the y-axis, so its x-coordinate is zero: cos α + cos β + cos γ = 0.
+  4. By the identity, cos³α + cos³β + cos³γ = 3 cos α cos β cos γ.
+  5. Using cos 3θ = 4cos³θ − 3cos θ: Σcos 3θ = 4Σcos³θ − 3Σcos θ = 4(3Πcos) − 0 = 12 cos α cos β cos γ.
+  6. $\frac{\cos3\alpha + \cos3\beta + \cos3\gamma}{\cos\alpha\cos\beta\cos\gamma} = 12$.
+  7. Squared: 144.
+  Note: the restriction α, β, γ ≠ odd multiples of $\frac{\pi}{2}$ ensures the slopes are defined and the cosines are non-zero, so the division is valid.
   Answer: 144
 M B 5: |-
-  Concept: $\sum x^2 = N(\sigma^2 + \bar x^2)$.
+  Concept: Work with sums and sums of squares: for N numbers with mean x̄ and variance σ², Σx = Nx̄ and Σx² = N(σ² + x̄²). When each number is shifted, $\sum(x \pm 1)^2 = \sum x^2 \pm 2\sum x + (\text{count})$.
   Solution:
-  1. Overall mean $= \frac{12n + 3n}{3n} = 5$, so $\sum x^2 = 3n(4 + 25) = 87n$.
-  2. New sum $= 14n + 2n = 16n$, mean $\frac{16}{3}$.
-  3. New $\sum x^2 = 87n + 2(12n) + 2n - 2(3n) + n = 108n$.
-  4. $k = 36 - \frac{256}{9} = \frac{68}{9}$, so $9k = 68$.
+  1. Original set (3n numbers): the first 2n have sum 12n and the last n have sum 3n. Total 15n, mean 5.
+  2. Σx² = 3n(4 + 25) = 87n.
+  3. New set: add 1 to each of the first 2n numbers and subtract 1 from each of the last n.
+     - New sum = (12n + 2n) + (3n − n) = 16n, so the new mean is $\frac{16n}{3n} = \frac{16}{3}$.
+     - New Σx²: first group $\sum(x + 1)^2 = \sum_1x^2 + 2(12n) + 2n$; second group $\sum(x - 1)^2 = \sum_2x^2 - 2(3n) + n$.
+     - Total: 87n + 24n + 2n − 6n + n = 108n.
+  4. New variance: $k = \frac{108n}{3n} - \left(\frac{16}{3}\right)^2 = 36 - \frac{256}{9} = \frac{324 - 256}{9} = \frac{68}{9}$.
+  5. 9k = 68.
+  Interpretation: the shift moves the two groups apart (their means go from 6 and 3 to 7 and 2), so the variance increases from 4 to $\frac{68}{9} \approx 7.56$.
   Answer: 68
 M B 6: |-
-  Concept: Ratios of consecutive coefficients $\binom{n}{r}a^r$.
+  Concept: In $\left(x + \frac{a}{x^2}\right)^n$, the general term is $T_{r+1} = \binom{n}{r}x^{n - r}\left(\frac{a}{x^2}\right)^r = \binom{n}{r}a^rx^{n - 3r}$. Ratios of consecutive coefficients give simple equations for n and a.
   Solution:
-  1. $\frac{T_4}{T_3} = \frac{(n-2)a}{3} = \frac{2}{3}$ and $\frac{T_5}{T_4} = \frac{(n-3)a}{4} = \frac{3}{8}$, so $n = 6$, $a = \frac{1}{2}$.
-  2. Constant term: $6 - 3r = 0 \Rightarrow r = 2$: $\binom{6}{2}\left(\frac{1}{2}\right)^2 = \frac{15}{4}$.
-  3. The key records the nearest integer, 4.
+  1. Coefficients: T₃ has $\binom{n}{2}a^2$, T₄ has $\binom{n}{3}a^3$, T₅ has $\binom{n}{4}a^4$.
+  2. $\frac{T_4}{T_3} = \frac{\binom{n}{3}}{\binom{n}{2}}a = \frac{n - 2}{3}a = \frac{8}{12} = \frac{2}{3}$, so (n − 2)a = 2.
+  3. $\frac{T_5}{T_4} = \frac{n - 3}{4}a = \frac{3}{8}$, so $(n - 3)a = \frac{3}{2}$.
+  4. Divide: $\frac{n - 2}{n - 3} = \frac{4}{3}$, so 3n − 6 = 4n − 12 and n = 6. Then $a = \frac{2}{4} = \frac{1}{2}$.
+  5. Term independent of x: n − 3r = 0, so r = 2. Term $= \binom{6}{2}a^2 = 15\times\frac{1}{4} = \frac{15}{4} = 3.75$.
+  6. The answer key records the nearest integer, 4.
+  Check the ratio: T₃ = 15 × ¼ = 3.75, T₄ = 20 × ⅛ = 2.5, T₅ = 15 × $\frac{1}{16}$ = 0.9375. Ratio 3.75 : 2.5 : 0.9375 = 12 : 8 : 3 ✓.
+  Note: the exact value is $\frac{15}{4}$; the key rounds it to the nearest integer, 4.
   Answer: 4
 M B 7: |-
-  Concept: $AB = B$ with $B \ne 0$ means 1 is an eigenvalue of A.
+  Concept: AB = B with B a non-zero vector means B is an eigenvector of A with eigenvalue 1. For a 2 × 2 matrix, the sum of the eigenvalues is the trace (a + d) and their product is the determinant (ad − bc).
   Solution:
-  1. The eigenvalues are 1 and $\lambda$ with $1 + \lambda = 2021$, so $\lambda = 2020$.
-  2. $ad - bc = 1\times2020 = 2020$.
+  1. AB = B with B ≠ 0 means (A − I)B = 0 has a non-trivial solution, so det(A − I) = 0. Hence 1 is an eigenvalue of A.
+  2. Let the other eigenvalue be λ. Then 1 + λ = trace = a + d = 2021, so λ = 2020.
+  3. det A = ad − bc = 1 × λ = 2020.
+  Direct algebraic check: det(A − I) = (a − 1)(d − 1) − bc = ad − bc − (a + d) + 1 = 0. So ad − bc = (a + d) − 1 = 2021 − 1 = 2020 ✓.
+  Example: A = $\begin{bmatrix}1 & 0\\ 0 & 2020\end{bmatrix}$ with B = $\begin{bmatrix}1\\ 0\end{bmatrix}$ satisfies AB = B and a + d = 2021, with det A = 2020 ✓.
   Answer: 2020
 M B 8: |-
-  Concept: $\vec x = \lambda\vec a + \mu\vec b$.
+  Concept: A vector in the plane of $\vec a$ and $\vec b$ can be written as $\vec x = \lambda\vec a + \mu\vec b$. The scalar projection of $\vec x$ on $\vec a$ is $\frac{\vec x\cdot\vec a}{|\vec a|}$.
   Solution:
-  1. $\vec x = (2\lambda + \mu, -\lambda + 2\mu, \lambda - \mu)$; $\vec x\cdot(3, 2, -1) = 3\lambda + 8\mu = 0$.
-  2. Projection: $\frac{6\lambda - \mu}{\sqrt6} = \frac{17\sqrt6}{2} \Rightarrow 6\lambda - \mu = 51$.
-  3. $\lambda = 8$, $\mu = -3$: $\vec x = (13, -14, 11)$, $|\vec x|^2 = 486$.
+  1. $\vec x = \lambda(2, -1, 1) + \mu(1, 2, -1) = (2\lambda + \mu,\ -\lambda + 2\mu,\ \lambda - \mu)$.
+  2. Perpendicular to (3, 2, −1): 3(2λ + μ) + 2(−λ + 2μ) − (λ − μ) = 6λ + 3μ − 2λ + 4μ − λ + μ = 3λ + 8μ = 0.
+  3. Projection on $\vec a$: $|\vec a| = \sqrt6$ and $\vec x\cdot\vec a = 2(2\lambda + \mu) - (-\lambda + 2\mu) + (\lambda - \mu) = 6\lambda - \mu$. So $\frac{6\lambda - \mu}{\sqrt6} = \frac{17\sqrt6}{2}$, giving 6λ − μ = 51.
+  4. Solve: from 3λ = −8μ, λ = $-\frac{8}{3}\mu$. Then −16μ − μ = 51, so μ = −3 and λ = 8.
+  5. $\vec x = (16 - 3,\ -8 - 6,\ 8 + 3) = (13, -14, 11)$.
+  6. $|\vec x|^2 = 169 + 196 + 121 = 486$.
+  Checks: $\vec x\cdot(3, 2, -1) = 39 - 28 - 11 = 0$ ✓; $\vec x\cdot\vec a = 26 + 14 + 11 = 51 = \frac{17\sqrt6}{2}\cdot\sqrt6$ ✓.
   Answer: 486
 M B 9: |-
-  Concept: Integration by parts gives $20I_n = e^{20} - nI_{n-1}$.
+  Concept: Integration by parts gives a reduction formula linking I_n to I_{n−1}. Applying it twice lets us eliminate the boundary term.
   Solution:
-  1. $20I_{10} = e^{20} - 10I_9$ and $20I_9 = e^{20} - 9I_8$.
-  2. Eliminating $e^{20}$: $20I_{10} = 10I_9 + 9I_8$.
-  3. $\alpha - \beta = 10 - 9 = 1$.
+  1. On [1, e], log|x| = ln x ≥ 0. Integrate by parts with u = (ln x)ⁿ and dv = x¹⁹dx (v = $\frac{x^{20}}{20}$):
+     $I_n = \left[\frac{x^{20}}{20}(\ln x)^n\right]_1^e - \int_1^e\frac{x^{20}}{20}\cdot n(\ln x)^{n-1}\cdot\frac{1}{x}dx = \frac{e^{20}}{20} - \frac{n}{20}I_{n-1}$.
+  2. So $20I_n = e^{20} - nI_{n-1}$.
+  3. n = 10: $20I_{10} = e^{20} - 10I_9$.
+  4. n = 9: $20I_9 = e^{20} - 9I_8$, so $e^{20} = 20I_9 + 9I_8$.
+  5. Substitute: $20I_{10} = 20I_9 + 9I_8 - 10I_9 = 10I_9 + 9I_8$.
+  6. So α = 10 and β = 9, both natural numbers ✓. α − β = 1.
+  Note: the boundary term at x = 1 vanishes because ln 1 = 0 (and n ≥ 1). At x = e, ln e = 1, giving $\frac{e^{20}}{20}$.
   Answer: 1
 M B 10: |-
-  Concept: Sum of squared distances $= x^2 + y^2 + z^2$ identically.
+  Concept: The distance from (x, y, z) to the plane ax + by + cz = 0 is $\frac{|ax + by + cz|}{\sqrt{a^2 + b^2 + c^2}}$. The sum of the squared distances must equal x² + y² + z² identically (for every point), so the coefficients must match.
   Solution:
-  1. $\frac{(x+y+z)^2}{3} + \frac{(x-2y+z)^2}{6} = \frac{x^2 + 2y^2 + z^2 + 2zx}{2}$.
-  2. The remainder is $\frac{(x - z)^2}{2}$, so $\frac{(lx - nz)^2}{l^2 + n^2} = \frac{(x - z)^2}{2}$, giving $l = n$.
-  3. $l - n = 0$.
+  1. Distance² to x + y + z = 0: $\frac{(x + y + z)^2}{3}$.
+  2. Distance² to x − 2y + z = 0: $\frac{(x - 2y + z)^2}{6}$.
+  3. Sum of these two: $\frac{2(x + y + z)^2 + (x - 2y + z)^2}{6}$.
+     Numerator: $2(x^2 + y^2 + z^2 + 2xy + 2yz + 2zx) + (x^2 + 4y^2 + z^2 - 4xy - 4yz + 2zx) = 3x^2 + 6y^2 + 3z^2 + 6zx$.
+     So the sum is $\frac{x^2 + 2y^2 + z^2 + 2zx}{2}$.
+  4. For the total to be x² + y² + z², the third distance² must be $x^2 + y^2 + z^2 - \frac{x^2 + 2y^2 + z^2 + 2zx}{2} = \frac{x^2 - 2zx + z^2}{2} = \frac{(x - z)^2}{2}$.
+  5. The third plane lx − nz = 0 gives $\frac{(lx - nz)^2}{l^2 + n^2}$. This matches $\frac{(x - z)^2}{2}$ exactly when l = n (then it equals $\frac{l^2(x - z)^2}{2l^2}$).
+  6. l − n = 0.
+  Geometric meaning: the three planes x + y + z = 0, x − 2y + z = 0 and x − z = 0 are mutually perpendicular (their normals (1,1,1), (1,−2,1), (1,0,−1) are orthogonal). For mutually perpendicular planes through the origin, the squared distances sum to the squared distance from the origin, like coordinates in a rotated frame.
   Answer: 0

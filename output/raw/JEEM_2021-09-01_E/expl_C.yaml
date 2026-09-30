@@ -1,174 +1,331 @@
 C A 1: |-
-  Concept: Biochemical oxygen demand (BOD): the lower the value, the cleaner the water.
+  Concept: Biochemical oxygen demand (BOD) is the amount of oxygen that microorganisms need to break down the organic matter in a water sample (measured over 5 days at 20°C). More organic pollution means more microbial activity and a higher BOD, so a low BOD means clean water.
   Solution:
-  1. Clean water has BOD < 5 ppm; polluted water has BOD ≥ 17 ppm.
-  2. So 3 ppm is the cleanest.
+  1. NCERT benchmarks: clean water has BOD < 5 ppm; highly polluted water has BOD of 17 ppm or more.
+  2. Of the options, only 3 ppm falls in the clean range.
+  3. 11 and 15 ppm show moderate pollution, and 21 ppm shows heavy pollution.
+  Why others are wrong:
+  - (A) 11 ppm and (B) 15 ppm exceed the clean-water limit of 5 ppm.
+  - (D) 21 ppm is in the highly polluted range.
+  Key takeaway: BOD < 5 ppm is clean and BOD ≥ 17 ppm is highly polluted; the lowest BOD is the cleanest.
   Answer: (C)
 C A 2: |-
-  Concept: Ores.
+  Concept: Common ores are named minerals, and many are carbonates, oxides or sulphides. Matching ore names to metals is standard NCERT memory work (Metallurgy chapter).
   Solution:
-  1. Calamine is ZnCO₃ (zinc); malachite is CuCO₃·Cu(OH)₂ (copper).
+  1. Calamine: ZnCO₃, zinc carbonate, an ore of zinc.
+  2. Malachite: CuCO₃·Cu(OH)₂, basic copper carbonate, the green ore of copper.
+  3. So they are the ores of zinc and copper, respectively.
+  Why others are wrong:
+  - (A) Nickel ores include pentlandite; aluminium's ore is bauxite.
+  - (C) Iron ores are haematite, magnetite, siderite and limonite, none of which is malachite.
+  - (D) Calamine is not aluminium, and malachite is not zinc.
+  Key takeaway: Zinc: zinc blende, calamine, zincite. Copper: copper pyrites, malachite, cuprite, copper glance.
   Answer: (B)
 C A 3: |-
-  Concept: Common reducing systems.
+  Concept: Laboratory reductions use H₂ gas only with a metal catalyst (catalytic hydrogenation), or they use dissolving-metal or metal/acid systems in which the metal supplies the electrons and the solvent supplies the protons.
   Solution:
-  1. H₂ over Pt–C or Pd–C (catalytic hydrogenation) and Zn/H₂O (for example, reductive ozonolysis work-up) are used to reduce functional groups.
-  2. Na with H₂ gas is not a reducing system; sodium is used as Na/liquid NH₃ or Na/alcohol.
+  1. (A) Pt–C/H₂ and (C) Pd–C/H₂: catalytic hydrogenation reduces C=C, C≡C, C=O, NO₂ and so on. Valid.
+  2. (D) Zn/H₂O: used, for example, in the reductive work-up of ozonides, and zinc with a proton source reduces groups such as nitro. Valid.
+  3. (B) Na/H₂: sodium metal with hydrogen gas is not a reducing system for functional groups (Na reacts with H₂ only at high temperature to form NaH). Sodium reductions use Na/liq. NH₃ (Birch, alkynes to trans-alkenes) or Na/EtOH (Bouveault–Blanc).
+  4. So Na/H₂ cannot be used.
+  Why others are wrong:
+  - (A), (C) and (D) are standard reducing systems.
+  Key takeaway: H₂ needs a metal catalyst (Pt, Pd, Ni); Na needs a proton source (NH₃ or alcohol).
   Answer: (B)
 C A 4: |-
-  Concept: Arrhenius equation $k = Ae^{-E_a/RT}$.
+  Concept: By the Arrhenius equation, $k = Ae^{-E_a/RT}$. For an endothermic reaction, E_a is at least ΔH > 0, so the activation energy is appreciable and k rises steeply (exponentially) with temperature.
   Solution:
-  1. k rises exponentially with T. At moderate temperatures the curve is concave up, as in graph (C).
-  2. For an endothermic reaction Ea > ΔH > 0, so k is strongly temperature-dependent.
+  1. As T increases, −E_a/RT becomes less negative, so k increases.
+  2. Over the usual range where RT ≪ E_a, the curve bends upward (concave up), growing roughly exponentially.
+  3. Graph (C), with k increasing exponentially and concave up, matches.
+  Why others are wrong:
+  - (A) k never decreases with T for an elementary reaction with E_a > 0.
+  - (B) a linear increase does not match the exponential law.
+  - (D) a curve that saturates (concave down) appears only at very high T, where k approaches A; it is not the typical representation.
+  Key takeaway: k–T is exponential (concave up in the usual range); ln k against 1/T is a straight line with slope −E_a/R.
   Answer: (C)
 C A 5: |-
-  Concept: Oxidation of aniline by acidified dichromate.
+  Concept: Aniline has an electron-rich ring and an easily oxidised –NH₂ group. With a strong oxidant such as acidified K₂Cr₂O₇, the ring is oxidised: the para position and the N-bearing carbon become carbonyls, giving p-benzoquinone.
   Solution:
-  1. Aniline is oxidised to p-benzoquinone (O=C₆H₄=O).
+  1. Aniline with K₂Cr₂O₇/H₂SO₄ is oxidised at C1 and C4.
+  2. The amino carbon loses NH₃ (as NH₄⁺), and both positions become C=O.
+  3. A = p-benzoquinone (cyclohexa-2,5-diene-1,4-dione), O=C₆H₄=O.
+  4. This is the standard textbook reaction (the reason aniline darkens on storage is air oxidation to coloured products).
+  Why others are wrong:
+  - (B) potassium 4-aminophenoxide is not an oxidation product; it would need hydroxylation under basic conditions.
+  - (C) nitrobenzene is made by peroxy-acid (e.g. CF₃CO₃H) oxidation, not dichromate.
+  - (D) nitrocyclohexane needs ring reduction, which does not happen here.
+  Key takeaway: Aniline + K₂Cr₂O₇/H⁺ gives p-benzoquinone; peroxy-acids give nitrobenzene.
   Answer: (A)
 C A 6: |-
-  Concept: LiAlH₄ splits an ester into two alcohols; oxidation must give a C₄ acid.
+  Concept: LiAlH₄ reduces an ester R–COO–R′ to two alcohols, R–CH₂OH (from the acyl part) and R′–OH (from the alkoxy part). Oxidation of a primary alcohol then gives a carboxylic acid with the same number of carbons.
   Solution:
-  1. Ethyl butanoate (CH₃CH₂CH₂COOC₂H₅, C₆H₁₂O₂) gives butan-1-ol + ethanol, and butan-1-ol oxidises to butanoic acid (C₄).
-  2. Propyl propanoate would give only C₃ alcohols, and hence C₃ acids.
+  1. C₆H₁₂O₂ with a straight chain and one ester group has several isomers; we need one that gives a C₄ primary alcohol.
+  2. Ethyl butanoate, CH₃CH₂CH₂COOCH₂CH₃, gives butan-1-ol + ethanol.
+  3. Oxidising butan-1-ol gives butanoic acid, a C₄ acid. ✓
+  4. The ethanol by-product gives acetic acid (C₂), but the question asks for the C₄ acid, which only (C) can give.
+  Why others are wrong:
+  - (A) propyl propanoate gives propan-1-ol + propan-1-ol, which oxidise only to C₃ acids.
+  - (B) and (D) are ethers or enol ethers, not esters, and are unstable or branch awkwardly; LiAlH₄ would not cleave them into the needed alcohol.
+  Key takeaway: Ester + LiAlH₄ gives two alcohols; count the carbons on each side of the –COO– group.
   Answer: (C)
 C A 7: |-
-  Concept: Chemical methods for preparing sols.
+  Concept: Sols can be made chemically by reactions that produce an insoluble substance in finely divided (colloidal) form. The method is named after the reaction type.
   Solution:
-  1. Hydrolysis: FeCl₃ + H₂O gives Fe(OH)₃ sol, (iv).
-  2. Reduction: AuCl₃ + HCHO gives Au sol, (i).
-  3. Oxidation: SO₂ + H₂S gives S sol (H₂S is oxidised), (iii).
-  4. Double decomposition: As₂O₃ + H₂S gives As₂S₃, (ii).
+  1. (a) Hydrolysis: FeCl₃ + 3H₂O (boiling) → Fe(OH)₃ sol + 3HCl, (iv).
+  2. (b) Reduction: AuCl₃ is reduced by HCHO (Au³⁺ → Au⁰), giving gold sol, (i).
+  3. (c) Oxidation: SO₂ + 2H₂S → 3S + 2H₂O, where H₂S (S at −2) is oxidised to S⁰, giving sulphur sol, (iii).
+  4. (d) Double decomposition: As₂O₃ + 3H₂S → As₂S₃ + 3H₂O, an exchange of partners, (ii).
+  5. The matching is a–iv, b–i, c–iii, d–ii.
+  Why others are wrong:
+  - (A) and (D) assign the gold (reduction) reaction to hydrolysis.
+  - (C) swaps the reduction and double-decomposition reactions.
+  Key takeaway: Fe(OH)₃ sol by hydrolysis, Au sol by reduction, S sol by oxidation and As₂S₃ sol by double decomposition (NCERT).
   Answer: (B)
 C A 8: |-
-  Concept: μ = 3.87 BM means 3 unpaired electrons; CFSE fixes the d-count.
+  Concept: The spin-only moment $\mu = \sqrt{n(n + 2)}$ gives the number of unpaired electrons: 3.87 BM means n = 3. The CFSE in an octahedral field is −0.4Δ₀ per t₂g electron and +0.6Δ₀ per e_g electron (ignoring pairing energy). Aqua ligands are weak field, so the complex is high spin.
   Solution:
-  1. High-spin d⁷ (t₂g⁵e_g²): CFSE = 5(−0.4) + 2(0.6) = −0.8Δ₀ with 3 unpaired electrons. This is Co²⁺ (aqua ligands are weak field).
-  2. Cr³⁺ and Mn⁴⁺ (d³) have −1.2Δ₀; V³⁺ (d²) has 2 unpaired electrons.
+  1. n = 3 fits d³ or high-spin d⁷.
+  2. d³ (t₂g³): CFSE = 3(−0.4) = −1.2Δ₀. This does not match.
+  3. High-spin d⁷ (t₂g⁵e_g²): CFSE = 5(−0.4) + 2(0.6) = −2.0 + 1.2 = −0.8Δ₀, with 3 unpaired electrons. This matches.
+  4. The d⁷ ion among the options is Co²⁺ ([Ar]3d⁷), as in [Co(H₂O)₆]²⁺.
+  Why others are wrong:
+  - (A) V³⁺ is d², with n = 2 (μ = 2.83 BM) and CFSE −0.8Δ₀; the CFSE matches but the moment does not.
+  - (B) Cr³⁺ and (C) Mn⁴⁺ are d³, with n = 3 but CFSE −1.2Δ₀.
+  Key takeaway: Use both clues: μ narrows the choice to d³ or d⁷ HS, and the CFSE decides between them.
   Answer: (D)
 C A 9: |-
-  Concept: Dacron (Terylene, PET).
+  Concept: Dacron (also sold as Terylene; chemically polyethylene terephthalate, PET) is a condensation polyester. Its repeat unit comes from a diol and a para-substituted aromatic diacid, and the para geometry gives linear chains that pack well into strong fibres.
   Solution:
-  1. It is formed by condensation of ethylene glycol with terephthalic acid (benzene-1,4-dicarboxylic acid).
+  1. The monomers are ethylene glycol (HO–CH₂CH₂–OH) and terephthalic acid (benzene-1,4-dicarboxylic acid, HOOC–C₆H₄–COOH).
+  2. Condensation loses H₂O and forms –O–CH₂CH₂–O–CO–C₆H₄–CO– repeat units.
+  3. Industrially, dimethyl terephthalate is often used, with methanol eliminated instead.
+  Why others are wrong:
+  - (A) Phthalic acid (the 1,2-isomer) with ethylene glycol gives glyptal (an alkyd resin), not Dacron.
+  - (C) and (D) glycerol is a triol and gives cross-linked resins (glyptal-type), not linear fibres.
+  Key takeaway: Dacron/Terylene/PET = ethylene glycol + terephthalic acid; Glyptal = ethylene glycol or glycerol + phthalic acid.
   Answer: (B)
 C A 10: |-
-  Concept: Hückel's rule: a planar, cyclic, conjugated (4n + 2)π system.
+  Concept: A ring is aromatic by Hückel's rule if it is cyclic, planar, fully conjugated (every ring atom sp² or sp) and holds (4n + 2) π electrons.
   Solution:
-  1. The cyclopentadienyl anion has 6π electrons, so it is aromatic.
-  2. Cyclobutadiene (4π) is antiaromatic; the four-membered cation is not a 4n + 2 system.
-  Note: Acenaphthene contains an aromatic naphthalene unit, so ALLEN accepted (1) as well. The official key is (4).
+  1. Cyclopentadienyl anion: the CH⁻ carbon becomes sp² and its lone pair joins the ring π system, giving 4 + 2 = 6π electrons (n = 1) in a planar, fully conjugated ring. Aromatic.
+  2. Cyclobutadiene: 4π electrons (4n with n = 1), so it is antiaromatic.
+  3. The 1-methylcyclobutenyl cation: the four-membered ring has only 2π electrons across three sp² carbons plus one sp³ carbon, so it is not fully conjugated around the ring.
+  4. The official NTA key is (4).
+  Note: Acenaphthene contains an intact naphthalene (10π) unit, so ALLEN also accepted (1). The stored answer follows the official key.
+  Why others are wrong:
+  - (B) is antiaromatic (4π).
+  - (C) is not a continuous cyclic π system.
+  Key takeaway: Count the π electrons (including lone pairs in the ring's p orbitals) and check planarity and conjugation all the way around.
   Answer: (D)
 C A 11: |-
-  Concept: Colours of iron ions in aqueous solution.
+  Concept: The colours of transition metal ions in water come from d–d transitions and depend on the d-electron count and the ligands (here water). Fe²⁺ (d⁶) and Fe³⁺ (d⁵) have characteristic aqueous colours.
   Solution:
-  1. Fe²⁺ (aq) is pale green and Fe³⁺ (aq) is yellow.
+  1. Fe²⁺ (aq), as in ferrous sulphate or Mohr's salt solution, is pale green.
+  2. Fe³⁺ (aq), as in ferric chloride solution, is yellow (to yellow-brown, from partial hydrolysis).
+  3. In the KMnO₄ titration, the pale-green Fe²⁺ is oxidised to yellow Fe³⁺, and MnO₄⁻ (purple) is reduced to nearly colourless Mn²⁺.
+  Why others are wrong:
+  - (A) and (B) call Fe²⁺ yellow, which is its oxidised form's colour.
+  - (C) calls Fe³⁺ orange; dichromate is orange, not ferric ion.
+  Key takeaway: Fe²⁺ is green and Fe³⁺ is yellow; MnO₄⁻ is purple and Mn²⁺ nearly colourless, which is why KMnO₄ acts as its own indicator.
   Answer: (D)
 C A 12: |-
-  Concept: Br₂ adds anti across the double bond.
+  Concept: Bromine adds to alkenes by anti addition through a cyclic bromonium ion. The stereochemistry of the product depends on the alkene geometry: trans alkene + anti addition gives the meso product, and cis alkene + anti addition gives the racemic pair.
   Solution:
-  1. Anti addition to trans-but-2-ene gives meso-2,3-dibromobutane.
-  2. Attack from either face gives the same meso compound, so the two products are identical mesomers.
+  1. trans-But-2-ene reacts with Br₂ to form a bromonium ion, and Br⁻ opens it from the opposite face.
+  2. The product 2,3-dibromobutane has two stereocentres with the same substituents, so a meso form is possible.
+  3. Anti addition to the trans alkene gives (2R,3S), the meso compound.
+  4. Br₂ can attack either face of the alkene, but both routes give the same meso compound: "2 identical mesomers".
+  Why others are wrong:
+  - (C) and (D): enantiomers (a racemic mixture) come from cis-but-2-ene.
+  - (A) mixes both outcomes, which is impossible from a single stereospecific reaction.
+  Key takeaway: "Trans + anti = meso; cis + anti = racemic" for symmetric 2-butene brominations.
   Answer: (B)
 C A 13: |-
-  Concept: In base, H₂O₂ acts as a reductant towards I₂.
+  Concept: H₂O₂ can act as an oxidising or a reducing agent. Against a stronger oxidant it acts as a reductant, being oxidised to O₂. In basic medium, I₂ oxidises H₂O₂, and I₂ is itself reduced to I⁻.
   Solution:
-  1. H₂O₂ + I₂ + 2OH⁻ gives 2I⁻ + 2H₂O + O₂.
+  1. Reaction: I₂ + H₂O₂ + 2OH⁻ → 2I⁻ + 2H₂O + O₂.
+  2. Iodine goes from 0 to −1 (reduced), and oxygen in H₂O₂ goes from −1 to 0 (oxidised).
+  3. So the iodine-containing product is I⁻.
+  4. Compare the acidic medium, where H₂O₂ oxidises I⁻ to I₂; the medium reverses the roles.
+  Why others are wrong:
+  - (A) IO₄⁻, (B) IO⁻ and (D) IO₃⁻ are oxidised iodine species, which would need H₂O₂ to act as the oxidant here.
+  Key takeaway: H₂O₂ oxidises I⁻ to I₂ in acid but reduces I₂ to I⁻ in base (NCERT).
   Answer: (C)
 C A 14: |-
-  Concept: Markovnikov hydration, then the iodoform reaction.
+  Concept: Acid-catalysed hydration of propene follows Markovnikov's rule: the OH goes to the more substituted carbon, giving propan-2-ol. Any compound with a CH₃–CH(OH)– or CH₃CO– group gives the iodoform test with I₂/KOH (or KIO): it is first oxidised to a methyl ketone and then cleaved to CHI₃ and a carboxylate.
   Solution:
-  1. Propene + H₂O/H⁺ gives A = CH₃CH(OH)CH₃, which has a CH₃CH(OH)– group.
-  2. KIO/KOH gives B = CHI₃ (iodoform) and C = CH₃COOK.
+  1. C₃H₆ (propene) + H₂O/H⁺ gives A = CH₃CH(OH)CH₃ (propan-2-ol).
+  2. KIO (hypoiodite) oxidises A to acetone, CH₃COCH₃.
+  3. Triiodination gives CI₃COCH₃, and OH⁻ cleaves it to CHI₃ (a yellow precipitate) + CH₃COO⁻K⁺.
+  4. B = CHI₃ and C = CH₃COOK.
+  Why others are wrong:
+  - (A) and (B) CI₃COOK is not a final product; the CI₃ group is expelled as CHI₃.
+  - (C) CH₃I and HCOOK would come from wrong bond cleavage.
+  Key takeaway: Iodoform reaction: R–CO–CH₃ → CHI₃ + RCOO⁻ (the carboxylate has one carbon fewer).
   Answer: (D)
 C A 15: |-
-  Concept: Nucleophilic addition to C=O.
+  Concept: Aldehydes and ketones undergo nucleophilic addition at the carbonyl carbon. The initial alkoxide intermediate is usually protonated, and the product type depends on the nucleophile.
   Solution:
-  1. HSO₃⁻ adds, and a proton transfer gives the stable bisulphite adduct ion: Statement I is true.
-  2. HCN adds to give a cyanohydrin, not an amine: Statement II is false.
+  1. Statement I: HSO₃⁻ (from NaHSO₃) attacks the carbonyl carbon through sulphur. An internal proton transfer then converts the intermediate into the stable bisulphite addition product (a crystalline sodium salt of an α-hydroxy sulphonate). NCERT describes exactly this: "proton transfer to form a stable ion". True.
+  2. Statement II: HCN adds (with base catalysis) to give a cyanohydrin, R₂C(OH)CN, not an amine. Amines would need a further reduction of C≡N. False.
+  Why others are wrong:
+  - (A) and (C) accept Statement II, but the direct product is a cyanohydrin.
+  - (D) rejects Statement I, which is correct per NCERT.
+  Key takeaway: NaHSO₃ gives a bisulphite adduct (used for purification); HCN gives a cyanohydrin.
   Answer: (B)
 C A 16: |-
-  Concept: Arenediazonium salts are stabilised by resonance with the ring; alkyl diazonium salts decompose at once.
+  Concept: Primary aromatic amines give arenediazonium salts (ArN₂⁺) at 0–5°C, stabilised by resonance of the –N≡N⁺ group with the benzene ring. Aliphatic diazonium ions have no such stabilisation and lose N₂ at once. Secondary amines give N-nitrosamines, not diazonium salts.
   Solution:
-  1. p-Toluidine (a 1° aromatic amine) gives the arenediazonium salt, stabilised further by +I/hyperconjugation from CH₃.
-  2. Aliphatic 1° amines give unstable diazonium ions; N-methylaniline (2°) gives an N-nitrosamine.
+  1. (A) Propylamine and (C) isopropylamine are primary aliphatic amines, so their diazonium ions decompose immediately to carbocations (giving alcohols and alkenes) with N₂ gas.
+  2. (D) N-methylaniline is secondary: with HNO₂ it forms N-nitroso-N-methylaniline, a yellow oil, and no diazonium salt.
+  3. (B) p-Toluidine is a primary aromatic amine that forms p-methylbenzenediazonium chloride. The para CH₃ adds electron density (+I and hyperconjugation), further stabilising the positive diazonium group.
+  Why others are wrong:
+  - (A) and (C) form aliphatic diazonium ions, which are unstable.
+  - (D) forms a nitrosamine, not a diazonium salt.
+  Key takeaway: Only ArNH₂ gives stable diazonium salts, and electron-donating para groups stabilise them further.
   Answer: (B)
 C A 17: |-
-  Concept: Prussian blue forms from Fe³⁺ + [Fe(CN)₆]⁴⁻.
+  Concept: Prussian blue, ferric ferrocyanide Fe₄[Fe(CN)₆]₃, forms when Fe³⁺ meets ferrocyanide [Fe(CN)₆]⁴⁻. Its intense colour comes from intervalence charge transfer between Fe(II) and Fe(III) centres. It is the standard confirmatory test for Fe³⁺ in qualitative analysis.
   Solution:
-  1. FeCl₃ + K₄[Fe(CN)₆] gives Fe₄[Fe(CN)₆]₃ (Prussian blue).
-  2. Fe²⁺ gives a white or bluish-white precipitate instead.
+  1. 4FeCl₃ + 3K₄[Fe(CN)₆] → Fe₄[Fe(CN)₆]₃ (Prussian blue) + 12KCl.
+  2. So FeCl₃ gives the Prussian blue colour with potassium ferrocyanide.
+  3. For comparison, Fe²⁺ with ferricyanide [Fe(CN)₆]³⁻ gives Turnbull's blue (now known to be the same compound).
+  Why others are wrong:
+  - (B) FeCl₂ + ferrocyanide gives a white or pale-blue precipitate (K₂Fe[Fe(CN)₆]) that only turns blue on air oxidation.
+  - (A) and (C) cobalt salts give green or other coloured cobalt ferrocyanides, not Prussian blue.
+  Key takeaway: Fe³⁺ + [Fe(CN)₆]⁴⁻ gives Prussian blue; Fe²⁺ + [Fe(CN)₆]³⁻ gives Turnbull's blue.
   Answer: (D)
 C A 18: |-
-  Concept: Structures of the nitrogen oxides.
+  Concept: The nitrogen oxides differ in how their atoms are connected. Draw each Lewis structure and check for a direct N–N bond.
   Solution:
-  1. N₂O (N≡N–O), N₂O₃ (O=N–NO₂) and N₂O₄ (O₂N–NO₂) all have N–N bonds.
-  2. N₂O₅ is O₂N–O–NO₂, bridged through O, so it has no N–N bond.
+  1. N₂O (nitrous oxide): linear N≡N⁺–O⁻ (or N⁻=N⁺=O), so it has an N–N bond.
+  2. N₂O₃ (dinitrogen trioxide): O=N–NO₂, so it has an N–N bond (and it readily splits into NO + NO₂).
+  3. N₂O₄ (dinitrogen tetroxide): O₂N–NO₂, formed by dimerising NO₂ through an N–N bond.
+  4. N₂O₅ (dinitrogen pentoxide): O₂N–O–NO₂. The two nitrogens are linked through a bridging oxygen, so there is no N–N bond.
+  Why others are wrong:
+  - (A), (B) and (C) all contain a direct N–N linkage.
+  Key takeaway: N₂O₅ (the anhydride of HNO₃) has an N–O–N bridge; the lower oxides have N–N bonds.
   Answer: (D)
 C A 19: |-
-  Concept: Count the unpaired electrons in the anions.
+  Concept: Paramagnetism needs unpaired electrons. Among the alkali and alkaline-earth oxygen compounds, the key is the anion: oxide O²⁻ (10 e⁻, closed shell), peroxide O₂²⁻ (π*⁴, all paired) and superoxide O₂⁻ (π*³, one unpaired electron).
   Solution:
-  1. KO₂ contains superoxide O₂⁻ (1 unpaired electron), so it is paramagnetic.
-  2. Oxides (O²⁻) and peroxide (O₂²⁻) are diamagnetic.
-  3. Count = 1.
+  1. Li₂O, CaO, MgO and K₂O contain O²⁻ and are diamagnetic.
+  2. Na₂O₂ contains peroxide O₂²⁻ (18 e⁻, π*2p fully paired), so it is diamagnetic.
+  3. KO₂ contains superoxide O₂⁻ (17 e⁻, one unpaired electron in π*), so it is paramagnetic (and coloured, yellow-orange).
+  4. The metal cations (Li⁺, Na⁺, K⁺, Mg²⁺, Ca²⁺) all have noble-gas configurations.
+  5. Count of paramagnetic oxides = 1.
+  Why others are wrong:
+  - (B) and (C) wrongly count the peroxide (or oxides) as paramagnetic.
+  - (D) 0 misses the superoxide.
+  Key takeaway: Superoxides (KO₂, RbO₂, CsO₂) are paramagnetic; oxides and peroxides are diamagnetic.
   Answer: (A)
 C A 20: |-
-  Concept: Remove electrons (4s first, then 3d).
+  Concept: When a 3d-series atom forms a cation, it loses its 4s electrons first and then 3d electrons. Work backwards: the M³⁺ ion [Ar]3d⁵ has 23 electrons, so Z = 26.
   Solution:
-  1. Fe ([Ar]3d⁶4s²) gives Fe³⁺ = [Ar]3d⁵.
-  2. Mn³⁺ is 3d⁴ and Co³⁺ is 3d⁶; Ru is a 4d element.
+  1. Fe (Z = 26): [Ar]3d⁶4s².
+  2. Fe³⁺: remove 4s² and then one 3d electron, giving [Ar]3d⁵ (a half-filled, extra stable shell).
+  3. So the element is iron.
+  Why others are wrong:
+  - (B) Mn (Z = 25): Mn³⁺ is [Ar]3d⁴; it is Mn²⁺ that is 3d⁵.
+  - (C) Co (Z = 27): Co³⁺ is [Ar]3d⁶.
+  - (A) Ru (Z = 44) is a 4d element: Ru³⁺ is [Kr]4d⁵, not [Ar]3d⁵.
+  Key takeaway: M³⁺ with 3dⁿ has Z = 18 + n + 3. For 3d⁵ that gives Z = 26, iron.
   Answer: (D)
 C B 1: |-
-  Concept: At constant V and T, P ∝ n ∝ the mass of gas.
+  Concept: For an ideal gas at constant volume (a rigid cylinder) and constant temperature, P = nRT/V, so P ∝ n ∝ the mass of gas inside. The empty-cylinder mass must be subtracted to get the gas mass.
   Solution:
-  1. The initial gas mass is 29.0 − 14.8 = 14.2 kg; the final gas mass is 23.0 − 14.8 = 8.2 kg.
-  2. P = 3.47 × 8.2/14.2 = 2.0 atm.
+  1. Initial LPG mass = 29.0 − 14.8 = 14.2 kg.
+  2. Final LPG mass = 23.0 − 14.8 = 8.2 kg.
+  3. P₂ = P₁ × (m₂/m₁) = 3.47 × 8.2/14.2 = 3.47 × 0.5775 ≈ 2.00 atm.
+  4. To the nearest integer: 2.
+  Common mistake: Using the total cylinder masses (29 → 23) gives about 2.75 atm; the steel shell is not gas.
+  Key takeaway: At fixed V and T, pressure ∝ the mass of gas; subtract the container's tare.
   Answer: 2
 C B 2: |-
-  Concept: Common-ion effect: $s = \frac{K_{sp}}{[\mathrm{OH^-}]^2}$.
+  Concept: Zn(OH)₂ ⇌ Zn²⁺ + 2OH⁻ with K_sp = [Zn²⁺][OH⁻]². In 0.1 M NaOH, the common ion OH⁻ comes almost entirely from NaOH, which suppresses the solubility sharply. If s is the molar solubility, [Zn²⁺] = s and [OH⁻] ≈ 0.1 M.
   Solution:
-  1. $s = \frac{2\times10^{-20}}{(0.1)^2} = 2\times10^{-18}$ M.
+  1. K_sp = s × (0.1 + 2s)² ≈ s × (0.1)², since 2s is negligible.
+  2. s = 2 × 10⁻²⁰ / 10⁻² = 2 × 10⁻¹⁸ M.
+  3. x = 2.
+  Common mistake: Solving in pure water (4s³ = K_sp gives s ≈ 1.7 × 10⁻⁷ M) ignores the common ion.
+  Key takeaway: In the presence of a common ion, s = K_sp/[common ion]^power. The drop in solubility can be huge.
   Answer: 2
 C B 3: |-
-  Concept: ΔG = ΔH − TΔS.
+  Concept: Gibbs free energy combines the enthalpy and entropy changes: ΔG = ΔH − TΔS. Use consistent units: ΔS in J K⁻¹ must be converted to kJ K⁻¹ to match ΔH in kJ.
   Solution:
-  1. ΔG = −57.8 − 298 × (−0.176) = −57.8 + 52.4 = −5.4 kJ/mol, so |ΔG| ≈ 5.
+  1. ΔS = −176.0 J K⁻¹ = −0.176 kJ K⁻¹.
+  2. TΔS = 298 × (−0.176) = −52.45 kJ.
+  3. ΔG = −57.8 − (−52.45) = −5.35 kJ/mol.
+  4. |ΔG| ≈ 5 kJ/mol.
+  5. A negative ΔG means the dimerisation is spontaneous at 298 K, although the entropy term opposes it; enthalpy wins at this temperature.
+  Common mistake: Not converting J to kJ gives ΔG ≈ +52,390 kJ/mol.
+  Key takeaway: Match the units before subtracting; ΔH < 0 with ΔS < 0 is spontaneous below T = ΔH/ΔS ≈ 328 K here.
   Answer: 5
 C B 4: |-
-  Concept: Charges of the complex ions.
+  Concept: A coordination compound made of a complex cation and a complex anion must be neutral overall. Each complex ion's charge, together with the ligand charges, fixes the metal's oxidation state.
   Solution:
-  1. In [Ag(NH₃)₂]⁺, Ag is +1; in [Ag(CN)₂]⁻, Ag is +1.
-  2. The sum is 2.
+  1. The compound [Ag(NH₃)₂][Ag(CN)₂] splits into the cation [Ag(NH₃)₂]⁺ and the anion [Ag(CN)₂]⁻, which have equal and opposite charges.
+  2. Cation: NH₃ is neutral, so Ag = +1.
+  3. Anion: each CN⁻ is −1, so Ag + 2(−1) = −1 and Ag = +1.
+  4. Sum = (+1) + (+1) = 2.
+  Common mistake: Averaging the charges to 0 by treating the compound as a single unit; ask for each Ag separately.
+  Key takeaway: Split a salt of complex ions into cation and anion, then solve each for its metal's oxidation state.
   Answer: 2
 C B 5: |-
-  Concept: N = (m/M) × N_A.
+  Concept: The number of atoms = moles × Avogadro's number, with moles = mass / molar mass. Sodium is monatomic, so the number of atoms equals the number of formula units.
   Solution:
-  1. (8/23) × 6.02 × 10²³ = 2.09 × 10²³, so x ≈ 2.
+  1. Moles of Na = 8 / 23 = 0.3478 mol.
+  2. Number of atoms = 0.3478 × 6.02 × 10²³ = 2.094 × 10²³.
+  3. To the nearest integer: x = 2.
+  Common mistake: Dividing 23 by 8, or using the atomic number (11) as the molar mass.
+  Check: 2.09 × 10²³ atoms is about one third of a mole, consistent with 8 g being about one third of 23 g.
+  Key takeaway: N = (m/M)·N_A. One mole of any element holds 6.02 × 10²³ atoms.
   Answer: 2
 C B 6: |-
-  Concept: Use the pentahydrate molar mass.
+  Concept: When a hydrated salt such as CuSO₄·5H₂O is weighed, the water of crystallisation is part of its mass. The molar mass must include the five H₂O units; the dissolved species is still CuSO₄ (one mole per mole of pentahydrate).
   Solution:
-  1. M = 63.54 + 32 + 64 + 90 = 249.54 g/mol, so n = 80/249.54 = 0.3206 mol.
-  2. c = 0.3206/5 = 0.0641 M = 64 × 10⁻³.
+  1. M(CuSO₄·5H₂O) = 63.54 + 32 + 4(16) + 5(18) = 63.54 + 32 + 64 + 90 = 249.54 g/mol.
+  2. n = 80 / 249.54 = 0.3206 mol.
+  3. c = 0.3206 / 5 L = 0.06412 M = 64.1 × 10⁻³ M.
+  4. x ≈ 64.
+  Common mistake: Using the anhydrous CuSO₄ mass (159.54 g/mol) gives 100 × 10⁻³ M.
+  Key takeaway: Always use the full formula mass of the hydrate that was actually weighed.
   Answer: 64
 C B 7: |-
-  Concept: Photons per second = P/(hc/λ).
+  Concept: A light source of power P emits photons each carrying energy E = hc/λ. The photon emission rate is N = P/E = Pλ/(hc).
   Solution:
-  1. E = 6.63 × 10⁻³⁴ × 3 × 10⁸/795 × 10⁻⁹ = 2.50 × 10⁻¹⁹ J.
-  2. N = 50/2.50 × 10⁻¹⁹ = 2.0 × 10²⁰.
+  1. E = (6.63 × 10⁻³⁴ × 3.0 × 10⁸) / (795 × 10⁻⁹) = 1.989 × 10⁻²⁵ / 7.95 × 10⁻⁷ = 2.50 × 10⁻¹⁹ J.
+  2. N = 50 / 2.50 × 10⁻¹⁹ = 2.0 × 10²⁰ photons per second.
+  3. x = 2.
+  Common mistake: Forgetting to convert nm to m gives an answer wrong by a factor of 10⁹.
+  Key takeaway: N = Pλ/hc; longer wavelengths mean more photons for the same power.
   Answer: 2
 C B 8: |-
-  Concept: MO configuration of B₂⁺ (9 electrons).
+  Concept: For B₂ and the lighter diatomics (up to N₂), s–p mixing puts π2p below σ2p in the MO energy order: σ1s, σ*1s, σ2s, σ*2s, (π2p_x = π2p_y), σ2p_z, …
   Solution:
-  1. σ1s² σ*1s² σ2s² σ*2s² π2p¹ gives 1 unpaired electron.
-  2. μ = √(1 × 3) = 1.73 BM = 173 × 10⁻².
+  1. B₂ has 10 electrons, so B₂⁺ has 9.
+  2. Filling: σ1s² σ*1s² σ2s² σ*2s² uses 8, and the 9th goes into the degenerate π2p set: π2p_x¹.
+  3. Unpaired electrons n = 1.
+  4. μ = √(n(n + 2)) = √3 = 1.73 BM = 173 × 10⁻² BM.
+  Common mistake: Using the O₂-type order (σ2p below π2p); the answer here is unchanged (n = 1), but the order matters for B₂ itself (paramagnetic, 2 unpaired).
+  Key takeaway: B₂ has 2 unpaired electrons; B₂⁺ has 1 unpaired electron (μ = 1.73 BM).
   Answer: 173
 C B 9: |-
-  Concept: Cell constant G* = κR.
+  Concept: The conductivity κ, the measured resistance R and the cell constant G* = l/A are related by κ = G*/R. So G* = κ × R: the cell constant is found by measuring a material of known conductivity.
   Solution:
-  1. G* = 1.07 × 10⁶ × 0.243 = 2.6 × 10⁵ m⁻¹ = 26 × 10⁴.
+  1. G* = κ × R = 1.07 × 10⁶ S m⁻¹ × 0.243 Ω.
+  2. = 2.60 × 10⁵ m⁻¹.
+  3. = 26 × 10⁴ m⁻¹, so x = 26.
+  Common mistake: Dividing κ by R (4.4 × 10⁶) inverts the relation.
+  Key takeaway: κ = G*/R, and the units check: S m⁻¹ × Ω = m⁻¹.
   Answer: 26
 C B 10: |-
-  Concept: n amino acids in a linear peptide form n − 1 peptide bonds.
+  Concept: A peptide (amide) bond forms between the –COOH of one amino acid and the –NH₂ of the next, releasing water. Joining n amino acids in a single linear chain needs n − 1 such bonds.
   Solution:
-  1. A tetrapeptide has 3 peptide linkages.
+  1. The amino acids are glycine, leucine, aspartic acid and histidine: n = 4.
+  2. The linear tetrapeptide has 4 − 1 = 3 peptide linkages.
+  3. The side-chain –COOH of aspartic acid is not used in normal peptide synthesis, so it adds no extra linkage.
+  Common mistake: Counting 4 (one per amino acid); a chain of n links has n − 1 bonds.
+  Key takeaway: Linear peptide of n residues: n − 1 peptide bonds and n − 1 water molecules lost.
   Answer: 3

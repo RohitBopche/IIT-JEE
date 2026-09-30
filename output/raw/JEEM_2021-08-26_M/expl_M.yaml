@@ -1,186 +1,340 @@
 M A 1: |-
-  Concept: $\frac{\cos x}{1 + \sin x} = \tan\left(\frac{\pi}{4} - \frac{x}{2}\right)$, which is positive in the interval.
+  Concept: $\frac{\cos x}{1 + \sin x} = \frac{1 - \tan\frac{x}{2}}{1 + \tan\frac{x}{2}} = \tan\left(\frac{\pi}{4} - \frac{x}{2}\right)$, which is positive for $x \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$. So we solve $\tan\left(\frac{\pi}{4} - \frac{x}{2}\right) = \pm\tan2x$ according to the sign of tan 2x.
   Solution:
-  1. $\tan\left(\frac{\pi}{4} - \frac{x}{2}\right) = |\tan2x|$ gives $\frac{\pi}{4} - \frac{x}{2} = \pm2x + k\pi$.
-  2. Valid solutions in the interval: $x = \frac{\pi}{10}, -\frac{\pi}{6}, -\frac{3\pi}{10}$.
-  3. Sum $= \frac{3\pi - 5\pi - 9\pi}{30} = -\frac{11\pi}{30}$.
+  1. Case tan 2x ≥ 0: $\frac{\pi}{4} - \frac{x}{2} = 2x + k\pi \Rightarrow x = \frac{\pi}{10} - \frac{2k\pi}{5}$. In the interval: $x = \frac{\pi}{10}$ and $x = -\frac{3\pi}{10}$ (check: tan 2x > 0 for both ✓).
+  2. Case tan 2x < 0: $\frac{\pi}{4} - \frac{x}{2} = -2x + k\pi \Rightarrow x = -\frac{\pi}{6} + \frac{2k\pi}{3}$. In the interval: $x = -\frac{\pi}{6}$ (tan(−π/3) < 0 ✓).
+  3. Sum $= \frac{\pi}{10} - \frac{3\pi}{10} - \frac{\pi}{6} = \frac{3\pi - 9\pi - 5\pi}{30} = -\frac{11\pi}{30}$.
+  Why others are wrong:
+  - (B) $\frac{\pi}{10}$ keeps only one root.
+  - (C) and (D) miss one of the negative roots.
+  Key takeaway: with an absolute value, split into cases and verify the sign condition for each candidate root.
   Answer: (A)
 M A 2: |-
-  Concept: Correct the sum and the sum of squares.
+  Concept: Correct the sum and the sum of squares, then recompute: $\sum x^2 = n(\sigma^2 + \bar x^2)$.
   Solution:
-  1. Sum $= 200 + 10 = 210$, so $\alpha = 10.5$.
-  2. $\sum x^2 = 20(6.25 + 100) + 35^2 - 25^2 = 2725$; variance $= 136.25 - 110.25 = 26$.
-  3. $(\alpha, \beta) = (10.5, 26)$.
+  1. Original sum = 20 × 10 = 200; corrected sum = 200 − 25 + 35 = 210, so α = 10.5.
+  2. Original $\sum x^2 = 20(2.5^2 + 10^2) = 20\times106.25 = 2125$.
+  3. Corrected $\sum x^2 = 2125 - 625 + 1225 = 2725$.
+  4. Corrected variance $= \frac{2725}{20} - 10.5^2 = 136.25 - 110.25 = 26$.
+  5. SD = √26, so β = 26 and (α, β) = (10.5, 26).
+  Why others are wrong:
+  - (A) and (C) use mean 11 (adding 20 instead of 10 to the sum).
+  - (B) uses variance 25, forgetting to update the sum of squares correctly.
+  Key takeaway: when correcting a wrong value, update both Σx and Σx² before recomputing.
   Answer: (D)
 M A 3: |-
-  Concept: The tangent with slope m touches at $\left(-\frac{a^2m}{c}, \frac{b^2}{c}\right)$ where $c = \sqrt{a^2m^2 + b^2}$.
+  Concept: For $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$, a tangent of slope m is $y = mx \pm\sqrt{a^2m^2 + b^2}$, touching at $\left(\mp\frac{a^2m}{c}, \pm\frac{b^2}{c}\right)$ with $c = \sqrt{a^2m^2 + b^2}$.
   Solution:
-  1. Slope 2 (perpendicular to $x + 2y = 0$): $c = \sqrt{32 + 4} = 6$, so $P = \left(-\frac{8}{3}, \frac{2}{3}\right)$ (second quadrant).
-  2. $e^2 = \frac{1}{2}$, foci $(\pm2, 0)$; area $A = \frac{1}{2}\times4\times\frac{2}{3} = \frac{4}{3}$.
-  3. $(5 - e^2)A = \frac{9}{2}\times\frac{4}{3} = 6$.
+  1. Perpendicular to x + 2y = 0 (slope −½) → m = 2.
+  2. $c = \sqrt{8\times4 + 4} = 6$. Taking the upper tangent: P = $\left(-\frac{8\times2}{6}, \frac{4}{6}\right) = \left(-\frac{8}{3}, \frac{2}{3}\right)$ — second quadrant ✓.
+  3. $e^2 = 1 - \frac{4}{8} = \frac{1}{2}$; foci $(\pm ae, 0) = (\pm2, 0)$, so SS′ = 4.
+  4. Area $A = \frac{1}{2}\times4\times\frac{2}{3} = \frac{4}{3}$.
+  5. $(5 - e^2)A = \frac{9}{2}\times\frac{4}{3} = 6$.
+  Why others are wrong:
+  - (B) 12, (C) 14, (D) 24 come from wrong P (e.g. the fourth-quadrant point) or doubling the area.
+  Key takeaway: the area of the focal triangle is $\frac{1}{2}\times2ae\times|y_P|$.
   Answer: (A)
 M A 4: |-
-  Concept: Linear DE with integrating factor tan x.
+  Concept: Rearrange into a linear equation; tan x turns out to be the integrating factor.
   Solution:
-  1. $\frac{dy}{dx} + \frac{\sec^2x}{\tan x}y = -\tan x \Rightarrow (y\tan x)' = -\tan^2x = 1 - \sec^2x$.
-  2. $y\tan x = x - \tan x + C$; $\lim_{x\to0}xy = 1$ gives $C = 1$.
-  3. $y\left(\frac{\pi}{4}\right) = \frac{\pi}{4} - 1 + 1 = \frac{\pi}{4}$.
+  1. $\tan x\,dy + [y(1 + \tan^2x) + \tan^2x]dx = 0 \Rightarrow \tan x\,y' + y\sec^2x = -\tan^2x$.
+  2. Left side $= \frac{d}{dx}(y\tan x)$. So $(y\tan x)' = -\tan^2x = 1 - \sec^2x$.
+  3. Integrate: $y\tan x = x - \tan x + C$.
+  4. As x → 0⁺: $xy \approx x\cdot\frac{x - \tan x + C}{\tan x} \to C$. Given the limit is 1, C = 1.
+  5. At $x = \frac{\pi}{4}$: $y\cdot1 = \frac{\pi}{4} - 1 + 1 = \frac{\pi}{4}$.
+  Why others are wrong:
+  - (B) and (C) use C = 0 or C = 2.
+  - (A) has the wrong sign.
+  Key takeaway: spotting $\tan x\,y' + \sec^2x\,y = (y\tan x)'$ avoids computing an integrating factor.
   Answer: (D)
 M A 5: |-
-  Concept: $P(\text{exactly one}) = P(A)(1 - P(B)) + P(B)(1 - P(A))$.
+  Concept: For independent events, P(exactly one) = P(A)P(B′) + P(A′)P(B).
   Solution:
-  1. $p(1 - 2p) + 2p(1 - p) = 3p - 4p^2 = \frac{5}{9} \Rightarrow 36p^2 - 27p + 5 = 0$.
-  2. $p = \frac{1}{3}$ or $\frac{5}{12}$; the largest is $\frac{5}{12}$.
+  1. $p(1 - 2p) + (1 - p)(2p) = 3p - 4p^2$.
+  2. $3p - 4p^2 = \frac{5}{9} \Rightarrow 36p^2 - 27p + 5 = 0$.
+  3. $p = \frac{27 \pm\sqrt{729 - 720}}{72} = \frac{27 \pm 3}{72} = \frac{5}{12}$ or $\frac{1}{3}$.
+  4. Both are valid (2p ≤ 1). Largest: $\frac{5}{12}$.
+  Why others are wrong:
+  - (A) $\frac{1}{3}$ is the smaller root.
+  - (B) and (C) are not roots of the equation.
+  Key takeaway: remember to check that 2p ≤ 1 for P(B) to be a valid probability.
   Answer: (D)
 M A 6: |-
-  Concept: A non-trivial solution needs $\Delta = 0$.
+  Concept: A homogeneous system has a non-trivial solution iff its determinant is zero. Adding all columns simplifies this determinant.
   Solution:
-  1. $\Delta = 2 + 4\sin3\theta = 0 \Rightarrow \sin3\theta = -\frac{1}{2}$.
-  2. With $3\theta \in (0, \frac{3\pi}{2})$: $3\theta = \frac{7\pi}{6}$, so $\theta = \frac{7\pi}{18}$.
+  1. Let c = cos²θ, s = sin²θ, S = 4 sin 3θ. Adding columns: each row sums to 1 + c + s + S = 2 + S.
+  2. Factor out: $\Delta = (2 + S)\begin{vmatrix}1&s&S\\1&1 + s&S\\1&s&1 + S\end{vmatrix}$. Subtracting row 1 from rows 2 and 3 leaves an upper-triangular form with determinant 1.
+  3. $\Delta = 2 + 4\sin3\theta = 0 \Rightarrow \sin3\theta = -\frac{1}{2}$.
+  4. For θ ∈ (0, π/2), 3θ ∈ (0, 3π/2): $3\theta = \frac{7\pi}{6}$ (11π/6 is too large) → $\theta = \frac{7\pi}{18}$.
+  Why others are wrong:
+  - (A) $\frac{4\pi}{9}$ gives 3θ = 4π/3 → sin = −√3/2.
+  - (C) and (D) give positive sin 3θ.
+  Key takeaway: matrices of the form I + (rank-one matrix) have determinant 1 + trace of the rank-one part.
   Answer: (B)
 M A 7: |-
-  Concept: Simplify the inverse trig chain.
+  Concept: Simplify the nested inverse functions using right triangles, then differentiate.
   Solution:
-  1. $\cot^{-1}\sqrt{\frac{1 - x}{x}}$ has sine $\sqrt x$, so $f = \cos(2\tan^{-1}\sqrt x) = \frac{1 - x}{1 + x}$.
-  2. $f' = -\frac{2}{(1 + x)^2}$, so $(1 - x)^2f' + 2f^2 = -\frac{2(1 - x)^2}{(1 + x)^2} + \frac{2(1 - x)^2}{(1 + x)^2} = 0$.
+  1. Let $\theta = \cot^{-1}\sqrt{\frac{1 - x}{x}}$: adjacent $\sqrt{1 - x}$, opposite $\sqrt x$, hypotenuse 1, so sin θ = √x.
+  2. $f(x) = \cos(2\tan^{-1}\sqrt x) = \frac{1 - \tan^2}{1 + \tan^2} = \frac{1 - x}{1 + x}$.
+  3. $f'(x) = \frac{-(1 + x) - (1 - x)}{(1 + x)^2} = -\frac{2}{(1 + x)^2}$.
+  4. Check (C): $(1 - x)^2f' + 2f^2 = -\frac{2(1 - x)^2}{(1 + x)^2} + \frac{2(1 - x)^2}{(1 + x)^2} = 0$ ✓.
+  Why others are wrong:
+  - (A) gives $-4\frac{(1 - x)^2}{(1 + x)^2} \ne 0$.
+  - (B) and (D): $(1 + x)^2f' = -2$, and $\pm2f^2$ does not cancel it.
+  Key takeaway: $\cos(2\tan^{-1}t) = \frac{1 - t^2}{1 + t^2}$.
   Answer: (C)
 M A 8: |-
-  Concept: Telescoping: $\frac{2^k}{x^{2^k} + 1} = \frac{2^k}{x^{2^k} - 1} - \frac{2^{k+1}}{x^{2^{k+1}} - 1}$.
+  Concept: Telescoping via $\frac{1}{y - 1} - \frac{2}{y^2 - 1} = \frac{1}{y + 1}$. With $y = x^{2^k}$, multiplying by $2^k$: $\frac{2^k}{x^{2^k} + 1} = \frac{2^k}{x^{2^k} - 1} - \frac{2^{k+1}}{x^{2^{k+1}} - 1}$.
   Solution:
-  1. Sum $= \frac{1}{x - 1} - \frac{2^{101}}{x^{2^{101}} - 1}$; at x = 2 this is $1 - \frac{2^{101}}{2^{2^{101}} - 1}$.
-  2. The official key gives (D), which writes the denominator as $4^{101} - 1$.
-  Note: The exact denominator is $2^{2^{101}} - 1$, so no option matches exactly; ALLEN marks it Bonus.
+  1. Summing k = 0 to 100, the terms telescope: $S = \frac{1}{x - 1} - \frac{2^{101}}{x^{2^{101}} - 1}$.
+  2. At x = 2: $S = 1 - \frac{2^{101}}{2^{2^{101}} - 1}$.
+  3. The official NTA key gives (D), which writes the denominator as $4^{101} - 1$.
+  Note: Official NTA answer is (D); the exact denominator is $2^{2^{101}} - 1$, so no option matches exactly, and ALLEN marks the question Bonus.
+  Why others are wrong:
+  - (A) and (B) have a "+" sign; the correction term is subtracted.
+  - (C) has exponent 100 instead of 101.
+  Key takeaway: sums with $x^{2^k}$ in the denominator usually telescope using the difference-of-squares factorisation.
   Answer: (D)
 M A 9: |-
-  Concept: $\sum r^2\binom{n}{r} = n(n + 1)2^{n-2}$.
+  Concept: Standard sums: $\sum r\binom{n}{r} = n2^{n-1}$ and $\sum r(r - 1)\binom{n}{r} = n(n - 1)2^{n-2}$. So $\sum r^2\binom{n}{r} = n(n - 1)2^{n-2} + n2^{n-1} = n(n + 1)2^{n-2}$.
   Solution:
-  1. $20\times21\times2^{18} = 420\times2^{18}$.
+  1. n = 20: $\sum r^2\binom{20}{r} = 20\times21\times2^{18} = 420\times2^{18}$.
+  Why others are wrong:
+  - (A) $420\times2^{19}$ doubles the answer.
+  - (B) and (C) use 380 = 20 × 19, i.e. only the $r(r - 1)$ part.
+  Why split r² = r(r − 1) + r: The sums Σr(r − 1)C(n, r) and Σr C(n, r) come from differentiating (1 + x)ⁿ twice and once and putting x = 1.
+  Check for n = 2: 0 + 1·2 + 4·1 = 6 = 2 × 3 × 2⁰ ✓.
+  Key takeaway: write r² = r(r − 1) + r to use the two standard sums.
   Answer: (D)
 M A 10: |-
-  Concept: $\max(0, P(A) + P(B) - 100) \le K \le \min(P(A), P(B))$.
+  Concept: For two sets with percentages a and b, the overlap K satisfies $\max(0, a + b - 100) \le K \le \min(a, b)$.
   Solution:
-  1. $87 \le K \le 89$.
-  2. The set {79, 81, 83, 85} contains no possible value.
+  1. a = 89, b = 98: lower bound 89 + 98 − 100 = 87; upper bound 89.
+  2. So K ∈ [87, 89].
+  3. Check sets: (A) contains 89 ✓; (B) contains 88 ✓; (D) contains 87 ✓; (C) {79, 81, 83, 85} contains no value in [87, 89].
+  4. K cannot belong to set (C).
+  Key takeaway: the minimum overlap comes from the fact that the union cannot exceed 100%.
   Answer: (C)
 M A 11: |-
-  Concept: The locus is an arc through ±1 on which the chord subtends $\frac{\pi}{4}$.
+  Concept: $\arg\frac{z - 1}{z + 1} = \theta$ is the locus of points P from which the segment joining −1 and 1 subtends angle θ (an arc of a circle through ±1). The chord of length 2 subtends 2θ at the centre.
   Solution:
-  1. The chord of length 2 subtends $\frac{\pi}{2}$ at the centre, so $r = \sqrt2$ and the centre is at (0, 1) (positive argument, upper arc).
+  1. θ = π/4, so the central angle is π/2. Radius: chord $= 2r\sin\frac{\pi}{4} = 2 \Rightarrow r = \sqrt2$.
+  2. The centre lies on the perpendicular bisector (the y-axis) at distance $\sqrt{r^2 - 1} = 1$ from the origin.
+  3. For a positive argument (counter-clockwise from z + 1 to z − 1), the arc lies in the upper half-plane, so the centre is (0, 1).
+  4. Cartesian check: $x^2 + y^2 - 2y - 1 = 0$, i.e. $x^2 + (y - 1)^2 = 2$ ✓.
+  Why others are wrong:
+  - (A) centre (0, −1) corresponds to argument −π/4.
+  - (C) and (D) have the wrong centre or radius.
+  Key takeaway: strictly, the locus is only the upper arc, but the circle is (0, 1), √2.
   Answer: (B)
 M A 12: |-
-  Concept: Scalar triple product cyclicity.
+  Concept: The scalar triple product is unchanged by cyclic permutation and changes sign when two vectors are swapped.
   Solution:
-  1. $\vec a\cdot(\vec b\times\vec c) = \vec b\cdot(\vec c\times\vec a) = -\vec b\cdot(\vec a\times\vec c) = -|\vec b|^2 = -2$.
+  1. $\vec a\cdot(\vec b\times\vec c) = [\vec a\ \vec b\ \vec c] = [\vec b\ \vec c\ \vec a] = \vec b\cdot(\vec c\times\vec a)$.
+  2. $\vec c\times\vec a = -(\vec a\times\vec c) = -\vec b$.
+  3. So the value is $\vec b\cdot(-\vec b) = -|\vec b|^2 = -(0 + 1 + 1) = -2$.
+  4. (The condition $\vec a\cdot\vec c = 3$ is not needed; it just fixes $\vec c$ uniquely.)
+  Why others are wrong:
+  - (D) 2 has the wrong sign.
+  - (B) and (C) ±6 would involve $|\vec a|^2|\vec b|^2$ or similar.
+  Key takeaway: rewrite triple products so that a known cross product appears.
   Answer: (A)
 M A 13: |-
-  Concept: Tangent to $y^2 = 30x$: $y = mx + \frac{7.5}{m}$.
+  Concept: A tangent to $y^2 = 4Ax$ has the form $y = mx + \frac{A}{m}$. The chord length in a circle is $2\sqrt{r^2 - d^2}$, where d is the distance from the centre to the line.
   Solution:
-  1. Through (−30, 0): $m^2 = \frac{1}{4}$, line $x - 2y + 30 = 0$ (or its mirror).
-  2. Circle: centre (−15, 0), r = 7.5; distance to the line $= \frac{15}{\sqrt5} = 3\sqrt5$.
-  3. Chord $= 2\sqrt{56.25 - 45} = 3\sqrt5$.
+  1. $y^2 = 30x$: 4A = 30, A = 7.5. Tangent through (−30, 0): $0 = -30m + \frac{7.5}{m} \Rightarrow m^2 = \frac{1}{4}$, m = ±½.
+  2. Take $y = \frac{x}{2} + 15$, i.e. $x - 2y + 30 = 0$.
+  3. Circle: $x^2 + y^2 + 30x + 168.75 = 0$ → centre (−15, 0), $r^2 = 225 - 168.75 = 56.25$, r = 7.5.
+  4. Distance from centre to line: $\frac{|-15 + 30|}{\sqrt5} = 3\sqrt5$, so $d^2 = 45$.
+  5. Chord $= 2\sqrt{56.25 - 45} = 2\sqrt{11.25} = 3\sqrt5$.
+  Why others are wrong:
+  - (A) 5, (B) 7, (C) 5√3 do not match $2\sqrt{11.25} \approx 6.71$.
+  Key takeaway: always divide the circle equation by the leading coefficient (4) before reading centre and radius.
   Answer: (D)
 M A 14: |-
-  Concept: $a^2 + b^2 - 2 = (a - b)^2$ when $ab = 1$.
+  Concept: If ab = 1, then $a^2 + b^2 - 2 = (a - b)^2$, so $\sqrt{a^2 + b^2 - 2} = |a - b|$.
   Solution:
-  1. The integrand is $\left|\frac{x+1}{x-1} - \frac{x-1}{x+1}\right| = \frac{4|x|}{1 - x^2}$.
-  2. $2\int_0^{1/\sqrt2}\frac{4x}{1 - x^2}dx = -4\ln\left(1 - \frac{1}{2}\right) = 4\ln2 = \ln16$.
+  1. $a = \frac{x + 1}{x - 1}$, $b = \frac{x - 1}{x + 1}$, ab = 1.
+  2. $a - b = \frac{(x + 1)^2 - (x - 1)^2}{x^2 - 1} = \frac{4x}{x^2 - 1}$, so the integrand is $\frac{4|x|}{1 - x^2}$ for |x| < 1 (even function).
+  3. $I = 2\int_0^{1/\sqrt2}\frac{4x}{1 - x^2}dx = 2[-2\ln(1 - x^2)]_0^{1/\sqrt2} = -4\ln\frac{1}{2} = 4\ln2 = \ln16$.
+  Why others are wrong:
+  - (A) ln 4 is half the answer (forgot the factor 2 from symmetry).
+  - (C) 2 ln 16 doubles it.
+  - (D) uses a tan⁻¹/ln(√2 + 1)-type antiderivative, which is not appropriate here.
+  Key takeaway: remember the absolute value — without it the odd integrand would wrongly give 0.
   Answer: (B)
 M A 15: |-
-  Concept: Plane through the line: $P_1 + \lambda P_2 = 0$.
+  Concept: Any plane through the line of intersection of $P_1 = 0$ and $P_2 = 0$ is $P_1 + \lambda P_2 = 0$. Perpendicular planes have perpendicular normals.
   Solution:
-  1. Normal $(1 + \lambda, 2 - \lambda, 3 - \lambda) \perp (-2, 1, 1) \Rightarrow 3 - 4\lambda = 0 \Rightarrow \lambda = \frac{3}{4}$.
-  2. Plane: $7x + 5y + 9z - 14 = 0$; (0, 1, 1): $5 + 9 - 14 = 0$ ✓.
+  1. $(x + 2y + 3z + 1) + \lambda(x - y - z - 6) = 0$: normal $(1 + \lambda, 2 - \lambda, 3 - \lambda)$.
+  2. Perpendicular to (−2, 1, 1): $-2(1 + \lambda) + (2 - \lambda) + (3 - \lambda) = 3 - 4\lambda = 0 \Rightarrow \lambda = \frac{3}{4}$.
+  3. Multiply by 4: $4(x + 2y + 3z + 1) + 3(x - y - z - 6) = 7x + 5y + 9z - 14 = 0$.
+  4. Test points: (0, 1, 1): 0 + 5 + 9 − 14 = 0 ✓.
+  Why others are wrong:
+  - (A) (−1, 1, 2): −7 + 5 + 18 − 14 = 2 ≠ 0.
+  - (C) (1, 0, 1): 7 + 9 − 14 = 2 ≠ 0.
+  - (D) (2, −1, 1): 14 − 5 + 9 − 14 = 4 ≠ 0.
+  Key takeaway: the family-of-planes method avoids finding a point and direction on the line.
   Answer: (B)
 M A 16: |-
-  Concept: A is orthogonal: $AA^T = I$.
+  Concept: A is orthogonal (a rotation matrix): $AA^T = A^TA = I$. Then $Q^n = (A^TBA)^n = A^TB^nA$, so $AQ^nA^T = B^n$.
   Solution:
-  1. $Q^{2021} = A^TB^{2021}A$, so $AQ^{2021}A^T = B^{2021} = \begin{pmatrix}1&0\\2021i&1\end{pmatrix}$.
-  2. Inverse $= \begin{pmatrix}1&0\\-2021i&1\end{pmatrix}$.
+  1. Check orthogonality: rows of A are unit vectors and perpendicular: $\frac{1}{5}(1 + 4) = 1$, $\frac{1}{5}(-2 + 2) = 0$ ✓.
+  2. $AQ^{2021}A^T = B^{2021}$.
+  3. $B = I + N$ with $N = \begin{pmatrix}0&0\\i&0\end{pmatrix}$, $N^2 = 0$, so $B^{2021} = I + 2021N = \begin{pmatrix}1&0\\2021i&1\end{pmatrix}$.
+  4. Inverse of $\begin{pmatrix}1&0\\k&1\end{pmatrix}$ is $\begin{pmatrix}1&0\\-k&1\end{pmatrix}$: answer $\begin{pmatrix}1&0\\-2021i&1\end{pmatrix}$.
+  Why others are wrong:
+  - (C) is $B^{2021}$ itself, not its inverse.
+  - (A) and (D) have the wrong structure (non-zero upper-right or real entries).
+  Key takeaway: conjugation by an orthogonal matrix commutes with taking powers.
   Answer: (B)
 M A 17: |-
-  Concept: Infinite GP sums.
+  Concept: Infinite GP: $\sum ar^k = \frac{a}{1 - r}$; squares form a GP with first term a² and ratio r²: $\sum a^2r^{2k} = \frac{a^2}{1 - r^2}$.
   Solution:
-  1. $\frac{a}{1 - r} = 15$ and $\frac{a^2}{1 - r^2} = 150 \Rightarrow \frac{a}{1 + r} = 10$, so $r = \frac{1}{5}$ and $a = 12$.
-  2. $\sum ar^{2k}$ (k ≥ 1) $= \frac{ar^2}{1 - r^2} = \frac{12/25}{24/25} = \frac{1}{2}$.
+  1. $\frac{a}{1 - r} = 15$ and $\frac{a^2}{1 - r^2} = 150$.
+  2. Divide: $\frac{a}{1 + r} = 10$.
+  3. $\frac{1 + r}{1 - r} = \frac{15}{10} = 1.5 \Rightarrow r = \frac{1}{5}$, and a = 15(1 − 0.2) = 12.
+  4. Required: $ar^2 + ar^4 + \dots = \frac{ar^2}{1 - r^2} = \frac{12/25}{24/25} = \frac{1}{2}$.
+  Why others are wrong:
+  - (C) $\frac{25}{2}$ includes the first term a (starting at k = 0): 12 + ½.
+  - (A) and (D) use wrong a or r.
+  Key takeaway: dividing the two sum equations eliminates a quickly.
   Answer: (B)
 M A 18: |-
-  Concept: Riemann sum with $x = \frac{r}{n}$ over [0, 2].
+  Concept: Riemann sum: $\lim\frac{1}{n}\sum_{r=0}^{kn - 1}f\left(\frac{r}{n}\right) = \int_0^kf(x)\,dx$.
   Solution:
-  1. The limit is $\int_0^2\frac{dx}{1 + 4x^2} = \frac{1}{2}\tan^{-1}4$.
+  1. Term: $\frac{n^2}{n^2 + 4r^2} = \frac{1}{1 + 4(r/n)^2}$.
+  2. r runs from 0 to 2n − 1, so x = r/n runs over [0, 2].
+  3. Limit $= \int_0^2\frac{dx}{1 + 4x^2} = \frac{1}{2}[\tan^{-1}2x]_0^2 = \frac{1}{2}\tan^{-1}4$.
+  Why others are wrong:
+  - (A) uses the upper limit 1 instead of 2.
+  - (C) forgets the factor ½ from the substitution 2x.
+  - (D) halves again incorrectly.
+  Why the interval is [0, 2]: r/n goes from 0 to (2n − 1)/n → 2 as n → ∞, with step 1/n, so the sum approximates the area under f from 0 to 2.
+  Integration step: ∫ dx/(1 + 4x²) = ½ tan⁻¹(2x), so the result is ½ tan⁻¹ 4.
+  Key takeaway: the upper limit of r (here 2n) sets the upper limit of integration (here 2).
   Answer: (B)
 M A 19: |-
-  Concept: C lies on the bisector, and the midpoint of AC lies on the median from B.
+  Concept: C lies on the angle bisector of C; the median from B passes through the midpoint of AC. The bisector makes angle θ/2 with side CA.
   Solution:
-  1. $C = \left(c, \frac{7c - 1}{4}\right)$; the midpoint on $2x + y = 3$ gives $c = 3$, so C = (3, 5).
-  2. CA has slope $\frac{2}{3}$ and the bisector has slope $\frac{7}{4}$: $\tan\frac{\theta}{2} = \frac{7/4 - 2/3}{1 + 7/6} = \frac{1}{2}$.
-  3. $\tan\theta = \frac{2\cdot\frac{1}{2}}{1 - \frac{1}{4}} = \frac{4}{3}$.
+  1. C on 7x − 4y = 1: $C = \left(c, \frac{7c - 1}{4}\right)$.
+  2. Midpoint of AC: $\left(\frac{c - 3}{2}, \frac{7c + 3}{8}\right)$ lies on 2x + y = 3: $c - 3 + \frac{7c + 3}{8} = 3 \Rightarrow 15c = 45 \Rightarrow c = 3$. So C = (3, 5).
+  3. Slope of CA: $\frac{5 - 1}{3 + 3} = \frac{2}{3}$. Slope of bisector: $\frac{7}{4}$.
+  4. $\tan\frac{\theta}{2} = \frac{\frac{7}{4} - \frac{2}{3}}{1 + \frac{7}{6}} = \frac{13/12}{13/6} = \frac{1}{2}$.
+  5. $\tan\theta = \frac{2\cdot\frac{1}{2}}{1 - \frac{1}{4}} = \frac{4}{3}$.
+  Why others are wrong:
+  - (A) ½ is tan(θ/2), not tan θ.
+  - (B) ¾ is cot θ (the reciprocal); (D) 2 comes from mis-applying the double-angle formula.
+  Key takeaway: the angle between a side and the bisector is half the vertex angle.
   Answer: (C)
 M A 20: |-
-  Concept: $X \to Y$ is false only when X is true and Y is false.
+  Concept: An implication X → Y is false only when X is true and Y is false.
   Solution:
-  1. We need $\sim r$ true (r = F), then $q \to r$ true forces q = F, and $p\vee q$ true forces p = T.
-  2. Then $p\wedge q$ = F. Truth values (T, F, F).
+  1. Need X = (p ∨ q) ∧ (q → r) ∧ (∼r) true and Y = p ∧ q false.
+  2. ∼r true ⇒ r = F.
+  3. q → r true with r = F ⇒ q = F.
+  4. p ∨ q true with q = F ⇒ p = T.
+  5. Then Y = T ∧ F = F ✓. So (p, q, r) = (T, F, F).
+  Why others are wrong:
+  - (A) T F T and (B) F F T have r = T, making ∼r false (X false, implication true).
+  - (D) F T F: q → r = T → F = F, so X is false.
+  Key takeaway: work backwards from the conjunct that pins down a single variable (here ∼r).
   Answer: (C)
 M B 1: |-
-  Concept: $z = e^{-i\pi/3}$, so $z^k + z^{-k} = 2\cos\frac{k\pi}{3}$ and $8\cos^3\theta = 2\cos3\theta + 6\cos\theta$.
+  Concept: $z = \frac{1 - i\sqrt3}{2} = e^{-i\pi/3}$, so $z^k + z^{-k} = 2\cos\frac{k\pi}{3}$. Use $(2\cos\theta)^3 = 2\cos3\theta + 6\cos\theta$.
   Solution:
-  1. $\sum_{k=1}^{21}8\cos^3\frac{k\pi}{3} = 2\sum\cos k\pi + 6\sum\cos\frac{k\pi}{3} = 2(-1) + 6(-1) = -8$.
-  2. Total $= 21 - 8 = 13$.
+  1. $\sum_{k=1}^{21}\left(z^k + z^{-k}\right)^3 = 2\sum\cos k\pi + 6\sum\cos\frac{k\pi}{3}$.
+  2. $\sum_{k=1}^{21}\cos k\pi$: alternating −1, +1, …, ending with −1 → sum −1.
+  3. $\sum_{k=1}^{21}\cos\frac{k\pi}{3}$: period 6 with zero sum; 21 = 18 + 3, leftover k = 19, 20, 21 ≡ 1, 2, 3: $\frac{1}{2} - \frac{1}{2} - 1 = -1$.
+  4. Sum $= 2(-1) + 6(-1) = -8$.
+  5. Total $= 21 - 8 = 13$.
+  Key takeaway: power-reduction identities turn cube sums into simple trig sums.
   Answer: 13
 M B 2: |-
-  Concept: Reduce to a quadratic and require a negative discriminant.
+  Concept: Clear denominators to get a quadratic in x, then require a negative discriminant (and check that excluded values x = 1, 2 don't matter).
   Solution:
-  1. $\frac{x - 3}{(x - 1)(x - 2)} = \frac{2}{k} \Rightarrow 2x^2 - (6 + k)x + 4 + 3k = 0$.
-  2. No real roots: $(6 + k)^2 - 8(4 + 3k) < 0 \Rightarrow k^2 - 12k + 4 < 0 \Rightarrow 6 - 4\sqrt2 < k < 6 + 4\sqrt2$.
-  3. Integers 1 to 11: sum $= 66$.
+  1. LHS $= \frac{2(x - 2) - (x - 1)}{(x - 1)(x - 2)} = \frac{x - 3}{(x - 1)(x - 2)}$.
+  2. $k(x - 3) = 2(x^2 - 3x + 2) \Rightarrow 2x^2 - (6 + k)x + (4 + 3k) = 0$.
+  3. No real roots: $(6 + k)^2 - 8(4 + 3k) < 0 \Rightarrow k^2 - 12k + 4 < 0$.
+  4. $6 - 4\sqrt2 < k < 6 + 4\sqrt2$, i.e. 0.34 < k < 11.66.
+  5. Integers k = 1, 2, …, 11: sum $= \frac{11\times12}{2} = 66$.
+  Key takeaway: x = 1 or x = 2 satisfy the quadratic only when k = 0 (excluded), so no extra k values arise.
   Answer: 66
 M B 3: |-
-  Concept: The projection line passes through the foot of a point and has the projected direction.
+  Concept: The projection of a line onto a plane passes through the foot of perpendicular of any point of the line, with direction equal to the line's direction minus its normal component.
   Solution:
-  1. Foot of (1, 3, 4) on the plane: (3, −1, 2). Projected direction: $(2, 1, 2) + \frac{1}{3}(1, -2, -1) \parallel (7, 1, 5)$.
-  2. From (0, 0, 6): $\vec v = (-3, 1, 4)$, $\vec v\times(7, 1, 5) = (1, 43, -10)$.
-  3. $d^2 = \frac{1950}{75} = 26$.
+  1. Foot of A(1, 3, 4) on x − 2y − z = 3: $t = \frac{3 - (1 - 6 - 4)}{6} = 2$ → (1, 3, 4) + 2(1, −2, −1) = (3, −1, 2).
+  2. Direction d = (2, 1, 2), normal n = (1, −2, −1): d·n = −2, |n|² = 6. Projected direction $= d + \frac{1}{3}n = \left(\frac{7}{3}, \frac{1}{3}, \frac{5}{3}\right) \parallel (7, 1, 5)$.
+  3. From (0, 0, 6) to (3, −1, 2): v = (−3, 1, 4). $v\times(7, 1, 5) = (1, 43, -10)$, magnitude² = 1950.
+  4. $d^2 = \frac{1950}{49 + 1 + 25} = \frac{1950}{75} = 26$.
+  Key takeaway: distance from a point to a line = $\frac{|\vec v\times\vec u|}{|\vec u|}$.
   Answer: 26
 M B 4: |-
-  Concept: $k\cdot k! = (k + 1)! - k!$ (telescoping), and ${}^kP_k = k!$.
+  Concept: ${}^kP_k = k!$ and $k\cdot k! = (k + 1)! - k!$, which telescopes.
   Solution:
-  1. Sum $= 16! - 1 = {}^{16}P_{16} - 1$, so q = r = 16, s = 1.
-  2. ${}^{17}C_{15} = 136$.
+  1. $\sum_{k=1}^{15}k\cdot k! = \sum[(k + 1)! - k!] = 16! - 1! = 16! - 1$.
+  2. $16! - 1 = {}^{16}P_{16} - 1$, so q = 16, r = 16, s = 1 (0 ≤ s ≤ 1 ✓).
+  3. ${}^{q+s}C_{r-s} = {}^{17}C_{15} = {}^{17}C_2 = \frac{17\times16}{2} = 136$.
+  Check with small n: 1·1! + 2·2! = 5 = 3! − 1 ✓.
+  Common mistake: Taking s = 0 and writing 16! − 1 as another permutation, which does not fit the form.
+  Key takeaway: k · k! = (k+1)! − k! is the standard telescoping trick for such sums.
   Answer: 136
 M B 5: |-
-  Concept: Minimise the total area.
+  Concept: Express the total area as a function of the circle's circumference k and minimise.
   Solution:
-  1. Square side $\frac{36 - k}{4}$: $A = \frac{(36 - k)^2}{16} + \frac{k^2}{4\pi}$.
-  2. $A' = 0 \Rightarrow k = \frac{36\pi}{\pi + 4}$, so $\left(\frac{4}{\pi} + 1\right)k = 36$.
+  1. Circle: circumference k → radius $\frac{k}{2\pi}$ → area $\frac{k^2}{4\pi}$.
+  2. Square: perimeter 36 − k → side $\frac{36 - k}{4}$ → area $\frac{(36 - k)^2}{16}$.
+  3. $A'(k) = -\frac{36 - k}{8} + \frac{k}{2\pi} = 0 \Rightarrow 8k = 2\pi(36 - k) \Rightarrow k = \frac{36\pi}{\pi + 4}$.
+  4. $\left(\frac{4}{\pi} + 1\right)k = \frac{4 + \pi}{\pi}\cdot\frac{36\pi}{\pi + 4} = 36$.
+  Final step: (4/π + 1)k = ((4 + π)/π) × 36π/(π + 4) = 36.
+  Geometric fact: At the minimum, the circle's diameter equals the square's side (k/π = (36 − k)/4), a classic result.
+  Key takeaway: at the minimum, the square's side equals the circle's diameter — a classic result.
   Answer: 36
 M B 6: |-
-  Concept: Area between $y = \frac{3x^2}{4}$ and $y = \frac{6x + 24}{4}$.
+  Concept: The region lies between the parabola $y = \frac{3x^2}{4}$ (below) and the line $y = \frac{6x + 24}{4}$ (above).
   Solution:
-  1. They meet at $x = -2, 4$.
-  2. $\int_{-2}^{4}\frac{6x + 24 - 3x^2}{4}dx = 27$.
+  1. Intersections: $3x^2 = 6x + 24 \Rightarrow x^2 - 2x - 8 = 0 \Rightarrow x = -2, 4$.
+  2. Area $= \frac{1}{4}\int_{-2}^4(6x + 24 - 3x^2)\,dx = \frac{1}{4}[3x^2 + 24x - x^3]_{-2}^4$.
+  3. At 4: 48 + 96 − 64 = 80. At −2: 12 − 48 + 8 = −28. Difference 108.
+  4. Area $= \frac{108}{4} = 27$.
+  Check with the $\frac{|a|d^3}{6}$ formula: $a = \frac{3}{4}$, d = 6: $\frac{3}{4}\times\frac{216}{6} = 27$ ✓.
+  Key takeaway: parabola–chord areas are $\frac{|a|(x_2 - x_1)^3}{6}$.
   Answer: 27
 M B 7: |-
-  Concept: Expand the sum of squared distances.
+  Concept: Expand the sum of squared distances from P(x, y) to the four vertices of the unit square.
   Solution:
-  1. $4x^2 + 4y^2 - 4x - 4y + 4 = 18 \Rightarrow x^2 + y^2 - x - y - 3.5 = 0$.
-  2. $r^2 = 0.25 + 0.25 + 3.5 = 4$, so d = 4 and $d^2 = 16$.
+  1. $x^2 + y^2 + (x - 1)^2 + y^2 + x^2 + (y - 1)^2 + (x - 1)^2 + (y - 1)^2 = 18$.
+  2. $4x^2 + 4y^2 - 4x - 4y + 4 = 18 \Rightarrow x^2 + y^2 - x - y - \frac{7}{2} = 0$.
+  3. Centre $\left(\frac{1}{2}, \frac{1}{2}\right)$ (the square's centre), $r^2 = \frac{1}{4} + \frac{1}{4} + \frac{7}{2} = 4$, r = 2.
+  4. d = 4, d² = 16.
+  Key takeaway: the locus of constant sum of squared distances from several points is a circle centred at their centroid.
   Answer: 16
 M B 8: |-
-  Concept: Implicit differentiation twice at x = 0 (where y = 1).
+  Concept: Implicit differentiation twice; evaluate at x = 0 using y(0) from the original equation.
   Solution:
-  1. $\frac{1 + y'}{x + y} = 4y + 4xy'$: at 0, $1 + y' = 4 \Rightarrow y' = 3$.
-  2. Differentiating again at 0: $y'' - (1 + y')^2 = 8y' \Rightarrow y'' - 16 = 24 \Rightarrow y'' = 40$.
+  1. At x = 0: ln y = 0 ⇒ y = 1.
+  2. Differentiate: $\frac{1 + y'}{x + y} = 4y + 4xy'$. At 0: $1 + y' = 4 \Rightarrow y' = 3$.
+  3. Differentiate again: $\frac{y''(x + y) - (1 + y')^2}{(x + y)^2} = 8y' + 4xy''$.
+  4. At 0: $y'' - 16 = 24 \Rightarrow y'' = 40$.
+  Key takeaway: substitute known values (x = 0, y = 1, y′ = 3) after each differentiation to keep the algebra short.
   Answer: 40
 M B 9: |-
-  Concept: Case on the units digit.
+  Concept: A three-digit even number must end in 0, 4 or 6, and cannot start with 0. Count separately by the last digit.
   Solution:
-  1. Ending in 0: $5\times4 = 20$.
-  2. Ending in 4 or 6: first digit has 4 choices (not 0, not the last digit), middle 4: $2\times16 = 32$.
-  3. Total $= 52$.
+  1. Last digit 0: first digit from {1, 3, 4, 6, 7} (5 ways), middle from the remaining 4 → 20.
+  2. Last digit 4: first digit from {1, 3, 6, 7} (not 0, not 4) → 4 ways; middle from remaining 4 digits (including 0) → 16.
+  3. Last digit 6: similarly 16.
+  4. Total = 20 + 16 + 16 = 52.
+  Key takeaway: treat 0 separately whenever it can appear in the leading position.
   Answer: 52
 M B 10: |-
-  Concept: $\tan u - \sin u \approx \frac{u^3}{2}$.
+  Concept: For continuity at 0, LHL = RHL = f(0). Use $\tan u - \sin u = \tan u(1 - \cos u) \approx u\cdot\frac{u^2}{2} = \frac{u^3}{2}$.
   Solution:
-  1. RHL $= \frac{(2x)^3/2}{bx^3} = \frac{4}{b}$; LHL $= a\sin\left(-\frac{\pi}{2}\right) = -a$.
-  2. $-a = \frac{4}{b} \Rightarrow ab = -4$, so $10 - ab = 14$.
+  1. RHL: u = 2x: $\frac{(2x)^3/2}{bx^3} = \frac{4}{b}$.
+  2. LHL = f(0) $= a\sin\left(-\frac{\pi}{2}\right) = -a$.
+  3. $-a = \frac{4}{b} \Rightarrow ab = -4$.
+  4. 10 − ab = 14.
+  Why the left side gives −a: sin(π/2 (0 − 1)) = sin(−π/2) = −1, so f(0) = −a.
+  Common mistake: Using tan u − sin u ≈ u³/6, which gives 8/(6b) and a different ab.
+  Key takeaway: tan u − sin u is third-order small, so it must be divided by x³ for a finite limit.
   Answer: 14

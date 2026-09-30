@@ -1,176 +1,330 @@
 M A 1: |-
-  Concept: Even n gives $\frac{n}{2}$; odd n gives $\left[-\frac{n}{2}\right] = -\frac{n + 1}{2}$.
+  Concept: Split by parity. For even n, $\frac{(-1)^nn}{2} = \frac{n}{2}$, an integer. For odd n, it is $-\frac{n}{2}$, a negative half-integer, so $\left[-\frac{n}{2}\right] = -\frac{n + 1}{2}$ (the greatest integer below it).
   Solution:
-  1. Pairs (8, 9), (10, 11), …, (98, 99): each contributes $-1$, and there are 46 pairs, giving $-46$.
-  2. Add $n = 100$: $+50$. Sum $= 4$.
+  1. Pair each even n with the next odd n + 1:
+     $\frac{n}{2} + \left(-\frac{n + 2}{2}\right) = -1$.
+  2. Pairs (8, 9), (10, 11), …, (98, 99): there are $\frac{98 - 8}{2} + 1 = 46$ pairs, contributing $-46$.
+  3. The last term n = 100 is unpaired: $\frac{100}{2} = 50$.
+  4. Sum $= -46 + 50 = 4$.
+  Check with the first few terms: n = 8 → 4, n = 9 → [−4.5] = −5, pair sum −1 ✓.
+  Why others are wrong:
+  - (D) 0 and (C) 2 miss the unpaired last term or count pairs incorrectly.
+  - (B) −2 treats $[-4.5]$ as −4 (rounding toward zero), which is wrong for the floor function.
   Answer: (A)
 M A 2: |-
-  Concept: The circulant determinant equals $(s - c)^2(s + 2c)$ with $s = \sin x$, $c = \cos x$.
+  Concept: A circulant-type determinant $\begin{vmatrix}a&b&b\\b&a&b\\b&b&a\end{vmatrix} = (a + 2b)(a - b)^2$. Here a = sin x, b = cos x.
   Solution:
-  1. $s = c \Rightarrow x = \frac{\pi}{4}$; $s = -2c \Rightarrow \tan x = -2$, which is not in $\left[-\frac{\pi}{4}, \frac{\pi}{4}\right]$.
-  2. One root.
+  1. Determinant $= (\sin x + 2\cos x)(\sin x - \cos x)^2 = 0$.
+  2. Case $\sin x = \cos x$: $\tan x = 1 \Rightarrow x = \frac{\pi}{4}$, which lies in $\left[-\frac{\pi}{4}, \frac{\pi}{4}\right]$ ✓.
+  3. Case $\sin x = -2\cos x$: $\tan x = -2$. In $\left[-\frac{\pi}{4}, \frac{\pi}{4}\right]$, tan x ranges only over [−1, 1], so no solution.
+  4. Number of distinct real roots = 1.
+  Why others are wrong:
+  - (A) 2, (D) 3, (B) 4 count the repeated factor $(\sin x - \cos x)^2$ twice or include tan x = −2 outside the interval.
   Answer: (C)
 M A 3: |-
-  Concept: Coplanar means the determinant is zero.
+  Concept: Three vectors are coplanar iff their scalar triple product (the determinant of their components) is zero.
   Solution:
-  1. $\begin{vmatrix}a&a&c\\1&0&1\\c&c&b\end{vmatrix} = c^2 - ab = 0$.
-  2. $c = \sqrt{ab}$ (c > 0).
+  1. $\begin{vmatrix}a&a&c\\1&0&1\\c&c&b\end{vmatrix} = a(0 - c) - a(b - c) + c(c - 0)$.
+  2. $= -ac - ab + ac + c^2 = c^2 - ab$.
+  3. Coplanar: $c^2 = ab \Rightarrow c = \sqrt{ab}$ (c > 0). So c is the geometric mean of a and b.
+  Why others are wrong:
+  - (A) $\frac{2ab}{a + b}$ is the harmonic mean.
+  - (B) $\frac{a + b}{2}$ is the arithmetic mean.
+  - (C) $\frac{1}{a} + \frac{1}{b}$ is not a mean at all.
+  Tip: a quick shortcut — the first and third vectors share equal i and j components, so subtracting multiples of the middle vector exposes the relation $c^2 = ab$.
   Answer: (D)
 M A 4: |-
-  Concept: A circle on BC (between the tangents at the vertices) as diameter passes through the foci.
+  Concept: Standard property: for any tangent to an ellipse cutting the tangents at the ends of the major axis at B and C, the circle on BC as diameter passes through both foci. Verify directly.
   Solution:
-  1. Tangent at $(2\cos\theta, \sin\theta)$ meets $x = \pm2$ at $y_1 = \frac{1 - \cos\theta}{\sin\theta}$ and $y_2 = \frac{1 + \cos\theta}{\sin\theta}$, with $y_1y_2 = 1$.
-  2. Circle: $(x^2 - 4) + (y - y_1)(y - y_2) = 0$; at $(\pm\sqrt3, 0)$: $-1 + 1 = 0$ ✓.
+  1. $x^2 + 4y^2 = 4 \Rightarrow \frac{x^2}{4} + y^2 = 1$: a = 2, b = 1, $e = \frac{\sqrt3}{2}$, foci $(\pm\sqrt3, 0)$.
+  2. Tangent at $(2\cos\theta, \sin\theta)$: $\frac{x\cos\theta}{2} + y\sin\theta = 1$.
+  3. Tangents at the major-axis ends are x = ±2. Intersections: $B\left(2, \frac{1 - \cos\theta}{\sin\theta}\right)$, $C\left(-2, \frac{1 + \cos\theta}{\sin\theta}\right)$; note $y_By_C = \frac{1 - \cos^2\theta}{\sin^2\theta} = 1$.
+  4. Circle with diameter BC: $(x - 2)(x + 2) + (y - y_B)(y - y_C) = 0$.
+  5. At $(\sqrt3, 0)$: $(3 - 4) + y_By_C = -1 + 1 = 0$ ✓ for every θ.
+  Why others are wrong:
+  - (B) $(\sqrt2, 0)$ gives $-2 + 1 \ne 0$.
+  - (A) (1, 1) and (D) (−1, 1) depend on θ and fail in general.
   Answer: (C)
 M A 5: |-
-  Concept: $P = I + N$ with $N^2 = 0$.
+  Concept: Write P = I + N, where N is nilpotent ($N^2 = 0$). Since I commutes with N, the binomial expansion gives $(I + N)^k = I + kN$.
   Solution:
-  1. $P^{50} = I + 50N = \begin{bmatrix}1&0\\25&1\end{bmatrix}$.
+  1. $N = \begin{bmatrix}0&0\\\frac{1}{2}&0\end{bmatrix}$; $N^2 = 0$.
+  2. $P^{50} = I + 50N = \begin{bmatrix}1&0\\50\times\frac{1}{2}&1\end{bmatrix} = \begin{bmatrix}1&0\\25&1\end{bmatrix}$.
+  3. Pattern check: $P^2 = \begin{bmatrix}1&0\\1&1\end{bmatrix}$, $P^3 = \begin{bmatrix}1&0\\\frac{3}{2}&1\end{bmatrix}$, so $P^k$ has lower-left entry $\frac{k}{2}$ ✓.
+  Why others are wrong:
+  - (C) uses 50 (forgetting the factor $\frac{1}{2}$).
+  - (B) and (D) put the entry in the upper-right corner — that would be the transpose.
+  Why the binomial expansion is allowed: The expansion (I + N)ᵏ = Σ C(k, r)Nʳ requires I and N to commute, which they always do. All terms with N² or higher vanish.
+  Common mistake: Picking the transpose (options B, D); the non-zero entry stays in the lower-left position.
   Answer: (A)
 M A 6: |-
-  Concept: $T_{r+1} = \binom{12}{r}2^{\frac{12 - r}{3}}3^{\frac{r}{4}}$ is rational iff $3 \mid (12 - r)$ and $4 \mid r$.
+  Concept: General term $T_{r+1} = \binom{12}{r}\left(2^{1/3}\right)^{12 - r}\left(3^{1/4}\right)^r = \binom{12}{r}2^{\frac{12 - r}{3}}3^{\frac{r}{4}}$. It is rational iff both exponents are integers.
   Solution:
-  1. $r = 0$: $2^4 = 16$; $r = 12$: $3^3 = 27$.
-  2. Sum $= 43$.
+  1. $4 \mid r$: r ∈ {0, 4, 8, 12}.
+  2. $3 \mid (12 - r)$: r ∈ {0, 3, 6, 9, 12}.
+  3. Common values: r = 0 and r = 12.
+  4. r = 0: $2^4 = 16$. r = 12: $3^3 = 27$.
+  5. Sum of rational terms $= 16 + 27 = 43$.
+  Why others are wrong:
+  - (C) 27 and (A) 89 include only one term or add a spurious term (e.g. an irrational r = 4 or 8 term treated as rational).
+  - (B) 35 has no basis in the valid r values.
   Answer: (D)
 M A 7: |-
-  Concept: Bisectors of $ax^2 + 2hxy + by^2 = 0$: $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
+  Concept: For the pair of lines $ax^2 + 2hxy + by^2 = 0$ through the origin, the pair of angle bisectors is $\frac{x^2 - y^2}{a - b} = \frac{xy}{h}$.
   Solution:
-  1. $a = 1$, $h = -2$, $b = -5$: $\frac{x^2 - y^2}{6} = \frac{xy}{-2} \Rightarrow x^2 + 3xy - y^2 = 0$.
+  1. $x^2 - 4xy - 5y^2 = 0$: a = 1, 2h = −4 (h = −2), b = −5.
+  2. $\frac{x^2 - y^2}{1 - (-5)} = \frac{xy}{-2} \Rightarrow -2(x^2 - y^2) = 6xy$.
+  3. $x^2 - y^2 + 3xy = 0 \Rightarrow x^2 + 3xy - y^2 = 0$.
+  Verification: the given pair factors as $(x - 5y)(x + y) = 0$: lines $y = \frac{x}{5}$ and $y = -x$. The bisectors should be perpendicular (coefficients of x² and y² sum to zero ✓).
+  Why others are wrong:
+  - (C) has the wrong sign on the xy term.
+  - (A) is not a perpendicular pair (x² and y² coefficients don't cancel).
+  - (D) uses 4 (from 2h) instead of the correct ratio.
   Answer: (B)
 M A 8: |-
-  Concept: Treat as a quadratic in |x|.
+  Concept: Since $x^2 = |x|^2$, the equation is a quadratic in $t = |x| \ge 0$.
   Solution:
-  1. $|x|^2 - |x| - 12 = 0 \Rightarrow |x| = 4$ (−3 is rejected).
-  2. $x = \pm4$: 2 solutions.
+  1. $t^2 - t - 12 = 0 \Rightarrow (t - 4)(t + 3) = 0$.
+  2. t = −3 is rejected (|x| cannot be negative); t = 4.
+  3. |x| = 4 → x = 4 or x = −4.
+  4. Number of real solutions = 2.
+  Check: $16 - 4 - 12 = 0$ ✓ for both.
+  Why others are wrong:
+  - (B) 4 counts t = −3 as giving two more roots.
+  - (C) 3 includes a non-existent extra solution.
+  - (A) 1 forgets the negative root x = −4.
   Answer: (D)
 M A 9: |-
-  Concept: $\left(1 + \frac{1}{n}\right)^n$ increases towards e ≈ 2.718.
+  Concept: The sequence $\left(1 + \frac{1}{n}\right)^n$ is strictly increasing and converges to e ≈ 2.718 from below. Also, by the binomial theorem, for n ≥ 2 it exceeds $1 + n\cdot\frac{1}{n} = 2$.
   Solution:
-  1. The value lies in (2, e), so the smallest integer greater than it is 3.
+  1. With $n = 10^{100}$: $2 < \left(1 + \frac{1}{n}\right)^n < e < 3$.
+  2. So the value lies strictly between 2 and 3 (very close to e).
+  3. The lowest integer greater than it is 3.
+  Why others are wrong:
+  - (B) 2 is less than the value (the value exceeds 2).
+  - (C) 4 is greater, but not the lowest such integer.
+  - (D) 1 is far below.
   Answer: (A)
 M A 10: |-
-  Concept: $|\vec a\times\vec b|^2 + (\vec a\cdot\vec b)^2 = |\vec a|^2|\vec b|^2$.
+  Concept: Lagrange's identity: $|\vec a\times\vec b|^2 + (\vec a\cdot\vec b)^2 = |\vec a|^2|\vec b|^2$ (since $\sin^2\theta + \cos^2\theta = 1$).
   Solution:
-  1. $(\vec a\cdot\vec b)^2 = 100 - 64 = 36 \Rightarrow |\vec a\cdot\vec b| = 6$.
+  1. $|\vec a|^2|\vec b|^2 = 4\times25 = 100$.
+  2. $(\vec a\cdot\vec b)^2 = 100 - 8^2 = 36$.
+  3. $|\vec a\cdot\vec b| = 6$.
+  4. Angle check: $\sin\theta = \frac{8}{10} = 0.8$, $|\cos\theta| = 0.6$; $2\times5\times0.6 = 6$ ✓.
+  Why others are wrong:
+  - (A) 5, (B) 4, (D) 3 do not satisfy $64 + (\vec a\cdot\vec b)^2 = 100$.
+  Why take the absolute value: a·b can be +6 or −6 depending on whether θ is acute or obtuse; the cross-product data fix only |sin θ| = 0.8.
+  Common mistake: Subtracting magnitudes (10 − 8 = 2) instead of squares.
   Answer: (C)
 M A 11: |-
-  Concept: $\cot\frac{\theta}{2} = \frac{1 + \cos\theta}{\sin\theta}$ with $\theta = 15°$.
+  Concept: Half-angle formula $\cot\frac{\theta}{2} = \frac{1 + \cos\theta}{\sin\theta}$. With $\frac{\pi}{24} = 7.5°$, take θ = 15°.
   Solution:
-  1. $\cos15° = \frac{\sqrt6 + \sqrt2}{4}$ and $\sin15° = \frac{\sqrt6 - \sqrt2}{4}$.
-  2. $\cot7.5° = \frac{4 + \sqrt6 + \sqrt2}{\sqrt6 - \sqrt2}$; rationalising gives $\sqrt2 + \sqrt3 + 2 + \sqrt6$.
+  1. $\cos15° = \frac{\sqrt6 + \sqrt2}{4}$, $\sin15° = \frac{\sqrt6 - \sqrt2}{4}$.
+  2. $\cot7.5° = \frac{1 + \frac{\sqrt6 + \sqrt2}{4}}{\frac{\sqrt6 - \sqrt2}{4}} = \frac{4 + \sqrt6 + \sqrt2}{\sqrt6 - \sqrt2}$.
+  3. Multiply by $\frac{\sqrt6 + \sqrt2}{\sqrt6 + \sqrt2}$ (denominator becomes 4):
+     numerator $= 4\sqrt6 + 4\sqrt2 + 6 + 2\sqrt{12} + 2 = 8 + 4\sqrt6 + 4\sqrt2 + 4\sqrt3$.
+  4. $\cot7.5° = 2 + \sqrt6 + \sqrt2 + \sqrt3 \approx 7.60$.
+  Why others are wrong:
+  - cot 7.5° must be large (≈ 7.6) since 7.5° is small. (B) ≈ 0.04, (C) ≈ 0.04, (D) ≈ 2.7 — all far too small.
   Answer: (A)
 M A 12: |-
-  Concept: $E(X) = \sum jP(j)$.
+  Concept: Mean $E(X) = \sum x\,P(x)$. Use $\sum_{j\ge1}jr^j = \frac{r}{(1 - r)^2}$ and the geometric series for even j.
   Solution:
-  1. Mean $= \sum_{j\ge1}\frac{j}{3^j} = \frac{1/3}{(2/3)^2} = \frac{3}{4}$.
-  2. $P(\text{positive even}) = \sum_{k\ge1}\frac{1}{9^k} = \frac{1}{8}$.
+  1. Check total probability: $\frac{1}{2} + \sum_{j\ge1}\frac{1}{3^j} = \frac{1}{2} + \frac{1}{2} = 1$ ✓.
+  2. Mean $= 0\cdot\frac{1}{2} + \sum_{j\ge1}\frac{j}{3^j} = \frac{1/3}{(2/3)^2} = \frac{1/3}{4/9} = \frac{3}{4}$.
+  3. P(X positive and even) $= \frac{1}{3^2} + \frac{1}{3^4} + \dots = \frac{1/9}{1 - 1/9} = \frac{1}{8}$.
+  4. So the pair is $\left(\frac{3}{4}, \frac{1}{8}\right)$.
+  Why others are wrong:
+  - (A) $\frac{1}{9}$ counts only j = 2.
+  - (B) $\frac{1}{16}$ uses the wrong ratio.
+  - (D) $\frac{3}{8}$ halves the mean (e.g. multiplying by P(X = 0)).
   Answer: (C)
 M A 13: |-
-  Concept: $(gof)^{-1}$ exists iff gof is bijective.
+  Concept: $(g\circ f)^{-1}$ exists iff $g\circ f : A \to C$ is a bijection (one-one and onto).
   Solution:
-  1. gof one-one forces f one-one; gof onto forces g onto.
+  1. One-one part: if f(x₁) = f(x₂), then g(f(x₁)) = g(f(x₂)); since g∘f is one-one, x₁ = x₂. So f must be one-one.
+  2. Onto part: every c ∈ C equals g(f(a)) for some a, so c is in the range of g. So g must be onto.
+  3. Hence f is one-one and g is onto (nothing more is forced).
+  Counter-examples for the other claims:
+  - g need not be one-one: f could map A into a part of B where g is injective, while g is not injective elsewhere.
+  - f need not be onto: B may contain points not hit by f.
+  Why others are wrong:
+  - (A), (B), (D) each demand a property (f onto or g one-one) that is not necessary.
   Answer: (C)
 M A 14: |-
-  Concept: Combine groups using $\sum x^2 = n(\sigma^2 + \bar x^2)$.
+  Concept: For combining groups, use sums: $\sum x = n\bar x$ and $\sum x^2 = n(\sigma^2 + \bar x^2)$.
   Solution:
-  1. Second sample: $n = 150$, mean $= \frac{250\times15.6 - 1500}{150} = 16$.
-  2. $\sum x^2$: total $250(13.44 + 243.36) = 64200$; first $100(9 + 225) = 23400$; second $40800$.
-  3. $\sigma_2^2 = \frac{40800}{150} - 256 = 16$, so $\sigma_2 = 4$.
+  1. Second sample size: $250 - 100 = 150$.
+  2. Sum of all items $= 250\times15.6 = 3900$; first sample $= 100\times15 = 1500$; second $= 2400$, mean $= 16$.
+  3. Sum of squares, whole group: $250(13.44 + 15.6^2) = 250(13.44 + 243.36) = 250\times256.8 = 64200$.
+  4. First sample: $100(9 + 225) = 23400$. Second: $64200 - 23400 = 40800$.
+  5. $\sigma_2^2 = \frac{40800}{150} - 16^2 = 272 - 256 = 16 \Rightarrow \sigma_2 = 4$.
+  Why others are wrong:
+  - (C) 5, (B) 6, (D) 8 do not reproduce the combined variance 13.44. For example, σ₂ = 5 gives a combined variance of 19.44.
   Answer: (A)
 M A 15: |-
-  Concept: $x\,dy - y\,dx = x^2d\left(\frac{y}{x}\right)$.
+  Concept: Rearranged, $x\,dy - y\,dx = x^3\cos x\,dx$. The left side is $x^2\,d\left(\frac{y}{x}\right)$, an exact differential.
   Solution:
-  1. $\left(\frac{y}{x}\right)' = x\cos x \Rightarrow \frac{y}{x} = x\sin x + \cos x + C$; $y(\pi) = 0 \Rightarrow C = 1$.
-  2. $y\left(\frac{\pi}{2}\right) = \frac{\pi}{2}\left(\frac{\pi}{2} + 1\right) = \frac{\pi^2}{4} + \frac{\pi}{2}$.
+  1. Divide by $x^2$: $d\left(\frac{y}{x}\right) = x\cos x\,dx$.
+  2. Integrate (by parts): $\frac{y}{x} = x\sin x + \cos x + C$.
+  3. $y(\pi) = 0$: $0 = \pi\cdot0 + (-1) + C \Rightarrow C = 1$.
+  4. $y = x(x\sin x + \cos x + 1)$.
+  5. $y\left(\frac{\pi}{2}\right) = \frac{\pi}{2}\left(\frac{\pi}{2}\cdot1 + 0 + 1\right) = \frac{\pi^2}{4} + \frac{\pi}{2}$.
+  Why others are wrong:
+  - (A) has the sign of $\frac{\pi}{2}$ wrong (C = −1 error).
+  - (C) and (D) mis-scale the terms (e.g. $\frac{\pi^2}{2}$ from forgetting to multiply by x correctly).
   Answer: (B)
 M A 16: |-
-  Concept: $\ln(x + \sqrt{x^2 + 1})$ is odd.
+  Concept: $f(x) = \ln(x + \sqrt{x^2 + 1})$ (= $\sinh^{-1}x$) is an odd function, because $(x + \sqrt{x^2 + 1})(-x + \sqrt{x^2 + 1}) = 1$, so $f(-x) = \ln\frac{1}{x + \sqrt{x^2 + 1}} = -f(x)$. The integral of an odd function over [−a, a] is 0.
   Solution:
-  1. The integral over the symmetric interval [−1, 1] is 0.
+  1. f is odd and continuous on [−1, 1].
+  2. $\int_{-1}^1f(x)\,dx = 0$.
+  Why others are wrong:
+  - (A) −1, (B) 1 and (C) 2 would require the positive and negative parts not to cancel; for an odd integrand they cancel exactly.
+  Tip: always check symmetry first when the limits are symmetric — it can save a lengthy integration by parts.
   Answer: (D)
 M A 17: |-
-  Concept: The constant term is the middle term $\binom{10}{5}(a\sin\alpha\cos\alpha)^5$.
+  Concept: General term $T_{r+1} = \binom{10}{r}(x\sin\alpha)^{10 - r}\left(\frac{a\cos\alpha}{x}\right)^r$; the power of x is $10 - 2r$.
   Solution:
-  1. Its maximum is $\binom{10}{5}\left(\frac{a}{2}\right)^5$ (at $\sin2\alpha = 1$).
-  2. $\left(\frac{a}{2}\right)^5 = 1 \Rightarrow a = 2$.
+  1. Independent of x: $10 - 2r = 0 \Rightarrow r = 5$.
+  2. Term $= \binom{10}{5}a^5\sin^5\alpha\cos^5\alpha = \binom{10}{5}\left(\frac{a}{2}\right)^5\sin^52\alpha$.
+  3. Greatest value (for a > 0) at $\sin2\alpha = 1$: $\binom{10}{5}\left(\frac{a}{2}\right)^5$.
+  4. Given $\frac{10!}{(5!)^2} = \binom{10}{5}$, so $\left(\frac{a}{2}\right)^5 = 1 \Rightarrow a = 2$.
+  Why others are wrong:
+  - (D) 1 would give $\binom{10}{5}\cdot\frac{1}{32}$.
+  - (A) −1 and (C) −2: with a < 0 the maximum would occur at $\sin2\alpha = -1$; (C) −2 could also produce the value, but the key's intended (positive) answer is 2.
   Answer: (B)
 M A 18: |-
-  Concept: Evaluate the integral piecewise and compare at x = 2.
+  Concept: Evaluate the integral with the absolute value split at t = 1, then check continuity and one-sided derivatives at x = 2.
   Solution:
-  1. For $x > 2$: $f = \int_0^1(6 - t)dt + \int_1^x(4 + t)dt = \frac{x^2}{2} + 4x + 1$, so $f(2^+) = 11 = f(2)$: continuous.
-  2. Derivatives: right $x + 4 = 6$, left 5, so f is not differentiable at 2.
+  1. For t < 1: $|1 - t| = 1 - t$; for t > 1: $|1 - t| = t - 1$.
+  2. For x > 2: $f(x) = \int_0^1(6 - t)\,dt + \int_1^x(4 + t)\,dt = \frac{11}{2} + 4(x - 1) + \frac{x^2 - 1}{2} = \frac{x^2}{2} + 4x + 1$.
+  3. Continuity at 2: $f(2^+) = 2 + 8 + 1 = 11$ and $f(2) = 5(2) + 1 = 11$ ✓ continuous.
+  4. Derivatives at 2: right $= x + 4 = 6$ (also equals $5 + |1 - 2| = 6$); left $= 5$. Not equal → not differentiable at 2.
+  Why others are wrong:
+  - (A) f is continuous at 2.
+  - (B) For x ≤ 2, f = 5x + 1 is linear, so differentiable at x = 1.
+  - (D) fails at x = 2.
   Answer: (C)
 M A 19: |-
-  Concept: ${}^nP_{r+1} = {}^nP_r(n - r)$; ${}^nC_r = {}^nC_{r-1} \Rightarrow n = 2r - 1$.
+  Concept: ${}^nP_{r+1} = {}^nP_r\times(n - r)$, and ${}^nC_r = {}^nC_s$ with r ≠ s implies r + s = n.
   Solution:
-  1. $n - r = 1$ and $n = 2r - 1$, so $r = 2$.
+  1. ${}^nP_r = {}^nP_{r+1} \Rightarrow n - r = 1$.
+  2. ${}^nC_r = {}^nC_{r-1} \Rightarrow r + (r - 1) = n \Rightarrow n = 2r - 1$.
+  3. Substitute: $2r - 1 - r = 1 \Rightarrow r = 2$, n = 3.
+  4. Check: ${}^3P_2 = 6 = {}^3P_3$ ✓; ${}^3C_2 = 3 = {}^3C_1$ ✓.
+  Why others are wrong:
+  - (A) 4, (B) 1, (C) 3 fail at least one of the two equations (e.g. r = 3 gives n = 4 from the first but n = 5 from the second).
   Answer: (D)
 M A 20: |-
-  Concept: "p only if q" means $p \Rightarrow q$; its negation is $p\wedge\sim q$.
+  Concept: "p only if q" means $p \Rightarrow q$ (if the match is played, the condition must hold). The negation of $p \Rightarrow q$ is $p \wedge \sim q$. De Morgan: $\sim(A \wedge B) = \sim A \vee \sim B$.
   Solution:
-  1. $\sim q$ = weather not good or ground wet.
-  2. Negation: "The match will be played and (weather is not good or ground is wet)".
+  1. p: the match will be played. q: the weather is good and the ground is not wet.
+  2. Statement: $p \Rightarrow q$.
+  3. Negation: $p \wedge \sim q$.
+  4. $\sim q$ = the weather is not good OR the ground is wet.
+  5. Negation: "The match will be played and (the weather is not good or the ground is wet)."
+  Why others are wrong:
+  - (A) "not played or q" is $\sim p \vee q$ — equivalent to the original, not its negation.
+  - (B) "played or (not good and wet)" has the wrong connectives.
+  - (C) "if not played then ~q" is a different implication, not a negation.
   Answer: (D)
 M B 1: |-
-  Concept: Continuity at 2 with $\sin(x - 2) \to 0$ needs $P(2) = 0$ and $P'(2) = 7$.
+  Concept: For $\frac{P(x)}{\sin(x - 2)}$ to have a finite limit at x = 2, the numerator must vanish there: P(2) = 0. Then the limit equals $\frac{P'(2)}{\cos0} = P'(2)$ (L'Hôpital), which must equal f(2) = 7.
   Solution:
-  1. P is quadratic: $P = a(x - 2)^2 + 7(x - 2)$.
-  2. $P(3) = a + 7 = 9 \Rightarrow a = 2$.
-  3. $P(5) = 18 + 21 = 39$.
+  1. P'' is constant → P is quadratic (at most).
+  2. P(2) = 0 and P'(2) = 7 → $P(x) = a(x - 2)^2 + 7(x - 2)$.
+  3. P(3) = 9: $a + 7 = 9 \Rightarrow a = 2$.
+  4. $P(x) = 2(x - 2)^2 + 7(x - 2)$.
+  5. $P(5) = 2(9) + 7(3) = 18 + 21 = 39$.
   Answer: 39
 M B 2: |-
-  Concept: Newton's identities.
+  Concept: Newton's identities relate power sums $p_k = a^k + b^k + c^k$ to the elementary symmetric sums $e_1 = a + b + c$, $e_2 = ab + bc + ca$, $e_3 = abc$:
+  - $p_1 = e_1$
+  - $p_2 = e_1p_1 - 2e_2$
+  - $p_3 = e_1p_2 - e_2p_1 + 3e_3$
+  - $p_4 = e_1p_3 - e_2p_2 + e_3p_1$
   Solution:
-  1. $p_2 = 1 - 4 = -3$; $p_3 = p_2 - 2p_1 + 3\cdot3 = 4$.
-  2. $p_4 = e_1p_3 - e_2p_2 + e_3p_1 = 4 + 6 + 3 = 13$.
+  1. $e_1 = 1$, $e_2 = 2$, $e_3 = 3$.
+  2. $p_2 = 1 - 4 = -3$ (so a, b, c are not all real).
+  3. $p_3 = 1(-3) - 2(1) + 9 = 4$.
+  4. $p_4 = 1(4) - 2(-3) + 3(1) = 4 + 6 + 3 = 13$.
   Answer: 13
 M B 3: |-
-  Concept: Ratio of consecutive coefficients.
+  Concept: In $(A + Bx)^n$ the coefficient of $x^r$ is $\binom{n}{r}A^{n-r}B^r$. Equal consecutive coefficients give a simple ratio equation.
   Solution:
-  1. $\binom{n}{7}2^{n-7}3^{-7} = \binom{n}{8}2^{n-8}3^{-8} \Rightarrow \frac{n - 7}{8} = 6$.
-  2. $n = 55$.
+  1. Coefficient of $x^r$ in $\left(2 + \frac{x}{3}\right)^n$: $\binom{n}{r}2^{n-r}3^{-r}$.
+  2. Equal for r = 7 and r = 8: $\binom{n}{7}2^{n-7}3^{-7} = \binom{n}{8}2^{n-8}3^{-8}$.
+  3. $\frac{\binom{n}{8}}{\binom{n}{7}} = 2\times3 = 6$, and $\frac{\binom{n}{8}}{\binom{n}{7}} = \frac{n - 7}{8}$.
+  4. $\frac{n - 7}{8} = 6 \Rightarrow n = 55$.
+  Solving the ratio: Dividing the two coefficients gives [C(n, 8)/C(n, 7)] × (1/3)/2 = 1. Since C(n, 8)/C(n, 7) = (n − 7)/8, we get (n − 7)/8 = 6, so n − 7 = 48 and n = 55.
+  Common mistake: Forgetting the powers of 2 and 1/3 and setting C(n, 7) = C(n, 8), which gives n = 15.
   Answer: 55
 M B 4: |-
-  Concept: Coplanar lines: $(\vec a_2 - \vec a_1)\cdot(\vec b_1\times\vec b_2) = 0$.
+  Concept: Lines through $\vec a_1$, $\vec a_2$ with directions $\vec b_1$, $\vec b_2$ are coplanar iff $\left[\vec a_2 - \vec a_1,\ \vec b_1,\ \vec b_2\right] = 0$.
   Solution:
-  1. $\begin{vmatrix}k+1&4&6\\1&2&3\\3&2&1\end{vmatrix} = -4(k + 1) + 32 - 24 = 4 - 4k = 0$.
-  2. $k = 1$.
+  1. Line 1: point (k, 2, 3), direction (1, 2, 3). Line 2: point (−1, −2, −3), direction (3, 2, 1).
+  2. $\vec a_1 - \vec a_2 = (k + 1, 4, 6)$.
+  3. $\begin{vmatrix}k + 1&4&6\\1&2&3\\3&2&1\end{vmatrix} = (k + 1)(2 - 6) - 4(1 - 9) + 6(2 - 6) = -4(k + 1) + 32 - 24 = 4 - 4k$.
+  4. Set to 0: k = 1.
+  Check: with k = 1 the lines intersect at (−1, −2, −3) (parameter −2 on line 1, 0 on line 2), confirming they are coplanar.
   Answer: 1
 M B 5: |-
-  Concept: Rectangle of height y in a triangle of height h has width $s\left(1 - \frac{y}{h}\right)$.
+  Concept: For a rectangle inscribed in a triangle with its base on the triangle's base, a rectangle of height y has width $s\left(1 - \frac{y}{h}\right)$ by similar triangles (s = base, h = height of the triangle).
   Solution:
-  1. Area $= sy\left(1 - \frac{y}{h}\right)$, maximum at $y = \frac{h}{2}$: $A_{max} = \frac{sh}{4}$.
-  2. $s = 2\sqrt2$, $h = \sqrt6$: $A_{max} = \frac{2\sqrt2\cdot\sqrt6}{4} = \sqrt3$, so the square is 3.
+  1. Equilateral triangle, side $s = 2\sqrt2$: height $h = \frac{\sqrt3}{2}s = \sqrt6$.
+  2. Area $A(y) = s\,y\left(1 - \frac{y}{h}\right)$.
+  3. $A'(y) = s\left(1 - \frac{2y}{h}\right) = 0 \Rightarrow y = \frac{h}{2}$.
+  4. $A_{max} = s\cdot\frac{h}{2}\cdot\frac{1}{2} = \frac{sh}{4} = \frac{2\sqrt2\times\sqrt6}{4} = \frac{2\sqrt{12}}{4} = \sqrt3$.
+  5. Square of the largest area $= 3$.
+  Note: the maximum rectangle always has half the triangle's area ($\frac{1}{2}\cdot\frac{sh}{2}$).
   Answer: 3
 M B 6: |-
-  Concept: Two dot-product equations in $a^2$, $b^2$ and $\vec a\cdot\vec b$.
+  Concept: Perpendicular vectors have zero dot product. Two such conditions give two equations in $a^2 = |\vec a|^2$, $b^2 = |\vec b|^2$ and $\vec a\cdot\vec b$.
   Solution:
-  1. $7a^2 + 16\,\vec a\cdot\vec b - 15b^2 = 0$ and $7a^2 - 30\,\vec a\cdot\vec b + 8b^2 = 0$.
-  2. Subtracting: $\vec a\cdot\vec b = \frac{b^2}{2}$, and then $a^2 = b^2$.
-  3. $\cos\theta = \frac{1}{2}$, so $\theta = 60°$.
+  1. $(\vec a + 3\vec b)\cdot(7\vec a - 5\vec b) = 7a^2 + 16\,\vec a\cdot\vec b - 15b^2 = 0$ … (i)
+  2. $(\vec a - 4\vec b)\cdot(7\vec a - 2\vec b) = 7a^2 - 30\,\vec a\cdot\vec b + 8b^2 = 0$ … (ii)
+  3. (i) − (ii): $46\,\vec a\cdot\vec b - 23b^2 = 0 \Rightarrow \vec a\cdot\vec b = \frac{b^2}{2}$.
+  4. Substitute in (i): $7a^2 + 8b^2 - 15b^2 = 0 \Rightarrow a^2 = b^2$.
+  5. $\cos\theta = \frac{\vec a\cdot\vec b}{|\vec a||\vec b|} = \frac{b^2/2}{b^2} = \frac{1}{2} \Rightarrow \theta = 60°$.
   Answer: 60
 M B 7: |-
-  Concept: $\sum(2r + 1)\binom{n}{r} = 2n2^{n-1} + 2^n = 2^n(n + 1)$.
+  Concept: $\sum_{r=0}^n(2r + 1)\binom{n}{r} = 2\sum r\binom{n}{r} + \sum\binom{n}{r} = 2\cdot n2^{n-1} + 2^n = 2^n(n + 1)$.
   Solution:
-  1. $2^n(n + 1) = 2^{100}\cdot101 \Rightarrow n = 100$.
-  2. $2\left[\frac{99}{2}\right] = 98$.
+  1. The terms $\binom{n}{0}, 3\binom{n}{1}, 5\binom{n}{2}, \dots$ are $(2r + 1)\binom{n}{r}$.
+  2. Sum $= 2^n(n + 1) = 2^{100}\cdot101 \Rightarrow n = 100$.
+  3. $2\left[\frac{n - 1}{2}\right] = 2\left[\frac{99}{2}\right] = 2\times49 = 98$.
+  Check: $\sum r\binom{n}{r} = n2^{n-1}$ follows from differentiating $(1 + x)^n$ and setting x = 1.
+  Final step: [99/2] = [49.5] = 49, so 2 × 49 = 98.
+  Why the sum formula works: Σ r C(n, r) = n2ⁿ⁻¹ counts committees with a chosen leader, and Σ C(n, r) = 2ⁿ counts all subsets.
   Answer: 98
 M B 8: |-
-  Concept: $P(\text{at least one head}) = 1 - 2^{-n}$.
+  Concept: P(at least one head in n tosses) = 1 − P(no heads) = $1 - \left(\frac{1}{2}\right)^n$.
   Solution:
-  1. $1 - 2^{-n} \ge 0.9 \Rightarrow 2^n \ge 10 \Rightarrow n = 4$.
+  1. Require $1 - 2^{-n} \ge 0.9 \Rightarrow 2^{-n} \le 0.1 \Rightarrow 2^n \ge 10$.
+  2. $2^3 = 8 < 10$, $2^4 = 16 \ge 10$.
+  3. Minimum n = 4.
+  Check: n = 3 gives 0.875 < 0.9; n = 4 gives 0.9375 ≥ 0.9 ✓.
+  Why use the complement: "At least one head" includes many cases; its complement "no heads" is a single outcome (all tails), with probability (½)ⁿ.
+  Common mistake: Solving (½)ⁿ ≥ 0.9, which confuses the event with its complement.
   Answer: 4
 M B 9: |-
-  Concept: Separable DE.
+  Concept: Separable differential equation: $\frac{dy}{dx} = \frac{2y}{x\ln x}$.
   Solution:
-  1. $\frac{dy}{y} = \frac{2\,dx}{x\ln x} \Rightarrow y = k(\ln x)^2$.
-  2. Through $(2, (\ln2)^2)$: $k = 1$, so $f(e) = 1$.
+  1. $\frac{dy}{y} = \frac{2\,dx}{x\ln x}$.
+  2. Integrate: $\ln|y| = 2\ln|\ln x| + C \Rightarrow y = k(\ln x)^2$.
+  3. Through $(2, (\ln2)^2)$: $(\ln2)^2 = k(\ln2)^2 \Rightarrow k = 1$.
+  4. $f(x) = (\ln x)^2$, so $f(e) = (\ln e)^2 = 1$.
+  Check: $f'(x) = \frac{2\ln x}{x} = \frac{2(\ln x)^2}{x\ln x} = \frac{2y}{x\ln x}$ ✓.
+  Integration step: ∫ dx/(x ln x) = ln|ln x| (substitute u = ln x, du = dx/x).
+  Common mistake: Writing ∫ 2 dx/(x ln x) = 2 ln x instead of 2 ln(ln x), which gives the wrong family of curves.
   Answer: 1
 M B 10: |-
-  Concept: Convert to Cartesian form.
+  Concept: Convert the complex equation to Cartesian form using z = x + iy: $\text{Re}(z^2) = x^2 - y^2$, $\text{Im}(z) = y$, $\text{Re}(z) = x$.
   Solution:
-  1. $x^2 - y^2 + 2y^2 + 2x = 0 \Rightarrow x^2 + y^2 + 2x = 0$, centre (−1, 0).
-  2. $y = (x - 3)^2 + 4$ has vertex (3, 4).
-  3. The line through them is $y = x + 1$, with y-intercept 1.
+  1. $x^2 - y^2 + 2y^2 + 2x = 0 \Rightarrow x^2 + y^2 + 2x = 0$: centre (−1, 0), radius 1.
+  2. Parabola: $x^2 - 6x - y + 13 = 0 \Rightarrow y = (x - 3)^2 + 4$: vertex (3, 4).
+  3. Line through (−1, 0) and (3, 4): slope $= \frac{4 - 0}{3 - (-1)} = 1$, so $y = x + 1$.
+  4. y-intercept = 1.
   Answer: 1

@@ -1,211 +1,368 @@
 M A 1: |-
-  Concept: Count digit multisets, then arrangements (multinomial).
+  Concept: To count numbers with a fixed digit sum, first find which multisets of digits work, then count the arrangements of each multiset with the multinomial formula n!/(a! b! c!).
+  Given: 7 digits, each 1, 2 or 3, with digit sum 10.
   Solution:
-  1. Let the number use $a$ ones, $b$ twos, $c$ threes: $a + b + c = 7$ and $a + 2b + 3c = 10$, so $b + 2c = 3$.
-  2. $(b, c) = (3, 0)$, $a = 4$: arrangements $\frac{7!}{4!\,3!} = 35$.
-  3. $(b, c) = (1, 1)$, $a = 5$: arrangements $\frac{7!}{5!\,1!\,1!} = 42$.
-  4. Total $= 35 + 42 = 77$.
+  1. Let a, b, c be the numbers of 1s, 2s and 3s. Then a + b + c = 7 and a + 2b + 3c = 10.
+  2. Subtracting the first equation from the second: b + 2c = 3.
+  3. Case (b, c) = (3, 0): a = 4, so the digits are 1111222. Arrangements: 7!/(4!·3!) = 35.
+  4. Case (b, c) = (1, 1): a = 5, so the digits are 1111123. Arrangements: 7!/(5!·1!·1!) = 42.
+  5. No other non-negative solutions exist (c = 2 would need b = −1).
+  6. Total = 35 + 42 = 77.
+  Why others are wrong:
+  - (B) 42 and (C) 35 are single cases only.
+  - (D) 82 miscounts.
+  Tip: in "digit sum" problems, subtract the count equation from the sum equation. This removes one variable immediately.
   Answer: (A)
 M A 2: |-
-  Concept: General term of a binomial expansion, then maximise over $x$.
+  Concept: In a binomial expansion, find the term independent of t from the general term. That term depends on x, so maximise it over x with calculus.
   Solution:
-  1. $T_{r+1} = \binom{10}{r}(tx^{1/5})^{10-r}\left(\frac{(1-x)^{1/10}}{t}\right)^r$; independent of $t$ when $10 - r = r$, i.e. $r = 5$.
-  2. Term $= \binom{10}{5}x(1-x)^{1/2} = 252\,x\sqrt{1-x}$.
-  3. $f(x) = x\sqrt{1-x}$: $f'(x) = \sqrt{1-x} - \frac{x}{2\sqrt{1-x}} = 0 \Rightarrow x = \frac{2}{3}$ (a maximum).
-  4. $f\left(\frac{2}{3}\right) = \frac{2}{3}\cdot\frac{1}{\sqrt3} = \frac{2}{3\sqrt3}$.
-  5. Maximum term $= \frac{10!}{(5!)^2}\cdot\frac{2}{3\sqrt3} = \frac{2\cdot10!}{3\sqrt3(5!)^2}$.
+  1. General term: $T_{r+1} = \binom{10}{r}(tx^{1/5})^{10-r}\left(\frac{(1-x)^{1/10}}{t}\right)^r$. The power of t is (10 − r) − r = 10 − 2r.
+  2. The term is independent of t when 10 − 2r = 0, i.e. r = 5.
+  3. $T_6 = \binom{10}{5}x^{5/5}(1-x)^{5/10} = 252\,x\sqrt{1-x}$.
+  4. Maximise f(x) = x√(1−x) on (0, 1): $f'(x) = \sqrt{1-x} - \frac{x}{2\sqrt{1-x}} = \frac{2(1-x) - x}{2\sqrt{1-x}} = 0$, so x = 2/3.
+  5. $f(2/3) = \frac{2}{3}\sqrt{\frac{1}{3}} = \frac{2}{3\sqrt3}$.
+  6. The maximum term is $\binom{10}{5}\cdot\frac{2}{3\sqrt3} = \frac{2\cdot10!}{3\sqrt3(5!)^2}$.
+  Why others are wrong: (A), (B) and (C) come from errors in f(2/3), for example missing the factor 2 or the √3.
+  Tip: for xᵐ(1 − x)ⁿ on (0, 1), the maximum is at x = m/(m + n). Here m = 1 and n = ½, so x = 2/3 ✓.
   Answer: (D)
 M A 3: |-
-  Concept: $x - [x]$ is periodic with period 1.
+  Concept: The fractional part {x} = x − [x] is periodic with period 1. So the integral of e^{x−[x]} over any unit interval [n − 1, n] is the same.
   Solution:
-  1. On $[n-1, n)$, $[x] = n - 1$, so $\int_{n-1}^{n}e^{x-(n-1)}dx = \int_0^1 e^t\,dt = e - 1$.
-  2. Each of the 100 integrals equals $e - 1$, so the sum is $100(e - 1)$.
+  1. On [n − 1, n), [x] = n − 1, so x − [x] = x − (n − 1) runs from 0 to 1.
+  2. Substitute t = x − (n − 1): $\int_{n-1}^{n}e^{x-[x]}dx = \int_0^1e^t\,dt = e - 1$.
+  3. Every one of the 100 integrals equals e − 1.
+  4. The sum is 100(e − 1).
+  Why others are wrong:
+  - (C) 100(1 − e) has the wrong sign; the integrand is positive, so the sum must be positive.
+  - (B) 100e and (D) 100(1 + e) integrate the exponential incorrectly.
+  Tip: whenever the integrand depends only on {x}, the integral over [0, n] is n times the integral over [0, 1].
   Answer: (A)
 M A 4: |-
-  Concept: Exponential growth $\frac{dN}{dt} = \lambda N \Rightarrow N = N_0e^{\lambda t}$.
+  Concept: When the rate of growth is proportional to the population, dN/dt = λN, the population grows exponentially: N = N₀e^{λt}. Two data points fix λ, and the doubling time follows.
+  Given: N₀ = 1000; N(2) = 1200 (a 20% increase); N = 2000 at T = k/ln(6/5).
   Solution:
-  1. $N = 1000e^{\lambda t}$; after 2 h, $1200 = 1000e^{2\lambda}$, so $\lambda = \frac{1}{2}\ln\frac{6}{5}$.
-  2. $N = 2000$: $e^{\lambda T} = 2 \Rightarrow T = \frac{\ln 2}{\lambda} = \frac{2\ln 2}{\ln(6/5)}$.
-  3. Comparing with $\frac{k}{\ln(6/5)}$: $k = 2\ln 2$, so $\left(\frac{k}{\ln 2}\right)^2 = 4$.
+  1. 1200 = 1000e^{2λ}, so e^{2λ} = 6/5 and λ = ½ ln(6/5).
+  2. For N = 2000: e^{λT} = 2, so T = ln 2/λ = 2 ln 2/ln(6/5).
+  3. Comparing with k/ln(6/5): k = 2 ln 2.
+  4. (k/ln 2)² = 2² = 4.
+  Check: T = 2 × 0.693/0.182 ≈ 7.6 h. The population grows 20% every 2 h, and 1.2^{3.8} ≈ 2 ✓.
+  Why others are wrong:
+  - (B) 2 forgets to square.
+  - (C) 16 and (D) 8 mis-handle the factor 2 in λ.
+  Tip: the doubling time is t_d = ln 2/λ. It does not depend on the initial count.
   Answer: (A)
 M A 5: |-
-  Concept: $\vec a\times(\vec a\times\vec c) = (\vec a\cdot\vec c)\vec a - |\vec a|^2\vec c$.
+  Concept: The vector triple product: $\vec a\times(\vec a\times\vec c) = (\vec a\cdot\vec c)\vec a - (\vec a\cdot\vec a)\vec c$. When $\vec c\perp\vec a$, this reduces to $-|\vec a|^2\vec c$, still perpendicular to $\vec a$.
+  Given: $\vec a\perp\vec b$.
   Solution:
-  1. Since $\vec a\cdot\vec b = 0$: $\vec a\times(\vec a\times\vec b) = -|\vec a|^2\vec b$.
-  2. Apply the same step again to $-|\vec a|^2\vec b$ (still perpendicular to $\vec a$): $\vec a\times(\vec a\times(-|\vec a|^2\vec b)) = -|\vec a|^2(-|\vec a|^2\vec b) = |\vec a|^4\vec b$.
+  1. Innermost pair: $\vec a\times(\vec a\times\vec b) = (\vec a\cdot\vec b)\vec a - |\vec a|^2\vec b = -|\vec a|^2\vec b$.
+  2. The whole expression is $\vec a\times(\vec a\times[\vec a\times(\vec a\times\vec b)]) = \vec a\times(\vec a\times(-|\vec a|^2\vec b))$.
+  3. $-|\vec a|^2\vec b$ is still perpendicular to $\vec a$, so apply the same rule: $-|\vec a|^2\cdot(-|\vec a|^2\vec b) = |\vec a|^4\vec b$.
+  Geometric view: each "$\vec a\times$" rotates a vector perpendicular to $\vec a$ by 90° about $\vec a$ and scales it by |a|. Four such rotations make a full 360° turn, with a total scale of |a|⁴.
+  Why others are wrong:
+  - (B) $\vec a\times\vec b$ is the result of an odd number of cross products.
+  - (A) has a spurious ½.
+  - (D) would need a parallel $\vec b$.
   Answer: (C)
 M A 6: |-
-  Concept: Terms of a GP $ar^{n-1}$; use symmetric products.
+  Concept: In a GP, terms equidistant from a middle term have products equal to the square of that middle term: T₃T₅ = T₄². Use this, then the given sum, to find a and r.
+  Given: an increasing GP with T₂ + T₆ = 25/2 and T₃T₅ = 25.
   Solution:
-  1. $T_3T_5 = (ar^3)^2 = 25 \Rightarrow ar^3 = 5$ (terms positive, series increasing).
-  2. $T_2 + T_6 = ar + ar^5 = \frac{5}{r^2} + 5r^2 = \frac{25}{2} \Rightarrow r^2 + \frac{1}{r^2} = \frac{5}{2}$, so $r^2 = 2$ (increasing, $r > 1$).
-  3. $T_4 + T_6 + T_8 = ar^3(1 + r^2 + r^4) = 5(1 + 2 + 4) = 35$.
+  1. T₃T₅ = (ar²)(ar⁴) = (ar³)² = 25. The series is increasing with positive terms, so T₄ = ar³ = 5.
+  2. T₂ + T₆ = ar + ar⁵ = (ar³)(r⁻² + r²) = 5(r² + 1/r²) = 25/2, so r² + 1/r² = 5/2.
+  3. Hence r² = 2 or ½. Increasing means r > 1, so r² = 2.
+  4. T₄ + T₆ + T₈ = ar³(1 + r² + r⁴) = 5(1 + 2 + 4) = 35.
+  Why others are wrong: (B), (C) and (D) come from using r² = ½ or arithmetic slips.
+  Tip: express all the terms relative to a known middle term, here T₄ = 5. Then only r needs to be found.
   Answer: (A)
 M A 7: |-
-  Concept: Planes are parallel when their normal vectors are proportional.
+  Concept: Two planes are parallel when their normal vectors are proportional and they are not the same plane (different constants after scaling).
   Solution:
-  1. Normals: $P_1$: $(3, 15, 21) = 3(1, 5, 7)$; $P_2$: $(1, -3, -1)$; $P_3$: $(2, 10, 14) = 2(1, 5, 7)$.
-  2. $P_1$ and $P_3$ have proportional normals: $P_1$ is $x + 5y + 7z = 3$ and $P_3$ is $x + 5y + 7z = \frac{5}{2}$, distinct parallel planes.
-  3. $(1, -3, -1)$ is not proportional to $(1, 5, 7)$, so $P_2$ is parallel to neither.
-  Why others are wrong: (B), (C) and (D) all need $P_2$ parallel to another plane, which fails.
+  1. P₁: 3x + 15y + 21z = 9. Divide by 3: x + 5y + 7z = 3. Normal (1, 5, 7).
+  2. P₂: x − 3y − z = 5. Normal (1, −3, −1).
+  3. P₃: 2x + 10y + 14z = 5. Divide by 2: x + 5y + 7z = 5/2. Normal (1, 5, 7).
+  4. P₁ and P₃ have the same normal but different constants (3 and 2.5), so they are distinct parallel planes.
+  5. P₂'s normal (1, −3, −1) is not proportional to (1, 5, 7). In fact (1, 5, 7)·(1, −3, −1) = 1 − 15 − 7 = −21 ≠ 0, so P₂ is neither parallel nor perpendicular to them.
+  Why others are wrong: (B), (C) and (D) need P₂ to be parallel to another plane, which fails.
+  Tip: divide each plane equation by the gcd of its normal coefficients. Parallel planes then show up at a glance.
   Answer: (A)
 M A 8: |-
-  Concept: Arithmetico-geometric series; use $\sum_{n\ge1}\frac{n}{3^n} = \frac{1/3}{(1-1/3)^2} = \frac{3}{4}$.
+  Concept: This is an arithmetico-geometric series (an AP term times a GP term). Use the standard sums $\sum_{n\ge1}r^n = \frac{r}{1-r}$ and $\sum_{n\ge1}nr^n = \frac{r}{(1-r)^2}$ with r = ⅓.
   Solution:
-  1. After the first term, the numerators are $5n - 3$: $S = 1 + \sum_{n\ge1}\frac{5n-3}{3^n}$.
-  2. $\sum\frac{5n}{3^n} = 5\cdot\frac{3}{4} = \frac{15}{4}$; $\sum\frac{3}{3^n} = 3\cdot\frac{1}{2} = \frac{3}{2}$.
-  3. $S = 1 + \frac{15}{4} - \frac{3}{2} = \frac{13}{4}$.
+  1. After the leading 1, the numerators 2, 7, 12, 17, … form an AP: 5n − 3 for n = 1, 2, 3, …. So S = 1 + Σ(5n − 3)/3ⁿ.
+  2. $\sum\frac{n}{3^n} = \frac{1/3}{(2/3)^2} = \frac{3}{4}$ and $\sum\frac{1}{3^n} = \frac{1/3}{2/3} = \frac{1}{2}$.
+  3. $S = 1 + 5\cdot\frac{3}{4} - 3\cdot\frac{1}{2} = 1 + \frac{15}{4} - \frac{3}{2} = \frac{4 + 15 - 6}{4} = \frac{13}{4}$.
+  Check: the first few terms give 1 + 0.667 + 0.778 + 0.444 + 0.210 + 0.091 + … ≈ 3.2, approaching 3.25 ✓.
+  Why others are wrong: (A), (B) and (D) come from mis-identifying the AP (for example taking 5n − 2) or dropping the leading 1.
+  Tip: the alternative method is to multiply S by r and subtract. This gives a pure geometric series.
   Answer: (C)
 M A 9: |-
-  Concept: Row operations do not change a determinant.
+  Concept: Row operations R_i → R_i − R_j do not change a determinant. They are useful when consecutive rows follow a pattern, because subtraction lowers the degree of the polynomial entries.
   Solution:
-  1. $R_1 \to R_1 - R_2$: $(-2(a+2), -1, 0)$; $R_2 \to R_2 - R_3$: $(-2(a+3), -1, 0)$.
-  2. Expand along column 3 (only the $R_3$ entry 1 remains): $\Delta = (-2(a+2))(-1) - (-1)(-2(a+3)) = 2(a+2) - 2(a+3) = -2$.
+  1. R₁ → R₁ − R₂: the first entry becomes (a + 1)(a + 2) − (a + 2)(a + 3) = (a + 2)(−2) = −2(a + 2). The row is (−2(a + 2), −1, 0).
+  2. R₂ → R₂ − R₃: the row becomes (−2(a + 3), −1, 0).
+  3. R₃ stays ((a + 3)(a + 4), a + 4, 1).
+  4. Expand along the third column. Only R₃'s entry is non-zero: Δ = 1 × [(−2(a + 2))(−1) − (−1)(−2(a + 3))] = 2(a + 2) − 2(a + 3) = −2.
+  5. The determinant is −2, independent of a.
+  Check with a = 0: rows (2, 2, 1), (6, 3, 1), (12, 4, 1). Δ = 2(3 − 4) − 2(6 − 12) + 1(24 − 36) = −2 + 12 − 12 = −2 ✓.
+  Why others are wrong: (B), (C) and (D) assume a dependence on a or a zero value.
   Answer: (A)
 M A 10: |-
-  Concept: $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$ and $\cos2\theta = \frac{1-\tan^2\theta}{1+\tan^2\theta}$.
+  Concept:
+  - sin⁻¹x + cos⁻¹x = π/2 for x ∈ [−1, 1].
+  - The double-angle identity: $\cos2\theta = \frac{1 - \tan^2\theta}{1 + \tan^2\theta}$.
   Solution:
-  1. Let the common ratio be $k$: $\sin^{-1}x = ak$, $\cos^{-1}x = bk$, so $(a+b)k = \frac{\pi}{2}$, $k = \frac{\pi}{2(a+b)}$.
-  2. $\tan^{-1}y = ck = \frac{\pi c}{2(a+b)}$, so $\frac{\pi c}{a+b} = 2\tan^{-1}y$.
-  3. $\cos(2\tan^{-1}y) = \frac{1-y^2}{1+y^2}$.
+  1. Let each ratio equal k. Then sin⁻¹x = ak and cos⁻¹x = bk.
+  2. Adding: (a + b)k = π/2, so k = π/(2(a + b)).
+  3. tan⁻¹y = ck = πc/(2(a + b)), so πc/(a + b) = 2 tan⁻¹y.
+  4. With θ = tan⁻¹y: $\cos(2\theta) = \frac{1 - y^2}{1 + y^2}$.
+  5. So $\cos\left(\frac{\pi c}{a + b}\right) = \frac{1 - y^2}{1 + y^2}$.
+  Why others are wrong:
+  - (A) $\frac{1 - y^2}{2y}$ is cot 2θ.
+  - (C) and (D) are not standard identities.
+  Tip: remember cos 2θ = (1 − t²)/(1 + t²), sin 2θ = 2t/(1 + t²) and tan 2θ = 2t/(1 − t²), with t = tan θ.
   Answer: (B)
 M A 11: |-
-  Concept: For symmetric $A = \begin{pmatrix}a & b\\ b & d\end{pmatrix}$, $\operatorname{tr}(A^2) = a^2 + 2b^2 + d^2$.
+  Concept: For a symmetric matrix A, the sum of the diagonal entries of A² (its trace) equals the sum of the squares of all the entries of A: tr(A²) = tr(AAᵀ).
+  Given: $A = \begin{pmatrix}a & b\\ b & d\end{pmatrix}$ with integer entries and tr(A²) = 1.
   Solution:
-  1. $a^2 + 2b^2 + d^2 = 1$ with integers forces $b = 0$ and $a^2 + d^2 = 1$.
-  2. $(a, d) = (\pm1, 0)$ or $(0, \pm1)$: 4 matrices.
+  1. $A^2 = \begin{pmatrix}a^2 + b^2 & \ldots\\ \ldots & b^2 + d^2\end{pmatrix}$, so tr(A²) = a² + 2b² + d² = 1.
+  2. Since 2b² ≤ 1 with b an integer, b = 0.
+  3. Then a² + d² = 1, so exactly one of a, d is ±1 and the other is 0.
+  4. The possibilities are (a, d) = (1, 0), (−1, 0), (0, 1), (0, −1): 4 matrices.
+  Why others are wrong:
+  - (A) 6 and (D) 12 allow b ≠ 0.
+  - (B) 1 ignores the signs.
+  Tip: tr(AAᵀ) = Σ(all entries)² for any matrix. It is often the quickest way to handle "trace of A²" questions for symmetric matrices.
   Answer: (C)
 M A 12: |-
-  Concept: Find the vertices, then compare side lengths.
+  Concept: To classify the triangle formed by three lines, find the three vertices (pairwise intersections), then compare the side lengths and check the Pythagorean relation.
   Solution:
-  1. $x - y = 0$ and $x + 2y = 3$ meet at $(1, 1)$; $x - y = 0$ and $2x + y = 6$ at $(2, 2)$; $x + 2y = 3$ and $2x + y = 6$ at $(3, 0)$.
-  2. Sides: $(1,1)$–$(2,2)$: $\sqrt2$; $(2,2)$–$(3,0)$: $\sqrt5$; $(1,1)$–$(3,0)$: $\sqrt5$.
-  3. Two equal sides, and $2 + 5 \ne 5$, so the triangle is isosceles but not right-angled.
-  Why others are wrong: not all sides equal (A); no Pythagorean relation (D).
+  1. x − y = 0 and x + 2y = 3: x = y, so 3y = 3, giving (1, 1).
+  2. x − y = 0 and 2x + y = 6: 3x = 6, giving (2, 2).
+  3. x + 2y = 3 and 2x + y = 6: solving gives (3, 0).
+  4. Side lengths:
+     - (1,1)–(2,2): √2;
+     - (2,2)–(3,0): √(1 + 4) = √5;
+     - (1,1)–(3,0): √(4 + 1) = √5.
+  5. Two sides are equal (√5), so the triangle is isosceles.
+  6. Right angle? (√2)² + (√5)² = 7 ≠ 5, and 5 + 5 ≠ 2. So it is not right-angled.
+  Why others are wrong:
+  - (A) equilateral needs three equal sides.
+  - (D) right-angled fails the Pythagorean check.
+  - (B) "none" is wrong, since it is isosceles.
+  Tip: the lines x + 2y = 3 and 2x + y = 6 are reflections of each other in y = x. That symmetry explains the equal sides.
   Answer: (C)
 M A 13: |-
-  Concept: The slope $s = y'$ has a local maximum where $s' = 0$ and $s'' < 0$.
+  Concept: The slope of the curve is s(x) = y′. The slope has a (local) maximum where s′ = y″ = 0 and s″ = y‴ < 0.
+  Given: y = ½x⁴ − 5x³ + 18x² − 19x.
   Solution:
-  1. $s = 2x^3 - 15x^2 + 36x - 19$, $s' = 6x^2 - 30x + 36 = 6(x-2)(x-3)$.
-  2. $s'' = 12x - 30$: at $x = 2$, $s'' = -6 < 0$, a local maximum of the slope (the intended meaning, since $s$ is unbounded as $x \to \infty$).
-  3. $y(2) = 8 - 40 + 72 - 38 = 2$, so the point is $(2, 2)$.
+  1. s = y′ = 2x³ − 15x² + 36x − 19.
+  2. s′ = 6x² − 30x + 36 = 6(x − 2)(x − 3), which is zero at x = 2 and x = 3.
+  3. s″ = 12x − 30. At x = 2 it is −6 < 0, a local maximum of the slope. At x = 3 it is +6 > 0, a local minimum.
+  4. y(2) = ½(16) − 5(8) + 18(4) − 19(2) = 8 − 40 + 72 − 38 = 2. The point is (2, 2).
+  5. The slope there is s(2) = 16 − 60 + 72 − 19 = 9.
+  Note: s(x) → ∞ as x → ∞, so the global maximum does not exist. The question intends the local maximum. Option (A) (2, 9) mixes x = 2 with the slope value 9.
+  Why others are wrong:
+  - (C) (3, 21/2) is the local minimum of the slope.
+  - (D) (0, 0) is not a critical point of s.
   Answer: (B)
 M A 14: |-
-  Concept: A Lipschitz bound of order 2 forces the derivative to vanish.
+  Concept: If |f(x) − f(y)| ≤ |x − y|² for all x and y, then dividing by |x − y| and letting y → x shows that f′(x) = 0 everywhere. A function with zero derivative everywhere is constant.
   Solution:
-  1. $\left|\frac{f(x) - f(y)}{x - y}\right| \le |x - y|$; letting $y \to x$ gives $f'(x) = 0$ for all $x$.
-  2. So $f$ is constant: $f(x) = f(0) = 1 > 0$ for all $x$.
-  Why others are wrong: $f \equiv 1$ is never negative (A) or zero (C), and takes only one value (B).
+  1. $\left|\frac{f(x) - f(y)}{x - y}\right| \le |x - y|$ for x ≠ y.
+  2. As y → x, the right side → 0. So the difference quotient → 0 and f′(x) exists and equals 0 for every x.
+  3. So f is constant on ℝ: f(x) = f(0) = 1.
+  4. Hence f(x) > 0 for all x ∈ ℝ.
+  Why others are wrong:
+  - (A) f < 0 and (C) f = 0 contradict f ≡ 1.
+  - (B) "any value" contradicts f being constant.
+  Tip: the condition |f(x) − f(y)| ≤ K|x − y|^α with α > 1 always forces f to be constant. With α = 1 it only means Lipschitz continuity.
   Answer: (D)
 M A 15: |-
-  Concept: King property on a symmetric interval: replace $x$ by $-x$.
+  Concept: On a symmetric interval [−a, a], replacing x by −x leaves the integral unchanged (the King property). For integrands of the form $\frac{g(x)}{1 + b^x}$ with g even, adding the two forms removes the exponential.
   Solution:
-  1. $I = \int_{-\pi/2}^{\pi/2}\frac{\cos^2x}{1+3^x}dx$; with $x \to -x$, $I = \int_{-\pi/2}^{\pi/2}\frac{3^x\cos^2x}{1+3^x}dx$.
-  2. Adding: $2I = \int_{-\pi/2}^{\pi/2}\cos^2x\,dx = \frac{\pi}{2}$, so $I = \frac{\pi}{4}$.
+  1. $I = \int_{-\pi/2}^{\pi/2}\frac{\cos^2x}{1 + 3^x}dx$.
+  2. With x → −x: $I = \int_{-\pi/2}^{\pi/2}\frac{\cos^2x}{1 + 3^{-x}}dx = \int\frac{3^x\cos^2x}{3^x + 1}dx$.
+  3. Adding: $2I = \int_{-\pi/2}^{\pi/2}\cos^2x\,dx$.
+  4. $\int_{-\pi/2}^{\pi/2}\cos^2x\,dx = \frac{\pi}{2}$, since the average of cos² is ½ over an interval of length π.
+  5. So I = π/4.
+  Why others are wrong:
+  - (C) π/2 forgets to halve.
+  - (A) and (B) are far too large; the integrand is at most 1 over an interval of length π.
+  Tip: $\int_{-a}^{a}\frac{g(x)}{1 + b^x}dx = \int_0^ag(x)\,dx$ for even g, whatever the base b > 0.
   Answer: (D)
 M A 16: |-
-  Concept: $\sqrt3\sin\theta - \cos\theta = 2\sin\left(\theta - \frac{\pi}{6}\right)$ and $\lim\frac{\sin h}{h} = 1$.
+  Concept: Rewrite a combination of sine and cosine as a single sine: $\sqrt3\sin\theta - \cos\theta = 2\sin\left(\theta - \frac{\pi}{6}\right)$. Then use $\lim_{h\to0}\frac{\sin h}{h} = 1$.
   Solution:
-  1. Numerator: $\sqrt3\sin\left(\frac{\pi}{6}+h\right) - \cos\left(\frac{\pi}{6}+h\right) = 2\sin h$.
-  2. Denominator: $\sqrt3h(\sqrt3\cos h - \sin h) \to \sqrt3h\cdot\sqrt3 = 3h$ as $h \to 0$.
-  3. Limit $= \lim\frac{2\sin h}{3h} = \frac{2}{3}$.
-  Note: The printed key gives (C) $\frac{4}{3}$, but its solution wrongly doubles the numerator. The correct value is $\frac{2}{3}$.
+  1. Numerator: √3 sin(π/6 + h) − cos(π/6 + h) = 2 sin(π/6 + h − π/6) = 2 sin h.
+  2. Denominator: √3h(√3 cos h − sin h). As h → 0, the bracket → √3, so the denominator ≈ 3h.
+  3. Limit = lim 2 sin h/(3h) = 2/3.
+  Note: the printed key gives (C) 4/3, but its solution wrongly doubles the numerator. The correct value is 2/3, option (D).
+  Check at h = 0.01: the numerator is about 0.0200 and the denominator about 0.0300, giving 0.667 ✓.
+  Tip: whenever you see a√3 sin θ ± cos θ or similar, convert to R sin(θ ± α). It often collapses the expression.
   Answer: (D)
 M A 17: |-
-  Concept: $\binom{n}{r} = \binom{n}{s} \Rightarrow r + s = n$ (for $r \ne s$).
+  Concept: For a fair coin tossed n times, P(r heads) = ⁿCᵣ/2ⁿ. If P(r heads) = P(s heads) with r ≠ s, then ⁿCᵣ = ⁿCₛ, which forces r + s = n.
   Solution:
-  1. $\binom{n}{7}\frac{1}{2^n} = \binom{n}{9}\frac{1}{2^n} \Rightarrow n = 16$.
-  2. $P(2\text{ heads}) = \binom{16}{2}\frac{1}{2^{16}} = \frac{120}{2^{16}} = \frac{15}{2^{13}}$.
+  1. P(7 heads) = P(9 heads) gives ⁿC₇ = ⁿC₉, so n = 16.
+  2. P(2 heads) = ¹⁶C₂/2¹⁶ = 120/65536.
+  3. Simplify: 120/2¹⁶ = 15 × 8/2¹⁶ = 15/2¹³.
+  Why others are wrong:
+  - (A) 15/2¹² and (C) 15/2¹⁴ are off by a factor of 2 in the simplification.
+  - (D) 15/2⁸ uses n = 8.
+  Tip: ¹⁶C₂ = 120 = 15 × 2³, so 120/2¹⁶ = 15/2¹³. Factor the powers of 2 out of the binomial coefficient before simplifying.
   Answer: (B)
 M A 18: |-
-  Concept: Four points are coplanar when the scalar triple product of three edge vectors from one of them is 0.
+  Concept: Four points are coplanar when the scalar triple product of the three vectors from one point to the other three is zero, i.e. the determinant of those vectors vanishes.
   Solution:
-  1. From $(1, 5, 35)$: $(6, 0, -30)$, $(0, \lambda-5, -28)$, $(2\lambda-1, -4, -33)$.
-  2. $\begin{vmatrix}6 & 0 & -30\\ 0 & \lambda-5 & -28\\ 2\lambda-1 & -4 & -33\end{vmatrix} = 6[-33(\lambda-5) - 112] - 30[0 - (\lambda-5)(2\lambda-1)]$.
-  3. This simplifies to $60\lambda^2 - 528\lambda + 468 = 0$.
-  4. Sum of roots $= \frac{528}{60} = \frac{44}{5}$.
+  1. From A(1, 5, 35):
+     - AB = (6, 0, −30);
+     - AC = (0, λ − 5, −28);
+     - AD = (2λ − 1, −4, −33).
+  2. Determinant: 6[(λ − 5)(−33) − (−28)(−4)] − 0 + (−30)[0·(−4) − (λ − 5)(2λ − 1)] = 0.
+  3. Simplify: 6[−33λ + 165 − 112] + 30(λ − 5)(2λ − 1) = 6(−33λ + 53) + 30(2λ² − 11λ + 5) = 60λ² − 528λ + 468 = 0.
+  4. The sum of the roots is 528/60 = 44/5.
+  Why others are wrong:
+  - (A) −44/5 has the wrong sign.
+  - (B) and (C) ±39/5 come from arithmetic slips in the determinant.
+  Tip: you do not need the individual roots. Vieta's formula gives the sum directly from the quadratic.
   Answer: (D)
 M A 19: |-
-  Concept: The equivalence class of a point is the set of points related to it: here, the points at the same distance from the origin.
+  Concept: The relation "P and Q are at the same distance from the origin" is an equivalence relation. It is reflexive, symmetric and transitive. The equivalence class of a point is the set of all points related to it.
   Solution:
-  1. The distance of $(1, -1)$ from the origin is $\sqrt2$.
-  2. Class $= \{(x, y) : x^2 + y^2 = 2\}$.
+  1. The distance of (1, −1) from the origin is √(1 + 1) = √2.
+  2. The points at distance √2 from the origin satisfy x² + y² = (√2)² = 2.
+  3. So the equivalence class is {(x, y) : x² + y² = 2}, a circle of radius √2 centred at the origin.
+  Why others are wrong:
+  - (C) x² + y² = √2 uses the distance, not its square.
+  - (A) and (B) have radius 1 and 2, which do not match.
+  Tip: this relation partitions the plane into concentric circles (with the origin as its own class). Each circle is one equivalence class.
   Answer: (D)
 M A 20: |-
-  Concept: In a circle with diameter $OB$ and chord $PQ \perp OB$ at $A$: $PA^2 = OA\cdot AB$ (intersecting chords).
+  Concept: Intersecting chords theorem. If a diameter OB and a chord PQ meet at right angles at A, then PA = AQ and PA² = OA × AB. (Equivalently, the angle in a semicircle, OPB, is 90°.)
+  Given (figure): OA = 1, OB = 13 (the diameter), and PQ ⊥ OB at A.
   Solution:
-  1. $OA = 1$, $AB = 13 - 1 = 12$, so $PA^2 = 12$, $PA = 2\sqrt3$, $PQ = 4\sqrt3$.
-  2. Area of $\triangle PQB = \frac{1}{2}\cdot PQ\cdot AB = \frac{1}{2}\cdot4\sqrt3\cdot12 = 24\sqrt3$.
+  1. AB = OB − OA = 12.
+  2. PA² = OA × AB = 1 × 12 = 12, so PA = 2√3 and PQ = 4√3.
+  3. Triangle PQB has base PQ = 4√3 and height AB = 12 (the perpendicular distance from B to PQ).
+  4. Area = ½ × 4√3 × 12 = 24√3.
+  Why others are wrong:
+  - (A) 26√3 uses the full diameter 13 as the height.
+  - (B) and (D) use √2 instead of √3.
+  Tip: the relation PA² = OA·AB is the altitude-on-hypotenuse theorem in the right triangle OPB.
   Answer: (C)
 M B 1: |-
-  Concept: Sketch $y = ||x-1| - 2|$ by transforming $y = |x|$.
+  Concept: Graph y = ||x − 1| − 2| by transforming y = |x| step by step: shift right by 1, shift down by 2, then reflect the negative part upwards.
   Solution:
-  1. $|x-1| - 2$ is a V with vertex $(1, -2)$ and zeros at $x = -1$ and $x = 3$.
-  2. Taking the modulus reflects the part below the axis: the graph is a W touching the x-axis at $(-1, 0)$ and $(3, 0)$ with a peak at $(1, 2)$.
-  3. The only closed region formed with the x-axis is the triangle $(-1, 0)$, $(1, 2)$, $(3, 0)$, of area $\frac{1}{2}\cdot4\cdot2 = 4$.
-  Note: As printed, the curve alone bounds no region, so the question is flawed. ALLEN marks it Bonus; the NTA key gives 8, which is recorded here.
+  1. |x − 1| − 2 is a V-shape with its vertex at (1, −2), crossing zero at x = −1 and x = 3.
+  2. Taking the absolute value reflects the part between x = −1 and x = 3 above the axis. The graph becomes a W shape:
+     - it touches the x-axis at (−1, 0) and (3, 0);
+     - it has a peak at (1, 2);
+     - it rises linearly for |x − 1| > 2.
+  3. With the x-axis, the only closed region is the triangle (−1, 0), (1, 2), (3, 0), with area ½ × 4 × 2 = 4.
+  Note: as printed, "the area bounded by the lines y = ||x − 1| − 2|" does not define a closed region clearly, so the question is flawed. ALLEN marked it Bonus. The NTA key gives 8, which may count the region twice or include extra boundaries. We record the official value.
   Answer: 8
 M B 2: |-
-  Concept: $a\sin x + b\cos x$ takes every value in $[-\sqrt{a^2+b^2}, \sqrt{a^2+b^2}]$.
+  Concept: The expression a sin x + b cos x can be written as R sin(x + φ), with R = √(a² + b²). It takes every value in [−R, R] and no others.
+  Given: 3 sin x + 4 cos x = k + 1.
   Solution:
-  1. $3\sin x + 4\cos x \in [-5, 5]$, so $-5 \le k + 1 \le 5$, i.e. $-6 \le k \le 4$.
-  2. Integers from $-6$ to $4$: 11.
+  1. R = √(9 + 16) = 5, so 3 sin x + 4 cos x ∈ [−5, 5].
+  2. A solution exists exactly when −5 ≤ k + 1 ≤ 5, i.e. −6 ≤ k ≤ 4.
+  3. The integers from −6 to 4 are −6, −5, …, 4, which is 11 values.
+  Common mistakes:
+  - using the range [−7, 7] (adding 3 + 4);
+  - counting only positive k.
+  Tip: the extreme values are reached when tan x = a/b; here tan x = 3/4 gives the maximum 5.
   Answer: 11
 M B 3: |-
-  Concept: $\binom{n}{r} = \binom{n}{n-r}$ and $\sum r\binom{n}{r} = n2^{n-1}$.
+  Concept: Two binomial facts:
+  - symmetry: $\binom{n}{r} = \binom{n}{n-r}$;
+  - $\sum_{j=0}^{n}j\binom{n}{j} = n\cdot2^{n-1}$, from differentiating (1 + x)ⁿ and putting x = 1.
   Solution:
-  1. The sum is $\sum_{r=0}^{30}(30 - r)\binom{30}{r}$ (the $r = 30$ term is 0).
-  2. Put $j = 30 - r$: $\sum_{j}j\binom{30}{j} = 30\cdot2^{29} = 15\cdot2^{30}$.
-  3. $n = 15$ (odd), $m = 30$, so $n + m = 45$.
+  1. The sum is $\sum_{r=0}^{29}(30 - r)\binom{30}{r}$. The r = 30 term would be 0 × 1 = 0, so the sum can run to 30.
+  2. Using $\binom{30}{r} = \binom{30}{30-r}$ and setting j = 30 − r: $\sum_{j=0}^{30}j\binom{30}{j} = 30\cdot2^{29}$.
+  3. 30 × 2²⁹ = 15 × 2³⁰.
+  4. With n odd (gcd(2, n) = 1): n = 15 and m = 30.
+  5. n + m = 45.
+  Check with a small case, n = 2: 2·²C₀ + 1·²C₁ = 2 + 2 = 4 = 2·2¹ ✓.
+  Tip: whenever the coefficients run in decreasing order (30, 29, …), reverse the index. It turns into the familiar Σ j·C(n, j).
   Answer: 45
 M B 4: |-
-  Concept: Substitute $u = e^{\sin y}$ to get a linear equation.
+  Concept: Look for a substitution that turns the equation into a linear first-order ODE. Here $\frac{d}{dx}e^{\sin y} = e^{\sin y}\cos y\,y'$, so let u = e^{sin y}.
   Solution:
-  1. $\frac{du}{dx} = e^{\sin y}\cos y\frac{dy}{dx}$, so $u' + u\cos x = \cos x$, i.e. $(u - 1)' = -\cos x\,(u - 1)$.
-  2. $u - 1 = Ce^{-\sin x}$; $y(0) = 0$ gives $u(0) = 1$, so $C = 0$.
-  3. $u \equiv 1 \Rightarrow \sin y = 0 \Rightarrow y \equiv 0$.
-  4. The expression is $1 + 0 + 0 + 0 = 1$.
+  1. The equation becomes u′ + u cos x = cos x, i.e. u′ = −cos x (u − 1).
+  2. Separating: $\frac{d(u - 1)}{u - 1} = -\cos x\,dx$, so u − 1 = Ce^{−sin x}.
+  3. y(0) = 0 gives u(0) = e⁰ = 1, so C = 0.
+  4. So u ≡ 1, i.e. e^{sin y} = 1, sin y = 0, and y ≡ 0 near x = 0 (the continuous branch through the origin).
+  5. The expression is 1 + y(π/6) + (√3/2)y(π/3) + (1/√2)y(π/4) = 1 + 0 + 0 + 0 = 1.
+  Tip: when the initial condition sits exactly at an equilibrium of the transformed equation (here u = 1), the solution stays constant.
   Answer: 1
 M B 5: |-
-  Concept: Change of base, $\log_4 t = \frac{1}{2}\log_2 t$, and check the domain.
+  Concept: To solve an equation with logarithms of different bases, convert to a common base with $\log_{a^k}t = \frac{1}{k}\log_at$. Always check the domain: every argument must be positive.
   Solution:
-  1. Domain: $x > 3$.
-  2. $\frac{1}{2}\log_2(x-1) = \log_2(x-3) \Rightarrow x - 1 = (x-3)^2 \Rightarrow x^2 - 7x + 10 = 0$, so $x = 2$ or $5$.
-  3. Only $x = 5$ satisfies $x > 3$, so there is 1 solution.
+  1. Domain: x − 1 > 0 and x − 3 > 0, so x > 3.
+  2. log₄(x − 1) = ½ log₂(x − 1). The equation becomes ½ log₂(x − 1) = log₂(x − 3), i.e. log₂(x − 1) = log₂(x − 3)².
+  3. So x − 1 = (x − 3)², i.e. x² − 7x + 10 = 0, giving (x − 2)(x − 5) = 0.
+  4. x = 2 fails the domain (x − 3 < 0). x = 5 works.
+  5. Check: log₄ 4 = 1 and log₂ 2 = 1 ✓.
+  6. Number of solutions = 1.
+  Common mistake: forgetting the domain and counting both roots.
+  Tip: squaring or changing base can introduce extraneous roots. Always substitute back.
   Answer: 1
 M B 6: |-
-  Concept: Solve as a quadratic in $\cos x$.
+  Concept: Treat the trigonometric equation as a quadratic in c = cos x, solve it, and keep the roots that give valid x in the interval.
   Solution:
-  1. $\sqrt3c^2 - (\sqrt3 - 1)c - 1 = 0$ factorises as $(c - 1)(\sqrt3c + 1) = 0$.
-  2. $\cos x = 1 \Rightarrow x = 0$ (in the interval).
-  3. $\cos x = -\frac{1}{\sqrt3} < 0$ has no solution in $\left[0, \frac{\pi}{2}\right]$.
-  4. Number of solutions: 1.
+  1. √3c² − (√3 − 1)c − 1 = 0.
+  2. Try c = 1: √3 − √3 + 1 − 1 = 0 ✓. So (c − 1) is a factor: (c − 1)(√3c + 1) = 0.
+  3. c = 1 gives cos x = 1, so x = 0, which lies in [0, π/2] ✓.
+  4. c = −1/√3 gives cos x < 0, which is impossible in [0, π/2], where cos x ≥ 0.
+  5. So there is exactly 1 solution (x = 0).
+  Check the factorisation: (c − 1)(√3c + 1) = √3c² + c − √3c − 1 = √3c² − (√3 − 1)c − 1 ✓.
+  Tip: in [0, π/2], cos x runs over [0, 1], so reject any negative cos value immediately.
   Answer: 1
 M B 7: |-
-  Concept: The line joining the two points gives the plane's normal.
+  Concept: If a plane is perpendicular to a line, the line's direction is the plane's normal. Write the plane through the given point, then substitute the other point to find λ.
   Solution:
-  1. Normal $= (-1+2, -16+21, 23-29) = (1, 5, -6)$.
-  2. Plane through $(4, -2, 2)$: $(x-4) + 5(y+2) - 6(z-2) = 0$.
-  3. For $(\lambda, 2, 1)$: $\lambda - 4 + 20 + 6 = 0 \Rightarrow \lambda = -22$.
-  4. $\frac{\lambda}{11} = -2$: $4 + 8 - 4 = 8$.
+  1. Direction of the line through (−2, −21, 29) and (−1, −16, 23): (1, 5, −6). This is the normal.
+  2. Plane through (4, −2, 2): 1(x − 4) + 5(y + 2) − 6(z − 2) = 0, i.e. x + 5y − 6z + 18 = 0.
+  3. The point (λ, 2, 1) lies on it: λ + 10 − 6 + 18 = 0, so λ = −22.
+  4. λ/11 = −2. The expression is (−2)² − 4(−2) − 4 = 4 + 8 − 4 = 8.
+  Check: (4, −2, 2) gives 4 − 10 − 12 + 18 = 0 ✓.
+  Tip: a plane "perpendicular to a line" has that line's direction as its normal. Do not confuse this with a plane "containing" or "parallel to" a line, where the normal is perpendicular to the direction.
   Answer: 8
 M B 8: |-
-  Concept: Eliminate the one parameter; degree is the power of the highest derivative once the equation is free of radicals.
+  Concept: To form the differential equation of a family with one parameter, differentiate once and eliminate the parameter. The order is the highest derivative present. The degree is the power of that derivative after removing radicals and fractions in the derivatives.
+  Given: y² = a(x + √a/2) = ax + a^{3/2}/2, with a > 0.
   Solution:
-  1. $y^2 = ax + \frac{a^{3/2}}{2}$; differentiating gives $2yy' = a$.
-  2. Substitute: $y^2 = 2xyy' + \frac{(2yy')^{3/2}}{2}$, i.e. $2(y^2 - 2xyy') = (2yy')^{3/2}$.
-  3. Squaring: $4(y^2 - 2xyy')^2 = 8(yy')^3$, so the order is 1 and the degree is 3.
-  4. Difference $= 3 - 1 = 2$.
+  1. Differentiate: 2yy′ = a.
+  2. Substitute a = 2yy′: y² = 2xyy′ + (2yy′)^{3/2}/2.
+  3. Rearrange: 2(y² − 2xyy′) = (2yy′)^{3/2}.
+  4. Square to remove the fractional power: 4(y² − 2xyy′)² = (2yy′)³ = 8y³(y′)³.
+  5. The highest derivative is y′ (order 1), and its highest power is 3 (degree 3).
+  6. Degree − order = 3 − 1 = 2.
+  Common mistake: stating the degree as 3/2 before clearing the radical. The degree must be a positive integer.
   Answer: 2
 M B 9: |-
-  Concept: Factorise and use cube roots of unity.
+  Concept: Factorise the cubic and recognise the cube roots of unity. The roots of x² − x + 1 = 0 are −ω and −ω², where ω = e^{2πi/3}, ω³ = 1 and 1 + ω + ω² = 0.
   Solution:
-  1. $x^3 - 2x^2 + 2x - 1 = (x - 1)(x^2 - x + 1)$; the roots are $1, -\omega, -\omega^2$.
-  2. 162 is even and a multiple of 3: $(-\omega)^{162} = \omega^{162} = 1$, and likewise $(-\omega^2)^{162} = 1$.
-  3. Sum $= 1 + 1 + 1 = 3$.
+  1. x³ − 2x² + 2x − 1: x = 1 is a root (1 − 2 + 2 − 1 = 0). Dividing gives (x − 1)(x² − x + 1).
+  2. The roots of x² − x + 1 = 0 are −ω and −ω². They are the primitive 6th roots of unity, e^{±iπ/3}.
+  3. The 162nd powers:
+     - 1¹⁶² = 1;
+     - (−ω)¹⁶² = (−1)¹⁶²ω¹⁶² = ω^{3×54} = 1;
+     - similarly (−ω²)¹⁶² = 1.
+  4. Sum = 3.
+  Tip: sixth roots of unity raised to a power that is a multiple of 6 give 1. Since 162 = 6 × 27, every root gives 1.
   Answer: 3
 M B 10: |-
-  Concept: $|\sin2x|$ has period $\frac{\pi}{2}$.
+  Concept: |sin 2x| has period π/2 (sin 2x has period π, and the absolute value halves it). So an integral over [0, π] covers two identical humps.
   Solution:
-  1. $\int_0^{\pi}|\sin2x|dx = 2\int_0^{\pi/2}\sin2x\,dx = 2\left[-\frac{\cos2x}{2}\right]_0^{\pi/2} = 2\cdot1 = 2$.
+  1. On [0, π/2], sin 2x ≥ 0: $\int_0^{\pi/2}\sin2x\,dx = \left[-\frac{\cos2x}{2}\right]_0^{\pi/2} = \frac{1}{2} + \frac{1}{2} = 1$.
+  2. On [π/2, π], sin 2x ≤ 0, but the absolute value flips it, giving another area of 1.
+  3. Total = 2.
+  Common mistake: dropping the absolute value, which gives ∫₀^π sin 2x dx = 0.
+  Tip: in general, $\int_0^{n\pi/k}|\sin kx|\,dx = \frac{2n}{k}$. Each hump of |sin kx| has area 2/k.
+  Check with symmetry: ∫₀^π |sin 2x| dx = 2∫₀^{π/2} sin 2x dx = 2 × 1 = 2.
+  Key takeaway: For |periodic function| integrals, count the identical humps and multiply by the area of one.
   Answer: 2

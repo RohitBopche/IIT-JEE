@@ -1,186 +1,390 @@
 M A 1: |-
-  Concept: Eliminate the parameter a by differentiating.
+  Concept: To find the differential equation of a one-parameter family of curves, differentiate once and eliminate the parameter. The order of the equation equals the number of arbitrary constants.
   Solution:
-  1. $2yy' = 4a \Rightarrow a = \frac{yy'}{2}$.
-  2. $y^2 = 2yy'\left(x + \frac{yy'}{2}\right) \Rightarrow y = 2xy' + yy'^2$.
-  3. $y\left(\frac{dy}{dx}\right)^2 + 2x\frac{dy}{dx} - y = 0$.
+  1. Family: y² = 4a(x + a), with one parameter a.
+  2. Differentiate with respect to x: 2yy′ = 4a, so $a = \frac{yy'}{2}$.
+  3. Substitute back: $y^2 = 4\cdot\frac{yy'}{2}\left(x + \frac{yy'}{2}\right) = 2yy'x + y^2y'^2$.
+  4. Divide by y (y ≠ 0): $y = 2xy' + yy'^2$.
+  5. Rearrange: $y\left(\frac{dy}{dx}\right)^2 + 2x\frac{dy}{dx} - y = 0$.
+  Check with a member of the family: a = 1 gives y² = 4x + 4. Then y′ = $\frac{2}{y}$. Substitute: $y\cdot\frac{4}{y^2} + 2x\cdot\frac{2}{y} - y = \frac{4 + 4x - y^2}{y} = \frac{4 + 4x - 4x - 4}{y} = 0$ ✓.
+  Note: this family consists of parabolas with focus at the origin (the family is confocal). The equation is of first order but second degree.
+  Why others are wrong:
+  - (A) and (B) have −2xy′ instead of +2xy′.
+  - (D) has y′ instead of (y′)² in the first term, giving the wrong degree.
   Answer: (C)
 M A 2: |-
-  Concept: Solve for the abscissa and require it to be an integer.
+  Concept: Solve the two equations for the x-coordinate of the intersection. For it to be an integer, the denominator must divide the numerator. Then check which of the resulting m values are integers.
   Solution:
-  1. $3x + 4(mx + 1) = 9 \Rightarrow x = \frac{5}{3 + 4m}$.
-  2. $3 + 4m \in \{\pm1, \pm5\} \Rightarrow m = -\frac{1}{2}, -1, \frac{1}{2}, -2$.
-  3. Integral values: $m = -1, -2$, i.e. 2 values.
+  1. Substitute y = mx + 1 into 3x + 4y = 9: 3x + 4mx + 4 = 9, so x(3 + 4m) = 5 and $x = \frac{5}{3 + 4m}$.
+  2. For x to be an integer, 3 + 4m must be a divisor of 5: ±1 or ±5.
+     - 3 + 4m = 1: m = −½.
+     - 3 + 4m = −1: m = −1 (x = −5).
+     - 3 + 4m = 5: m = ½.
+     - 3 + 4m = −5: m = −2 (x = −1).
+  3. Integral values of m: −1 and −2. That is 2 values.
+  Check: m = −1: the line y = −x + 1 meets 3x + 4y = 9 at 3x − 4x + 4 = 9, x = −5 ✓. m = −2: y = −2x + 1, 3x − 8x + 4 = 9, x = −1 ✓.
+  Note: m = $-\frac{3}{4}$ would make the lines parallel (no intersection), but it is not an integer anyway.
+  Why others are wrong:
+  - (A) 1 misses one of the values.
+  - (C) 3 wrongly includes a non-integer m.
+  - (D) 0 misses both.
   Answer: (B)
 M A 3: |-
-  Concept: $\frac{f(1) - f(-1)}{2}$ gives the sum of odd-index coefficients.
+  Concept: For a polynomial f(x) = Σaₖxᵏ, the sum of odd-index coefficients is $\frac{f(1) - f(-1)}{2}$. If the required sum stops before the last odd index, subtract the missing terms separately.
   Solution:
-  1. $f(1) = 4^{20}$ and $f(-1) = 2^{20}$, so the odd sum $= 2^{19}(2^{20} - 1)$.
-  2. Remove $a_{39}$: $a_{39} = 20\cdot2^{19}$ (from $x\cdot(2x^2)^{19}$).
-  3. $a_1 + \dots + a_{37} = 2^{19}(2^{20} - 21)$.
+  1. f(x) = (1 + x + 2x²)²⁰ has degree 40.
+  2. f(1) = (1 + 1 + 2)²⁰ = 4²⁰ = 2⁴⁰. f(−1) = (1 − 1 + 2)²⁰ = 2²⁰.
+  3. Sum of all odd-index coefficients: $a_1 + a_3 + \dots + a_{39} = \frac{2^{40} - 2^{20}}{2} = 2^{19}(2^{20} - 1)$.
+  4. The question's sum stops at a₃₇, so subtract a₃₉.
+  5. a₃₉ (coefficient of x³⁹): the maximum power, 40, comes from choosing 2x² from all 20 factors. To get x³⁹, choose 2x² from 19 factors and x from 1 factor: $\binom{20}{1}\cdot1\cdot2^{19} = 20\cdot2^{19}$.
+  6. $a_1 + a_3 + \dots + a_{37} = 2^{19}(2^{20} - 1) - 20\cdot2^{19} = 2^{19}(2^{20} - 21)$.
+  Why others are wrong:
+  - (A) and (D) have 2²⁰ instead of 2¹⁹ (forgetting to halve).
+  - (C) adds 21 instead of subtracting.
   Answer: (B)
 M A 4: |-
-  Concept: Row operations reduce the determinant.
+  Concept: Use row and column operations to simplify the determinant before expanding. Here adding R₂ to R₁ uses sin²x + cos²x = 1.
   Solution:
-  1. $R_1 \to R_1 + R_2$ gives $(2, 2, 1)$; then $C_1 \to C_1 - C_2$ simplifies to $\Delta = 2 + 4\sin2x$.
-  2. $\sin2x = -\frac{1}{2}$, so $2x = \frac{7\pi}{6}, \frac{11\pi}{6}$, i.e. $x = \frac{7\pi}{12}, \frac{11\pi}{12}$.
+  1. R₁ → R₁ + R₂: (1 + sin²x + cos²x, sin²x + 1 + cos²x, sin²x + cos²x) = (2, 2, 1).
+  2. The determinant is now $\begin{vmatrix}2 & 2 & 1\\ \cos^2x & 1 + \cos^2x & \cos^2x\\ 4\sin2x & 4\sin2x & 1 + 4\sin2x\end{vmatrix}$.
+  3. C₁ → C₁ − C₂: the first column becomes (0, −1, 0).
+  4. Expand along the first column: only the (2,1) entry, −1, contributes, with cofactor sign (−1)²⁺¹ = −1.
+     Δ = (−1)(−1) × $\begin{vmatrix}2 & 1\\ 4\sin2x & 1 + 4\sin2x\end{vmatrix}$ = 2(1 + 4 sin 2x) − 4 sin 2x = 2 + 4 sin 2x.
+  5. Δ = 0 gives sin 2x = −½.
+  6. For 0 < x < π, 2x ∈ (0, 2π): 2x = $\frac{7\pi}{6}$ or $\frac{11\pi}{6}$.
+  7. x = $\frac{7\pi}{12}$ or $\frac{11\pi}{12}$.
+  Why others are wrong:
+  - (A) $\frac{\pi}{12}, \frac{\pi}{6}$ and (C) $\frac{5\pi}{12}, \frac{7\pi}{12}$ include angles where sin 2x > 0.
+  - (B) $\frac{\pi}{6}, \frac{5\pi}{6}$ give sin 2x = ±$\frac{\sqrt3}{2}$.
   Answer: (D)
 M A 5: |-
-  Concept: Compare the distance between centres with $r_1 + r_2$.
+  Concept: The relative position of two circles is decided by comparing the distance d between centres with r₁ + r₂ and |r₁ − r₂|. If d = r₁ + r₂, they touch externally at exactly one point.
   Solution:
-  1. Centres (5, 5) and (11, 5), each of radius 3; distance $= 6 = r_1 + r_2$.
-  2. The circles touch externally: one common point.
+  1. Circle 1: x² + y² − 10x − 10y + 41 = 0. Centre (5, 5), radius $\sqrt{25 + 25 - 41} = 3$.
+  2. Circle 2: x² + y² − 22x − 10y + 137 = 0. Centre (11, 5), radius $\sqrt{121 + 25 - 137} = 3$.
+  3. d = 11 − 5 = 6 and r₁ + r₂ = 6.
+  4. d = r₁ + r₂, so the circles touch externally at one point.
+  5. The point of contact is on the line of centres, midway (since the radii are equal): (8, 5).
+  Check: (8, 5) on circle 1: 64 + 25 − 80 − 50 + 41 = 0 ✓. On circle 2: 64 + 25 − 176 − 50 + 137 = 0 ✓.
+  Number of common tangents: when circles touch externally, there are 3 common tangents (two direct and one at the point of contact).
+  Why others are wrong:
+  - (A) The centres differ.
+  - (B) They do meet (touch).
+  - (D) Two meeting points would need d < r₁ + r₂.
   Answer: (C)
 M A 6: |-
-  Concept: A homogeneous system has a non-trivial solution iff the determinant is 0 (a circulant here).
+  Concept: A homogeneous linear system has a non-trivial solution iff its coefficient determinant is zero. The coefficient matrix here is a circulant, and $\begin{vmatrix}\alpha & \beta & \gamma\\ \beta & \gamma & \alpha\\ \gamma & \alpha & \beta\end{vmatrix} = -(\alpha^3 + \beta^3 + \gamma^3 - 3\alpha\beta\gamma)$.
   Solution:
-  1. $\Delta = -(\alpha^3 + \beta^3 + \gamma^3 - 3\alpha\beta\gamma) = -(\alpha + \beta + \gamma)\left(\sum\alpha^2 - \sum\alpha\beta\right) = 0$.
-  2. $\sum\alpha = -a \ne 0$, so $\sum\alpha^2 = \sum\alpha\beta \Rightarrow a^2 - 2b = b \Rightarrow a^2 = 3b$.
-  3. $\frac{a^2}{b} = 3$.
+  1. The identity $\alpha^3 + \beta^3 + \gamma^3 - 3\alpha\beta\gamma = (\alpha + \beta + \gamma)(\alpha^2 + \beta^2 + \gamma^2 - \alpha\beta - \beta\gamma - \gamma\alpha)$.
+  2. Non-trivial solution: Δ = 0, so either α + β + γ = 0 or Σα² − Σαβ = 0.
+  3. By Vieta: α + β + γ = −a ≠ 0 (given a ≠ 0). So Σα² = Σαβ.
+  4. Σαβ = b, and Σα² = (Σα)² − 2Σαβ = a² − 2b.
+  5. a² − 2b = b, so a² = 3b and $\frac{a^2}{b} = 3$.
+  Interpretation: Σα² − Σαβ = ½[(α − β)² + (β − γ)² + (γ − α)²]. For real roots, this is zero only if α = β = γ. So all three roots are equal, the cubic is (x + $\frac{a}{3}$)³, and then a² = 3b ✓ (from expanding: b = $\frac{a^2}{3}$).
+  Why others are wrong: (A) 5, (C) 1 and (D) 0 do not satisfy this relation.
   Answer: (B)
 M A 7: |-
-  Concept: Substitution $t = \sqrt{(2x - 1)^2 + 5}$ (note $4x^2 - 4x + 6 = (2x - 1)^2 + 5$).
+  Concept: Recognise that the expression under the square root in the denominator is the same as inside the cosine: 4x² − 4x + 6 = (2x − 1)² + 5. Then substitute for the whole square root.
   Solution:
-  1. $dt = \frac{2(2x - 1)}{t}dx$, so the integrand becomes $\frac{1}{2}\cos t\,dt$.
-  2. Result: $\frac{1}{2}\sin\sqrt{(2x - 1)^2 + 5} + c$.
+  1. Let $t = \sqrt{(2x - 1)^2 + 5}$. Then $t^2 = (2x - 1)^2 + 5$.
+  2. Differentiate: 2t dt = 2(2x − 1)·2 dx, so $(2x - 1)dx = \frac{t\,dt}{2}$.
+  3. The integral becomes $\int\frac{\cos t}{t}\cdot\frac{t\,dt}{2} = \frac{1}{2}\int\cos t\,dt = \frac{1}{2}\sin t + c$.
+  4. Result: $\frac{1}{2}\sin\sqrt{(2x - 1)^2 + 5} + c$.
+  Verification by differentiation: $\frac{d}{dx}\left[\frac{1}{2}\sin t\right] = \frac{1}{2}\cos t\cdot\frac{dt}{dx}$, and $\frac{dt}{dx} = \frac{2(2x - 1)}{t}$. So the derivative is $\frac{(2x - 1)\cos t}{t}$, the original integrand ✓.
+  Why others are wrong:
+  - (B) and (C) have cos instead of sin (the integral of cos is sin).
+  - (B) and (D) have (2x + 1) instead of (2x − 1).
   Answer: (A)
 M A 8: |-
-  Concept: Angle between lines: $\tan\theta = \left|\frac{m - m_1}{1 + mm_1}\right|$.
+  Concept: The angle θ between lines with slopes m and m₁ satisfies $\tan\theta = \left|\frac{m - m_1}{1 + mm_1}\right|$. Removing the modulus gives two equations and two possible lines.
   Solution:
-  1. $m_1 = 3\sqrt2$: $m - 3\sqrt2 = \sqrt2(1 + 3\sqrt2m) \Rightarrow m = -\frac{4\sqrt2}{5}$.
-  2. Line through (1, 3): $5y - 15 = -4\sqrt2(x - 1) \Rightarrow 4\sqrt2x + 5y - (15 + 4\sqrt2) = 0$.
+  1. The given line y + 1 = 3√2x has slope m₁ = 3√2. We need tan θ = √2.
+  2. Case 1: $\frac{m - 3\sqrt2}{1 + 3\sqrt2m} = \sqrt2$. Then m − 3√2 = √2 + 6m, so −5m = 4√2 and $m = -\frac{4\sqrt2}{5}$.
+  3. Case 2: $\frac{m - 3\sqrt2}{1 + 3\sqrt2m} = -\sqrt2$. Then m − 3√2 = −√2 − 6m, so 7m = 2√2 and $m = \frac{2\sqrt2}{7}$.
+  4. Line through (1, 3) with $m = -\frac{4\sqrt2}{5}$: $y - 3 = -\frac{4\sqrt2}{5}(x - 1)$, i.e. 5y − 15 = −4√2x + 4√2, i.e. $4\sqrt2x + 5y - (15 + 4\sqrt2) = 0$.
+  5. This matches option (A).
+  Check: (1, 3) gives 4√2 + 15 − 15 − 4√2 = 0 ✓.
+  Why others are wrong:
+  - (B) has slope $-\frac{5\sqrt2}{4}$, which does not satisfy the angle condition.
+  - (C) has the correct slope but does not pass through (1, 3).
+  - (D) has slope $+\frac{4\sqrt2}{5}$, which does not satisfy the condition.
   Answer: (A)
 M A 9: |-
-  Concept: Series: $\sin^{-1}x = x + \frac{x^3}{6} + \dots$, $\tan^{-1}x = x - \frac{x^3}{3} + \dots$
+  Concept: For small x, use the Maclaurin series $\sin^{-1}x = x + \frac{x^3}{6} + O(x^5)$ and $\tan^{-1}x = x - \frac{x^3}{3} + O(x^5)$.
   Solution:
-  1. Numerator $\approx \frac{x^3}{2}$, so $L = \frac{1}{6}$.
-  2. $6L + 1 = 2$.
+  1. Numerator: $\sin^{-1}x - \tan^{-1}x = \left(x + \frac{x^3}{6}\right) - \left(x - \frac{x^3}{3}\right) + \dots = \frac{x^3}{6} + \frac{x^3}{3} = \frac{x^3}{2}$.
+  2. $L = \lim_{x\to0}\frac{x^3/2}{3x^3} = \frac{1}{6}$.
+  3. 6L + 1 = 1 + 1 = 2.
+  Alternative (L'Hôpital's rule, three times): $\frac{d}{dx}(\sin^{-1}x - \tan^{-1}x) = \frac{1}{\sqrt{1 - x^2}} - \frac{1}{1 + x^2}$. Expanding: $(1 + \frac{x^2}{2}) - (1 - x^2) = \frac{3x^2}{2}$. Dividing by the derivative of 3x³, which is 9x², gives $\frac{3/2}{9} = \frac{1}{6}$ ✓.
+  Why the x terms cancel: both inverse functions behave like x near 0 (their graphs are tangent to y = x at the origin). The difference comes only from the cubic terms, which is why the denominator has x³.
+  Why others are wrong:
+  - (A) $\frac{1}{6}$ is L itself, not 6L + 1.
+  - (B) ½ is the coefficient of x³ in the numerator.
+  - (C) 6 would give L = $\frac{5}{6}$.
   Answer: (D)
 M A 10: |-
-  Concept: Rotation of axes preserves the vector's magnitude.
+  Concept: Rotating the coordinate axes changes the components of a vector but not its length. So the sums of the squares of the components are the same in both systems.
   Solution:
-  1. $9p^2 + 1 = (p + 1)^2 + 10 \Rightarrow 4p^2 - p - 5 = 0 \Rightarrow p = -1$ or $\frac{5}{4}$.
-  2. The option given is $p = -1$.
+  1. Old components: (3p, 1). New components: (p + 1, √10).
+  2. Equal magnitudes: (3p)² + 1² = (p + 1)² + (√10)².
+  3. 9p² + 1 = p² + 2p + 1 + 10, so 8p² − 2p − 10 = 0, i.e. 4p² − p − 5 = 0.
+  4. Factorise: (4p − 5)(p + 1) = 0, so p = $\frac{5}{4}$ or p = −1.
+  5. Among the options, p = −1 appears (option D). (p = $\frac{5}{4}$ is also a solution, but option (B) lists $-\frac{5}{4}$, which does not satisfy the equation.)
+  Check p = −1: old vector (−3, 1), magnitude √10. New components (0, √10), magnitude √10 ✓. In the new system, the vector lies along the new y-axis.
+  Why others are wrong:
+  - (A) p = 1: 9 + 1 = 10 vs 4 + 10 = 14 ✗.
+  - (B) $-\frac{5}{4}$: $\frac{225}{16} + 1 = 15.06$ vs $\frac{1}{16} + 10 = 10.06$ ✗.
+  - (C) $\frac{4}{5}$: 6.76 vs 13.24 ✗.
   Answer: (D)
 M A 11: |-
-  Concept: $a|z|^2 + \bar\alpha z + \alpha\bar z + d = 0$ is a circle with centre $-\frac{\alpha}{a}$ and radius² $\frac{|\alpha|^2 - ad}{a^2}$.
+  Concept: The general equation of a circle in complex form is $a|z|^2 + \bar\alpha z + \alpha\bar z + d = 0$, with a and d real (the conjugate in the question's middle term leaves the real expression $\bar\alpha z + \alpha\bar z$ unchanged). Dividing by a and completing the square gives the centre and radius.
   Solution:
-  1. We need $a \ne 0$ (otherwise it is a line) and a positive radius², i.e. $|\alpha|^2 - ad > 0$.
+  1. For a ≠ 0, divide by a: $|z|^2 + \frac{\bar\alpha}{a}z + \frac{\alpha}{a}\bar z + \frac{d}{a} = 0$.
+  2. Complete the square: $\left|z + \frac{\alpha}{a}\right|^2 = \frac{|\alpha|^2}{a^2} - \frac{d}{a} = \frac{|\alpha|^2 - ad}{a^2}$.
+  3. This is a circle with centre $-\frac{\alpha}{a}$ and radius $\frac{\sqrt{|\alpha|^2 - ad}}{|a|}$.
+  4. Conditions for a real circle with positive radius:
+     - a ≠ 0 (if a = 0, the equation is linear, $\bar\alpha z + \alpha\bar z + d = 0$, which is a straight line);
+     - $|\alpha|^2 - ad > 0$ (if it equals 0, the "circle" is a single point; if negative, there is no real locus).
+  5. So the correct condition is $|\alpha|^2 - ad > 0$ and a ∈ ℝ − {0}.
+  Why others are wrong:
+  - (A) "≠ 0" allows negative values (no locus) and doesn't exclude a = 0.
+  - (C) "≥ 0" allows a point circle and allows a = 0 (a line).
+  - (D) α = 0 with a, d > 0 gives $|z|^2 = -\frac{d}{a} < 0$, no locus.
   Answer: (B)
 M A 12: |-
-  Concept: Find the centres.
+  Concept: Find the centre of each circle from its equation. For x² + y² + 2gx + 2fy + c = 0, the centre is (−g, −f).
   Solution:
-  1. M (0, 0), N (1, 0), O (1, 1), P (0, 1).
-  2. These are the vertices of a unit square.
+  1. Circle M: x² + y² = 1. Centre (0, 0).
+  2. Circle N: x² + y² − 2x = 0. Centre (1, 0).
+  3. Circle O: x² + y² − 2x − 2y + 1 = 0. Centre (1, 1).
+  4. Circle P: x² + y² − 2y = 0. Centre (0, 1).
+  5. Joining M → N → O → P → M gives the quadrilateral with vertices (0, 0), (1, 0), (1, 1), (0, 1).
+  6. All sides have length 1, and all angles are 90°. The diagonals are equal (√2) and perpendicular. It is a square.
+  Why "square" is the best answer: a square is also a rhombus, a rectangle and a parallelogram. But the most precise description is "square", since it has all four properties (equal sides and right angles).
+  Also: all four circles have radius 1, and each passes through the centres of its neighbours. For example, circle N (centre (1, 0), radius 1) passes through (0, 0), the centre of M.
   Answer: (B)
 M A 13: |-
-  Concept: $(100 - k)(100 + k) = 100^2 - k^2$.
+  Concept: Pair the factors symmetrically around 100: (100 − k)(100 + k) = 100² − k². The sum then becomes a sum of squares.
   Solution:
-  1. Sum $= \sum_{k=0}^{99}(10^4 - k^2) = 10^6 - \frac{99\cdot100\cdot199}{6} = 100^3 - 199\times1650$.
-  2. $\alpha = 3$, $\beta = 1650$, so the slope is $\frac{1650}{3} = 550$.
+  1. The terms are (100)(100), (99)(101), (98)(102), …, (1)(199). The general term is (100 − k)(100 + k) for k = 0, 1, …, 99.
+  2. Each term equals 10⁴ − k².
+  3. Sum = 100 × 10⁴ − Σ(k = 0 to 99) k² = 10⁶ − $\frac{99\times100\times199}{6}$.
+  4. $\frac{99\times100\times199}{6} = 1650\times199 = 328350$.
+  5. So the sum = 100³ − 199 × 1650.
+  6. Compare with 100^α − 199β: α = 3 and β = 1650.
+  7. Slope of the line through (α, β) and the origin: $\frac{\beta}{\alpha} = \frac{1650}{3} = 550$.
+  Check: 10⁶ − 328350 = 671650. And 100³ − 199 × 1650 = 1,000,000 − 328,350 = 671,650 ✓.
+  Why others are wrong: (A) 540, (C) 530 and (D) 510 come from errors in the sum of squares (e.g. summing k from 1 to 100 instead of 0 to 99).
   Answer: (B)
 M A 14: |-
-  Concept: Domain: $\text{cosec}^{-1}x$ needs $|x| \ge 1$; $\sqrt{x - [x]}$ in the denominator needs $\{x\} > 0$.
+  Concept: The domain of a quotient is where both parts are defined and the denominator is non-zero. For $\text{cosec}^{-1}x$, |x| ≥ 1. For $\sqrt{x - [x]}$ in the denominator, x − [x] = {x} must be strictly positive, i.e. x is not an integer.
   Solution:
-  1. x must be a non-integer with $|x| \ge 1$, i.e. all non-integers outside $[-1, 1]$.
+  1. Numerator: $\text{cosec}^{-1}x$ is defined for x ≤ −1 or x ≥ 1, i.e. x ∉ (−1, 1).
+  2. Denominator: {x} ≥ 0 always, so the square root is defined. But it must not be zero, so {x} > 0, i.e. x is not an integer.
+  3. Combine: x ∉ (−1, 1) and x not an integer. The integers ±1 are excluded by the second condition, so the domain is all non-integers outside [−1, 1].
+  4. Domain: $(-\infty, -1) \cup (1, \infty)$, excluding the integers.
+  Example: x = 1.5 is allowed ({x} = 0.5 and |x| ≥ 1). x = 2 is not ({x} = 0). x = 0.5 is not (|x| < 1).
+  Why others are wrong:
+  - (A) includes non-integers in (−1, 1), where cosec⁻¹ is undefined.
+  - (C) includes integers, where the denominator is 0.
+  - (D) includes integers outside [−1, 1].
   Answer: (B)
 M A 15: |-
-  Concept: $\frac{1}{(2k+1)^2 - 1} = \frac{1}{4k(k+1)} = \frac{1}{4}\left(\frac{1}{k} - \frac{1}{k+1}\right)$.
+  Concept: Factorise the denominator and use partial fractions so that the sum telescopes.
   Solution:
-  1. Telescoping over $k = 1$ to $100$: $\frac{1}{4}\left(1 - \frac{1}{101}\right) = \frac{25}{101}$.
+  1. General term: $(2k + 1)^2 - 1 = 4k^2 + 4k = 4k(k + 1)$ for k = 1, 2, …, 100 (since 2k + 1 runs over 3, 5, …, 201).
+  2. $\frac{1}{4k(k + 1)} = \frac{1}{4}\left(\frac{1}{k} - \frac{1}{k + 1}\right)$.
+  3. Sum: $\frac{1}{4}\sum_{k=1}^{100}\left(\frac{1}{k} - \frac{1}{k + 1}\right) = \frac{1}{4}\left(1 - \frac{1}{101}\right)$ (telescoping).
+  4. $= \frac{1}{4}\cdot\frac{100}{101} = \frac{25}{101}$.
+  Check with the first term: $\frac{1}{9 - 1} = \frac{1}{8}$, and $\frac{1}{4}\left(1 - \frac{1}{2}\right) = \frac{1}{8}$ ✓.
+  Infinite sum: as the number of terms → ∞, the sum → ¼.
+  Why others are wrong:
+  - (A) $\frac{101}{404}$ is exactly ¼ (the infinite sum).
+  - (C) $\frac{101}{408}$ and (D) $\frac{99}{400}$ come from errors in the number of terms or the telescoping.
   Answer: (B)
 M A 16: |-
-  Concept: Intersect the domains, excluding zeros of denominators.
+  Concept: The domain of a sum or difference of functions is the intersection of their domains. For a quotient, the zeros of the denominator must also be removed.
   Solution:
-  1. $f \pm g$ needs $0 \le x \le 1$; $\frac{f}{g}$ needs $x < 1$; $\frac{g}{f}$ needs $x > 0$.
-  2. Common domain: $0 < x < 1$.
+  1. f(x) = √x: defined for x ≥ 0. g(x) = √(1 − x): defined for x ≤ 1.
+  2. f + g, f − g and g − f: defined on the intersection, 0 ≤ x ≤ 1.
+  3. f/g: also needs g(x) ≠ 0, i.e. x ≠ 1. Domain: 0 ≤ x < 1.
+  4. g/f: also needs f(x) ≠ 0, i.e. x ≠ 0. Domain: 0 < x ≤ 1.
+  5. The common domain of all five functions: the intersection of [0, 1], [0, 1) and (0, 1], which is 0 < x < 1.
+  Why others are wrong:
+  - (A) [0, 1] includes x = 0 (where g/f is undefined) and x = 1 (where f/g is undefined).
+  - (B) [0, 1) includes x = 0.
+  - (D) (0, 1] includes x = 1.
   Answer: (C)
 M A 17: |-
-  Concept: Continuity and equal one-sided derivatives at $x = 1$ (symmetry handles $x = -1$).
+  Concept: For a piecewise function to be differentiable at a join, it must be continuous there and the left and right derivatives must match. By symmetry (f is even), checking x = 1 is enough.
   Solution:
-  1. $a + b = 1$.
-  2. $2a = \frac{d}{dx}\frac{1}{x}\Big|_{x=1} = -1 \Rightarrow a = -\frac{1}{2}$, $b = \frac{3}{2}$.
+  1. At x = 1: from the right (|x| ≥ 1), f = $\frac{1}{x}$, value 1 and derivative $-\frac{1}{x^2} = -1$.
+  2. From the left (|x| < 1), f = ax² + b, value a + b and derivative 2ax = 2a.
+  3. Continuity: a + b = 1.
+  4. Differentiability: 2a = −1, so a = −½.
+  5. Then b = 1 − a = $\frac{3}{2}$.
+  6. At x = −1: f = $\frac{1}{|x|} = -\frac{1}{x}$ for x ≤ −1, with value 1 and derivative $\frac{1}{x^2} = 1$. From the right: a + b = 1 ✓, and derivative 2a(−1) = −2a = 1 ✓. So both joins work.
+  The function: $f(x) = -\frac{1}{2}x^2 + \frac{3}{2}$ for |x| < 1. It is a downward parabola that smoothly joins the curve $\frac{1}{|x|}$ at x = ±1.
+  Why others are wrong:
+  - (A) ½, ½: continuous but the derivatives don't match (1 vs −1).
+  - (B) ½, −$\frac{3}{2}$: not continuous (a + b = −1).
+  - (C) $\frac{5}{2}$, −$\frac{3}{2}$: continuous, but 2a = 5 ≠ −1.
   Answer: (D)
 M A 18: |-
-  Concept: Trace is linear.
+  Concept: The trace is linear: tr(A + B) = tr A + tr B and tr(kA) = k tr A. So taking traces of the given matrix equations gives two linear equations in tr A and tr B.
   Solution:
-  1. $\text{tr}A + 2\,\text{tr}B = -1$ and $2\,\text{tr}A - \text{tr}B = 3$.
-  2. $\text{tr}A = 1$ and $\text{tr}B = -1$, so the difference is 2.
+  1. tr(A + 2B) = 1 + (−3) + 1 = −1, so tr A + 2 tr B = −1.
+  2. tr(2A − B) = 2 + (−1) + 2 = 3, so 2 tr A − tr B = 3.
+  3. From the second: tr B = 2 tr A − 3. Substitute: tr A + 4 tr A − 6 = −1, so 5 tr A = 5 and tr A = 1.
+  4. tr B = 2(1) − 3 = −1.
+  5. tr A − tr B = 1 − (−1) = 2.
+  Check: tr A + 2 tr B = 1 − 2 = −1 ✓. 2 tr A − tr B = 2 + 1 = 3 ✓.
+  Efficiency: there is no need to find A and B themselves (which would require solving for all nine entries of each). Linearity of the trace reduces the problem to two scalar equations.
   Answer: (B)
 M A 19: |-
-  Concept: Sum over positions: (sum of digits in each place) × 1111.
+  Concept: The sum of all numbers formed by arranging given digits = (sum of digits appearing in any one place, over all arrangements) × 1111 (for 4-digit numbers), since each place value contributes equally.
   Solution:
-  1. There are $\frac{4!}{2!} = 12$ numbers. In each place, 1 appears 3 times, 2 appears 6 times and 3 appears 3 times.
-  2. Place sum $= 3 + 12 + 9 = 24$, so the total is $24\times1111 = 26664$.
+  1. Digits 1, 2, 2, 3. Number of distinct arrangements: $\frac{4!}{2!} = 12$.
+  2. How often each digit appears in a given place (say units):
+     - 1 in the units place: arrange 2, 2, 3 in the other places, $\frac{3!}{2!} = 3$ ways.
+     - 2 in the units place: arrange 1, 2, 3, 3! = 6 ways.
+     - 3 in the units place: arrange 1, 2, 2, 3 ways.
+     - Total 3 + 6 + 3 = 12 ✓.
+  3. Sum of the units digits over all numbers: 1(3) + 2(6) + 3(3) = 3 + 12 + 9 = 24.
+  4. The same holds for the tens, hundreds and thousands places.
+  5. Total sum: 24 × (1000 + 100 + 10 + 1) = 24 × 1111 = 26664.
+  Check with the average: the average digit in each place is $\frac{24}{12} = 2$, so the average number is 2222. With 12 numbers, the total is 12 × 2222 = 26664 ✓.
+  Why others are wrong: (B) 122664 and (C) 122234 are far too large (more than 12 × 3221). (D) 22264 is too small.
   Answer: (A)
 M A 20: |-
-  Concept: A periodic continued fraction satisfies a quadratic.
+  Concept: A periodic infinite continued fraction repeats itself. Setting it equal to t and using the repeat gives a quadratic equation for t.
   Solution:
-  1. $t = 3 + \frac{t}{4t + 1} \Rightarrow 4t^2 - 12t - 3 = 0$.
-  2. $t = \frac{12 + 8\sqrt3}{8} = 1.5 + \sqrt3$.
+  1. Let $t = 3 + \cfrac{1}{4 + \cfrac{1}{3 + \dots}}$. The part after "4 +" is t again.
+  2. So $t = 3 + \frac{1}{4 + \frac{1}{t}} = 3 + \frac{t}{4t + 1}$.
+  3. Multiply by (4t + 1): t(4t + 1) = 3(4t + 1) + t, so 4t² + t = 12t + 3 + t.
+  4. 4t² − 12t − 3 = 0.
+  5. $t = \frac{12 \pm \sqrt{144 + 48}}{8} = \frac{12 \pm \sqrt{192}}{8} = \frac{12 \pm 8\sqrt3}{8} = 1.5 \pm \sqrt3$.
+  6. t > 3, so take the positive root: t = 1.5 + √3 ≈ 3.232.
+  Numerical check: the convergents are 3, 3 + ¼ = 3.25, then $3 + \frac{1}{4 + 1/3} = 3.2308$, then 3.2321… ✓.
+  Why others are wrong:
+  - (B) 2 + √3 ≈ 3.732 is too large.
+  - (C) 3 + 2√3 ≈ 6.46 and (D) 4 + √3 ≈ 5.73 are far too large.
   Answer: (A)
 M B 1: |-
-  Concept: Count digit occurrences by position over 000–999.
+  Concept: Count digit occurrences position by position. Pad the numbers 0 to 999 to three digits (000 to 999); each of the 10 digits appears equally often in each position.
   Solution:
-  1. In each of the 3 positions, 3 appears in 100 of the 1000 strings.
-  2. Total $= 300$ (1000 has no 3).
+  1. Consider the 1000 three-digit strings from 000 to 999.
+  2. In each position (units, tens, hundreds), each digit 0–9 appears in exactly $\frac{1000}{10} = 100$ strings.
+  3. So the digit 3 appears 100 times in each of the 3 positions: 300 times in total.
+  4. Padding with leading zeros adds only zeros, so it does not change the count of 3s. The number 000 (not in 1–1000) contains no 3.
+  5. The number 1000 contains no 3.
+  6. Total number of times the digit 3 is written from 1 to 1000: 300.
+  Check by position:
+  - Units place: 3, 13, 23, …, 993: 100 times.
+  - Tens place: 30–39, 130–139, …, 930–939: 10 per hundred × 10 = 100.
+  - Hundreds place: 300–399: 100.
+  - Total 300 ✓.
   Answer: 300
 M B 2: |-
-  Concept: The perpendicular bisector plane has normal along AB and passes through the midpoint.
+  Concept: A plane that bisects segment AB at right angles is the perpendicular bisector plane. Its normal is along AB, and it passes through the midpoint of AB.
   Solution:
-  1. $\vec{AB} = (-2, 6, -6) \parallel (1, -3, 3)$; midpoint (3, 0, −2).
-  2. $x - 3y + 3z + d = 0$: $3 - 6 + d = 0 \Rightarrow d = 3$.
-  3. Minimum $a^2 + b^2 + c^2 + d^2 = 1 + 9 + 9 + 9 = 28$.
+  1. A = (4, −3, 1) and B = (2, 3, −5). $\vec{AB} = (-2, 6, -6)$, parallel to (1, −3, 3).
+  2. Midpoint: $\left(\frac{4 + 2}{2}, \frac{-3 + 3}{2}, \frac{1 - 5}{2}\right) = (3, 0, -2)$.
+  3. Plane: x − 3y + 3z + d = 0. Through (3, 0, −2): 3 − 0 − 6 + d = 0, so d = 3.
+  4. Plane: x − 3y + 3z + 3 = 0.
+  5. For integer coefficients, any equation is k(x − 3y + 3z + 3) = 0 with a non-zero integer k. The sum of squares is k²(1 + 9 + 9 + 9) = 28k², which is smallest for |k| = 1.
+  6. Minimum value: 28.
+  Check: the distances from A and B to the plane should be equal. A: |4 + 9 + 3 + 3| = 19. B: |2 − 9 − 15 + 3| = |−19| = 19. Equal ✓ (opposite signs, so on opposite sides).
   Answer: 28
 M B 3: |-
-  Concept: $g(4 - x) = -g(x)$ makes $\int_0^4g = 0$.
+  Concept: The relation g(4 − x) = −g(x) makes g antisymmetric about x = 2, so $\int_0^4g(x)dx = 0$. The integrand is intended as f(x²), which is an even function of x.
   Solution:
-  1. $f(x^2) = 4x^3 - g(4 - x) = 4x^3 + g(x)$, and $f(x^2)$ is even in x.
-  2. $\int_{-4}^{4}f(x^2)dx = 2\int_0^4(4x^3 + g(x))dx = 2(256 + 0) = 512$.
-  3. (The printed "$f(x)^2$" is intended as $f(x^2)$.)
+  1. From the second equation, g(4 − x) = −g(x). Substitute into the first: f(x²) = 4x³ − g(4 − x) = 4x³ + g(x).
+  2. $\int_0^4g(x)dx$: using x → 4 − x, $\int_0^4g(x)dx = \int_0^4g(4 - x)dx = -\int_0^4g(x)dx$, so it equals 0.
+  3. f(x²) is even in x (x² is even), so $\int_{-4}^{4}f(x^2)dx = 2\int_0^4f(x^2)dx$.
+  4. $\int_0^4f(x^2)dx = \int_0^4(4x^3 + g(x))dx = [x^4]_0^4 + 0 = 256$.
+  5. $\int_{-4}^{4}f(x^2)dx = 2\times256 = 512$.
+  Note: the question prints the integrand as "f(x)²", but the intended integrand (as in the official solution) is f(x²). The answer 512 follows from this reading.
   Answer: 512
 M B 4: |-
-  Concept: Spot the pattern in the inner values.
+  Concept: Pattern-recognition puzzle. Look for a rule linking the numbers in the figure, often involving powers or factorials.
   Solution:
-  1. The inner values are $1^{1!}$, ?, $3^{3!} = 3^6$, $4^{4!} = 4^{24}$.
-  2. The missing term is $2^{2!} = 4$.
+  1. The inner values given are 1, ?, 3⁶ and 4²⁴.
+  2. Notice the exponents: 6 = 3! and 24 = 4!. So the pattern is $n^{n!}$:
+     - n = 1: $1^{1!} = 1^1 = 1$ ✓.
+     - n = 2: $2^{2!} = 2^2 = 4$.
+     - n = 3: $3^{3!} = 3^6 = 729$ ✓.
+     - n = 4: $4^{4!} = 4^{24}$ ✓.
+  3. The missing value is $2^{2!} = 4$.
+  Note: the outer ring values (2, 3, 5, 4, 7, 8, 12, 1) form the rest of the figure; the inner sequence alone determines the missing entry through the $n^{n!}$ pattern, as in the official solution.
   Answer: 4
 M B 5: |-
-  Concept: $0, z_1, z_2$ form an equilateral triangle iff $z_1^2 + z_2^2 = z_1z_2$.
+  Concept: The points z₁, z₂, z₃ form an equilateral triangle iff $z_1^2 + z_2^2 + z_3^2 = z_1z_2 + z_2z_3 + z_3z_1$. With z₃ = 0 (the origin), this becomes $z_1^2 + z_2^2 = z_1z_2$.
   Solution:
-  1. $(z_1 + z_2)^2 = 3z_1z_2 \Rightarrow a^2 = 36$.
-  2. $|a| = 6$.
+  1. z₁ and z₂ are the roots of z² + az + 12 = 0: z₁ + z₂ = −a and z₁z₂ = 12.
+  2. Condition: z₁² + z₂² = z₁z₂, i.e. (z₁ + z₂)² − 2z₁z₂ = z₁z₂, so (z₁ + z₂)² = 3z₁z₂.
+  3. a² = 3 × 12 = 36, so |a| = 6.
+  Check: with a = 6, z² + 6z + 12 = 0 gives z = −3 ± i√3. Both have modulus √12 = 2√3. Their arguments are 150° and 210°, differing by 60°. So 0, z₁ and z₂ form an equilateral triangle with side 2√3 ✓. The distance between z₁ and z₂ is 2√3 ✓.
+  Geometric reason: z₂ = z₁e^{±iπ/3} (a 60° rotation), so $\frac{z_2}{z_1} = e^{\pm i\pi/3}$ and $\frac{(z_1 + z_2)^2}{z_1z_2} = \left(1 + e^{i\pi/3}\right)^2e^{-i\pi/3} = 3$.
   Answer: 6
 M B 6: |-
-  Concept: Parallel plane $x - 2y + 2z + d = 0$ at unit distance.
+  Concept: Planes parallel to a given plane have the same normal, so they differ only in the constant term. The distance from a point to a plane fixes the constant.
   Solution:
-  1. $\frac{|1 - 4 + 6 + d|}{3} = 1 \Rightarrow d = 0$ or $-6$.
-  2. $b - d = K(c - a) = K$: $d = 0$ gives $K = -2$; $d = -6$ gives $K = 4$.
-  3. Positive $K = 4$.
+  1. Parallel planes: x − 2y + 2z + d = 0. So a = 1, b = −2, c = 2.
+  2. Distance from (1, 2, 3): $\frac{|1 - 4 + 6 + d|}{\sqrt{1 + 4 + 4}} = \frac{|3 + d|}{3} = 1$.
+  3. |3 + d| = 3, so d = 0 or d = −6.
+  4. Condition: b − d = K(c − a), with c − a = 2 − 1 = 1. So K = b − d = −2 − d.
+     - d = 0: K = −2.
+     - d = −6: K = −2 + 6 = 4.
+  5. The positive value of K is 4.
+  The two planes: x − 2y + 2z = 0 and x − 2y + 2z − 6 = 0, one on each side of (1, 2, 3), each at distance 1.
+  Check: the given plane x − 2y + 2z − 3 = 0 is at distance $\frac{|3 - 3|}{3} = 0$ from (1, 2, 3); it passes through the point. The required planes are ±1 unit from it ✓.
   Answer: 4
 M B 7: |-
-  Concept: Total age changes by (new − old).
+  Concept: Mean = total ÷ number of items. Replacing one item changes the total by (new value − old value).
   Solution:
-  1. $25\times40 - 60 + x = 25\times39 \Rightarrow x = 35$.
+  1. Original total age: 25 × 40 = 1000 years.
+  2. A 60-year-old teacher retires and a new teacher of age x joins. The number stays at 25.
+  3. New total: 1000 − 60 + x = 940 + x.
+  4. New mean 39: 25 × 39 = 975.
+  5. 940 + x = 975, so x = 35 years.
+  Shortcut: the mean falls by 1 over 25 teachers, so the total falls by 25. The newcomer must be 25 years younger than the retiree: 60 − 25 = 35 ✓.
+  Note: this assumes that no time passes, so no one else's age changes, only the replacement.
   Answer: 35
 M B 8: |-
-  Concept: Divide numerator and denominator by $x^{14}$.
+  Concept: When the numerator is almost the derivative of the inner expression of the denominator, divide numerator and denominator by a suitable power of x to reveal a $\frac{du}{u^2}$ form.
   Solution:
-  1. The integrand becomes $\frac{5x^{-6} + 7x^{-8}}{(x^{-5} + x^{-7} + 2)^2}$, i.e. $-\frac{du}{u^2}$ with $u = x^{-5} + x^{-7} + 2$.
-  2. $f(x) = \frac{1}{u} = \frac{x^7}{2x^7 + x^2 + 1}$ (with $f(0) = 0$).
-  3. $f(1) = \frac{1}{4}$, so $K = 4$.
+  1. Divide the numerator and denominator by x¹⁴ (the denominator is a square of a degree-7 expression):
+     Numerator: $\frac{5x^8 + 7x^6}{x^{14}} = 5x^{-6} + 7x^{-8}$.
+     Denominator: $\left(\frac{x^2 + 1 + 2x^7}{x^7}\right)^2 = (x^{-5} + x^{-7} + 2)^2$.
+  2. Let u = x⁻⁵ + x⁻⁷ + 2. Then du = (−5x⁻⁶ − 7x⁻⁸)dx, so the numerator is −du.
+  3. Integral: $\int\frac{-du}{u^2} = \frac{1}{u} + C$.
+  4. $f(x) = \frac{1}{x^{-5} + x^{-7} + 2} + C = \frac{x^7}{x^2 + 1 + 2x^7} + C$.
+  5. f(0) = 0 + C = 0, so C = 0.
+  6. $f(1) = \frac{1}{1 + 1 + 2} = \frac{1}{4}$, so K = 4.
+  Check: differentiate $\frac{x^7}{2x^7 + x^2 + 1}$ by the quotient rule. Numerator: $7x^6(2x^7 + x^2 + 1) - x^7(14x^6 + 2x) = 7x^8 + 7x^6 - 2x^8 = 5x^8 + 7x^6$ ✓.
   Answer: 4
 M B 9: |-
-  Concept: The square is symmetric about the origin: vertices $(a, b), (-b, a), (-a, -b), (b, -a)$.
+  Concept: The curve x²y² = 1 is xy = ±1: two rectangular hyperbolas, symmetric under 90° rotation about the origin. A square with its vertices on this curve can be centred at the origin, with vertices (a, b), (−b, a), (−a, −b), (b, −a).
   Solution:
-  1. Vertices on the curve: $ab = \pm1$. Midpoints $\left(\frac{a-b}{2}, \frac{a+b}{2}\right)$ on the curve: $(a^2 - b^2)^2 = 16$.
-  2. With $ab = 1$: $a^2 = 2 + \sqrt5$, $b^2 = \sqrt5 - 2$.
-  3. Area $= $ side² $= 2(a^2 + b^2) = 4\sqrt5$, so area² $= 80$.
+  1. The vertices lie on the curve: a²b² = 1. (All four vertices then satisfy it, by symmetry.)
+  2. The midpoint of the side from (a, b) to (−b, a) is $\left(\frac{a - b}{2}, \frac{a + b}{2}\right)$. On the curve: $\frac{(a - b)^2(a + b)^2}{16} = 1$, so $(a^2 - b^2)^2 = 16$ and a² − b² = ±4.
+  3. Take ab = 1 and a² − b² = 4: $a^2 - \frac{1}{a^2} = 4$, so a⁴ − 4a² − 1 = 0 and a² = 2 + √5. Then b² = $\frac{1}{a^2}$ = √5 − 2.
+  4. a² + b² = 2√5.
+  5. Side² = distance² from (a, b) to (−b, a) = (a + b)² + (b − a)² = 2(a² + b²) = 4√5.
+  6. Area = side² = 4√5, and area² = 16 × 5 = 80.
+  Check: the midpoint condition gives the same result for all four sides by symmetry.
   Answer: 80
 M B 10: |-
-  Concept: Case on the sign of cot x.
+  Concept: Equations with |f(x)| are split into cases by the sign of f(x). Also check where the functions are defined: cot x and $\frac{1}{\sin x}$ need sin x ≠ 0.
   Solution:
-  1. If $\cot x \ge 0$: $\frac{1}{\sin x} = 0$, impossible.
-  2. If $\cot x < 0$: $-2\cot x = \frac{1}{\sin x} \Rightarrow \cos x = -\frac{1}{2}$.
-  3. $x = \frac{2\pi}{3}$ works (cot < 0); $x = \frac{4\pi}{3}$ has cot > 0 and is rejected. So 1 solution.
+  1. The domain excludes x = 0, π, 2π (where sin x = 0).
+  2. Case cot x ≥ 0: |cot x| = cot x, so the equation becomes $0 = \frac{1}{\sin x}$, which is impossible. No solutions.
+  3. Case cot x < 0: |cot x| = −cot x, so $-\cot x = \cot x + \frac{1}{\sin x}$, i.e. $-2\frac{\cos x}{\sin x} = \frac{1}{\sin x}$, giving cos x = −½.
+  4. In [0, 2π]: x = $\frac{2\pi}{3}$ or $\frac{4\pi}{3}$.
+  5. Check cot x < 0:
+     - x = $\frac{2\pi}{3}$: cos < 0 and sin > 0, so cot < 0 ✓.
+     - x = $\frac{4\pi}{3}$: cos < 0 and sin < 0, so cot > 0 ✗. Rejected.
+  6. So there is exactly 1 solution: x = $\frac{2\pi}{3}$.
+  Verification at x = $\frac{2\pi}{3}$: cot x = $-\frac{1}{\sqrt3}$ and sin x = $\frac{\sqrt3}{2}$. LHS = $\frac{1}{\sqrt3}$. RHS = $-\frac{1}{\sqrt3} + \frac{2}{\sqrt3} = \frac{1}{\sqrt3}$ ✓.
   Answer: 1
