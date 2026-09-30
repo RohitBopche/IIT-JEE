@@ -275,6 +275,8 @@ P B 4: |-
   2. $\tau = \frac{L}{R} = \frac{10\times10^{-3}}{10^4} = 10^{-6}$ s = 1 μs.
   3. At t = 1 μs = τ: $i = 2e^{-1} = 2\times0.37 = 0.74$ mA.
   4. $\frac{x}{100} = 0.74 \Rightarrow x = 74$.
+  Result: τ = 10⁻²/10⁴ = 10⁻⁶ s = 1 μs, so after 1 μs, i = 2 × e⁻¹ = 2 × 0.37 = 0.74 mA = 74/100 mA.
+  Common mistake: Using the growth formula i₀(1 − e^{−t/τ}), which gives 1.26 mA; after switching off, the current decays.
   Answer: 74
 P B 5: |-
   Concept: Only gravity does work on the bob (tension is perpendicular to the motion), so mechanical energy is conserved. At angle θ from the vertical, the bob is $l(1 - \cos\theta)$ above the lowest point.
@@ -300,6 +302,8 @@ P B 7: |-
   3. Supply 200 V: the series resistor must drop $200 - 100 = 100$ V.
   4. $R = \frac{100}{2} = 50\ \Omega$.
   Check: total resistance 100 Ω, current $\frac{200}{100} = 2$ A, bulb power $2^2\times50 = 200$ W ✓.
+  Result: The resistor must drop 200 − 100 = 100 V at 2 A, so R = 100/2 = 50 Ω.
+  Common mistake: Using the bulb's resistance alone and ignoring the rated current; the series resistor carries the same 2 A as the bulb.
   Answer: 50
 P B 8: |-
   Concept: Screw gauge least count $= \frac{\text{pitch}}{\text{no. of circular divisions}} = \frac{0.1}{100} = 0.001$ cm. Observed reading = true value + zero error. A positive zero error means the circular-scale zero lies below the reference line when the jaws are closed; a negative error, above.
@@ -316,6 +320,8 @@ P B 9: |-
   2. Percentage increase: $2.2\times10^{-5}\times100 = 2.2\times10^{-3}\%$.
   3. Write as $\frac{x}{10^4}$: $2.2\times10^{-3} = \frac{22}{10^4}$, so x = 22.
   Note: aluminium is paramagnetic (small positive χ), so the field increases slightly.
+  Result: Percentage increase = 2.2 × 10⁻³ % = 22/10⁴, so x = 22.
+  Why so small: Aluminium is paramagnetic with a tiny χ; only ferromagnets change the field inside a toroid substantially.
   Answer: 22
 P B 10: |-
   Concept: A changing flux induces emf $\varepsilon = \left|\frac{d\phi}{dt}\right|$ (Faraday's law). The heating power is $P = \frac{\varepsilon^2}{R}$, and energy $E = Pt$ if ε is constant.
@@ -325,4 +331,6 @@ P B 10: |-
   3. $P = \frac{(4\times10^{-5})^2}{2\times10^{-6}} = \frac{16\times10^{-10}}{2\times10^{-6}} = 8\times10^{-4}$ W.
   4. The field reaches zero at t = 100 s.
   5. $E = 8\times10^{-4}\times100 = 0.08$ J $= 80$ mJ.
+  Result: ε = (4 × 10⁻³)/100 = 4 × 10⁻⁵ V (constant), so P = ε²/R = 16 × 10⁻¹⁰/(2 × 10⁻⁶) = 8 × 10⁻⁴ W. Over the 100 s during which the field falls to zero, E = 8 × 10⁻⁴ × 100 = 0.08 J = 80 mJ.
+  Common mistake: Forgetting that the field takes 100 s to vanish, and using t = 1 s.
   Answer: 80

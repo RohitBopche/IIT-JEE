@@ -240,6 +240,8 @@ C B 2: |-
   2. $\Delta_{sub}H = 2.8 + 98.2 = 101.0$ kJ mol⁻¹.
   3. Nearest integer: 101.
   Note: this is exact only when all three enthalpies refer to the same temperature (here 298 K).
+  Why the enthalpies add: The sublimation route and the two-step route (melt, then boil) start and end at the same states, so their enthalpy changes must be equal.
+  Common mistake: Subtracting ΔH_fus from ΔH_vap (95.4 kJ/mol); both steps absorb heat, so they add.
   Answer: 101
 C B 3: |-
   Concept: Use the balanced combustion equation to relate moles of water to moles of butane.
@@ -249,6 +251,8 @@ C B 3: |-
   3. Moles of butane: $\frac{4.0}{5} = 0.8$ mol.
   4. Molar mass of C₄H₁₀ $= 4(12) + 10(1) = 58$ g mol⁻¹.
   5. Mass of butane $= 0.8\times58 = 46.4$ g $= 464\times10^{-1}$ g.
+  Result: M(C₄H₁₀) = 58 g/mol, so the mass is 0.8 × 58 = 46.4 g = 464 × 10⁻¹ g.
+  Common mistake: Using the 2 : 10 ratio as 1 : 10 (forgetting to divide both coefficients), which gives 23.2 g.
   Answer: 464
 C B 4: |-
   Concept: Henry's law: $p = K_H\,x$, where x is the mole fraction of the dissolved gas. For a dilute solution, $x \approx \frac{n_{gas}}{n_{water}}$.
@@ -257,6 +261,8 @@ C B 4: |-
   2. Moles of water in 0.9 L (900 g): $\frac{900}{18} = 50$ mol.
   3. $n_{CO_2} \approx x\cdot n_{water} = 5.0\times10^{-4}\times50 = 2.5\times10^{-2}$ mol = 25 mmol.
   4. x = 25.
+  Result: n(CO₂) ≈ 5 × 10⁻⁴ × 50 = 0.025 mol = 25 mmol.
+  Common mistake: Multiplying the mole fraction by 0.9 (the volume in litres) instead of by the moles of water.
   Answer: 25
 C B 5: |-
   Concept: In acidic medium, $Cr_2O_7^{2-} + 14H^+ + 6e^- \to 2Cr^{3+} + 7H_2O$ (n-factor 6), and $Fe^{2+} \to Fe^{3+} + e^-$ (n-factor 1). At the end point, milliequivalents are equal.
@@ -266,6 +272,8 @@ C B 5: |-
   3. mmol of Fe²⁺ $= 6\times0.30 = 1.80$ mmol.
   4. Molarity of Fe²⁺ $= \frac{1.80}{10} = 0.18$ M $= 18\times10^{-2}$ M.
   (Diphenylamine is the redox indicator used for this titration.)
+  Result: mmol of Fe²⁺ = 6 × 0.30 = 1.8 in 10 mL, so the molarity is 0.18 M = 18 × 10⁻² M.
+  Common mistake: Using a 1 : 1 ratio between dichromate and Fe²⁺, which gives 0.03 M.
   Answer: 18
 C B 6: |-
   Concept: Nernst equation for the overall cell reaction $Zn + 2Fe^{3+} \to Zn^{2+} + 2Fe^{2+}$ (n = 2).
@@ -275,6 +283,8 @@ C B 6: |-
   3. $1.500 = 1.53 - 0.059\log r \Rightarrow \log r = \frac{0.030}{0.059} = 0.508 \Rightarrow r = \frac{[Fe^{2+}]}{[Fe^{3+}]} \approx 3.22$.
   4. Fraction of iron as Fe³⁺ $= \frac{[Fe^{3+}]}{[Fe^{2+}] + [Fe^{3+}]} = \frac{1}{1 + 3.22} = 0.237$.
   5. $x\times10^{-2} = 0.237 \Rightarrow x \approx 24$.
+  Result: 0.059 log([Fe²⁺]/[Fe³⁺]) = 0.03, so the ratio is 10^{0.508} ≈ 3.2. The fraction as Fe³⁺ is 1/(1 + 3.2) ≈ 0.24 = 24 × 10⁻².
+  Common mistake: Reporting [Fe³⁺]/[Fe²⁺] (0.31) instead of the fraction of total iron.
   Answer: 24
 C B 7: |-
   Concept: Compare the reaction quotient Q with K to find the direction, then use an ICE table.
@@ -293,6 +303,8 @@ C B 8: |-
   2. Photon energy: $E = \frac{6.626\times10^{-34}\times3\times10^8}{400\times10^{-9}} = 4.97\times10^{-19}$ J.
   3. Photons per second $= \frac{100}{4.97\times10^{-19}} = 2.01\times10^{20}$.
   4. Electrons ejected per second (one per photon) $\approx 2\times10^{20}$, so x = 2.
+  Result: Photons per second = 100/4.97 × 10⁻¹⁹ ≈ 2.0 × 10²⁰, and each ejects one electron, so x = 2.
+  Common mistake: Using the total energy (1000 J) instead of the energy per second.
   Answer: 2
 C B 9: |-
   Concept: Ideal gas equation $PV = nRT$, then mass = moles × molar mass. Convert m³ to L (1 m³ = 1000 L) to match R in L atm K⁻¹ mol⁻¹.
@@ -301,6 +313,8 @@ C B 9: |-
   2. $n = \frac{PV}{RT} = \frac{1.0\times4.00\times10^6}{0.083\times300} = \frac{4.00\times10^6}{24.9} = 1.606\times10^5$ mol.
   3. Mass $= 1.606\times10^5\times16 = 2.57\times10^6$ g $= 25.7\times10^5$ g.
   4. Nearest integer: x = 26.
+  Result: n = 1.606 × 10⁵ mol, so the mass = 1.606 × 10⁵ × 16 = 2.57 × 10⁶ g = 26 × 10⁵ g (nearest integer).
+  Common mistake: Forgetting to convert m³ to litres, which gives 2.6 × 10² g.
   Answer: 26
 C B 10: |-
   Concept: In a coordination compound, chloride ions outside the coordination sphere (primary valency, ionisable) precipitate as AgCl with AgNO₃. Chlorides bound to the metal (secondary valency, coordination sphere) do not.
@@ -309,4 +323,6 @@ C B 10: |-
   2. 1 mol of complex gives 3 mol AgCl, so all 3 Cl⁻ are ionisable.
   3. The six coordination sites are filled by 3 NH₃ and 3 H₂O: [Cr(NH₃)₃(H₂O)₃]Cl₃.
   4. Number of chlorides satisfying secondary valency = 0.
+  Result: 3 mol AgCl means all three Cl⁻ are ionisable, so the complex is [Cr(NH₃)₃(H₂O)₃]Cl₃ and no chloride occupies a coordination (secondary valency) site. Answer 0.
+  Common mistake: Assuming at least one Cl must be coordinated because the formula has three Cl.
   Answer: 0
